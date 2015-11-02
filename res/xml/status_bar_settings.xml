@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      Copyright (C) 2014-2016 The CyanogenMod Project
+     Copyright (C) 2017-2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -26,6 +27,12 @@
         android:entries="@array/status_bar_quick_qs_pulldown_entries"
         android:entryValues="@array/status_bar_quick_qs_pulldown_values"
         android:defaultValue="0" />
+
+    <PreferenceScreen
+        android:fragment="org.lineageos.lineageparts.statusbar.NetworkTrafficSettings"
+        android:key="network_traffic_settings"
+        android:title="@string/network_traffic_settings_title"
+        android:summary="@string/network_traffic_settings_summary" />
 
     <PreferenceCategory
         android:title="@string/status_bar_icons_title">
