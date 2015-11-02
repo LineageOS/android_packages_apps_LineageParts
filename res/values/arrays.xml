@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2015 The CyanogenMod Project
+     Copyright (C) 2017-2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -334,4 +335,34 @@
         <item>300</item>
         <item>600</item>
     </string-array>
+
+    <!-- Network Traffic -->
+    <string-array name="network_traffic_mode_entries" translatable="false">
+        <item>@string/network_traffic_mode_disable</item>
+        <item>@string/network_traffic_mode_up</item>
+        <item>@string/network_traffic_mode_down</item>
+        <item>@string/network_traffic_mode_all</item>
+    </string-array>
+
+    <string-array name="network_traffic_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="network_traffic_units_entries" translatable="false">
+        <item>@string/network_traffic_units_kilobits</item>
+        <item>@string/network_traffic_units_megabits</item>
+        <item>@string/network_traffic_units_kilobytes</item>
+        <item>@string/network_traffic_units_megabytes</item>
+    </string-array>
+
+    <string-array name="network_traffic_units_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
 </resources>
