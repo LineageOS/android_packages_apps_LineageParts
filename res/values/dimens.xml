@@ -33,5 +33,6 @@
 
     <dimen name="settings_side_margin">0dip</dimen>
 
+    <dimen name="oval_notification_size">26dp</dimen>
 </resources>
 
