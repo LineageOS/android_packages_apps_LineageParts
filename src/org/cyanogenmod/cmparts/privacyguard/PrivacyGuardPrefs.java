@@ -30,9 +30,11 @@ import android.widget.ListView;
 
 import org.cyanogenmod.cmparts.R;
 
+import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+
 import cyanogenmod.providers.CMSettings;
 
-public class PrivacyGuardPrefs extends PreferenceFragment implements
+public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String TAG = "PrivacyGuardPrefs";

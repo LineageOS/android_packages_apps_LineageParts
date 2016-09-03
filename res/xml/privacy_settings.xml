@@ -18,7 +18,7 @@
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
 
     <header
-        android:title="@string/privacy_guard_manager_title"
+        android:title="@*cyanogenmod.platform:string/privacy_guard_manager_title"
         android:summary="@string/privacy_guard_manager_summary"
         android:fragment="org.cyanogenmod.cmparts.privacyguard.PrivacyGuardManager" />
 
