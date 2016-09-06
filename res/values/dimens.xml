@@ -15,8 +15,21 @@
 -->
 
 <resources>
+
     <!-- ActionBar height -->
     <dimen name="actionbar_size">56dip</dimen>
+
+    <!-- ActionBar contentInsetStart -->
+    <dimen name="actionbar_contentInsetStart">16dp</dimen>
+
+    <!-- Dashboard padding in its container -->
+    <dimen name="dashboard_padding_start">0dp</dimen>
+    <dimen name="dashboard_padding_end">0dp</dimen>
+    <dimen name="dashboard_padding_top">0dp</dimen>
+    <dimen name="dashboard_padding_bottom">0dp</dimen>
+
+    <!-- Dashboard category panel elevation -->
+    <dimen name="dashboard_category_elevation">2dp</dimen>
 
     <dimen name="settings_side_margin">0dip</dimen>
 
