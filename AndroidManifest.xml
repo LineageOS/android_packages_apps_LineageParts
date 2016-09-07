@@ -25,6 +25,14 @@
 
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
 
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
     <application android:label="@string/cmparts_title"
             android:theme="@style/Theme.Settings"
             android:hardwareAccelerated="true"
@@ -48,5 +56,3 @@
 
     </application>
 </manifest>
-
-
