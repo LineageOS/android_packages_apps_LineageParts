@@ -26,7 +26,7 @@ import android.support.v7.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class CustomDialogPreference<T extends Dialog> extends DialogPreference {
+public class CustomDialogPreference<T extends DialogInterface> extends DialogPreference {
 
     private CustomPreferenceDialogFragment mFragment;
 
@@ -48,7 +48,7 @@ public class CustomDialogPreference<T extends Dialog> extends DialogPreference {
     }
 
     public boolean isDialogOpen() {
-        return getDialog() != null && getDialog().isShowing();
+        return getDialog() != null && getDialog() instanceof Dialog && ((Dialog)getDialog()).isShowing();
     }
 
     public T getDialog() {
@@ -62,7 +62,7 @@ public class CustomDialogPreference<T extends Dialog> extends DialogPreference {
     protected void onDialogClosed(boolean positiveResult) {
     }
 
-    protected void onClick(DialogInterface dialog, int which) {
+    protected void onClick(T dialog, int which) {
     }
 
     protected void onBindDialogView(View view) {
@@ -80,6 +80,10 @@ public class CustomDialogPreference<T extends Dialog> extends DialogPreference {
         mFragment = fragment;
     }
 
+    protected boolean onDismissDialog(T dialog, int which) {
+        return true;
+    }
+
     public static class CustomPreferenceDialogFragment extends PreferenceDialogFragment {
 
         public static CustomPreferenceDialogFragment newInstance(String key) {
@@ -92,6 +96,43 @@ public class CustomDialogPreference<T extends Dialog> extends DialogPreference {
 
         private CustomDialogPreference getCustomizablePreference() {
             return (CustomDialogPreference) getPreference();
+        }
+
+        private class OnDismissListener implements View.OnClickListener {
+            private final int mWhich;
+            private final DialogInterface mDialog;
+
+            public OnDismissListener(DialogInterface dialog, int which) {
+                mWhich = which;
+                mDialog = dialog;
+            }
+
+            @Override
+            public void onClick(View view) {
+                if (getCustomizablePreference().onDismissDialog(mDialog, mWhich)) {
+                    mDialog.dismiss();
+                }
+            }
+        }
+
+        @Override
+        public void onStart() {
+            super.onStart();
+            if (getDialog() instanceof AlertDialog) {
+                AlertDialog a = (AlertDialog)getDialog();
+                if (a.getButton(Dialog.BUTTON_NEUTRAL) != null) {
+                    a.getButton(Dialog.BUTTON_NEUTRAL).setOnClickListener(
+                            new OnDismissListener(a, Dialog.BUTTON_NEUTRAL));
+                }
+                if (a.getButton(Dialog.BUTTON_POSITIVE) != null) {
+                    a.getButton(Dialog.BUTTON_POSITIVE).setOnClickListener(
+                            new OnDismissListener(a, Dialog.BUTTON_POSITIVE));
+                }
+                if (a.getButton(Dialog.BUTTON_NEGATIVE) != null) {
+                    a.getButton(Dialog.BUTTON_NEGATIVE).setOnClickListener(
+                            new OnDismissListener(a, Dialog.BUTTON_NEGATIVE));
+                }
+            }
         }
 
         @Override

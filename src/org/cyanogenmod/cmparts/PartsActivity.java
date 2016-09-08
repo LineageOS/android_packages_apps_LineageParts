@@ -20,19 +20,24 @@ import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.util.Log;
 
+import org.cyanogenmod.cmparts.livedisplay.LiveDisplay;
 import org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings;
 import org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings;
 
 public class PartsActivity extends PreferenceActivity {
+
+    public static final String TAG = "PartsActivity";
 
     public static final String EXTRA_PART = "part";
     public static final String EXTRA_FRAGMENT_ARG_KEY = ":settings:fragment_args_key";
 
     public static final String FRAGMENT_PREFIX = "cmparts:";
 
-    public static final String FRAGMENT_NOTIFICATION_LIGHTS = "notification_lights";
     public static final String FRAGMENT_BATTERY_LIGHTS = "battery_lights";
+    public static final String FRAGMENT_NOTIFICATION_LIGHTS = "notification_lights";
+    public static final String FRAGMENT_LIVEDISPLAY = "livedisplay";
 
     private ActionBar mActionBar;
 
@@ -47,11 +52,17 @@ public class PartsActivity extends PreferenceActivity {
                 return;
             }
             String part = keys[1];
+            Log.d(TAG, "Launching fragment: " + partExtra);
+
             SettingsPreferenceFragment fragment = null;
             if (part.equals(FRAGMENT_NOTIFICATION_LIGHTS)) {
                 fragment = new NotificationLightSettings();
             } else if (part.equals(FRAGMENT_BATTERY_LIGHTS)) {
                 fragment = new BatteryLightSettings();
+            } else if (part.equals(FRAGMENT_LIVEDISPLAY)) {
+                fragment = new LiveDisplay();
+            } else {
+                Log.d(TAG, "Unknown fragment: " + part);
             }
 
             mActionBar = getActionBar();
