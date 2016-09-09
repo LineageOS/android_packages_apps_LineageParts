@@ -33,6 +33,8 @@
     <uses-permission android:name="android.permission.DEVICE_POWER" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
 
+    <uses-permission android:name="cyanogenmod.permission.BIND_CORE_SERVICE" />
+
     <application android:label="@string/cmparts_title"
             android:theme="@style/Theme.Settings"
             android:hardwareAccelerated="true"
@@ -40,6 +42,24 @@
             android:defaultToDeviceProtectedStorage="true"
             android:directBootAware="true">
 
+        <activity android:name=".PartsActivity">
+            <intent-filter>
+                <action android:name="org.cyanogenmod.cmparts.PART" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="org.cyanogenmod.cmparts.PartsCatalog"
+                 android:permission="cyanogenmod.permission.BIND_CORE_SERVICE"
+                 android:enabled="true"
+                 android:exported="true">
+            <intent-filter>
+                <action android:name="org.cyanogenmod.cmparts.CATALOG" />
+            </intent-filter>
+        </service>
+
+
+        <!-- Privacy settings header -->
         <activity
             android:name=".PrivacySettings"
             android:label="@string/privacy_settings_title">
@@ -52,13 +72,6 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_privacy" />
-        </activity>
-
-        <activity android:name=".PartsActivity">
-            <intent-filter>
-                <action android:name="org.cyanogenmod.cmparts.PART" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
     </application>

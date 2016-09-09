@@ -17,70 +17,96 @@
 package org.cyanogenmod.cmparts;
 
 import android.app.ActionBar;
+import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import android.os.IBinder;
 import android.util.Log;
 
-import org.cyanogenmod.cmparts.livedisplay.LiveDisplay;
-import org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings;
-import org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings;
+import org.cyanogenmod.internal.cmparts.IPartsCatalog;
+import org.cyanogenmod.internal.cmparts.PartInfo;
 
-public class PartsActivity extends PreferenceActivity {
+public class PartsActivity extends Activity {
 
-    public static final String TAG = "PartsActivity";
+    private static final String TAG = "PartsActivity";
 
     public static final String EXTRA_PART = "part";
     public static final String EXTRA_FRAGMENT_ARG_KEY = ":settings:fragment_args_key";
+    public static final String ACTION_PART = "org.cyanogenmod.cmparts.PART";
 
-    public static final String FRAGMENT_PREFIX = "cmparts:";
-
-    public static final String FRAGMENT_BATTERY_LIGHTS = "battery_lights";
-    public static final String FRAGMENT_NOTIFICATION_LIGHTS = "notification_lights";
-    public static final String FRAGMENT_LIVEDISPLAY = "livedisplay";
-
-    private ActionBar mActionBar;
+    private IPartsCatalog mCatalog;
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
 
-        String partExtra = getIntent().getStringExtra(EXTRA_PART);
-        if (partExtra != null && partExtra.startsWith(FRAGMENT_PREFIX)) {
-            String[] keys = partExtra.split(":");
-            if (keys.length < 2) {
-                return;
-            }
-            String part = keys[1];
-            Log.d(TAG, "Launching fragment: " + partExtra);
+        connectCatalog();
 
-            SettingsPreferenceFragment fragment = null;
-            if (part.equals(FRAGMENT_NOTIFICATION_LIGHTS)) {
-                fragment = new NotificationLightSettings();
-            } else if (part.equals(FRAGMENT_BATTERY_LIGHTS)) {
-                fragment = new BatteryLightSettings();
-            } else if (part.equals(FRAGMENT_LIVEDISPLAY)) {
-                fragment = new LiveDisplay();
-            } else {
-                Log.d(TAG, "Unknown fragment: " + part);
-            }
+        Log.d(TAG, "Launched with: " + getIntent().toString() + " action: " +
+                getIntent().getAction() + " component: " + getIntent().getComponent().flattenToString() +
+                " extras: " + getIntent().getExtras().toString());
 
-            mActionBar = getActionBar();
-            if (mActionBar != null) {
-                mActionBar.setDisplayHomeAsUpEnabled(true);
-                mActionBar.setHomeButtonEnabled(true);
-            }
-
-            if (fragment != null) {
-                getFragmentManager().beginTransaction()
-                        .replace(android.R.id.content, fragment)
-                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                        .commitAllowingStateLoss();
-                getFragmentManager().executePendingTransactions();
-            }
+        PartInfo info = null;
+        String extra = getIntent().getStringExtra(EXTRA_PART);
+        if (ACTION_PART.equals(getIntent().getAction()) && extra != null) {
+            info = PartsCatalog.getPartInfo(getResources(), extra);
+        } else {
+            info = PartsCatalog.getPartInfoForClass(getResources(),
+                    getIntent().getComponent().getClassName());
         }
+
+        if (info == null) {
+            throw new UnsupportedOperationException("Unable to get part: " + getIntent().toString());
+        }
+
+        Log.d(TAG, "Launching fragment: " + info.getFragmentClass());
+
+        Fragment fragment = Fragment.instantiate(this, info.getFragmentClass());
+
+        ActionBar actionBar = getActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeButtonEnabled(true);
+        }
+
+        actionBar.setTitle(info.getTitle());
+
+        getFragmentManager().beginTransaction().replace(android.R.id.content, fragment)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                .commitAllowingStateLoss();
+        getFragmentManager().executePendingTransactions();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        disconnectCatalog();
+    }
 
+    private void connectCatalog() {
+        Intent i = new Intent(this, PartsCatalog.class);
+        bindService(i, mConnection, Context.BIND_AUTO_CREATE);
+    }
+
+    private void disconnectCatalog() {
+        unbindService(mConnection);
+    }
+
+    private final ServiceConnection mConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+            mCatalog = IPartsCatalog.Stub.asInterface(iBinder);
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName componentName) {
+            mCatalog = null;
+        }
+    };
 }
 

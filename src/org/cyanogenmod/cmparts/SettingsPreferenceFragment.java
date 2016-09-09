@@ -714,6 +714,18 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
         getActivity().setResult(result);
     }
 
+    public String getDashboardTitle() {
+        return null;
+    }
+
+    public String getDashboardSummary() {
+        return null;
+    }
+
+    public boolean isAvailable() {
+        return true;
+    }
+
     protected final Context getPrefContext() {
         return getPreferenceManager().getContext();
     }

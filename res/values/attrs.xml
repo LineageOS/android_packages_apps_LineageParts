@@ -14,7 +14,9 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:cm="http://schemas.android.com/apk/res-auto">
+
     <attr name="preferenceBackgroundColor" format="color" />
 
     <declare-styleable name="IntervalSeekBar">
@@ -23,4 +25,14 @@
         <attr name="defaultValue" />
         <attr name="digits" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="PartsCatalog">
+        <attr name="key" format="string" />
+        <attr name="title" />
+        <attr name="summary" format="string" />
+        <attr name="fragment" format="string" />
+        <attr name="enabled" format="boolean" />
+        <attr name="icon" />
+		<attr name="alias" format="string" />
+	</declare-styleable>
 </resources>
