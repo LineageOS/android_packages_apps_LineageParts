@@ -5,6 +5,7 @@
 -keep class org.cyanogenmod.cmparts.notificationlight.*
 -keep class org.cyanogenmod.cmparts.livedisplay.*
 -keep class org.cyanogenmod.cmparts.privacyguard.*
+-keep class org.cyanogenmod.cmparts.input.*
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {

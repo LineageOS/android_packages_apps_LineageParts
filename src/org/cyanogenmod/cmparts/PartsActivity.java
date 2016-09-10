@@ -48,7 +48,7 @@ public class PartsActivity extends Activity {
         connectCatalog();
 
         Log.d(TAG, "Launched with: " + getIntent().toString() + " action: " +
-                getIntent().getAction() + " component: " + getIntent().getComponent().flattenToString() +
+                getIntent().getAction() + " component: " + getIntent().getComponent().getClassName() +
                 " extras: " + getIntent().getExtras().toString());
 
         PartInfo info = null;

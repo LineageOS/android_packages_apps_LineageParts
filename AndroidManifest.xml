@@ -35,6 +35,8 @@
 
     <uses-permission android:name="cyanogenmod.permission.BIND_CORE_SERVICE" />
 
+    <protected-broadcast android:name="cyanogenmod.platform.app.profiles.PROFILES_STATE_CHANGED" />
+
     <application android:label="@string/cmparts_title"
             android:theme="@style/Theme.Settings"
             android:hardwareAccelerated="true"
@@ -42,7 +44,7 @@
             android:defaultToDeviceProtectedStorage="true"
             android:directBootAware="true">
 
-        <activity android:name=".PartsActivity">
+        <activity android:name="PartsActivity">
             <intent-filter>
                 <action android:name="org.cyanogenmod.cmparts.PART" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -59,12 +61,14 @@
         </service>
 
 
-        <!-- Privacy settings header -->
+        <!-- Privacy settings (dashboard) -->
         <activity
-            android:name=".PrivacySettings"
+            android:name="PrivacySettings"
             android:label="@string/privacy_settings_title">
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="org.cyanogenmod.cmparts.PRIVACY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
@@ -73,6 +77,24 @@
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_privacy" />
         </activity>
+
+        <!-- Button settings (dashboard) -->
+        <activity-alias
+            android:name=".input.ButtonSettings"
+            android:label="@string/button_pref_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="org.cyanogenmod.cmparts.BUTTON_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.device" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_buttons" />
+        </activity-alias>
 
     </application>
 </manifest>

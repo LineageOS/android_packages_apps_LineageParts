@@ -16,5 +16,6 @@
 -->
 <resources>
     <color name="theme_accent">#ff009688</color>
+    <color name="navbar_edit_icon_color">#607d8b</color>
 </resources>
 
