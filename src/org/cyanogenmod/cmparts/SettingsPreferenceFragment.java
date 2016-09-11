@@ -90,6 +90,7 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     };
 
     private ViewGroup mPinnedHeaderFrameLayout;
+    private FloatingActionButton mFloatingActionButton;
     private ViewGroup mButtonBar;
 
     private LayoutPreference mHeader;
@@ -115,6 +116,7 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             Bundle savedInstanceState) {
         final View root = super.onCreateView(inflater, container, savedInstanceState);
         mPinnedHeaderFrameLayout = (ViewGroup) root.findViewById(R.id.pinned_header);
+        mFloatingActionButton = (FloatingActionButton) root.findViewById(R.id.fab);
         mButtonBar = (ViewGroup) root.findViewById(R.id.button_bar);
         return root;
     }
@@ -127,6 +129,10 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     public void addPreferencesFromResource(@XmlRes int preferencesResId) {
         super.addPreferencesFromResource(preferencesResId);
         checkAvailablePrefs(getPreferenceScreen());
+    }
+
+    public FloatingActionButton getFloatingActionButton() {
+        return mFloatingActionButton;
     }
 
     private void checkAvailablePrefs(PreferenceGroup preferenceGroup) {
@@ -462,6 +468,10 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
         getActivity().onBackPressed();
     }
 
+    public final void finishPreferencePanel(Fragment caller, int resultCode, Intent data) {
+        ((PartsActivity)getActivity()).finishPreferencePanel(caller, resultCode, data);
+    }
+
     // Some helpers for functions used by the settings fragments when they were activities
 
     /**
@@ -683,6 +693,18 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
         }
     }
 
+    protected Button getBackButton() {
+        return (Button) ((PartsActivity)getActivity()).getBackButton();
+    }
+
+    protected Button getNextButton() {
+        return (Button) ((PartsActivity)getActivity()).getNextButton();
+    }
+
+    protected void showButtonBar(boolean show) {
+        ((PartsActivity)getActivity()).showButtonBar(show);
+    }
+
     public void finish() {
         Activity activity = getActivity();
         if (activity == null) return;
@@ -728,6 +750,20 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
 
     protected final Context getPrefContext() {
         return getPreferenceManager().getContext();
+    }
+
+    public boolean startFragment(Fragment caller, String fragmentClass, int titleRes,
+                                 int requestCode, Bundle extras) {
+        final Activity activity = getActivity();
+        if (activity instanceof PartsActivity) {
+            PartsActivity sa = (PartsActivity) activity;
+            sa.startPreferencePanel(fragmentClass, extras, titleRes, null, caller, requestCode);
+            return true;
+        } else {
+            Log.w(TAG,
+                    "Parent isn't PartsActivity! (name: " + fragmentClass + ")");
+            return false;
+        }
     }
 
     public static class HighlightablePreferenceGroupAdapter extends PreferenceGroupAdapter {

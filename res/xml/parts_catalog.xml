@@ -34,4 +34,8 @@
           cm:title="@string/button_pref_title"
           cm:fragment="org.cyanogenmod.cmparts.input.ButtonSettings" />
 
+    <part cm:key="profiles_settings"
+          cm:title="@string/profiles_settings_title"
+          cm:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings" />
+
 </parts-catalog>

@@ -21,6 +21,7 @@
 
     <!-- ActionBar contentInsetStart -->
     <dimen name="actionbar_contentInsetStart">16dp</dimen>
+    <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
     <!-- Dashboard padding in its container -->
     <dimen name="dashboard_padding_start">0dp</dimen>
@@ -34,5 +35,25 @@
     <dimen name="settings_side_margin">0dip</dimen>
 
     <dimen name="oval_notification_size">26dp</dimen>
+
+    <dimen name="vert_divider_width">1dip</dimen>
+
+    <dimen name="pager_tabs_padding">0dp</dimen>
+
+    <!-- SwitchBar margin start / end -->
+    <dimen name="switchbar_margin_start">16dp</dimen>
+    <dimen name="switchbar_margin_end">16dp</dimen>
+
+    <!-- SwitchBar sub settings margin start / end -->
+    <dimen name="switchbar_subsettings_margin_start">72dp</dimen>
+    <dimen name="switchbar_subsettings_margin_end">16dp</dimen>
+
+    <!-- FAB Dimensions -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_elevation">12dp</dimen>
+    <dimen name="fab_press_translation_z">9dp</dimen>
+
+    <dimen name="profile_instruction_padding">8dp</dimen>
 </resources>
 

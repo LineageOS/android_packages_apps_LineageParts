@@ -4,7 +4,7 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-    
+
           http://www.apache.org/licenses/LICENSE-2.0
 
      Unless required by applicable law or agreed to in writing, software
@@ -12,9 +12,69 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->     
+-->
 
 <resources>
+
+    <style name="info_label">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.info_label</item>
+        <item name="android:paddingEnd">4dip</item>
+    </style>
+
+    <style name="info_value">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.info_value</item>
+    </style>
+
+    <style name="info_small">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.info_small</item>
+    </style>
+
+    <style name="info_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingEnd">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="entry_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="form_value">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <style name="TextAppearance" parent="android:TextAppearance.Material">
+    </style>
+
+    <style name="TextAppearance.info_label">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.info_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.info_value">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
     <style name="Preference">
         <item name="android:layout">@layout/preference_material_settings</item>
     </style>
@@ -23,17 +83,13 @@
         <item name="android:dialogLayout">@layout/preference_dialog_edittext</item>
     </style>
 
-    <style name="PreferenceFragmentStyle" parent="@*android:style/PreferenceFragment.Material">
-        <item name="android:layout">@layout/preference_list_fragment</item>
-    </style>
-
     <style name="PreferenceHeaderPanelSinglePane">
         <item name="android:layout_marginStart">0dp</item>
         <item name="android:layout_marginEnd">0dp</item>
         <item name="android:background">@null</item>
     </style>
 
-   <style name="PreferencePanelSinglePane" parent="@*android:style/PreferencePanel">
+    <style name="PreferencePanelSinglePane" parent="@*android:style/PreferencePanel">
         <item name="android:layout_marginStart">0dp</item>
         <item name="android:layout_marginEnd">0dp</item>
         <item name="android:paddingStart">0dp</item>
@@ -68,6 +124,30 @@
     <style name="SettingsPreferenceHeaderList" parent="@*android:style/PreferenceHeaderList">
     </style>
 
+    <style name="PreferenceFragmentStyle" parent="@*android:style/PreferenceFragment.Material">
+        <item name="android:layout">@layout/preference_list_fragment</item>
+    </style>
+
+    <style name="VertDivider">
+        <item name="android:layout_width">@dimen/vert_divider_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:alertDialogTheme">@style/Theme.AlertDialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="TextAppearance.PagerTabs" parent="@android:style/TextAppearance.Material.Widget.TabWidget" />
+
+    <!-- Scrollbar style OUTSIDE_OVERLAY -->
+    <integer name="preference_scrollbar_style">33554432</integer>
+
     <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
     <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small" />
     <style name="TextAppearance.Switch" parent="@android:style/TextAppearance.Material.Title" />
@@ -76,7 +156,37 @@
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
 
-    <style name="TextAppearance.TileTitle" parent="@android:style/TextAppearance.Material.Subhead" />
-    <style name="TextAppearance.TileSubTitle" parent="@android:style/TextAppearance.Material.Body1" />
+    <style name="TextAppearance.Small.SwitchBar">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.RemoveDialogContent" parent="@android:style/TextAppearance.Material">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="PreviewPagerPageIndicator">
+        <item name="dotGap">8dp</item>
+        <item name="pageIndicatorColor">?android:attr/colorControlNormal</item>
+        <item name="currentPageIndicatorColor">?android:attr/colorControlActivated</item>
+    </style>
+
+    <style name="ProfilesPreferenceStyle">
+        <item name="android:layout">@layout/preference_profiles</item>
+        <item name="android:widgetLayout">@layout/preference_profiles_widget</item>
+    </style>
+
+    <style name="settingSeparator">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:background">@android:drawable/divider_horizontal_dark</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="SolidSettingSeparator" parent="@style/settingSeparator">
+        <item name="android:background">@color/divider</item>
+    </style>
 
 </resources>

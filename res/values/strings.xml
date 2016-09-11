@@ -24,6 +24,15 @@
     <string name="choose_app">Choose app</string>
     <string name="reset">Reset</string>
     <string name="advanced">Advanced</string>
+    <string name="settings">Settings</string>
+    <string name="name">Name</string>
+    <string name="back">Back</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Privacy</string>
@@ -222,11 +231,184 @@
     <string name="volume_keys_control_ring_stream_summary_on">Volume keys control ringtone volume</string>
     <string name="volume_keys_control_ring_stream_summary_off">Volume keys control media volume</string>
 
-
     <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
 
     <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+
+    <!-- Profiles -->
+    <string name="profile_menu_delete_title">Delete</string>
+    <string name="profile_action_none">Leave unchanged</string>
+    <string name="profile_action_system">System default</string>
+    <string name="profile_action_disable">Turn off</string>
+    <string name="profile_action_enable">Turn on</string>
+
+    <string name="profile_trigger_a2dp_connect">On A2DP connect</string>
+    <string name="profile_trigger_a2dp_disconnect">On A2DP disconnect</string>
+
+    <string name="profile_tabs_wifi">Wi\u2011Fi</string>
+    <string name="profile_tabs_bluetooth">Bluetooth</string>
+    <string name="profile_tabs_nfc">NFC</string>
+
+    <string name="profile_triggers_header">Triggers which will activate this profile</string>
+
+    <string name="profile_setup_setup_triggers_title">Step 1: Add triggers</string>
+    <string name="profile_setup_setup_triggers_title_config">Modify triggers: <xliff:g id="profile_name">%1$s</xliff:g></string>
+
+    <string name="profile_setup_actions_title">Step 2: Setup actions</string>
+    <string name="profile_setup_actions_title_config">Reconfigure actions</string>
+
+    <string name="profile_appgroups_manage">App groups</string>
+    <string name="profile_appgroup_manage">Manage app group</string>
+    <string name="wireless_networks_settings_title">Wireless &amp; networks</string>
+
+    <!-- Title for application group setting screen -->
+    <string name="profile_appgroups_title">App groups</string>
+    <string name="profile_new_appgroup">New app group</string>
+    <string name="profile_delete_appgroup">Delete this app group?</string>
+    <string name="profile_appgroup_name_prompt">Enter a name for the new app group</string>
+    <string name="profile_appgroup_name_title">Name</string>
+    <string name="duplicate_appgroup_name">Duplicate app group name!</string>
+    <string name="profile_app_delete_confirm">Remove this app?</string>
+    <string name="no_bluetooth_triggers">No Bluetooth devices paired.\nTap to pair Bluetooth device before configuring triggers.</string>
+    <string name="no_wifi_triggers">No Wi\u2011Fi access points configured.\nTap to connect Wi\u2011Fi before configuring triggers.</string>
+    <string name="no_triggers_configured">No triggers configured. Tap to add more.</string>
+    <string name="no_triggers_configured_nfc">Tap to setup a new NFC trigger.</string>
+
+    <string name="profile_setup_setup_triggers_description">Please select triggers which will activate this profile</string>
+    <string name="profile_setup_actions_description">Now configure what happens when the profile is activated</string>
+
+    <!-- Profiles settings  -->
+    <string name="profiles_settings_title">System profiles</string>
+    <string name="profiles_add">Add</string>
+    <string name="profile_menu_delete">Delete</string>
+    <string name="profile_settings_title">Profile</string>
+    <string name="profile_empty_list_profiles_off">To configure and use system profiles, turn profiles on.</string>
+    <string name="profile_trigger_configure">Configure trigger</string>
+    <string name="profile_write_nfc_tag">Write to NFC tag</string>
+    <string name="profile_write_touch_tag">Touch tag to write</string>
+    <string name="profile_write_success">Tag successfully written</string>
+    <string name="profile_write_failed">Tag writing failed!</string>
+    <string name="profile_selected">Profile selected: %1$s</string>
+    <string name="profile_nfc_text">Writing a profile to a NFC tag allows for tapping the tag to select the profile. Tapping a second time will select the previously selected profile.</string>
+    <string name="profile_unknown_nfc_tag">Unknown profile</string>
+    <string name="profile_add_nfc_text">This NFC tag refers to an unknown profile. Attaching this NFC tag to an existing profile will allow for selecting the profile in the future.</string>
+    <string name="profile_select">Select profile</string>
+    <string name="profile_remove_dialog_message">Remove profile %1$s?</string>
+    <string name="profile_populate_profile_from_state">Configure profile using current device settings?</string>
+    <string name="profile_menu_fill_from_state">Import current device settings</string>
+    <string name="profile_remove_current_profile">Cannot delete current profile!</string>
+    <string name="profile_app_group_category_title">Notification overrides</string>
+    <string name="profile_app_group_item_instructions">Add or remove groups</string>
+    <string name="profile_app_group_item_instructions_summary">Add or remove notification override app groups to this profile</string>
+
+    <!-- Profile mode options. -->
+    <string name="profile_entries_on">On</string>
+    <string name="profile_entries_off">Off</string>
+    <string name="profile_entries_no_override">No override</string>
+
+    <!-- Add Profile -->
+    <string name="profile_name_title">Name</string>
+    <string name="new_profile_name">&lt;new profile&gt;</string>
+
+    <!-- Rename Dialog  -->
+    <string name="rename_dialog_title">Rename</string>
+    <string name="rename_dialog_message">Enter a new name</string>
+    <string name="duplicate_appgroup_name">Duplicate app group name!</string>
+    <string name="rename_dialog_hint">Enter profile name</string>
+
+    <!-- Reset Profiles -->
+    <string name="profile_reset_title">Reset</string>
+    <string name="profile_reset_message">Delete all user created profiles and app groups and restore them to default?</string>
+
+    <!-- Delete confimation messages -->
+    <string name="profile_app_delete_confirm">Remove this app?</string>
+
+    <!-- Profile network mode -->
+    <string name="profile_networkmode_2g">2G</string>
+    <string name="profile_networkmode_3g">3G</string>
+    <string name="profile_networkmode_4g">LTE</string>
+    <string name="profile_networkmode_2g3g">2G/3G</string>
+    <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
+
+    <!-- Profile Config screen PreferenceGroup titles -->
+    <string name="profile_volumeoverrides_title">Volume overrides</string>
+    <string name="connection_state_enabled">Enable</string>
+    <string name="volume_override_summary">Set to %1$s/%2$s</string>
+    <string name="profile_volume_override_checkbox_label">Override volume</string>
+
+    <!-- Menu item for managing profiles -->
+    <string name="profile_profiles_manage">Profiles</string>
+    <string name="profile_profile_manage">Manage profile</string>
+    <string name="profile_appgroups_manage">App groups</string>
+    <string name="profile_appgroup_manage">Manage app group</string>
+
+    <!-- Profile settings screen, section header for settings related to notification profiles -->
+    <string name="profile_settings">Profile settings</string>
+    <string name="profile_trigger_connect">On connect</string>
+    <string name="profile_trigger_disconnect">On disconnect</string>
+    <string name="profile_trigger_notrigger">No trigger</string>
+
+    <!-- Profile Settings sound modes labels -->
+    <string name="sound_mode">Notification mode</string>
+    <string name="ringer_mode">Ring mode</string>
+    <string name="lights_mode">Lights mode</string>
+    <string name="vibrate_mode">Vibrate mode</string>
+    <string name="choose_soundtone">Choose notification tone</string>
+    <string name="choose_ringtone">Choose ringtone</string>
+    <string name="ringtone_title">Phone ringtone</string>
+    <string name="ringtone_summary">""</string>
+
+    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
+    <string name="soundtone_title">Notification tone</string>
+    <string name="soundtone_summary" translatable="false">""</string>
+
+    <!-- Title for application group setting screen -->
+    <string name="profile_appgroups_title">App groups</string>
+    <string name="profile_applist_title">Apps</string>
+    <string name="profile_new_appgroup">New app group</string>
+    <string name="profile_delete_appgroup">Delete this app group?</string>
+    <string name="profile_appgroup_name_prompt">Enter a name for the new app group</string>
+    <string name="profile_appgroup_name_title">Name</string>
+
+    <!-- Add application dialog box title -->
+    <string name="profile_choose_app">Choose app</string>
+
+   <!-- Profiles - system settings -->
+    <string name="profile_system_settings_title">System settings</string>
+    <string name="profile_lockmode_title">Lock screen mode</string>
+    <string name="profile_lockmode_policy_disabled_summary">This profile option is disabled by a device administrator policy</string>
+    <string name="profile_lockmode_insecure_summary">Don\'t ask for PIN or password</string>
+    <string name="profile_lockmode_disabled_summary">Disable lock screen</string>
+    <string name="profile_airplanemode_title">Airplane mode</string>
+
+    <string name="profile_brightness_title">Screen brightness</string>
+
+    <string name="profile_brightness_override_summary">Set to %1$d%%</string>
+    <string name="profile_brightness_override_checkbox_label">Override brightness</string>
+
+    <!-- Connection override toggles (not all are used at this time ) -->
+    <string name="toggleWifi">Wi\u2011Fi</string>
+    <string name="toggleWifiAp">Portable Wi\u2011Fi hotspot</string>
+    <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleGPS">GPS</string>
+    <string name="toggleData">Data connection</string>
+    <string name="toggleSync">Auto-sync data</string>
+    <string name="toggle2g3g4g">Preferred network type</string>
+    <string name="toggle2g3g4g_msim">Preferred network type (%1$s)</string>
+    <string name="toggleNfc">NFC</string>
+
+    <!-- Sound settings screen -->
+    <string name="ring_mode_title">Ring mode</string>
+    <string name="ring_mode_normal">Normal</string>
+    <string name="ring_mode_vibrate">Vibrate</string>
+    <string name="ring_mode_mute">Mute</string>
+    <string name="ring_volume_title">Ringer volume</string>
+    <string name="incoming_call_volume_title">Ringtone</string>
+    <string name="notification_volume_title">Notification</string>
+    <string name="media_volume_title">Media</string>
+    <string name="alarm_volume_title">Alarm</string>
+    <string name="doze_title">Ambient display</string>
 
 </resources>
 
