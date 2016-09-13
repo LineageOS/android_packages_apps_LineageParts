@@ -78,6 +78,7 @@
     <string name="pulse_speed_very_slow">Very slow</string>
 
     <!-- Battery light settings -->
+    <string name="battery_light_title">Battery light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_list_title">Colors</string>
     <string name="battery_light_low_color_title">Battery low</string>
@@ -85,6 +86,7 @@
     <string name="battery_light_full_color_title">Fully charged</string>
 
     <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_advanced_title">Advanced</string>
     <string name="notification_light_applist_title">Apps</string>
@@ -411,5 +413,3 @@
     <string name="doze_title">Ambient display</string>
 
 </resources>
-
-

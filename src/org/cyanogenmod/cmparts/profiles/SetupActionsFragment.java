@@ -689,7 +689,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             }
         }
 
-        builder.setTitle(org.cyanogenmod.platform.internal.R.string.notification_light_title);
+        builder.setTitle(R.string.notification_light_title);
         builder.setSingleChoiceItems(notificationLightEntries, defaultIndex,
                 new DialogInterface.OnClickListener() {
                     @Override

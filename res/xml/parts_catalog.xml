@@ -18,11 +18,11 @@
 <parts-catalog xmlns:android="http://schemas.android.com/apk/res/android">
 
     <part android:key="battery_lights"
-          android:title="@*cyanogenmod.platform:string/battery_light_title"
+          android:title="@string/battery_light_title"
           android:fragment="org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings" />
 
     <part android:key="notification_lights"
-          android:title="@*cyanogenmod.platform:string/notification_light_title"
+          android:title="@string/notification_light_title"
           android:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings" />
 
     <part android:key="livedisplay"

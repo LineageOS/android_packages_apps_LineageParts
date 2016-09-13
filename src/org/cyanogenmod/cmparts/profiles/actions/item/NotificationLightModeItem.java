@@ -39,7 +39,7 @@ public class NotificationLightModeItem extends BaseItem {
 
     @Override
     public String getTitle() {
-        return getString(org.cyanogenmod.platform.internal.R.string.notification_light_title);
+        return getString(R.string.notification_light_title);
     }
 
     @Override

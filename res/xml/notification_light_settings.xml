@@ -16,7 +16,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="notification_light"
-        android:title="@*cyanogenmod.platform:string/notification_light_title">
+        android:title="@string/notification_light_title">
 
     <PreferenceCategory
         android:key="general_section"
@@ -24,7 +24,7 @@
 
         <cyanogenmod.preference.SystemSettingSwitchPreference
             android:key="notification_light_pulse"
-            android:title="@*cyanogenmod.platform:string/notification_light_title" />
+            android:title="@string/notification_light_title" />
 
         <cyanogenmod.preference.CMSystemSettingSwitchPreference
             android:key="notification_light_color_auto"

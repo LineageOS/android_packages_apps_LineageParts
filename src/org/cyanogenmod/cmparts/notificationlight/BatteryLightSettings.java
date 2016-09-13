@@ -58,10 +58,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         addPreferencesFromResource(R.xml.battery_light_settings);
-        getActivity().getActionBar().setTitle(
-                org.cyanogenmod.platform.internal.R.string.battery_light_title);
+        getActivity().getActionBar().setTitle(R.string.battery_light_title);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
