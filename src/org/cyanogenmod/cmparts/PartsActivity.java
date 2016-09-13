@@ -28,15 +28,22 @@ import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.v14.preference.PreferenceFragment;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 import org.cyanogenmod.cmparts.profiles.NFCProfileTagCallback;
 import org.cyanogenmod.internal.cmparts.IPartsCatalog;
 import org.cyanogenmod.internal.cmparts.PartInfo;
 
-public class PartsActivity extends Activity {
+public class PartsActivity extends SettingsDrawerActivity implements
+        PreferenceFragment.OnPreferenceStartFragmentCallback,
+        PreferenceFragment.OnPreferenceStartScreenCallback {
 
     private static final String TAG = "PartsActivity";
 
@@ -56,10 +63,7 @@ public class PartsActivity extends Activity {
 
     private NFCProfileTagCallback mNfcProfileCallback;
 
-    private ActionBar mActionBar;
-    private SwitchBar mSwitchBar;
     private CharSequence mInitialTitle;
-    private int mInitialTitleResId;
 
     @Override
     public void onCreate(Bundle bundle) {
@@ -74,6 +78,7 @@ public class PartsActivity extends Activity {
         String fragmentClass = getIntent().getStringExtra(EXTRA_SHOW_FRAGMENT);
         String component = getIntent().getComponent().getClassName();
         Bundle initialArgs = getIntent().getBundleExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS);
+        boolean homeAsUp = true;
 
         Log.d(TAG, "Launched with: " + getIntent().toString() + " action: " +
                 getIntent().getAction() + " component: " + component +
@@ -91,6 +96,7 @@ public class PartsActivity extends Activity {
                 // Alias mode
                 info = PartsCatalog.getPartInfoForClass(getResources(),
                         getIntent().getComponent().getClassName());
+                homeAsUp = false;
             }
             if (info == null) {
                 throw new UnsupportedOperationException("Unable to get part info: " + getIntent().toString());
@@ -104,13 +110,34 @@ public class PartsActivity extends Activity {
 
         setTitleFromIntent(getIntent(), info);
 
-        switchToFragment(fragmentClass, initialArgs, mInitialTitleResId, mInitialTitle);
+        switchToFragment(fragmentClass, initialArgs, -1, mInitialTitle);
+
+        showHomeAsUp(homeAsUp);
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
         disconnectCatalog();
+    }
+
+    @Override
+    public boolean onPreferenceStartFragment(PreferenceFragment caller, Preference pref) {
+        startPreferencePanel(pref.getFragment(), pref.getExtras(), -1, pref.getTitle(),
+                null, 0);
+        return true;
+    }
+
+    @Override
+    public boolean onPreferenceStartScreen(PreferenceFragment caller, PreferenceScreen pref) {
+        startPreferencePanel(pref.getFragment(), pref.getExtras(), -1, pref.getTitle(),
+                null, 0);
+        return true;
+    }
+
+    private void showHomeAsUp(boolean on) {
+        getActionBar().setDisplayHomeAsUpEnabled(on);
+        getActionBar().setHomeButtonEnabled(on);
     }
 
     private void connectCatalog() {
@@ -150,8 +177,13 @@ public class PartsActivity extends Activity {
         super.onNewIntent(intent);
     }
 
-    public SwitchBar getSwitchBar() {
-        return mSwitchBar;
+    @Override
+    public void onBackPressed() {
+        setTitle(mInitialTitle);
+
+        if (!getFragmentManager().popBackStackImmediate()) {
+            super.onBackPressed();
+        }
     }
 
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
@@ -175,7 +207,7 @@ public class PartsActivity extends Activity {
         if (resultTo == null) {
             startActivity(intent);
         } else {
-            startActivityForResult(intent, resultRequestCode);
+            resultTo.startActivityForResult(intent, resultRequestCode);
         }
     }
 
@@ -184,29 +216,32 @@ public class PartsActivity extends Activity {
         finish();
     }
 
-    public void switchToFragment(String fragmentClass, Bundle args, int titleRes, CharSequence titleText) {
-        Log.d(TAG, "Launching fragment: " + fragmentClass);
-
+    public boolean switchToFragment(String fragmentClass, Bundle args, int titleRes,
+                                    CharSequence titleText) {
         Fragment fragment = Fragment.instantiate(this, fragmentClass);
         if (fragment == null) {
             Log.e(TAG, "Invalid fragment! " + fragmentClass);
-            return;
+            return false;
         }
+        return switchToFragment(fragment, args, titleRes, titleText);
+    }
+
+    private  boolean switchToFragment(Fragment fragment, Bundle args, int titleRes,
+                                    CharSequence titleText) {
+        Log.d(TAG, "Launching fragment: " + fragment.getClass().getName());
+
         fragment.setArguments(args);
 
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.main_content, fragment);
-        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         if (titleRes > 0) {
             transaction.setBreadCrumbTitle(titleRes);
         } else if (titleText != null) {
             transaction.setBreadCrumbTitle(titleText);
         }
-
-        transaction.commitAllowingStateLoss();
-        getFragmentManager().executePendingTransactions();
-
-        refreshBars();
+        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        transaction.commit();
+        return true;
     }
 
 
@@ -222,39 +257,23 @@ public class PartsActivity extends Activity {
         findViewById(R.id.button_bar).setVisibility(show ? View.VISIBLE : View.GONE);
     }
 
-    private void refreshBars() {
-        mSwitchBar = (SwitchBar) findViewById(R.id.switch_bar);
-        mActionBar = getActionBar();
-        if (mActionBar != null) {
-            mActionBar.setDisplayHomeAsUpEnabled(true);
-            mActionBar.setHomeButtonEnabled(true);
-        }
-    }
-
-    private void setTitleFromPart(PartInfo part) {
-        mInitialTitleResId = 0;
-        mInitialTitle = part.getTitle();
-        setTitle(mInitialTitle);
+    public SwitchBar getSwitchBar() {
+        return (SwitchBar) findViewById(R.id.switch_bar);
     }
 
     private void setTitleFromIntent(Intent intent, PartInfo part) {
         if (part != null) {
-            mInitialTitleResId = -1;
             mInitialTitle = part.getTitle();
-            setTitle(mInitialTitle);
         } else {
             final int initialTitleResId = intent.getIntExtra(EXTRA_SHOW_FRAGMENT_TITLE_RESID, -1);
             if (initialTitleResId > 0) {
-                mInitialTitle = null;
-                mInitialTitleResId = initialTitleResId;
-                setTitle(mInitialTitleResId);
+                mInitialTitle = getResources().getString(initialTitleResId);
             } else {
-                mInitialTitleResId = -1;
                 final String initialTitle = intent.getStringExtra(EXTRA_SHOW_FRAGMENT_TITLE);
                 mInitialTitle = (initialTitle != null) ? initialTitle : getTitle();
-                setTitle(mInitialTitle);
             }
         }
+        setTitle(mInitialTitle);
     }
 }
 
