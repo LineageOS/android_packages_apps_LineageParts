@@ -16,18 +16,12 @@
 
 package org.cyanogenmod.cmparts;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.os.Bundle;
-import android.os.IBinder;
 import android.support.v14.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -38,18 +32,14 @@ import android.widget.Button;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 import org.cyanogenmod.cmparts.profiles.NFCProfileTagCallback;
-import org.cyanogenmod.internal.cmparts.IPartsCatalog;
 import org.cyanogenmod.internal.cmparts.PartInfo;
+import org.cyanogenmod.internal.cmparts.PartsList;
 
 public class PartsActivity extends SettingsDrawerActivity implements
         PreferenceFragment.OnPreferenceStartFragmentCallback,
         PreferenceFragment.OnPreferenceStartScreenCallback {
 
     private static final String TAG = "PartsActivity";
-
-    // Parts mode
-    public static final String ACTION_PART = "org.cyanogenmod.cmparts.PART";
-    public static final String EXTRA_PART = "part";
 
     // Settings compatibility
     public static final String EXTRA_SHOW_FRAGMENT = ":settings:show_fragment";
@@ -59,8 +49,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
     public static final String EXTRA_SHOW_FRAGMENT_TITLE_RESID =
             ":settings:show_fragment_title_resid";
 
-    private IPartsCatalog mCatalog;
-
     private NFCProfileTagCallback mNfcProfileCallback;
 
     private CharSequence mInitialTitle;
@@ -68,13 +56,13 @@ public class PartsActivity extends SettingsDrawerActivity implements
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        connectCatalog();
 
         setContentView(R.layout.cmparts);
 
         PartInfo info = null;
         String action = getIntent().getAction();
-        String partExtra = getIntent().getStringExtra(EXTRA_PART);
+        String partExtra = getIntent().getStringExtra(PartsList.EXTRA_PART_KEY);
+
         String fragmentClass = getIntent().getStringExtra(EXTRA_SHOW_FRAGMENT);
         String component = getIntent().getComponent().getClassName();
         Bundle initialArgs = getIntent().getBundleExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS);
@@ -84,28 +72,30 @@ public class PartsActivity extends SettingsDrawerActivity implements
                 getIntent().getAction() + " component: " + component +
                 " part: " + partExtra + " fragment: " + fragmentClass);
 
-        if (!ACTION_PART.equals(action) && component == null) {
+        if (!PartsList.ACTION_PART.equals(action) && component == null) {
             throw new UnsupportedOperationException("Unknown action: " + getIntent().getAction());
         }
 
         if (fragmentClass == null) {
             if (partExtra != null) {
                 // Parts mode
-                info = PartsCatalog.getPartInfo(getResources(), partExtra);
+                info = PartsList.getPartInfo(this, partExtra);
             } else {
                 // Alias mode
-                info = PartsCatalog.getPartInfoForClass(getResources(),
+                info = PartsList.getPartInfoForClass(this,
                         getIntent().getComponent().getClassName());
                 homeAsUp = false;
             }
             if (info == null) {
-                throw new UnsupportedOperationException("Unable to get part info: " + getIntent().toString());
+                throw new UnsupportedOperationException(
+                        "Unable to get part info: " + getIntent().toString());
             }
             fragmentClass = info.getFragmentClass();
         }
 
         if (fragmentClass == null) {
-            throw new UnsupportedOperationException("Unable to get fragment class: " + getIntent().toString());
+            throw new UnsupportedOperationException(
+                    "Unable to get fragment class: " + getIntent().toString());
         }
 
         setTitleFromIntent(getIntent(), info);
@@ -118,7 +108,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
     @Override
     public void onDestroy() {
         super.onDestroy();
-        disconnectCatalog();
     }
 
     @Override
@@ -139,27 +128,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
         getActionBar().setDisplayHomeAsUpEnabled(on);
         getActionBar().setHomeButtonEnabled(on);
     }
-
-    private void connectCatalog() {
-        Intent i = new Intent(this, PartsCatalog.class);
-        bindService(i, mConnection, Context.BIND_AUTO_CREATE);
-    }
-
-    private void disconnectCatalog() {
-        unbindService(mConnection);
-    }
-
-    private final ServiceConnection mConnection = new ServiceConnection() {
-        @Override
-        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            mCatalog = IPartsCatalog.Stub.asInterface(iBinder);
-        }
-
-        @Override
-        public void onServiceDisconnected(ComponentName componentName) {
-            mCatalog = null;
-        }
-    };
 
     public void setNfcProfileCallback(NFCProfileTagCallback callback) {
         mNfcProfileCallback = callback;
@@ -186,6 +154,13 @@ public class PartsActivity extends SettingsDrawerActivity implements
         }
     }
 
+    public void notifyPartChanged(PartInfo part) {
+        Intent i = new Intent(PartsList.ACTION_PART_CHANGED);
+        i.getExtras().putString(PartsList.EXTRA_PART_KEY, part.getName());
+        i.getExtras().putParcelable(PartsList.EXTRA_PART, part);
+        sendBroadcast(i);
+    }
+
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
                                      CharSequence titleText, Fragment resultTo, int resultRequestCode) {
         String title = null;
@@ -198,7 +173,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
             }
         }
 
-        Intent intent = new Intent(ACTION_PART);
+        Intent intent = new Intent(PartsList.ACTION_PART);
         intent.putExtra(EXTRA_SHOW_FRAGMENT, fragmentClass);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS, args);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleRes);

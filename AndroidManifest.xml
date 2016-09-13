@@ -37,6 +37,7 @@
     <uses-permission android:name="cyanogenmod.permission.BIND_CORE_SERVICE" />
 
     <protected-broadcast android:name="cyanogenmod.platform.app.profiles.PROFILES_STATE_CHANGED" />
+    <protected-broadcast android:name="org.cyanogenmod.cmparts.PART_CHANGED" />
 
     <application android:label="@string/cmparts_title"
             android:theme="@style/Theme.Settings"

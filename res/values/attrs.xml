@@ -53,14 +53,4 @@
         <attr name="digits" format="integer" />
     </declare-styleable>
 
-    <declare-styleable name="PartsCatalog">
-        <attr name="key" format="string" />
-        <attr name="title" />
-        <attr name="summary" format="string" />
-        <attr name="fragment" format="string" />
-        <attr name="enabled" format="boolean" />
-        <attr name="icon" />
-        <attr name="alias" format="string" />
-    </declare-styleable>
-
 </resources>

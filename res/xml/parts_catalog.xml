@@ -15,27 +15,27 @@
      limitations under the License.
 -->
 
-<parts-catalog xmlns:cm="http://schemas.android.com/apk/res-auto">
+<parts-catalog xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <part cm:key="battery_lights"
-          cm:title="@*cyanogenmod.platform:string/battery_light_title"
-          cm:fragment="org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings" />
+    <part android:key="battery_lights"
+          android:title="@*cyanogenmod.platform:string/battery_light_title"
+          android:fragment="org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings" />
 
-    <part cm:key="notification_lights"
-          cm:title="@*cyanogenmod.platform:string/notification_light_title"
-          cm:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings" />
+    <part android:key="notification_lights"
+          android:title="@*cyanogenmod.platform:string/notification_light_title"
+          android:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings" />
 
     <part android:key="livedisplay"
           android:title="@*cyanogenmod.platform:string/live_display_title"
           android:summary="@string/live_display_summary"
           android:fragment="org.cyanogenmod.cmparts.livedisplay.LiveDisplay" />
 
-    <part cm:key="button_settings"
-          cm:title="@string/button_pref_title"
-          cm:fragment="org.cyanogenmod.cmparts.input.ButtonSettings" />
+    <part android:key="button_settings"
+          android:title="@string/button_pref_title"
+          android:fragment="org.cyanogenmod.cmparts.input.ButtonSettings" />
 
-    <part cm:key="profiles_settings"
-          cm:title="@string/profiles_settings_title"
-          cm:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings" />
+    <part android:key="profiles_settings"
+          android:title="@string/profiles_settings_title"
+          android:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings" />
 
 </parts-catalog>
