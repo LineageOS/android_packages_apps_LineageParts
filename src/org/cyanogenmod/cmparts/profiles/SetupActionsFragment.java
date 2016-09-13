@@ -88,7 +88,6 @@ import org.cyanogenmod.cmparts.profiles.actions.item.TriggerItem;
 import org.cyanogenmod.cmparts.profiles.actions.item.VolumeStreamItem;
 import org.cyanogenmod.cmparts.utils.DeviceUtils;
 import org.cyanogenmod.cmparts.utils.TelephonyUtils;
-import org.cyanogenmod.cmparts.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -270,7 +269,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mItems.add(new BrightnessItem(mProfile.getBrightness()));
 
         final Activity activity = getActivity();
-        if (Utils.isDozeAvailable(activity)) {
+        if (DeviceUtils.isDozeAvailable(activity)) {
             mItems.add(new DozeModeItem(mProfile));
         }
 

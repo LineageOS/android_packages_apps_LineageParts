@@ -40,7 +40,8 @@ import android.view.WindowManagerGlobal;
 
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.cmparts.Utils;
+import org.cyanogenmod.cmparts.utils.DeviceUtils;
+import org.cyanogenmod.cmparts.utils.TelephonyUtils;
 import org.cyanogenmod.internal.util.ScreenType;
 
 import java.util.List;
@@ -234,7 +235,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
 
         if (hasPowerKey) {
-            if (!Utils.isVoiceCapable(getActivity())) {
+            if (!TelephonyUtils.isVoiceCapable(getActivity())) {
                 powerCategory.removePreference(mPowerEndCall);
                 mPowerEndCall = null;
             }
@@ -258,7 +259,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 homeCategory.removePreference(findPreference(CMSettings.System.HOME_WAKE_SCREEN));
             }
 
-            if (!Utils.isVoiceCapable(getActivity())) {
+            if (!TelephonyUtils.isVoiceCapable(getActivity())) {
                 homeCategory.removePreference(mHomeAnswerCall);
                 mHomeAnswerCall = null;
             }
@@ -374,7 +375,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(cameraCategory);
         }
 
-        if (Utils.hasVolumeRocker(getActivity())) {
+        if (DeviceUtils.hasVolumeRocker(getActivity())) {
             if (!showVolumeWake) {
                 volumeCategory.removePreference(findPreference(CMSettings.System.VOLUME_WAKE_SCREEN));
             }

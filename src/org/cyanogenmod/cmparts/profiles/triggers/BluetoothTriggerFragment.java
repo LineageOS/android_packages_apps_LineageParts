@@ -38,7 +38,6 @@ import cyanogenmod.app.Profile;
 import cyanogenmod.app.ProfileManager;
 
 import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.Utils;
 import org.cyanogenmod.cmparts.profiles.ProfilesSettings;
 
 import java.util.ArrayList;
