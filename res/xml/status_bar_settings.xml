@@ -25,7 +25,9 @@
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.TunerActivity$StatusBarIconActivity" />
+            android:targetClass="com.android.systemui.tuner.TunerActivity">
+            <extra android:name="tuner" android:value="status_bar" />
+        </intent>
     </PreferenceScreen>
 
     <cyanogenmod.preference.CMSystemSettingListPreference
