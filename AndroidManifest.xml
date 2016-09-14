@@ -103,7 +103,7 @@
             android:name=".profiles.ProfilesSettings"
             android:label="@string/profiles_settings_title"
             android:targetActivity="PartsActivity">
-            <intent-filter>
+            <intent-filter android:priority="-2">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
                 <action android:name="org.cyanogenmod.cmparts.PROFILES_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -114,6 +114,24 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_profiles" />
+        </activity-alias>
+
+        <!-- Status bar settings (dashboard) -->
+        <activity-alias
+            android:name=".statusbar.StatusBarSettings"
+            android:label="@string/status_bar_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="org.cyanogenmod.cmparts.STATUS_BAR_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.personal" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_statusbar" />
         </activity-alias>
 
     </application>

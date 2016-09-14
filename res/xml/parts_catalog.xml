@@ -38,4 +38,8 @@
           android:title="@string/profiles_settings_title"
           android:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings" />
 
+    <part android:key="status_bar_settings"
+          android:title="@string/status_bar_title"
+          android:fragment="org.cyanogenmod.cmparts.statusbar.StatusBarSettings" />
+
 </parts-catalog>
