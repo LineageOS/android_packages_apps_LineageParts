@@ -216,7 +216,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
     private String getStringForResourceName(String resourceName, String defaultValue) {
         Resources res = getResources();
-        int resId = res.getIdentifier(resourceName, "string", "org.cyanogenmod.livedisplay");
+        int resId = res.getIdentifier(resourceName, "string", "org.cyanogenmod.cmparts");
         if (resId <= 0) {
             Log.e(TAG, "No resource found for " + resourceName);
             return defaultValue;
