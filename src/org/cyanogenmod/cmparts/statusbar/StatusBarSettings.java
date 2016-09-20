@@ -19,6 +19,8 @@ import android.content.ContentResolver;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
 import android.view.View;
 
@@ -27,7 +29,8 @@ import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 
 import cyanogenmod.preference.CMSystemSettingListPreference;
 
-public class StatusBarSettings extends SettingsPreferenceFragment {
+public class StatusBarSettings extends SettingsPreferenceFragment
+        implements OnPreferenceChangeListener {
 
     private static final String TAG = "StatusBar";
 
@@ -65,6 +68,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
         enableStatusBarBatteryDependents(mStatusBarBattery.getIntValue(2));
         updatePulldownSummary(mQuickPulldown.getIntValue(0));
     }
@@ -79,6 +83,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
                         R.array.status_bar_clock_style_entries_rtl));
                 mStatusBarClock.setSummary(mStatusBarClock.getEntry());
         }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        int batteryStyle = Integer.valueOf((String) newValue);
+        enableStatusBarBatteryDependents(batteryStyle);
+
+        return true;
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
