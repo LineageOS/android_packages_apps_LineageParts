@@ -447,4 +447,8 @@
     <string name="status_bar_icons_title">Status bar icons</string>
     <string name="status_bar_icons_summary">Control which status bar icons are shown</string>
 
+    <!-- Protected apps -->
+    <string name="protected_apps_manager_title">Protected apps</string>
+    <string name="protected_apps_manager_summary">Manage which apps are hidden behind a secure lock</string>
+
 </resources>

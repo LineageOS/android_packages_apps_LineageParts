@@ -30,6 +30,10 @@
           android:summary="@string/live_display_summary"
           android:fragment="org.cyanogenmod.cmparts.livedisplay.LiveDisplay" />
 
+    <part android:key="privacy_settings"
+          android:title="@string/privacy_settings_title"
+          android:fragment="org.cyanogenmod.cmparts.PrivacySettings" />
+
     <part android:key="button_settings"
           android:title="@string/button_pref_title"
           android:fragment="org.cyanogenmod.cmparts.input.ButtonSettings" />

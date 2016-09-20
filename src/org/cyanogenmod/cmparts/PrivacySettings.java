@@ -17,23 +17,16 @@
 package org.cyanogenmod.cmparts;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
-import android.preference.PreferenceActivity.Header;
-
-import java.util.List;
 
 /**
  * Privacy settings
  */
-public class PrivacySettings extends PreferenceActivity {
+public class PrivacySettings extends SettingsPreferenceFragment {
 
     @Override
-    public void onBuildHeaders(List<Header> target) {
-        loadHeadersFromResource(R.xml.privacy_settings, target);
-    }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    @Override
-    public boolean isValidFragment(String fragmentName) {
-        return fragmentName.startsWith("org.cyanogenmod.cmparts.privacy");
+        addPreferencesFromResource(R.xml.privacy_settings);
     }
 }

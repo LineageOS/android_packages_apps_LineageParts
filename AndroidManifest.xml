@@ -64,10 +64,11 @@
 
 
         <!-- Privacy settings (dashboard) -->
-        <activity
+        <activity-alias
             android:name="PrivacySettings"
-            android:label="@string/privacy_settings_title">
-            <intent-filter android:priority="1">
+            android:label="@string/privacy_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="-2">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
                 <action android:name="org.cyanogenmod.cmparts.PRIVACY_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -78,7 +79,7 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_privacy" />
-        </activity>
+        </activity-alias>
 
         <!-- Button settings (dashboard) -->
         <activity-alias
