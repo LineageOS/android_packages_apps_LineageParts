@@ -21,33 +21,37 @@
           android:title="@string/battery_light_title"
           android:fragment="org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings" />
 
-    <part android:key="notification_lights"
-          android:title="@string/notification_light_title"
-          android:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings" />
+    <part android:key="button_settings"
+          android:title="@string/button_pref_title"
+          android:fragment="org.cyanogenmod.cmparts.input.ButtonSettings" />
+
+    <part android:key="contributors"
+          android:title="@string/contributors_cloud_fragment_title"
+          android:fragment="org.cyanogenmod.cmparts.contributors.ContributorsCloudFragment" />
 
     <part android:key="livedisplay"
           android:title="@*cyanogenmod.platform:string/live_display_title"
           android:summary="@string/live_display_summary"
           android:fragment="org.cyanogenmod.cmparts.livedisplay.LiveDisplay" />
 
+    <part android:key="notification_lights"
+          android:title="@string/notification_light_title"
+          android:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings" />
+
     <part android:key="privacy_settings"
           android:title="@string/privacy_settings_title"
           android:fragment="org.cyanogenmod.cmparts.PrivacySettings" />
-
-    <part android:key="button_settings"
-          android:title="@string/button_pref_title"
-          android:fragment="org.cyanogenmod.cmparts.input.ButtonSettings" />
 
     <part android:key="profiles_settings"
           android:title="@string/profiles_settings_title"
           android:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings" />
 
+    <part android:key="rotation"
+          android:title="@string/display_rotation_title"
+          android:fragment="org.cyanogenmod.cmparts.hardware.DisplayRotation" />
+
     <part android:key="status_bar_settings"
           android:title="@string/status_bar_title"
           android:fragment="org.cyanogenmod.cmparts.statusbar.StatusBarSettings" />
-
-    <part android:key="contributors"
-          android:title="@string/contributors_cloud_fragment_title"
-          android:fragment="org.cyanogenmod.cmparts.contributors.ContributorsCloudFragment" />
 
 </parts-catalog>
