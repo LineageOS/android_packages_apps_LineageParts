@@ -2,10 +2,12 @@
 -keep class org.cyanogenmod.cmparts.*Fragment
 -keep class org.cyanogenmod.cmparts.*Picker
 -keep class org.cyanogenmod.cmparts.*Settings
--keep class org.cyanogenmod.cmparts.notificationlight.*
--keep class org.cyanogenmod.cmparts.livedisplay.*
--keep class org.cyanogenmod.cmparts.privacyguard.*
+
+-keep class org.cyanogenmod.cmparts.contributors.*
 -keep class org.cyanogenmod.cmparts.input.*
+-keep class org.cyanogenmod.cmparts.livedisplay.*
+-keep class org.cyanogenmod.cmparts.notificationlight.*
+-keep class org.cyanogenmod.cmparts.privacyguard.*
 -keep class org.cyanogenmod.cmparts.profiles.*
 
 # Keep click responders

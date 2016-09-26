@@ -46,4 +46,8 @@
           android:title="@string/status_bar_title"
           android:fragment="org.cyanogenmod.cmparts.statusbar.StatusBarSettings" />
 
+    <part android:key="contributors"
+          android:title="@string/contributors_cloud_fragment_title"
+          android:fragment="org.cyanogenmod.cmparts.contributors.ContributorsCloudFragment" />
+
 </parts-catalog>
