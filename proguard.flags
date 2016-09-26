@@ -3,6 +3,7 @@
 -keep class org.cyanogenmod.cmparts.*Picker
 -keep class org.cyanogenmod.cmparts.*Settings
 
+-keep class org.cyanogenmod.cmparts.cmstats.*
 -keep class org.cyanogenmod.cmparts.contributors.*
 -keep class org.cyanogenmod.cmparts.input.*
 -keep class org.cyanogenmod.cmparts.livedisplay.*
