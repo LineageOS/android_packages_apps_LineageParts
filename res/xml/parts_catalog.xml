@@ -93,4 +93,10 @@
           android:fragment="org.cyanogenmod.cmparts.weather.WeatherServiceSettings"
           cm:xmlRes="@xml/weather_settings" />
 
+    <part android:key="perf_profile_settings"
+          android:title="@string/perf_profile_settings_title"
+          android:summary="@string/perf_profile_settings_summary"
+          android:fragment="org.cyanogenmod.cmparts.power.PerfProfileSettings"
+          cm:xmlRes="@xml/perf_profile_settings" />
+
 </parts-catalog>

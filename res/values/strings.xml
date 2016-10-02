@@ -531,4 +531,16 @@
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Display the current temperature on the status bar</string>
 
+    <!-- Power: Performance profiles -->
+    <string name="perf_profile_settings_title">Battery profiles</string>
+    <string name="perf_profile_settings_summary">Tweak your device\'s performance to suit your needs</string>
+    <string name="perf_profile_title">Battery profile</string>
+    <string name="perf_profile_fail_toast">The battery profile is currently unavailable</string>
+    <string name="power_save_title">Power save mode</string>
+    <string name="power_save_summary">Restrict device performance and background activity to save power</string>
+    <string name="auto_power_save_title">Battery saver</string>
+    <string name="auto_power_save_summary_on">Automatically enable power save mode at %d percent battery</string>
+    <string name="auto_power_save_summary_off">Never enable power save mode automatically</string>
+    <string name="app_perf_profiles_title">Enable per-app profiles</string>
+    <string name="app_perf_profiles_summary">Automatically choose an appropriate battery profile for various apps</string>
 </resources>
