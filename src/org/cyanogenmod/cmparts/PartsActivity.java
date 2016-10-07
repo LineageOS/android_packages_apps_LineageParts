@@ -54,6 +54,8 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
     private CharSequence mInitialTitle;
 
+    private boolean mHomeAsUp = true;
+
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
@@ -67,7 +69,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
         String fragmentClass = getIntent().getStringExtra(EXTRA_SHOW_FRAGMENT);
         String component = getIntent().getComponent().getClassName();
         Bundle initialArgs = getIntent().getBundleExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS);
-        boolean homeAsUp = true;
 
         Log.d(TAG, "Launched with: " + getIntent().toString() + " action: " +
                 getIntent().getAction() + " component: " + component +
@@ -85,7 +86,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
                 // Alias mode
                 info = PartsList.getPartInfoForClass(this,
                         getIntent().getComponent().getClassName());
-                homeAsUp = false;
+                mHomeAsUp = false;
             }
             if (info == null) {
                 throw new UnsupportedOperationException(
@@ -103,7 +104,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
         switchToFragment(fragmentClass, initialArgs, -1, mInitialTitle);
 
-        showHomeAsUp(homeAsUp);
+        getActionBar().setDisplayHomeAsUpEnabled(mHomeAsUp);
     }
 
     @Override
@@ -123,11 +124,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
         startPreferencePanel(pref.getFragment(), pref.getExtras(), -1, pref.getTitle(),
                 null, 0);
         return true;
-    }
-
-    private void showHomeAsUp(boolean on) {
-        getActionBar().setDisplayHomeAsUpEnabled(on);
-        getActionBar().setHomeButtonEnabled(on);
     }
 
     public void setNfcProfileCallback(NFCProfileTagCallback callback) {
@@ -157,7 +153,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
+        if (item.getItemId() == android.R.id.home && mHomeAsUp) {
             onBackPressed();
             return true;
         }
