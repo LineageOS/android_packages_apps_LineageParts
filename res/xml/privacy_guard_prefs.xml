@@ -15,7 +15,9 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="privacy_guard_manager"
+    android:title="@*cyanogenmod.platform:string/privacy_guard_manager_title">
 
     <SwitchPreference
         android:key="privacy_guard_default"

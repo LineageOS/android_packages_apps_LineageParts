@@ -15,7 +15,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:key="notification_light"
+        android:key="notification_lights"
         android:title="@string/notification_light_title">
 
     <PreferenceCategory

@@ -16,6 +16,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="cmstats"
     android:title="@string/anonymous_statistics_title">
 
     <cyanogenmod.preference.CMSecureSettingSwitchPreference

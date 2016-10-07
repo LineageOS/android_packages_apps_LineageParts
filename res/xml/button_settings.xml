@@ -14,7 +14,9 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="button_settings"
+        android:title="@string/button_pref_title">
 
     <SwitchPreference
         android:key="disable_nav_keys"

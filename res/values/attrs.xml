@@ -19,11 +19,6 @@
         <attr name="icon" />
     </declare-styleable>
 
-    <!-- For Search -->
-    <declare-styleable name="Preference">
-        <attr name="keywords" format="string" />
-    </declare-styleable>
-
     <!-- For DotsPageIndicator -->
     <declare-styleable name="DotsPageIndicator">
         <attr name="dotDiameter" format="dimension" />

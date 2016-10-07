@@ -15,15 +15,28 @@
      limitations under the License.
 -->
 
-<parts-catalog xmlns:android="http://schemas.android.com/apk/res/android">
+<!--
+     The parts catalog is used to locate items (usually a PreferenceScreen) inside
+     of CMParts. This can be used by CMPartsPreference to create a simple, two-line
+     entry point from Settings or another application. All entries should specify
+     a fragment, which is a SettingsPreferenceFragment subclass inside CMParts.
+
+     Metadata for the search index provider should be provided for all parts. This
+     can be supplied an XML resource in the "cm:xmlRes" attribute or by implementing
+     the Searchable interface.
+-->
+<parts-catalog xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform">
 
     <part android:key="battery_lights"
           android:title="@string/battery_light_title"
-          android:fragment="org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings" />
+          android:fragment="org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings"
+          cm:xmlRes="@xml/battery_light_settings" />
 
     <part android:key="button_settings"
           android:title="@string/button_pref_title"
-          android:fragment="org.cyanogenmod.cmparts.input.ButtonSettings" />
+          android:fragment="org.cyanogenmod.cmparts.input.ButtonSettings"
+          cm:xmlRes="@xml/button_settings" />
 
     <part android:key="contributors"
           android:title="@string/contributors_cloud_fragment_title"
@@ -32,26 +45,47 @@
     <part android:key="livedisplay"
           android:title="@*cyanogenmod.platform:string/live_display_title"
           android:summary="@string/live_display_summary"
-          android:fragment="org.cyanogenmod.cmparts.livedisplay.LiveDisplay" />
+          android:fragment="org.cyanogenmod.cmparts.livedisplay.LiveDisplay"
+          cm:xmlRes="@xml/livedisplay" />
 
     <part android:key="notification_lights"
           android:title="@string/notification_light_title"
-          android:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings" />
+          android:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings"
+          cm:xmlRes="@xml/notification_light_settings" />
 
     <part android:key="privacy_settings"
           android:title="@string/privacy_settings_title"
-          android:fragment="org.cyanogenmod.cmparts.PrivacySettings" />
+          android:fragment="org.cyanogenmod.cmparts.PrivacySettings"
+          cm:xmlRes="@xml/privacy_settings" />
 
     <part android:key="profiles_settings"
           android:title="@string/profiles_settings_title"
-          android:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings" />
+          android:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings"
+          cm:xmlRes="@xml/profiles_settings" />
 
     <part android:key="rotation"
           android:title="@string/display_rotation_title"
-          android:fragment="org.cyanogenmod.cmparts.hardware.DisplayRotation" />
+          android:fragment="org.cyanogenmod.cmparts.hardware.DisplayRotation"
+          cm:xmlRes="@xml/display_rotation" />
 
     <part android:key="status_bar_settings"
           android:title="@string/status_bar_title"
-          android:fragment="org.cyanogenmod.cmparts.statusbar.StatusBarSettings" />
+          android:fragment="org.cyanogenmod.cmparts.statusbar.StatusBarSettings"
+          cm:xmlRes="@xml/status_bar_settings" />
+
+    <part android:key="cmstats"
+          android:title="@string/anonymous_statistics_title"
+          android:fragment="org.cyanogenmod.cmparts.cmstats.AnonymousStats"
+          cm:xmlRes="@xml/anonymous_stats" />
+
+    <part android:key="power_menu"
+          android:title="@string/power_menu_title"
+          android:fragment="org.cyanogenmod.cmparts.input.PowerMenuActions"
+          cm:xmlRes="@xml/power_menu_settings" />
+
+    <part android:key="privacy_guard_manager"
+          android:title="@*cyanogenmod.platform:string/privacy_guard_manager_title"
+          android:fragment="org.cyanogenmod.cmparts.privacyguard.PrivacyGuardManager"
+          cm:xmlRes="@xml/privacy_guard_prefs" />
 
 </parts-catalog>

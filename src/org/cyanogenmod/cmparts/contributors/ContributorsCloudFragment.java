@@ -40,6 +40,7 @@ import android.os.Handler;
 import android.text.Html;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
+import android.util.ArraySet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -50,14 +51,16 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
 
 import org.cyanogenmod.cmparts.R;
+import org.cyanogenmod.cmparts.search.BaseSearchIndexProvider;
+import org.cyanogenmod.cmparts.search.Searchable;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -68,9 +71,10 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 public class ContributorsCloudFragment extends Fragment implements SearchView.OnQueryTextListener,
-        SearchView.OnCloseListener, MenuItem.OnActionExpandListener {
+        SearchView.OnCloseListener, MenuItem.OnActionExpandListener, Searchable {
 
     private static final String TAG = "ContributorsCloud";
 
@@ -767,4 +771,41 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             }
         }
     }
+
+    public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+
+                @Override
+                public Set<String> getSearchKeywords(Context context) {
+
+                    // Index the top 100 contributors, for fun :)
+                    File dbPath = context.getDatabasePath(DB_NAME);
+                    SQLiteDatabase db = null;
+                    try {
+                        db = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
+                                null, SQLiteDatabase.OPEN_READONLY);
+                        if (db == null) {
+                            Log.e(TAG, "Cannot open cloud database: " + DB_NAME + ". db == null");
+                            return null;
+                        }
+                    } catch (Exception e) {
+                        Log.e(TAG, e.getMessage(), e);
+                        if (db != null && db.isOpen()) {
+                            db.close();
+                        }
+                        return null;
+                    }
+
+                    Set<String> result = new ArraySet<>();
+                    Cursor c = db.rawQuery(
+                            "select username from metadata order by commits desc limit 100;", null);
+                    while (c.moveToNext()) {
+                        result.add(c.getString(0));
+                    }
+                    c.close();
+                    db.close();
+
+                    return result;
+                }
+            };
 }

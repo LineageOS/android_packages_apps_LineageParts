@@ -16,5 +16,5 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:key="profiles_list" />
+    android:key="profiles_settings"
+    android:title="@string/profiles_settings_title" />
