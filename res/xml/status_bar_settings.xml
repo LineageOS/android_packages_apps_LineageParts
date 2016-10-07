@@ -80,4 +80,11 @@
         android:entries="@array/status_bar_quick_qs_pulldown_entries"
         android:entryValues="@array/status_bar_quick_qs_pulldown_values" />
 
+    <!-- Double tap to sleep -->
+    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/status_bar_double_tap_to_sleep_title"
+        android:summary="@string/status_bar_double_tap_to_sleep_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
