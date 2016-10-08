@@ -18,6 +18,7 @@ package org.cyanogenmod.cmparts;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
@@ -62,21 +63,32 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
         setContentView(R.layout.cmparts);
 
-        PartInfo info = null;
         String action = getIntent().getAction();
-        String partExtra = getIntent().getStringExtra(PartsList.EXTRA_PART_KEY);
+        ComponentName cn = getIntent().getComponent();
 
+        PartInfo info = null;
+        String partExtra = null;
+
+        // Parts are launched by setting the action to PARTS_ACTION_PREFIX.part_key
+        // and using an explcit intent to get here
+        if (action != null && action.startsWith(PartsList.PARTS_ACTION_PREFIX) &&
+                getClass().getName().equals(cn.getClassName())) {
+            partExtra = action.substring(PartsList.PARTS_ACTION_PREFIX.length() + 1);
+        }
+
+        // Settings compatibility
         String fragmentClass = getIntent().getStringExtra(EXTRA_SHOW_FRAGMENT);
         String component = getIntent().getComponent().getClassName();
         Bundle initialArgs = getIntent().getBundleExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS);
+        if (initialArgs == null) {
+            initialArgs = new Bundle();
+        }
+        String argKey = getIntent().getStringExtra(EXTRA_FRAGMENT_ARG_KEY);
+        initialArgs.putString(EXTRA_FRAGMENT_ARG_KEY, argKey);
 
         Log.d(TAG, "Launched with: " + getIntent().toString() + " action: " +
                 getIntent().getAction() + " component: " + component +
                 " part: " + partExtra + " fragment: " + fragmentClass);
-
-        if (!PartsList.ACTION_PART.equals(action) && component == null) {
-            throw new UnsupportedOperationException("Unknown action: " + getIntent().getAction());
-        }
 
         if (fragmentClass == null) {
             if (partExtra != null) {
@@ -179,7 +191,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
             }
         }
 
-        Intent intent = new Intent(PartsList.ACTION_PART);
+        Intent intent = new Intent();
         intent.putExtra(EXTRA_SHOW_FRAGMENT, fragmentClass);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS, args);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleRes);
