@@ -192,6 +192,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
         }
 
         Intent intent = new Intent();
+        intent.setComponent(PartsList.CMPARTS_ACTIVITY);
         intent.putExtra(EXTRA_SHOW_FRAGMENT, fragmentClass);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS, args);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleRes);
