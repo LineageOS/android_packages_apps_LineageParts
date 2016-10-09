@@ -74,7 +74,7 @@
 
         <!-- Privacy settings (dashboard) -->
         <activity-alias
-            android:name="PrivacySettings"
+            android:name=".PrivacySettings"
             android:label="@string/privacy_settings_title"
             android:targetActivity="PartsActivity">
             <intent-filter android:priority="1">
