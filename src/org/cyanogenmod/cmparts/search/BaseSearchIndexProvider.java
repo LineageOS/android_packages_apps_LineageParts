@@ -17,6 +17,7 @@ package org.cyanogenmod.cmparts.search;
 
 import android.content.Context;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -26,7 +27,7 @@ import java.util.Set;
 public class BaseSearchIndexProvider implements Searchable.SearchIndexProvider {
 
     @Override
-    public Set<String> getSearchKeywords(Context context) {
+    public List<SearchIndexableRaw> getRawDataToIndex(Context context) {
         return null;
     }
 

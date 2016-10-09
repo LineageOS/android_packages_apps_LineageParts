@@ -27,6 +27,7 @@ import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
+import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.Log;
 
@@ -35,8 +36,11 @@ import com.android.internal.util.ArrayUtils;
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 import org.cyanogenmod.cmparts.search.BaseSearchIndexProvider;
+import org.cyanogenmod.cmparts.search.SearchIndexableRaw;
 import org.cyanogenmod.cmparts.search.Searchable;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 
 import cyanogenmod.hardware.CMHardwareManager;
@@ -413,7 +417,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
         }
 
         @Override
-        public Set<String> getSearchKeywords(Context context) {
+        public List<SearchIndexableRaw> getRawDataToIndex(Context context) {
             final LiveDisplayConfig config = LiveDisplayManager.getInstance(context).getConfig();
             final Set<String> result = new ArraySet<>();
 
@@ -426,7 +430,12 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
                     }
                 }
             }
-            return result;
+            final SearchIndexableRaw raw = new SearchIndexableRaw(context);
+            raw.entries = TextUtils.join(" ", result);
+            raw.key = KEY_LIVE_DISPLAY_COLOR_PROFILE;
+            raw.title = context.getString(R.string.live_display_color_profile_title);
+            raw.rank = 2;
+            return Collections.singletonList(raw);
         }
     };
 }

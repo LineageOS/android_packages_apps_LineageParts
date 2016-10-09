@@ -17,6 +17,7 @@ package org.cyanogenmod.cmparts.search;
 
 import android.content.Context;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -33,7 +34,7 @@ public interface Searchable {
 
     public interface SearchIndexProvider {
 
-        public Set<String> getSearchKeywords(Context context);
+        public List<SearchIndexableRaw> getRawDataToIndex(Context context);
 
         public Set<String> getNonIndexableKeys(Context context);
     }

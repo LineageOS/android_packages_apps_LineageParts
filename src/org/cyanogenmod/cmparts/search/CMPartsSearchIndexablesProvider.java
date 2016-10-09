@@ -18,20 +18,20 @@ package org.cyanogenmod.cmparts.search;
 import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.provider.SearchIndexablesProvider;
-import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.Log;
 
-import org.cyanogenmod.cmparts.PartsActivity;
 import org.cyanogenmod.cmparts.search.Searchable.SearchIndexProvider;
 import org.cyanogenmod.internal.cmparts.PartInfo;
 import org.cyanogenmod.platform.internal.R;
 
 import java.lang.reflect.Field;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_NON_INDEXABLE_KEYS_KEY_VALUE;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_ENTRIES;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_ICON_RESID;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_ACTION;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_TARGET_CLASS;
@@ -39,6 +39,7 @@ import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEY;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEYWORDS;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_RANK;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_SCREEN_TITLE;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_SUMMARY_ON;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_TITLE;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_USER_ID;
@@ -53,7 +54,6 @@ import static android.provider.SearchIndexablesContract.INDEXABLES_RAW_COLUMNS;
 import static android.provider.SearchIndexablesContract.INDEXABLES_XML_RES_COLUMNS;
 import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS;
 import static org.cyanogenmod.internal.cmparts.PartsList.CMPARTS_ACTIVITY;
-import static org.cyanogenmod.internal.cmparts.PartsList.CMPARTS_PACKAGE;
 import static org.cyanogenmod.internal.cmparts.PartsList.getPartInfo;
 import static org.cyanogenmod.internal.cmparts.PartsList.getPartsList;
 
@@ -115,29 +115,38 @@ public class CMPartsSearchIndexablesProvider extends SearchIndexablesProvider {
 
             // don't create a duplicate entry if no custom keywords are provided
             // and a resource was already indexed
-            Set<String> keywordList = sip.getSearchKeywords(getContext());
-            if ((keywordList == null || keywordList.size() == 0) && i.getXmlRes() > 0) {
-                continue;
+            List<SearchIndexableRaw> rawList = sip.getRawDataToIndex(getContext());
+            if (rawList == null || rawList.size() == 0) {
+                if (i.getXmlRes() > 0) {
+                    continue;
+                }
+                rawList = Collections.singletonList(new SearchIndexableRaw(getContext()));
             }
 
-            String keywords = null;
-            if (keywordList != null && keywordList.size() > 0) {
-                keywords = TextUtils.join(" ", keywordList);
+            for (SearchIndexableRaw raw : rawList) {
+                Object[] ref = new Object[14];
+                ref[COLUMN_INDEX_RAW_RANK] = raw.rank > 0 ?
+                        raw.rank : 2;
+                ref[COLUMN_INDEX_RAW_TITLE] = raw.title != null ?
+                        raw.title : i.getTitle();
+                ref[COLUMN_INDEX_RAW_SUMMARY_ON] = i.getSummary();
+                ref[COLUMN_INDEX_RAW_KEYWORDS] = raw.keywords;
+                ref[COLUMN_INDEX_RAW_ENTRIES] = raw.entries;
+                ref[COLUMN_INDEX_RAW_SCREEN_TITLE] = raw.screenTitle != null ?
+                        raw.screenTitle : i.getTitle();
+                ref[COLUMN_INDEX_RAW_ICON_RESID] = raw.iconResId > 0 ? raw.iconResId :
+                        (i.getIconRes() > 0 ? i.getIconRes() : R.drawable.ic_launcher_cyanogenmod);
+                ref[COLUMN_INDEX_RAW_INTENT_ACTION] = raw.intentAction != null ?
+                        raw.intentAction : i.getAction();
+                ref[COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE] = raw.intentTargetPackage != null ?
+                        raw.intentTargetPackage : CMPARTS_ACTIVITY.getPackageName();
+                ref[COLUMN_INDEX_RAW_INTENT_TARGET_CLASS] = raw.intentTargetClass != null ?
+                        raw.intentTargetClass : CMPARTS_ACTIVITY.getClassName();
+                ref[COLUMN_INDEX_RAW_KEY] = raw.key != null ?
+                        raw.key : i.getName();
+                ref[COLUMN_INDEX_RAW_USER_ID] = -1;
+                cursor.addRow(ref);
             }
-
-            Object[] ref = new Object[14];
-            ref[COLUMN_INDEX_RAW_RANK] = 2;
-            ref[COLUMN_INDEX_RAW_TITLE] = i.getTitle();
-            ref[COLUMN_INDEX_RAW_SUMMARY_ON] = i.getSummary();
-            ref[COLUMN_INDEX_RAW_KEYWORDS] = keywords;
-            ref[COLUMN_INDEX_RAW_ICON_RESID] = i.getIconRes() > 0 ? i.getIconRes() :
-                    R.drawable.ic_launcher_cyanogenmod;
-            ref[COLUMN_INDEX_RAW_INTENT_ACTION] = i.getAction();
-            ref[COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE] = CMPARTS_ACTIVITY.getPackageName();
-            ref[COLUMN_INDEX_RAW_INTENT_TARGET_CLASS] = CMPARTS_ACTIVITY.getClassName();
-            ref[COLUMN_INDEX_RAW_KEY] = i.getName();
-            ref[COLUMN_INDEX_RAW_USER_ID] = -1;
-            cursor.addRow(ref);
         }
         return cursor;
     }
