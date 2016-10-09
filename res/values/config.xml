@@ -21,4 +21,7 @@
     <string name="stats_cyanogen_url">https://shopvac.cyngn.com/community/heartbeat</string>
     <string name="stats_cyanogen_token_url">https://account.cyngn.com/api/v1/community/heartbeat_token</string>
 
+    <!-- When true, weather options will be displayed in settings dashboard -->
+    <bool name="config_showWeatherMenu">true</bool>
+
 </resources>

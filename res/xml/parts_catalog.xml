@@ -88,4 +88,9 @@
           android:fragment="org.cyanogenmod.cmparts.privacyguard.PrivacyGuardManager"
           cm:xmlRes="@xml/privacy_guard_prefs" />
 
+    <part android:key="weather_settings"
+          android:title="@string/weather_settings_title"
+          android:fragment="org.cyanogenmod.cmparts.weather.WeatherServiceSettings"
+          cm:xmlRes="@xml/weather_settings" />
+
 </parts-catalog>
