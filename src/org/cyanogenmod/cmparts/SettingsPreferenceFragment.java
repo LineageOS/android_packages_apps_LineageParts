@@ -25,6 +25,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.XmlRes;
 import android.support.v14.preference.PreferenceFragment;
@@ -37,6 +38,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.ArrayMap;
+import android.util.ArraySet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -46,13 +48,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.animation.*;
 
+import java.util.Arrays;
 import java.util.UUID;
 
 /**
  * Base class for Settings fragments, with some helper functions and dialog management.
  */
 public abstract class SettingsPreferenceFragment extends PreferenceFragment
-        implements DialogCreatable {
+        implements DialogCreatable, PartsRefresher.Refreshable {
 
     /**
      * The Help Uri Resource key. This can be passed as an extra argument when creating the
@@ -101,6 +104,8 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     private HighlightablePreferenceGroupAdapter mAdapter;
     private ArrayMap<String, Preference> mPreferenceCache;
     private boolean mAnimationAllowed;
+
+    private final ArraySet<Uri> mTriggerUris = new ArraySet<Uri>();
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -197,6 +202,11 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     @Override
     protected void onUnbindPreferences() {
         unregisterObserverIfNeeded();
+    }
+
+    @Override
+    public void onRefresh(Context context, Uri contentUri) {
+        PartsRefresher.get(context).refreshPart(getPreferenceScreen().getKey());
     }
 
     public void showLoadingWhenEmpty() {
@@ -500,6 +510,13 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     }
 
     @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        PartsRefresher.get(activity).addTrigger(this,
+                mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+    }
+
+    @Override
     public void onDetach() {
         if (isRemoving()) {
             if (mDialogFragment != null) {
@@ -507,7 +524,16 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
                 mDialogFragment = null;
             }
         }
+        PartsRefresher.get(getActivity()).removeTrigger(this);
         super.onDetach();
+    }
+
+    protected void addTrigger(Uri... contentUris) {
+        mTriggerUris.addAll(Arrays.asList(contentUris));
+        if (!isDetached()) {
+            PartsRefresher.get(getActivity()).addTrigger(this,
+                    mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+        }
     }
 
     // Dialog management
@@ -734,14 +760,6 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             return;
         }
         getActivity().setResult(result);
-    }
-
-    public String getDashboardTitle() {
-        return null;
-    }
-
-    public String getDashboardSummary() {
-        return null;
     }
 
     public boolean isAvailable() {

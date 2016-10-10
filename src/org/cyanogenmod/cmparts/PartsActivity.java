@@ -93,10 +93,10 @@ public class PartsActivity extends SettingsDrawerActivity implements
         if (fragmentClass == null) {
             if (partExtra != null) {
                 // Parts mode
-                info = PartsList.getPartInfo(this, partExtra);
+                info = PartsList.get(this).getPartInfo(partExtra);
             } else {
                 // Alias mode
-                info = PartsList.getPartInfoForClass(this,
+                info = PartsList.get(this).getPartInfoForClass(
                         getIntent().getComponent().getClassName());
                 mHomeAsUp = false;
             }
