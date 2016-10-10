@@ -17,7 +17,6 @@
 package org.cyanogenmod.cmparts.notificationlight;
 
 import android.app.AlertDialog;
-import android.app.Application;
 import android.app.Dialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -32,15 +31,12 @@ import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceViewHolder;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
@@ -175,7 +171,10 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mGeneralPrefs.removePreference(mAutoGenerateColors);
         } else {
             mAutoGenerateColors.setOnPreferenceChangeListener(this);
+            addTrigger(CMSettings.System.getUriFor(CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO));
         }
+
+        addTrigger(Settings.System.getUriFor(Settings.System.NOTIFICATION_LIGHT_PULSE));
     }
 
     @Override
@@ -576,4 +575,19 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         }
 
     }
+
+    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
+        @Override
+        public String getSummary(Context context, String key) {
+            if (Settings.System.getInt(context.getContentResolver(),
+                    Settings.System.NOTIFICATION_LIGHT_PULSE, 1) == 1) {
+                if (CMSettings.System.getInt(context.getContentResolver(),
+                        CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO, 1) == 1) {
+                    return context.getString(R.string.notification_light_automagic_summary);
+                }
+                return context.getString(R.string.enabled);
+            }
+            return context.getString(R.string.disabled);
+        }
+    };
 }

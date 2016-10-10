@@ -16,7 +16,9 @@
 
 package org.cyanogenmod.cmparts.hardware;
 
+import android.content.Context;
 import android.database.ContentObserver;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.preference.CheckBoxPreference;
@@ -51,16 +53,9 @@ public class DisplayRotation extends SettingsPreferenceFragment {
     public static final int ROTATION_180_MODE = 4;
     public static final int ROTATION_270_MODE = 8;
 
-    private ContentObserver mAccelerometerRotationObserver = new ContentObserver(new Handler()) {
-        @Override
-        public void onChange(boolean selfChange) {
-            updateAccelerometerRotationSwitch();
-        }
-    };
-
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
         addPreferencesFromResource(R.xml.display_rotation);
 
@@ -104,23 +99,20 @@ public class DisplayRotation extends SettingsPreferenceFragment {
         if (lockScreenRotation != null && !canRotateLockscreen) {
             getPreferenceScreen().removePreference(lockScreenRotation);
         }
+
+        addTrigger(Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION));
+    }
+
+    @Override
+    public void onRefresh(Context context, Uri contentUri) {
+        super.onRefresh(context, contentUri);
+        updateAccelerometerRotationSwitch();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-
         updateState();
-        getContentResolver().registerContentObserver(
-                Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION), true,
-                mAccelerometerRotationObserver);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-
-        getContentResolver().unregisterContentObserver(mAccelerometerRotationObserver);
     }
 
     private void updateState() {
@@ -169,4 +161,14 @@ public class DisplayRotation extends SettingsPreferenceFragment {
 
         return super.onPreferenceTreeClick(preference);
     }
+
+    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
+        @Override
+        public String getSummary(Context context, String key) {
+            if (RotationPolicy.isRotationLocked(context)) {
+                return context.getString(R.string.display_rotation_disabled);
+            }
+            return context.getString(R.string.display_rotation_enabled);
+        }
+    };
 }
