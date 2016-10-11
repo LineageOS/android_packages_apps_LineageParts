@@ -243,6 +243,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         } else {
             refreshList();
         }
+
+        onRefresh(activity, null);
     }
 
     @Override
@@ -300,4 +302,20 @@ public class ProfilesSettings extends SettingsPreferenceFragment
             ex.printStackTrace();
         }
     }
+
+    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
+        @Override
+        public String getSummary(Context context, String key) {
+            ProfileManager pm = ProfileManager.getInstance(context);
+            if (!pm.isProfilesEnabled()) {
+                return context.getString(R.string.profile_settings_summary_off);
+            }
+
+            Profile p = pm.getActiveProfile();
+            if (p != null) {
+                return p.getName();
+            }
+            return null;
+        }
+    };
 }

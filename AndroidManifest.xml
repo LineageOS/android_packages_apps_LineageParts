@@ -65,6 +65,7 @@
         <receiver android:name=".RefreshReceiver" android:enabled="true">
             <intent-filter>
                 <action android:name="org.cyanogenmod.cmparts.REFRESH_PART" />
+                <action android:name="org.cyanogenmod.settings.REFRESH_SUMMARY" />
             </intent-filter>
         </receiver>
 
@@ -95,6 +96,12 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_privacy" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.receiver"
+                android:value="org.cyanogenmod.cmparts.RefreshReceiver" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.key"
+                android:value="privacy_settings" />
         </activity-alias>
 
         <!-- Button settings (dashboard) -->
@@ -113,6 +120,12 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_buttons" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.receiver"
+                android:value="org.cyanogenmod.cmparts.RefreshReceiver" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.key"
+                android:value="button_settings" />
         </activity-alias>
 
         <!-- Profiles settings (dashboard) -->
@@ -131,6 +144,12 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_profiles" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.receiver"
+                android:value="org.cyanogenmod.cmparts.RefreshReceiver" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.key"
+                android:value="profiles_settings" />
         </activity-alias>
 
         <!-- Status bar settings (dashboard) -->
@@ -149,6 +168,12 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_statusbar" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.receiver"
+                android:value="org.cyanogenmod.cmparts.RefreshReceiver" />
+            <meta-data
+                android:name="org.cyanogenmod.settings.summary.key"
+                android:value="status_bar_settings" />
         </activity-alias>
 
         <!-- Anonymous Statistics -->
@@ -176,7 +201,7 @@
                  android:enabled="true"
                  android:exported="false" />
 
-		<!-- Weather settings (dashboard) -->
+		<!-- Weather settings -->
         <activity-alias
             android:name=".weather.WeatherServiceSettings"
             android:label="@string/weather_settings_title"

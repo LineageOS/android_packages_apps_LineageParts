@@ -18,30 +18,18 @@
 package org.cyanogenmod.cmparts.privacyguard;
 
 import android.os.Bundle;
-import android.provider.Settings;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.support.v14.preference.PreferenceFragment;
-import android.support.v14.preference.SwitchPreference;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import org.cyanogenmod.cmparts.R;
-
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 
 import cyanogenmod.providers.CMSettings;
 
-public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+public class PrivacyGuardPrefs extends SettingsPreferenceFragment {
 
     private static final String TAG = "PrivacyGuardPrefs";
-
-    private static final String KEY_PRIVACY_GUARD_DEFAULT = "privacy_guard_default";
-
-    private SwitchPreference mPrivacyGuardDefault;
 
     public static PrivacyGuardPrefs newInstance() {
         PrivacyGuardPrefs privacyGuardFragment = new PrivacyGuardPrefs();
@@ -51,13 +39,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.privacy_guard_prefs);
-
-        mPrivacyGuardDefault = (SwitchPreference) findPreference(KEY_PRIVACY_GUARD_DEFAULT);
-        mPrivacyGuardDefault.setOnPreferenceChangeListener(this);
-
-        mPrivacyGuardDefault.setChecked(CMSettings.Secure.getInt(
-                getActivity().getContentResolver(),
-                CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
+        addTrigger(CMSettings.Secure.getUriFor(CMSettings.Secure.PRIVACY_GUARD_DEFAULT));
     }
 
     @Override
@@ -70,16 +52,5 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         int paddingBottom = list.getPaddingBottom();
         list.setPadding(0, paddingTop, 0, paddingBottom);
         return view;
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mPrivacyGuardDefault) {
-            boolean value = (Boolean) newValue;
-            CMSettings.Secure.putInt(getActivity().getContentResolver(),
-                    CMSettings.Secure.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
-            return true;
-        }
-        return false;
     }
 }

@@ -19,11 +19,11 @@
     android:key="privacy_guard_manager"
     android:title="@*cyanogenmod.platform:string/privacy_guard_manager_title">
 
-    <SwitchPreference
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
         android:key="privacy_guard_default"
         android:title="@string/privacy_guard_default_title"
         android:summary="@string/privacy_guard_default_summary"
-        android:persistent="false" />
+        android:defaultValue="false" />
 
     <cyanogenmod.preference.CMSecureSettingSwitchPreference
         android:key="privacy_guard_notification"

@@ -41,6 +41,7 @@ import java.util.Set;
 import static org.cyanogenmod.internal.cmparts.PartsList.ACTION_PART_CHANGED;
 import static org.cyanogenmod.internal.cmparts.PartsList.EXTRA_PART;
 import static org.cyanogenmod.internal.cmparts.PartsList.EXTRA_PART_KEY;
+import static org.cyanogenmod.internal.cmparts.PartsList.EXTRA_PART_SUMMARY;
 
 /**
  * PartsRefresher keeps remote UI clients up to date with any changes in the
@@ -125,6 +126,7 @@ public class PartsRefresher {
 
         pi.setSummary(si.getSummary(mContext, key));
         bundle.putString(EXTRA_PART_KEY, key);
+        bundle.putString(EXTRA_PART_SUMMARY, pi.getSummary());
         bundle.putParcelable(EXTRA_PART, pi);
         return true;
     }
@@ -178,6 +180,7 @@ public class PartsRefresher {
                     uris.add(contentUri);
                     if (!mRefs.contains(contentUri)) {
                         mResolver.registerContentObserver(contentUri, false, this);
+                        listener.onRefresh(mContext, null);
                     }
                     mRefs.add(contentUri);
                 }

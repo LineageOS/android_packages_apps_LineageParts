@@ -19,24 +19,31 @@ import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-
-import org.cyanogenmod.internal.cmparts.PartsList;
+import android.util.Log;
 
 import static org.cyanogenmod.internal.cmparts.PartsList.ACTION_REFRESH_PART;
+import static org.cyanogenmod.internal.cmparts.PartsList.EXTRA_PART_KEY;
 
 public class RefreshReceiver extends BroadcastReceiver {
 
+    /* for Settings dashboard tiles */
+    private static final String ACTION_REFRESH_SUMMARY =
+            "org.cyanogenmod.settings.REFRESH_SUMMARY";
+
     /**
      * Receiver which handles clients requesting a summary update. A client may send
-     * the REFERSH_PART action via sendOrderedBroadcast, and we will reply immediately.
+     * the REFERSH_PART or REFRESH_SUMMARY actions via sendOrderedBroadcast,
+     * and we will reply immediately.
      *
      * @param context
      * @param intent
      */
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (ACTION_REFRESH_PART.equals(intent.getAction()) && isOrderedBroadcast()) {
-            final String key = intent.getStringExtra(PartsList.EXTRA_PART_KEY);
+        Log.d("REFRESH-PARTS", intent.toString());
+        if (isOrderedBroadcast() && (ACTION_REFRESH_PART.equals(intent.getAction()) ||
+                ACTION_REFRESH_SUMMARY.equals(intent.getAction()))) {
+            final String key = intent.getStringExtra(EXTRA_PART_KEY);
             if (key != null &&
                     PartsRefresher.get(context).updateExtras(key, getResultExtras(true))) {
                 setResultCode(Activity.RESULT_OK);

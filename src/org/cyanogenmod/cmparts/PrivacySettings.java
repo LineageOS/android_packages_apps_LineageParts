@@ -16,7 +16,10 @@
 
 package org.cyanogenmod.cmparts;
 
+import android.content.Context;
 import android.os.Bundle;
+
+import cyanogenmod.providers.CMSettings;
 
 /**
  * Privacy settings
@@ -29,4 +32,15 @@ public class PrivacySettings extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.privacy_settings);
     }
+
+    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
+        @Override
+        public String getSummary(Context context, String key) {
+            if (CMSettings.Secure.getInt(context.getContentResolver(),
+                    CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1) {
+                return context.getString(R.string.privacy_guard_default_summary_on);
+            }
+            return null;
+        }
+    };
 }
