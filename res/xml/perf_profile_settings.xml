@@ -19,25 +19,39 @@
     android:key="perf_profile_settings"
     android:title="@string/perf_profile_settings_title" >
 
-    <ListPreference
-        android:key="perf_profile"
-        android:title="@string/perf_profile_title"
-        android:persistent="false" />
+    <PreferenceCategory
+        android:key="power_save_category"
+        android:title="@string/power_save_category_title">
 
-    <SwitchPreference
-        android:key="power_save"
-        android:title="@string/power_save_title"
-        android:summary="@string/power_save_summary"
-        android:persistent="false" />
+        <SwitchPreference
+            android:key="power_save"
+            android:title="@string/power_save_title"
+            android:summary="@string/power_save_summary"
+            android:persistent="false" />
 
-    <ListPreference
-        android:key="auto_power_save"
-        android:title="@string/auto_power_save_title"
-        android:persistent="false" />
+        <ListPreference
+            android:key="auto_power_save"
+            android:title="@string/auto_power_save_title"
+            android:persistent="false" />
 
-    <cyanogenmod.preference.CMSecureSettingSwitchPreference
-        android:key="app_perf_profiles_enabled"
-        android:title="@string/app_perf_profiles_title"
-        android:summary="@string/app_perf_profiles_summary" />
+    </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="perf_profile_category"
+        android:title="@string/perf_profile_category_title">
+
+        <org.cyanogenmod.cmparts.SeekBarPreference
+            android:key="perf_seekbar"
+            android:title="@string/perf_profile_title"
+            android:max="4"
+            android:defaultValue="1"
+            android:persistent="false"
+            android:layout="@layout/preference_slider" />
+
+        <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="app_perf_profiles_enabled"
+            android:title="@string/app_perf_profiles_title"
+            android:summary="@string/app_perf_profiles_summary" />
+
+    </PreferenceCategory>
 </PreferenceScreen>

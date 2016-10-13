@@ -35,4 +35,7 @@
 
     <color name="weather_settings_icon_tint">#B4B9BA</color>
 
+    <color name="perf_hot">#ffd10015</color>
+    <color name="perf_cold">#ff005994</color>
+
 </resources>
