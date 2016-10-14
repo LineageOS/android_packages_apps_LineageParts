@@ -99,4 +99,10 @@
           android:fragment="org.cyanogenmod.cmparts.power.PerfProfileSettings"
           cm:xmlRes="@xml/perf_profile_settings" />
 
+    <part android:key="expanded_desktop_settings"
+          android:title="@string/expanded_desktop_settings_title"
+          android:summary="@string/expanded_desktop_settings_summary"
+          android:fragment="org.cyanogenmod.cmparts.applications.ExpandedDesktopSettings"
+          cm:xmlRes="@xml/expanded_desktop_prefs" />
+
 </parts-catalog>
