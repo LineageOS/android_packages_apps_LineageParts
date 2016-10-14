@@ -314,7 +314,6 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
             if (isActiveProvider()) {
                 return;
             }
-            mInfo.isActive = true;
             setActiveWeatherProviderService();
             notifyChanged();
         }
@@ -352,6 +351,7 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
         private void setActiveWeatherProviderService() {
             if (!mInfo.isActive) {
                 markAsActiveProvider();
+                mInfo.isActive = true;
                 CMSettings.Secure.putString(mContext.getContentResolver(),
                         CMSettings.Secure.WEATHER_PROVIDER_SERVICE,
                         mInfo.componentName.flattenToString());
