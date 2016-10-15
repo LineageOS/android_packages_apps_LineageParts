@@ -53,11 +53,13 @@ import org.cyanogenmod.cmparts.widget.LayoutPreference;
 import java.util.Arrays;
 import java.util.UUID;
 
+import cyanogenmod.preference.SettingsHelper;
+
 /**
  * Base class for Settings fragments, with some helper functions and dialog management.
  */
 public abstract class SettingsPreferenceFragment extends PreferenceFragment
-        implements DialogCreatable, PartsRefresher.Refreshable {
+        implements DialogCreatable, PartsUpdater.Refreshable {
 
     /**
      * The Help Uri Resource key. This can be passed as an extra argument when creating the
@@ -188,8 +190,8 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     }
 
     @Override
-    public void onRefresh(Context context, Uri contentUri) {
-        PartsRefresher.get(context).refreshPart(getPreferenceScreen().getKey());
+    public void onSettingsChanged(Uri contentUri) {
+        PartsUpdater.notifyChanged(getActivity(), getPreferenceScreen().getKey());
     }
 
     public void showLoadingWhenEmpty() {
@@ -495,8 +497,10 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        PartsRefresher.get(activity).addTrigger(this,
-                mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+        synchronized (mTriggerUris) {
+            SettingsHelper.get(activity).startWatching(this,
+                    mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+        }
     }
 
     @Override
@@ -507,15 +511,20 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
                 mDialogFragment = null;
             }
         }
-        PartsRefresher.get(getActivity()).removeTrigger(this);
+        synchronized (mTriggerUris) {
+            SettingsHelper.get(getActivity()).stopWatching(this);
+            mTriggerUris.clear();
+        }
         super.onDetach();
     }
 
-    protected void addTrigger(Uri... contentUris) {
-        mTriggerUris.addAll(Arrays.asList(contentUris));
-        if (!isDetached()) {
-            PartsRefresher.get(getActivity()).addTrigger(this,
-                    mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+    protected void watch(Uri... contentUris) {
+        synchronized (mTriggerUris) {
+            mTriggerUris.addAll(Arrays.asList(contentUris));
+            if (!isDetached()) {
+                SettingsHelper.get(getActivity()).startWatching(this,
+                        mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+            }
         }
     }
 

@@ -171,10 +171,10 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mGeneralPrefs.removePreference(mAutoGenerateColors);
         } else {
             mAutoGenerateColors.setOnPreferenceChangeListener(this);
-            addTrigger(CMSettings.System.getUriFor(CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO));
+            watch(CMSettings.System.getUriFor(CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO));
         }
 
-        addTrigger(Settings.System.getUriFor(Settings.System.NOTIFICATION_LIGHT_PULSE));
+        watch(Settings.System.getUriFor(Settings.System.NOTIFICATION_LIGHT_PULSE));
     }
 
     @Override

@@ -244,7 +244,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
             refreshList();
         }
 
-        onRefresh(activity, null);
+        onSettingsChanged(null);
     }
 
     @Override

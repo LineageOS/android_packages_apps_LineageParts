@@ -173,13 +173,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
         return super.onOptionsItemSelected(item);
     }
 
-    public void notifyPartChanged(PartInfo part) {
-        Intent i = new Intent(PartsList.ACTION_PART_CHANGED);
-        i.getExtras().putString(PartsList.EXTRA_PART_KEY, part.getName());
-        i.getExtras().putParcelable(PartsList.EXTRA_PART, part);
-        sendBroadcast(i);
-    }
-
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
                                      CharSequence titleText, Fragment resultTo, int resultRequestCode) {
         String title = null;

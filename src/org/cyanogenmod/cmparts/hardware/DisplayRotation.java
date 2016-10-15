@@ -100,12 +100,12 @@ public class DisplayRotation extends SettingsPreferenceFragment {
             getPreferenceScreen().removePreference(lockScreenRotation);
         }
 
-        addTrigger(Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION));
+        watch(Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION));
     }
 
     @Override
-    public void onRefresh(Context context, Uri contentUri) {
-        super.onRefresh(context, contentUri);
+    public void onSettingsChanged(Uri contentUri) {
+        super.onSettingsChanged(contentUri);
         updateAccelerometerRotationSwitch();
     }
 

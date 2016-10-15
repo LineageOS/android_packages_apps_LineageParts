@@ -99,7 +99,7 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
         mTemperatureUnit = (ListPreference) ps.findPreference(PREFERENCE_TEMP_UNIT);
         mTemperatureUnit.setOnPreferenceChangeListener(this);
 
-        addTrigger(CMSettings.Secure.getUriFor(CMSettings.Secure.WEATHER_PROVIDER_SERVICE));
+        watch(CMSettings.Secure.getUriFor(CMSettings.Secure.WEATHER_PROVIDER_SERVICE));
     }
 
     @Override
