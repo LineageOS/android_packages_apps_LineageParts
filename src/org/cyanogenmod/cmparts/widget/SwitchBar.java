@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts;
+package org.cyanogenmod.cmparts.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -31,6 +31,8 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import org.cyanogenmod.cmparts.R;
 
 import java.util.ArrayList;
 

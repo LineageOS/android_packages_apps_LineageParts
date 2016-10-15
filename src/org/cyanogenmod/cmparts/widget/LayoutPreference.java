@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts;
+package org.cyanogenmod.cmparts.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -26,6 +26,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
+import org.cyanogenmod.cmparts.R;
 
 public class LayoutPreference extends Preference {
 

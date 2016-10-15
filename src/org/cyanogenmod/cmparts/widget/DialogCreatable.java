@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts;
+package org.cyanogenmod.cmparts.widget;
 
 import android.app.Dialog;
+
+import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 
 /**
  * Letting the class, assumed to be Fragment, create a Dialog on it. Should be useful

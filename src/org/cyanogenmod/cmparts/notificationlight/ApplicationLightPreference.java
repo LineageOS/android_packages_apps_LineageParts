@@ -30,7 +30,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.CustomDialogPreference;
+import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
 import org.cyanogenmod.cmparts.R;
 
 public class ApplicationLightPreference extends CustomDialogPreference<LightSettingsDialog>

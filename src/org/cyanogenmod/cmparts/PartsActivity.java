@@ -34,6 +34,7 @@ import android.widget.Button;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 import org.cyanogenmod.cmparts.profiles.NFCProfileTagCallback;
+import org.cyanogenmod.cmparts.widget.SwitchBar;
 import org.cyanogenmod.internal.cmparts.PartInfo;
 import org.cyanogenmod.internal.cmparts.PartsList;
 

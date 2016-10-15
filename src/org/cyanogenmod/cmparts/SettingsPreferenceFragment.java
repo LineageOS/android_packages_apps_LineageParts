@@ -27,7 +27,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.XmlRes;
 import android.support.v14.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
@@ -41,12 +40,15 @@ import android.util.ArrayMap;
 import android.util.ArraySet;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.animation.*;
+
+import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
+import org.cyanogenmod.cmparts.widget.DialogCreatable;
+import org.cyanogenmod.cmparts.widget.FloatingActionButton;
+import org.cyanogenmod.cmparts.widget.LayoutPreference;
 
 import java.util.Arrays;
 import java.util.UUID;
@@ -130,27 +132,8 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
     }
 
-    @Override
-    public void addPreferencesFromResource(@XmlRes int preferencesResId) {
-        super.addPreferencesFromResource(preferencesResId);
-        checkAvailablePrefs(getPreferenceScreen());
-    }
-
     public FloatingActionButton getFloatingActionButton() {
         return mFloatingActionButton;
-    }
-
-    private void checkAvailablePrefs(PreferenceGroup preferenceGroup) {
-        if (preferenceGroup == null) return;
-        for (int i = 0; i < preferenceGroup.getPreferenceCount(); i++) {
-            Preference pref = preferenceGroup.getPreference(i);
-            if (pref instanceof SelfAvailablePreference
-                    && !((SelfAvailablePreference) pref).isAvailable(getContext())) {
-                preferenceGroup.removePreference(pref);
-            } else if (pref instanceof PreferenceGroup) {
-                checkAvailablePrefs((PreferenceGroup) pref);
-            }
-        }
     }
 
     public ViewGroup getButtonBar() {

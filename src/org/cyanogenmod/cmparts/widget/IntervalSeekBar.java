@@ -13,13 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts;
+package org.cyanogenmod.cmparts.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.SeekBar;
+
+import org.cyanogenmod.cmparts.R;
 
 /**
  * Custom SeekBar that allows setting both a minimum and maximum value.

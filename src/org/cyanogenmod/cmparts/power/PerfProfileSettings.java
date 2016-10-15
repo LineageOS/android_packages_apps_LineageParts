@@ -35,7 +35,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Toast;
 
 import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SeekBarPreference;
+import org.cyanogenmod.cmparts.widget.SeekBarPreference;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 import org.cyanogenmod.graphics.drawable.StopMotionVectorDrawable;
 

@@ -27,8 +27,8 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.CustomDialogPreference;
-import org.cyanogenmod.cmparts.IntervalSeekBar;
+import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
+import org.cyanogenmod.cmparts.widget.IntervalSeekBar;
 import org.cyanogenmod.cmparts.R;
 
 import java.util.List;

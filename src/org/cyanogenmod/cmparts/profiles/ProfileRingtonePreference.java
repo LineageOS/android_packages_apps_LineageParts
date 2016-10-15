@@ -22,7 +22,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.util.AttributeSet;
 
-import org.cyanogenmod.cmparts.RingtonePreference;
+import org.cyanogenmod.cmparts.widget.RingtonePreference;
 
 public class ProfileRingtonePreference extends RingtonePreference {
     private static final String TAG = "ProfileRingtonePreference";

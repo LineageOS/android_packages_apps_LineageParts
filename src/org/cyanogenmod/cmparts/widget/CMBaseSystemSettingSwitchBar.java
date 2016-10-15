@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package org.cyanogenmod.cmparts;
+package org.cyanogenmod.cmparts.widget;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.widget.Switch;
 
 import cyanogenmod.providers.CMSettings;
 
-public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeListener  {
+public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeListener {
     private Context mContext;
     private SwitchBar mSwitchBar;
     private SettingsObserver mSettingsObserver;

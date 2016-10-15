@@ -27,7 +27,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.CustomDialogPreference;
+import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.internal.util.MathUtils;
 

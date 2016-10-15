@@ -37,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.IntervalSeekBar android:id="@+id/adj_hue_seekbar"
+        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+            android:id="@+id/adj_hue_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_hue_text"
@@ -59,7 +60,8 @@
                 android:layout_below="@id/adj_hue_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.IntervalSeekBar android:id="@+id/adj_saturation_seekbar"
+        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+            android:id="@+id/adj_saturation_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_saturation_text"
@@ -81,7 +83,8 @@
                 android:layout_below="@id/adj_saturation_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.IntervalSeekBar android:id="@+id/adj_intensity_seekbar"
+        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+            android:id="@+id/adj_intensity_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_intensity_text"
@@ -103,7 +106,8 @@
                 android:layout_below="@id/adj_intensity_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.IntervalSeekBar android:id="@+id/adj_contrast_seekbar"
+        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+            android:id="@+id/adj_contrast_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_contrast_text"

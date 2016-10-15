@@ -29,7 +29,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.cyanogenmod.cmparts.FloatingActionButton;
+import org.cyanogenmod.cmparts.widget.FloatingActionButton;
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 import org.cyanogenmod.internal.util.ScreenType;

@@ -42,8 +42,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import org.cyanogenmod.cmparts.PackageListAdapter;
-import org.cyanogenmod.cmparts.PackageListAdapter.PackageItem;
+import org.cyanogenmod.cmparts.widget.PackageListAdapter;
+import org.cyanogenmod.cmparts.widget.PackageListAdapter.PackageItem;
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 

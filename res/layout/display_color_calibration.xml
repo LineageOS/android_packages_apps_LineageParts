@@ -37,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.IntervalSeekBar android:id="@+id/color_red_seekbar"
+        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+            android:id="@+id/color_red_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_red_text"
@@ -59,7 +60,8 @@
                 android:layout_below="@id/color_red_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.IntervalSeekBar android:id="@+id/color_green_seekbar"
+        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+            android:id="@+id/color_green_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_green_text"
@@ -81,7 +83,8 @@
                 android:layout_below="@id/color_green_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.IntervalSeekBar android:id="@+id/color_blue_seekbar"
+        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+            android:id="@+id/color_blue_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_blue_text"

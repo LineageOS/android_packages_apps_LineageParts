@@ -40,7 +40,7 @@
         android:key="perf_profile_category"
         android:title="@string/perf_profile_category_title">
 
-        <org.cyanogenmod.cmparts.SeekBarPreference
+        <org.cyanogenmod.cmparts.widget.SeekBarPreference
             android:key="perf_seekbar"
             android:title="@string/perf_profile_title"
             android:max="4"

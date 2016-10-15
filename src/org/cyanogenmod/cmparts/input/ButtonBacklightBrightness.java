@@ -34,7 +34,7 @@ import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.CustomDialogPreference;
+import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
 import org.cyanogenmod.cmparts.R;
 
 import cyanogenmod.providers.CMSettings;
