@@ -37,7 +37,8 @@
         android:summary="%s"
         android:dialogTitle="@string/status_bar_clock_style_title"
         android:entries="@array/status_bar_clock_style_entries"
-        android:entryValues="@array/status_bar_clock_style_values" />
+        android:entryValues="@array/status_bar_clock_style_values"
+        android:defaultValue="0" />
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_am_pm"
@@ -45,7 +46,8 @@
         android:summary="%s"
         android:dialogTitle="@string/status_bar_am_pm_title"
         android:entries="@array/status_bar_am_pm_entries"
-        android:entryValues="@array/status_bar_am_pm_values" />
+        android:entryValues="@array/status_bar_am_pm_values"
+        android:defaultValue="2" />
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_battery_style"
@@ -53,7 +55,8 @@
         android:summary="%s"
         android:dialogTitle="@string/status_bar_battery_style_title"
         android:entries="@array/status_bar_battery_style_entries"
-        android:entryValues="@array/status_bar_battery_style_values" />
+        android:entryValues="@array/status_bar_battery_style_values"
+        android:defaultValue="2" />
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="status_bar_show_battery_percent"
@@ -61,13 +64,15 @@
         android:summary="%s"
         android:dialogTitle="@string/status_bar_battery_percentage_title"
         android:entries="@array/status_bar_battery_percentage_entries"
-        android:entryValues="@array/status_bar_battery_percentage_values" />
+        android:entryValues="@array/status_bar_battery_percentage_values"
+        android:defaultValue="0" />
 
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="qs_quick_pulldown"
         android:title="@string/status_bar_quick_qs_pulldown_title"
         android:entries="@array/status_bar_quick_qs_pulldown_entries"
-        android:entryValues="@array/status_bar_quick_qs_pulldown_values" />
+        android:entryValues="@array/status_bar_quick_qs_pulldown_values"
+        android:defaultValue="1" />
 
     <cyanogenmod.preference.CMSystemSettingSwitchPreference
         android:key="status_bar_show_weather"
