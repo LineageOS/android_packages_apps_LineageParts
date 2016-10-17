@@ -15,14 +15,10 @@
  */
 package org.cyanogenmod.cmparts.livedisplay;
 
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
-import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.UserHandle;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -47,6 +43,7 @@ import cyanogenmod.hardware.CMHardwareManager;
 import cyanogenmod.hardware.DisplayMode;
 import cyanogenmod.hardware.LiveDisplayConfig;
 import cyanogenmod.hardware.LiveDisplayManager;
+import cyanogenmod.preference.SettingsHelper;
 import cyanogenmod.providers.CMSettings;
 
 import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_CABC;
@@ -58,7 +55,7 @@ import static cyanogenmod.hardware.LiveDisplayManager.MODE_OFF;
 import static cyanogenmod.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
 public class LiveDisplay extends SettingsPreferenceFragment implements Searchable,
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
 
     private static final String TAG = "LiveDisplay";
 
@@ -83,8 +80,12 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
     private static final String COLOR_PROFILE_SUMMARY =
             KEY_LIVE_DISPLAY_COLOR_PROFILE + "_%s_summary";
 
-    private final Handler mHandler = new Handler();
-    private final SettingsObserver mObserver = new SettingsObserver();
+    private final Uri DISPLAY_TEMPERATURE_DAY_URI =
+            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_DAY);
+    private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
+            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_NIGHT);
+    private final Uri DISPLAY_TEMPERATURE_MODE_URI =
+            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_MODE);
 
     private ListPreference mLiveDisplay;
 
@@ -216,13 +217,14 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
         updateModeSummary();
         updateTemperatureSummary();
         updateColorProfileSummary(null);
-        mObserver.register(true);
+        SettingsHelper.get(getActivity()).startWatching(this, DISPLAY_TEMPERATURE_DAY_URI,
+                DISPLAY_TEMPERATURE_MODE_URI, DISPLAY_TEMPERATURE_NIGHT_URI);
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        mObserver.register(false);
+        SettingsHelper.get(getActivity()).stopWatching(this);
     }
 
     private static String getStringForResourceName(Resources res,
@@ -355,35 +357,10 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
         return true;
     }
 
-    private final class SettingsObserver extends ContentObserver {
-        private final Uri DISPLAY_TEMPERATURE_DAY_URI =
-                CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_DAY);
-        private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
-                CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_NIGHT);
-        private final Uri DISPLAY_TEMPERATURE_MODE_URI =
-                CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_MODE);
-
-        public SettingsObserver() {
-            super(mHandler);
-        }
-
-        public void register(boolean register) {
-            final ContentResolver cr = getContentResolver();
-            if (register) {
-                cr.registerContentObserver(DISPLAY_TEMPERATURE_DAY_URI, false, this, UserHandle.USER_ALL);
-                cr.registerContentObserver(DISPLAY_TEMPERATURE_NIGHT_URI, false, this, UserHandle.USER_ALL);
-                cr.registerContentObserver(DISPLAY_TEMPERATURE_MODE_URI, false, this, UserHandle.USER_ALL);
-            } else {
-                cr.unregisterContentObserver(this);
-            }
-        }
-
-        @Override
-        public void onChange(boolean selfChange, Uri uri) {
-            super.onChange(selfChange, uri);
-            updateModeSummary();
-            updateTemperatureSummary();
-        }
+    @Override
+    public void onSettingsChanged(Uri uri) {
+        updateModeSummary();
+        updateTemperatureSummary();
     }
 
 

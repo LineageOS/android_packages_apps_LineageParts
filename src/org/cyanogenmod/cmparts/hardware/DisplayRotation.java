@@ -17,18 +17,16 @@
 package org.cyanogenmod.cmparts.hardware;
 
 import android.content.Context;
-import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
+import android.provider.Settings;
+import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v14.preference.SwitchPreference;
-import android.provider.Settings;
 
 import com.android.internal.view.RotationPolicy;
+
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 

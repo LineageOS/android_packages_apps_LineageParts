@@ -16,19 +16,18 @@
 
 package org.cyanogenmod.cmparts.widget;
 
-import android.content.ContentResolver;
 import android.content.Context;
-import android.database.ContentObserver;
 import android.net.Uri;
-import android.os.Handler;
 import android.widget.Switch;
 
+import cyanogenmod.preference.SettingsHelper;
 import cyanogenmod.providers.CMSettings;
 
-public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeListener {
+public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeListener,
+        SettingsHelper.OnSettingsChangeListener {
+
     private Context mContext;
     private SwitchBar mSwitchBar;
-    private SettingsObserver mSettingsObserver;
     private boolean mListeningToOnSwitchChange = false;
 
     private boolean mStateMachineEvent;
@@ -48,7 +47,6 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
         mSettingKey = key;
         mDefaultState = defaultState ? 1 : 0;
         mCallback = callback;
-        mSettingsObserver = new SettingsObserver(new Handler());
         setupSwitchBar();
     }
 
@@ -73,7 +71,8 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
         mContext = context;
         if (!mListeningToOnSwitchChange) {
             mSwitchBar.addOnSwitchChangeListener(this);
-            mSettingsObserver.observe();
+            SettingsHelper.get(mContext).startWatching(
+                    this, CMSettings.System.getUriFor(mSettingKey));
 
             mListeningToOnSwitchChange = true;
         }
@@ -82,7 +81,7 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
     public void pause() {
         if (mListeningToOnSwitchChange) {
             mSwitchBar.removeOnSwitchChangeListener(this);
-            mSettingsObserver.unobserve();
+            SettingsHelper.get(mContext).stopWatching(this);
 
             mListeningToOnSwitchChange = false;
         }
@@ -121,35 +120,8 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
         }
     }
 
-    class SettingsObserver extends ContentObserver {
-        SettingsObserver(Handler handler) {
-            super(handler);
-        }
-
-        void observe() {
-            ContentResolver resolver = mContext.getContentResolver();
-            resolver.registerContentObserver(CMSettings.System.getUriFor(
-                    mSettingKey), false, this);
-            update();
-        }
-
-        void unobserve() {
-            ContentResolver resolver = mContext.getContentResolver();
-            resolver.unregisterContentObserver(this);
-        }
-
-        @Override
-        public void onChange(boolean selfChange) {
-            update();
-        }
-
-        @Override
-        public void onChange(boolean selfChange, Uri uri) {
-            update();
-        }
-
-        public void update() {
-            setSwitchState();
-        }
+    @Override
+    public void onSettingsChanged(Uri uri) {
+        setSwitchState();
     }
 }
