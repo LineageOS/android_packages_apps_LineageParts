@@ -76,28 +76,6 @@ public class DisplayRotation extends SettingsPreferenceFragment {
         mRotation180Pref.setChecked((mode & ROTATION_180_MODE) != 0);
         mRotation270Pref.setChecked((mode & ROTATION_270_MODE) != 0);
 
-        boolean hasRotationLock = false;
-//        getResources().getBoolean(
-//                com.android.internal.R.bool.config_hasRotationLockSwitch);
-
-        if (hasRotationLock) {
-            // Disable accelerometer switch, but leave others enabled
-            mAccelerometer.setEnabled(false);
-            mRotation0Pref.setDependency(null);
-            mRotation90Pref.setDependency(null);
-            mRotation180Pref.setDependency(null);
-            mRotation270Pref.setDependency(null);
-        }
-
-        final SwitchPreference lockScreenRotation =
-                (SwitchPreference) findPreference(KEY_LOCKSCREEN_ROTATION);
-        boolean canRotateLockscreen = getResources().getBoolean(
-                com.android.internal.R.bool.config_enableLockScreenRotation);
-
-        if (lockScreenRotation != null && !canRotateLockscreen) {
-            getPreferenceScreen().removePreference(lockScreenRotation);
-        }
-
         watch(Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION));
     }
 

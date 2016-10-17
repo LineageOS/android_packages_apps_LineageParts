@@ -14,40 +14,44 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
         android:key="rotation"
         android:title="@string/display_rotation_title">
 
     <SwitchPreference
         android:key="accelerometer"
         android:title="@string/accelerometer_title" />
+
     <cyanogenmod.preference.CMSystemSettingSwitchPreference
         android:key="lockscreen_rotation"
         android:title="@string/display_lockscreen_rotation_title"
         android:dependency="accelerometer"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        cm:requiresConfig="@*android:bool/config_enableLockScreenRotation" />
+
     <PreferenceCategory
         android:key="display_rotation_category"
-        android:title="@string/display_rotation_category_title" />
-    <CheckBoxPreference
-        android:key="display_rotation_0"
-        android:title="@string/display_rotation_0_title"
-        android:layout="?android:attr/preferenceLayoutChild"
-        android:dependency="accelerometer" />
-    <CheckBoxPreference
-        android:key="display_rotation_90"
-        android:title="@string/display_rotation_90_title"
-        android:layout="?android:attr/preferenceLayoutChild"
-        android:dependency="accelerometer" />
-    <CheckBoxPreference
-        android:key="display_rotation_180"
-        android:title="@string/display_rotation_180_title"
-        android:layout="?android:attr/preferenceLayoutChild"
-        android:dependency="accelerometer" />
-    <CheckBoxPreference
-        android:key="display_rotation_270"
-        android:title="@string/display_rotation_270_title"
-        android:layout="?android:attr/preferenceLayoutChild"
-        android:dependency="accelerometer" />
+        android:title="@string/display_rotation_category_title"
+        android:dependency="accelerometer">
+
+        <CheckBoxPreference
+            android:key="display_rotation_0"
+            android:title="@string/display_rotation_0_title" />
+
+        <CheckBoxPreference
+            android:key="display_rotation_90"
+            android:title="@string/display_rotation_90_title" />
+
+        <CheckBoxPreference
+            android:key="display_rotation_180"
+            android:title="@string/display_rotation_180_title" />
+
+        <CheckBoxPreference
+            android:key="display_rotation_270"
+            android:title="@string/display_rotation_270_title" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
