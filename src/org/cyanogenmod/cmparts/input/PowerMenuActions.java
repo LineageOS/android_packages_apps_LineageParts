@@ -42,7 +42,7 @@ import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_ASSIST;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_LOCKDOWN;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_REBOOT;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_RESTART;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
@@ -86,8 +86,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 continue;
             }
 
-            if (action.equals(GLOBAL_ACTION_KEY_REBOOT)) {
-                mRebootPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_REBOOT);
+            if (action.equals(GLOBAL_ACTION_KEY_RESTART)) {
+                mRebootPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_RESTART);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
@@ -117,7 +117,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         super.onStart();
 
         if (mRebootPref != null) {
-            mRebootPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_REBOOT));
+            mRebootPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_RESTART));
         }
 
         if (mScreenshotPref != null) {
@@ -180,7 +180,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
         if (preference == mRebootPref) {
             value = mRebootPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_REBOOT);
+            updateUserConfig(value, GLOBAL_ACTION_KEY_RESTART);
 
         } else if (preference == mScreenshotPref) {
             value = mScreenshotPref.isChecked();
