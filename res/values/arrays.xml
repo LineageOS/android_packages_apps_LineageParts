@@ -79,7 +79,7 @@
 
     <string-array name="power_menu_actions_array" translatable="false">
         <item>power</item>
-        <item>reboot</item>
+        <item>restart</item>
         <item>screenshot</item>
         <item>airplane</item>
         <item>users</item>
