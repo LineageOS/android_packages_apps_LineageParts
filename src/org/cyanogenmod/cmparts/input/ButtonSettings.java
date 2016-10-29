@@ -68,6 +68,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
+    private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
+    private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
     private static final String KEY_NAVIGATION_RECENTS_LONG_PRESS = "navigation_recents_long_press";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
@@ -141,6 +143,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mSwapVolumeButtons;
     private SwitchPreference mDisableNavigationKeys;
     private SwitchPreference mNavigationBarLeftPref;
+    private ListPreference mNavigationHomeLongPressAction;
+    private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationRecentsLongPressAction;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
@@ -220,6 +224,32 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Navigation bar left
         mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
 
+        Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
+                com.android.internal.R.integer.config_longPressOnHomeBehavior));
+        Action defaultHomeDoubleTapAction = Action.fromIntSafe(res.getInteger(
+                com.android.internal.R.integer.config_doubleTapOnHomeBehavior));
+        Action homeLongPressAction = Action.fromSettings(resolver,
+                CMSettings.System.KEY_HOME_LONG_PRESS_ACTION,
+                defaultHomeLongPressAction);
+        Action homeDoubleTapAction = Action.fromSettings(resolver,
+                CMSettings.System.KEY_HOME_DOUBLE_TAP_ACTION,
+                defaultHomeDoubleTapAction);
+
+        // Navigation bar home long press
+        mNavigationHomeLongPressAction = initActionList(KEY_NAVIGATION_HOME_LONG_PRESS,
+                homeLongPressAction);
+
+        // Navigation bar home double tap
+        mNavigationHomeDoubleTapAction = initActionList(KEY_NAVIGATION_HOME_DOUBLE_TAP,
+                homeDoubleTapAction);
+
+        // Hide navigation bar home settings if we have a hardware home key
+        // so that action config options aren't duplicated.
+        if (hasHomeKey) {
+                mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
+                mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
+        }
+
         // Navigation bar recents long press activity needs custom setup
         mNavigationRecentsLongPressAction =
                 initRecentsLongPressAction(KEY_NAVIGATION_RECENTS_LONG_PRESS);
@@ -278,21 +308,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mHomeAnswerCall = null;
             }
 
-            Action defaultLongPressAction = Action.fromIntSafe(res.getInteger(
-                    com.android.internal.R.integer.config_longPressOnHomeBehavior));
-
-            Action defaultDoubleTapAction = Action.fromIntSafe(res.getInteger(
-                    com.android.internal.R.integer.config_doubleTapOnHomeBehavior));
-
-            Action longPressAction = Action.fromSettings(resolver,
-                    CMSettings.System.KEY_HOME_LONG_PRESS_ACTION,
-                    defaultLongPressAction);
-            mHomeLongPressAction = initActionList(KEY_HOME_LONG_PRESS, longPressAction);
-
-            Action doubleTapAction = Action.fromSettings(resolver,
-                    CMSettings.System.KEY_HOME_DOUBLE_TAP_ACTION,
-                    defaultDoubleTapAction);
-            mHomeDoubleTapAction = initActionList(KEY_HOME_DOUBLE_TAP, doubleTapAction);
+            mHomeLongPressAction = initActionList(KEY_HOME_LONG_PRESS, homeLongPressAction);
+            mHomeDoubleTapAction = initActionList(KEY_HOME_DOUBLE_TAP, homeDoubleTapAction);
 
             hasAnyBindableKey = true;
         } else {
@@ -565,12 +582,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mHomeLongPressAction) {
-            handleActionListChange(mHomeLongPressAction, newValue,
+        if (preference == mHomeLongPressAction ||
+                preference == mNavigationHomeLongPressAction) {
+            handleActionListChange((ListPreference) preference, newValue,
                     CMSettings.System.KEY_HOME_LONG_PRESS_ACTION);
             return true;
-        } else if (preference == mHomeDoubleTapAction) {
-            handleActionListChange(mHomeDoubleTapAction, newValue,
+        } else if (preference == mHomeDoubleTapAction ||
+                preference == mNavigationHomeDoubleTapAction) {
+            handleActionListChange((ListPreference) preference, newValue,
                     CMSettings.System.KEY_HOME_DOUBLE_TAP_ACTION);
             return true;
         } else if (preference == mMenuPressAction) {
