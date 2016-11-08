@@ -12,6 +12,7 @@
 -keep class org.cyanogenmod.cmparts.power.*
 -keep class org.cyanogenmod.cmparts.privacyguard.*
 -keep class org.cyanogenmod.cmparts.profiles.*
+-keep class org.cyanogenmod.cmparts.sounds.*
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {

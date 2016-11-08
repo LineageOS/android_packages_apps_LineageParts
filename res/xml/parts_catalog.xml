@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The CyanogenMod Project
+                   2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -104,5 +105,10 @@
           android:summary="@string/expanded_desktop_settings_summary"
           android:fragment="org.cyanogenmod.cmparts.applications.ExpandedDesktopSettings"
           cm:xmlRes="@xml/expanded_desktop_prefs" />
+
+    <part android:key="charging_sounds_settings"
+          android:title="@string/charging_sounds_settings_title"
+          android:fragment="org.cyanogenmod.cmparts.sounds.ChargingSoundsSettings"
+          cm:xmlRes="@xml/charging_sounds_settings" />
 
 </parts-catalog>
