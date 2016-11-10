@@ -170,8 +170,8 @@ public class LightSettingsDialog extends AlertDialog implements
         setView(layout);
         setTitle(R.string.edit_light_settings);
 
-        if (!getContext().getResources().getBoolean(
-                com.android.internal.R.bool.config_multiColorNotificationLed)) {
+        if (!mNotificationManager.doLightsSupport(
+                NotificationManager.LIGHTS_RGB_NOTIFICATION_LED)) {
             mColorPicker.setVisibility(View.GONE);
             mColorPanel.setVisibility(View.GONE);
             mLightsDialogDivider.setVisibility(View.GONE);

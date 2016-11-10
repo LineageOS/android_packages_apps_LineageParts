@@ -18,6 +18,7 @@ package org.cyanogenmod.cmparts.notificationlight;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.NotificationManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -110,9 +111,9 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mDefaultLedOff = resources.getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
 
-        mLedCanPulse = resources.getBoolean(com.android.internal.R.bool.config_ledCanPulse);
-        mMultiColorLed = resources.getBoolean(
-                com.android.internal.R.bool.config_multiColorNotificationLed);
+        final NotificationManager nm = getContext().getSystemService(NotificationManager.class);
+        mLedCanPulse = nm.doLightsSupport(NotificationManager.LIGHTS_PULSATING_LED);
+        mMultiColorLed = nm.doLightsSupport(NotificationManager.LIGHTS_RGB_NOTIFICATION_LED);
 
         mEnabledPref = (SystemSettingSwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE);
@@ -133,14 +134,13 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (CMSystemSettingSwitchPreference)
                 findPreference(CMSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
-        if (!resources.getBoolean(
-                org.cyanogenmod.platform.internal.R.bool.config_adjustableNotificationLedBrightness)) {
+        if (!nm.doLightsSupport(
+                NotificationManager.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS)) {
             mAdvancedPrefs.removePreference(mNotificationLedBrightnessPref);
         } else {
             mNotificationLedBrightnessPref.setOnPreferenceChangeListener(this);
         }
-        if (!resources.getBoolean(
-                org.cyanogenmod.platform.internal.R.bool.config_multipleNotificationLeds)) {
+        if (!nm.doLightsSupport(NotificationManager.LIGHTS_MULTIPLE_NOTIFICATION_LED)) {
             mAdvancedPrefs.removePreference(mMultipleLedsEnabledPref);
         } else {
             mMultipleLedsEnabledPref.setOnPreferenceChangeListener(this);
