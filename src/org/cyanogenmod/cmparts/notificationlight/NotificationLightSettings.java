@@ -439,9 +439,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     }
 
     public boolean onItemLongClick(final String key) {
-        final ApplicationLightPreference pref =
-                (ApplicationLightPreference) getPreferenceScreen().findPreference(key);
-
         if (mApplicationPrefList.findPreference(key) == null) {
             return false;
         }
