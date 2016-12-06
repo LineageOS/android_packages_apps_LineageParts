@@ -34,6 +34,7 @@ import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 import org.cyanogenmod.cmparts.search.BaseSearchIndexProvider;
 import org.cyanogenmod.cmparts.search.SearchIndexableRaw;
 import org.cyanogenmod.cmparts.search.Searchable;
+import org.cyanogenmod.cmparts.utils.ResourceUtils;
 
 import java.util.Collections;
 import java.util.List;
@@ -227,29 +228,6 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
         SettingsHelper.get(getActivity()).stopWatching(this);
     }
 
-    private static String getStringForResourceName(Resources res,
-                                                   String resourceName, String defaultValue) {
-        int resId = res.getIdentifier(resourceName, "string", "org.cyanogenmod.cmparts");
-        if (resId <= 0) {
-            Log.e(TAG, "No resource found for " + resourceName);
-            return defaultValue;
-        } else {
-            return res.getString(resId);
-        }
-    }
-
-    private static String getLocalizedProfileName(Resources res, String profileName) {
-        String name = profileName.toLowerCase().replace(" ", "_");
-        String nameRes = String.format(COLOR_PROFILE_TITLE, name);
-        return getStringForResourceName(res, nameRes, profileName);
-    }
-
-    private static String getLocalizedProfileSummary(Resources res, String profileName) {
-        String name = profileName.toLowerCase().replace(" ", "_");
-        String summaryRes = String.format(COLOR_PROFILE_SUMMARY, name);
-        return getStringForResourceName(res, summaryRes, null);
-    }
-
     private boolean updateDisplayModes() {
         final DisplayMode[] modes = mHardware.getDisplayModes();
         if (modes == null || modes.length == 0) {
@@ -264,10 +242,12 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
         mColorProfileSummaries = new String[modes.length];
         for (int i = 0; i < modes.length; i++) {
             values[i] = String.valueOf(modes[i].id);
-            entries[i] = getLocalizedProfileName(getResources(), modes[i].name);
+            entries[i] = ResourceUtils.getLocalizedString(
+                    getResources(), modes[i].name, COLOR_PROFILE_TITLE);
 
             // Populate summary
-            String summary = getLocalizedProfileSummary(getResources(), modes[i].name);
+            String summary = ResourceUtils.getLocalizedString(
+                    getResources(), modes[i].name, COLOR_PROFILE_SUMMARY);
             if (summary != null) {
                 summary = String.format("%s - %s", entries[i], summary);
             }
@@ -403,7 +383,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
                 DisplayMode[] modes = CMHardwareManager.getInstance(context).getDisplayModes();
                 if (modes != null && modes.length > 0) {
                     for (DisplayMode mode : modes) {
-                        result.add(getLocalizedProfileName(context.getResources(), mode.name));
+                        result.add(ResourceUtils.getLocalizedString(
+                                context.getResources(), mode.name, COLOR_PROFILE_TITLE));
                     }
                 }
             }
