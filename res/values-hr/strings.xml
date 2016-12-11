@@ -173,21 +173,16 @@
   <string name="camera_sleep_on_release_summary">Polupritisak će držati zaslon uključen samo dok se tipka drži pritisnuta</string>
   <string name="camera_launch_title">Pokreni kameru</string>
   <string name="camera_launch_summary">Dugi pritisak i puštanje će pokrenuti kameru</string>
-  <string name="volbtn_music_controls_title">Kontrola reprodukcije</string>
-  <string name="volbtn_music_controls_summary">Kada je zaslon isključen, dugi pritisak tipke za glasnoću će tražiti pjesme</string>
   <string name="volbtn_cursor_control_title">Kontrola pokazivača tipkovnice</string>
   <string name="volbtn_cursor_control_off">Onemogućeno</string>
   <string name="volbtn_cursor_control_on">Tipka za glasnoću gore/dolje pomiče kursor lijevo/desno</string>
   <string name="volbtn_cursor_control_on_reverse">Tipka za glasnoću gore/dolje pomiče kursor lijevo/desno</string>
   <string name="power_end_call_title">Završi poziv</string>
-  <string name="power_end_call_summary">Pritisak tipke za napajanje će prekinuti trenutni poziv</string>
   <string name="swap_volume_buttons_title">Preorijentacija</string>
   <string name="swap_volume_buttons_summary">Zamijeni tipke za glasnoću kada je zaslon rotiran</string>
-  <string name="button_wake_title">Probudi uređaj</string>
   <string name="volume_answer_call_title">Odgovori na poziv</string>
   <string name="volume_answer_call_summary">Odgovori na dolazne pozive pritiskom na tipke za podešavanje glasnoće</string>
   <string name="home_answer_call_title">Odgovori na poziv</string>
-  <string name="home_answer_call_summary">Pritisak na Home tipku će odgovoriti na dolazni poziv</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Pozadinsko osvjetljenje</string>
   <string name="button_backlight_enabled">Osvjetljenje tipki</string>

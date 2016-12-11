@@ -84,10 +84,101 @@
   <string name="battery_light_medium_color_title">Lader</string>
   <string name="battery_light_full_color_title">Fulladet</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Notifikasjonslys</string>
+  <string name="notification_light_general_title">Generelt</string>
+  <string name="notification_light_advanced_title">Avansert</string>
+  <string name="notification_light_applist_title">Apper</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Bruk egendefinerte verdier</string>
+  <string name="notification_light_default_value">Standard</string>
+  <string name="notification_light_missed_call_title">Tapt anrop</string>
+  <string name="notification_light_voicemail_title">Talepost</string>
+  <string name="notification_light_screen_on">Lys med skjermen på</string>
+  <string name="notification_light_zen_mode">Lys i Ikke Forstyrr-modus</string>
+  <string name="notification_light_use_multiple_leds">Flere lysdioder</string>
+  <string name="keywords_lights_brightness_level">dim lysdioder lysstyrke</string>
+  <string name="notification_light_automagic">Velg farger automatisk</string>
+  <string name="notification_light_automagic_summary">Velger farger automatisk</string>
   <!-- Lights settings, LED notification -->
+  <string name="led_notification_title">Lysinnstillinger</string>
+  <string name="led_notification_text">LED-lyset aktiveres av innstillingene</string>
+  <string name="notification_light_no_apps_summary">For å legge til per-app kontroll, må du aktivere \'%1$s\' og trykke \'\u002b\' på meny-linjen</string>
   <!-- LiveDisplay -->
+  <string name="live_display_summary">Optimalisere skjermen basert på tidspunkt av dagen og omgivelsesforhold for å forbedre lesbarhet og redusere belastningen på øynene</string>
+  <string name="live_display_mode">Visningsmodus</string>
+  <string name="live_display_color_temperature_title">Fargetemperatur</string>
+  <string name="live_display_color_temperature_summary">Dag: <xliff:g id="day_temperature">%1$d</xliff:g>K  Natt: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+  <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+  <string name="live_display_day">Dag</string>
+  <string name="live_display_night">Natt</string>
+  <string name="live_display_outdoor_mode_title">Automatisk utendørs modus</string>
+  <string name="live_display_outdoor_mode_summary">Øk lysstyrke og metning automatisk under sterkt sollys</string>
+  <string name="live_display_low_power_title">Reduser strømforbruket</string>
+  <string name="live_display_low_power_summary">Justere visningen for laveste strømforbruk uten degradering</string>
+  <string name="live_display_enhance_color_title">Forbedre farger</string>
+  <string name="live_display_enhance_color_summary">Forbedre fargefullhet på hudfarger, natur og andre bilder</string>
+  <string name="live_display_color_profile_title">Fargeprofil</string>
+  <string name="live_display_color_profile_standard_title">Standard</string>
+  <string name="live_display_color_profile_standard_summary">Nøyaktige farger og lyse hvitfarger</string>
+  <string name="live_display_color_profile_natural_title">Naturlig</string>
+  <string name="live_display_color_profile_natural_summary">Realistiske farger og varme toner</string>
+  <string name="live_display_color_profile_dynamic_title">Dynamisk</string>
+  <string name="live_display_color_profile_dynamic_summary">Forbedrede farger og lyse hvitfarger</string>
+  <string name="live_display_color_profile_cinema_title">Kino</string>
+  <string name="live_display_color_profile_cinema_summary">Perfekt fargegjengivelse for video</string>
+  <string name="live_display_color_profile_astronomy_title">Astronomi</string>
+  <string name="live_display_color_profile_astronomy_summary">Dyp rød for å bevare nattsynet</string>
+  <string name="live_display_color_profile_photography_title">Fotografi</string>
+  <string name="live_display_color_profile_photography_summary">Perfekt fargegjengivelse for bilder</string>
+  <string name="live_display_color_profile_basic_title">Grunnleggende</string>
+  <string name="live_display_color_profile_basic_summary">Bruk skjermen ukalibrert</string>
+  <string name="live_display_color_profile_adaptive_title">Tilpassende</string>
+  <string name="live_display_color_profile_adaptive_summary">Farger tilpasser seg til omgivelsene</string>
+  <string name="color_calibration_title">Fargekalibrering</string>
+  <string name="color_calibration_summary">Kalibrere skjermens farger</string>
+  <string name="color_red_title">Rød</string>
+  <string name="color_green_title">Grønn</string>
+  <string name="color_blue_title">Blå</string>
   <!-- LiveDisplay : Picture Adjustment -->
+  <string name="picture_adjustment_title">Bildejustering</string>
+  <string name="picture_adjustment_summary">Juster fargetone, metning, intensitet og kontrast</string>
+  <string name="adj_hue_title">Fargetone</string>
+  <string name="adj_saturation_title">Metning</string>
+  <string name="adj_intensity_title">Intensitet</string>
+  <string name="adj_contrast_title">Kontrast</string>
   <!-- Button settings -->
+  <string name="button_pref_title">Knapper</string>
+  <string name="hardware_keys_power_key_title">Strøm-knappen</string>
+  <string name="hardware_keys_home_key_title">Hjem-knappen</string>
+  <string name="hardware_keys_back_key_title">Tilbake-knappen</string>
+  <string name="hardware_keys_menu_key_title">Meny-knappen</string>
+  <string name="hardware_keys_assist_key_title">Søkeknappen</string>
+  <string name="hardware_keys_appswitch_key_title">Nylig brukt-knappen</string>
+  <string name="hardware_keys_camera_key_title">Kamera-knappen</string>
+  <string name="hardware_keys_volume_keys_title">Volumknappene</string>
+  <string name="hardware_keys_short_press_title">Kort trykk handling</string>
+  <string name="hardware_keys_long_press_title">Langt trykk handling</string>
+  <string name="hardware_keys_double_tap_title">Dobbelttrykk handling</string>
+  <string name="hardware_keys_action_nothing">Ingen handling</string>
+  <string name="hardware_keys_action_menu">Åpne/lukke menyen</string>
+  <string name="hardware_keys_action_app_switch">Siste apper</string>
+  <string name="hardware_keys_action_search">Søkeassistent</string>
+  <string name="hardware_keys_action_voice_search">Talesøk</string>
+  <string name="hardware_keys_action_in_app_search">I-app søk</string>
+  <string name="hardware_keys_action_launch_camera">Start kamera</string>
+  <string name="hardware_keys_action_sleep">Slå skjermen av</string>
+  <string name="hardware_keys_action_last_app">Siste app</string>
+  <string name="hardware_keys_action_split_screen">Delt skjerm</string>
+  <string name="camera_sleep_on_release_title">Skjermtitt</string>
+  <string name="camera_sleep_on_release_summary">Et halvt trykk holder bare skjermen påslått mens knappen holdes nede</string>
+  <string name="camera_launch_title">Start kamera</string>
+  <string name="camera_launch_summary">Et langt trykk-og-slipp starter kameraet</string>
+  <string name="volbtn_cursor_control_title">Kontroll av tastaturmarkør</string>
+  <string name="volbtn_cursor_control_off">Deaktivert</string>
+  <string name="volbtn_cursor_control_on">Volum opp/ned flytter markøren venstre/høyre</string>
+  <string name="volbtn_cursor_control_on_reverse">Volum opp/ned flytter markøren høyre/venstre</string>
+  <string name="power_end_call_title">Avslutt samtale</string>
+  <string name="swap_volume_buttons_title">Reorientere</string>
   <!-- Key backlight -->
   <!-- Buttons - Enable navbar -->
   <!-- Navigation Bar -->
@@ -126,6 +217,12 @@
   <!-- Display : Rotation  -->
   <!-- Weather -->
   <!-- Power: Performance profiles -->
+  <string name="power_save_category_title">Batterisparing</string>
+  <string name="power_save_title">Ekstrem strømsparing</string>
+  <string name="power_save_summary">Begrenser enhetens ytelse og bakgrunnsaktivitet for å spare strøm</string>
+  <string name="auto_power_save_title">Automatisk strømsparing</string>
+  <string name="auto_power_save_summary_on">Aktiverer strømsparing automatisk på %d batteriprosent</string>
+  <string name="auto_power_save_summary_off">Ikke slå på strømsparingsmodus automatisk</string>
   <string name="app_perf_profiles_title">Automatisk optimalisering</string>
   <string name="app_perf_profiles_summary">Velg automatisk en riktig ytelsesprofil for applikasjoner og bruksmønster</string>
   <!-- Applications: Expanded desktop -->
