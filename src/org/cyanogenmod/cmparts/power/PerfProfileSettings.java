@@ -49,7 +49,7 @@ import cyanogenmod.providers.CMSettings;
 public class PerfProfileSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
-    private static final String KEY_PERF_PROFILE     = "perf_profile";
+    private static final String KEY_PERF_PROFILE_CATEGORY = "perf_profile_category";
     private static final String KEY_AUTO_POWER_SAVE  = "auto_power_save";
     private static final String KEY_POWER_SAVE       = "power_save";
     private static final String KEY_PER_APP_PROFILES = "app_perf_profiles";
@@ -96,8 +96,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         int count = mProfiles.size();
 
         if (count == 0) {
-            removePreference(KEY_PER_APP_PROFILES);
-            removePreference(KEY_PERF_SEEKBAR);
+            removePreference(KEY_PERF_PROFILE_CATEGORY);
             mPerfSeekBar = null;
             mPerAppProfilesPref = null;
 
