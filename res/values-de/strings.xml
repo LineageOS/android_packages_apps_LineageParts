@@ -173,6 +173,7 @@
   <string name="camera_sleep_on_release_summary">Der Bildschirm bleibt aktiviert, solange die Kamera-Taste halb durchgedrückt gehalten wird.</string>
   <string name="camera_launch_title">Kamera starten</string>
   <string name="camera_launch_summary">Langes Drücken und Loslassen startet die Kamera</string>
+  <string name="volbtn_music_controls_title">Wiedergabe steuern</string>
   <string name="volbtn_cursor_control_title">Cursorsteuerung</string>
   <string name="volbtn_cursor_control_off">Deaktiviert</string>
   <string name="volbtn_cursor_control_on">Lauter-/Leiser-Taste bewegt den Cursor nach links/rechts</string>
@@ -180,9 +181,11 @@
   <string name="power_end_call_title">Anruf beenden</string>
   <string name="swap_volume_buttons_title">Umkehren</string>
   <string name="swap_volume_buttons_summary">Belegung der Lautstärketasten umkehren, wenn das Gerät gedreht wird</string>
+  <string name="button_wake_title">Gerät aufwecken</string>
   <string name="volume_answer_call_title">Anruf annehmen</string>
   <string name="volume_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>
   <string name="home_answer_call_title">Anruf beantworten</string>
+  <string name="home_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Hintergrundbeleuchtung</string>
   <string name="button_backlight_enabled">Tasten beleuchten</string>

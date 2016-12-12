@@ -52,7 +52,7 @@
   <string name="privacy_guard_help_title">Ajuda</string>
   <string name="privacy_guard_reset_title">Redefinir</string>
   <string name="privacy_guard_reset_text">Redefinir permissões?</string>
-  <string name="privacy_guard_help_text">Nesta tela você pode escolher para quais apps a Proteção à Privacidade deve funcionar simplesmente tocando neles. Os aplicativos selecionados não poderão acessar seus dados pessoais, como contatos, mensagens ou registos de chamadas. Ao pressionar e segurar o um item, a tela de detalhes dele é exibida.\n\nApps de sistema não são exibidos por padrão, mas podem ser exibidos selecionando a respectiva opção no menu.</string>
+  <string name="privacy_guard_help_text">Nesta tela você pode escolher para quais apps a Proteção à Privacidade deve funcionar simplesmente tocando neles. Os aplicativos selecionados não poderão acessar seus dados pessoais, como contatos, mensagens ou registos de chamadas. Ao pressionar e segurar um item, a tela de detalhes dele é exibida.\n\nApps de sistema não são exibidos por padrão, mas podem ser exibidos selecionando a respectiva opção no menu.</string>
   <string name="privacy_guard_manager_show_system_apps">Mostrar apps do sistema</string>
   <string name="privacy_guard_advanced_settings_title">Avançado</string>
   <string name="privacy_guard_notification_title">Mostrar notificação</string>

@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Una mitja pressió mantindrà la pantalla encesa només mentre el botó es mantingui apretat</string>
   <string name="camera_launch_title">Obre la càmera</string>
   <string name="camera_launch_summary">Una pulsació llarga i deixa anar per obrir la càmera</string>
+  <string name="volbtn_music_controls_title">Controla la reproducció</string>
+  <string name="volbtn_music_controls_summary">Busca les pistes de música fent una pulsació llarga a les tecles de volum mentre la pantalla està apagada</string>
   <string name="volbtn_cursor_control_title">Control del cursor del teclat</string>
   <string name="volbtn_cursor_control_off">Deshabilitat</string>
   <string name="volbtn_cursor_control_on">Volum amunt/avall mou el cursor a esquerra/dreta</string>
   <string name="volbtn_cursor_control_on_reverse">Volum amunt/avall mou el cursor a dreta/esquerra</string>
   <string name="power_end_call_title">Finalitza la trucada</string>
+  <string name="power_end_call_summary">Finalitza la trucada actual prement el botó d\'apagat</string>
   <string name="swap_volume_buttons_title">Reorienta</string>
   <string name="swap_volume_buttons_summary">Intercanvia els botons de volum quan la pantalla estigui rotada</string>
+  <string name="button_wake_title">Encén el dispositiu</string>
   <string name="volume_answer_call_title">Contesta la trucada</string>
   <string name="volume_answer_call_summary">Contesta les trucades entrants prement els botons de volum</string>
   <string name="home_answer_call_title">Contesta la trucada</string>
+  <string name="home_answer_call_summary">Contesta les trucades entrants prement el botó d\'inici</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Retroil·luminació</string>
   <string name="button_backlight_enabled">Il·lumina els botons</string>

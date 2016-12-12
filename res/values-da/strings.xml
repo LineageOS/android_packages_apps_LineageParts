@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Et halvt tryk vil holde skærmen tændt, men kun mens knappen holdes nede</string>
   <string name="camera_launch_title">Start kamera</string>
   <string name="camera_launch_summary">Et langt tryk og slip vil starte kameraet</string>
+  <string name="volbtn_music_controls_title">Styr afspilning</string>
+  <string name="volbtn_music_controls_summary">Søg musiknumre ved at trykke længe på lydstyrketasterne, mens skærmen er slukket</string>
   <string name="volbtn_cursor_control_title">Kontrol af tastaturmarkør</string>
   <string name="volbtn_cursor_control_off">Deaktiveret</string>
   <string name="volbtn_cursor_control_on">Lydstyrke op/ned flytter markør venstre/højre</string>
   <string name="volbtn_cursor_control_on_reverse">Lydstyrke op/ned flytter markør højre/venstre</string>
   <string name="power_end_call_title">Afslut opkald</string>
+  <string name="power_end_call_summary">Afslut det aktuelle opkald ved at trykke på strømknappen</string>
   <string name="swap_volume_buttons_title">Omlæg</string>
   <string name="swap_volume_buttons_summary">Ombyt lydstyrkeknapper, når skærmen roteres</string>
+  <string name="button_wake_title">Væk enhed</string>
   <string name="volume_answer_call_title">Besvar opkald</string>
   <string name="volume_answer_call_summary">Besvare indgående opkald ved at trykke på lydstyrkeknapperne</string>
   <string name="home_answer_call_title">Besvar opkald</string>
+  <string name="home_answer_call_summary">Besvar indgående opkald ved at trykke på lydstyrkeknapperne</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Bagbelysning</string>
   <string name="button_backlight_enabled">Oplys knapper</string>
