@@ -379,11 +379,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_style_title">Darstellung der Uhr</string>
-  <string name="status_bar_clock_style_right">Rechts</string>
-  <string name="status_bar_clock_style_left">Links</string>
-  <string name="status_bar_clock_style_center">Zentriert</string>
-  <string name="status_bar_clock_style_hidden">Ausgeblendet</string>
+  <string name="status_bar_clock_position_title">Darstellung der Uhr</string>
+  <string name="status_bar_clock_position_right">Rechts</string>
+  <string name="status_bar_clock_position_left">Links</string>
+  <string name="status_bar_clock_position_center">Zentriert</string>
   <string name="status_bar_am_pm_title">AM/PM-Format</string>
   <string name="status_bar_am_pm_info">24-Stunden-Format ist aktiviert</string>
   <string name="status_bar_am_pm_normal">Standard</string>

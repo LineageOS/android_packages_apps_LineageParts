@@ -380,11 +380,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Vasen reuna</string>
   <string name="status_bar_quick_qs_pulldown_right">Oikea reuna</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_style_title">Kellon tyyli</string>
-  <string name="status_bar_clock_style_right">Oikea reuna</string>
-  <string name="status_bar_clock_style_left">Vasen reuna</string>
-  <string name="status_bar_clock_style_center">Keskitetty</string>
-  <string name="status_bar_clock_style_hidden">Piilotettu</string>
+  <string name="status_bar_clock_position_title">Kellon tyyli</string>
+  <string name="status_bar_clock_position_right">Oikea reuna</string>
+  <string name="status_bar_clock_position_left">Vasen reuna</string>
+  <string name="status_bar_clock_position_center">Keskitetty</string>
   <string name="status_bar_am_pm_title">AM/PM tyyli</string>
   <string name="status_bar_am_pm_info">24-tunnin kello on käytössä</string>
   <string name="status_bar_am_pm_normal">Normaali</string>

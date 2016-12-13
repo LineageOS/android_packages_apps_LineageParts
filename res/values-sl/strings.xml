@@ -380,11 +380,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Levi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_style_title">Slog ure</string>
-  <string name="status_bar_clock_style_right">Desno</string>
-  <string name="status_bar_clock_style_left">Levo</string>
-  <string name="status_bar_clock_style_center">Na sredini</string>
-  <string name="status_bar_clock_style_hidden">Skrito</string>
+  <string name="status_bar_clock_position_title">Slog ure</string>
+  <string name="status_bar_clock_position_right">Desno</string>
+  <string name="status_bar_clock_position_left">Levo</string>
+  <string name="status_bar_clock_position_center">Na sredini</string>
   <string name="status_bar_am_pm_title">Slog AM/PM</string>
   <string name="status_bar_am_pm_info">24-urni način je omogočen</string>
   <string name="status_bar_am_pm_normal">Običajno</string>

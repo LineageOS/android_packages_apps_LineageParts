@@ -380,11 +380,10 @@
   <string name="status_bar_quick_qs_pulldown_left">vľavo</string>
   <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_style_title">Štýl hodín</string>
-  <string name="status_bar_clock_style_right">Vpravo</string>
-  <string name="status_bar_clock_style_left">Vľavo</string>
-  <string name="status_bar_clock_style_center">V strede</string>
-  <string name="status_bar_clock_style_hidden">Skryté</string>
+  <string name="status_bar_clock_position_title">Štýl hodín</string>
+  <string name="status_bar_clock_position_right">Vpravo</string>
+  <string name="status_bar_clock_position_left">Vľavo</string>
+  <string name="status_bar_clock_position_center">V strede</string>
   <string name="status_bar_am_pm_title">Štýl AM/PM</string>
   <string name="status_bar_am_pm_info">24-hodinový formát je povolený</string>
   <string name="status_bar_am_pm_normal">Normálny</string>

@@ -380,11 +380,10 @@
   <string name="status_bar_quick_qs_pulldown_left">ezkerreko</string>
   <string name="status_bar_quick_qs_pulldown_right">eskumako</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_style_title">Erlojuaren estiloa</string>
-  <string name="status_bar_clock_style_right">Eskuma</string>
-  <string name="status_bar_clock_style_left">Ezkerra</string>
-  <string name="status_bar_clock_style_center">Zentroa</string>
-  <string name="status_bar_clock_style_hidden">Ezkutatua</string>
+  <string name="status_bar_clock_position_title">Erlojuaren estiloa</string>
+  <string name="status_bar_clock_position_right">Eskuma</string>
+  <string name="status_bar_clock_position_left">Ezkerra</string>
+  <string name="status_bar_clock_position_center">Zentroa</string>
   <string name="status_bar_am_pm_title">AM/PM estiloa</string>
   <string name="status_bar_am_pm_info">24 ordutako erlojua gaitu da</string>
   <string name="status_bar_am_pm_normal">Arrunta</string>

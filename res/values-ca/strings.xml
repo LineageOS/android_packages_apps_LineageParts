@@ -380,11 +380,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Esquerra</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreta</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_style_title">Estil del rellotge</string>
-  <string name="status_bar_clock_style_right">Dreta</string>
-  <string name="status_bar_clock_style_left">Esquerra</string>
-  <string name="status_bar_clock_style_center">Centrat</string>
-  <string name="status_bar_clock_style_hidden">Amagat</string>
+  <string name="status_bar_clock_position_title">Estil del rellotge</string>
+  <string name="status_bar_clock_position_right">Dreta</string>
+  <string name="status_bar_clock_position_left">Esquerra</string>
+  <string name="status_bar_clock_position_center">Centrat</string>
   <string name="status_bar_am_pm_title">Estil AM/PM</string>
   <string name="status_bar_am_pm_info">El format de 24 hores està activat</string>
   <string name="status_bar_am_pm_normal">Normal</string>
