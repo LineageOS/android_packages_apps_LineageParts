@@ -475,7 +475,7 @@
   <string name="power_save_title">Агрессивное энергосбережение</string>
   <string name="power_save_summary">Ограничение производительности и фоновой активности устройства для экономии энергии</string>
   <string name="auto_power_save_title">Автоматическое энергосбережение</string>
-  <string name="auto_power_save_summary_on">Автоматически включать энергосбережение на %d \u0025 батареи</string>
+  <string name="auto_power_save_summary_on">Автоматически включать энергосбережение на %d процентов батареи</string>
   <string name="auto_power_save_summary_off">Не включать энергосбережение автоматически</string>
   <string name="app_perf_profiles_title">Автоматическая оптимизация</string>
   <string name="app_perf_profiles_summary">Автоматически переключать профиль производительности в зависимости от приложения</string>
