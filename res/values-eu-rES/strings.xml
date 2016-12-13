@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Kamera botoia erdira sakatzeak pantaila esna mantenduko du botoia askatu arte</string>
   <string name="camera_launch_title">Abiatu kamera</string>
   <string name="camera_launch_summary">Luze sakatu eta askatzeak kamera abiatuko du</string>
+  <string name="volbtn_music_controls_title">Kontrolatu erreprodukzioa</string>
+  <string name="volbtn_music_controls_summary">Bilatu musika pistak bolumen teklak luze sakatuz pantaila itzalita dagoean</string>
   <string name="volbtn_cursor_control_title">Teklatu bidezko kurtsorearen kontrola</string>
   <string name="volbtn_cursor_control_off">Desgaituta</string>
   <string name="volbtn_cursor_control_on">Bolumena igo eta jaisteko botoiek kurtsorea ezkerrera eta eskumara mugitzen dute</string>
   <string name="volbtn_cursor_control_on_reverse">Bolumena igo eta jaisteko botoiek kurtsorea eskumara eta ezkerrera mugitzen dute</string>
   <string name="power_end_call_title">Amaitu deia</string>
+  <string name="power_end_call_summary">Amaitu uneko deia pizte botoia sakatuta</string>
   <string name="swap_volume_buttons_title">Berrorientatu</string>
   <string name="swap_volume_buttons_summary">Trukatu bolumen botoiak pantaila biratzean</string>
+  <string name="button_wake_title">Esnatu gailua</string>
   <string name="volume_answer_call_title">Erantzun deia</string>
   <string name="volume_answer_call_summary">Erantzun jasotako deiak bolumen botoiak zapalduz</string>
   <string name="home_answer_call_title">Erantzun deia</string>
+  <string name="home_answer_call_summary">Erantzun jasotako deiak hasiera botoia zapalduz</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Atze-argitzea</string>
   <string name="button_backlight_enabled">Argitu botoiak</string>

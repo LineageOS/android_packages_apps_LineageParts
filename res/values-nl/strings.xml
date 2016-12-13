@@ -79,7 +79,7 @@
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Verlichtingsinstellingen</string>
   <string name="led_notification_text">LED-verlichting ingeschakeld door instellingen</string>
-  <string name="notification_light_no_apps_summary">Om controle per app toe te voegen, activeer %1$s en klik \'\u002b\' op de menubalk</string>
+  <string name="notification_light_no_apps_summary">Om controle per app toe te voegen, activeer %1$s en tik \'\u002b\' op de menubalk</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
   <string name="live_display_mode">Weergavemodus</string>

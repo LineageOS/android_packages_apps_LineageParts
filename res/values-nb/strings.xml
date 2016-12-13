@@ -173,15 +173,41 @@
   <string name="camera_sleep_on_release_summary">Et halvt trykk holder bare skjermen påslått mens knappen holdes nede</string>
   <string name="camera_launch_title">Start kamera</string>
   <string name="camera_launch_summary">Et langt trykk-og-slipp starter kameraet</string>
+  <string name="volbtn_music_controls_title">Kontrollere avspilling</string>
+  <string name="volbtn_music_controls_summary">Søk musikkspor ved å holde inne volumtastene mens skjermen er av</string>
   <string name="volbtn_cursor_control_title">Kontroll av tastaturmarkør</string>
   <string name="volbtn_cursor_control_off">Deaktivert</string>
   <string name="volbtn_cursor_control_on">Volum opp/ned flytter markøren venstre/høyre</string>
   <string name="volbtn_cursor_control_on_reverse">Volum opp/ned flytter markøren høyre/venstre</string>
   <string name="power_end_call_title">Avslutt samtale</string>
+  <string name="power_end_call_summary">Avslutt anropet ved å trykke på strømknappen</string>
   <string name="swap_volume_buttons_title">Reorientere</string>
+  <string name="swap_volume_buttons_summary">Tilpass volumknappene ettersom skjermen er rotert</string>
+  <string name="button_wake_title">Våkne enhet</string>
+  <string name="volume_answer_call_title">Besvar anrop</string>
+  <string name="volume_answer_call_summary">Besvar innkommende anrop ved å trykke på volumknappene</string>
+  <string name="home_answer_call_title">Besvar anrop</string>
+  <string name="home_answer_call_summary">Besvar innkommende anrop ved å trykke på hjem-knappen</string>
   <!-- Key backlight -->
+  <string name="button_backlight_title">Bakgrunnsbelysning</string>
+  <string name="button_backlight_enabled">Belyste knapper</string>
+  <string name="keyboard_backlight_enabled">Belyst tastatur</string>
+  <string name="button_backlight_seekbar_title">Knappenes lysstyrke</string>
+  <string name="keyboard_backlight_seekbar_title">Tastaturets lysstyrke</string>
+  <string name="backlight_timeout_title">Belysningstidsavbrudd</string>
+  <string name="backlight_timeout_unlimited">Ikke slå av</string>
+  <string name="backlight_summary_disabled">Deaktivert</string>
+  <string name="backlight_summary_enabled_with_timeout">Aktivert for <xliff:g id="timeout">%s</xliff:g></string>
+  <string name="backlight_summary_enabled">Aktivert</string>
   <!-- Buttons - Enable navbar -->
+  <string name="disable_navkeys_title">Aktiver navigasjonsfelt på skjermen</string>
+  <string name="disable_navkeys_summary">Aktiverer navigasjonsfelt på skjermen og deaktiverer de fysiske knappene</string>
   <!-- Navigation Bar -->
+  <string name="navigation_bar_category">Navigasjonsfelt</string>
+  <string name="navigation_bar_title">Knapper og oppsett</string>
+  <string name="navigation_bar_left_title">Venstrehendt modus</string>
+  <string name="navigation_bar_left_summary">Plasser navigasjonsfeltet til venstre på skjermen i liggende modus</string>
+  <string name="navigation_bar_arrow_keys_title">Vis piltastene mens du skriver</string>
   <!-- Power menu -->
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->

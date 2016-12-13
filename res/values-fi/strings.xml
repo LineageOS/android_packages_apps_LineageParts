@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Puolikas painallus pitää näytön päällä vain kun näppäintä pidetään alhaalla</string>
   <string name="camera_launch_title">Käynnistä kamera</string>
   <string name="camera_launch_summary">Pitkä painallus ja vapautus avaa kameran</string>
+  <string name="volbtn_music_controls_title">Toiston ohjaus</string>
+  <string name="volbtn_music_controls_summary">Vaihda kappaletta pitämällä äänenvoimakkuusnäppäimiä pohjassa näytön ollessa suljettu</string>
   <string name="volbtn_cursor_control_title">Kohdistimen ohjaus näppäimistöllä</string>
   <string name="volbtn_cursor_control_off">Pois käytöstä</string>
   <string name="volbtn_cursor_control_on">Äänenvoimakkuus ylös/alas ohjaa kohdistinta vasemmalle/oikealle</string>
   <string name="volbtn_cursor_control_on_reverse">Äänenvoimakkuus ylös/alas ohjaa kohdistinta oikealle/vasemmalle</string>
   <string name="power_end_call_title">Lopeta puhelu</string>
+  <string name="power_end_call_summary">Lopeta puhelu painamalla virtanäppäintä</string>
   <string name="swap_volume_buttons_title">Käännä</string>
   <string name="swap_volume_buttons_summary">Vaihda äänenvoimakkuusnäppäimien paikkoja näytön ollessa käännettynä</string>
+  <string name="button_wake_title">Herätä laite</string>
   <string name="volume_answer_call_title">Vastaa puheluun</string>
   <string name="volume_answer_call_summary">Vastaa puheluun painamalla äänenvoimakkuusnäppäintä</string>
   <string name="home_answer_call_title">Vastaa puheluun</string>
+  <string name="home_answer_call_summary">Vastaa puheluun painamalla kotinäppäintä</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Taustavalo</string>
   <string name="button_backlight_enabled">Valaise painikkeet</string>

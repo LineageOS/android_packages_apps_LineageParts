@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Леко натискане ще запази екрана само, докато бутонът е натиснат</string>
   <string name="camera_launch_title">Стартиране на камерата</string>
   <string name="camera_launch_summary">Дълго натискане и освобождаване за стартиране на камерата</string>
+  <string name="volbtn_music_controls_title">Управление на възпроизвеждането</string>
+  <string name="volbtn_music_controls_summary">Търси песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
   <string name="volbtn_cursor_control_title">Контрол на курсора</string>
   <string name="volbtn_cursor_control_off">Изключена</string>
   <string name="volbtn_cursor_control_on">Звука нагоре/надолу премества курсора наляво/надясно</string>
   <string name="volbtn_cursor_control_on_reverse">Звука нагоре/надолу премества курсора надясно/наляво</string>
   <string name="power_end_call_title">Край на повикването</string>
+  <string name="power_end_call_summary">Край текущото повикване чрез натискане на бутона за захранване</string>
   <string name="swap_volume_buttons_title">Преориентиране</string>
   <string name="swap_volume_buttons_summary">Разменя бутоните за сила на звука, когато екрана се завъртян</string>
+  <string name="button_wake_title">Събуди устройството</string>
   <string name="volume_answer_call_title">Отговори на обаждане</string>
   <string name="volume_answer_call_summary">Отговаряне на входящите повиквания чрез натискане на бутоните за звук</string>
   <string name="home_answer_call_title">Отговори на обаждане</string>
+  <string name="home_answer_call_summary">Отговаряне на входящите повиквания чрез натискане на бутона за Начало</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Подсветка</string>
   <string name="button_backlight_enabled">Осветяване на бутоните</string>
