@@ -179,6 +179,7 @@
   <string name="volbtn_cursor_control_on">Lauter-/Leiser-Taste bewegt den Cursor nach links/rechts</string>
   <string name="volbtn_cursor_control_on_reverse">Lauter-/Leiser-Taste bewegt den Cursor nach rechts/links</string>
   <string name="power_end_call_title">Anruf beenden</string>
+  <string name="power_end_call_summary">Aktuellen Anruf durch Drücken der Ein-/Aus-Taste beenden</string>
   <string name="swap_volume_buttons_title">Umkehren</string>
   <string name="swap_volume_buttons_summary">Belegung der Lautstärketasten umkehren, wenn das Gerät gedreht wird</string>
   <string name="button_wake_title">Gerät aufwecken</string>

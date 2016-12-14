@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">仅当按钮被按下时，半按将会保持屏幕点亮</string>
   <string name="camera_launch_title">启动相机</string>
   <string name="camera_launch_summary">长按并松开将会启动相机</string>
+  <string name="volbtn_music_controls_title">播放控制</string>
+  <string name="volbtn_music_controls_summary">当屏幕关闭时，长按音量键切换音乐</string>
   <string name="volbtn_cursor_control_title">键盘光标控制</string>
   <string name="volbtn_cursor_control_off">已禁用</string>
   <string name="volbtn_cursor_control_on">音量+/-光标左/右移动</string>
   <string name="volbtn_cursor_control_on_reverse">音量+/-光标右/左移动</string>
   <string name="power_end_call_title">结束通话</string>
+  <string name="power_end_call_summary">按电源按钮结束当前通话</string>
   <string name="swap_volume_buttons_title">重新调整</string>
   <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
+  <string name="button_wake_title">唤醒设备</string>
   <string name="volume_answer_call_title">接听电话</string>
   <string name="volume_answer_call_summary">按音量键接听来电</string>
   <string name="home_answer_call_title">接听电话</string>
+  <string name="home_answer_call_summary">按 Home 键接听来电</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">背光</string>
   <string name="button_backlight_enabled">点亮按键</string>
