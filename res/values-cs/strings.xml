@@ -70,10 +70,67 @@
   <string name="pulse_length_short">Krátká</string>
   <string name="pulse_length_normal">Normální</string>
   <string name="pulse_length_long">Dlouhá</string>
+  <string name="pulse_length_very_long">Velmi dlouze</string>
+  <string name="pulse_speed_very_fast">Velmi rychle</string>
+  <string name="pulse_speed_fast">Rychle</string>
+  <string name="pulse_speed_normal">Normálně</string>
+  <string name="pulse_speed_slow">Pomalu</string>
+  <string name="pulse_speed_very_slow">Velmi pomalu</string>
   <!-- Battery light settings -->
+  <string name="battery_light_title">Ukazatel baterie</string>
+  <string name="battery_low_pulse_title">Blikat, když je baterie vybitá</string>
+  <string name="battery_light_list_title">Barvy</string>
+  <string name="battery_light_low_color_title">Vybitá baterie</string>
+  <string name="battery_light_medium_color_title">Nabíjení</string>
+  <string name="battery_light_full_color_title">Plně nabito</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Světelná signalizace</string>
+  <string name="notification_light_general_title">Obecné</string>
+  <string name="notification_light_advanced_title">Pokročilé</string>
+  <string name="notification_light_applist_title">Aplikace</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Nastavit vlastní hodnoty</string>
+  <string name="notification_light_default_value">Výchozí</string>
+  <string name="notification_light_missed_call_title">Zmeškaný hovor</string>
+  <string name="notification_light_voicemail_title">Hlasová schránka</string>
+  <string name="notification_light_screen_on">Upozornění LED při zapnuté obrazovce</string>
+  <string name="notification_light_zen_mode">Světelná signalizace v režimu „Nerušit“</string>
+  <string name="notification_light_use_multiple_leds">Více LED</string>
+  <string name="keywords_lights_brightness_level">ztlumit jas LED diod</string>
+  <string name="notification_light_automagic">Automaticky zvolit barvy</string>
+  <string name="notification_light_automagic_summary">Automaticky zvolit barvy</string>
   <!-- Lights settings, LED notification -->
+  <string name="led_notification_title">Nastavení světelné signalizace</string>
+  <string name="led_notification_text">LED světlo povoleno v nastavení</string>
+  <string name="notification_light_no_apps_summary">Chcete-li přidat řízení jednotlivých aplikací, aktivujte „%1$s“ a použijte tlačítko „\u002b“ v panelu nabídky</string>
   <!-- LiveDisplay -->
+  <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
+  <string name="live_display_mode">Režim zobrazení</string>
+  <string name="live_display_color_temperature_title">Teplota barev</string>
+  <string name="live_display_color_temperature_summary">Den: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noc: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+  <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+  <string name="live_display_day">Den</string>
+  <string name="live_display_night">Noc</string>
+  <string name="live_display_outdoor_mode_title">Automatický režim venku</string>
+  <string name="live_display_outdoor_mode_summary">Automaticky zvýšit jas a sytost za slunečného světla</string>
+  <string name="live_display_low_power_title">Snížit spotřebu energie</string>
+  <string name="live_display_low_power_summary">Upravit zobrazení pro nejnižší spotřebu energie bez zhoršení čitelnosti</string>
+  <string name="live_display_enhance_color_title">Vylepšit barvy</string>
+  <string name="live_display_enhance_color_summary">Zlepšit živost barev pleťových odstínů, scenérie a dalších obrázků</string>
+  <string name="live_display_color_profile_title">Barevný profil</string>
+  <string name="live_display_color_profile_standard_title">Standardní</string>
+  <string name="live_display_color_profile_standard_summary">Přesné barvy a jasná bílá</string>
+  <string name="live_display_color_profile_natural_title">Přirozený</string>
+  <string name="live_display_color_profile_natural_summary">Reálné barvy a tělové tóny</string>
+  <string name="live_display_color_profile_dynamic_title">Dynamický</string>
+  <string name="live_display_color_profile_dynamic_summary">Vylepšené barvy a jasná bílá</string>
+  <string name="live_display_color_profile_cinema_title">Kino</string>
+  <string name="live_display_color_profile_cinema_summary">Perfektní zobrazení barev pro video</string>
+  <string name="live_display_color_profile_astronomy_title">Astronomie</string>
+  <string name="live_display_color_profile_astronomy_summary">Hluboká červená pro zachování vidění v noci</string>
+  <string name="live_display_color_profile_photography_title">Fotografie</string>
+  <string name="live_display_color_profile_photography_summary">Perfektní zobrazení barev pro fotografie</string>
+  <string name="live_display_color_profile_basic_title">Základní</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <!-- Button settings -->
   <string name="volume_answer_call_summary">Přijmout příchozí hovor stisknutím tlačítka hlasitosti</string>

@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Pressionar até metade irá manter o ecrã ligado apenas enquanto o botão estiver pressionado</string>
   <string name="camera_launch_title">Iniciar a câmara</string>
   <string name="camera_launch_summary">Pressionar algum tempo e depois soltar iniciará a câmara</string>
+  <string name="volbtn_music_controls_title">Controlo de reprodução</string>
+  <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
   <string name="volbtn_cursor_control_title">Controlo do cursor de teclado</string>
   <string name="volbtn_cursor_control_off">Inativo</string>
   <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para a esquerda/direita</string>
   <string name="volbtn_cursor_control_on_reverse">Volume para cima/baixo move o cursor para a direita/esquerda</string>
   <string name="power_end_call_title">Termina chamada</string>
+  <string name="power_end_call_summary">Termina a chamada atual, pressionando o botão ligar/desligar</string>
   <string name="swap_volume_buttons_title">Reorientar</string>
   <string name="swap_volume_buttons_summary">Trocar os botões de volume quando o ecrã é rodado</string>
+  <string name="button_wake_title">Acordar o dispositivo</string>
   <string name="volume_answer_call_title">Atender chamada</string>
   <string name="volume_answer_call_summary">Atender chamadas pressionando os botões de volume</string>
   <string name="home_answer_call_title">Atender chamada</string>
+  <string name="home_answer_call_summary">Atender chamadas pressionando o botão Página Inicial</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Luz de fundo</string>
   <string name="button_backlight_enabled">Iluminar os botões</string>
