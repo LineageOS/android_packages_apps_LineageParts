@@ -45,6 +45,7 @@
   <string name="privacy_guard_dlg_text">Lorsque la protection des données est activée, les applications n\'ont pas accès à vos données personnelles telles que les contacts, les messages ou le journal d\'appels.</string>
   <string name="privacy_guard_dlg_system_app_text">Lorsque la protection des données est activée pour une application système, cette application ne sera pas en mesure d\'accéder ou de fournir des données personnelles. Cela peut provoquer des dysfonctionnements avec d\'autres applications.</string>
   <string name="privacy_guard_default_title">Activée par défaut</string>
+  <string name="privacy_guard_default_summary_on">Protection des données activée</string>
   <string name="privacy_guard_default_summary">Activer par défaut la protection des données pour les applications nouvellement installées</string>
   <string name="privacy_guard_manager_summary">Contrôler l\'accès des applications à vos données personnelles</string>
   <string name="privacy_guard_no_user_apps">Aucune application installée</string>
@@ -66,20 +67,106 @@
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">Toujours allumé</string>
   <string name="pulse_length_very_short">Très court</string>
+  <string name="pulse_length_short">Court</string>
+  <string name="pulse_length_normal">Normal</string>
+  <string name="pulse_length_long">Long</string>
+  <string name="pulse_length_very_long">Très long</string>
+  <string name="pulse_speed_very_fast">Très rapide</string>
+  <string name="pulse_speed_fast">Rapide</string>
+  <string name="pulse_speed_normal">Normale</string>
+  <string name="pulse_speed_slow">Lente</string>
+  <string name="pulse_speed_very_slow">Très lente</string>
   <!-- Battery light settings -->
+  <string name="battery_light_title">Voyant batterie</string>
+  <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>
+  <string name="battery_light_list_title">Couleurs</string>
+  <string name="battery_light_low_color_title">Batterie faible</string>
+  <string name="battery_light_medium_color_title">En charge</string>
+  <string name="battery_light_full_color_title">Batterie chargée</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Voyant de notification</string>
+  <string name="notification_light_general_title">Général</string>
+  <string name="notification_light_advanced_title">Options avancées</string>
+  <string name="notification_light_applist_title">Applications</string>
+  <string name="notification_light_phonelist_title">Téléphone </string>
+  <string name="notification_light_use_custom">Utiliser des paramètres personnalisés</string>
+  <string name="notification_light_default_value">Par Défaut</string>
+  <string name="notification_light_missed_call_title">Appel manqué</string>
+  <string name="notification_light_voicemail_title">Messagerie vocale</string>
+  <string name="notification_light_screen_on">Voyants avec écran allumé</string>
+  <string name="notification_light_zen_mode">Voyants en mode « Ne pas déranger »</string>
+  <string name="notification_light_use_multiple_leds">Plusieurs LED</string>
+  <string name="keywords_lights_brightness_level">atténuer la luminosité des LED</string>
+  <string name="notification_light_automagic">Couleurs automatiques</string>
+  <string name="notification_light_automagic_summary">Couleurs automatiques</string>
   <!-- Lights settings, LED notification -->
+  <string name="led_notification_title">Paramètres du voyant</string>
+  <string name="led_notification_text">LED activée par les paramètres</string>
+  <string name="notification_light_no_apps_summary">Pour ajouter la gestion par application, activer \'%1$s\' et appuyer sur \'\u002b\' dans la barre de menu</string>
   <!-- LiveDisplay -->
+  <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
+  <string name="live_display_mode">Mode d\'affichage</string>
+  <string name="live_display_color_temperature_title">Température de la couleur</string>
+  <string name="live_display_color_temperature_summary">Jour : <xliff:g id="day_temperature">%1$d</xliff:g>K  Nuit : <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+  <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+  <string name="live_display_day">Jour</string>
+  <string name="live_display_night">Nuit</string>
+  <string name="live_display_outdoor_mode_title">Mode extérieur automatique</string>
+  <string name="live_display_outdoor_mode_summary">Augmenter la luminosité et la saturation automatiquement sous la lumière du soleil</string>
+  <string name="live_display_low_power_title">Réduire la consommation d\'énergie</string>
+  <string name="live_display_low_power_summary">Régler l\'affichage pour une plus faible consommation sans dégradation</string>
+  <string name="live_display_enhance_color_title">Améliorer les couleurs</string>
+  <string name="live_display_enhance_color_summary">Améliorer la vibrance des couleurs des tons chair, des paysages et d\'autres images</string>
+  <string name="live_display_color_profile_title">Profil de couleur</string>
+  <string name="live_display_color_profile_standard_title">Standard</string>
+  <string name="color_calibration_title">Calibrage des couleurs</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <!-- Button settings -->
   <string name="hardware_keys_appswitch_key_title">Bouton Récents</string>
   <string name="hardware_keys_action_app_switch">Applications récentes</string>
+  <string name="volbtn_cursor_control_off">Désactivé</string>
+  <string name="volbtn_cursor_control_on">La touche haut déplace le curseur vers la gauche et bas vers la droite</string>
+  <string name="volbtn_cursor_control_on_reverse">La touche haut déplace le curseur vers la droite et bas vers la gauche</string>
+  <string name="power_end_call_title">Terminer l\'appel</string>
+  <string name="swap_volume_buttons_title">Réorienter</string>
+  <string name="swap_volume_buttons_summary">Inverser les boutons de volume lorsque l\'écran pivote</string>
   <string name="home_answer_call_title">Répondre à l\'appel</string>
   <!-- Key backlight -->
+  <string name="button_backlight_title">Rétro-éclairage</string>
+  <string name="button_backlight_enabled">Rétroéclairage des boutons</string>
+  <string name="keyboard_backlight_enabled">Rétroéclairage du clavier</string>
+  <string name="button_backlight_seekbar_title">Luminosité des boutons</string>
+  <string name="keyboard_backlight_seekbar_title">Luminosité du clavier</string>
+  <string name="backlight_timeout_title">Temporisation rétro-éclairage</string>
+  <string name="backlight_timeout_unlimited">Ne pas éteindre</string>
+  <string name="backlight_summary_disabled">Désactivé</string>
+  <string name="backlight_summary_enabled_with_timeout">Activé pendant <xliff:g id="timeout">%s</xliff:g></string>
+  <string name="backlight_summary_enabled">Activé</string>
   <!-- Buttons - Enable navbar -->
+  <string name="disable_navkeys_title">Activer la barre de navigation à l\'écran</string>
+  <string name="disable_navkeys_summary">Activer la barre de navigation à l\'écran et désactiver les touches physiques</string>
   <!-- Navigation Bar -->
+  <string name="navigation_bar_category">Barre de navigation</string>
+  <string name="navigation_bar_title">Boutons et disposition</string>
+  <string name="navigation_bar_left_title">Mode gaucher</string>
+  <string name="navigation_bar_left_summary">Placer la barre de navigation du côté gauche de l\'écran en mode paysage</string>
+  <string name="navigation_bar_arrow_keys_title">Afficher les flèches lors de la frappe</string>
+  <string name="navigation_bar_arrow_keys_summary">Afficher les touches de curseur gauche et droite lors de la saisie. Remplace le changeur de mode de saisie.</string>
+  <string name="navigation_bar_home_long_press_title">Appui long sur bouton d\'accueil</string>
+  <string name="navigation_bar_home_double_tap_title">Appui double sur bouton d\'accueil</string>
   <string name="navigation_bar_recents_title">Appui long sur applications récentes</string>
   <!-- Power menu -->
+  <string name="power_menu_title">Menu marche/arrêt</string>
+  <string name="power_menu_reboot_title">Menu redémarrer</string>
+  <string name="power_menu_screenshot_title">Capture d\'écran</string>
+  <string name="power_menu_airplane_title">Mode Avion</string>
+  <string name="power_menu_users_title">Changer d\'utilisateur</string>
+  <string name="power_menu_settings_title">Raccourci vers les paramètres</string>
+  <string name="power_menu_lockdown_title">Verrouillage de l\'appareil</string>
+  <string name="power_menu_bug_report_title">Rapport de bug</string>
+  <string name="power_menu_sound_title">Panneau du son</string>
+  <string name="power_menu_bug_report_disabled">Le rapport de bug est désactivé dans les paramètres de développement</string>
+  <string name="volume_keys_control_ring_stream_title">Contrôler le volume de la sonnerie</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->
   <!-- Profile triggers -->

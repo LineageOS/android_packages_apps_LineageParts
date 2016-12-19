@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">ボタンを半押しし続けている間だけ画面を点灯する</string>
   <string name="camera_launch_title">カメラを起動</string>
   <string name="camera_launch_summary">長押しして離したときにカメラを起動する</string>
+  <string name="volbtn_music_controls_title">再生をコントロール</string>
+  <string name="volbtn_music_controls_summary">画面消灯時に音量ボタンを長押しして音楽トラックをシークする</string>
   <string name="volbtn_cursor_control_title">キーボードカーソルコントロール</string>
   <string name="volbtn_cursor_control_off">無効</string>
   <string name="volbtn_cursor_control_on">音量を上げる/下げるボタンでカーソルを左/右に移動する</string>
   <string name="volbtn_cursor_control_on_reverse">音量を上げる/下げるボタンでカーソルを右/左に移動する</string>
   <string name="power_end_call_title">通話を終了</string>
+  <string name="power_end_call_summary">電源ボタンを押して現在の通話を終了する</string>
   <string name="swap_volume_buttons_title">再配置</string>
   <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替える</string>
+  <string name="button_wake_title">端末をスリープ解除</string>
   <string name="volume_answer_call_title">着信に応答</string>
   <string name="volume_answer_call_summary">音量ボタンを押して着信に応答する</string>
   <string name="home_answer_call_title">着信に応答</string>
+  <string name="home_answer_call_summary">ホームボタンを押して着信に応答する</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">バックライト</string>
   <string name="button_backlight_enabled">ボタンを点灯</string>
@@ -469,7 +474,7 @@
   <string name="perf_profile_settings_summary">省電力機能と端末のパフォーマンスを調整する</string>
   <string name="perf_profile_overview_summary">現在のプロファイル: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">端末のパフォーマンス</string>
-  <string name="perf_profile_title">バッテリーモード</string>
+  <string name="perf_profile_title">パフォーマンスプロファイル: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">パフォーマンスプロファイルは現在利用できません</string>
   <string name="power_save_category_title">バッテリーセーバー</string>
   <string name="power_save_title">超省電力</string>
