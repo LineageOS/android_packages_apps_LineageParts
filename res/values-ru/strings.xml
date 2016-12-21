@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Держать экран включённым только при удержании кнопки</string>
   <string name="camera_launch_title">Включить камеру</string>
   <string name="camera_launch_summary">Открывать приложение камеры при долгом нажатии кнопки</string>
+  <string name="volbtn_music_controls_title">Управление плеером</string>
+  <string name="volbtn_music_controls_summary">Переключать музыкальные треки долгим нажатием кнопок громкости при выключенном экране</string>
   <string name="volbtn_cursor_control_title">Перемещение курсо­­­­­­ра</string>
   <string name="volbtn_cursor_control_off">Отключен</string>
   <string name="volbtn_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>
   <string name="volbtn_cursor_control_on_reverse">Громкость вверх/вниз перемещает курсор вправо/влево</string>
   <string name="power_end_call_title">Завершение вызова</string>
+  <string name="power_end_call_summary">Завершать телефонный вызов нажатием кнопки питания</string>
   <string name="swap_volume_buttons_title">Автоповорот</string>
   <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
+  <string name="button_wake_title">Выход из режима сна</string>
   <string name="volume_answer_call_title">Ответ на вызов</string>
   <string name="volume_answer_call_summary">Отвечать на телефонный вызов нажатием кнопок громкости</string>
   <string name="home_answer_call_title">Ответ на вызов</string>
+  <string name="home_answer_call_summary">Отвечать на входящий вызов нажатием кнопки «Домой»</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Подсветка</string>
   <string name="button_backlight_enabled">Подсветка кнопок</string>

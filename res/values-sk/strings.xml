@@ -148,7 +148,7 @@
   <string name="adj_contrast_title">Kontrast</string>
   <!-- Button settings -->
   <string name="button_pref_title">Tlačidlá</string>
-  <string name="hardware_keys_power_key_title">Tlačidlo napájania</string>
+  <string name="hardware_keys_power_key_title">Tlačidlo Napájanie</string>
   <string name="hardware_keys_home_key_title">Tlačidlo Domov</string>
   <string name="hardware_keys_back_key_title">Tlačidlo Späť</string>
   <string name="hardware_keys_menu_key_title">Tlačidlo Menu</string>
@@ -174,20 +174,20 @@
   <string name="camera_launch_title">Spustiť fotoaparát</string>
   <string name="camera_launch_summary">Dlhé stlačenie a uvoľnenie spustí fotoaparát</string>
   <string name="volbtn_music_controls_title">Ovládanie prehrávania</string>
-  <string name="volbtn_music_controls_summary">Hľadať hudobné skladby dlhým zatlačením klávesy hlasitosti aj pri vypnutom displeji</string>
+  <string name="volbtn_music_controls_summary">Dlhé stlačenie tlačidiel hlasitosti počas vypnutej obrazovky prepne hudobné stopy</string>
   <string name="volbtn_cursor_control_title">Kontrola kurzoru tlačidlami hlasitosti</string>
   <string name="volbtn_cursor_control_off">Zakázané</string>
-  <string name="volbtn_cursor_control_on">Hlasitosť nahor/nadol presunie kurzor doľava/doprava</string>
-  <string name="volbtn_cursor_control_on_reverse">Hlasitosť nahor/nadol presunie kurzor doprava/doľava</string>
+  <string name="volbtn_cursor_control_on">Tlačidlá hlasitosti posunú kurzor vľavo/vpravo</string>
+  <string name="volbtn_cursor_control_on_reverse">Tlačidlá hlasitosti posunú kurzor vpravo/vľavo</string>
   <string name="power_end_call_title">Ukončiť hovor</string>
-  <string name="power_end_call_summary">Ukončite aktuálny hovor stlačením tlačidla napájania</string>
+  <string name="power_end_call_summary">Ukončite aktuálny hovor stlačením tlačidla Napájanie</string>
   <string name="swap_volume_buttons_title">Preorientovať</string>
   <string name="swap_volume_buttons_summary">Po otočení obrazovky prevrátiť aj zmysel tlačidiel hlasitosti</string>
   <string name="button_wake_title">Prebudiť zariadenie</string>
   <string name="volume_answer_call_title">Prijať hovor</string>
-  <string name="volume_answer_call_summary">Odpovedanie na prichádzajúce hovory stlačením tlačidla hlasitosti</string>
+  <string name="volume_answer_call_summary">Prijať prichádzajúci hovor stlačením niektorého z tlačidiel hlasitosti</string>
   <string name="home_answer_call_title">Prijať hovor</string>
-  <string name="home_answer_call_summary">Odpovedanie na prichádzajúce hovory stlačením tlačidla Domov</string>
+  <string name="home_answer_call_summary">Prijať prichádzajúci hovor stlačením tlačidla Domov</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Podsvietenie</string>
   <string name="button_backlight_enabled">Podsvietenie tlačidiel</string>
@@ -213,8 +213,8 @@
   <string name="navigation_bar_home_double_tap_title">Akcia dvojkliku na tlačítu Domov</string>
   <string name="navigation_bar_recents_title">Akcia dlhého stlačenia na tlačítku Nedávne</string>
   <!-- Power menu -->
-  <string name="power_menu_title">Ponuka tlačítka Vypnúť</string>
-  <string name="power_menu_reboot_title">Ponuka reštart menu</string>
+  <string name="power_menu_title">Ponuka po stlačení tlačidla</string>
+  <string name="power_menu_reboot_title">Reštart menu</string>
   <string name="power_menu_screenshot_title">Snímka obrazovky</string>
   <string name="power_menu_airplane_title">Režim v lietadle</string>
   <string name="power_menu_users_title">Prepínač používateľov</string>
@@ -226,9 +226,9 @@
   <string name="volume_keys_control_ring_stream_title">Ovládanie hlasitosti zvonenia</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tlačidlá hlasitosti ovládajú hlasitosť zvonenia</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tlačidlá hlasitosti ovládajú hlasitosť médií</string>
-  <string name="camera_double_tap_power_gesture_title">Pre spustenie fotoaparátu stlačte dvakrát tlačítko Vypnúť</string>
+  <string name="camera_double_tap_power_gesture_title">Fotoaparát dvojitým stlačením Napájania</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
-  <string name="camera_double_tap_power_gesture_desc">Rýchlo spustiť fotoaparát bez odomknutia obrazovky</string>
+  <string name="camera_double_tap_power_gesture_desc">Rýchlo spustiť fotoaparát dvojitým stlačením tlačidla Napájanie, bez odomknutia obrazovky</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Odstrániť záložku</string>
   <string name="profile_action_none">Ponechať nezmenené</string>
@@ -443,7 +443,7 @@
   <string name="stats_collection_title">Zbieranie štatistík</string>
   <string name="stats_collection_summary">Ak je povolené, umožňuje zhromažďovať štatistické dáta</string>
   <!-- Display : Rotation  -->
-  <string name="accelerometer_title">Automatické otočenie obrazovky</string>
+  <string name="accelerometer_title">Automaticky otáčať obrazovku</string>
   <string name="display_rotation_title">Nastavenia otáčania</string>
   <string name="display_rotation_enabled">Automatické otáčanie je povolené</string>
   <string name="display_rotation_disabled">Automatické otáčanie je zakázané</string>
