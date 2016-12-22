@@ -261,7 +261,7 @@
 
     <!-- Auto power save mode: Allowable trigger threshold entries -->
     <string-array name="auto_power_save_entries" translatable="false">
-        <item>Never</item>
+        <item>@string/auto_power_save_never</item>
         <item>5%</item>
         <item>15%</item>
         <item>25%</item>
