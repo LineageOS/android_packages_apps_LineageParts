@@ -481,7 +481,7 @@
   <string name="power_save_title">Poupança extrema de bateria</string>
   <string name="power_save_summary">Restringir o desempenho do dispositivo e as atividades em segundo plano para poupar energia</string>
   <string name="auto_power_save_title">Poupança de bateria automática</string>
-  <string name="auto_power_save_summary_on">Ativar automaticamente a poupança de bateria aos %d por cento de bateria</string>
+  <string name="auto_power_save_summary_on">Ativar automaticamente a poupança de bateria aos %s bateria</string>
   <string name="auto_power_save_summary_off">Não ativar automaticamente a poupança de bateria</string>
   <string name="app_perf_profiles_title">Otimização automática</string>
   <string name="app_perf_profiles_summary">Escolher automaticamemte o perfil de desempenho adequado para várias aplicações</string>

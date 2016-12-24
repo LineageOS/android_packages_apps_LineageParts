@@ -480,7 +480,7 @@
   <string name="power_save_title">Extremer Energiesparmodus</string>
   <string name="power_save_summary">Leistung und Hintergrundaktivitäten beschränken, um Strom zu sparen</string>
   <string name="auto_power_save_title">Automatischer Energiesparmodus</string>
-  <string name="auto_power_save_summary_on">Den Energiesparmodus bei %d Prozent Akkuladung automatisch aktivieren</string>
+  <string name="auto_power_save_summary_on">Den Energiesparmodus bei %s Akkuladung automatisch aktivieren</string>
   <string name="auto_power_save_summary_off">Den Energiesparmodus nicht automatisch aktivieren</string>
   <string name="app_perf_profiles_title">Automatische Optimierung</string>
   <string name="app_perf_profiles_summary">Wählt für einige Apps und Nutzungsverhalten automatisch ein passendes Leistungsprofil aus</string>

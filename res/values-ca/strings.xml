@@ -481,7 +481,7 @@
   <string name="power_save_title">Estalviador d\'energia extrem</string>
   <string name="power_save_summary">Limita el rendiment del dispositiu i l\'activitat en segon pla per estalviar energia</string>
   <string name="auto_power_save_title">Estalviador d\'energia automàtic</string>
-  <string name="auto_power_save_summary_on">Habilita el mode d\'estalvi d\'energia automàticament quan s\'arribi al %d per cent de bateria</string>
+  <string name="auto_power_save_summary_on">Habilita el mode d\'estalvi d\'energia automàticament quan s\'arribi al %s bateria</string>
   <string name="auto_power_save_summary_off">No habilitis el mode d\'estalvi d\'energia automàticament</string>
   <string name="app_perf_profiles_title">Optimització automàtica</string>
   <string name="app_perf_profiles_summary">Escull automàticament un perfil de rendiment adequat per aplicacions i patrons d\'utilització</string>

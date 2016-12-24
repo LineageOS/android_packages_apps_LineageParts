@@ -483,7 +483,7 @@
   <string name="power_save_title">Strogo varčevanje z energijo</string>
   <string name="power_save_summary">Omeji zmogljivost naprave in dejavnosti v ozadju za prihranek energije</string>
   <string name="auto_power_save_title">Samodejno varčevanje z energijo</string>
-  <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo, ko je stanje baterije %d</string>
+  <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo, ko je stanje baterije %s</string>
   <string name="auto_power_save_summary_off">Ne omogočaj načina varčevanja z energijo samodejno</string>
   <string name="app_perf_profiles_title">Samodejna optimizacija</string>
   <string name="app_perf_profiles_summary">Samodejno izberi primerni zmogljivostni profil za aplikacije in vzorce uporabe</string>

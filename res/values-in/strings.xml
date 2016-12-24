@@ -481,7 +481,7 @@
   <string name="power_save_title">Penghemat daya ekstrim</string>
   <string name="power_save_summary">Membatasi aktivitas perangkat kinerja dan latar belakang untuk menghemat daya</string>
   <string name="auto_power_save_title">Penghemat daya otomatis</string>
-  <string name="auto_power_save_summary_on">Otomatis mengaktifkan mode hemat daya saat %d persen baterai</string>
+  <string name="auto_power_save_summary_on">Otomatis mengaktifkan mode hemat daya saat %s baterai</string>
   <string name="auto_power_save_summary_off">Jangan hidupkan mode hemat daya otomatis</string>
   <string name="app_perf_profiles_title">Otomatis optimasi</string>
   <string name="app_perf_profiles_summary">Otomatis memilih profil performa sesuai untuk berbagai aplikasi</string>

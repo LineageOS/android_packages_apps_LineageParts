@@ -481,7 +481,7 @@
   <string name="power_save_title">Ekstrem strømbesparelse</string>
   <string name="power_save_summary">Begræns enhed ydeevne og baggrundsaktivitet for at spare strøm</string>
   <string name="auto_power_save_title">Automatisk strømbesparelse</string>
-  <string name="auto_power_save_summary_on">Aktivér automatisk strømsparetilstand på %d procent batteri</string>
+  <string name="auto_power_save_summary_on">Aktivér automatisk strømsparetilstand på %s batteri</string>
   <string name="auto_power_save_summary_off">Aktivér ikke strømsparetilstand automatisk</string>
   <string name="app_perf_profiles_title">Automatisk optimering</string>
   <string name="app_perf_profiles_summary">Vælg automatisk en passende ydeevneprofil for apps og brugsmønstre</string>

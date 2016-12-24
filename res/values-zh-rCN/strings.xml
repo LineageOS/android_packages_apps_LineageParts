@@ -481,7 +481,7 @@
   <string name="power_save_title">极致省电</string>
   <string name="power_save_summary">限制设备性能与后台活动以降低电量消耗</string>
   <string name="auto_power_save_title">自动省电</string>
-  <string name="auto_power_save_summary_on">电量 %d 时自动启用省电</string>
+  <string name="auto_power_save_summary_on">电量 %s 时自动启用省电</string>
   <string name="auto_power_save_summary_off">不要自动启用省电</string>
   <string name="app_perf_profiles_title">自动优化</string>
   <string name="app_perf_profiles_summary">自动为各种应用和使用模式选择适当的性能配置</string>

@@ -478,7 +478,7 @@
   <string name="power_save_title">Risparmio energetico estremo</string>
   <string name="power_save_summary">Limita le prestazioni del dispositivo e le attività in background per risparmiare energia</string>
   <string name="auto_power_save_title">Risparmio energetico automatico</string>
-  <string name="auto_power_save_summary_on">Attiva automaticamente la modalità di risparmio energetico al %d percento di batteria</string>
+  <string name="auto_power_save_summary_on">Attiva automaticamente la modalità di risparmio energetico al %s batteria</string>
   <string name="auto_power_save_summary_off">Non attivare la modalità di risparmio energia automaticamente</string>
   <string name="app_perf_profiles_title">Ottimizzazione automatica</string>
   <string name="app_perf_profiles_summary">Scegli automaticamente un adeguato profilo di prestazioni per le applicazioni ed i modi d\'uso</string>

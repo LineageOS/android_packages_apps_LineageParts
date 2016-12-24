@@ -481,7 +481,7 @@
   <string name="power_save_title">Äärimmäinen virransäästö</string>
   <string name="power_save_summary">Rajoita laitteen suorituskykyä ja taustatoimintaa säästääksesi virtaa</string>
   <string name="auto_power_save_title">Automaattinen virransäästö</string>
-  <string name="auto_power_save_summary_on">Ota virransäästötila automaattisesti käyttöön kun akkua on jäljellä %d prosenttia</string>
+  <string name="auto_power_save_summary_on">Ota virransäästötila automaattisesti käyttöön kun akkua on jäljellä %s</string>
   <string name="auto_power_save_summary_off">Älä ota virransäästötilaa käyttöön automaattisesti</string>
   <string name="app_perf_profiles_title">Automaattinen optimointi</string>
   <string name="app_perf_profiles_summary">Valitse automaattisesti sopiva suorituskykyprofiili eri sovelluksille</string>

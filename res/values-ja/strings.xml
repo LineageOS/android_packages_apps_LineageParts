@@ -481,7 +481,7 @@
   <string name="power_save_title">超省電力</string>
   <string name="power_save_summary">端末のパフォーマンスとバックグラウンドのアクティビティを制限して省電力化する</string>
   <string name="auto_power_save_title">自動省電力</string>
-  <string name="auto_power_save_summary_on">バッテリー残量%dパーセントで省電力モードを自動的に有効にする</string>
+  <string name="auto_power_save_summary_on">バッテリー残量%sで省電力モードを自動的に有効にする</string>
   <string name="auto_power_save_summary_off">省電力モードを自動的に有効にしない</string>
   <string name="app_perf_profiles_title">自動最適化</string>
   <string name="app_perf_profiles_summary">アプリと使用パターンに適したパフォーマンスプロファイルを自動的に選択する</string>

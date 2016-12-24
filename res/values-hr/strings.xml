@@ -481,7 +481,7 @@
   <string name="power_save_title">Ekstremna ušteda energije</string>
   <string name="power_save_summary">Ograničite performanse uređaja i pozadinske aktivnosti radi uštede energije.</string>
   <string name="auto_power_save_title">Automatska ušteda energije</string>
-  <string name="auto_power_save_summary_on">Automatski omogućite način uštede energije na %d posto baterije.</string>
+  <string name="auto_power_save_summary_on">Automatski omogućite način uštede energije na %s baterije.</string>
   <string name="auto_power_save_summary_off">Ne omogućuj automatski način uštede energije</string>
   <string name="app_perf_profiles_title">Automatska optimizacija</string>
   <string name="app_perf_profiles_summary">Automatsko biranje prigodnog profila izvedbe za razne aplikacije i uzorke korištenja.</string>

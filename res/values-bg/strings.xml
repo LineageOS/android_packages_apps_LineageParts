@@ -481,7 +481,7 @@
   <string name="power_save_title">Изключително пестене на батерия</string>
   <string name="power_save_summary">Ограничаване производителноста на устройството и работата във фонов режим за икономия на енергия</string>
   <string name="auto_power_save_title">Автоматичена икономия на енергия</string>
-  <string name="auto_power_save_summary_on">Автоматично да се активира режима за енергоспестяване при %d процента на батерията</string>
+  <string name="auto_power_save_summary_on">Автоматично да се активира режима за енергоспестяване при %s на батерията</string>
   <string name="auto_power_save_summary_off">Не разрешавай автоматичния режим енергоспестяване</string>
   <string name="app_perf_profiles_title">Автоматична оптимизация</string>
   <string name="app_perf_profiles_summary">Автоматичен избор на подходящ профил на производителност за различните приложения</string>

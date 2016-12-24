@@ -266,7 +266,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
                 getContentResolver(), Global.LOW_POWER_MODE_TRIGGER_LEVEL, 0);
         final String summary;
         if (level > 0 && level < 100) {
-            summary = getResources().getString(R.string.auto_power_save_summary_on, level);
+            summary = getResources().getString(R.string.auto_power_save_summary_on, level + "%");
         } else {
             summary = getResources().getString(R.string.auto_power_save_summary_off);
         }

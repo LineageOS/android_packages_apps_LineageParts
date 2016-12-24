@@ -481,7 +481,7 @@
   <string name="power_save_title">Extrémna úspora</string>
   <string name="power_save_summary">Omedziť výkon zariadenia a aktivity na pozadí z dôvodov úspory energie</string>
   <string name="auto_power_save_title">Automatický úsporný režim</string>
-  <string name="auto_power_save_summary_on">Automatické povolenie úsporného režimu od %d percent batérie</string>
+  <string name="auto_power_save_summary_on">Automatické povolenie úsporného režimu od %s batérie</string>
   <string name="auto_power_save_summary_off">Nepovoliť automatický režim zníženia spotreby</string>
   <string name="app_perf_profiles_title">Automatická optimalizácia</string>
   <string name="app_perf_profiles_summary">Automaticky vybrať príslušný profil výkonu pre aplikácie a spôsobu používania</string>

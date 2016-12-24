@@ -249,7 +249,7 @@
   <string name="power_save_title">Ekstrem strømsparing</string>
   <string name="power_save_summary">Begrenser enhetens ytelse og bakgrunnsaktivitet for å spare strøm</string>
   <string name="auto_power_save_title">Automatisk strømsparing</string>
-  <string name="auto_power_save_summary_on">Aktiverer strømsparing automatisk på %d batteriprosent</string>
+  <string name="auto_power_save_summary_on">Aktiverer strømsparing automatisk på %s batteri</string>
   <string name="auto_power_save_summary_off">Ikke slå på strømsparingsmodus automatisk</string>
   <string name="app_perf_profiles_title">Automatisk optimalisering</string>
   <string name="app_perf_profiles_summary">Velg automatisk en riktig ytelsesprofil for applikasjoner og bruksmønster</string>
