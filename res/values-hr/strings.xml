@@ -173,16 +173,21 @@
   <string name="camera_sleep_on_release_summary">Polupritisak će držati zaslon uključen samo dok se tipka drži pritisnuta</string>
   <string name="camera_launch_title">Pokreni kameru</string>
   <string name="camera_launch_summary">Dugi pritisak i puštanje će pokrenuti kameru</string>
+  <string name="volbtn_music_controls_title">Kontrola reprodukcije</string>
+  <string name="volbtn_music_controls_summary">Preskačite pjesme dugim pritiskom gumba za glasnoću kad je zaslon isključen.</string>
   <string name="volbtn_cursor_control_title">Kontrola pokazivača tipkovnice</string>
   <string name="volbtn_cursor_control_off">Onemogućeno</string>
   <string name="volbtn_cursor_control_on">Tipka za glasnoću gore/dolje pomiče kursor lijevo/desno</string>
   <string name="volbtn_cursor_control_on_reverse">Tipka za glasnoću gore/dolje pomiče kursor lijevo/desno</string>
   <string name="power_end_call_title">Završi poziv</string>
+  <string name="power_end_call_summary">Prekid trenutnog poziva pritiskom na gumb za uključivanje</string>
   <string name="swap_volume_buttons_title">Preorijentacija</string>
   <string name="swap_volume_buttons_summary">Zamijeni tipke za glasnoću kada je zaslon rotiran</string>
+  <string name="button_wake_title">Buđenje uređaja</string>
   <string name="volume_answer_call_title">Odgovori na poziv</string>
   <string name="volume_answer_call_summary">Odgovori na dolazne pozive pritiskom na tipke za podešavanje glasnoće</string>
   <string name="home_answer_call_title">Odgovori na poziv</string>
+  <string name="home_answer_call_summary">Odgovorite na dolazne pozive pritiskom na početnu tipku.</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Pozadinsko osvjetljenje</string>
   <string name="button_backlight_enabled">Osvjetljenje tipki</string>
@@ -479,6 +484,7 @@
   <string name="auto_power_save_summary_off">Ne omogućuj automatski način uštede energije</string>
   <string name="app_perf_profiles_title">Automatska optimizacija</string>
   <string name="app_perf_profiles_summary">Automatsko biranje prigodnog profila izvedbe za razne aplikacije i uzorke korištenja.</string>
+  <string name="auto_power_save_never">Nikad</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Proširena radna površina</string>
   <string name="expanded_desktop_settings_summary">Proširi prostora radne površine koje skriva traku statusa, navigacijsku traku ili oboje</string>

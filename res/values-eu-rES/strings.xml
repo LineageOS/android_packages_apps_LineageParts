@@ -485,6 +485,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="auto_power_save_summary_off">Ez gaitu energia aurrezteko modua automatikoki</string>
   <string name="app_perf_profiles_title">Optimizazio automatikoa</string>
   <string name="app_perf_profiles_summary">Aukeratu automatikoki errendimendu profil egoki bat aplikazio eta erabilera ereduentzat</string>
+  <string name="auto_power_save_never">Inoiz ez</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Idazmahai hedatua</string>
   <string name="expanded_desktop_settings_summary">Hedatu mahaigaineko espazio erabilgarria egoera-barra, nabigazio-barra edo biak ezkutatuz</string>

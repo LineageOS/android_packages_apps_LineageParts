@@ -484,6 +484,7 @@
   <string name="auto_power_save_summary_off">Не разрешавай автоматичния режим енергоспестяване</string>
   <string name="app_perf_profiles_title">Автоматична оптимизация</string>
   <string name="app_perf_profiles_summary">Автоматичен избор на подходящ профил на производителност за различните приложения</string>
+  <string name="auto_power_save_never">Никога</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Разширен екран</string>
   <string name="expanded_desktop_settings_summary">Разширете вашия екран чрез скриване на лентата на състоянието, лента за навигация или и двете</string>

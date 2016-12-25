@@ -486,6 +486,7 @@
   <string name="auto_power_save_summary_off">Ne omogočaj načina varčevanja z energijo samodejno</string>
   <string name="app_perf_profiles_title">Samodejna optimizacija</string>
   <string name="app_perf_profiles_summary">Samodejno izberi primerni zmogljivostni profil za aplikacije in vzorce uporabe</string>
+  <string name="auto_power_save_never">Nikoli</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Razširjeno namizje</string>
   <string name="expanded_desktop_settings_summary">Razširi razpoložljiv prostor namizja s skritjem vrstice stanja, vrstice za krmarjenje ali obeh</string>

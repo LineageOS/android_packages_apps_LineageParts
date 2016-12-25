@@ -208,6 +208,7 @@
   <string name="navigation_bar_left_title">Venstrehendt modus</string>
   <string name="navigation_bar_left_summary">Plasser navigasjonsfeltet til venstre på skjermen i liggende modus</string>
   <string name="navigation_bar_arrow_keys_title">Vis piltastene mens du skriver</string>
+  <string name="navigation_bar_arrow_keys_summary">Vise venstre og høyre markørknapper mens du skriver. Overstyrer IME skifter.</string>
   <!-- Power menu -->
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->
