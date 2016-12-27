@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The CyanogenMod Project
+               (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Metrics server endpoints -->
-    <string name="stats_cm_url">https://stats.cyanogenmod.org/submit</string>
+    <string name="stats_cm_url">https://stats.lineageos.org/submit</string>
     <string name="stats_cyanogen_url">https://shopvac.cyngn.com/community/heartbeat</string>
     <string name="stats_cyanogen_token_url">https://account.cyngn.com/api/v1/community/heartbeat_token</string>
 
