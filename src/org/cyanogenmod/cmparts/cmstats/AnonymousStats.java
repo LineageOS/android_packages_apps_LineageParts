@@ -20,15 +20,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import android.os.UserHandle;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v14.preference.SwitchPreference;
-
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-
-import cyanogenmod.providers.CMSettings;
 
 public class AnonymousStats extends SettingsPreferenceFragment {
 
@@ -39,10 +32,6 @@ public class AnonymousStats extends SettingsPreferenceFragment {
     /* package */ static final String KEY_LAST_JOB_ID = "last_job_id";
     /* package */ static final int QUEUE_MAX_THRESHOLD = 1000;
 
-    public static final String KEY_STATS = "stats_collection";
-
-    SwitchPreference mStatsSwitch;
-
     public static SharedPreferences getPreferences(Context context) {
         return context.getSharedPreferences(PREF_FILE_NAME, 0);
     }
@@ -51,23 +40,6 @@ public class AnonymousStats extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.anonymous_stats);
-        mStatsSwitch = (SwitchPreference) findPreference(KEY_STATS);
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mStatsSwitch) {
-            boolean checked = mStatsSwitch.isChecked();
-            if (checked) {
-                // clear opt out flags
-                CMSettings.Secure.putIntForUser(getContentResolver(),
-                        CMSettings.Secure.STATS_COLLECTION_REPORTED, 0, UserHandle.USER_OWNER);
-            }
-            // will initiate opt out sequence if necessary
-            ReportingServiceManager.setAlarm(getActivity());
-            return true;
-        }
-        return super.onPreferenceTreeClick(preference);
     }
 
     public static void updateLastSynced(Context context) {
