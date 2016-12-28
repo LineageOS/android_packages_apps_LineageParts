@@ -484,6 +484,7 @@
   <string name="auto_power_save_summary_off">Aktivér ikke strømsparetilstand automatisk</string>
   <string name="app_perf_profiles_title">Automatisk optimering</string>
   <string name="app_perf_profiles_summary">Vælg automatisk en passende ydeevneprofil for apps og brugsmønstre</string>
+  <string name="auto_power_save_never">Aldrig</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Udvidet skrivebord</string>
   <string name="expanded_desktop_settings_summary">Udvid din ledige plads på skrivebordet ved at skjule statuslinjen, navigationslinjen eller begge dele</string>

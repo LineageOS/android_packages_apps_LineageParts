@@ -251,6 +251,7 @@
   <string name="perf_profile_settings_title">Oszczędzanie baterii i wydajność</string>
   <string name="perf_profile_overview_summary">Bieżący profil: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
   <string name="perf_profile_fail_toast">Profil wydajności jest obecnie niedostępny</string>
+  <string name="auto_power_save_never">Nigdy</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Rozszerzony pulpit</string>
   <string name="expanded_desktop_style_hide_nothing">Nic nie ukrywaj</string>

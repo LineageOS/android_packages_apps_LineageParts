@@ -484,6 +484,7 @@
   <string name="auto_power_save_summary_off">Älä ota virransäästötilaa käyttöön automaattisesti</string>
   <string name="app_perf_profiles_title">Automaattinen optimointi</string>
   <string name="app_perf_profiles_summary">Valitse automaattisesti sopiva suorituskykyprofiili eri sovelluksille</string>
+  <string name="auto_power_save_never">Ei koskaan</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Laajennettu työpöytä</string>
   <string name="expanded_desktop_settings_summary">Laajenna käytettävissä oleva työpöydän tila piilottamalla tilapalkki, navigointipalkki tai molemmat</string>
