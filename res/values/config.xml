@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Metrics server endpoint -->
-    <string name="stats_cm_url">https://stats.lineageos.org/submit</string>
+    <string name="stats_cm_url">https://stats.lineageos.org/api/v1/stats</string>
 
     <!-- When true, weather options will be displayed in settings dashboard -->
     <bool name="config_showWeatherMenu">true</bool>
