@@ -38,6 +38,7 @@
 
     <uses-permission android:name="cyanogenmod.permission.MANAGE_REMOTE_PREFERENCES" />
 
+    <protected-broadcast android:name="android.intent.action.UPDATE_POWER_MENU" />
     <protected-broadcast android:name="cyanogenmod.platform.app.profiles.PROFILES_STATE_CHANGED" />
     <protected-broadcast android:name="org.cyanogenmod.cmparts.PART_CHANGED" />
     <protected-broadcast android:name="org.cyanogenmod.cmparts.REFRESH_PART" />
