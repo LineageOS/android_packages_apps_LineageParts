@@ -32,6 +32,7 @@ import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import org.cyanogenmod.cmparts.R;
@@ -237,9 +238,9 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
             }
             updatePowerSaveValue();
         } else if (preference == mAutoPowerSavePref) {
-            Global.putInt(getContentResolver(), Global.LOW_POWER_MODE_TRIGGER_LEVEL,
-                    Integer.parseInt((String) newValue));
-            updateAutoPowerSaveSummary();
+            final int level = Integer.parseInt((String) newValue);
+            Global.putInt(getContentResolver(), Global.LOW_POWER_MODE_TRIGGER_LEVEL, level);
+            updateAutoPowerSaveSummary(level);
         }
         return true;
     }
@@ -258,19 +259,13 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         final int level = Global.getInt(
                 getContentResolver(), Global.LOW_POWER_MODE_TRIGGER_LEVEL, 0);
         mAutoPowerSavePref.setValue(String.valueOf(level));
-        updateAutoPowerSaveSummary();
+        updateAutoPowerSaveSummary(level);
     }
 
-    private void updateAutoPowerSaveSummary() {
-        final int level = Global.getInt(
-                getContentResolver(), Global.LOW_POWER_MODE_TRIGGER_LEVEL, 0);
-        final String summary;
-        if (level > 0 && level < 100) {
-            summary = getResources().getString(R.string.auto_power_save_summary_on, level + "%");
-        } else {
-            summary = getResources().getString(R.string.auto_power_save_summary_off);
-        }
-        mAutoPowerSavePref.setSummary(summary);
+    private void updateAutoPowerSaveSummary(int level) {
+        mAutoPowerSavePref.setSummary(level == 0
+                ? R.string.auto_power_save_summary_off
+                : R.string.auto_power_save_summary_on);
     }
 
     public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
