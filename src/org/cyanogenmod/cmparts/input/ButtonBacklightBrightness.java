@@ -45,8 +45,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
     public static final String KEY_BUTTON_BACKLIGHT = "pre_navbar_button_backlight";
 
-    private Window mWindow;
-
     private BrightnessControl mButtonBrightness;
     private BrightnessControl mKeyboardBrightness;
     private BrightnessControl mActiveControl;
@@ -88,9 +86,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     protected void onClick(AlertDialog d, int which) {
         super.onClick(d, which);
 
-        if (getDialog() != null) {
-            mWindow = getDialog().getWindow();
-        }
         updateBrightnessPreview();
     }
 
@@ -275,15 +270,17 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     }
 
     private void updateBrightnessPreview() {
-        if (mWindow != null) {
-            LayoutParams params = mWindow.getAttributes();
-            if (mActiveControl != null) {
-                params.buttonBrightness = (float) mActiveControl.getBrightness(false) / 255.0f;
-            } else {
-                params.buttonBrightness = -1;
-            }
-            mWindow.setAttributes(params);
+        if (getDialog() == null || getDialog().getWindow() == null) {
+            return;
         }
+        Window window = getDialog().getWindow();
+        LayoutParams params = window.getAttributes();
+        if (mActiveControl != null) {
+            params.buttonBrightness = (float) mActiveControl.getBrightness(false) / 255.0f;
+        } else {
+            params.buttonBrightness = -1;
+        }
+        window.setAttributes(params);
     }
 
     private void updateTimeoutEnabledState() {
