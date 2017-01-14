@@ -312,12 +312,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
     }
 
     private void rebuild() {
-        final ArrayList<ApplicationsState.AppEntry> newEntries = mSession.rebuild(
-                mActivityFilter, ApplicationsState.ALPHA_COMPARATOR);
-        if (newEntries != null) {
-            handleAppEntries(newEntries);
-            mAllPackagesAdapter.notifyDataSetChanged();
-        }
+        mSession.rebuild(mActivityFilter, ApplicationsState.ALPHA_COMPARATOR);
     }
 
     private void save() {
