@@ -82,6 +82,7 @@
             android:entryValues="@array/status_bar_am_pm_values"
             android:defaultValue="2" />
     </PreferenceCategory>
+-->
 
 <!--
     <PreferenceCategory
@@ -106,7 +107,6 @@
             android:defaultValue="0" />
 
     </PreferenceCategory>
--->
 
     <PreferenceCategory
         android:title="@string/status_bar_brightness_category">
