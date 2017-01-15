@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Biểu tượng ngang</string>
   <string name="status_bar_battery_style_circle">Vòng tròn</string>
   <string name="status_bar_battery_style_text">Văn bản</string>
-  <string name="status_bar_battery_style_hidden">Ẩn</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Tỷ lệ phần trăm pin</string>
   <string name="status_bar_battery_percentage_default">Ẩn</string>

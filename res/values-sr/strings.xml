@@ -419,7 +419,6 @@
   <string name="status_bar_battery_style_icon_landscape">Положена икона</string>
   <string name="status_bar_battery_style_circle">Круг</string>
   <string name="status_bar_battery_style_text">Текст</string>
-  <string name="status_bar_battery_style_hidden">Скривено</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Проценат батерије</string>
   <string name="status_bar_battery_percentage_default">Скривено</string>
