@@ -19,54 +19,6 @@
     android:key="status_bar_settings"
     android:title="@string/status_bar_title">
 
-    <PreferenceScreen
-        android:key="status_bar_icons"
-        android:title="@string/status_bar_icons_title"
-        android:summary="@string/status_bar_icons_summary">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.TunerActivity">
-            <extra android:name="tuner" android:value="status_bar" />
-        </intent>
-    </PreferenceScreen>
-
-    <cyanogenmod.preference.CMSystemSettingListPreference
-        android:key="status_bar_clock"
-        android:title="@string/status_bar_clock_position_title"
-        android:summary="%s"
-        android:dialogTitle="@string/status_bar_clock_position_title"
-        android:entries="@array/status_bar_clock_position_entries"
-        android:entryValues="@array/status_bar_clock_position_values"
-        android:defaultValue="0" />
-
-    <cyanogenmod.preference.CMSystemSettingListPreference
-        android:key="status_bar_am_pm"
-        android:title="@string/status_bar_am_pm_title"
-        android:summary="%s"
-        android:dialogTitle="@string/status_bar_am_pm_title"
-        android:entries="@array/status_bar_am_pm_entries"
-        android:entryValues="@array/status_bar_am_pm_values"
-        android:defaultValue="2" />
-
-    <cyanogenmod.preference.CMSystemSettingListPreference
-        android:key="status_bar_battery_style"
-        android:title="@string/status_bar_battery_style_title"
-        android:summary="%s"
-        android:dialogTitle="@string/status_bar_battery_style_title"
-        android:entries="@array/status_bar_battery_style_entries"
-        android:entryValues="@array/status_bar_battery_style_values"
-        android:defaultValue="2" />
-
-    <cyanogenmod.preference.CMSystemSettingListPreference
-        android:key="status_bar_show_battery_percent"
-        android:title="@string/status_bar_battery_percentage_title"
-        android:summary="%s"
-        android:dialogTitle="@string/status_bar_battery_percentage_title"
-        android:entries="@array/status_bar_battery_percentage_entries"
-        android:entryValues="@array/status_bar_battery_percentage_values"
-        android:defaultValue="0" />
-
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="qs_quick_pulldown"
         android:title="@string/status_bar_quick_qs_pulldown_title"
@@ -80,10 +32,73 @@
         android:summary="@string/status_bar_toggle_brightness_summary"
         android:defaultValue="false" />
 
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
-        android:key="status_bar_notif_count"
-        android:title="@string/status_bar_notif_count_title"
-        android:summary="@string/status_bar_notif_count_summary"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:title="@string/status_bar_icons_title">
+
+        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+            android:key="status_bar_notif_count"
+            android:title="@string/status_bar_notif_count_title"
+            android:summary="@string/status_bar_notif_count_summary"
+            android:defaultValue="true" />
+
+        <PreferenceScreen
+            android:key="status_bar_icons"
+            android:title="@string/status_bar_system_icons_title"
+            android:summary="@string/status_bar_system_icons_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity">
+                <extra android:name="tuner" android:value="status_bar" />
+            </intent>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/status_bar_clock_title">
+
+        <cyanogenmod.preference.CMSystemSettingListPreference
+            android:key="status_bar_clock"
+            android:title="@string/status_bar_clock_position_title"
+            android:summary="%s"
+            android:dialogTitle="@string/status_bar_clock_position_title"
+            android:entries="@array/status_bar_clock_position_entries"
+            android:entryValues="@array/status_bar_clock_position_values"
+            android:defaultValue="0" />
+
+        <cyanogenmod.preference.CMSystemSettingListPreference
+            android:key="status_bar_am_pm"
+            android:title="@string/status_bar_am_pm_title"
+            android:summary="%s"
+            android:dialogTitle="@string/status_bar_am_pm_title"
+            android:entries="@array/status_bar_am_pm_entries"
+            android:entryValues="@array/status_bar_am_pm_values"
+            android:defaultValue="2" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/status_bar_battery_title">
+
+        <cyanogenmod.preference.CMSystemSettingListPreference
+            android:key="status_bar_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:summary="%s"
+            android:dialogTitle="@string/status_bar_battery_style_title"
+            android:entries="@array/status_bar_battery_style_entries"
+            android:entryValues="@array/status_bar_battery_style_values"
+            android:defaultValue="2" />
+
+        <cyanogenmod.preference.CMSystemSettingListPreference
+            android:key="status_bar_show_battery_percent"
+            android:title="@string/status_bar_battery_percentage_title"
+            android:summary="%s"
+            android:dialogTitle="@string/status_bar_battery_percentage_title"
+            android:entries="@array/status_bar_battery_percentage_entries"
+            android:entryValues="@array/status_bar_battery_percentage_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
