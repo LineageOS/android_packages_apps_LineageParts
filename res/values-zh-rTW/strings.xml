@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">橫向圖示</string>
   <string name="status_bar_battery_style_circle">環狀圖示</string>
   <string name="status_bar_battery_style_text">純文字</string>
-  <string name="status_bar_battery_style_hidden">隱藏</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">電量百分比</string>
   <string name="status_bar_battery_percentage_default">隱藏</string>

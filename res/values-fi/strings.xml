@@ -419,7 +419,6 @@
   <string name="status_bar_battery_style_icon_landscape">Kuvake (vaaka)</string>
   <string name="status_bar_battery_style_circle">Ympyrä</string>
   <string name="status_bar_battery_style_text">Teksti</string>
-  <string name="status_bar_battery_style_hidden">Piilotettu</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Akun prosentti</string>
   <string name="status_bar_battery_percentage_default">Piilotettu</string>
