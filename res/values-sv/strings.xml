@@ -266,7 +266,6 @@
   <string name="status_bar_battery_style_icon_landscape">Liggande ikon</string>
   <string name="status_bar_battery_style_circle">Cirkel</string>
   <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Dold</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Batterinivå</string>
   <string name="status_bar_battery_percentage_default">Dold</string>

@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Icône paysage</string>
   <string name="status_bar_battery_style_circle">Cercle</string>
   <string name="status_bar_battery_style_text">Texte</string>
-  <string name="status_bar_battery_style_hidden">Masquée</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Pourcentage de la batterie</string>
   <string name="status_bar_battery_percentage_default">Masqué</string>

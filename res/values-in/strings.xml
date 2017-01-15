@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Ikon lanskap</string>
   <string name="status_bar_battery_style_circle">Lingkaran</string>
   <string name="status_bar_battery_style_text">Teks</string>
-  <string name="status_bar_battery_style_hidden">Tersembunyi</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Persentase baterai</string>
   <string name="status_bar_battery_percentage_default">Tersembunyi</string>

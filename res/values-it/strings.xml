@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Icona orizzontale</string>
   <string name="status_bar_battery_style_circle">Cerchio</string>
   <string name="status_bar_battery_style_text">Testo</string>
-  <string name="status_bar_battery_style_hidden">Nascosta</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Percentuale batteria</string>
   <string name="status_bar_battery_percentage_default">Nascosta</string>

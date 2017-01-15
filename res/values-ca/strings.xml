@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Icona horitzontal</string>
   <string name="status_bar_battery_style_circle">Cercle</string>
   <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Amagat</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Percentatge de bateria</string>
   <string name="status_bar_battery_percentage_default">Amagat</string>
