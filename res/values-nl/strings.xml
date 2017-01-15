@@ -416,7 +416,6 @@
   <string name="status_bar_battery_style_icon_landscape">Pictogram (liggend)</string>
   <string name="status_bar_battery_style_circle">Cirkel</string>
   <string name="status_bar_battery_style_text">Tekst</string>
-  <string name="status_bar_battery_style_hidden">Verborgen</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Accupercentage</string>
   <string name="status_bar_battery_percentage_default">Verborgen</string>
