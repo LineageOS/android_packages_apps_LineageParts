@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Yatay simge</string>
   <string name="status_bar_battery_style_circle">Daire</string>
   <string name="status_bar_battery_style_text">Metin</string>
-  <string name="status_bar_battery_style_hidden">Gizli</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
   <string name="status_bar_battery_percentage_default">Gizli</string>
