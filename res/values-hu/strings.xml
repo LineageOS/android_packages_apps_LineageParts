@@ -409,7 +409,6 @@
   <string name="status_bar_battery_style_icon_landscape">Fekvő ikon</string>
   <string name="status_bar_battery_style_circle">Kör</string>
   <string name="status_bar_battery_style_text">Szöveg</string>
-  <string name="status_bar_battery_style_hidden">Rejtett</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Akkumulátor százalék</string>
   <string name="status_bar_battery_percentage_default">Rejtett</string>
