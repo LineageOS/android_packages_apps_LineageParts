@@ -418,7 +418,6 @@
     <string name="status_bar_battery_style_icon_landscape">رمز أفقي</string>
     <string name="status_bar_battery_style_circle">دائرة</string>
     <string name="status_bar_battery_style_text">نص</string>
-    <string name="status_bar_battery_style_hidden">مخفي</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">نسبة البطارية</string>
     <string name="status_bar_battery_percentage_default">مخفية</string>
