@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Οριζόντιο εικονίδιο</string>
   <string name="status_bar_battery_style_circle">Κύκλος</string>
   <string name="status_bar_battery_style_text">Κείμενο</string>
-  <string name="status_bar_battery_style_hidden">Κρυφό</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Ποσοστό μπαταρίας</string>
   <string name="status_bar_battery_percentage_default">Κρυφό</string>

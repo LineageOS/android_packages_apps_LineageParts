@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">横向きのアイコン</string>
   <string name="status_bar_battery_style_circle">サークル</string>
   <string name="status_bar_battery_style_text">テキスト</string>
-  <string name="status_bar_battery_style_hidden">表示しない</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">電池のパーセント表示</string>
   <string name="status_bar_battery_percentage_default">表示しない</string>

@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Symbol (Querformat)</string>
   <string name="status_bar_battery_style_circle">Kreis</string>
   <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Akkustand in Prozent</string>
   <string name="status_bar_battery_percentage_default">Ausgeblendet</string>

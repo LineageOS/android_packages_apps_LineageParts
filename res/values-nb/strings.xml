@@ -409,7 +409,6 @@
   <string name="status_bar_battery_style_icon_landscape">Liggende batteriikon</string>
   <string name="status_bar_battery_style_circle">Sirkel</string>
   <string name="status_bar_battery_style_text">Tekst</string>
-  <string name="status_bar_battery_style_hidden">Skjult</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Batteriprosent</string>
   <string name="status_bar_battery_percentage_default">Skjult</string>

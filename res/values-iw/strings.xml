@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">סמל שוכב</string>
   <string name="status_bar_battery_style_circle">עיגול</string>
   <string name="status_bar_battery_style_text">טקסט</string>
-  <string name="status_bar_battery_style_hidden">מוסתר</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">אחוזי סוללה</string>
   <string name="status_bar_battery_percentage_default">מוסתר</string>

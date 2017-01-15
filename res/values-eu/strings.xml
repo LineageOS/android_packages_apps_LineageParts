@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Ikono horizontala</string>
   <string name="status_bar_battery_style_circle">Zirkularra</string>
   <string name="status_bar_battery_style_text">Testua</string>
-  <string name="status_bar_battery_style_hidden">Ezkutatua</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Bateriaren ehunekoa</string>
   <string name="status_bar_battery_percentage_default">Ezkutatua</string>

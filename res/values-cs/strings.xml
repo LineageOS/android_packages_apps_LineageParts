@@ -423,7 +423,6 @@
   <string name="status_bar_battery_style_icon_landscape">Ikona na šířku</string>
   <string name="status_bar_battery_style_circle">Kruh</string>
   <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Skrytá</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Procenta baterie</string>
   <string name="status_bar_battery_percentage_default">Skryté</string>
