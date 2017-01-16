@@ -131,9 +131,6 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
         PagerTabStrip tabs = (PagerTabStrip) root.findViewById(R.id.tabs);
         tabs.setTabIndicatorColorResource(R.color.theme_accent);
 
-        // HACK - https://code.google.com/p/android/issues/detail?id=213359
-        ((ViewPager.LayoutParams)tabs.getLayoutParams()).isDecor = true;
-
         if (mNewProfileMode) {
             showButtonBar(true);
             getNextButton().setOnClickListener(new View.OnClickListener() {
