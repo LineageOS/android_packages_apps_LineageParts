@@ -23,4 +23,8 @@
     <!-- When true, weather options will be displayed in settings dashboard -->
     <bool name="config_showWeatherMenu">true</bool>
 
+    <!-- Default action ids for a device's touchscreen gestures
+         The array should be sorted in the same order as the
+         touchscreen gestures advertised by the device's CMHW impl. -->
+    <integer-array name="config_defaultTouchscreenGestureActions" />
 </resources>
