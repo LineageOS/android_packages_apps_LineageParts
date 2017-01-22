@@ -505,7 +505,7 @@
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>
     <string name="stats_collection_title">Stats collection</string>
-    <string name="stats_collection_summary">When enabled, allows metrics collection</string>
+    <string name="stats_collection_summary">Allow installation metrics and device statistics to be collected</string>
 
     <!-- Display : Rotation  -->
     <string name="accelerometer_title">Auto-rotate screen</string>
