@@ -146,6 +146,8 @@
     <string name="live_display_color_profile_basic_summary">Use the display uncalibrated</string>
     <string name="live_display_color_profile_adaptive_title">Adaptive</string>
     <string name="live_display_color_profile_adaptive_summary">Colors adapt to ambient conditions</string>
+    <string name="live_display_color_profile_reading_title">Reading</string>
+    <string name="live_display_color_profile_reading_summary">Warmer colors for less eye strain</string>
     <string name="color_calibration_title">Color calibration</string>
     <string name="color_calibration_summary">Calibrate on-screen colors</string>
     <string name="color_red_title">Red</string>
