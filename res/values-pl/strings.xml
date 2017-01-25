@@ -189,10 +189,6 @@
   <string name="status_bar_quick_qs_pulldown_title">Szybkie rozwijanie</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija szybkie ustawienia</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Styl zegara</string>
-  <string name="status_bar_clock_position_right">Po prawej</string>
-  <string name="status_bar_clock_position_left">Po lewej</string>
-  <string name="status_bar_clock_position_center">Na środku</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Styl wskaźnika baterii</string>
   <string name="status_bar_battery_style_icon_portrait">Ikona pionowo</string>
@@ -258,4 +254,5 @@
   <string name="expanded_desktop_style_hide_status">Ukryj pasek stanu</string>
   <string name="expanded_desktop_style_hide_navigation">Ukryj pasek nawigacyjny</string>
   <string name="expanded_desktop_style_hide_both">Ukryj oba</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

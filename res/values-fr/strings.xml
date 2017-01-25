@@ -212,7 +212,6 @@
   <string name="preview_country_title">Pays</string>
   <string name="preview_carrier_title">Opérateur</string>
   <string name="stats_collection_title">Collecte de statistiques</string>
-  <string name="stats_collection_summary">Une fois activé, autorise la collecte de données</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Rotation automatique de l\'écran</string>
   <string name="display_rotation_title">Paramètres de rotation</string>
@@ -241,4 +240,5 @@
   <!-- Power: Performance profiles -->
   <string name="perf_profile_settings_title">Économiseur de batterie et performances</string>
   <!-- Applications: Expanded desktop -->
+  <!-- Sounds: Charging sounds -->
 </resources>

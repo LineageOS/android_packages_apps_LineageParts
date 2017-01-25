@@ -45,7 +45,7 @@
   <string name="privacy_guard_dlg_title">Да активирам ли \"Защитен режим\"?</string>
   <string name="privacy_guard_dlg_text">Когато \"Защитен режим\" е активиран, приложението няма да позволи да имате достъп до лични данни, контакти, съобщения или история на обаждания.</string>
   <string name="privacy_guard_dlg_system_app_text">Когато \"Защитен режим\" е активиран вградените приложения, няма да имат достъп до лични данни. Това може да доведе до проблемна работа на други приложения.</string>
-  <string name="privacy_guard_default_title">Активирайте по подразбиране</string>
+  <string name="privacy_guard_default_title">Активиране по подразбиране</string>
   <string name="privacy_guard_default_summary_on">Защитен режим е ативиран</string>
   <string name="privacy_guard_default_summary">Активира защитен режим за нови приложения</string>
   <string name="privacy_guard_manager_summary">Управлявайте, кои приложения да имат достъп до вашите лични данни</string>
@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Използвате дисплея не калибриран</string>
   <string name="live_display_color_profile_adaptive_title">Адаптивно</string>
   <string name="live_display_color_profile_adaptive_summary">Цветовете се адаптират към условията на околната среда</string>
+  <string name="live_display_color_profile_reading_title">Четенене</string>
+  <string name="live_display_color_profile_reading_summary">Топлите цветове за по-малко умора на очите</string>
   <string name="color_calibration_title">Калибриране на цвета</string>
   <string name="color_calibration_summary">Калибриране на цветовете на екрана</string>
   <string name="color_red_title">Червен</string>
@@ -380,7 +382,7 @@
   <string name="status_bar_quick_qs_pulldown_left">Вляво</string>
   <string name="status_bar_quick_qs_pulldown_right">Вдясно</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Местоположение на часовника</string>
+  <string name="status_bar_clock_position_title">Позиция на часовника</string>
   <string name="status_bar_clock_position_right">Вдясно</string>
   <string name="status_bar_clock_position_left">Вляво</string>
   <string name="status_bar_clock_position_center">По средата</string>
@@ -411,18 +413,18 @@
   <string name="protected_apps_manager_title">Защитени приложения</string>
   <string name="protected_apps_manager_summary">Изберете кои приложения да се зареждат след въвеждане на парола</string>
   <!-- Contributors cloud activity -->
-  <string name="contributors_cloud_fragment_title">Сътрудници</string>
-  <string name="contributors_cloud_loading_message">Зареждане на данните за сътрудници\u2026</string>
-  <string name="contributors_cloud_failed_message">Данните за сътрудници не могат да бъдат заредени</string>
+  <string name="contributors_cloud_fragment_title">Разработчици</string>
+  <string name="contributors_cloud_loading_message">Зареждане на данните за разработчици\u2026</string>
+  <string name="contributors_cloud_failed_message">Неуспех при изтеглянето на информация за разработчиците</string>
   <string name="contributor_info_menu">Потребителска информация</string>
   <string name="contributor_info_msg">
         <![CDATA[<b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Ник:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
                  <b>Ангажира:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
-  <string name="contributions_info_menu">Информация за потребители</string>
+  <string name="contributions_info_menu">Обща информация</string>
   <string name="contributions_info_msg">
-        <![CDATA[<b>Общо сътрудници:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Общо ангажира:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+        <![CDATA[<b>Брой разработчици:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Брой промени:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Последна актуализация:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
@@ -441,7 +443,7 @@
   <string name="preview_country_title">Държава</string>
   <string name="preview_carrier_title">Оператор</string>
   <string name="stats_collection_title">Събиране на статистики</string>
-  <string name="stats_collection_summary">Когато е активирана, позволява събиране на показатели</string>
+  <string name="stats_collection_summary">Позволява събирането на показатели и статистически данни за устройството</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Автоматично завъртане на екрана</string>
   <string name="display_rotation_title">Настройки на завъртане</string>
@@ -455,7 +457,7 @@
   <string name="display_rotation_180_title">180 градуса</string>
   <string name="display_rotation_270_title">270 градуса</string>
   <!-- Weather -->
-  <string name="weather_settings_title">Прогноза за времето</string>
+  <string name="weather_settings_title">Прогноза на времето</string>
   <string name="weather_settings_no_services_prompt">Няма инсталиран доставчик на време</string>
   <string name="weather_settings_no_services_summary">Инсталирайте на доставчик на време за да получавате актуализации за времето</string>
   <string name="weather_settings_button">Настройки на доставчика</string>
@@ -466,12 +468,12 @@
   <string name="weather_settings_temp_units_title">Температурни единици</string>
   <string name="weather_settings_temp_celsius">Целзий</string>
   <string name="weather_settings_temp_fahrenheit">Фаренхайт</string>
-  <string name="weather_settings_keyword">Прогноза за времето</string>
+  <string name="weather_settings_keyword">времето</string>
   <string name="status_bar_show_weather_title">Покажи на времето</string>
   <string name="status_bar_show_weather_summary">Покази текущата температура в лентата на състоянието</string>
   <!-- Power: Performance profiles -->
-  <string name="perf_profile_settings_title">Икономия на батерия и производителност</string>
-  <string name="perf_profile_settings_summary">Кофигорира функции за мощност и пестене на батерия</string>
+  <string name="perf_profile_settings_title">Икономия и производителност на батерията</string>
+  <string name="perf_profile_settings_summary">Регулира енергийна ефективност и производителност на устройството</string>
   <string name="perf_profile_overview_summary">Текущия профил: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
   <string name="perf_profile_category_title">Производителност на устройството</string>
   <string name="perf_profile_title">Профил на производителност: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
@@ -479,9 +481,9 @@
   <string name="power_save_category_title">Пестене на батерия</string>
   <string name="power_save_title">Изключително пестене на батерия</string>
   <string name="power_save_summary">Ограничаване производителноста на устройството и работата във фонов режим за икономия на енергия</string>
-  <string name="auto_power_save_title">Автоматичена икономия на енергия</string>
-  <string name="auto_power_save_summary_on">Автоматично да се активира режима за енергоспестяване при %s на батерията</string>
-  <string name="auto_power_save_summary_off">Не разрешавай автоматичния режим енергоспестяване</string>
+  <string name="auto_power_save_title">Автоматичнен режим на енергоспестяване</string>
+  <string name="auto_power_save_summary_on">Автоматично се активира режима за енергоспестяване при %s на батерията</string>
+  <string name="auto_power_save_summary_off">Автоматичния режим енергоспестяване не е деактивиран</string>
   <string name="app_perf_profiles_title">Автоматична оптимизация</string>
   <string name="app_perf_profiles_summary">Автоматичен избор на подходящ профил на производителност за различните приложения</string>
   <string name="auto_power_save_never">Никога</string>
@@ -495,4 +497,11 @@
   <string name="expanded_desktop_style_hide_navigation">Скриване на лентата за навигация</string>
   <string name="expanded_desktop_style_hide_both">Скрий и двете</string>
   <string name="expanded_desktop_nothing_to_show_text">Изключите персонализирането на вашия разширен екран на база на броя на приложенията</string>
+  <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Звуци при зареждане</string>
+  <string name="charging_sounds_enabled_title">Активиране</string>
+  <string name="charging_sounds_enabled_summary">Възпроизвежда звук, когато включвате или изключвате източник на захранване</string>
+  <string name="power_notifications_vibrate_title">Вибрация</string>
+  <string name="charging_sounds_ringtone_title">Тон за уведомяване</string>
+  <string name="charging_sounds_ringtone_silent">Без звук</string>
 </resources>

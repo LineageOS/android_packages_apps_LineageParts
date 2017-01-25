@@ -380,10 +380,6 @@
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Højre</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Ur-tema</string>
-  <string name="status_bar_clock_position_right">Højre</string>
-  <string name="status_bar_clock_position_left">Venstre</string>
-  <string name="status_bar_clock_position_center">Centreret</string>
   <string name="status_bar_am_pm_title">AM/PM-layout</string>
   <string name="status_bar_am_pm_info">24-timers ur er aktiveret</string>
   <string name="status_bar_am_pm_normal">Normal</string>
@@ -441,7 +437,6 @@
   <string name="preview_country_title">Land</string>
   <string name="preview_carrier_title">Operatør</string>
   <string name="stats_collection_title">Indsamling af statistik</string>
-  <string name="stats_collection_summary">Når aktiveret, tillades indsamling af målinger</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Automatisk rotation af skærmen</string>
   <string name="display_rotation_title">Rotationsindstillinger</string>
@@ -480,7 +475,6 @@
   <string name="power_save_title">Ekstrem strømbesparelse</string>
   <string name="power_save_summary">Begræns enhed ydeevne og baggrundsaktivitet for at spare strøm</string>
   <string name="auto_power_save_title">Automatisk strømbesparelse</string>
-  <string name="auto_power_save_summary_on">Aktivér automatisk strømsparetilstand på %s batteri</string>
   <string name="auto_power_save_summary_off">Aktivér ikke strømsparetilstand automatisk</string>
   <string name="app_perf_profiles_title">Automatisk optimering</string>
   <string name="app_perf_profiles_summary">Vælg automatisk en passende ydeevneprofil for apps og brugsmønstre</string>
@@ -495,4 +489,5 @@
   <string name="expanded_desktop_style_hide_navigation">Skjul navigationslinje</string>
   <string name="expanded_desktop_style_hide_both">Skjul begge</string>
   <string name="expanded_desktop_nothing_to_show_text">Sluk for kontakten for at tilpasse dit udvidede skrivebord på en per app-basis</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

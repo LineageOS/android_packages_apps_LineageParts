@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Utilitza la pantalla sense calibrar</string>
   <string name="live_display_color_profile_adaptive_title">Adaptativa</string>
   <string name="live_display_color_profile_adaptive_summary">Els colors s\'adapten a les condicions ambientals</string>
+  <string name="live_display_color_profile_reading_title">S\'està llegint</string>
+  <string name="live_display_color_profile_reading_summary">Colors càlids per cansar menys els ulls</string>
   <string name="color_calibration_title">Calibració de color</string>
   <string name="color_calibration_summary">Calibra els colors de la pantalla</string>
   <string name="color_red_title">Vermell</string>
@@ -380,7 +382,7 @@
   <string name="status_bar_quick_qs_pulldown_left">Esquerra</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreta</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Estil del rellotge</string>
+  <string name="status_bar_clock_position_title">Posició del rellotge</string>
   <string name="status_bar_clock_position_right">Dreta</string>
   <string name="status_bar_clock_position_left">Esquerra</string>
   <string name="status_bar_clock_position_center">Centrat</string>
@@ -441,7 +443,7 @@
   <string name="preview_country_title">País</string>
   <string name="preview_carrier_title">Operadora</string>
   <string name="stats_collection_title">Recollida d\'estadístiques</string>
-  <string name="stats_collection_summary">Quan està activat, permet la recollida de mètriques</string>
+  <string name="stats_collection_summary">Permet recollir dades d\'instal·lació i estadístiques del dispositiu</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Auto-rota la pantalla</string>
   <string name="display_rotation_title">Configuració de rotació</string>
@@ -480,10 +482,11 @@
   <string name="power_save_title">Estalviador d\'energia extrem</string>
   <string name="power_save_summary">Limita el rendiment del dispositiu i l\'activitat en segon pla per estalviar energia</string>
   <string name="auto_power_save_title">Estalviador d\'energia automàtic</string>
-  <string name="auto_power_save_summary_on">Habilita el mode d\'estalvi d\'energia automàticament quan s\'arribi al %s bateria</string>
+  <string name="auto_power_save_summary_on">Habilita el mode d\'estalvi d\'energia automàticament quan s\'arribi al %s per cent de bateria</string>
   <string name="auto_power_save_summary_off">No habilitis el mode d\'estalvi d\'energia automàticament</string>
   <string name="app_perf_profiles_title">Optimització automàtica</string>
   <string name="app_perf_profiles_summary">Escull automàticament un perfil de rendiment adequat per aplicacions i patrons d\'utilització</string>
+  <string name="auto_power_save_never">Mai</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Escriptori extès</string>
   <string name="expanded_desktop_settings_summary">Amplia el teu espai disponible a l\'escriptori amagant la barra d\'estat, la barra de navegació o els dos</string>
@@ -494,4 +497,11 @@
   <string name="expanded_desktop_style_hide_navigation">Amaga la barra de navegació</string>
   <string name="expanded_desktop_style_hide_both">Amaga els dos</string>
   <string name="expanded_desktop_nothing_to_show_text">Apaga l\'interruptor per personalitzar el teu escriptori extès segons cada aplicació</string>
+  <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Sons de càrrega</string>
+  <string name="charging_sounds_enabled_title">Habilita</string>
+  <string name="charging_sounds_enabled_summary">Reprodueix un so en connectar o desconnectar d\'una font d\'energia</string>
+  <string name="power_notifications_vibrate_title">Vibra</string>
+  <string name="charging_sounds_ringtone_title">So de la notificació</string>
+  <string name="charging_sounds_ringtone_silent">Silenci</string>
 </resources>

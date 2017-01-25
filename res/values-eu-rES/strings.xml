@@ -380,10 +380,6 @@
   <string name="status_bar_quick_qs_pulldown_left">ezkerreko</string>
   <string name="status_bar_quick_qs_pulldown_right">eskumako</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Erlojuaren estiloa</string>
-  <string name="status_bar_clock_position_right">Eskuma</string>
-  <string name="status_bar_clock_position_left">Ezkerra</string>
-  <string name="status_bar_clock_position_center">Zentroa</string>
   <string name="status_bar_am_pm_title">AM/PM estiloa</string>
   <string name="status_bar_am_pm_info">24 ordutako erlojua gaitu da</string>
   <string name="status_bar_am_pm_normal">Arrunta</string>
@@ -442,7 +438,6 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="preview_country_title">Herrialdea</string>
   <string name="preview_carrier_title">Operadorea</string>
   <string name="stats_collection_title">Estatistikak biltzea</string>
-  <string name="stats_collection_summary">Gaitzean, datuak biltzea baimentzen du</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Auto-biratu pantaila</string>
   <string name="display_rotation_title">Biratzearen ezarpenak</string>
@@ -481,7 +476,6 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="power_save_title">Muturreko energia aurreztea</string>
   <string name="power_save_summary">Mugatu gailuaren errendimendua eta bigarren planoko jarduera energia aurrezteko</string>
   <string name="auto_power_save_title">Energia aurrezle automatikoa</string>
-  <string name="auto_power_save_summary_on">Gaitu energia aurrezteko modua automatikoki bateriak %s duenean</string>
   <string name="auto_power_save_summary_off">Ez gaitu energia aurrezteko modua automatikoki</string>
   <string name="app_perf_profiles_title">Optimizazio automatikoa</string>
   <string name="app_perf_profiles_summary">Aukeratu automatikoki errendimendu profil egoki bat aplikazio eta erabilera ereduentzat</string>
@@ -496,4 +490,5 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="expanded_desktop_style_hide_navigation">Ezkutatu nabigazio-barra</string>
   <string name="expanded_desktop_style_hide_both">Ezkutatu biak</string>
   <string name="expanded_desktop_nothing_to_show_text">Itzali zure mahaigain hedatua aplikazioz aplikazio pertsonalizatzeko</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

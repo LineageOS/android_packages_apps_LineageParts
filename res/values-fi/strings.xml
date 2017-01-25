@@ -380,9 +380,9 @@
   <string name="status_bar_quick_qs_pulldown_left">Vasen reuna</string>
   <string name="status_bar_quick_qs_pulldown_right">Oikea reuna</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Kellon tyyli</string>
-  <string name="status_bar_clock_position_right">Oikea reuna</string>
-  <string name="status_bar_clock_position_left">Vasen reuna</string>
+  <string name="status_bar_clock_position_title">Kellon sijainti</string>
+  <string name="status_bar_clock_position_right">Oikea</string>
+  <string name="status_bar_clock_position_left">Vasen</string>
   <string name="status_bar_clock_position_center">Keskitetty</string>
   <string name="status_bar_am_pm_title">AM/PM tyyli</string>
   <string name="status_bar_am_pm_info">24-tunnin kello on käytössä</string>
@@ -441,7 +441,6 @@
   <string name="preview_country_title">Valtio</string>
   <string name="preview_carrier_title">Operaattori</string>
   <string name="stats_collection_title">Tilastojen keräys</string>
-  <string name="stats_collection_summary">Sallii käyttötietojen keräämisen kun käytössä</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Näytön automaattinen kierto</string>
   <string name="display_rotation_title">Asennon asetukset</string>
@@ -480,7 +479,7 @@
   <string name="power_save_title">Äärimmäinen virransäästö</string>
   <string name="power_save_summary">Rajoita laitteen suorituskykyä ja taustatoimintaa säästääksesi virtaa</string>
   <string name="auto_power_save_title">Automaattinen virransäästö</string>
-  <string name="auto_power_save_summary_on">Ota virransäästötila automaattisesti käyttöön kun akkua on jäljellä %s</string>
+  <string name="auto_power_save_summary_on">Ota virransäästötila automaattisesti käyttöön kun akkua on jäljellä %s prosenttia</string>
   <string name="auto_power_save_summary_off">Älä ota virransäästötilaa käyttöön automaattisesti</string>
   <string name="app_perf_profiles_title">Automaattinen optimointi</string>
   <string name="app_perf_profiles_summary">Valitse automaattisesti sopiva suorituskykyprofiili eri sovelluksille</string>
@@ -495,4 +494,5 @@
   <string name="expanded_desktop_style_hide_navigation">Piilota navigointipalkki</string>
   <string name="expanded_desktop_style_hide_both">Piilota molemmat</string>
   <string name="expanded_desktop_nothing_to_show_text">Poista käytöstä mukauttaaksesi laajennetun työpöydän asetuksia sovelluskohtaisesti</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

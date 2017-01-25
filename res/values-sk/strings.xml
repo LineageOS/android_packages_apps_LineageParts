@@ -380,7 +380,7 @@
   <string name="status_bar_quick_qs_pulldown_left">vľavo</string>
   <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Štýl hodín</string>
+  <string name="status_bar_clock_position_title">Umiestnenie hodín</string>
   <string name="status_bar_clock_position_right">Vpravo</string>
   <string name="status_bar_clock_position_left">Vľavo</string>
   <string name="status_bar_clock_position_center">V strede</string>
@@ -441,7 +441,6 @@
   <string name="preview_country_title">Krajina</string>
   <string name="preview_carrier_title">Operátor</string>
   <string name="stats_collection_title">Zbieranie štatistík</string>
-  <string name="stats_collection_summary">Ak je povolené, umožňuje zhromažďovať štatistické dáta</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Automaticky otáčať obrazovku</string>
   <string name="display_rotation_title">Nastavenia otáčania</string>
@@ -480,7 +479,7 @@
   <string name="power_save_title">Extrémna úspora</string>
   <string name="power_save_summary">Omedziť výkon zariadenia a aktivity na pozadí z dôvodov úspory energie</string>
   <string name="auto_power_save_title">Automatický úsporný režim</string>
-  <string name="auto_power_save_summary_on">Automatické povolenie úsporného režimu od %s batérie</string>
+  <string name="auto_power_save_summary_on">Automatické povolenie úsporného režimu od %s percent batérie</string>
   <string name="auto_power_save_summary_off">Nepovoliť automatický režim zníženia spotreby</string>
   <string name="app_perf_profiles_title">Automatická optimalizácia</string>
   <string name="app_perf_profiles_summary">Automaticky vybrať príslušný profil výkonu pre aplikácie a spôsobu používania</string>
@@ -495,4 +494,5 @@
   <string name="expanded_desktop_style_hide_navigation">Skryť navigačný panel</string>
   <string name="expanded_desktop_style_hide_both">Skryť oba</string>
   <string name="expanded_desktop_nothing_to_show_text">Vypnite prepínač upravenia rozšírenej plochy na základe aplikácií</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

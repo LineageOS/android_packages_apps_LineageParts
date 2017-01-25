@@ -343,10 +343,6 @@
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Indeling klok</string>
-  <string name="status_bar_clock_position_right">Rechts</string>
-  <string name="status_bar_clock_position_left">Links</string>
-  <string name="status_bar_clock_position_center">Gecentreerd</string>
   <string name="status_bar_am_pm_title">AM/PM-stijl</string>
   <string name="status_bar_am_pm_info">24-uurs klok is ingeschakeld</string>
   <string name="status_bar_am_pm_normal">Normaal</string>
@@ -385,7 +381,6 @@
   <string name="preview_country_title">Land</string>
   <string name="preview_carrier_title">Provider</string>
   <string name="stats_collection_title">Verzamelen van statistieken</string>
-  <string name="stats_collection_summary">Indien ingeschakeld, staat het verzamelen van statistieken toe</string>
   <!-- Display : Rotation  -->
   <string name="display_rotation_unit">graden</string>
   <!-- Weather -->
@@ -418,4 +413,5 @@
   <string name="expanded_desktop_style_hide_status">Statusbalk verbergen</string>
   <string name="expanded_desktop_style_hide_navigation">Navigatiebalk verbergen</string>
   <string name="expanded_desktop_style_hide_both">Beide verbergen</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

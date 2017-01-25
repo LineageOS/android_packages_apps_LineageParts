@@ -380,10 +380,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
   <string name="status_bar_quick_qs_pulldown_right">Destra</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">Stile orologio</string>
+  <string name="status_bar_clock_position_title">Posizione orologio</string>
   <string name="status_bar_clock_position_right">Destra</string>
   <string name="status_bar_clock_position_left">Sinistra</string>
-  <string name="status_bar_clock_position_center">Centrato</string>
+  <string name="status_bar_clock_position_center">Centrale</string>
   <string name="status_bar_am_pm_title">Stile AM/PM</string>
   <string name="status_bar_am_pm_info">Orologio 24 ore attivo</string>
   <string name="status_bar_am_pm_normal">Normale</string>
@@ -415,16 +415,16 @@
   <string name="contributors_cloud_loading_message">Caricamento dati collaboratori\u2026</string>
   <string name="contributors_cloud_failed_message">Impossibile caricare dati collaboratori</string>
   <string name="contributor_info_menu">Info collaboratore</string>
-  <string name="contributor_info_msg"><![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+  <string name="contributor_info_msg"><b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-<b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+<b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g></string>
   <string name="contributions_info_menu">Informazioni contributi</string>
-  <string name="contributions_info_msg"><![CDATA[<b>Contributori totali:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>Commit totali:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-<b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+  <string name="contributions_info_msg"><b>Contributori totali:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>Commit totali:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+<b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statistiche LineageOS</string>
-  <string name="anonymous_statistics_summary">Aiuta a migliorare LineageOS consentendo l\'invio di statistiche anonime</string>
+  <string name="anonymous_statistics_summary">Aiuta a migliorare Cyanogenmod consentendo l\'invio di statistiche anonime</string>
   <string name="anonymous_statistics_warning_title">Info</string>
   <string name="anonymous_statistics_warning">Attivando le Statistiche LineageOS consentirai l\'invio di dati non personali agli sviluppatori per contare il numero di installazioni sui dispositivi. Le informazioni inviate includono un\'identificatore unico che non compromette in alcun modo la tua privacy o dati personali.\n\nPer vedere un esempio di dati inviati, tocca Anteprima Dati.</string>
   <string name="enable_reporting_title">Attiva report</string>
@@ -438,7 +438,6 @@
   <string name="preview_country_title">Paese</string>
   <string name="preview_carrier_title">Operatore</string>
   <string name="stats_collection_title">Raccolta statistiche</string>
-  <string name="stats_collection_summary">Quando attivato, consente la raccolta di metriche</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Rotazione automatica schermo</string>
   <string name="display_rotation_title">Impostazioni rotazione</string>
@@ -477,10 +476,11 @@
   <string name="power_save_title">Risparmio energetico estremo</string>
   <string name="power_save_summary">Limita le prestazioni del dispositivo e le attività in background per risparmiare energia</string>
   <string name="auto_power_save_title">Risparmio energetico automatico</string>
-  <string name="auto_power_save_summary_on">Attiva automaticamente la modalità di risparmio energetico al %s batteria</string>
+  <string name="auto_power_save_summary_on">Attiva automaticamente la modalità di risparmio energetico al %s di batteria</string>
   <string name="auto_power_save_summary_off">Non attivare la modalità di risparmio energia automaticamente</string>
   <string name="app_perf_profiles_title">Ottimizzazione automatica</string>
   <string name="app_perf_profiles_summary">Scegli automaticamente un adeguato profilo di prestazioni per le applicazioni ed i modi d\'uso</string>
+  <string name="auto_power_save_never">Mai</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Schermo esteso</string>
   <string name="expanded_desktop_settings_summary">Espandi lo spazio disponibile sullo schermo nascondendo la barra di stato, barra di navigazione o entrambi</string>
@@ -491,4 +491,5 @@
   <string name="expanded_desktop_style_hide_navigation">Nascondi barra di navigazione</string>
   <string name="expanded_desktop_style_hide_both">Nascondi entrambe</string>
   <string name="expanded_desktop_nothing_to_show_text">Spegni l\'interruttore per personalizzare lo schermo esteso basato su ogni singola app</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

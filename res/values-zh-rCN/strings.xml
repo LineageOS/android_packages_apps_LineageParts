@@ -43,17 +43,17 @@
   <!-- Privacy Guard -->
   <string name="privacy_guard_switch_label">启用隐私防护</string>
   <string name="privacy_guard_dlg_title">是否启用隐私防护？</string>
-  <string name="privacy_guard_dlg_text">启用隐私防护后，应用将无法访问个人隐私数据，例如：联系人、短信或通话记录。</string>
-  <string name="privacy_guard_dlg_system_app_text">当对内置的应用启用隐私防护后，该应用将不能访问个人隐私数据。这可能导致其他应用不能正常工作。</string>
+  <string name="privacy_guard_dlg_text">启用隐私防护后，该应用将无法访问联系人、短信或通话记录等个人数据。</string>
+  <string name="privacy_guard_dlg_system_app_text">对内置应用启用隐私防护后，该应用将不能访问或提供个人数据。这可能导致其他应用不能正常工作。</string>
   <string name="privacy_guard_default_title">默认启用隐私防护</string>
   <string name="privacy_guard_default_summary_on">隐私防护已启用</string>
-  <string name="privacy_guard_default_summary">新安装的应用将默认启用隐私防护</string>
-  <string name="privacy_guard_manager_summary">管理哪些应用可以访问您的个人资料</string>
-  <string name="privacy_guard_no_user_apps">未安装应用</string>
+  <string name="privacy_guard_default_summary">为新安装的应用默认启用隐私防护</string>
+  <string name="privacy_guard_manager_summary">管理哪些应用可以访问您的个人数据</string>
+  <string name="privacy_guard_no_user_apps">尚未安装任何应用</string>
   <string name="privacy_guard_help_title">帮助</string>
   <string name="privacy_guard_reset_title">重置</string>
   <string name="privacy_guard_reset_text">重置权限？</string>
-  <string name="privacy_guard_help_text">在这个页面上，您可以简单地通过点击来选择在哪些应用上启用隐私防护。选中的应用将无法访问个人数据，例如：联系人、短信或通话记录。长按一个应用的条目打开应用详细页面。\n\n默认不显示内置应用，在菜单中选择相应选项可以显示它们。</string>
+  <string name="privacy_guard_help_text">在这个画面上，您可以简单地点击来选择为哪些应用启用隐私防护。选中的应用将无法访问您的联系人、短信和通话记录等个人数据。长按一个应用项将打开应用详情画面。\n\n内置应用默认不显示，在菜单中切换相应选项可以显示它们。</string>
   <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
   <string name="privacy_guard_advanced_settings_title">高级</string>
   <string name="privacy_guard_notification_title">显示通知</string>
@@ -105,7 +105,7 @@
   <string name="led_notification_text">LED 灯被“设置”启用</string>
   <string name="notification_light_no_apps_summary">若要添加单个应用控制，请激活“%1$s”并按下菜单栏上的“\u002b”</string>
   <!-- LiveDisplay -->
-  <string name="live_display_summary">基于时间和环境条件来优化您的屏幕以改善可读性和减少眼睛疲劳</string>
+  <string name="live_display_summary">基于当前时间和环境条件来优化您的屏幕以改善可读性和减少视疲劳</string>
   <string name="live_display_mode">显示模式</string>
   <string name="live_display_color_temperature_title">色温</string>
   <string name="live_display_color_temperature_summary">白天：<xliff:g id="day_temperature">%1$d</xliff:g>K 夜晚：<xliff:g id="night_temperature">%2$d</xliff:g>K</string>
@@ -117,7 +117,7 @@
   <string name="live_display_low_power_title">降低耗电</string>
   <string name="live_display_low_power_summary">在不降低亮度的情况下调整屏幕使耗电最低</string>
   <string name="live_display_enhance_color_title">增强色彩</string>
-  <string name="live_display_enhance_color_summary">为肤色、风景和其他图像提高颜色活力</string>
+  <string name="live_display_enhance_color_summary">为肤色、风景和其他图像提升色彩饱和度</string>
   <string name="live_display_color_profile_title">颜色配置文件</string>
   <string name="live_display_color_profile_standard_title">标准</string>
   <string name="live_display_color_profile_standard_summary">准确的颜色和明亮的白色</string>
@@ -134,7 +134,9 @@
   <string name="live_display_color_profile_basic_title">基本</string>
   <string name="live_display_color_profile_basic_summary">使用未校准的屏幕</string>
   <string name="live_display_color_profile_adaptive_title">自适应</string>
-  <string name="live_display_color_profile_adaptive_summary">环境条件颜色自适应</string>
+  <string name="live_display_color_profile_adaptive_summary">颜色根据环境条件自适应</string>
+  <string name="live_display_color_profile_reading_title">阅读</string>
+  <string name="live_display_color_profile_reading_summary">使用暖色调以减少视疲劳</string>
   <string name="color_calibration_title">颜色校准</string>
   <string name="color_calibration_summary">校准屏幕颜色</string>
   <string name="color_red_title">红</string>
@@ -380,10 +382,10 @@
   <string name="status_bar_quick_qs_pulldown_left">左侧</string>
   <string name="status_bar_quick_qs_pulldown_right">右侧</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">时钟样式</string>
+  <string name="status_bar_clock_position_title">时钟位置</string>
   <string name="status_bar_clock_position_right">右侧</string>
   <string name="status_bar_clock_position_left">左侧</string>
-  <string name="status_bar_clock_position_center">中间</string>
+  <string name="status_bar_clock_position_center">中心</string>
   <string name="status_bar_am_pm_title">上午 / 下午样式</string>
   <string name="status_bar_am_pm_info">24 小时制时钟已启用</string>
   <string name="status_bar_am_pm_normal">正常</string>
@@ -418,7 +420,7 @@
   <string name="contributor_info_msg">
         <![CDATA[<b>姓名：</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>昵称：</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>提交：</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>提交数：</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
   <string name="contributions_info_menu">贡献信息</string>
   <string name="contributions_info_msg">
         <![CDATA[<b>贡献者总数：</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
@@ -441,7 +443,7 @@
   <string name="preview_country_title">国家</string>
   <string name="preview_carrier_title">运营商</string>
   <string name="stats_collection_title">统计数据收集</string>
-  <string name="stats_collection_summary">启用时，允许数据收集</string>
+  <string name="stats_collection_summary">允许收集安装指标和设备统计信息</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">自动旋转屏幕</string>
   <string name="display_rotation_title">旋转设置</string>
@@ -472,9 +474,9 @@
   <!-- Power: Performance profiles -->
   <string name="perf_profile_settings_title">省电与性能</string>
   <string name="perf_profile_settings_summary">调整省电功能与设备性能</string>
-  <string name="perf_profile_overview_summary">当前性能配置︰ <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
+  <string name="perf_profile_overview_summary">当前性能配置︰<xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">设备性能</string>
-  <string name="perf_profile_title">性能配置︰ <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
+  <string name="perf_profile_title">性能配置︰<xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">性能配置当前不可用</string>
   <string name="power_save_category_title">省电</string>
   <string name="power_save_title">极致省电</string>
@@ -487,7 +489,7 @@
   <string name="auto_power_save_never">永不</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">扩展桌面</string>
-  <string name="expanded_desktop_settings_summary">通过隐藏状态栏、 导航栏或都隐藏以扩大您的可用桌面空间</string>
+  <string name="expanded_desktop_settings_summary">隐藏状态栏或导航栏或两者以扩大您的可用桌面空间</string>
   <string name="expanded_desktop_options_title">自定义选项</string>
   <string name="expanded_desktop_style_title">扩展桌面样式</string>
   <string name="expanded_desktop_style_hide_nothing">不隐藏</string>
@@ -495,4 +497,11 @@
   <string name="expanded_desktop_style_hide_navigation">隐藏导航栏</string>
   <string name="expanded_desktop_style_hide_both">同时隐藏</string>
   <string name="expanded_desktop_nothing_to_show_text">关闭开关以自定义您每个应用的扩展桌面</string>
+  <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">充电提示音</string>
+  <string name="charging_sounds_enabled_title">启用</string>
+  <string name="charging_sounds_enabled_summary">连接或断开电源时发出声音</string>
+  <string name="power_notifications_vibrate_title">振动</string>
+  <string name="charging_sounds_ringtone_title">提示音</string>
+  <string name="charging_sounds_ringtone_silent">静音</string>
 </resources>

@@ -380,11 +380,6 @@
   <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_style_title">Gaya jam</string>
-  <string name="status_bar_clock_style_right">Kanan</string>
-  <string name="status_bar_clock_style_left">Kiri</string>
-  <string name="status_bar_clock_style_center">Tengah</string>
-  <string name="status_bar_clock_style_hidden">Tersembunyi</string>
   <string name="status_bar_am_pm_title">Gaya AM/PM</string>
   <string name="status_bar_am_pm_info">24-jam diaktifkan</string>
   <string name="status_bar_am_pm_normal">Normal</string>
@@ -442,7 +437,6 @@
   <string name="preview_country_title">Negara</string>
   <string name="preview_carrier_title">Operator</string>
   <string name="stats_collection_title">Kumpulan statistik</string>
-  <string name="stats_collection_summary">Ketika diaktifkan, izinkan pengumpulan metrik</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Rotasi otomatis</string>
   <string name="display_rotation_title">Setelan rotasi</string>
@@ -481,7 +475,6 @@
   <string name="power_save_title">Penghemat daya ekstrim</string>
   <string name="power_save_summary">Membatasi aktivitas perangkat kinerja dan latar belakang untuk menghemat daya</string>
   <string name="auto_power_save_title">Penghemat daya otomatis</string>
-  <string name="auto_power_save_summary_on">Otomatis mengaktifkan mode hemat daya saat %s baterai</string>
   <string name="auto_power_save_summary_off">Jangan hidupkan mode hemat daya otomatis</string>
   <string name="app_perf_profiles_title">Otomatis optimasi</string>
   <string name="app_perf_profiles_summary">Otomatis memilih profil performa sesuai untuk berbagai aplikasi</string>
@@ -495,4 +488,5 @@
   <string name="expanded_desktop_style_hide_navigation">Sembunyikan navigasi bar</string>
   <string name="expanded_desktop_style_hide_both">Sembunyikan keduanya</string>
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
+  <!-- Sounds: Charging sounds -->
 </resources>

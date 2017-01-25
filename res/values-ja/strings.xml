@@ -380,10 +380,6 @@
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_position_title">時計のスタイル</string>
-  <string name="status_bar_clock_position_right">右</string>
-  <string name="status_bar_clock_position_left">左</string>
-  <string name="status_bar_clock_position_center">中央</string>
   <string name="status_bar_am_pm_title">午前/午後のスタイル</string>
   <string name="status_bar_am_pm_info">24時間表示が有効になっています</string>
   <string name="status_bar_am_pm_normal">標準</string>
@@ -441,7 +437,6 @@
   <string name="preview_country_title">国</string>
   <string name="preview_carrier_title">キャリア</string>
   <string name="stats_collection_title">統計の収集</string>
-  <string name="stats_collection_summary">メトリクスの収集を許可する</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">画面の自動回転</string>
   <string name="display_rotation_title">回転</string>
@@ -480,7 +475,6 @@
   <string name="power_save_title">超省電力</string>
   <string name="power_save_summary">端末のパフォーマンスとバックグラウンドのアクティビティを制限して省電力化する</string>
   <string name="auto_power_save_title">自動省電力</string>
-  <string name="auto_power_save_summary_on">バッテリー残量%sで省電力モードを自動的に有効にする</string>
   <string name="auto_power_save_summary_off">省電力モードを自動的に有効にしない</string>
   <string name="app_perf_profiles_title">自動最適化</string>
   <string name="app_perf_profiles_summary">アプリと使用パターンに適したパフォーマンスプロファイルを自動的に選択する</string>
@@ -494,4 +488,5 @@
   <string name="expanded_desktop_style_hide_navigation">ナビゲーションバーを非表示</string>
   <string name="expanded_desktop_style_hide_both">両方を非表示</string>
   <string name="expanded_desktop_nothing_to_show_text">拡張デスクトップをアプリごとにカスタマイズするにはスイッチをOFFにしてください</string>
+  <!-- Sounds: Charging sounds -->
 </resources>
