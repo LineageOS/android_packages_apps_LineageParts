@@ -90,7 +90,7 @@
             android:name=".PrivacySettings"
             android:label="@string/privacy_settings_title"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="1">
+            <intent-filter android:priority="3">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
                 <action android:name="org.cyanogenmod.cmparts.PRIVACY_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -164,14 +164,14 @@
             android:name=".statusbar.StatusBarSettings"
             android:label="@string/status_bar_title"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="1">
+            <intent-filter android:priority="2">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
                 <action android:name="org.cyanogenmod.cmparts.STATUS_BAR_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.system" />
+                android:value="com.android.settings.category.personal" />
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_statusbar" />
