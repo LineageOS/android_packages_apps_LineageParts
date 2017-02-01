@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Display unkalibriert verwenden</string>
   <string name="live_display_color_profile_adaptive_title">Adaptiv</string>
   <string name="live_display_color_profile_adaptive_summary">Farben an Umgebungsbedingungen anpassen</string>
+  <string name="live_display_color_profile_reading_title">Lesen</string>
+  <string name="live_display_color_profile_reading_summary">Wärmere Farben für weniger Augenbelastung</string>
   <string name="color_calibration_title">Farbkalibrierung</string>
   <string name="color_calibration_summary">Displayfarben kalibrieren</string>
   <string name="color_red_title">Rot</string>
@@ -404,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Statusleistensymbole</string>
   <string name="status_bar_icons_summary">Festlegen, welche Statusleistensymbole angezeigt werden</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Standby durch doppeltes Tippen</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Doppeltippen Sie auf die Statusleiste, um das Display auszuschalten</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Geschützte Apps</string>
   <string name="protected_apps_manager_summary">Verwalten Sie, welche Apps hinter einer sicheren Sperre verborgen sind.</string>
@@ -441,6 +440,7 @@
   <string name="preview_country_title">Land</string>
   <string name="preview_carrier_title">Netzbetreiber</string>
   <string name="stats_collection_title">Statistikaufzeichnung</string>
+  <string name="stats_collection_summary">Sammeln von Installations- und Gerätestatistiken erlauben</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Bildschirm automatisch drehen</string>
   <string name="display_rotation_title">Bildschirmausrichtung</string>
@@ -495,4 +495,11 @@
   <string name="expanded_desktop_style_hide_both">Beides ausblenden</string>
   <string name="expanded_desktop_nothing_to_show_text">Deaktivieren Sie den Schalter, um den erweiterten Desktop für jede App einzeln anzupassen</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Ladegeräte-Töne</string>
+  <string name="charging_sounds_enabled_title">Aktivieren</string>
+  <string name="charging_sounds_enabled_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
+  <string name="power_notifications_vibrate_title">Vibrieren</string>
+  <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
+  <string name="charging_sounds_ringtone_silent">Lautlos</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

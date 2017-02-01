@@ -77,7 +77,7 @@
   <string name="pulse_speed_slow">Langzaam</string>
   <string name="pulse_speed_very_slow">Heel langzaam</string>
   <!-- Battery light settings -->
-  <string name="battery_light_title">Acculed</string>
+  <string name="battery_light_title">Batterij licht</string>
   <string name="battery_low_pulse_title">Knipperen bij lage accuspanning</string>
   <string name="battery_light_list_title">Kleuren</string>
   <string name="battery_light_low_color_title">Lage accuspanning</string>
@@ -134,6 +134,7 @@
   <string name="live_display_color_profile_basic_summary">Scherm ongekalibreerd gebruiken</string>
   <string name="live_display_color_profile_adaptive_title">Aanpasbaar</string>
   <string name="live_display_color_profile_adaptive_summary">Kleuren passen zich aan aan de omgeving</string>
+  <string name="live_display_color_profile_reading_summary">Warmere kleuren voor minder vermoeidheid van de ogen</string>
   <string name="color_calibration_title">Kleuren kalibreren</string>
   <string name="color_calibration_summary">Schermkleur kalibreren</string>
   <string name="color_red_title">Rood</string>
@@ -178,10 +179,32 @@
   <string name="volbtn_cursor_control_on">Volume omhoog/omlaag beweegt cursor naar links/rechts</string>
   <string name="volbtn_cursor_control_on_reverse">Volume omhoog/omlaag beweegt cursor naar rechts/links</string>
   <string name="power_end_call_title">Gesprek beëindigen</string>
+  <string name="power_end_call_summary">De huidige oproep beëindigen door op de aan/uit-knop te drukken</string>
   <string name="swap_volume_buttons_title">Oriëntatie</string>
+  <string name="swap_volume_buttons_summary">Volumeknoppen omdraaien indien het scherm gedraaid is</string>
+  <string name="button_wake_title">Apparaat ontwaken</string>
+  <string name="volume_answer_call_title">Aannemen gesprek</string>
+  <string name="home_answer_call_title">Oproep beantwoorden</string>
   <!-- Key backlight -->
+  <string name="button_backlight_title">Toetsen achtergrondverlichting</string>
+  <string name="button_backlight_enabled">Knoppen verlichten</string>
+  <string name="keyboard_backlight_enabled">Toetsenbord verlichten</string>
+  <string name="button_backlight_seekbar_title">Knop helderheid</string>
+  <string name="keyboard_backlight_seekbar_title">Toetsenbordhelderheid</string>
+  <string name="backlight_timeout_title">Verlichtings tijd</string>
+  <string name="backlight_timeout_unlimited">Nooit uitschakelen</string>
+  <string name="backlight_summary_disabled">Uitgeschakeld</string>
+  <string name="backlight_summary_enabled_with_timeout">Aan gedurende <xliff:g id="timeout">%s</xliff:g></string>
+  <string name="backlight_summary_enabled">Aan</string>
   <!-- Buttons - Enable navbar -->
+  <string name="disable_navkeys_title">On-screen navigatiebalk inschakelen</string>
+  <string name="disable_navkeys_summary">On-screen navigatiebalk inschakelen en hardware-knoppen uitschakelen</string>
   <!-- Navigation Bar -->
+  <string name="navigation_bar_category">Navigatiebalk</string>
+  <string name="navigation_bar_title">Knoppen en opmaak</string>
+  <string name="navigation_bar_left_title">Linkshandige modus</string>
+  <string name="navigation_bar_left_summary">Navigatiebalk aan de linkerkant van het scherm weergeven in liggende stand</string>
+  <string name="navigation_bar_arrow_keys_title">Toon pijltoetsen tijdens het typen</string>
   <string name="navigation_bar_arrow_keys_summary">Cursor links en rechts weergeven tijdens typen. Verbergt invoermethodepictogram.</string>
   <string name="navigation_bar_home_long_press_title">Thuisknop lang indrukken</string>
   <string name="navigation_bar_home_double_tap_title">Thuisknop twee keer indrukken</string>
@@ -197,8 +220,12 @@
   <string name="power_menu_bug_report_title">Foutenrapport</string>
   <string name="power_menu_sound_title">Geluidspaneel</string>
   <string name="power_menu_bug_report_disabled">Foutrapportage is uitgeschakeld in de opties voor ontwikkelaars</string>
+  <string name="volume_keys_control_ring_stream_title">Beltoonvolume beheren</string>
+  <string name="volume_keys_control_ring_stream_summary_on">Volumeknoppen passen beltoonvolume aan</string>
   <string name="volume_keys_control_ring_stream_summary_off">Volumeknoppen passen mediavolume aan</string>
+  <string name="camera_double_tap_power_gesture_title">Druk twee keer op aan/uit knop voor camera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+  <string name="camera_double_tap_power_gesture_desc">Snel de camera openen zonder het scherm te ontgrendelen</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Verwijderen</string>
   <string name="profile_action_none">Niet wijzigen</string>
@@ -270,6 +297,8 @@
   <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
   <string name="connection_state_enabled">Inschakelen</string>
+  <string name="volume_override_summary">Zet op %1$s/%2$s</string>
+  <string name="profile_volume_override_checkbox_label">Volume geforceerd wijzigen</string>
   <!-- Menu item for managing profiles -->
   <string name="profile_profiles_manage">Profielen</string>
   <string name="profile_profile_manage">Profiel beheren</string>
@@ -330,6 +359,7 @@
   <string name="notification_volume_title">Melding</string>
   <string name="media_volume_title">Media</string>
   <string name="alarm_volume_title">Alarm</string>
+  <string name="doze_title">Omgevingsdisplay</string>
   <!-- Status bar -->
   <string name="status_bar_title">Statusbalk</string>
   <string name="status_bar_toggle_brightness">Helderheid beheren</string>
@@ -343,6 +373,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Klok positie</string>
+  <string name="status_bar_clock_position_right">Rechts</string>
+  <string name="status_bar_clock_position_left">Links</string>
+  <string name="status_bar_clock_position_center">Midden</string>
   <string name="status_bar_am_pm_title">AM/PM-stijl</string>
   <string name="status_bar_am_pm_info">24-uurs klok is ingeschakeld</string>
   <string name="status_bar_am_pm_normal">Normaal</string>
@@ -360,9 +394,14 @@
   <string name="status_bar_battery_percentage_default">Verborgen</string>
   <string name="status_bar_battery_percentage_text_inside">In het pictogram</string>
   <!-- Status bar - icon blacklist -->
-  <!-- Status bar - double tap to sleep -->
   <!-- Protected apps -->
+  <string name="protected_apps_manager_title">Beschermde apps</string>
+  <string name="protected_apps_manager_summary">Beheren welke apps beschermd zijn</string>
   <!-- Contributors cloud activity -->
+  <string name="contributors_cloud_fragment_title">Medewerkers</string>
+  <string name="contributors_cloud_loading_message">Laden gegevens\u2026</string>
+  <string name="contributors_cloud_failed_message">Kan informatie over bijdragers niet laden</string>
+  <string name="contributor_info_menu">Informatie over bijdragers</string>
   <string name="contributor_info_msg">
         <![CDATA[<b>Naam:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Alias:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
@@ -374,17 +413,35 @@
                  <b>Laatste update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">Gebruiksstatistieken</string>
   <string name="anonymous_statistics_warning_title">Over</string>
   <string name="anonymous_statistics_warning">Door statistieken verzenden toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van LineageOS verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, dat uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
   <string name="enable_reporting_title">Statistieken verzenden</string>
+  <string name="view_stats_title">Statistieken tonen</string>
+  <string name="anonymous_learn_more">Meer informatie</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">Unieke ID</string>
+  <string name="preview_device_title">Apparaat</string>
+  <string name="preview_version_title">Versie</string>
   <string name="preview_country_title">Land</string>
   <string name="preview_carrier_title">Provider</string>
   <string name="stats_collection_title">Verzamelen van statistieken</string>
+  <string name="stats_collection_summary">Toestaan dat installatie- en apparaatstatistieken worden verzameld</string>
   <!-- Display : Rotation  -->
+  <string name="accelerometer_title">Scherm automatisch draaien</string>
+  <string name="display_rotation_title">Rotatie instellingen</string>
+  <string name="display_rotation_enabled">Auto-rotatie is ingeschakeld</string>
+  <string name="display_rotation_disabled">Auto-rotatie is uitgeschakeld</string>
   <string name="display_rotation_unit">graden</string>
+  <string name="display_lockscreen_rotation_title">Vergrendelingsscherm draaien</string>
+  <string name="display_rotation_0_title">0 graden</string>
+  <string name="display_rotation_90_title">90 graden</string>
+  <string name="display_rotation_180_title">180 graden</string>
+  <string name="display_rotation_270_title">270 graden</string>
   <!-- Weather -->
+  <string name="weather_settings_title">Weer</string>
   <string name="weather_settings_no_services_prompt">Geen weeraanbiederservices geïnstalleerd</string>
+  <string name="weather_settings_no_services_summary">Installeer een weerprovider om weer updates te ontvangen</string>
   <string name="weather_settings_button">Instellingen aanbieder</string>
   <string name="weather_settings_activity_not_found">Kan instellingenmenu van deze aanbieder niet openen</string>
   <string name="weather_settings_add_weather_provider">Weeraanbieder toevoegen</string>
@@ -395,6 +452,7 @@
   <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
   <string name="weather_settings_keyword">weer</string>
   <string name="status_bar_show_weather_title">Weer weergeven</string>
+  <string name="status_bar_show_weather_summary">De huidige temperatuur op de statusbalk weergeven</string>
   <!-- Power: Performance profiles -->
   <string name="perf_profile_settings_title">Energiebesparing en prestaties</string>
   <string name="perf_profile_settings_summary">Instellingen energiebesparing en apparaatprestaties aanpassen</string>
@@ -403,15 +461,26 @@
   <string name="perf_profile_title">Prestatieprofiel: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">Prestatieprofiel is momenteel niet beschikbaar</string>
   <string name="power_save_category_title">Accubesparing</string>
+  <string name="power_save_title">Extreme energiebesparing</string>
+  <string name="auto_power_save_title">Automatische energiebesparing</string>
   <string name="auto_power_save_summary_off">Energiebesparende modus niet automatisch inschakelen</string>
   <string name="app_perf_profiles_title">Automatische optimalisatie</string>
   <string name="app_perf_profiles_summary">Automatisch een passend prestatieprofiel kiezen voor verschillende apps en gebruikspatronen</string>
+  <string name="auto_power_save_never">Nooit</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Uitgebreid bureaublad</string>
+  <string name="expanded_desktop_settings_summary">Uw beschikbare desktopruimte uitbreiden door de statusbalk, navigatiebalk of beide te verbergen</string>
   <string name="expanded_desktop_style_title">Stijl uitgebreid bureaublad</string>
   <string name="expanded_desktop_style_hide_nothing">Niets verbergen</string>
   <string name="expanded_desktop_style_hide_status">Statusbalk verbergen</string>
   <string name="expanded_desktop_style_hide_navigation">Navigatiebalk verbergen</string>
   <string name="expanded_desktop_style_hide_both">Beide verbergen</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Opladergeluid</string>
+  <string name="charging_sounds_enabled_title">Inschakelen</string>
+  <string name="charging_sounds_enabled_summary">Geluid afspelen bij het aansluiten of loskoppelen van een lader</string>
+  <string name="power_notifications_vibrate_title">Trillen</string>
+  <string name="charging_sounds_ringtone_title">Meldingsgeluid</string>
+  <string name="charging_sounds_ringtone_silent">Stil</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

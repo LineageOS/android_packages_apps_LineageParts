@@ -135,6 +135,7 @@
   <string name="live_display_color_profile_basic_summary">Uporabi neumerjen zaslon</string>
   <string name="live_display_color_profile_adaptive_title">Prilagodljiv</string>
   <string name="live_display_color_profile_adaptive_summary">Barve se prilagajajo pogojem okolice</string>
+  <string name="live_display_color_profile_reading_title">Branje</string>
   <string name="color_calibration_title">Umerjanje barv</string>
   <string name="color_calibration_summary">Umeri barve na zaslonu</string>
   <string name="color_red_title">Rdeča</string>
@@ -380,6 +381,10 @@
   <string name="status_bar_quick_qs_pulldown_left">Levi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Položaj ure</string>
+  <string name="status_bar_clock_position_right">Desno</string>
+  <string name="status_bar_clock_position_left">Levo</string>
+  <string name="status_bar_clock_position_center">Na sredini</string>
   <string name="status_bar_am_pm_title">Slog AM/PM</string>
   <string name="status_bar_am_pm_info">24-urni način je omogočen</string>
   <string name="status_bar_am_pm_normal">Običajno</string>
@@ -400,9 +405,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikone vrstice stanja</string>
   <string name="status_bar_icons_summary">Nadzor prikazanih ikon v vrstici stanja</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Dvakrat tapni za spanje</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Dvakrat tapnite na vrstico stanja, da izklopite zaslon</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Zaščitene aplikacije</string>
   <string name="protected_apps_manager_summary">Upravljajte, katere aplikacije so skrite z varnim zaklepanjem</string>
@@ -477,6 +479,7 @@
   <string name="power_save_title">Strogo varčevanje z energijo</string>
   <string name="power_save_summary">Omeji zmogljivost naprave in dejavnosti v ozadju za prihranek energije</string>
   <string name="auto_power_save_title">Samodejno varčevanje z energijo</string>
+  <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo, ko je stanje baterije %s</string>
   <string name="auto_power_save_summary_off">Ne omogočaj načina varčevanja z energijo samodejno</string>
   <string name="app_perf_profiles_title">Samodejna optimizacija</string>
   <string name="app_perf_profiles_summary">Samodejno izberi primerni zmogljivostni profil za aplikacije in vzorce uporabe</string>
@@ -492,4 +495,11 @@
   <string name="expanded_desktop_style_hide_both">Skrij oboje</string>
   <string name="expanded_desktop_nothing_to_show_text">Izklopite stikalo, da razširjeno namizje prilagodite glede na aplikacijo</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Zvoki ob polnjenju</string>
+  <string name="charging_sounds_enabled_title">Omogoči</string>
+  <string name="charging_sounds_enabled_summary">Predvajaj zvok ob priključitvi ali izključitvi vira napajanja</string>
+  <string name="power_notifications_vibrate_title">Vibriraj</string>
+  <string name="charging_sounds_ringtone_title">Zvok obvestila</string>
+  <string name="charging_sounds_ringtone_silent">Tiho</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

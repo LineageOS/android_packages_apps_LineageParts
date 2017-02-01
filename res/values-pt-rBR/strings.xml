@@ -400,9 +400,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ícones da barra de status</string>
   <string name="status_bar_icons_summary">Controle quais ícones da barra de status são mostrados</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Toque duplo para dormir</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Toque duplo na barra de status para desligar a tela</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Apps protegidos</string>
   <string name="protected_apps_manager_summary">Gerencie quais apps ficam escondidos atrás da trava de segurança</string>
@@ -490,4 +487,5 @@
   <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
   <string name="expanded_desktop_nothing_to_show_text">Desligue o alternador para personalizar a área de trabalho expandida por aplicativo</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

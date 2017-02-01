@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Usa il display non calibrato</string>
   <string name="live_display_color_profile_adaptive_title">Adattivo</string>
   <string name="live_display_color_profile_adaptive_summary">I colori si adattano alle condizioni ambientali</string>
+  <string name="live_display_color_profile_reading_title">Lettura</string>
+  <string name="live_display_color_profile_reading_summary">Colori più caldi per occhi meno affaticati</string>
   <string name="color_calibration_title">Calibrazione colore</string>
   <string name="color_calibration_summary">Calibra i colori dello schermo</string>
   <string name="color_red_title">Rosso</string>
@@ -404,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Icone barra di stato</string>
   <string name="status_bar_icons_summary">Scegli quali icone verranno visualizzate nella barra di stato</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Sospensione con doppio tocco</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere il display</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">App protette</string>
   <string name="protected_apps_manager_summary">Gestisci le app protette da un codice di sicurezza</string>
@@ -438,6 +437,7 @@
   <string name="preview_country_title">Paese</string>
   <string name="preview_carrier_title">Operatore</string>
   <string name="stats_collection_title">Raccolta statistiche</string>
+  <string name="stats_collection_summary">Consenti la raccolta di metriche delle installazioni e tipologia dispositivo</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Rotazione automatica schermo</string>
   <string name="display_rotation_title">Impostazioni rotazione</string>
@@ -492,4 +492,11 @@
   <string name="expanded_desktop_style_hide_both">Nascondi entrambe</string>
   <string name="expanded_desktop_nothing_to_show_text">Spegni l\'interruttore per personalizzare lo schermo esteso basato su ogni singola app</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Suoni di ricarica</string>
+  <string name="charging_sounds_enabled_title">Attiva</string>
+  <string name="charging_sounds_enabled_summary">Riproduci un suono quando si collega o si scollega l\'alimentatore</string>
+  <string name="power_notifications_vibrate_title">Vibra</string>
+  <string name="charging_sounds_ringtone_title">Suono di notifica</string>
+  <string name="charging_sounds_ringtone_silent">Silenzioso</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

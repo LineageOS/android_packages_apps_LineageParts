@@ -214,7 +214,6 @@
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - icon blacklist -->
-  <!-- Status bar - double tap to sleep -->
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->
   <!-- Anonymous Statistics #CM -->
@@ -231,4 +230,5 @@
   <string name="power_save_category_title">Úspora baterie</string>
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

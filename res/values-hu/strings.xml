@@ -133,6 +133,7 @@
   <string name="live_display_color_profile_basic_summary">Kijelző használata kalibrálatlanul</string>
   <string name="live_display_color_profile_adaptive_title">Adaptív</string>
   <string name="live_display_color_profile_adaptive_summary">Színek alkalmazkodnak a környezethez</string>
+  <string name="live_display_color_profile_reading_title">Olvasás</string>
   <string name="color_calibration_title">Színek kalibrálása</string>
   <string name="color_calibration_summary">Képernyőn megjelenő színek kalibrálása</string>
   <string name="color_red_title">Vörös</string>
@@ -388,9 +389,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Állapotsor ikonok</string>
   <string name="status_bar_icons_summary">Állapotsor ikonok megjelenítésének vezérlése</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Dupla érintésre alvó mód</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Az állapotsorra kétszer koppintva kikapcsol a képernyő</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Védett alkalmazások</string>
   <string name="protected_apps_manager_summary">A biztonsági zár mögötti rejtett alkalmazások kezelése</string>
@@ -459,4 +457,11 @@
   <string name="expanded_desktop_style_hide_navigation">Navigációs sáv elrejtése</string>
   <string name="expanded_desktop_style_hide_both">Mindkettő elrejtése</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Töltés jelzése</string>
+  <string name="charging_sounds_enabled_title">Engedélyezés</string>
+  <string name="charging_sounds_enabled_summary">Hangjelzés töltő csatlakoztatása, vagy leválasztása esetén</string>
+  <string name="power_notifications_vibrate_title">Rezgés</string>
+  <string name="charging_sounds_ringtone_title">Értesítési hang</string>
+  <string name="charging_sounds_ringtone_silent">Néma</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

@@ -380,9 +380,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Иконе статусне траке</string>
   <string name="status_bar_icons_summary">Контроле које ће иконе статусне траке бити приказане</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Дупли-додир за спавање</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Двапут додирни статусну траку да искључиш дисплеј</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Заштићене апликације</string>
   <string name="protected_apps_manager_summary">Управљај која је апликација сакривена иза сигурносног закључавања</string>
@@ -403,4 +400,5 @@
   <string name="auto_power_save_summary_on">Аутоматски омогући уштеду батерије на %s батерије</string>
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

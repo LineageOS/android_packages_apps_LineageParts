@@ -135,8 +135,8 @@
   <string name="live_display_color_profile_basic_summary">使用未校正的顯示</string>
   <string name="live_display_color_profile_adaptive_title">自動調整</string>
   <string name="live_display_color_profile_adaptive_summary">自動按環境條件調整顏色</string>
-  <string name="live_display_color_profile_reading_title">讀取中</string>
-  <string name="live_display_color_profile_reading_summary">溫暖的色彩少眼睛疲勞</string>
+  <string name="live_display_color_profile_reading_title">閱讀</string>
+  <string name="live_display_color_profile_reading_summary">溫暖的色彩減少眼睛疲勞</string>
   <string name="color_calibration_title">顏色校準</string>
   <string name="color_calibration_summary">校準螢幕上的顏色</string>
   <string name="color_red_title">紅色</string>
@@ -378,7 +378,7 @@
   <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
   <string name="status_bar_quick_qs_pulldown_summary_left">左</string>
   <string name="status_bar_quick_qs_pulldown_summary_right">右</string>
-  <string name="status_bar_quick_qs_pulldown_off">關</string>
+  <string name="status_bar_quick_qs_pulldown_off">關閉</string>
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
   <!-- Status bar - Clock -->
@@ -406,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">狀態列圖示</string>
   <string name="status_bar_icons_summary">控制顯示哪些狀態列圖示</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">輕觸兩下即可休眠</string>
-  <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列來關閉螢幕</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">受保護的應用程式</string>
   <string name="protected_apps_manager_summary">管理安全鎖下隱藏的應用程式</string>
@@ -505,4 +502,36 @@
   <string name="power_notifications_vibrate_title">震動</string>
   <string name="charging_sounds_ringtone_title">通知音效</string>
   <string name="charging_sounds_ringtone_silent">靜音</string>
+  <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
+  <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">觸覺回饋</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">檢測到觸控螢幕手勢時震動</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">用兩根手指向下滑動</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">用一根手指向上滑動</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">用一根手指向下滑動</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">用一根手指向左滑動</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">用一根手指向右滑動</string>
+  <string name="touchscreen_gesture_up_arrow_title">畫出一個「Λ」</string>
+  <string name="touchscreen_gesture_down_arrow_title">畫出一個「V」</string>
+  <string name="touchscreen_gesture_left_arrow_title">畫出一個「&lt;」</string>
+  <string name="touchscreen_gesture_right_arrow_title">畫出一個「&gt;」</string>
+  <string name="touchscreen_gesture_letter_c_title">畫出一個字母「C」</string>
+  <string name="touchscreen_gesture_letter_e_title">畫出一個字母「e」</string>
+  <string name="touchscreen_gesture_letter_o_title">畫出一個字母「O」</string>
+  <string name="touchscreen_gesture_letter_m_title">畫出一個字母「M」</string>
+  <string name="touchscreen_gesture_letter_s_title">畫出一個字母「S」</string>
+  <string name="touchscreen_gesture_letter_w_title">畫出一個字母「W」</string>
+  <string name="touchscreen_gesture_letter_z_title">畫出一個字母「Z」</string>
+  <string name="touchscreen_gesture_action_dialog_title">手勢動作</string>
+  <string name="touchscreen_gesture_action_do_nothing">不執行任何操作</string>
+  <string name="touchscreen_gesture_action_flashlight">切換至手電筒</string>
+  <string name="touchscreen_gesture_action_camera">開啟相機</string>
+  <string name="touchscreen_gesture_action_browser">開啟瀏覽器</string>
+  <string name="touchscreen_gesture_action_dialer">開啟撥號程式</string>
+  <string name="touchscreen_gesture_action_email">檢視您的電子郵件</string>
+  <string name="touchscreen_gesture_action_messages">檢視您的訊息</string>
+  <string name="touchscreen_gesture_action_play_pause_music">播放/暫停音樂播放</string>
+  <string name="touchscreen_gesture_action_previous_track">導覽到上一首音樂曲目</string>
+  <string name="touchscreen_gesture_action_next_track">跳到下一首音樂曲目</string>
 </resources>

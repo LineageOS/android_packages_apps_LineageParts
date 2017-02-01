@@ -400,9 +400,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikon Status bar</string>
   <string name="status_bar_icons_summary">Atur baris Ikon yang ditampilkan</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Ketuk dua kali untuk tidur</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Ketuk dua kali pada status bar untuk mematikan layar</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplikasi dilindungi</string>
   <string name="protected_apps_manager_summary">Kelola aplikasi yang tersembunyi dengan kunci aman</string>
@@ -489,4 +486,5 @@
   <string name="expanded_desktop_style_hide_both">Sembunyikan keduanya</string>
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

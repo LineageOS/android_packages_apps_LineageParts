@@ -406,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Statuslinjeikoner</string>
   <string name="status_bar_icons_summary">Kontroller hvilke av status ikonene som skal vises</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Dobbeltrykk for å sove</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Dobbelttrykk på statuslinjen for å slå av skjermen</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beskyttede apper</string>
   <string name="protected_apps_manager_summary">Administrer hvilke apper som er skjult bak en sikkerhetslås</string>
@@ -504,4 +501,5 @@
   <string name="power_notifications_vibrate_title">Vibrer</string>
   <string name="charging_sounds_ringtone_title">Varslingslyd</string>
   <string name="charging_sounds_ringtone_silent">Lydløs</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

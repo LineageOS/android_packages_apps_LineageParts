@@ -404,9 +404,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Значки в строке состояния</string>
   <string name="status_bar_icons_summary">Настройка видимости значков</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Защищенные приложения</string>
   <string name="protected_apps_manager_summary">Управление приложениями, для запуска которых требуется ввод пароля</string>
@@ -495,4 +492,5 @@
   <string name="expanded_desktop_style_hide_both">Скрывать строку состояния и панель навигации</string>
   <string name="expanded_desktop_nothing_to_show_text">Выключите, чтобы настроить режим расширенного рабочего стола для каждого приложения</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

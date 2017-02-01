@@ -404,9 +404,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Εικονίδια γραμμής κατάστασης</string>
   <string name="status_bar_icons_summary">Ελέγξτε ποια εικονίδια θα εμφανίζονται στη γραμμή κατάστασης</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Διπλό χτύπημα για αναστολή</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Διπλό χτύπημα της γραμμής κατάστασης για απενεργοποίηση οθόνης</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Προστατευμένες εφαρμογές</string>
   <string name="protected_apps_manager_summary">Διαχειριστείτε ποιές εφαρμογές θα είναι κρυμμένες πίσω από ένα ασφαλές κλείδωμα</string>
@@ -499,4 +496,5 @@
   <string name="expanded_desktop_style_hide_both">Απόκρυψη όλων</string>
   <string name="expanded_desktop_nothing_to_show_text">Απενεργοποιήστε το διακόπτη για να προσαρμόσετε την επέκταση επιφάνειας ανά εφαρμογή</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

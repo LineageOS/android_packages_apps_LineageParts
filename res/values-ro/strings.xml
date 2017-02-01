@@ -406,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Pictograme bară de stare</string>
   <string name="status_bar_icons_summary">Controlați care pictograme din bara de stare sunt afișate</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Dublă-apăsare pentru sleep</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare pentru a dezactiva ecranul</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplicații protejate</string>
   <string name="protected_apps_manager_summary">Gestionați care aplicații sunt ascunse după o blocare sigură</string>
@@ -506,4 +503,5 @@
   <string name="power_notifications_vibrate_title">Vibrare</string>
   <string name="charging_sounds_ringtone_title">Sunet notificare</string>
   <string name="charging_sounds_ringtone_silent">Silențios</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

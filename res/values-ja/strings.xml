@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">無調整のディスプレイを使用する</string>
   <string name="live_display_color_profile_adaptive_title">自動</string>
   <string name="live_display_color_profile_adaptive_summary">色を周囲の状況に適応する</string>
+  <string name="live_display_color_profile_reading_title">読書</string>
+  <string name="live_display_color_profile_reading_summary">目の負担を軽減するため暖かい色にします</string>
   <string name="color_calibration_title">色の調整</string>
   <string name="color_calibration_summary">画面の色を調整する</string>
   <string name="color_red_title">赤</string>
@@ -380,6 +382,10 @@
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">時計のスタイル</string>
+  <string name="status_bar_clock_position_right">右</string>
+  <string name="status_bar_clock_position_left">左</string>
+  <string name="status_bar_clock_position_center">中央</string>
   <string name="status_bar_am_pm_title">午前/午後のスタイル</string>
   <string name="status_bar_am_pm_info">24時間表示が有効になっています</string>
   <string name="status_bar_am_pm_normal">標準</string>
@@ -400,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">ステータスバーのアイコン</string>
   <string name="status_bar_icons_summary">ステータスバーに表示するアイコンをコントロールする</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">ダブルタップしてスリープ</string>
-  <string name="status_bar_double_tap_to_sleep_summary">ステータスバーをダブルタップしてディスプレイを消灯する</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">アプリの保護</string>
   <string name="protected_apps_manager_summary">パスワードでロックしている場合に非表示にするアプリを管理する</string>
@@ -437,6 +440,7 @@
   <string name="preview_country_title">国</string>
   <string name="preview_carrier_title">キャリア</string>
   <string name="stats_collection_title">統計の収集</string>
+  <string name="stats_collection_summary">インストール状況や端末の統計情報の収集を許可します</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">画面の自動回転</string>
   <string name="display_rotation_title">回転</string>
@@ -475,9 +479,11 @@
   <string name="power_save_title">超省電力</string>
   <string name="power_save_summary">端末のパフォーマンスとバックグラウンドのアクティビティを制限して省電力化する</string>
   <string name="auto_power_save_title">自動省電力</string>
+  <string name="auto_power_save_summary_on">バッテリー残量%sで省電力モードを自動的に有効にする</string>
   <string name="auto_power_save_summary_off">省電力モードを自動的に有効にしない</string>
   <string name="app_perf_profiles_title">自動最適化</string>
   <string name="app_perf_profiles_summary">アプリと使用パターンに適したパフォーマンスプロファイルを自動的に選択する</string>
+  <string name="auto_power_save_never">使用しない</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">拡張デスクトップ</string>
   <string name="expanded_desktop_settings_summary">ステータスバーまたはナビゲーションバー、もしくは両方を非表示にして利用できるデスクトップスペースを拡張する</string>
@@ -489,4 +495,11 @@
   <string name="expanded_desktop_style_hide_both">両方を非表示</string>
   <string name="expanded_desktop_nothing_to_show_text">拡張デスクトップをアプリごとにカスタマイズするにはスイッチをOFFにしてください</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">充電時の音</string>
+  <string name="charging_sounds_enabled_title">有効</string>
+  <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らす</string>
+  <string name="power_notifications_vibrate_title">バイブレーション</string>
+  <string name="charging_sounds_ringtone_title">通知音</string>
+  <string name="charging_sounds_ringtone_silent">サイレント</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

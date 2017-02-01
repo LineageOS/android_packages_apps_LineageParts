@@ -406,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">状态栏图标</string>
   <string name="status_bar_icons_summary">控制显示哪些状态栏图标</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">双击以睡眠</string>
-  <string name="status_bar_double_tap_to_sleep_summary">双击状态栏以关闭屏幕显示</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">受保护的应用</string>
   <string name="protected_apps_manager_summary">管理安全锁隐藏的应用</string>
@@ -504,4 +501,5 @@
   <string name="power_notifications_vibrate_title">振动</string>
   <string name="charging_sounds_ringtone_title">提示音</string>
   <string name="charging_sounds_ringtone_silent">静音</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Použiť displej nekalibrovaný</string>
   <string name="live_display_color_profile_adaptive_title">Adaptívne</string>
   <string name="live_display_color_profile_adaptive_summary">Farby prispôsobiť podmienkam okolia</string>
+  <string name="live_display_color_profile_reading_title">Čítanie</string>
+  <string name="live_display_color_profile_reading_summary">Teplejšie farby pre menšie namáhanie očí</string>
   <string name="color_calibration_title">Kalibrácia farieb</string>
   <string name="color_calibration_summary">Kalibrovať farby na obrazovke</string>
   <string name="color_red_title">Červená</string>
@@ -404,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikony stavového riadku</string>
   <string name="status_bar_icons_summary">Upraviť zobrazenie ikon v stavovom riadku</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Uspať dvojitým poklepaním</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Vypnúť displej dvojitým poklepaním na stavový riadok</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Chránené aplikácie</string>
   <string name="protected_apps_manager_summary">Spravovať aplikácie, ktoré sú skryté za bezpečným zámkom</string>
@@ -441,6 +440,7 @@
   <string name="preview_country_title">Krajina</string>
   <string name="preview_carrier_title">Operátor</string>
   <string name="stats_collection_title">Zbieranie štatistík</string>
+  <string name="stats_collection_summary">Povoliť zbierať metriky inštalácie a štatistík zariadenia</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Automaticky otáčať obrazovku</string>
   <string name="display_rotation_title">Nastavenia otáčania</string>
@@ -495,4 +495,11 @@
   <string name="expanded_desktop_style_hide_both">Skryť oba</string>
   <string name="expanded_desktop_nothing_to_show_text">Vypnite prepínač upravenia rozšírenej plochy na základe aplikácií</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Zvuky pri nabíjaní</string>
+  <string name="charging_sounds_enabled_title">Povoliť</string>
+  <string name="charging_sounds_enabled_summary">Prehrať zvuk pri pripojení alebo odpojení zdroja nabíjania</string>
+  <string name="power_notifications_vibrate_title">Vibrovať</string>
+  <string name="charging_sounds_ringtone_title">Zvuk upozornenia</string>
+  <string name="charging_sounds_ringtone_silent">Tichý</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

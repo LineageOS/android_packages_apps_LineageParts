@@ -406,9 +406,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Icones de la barra d\'estat</string>
   <string name="status_bar_icons_summary">Controla quines icones de la barra d\'estat es mostren</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Pica dues vegades per posar en repòs</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat per apagar la pantalla</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplicacions protegides</string>
   <string name="protected_apps_manager_summary">Gestiona quines aplicacions s\'amaguen darrere el bloqueig segur</string>
@@ -431,7 +428,7 @@
   <string name="anonymous_statistics_title">Estadístiques de LineageOS</string>
   <string name="anonymous_statistics_summary">Ajuda a fer millor LineageOS optant a transmetre estadístiques anònimes</string>
   <string name="anonymous_statistics_warning_title">Quant a</string>
-  <string name="anonymous_statistics_warning">Optant a les estadístiques de LineageOS permetràs que dades no-personals siguin transmeses als desenvolupadors de LineageOS per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o les dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
+  <string name="anonymous_statistics_warning">Optant a les estadístiques de LineageOS permetràs que dades no-personals siguin transmeses als desenvolupadors de LineageOS per rastrejar les instal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o les dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
   <string name="enable_reporting_title">Activa els informes</string>
   <string name="preview_data_title">Vista prèvia de Dades</string>
   <string name="view_stats_title">Veure estadístiques</string>
@@ -504,4 +501,5 @@
   <string name="power_notifications_vibrate_title">Vibra</string>
   <string name="charging_sounds_ringtone_title">So de la notificació</string>
   <string name="charging_sounds_ringtone_silent">Silenci</string>
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

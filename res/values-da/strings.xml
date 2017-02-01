@@ -400,9 +400,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Statuslinje-ikoner</string>
   <string name="status_bar_icons_summary">Kontrollér, hvilke statuslinje-ikoner, der vises</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Dobbelttryk for dvale</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Dobbelttryk på statuslinjen for at slukke skærmen</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beskyttede apps</string>
   <string name="protected_apps_manager_summary">Administrer, hvilke apps, der er skjult bag en sikker lås</string>
@@ -490,4 +487,5 @@
   <string name="expanded_desktop_style_hide_both">Skjul begge</string>
   <string name="expanded_desktop_nothing_to_show_text">Sluk for kontakten for at tilpasse dit udvidede skrivebord på en per app-basis</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

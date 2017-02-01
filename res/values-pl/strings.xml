@@ -203,9 +203,6 @@
   <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikony paska stanu</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Dwukrotnie dotknij, aby uśpić</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Dotknij dwukrotnie pasek stanu, aby wyłączyć ekran</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Chronione aplikacje</string>
   <!-- Contributors cloud activity -->
@@ -255,4 +252,5 @@
   <string name="expanded_desktop_style_hide_navigation">Ukryj pasek nawigacyjny</string>
   <string name="expanded_desktop_style_hide_both">Ukryj oba</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

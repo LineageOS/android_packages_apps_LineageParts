@@ -400,9 +400,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Egoera-barrako ikonoak</string>
   <string name="status_bar_icons_summary">Kontrolatu egoera-barran agertuko diren ikonoak</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Birritan sakatu lokartzeko</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Birritan sakatu egoera-barran pantaila itzaltzeko</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Babesturiko aplikazioak</string>
   <string name="protected_apps_manager_summary">Kudeatu blokeo ziurrarekin ezkutatuko diren aplikazioak</string>
@@ -491,4 +488,5 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="expanded_desktop_style_hide_both">Ezkutatu biak</string>
   <string name="expanded_desktop_nothing_to_show_text">Itzali zure mahaigain hedatua aplikazioz aplikazio pertsonalizatzeko</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

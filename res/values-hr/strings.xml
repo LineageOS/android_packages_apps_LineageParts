@@ -400,9 +400,6 @@
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikone trake statusa</string>
   <string name="status_bar_icons_summary">Uredi prikazane ikone trake statusa</string>
-  <!-- Status bar - double tap to sleep -->
-  <string name="status_bar_double_tap_to_sleep_title">Dvostruki dodir za spavanje</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Dvaput dodirnite traku statusa za isključivanje zaslona</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Zaštićene aplikacije</string>
   <string name="protected_apps_manager_summary">Upravljanje aplikacijama koje su skrivene iza sigurnog zaključavanja</string>
@@ -490,4 +487,5 @@
   <string name="expanded_desktop_style_hide_both">Sakrij oboje</string>
   <string name="expanded_desktop_nothing_to_show_text">Isključite promjenu prilagodbe vaše proširene radne površine na svaku pojedinu aplikaciju</string>
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

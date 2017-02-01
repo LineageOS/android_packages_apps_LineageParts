@@ -17,17 +17,26 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="cmparts_title">LineageOS inställningar</string>
   <!-- Generic stuff used everywhere -->
+  <string name="dlg_ok">OK</string>
+  <string name="add">Lägg till</string>
+  <string name="choose_app">Välj app</string>
+  <string name="settings">Inställningar</string>
   <!-- Privacy Settings Header item -->
   <!-- Privacy Guard -->
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
   <!-- Battery light settings -->
+  <string name="battery_light_title">Batteriljus</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Aviseringsljus</string>
   <!-- Lights settings, LED notification -->
+  <string name="led_notification_title">Ljusinställningar</string>
   <!-- LiveDisplay -->
   <!-- LiveDisplay : Picture Adjustment -->
   <!-- Button settings -->
+  <string name="button_pref_title">Knappar</string>
   <!-- Key backlight -->
   <!-- Buttons - Enable navbar -->
   <!-- Navigation Bar -->
@@ -50,6 +59,7 @@
   <!-- Title for application group setting screen -->
   <!-- Add application dialog box title -->
   <!-- Profiles - system settings -->
+  <string name="profile_system_settings_title">Systeminställningar</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <!-- Sound settings screen -->
   <!-- Status bar -->
@@ -57,7 +67,6 @@
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - icon blacklist -->
-  <!-- Status bar - double tap to sleep -->
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->
   <!-- Anonymous Statistics #CM -->
@@ -65,7 +74,15 @@
   <!-- Anonymous Statistics - Preview -->
   <!-- Display : Rotation  -->
   <!-- Weather -->
+  <string name="weather_settings_title">Väder</string>
+  <string name="weather_settings_button">Leverantörsinställningar</string>
+  <string name="weather_settings_providers_title">Leverantörer</string>
+  <string name="weather_settings_temp_units_title">Temperaturenhet</string>
+  <string name="weather_settings_temp_celsius">Celsius</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="weather_settings_keyword">väder</string>
   <!-- Power: Performance profiles -->
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>

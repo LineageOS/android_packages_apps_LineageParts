@@ -193,7 +193,6 @@
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - icon blacklist -->
-  <!-- Status bar - double tap to sleep -->
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->
   <string name="contributor_info_menu">Informations du contributeur</string>
@@ -241,4 +240,5 @@
   <string name="perf_profile_settings_title">Économiseur de batterie et performances</string>
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <!-- Gestures: Touchscreen gestures -->
 </resources>
