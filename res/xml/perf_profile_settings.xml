@@ -51,7 +51,8 @@
         <cyanogenmod.preference.CMSecureSettingSwitchPreference
             android:key="app_perf_profiles_enabled"
             android:title="@string/app_perf_profiles_title"
-            android:summary="@string/app_perf_profiles_summary" />
+            android:summary="@string/app_perf_profiles_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 </PreferenceScreen>

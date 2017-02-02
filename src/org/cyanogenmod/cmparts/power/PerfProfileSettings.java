@@ -53,7 +53,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     private static final String KEY_PERF_PROFILE_CATEGORY = "perf_profile_category";
     private static final String KEY_AUTO_POWER_SAVE  = "auto_power_save";
     private static final String KEY_POWER_SAVE       = "power_save";
-    private static final String KEY_PER_APP_PROFILES = "app_perf_profiles";
+    private static final String KEY_PER_APP_PROFILES = "app_perf_profiles_enabled";
     private static final String KEY_PERF_SEEKBAR     = "perf_seekbar";
 
     private ListPreference mAutoPowerSavePref;
