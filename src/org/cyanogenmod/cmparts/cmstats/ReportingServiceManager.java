@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *           (C) 2017 The LineageOS Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,14 +19,12 @@ package org.cyanogenmod.cmparts.cmstats;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.app.job.JobScheduler;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.UserHandle;
 import android.util.Log;
-import cyanogenmod.providers.CMSettings;
 
 public class ReportingServiceManager extends BroadcastReceiver {
     private static final long MILLIS_PER_HOUR = 60L * 60L * 1000L;

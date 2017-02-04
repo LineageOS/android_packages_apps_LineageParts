@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2010 Daniel Nilsson
  * Copyright (C) 2012 The CyanogenMod Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +31,6 @@ import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.text.InputFilter;
-import android.text.InputFilter.LengthFilter;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,7 +49,6 @@ import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.notificationlight.ColorPickerView.OnColorChangedListener;
 
 import java.util.ArrayList;
-import java.util.IllegalFormatException;
 import java.util.Locale;
 
 public class LightSettingsDialog extends AlertDialog implements

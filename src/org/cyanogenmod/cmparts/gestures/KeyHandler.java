@@ -1,5 +1,6 @@
 /**
  * Copyright (C) 2016 The CyanogenMod project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,11 +48,7 @@ import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.hardware.TouchscreenGesture;
 import cyanogenmod.providers.CMSettings;
-
-import org.cyanogenmod.cmparts.gestures.TouchscreenGestureConstants;
 
 public class KeyHandler implements DeviceKeyHandler {
 

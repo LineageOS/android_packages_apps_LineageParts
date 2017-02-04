@@ -19,18 +19,14 @@ package org.cyanogenmod.cmparts.gestures;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceManager;
-import android.util.SparseIntArray;
 
 import cyanogenmod.hardware.CMHardwareManager;
 import cyanogenmod.hardware.TouchscreenGesture;
 
-import org.cyanogenmod.cmparts.gestures.TouchscreenGestureConstants;
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 import org.cyanogenmod.cmparts.utils.ResourceUtils;
@@ -38,7 +34,6 @@ import org.cyanogenmod.cmparts.utils.ResourceUtils;
 import java.lang.System;
 
 public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
-
     private static final String KEY_TOUCHSCREEN_GESTURE = "touchscreen_gesture";
     private static final String TOUCHSCREEN_GESTURE_TITLE = KEY_TOUCHSCREEN_GESTURE + "_%s_title";
 
