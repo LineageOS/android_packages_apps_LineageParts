@@ -374,8 +374,6 @@
   <string name="status_bar_notif_count_summary">Vis antallet af ulæste underretninger</string>
   <string name="status_bar_quick_qs_pulldown_title">Hurtigt nedtræk</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s side af underretningsbjælken trækker Hurtige indstillinger ned</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Venstre</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Højre</string>
   <string name="status_bar_quick_qs_pulldown_off">Fra</string>
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Højre</string>

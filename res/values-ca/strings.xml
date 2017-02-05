@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Mostra el nombre de notificacions pendents</string>
   <string name="status_bar_quick_qs_pulldown_title">Baixada ràpida</string>
   <string name="status_bar_quick_qs_pulldown_summary">La vora %1$s de la barra d\'estat desplega el panell d\'ajustos ràpids</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Esquerra</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Dreta</string>
   <string name="status_bar_quick_qs_pulldown_off">No</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerra</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreta</string>
@@ -502,4 +500,11 @@
   <string name="charging_sounds_ringtone_title">So de la notificació</string>
   <string name="charging_sounds_ringtone_silent">Silenci</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_action_do_nothing">No facis res</string>
+  <string name="touchscreen_gesture_action_flashlight">Encén/apaga la llanterna</string>
+  <string name="touchscreen_gesture_action_camera">Obre la càmera</string>
+  <string name="touchscreen_gesture_action_browser">Obre el navegador</string>
+  <string name="touchscreen_gesture_action_dialer">Obre el marcador</string>
+  <string name="touchscreen_gesture_action_email">Mostra els teus correus</string>
+  <string name="touchscreen_gesture_action_messages">Mostra els teus missatges</string>
 </resources>

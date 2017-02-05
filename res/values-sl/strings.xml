@@ -136,6 +136,7 @@
   <string name="live_display_color_profile_adaptive_title">Prilagodljiv</string>
   <string name="live_display_color_profile_adaptive_summary">Barve se prilagajajo pogojem okolice</string>
   <string name="live_display_color_profile_reading_title">Branje</string>
+  <string name="live_display_color_profile_reading_summary">Toplejše barve za manjšo obremenitev oči</string>
   <string name="color_calibration_title">Umerjanje barv</string>
   <string name="color_calibration_summary">Umeri barve na zaslonu</string>
   <string name="color_red_title">Rdeča</string>
@@ -375,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Prikaži število obvestil na čakanju</string>
   <string name="status_bar_quick_qs_pulldown_title">Hitro spuščanje</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s rob vrstice stanja spusti Hitre nastavitve</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Levi</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Desni</string>
   <string name="status_bar_quick_qs_pulldown_off">Izk.</string>
   <string name="status_bar_quick_qs_pulldown_left">Levi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
@@ -441,6 +440,7 @@
   <string name="preview_country_title">Država</string>
   <string name="preview_carrier_title">Ponudnik</string>
   <string name="stats_collection_title">Zbiranje statistike</string>
+  <string name="stats_collection_summary">Dovoli zbiranje meritev in statistike naprave</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Samodejno zasukaj zaslon</string>
   <string name="display_rotation_title">Nastavitve sukanja</string>
@@ -502,4 +502,35 @@
   <string name="charging_sounds_ringtone_title">Zvok obvestila</string>
   <string name="charging_sounds_ringtone_silent">Tiho</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Poteze na zaslonu na dotik</string>
+  <string name="touchscreen_gesture_settings_summary">Za hitra dejanja na zaslonu na dotik izvedite različne poteze</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Haptično zaznavanje</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibriraj, ko je zaznana poteza na zaslonu na dotik</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Z dvema prstoma potegnite navzdol</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Z enim prstom potegnite navzgor</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Z enim prstom potegnite navzdol</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Z enim prstom potegnite levo</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Z enim prstom potegnite desno</string>
+  <string name="touchscreen_gesture_up_arrow_title">Narišite \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Narišite \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Narišite \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Narišite \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Narišite črko \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Narišite črko \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Narišite črko \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Narišite črko \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Narišite črko \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Narišite črko \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Narišite črko \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Dejanje poteze</string>
+  <string name="touchscreen_gesture_action_do_nothing">Ne naredi ničesar</string>
+  <string name="touchscreen_gesture_action_flashlight">Vklop/izklop svetilke</string>
+  <string name="touchscreen_gesture_action_camera">Odpri fotoaparat</string>
+  <string name="touchscreen_gesture_action_browser">Odpri brskalnik</string>
+  <string name="touchscreen_gesture_action_dialer">Odpri klicalnik</string>
+  <string name="touchscreen_gesture_action_email">Pokaži e-pošto</string>
+  <string name="touchscreen_gesture_action_messages">Pokaži sporočila</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Predvajaj/začasno ustavi predvajanje glasbe</string>
+  <string name="touchscreen_gesture_action_previous_track">Skok na prejšnjo skladbo</string>
+  <string name="touchscreen_gesture_action_next_track">Skok na naslednjo skladbo</string>
 </resources>

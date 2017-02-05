@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Amosar o número de notificacións pendentes</string>
   <string name="status_bar_quick_qs_pulldown_title">Tirar para abaixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s na esquina da barra de estado abre a Configuración rápida</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Esquerda</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Dereita</string>
   <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Dereita</string>
@@ -502,4 +500,35 @@
   <string name="charging_sounds_ringtone_title">Son de notificación</string>
   <string name="charging_sounds_ringtone_silent">Silencio</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Xestos na pantalla táctil</string>
+  <string name="touchscreen_gesture_settings_summary">Realizar varios xestos na pantalla para accions rápidas</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Resposta háptica</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrar cando se detecta un xesto táctil</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Deslizar hacia abaixo con dos dedos</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Deslizar hacia arriba con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abaixo con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia a esquerda con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar á dereita con un dedo</string>
+  <string name="touchscreen_gesture_up_arrow_title">Debuxa un \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Debuxa un \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Debuzar un \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Debuxar un \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Debuxar a letra \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Debuxar a letra \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Debuxar a letra \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Debuxar a letra \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Debuxar a letra \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Debuxar a letra \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Debuxar a letra \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Acción do xesto</string>
+  <string name="touchscreen_gesture_action_do_nothing">Non facer nada</string>
+  <string name="touchscreen_gesture_action_flashlight">Acender/Apagar a linterna</string>
+  <string name="touchscreen_gesture_action_camera">Abrir a cámara</string>
+  <string name="touchscreen_gesture_action_browser">Abrir o navegador</string>
+  <string name="touchscreen_gesture_action_dialer">Abrir o teléfono</string>
+  <string name="touchscreen_gesture_action_email">Visualizar seus e-mails</string>
+  <string name="touchscreen_gesture_action_messages">Velos mensajes</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Reproducir/pausar reproducción de música</string>
+  <string name="touchscreen_gesture_action_previous_track">Desplácese hasta a pista de música anterior</string>
+  <string name="touchscreen_gesture_action_next_track">Saltar á seguinte pista de música</string>
 </resources>

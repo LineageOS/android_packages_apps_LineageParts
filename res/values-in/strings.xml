@@ -374,12 +374,14 @@
   <string name="status_bar_notif_count_summary">Tampilkan jumlah pemberitahuan yang tertunda</string>
   <string name="status_bar_quick_qs_pulldown_title">Keruntuhan cepat</string>
   <string name="status_bar_quick_qs_pulldown_summary">Menarik %1$s tepi status bar ke bawah untuk Pengaturan Cepat</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Kiri</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Kanan</string>
   <string name="status_bar_quick_qs_pulldown_off">Mati</string>
   <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Posisi jam</string>
+  <string name="status_bar_clock_position_right">Kanan</string>
+  <string name="status_bar_clock_position_left">Kiri</string>
+  <string name="status_bar_clock_position_center">Tengah</string>
   <string name="status_bar_am_pm_title">Gaya AM/PM</string>
   <string name="status_bar_am_pm_info">24-jam diaktifkan</string>
   <string name="status_bar_am_pm_normal">Normal</string>
@@ -486,5 +488,16 @@
   <string name="expanded_desktop_style_hide_both">Sembunyikan keduanya</string>
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_ringtone_title">Suara pemberitahuan</string>
+  <string name="charging_sounds_ringtone_silent">Senyap</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Usap ke bawah dengan dua jari</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Usap ke atas dengan satu jari</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Usap ke bawah dengan satu jari</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Usap ke kiri dengan satu jari</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Usap ke kanan dengan satu jari</string>
+  <string name="touchscreen_gesture_action_camera">Buka kamera</string>
+  <string name="touchscreen_gesture_action_browser">Buka perambaan</string>
+  <string name="touchscreen_gesture_action_email">Lihat email Anda</string>
+  <string name="touchscreen_gesture_action_messages">Lihat pesan Anda</string>
 </resources>

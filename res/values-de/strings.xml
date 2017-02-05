@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Anzahl der ungelesenen Benachrichtigungen in der Statusleiste anzeigen</string>
   <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
   <string name="status_bar_quick_qs_pulldown_summary">Herunterziehen der Benachrichtigungsleiste am %1$s Rand öffnet die Schnelleinstellungen</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">linken</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">rechten</string>
   <string name="status_bar_quick_qs_pulldown_off">Aus</string>
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
@@ -502,4 +500,30 @@
   <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
   <string name="charging_sounds_ringtone_silent">Lautlos</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gestures_haptic_feedback_title">Haptisches Feedback</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Mit zwei Fingern nach unten wischen</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Mit einem Finger nach oben wischen</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Mit einem Finger nach unten wischen</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Mit einem Finger nach links wischen</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Mit einem Finger nach rechts wischen</string>
+  <string name="touchscreen_gesture_up_arrow_title">Zeichnen Sie ein \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Zeichnen Sie ein \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Zeichnen Sie ein \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Zeichnen Sie ein \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Zeichnen Sie den Buchstaben \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Zeichnen Sie den Buchstaben \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Zeichnen Sie den Buchstaben \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Zeichnen Sie den Buchstaben \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Zeichnen Sie den Buchstaben \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Zeichnen Sie den Buchstaben \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Zeichnen Sie den Buchstaben \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Gestenaktion</string>
+  <string name="touchscreen_gesture_action_do_nothing">Nichts tun</string>
+  <string name="touchscreen_gesture_action_camera">Kamera öffnen</string>
+  <string name="touchscreen_gesture_action_browser">Browser öffnen</string>
+  <string name="touchscreen_gesture_action_email">Ihre E-Mails anzeigen</string>
+  <string name="touchscreen_gesture_action_messages">Ihre Nachrichten anzeigen</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Musikwiedergabe starten/anhalten</string>
+  <string name="touchscreen_gesture_action_previous_track">Zum vorherigen Musiktitel springen</string>
+  <string name="touchscreen_gesture_action_next_track">Zum nächsten Musiktitel springen</string>
 </resources>

@@ -374,8 +374,6 @@
   <string name="status_bar_notif_count_summary">Prikaži broj neriješenih obavijesti</string>
   <string name="status_bar_quick_qs_pulldown_title">Brzo potezanje</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s rub trake stanja povlači dolje Brze postavke</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Lijevi</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Desni</string>
   <string name="status_bar_quick_qs_pulldown_off">Isključen</string>
   <string name="status_bar_quick_qs_pulldown_left">Lijevi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>

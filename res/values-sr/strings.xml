@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Користи дисплеј неподешен</string>
   <string name="live_display_color_profile_adaptive_title">Прилагодљиво</string>
   <string name="live_display_color_profile_adaptive_summary">Боје прилагођене амбиенталним условима</string>
+  <string name="live_display_color_profile_reading_title">Читање</string>
+  <string name="live_display_color_profile_reading_summary">Топлије боје за мање напрезање очију</string>
   <string name="color_calibration_title">Калибрација боје</string>
   <string name="color_calibration_summary">Калибрација боја на екрану</string>
   <string name="color_red_title">Црвена</string>
@@ -205,7 +207,27 @@
   <string name="disable_navkeys_summary">Омогући навигациону траку на екрану и онемогући хардверске дугмиће</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Навигациона трака</string>
+  <string name="navigation_bar_title">Дугмићи и распоред</string>
+  <string name="navigation_bar_left_title">Лево-руки режим</string>
+  <string name="navigation_bar_left_summary">Постави навигациону траку на левој страни екрана у положеном режиму</string>
+  <string name="navigation_bar_arrow_keys_title">Прикажи стрелице док куцаш</string>
+  <string name="navigation_bar_arrow_keys_summary">Прикажи лево и десно дугме курсора док куцаш. Мења IME пребацивач.</string>
+  <string name="navigation_bar_home_long_press_title">Акција дугог притиска главног дугмета</string>
+  <string name="navigation_bar_home_double_tap_title">Акција дуплог додира главног дугмета</string>
+  <string name="navigation_bar_recents_title">Недавне акције дугог додира</string>
   <!-- Power menu -->
+  <string name="power_menu_title">Опције напајања</string>
+  <string name="power_menu_reboot_title">Режим рестарта</string>
+  <string name="power_menu_screenshot_title">Снимак екрана</string>
+  <string name="power_menu_airplane_title">Режим рада у авиону</string>
+  <string name="power_menu_users_title">Пребацивач корисника</string>
+  <string name="power_menu_settings_title">Пречица подешавања</string>
+  <string name="power_menu_lockdown_title">Закључавање уређаја</string>
+  <string name="power_menu_bug_report_title">Пријава грешке</string>
+  <string name="power_menu_sound_title">Звучни панел</string>
+  <string name="power_menu_bug_report_disabled">Пријављивање грешке је онемогућено у развојном подешавању</string>
+  <string name="volume_keys_control_ring_stream_title">Контрола јачине звона</string>
+  <string name="volume_keys_control_ring_stream_summary_on">Тастери за јачину звука контролишу јачину звона</string>
   <string name="volume_keys_control_ring_stream_summary_off">Тастери за јачину звука контролишу јачину медија</string>
   <string name="camera_double_tap_power_gesture_title">Притисните дугме за напајање двапут за камеру</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
@@ -271,7 +293,9 @@
   <string name="rename_dialog_hint">Унеси име профила</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Ресетуј</string>
+  <string name="profile_reset_message">Избрисати све корисничке профиле и групе апликација и вратити их на подразумевано?</string>
   <!-- Delete confimation messages -->
+  <string name="profile_app_delete_confirm">Уклони ову апликацију?</string>
   <!-- Profile network mode -->
   <string name="profile_networkmode_2g">2G</string>
   <string name="profile_networkmode_3g">3G</string>
@@ -350,8 +374,6 @@
   <string name="status_bar_notif_count_summary">Прикажи број обавештења на чекању</string>
   <string name="status_bar_quick_qs_pulldown_title">Брзи падајући панел</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s ивица статусне траке вуче доле брза подешавања</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Лево</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Десно</string>
   <string name="status_bar_quick_qs_pulldown_off">Искљ</string>
   <string name="status_bar_quick_qs_pulldown_left">Лево</string>
   <string name="status_bar_quick_qs_pulldown_right">Десно</string>
@@ -392,13 +414,63 @@
   <!-- Anonymous Statistics - Preview -->
   <!-- Display : Rotation  -->
   <!-- Weather -->
+  <string name="weather_settings_temp_units_title">Јединица температуре</string>
+  <string name="weather_settings_temp_celsius">Целзијус</string>
+  <string name="weather_settings_temp_fahrenheit">Фаренхајт</string>
+  <string name="weather_settings_keyword">време</string>
+  <string name="status_bar_show_weather_title">Прикажи време</string>
+  <string name="status_bar_show_weather_summary">Прикажи тренутну температуру на статусној траци</string>
   <!-- Power: Performance profiles -->
+  <string name="perf_profile_settings_title">Уштеда батерије и перформансе</string>
+  <string name="perf_profile_settings_summary">Прилагоди уштеду енергије и перформансе уређаја</string>
+  <string name="perf_profile_overview_summary">Тренутни профил: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+  <string name="perf_profile_category_title">Перформансе уређаја</string>
+  <string name="perf_profile_title">Профил перформанси: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+  <string name="perf_profile_fail_toast">Профил перформанси је тренутно недоступан</string>
   <string name="power_save_category_title">Уштеда батерије</string>
   <string name="power_save_title">Екстремна уштеда батерије</string>
   <string name="power_save_summary">Ограничи перформансе уређаја позадинске активности да уштедиш батерију</string>
   <string name="auto_power_save_title">Аутоматска уштеда батерије</string>
   <string name="auto_power_save_summary_on">Аутоматски омогући уштеду батерије на %s батерије</string>
+  <string name="auto_power_save_summary_off">Немој укључивати уштеду енергије аутоматски</string>
+  <string name="app_perf_profiles_title">Аутоматска оптимизација</string>
+  <string name="app_perf_profiles_summary">Аутоматски изабери одговарајуће профиле перформанси за различите апликације и моделе коришћења</string>
+  <string name="auto_power_save_never">Никад</string>
   <!-- Applications: Expanded desktop -->
+  <string name="expanded_desktop_settings_title">Проширен екран</string>
+  <string name="expanded_desktop_settings_summary">Прошири свој простор екрана скривајући статусну траку, навигациону траку или обоје</string>
+  <string name="expanded_desktop_options_title">Опције прилагођавања</string>
+  <string name="expanded_desktop_style_title">Стил проширеног екрана</string>
+  <string name="expanded_desktop_style_hide_nothing">Ништа не криј</string>
+  <string name="expanded_desktop_style_hide_status">Сакриј статусну траку</string>
+  <string name="expanded_desktop_style_hide_navigation">Сакриј навигациону траку</string>
+  <string name="expanded_desktop_style_hide_both">Сакриј обе</string>
+  <string name="expanded_desktop_nothing_to_show_text">Искључи прекидач да би прилагодио проширење екрана на бази апликација</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Звук пуњења батерије</string>
+  <string name="charging_sounds_enabled_title">Омогућено</string>
+  <string name="charging_sounds_enabled_summary">Пусти звук када се повезује или искључује извор напајања</string>
+  <string name="power_notifications_vibrate_title">Вибрација</string>
+  <string name="charging_sounds_ringtone_title">Звук обавештења</string>
+  <string name="charging_sounds_ringtone_silent">Нечујно</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Гестови екрана на додир</string>
+  <string name="touchscreen_gesture_settings_summary">Иѕвршава разне гестове екрана за брзе акције</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Повратне информације</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Вибрирање када је откривен гест не екрану</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Замах доле са два прста</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Замах горе са једним прстом</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Замах доле са једним прстом</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Замах лево са једним прстом</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Замах десно са једним прстом</string>
+  <string name="touchscreen_gesture_up_arrow_title">Нацртај \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Нацртај \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Нацртај \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Нацртај \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Нацртај слово \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Нацртај слово \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Нацртај слово \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Нацртај слово \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Нацртај слово \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Нацртај слово \"W\"</string>
 </resources>

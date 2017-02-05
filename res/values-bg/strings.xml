@@ -176,14 +176,14 @@
   <string name="camera_sleep_on_release_summary">Леко натискане ще запази екрана само, докато бутонът е натиснат</string>
   <string name="camera_launch_title">Стартиране на камерата</string>
   <string name="camera_launch_summary">Дълго натискане и освобождаване за стартиране на камерата</string>
-  <string name="volbtn_music_controls_title">Управление на възпроизвеждането</string>
-  <string name="volbtn_music_controls_summary">Търси песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
+  <string name="volbtn_music_controls_title">Управление на музика</string>
+  <string name="volbtn_music_controls_summary">Смяна на песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
   <string name="volbtn_cursor_control_title">Контрол на курсора</string>
-  <string name="volbtn_cursor_control_off">Изключена</string>
+  <string name="volbtn_cursor_control_off">Изключен</string>
   <string name="volbtn_cursor_control_on">Звука нагоре/надолу премества курсора наляво/надясно</string>
   <string name="volbtn_cursor_control_on_reverse">Звука нагоре/надолу премества курсора надясно/наляво</string>
   <string name="power_end_call_title">Край на повикването</string>
-  <string name="power_end_call_summary">Край текущото повикване чрез натискане на бутона за захранване</string>
+  <string name="power_end_call_summary">Прекратяване на текущото повикване чрез натискане на бутона за захранване</string>
   <string name="swap_volume_buttons_title">Преориентиране</string>
   <string name="swap_volume_buttons_summary">Разменя бутоните за сила на звука, когато екрана се завъртян</string>
   <string name="button_wake_title">Събуди устройството</string>
@@ -199,9 +199,9 @@
   <string name="keyboard_backlight_seekbar_title">Яркост на клавиатурата</string>
   <string name="backlight_timeout_title">Време на изчакване на осветлението</string>
   <string name="backlight_timeout_unlimited">Не изключвай</string>
-  <string name="backlight_summary_disabled">Изключена</string>
+  <string name="backlight_summary_disabled">Деактивирани</string>
   <string name="backlight_summary_enabled_with_timeout">Разрешена за <xliff:g id="timeout">%s </xliff:g></string>
-  <string name="backlight_summary_enabled">Разрешено</string>
+  <string name="backlight_summary_enabled">Активирани</string>
   <!-- Buttons - Enable navbar -->
   <string name="disable_navkeys_title">Разреши екранната лента за навигация</string>
   <string name="disable_navkeys_summary">Разреши екранна навигационна лента и забрани хардуерните бутони</string>
@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Показва броя на новите известия в лентата на състоянието</string>
   <string name="status_bar_quick_qs_pulldown_title">Бързи настройки</string>
   <string name="status_bar_quick_qs_pulldown_summary">Дръпнете %1$s лентата на състоянието за бързи настройки</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Вляво</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Вдясно</string>
   <string name="status_bar_quick_qs_pulldown_off">Изключен</string>
   <string name="status_bar_quick_qs_pulldown_left">Вляво</string>
   <string name="status_bar_quick_qs_pulldown_right">Вдясно</string>
@@ -480,7 +478,7 @@
   <string name="power_save_summary">Ограничаване производителноста на устройството и работата във фонов режим за икономия на енергия</string>
   <string name="auto_power_save_title">Автоматичнен режим на енергоспестяване</string>
   <string name="auto_power_save_summary_on">Режима за енергоспестяване автоматично се активира при %s на батерията</string>
-  <string name="auto_power_save_summary_off">Автоматичния режим енергоспестяване е деактивиран</string>
+  <string name="auto_power_save_summary_off">Автоматичния режим на енергоспестяване е деактивиран</string>
   <string name="app_perf_profiles_title">Автоматична оптимизация</string>
   <string name="app_perf_profiles_summary">Автоматичен избор на подходящ профил на производителност за различните приложения</string>
   <string name="auto_power_save_never">Никога</string>
@@ -502,4 +500,35 @@
   <string name="charging_sounds_ringtone_title">Тон за уведомяване</string>
   <string name="charging_sounds_ringtone_silent">Без звук</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Тъчскрийн жестове</string>
+  <string name="touchscreen_gesture_settings_summary">Изпълнява различни бързи действия чрез жестове върху сензорния екран</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Вибрация при докосване</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Вибрира при засичане на сензорен жест</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Плъзнете надолу с два пръста</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Плъзнете нагоре с един пръст</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Плъзнете надолу с един пръст</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Плъзнете наляво с един пръст</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Плъзнете надясно с един пръст</string>
+  <string name="touchscreen_gesture_up_arrow_title">Изпишете \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Изпишете \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Изпишете \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Изпишете \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Изпишете буквата \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Изпишете буквата \"е\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Изпишете буквата \"О\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Изпишете буквата \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Изпишете буквата \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Изпишете буквата \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Изпишете буквата \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Жестове</string>
+  <string name="touchscreen_gesture_action_do_nothing">Не прави нищо</string>
+  <string name="touchscreen_gesture_action_flashlight">Включване / Изключване на фенерчето</string>
+  <string name="touchscreen_gesture_action_camera">Отваряне на камерата</string>
+  <string name="touchscreen_gesture_action_browser">Отваряне на браузъра</string>
+  <string name="touchscreen_gesture_action_dialer">Отворяне на телефон</string>
+  <string name="touchscreen_gesture_action_email">Преглет на имейли</string>
+  <string name="touchscreen_gesture_action_messages">Преглед на съобщения</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Възпроизвеждане и пауза на музика</string>
+  <string name="touchscreen_gesture_action_previous_track">Преминаване към предишната песен</string>
+  <string name="touchscreen_gesture_action_next_track">Преминаване към следващата песен</string>
 </resources>

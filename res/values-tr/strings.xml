@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Bekleyen bildirim sayısını göster</string>
   <string name="status_bar_quick_qs_pulldown_title">Hızlı aşağı çekme</string>
   <string name="status_bar_quick_qs_pulldown_summary">Durum çubuğunun %1$s tarafından aşağı çekince Hızlı Ayarlar açılır</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Sol</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Sağ</string>
   <string name="status_bar_quick_qs_pulldown_off">Kapalı</string>
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
@@ -502,4 +500,35 @@
   <string name="charging_sounds_ringtone_title">Bildirim sesi</string>
   <string name="charging_sounds_ringtone_silent">Sessiz</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Ekran Hareketleri</string>
+  <string name="touchscreen_gesture_settings_summary">Çeşitli dokunmatik hareketleri için hızlı eylemleri uygula</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Dokunmatik geri bildirim</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Bir dokunmatik hareket algılandığında titre</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">İki parmakla aşağı kaydır</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Bir parmakla yukarı kaydır</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Bir parmakla aşağı kaydır</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Bir parmakla sola kaydır</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Bir parmakla sağa kaydır</string>
+  <string name="touchscreen_gesture_up_arrow_title">\"Λ\" çizin</string>
+  <string name="touchscreen_gesture_down_arrow_title">\"V\" çizin</string>
+  <string name="touchscreen_gesture_left_arrow_title">\"&lt;\" çizin</string>
+  <string name="touchscreen_gesture_right_arrow_title">\"&gt;\" çizin</string>
+  <string name="touchscreen_gesture_letter_c_title">\"C\" harfi çizin</string>
+  <string name="touchscreen_gesture_letter_e_title">\"e\" harfi çizin</string>
+  <string name="touchscreen_gesture_letter_o_title">\"O\" harfi çizin</string>
+  <string name="touchscreen_gesture_letter_m_title">\"M\" harfi çizin</string>
+  <string name="touchscreen_gesture_letter_s_title">\"S\" harfi çizin</string>
+  <string name="touchscreen_gesture_letter_w_title">\"W\" harfi çizin</string>
+  <string name="touchscreen_gesture_letter_z_title">\"Z\" harfi çizin</string>
+  <string name="touchscreen_gesture_action_dialog_title">Hareket eylemi</string>
+  <string name="touchscreen_gesture_action_do_nothing">Hiçbir şey yapma</string>
+  <string name="touchscreen_gesture_action_flashlight">El fenerini aç/kapat</string>
+  <string name="touchscreen_gesture_action_camera">Kamerayı aç</string>
+  <string name="touchscreen_gesture_action_browser">Tarayıcıyı aç</string>
+  <string name="touchscreen_gesture_action_dialer">Telefonu aç</string>
+  <string name="touchscreen_gesture_action_email">E-postaları aç</string>
+  <string name="touchscreen_gesture_action_messages">Mesajları aç</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Müziği oynat/duraklat</string>
+  <string name="touchscreen_gesture_action_previous_track">Önceki şarkıya geç</string>
+  <string name="touchscreen_gesture_action_next_track">Sonraki şarkıya geç</string>
 </resources>

@@ -374,8 +374,6 @@
   <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
   <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s край строки состояния вытягивает быстрые настройки</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Слева</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Справа</string>
   <string name="status_bar_quick_qs_pulldown_off">Выключено</string>
   <string name="status_bar_quick_qs_pulldown_left">Левый</string>
   <string name="status_bar_quick_qs_pulldown_right">Правый</string>

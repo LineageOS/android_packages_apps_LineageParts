@@ -278,8 +278,6 @@
   <string name="status_bar_notif_count_summary">Паказваць колькасць новых паведамленьняў у радку стану</string>
   <string name="status_bar_quick_qs_pulldown_title">Хуткі доступ</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s рог радка стану выцягвае хуткія налады</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Улева</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Управа</string>
   <string name="status_bar_quick_qs_pulldown_off">Адключаны</string>
   <string name="status_bar_quick_qs_pulldown_left">Улева</string>
   <string name="status_bar_quick_qs_pulldown_right">Управа</string>

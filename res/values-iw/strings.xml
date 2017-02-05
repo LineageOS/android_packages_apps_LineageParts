@@ -83,7 +83,6 @@
   <!-- Connection override toggles (not all are used at this time ) -->
   <!-- Sound settings screen -->
   <!-- Status bar -->
-  <string name="status_bar_quick_qs_pulldown_summary_left">שמאל</string>
   <string name="status_bar_quick_qs_pulldown_left">שמאל</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_left">שמאל</string>

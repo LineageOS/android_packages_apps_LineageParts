@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">顯示未處理通知的數量</string>
   <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
   <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">左</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">右</string>
   <string name="status_bar_quick_qs_pulldown_off">關閉</string>
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
@@ -524,7 +522,7 @@
   <string name="touchscreen_gesture_letter_w_title">畫出一個字母「W」</string>
   <string name="touchscreen_gesture_letter_z_title">畫出一個字母「Z」</string>
   <string name="touchscreen_gesture_action_dialog_title">手勢動作</string>
-  <string name="touchscreen_gesture_action_do_nothing">不執行任何操作</string>
+  <string name="touchscreen_gesture_action_do_nothing">不執行任何動作</string>
   <string name="touchscreen_gesture_action_flashlight">切換至手電筒</string>
   <string name="touchscreen_gesture_action_camera">開啟相機</string>
   <string name="touchscreen_gesture_action_browser">開啟瀏覽器</string>

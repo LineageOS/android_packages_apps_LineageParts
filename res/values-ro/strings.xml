@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Afișează numărul notificărilor în așteptare</string>
   <string name="status_bar_quick_qs_pulldown_title">Derulare în jos rapidă</string>
   <string name="status_bar_quick_qs_pulldown_summary">Marginea %1$s a bării de stare aduce în jos Setările Rapide</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Stânga</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Dreapta</string>
   <string name="status_bar_quick_qs_pulldown_off">Dezactivat</string>
   <string name="status_bar_quick_qs_pulldown_left">Stânga</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreapta</string>
@@ -504,4 +502,35 @@
   <string name="charging_sounds_ringtone_title">Sunet notificare</string>
   <string name="charging_sounds_ringtone_silent">Silențios</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gesturi touchscreen</string>
+  <string name="touchscreen_gesture_settings_summary">Efectuați diverse gesturi pe touchscreen pentru acţiuni rapide</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Feedback haptic</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrează atunci când este detectat un gest touchscreen</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Glisați în jos cu două degete</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Glisați în sus cu un deget</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Glisați în jos cu un deget</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Glisați în stânga cu un deget</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Glisați în dreapta cu un deget</string>
+  <string name="touchscreen_gesture_up_arrow_title">Desenați un \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Desenați un \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Desenați un \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Desenați un \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Desenați litera \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Desenați litera \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Desenați litera \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Desenați litera \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Desenați litera \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Desenați litera \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Desenați litera \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Acțiune gest</string>
+  <string name="touchscreen_gesture_action_do_nothing">Nu fă nimic</string>
+  <string name="touchscreen_gesture_action_flashlight">Comută lanterna</string>
+  <string name="touchscreen_gesture_action_camera">Deschide camera</string>
+  <string name="touchscreen_gesture_action_browser">Deschide browser-ul</string>
+  <string name="touchscreen_gesture_action_dialer">Deschide telefonul</string>
+  <string name="touchscreen_gesture_action_email">Vizualizați-vă email-urile</string>
+  <string name="touchscreen_gesture_action_messages">Vizualizați-vă mesajele</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Redare/pauză redarea muzicii</string>
+  <string name="touchscreen_gesture_action_previous_track">Navigaţi la piesa anterioară</string>
+  <string name="touchscreen_gesture_action_next_track">Treceți la următoarea piesă</string>
 </resources>

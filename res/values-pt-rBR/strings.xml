@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Use o visor não calibrado</string>
   <string name="live_display_color_profile_adaptive_title">Adaptável</string>
   <string name="live_display_color_profile_adaptive_summary">As cores adaptam-se às condições do ambiente</string>
+  <string name="live_display_color_profile_reading_title">Leitura</string>
+  <string name="live_display_color_profile_reading_summary">Cores mais quentes para reduzir a fadiga ocular</string>
   <string name="color_calibration_title">Calibração de cores</string>
   <string name="color_calibration_summary">Calibra as cores da tela</string>
   <string name="color_red_title">Vermelho</string>
@@ -374,12 +376,14 @@
   <string name="status_bar_notif_count_summary">Mostra o número de notificações pendentes na barra de status</string>
   <string name="status_bar_quick_qs_pulldown_title">Deslizar rápido para baixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">borda %1$s da barra de status puxa as Configurações Rápidas</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Esquerda</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Direita</string>
   <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Direita</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Posição do relógio</string>
+  <string name="status_bar_clock_position_right">Direita</string>
+  <string name="status_bar_clock_position_left">Esquerda</string>
+  <string name="status_bar_clock_position_center">Centro</string>
   <string name="status_bar_am_pm_title">Estilo AM/PM</string>
   <string name="status_bar_am_pm_info">Relógio 24 horas ativo</string>
   <string name="status_bar_am_pm_normal">Normal</string>
@@ -434,6 +438,7 @@
   <string name="preview_country_title">País</string>
   <string name="preview_carrier_title">Operadora</string>
   <string name="stats_collection_title">Obtenção de estatísticas</string>
+  <string name="stats_collection_summary">Permitir que estatísticas de instalações e do dispositivo sejam coletadas</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Girar automaticamente a tela</string>
   <string name="display_rotation_title">Configurações de rotação</string>
@@ -472,6 +477,7 @@
   <string name="power_save_title">Economia extrema de energia</string>
   <string name="power_save_summary">Restringir o desempenho do dispositivo e as atividades em segundo plano para poupar energia</string>
   <string name="auto_power_save_title">Economia de energia automática</string>
+  <string name="auto_power_save_summary_on">Ativar automaticamente o modo de economia de energia aos %s por cento de bateria</string>
   <string name="auto_power_save_summary_off">Não ativar o modo de economia de energia automaticamente</string>
   <string name="app_perf_profiles_title">Otimização automática</string>
   <string name="app_perf_profiles_summary">Escolher automaticamente um perfil de desempenho adequado para aplicativos e padrões de uso</string>
@@ -487,5 +493,42 @@
   <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
   <string name="expanded_desktop_nothing_to_show_text">Desligue o alternador para personalizar a área de trabalho expandida por aplicativo</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Sons de carregamento</string>
+  <string name="charging_sounds_enabled_title">Ativar</string>
+  <string name="charging_sounds_enabled_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
+  <string name="power_notifications_vibrate_title">Vibrar</string>
+  <string name="charging_sounds_ringtone_title">Som de notificação</string>
+  <string name="charging_sounds_ringtone_silent">Silencioso</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gestos na tela</string>
+  <string name="touchscreen_gesture_settings_summary">Faça vários gestos na tela para ações rápidas</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Retorno tátil</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrar quando um gesto na tela for detectado</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Deslizar para baixo com dois dedos</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Deslizar para cima com um dedo</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar para baixo com um dedo</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar para esquerda com um dedo</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar para direita com um dedo</string>
+  <string name="touchscreen_gesture_up_arrow_title">Desenhe um \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Desenhe um \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Desenhe um \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Desenhar um \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Desenhar a letra \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Desenhar a letra \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Desenhe a letra \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Desenhar a letra \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Desenhar a letra \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Desenhar a letra \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Desenhar a letra \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Ação do gesto</string>
+  <string name="touchscreen_gesture_action_do_nothing">Não fazer nada</string>
+  <string name="touchscreen_gesture_action_flashlight">Ligar/desligar a lanterna</string>
+  <string name="touchscreen_gesture_action_camera">Abrir a câmera</string>
+  <string name="touchscreen_gesture_action_browser">Abrir o Navegador</string>
+  <string name="touchscreen_gesture_action_dialer">Abrir o discador</string>
+  <string name="touchscreen_gesture_action_email">Visualizar seus e-mails</string>
+  <string name="touchscreen_gesture_action_messages">Visualizar suas mensagens</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Reproduzir/pausar a reprodução de música</string>
+  <string name="touchscreen_gesture_action_previous_track">Retroceder para a faixa de música anterior</string>
+  <string name="touchscreen_gesture_action_next_track">Avançar para a próxima faixa de música</string>
 </resources>

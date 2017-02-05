@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Zobraziť počet čakajúcich oznámení na ikone v stavovom riadku</string>
   <string name="status_bar_quick_qs_pulldown_title">Rýchle vysunutie</string>
   <string name="status_bar_quick_qs_pulldown_summary">Potiahnutím stavového riadku dolu zo strany: %1$s, sa vysunie lišta rýchlych nastavení</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">vľavo</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">vpravo</string>
   <string name="status_bar_quick_qs_pulldown_off">Vypnúť</string>
   <string name="status_bar_quick_qs_pulldown_left">vľavo</string>
   <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
@@ -502,4 +500,35 @@
   <string name="charging_sounds_ringtone_title">Zvuk upozornenia</string>
   <string name="charging_sounds_ringtone_silent">Tichý</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gestá na dotykovej obrazovke</string>
+  <string name="touchscreen_gesture_settings_summary">Vykonávať rôzne gestá na dotykovej obrazovke pre rýchle akcie</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Hmatová odozva</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrovať ak je detekované gesto na dotykovej obrazovke</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Potiahnite nadol dvomi prstami</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Potiahnutie jedným prstom nahor</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Potiahnutie jedným prstom nadol</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Potiahnutie jedným prstom doľava</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Potiahnutie jedným prstom doprava</string>
+  <string name="touchscreen_gesture_up_arrow_title">Nakreslite znak \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Nakreslite znak \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Nakreslite znak \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Nakreslite znak \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Nakreslite písmeno \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Nakreslite písmeno \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Nakreslite písmeno \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Nakreslite písmeno \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Nakreslite písmeno \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Nakreslite písmeno \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Nakreslite písmeno \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Gestá</string>
+  <string name="touchscreen_gesture_action_do_nothing">Nerobiť nič</string>
+  <string name="touchscreen_gesture_action_flashlight">Zapnúť baterku</string>
+  <string name="touchscreen_gesture_action_camera">Spustiť fotoaparát</string>
+  <string name="touchscreen_gesture_action_browser">Otvoriť prehliadač</string>
+  <string name="touchscreen_gesture_action_dialer">Vytočiť hovor</string>
+  <string name="touchscreen_gesture_action_email">Zobrazenie e-mailov</string>
+  <string name="touchscreen_gesture_action_messages">Zobrazenie správ</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Spustiť/zastaviť prehrávanie hudby</string>
+  <string name="touchscreen_gesture_action_previous_track">Spustiť predchádzajúcu skladbu</string>
+  <string name="touchscreen_gesture_action_next_track">Preskočiť na ďalšiu skladbu</string>
 </resources>

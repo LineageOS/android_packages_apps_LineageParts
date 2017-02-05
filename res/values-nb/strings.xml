@@ -186,7 +186,7 @@
   <string name="power_end_call_summary">Avslutt anropet ved å trykke på strømknappen</string>
   <string name="swap_volume_buttons_title">Reorientere</string>
   <string name="swap_volume_buttons_summary">Tilpass volumknappene ettersom skjermen er rotert</string>
-  <string name="button_wake_title">Våkne enhet</string>
+  <string name="button_wake_title">Vekke enhet</string>
   <string name="volume_answer_call_title">Besvar anrop</string>
   <string name="volume_answer_call_summary">Besvar innkommende anrop ved å trykke på volumknappene</string>
   <string name="home_answer_call_title">Besvar anrop</string>
@@ -376,8 +376,6 @@
   <string name="status_bar_notif_count_summary">Vis antall ventende varsler</string>
   <string name="status_bar_quick_qs_pulldown_title">Rask rullegardinmeny</string>
   <string name="status_bar_quick_qs_pulldown_summary">Ved å dra ned fra %1$s side av statuslinjen, drar du ned Hurtiginnstillingene</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">venstre</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">høyre</string>
   <string name="status_bar_quick_qs_pulldown_off">Av</string>
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
@@ -502,4 +500,22 @@
   <string name="charging_sounds_ringtone_title">Varslingslyd</string>
   <string name="charging_sounds_ringtone_silent">Lydløs</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Berøringsskjerm bevegelser</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Haptisk tilbakemelding</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Dra ned med to fingre</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Dra opp med en finger</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Dra ned med en finger</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Dra til venstre med en finger</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Dra til høyre med en finger</string>
+  <string name="touchscreen_gesture_up_arrow_title">Tegn en \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Tegn en \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Tegn en \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Tegn en \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Tegn bokstaven \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Tegn bokstaven \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Tegn bokstaven \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Tegn bokstaven \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Tegn bokstaven \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Tegn bokstaven \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Tegn bokstaven \"Z\"</string>
 </resources>
