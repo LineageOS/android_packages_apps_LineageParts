@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Obre la càmera</string>
   <string name="camera_launch_summary">Una pulsació llarga i deixa anar per obrir la càmera</string>
   <string name="volbtn_music_controls_title">Controla la reproducció</string>
-  <string name="volbtn_music_controls_summary">Busca les pistes de música fent una pulsació llarga a les tecles de volum mentre la pantalla està apagada</string>
   <string name="volbtn_cursor_control_title">Control del cursor del teclat</string>
   <string name="volbtn_cursor_control_off">Deshabilitat</string>
   <string name="volbtn_cursor_control_on">Volum amunt/avall mou el cursor a esquerra/dreta</string>
@@ -500,6 +499,27 @@
   <string name="charging_sounds_ringtone_title">So de la notificació</string>
   <string name="charging_sounds_ringtone_silent">Silenci</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gestos a la pantalla tàctil</string>
+  <string name="touchscreen_gesture_settings_summary">Fes diversos gestos a la pantalla tàctil per fer accions ràpides</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Resposta hàptica</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibra quan es detecti un gest a la pantalla tàctil</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Llisca avall amb dos dits</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Llisca amunt amb un dit</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Llisca avall amb un dit</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Llisca a l\'esquerra amb un dit</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Llisca a la dreta amb un dit</string>
+  <string name="touchscreen_gesture_up_arrow_title">Dibuixa una \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Dibuixa una \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Dibuixa un \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Dibuixa un \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Dibuixa la lletra \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Dibuixa la lletra \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Dibuixa la lletra \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Dibuixa la lletra \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Dibuixa la lletra \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Dibuixa la lletra \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Dibuixa la lletra \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Acció gestual</string>
   <string name="touchscreen_gesture_action_do_nothing">No facis res</string>
   <string name="touchscreen_gesture_action_flashlight">Encén/apaga la llanterna</string>
   <string name="touchscreen_gesture_action_camera">Obre la càmera</string>
@@ -507,4 +527,7 @@
   <string name="touchscreen_gesture_action_dialer">Obre el marcador</string>
   <string name="touchscreen_gesture_action_email">Mostra els teus correus</string>
   <string name="touchscreen_gesture_action_messages">Mostra els teus missatges</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Reprodueix/pausa la reproducció de música</string>
+  <string name="touchscreen_gesture_action_previous_track">Navega a la pista de música anterior</string>
+  <string name="touchscreen_gesture_action_next_track">Vés a la següent pista de música</string>
 </resources>

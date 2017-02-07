@@ -177,7 +177,6 @@
   <string name="camera_launch_title">启动相机</string>
   <string name="camera_launch_summary">长按并松开将会启动相机</string>
   <string name="volbtn_music_controls_title">播放控制</string>
-  <string name="volbtn_music_controls_summary">当屏幕关闭时，长按音量键切换音乐</string>
   <string name="volbtn_cursor_control_title">键盘光标控制</string>
   <string name="volbtn_cursor_control_off">已禁用</string>
   <string name="volbtn_cursor_control_on">音量+/-光标左/右移动</string>

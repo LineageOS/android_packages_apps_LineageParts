@@ -177,7 +177,6 @@
   <string name="camera_launch_title">カメラを起動</string>
   <string name="camera_launch_summary">長押しして離したときにカメラを起動する</string>
   <string name="volbtn_music_controls_title">再生をコントロール</string>
-  <string name="volbtn_music_controls_summary">画面消灯時に音量ボタンを長押しして音楽トラックをシークする</string>
   <string name="volbtn_cursor_control_title">キーボードカーソルコントロール</string>
   <string name="volbtn_cursor_control_off">無効</string>
   <string name="volbtn_cursor_control_on">音量を上げる/下げるボタンでカーソルを左/右に移動する</string>

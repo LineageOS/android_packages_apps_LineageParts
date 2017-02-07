@@ -175,7 +175,6 @@
   <string name="camera_launch_title">Abiatu kamera</string>
   <string name="camera_launch_summary">Luze sakatu eta askatzeak kamera abiatuko du</string>
   <string name="volbtn_music_controls_title">Kontrolatu erreprodukzioa</string>
-  <string name="volbtn_music_controls_summary">Bilatu musika pistak bolumen teklak luze sakatuz pantaila itzalita dagoean</string>
   <string name="volbtn_cursor_control_title">Teklatu bidezko kurtsorearen kontrola</string>
   <string name="volbtn_cursor_control_off">Desgaituta</string>
   <string name="volbtn_cursor_control_on">Bolumena igo eta jaisteko botoiek kurtsorea ezkerrera eta eskumara mugitzen dute</string>

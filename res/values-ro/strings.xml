@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Lansare cameră foto</string>
   <string name="camera_launch_summary">O atingere lungă și o eliberare vor lansa camera foto</string>
   <string name="volbtn_music_controls_title">Controlați redarea</string>
-  <string name="volbtn_music_controls_summary">Căutați piese prin apăsarea lungă a butoanelor de volum când ecranul este oprit</string>
   <string name="volbtn_cursor_control_title">Control cursor tastatură</string>
   <string name="volbtn_cursor_control_off">Dezactivat</string>
   <string name="volbtn_cursor_control_on">Volum sus/jos mută cursorul stânga/dreapta</string>

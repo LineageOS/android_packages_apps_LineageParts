@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Iniciar cámara</string>
   <string name="camera_launch_summary">Una pulsación larga iniciará la cámara</string>
   <string name="volbtn_music_controls_title">Control de reproducción</string>
-  <string name="volbtn_music_controls_summary">Buscar pistas de música manteniendo pulsado en las teclas de volumen mientras la pantalla está apagada</string>
   <string name="volbtn_cursor_control_title">Control del cursor</string>
   <string name="volbtn_cursor_control_off">Desactivado</string>
   <string name="volbtn_cursor_control_on">Los botones subir y bajar volumen moverán el cursor a izquierda y derecha, respectivamente</string>

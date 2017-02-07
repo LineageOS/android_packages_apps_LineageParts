@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Iniciar cámara</string>
   <string name="camera_launch_summary">Una pulsación larga iniciará la cámara</string>
   <string name="volbtn_music_controls_title">Control de reproducción</string>
-  <string name="volbtn_music_controls_summary">Buscar pistas de música haciendo una pulsación larga en las teclas de volumen mientras la pantalla está apagada</string>
   <string name="volbtn_cursor_control_title">Control del cursor</string>
   <string name="volbtn_cursor_control_off">Desactivado</string>
   <string name="volbtn_cursor_control_on">Los botones subir y bajar volumen moverán el cursor a izquierda y derecha, respectivamente</string>
@@ -403,7 +402,7 @@
   <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Iconos de la barra de estado</string>
-  <string name="status_bar_icons_summary">Controlar qué iconos aparecen en la barra de estado</string>
+  <string name="status_bar_icons_summary">Elija los iconos que aparecerán en la barra de estado</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplicaciones protegidas</string>
   <string name="protected_apps_manager_summary">Gestionar que aplicaciones se ocultarán detrás de un bloqueo seguro</string>

@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Покрени камеру</string>
   <string name="camera_launch_summary">Дуги притисак и пуштање ће активирати камеру</string>
   <string name="volbtn_music_controls_title">Контроле за пуштање</string>
-  <string name="volbtn_music_controls_summary">Тражи музичке нумере дугим притиском дугмади за звук док је екран искључен</string>
   <string name="volbtn_cursor_control_title">Контрола курсора тастатуре</string>
   <string name="volbtn_cursor_control_off">Онемогућено</string>
   <string name="volbtn_cursor_control_on">Дугмићи за јачину звука покрећу курсор лево/десно</string>

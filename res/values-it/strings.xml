@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Avvia fotocamera</string>
   <string name="camera_launch_summary">Una pressione prolungata e il successivo rilascio attiveranno la fotocamera</string>
   <string name="volbtn_music_controls_title">Controllo riproduzione</string>
-  <string name="volbtn_music_controls_summary">Cambia la traccia musicale premendo a lungo i tasti del volume quando lo schermo è spento</string>
   <string name="volbtn_cursor_control_title">Controllo cursore tasti</string>
   <string name="volbtn_cursor_control_off">Disattivato</string>
   <string name="volbtn_cursor_control_on">Volume su/giù muove il cursore a sinistra/destra</string>
@@ -497,4 +496,35 @@
   <string name="charging_sounds_ringtone_title">Suono di notifica</string>
   <string name="charging_sounds_ringtone_silent">Silenzioso</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
+  <string name="touchscreen_gesture_settings_summary">Esegui vari movimenti sul touchscreen per azioni rapide</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Feedback tattile</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibra quando viene rilevata una gesture</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Scorri verso il basso con due dita</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Scorri verso l\'alto con un dito</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Scorri verso il basso con un dito</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Scorri a sinistra con un dito</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Scorri verso destra con un dito</string>
+  <string name="touchscreen_gesture_up_arrow_title">Disegna \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Disegna \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Disegna \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Disegna \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Disegna la lettera \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Disegna la lettera \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Disegna la lettera \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Disegna la lettera \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Disegna la lettera \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Disegna la lettera \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Disegna la lettera \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Azione gesture</string>
+  <string name="touchscreen_gesture_action_do_nothing">Non far nulla</string>
+  <string name="touchscreen_gesture_action_flashlight">Attiva/Disattiva torcia</string>
+  <string name="touchscreen_gesture_action_camera">Apri fotocamera</string>
+  <string name="touchscreen_gesture_action_browser">Apri browser</string>
+  <string name="touchscreen_gesture_action_dialer">Apri dialer</string>
+  <string name="touchscreen_gesture_action_email">Visualizza email</string>
+  <string name="touchscreen_gesture_action_messages">Visualizza messaggi</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Play/Pausa riproduzione musica</string>
+  <string name="touchscreen_gesture_action_previous_track">Passa al brano precedente</string>
+  <string name="touchscreen_gesture_action_next_track">Passa alla traccia successiva</string>
 </resources>

@@ -175,7 +175,6 @@
   <string name="camera_launch_title">Εκκίνηση φωτογρ. μηχανής</string>
   <string name="camera_launch_summary">Μια παρατεταμένη πίεση και απελευθέρωση θα εκκινήσει τη φωτογραφική μηχανή</string>
   <string name="volbtn_music_controls_title">Έλεγχος αναπαραγωγής</string>
-  <string name="volbtn_music_controls_summary">Αναζήτηση μουσικών κομμάτιών πιέζοντας παρατεταμένα τα πλήκτρα έντασης ενώ η οθόνη είναι απενεργοποιημένη</string>
   <string name="volbtn_cursor_control_title">Έλεγχος κέρσορα πληκτρολογίου</string>
   <string name="volbtn_cursor_control_off">Ανενεργό</string>
   <string name="volbtn_cursor_control_on">Το πλήκτρο έντασης πάνω/κάτω μετακινεί τον κέρσορα αριστερά/δεξιά</string>

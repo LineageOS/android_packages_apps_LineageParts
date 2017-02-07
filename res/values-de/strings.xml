@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Kamera starten</string>
   <string name="camera_launch_summary">Langes Drücken und Loslassen startet die Kamera</string>
   <string name="volbtn_music_controls_title">Wiedergabe steuern</string>
-  <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm durch langes Drücken der Lautstärketasten zum nächsten / vorherigen Titel springen</string>
   <string name="volbtn_cursor_control_title">Cursorsteuerung</string>
   <string name="volbtn_cursor_control_off">Deaktiviert</string>
   <string name="volbtn_cursor_control_on">Lauter-/Leiser-Taste bewegt den Cursor nach links/rechts</string>
@@ -500,7 +499,9 @@
   <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
   <string name="charging_sounds_ringtone_silent">Lautlos</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Bildschirmgesten</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Haptisches Feedback</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrieren, wenn eine Bildschirmgeste erkannt wurde</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Mit zwei Fingern nach unten wischen</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Mit einem Finger nach oben wischen</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Mit einem Finger nach unten wischen</string>
@@ -519,8 +520,10 @@
   <string name="touchscreen_gesture_letter_z_title">Zeichnen Sie den Buchstaben \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Gestenaktion</string>
   <string name="touchscreen_gesture_action_do_nothing">Nichts tun</string>
+  <string name="touchscreen_gesture_action_flashlight">Taschenlampe ein-/ausschalten</string>
   <string name="touchscreen_gesture_action_camera">Kamera öffnen</string>
   <string name="touchscreen_gesture_action_browser">Browser öffnen</string>
+  <string name="touchscreen_gesture_action_dialer">Telefon-App öffnen</string>
   <string name="touchscreen_gesture_action_email">Ihre E-Mails anzeigen</string>
   <string name="touchscreen_gesture_action_messages">Ihre Nachrichten anzeigen</string>
   <string name="touchscreen_gesture_action_play_pause_music">Musikwiedergabe starten/anhalten</string>

@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Mở máy ảnh</string>
   <string name="camera_launch_summary">Nhấn giữ và thả sẽ mở máy ảnh</string>
   <string name="volbtn_music_controls_title">Điều khiển phát lại</string>
-  <string name="volbtn_music_controls_summary">Chuyển bài hát bằng nhấn giữ các phím âm lượng khi màn hình đang tắt</string>
   <string name="volbtn_cursor_control_title">Điều khiển con trỏ bàn phím</string>
   <string name="volbtn_cursor_control_off">Đã tắt</string>
   <string name="volbtn_cursor_control_on">Âm lượng lên/xuống để chuyển con trỏ sang trái/phải</string>

@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Gunakan tampilan yang belum dikalibrasi</string>
   <string name="live_display_color_profile_adaptive_title">Adaptif</string>
   <string name="live_display_color_profile_adaptive_summary">Warna beradaptasi dengan kondisi sekitar</string>
+  <string name="live_display_color_profile_reading_title">Membaca</string>
+  <string name="live_display_color_profile_reading_summary">Warna-warna hangat untuk mengurangi kelelahan mata</string>
   <string name="color_calibration_title">Kalibrasi warna</string>
   <string name="color_calibration_summary">Kalibrasi warna layar</string>
   <string name="color_red_title">Merah</string>
@@ -175,7 +177,6 @@
   <string name="camera_launch_title">Buka kamera</string>
   <string name="camera_launch_summary">Tekan lama dan lepas akan meluncurkan kamera</string>
   <string name="volbtn_music_controls_title">Kontrol pemutaran</string>
-  <string name="volbtn_music_controls_summary">Mencari trek musik dengan menekan lama tombol volume saat layar mati</string>
   <string name="volbtn_cursor_control_title">Kendali kursor papan ketik</string>
   <string name="volbtn_cursor_control_off">Dimatikan</string>
   <string name="volbtn_cursor_control_on">Volume atas/bawah menggerakkan kursor kiri/kanan</string>
@@ -436,6 +437,7 @@
   <string name="preview_country_title">Negara</string>
   <string name="preview_carrier_title">Operator</string>
   <string name="stats_collection_title">Kumpulan statistik</string>
+  <string name="stats_collection_summary">Izinkan metrik pemasangan dan statistik perangkat untuk dikumpulkan</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Rotasi otomatis</string>
   <string name="display_rotation_title">Setelan rotasi</string>
@@ -474,9 +476,11 @@
   <string name="power_save_title">Penghemat daya ekstrim</string>
   <string name="power_save_summary">Membatasi aktivitas perangkat kinerja dan latar belakang untuk menghemat daya</string>
   <string name="auto_power_save_title">Penghemat daya otomatis</string>
+  <string name="auto_power_save_summary_on">Otomatis mengaktifkan mode hemat daya saat baterai %s</string>
   <string name="auto_power_save_summary_off">Jangan hidupkan mode hemat daya otomatis</string>
   <string name="app_perf_profiles_title">Otomatis optimasi</string>
   <string name="app_perf_profiles_summary">Otomatis memilih profil performa sesuai untuk berbagai aplikasi</string>
+  <string name="auto_power_save_never">Jangan pernah</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Desktop diperluas</string>
   <string name="expanded_desktop_settings_summary">Memperluas ruang desktop anda tersedia dengan menyembunyikan status bar, navigasi, atau keduanya</string>
@@ -488,16 +492,42 @@
   <string name="expanded_desktop_style_hide_both">Sembunyikan keduanya</string>
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Suara pengisian daya</string>
+  <string name="charging_sounds_enabled_title">Aktifkan</string>
+  <string name="charging_sounds_enabled_summary">Putar suara ketika menghubungkan atau melepaskan sumber daya</string>
+  <string name="power_notifications_vibrate_title">Getar</string>
   <string name="charging_sounds_ringtone_title">Suara pemberitahuan</string>
   <string name="charging_sounds_ringtone_silent">Senyap</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gerakan layar sentuh</string>
+  <string name="touchscreen_gesture_settings_summary">Lakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Umpan balik haptik</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Bergetar ketika gerakan layar sentuh terdeteksi</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Usap ke bawah dengan dua jari</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Usap ke atas dengan satu jari</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Usap ke bawah dengan satu jari</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Usap ke kiri dengan satu jari</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Usap ke kanan dengan satu jari</string>
+  <string name="touchscreen_gesture_up_arrow_title">Gambar \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Gambar \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Gambar \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Gambar \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Gambar huruf \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Gambar huruf \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Gambar huruf \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Gambar huruf \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Gambar huruf \"S\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Gambar huruf \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Gambar huruf \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Tindakan gerakan</string>
+  <string name="touchscreen_gesture_action_do_nothing">Jangan lakukan apa-apa</string>
+  <string name="touchscreen_gesture_action_flashlight">Hidup/matikan senter</string>
   <string name="touchscreen_gesture_action_camera">Buka kamera</string>
   <string name="touchscreen_gesture_action_browser">Buka perambaan</string>
+  <string name="touchscreen_gesture_action_dialer">Buka telepon</string>
   <string name="touchscreen_gesture_action_email">Lihat email Anda</string>
   <string name="touchscreen_gesture_action_messages">Lihat pesan Anda</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Putar/jeda pemutaran musik</string>
+  <string name="touchscreen_gesture_action_previous_track">Kembali ke trek musik sebelumnya</string>
+  <string name="touchscreen_gesture_action_next_track">Lanjut ke trek musik berikutnya</string>
 </resources>

@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Spustiť fotoaparát</string>
   <string name="camera_launch_summary">Dlhé stlačenie a uvoľnenie spustí fotoaparát</string>
   <string name="volbtn_music_controls_title">Ovládanie prehrávania</string>
-  <string name="volbtn_music_controls_summary">Dlhé stlačenie tlačidiel hlasitosti počas vypnutej obrazovky prepne hudobné stopy</string>
   <string name="volbtn_cursor_control_title">Kontrola kurzoru tlačidlami hlasitosti</string>
   <string name="volbtn_cursor_control_off">Zakázané</string>
   <string name="volbtn_cursor_control_on">Tlačidlá hlasitosti posunú kurzor vľavo/vpravo</string>

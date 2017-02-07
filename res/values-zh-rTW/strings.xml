@@ -177,7 +177,6 @@
   <string name="camera_launch_title">開啟相機</string>
   <string name="camera_launch_summary">按住並放開將會啟動相機</string>
   <string name="volbtn_music_controls_title">控制播放</string>
-  <string name="volbtn_music_controls_summary">在顯示螢幕關閉時長按音量鍵可尋找音樂曲目</string>
   <string name="volbtn_cursor_control_title">鍵盤游標控制</string>
   <string name="volbtn_cursor_control_off">已停用</string>
   <string name="volbtn_cursor_control_on">音量上/下使游標右/左移動</string>

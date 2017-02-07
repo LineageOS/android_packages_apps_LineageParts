@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Spuštění fotoaparátu</string>
   <string name="camera_launch_summary">Dlouhým stiskem bude spuštěn fotoaparát</string>
   <string name="volbtn_music_controls_title">Ovládání přehrávání</string>
-  <string name="volbtn_music_controls_summary">Při vypnuté obrazovce posouvat v hudebních stopách dlouhým stiskem tlačítek hlasitosti</string>
   <string name="volbtn_cursor_control_title">Ovládání kurzoru v textu</string>
   <string name="volbtn_cursor_control_off">Zakázáno</string>
   <string name="volbtn_cursor_control_on">Tlačítka hlasitosti nahoru/dolu posunou kurzor vlevo/vpravo</string>

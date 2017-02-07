@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="cmparts_title">LineageOS instellingen</string>
+  <string name="cmparts_title">LineageOS-instellingen</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Laden\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -53,7 +53,7 @@
   <string name="privacy_guard_help_title">Help</string>
   <string name="privacy_guard_reset_title">Opnieuw instellen</string>
   <string name="privacy_guard_reset_text">Machtigingen opnieuw instellen?</string>
-  <string name="privacy_guard_help_text">In dit scherm kunt u kiezen voor welke apps Privacy Guard actief moeten zijn door eenvoudig op ze te tikken. Geselecteerde apps zullen geen toegang hebben tot uw persoonlijke gegevens, zoals contacten, berichten, locatie of gesprekslijsten. Door lang te drukken op een app kunt u specifieke app permissies instellen.\n\nStandaard ingebouwde apps worden niet weergegeven. Mocht u deze willen weergeven, selecteer dan de respectievelijke opties in het menu.</string>
+  <string name="privacy_guard_help_text">Op dit scherm kunt u kiezen voor welke apps Privacybescherming ingeschakeld moet zijn door op ze te tikken. Geselecteerde apps zullen geen toegang hebben tot persoonsgegevens zoals contacten, berichten of gespreksstatistieken. Door een app lang aan te raken opent het info-scherm voor die app.\n\nIngebouwde apps worden standaard niet getoond, maar kunnen getoond worden door de desbetreffende optie in het menu te selecteren.</string>
   <string name="privacy_guard_manager_show_system_apps">Ingebouwde apps tonen</string>
   <string name="privacy_guard_advanced_settings_title">Geavanceerd</string>
   <string name="privacy_guard_notification_title">Melding weergeven</string>
@@ -177,20 +177,19 @@
   <string name="camera_launch_title">Camera openen</string>
   <string name="camera_launch_summary">Lang indrukken en loslaten om camera te openen</string>
   <string name="volbtn_music_controls_title">Afspelen beheren</string>
-  <string name="volbtn_music_controls_summary">Blader door muziek door middel van het lang indrukken van de volumeknoppen wanneer het scherm uit is</string>
   <string name="volbtn_cursor_control_title">Toetsenbordcursor</string>
   <string name="volbtn_cursor_control_off">Uitgeschakeld</string>
   <string name="volbtn_cursor_control_on">Volume omhoog/omlaag beweegt cursor naar links/rechts</string>
   <string name="volbtn_cursor_control_on_reverse">Volume omhoog/omlaag beweegt cursor naar rechts/links</string>
   <string name="power_end_call_title">Gesprek beëindigen</string>
-  <string name="power_end_call_summary">De huidige oproep beëindigen door op de aan/uit-knop te drukken</string>
+  <string name="power_end_call_summary">Huidige oproep beëindigen door op de aan/uit-knop te drukken</string>
   <string name="swap_volume_buttons_title">Oriëntatie</string>
   <string name="swap_volume_buttons_summary">Volumeknoppen omdraaien indien het scherm gedraaid is</string>
   <string name="button_wake_title">Apparaat ontwaken</string>
   <string name="volume_answer_call_title">Oproep beantwoorden</string>
-  <string name="volume_answer_call_summary">Binnenkomende oproepen beantwoorden met volumeknoppen</string>
+  <string name="volume_answer_call_summary">Inkomende oproepen beantwoorden door op de volumeknoppen te drukken</string>
   <string name="home_answer_call_title">Oproep beantwoorden</string>
-  <string name="home_answer_call_summary">Binnenkomende oproepen beantwoorden met de home knop</string>
+  <string name="home_answer_call_summary">Inkomende oproepen beantwoorden door op de thuisknop te drukken</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Verlichting</string>
   <string name="button_backlight_enabled">Knoppen verlichten</string>
@@ -231,7 +230,7 @@
   <string name="volume_keys_control_ring_stream_summary_off">Volumeknoppen passen mediavolume aan</string>
   <string name="camera_double_tap_power_gesture_title">Twee keer op aan/uit-knop drukken voor camera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
-  <string name="camera_double_tap_power_gesture_desc">Snel de camera openen zonder het scherm te ontgrendelen</string>
+  <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Verwijderen</string>
   <string name="profile_action_none">Niet wijzigen</string>
@@ -374,9 +373,10 @@
   <string name="status_bar_notif_count_title">Aantal meldingen tonen</string>
   <string name="status_bar_notif_count_summary">Aantal nieuwe meldingen tonen</string>
   <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
+  <string name="status_bar_quick_qs_pulldown_summary">%1$s van statusbalk opent Snelle Instellingen</string>
   <string name="status_bar_quick_qs_pulldown_off">Uit</string>
-  <string name="status_bar_quick_qs_pulldown_left">Links</string>
-  <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
+  <string name="status_bar_quick_qs_pulldown_left">Linkerkant</string>
+  <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Indeling klok</string>
   <string name="status_bar_clock_position_right">Rechts</string>
@@ -406,7 +406,7 @@
   <string name="protected_apps_manager_title">Beschermde apps</string>
   <string name="protected_apps_manager_summary">Beheren welke apps beschermd zijn</string>
   <!-- Contributors cloud activity -->
-  <string name="contributors_cloud_fragment_title">Medewerkers</string>
+  <string name="contributors_cloud_fragment_title">Bijdragers</string>
   <string name="contributors_cloud_loading_message">Informatie over bijdragers laden\u2026</string>
   <string name="contributors_cloud_failed_message">Kan informatie over bijdragers niet laden</string>
   <string name="contributor_info_menu">Informatie over bijdragers</string>
@@ -426,7 +426,7 @@
   <string name="anonymous_statistics_warning_title">Over</string>
   <string name="anonymous_statistics_warning">Door statistieken verzenden toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van LineageOS verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, dat uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
   <string name="enable_reporting_title">Statistieken verzenden</string>
-  <string name="preview_data_title">Toon voorbeeld</string>
+  <string name="preview_data_title">Voorbeeld van gegevens</string>
   <string name="view_stats_title">Statistieken tonen</string>
   <string name="anonymous_learn_more">Meer informatie</string>
   <!-- Anonymous Statistics - Preview -->
@@ -444,7 +444,7 @@
   <string name="display_rotation_disabled">Auto-rotatie is uitgeschakeld</string>
   <string name="display_rotation_unit">graden</string>
   <string name="display_lockscreen_rotation_title">Vergrendelingsscherm automatisch draaien</string>
-  <string name="display_rotation_category_title">Rotatie modus</string>
+  <string name="display_rotation_category_title">Draaistanden</string>
   <string name="display_rotation_0_title">0 graden</string>
   <string name="display_rotation_90_title">90 graden</string>
   <string name="display_rotation_180_title">180 graden</string>
@@ -475,7 +475,7 @@
   <string name="power_save_title">Extreme energiebesparing</string>
   <string name="power_save_summary">Beperk de prestaties en achtergrondactiviteit van het apparaat om energie te besparen</string>
   <string name="auto_power_save_title">Automatische energiebesparing</string>
-  <string name="auto_power_save_summary_on">Automatisch inschakelen van energiebesparende modus op %s batterij</string>
+  <string name="auto_power_save_summary_on">Energiebesparende modus automatisch inschakelen op %s accu</string>
   <string name="auto_power_save_summary_off">Energiebesparende modus niet automatisch inschakelen</string>
   <string name="app_perf_profiles_title">Automatische optimalisatie</string>
   <string name="app_perf_profiles_summary">Automatisch een passend prestatieprofiel kiezen voor verschillende apps en gebruikspatronen</string>
@@ -498,9 +498,14 @@
   <string name="charging_sounds_ringtone_silent">Stil</string>
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">Schermgebaren</string>
-  <string name="touchscreen_gesture_settings_summary">Gebruik schermgebaren voor snelle akties</string>
+  <string name="touchscreen_gesture_settings_summary">Schermgebaren gebruiken voor snelle acties</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Trillen</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Trillen wanneer een schermgebaar herkend wordt</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Omlaag vegen met twee vingers</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Omhoog vegen met één vinger</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Omlaag vegen met één vinger</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Naar links vegen met één vinger</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Naar rechts vegen met één vinger</string>
   <string name="touchscreen_gesture_up_arrow_title">Teken een \"Λ\"</string>
   <string name="touchscreen_gesture_down_arrow_title">Teken een \"V\"</string>
   <string name="touchscreen_gesture_left_arrow_title">Teken een \"&lt;\"</string>
@@ -512,15 +517,15 @@
   <string name="touchscreen_gesture_letter_s_title">Teken een \"S\"</string>
   <string name="touchscreen_gesture_letter_w_title">Teken een \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Teken een \"Z\"</string>
-  <string name="touchscreen_gesture_action_dialog_title">Aktie na gebaar</string>
-  <string name="touchscreen_gesture_action_do_nothing">Niks doen</string>
+  <string name="touchscreen_gesture_action_dialog_title">Actie na gebaar</string>
+  <string name="touchscreen_gesture_action_do_nothing">Niets doen</string>
   <string name="touchscreen_gesture_action_flashlight">Zaklamp aan/uit</string>
-  <string name="touchscreen_gesture_action_camera">Op de camera</string>
-  <string name="touchscreen_gesture_action_browser">Open de browser</string>
-  <string name="touchscreen_gesture_action_dialer">Open bellen</string>
-  <string name="touchscreen_gesture_action_email">Bekijk emails</string>
-  <string name="touchscreen_gesture_action_messages">Bekijk berichten</string>
-  <string name="touchscreen_gesture_action_play_pause_music">Speel/pauzeer muziek</string>
+  <string name="touchscreen_gesture_action_camera">Camera openen</string>
+  <string name="touchscreen_gesture_action_browser">Browser openen</string>
+  <string name="touchscreen_gesture_action_dialer">Telefoon-app openen</string>
+  <string name="touchscreen_gesture_action_email">E-mails bekijken</string>
+  <string name="touchscreen_gesture_action_messages">Berichten bekijken</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Muziek afspelen/pauzeren</string>
   <string name="touchscreen_gesture_action_previous_track">Ga terug naar vorige nummer</string>
   <string name="touchscreen_gesture_action_next_track">Spring naar volgende nummer</string>
 </resources>

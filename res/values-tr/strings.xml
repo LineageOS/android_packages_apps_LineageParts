@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Kamerayı başlat</string>
   <string name="camera_launch_summary">Uzun basıp bırakma kamerayı başlatacak</string>
   <string name="volbtn_music_controls_title">Müzik kontrolü</string>
-  <string name="volbtn_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun basarak müziği değiştir</string>
   <string name="volbtn_cursor_control_title">Klavye imleç kontrolü</string>
   <string name="volbtn_cursor_control_off">Devre dışı</string>
   <string name="volbtn_cursor_control_on">Ses yukarı/aşağı imleci sola/sağa kaydırır</string>

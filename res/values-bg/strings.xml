@@ -36,8 +36,8 @@
   <string name="yes">Да</string>
   <string name="no">Не</string>
   <string name="search">Търсене</string>
-  <string name="disabled">Изключена</string>
-  <string name="enabled">Разрешено</string>
+  <string name="disabled">Деактивирано</string>
+  <string name="enabled">Активирано</string>
   <!-- Privacy Settings Header item -->
   <string name="privacy_settings_title">Поверителност</string>
   <!-- Privacy Guard -->
@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Стартиране на камерата</string>
   <string name="camera_launch_summary">Дълго натискане и освобождаване за стартиране на камерата</string>
   <string name="volbtn_music_controls_title">Управление на музика</string>
-  <string name="volbtn_music_controls_summary">Смяна на песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
   <string name="volbtn_cursor_control_title">Контрол на курсора</string>
   <string name="volbtn_cursor_control_off">Изключен</string>
   <string name="volbtn_cursor_control_on">Звука нагоре/надолу премества курсора наляво/надясно</string>
@@ -304,7 +303,7 @@
   <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
   <string name="profile_volumeoverrides_title">Сила на звука</string>
-  <string name="connection_state_enabled">Разрешено</string>
+  <string name="connection_state_enabled">Разрешени</string>
   <string name="volume_override_summary">Задаване на %1$s/%2$s</string>
   <string name="profile_volume_override_checkbox_label">Отмяна силата на звука</string>
   <!-- Menu item for managing profiles -->

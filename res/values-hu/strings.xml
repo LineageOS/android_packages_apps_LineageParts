@@ -462,4 +462,17 @@
   <string name="charging_sounds_ringtone_title">Értesítési hang</string>
   <string name="charging_sounds_ringtone_silent">Néma</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_up_arrow_title">Rajzoljon egy \"Λ\"-t</string>
+  <string name="touchscreen_gesture_down_arrow_title">Rajzoljon egy \"V\" betűt</string>
+  <string name="touchscreen_gesture_letter_c_title">Rajzoljon egy \"C\" betűt</string>
+  <string name="touchscreen_gesture_letter_e_title">Rajzoljon egy \"e\" betűt</string>
+  <string name="touchscreen_gesture_letter_o_title">Rajzoljon egy \"O\" betűt</string>
+  <string name="touchscreen_gesture_letter_m_title">Rajzoljon egy \"M\" betűt</string>
+  <string name="touchscreen_gesture_letter_s_title">Rajzoljon egy \"S\" betűt</string>
+  <string name="touchscreen_gesture_letter_w_title">Rajzoljon egy \"W\" betűt</string>
+  <string name="touchscreen_gesture_letter_z_title">Rajzoljon egy \"Z\" betűt</string>
+  <string name="touchscreen_gesture_action_do_nothing">Nincs művelet</string>
+  <string name="touchscreen_gesture_action_camera">Nyissa meg a kamerát</string>
+  <string name="touchscreen_gesture_action_browser">Nyissa meg a böngészőt</string>
+  <string name="touchscreen_gesture_action_dialer">Nyissa meg a tárcsázót</string>
 </resources>

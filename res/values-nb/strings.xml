@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Start kamera</string>
   <string name="camera_launch_summary">Et langt trykk-og-slipp starter kameraet</string>
   <string name="volbtn_music_controls_title">Kontrollere avspilling</string>
-  <string name="volbtn_music_controls_summary">Søk musikkspor ved å holde inne volumtastene mens skjermen er av</string>
   <string name="volbtn_cursor_control_title">Kontroll av tastaturmarkør</string>
   <string name="volbtn_cursor_control_off">Deaktivert</string>
   <string name="volbtn_cursor_control_on">Volum opp/ned flytter markøren venstre/høyre</string>

@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Käynnistä kamera</string>
   <string name="camera_launch_summary">Pitkä painallus ja vapautus avaa kameran</string>
   <string name="volbtn_music_controls_title">Toiston ohjaus</string>
-  <string name="volbtn_music_controls_summary">Vaihda kappaletta pitämällä äänenvoimakkuusnäppäimiä pohjassa näytön ollessa suljettu</string>
   <string name="volbtn_cursor_control_title">Kohdistimen ohjaus näppäimistöllä</string>
   <string name="volbtn_cursor_control_off">Pois käytöstä</string>
   <string name="volbtn_cursor_control_on">Äänenvoimakkuus ylös/alas ohjaa kohdistinta vasemmalle/oikealle</string>

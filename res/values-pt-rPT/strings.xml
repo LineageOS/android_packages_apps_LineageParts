@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Iniciar a câmara</string>
   <string name="camera_launch_summary">Pressionar algum tempo e depois soltar iniciará a câmara</string>
   <string name="volbtn_music_controls_title">Controlo de reprodução</string>
-  <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
   <string name="volbtn_cursor_control_title">Controlo do cursor de teclado</string>
   <string name="volbtn_cursor_control_off">Inativo</string>
   <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para a esquerda/direita</string>
@@ -377,8 +376,8 @@
   <string name="status_bar_quick_qs_pulldown_title">Puxar para baixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">O canto %1$s da barra de estado faz baixar o painel de definições rápidas</string>
   <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
-  <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
-  <string name="status_bar_quick_qs_pulldown_right">Direita</string>
+  <string name="status_bar_quick_qs_pulldown_left">esquerdo</string>
+  <string name="status_bar_quick_qs_pulldown_right">direito</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Posição do relógio</string>
   <string name="status_bar_clock_position_right">Direita</string>

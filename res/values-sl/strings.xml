@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Zaženi fotoaparat</string>
   <string name="camera_launch_summary">Dolgi pritisk in izpustitev bo zagnal fotoaparat</string>
   <string name="volbtn_music_controls_title">Nadzor predvajanja</string>
-  <string name="volbtn_music_controls_summary">Išči skladbe z dolgim pritiskom na tipki za glasnost, ko je zaslon izklopljen</string>
   <string name="volbtn_cursor_control_title">Nadzor kazalca s tipkovnico</string>
   <string name="volbtn_cursor_control_off">Onemogočen</string>
   <string name="volbtn_cursor_control_on">Glasnost gor/dol premakne kazalec levo/desno</string>

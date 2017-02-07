@@ -175,7 +175,6 @@
   <string name="camera_launch_title">Включить камеру</string>
   <string name="camera_launch_summary">Открывать приложение камеры при долгом нажатии кнопки</string>
   <string name="volbtn_music_controls_title">Управление плеером</string>
-  <string name="volbtn_music_controls_summary">Переключать музыкальные треки долгим нажатием кнопок громкости при выключенном экране</string>
   <string name="volbtn_cursor_control_title">Перемещение курсо­­­­­­ра</string>
   <string name="volbtn_cursor_control_off">Отключен</string>
   <string name="volbtn_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>

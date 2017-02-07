@@ -68,10 +68,15 @@
   <string name="notification_light_advanced_title">Zaawansowane</string>
   <string name="notification_light_applist_title">Aplikacje</string>
   <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_missed_call_title">Nieodebrane połączenie</string>
+  <string name="notification_light_voicemail_title">Poczta głosowa</string>
   <string name="notification_light_automagic">Wybierz kolory automatycznie</string>
   <string name="notification_light_automagic_summary">Wybieranie kolorów automatycznie</string>
   <!-- Lights settings, LED notification -->
   <!-- LiveDisplay -->
+  <string name="live_display_color_profile_natural_title">Naturalne</string>
+  <string name="live_display_color_profile_natural_summary">Realistyczne kolory i nasycone barwy</string>
+  <string name="live_display_color_profile_dynamic_title">Dynamiczne</string>
   <string name="color_red_title">Czerwony</string>
   <string name="color_green_title">Zielony</string>
   <string name="color_blue_title">Niebieski</string>
@@ -179,8 +184,20 @@
   <string name="profile_lockmode_disabled_summary">Wyłącz blokadę ekranu</string>
   <string name="profile_airplanemode_title">Tryb samolotowy</string>
   <string name="profile_brightness_title">Jasność ekranu</string>
+  <string name="profile_brightness_override_summary">Ustaw na %1$d%%</string>
+  <string name="profile_brightness_override_checkbox_label">Nadpisz jasność</string>
   <!-- Connection override toggles (not all are used at this time ) -->
+  <string name="toggleWifi">Wi\u2011Fi</string>
+  <string name="toggleWifiAp">Przenośny hotspot Wi\u2011Fi</string>
+  <string name="toggleBluetooth">Bluetooth</string>
   <!-- Sound settings screen -->
+  <string name="ring_mode_title">Tryb dzwonka</string>
+  <string name="ring_mode_vibrate">Wibracja</string>
+  <string name="ring_mode_mute">Wyciszony</string>
+  <string name="ring_volume_title">Głośność dzwonka</string>
+  <string name="incoming_call_volume_title">Dzwonek</string>
+  <string name="notification_volume_title">Powiadomienie</string>
+  <string name="media_volume_title">Multimedia</string>
   <string name="alarm_volume_title">Alarm</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
@@ -188,7 +205,13 @@
   <string name="status_bar_notif_count_title">Pokaż liczbę powiadomień</string>
   <string name="status_bar_quick_qs_pulldown_title">Szybkie rozwijanie</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija szybkie ustawienia</string>
+  <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
+  <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Pozycja zegara</string>
+  <string name="status_bar_am_pm_title">Znacznik AM/PM</string>
+  <string name="status_bar_am_pm_small">Mały</string>
+  <string name="status_bar_am_pm_hidden">Ukryty</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Styl wskaźnika baterii</string>
   <string name="status_bar_battery_style_icon_portrait">Ikona pionowo</string>
@@ -203,6 +226,7 @@
   <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikony paska stanu</string>
+  <string name="status_bar_icons_summary">Wybierz, które ikony będą wyświetlane na pasku stanu</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Chronione aplikacje</string>
   <!-- Contributors cloud activity -->
@@ -222,6 +246,7 @@
   <string name="preview_carrier_title">Operator</string>
   <string name="stats_collection_title">Zbieranie statystyk</string>
   <!-- Display : Rotation  -->
+  <string name="display_rotation_title">Ustawienia obracania</string>
   <string name="display_rotation_unit">stopni(e)</string>
   <string name="display_lockscreen_rotation_title">Autoobracanie ekranu blokady</string>
   <string name="display_rotation_0_title">0 stopni</string>
@@ -244,6 +269,7 @@
   <string name="perf_profile_settings_title">Oszczędzanie baterii i wydajność</string>
   <string name="perf_profile_overview_summary">Bieżący profil: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
   <string name="perf_profile_fail_toast">Profil wydajności jest obecnie niedostępny</string>
+  <string name="power_save_category_title">Oszczędzanie baterii</string>
   <string name="auto_power_save_never">Nigdy</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Rozszerzony pulpit</string>
@@ -252,5 +278,6 @@
   <string name="expanded_desktop_style_hide_navigation">Ukryj pasek nawigacyjny</string>
   <string name="expanded_desktop_style_hide_both">Ukryj oba</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_ringtone_title">Dźwięk powiadomienia</string>
   <!-- Gestures: Touchscreen gestures -->
 </resources>

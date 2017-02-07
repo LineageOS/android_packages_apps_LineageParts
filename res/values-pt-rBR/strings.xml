@@ -44,7 +44,7 @@
   <string name="privacy_guard_switch_label">Ativar Proteção à Privacidade</string>
   <string name="privacy_guard_dlg_title">Ativar Proteção à Privacidade?</string>
   <string name="privacy_guard_dlg_text">Quando a Proteção à Privacidade estiver ativada, o aplicativo não será capaz de acessar dados pessoais como contatos, mensagens e registros de chamadas.</string>
-  <string name="privacy_guard_dlg_system_app_text">Ao habilitar a Proteção à Privacidade para um aplicativo de sistema, o aplicativo não será capaz de acessar ou prover dados pessoais. Isto pode causar problemas em outros aplicativos.</string>
+  <string name="privacy_guard_dlg_system_app_text">Ao ativar a Proteção à Privacidade para um aplicativo do sistema, o aplicativo não será capaz de acessar ou fornecer dados pessoais. Isto poderá problemas em outros aplicativos.</string>
   <string name="privacy_guard_default_title">Habilitado por padrão</string>
   <string name="privacy_guard_default_summary_on">Proteção à Privacidade está ativa</string>
   <string name="privacy_guard_default_summary">Ativar por padrão para aplicativos recém-instalados</string>
@@ -177,7 +177,6 @@
   <string name="camera_launch_title">Iniciar a câmera</string>
   <string name="camera_launch_summary">Mantenha pressionado e solte para abrir a câmera</string>
   <string name="volbtn_music_controls_title">Controlar a reprodução</string>
-  <string name="volbtn_music_controls_summary">Buscar músicas mantendo pressionado o botão de volume enquanto a tela estiver desligada</string>
   <string name="volbtn_cursor_control_title">Controle de cursor do teclado</string>
   <string name="volbtn_cursor_control_off">Desativado</string>
   <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para esquerda/direita</string>
