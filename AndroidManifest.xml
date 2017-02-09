@@ -219,5 +219,18 @@
             </intent-filter>
         </activity-alias>
 
+        <activity android:name=".profiles.NFCProfile">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="cm/profile" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".profiles.NFCProfileSelect"
+            android:label="@string/profile_select"
+            android:excludeFromRecents="true"/>
+
     </application>
 </manifest>
