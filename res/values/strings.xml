@@ -592,6 +592,7 @@
     <string name="touchscreen_gesture_letter_o_title">Draw the letter \"O\"</string>
     <string name="touchscreen_gesture_letter_m_title">Draw the letter \"M\"</string>
     <string name="touchscreen_gesture_letter_s_title">Draw the letter \"S\"</string>
+    <string name="touchscreen_gesture_letter_v_title">Draw the letter \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">Draw the letter \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Draw the letter \"Z\"</string>
 
