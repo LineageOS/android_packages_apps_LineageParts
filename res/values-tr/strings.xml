@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Kamerayı başlat</string>
   <string name="camera_launch_summary">Uzun basıp bırakma kamerayı başlatacak</string>
   <string name="volbtn_music_controls_title">Müzik kontrolü</string>
+  <string name="volbtn_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun basarak müziği değiştirin</string>
   <string name="volbtn_cursor_control_title">Klavye imleç kontrolü</string>
   <string name="volbtn_cursor_control_off">Devre dışı</string>
   <string name="volbtn_cursor_control_on">Ses yukarı/aşağı imleci sola/sağa kaydırır</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Kamera için güç tuşuna iki defa bas</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Ekran kilidinizi açmadan kamerayı hızlıca açın</string>
+  <string name="torch_long_press_power_gesture_title">El feneri için uzun basın</string>
+  <string name="torch_long_press_power_gesture_desc">Ekran kapalıyken ses tuşlarına uzun basarak el fenerini etkinleştirin</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Sil</string>
   <string name="profile_action_none">Değiştirme</string>

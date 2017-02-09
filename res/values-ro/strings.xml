@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Lansare cameră foto</string>
   <string name="camera_launch_summary">O atingere lungă și o eliberare vor lansa camera foto</string>
   <string name="volbtn_music_controls_title">Controlați redarea</string>
+  <string name="volbtn_music_controls_summary">Căutați piese prin apăsarea lungă a butoanelor de volum când ecranul este oprit</string>
   <string name="volbtn_cursor_control_title">Control cursor tastatură</string>
   <string name="volbtn_cursor_control_off">Dezactivat</string>
   <string name="volbtn_cursor_control_on">Volum sus/jos mută cursorul stânga/dreapta</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Apăsați butonul de pornire de 2 ori pentru cameră</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Deschideți rapid camera foto fără să deblocați ecranul</string>
+  <string name="torch_long_press_power_gesture_title">Apăsaţi lung pentru lanternă</string>
+  <string name="torch_long_press_power_gesture_desc">Activați lanterna prin apăsarea lungă a butonului pornire în timp ce ecranul este oprit</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Ștergeți</string>
   <string name="profile_action_none">Lăsați neschimbat</string>

@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Iniciar cámara</string>
   <string name="camera_launch_summary">Una pulsación larga iniciará la cámara</string>
   <string name="volbtn_music_controls_title">Control de reproducción</string>
+  <string name="volbtn_music_controls_summary">Cambia entre pistas de música manteniendo pulsadas las teclas de volumen cuando la pantalla esté apagada</string>
   <string name="volbtn_cursor_control_title">Control del cursor</string>
   <string name="volbtn_cursor_control_off">Desactivado</string>
   <string name="volbtn_cursor_control_on">Los botones subir y bajar volumen moverán el cursor a izquierda y derecha, respectivamente</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Pulsar dos veces el botón de encendido para la cámara</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abrir rápidamente la cámara sin desbloquear la pantalla</string>
+  <string name="torch_long_press_power_gesture_title">Mantenega pulsado para activar la linterna</string>
+  <string name="torch_long_press_power_gesture_desc">Mantenga pulsado el botón de encendido para activar la linterna cuando la pantalla esté apagada</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Borrar</string>
   <string name="profile_action_none">Dejar sin cambios</string>

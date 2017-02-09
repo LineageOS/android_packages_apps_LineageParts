@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Avvia fotocamera</string>
   <string name="camera_launch_summary">Una pressione prolungata e il successivo rilascio attiveranno la fotocamera</string>
   <string name="volbtn_music_controls_title">Controllo riproduzione</string>
+  <string name="volbtn_music_controls_summary">Cambia la traccia musicale premendo a lungo i tasti del volume quando lo schermo è spento</string>
   <string name="volbtn_cursor_control_title">Controllo cursore tasti</string>
   <string name="volbtn_cursor_control_off">Disattivato</string>
   <string name="volbtn_cursor_control_on">Volume su/giù muove il cursore a sinistra/destra</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Premi due volte il tasto di accensione per avviare la fotocamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>
+  <string name="torch_long_press_power_gesture_title">Premi a lungo per la torcia</string>
+  <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo é spento</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Elimina</string>
   <string name="profile_action_none">Lascia invariato</string>

@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Obre la càmera</string>
   <string name="camera_launch_summary">Una pulsació llarga i deixa anar per obrir la càmera</string>
   <string name="volbtn_music_controls_title">Controla la reproducció</string>
+  <string name="volbtn_music_controls_summary">Busca les pistes de música fent una pulsació llarga a les tecles de volum mentre la pantalla està apagada</string>
   <string name="volbtn_cursor_control_title">Control del cursor del teclat</string>
   <string name="volbtn_cursor_control_off">Deshabilitat</string>
   <string name="volbtn_cursor_control_on">Volum amunt/avall mou el cursor a esquerra/dreta</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Prem el botó d\'apagat dues vegades per a la càmera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Obre la càmera ràpidament sense desbloquejar la pantalla</string>
+  <string name="torch_long_press_power_gesture_title">Pulsació llarga per la torxa</string>
+  <string name="torch_long_press_power_gesture_desc">Activa la torxa fent una pulsació llarga del botó d\'apagat mentre la pantalla està apagada</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Esborra</string>
   <string name="profile_action_none">Deixa sense canvis</string>

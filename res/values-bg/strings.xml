@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Стартиране на камерата</string>
   <string name="camera_launch_summary">Дълго натискане и освобождаване за стартиране на камерата</string>
   <string name="volbtn_music_controls_title">Управление на музика</string>
+  <string name="volbtn_music_controls_summary">Смяна на песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
   <string name="volbtn_cursor_control_title">Контрол на курсора</string>
   <string name="volbtn_cursor_control_off">Изключен</string>
   <string name="volbtn_cursor_control_on">Звука нагоре/надолу премества курсора наляво/надясно</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Натиснете двукратно бутона за захранване за камера</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Бързо стартиране на камера без отключване на екрана</string>
+  <string name="torch_long_press_power_gesture_title">Активиране на фенерче</string>
+  <string name="torch_long_press_power_gesture_desc">Активиране на фенерчето чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Изтриване</string>
   <string name="profile_action_none">Остави непроменен</string>

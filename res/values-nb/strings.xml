@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Start kamera</string>
   <string name="camera_launch_summary">Et langt trykk-og-slipp starter kameraet</string>
   <string name="volbtn_music_controls_title">Kontrollere avspilling</string>
+  <string name="volbtn_music_controls_summary">Søk musikkspor ved å holde inne volumtastene mens skjermen er av</string>
   <string name="volbtn_cursor_control_title">Kontroll av tastaturmarkør</string>
   <string name="volbtn_cursor_control_off">Deaktivert</string>
   <string name="volbtn_cursor_control_on">Volum opp/ned flytter markøren venstre/høyre</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Dobbeltrykk strøm-knappen for å åpne kamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Åpne kameraet raskt uten å låse opp skjermen</string>
+  <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
+  <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Slett</string>
   <string name="profile_action_none">La stå uendret</string>
@@ -517,4 +520,14 @@
   <string name="touchscreen_gesture_letter_s_title">Tegn bokstaven \"S\"</string>
   <string name="touchscreen_gesture_letter_w_title">Tegn bokstaven \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Tegn bokstaven \"Z\"</string>
+  <string name="touchscreen_gesture_action_do_nothing">Ikke gjør noe</string>
+  <string name="touchscreen_gesture_action_flashlight">Slå av/på lommelykten</string>
+  <string name="touchscreen_gesture_action_camera">Åpne kameraet</string>
+  <string name="touchscreen_gesture_action_browser">Åpne nettleseren</string>
+  <string name="touchscreen_gesture_action_dialer">Åpne telefonen</string>
+  <string name="touchscreen_gesture_action_email">Se e-postene dine</string>
+  <string name="touchscreen_gesture_action_messages">Se meldingene dine</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Spill av/pause musikkavspilling</string>
+  <string name="touchscreen_gesture_action_previous_track">Gå til forrige musikkspor</string>
+  <string name="touchscreen_gesture_action_next_track">Hopp til neste musikkspor</string>
 </resources>

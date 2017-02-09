@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Spustiť fotoaparát</string>
   <string name="camera_launch_summary">Dlhé stlačenie a uvoľnenie spustí fotoaparát</string>
   <string name="volbtn_music_controls_title">Ovládanie prehrávania</string>
+  <string name="volbtn_music_controls_summary">Dlhé stlačenie tlačidiel hlasitosti počas vypnutej obrazovky prepne hudobné stopy</string>
   <string name="volbtn_cursor_control_title">Kontrola kurzoru tlačidlami hlasitosti</string>
   <string name="volbtn_cursor_control_off">Zakázané</string>
   <string name="volbtn_cursor_control_on">Tlačidlá hlasitosti posunú kurzor vľavo/vpravo</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Fotoaparát dvoj. stlačením Napájania</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Rýchlo spustiť fotoaparát dvojitým stlačením tlačidla Napájanie, bez odomknutia obrazovky</string>
+  <string name="torch_long_press_power_gesture_title">Dlhé stlačenie zapne Baterku</string>
+  <string name="torch_long_press_power_gesture_desc">Keď obrazovka je vypnutá, dlhé zatlačením tlačidla Napájanie zapne Baterku</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Odstrániť záložku</string>
   <string name="profile_action_none">Ponechať nezmenené</string>

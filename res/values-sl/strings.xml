@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Zaženi fotoaparat</string>
   <string name="camera_launch_summary">Dolgi pritisk in izpustitev bo zagnal fotoaparat</string>
   <string name="volbtn_music_controls_title">Nadzor predvajanja</string>
+  <string name="volbtn_music_controls_summary">Iščite skladbe z dolgim pritiskom na tipki za glasnost med izklopljenim zaslonom</string>
   <string name="volbtn_cursor_control_title">Nadzor kazalca s tipkovnico</string>
   <string name="volbtn_cursor_control_off">Onemogočen</string>
   <string name="volbtn_cursor_control_on">Glasnost gor/dol premakne kazalec levo/desno</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Dvakrat pritisnite gumb za vklop/izklop za fotoaparat</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Hitro odprite fotoaparat brez odklepanja zaslona</string>
+  <string name="torch_long_press_power_gesture_title">Dolg pritisk za svetilko</string>
+  <string name="torch_long_press_power_gesture_desc">Aktivirajte svetilko z dolgim pritiskom na gumb za vklop/izklop med izključenim zaslonom</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Izbriši</string>
   <string name="profile_action_none">Pusti nespremenjeno</string>

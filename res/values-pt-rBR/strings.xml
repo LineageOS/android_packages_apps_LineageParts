@@ -117,7 +117,7 @@
   <string name="live_display_low_power_title">Reduzir o consumo de energia</string>
   <string name="live_display_low_power_summary">Ajustar exibição para menor consumo de energia sem degradação</string>
   <string name="live_display_enhance_color_title">Realçar cores</string>
-  <string name="live_display_enhance_color_summary">Melhorar a vivacidade da cor de tons de pele, cenário e outras imagens</string>
+  <string name="live_display_enhance_color_summary">Melhorar a vivacidade das cores de tons de pele, cenário e outras imagens</string>
   <string name="live_display_color_profile_title">Perfil de cor</string>
   <string name="live_display_color_profile_standard_title">Padrão</string>
   <string name="live_display_color_profile_standard_summary">Cores precisas e brancos brilhantes</string>
@@ -173,7 +173,7 @@
   <string name="hardware_keys_action_last_app">Último aplicativo</string>
   <string name="hardware_keys_action_split_screen">Dividir a tela</string>
   <string name="camera_sleep_on_release_title">Espiar a tela</string>
-  <string name="camera_sleep_on_release_summary">Um toque parcial irá manter a tela ligada somente enquanto o botão estiver pressionado</string>
+  <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
   <string name="camera_launch_title">Iniciar a câmera</string>
   <string name="camera_launch_summary">Mantenha pressionado e solte para abrir a câmera</string>
   <string name="volbtn_music_controls_title">Controlar a reprodução</string>
@@ -425,7 +425,7 @@
   <string name="anonymous_statistics_title">Estatísticas LineageOS</string>
   <string name="anonymous_statistics_summary">Ajude a melhorar o LineageOS optando por enviar estatísticas anônimas</string>
   <string name="anonymous_statistics_warning_title">Sobre</string>
-  <string name="anonymous_statistics_warning">Optar por enviar estatísticas anônimas ao LineageOS permitirá que dados não-pessoais sejam enviados para os desenvolvedores do LineageOS para rastrear instalações únicas em dispositivos. As informações enviadas incluem um identificador único que não compromete sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara ver um exemplo dos dados enviados, toque em \'Pré-visualizar dados\'.</string>
+  <string name="anonymous_statistics_warning">Optar por enviar estatísticas anônimas ao LineageOS permitirá que dados não pessoais sejam enviados aos desenvolvedores do LineageOS para rastrear instalações únicas em dispositivos. As informações enviadas incluem um identificador único que não compromete sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara ver um exemplo dos dados enviados, toque em \'Pré-visualizar dados\'.</string>
   <string name="enable_reporting_title">Ativar relatório</string>
   <string name="preview_data_title">Pré-visualizar dados</string>
   <string name="view_stats_title">Ver estatísticas</string>

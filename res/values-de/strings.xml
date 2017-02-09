@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Kamera starten</string>
   <string name="camera_launch_summary">Langes Drücken und Loslassen startet die Kamera</string>
   <string name="volbtn_music_controls_title">Wiedergabe steuern</string>
+  <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm durch langes Drücken der Lautstärketasten zum nächsten / vorherigen Titel springen</string>
   <string name="volbtn_cursor_control_title">Cursorsteuerung</string>
   <string name="volbtn_cursor_control_off">Deaktiviert</string>
   <string name="volbtn_cursor_control_on">Lauter-/Leiser-Taste bewegt den Cursor nach links/rechts</string>
@@ -231,6 +232,7 @@
   <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren Ihres Bildschirms schnell öffnen</string>
+  <string name="torch_long_press_power_gesture_desc">Taschenlampe bei ausgeschaltetem Bildschirm durch langes Drücken der Ein-/Aus-Taste anschalten</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Löschen</string>
   <string name="profile_action_none">Unverändert lassen</string>
@@ -500,6 +502,7 @@
   <string name="charging_sounds_ringtone_silent">Lautlos</string>
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">Bildschirmgesten</string>
+  <string name="touchscreen_gesture_settings_summary">Führen Sie durch verschiedene Bildschirmgesten einige schnelle Aktionen aus</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Haptisches Feedback</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrieren, wenn eine Bildschirmgeste erkannt wurde</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Mit zwei Fingern nach unten wischen</string>

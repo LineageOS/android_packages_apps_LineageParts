@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Buka kamera</string>
   <string name="camera_launch_summary">Tekan lama dan lepas akan meluncurkan kamera</string>
   <string name="volbtn_music_controls_title">Kontrol pemutaran</string>
+  <string name="volbtn_music_controls_summary">Mencari trek musik dengan menekan lama tombol volume saat layar mati</string>
   <string name="volbtn_cursor_control_title">Kendali kursor papan ketik</string>
   <string name="volbtn_cursor_control_off">Dimatikan</string>
   <string name="volbtn_cursor_control_on">Volume atas/bawah menggerakkan kursor kiri/kanan</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Tekan dua kali tombol power untuk ke kamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Membuka cepat kamera tanpa membuka layar kunci</string>
+  <string name="torch_long_press_power_gesture_title">Tekan lama untuk senter</string>
+  <string name="torch_long_press_power_gesture_desc">Aktifkan senter dengan menekan lama tombol daya saat layar mati</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Hapus</string>
   <string name="profile_action_none">Tinggalkan tanpa perubahan</string>

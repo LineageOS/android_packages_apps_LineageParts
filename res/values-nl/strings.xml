@@ -99,7 +99,7 @@
   <string name="notification_light_use_multiple_leds">Meerdere LEDs</string>
   <string name="keywords_lights_brightness_level">dimmen led LED helderheid</string>
   <string name="notification_light_automagic">Automatisch kleuren kiezen</string>
-  <string name="notification_light_automagic_summary">Kleuren worden automatsich gekozen</string>
+  <string name="notification_light_automagic_summary">Kleuren worden automatisch gekozen</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Verlichtingsinstellingen</string>
   <string name="led_notification_text">LED-verlichting ingeschakeld door instellingen</string>
@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Camera openen</string>
   <string name="camera_launch_summary">Lang indrukken en loslaten om camera te openen</string>
   <string name="volbtn_music_controls_title">Afspelen beheren</string>
+  <string name="volbtn_music_controls_summary">Door nummers spoelen door volumeknoppen lang in te drukken als het scherm uit is</string>
   <string name="volbtn_cursor_control_title">Toetsenbordcursor</string>
   <string name="volbtn_cursor_control_off">Uitgeschakeld</string>
   <string name="volbtn_cursor_control_on">Volume omhoog/omlaag beweegt cursor naar links/rechts</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Twee keer op aan/uit-knop drukken voor camera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
+  <string name="torch_long_press_power_gesture_title">Lang drukken voor zaklamp</string>
+  <string name="torch_long_press_power_gesture_desc">Zaklamp inschakelen door lang op de aan/uit-knop te drukken als het scherm uit is</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Verwijderen</string>
   <string name="profile_action_none">Niet wijzigen</string>
@@ -302,6 +305,7 @@
   <string name="profile_networkmode_2g3g">2G/3G</string>
   <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
+  <string name="profile_volumeoverrides_title">Volume geforceerd wijzigen</string>
   <string name="connection_state_enabled">Inschakelen</string>
   <string name="volume_override_summary">Ingesteld op %1$s/%2$s</string>
   <string name="profile_volume_override_checkbox_label">Volume geforceerd wijzigen</string>
@@ -489,6 +493,7 @@
   <string name="expanded_desktop_style_hide_status">Statusbalk verbergen</string>
   <string name="expanded_desktop_style_hide_navigation">Navigatiebalk verbergen</string>
   <string name="expanded_desktop_style_hide_both">Beide verbergen</string>
+  <string name="expanded_desktop_nothing_to_show_text">Uitschakelen om het uitgebreide bureaublad per app te kunnen aanpassen</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Opladergeluid</string>
   <string name="charging_sounds_enabled_title">Inschakelen</string>

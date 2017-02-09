@@ -177,6 +177,7 @@
   <string name="camera_launch_title">カメラを起動</string>
   <string name="camera_launch_summary">長押しして離したときにカメラを起動する</string>
   <string name="volbtn_music_controls_title">再生をコントロール</string>
+  <string name="volbtn_music_controls_summary">画面消灯時に音量ボタンを長押しして音楽を操作します</string>
   <string name="volbtn_cursor_control_title">キーボードカーソルコントロール</string>
   <string name="volbtn_cursor_control_off">無効</string>
   <string name="volbtn_cursor_control_on">音量を上げる/下げるボタンでカーソルを左/右に移動する</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">ホームボタンを2回押してカメラを起動</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">画面のロックを解除せずにカメラをすばやく起動する</string>
+  <string name="torch_long_press_power_gesture_title">長押しでライト点灯</string>
+  <string name="torch_long_press_power_gesture_desc">画面消灯時に電源ボタンを長押ししてライトを点灯します</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">削除</string>
   <string name="profile_action_none">変更しない</string>
