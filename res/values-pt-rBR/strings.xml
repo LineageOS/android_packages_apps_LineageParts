@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Iniciar a câmera</string>
   <string name="camera_launch_summary">Mantenha pressionado e solte para abrir a câmera</string>
   <string name="volbtn_music_controls_title">Controlar a reprodução</string>
+  <string name="volbtn_music_controls_summary">Procurar faixas de músicas ao manter pressionadas as teclas de volume enquanto a tela estiver desligada</string>
   <string name="volbtn_cursor_control_title">Controle de cursor do teclado</string>
   <string name="volbtn_cursor_control_off">Desativado</string>
   <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para esquerda/direita</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Pressione o botão ligar/desligar duas vezes para iniciar a câmara</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmera sem desbloquear a tela</string>
+  <string name="torch_long_press_power_gesture_title">Manter pressionado para ligar a lanterna</string>
+  <string name="torch_long_press_power_gesture_desc">Ativar a lanterna ao manter pressionado o botão de ligar/desligar enquanto a tela estiver desligada</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Excluir</string>
   <string name="profile_action_none">Deixar inalterado</string>
@@ -517,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">Desenhe a letra \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Desenhar a letra \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Desenhar a letra \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Desenhar a letra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Desenhar a letra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Desenhar a letra \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Ação do gesto</string>

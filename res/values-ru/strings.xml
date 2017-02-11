@@ -135,6 +135,8 @@
   <string name="live_display_color_profile_basic_summary">Использовать неоткалиброванный дисплей</string>
   <string name="live_display_color_profile_adaptive_title">Адаптивный</string>
   <string name="live_display_color_profile_adaptive_summary">Цвета адаптируются к условиям окружающей среды</string>
+  <string name="live_display_color_profile_reading_title">Чтение</string>
+  <string name="live_display_color_profile_reading_summary">Тёплые цвета для меньшего напряжения глаз</string>
   <string name="color_calibration_title">Цвет</string>
   <string name="color_calibration_summary">Настройка цветопередачи экрана</string>
   <string name="color_red_title">Красный</string>
@@ -175,6 +177,7 @@
   <string name="camera_launch_title">Включить камеру</string>
   <string name="camera_launch_summary">Открывать приложение камеры при долгом нажатии кнопки</string>
   <string name="volbtn_music_controls_title">Управление плеером</string>
+  <string name="volbtn_music_controls_summary">Переключать музыкальные треки долгим нажатием кнопок громкости при выключенном экране</string>
   <string name="volbtn_cursor_control_title">Перемещение курсо­­­­­­ра</string>
   <string name="volbtn_cursor_control_off">Отключен</string>
   <string name="volbtn_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>
@@ -435,6 +438,7 @@
   <string name="preview_country_title">Страна</string>
   <string name="preview_carrier_title">Оператор</string>
   <string name="stats_collection_title">Сбор статистики</string>
+  <string name="stats_collection_summary">Разрешить сбор статистики устройства и сведений об установке</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Автоповорот экрана</string>
   <string name="display_rotation_title">Параметры вращения</string>
@@ -489,5 +493,14 @@
   <string name="expanded_desktop_style_hide_both">Скрывать строку состояния и панель навигации</string>
   <string name="expanded_desktop_nothing_to_show_text">Выключите, чтобы настроить режим расширенного рабочего стола для каждого приложения</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Звук при зарядке</string>
+  <string name="charging_sounds_enabled_title">Включить</string>
+  <string name="charging_sounds_enabled_summary">Воспроизводить звук при подключении или отключении источника питания</string>
+  <string name="power_notifications_vibrate_title">Вибросигнал</string>
+  <string name="charging_sounds_ringtone_title">Звук уведомления</string>
+  <string name="charging_sounds_ringtone_silent">Без звука</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Виброотклик</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Вибрировать при распознавании жеста</string>
 </resources>

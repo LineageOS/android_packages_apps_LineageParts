@@ -517,6 +517,7 @@
   <string name="touchscreen_gesture_letter_o_title">Disegna la lettera \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Disegna la lettera \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Disegna la lettera \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Disegna la lettera \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Disegna la lettera \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Disegna la lettera \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Azione gesture</string>

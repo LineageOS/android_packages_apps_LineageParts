@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Iniciar a câmara</string>
   <string name="camera_launch_summary">Pressionar algum tempo e depois soltar iniciará a câmara</string>
   <string name="volbtn_music_controls_title">Controlo de reprodução</string>
+  <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
   <string name="volbtn_cursor_control_title">Controlo do cursor de teclado</string>
   <string name="volbtn_cursor_control_off">Inativo</string>
   <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para a esquerda/direita</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Pressione o botão ligar/desligar duas vezes para iniciar a câmara</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmara sem desbloquear o ecrã</string>
+  <string name="torch_long_press_power_gesture_title">Lanterna através de pressão longa</string>
+  <string name="torch_long_press_power_gesture_desc">Ativar a lanterna através de pressão longa no botão de ligar/desligar quando o ecrã estiver desligado</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Eliminar</string>
   <string name="profile_action_none">Deixar inalterado</string>
@@ -517,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">Desenhar a letra \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Desenhar a letra \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Desenhar a letra \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Desenhar a letra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Desenhar a letra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Desenhar a letra \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Ação do gesto</string>

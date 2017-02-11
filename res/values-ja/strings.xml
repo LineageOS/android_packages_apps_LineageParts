@@ -520,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">「O」を描く</string>
   <string name="touchscreen_gesture_letter_m_title">「M」を描く</string>
   <string name="touchscreen_gesture_letter_s_title">「S」を描く</string>
+  <string name="touchscreen_gesture_letter_v_title">「V」を描く</string>
   <string name="touchscreen_gesture_letter_w_title">「W」を描く</string>
   <string name="touchscreen_gesture_letter_z_title">「Z」を描く</string>
   <string name="touchscreen_gesture_action_dialog_title">ジェスチャーのアクション</string>

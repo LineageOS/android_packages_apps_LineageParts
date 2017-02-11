@@ -520,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">Teken een \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Teken een \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Teken een \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Teken een \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Teken een \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Teken een \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Actie na gebaar</string>

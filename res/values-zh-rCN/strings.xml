@@ -520,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">绘制字母\"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">绘制字母\"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">绘制字母\"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">绘制字母\"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">绘制字母\"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">绘制字母\"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">手势操作</string>

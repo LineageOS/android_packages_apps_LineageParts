@@ -520,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">\"O\" harfi çizin</string>
   <string name="touchscreen_gesture_letter_m_title">\"M\" harfi çizin</string>
   <string name="touchscreen_gesture_letter_s_title">\"S\" harfi çizin</string>
+  <string name="touchscreen_gesture_letter_v_title">\"V\" harfi çizin</string>
   <string name="touchscreen_gesture_letter_w_title">\"W\" harfi çizin</string>
   <string name="touchscreen_gesture_letter_z_title">\"Z\" harfi çizin</string>
   <string name="touchscreen_gesture_action_dialog_title">Hareket eylemi</string>
