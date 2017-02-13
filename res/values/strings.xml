@@ -131,7 +131,7 @@
     <string name="live_display_enhance_color_summary">Improve color vibrance of flesh tones, scenery, and other images</string>
     <string name="live_display_color_profile_title">Color profile</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
-   <string name="live_display_color_profile_standard_summary">Accurate colors and bright whites</string>
+    <string name="live_display_color_profile_standard_summary">Accurate colors and bright whites</string>
     <string name="live_display_color_profile_natural_title">Natural</string>
     <string name="live_display_color_profile_natural_summary">Realistic colors and flesh tones</string>
     <string name="live_display_color_profile_dynamic_title">Dynamic</string>
@@ -385,7 +385,7 @@
     <!-- Add application dialog box title -->
     <string name="profile_choose_app">Choose app</string>
 
-   <!-- Profiles - system settings -->
+    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">System settings</string>
     <string name="profile_lockmode_title">Lock screen mode</string>
     <string name="profile_lockmode_policy_disabled_summary">This profile option is disabled by a device administrator policy</string>
