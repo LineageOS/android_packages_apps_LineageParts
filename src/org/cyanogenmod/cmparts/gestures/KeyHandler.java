@@ -23,6 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
@@ -34,6 +35,7 @@ import android.hardware.SensorManager;
 import android.Manifest;
 import android.media.AudioManager;
 import android.media.session.MediaSessionLegacyHelper;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
@@ -49,6 +51,8 @@ import android.view.KeyEvent;
 import com.android.internal.os.DeviceKeyHandler;
 
 import cyanogenmod.providers.CMSettings;
+
+import java.util.List;
 
 public class KeyHandler implements DeviceKeyHandler {
 
@@ -245,7 +249,8 @@ public class KeyHandler implements DeviceKeyHandler {
     private void launchBrowser() {
         mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
         mPowerManager.wakeUp(SystemClock.uptimeMillis(), GESTURE_WAKEUP_REASON);
-        final Intent intent = new Intent(Intent.ACTION_WEB_SEARCH, null);
+        final Intent intent = getLaunchableIntent(
+                new Intent(Intent.ACTION_VIEW, Uri.parse("http:")));
         startActivitySafely(intent);
         doHapticFeedback();
     }
@@ -261,8 +266,8 @@ public class KeyHandler implements DeviceKeyHandler {
     private void launchEmail() {
         mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
         mPowerManager.wakeUp(SystemClock.uptimeMillis(), GESTURE_WAKEUP_REASON);
-        final Intent intent = new Intent(Intent.ACTION_MAIN, null);
-        intent.addCategory(Intent.CATEGORY_APP_EMAIL);
+        final Intent intent = getLaunchableIntent(
+                new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:")));
         startActivitySafely(intent);
         doHapticFeedback();
     }
@@ -323,6 +328,10 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private void startActivitySafely(final Intent intent) {
+        if (intent == null) {
+            Log.w(TAG, "No intent passed to startActivitySafely");
+            return;
+        }
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP
                 | Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -367,5 +376,14 @@ public class KeyHandler implements DeviceKeyHandler {
             }
         }
         return mRearCameraId;
+    }
+
+    private Intent getLaunchableIntent(Intent intent) {
+        PackageManager pm = mContext.getPackageManager();
+        List<ResolveInfo> resInfo = pm.queryIntentActivities(intent, 0);
+        if (resInfo.isEmpty()) {
+            return null;
+        }
+        return pm.getLaunchIntentForPackage(resInfo.get(0).activityInfo.packageName);
     }
 }
