@@ -512,7 +512,7 @@
   <string name="touchscreen_gesture_one_finger_left_swipe_title">单指向左滑动</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">单指向右滑动</string>
   <string name="touchscreen_gesture_up_arrow_title">绘制一个\"Λ\"</string>
-  <string name="touchscreen_gesture_down_arrow_title">绘制一个\"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">绘制一个\"V\"</string>
   <string name="touchscreen_gesture_left_arrow_title">绘制一个\"&lt;\"</string>
   <string name="touchscreen_gesture_right_arrow_title">绘制一个\"&gt;\"</string>
   <string name="touchscreen_gesture_letter_c_title">绘制字母\"C\"</string>

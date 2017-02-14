@@ -520,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">Dibuixa la lletra \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Dibuixa la lletra \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Dibuixa la lletra \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Dibuixa la lletra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Dibuixa la lletra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Dibuixa la lletra \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Acció gestual</string>

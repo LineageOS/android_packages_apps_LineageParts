@@ -137,6 +137,7 @@
   <string name="profile_setup_setup_triggers_title_config">Modyfikuj wyzwalacze: <xliff:g id="profile_name">%1$s</xliff:g></string>
   <!-- Profile triggers -->
   <!-- Profiles settings  -->
+  <string name="profiles_settings_title">Profile systemu</string>
   <string name="profiles_add">Dodaj</string>
   <string name="profile_menu_delete">Usuń</string>
   <string name="profile_settings_title">Profil</string>

@@ -232,6 +232,7 @@
   <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren Ihres Bildschirms schnell öffnen</string>
+  <string name="torch_long_press_power_gesture_title">Lange drücken für Taschenlampe</string>
   <string name="torch_long_press_power_gesture_desc">Taschenlampe bei ausgeschaltetem Bildschirm durch langes Drücken der Ein-/Aus-Taste anschalten</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Löschen</string>
@@ -519,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">Zeichnen Sie den Buchstaben \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Zeichnen Sie den Buchstaben \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Zeichnen Sie den Buchstaben \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Zeichnen Sie den Buchstaben \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Zeichnen Sie den Buchstaben \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Zeichnen Sie den Buchstaben \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Gestenaktion</string>
