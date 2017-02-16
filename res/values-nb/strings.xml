@@ -518,6 +518,7 @@
   <string name="touchscreen_gesture_letter_o_title">Tegn bokstaven \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Tegn bokstaven \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Tegn bokstaven \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Tegn bokstaven \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Tegn bokstaven \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Tegn bokstaven \"Z\"</string>
   <string name="touchscreen_gesture_action_do_nothing">Ikke gjør noe</string>

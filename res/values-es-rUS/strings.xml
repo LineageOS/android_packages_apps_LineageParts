@@ -213,7 +213,7 @@
   <string name="navigation_bar_arrow_keys_title">Mostrar teclas de flechas al escribir</string>
   <string name="navigation_bar_arrow_keys_summary">Mostrar el botón izquierdo y derecho del cursor al escribir. Reemplaza al selector IME.</string>
   <string name="navigation_bar_home_long_press_title">Acción de pulsación larga de inicio</string>
-  <string name="navigation_bar_home_double_tap_title">Acción de doble pulsación</string>
+  <string name="navigation_bar_home_double_tap_title">Acción de doble toque en inicio</string>
   <string name="navigation_bar_recents_title">Acción de pulsación larga en recientes</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menú de apagado</string>
@@ -267,7 +267,7 @@
   <string name="profile_settings_summary_off">Perfiles desactivados</string>
   <string name="profile_trigger_configure">Configurar evento</string>
   <string name="profile_write_nfc_tag">Escribir en etiqueta NFC</string>
-  <string name="profile_write_touch_tag">Tocar etiqueta para escribir</string>
+  <string name="profile_write_touch_tag">Pulsa la etiqueta para escribir</string>
   <string name="profile_write_success">Etiqueta escrita correctamente</string>
   <string name="profile_write_failed">¡Error al escribir la etiqueta!</string>
   <string name="profile_selected">Perfil seleccionado: %1$s</string>

@@ -232,8 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Натиснете двукратно бутона за захранване за камера</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Бързо стартиране на камера без отключване на екрана</string>
-  <string name="torch_long_press_power_gesture_title">Активиране на фенерче</string>
-  <string name="torch_long_press_power_gesture_desc">Активиране на фенерчето чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
+  <string name="torch_long_press_power_gesture_title">Активиране на фенер</string>
+  <string name="torch_long_press_power_gesture_desc">Активиране на фенера чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Изтриване</string>
   <string name="profile_action_none">Остави непроменен</string>

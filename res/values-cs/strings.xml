@@ -348,22 +348,128 @@
   <string name="profile_airplanemode_title">Režim „Letadlo“</string>
   <string name="profile_brightness_title">Jas obrazovky</string>
   <string name="profile_brightness_override_summary">Nastavit na %1$d%%</string>
+  <string name="profile_brightness_override_checkbox_label">Přepsat hodnotu jasu</string>
   <!-- Connection override toggles (not all are used at this time ) -->
+  <string name="toggleWifi">Wi\u2011Fi</string>
+  <string name="toggleWifiAp">Přenosný Wi\u2011Fi hotspot</string>
+  <string name="toggleBluetooth">Bluetooth</string>
+  <string name="toggleGPS">GPS</string>
+  <string name="toggleData">Datové připojení</string>
+  <string name="toggleSync">Automatická synchronizace dat</string>
+  <string name="toggle2g3g4g">Upřednostňovaný typ sítě</string>
+  <string name="toggle2g3g4g_msim">Upřednostňovaný typ sítě (%1$s)</string>
+  <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
+  <string name="ring_mode_title">Režim vyzvánění</string>
+  <string name="ring_mode_normal">Normální</string>
+  <string name="ring_mode_vibrate">Vibrovat</string>
+  <string name="ring_mode_mute">Ztlumit</string>
+  <string name="ring_volume_title">Hlasitost vyzvánění</string>
+  <string name="incoming_call_volume_title">Vyzváněcí tón</string>
+  <string name="notification_volume_title">Upozornění</string>
+  <string name="media_volume_title">Média</string>
+  <string name="alarm_volume_title">Budík</string>
+  <string name="doze_title">Ambientní displej</string>
   <!-- Status bar -->
+  <string name="status_bar_title">Stavová lišta</string>
+  <string name="status_bar_toggle_brightness">Ovládání jasu</string>
+  <string name="status_bar_toggle_brightness_summary">Umožňuje nastavit jas tažením prstu na stavové liště</string>
+  <string name="status_bar_notif_count_title">Zobrazit počet upozornění</string>
+  <string name="status_bar_notif_count_summary">Zobrazí počet nezobrazených upozornění v oznamovací oblasti</string>
+  <string name="status_bar_quick_qs_pulldown_title">Rychlé stažení nabídky</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Tažením dolů z %1$s strany stavové lišty se vysune rychlé nastavení</string>
+  <string name="status_bar_quick_qs_pulldown_off">Vypnuto</string>
+  <string name="status_bar_quick_qs_pulldown_left">levé</string>
+  <string name="status_bar_quick_qs_pulldown_right">pravé</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Pozice hodin</string>
+  <string name="status_bar_clock_position_right">Napravo</string>
+  <string name="status_bar_clock_position_left">Nalevo</string>
+  <string name="status_bar_clock_position_center">Uprostřed</string>
+  <string name="status_bar_am_pm_title">dop/odp styl</string>
+  <string name="status_bar_am_pm_info">24-hodinový formát je povolen</string>
+  <string name="status_bar_am_pm_normal">Normálně</string>
+  <string name="status_bar_am_pm_small">Malý</string>
+  <string name="status_bar_am_pm_hidden">Skrytý</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_style_title">Indikátor stavu baterie</string>
+  <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
+  <string name="status_bar_battery_style_icon_landscape">Ikona na šířku</string>
+  <string name="status_bar_battery_style_circle">Kruh</string>
+  <string name="status_bar_battery_style_text">Text</string>
+  <string name="status_bar_battery_style_hidden">Skrytá</string>
   <!-- Status bar - Battery percentage -->
+  <string name="status_bar_battery_percentage_title">Procenta baterie</string>
+  <string name="status_bar_battery_percentage_default">Skryté</string>
+  <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
+  <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
   <!-- Status bar - icon blacklist -->
+  <string name="status_bar_icons_title">Ikony stavové lišty</string>
+  <string name="status_bar_icons_summary">Upravit zobrazení ikon na stavové liště</string>
   <!-- Protected apps -->
+  <string name="protected_apps_manager_title">Chráněné aplikace</string>
+  <string name="protected_apps_manager_summary">Spravovat, které aplikace jsou skryté za bezpečnostním zámkem</string>
   <!-- Contributors cloud activity -->
+  <string name="contributors_cloud_fragment_title">Přispěvatelé</string>
+  <string name="contributors_cloud_loading_message">Načítání přispěvatelů\u2026</string>
+  <string name="contributors_cloud_failed_message">Nelze načíst data přispěvatelů</string>
+  <string name="contributor_info_menu">Informace přispěvatele</string>
+  <string name="contributor_info_msg">
+<![CDATA[<b>Jméno:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+<b>Přezdívka:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+<b>Potvrzení:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+  <string name="contributions_info_menu">Informace o přispěvatelích</string>
+  <string name="contributions_info_msg">
+<![CDATA[<b>Celkem přispěvatelů:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+<b>Celkem příspěvků:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+<b>Poslední aktualizace:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">LineageOS statistika</string>
+  <string name="anonymous_statistics_summary">Pomozte nám zdokonalit LineageOS zasíláním anonymní statistiky</string>
+  <string name="anonymous_statistics_warning_title">O této aplikaci</string>
+  <string name="anonymous_statistics_warning">Povolením zasílání statistik systému LineageOS umožní odesílat neosobní data vývojářům k zjišťování stavu instalace na různých zařízeních. Odesílaná data obsahují unikátní identifikátor zařízení, který nezpůsobí žádnou kompromitaci soukromí nebo osobních dat. Data jsou odesílána při každém restartu zařízení.\n\nDotykem na „Náhled dat“ se můžete podívat na příklad odesílaných dat.</string>
+  <string name="enable_reporting_title">Povolit odesílání</string>
+  <string name="preview_data_title">Náhled dat</string>
+  <string name="view_stats_title">Zobrazit statistiky</string>
+  <string name="anonymous_learn_more">Dozvědět se více</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">Unikátní ID</string>
+  <string name="preview_device_title">Zařízení</string>
+  <string name="preview_version_title">Verze</string>
+  <string name="preview_country_title">Země</string>
+  <string name="preview_carrier_title">Operátor</string>
+  <string name="stats_collection_title">Sbírka statistik</string>
   <string name="stats_collection_summary">Povolit shromažďování metriky a statistiky zařízení</string>
   <!-- Display : Rotation  -->
+  <string name="accelerometer_title">Automatické otočení obrazovky</string>
+  <string name="display_rotation_title">Nastavení otáčení</string>
+  <string name="display_rotation_enabled">Automatické otáčení povoleno</string>
+  <string name="display_rotation_disabled">Automatické otáčení zakázáno</string>
+  <string name="display_rotation_unit">stupně</string>
+  <string name="display_lockscreen_rotation_title">Otáčet obrazovku zámku</string>
+  <string name="display_rotation_category_title">Režim otáčení</string>
+  <string name="display_rotation_0_title">0°</string>
+  <string name="display_rotation_90_title">90°</string>
+  <string name="display_rotation_180_title">180°</string>
+  <string name="display_rotation_270_title">270°</string>
   <!-- Weather -->
+  <string name="weather_settings_title">Počasí</string>
+  <string name="weather_settings_no_services_prompt">Nejsou nainstalovány žádné služby poskytovatele počasí</string>
+  <string name="weather_settings_no_services_summary">Pro získávání informací o počasí nainstalujte poskytovatele počasí</string>
+  <string name="weather_settings_button">Nastavení poskytovatele</string>
+  <string name="weather_settings_activity_not_found">Nelze spustit nastavení tohoto poskytovatele</string>
+  <string name="weather_settings_add_weather_provider">Přidat poskytovatele počasí</string>
+  <string name="weather_settings_general_settings_title">Hlavní</string>
+  <string name="weather_settings_providers_title">Poskytovatelé</string>
+  <string name="weather_settings_temp_units_title">Jednotky teploty</string>
+  <string name="weather_settings_temp_celsius">Celsia</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheita</string>
+  <string name="weather_settings_keyword">počasí</string>
+  <string name="status_bar_show_weather_title">Zobrazit počasí</string>
+  <string name="status_bar_show_weather_summary">Zobrazení aktuální teploty na stavovém řádku</string>
   <!-- Power: Performance profiles -->
+  <string name="perf_profile_settings_title">Spořič baterie a výkonu</string>
   <string name="perf_profile_settings_summary">Nastavení jednotlivých funkcí pro úsporu energie a výkon zařízení</string>
   <string name="perf_profile_overview_summary">Aktuální profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">Výkon zařízení</string>

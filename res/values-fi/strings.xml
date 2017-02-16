@@ -177,6 +177,7 @@
   <string name="camera_launch_title">Käynnistä kamera</string>
   <string name="camera_launch_summary">Pitkä painallus ja vapautus avaa kameran</string>
   <string name="volbtn_music_controls_title">Toiston ohjaus</string>
+  <string name="volbtn_music_controls_summary">Vaihda kappaletta pitämällä äänenvoimakkuusnäppäimiä pohjassa näytön ollessa suljettu</string>
   <string name="volbtn_cursor_control_title">Kohdistimen ohjaus näppäimistöllä</string>
   <string name="volbtn_cursor_control_off">Pois käytöstä</string>
   <string name="volbtn_cursor_control_on">Äänenvoimakkuus ylös/alas ohjaa kohdistinta vasemmalle/oikealle</string>
@@ -231,6 +232,8 @@
   <string name="camera_double_tap_power_gesture_title">Avaa kamera painamalla virtanäppäintä kahdesti</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Avaa kamera nopeasti avaamatta laitteen näyttöä</string>
+  <string name="torch_long_press_power_gesture_title">Paina pitkään käynnistääksesi taskulampun</string>
+  <string name="torch_long_press_power_gesture_desc">Aktivoi taskulamppu painamalla virtanäppäintä pitkään näytön ollessa pois päältä</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Poista</string>
   <string name="profile_action_none">Poistu tallentamatta</string>
@@ -517,6 +520,7 @@
   <string name="touchscreen_gesture_letter_o_title">Piirrä \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Piirrä \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Piirrä \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Piirrä \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Piirrä \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Piirrä \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Eleen toiminto</string>
