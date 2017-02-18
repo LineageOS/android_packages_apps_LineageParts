@@ -101,7 +101,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         LAUNCH_CAMERA,
         SLEEP,
         LAST_APP,
-        SPLIT_SCREEN;
+        SPLIT_SCREEN,
+        SINGLE_HAND_LEFT,
+        SINGLE_HAND_RIGHT;
 
         public static Action fromIntSafe(int id) {
             if (id < NOTHING.ordinal() || id > Action.values().length) {
