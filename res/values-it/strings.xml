@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">I colori si adattano alle condizioni ambientali</string>
   <string name="live_display_color_profile_reading_title">Lettura</string>
   <string name="live_display_color_profile_reading_summary">Colori più caldi per occhi meno affaticati</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Colori accurati allo spazio di colore sRGB</string>
   <string name="color_calibration_title">Calibrazione colore</string>
   <string name="color_calibration_summary">Calibra i colori dello schermo</string>
   <string name="color_red_title">Rosso</string>

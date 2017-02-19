@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">Цветовете се адаптират към условията на околната среда</string>
   <string name="live_display_color_profile_reading_title">Четенене</string>
   <string name="live_display_color_profile_reading_summary">Топлите цветове за по-малко умора на очите</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Цветове съответстващи с sRGB цветово пространство</string>
   <string name="color_calibration_title">Калибриране на цвета</string>
   <string name="color_calibration_summary">Калибриране на цветовете на екрана</string>
   <string name="color_red_title">Червен</string>

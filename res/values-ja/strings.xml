@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">色を周囲の状況に適応する</string>
   <string name="live_display_color_profile_reading_title">読書</string>
   <string name="live_display_color_profile_reading_summary">目の負担を軽減するため暖かい色にします</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">正確な sRGB 色空間に補正します</string>
   <string name="color_calibration_title">色の調整</string>
   <string name="color_calibration_summary">画面の色を調整する</string>
   <string name="color_red_title">赤</string>

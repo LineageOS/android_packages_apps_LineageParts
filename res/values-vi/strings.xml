@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">Màu sắc thích ứng với điều kiện môi trường xung quanh</string>
   <string name="live_display_color_profile_reading_title">Đọc</string>
   <string name="live_display_color_profile_reading_summary">Các màu ấm hơn cho mỏi mắt ít hơn</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Màu sắc chính xác cho không gian màu sRGB</string>
   <string name="color_calibration_title">Hiệu chỉnh màu sắc</string>
   <string name="color_calibration_summary">Hiệu chỉnh màu sắc trên màn hình</string>
   <string name="color_red_title">Đỏ</string>
@@ -520,6 +522,7 @@
   <string name="touchscreen_gesture_letter_o_title">Vẽ chữ cái \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Vẽ chữ cái \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Vẽ chữ cái \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Vẽ chữ cái \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Vẽ chữ cái \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Vẽ chữ cái \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Hành động cử chỉ</string>

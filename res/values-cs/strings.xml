@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">Přizpůsobit barvy okolním podmínkám</string>
   <string name="live_display_color_profile_reading_title">Čtení</string>
   <string name="live_display_color_profile_reading_summary">Teplejší barvy pro menší namáhání očí</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Barvy s přesností na barevný prostor sRGB</string>
   <string name="color_calibration_title">Kalibrace barev</string>
   <string name="color_calibration_summary">Kalibrovat barvy obrazovky</string>
   <string name="color_red_title">Červená</string>
@@ -476,7 +478,24 @@
   <string name="perf_profile_title">Profil výkonu: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">Profil výkonu není momentálně k dispozici</string>
   <string name="power_save_category_title">Úspora baterie</string>
+  <string name="power_save_title">Extrémně úsporný </string>
+  <string name="power_save_summary">Omezit výkon a aktivity na pozadí pro úsporu energie</string>
+  <string name="auto_power_save_title">Automatický úsporný režim</string>
+  <string name="auto_power_save_summary_on">Automaticky zapnout úsporný režim při %s baterie</string>
+  <string name="auto_power_save_summary_off">Nezapínat automaticky režim snížené spotřeby</string>
+  <string name="app_perf_profiles_title">Automatická optimalizace</string>
+  <string name="app_perf_profiles_summary">Automaticky vybrat odpovídající výkonnostní profil pro různé aplikace</string>
+  <string name="auto_power_save_never">Nikdy</string>
   <!-- Applications: Expanded desktop -->
+  <string name="expanded_desktop_settings_title">Rozšířená plocha</string>
+  <string name="expanded_desktop_settings_summary">Rozšířit prostor na ploše skrytím stavového řádku, navigační lišty nebo obojí</string>
+  <string name="expanded_desktop_options_title">Možnost vlastního nastavení</string>
+  <string name="expanded_desktop_style_title">Vzhled rozšířené plochy</string>
+  <string name="expanded_desktop_style_hide_nothing">Nic neskrývat</string>
+  <string name="expanded_desktop_style_hide_status">Skrýt stavový řádek</string>
+  <string name="expanded_desktop_style_hide_navigation">Skrýt navigační panel</string>
+  <string name="expanded_desktop_style_hide_both">Skrýt oboji</string>
+  <string name="expanded_desktop_nothing_to_show_text">Vypněte upravení rozšířené plochy na základě aplikací</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Zvuk nabíječky</string>
   <string name="charging_sounds_enabled_title">Povolit</string>
@@ -485,5 +504,36 @@
   <string name="charging_sounds_ringtone_title">Zvuk upozornění</string>
   <string name="charging_sounds_ringtone_silent">Tichý</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
+  <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Hmatová odezva</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrovat při detekci gesta na obrazovce</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Přejetí dolů 2 prsty</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Přejetí nahoru 1 prst</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Přejetí dolů 1 prst</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Přejetí vlevo 1 prst</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Přejetí vpravo 1 prst</string>
+  <string name="touchscreen_gesture_up_arrow_title">Nakreslit „Λ“</string>
+  <string name="touchscreen_gesture_down_arrow_title">Nakreslit „V“</string>
+  <string name="touchscreen_gesture_left_arrow_title">Nakreslit „&lt;“</string>
+  <string name="touchscreen_gesture_right_arrow_title">Nakreslit „&gt;“</string>
+  <string name="touchscreen_gesture_letter_c_title">Nakreslit písmeno „C“</string>
+  <string name="touchscreen_gesture_letter_e_title">Nakreslit písmeno „e“</string>
+  <string name="touchscreen_gesture_letter_o_title">Nakreslit písmeno „O“</string>
+  <string name="touchscreen_gesture_letter_m_title">Nakreslit písmeno „M“</string>
+  <string name="touchscreen_gesture_letter_s_title">Nakreslit písmeno „S“</string>
   <string name="touchscreen_gesture_letter_v_title">Nakreslit písmeno „V“</string>
+  <string name="touchscreen_gesture_letter_w_title">Nakreslit písmeno „W“</string>
+  <string name="touchscreen_gesture_letter_z_title">Nakreslit písmeno „Z“</string>
+  <string name="touchscreen_gesture_action_dialog_title">Akce gest</string>
+  <string name="touchscreen_gesture_action_do_nothing">Nedělat nic</string>
+  <string name="touchscreen_gesture_action_flashlight">Přepnout svítilnu</string>
+  <string name="touchscreen_gesture_action_camera">Spustit fotoaparát</string>
+  <string name="touchscreen_gesture_action_browser">Spustit prohlížeč internetu</string>
+  <string name="touchscreen_gesture_action_dialer">Spustit telefon</string>
+  <string name="touchscreen_gesture_action_email">Zobrazit e-maily</string>
+  <string name="touchscreen_gesture_action_messages">Zobrazit krátké zprávy</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Přehrávat / pozastavit hudbu</string>
+  <string name="touchscreen_gesture_action_previous_track">Přejít na předchozí skladbu</string>
+  <string name="touchscreen_gesture_action_next_track">Přejít na další skladbu</string>
 </resources>

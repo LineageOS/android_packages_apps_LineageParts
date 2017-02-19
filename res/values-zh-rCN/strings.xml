@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">颜色根据环境条件自适应</string>
   <string name="live_display_color_profile_reading_title">阅读</string>
   <string name="live_display_color_profile_reading_summary">使用暖色调以减少视疲劳</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">颜色校准到 sRGB 色彩空间</string>
   <string name="color_calibration_title">颜色校准</string>
   <string name="color_calibration_summary">校准屏幕颜色</string>
   <string name="color_red_title">红</string>
@@ -183,7 +185,7 @@
   <string name="volbtn_cursor_control_on">音量+/-光标左/右移动</string>
   <string name="volbtn_cursor_control_on_reverse">音量+/-光标右/左移动</string>
   <string name="power_end_call_title">结束通话</string>
-  <string name="power_end_call_summary">按电源按钮结束当前通话</string>
+  <string name="power_end_call_summary">按电源键结束当前通话</string>
   <string name="swap_volume_buttons_title">重新调整</string>
   <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
   <string name="button_wake_title">唤醒设备</string>
@@ -229,7 +231,7 @@
   <string name="volume_keys_control_ring_stream_title">控制铃声音量</string>
   <string name="volume_keys_control_ring_stream_summary_on">使用音量键控制铃声音量</string>
   <string name="volume_keys_control_ring_stream_summary_off">音量键控制媒体音量</string>
-  <string name="camera_double_tap_power_gesture_title">按两下电源按钮以启动相机</string>
+  <string name="camera_double_tap_power_gesture_title">按两下电源键启动相机</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">在不解锁屏幕的情况下快速开启相机</string>
   <string name="torch_long_press_power_gesture_title">长按打开手电筒</string>

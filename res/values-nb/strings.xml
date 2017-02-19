@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">Farger tilpasser seg til omgivelsene</string>
   <string name="live_display_color_profile_reading_title">Leser</string>
   <string name="live_display_color_profile_reading_summary">Varmere farger for mindre belastning på øyene</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Farger nøyaktige i forhold til sRGB-fargetoneområdet</string>
   <string name="color_calibration_title">Fargekalibrering</string>
   <string name="color_calibration_summary">Kalibrere skjermens farger</string>
   <string name="color_red_title">Rød</string>
@@ -503,7 +505,9 @@
   <string name="charging_sounds_ringtone_silent">Lydløs</string>
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">Berøringsskjerm bevegelser</string>
+  <string name="touchscreen_gesture_settings_summary">Utfør forskjellige berøringsskjerm bevegelser for raske handlinger</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Haptisk tilbakemelding</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrer når en berøringsskjerm bevegelse er oppdaget</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Dra ned med to fingre</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Dra opp med en finger</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Dra ned med en finger</string>
@@ -521,6 +525,7 @@
   <string name="touchscreen_gesture_letter_v_title">Tegn bokstaven \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Tegn bokstaven \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Tegn bokstaven \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Bevegelses-handling</string>
   <string name="touchscreen_gesture_action_do_nothing">Ikke gjør noe</string>
   <string name="touchscreen_gesture_action_flashlight">Slå av/på lommelykten</string>
   <string name="touchscreen_gesture_action_camera">Åpne kameraet</string>
