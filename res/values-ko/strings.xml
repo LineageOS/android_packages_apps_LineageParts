@@ -17,55 +17,142 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="cmparts_title">LineageOS 설정</string>
   <!-- Generic stuff used everywhere -->
+  <string name="loading">불러오는 중\u2026</string>
+  <string name="dlg_ok">확인</string>
+  <string name="cancel">취소</string>
+  <string name="add">추가</string>
+  <string name="choose_app">앱 선택</string>
+  <string name="advanced">고급</string>
+  <string name="settings">설정</string>
+  <string name="name">이름</string>
+  <string name="back">이전</string>
+  <string name="finish">완료</string>
+  <string name="next">다음</string>
+  <string name="yes">예</string>
+  <string name="no">아니오</string>
+  <string name="search">검색</string>
   <!-- Privacy Settings Header item -->
   <!-- Privacy Guard -->
+  <string name="privacy_guard_help_title">도움말</string>
+  <string name="privacy_guard_advanced_settings_title">고급</string>
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
   <!-- Battery light settings -->
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_default_value">기본값</string>
   <!-- Lights settings, LED notification -->
   <!-- LiveDisplay -->
+  <string name="live_display_day">주간</string>
+  <string name="live_display_night">야간</string>
+  <string name="live_display_outdoor_mode_title">자동 야외 모드</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <!-- Button settings -->
+  <string name="button_pref_title">버튼</string>
+  <string name="hardware_keys_power_key_title">전원 버튼</string>
+  <string name="hardware_keys_home_key_title">홈 버튼</string>
+  <string name="hardware_keys_menu_key_title">메뉴 버튼</string>
+  <string name="hardware_keys_assist_key_title">검색 버튼</string>
+  <string name="hardware_keys_camera_key_title">카메라 버튼</string>
+  <string name="hardware_keys_volume_keys_title">볼륨 버튼</string>
+  <string name="button_wake_title">기기 깨우기</string>
   <!-- Key backlight -->
+  <string name="button_backlight_seekbar_title">버튼 조명 밝기</string>
   <!-- Buttons - Enable navbar -->
+  <string name="disable_navkeys_title">온스크린 내비게이션 바 사용</string>
   <!-- Navigation Bar -->
+  <string name="navigation_bar_category">내비게이션 바</string>
+  <string name="navigation_bar_title">버튼 및 레이아웃</string>
   <!-- Power menu -->
+  <string name="power_menu_title">전원 메뉴</string>
+  <string name="power_menu_screenshot_title">스크린샷</string>
+  <string name="power_menu_airplane_title">비행기 모드</string>
+  <string name="power_menu_settings_title">설정 바로 가기</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->
+  <string name="profile_menu_delete_title">삭제</string>
+  <string name="profile_tabs_wifi">Wi\u2011Fi</string>
+  <string name="profile_tabs_bluetooth">블루투스</string>
+  <string name="profile_tabs_nfc">NFC</string>
   <!-- Profile triggers -->
   <!-- Profiles settings  -->
+  <string name="profiles_add">추가</string>
+  <string name="profile_menu_delete">삭제</string>
+  <string name="profile_settings_title">프로필</string>
   <!-- Profile mode options. -->
   <!-- Add Profile -->
+  <string name="profile_name_title">이름</string>
+  <string name="new_profile_name">&lt;새 프로필&gt;</string>
   <!-- Rename Dialog  -->
+  <string name="rename_dialog_title">이름 바꾸기</string>
   <!-- Reset Profiles -->
   <!-- Delete confimation messages -->
   <!-- Profile network mode -->
+  <string name="profile_networkmode_2g">2G</string>
+  <string name="profile_networkmode_3g">3G</string>
+  <string name="profile_networkmode_4g">LTE</string>
+  <string name="profile_networkmode_2g3g">2G/3G</string>
+  <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
   <!-- Menu item for managing profiles -->
+  <string name="profile_profiles_manage">프로필</string>
+  <string name="profile_profile_manage">프로필 관리</string>
+  <string name="profile_appgroups_manage">앱 그룹</string>
   <!-- Profile settings screen, section header for settings related to notification profiles -->
+  <string name="profile_settings">프로필 설정</string>
   <!-- Profile Settings sound modes labels -->
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
   <!-- Title for application group setting screen -->
+  <string name="profile_appgroups_title">앱 그룹</string>
+  <string name="profile_new_appgroup">새 앱 그룹</string>
   <!-- Add application dialog box title -->
+  <string name="profile_choose_app">앱 선택</string>
   <!-- Profiles - system settings -->
+  <string name="profile_system_settings_title">시스템 설정</string>
+  <string name="profile_lockmode_title">잠금 화면 모드</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <!-- Sound settings screen -->
+  <string name="ring_mode_vibrate">진동</string>
   <!-- Status bar -->
+  <string name="status_bar_title">상태 표시줄</string>
+  <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
+  <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">시계 위치</string>
+  <string name="status_bar_clock_position_right">오른쪽</string>
+  <string name="status_bar_clock_position_left">왼쪽</string>
+  <string name="status_bar_am_pm_small">작게</string>
+  <string name="status_bar_am_pm_hidden">숨김</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_style_hidden">숨김</string>
   <!-- Status bar - Battery percentage -->
+  <string name="status_bar_battery_percentage_default">숨김</string>
   <!-- Status bar - icon blacklist -->
+  <string name="status_bar_icons_title">상태 표시줄 아이콘</string>
   <!-- Protected apps -->
+  <string name="protected_apps_manager_title">보호된 앱</string>
   <!-- Contributors cloud activity -->
+  <string name="contributors_cloud_fragment_title">기여자</string>
+  <string name="contributor_info_menu">기여자 정보</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">LineageOS 통계</string>
   <!-- Anonymous Statistics - Preview -->
   <!-- Display : Rotation  -->
+  <string name="display_rotation_0_title">0도</string>
+  <string name="display_rotation_90_title">90도</string>
+  <string name="display_rotation_180_title">180도</string>
+  <string name="display_rotation_270_title">270도</string>
   <!-- Weather -->
+  <string name="weather_settings_title">날씨</string>
   <!-- Power: Performance profiles -->
+  <string name="perf_profile_category_title">기기 성능</string>
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <string name="power_notifications_vibrate_title">진동</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_up_arrow_title">\"Λ\" 그리기</string>
+  <string name="touchscreen_gesture_down_arrow_title">\"V\" 그리기</string>
 </resources>

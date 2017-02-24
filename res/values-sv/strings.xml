@@ -19,10 +19,20 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="cmparts_title">LineageOS inställningar</string>
   <!-- Generic stuff used everywhere -->
+  <string name="loading">Laddar\u2026</string>
   <string name="dlg_ok">OK</string>
+  <string name="cancel">Avbryt</string>
   <string name="add">Lägg till</string>
   <string name="choose_app">Välj app</string>
+  <string name="reset">Återställ</string>
   <string name="settings">Inställningar</string>
+  <string name="back">Tillbaka</string>
+  <string name="next">Nästa</string>
+  <string name="on">På</string>
+  <string name="no">Nej</string>
+  <string name="search">Sök</string>
+  <string name="disabled">Avaktiverad</string>
+  <string name="enabled">Aktiverad</string>
   <!-- Privacy Settings Header item -->
   <!-- Privacy Guard -->
   <!-- Notification light dialogs -->
@@ -45,14 +55,28 @@
   <!-- Profiles -->
   <!-- Profile triggers -->
   <!-- Profiles settings  -->
+  <string name="profile_unknown_nfc_tag">Okänd profil</string>
+  <string name="profile_select">Välj profil</string>
   <!-- Profile mode options. -->
+  <string name="profile_entries_on">På</string>
+  <string name="profile_entries_off">Av</string>
   <!-- Add Profile -->
+  <string name="profile_name_title">Namn</string>
   <!-- Rename Dialog  -->
+  <string name="rename_dialog_title">Byt namn</string>
   <!-- Reset Profiles -->
+  <string name="profile_reset_title">Återställ</string>
   <!-- Delete confimation messages -->
   <!-- Profile network mode -->
+  <string name="profile_networkmode_2g">2G</string>
+  <string name="profile_networkmode_3g">3G</string>
+  <string name="profile_networkmode_4g">LTE</string>
+  <string name="profile_networkmode_2g3g">2G/3G</string>
+  <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
+  <string name="connection_state_enabled">Aktivera</string>
   <!-- Menu item for managing profiles -->
+  <string name="profile_profiles_manage">Profiler</string>
   <!-- Profile settings screen, section header for settings related to notification profiles -->
   <!-- Profile Settings sound modes labels -->
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
@@ -61,8 +85,21 @@
   <!-- Profiles - system settings -->
   <string name="profile_system_settings_title">Systeminställningar</string>
   <!-- Connection override toggles (not all are used at this time ) -->
+  <string name="toggleWifi">Wi\u2011Fi</string>
+  <string name="toggleBluetooth">Bluetooth</string>
+  <string name="toggleGPS">GPS</string>
+  <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
+  <string name="ring_mode_normal">Normal</string>
+  <string name="ring_mode_vibrate">Vibrera</string>
+  <string name="incoming_call_volume_title">Ringsignal</string>
+  <string name="media_volume_title">Media</string>
+  <string name="alarm_volume_title">Alarm</string>
   <!-- Status bar -->
+  <string name="status_bar_title">Statusfält</string>
+  <string name="status_bar_quick_qs_pulldown_off">Av</string>
+  <string name="status_bar_quick_qs_pulldown_left">Vänster</string>
+  <string name="status_bar_quick_qs_pulldown_right">Höger</string>
   <!-- Status bar - Clock -->
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
@@ -71,8 +108,19 @@
   <!-- Contributors cloud activity -->
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">LineageOS statistik</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">Unikt ID</string>
+  <string name="preview_device_title">Enhet</string>
+  <string name="preview_version_title">Version</string>
+  <string name="preview_country_title">Land</string>
+  <string name="preview_carrier_title">Operatör</string>
   <!-- Display : Rotation  -->
+  <string name="display_rotation_unit">grader</string>
+  <string name="display_rotation_0_title">0 grader</string>
+  <string name="display_rotation_90_title">90 grader</string>
+  <string name="display_rotation_180_title">180 grader</string>
+  <string name="display_rotation_270_title">270 grader</string>
   <!-- Weather -->
   <string name="weather_settings_title">Väder</string>
   <string name="weather_settings_button">Leverantörsinställningar</string>
@@ -81,8 +129,13 @@
   <string name="weather_settings_temp_celsius">Celsius</string>
   <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
   <string name="weather_settings_keyword">väder</string>
+  <string name="status_bar_show_weather_title">Visa väder</string>
   <!-- Power: Performance profiles -->
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_action_do_nothing">Gör ingenting</string>
+  <string name="touchscreen_gesture_action_camera">Öppna kameran</string>
+  <string name="touchscreen_gesture_action_browser">Öppna webbläsaren</string>
+  <string name="touchscreen_gesture_action_messages">Visa dina meddelanden</string>
 </resources>

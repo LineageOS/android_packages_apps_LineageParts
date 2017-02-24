@@ -232,7 +232,7 @@
   <string name="camera_double_tap_power_gesture_title">Притисните дугме за напајање двапут за камеру</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Брзо отворите камеру без откључавања екрана</string>
-  <string name="torch_long_press_power_gesture_title">Dugo pritisnite za лампу</string>
+  <string name="torch_long_press_power_gesture_title">Дуги притисак за лампу</string>
   <string name="torch_long_press_power_gesture_desc">Активирај лампу дугим притиском power дугмета када је екран искључен</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Обриши</string>
@@ -502,7 +502,7 @@
   <string name="touchscreen_gesture_letter_w_title">Нацртај слово \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Нацртај слово \"Z\"</string>
   <string name="touchscreen_gesture_action_do_nothing">Не ради ништа</string>
-  <string name="touchscreen_gesture_action_flashlight">Укључи/Исклјучи батеријску лампу</string>
+  <string name="touchscreen_gesture_action_flashlight">Укључи/Искључи батеријску лампу</string>
   <string name="touchscreen_gesture_action_camera">Отворите камеру</string>
   <string name="touchscreen_gesture_action_browser">Отворите прегледач</string>
   <string name="touchscreen_gesture_action_email">Прикажи мејлове</string>

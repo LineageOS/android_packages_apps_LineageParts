@@ -95,7 +95,7 @@
   <string name="notification_light_missed_call_title">Пропуснато повикване</string>
   <string name="notification_light_voicemail_title">Гласова поща</string>
   <string name="notification_light_screen_on">Индикации при включен екран</string>
-  <string name="notification_light_zen_mode">Индикации в режим \"Не безпокойте\"</string>
+  <string name="notification_light_zen_mode">Индикации в режим \"Не ме безпокойте\"</string>
   <string name="notification_light_use_multiple_leds">Множество светодиоди</string>
   <string name="keywords_lights_brightness_level">Слаба светодиодна яркост</string>
   <string name="notification_light_automagic">Автоматичен избор на цветове</string>
@@ -153,12 +153,12 @@
   <string name="adj_contrast_title">Контраст</string>
   <!-- Button settings -->
   <string name="button_pref_title">Бутони</string>
-  <string name="hardware_keys_power_key_title">Бутон \"захранване\"</string>
-  <string name="hardware_keys_home_key_title">Начален бутон</string>
+  <string name="hardware_keys_power_key_title">Бутон \"Захранване\"</string>
+  <string name="hardware_keys_home_key_title">Бутон \"Начало\"</string>
   <string name="hardware_keys_back_key_title">Бутон \"Назад\"</string>
   <string name="hardware_keys_menu_key_title">Меню бутон</string>
   <string name="hardware_keys_assist_key_title">Бутон за търсене</string>
-  <string name="hardware_keys_appswitch_key_title">Последен бутон</string>
+  <string name="hardware_keys_appswitch_key_title">Бутон \"Последно\"</string>
   <string name="hardware_keys_camera_key_title">Бутон за камерата</string>
   <string name="hardware_keys_volume_keys_title">Бутони за сила на звука</string>
   <string name="hardware_keys_short_press_title">Действие при натискане</string>
@@ -234,8 +234,8 @@
   <string name="camera_double_tap_power_gesture_title">Натиснете двукратно бутона за захранване за камера</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Бързо стартиране на камера без отключване на екрана</string>
-  <string name="torch_long_press_power_gesture_title">Активиране на фенер</string>
-  <string name="torch_long_press_power_gesture_desc">Активиране на фенера чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
+  <string name="torch_long_press_power_gesture_title">Активиране на фенерчето</string>
+  <string name="torch_long_press_power_gesture_desc">Активиране на фенерчето чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Изтриване</string>
   <string name="profile_action_none">Остави непроменен</string>

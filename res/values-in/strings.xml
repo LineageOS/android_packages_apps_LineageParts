@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="cmparts_title">Setelan LineageOS</string>
+  <string name="cmparts_title">Pengaturan LineageOS</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Memuat\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -137,6 +137,7 @@
   <string name="live_display_color_profile_adaptive_summary">Warna beradaptasi dengan kondisi sekitar</string>
   <string name="live_display_color_profile_reading_title">Membaca</string>
   <string name="live_display_color_profile_reading_summary">Warna-warna hangat untuk mengurangi kelelahan mata</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="color_calibration_title">Kalibrasi warna</string>
   <string name="color_calibration_summary">Kalibrasi warna layar</string>
   <string name="color_red_title">Merah</string>

@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">As cores adaptam-se às condições ambientais</string>
   <string name="live_display_color_profile_reading_title">Leitura</string>
   <string name="live_display_color_profile_reading_summary">Cores mais quentes para reduzir a fadiga ocular</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Cores precisas para o espaço de cor sRGB</string>
   <string name="color_calibration_title">Calibração de cores</string>
   <string name="color_calibration_summary">Calibrar as cores do ecrã</string>
   <string name="color_red_title">Vermelho</string>

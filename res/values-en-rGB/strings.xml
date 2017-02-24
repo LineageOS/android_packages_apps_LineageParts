@@ -17,21 +17,49 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="cmparts_title">LineageOS Settings</string>
   <!-- Generic stuff used everywhere -->
+  <string name="loading">Loading\u2026</string>
+  <string name="dlg_ok">OK</string>
+  <string name="cancel">Cancel</string>
+  <string name="add">Add</string>
+  <string name="choose_app">Choose app</string>
+  <string name="reset">Reset</string>
+  <string name="advanced">Advanced</string>
+  <string name="next">Next</string>
   <!-- Privacy Settings Header item -->
   <!-- Privacy Guard -->
+  <string name="privacy_guard_dlg_system_app_text">When enabling Privacy Guard for a built-in app, the app will not be able to access or provide personal data. This may cause other apps to misbehave.</string>
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
   <!-- Battery light settings -->
+  <string name="battery_light_list_title">Colours</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_automagic">Choose colours automatically</string>
+  <string name="notification_light_automagic_summary">Choosing colours automatically</string>
   <!-- Lights settings, LED notification -->
   <!-- LiveDisplay -->
+  <string name="live_display_color_temperature_title">Colour temperature</string>
+  <string name="live_display_enhance_color_title">Enhance colours</string>
+  <string name="live_display_enhance_color_summary">Improve colour vibrance of flesh tones, scenery, and other images</string>
+  <string name="live_display_color_profile_title">Colour profile</string>
+  <string name="live_display_color_profile_standard_summary">Accurate colours and bright whites</string>
+  <string name="live_display_color_profile_natural_summary">Realistic colours and flesh tones</string>
+  <string name="live_display_color_profile_dynamic_summary">Enhanced colours and bright whites</string>
+  <string name="live_display_color_profile_cinema_summary">Perfect colour reproduction for videos</string>
+  <string name="live_display_color_profile_photography_summary">Perfect colour reproduction for photos</string>
+  <string name="live_display_color_profile_adaptive_summary">Colours adapt to ambient conditions</string>
+  <string name="live_display_color_profile_reading_summary">Warmer colours for less eyestrain</string>
+  <string name="live_display_color_profile_srgb_summary">Colours accurate to the sRGB colour space</string>
+  <string name="color_calibration_title">Colour calibration</string>
+  <string name="color_calibration_summary">Calibrate on-screen colours</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <!-- Button settings -->
   <!-- Key backlight -->
   <!-- Buttons - Enable navbar -->
   <!-- Navigation Bar -->
   <!-- Power menu -->
+  <string name="power_menu_airplane_title">Aeroplane mode</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->
   <!-- Profile triggers -->
@@ -50,10 +78,12 @@
   <!-- Title for application group setting screen -->
   <!-- Add application dialog box title -->
   <!-- Profiles - system settings -->
+  <string name="profile_airplanemode_title">Aeroplane mode</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <!-- Sound settings screen -->
   <!-- Status bar -->
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_center">Centre</string>
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - icon blacklist -->
@@ -66,6 +96,7 @@
   <!-- Weather -->
   <!-- Power: Performance profiles -->
   <!-- Applications: Expanded desktop -->
+  <string name="expanded_desktop_nothing_to_show_text">Turn the switch off to customise your expanded desktop on a per-app basis</string>
   <!-- Sounds: Charging sounds -->
   <!-- Gestures: Touchscreen gestures -->
 </resources>

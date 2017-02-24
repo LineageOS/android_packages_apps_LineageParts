@@ -146,7 +146,7 @@
   <string name="color_blue_title">藍色</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <string name="picture_adjustment_title">調整圖片</string>
-  <string name="picture_adjustment_summary">調整色相、 飽和度、 強度和對比度</string>
+  <string name="picture_adjustment_summary">調整色相、飽和度、強度和對比度</string>
   <string name="adj_hue_title">色相</string>
   <string name="adj_saturation_title">飽和度</string>
   <string name="adj_intensity_title">強度</string>
