@@ -155,4 +155,14 @@
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_up_arrow_title">\"Λ\" 그리기</string>
   <string name="touchscreen_gesture_down_arrow_title">\"V\" 그리기</string>
+  <string name="touchscreen_gesture_left_arrow_title">\"&lt;\" 그리기</string>
+  <string name="touchscreen_gesture_right_arrow_title">\"&gt;\" 그리기</string>
+  <string name="touchscreen_gesture_letter_c_title">문자 \"C\" 그리기</string>
+  <string name="touchscreen_gesture_letter_e_title">문자 \"e\" 그리기</string>
+  <string name="touchscreen_gesture_letter_o_title">문자 \"O\" 그리기</string>
+  <string name="touchscreen_gesture_letter_m_title">문자 \"M\" 그리기</string>
+  <string name="touchscreen_gesture_letter_s_title">문자 \"S\" 그리기</string>
+  <string name="touchscreen_gesture_letter_v_title">문자 \"V\" 그리기</string>
+  <string name="touchscreen_gesture_letter_w_title">문자 \"W\" 그리기</string>
+  <string name="touchscreen_gesture_letter_z_title">문자 \"Z\" 그리기</string>
 </resources>
