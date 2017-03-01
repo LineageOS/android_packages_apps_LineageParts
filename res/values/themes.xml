@@ -18,7 +18,7 @@
     <attr name="side_margin" format="reference|dimension" />
     <attr name="wifi_signal_color" format="reference" />
 
-    <style name="PreferenceTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
         <item name="preferenceStyle">@style/Preference</item>
         <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
         <item name="dropdownPreferenceStyle">@style/Preference.DropDown.Material</item>
