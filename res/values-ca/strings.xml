@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">Els colors s\'adapten a les condicions ambientals</string>
   <string name="live_display_color_profile_reading_title">S\'està llegint</string>
   <string name="live_display_color_profile_reading_summary">Colors càlids per cansar menys els ulls</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Colors fidels a l\'espai de colors sRGB</string>
   <string name="color_calibration_title">Calibració de color</string>
   <string name="color_calibration_summary">Calibra els colors de la pantalla</string>
   <string name="color_red_title">Vermell</string>
@@ -372,15 +374,17 @@
   <string name="doze_title">Pantalla ambient</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra d\'estat</string>
-  <string name="status_bar_toggle_brightness">Control de lluminositat</string>
-  <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
-  <string name="status_bar_notif_count_title">Mostra comptador de notificacions</string>
-  <string name="status_bar_notif_count_summary">Mostra el nombre de notificacions pendents</string>
   <string name="status_bar_quick_qs_pulldown_title">Baixada ràpida</string>
   <string name="status_bar_quick_qs_pulldown_summary">La vora %1$s de la barra d\'estat desplega el panell d\'ajustos ràpids</string>
   <string name="status_bar_quick_qs_pulldown_off">No</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerra</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreta</string>
+  <string name="status_bar_toggle_brightness">Control de lluminositat</string>
+  <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Icones de la barra d\'estat</string>
+  <string name="status_bar_notif_count_title">Mostra comptador de notificacions</string>
+  <string name="status_bar_notif_count_summary">Mostra el nombre de notificacions pendents</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Posició del rellotge</string>
   <string name="status_bar_clock_position_right">Dreta</string>

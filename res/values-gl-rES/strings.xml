@@ -374,15 +374,17 @@
   <string name="doze_title">Visualización ambiental</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra de estado</string>
-  <string name="status_bar_toggle_brightness">Control de brillo</string>
-  <string name="status_bar_toggle_brightness_summary">Axustar o brillo arrastrando pola barra de estado</string>
-  <string name="status_bar_notif_count_title">Amosar contador de notificacións</string>
-  <string name="status_bar_notif_count_summary">Amosar o número de notificacións pendentes</string>
   <string name="status_bar_quick_qs_pulldown_title">Tirar para abaixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s na esquina da barra de estado abre a Configuración rápida</string>
   <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Dereita</string>
+  <string name="status_bar_toggle_brightness">Control de brillo</string>
+  <string name="status_bar_toggle_brightness_summary">Axustar o brillo arrastrando pola barra de estado</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Iconas da barra de estado</string>
+  <string name="status_bar_notif_count_title">Amosar contador de notificacións</string>
+  <string name="status_bar_notif_count_summary">Amosar o número de notificacións pendentes</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Posición do reloxo</string>
   <string name="status_bar_clock_position_right">Dereita</string>

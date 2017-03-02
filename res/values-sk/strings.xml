@@ -374,15 +374,17 @@
   <string name="doze_title">Ambientné zobrazenie</string>
   <!-- Status bar -->
   <string name="status_bar_title">Stavový riadok</string>
-  <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
-  <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
-  <string name="status_bar_notif_count_title">Zobraziť počítadlo oznámení</string>
-  <string name="status_bar_notif_count_summary">Zobraziť počet čakajúcich oznámení na ikone v stavovom riadku</string>
   <string name="status_bar_quick_qs_pulldown_title">Rýchle vysunutie</string>
   <string name="status_bar_quick_qs_pulldown_summary">Potiahnutím stavového riadku dolu zo strany: %1$s, sa vysunie lišta rýchlych nastavení</string>
   <string name="status_bar_quick_qs_pulldown_off">Vypnúť</string>
   <string name="status_bar_quick_qs_pulldown_left">vľavo</string>
   <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
+  <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
+  <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Ikony stavového riadku</string>
+  <string name="status_bar_notif_count_title">Zobraziť počítadlo oznámení</string>
+  <string name="status_bar_notif_count_summary">Zobraziť počet čakajúcich oznámení na ikone v stavovom riadku</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Umiestnenie hodín</string>
   <string name="status_bar_clock_position_right">Vpravo</string>

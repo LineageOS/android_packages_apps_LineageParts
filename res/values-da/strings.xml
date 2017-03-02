@@ -367,15 +367,17 @@
   <string name="doze_title">Inaktivitetsvisning</string>
   <!-- Status bar -->
   <string name="status_bar_title">Statuslinje</string>
-  <string name="status_bar_toggle_brightness">Lysstyrkeregulering</string>
-  <string name="status_bar_toggle_brightness_summary">Justér lysstyrken ved at stryge på tværs af statuslinjen</string>
-  <string name="status_bar_notif_count_title">Vis antal underretninger</string>
-  <string name="status_bar_notif_count_summary">Vis antallet af ulæste underretninger</string>
   <string name="status_bar_quick_qs_pulldown_title">Hurtigt nedtræk</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s side af underretningsbjælken trækker Hurtige indstillinger ned</string>
   <string name="status_bar_quick_qs_pulldown_off">Fra</string>
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Højre</string>
+  <string name="status_bar_toggle_brightness">Lysstyrkeregulering</string>
+  <string name="status_bar_toggle_brightness_summary">Justér lysstyrken ved at stryge på tværs af statuslinjen</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Statuslinje-ikoner</string>
+  <string name="status_bar_notif_count_title">Vis antal underretninger</string>
+  <string name="status_bar_notif_count_summary">Vis antallet af ulæste underretninger</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_am_pm_title">AM/PM-layout</string>
   <string name="status_bar_am_pm_info">24-timers ur er aktiveret</string>

@@ -374,16 +374,23 @@
   <string name="doze_title">環境顯示</string>
   <!-- Status bar -->
   <string name="status_bar_title">狀態列</string>
-  <string name="status_bar_toggle_brightness">亮度控制</string>
-  <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
-  <string name="status_bar_notif_count_title">顯示通知計數</string>
-  <string name="status_bar_notif_count_summary">顯示未處理通知的數量</string>
   <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
   <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
   <string name="status_bar_quick_qs_pulldown_off">關閉</string>
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
+  <string name="status_bar_toggle_brightness">亮度控制</string>
+  <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
+  <string name="status_bar_double_tap_to_sleep_title">輕觸兩下即可休眠</string>
+  <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列來關閉螢幕</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">狀態列圖示</string>
+  <string name="status_bar_notif_count_title">顯示通知計數</string>
+  <string name="status_bar_notif_count_summary">顯示未處理通知的數量</string>
+  <string name="status_bar_system_icons_title">系統圖示</string>
+  <string name="status_bar_system_icons_summary">控制顯示哪些狀態列圖示</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">時鐘</string>
   <string name="status_bar_clock_position_title">時鐘位置</string>
   <string name="status_bar_clock_position_right">靠右</string>
   <string name="status_bar_clock_position_left">靠左</string>
@@ -394,6 +401,7 @@
   <string name="status_bar_am_pm_small">小</string>
   <string name="status_bar_am_pm_hidden">隱藏</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">電池指示燈</string>
   <string name="status_bar_battery_style_title">電池狀態樣式</string>
   <string name="status_bar_battery_style_icon_portrait">直立圖示</string>
   <string name="status_bar_battery_style_icon_landscape">橫向圖示</string>

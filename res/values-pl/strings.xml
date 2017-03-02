@@ -201,13 +201,15 @@
   <string name="media_volume_title">Multimedia</string>
   <string name="alarm_volume_title">Alarm</string>
   <!-- Status bar -->
-  <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
-  <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
-  <string name="status_bar_notif_count_title">Pokaż liczbę powiadomień</string>
   <string name="status_bar_quick_qs_pulldown_title">Szybkie rozwijanie</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija szybkie ustawienia</string>
   <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
   <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>
+  <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
+  <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Ikony paska stanu</string>
+  <string name="status_bar_notif_count_title">Pokaż liczbę powiadomień</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Pozycja zegara</string>
   <string name="status_bar_am_pm_title">Znacznik AM/PM</string>

@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="cmparts_title">LineageOSの設定</string>
+  <string name="cmparts_title">LineageOS の設定</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">読み込み中...</string>
   <string name="dlg_ok">OK</string>
@@ -374,16 +374,23 @@
   <string name="doze_title">アンビエント表示</string>
   <!-- Status bar -->
   <string name="status_bar_title">ステータスバー</string>
-  <string name="status_bar_toggle_brightness">明るさコントロール</string>
-  <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
-  <string name="status_bar_notif_count_title">通知の数を表示</string>
-  <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
   <string name="status_bar_quick_qs_pulldown_title">クイックプルダウン</string>
   <string name="status_bar_quick_qs_pulldown_summary">ステータスバーの%1$s端をプルダウンしてクイック設定を開く</string>
   <string name="status_bar_quick_qs_pulldown_off">OFF</string>
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
+  <string name="status_bar_toggle_brightness">明るさコントロール</string>
+  <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
+  <string name="status_bar_double_tap_to_sleep_title">ダブルタップしてスリープ</string>
+  <string name="status_bar_double_tap_to_sleep_summary">ステータスバーをダブルタップしてディスプレイを消灯します</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">ステータスバーのアイコン</string>
+  <string name="status_bar_notif_count_title">通知の数を表示</string>
+  <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
+  <string name="status_bar_system_icons_title">システムアイコン</string>
+  <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを設定します</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">時計</string>
   <string name="status_bar_clock_position_title">時計のスタイル</string>
   <string name="status_bar_clock_position_right">右</string>
   <string name="status_bar_clock_position_left">左</string>
@@ -394,6 +401,7 @@
   <string name="status_bar_am_pm_small">小さい</string>
   <string name="status_bar_am_pm_hidden">表示しない</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">バッテリー残量表示</string>
   <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
   <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
   <string name="status_bar_battery_style_icon_landscape">横向きのアイコン</string>
@@ -427,7 +435,7 @@
                  <b>最終更新:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">LineageOSの統計</string>
+  <string name="anonymous_statistics_title">LineageOS の統計</string>
   <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してLineageOSの改善に協力する</string>
   <string name="anonymous_statistics_warning_title">情報</string>
   <string name="anonymous_statistics_warning">LineageOSの統計に同意すると、端末間のユニークインストール回数を調べるためにLineageOSの開発者への非個人情報の送信を許可します。送信される情報にはユニークIDが含まれますが、プライバシーや個人データが危険にさらされることはありません。データはブート時に送信されます。\n\n送信されるデータの見本は[データをプレビュー]をタップして確認することができます。</string>

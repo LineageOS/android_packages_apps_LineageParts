@@ -374,15 +374,17 @@
   <string name="doze_title">Hiển thị môi trường xung quanh</string>
   <!-- Status bar -->
   <string name="status_bar_title">Thanh trạng thái</string>
-  <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
-  <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
-  <string name="status_bar_notif_count_title">Hiện số lượng thông báo</string>
-  <string name="status_bar_notif_count_summary">Màn hình hiển thị số lượng thông báo đang chờ</string>
   <string name="status_bar_quick_qs_pulldown_title">Kéo xuống nhanh</string>
   <string name="status_bar_quick_qs_pulldown_summary">Kéo từ cạnh %1$s của thanh trạng thái xuống để truy cập Cài đặt nhanh</string>
   <string name="status_bar_quick_qs_pulldown_off">Tắt</string>
   <string name="status_bar_quick_qs_pulldown_left">Trái</string>
   <string name="status_bar_quick_qs_pulldown_right">Phải</string>
+  <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
+  <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Biểu tượng thanh trạng thái</string>
+  <string name="status_bar_notif_count_title">Hiện số lượng thông báo</string>
+  <string name="status_bar_notif_count_summary">Màn hình hiển thị số lượng thông báo đang chờ</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Vị trí đồng hồ</string>
   <string name="status_bar_clock_position_right">Phải</string>

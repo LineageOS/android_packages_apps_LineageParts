@@ -374,16 +374,23 @@
   <string name="doze_title">Ortam ekranı</string>
   <!-- Status bar -->
   <string name="status_bar_title">Durum çubuğu</string>
-  <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
-  <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
-  <string name="status_bar_notif_count_title">Bildirim sayısını göster</string>
-  <string name="status_bar_notif_count_summary">Bekleyen bildirim sayısını göster</string>
   <string name="status_bar_quick_qs_pulldown_title">Hızlı aşağı çekme</string>
   <string name="status_bar_quick_qs_pulldown_summary">Durum çubuğunun %1$s tarafından aşağı çekince Hızlı Ayarlar açılır</string>
   <string name="status_bar_quick_qs_pulldown_off">Kapalı</string>
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
+  <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
+  <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
+  <string name="status_bar_double_tap_to_sleep_title">Uyku için çift dokunun</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna çift dokun</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
+  <string name="status_bar_notif_count_title">Bildirim sayısını göster</string>
+  <string name="status_bar_notif_count_summary">Bekleyen bildirim sayısını göster</string>
+  <string name="status_bar_system_icons_title">Sistem simgeleri</string>
+  <string name="status_bar_system_icons_summary">Hangi durum çubuğu simgelerinin gösterildiğini kontrol edin</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Saat</string>
   <string name="status_bar_clock_position_title">Saat pozisyonu</string>
   <string name="status_bar_clock_position_right">Sağ</string>
   <string name="status_bar_clock_position_left">Sol</string>
@@ -394,6 +401,7 @@
   <string name="status_bar_am_pm_small">Küçük</string>
   <string name="status_bar_am_pm_hidden">Gizli</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Pil göstergesi</string>
   <string name="status_bar_battery_style_title">Pil durumu stili</string>
   <string name="status_bar_battery_style_icon_portrait">Dikey simge</string>
   <string name="status_bar_battery_style_icon_landscape">Yatay simge</string>

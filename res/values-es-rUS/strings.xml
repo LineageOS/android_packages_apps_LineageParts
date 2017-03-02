@@ -63,7 +63,7 @@
   <string name="default_time">Normal</string>
   <string name="custom_time">Personalizado</string>
   <string name="dialog_delete_title">Borrar</string>
-  <string name="dialog_delete_message">¿Borrar el elemento seleccionado?</string>
+  <string name="dialog_delete_message">¿Quitar el elemento seleccionado?</string>
   <string name="brightness">Nivel de brillo</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">Siempre encendida</string>
@@ -374,16 +374,21 @@
   <string name="doze_title">Pantalla ambiente</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra de estado</string>
-  <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
-  <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
-  <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
-  <string name="status_bar_notif_count_summary">Mostrar el número de notificaciones pendientes en la barra de estado</string>
   <string name="status_bar_quick_qs_pulldown_title">Despliegue rápido</string>
   <string name="status_bar_quick_qs_pulldown_summary">El borde %1$s de la barra de notificaciones desplegará el panel de ajustes rápidos</string>
   <string name="status_bar_quick_qs_pulldown_off">Desactivado</string>
   <string name="status_bar_quick_qs_pulldown_left">Izquierdo</string>
   <string name="status_bar_quick_qs_pulldown_right">Derecho</string>
+  <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
+  <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Iconos de la barra de estado</string>
+  <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
+  <string name="status_bar_notif_count_summary">Mostrar el número de notificaciones pendientes en la barra de estado</string>
+  <string name="status_bar_system_icons_title">Iconos del sistema</string>
+  <string name="status_bar_system_icons_summary">Elija los iconos que aparecerán en la barra de estado</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Reloj</string>
   <string name="status_bar_clock_position_title">Posición del reloj</string>
   <string name="status_bar_clock_position_right">Derecho</string>
   <string name="status_bar_clock_position_left">Izquierdo</string>
@@ -394,6 +399,7 @@
   <string name="status_bar_am_pm_small">Pequeño</string>
   <string name="status_bar_am_pm_hidden">Oculto</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicador de batería</string>
   <string name="status_bar_battery_style_title">Estilo del icono de batería</string>
   <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
   <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>

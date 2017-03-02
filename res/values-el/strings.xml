@@ -367,15 +367,17 @@
   <string name="doze_title">Οθόνη ambient</string>
   <!-- Status bar -->
   <string name="status_bar_title">Γραμμή κατάστασης</string>
-  <string name="status_bar_toggle_brightness">Έλεγχος φωτεινότητας</string>
-  <string name="status_bar_toggle_brightness_summary">Επιτρέπει τον έλεγχο της φωτεινότητας με ολίσθιση στη γραμή κατάστασης</string>
-  <string name="status_bar_notif_count_title">Εμφ. αριθμού ειδοποιήσεων</string>
-  <string name="status_bar_notif_count_summary">Εμφάνιση του αριθμού των ειδοποιήσεων που εκκρεμούν στη γραμμή κατάστασης</string>
   <string name="status_bar_quick_qs_pulldown_title">Γρήγορο τράβηγμα</string>
   <string name="status_bar_quick_qs_pulldown_summary">Τραβώντας προς τα κάτω την %1$s άκρη της γραμμής κατάστασης εμφανίζονται οι Γρήγορες ρυθμίσεις</string>
   <string name="status_bar_quick_qs_pulldown_off">Απενεργοποιημένη</string>
   <string name="status_bar_quick_qs_pulldown_left">Αριστερά</string>
   <string name="status_bar_quick_qs_pulldown_right">Δεξιά</string>
+  <string name="status_bar_toggle_brightness">Έλεγχος φωτεινότητας</string>
+  <string name="status_bar_toggle_brightness_summary">Επιτρέπει τον έλεγχο της φωτεινότητας με ολίσθιση στη γραμή κατάστασης</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Εικονίδια γραμμής κατάστασης</string>
+  <string name="status_bar_notif_count_title">Εμφ. αριθμού ειδοποιήσεων</string>
+  <string name="status_bar_notif_count_summary">Εμφάνιση του αριθμού των ειδοποιήσεων που εκκρεμούν στη γραμμή κατάστασης</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Θέση ρολογιού</string>
   <string name="status_bar_clock_position_right">Δεξιά</string>

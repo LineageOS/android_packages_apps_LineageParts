@@ -68,6 +68,15 @@
   <!-- Lights settings screen, notification light settings -->
   <!-- Lights settings, LED notification -->
   <!-- LiveDisplay -->
+  <string name="live_display_enhance_color_title">Enhance colours</string>
+  <string name="live_display_enhance_color_summary">Improve colour vibrance of flesh tones, scenery, and other images</string>
+  <string name="live_display_color_profile_title">Colour profile</string>
+  <string name="live_display_color_profile_standard_summary">Accurate colours and bright whites</string>
+  <string name="live_display_color_profile_natural_summary">Realistic colours and flesh tones</string>
+  <string name="live_display_color_profile_adaptive_summary">Colours adapt to ambient conditions</string>
+  <string name="live_display_color_profile_srgb_summary">Colours accurate to the sRGB colour space</string>
+  <string name="color_calibration_title">Colour calibration</string>
+  <string name="color_calibration_summary">Calibrate on-screen colours</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <!-- Button settings -->
   <string name="hardware_keys_long_press_title">Long press action</string>
@@ -96,6 +105,7 @@
   <!-- Connection override toggles (not all are used at this time ) -->
   <!-- Sound settings screen -->
   <!-- Status bar -->
+  <!-- Status bar - icons -->
   <!-- Status bar - Clock -->
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
@@ -111,4 +121,5 @@
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_action_dialer">Open the dialler</string>
 </resources>

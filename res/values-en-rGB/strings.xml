@@ -82,6 +82,7 @@
   <!-- Connection override toggles (not all are used at this time ) -->
   <!-- Sound settings screen -->
   <!-- Status bar -->
+  <!-- Status bar - icons -->
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_center">Centre</string>
   <!-- Status bar - Battery -->

@@ -137,6 +137,8 @@
   <string name="live_display_color_profile_adaptive_summary">Kleuren passen zich aan aan de omgeving</string>
   <string name="live_display_color_profile_reading_title">Lezen</string>
   <string name="live_display_color_profile_reading_summary">Warmere kleuren voor minder vermoeidheid van de ogen</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Kleuren binnen het sRGB kleurenpalet</string>
   <string name="color_calibration_title">Kleuren kalibreren</string>
   <string name="color_calibration_summary">Schermkleur kalibreren</string>
   <string name="color_red_title">Rood</string>
@@ -372,15 +374,17 @@
   <string name="doze_title">Omgevingsdisplay</string>
   <!-- Status bar -->
   <string name="status_bar_title">Statusbalk</string>
-  <string name="status_bar_toggle_brightness">Helderheid beheren</string>
-  <string name="status_bar_toggle_brightness_summary">Helderheid aanpassen door over de statusbalk te slepen</string>
-  <string name="status_bar_notif_count_title">Aantal meldingen tonen</string>
-  <string name="status_bar_notif_count_summary">Aantal nieuwe meldingen tonen</string>
   <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s van statusbalk opent Snelle Instellingen</string>
   <string name="status_bar_quick_qs_pulldown_off">Uit</string>
   <string name="status_bar_quick_qs_pulldown_left">Linkerkant</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>
+  <string name="status_bar_toggle_brightness">Helderheid beheren</string>
+  <string name="status_bar_toggle_brightness_summary">Helderheid aanpassen door over de statusbalk te slepen</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Statusbalkpictogrammen</string>
+  <string name="status_bar_notif_count_title">Aantal meldingen tonen</string>
+  <string name="status_bar_notif_count_summary">Aantal nieuwe meldingen tonen</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Indeling klok</string>
   <string name="status_bar_clock_position_right">Rechts</string>

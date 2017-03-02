@@ -374,16 +374,23 @@
   <string name="doze_title">Активнен дисплей</string>
   <!-- Status bar -->
   <string name="status_bar_title">Лента на състоянието</string>
-  <string name="status_bar_toggle_brightness">Контрол на яркостта</string>
-  <string name="status_bar_toggle_brightness_summary">Настройване на яркостта чрез плъзгане в лентата на състоянието</string>
-  <string name="status_bar_notif_count_title">Брой известия</string>
-  <string name="status_bar_notif_count_summary">Показва броя на новите известия в лентата на състоянието</string>
   <string name="status_bar_quick_qs_pulldown_title">Бързи настройки</string>
   <string name="status_bar_quick_qs_pulldown_summary">Дръпнете %1$s лентата на състоянието за бързи настройки</string>
   <string name="status_bar_quick_qs_pulldown_off">Изключен</string>
   <string name="status_bar_quick_qs_pulldown_left">Вляво</string>
   <string name="status_bar_quick_qs_pulldown_right">Вдясно</string>
+  <string name="status_bar_toggle_brightness">Контрол на яркостта</string>
+  <string name="status_bar_toggle_brightness_summary">Настройване на яркостта чрез плъзгане в лентата на състоянието</string>
+  <string name="status_bar_double_tap_to_sleep_title">Двукратно почукване за заспиване</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Двукратно почукване върху лентата на състоянието изключва на дисплея</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Икони на лентата</string>
+  <string name="status_bar_notif_count_title">Брой известия</string>
+  <string name="status_bar_notif_count_summary">Показва броя на новите известия в лентата на състоянието</string>
+  <string name="status_bar_system_icons_title">Системни икони</string>
+  <string name="status_bar_system_icons_summary">Изберете, кои икони да се показват в лентата на състоянието</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Часовник</string>
   <string name="status_bar_clock_position_title">Позиция на часовника</string>
   <string name="status_bar_clock_position_right">Вдясно</string>
   <string name="status_bar_clock_position_left">Вляво</string>
@@ -394,6 +401,7 @@
   <string name="status_bar_am_pm_small">Малък</string>
   <string name="status_bar_am_pm_hidden">Скрит</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Батерия</string>
   <string name="status_bar_battery_style_title">Икона на батерията</string>
   <string name="status_bar_battery_style_icon_portrait">Вертикална икона</string>
   <string name="status_bar_battery_style_icon_landscape">Хоризонтална икона</string>

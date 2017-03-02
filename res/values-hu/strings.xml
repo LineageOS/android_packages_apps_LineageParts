@@ -361,15 +361,17 @@
   <string name="doze_title">Környezeti kijelző</string>
   <!-- Status bar -->
   <string name="status_bar_title">Értesítési sáv</string>
-  <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
-  <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
-  <string name="status_bar_notif_count_title">Értesítések számának mutatása</string>
-  <string name="status_bar_notif_count_summary">Folyamatban lévő értesítések számának megjelenítése az értesítési sávon</string>
   <string name="status_bar_quick_qs_pulldown_title">Gyors lehúzás</string>
   <string name="status_bar_quick_qs_pulldown_summary">Gyors beállítások megjelenítése az értesítési sáv %1$s oldalán történő lehúzásakor</string>
   <string name="status_bar_quick_qs_pulldown_off">Ki</string>
   <string name="status_bar_quick_qs_pulldown_left">Bal</string>
   <string name="status_bar_quick_qs_pulldown_right">Jobb</string>
+  <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
+  <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Állapotsor ikonok</string>
+  <string name="status_bar_notif_count_title">Értesítések számának mutatása</string>
+  <string name="status_bar_notif_count_summary">Folyamatban lévő értesítések számának megjelenítése az értesítési sávon</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Óra pozíció</string>
   <string name="status_bar_clock_position_right">Jobb</string>

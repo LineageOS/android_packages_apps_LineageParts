@@ -372,15 +372,17 @@
   <string name="doze_title">Амбијент приказ</string>
   <!-- Status bar -->
   <string name="status_bar_title">Статусна трака</string>
-  <string name="status_bar_toggle_brightness">Контрола осветљености</string>
-  <string name="status_bar_toggle_brightness_summary">Подеси осветљеност превлачењем преко статусне траке</string>
-  <string name="status_bar_notif_count_title">Прикажи број обавештења</string>
-  <string name="status_bar_notif_count_summary">Прикажи број обавештења на чекању</string>
   <string name="status_bar_quick_qs_pulldown_title">Брзи падајући панел</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s ивица статусне траке вуче доле брза подешавања</string>
   <string name="status_bar_quick_qs_pulldown_off">Искљ</string>
   <string name="status_bar_quick_qs_pulldown_left">Лево</string>
   <string name="status_bar_quick_qs_pulldown_right">Десно</string>
+  <string name="status_bar_toggle_brightness">Контрола осветљености</string>
+  <string name="status_bar_toggle_brightness_summary">Подеси осветљеност превлачењем преко статусне траке</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Иконе статусне траке</string>
+  <string name="status_bar_notif_count_title">Прикажи број обавештења</string>
+  <string name="status_bar_notif_count_summary">Прикажи број обавештења на чекању</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Позиција сата</string>
   <string name="status_bar_clock_position_right">Десно</string>

@@ -367,15 +367,17 @@
   <string name="doze_title">Ambient display</string>
   <!-- Status bar -->
   <string name="status_bar_title">Egoera-barra</string>
-  <string name="status_bar_toggle_brightness">Distiraren kontrola</string>
-  <string name="status_bar_toggle_brightness_summary">Doitu distira egoera-barran zehar irristatuz</string>
-  <string name="status_bar_notif_count_title">Erakutsi jakinarazpen kopurua</string>
-  <string name="status_bar_notif_count_summary">Bistaratu zain dauden jakinarazpen kopurua</string>
   <string name="status_bar_quick_qs_pulldown_title">Hedapen azkarra</string>
   <string name="status_bar_quick_qs_pulldown_summary">Jakinarazpen barraren %1$s ertzak ezarpen azkarren taula hedatuko du</string>
   <string name="status_bar_quick_qs_pulldown_off">Ez</string>
   <string name="status_bar_quick_qs_pulldown_left">ezkerreko</string>
   <string name="status_bar_quick_qs_pulldown_right">eskumako</string>
+  <string name="status_bar_toggle_brightness">Distiraren kontrola</string>
+  <string name="status_bar_toggle_brightness_summary">Doitu distira egoera-barran zehar irristatuz</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Egoera-barrako ikonoak</string>
+  <string name="status_bar_notif_count_title">Erakutsi jakinarazpen kopurua</string>
+  <string name="status_bar_notif_count_summary">Bistaratu zain dauden jakinarazpen kopurua</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_am_pm_title">AM/PM estiloa</string>
   <string name="status_bar_am_pm_info">24 ordutako erlojua gaitu da</string>

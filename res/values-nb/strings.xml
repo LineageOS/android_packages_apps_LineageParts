@@ -374,15 +374,17 @@
   <string name="doze_title">Ambient skjerm</string>
   <!-- Status bar -->
   <string name="status_bar_title">Statuslinje</string>
-  <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
-  <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å dra langs statuslinjen</string>
-  <string name="status_bar_notif_count_title">Vis antall varsler</string>
-  <string name="status_bar_notif_count_summary">Vis antall ventende varsler</string>
   <string name="status_bar_quick_qs_pulldown_title">Rask rullegardinmeny</string>
   <string name="status_bar_quick_qs_pulldown_summary">Ved å dra ned fra %1$s side av statuslinjen, drar du ned Hurtiginnstillingene</string>
   <string name="status_bar_quick_qs_pulldown_off">Av</string>
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
+  <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
+  <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å dra langs statuslinjen</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Statuslinjeikoner</string>
+  <string name="status_bar_notif_count_title">Vis antall varsler</string>
+  <string name="status_bar_notif_count_summary">Vis antall ventende varsler</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Klokkeposisjon</string>
   <string name="status_bar_clock_position_right">Høyre</string>

@@ -373,15 +373,17 @@
   <string name="doze_title">Tampilan ambien</string>
   <!-- Status bar -->
   <string name="status_bar_title">Status bar</string>
-  <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
-  <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
-  <string name="status_bar_notif_count_title">Tampilkan hitungan pemberitahuan</string>
-  <string name="status_bar_notif_count_summary">Tampilkan jumlah pemberitahuan yang tertunda</string>
   <string name="status_bar_quick_qs_pulldown_title">Keruntuhan cepat</string>
   <string name="status_bar_quick_qs_pulldown_summary">Menarik %1$s tepi status bar ke bawah untuk Pengaturan Cepat</string>
   <string name="status_bar_quick_qs_pulldown_off">Mati</string>
   <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
+  <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
+  <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Ikon Status bar</string>
+  <string name="status_bar_notif_count_title">Tampilkan hitungan pemberitahuan</string>
+  <string name="status_bar_notif_count_summary">Tampilkan jumlah pemberitahuan yang tertunda</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Posisi jam</string>
   <string name="status_bar_clock_position_right">Kanan</string>

@@ -374,16 +374,23 @@
   <string name="doze_title">Display Ambient</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra di stato</string>
-  <string name="status_bar_toggle_brightness">Controllo luminosità</string>
-  <string name="status_bar_toggle_brightness_summary">Modifica la luminosità strisciando sulla barra di stato</string>
-  <string name="status_bar_notif_count_title">Mostra contatore notifiche</string>
-  <string name="status_bar_notif_count_summary">Visualizza il numero di notifiche in sospeso</string>
   <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
   <string name="status_bar_quick_qs_pulldown_summary">Scorri la barra di stato verso il basso da %1$s per aprire le impostazioni rapide</string>
   <string name="status_bar_quick_qs_pulldown_off">Off</string>
   <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
   <string name="status_bar_quick_qs_pulldown_right">Destra</string>
+  <string name="status_bar_toggle_brightness">Controllo luminosità</string>
+  <string name="status_bar_toggle_brightness_summary">Modifica la luminosità strisciando sulla barra di stato</string>
+  <string name="status_bar_double_tap_to_sleep_title">Doppio tocco per sospendere</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Tocca due volte la barra di stato per sospendere il dispositivo</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Icone barra di stato</string>
+  <string name="status_bar_notif_count_title">Mostra contatore notifiche</string>
+  <string name="status_bar_notif_count_summary">Visualizza il numero di notifiche in sospeso</string>
+  <string name="status_bar_system_icons_title">Icone di sistema</string>
+  <string name="status_bar_system_icons_summary">Controlla quali icone vengono visualizzate nella barra di stato</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Orologio</string>
   <string name="status_bar_clock_position_title">Posizione orologio</string>
   <string name="status_bar_clock_position_right">Destra</string>
   <string name="status_bar_clock_position_left">Sinistra</string>
@@ -394,6 +401,7 @@
   <string name="status_bar_am_pm_small">Piccolo</string>
   <string name="status_bar_am_pm_hidden">Nascosto</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicatore batteria</string>
   <string name="status_bar_battery_style_title">Stile indicatore batteria</string>
   <string name="status_bar_battery_style_icon_portrait">Icona verticale</string>
   <string name="status_bar_battery_style_icon_landscape">Icona orizzontale</string>

@@ -179,7 +179,7 @@
   <string name="camera_launch_title">Kamera starten</string>
   <string name="camera_launch_summary">Langes Drücken und Loslassen startet die Kamera</string>
   <string name="volbtn_music_controls_title">Wiedergabe steuern</string>
-  <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm durch langes Drücken der Lautstärketasten zum nächsten / vorherigen Titel springen</string>
+  <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm durch langes Drücken der Lautstärketasten zum nächsten/vorherigen Titel springen</string>
   <string name="volbtn_cursor_control_title">Cursorsteuerung</string>
   <string name="volbtn_cursor_control_off">Deaktiviert</string>
   <string name="volbtn_cursor_control_on">Lauter-/Leiser-Taste bewegt den Cursor nach links/rechts</string>
@@ -374,16 +374,22 @@
   <string name="doze_title">Inaktivitätsdisplay</string>
   <!-- Status bar -->
   <string name="status_bar_title">Statusleiste</string>
-  <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
-  <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
-  <string name="status_bar_notif_count_title">Benachrichtigungszähler</string>
-  <string name="status_bar_notif_count_summary">Anzahl der ungelesenen Benachrichtigungen in der Statusleiste anzeigen</string>
   <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
   <string name="status_bar_quick_qs_pulldown_summary">Herunterziehen der Benachrichtigungsleiste am %1$s Rand öffnet die Schnelleinstellungen</string>
   <string name="status_bar_quick_qs_pulldown_off">Aus</string>
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
+  <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
+  <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Display auszuschalten</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Statusleistensymbole</string>
+  <string name="status_bar_notif_count_title">Benachrichtigungszähler</string>
+  <string name="status_bar_notif_count_summary">Anzahl der ungelesenen Benachrichtigungen in der Statusleiste anzeigen</string>
+  <string name="status_bar_system_icons_title">Systemsymbole</string>
+  <string name="status_bar_system_icons_summary">Festlegen, welche Statusleistensymbole angezeigt werden</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Uhr</string>
   <string name="status_bar_clock_position_title">Position der Uhr</string>
   <string name="status_bar_clock_position_right">Rechts</string>
   <string name="status_bar_clock_position_left">Links</string>
@@ -394,7 +400,8 @@
   <string name="status_bar_am_pm_small">Klein</string>
   <string name="status_bar_am_pm_hidden">Ausgeblendet</string>
   <!-- Status bar - Battery -->
-  <string name="status_bar_battery_style_title">Akkustand-Anzeigeformat</string>
+  <string name="status_bar_battery_title">Akkuanzeige</string>
+  <string name="status_bar_battery_style_title">Anzeigeformat</string>
   <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
   <string name="status_bar_battery_style_icon_landscape">Symbol (Querformat)</string>
   <string name="status_bar_battery_style_circle">Kreis</string>

@@ -374,16 +374,23 @@
   <string name="doze_title">Afișare ambientală</string>
   <!-- Status bar -->
   <string name="status_bar_title">Bară de stare</string>
-  <string name="status_bar_toggle_brightness">Control luminozitate</string>
-  <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
-  <string name="status_bar_notif_count_title">Arată numerotarea notificărilor</string>
-  <string name="status_bar_notif_count_summary">Afișează numărul notificărilor în așteptare</string>
   <string name="status_bar_quick_qs_pulldown_title">Derulare în jos rapidă</string>
   <string name="status_bar_quick_qs_pulldown_summary">Marginea %1$s a bării de stare aduce în jos Setările Rapide</string>
   <string name="status_bar_quick_qs_pulldown_off">Dezactivat</string>
   <string name="status_bar_quick_qs_pulldown_left">Stânga</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreapta</string>
+  <string name="status_bar_toggle_brightness">Control luminozitate</string>
+  <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
+  <string name="status_bar_double_tap_to_sleep_title">Apăsare dublă pentru a opri ecranul</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare pentru a opri ecranul</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Pictograme bară de stare</string>
+  <string name="status_bar_notif_count_title">Arată numerotarea notificărilor</string>
+  <string name="status_bar_notif_count_summary">Afișează numărul notificărilor în așteptare</string>
+  <string name="status_bar_system_icons_title">Iconițe de sistem</string>
+  <string name="status_bar_system_icons_summary">Controlați care pictograme din bara de stare sunt afișate</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Ceas</string>
   <string name="status_bar_clock_position_title">Poziţia ceasului</string>
   <string name="status_bar_clock_position_right">Dreapta</string>
   <string name="status_bar_clock_position_left">Stânga</string>
@@ -394,6 +401,7 @@
   <string name="status_bar_am_pm_small">Mic</string>
   <string name="status_bar_am_pm_hidden">Ascuns</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicator baterie</string>
   <string name="status_bar_battery_style_title">Stilul stării bateriei</string>
   <string name="status_bar_battery_style_icon_portrait">Iconiță portret</string>
   <string name="status_bar_battery_style_icon_landscape">Iconiță peisaj</string>

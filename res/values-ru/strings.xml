@@ -137,6 +137,7 @@
   <string name="live_display_color_profile_adaptive_summary">Цвета адаптируются к условиям окружающей среды</string>
   <string name="live_display_color_profile_reading_title">Чтение</string>
   <string name="live_display_color_profile_reading_summary">Тёплые цвета для меньшего напряжения глаз</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="color_calibration_title">Цвет</string>
   <string name="color_calibration_summary">Настройка цветопередачи экрана</string>
   <string name="color_red_title">Красный</string>
@@ -232,6 +233,8 @@
   <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для запуска камеры</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Быстро запустить камеру без разблокировки устройства</string>
+  <string name="torch_long_press_power_gesture_title">Долг. наж. для вкл. фонарика</string>
+  <string name="torch_long_press_power_gesture_desc">Включать фонарик долгим нажатием кнопки питания при выключенном экране</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Удалить</string>
   <string name="profile_action_none">Оставить без изменений</string>
@@ -370,15 +373,17 @@
   <string name="doze_title">Индикация событий</string>
   <!-- Status bar -->
   <string name="status_bar_title">Строка состояния</string>
-  <string name="status_bar_toggle_brightness">Управление яркостью</string>
-  <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
-  <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
-  <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
   <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s край строки состояния вытягивает быстрые настройки</string>
   <string name="status_bar_quick_qs_pulldown_off">Выключено</string>
   <string name="status_bar_quick_qs_pulldown_left">Левый</string>
   <string name="status_bar_quick_qs_pulldown_right">Правый</string>
+  <string name="status_bar_toggle_brightness">Управление яркостью</string>
+  <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Значки в строке состояния</string>
+  <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
+  <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_position_title">Часы</string>
   <string name="status_bar_clock_position_right">Справа</string>
@@ -503,4 +508,5 @@
   <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Виброотклик</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Вибрировать при распознавании жеста</string>
+  <string name="touchscreen_gesture_action_flashlight">Включить или выключить фонарик</string>
 </resources>
