@@ -35,6 +35,7 @@ import android.support.v7.preference.Preference;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Toast;
 
+import org.cyanogenmod.cmparts.PartsUpdater;
 import org.cyanogenmod.cmparts.R;
 import org.cyanogenmod.cmparts.widget.SeekBarPreference;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
@@ -46,6 +47,8 @@ import java.util.List;
 import cyanogenmod.power.PerformanceManager;
 import cyanogenmod.power.PerformanceProfile;
 import cyanogenmod.providers.CMSettings;
+
+import static cyanogenmod.power.PerformanceManager.PROFILE_POWER_SAVE;
 
 public class PerfProfileSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -181,7 +184,8 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
             return;
         }
 
-        PerformanceProfile profile = mPerf.getActivePowerProfile();
+        PerformanceProfile profile = mPowerManager.isPowerSaveMode() ?
+                mPerf.getPowerProfile(PROFILE_POWER_SAVE) : mPerf.getActivePowerProfile();
         mPerfSeekBar.setProgress(mProfiles.indexOf(profile));
         mPerfSeekBar.setTitle(getResources().getString(
                 R.string.perf_profile_title, profile.getName()));
@@ -253,6 +257,9 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
 
     private void updatePowerSaveValue() {
         mPowerSavePref.setChecked(mPowerManager.isPowerSaveMode());
+        updatePerfSettings();
+        // The profile was changed automatically without updating the preference
+        PartsUpdater.notifyChanged(getActivity(), getPreferenceScreen().getKey());
     }
 
     private void updateAutoPowerSaveValue() {
@@ -271,8 +278,12 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
         @Override
         public String getSummary(Context context, String key) {
-            final PerformanceProfile profile =
-                    PerformanceManager.getInstance(context).getActivePowerProfile();
+            final PowerManager powerManager =
+                    (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+            final PerformanceManager perfManager = PerformanceManager.getInstance(context);
+            final PerformanceProfile profile = powerManager.isPowerSaveMode() ?
+                    perfManager.getPowerProfile(PROFILE_POWER_SAVE) :
+                    perfManager.getActivePowerProfile();
             String summary = context.getString(R.string.perf_profile_settings_summary);
             if (profile != null) {
                 summary += "\n\n" + context.getResources().getString(
