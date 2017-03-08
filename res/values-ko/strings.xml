@@ -53,10 +53,12 @@
   <string name="privacy_guard_help_title">도움말</string>
   <string name="privacy_guard_reset_title">초기화</string>
   <string name="privacy_guard_reset_text">권한을 초기화할까요?</string>
+  <string name="privacy_guard_help_text">여기서는 특정 앱을 터치하는 것으로 해당 앱에 프라이버시 가드 기능을 작동하게 할 것인지를 선택할 수 있습니다. 선택된 앱은 연락처, 메시지, 통화 기록 등의 개인 정보에 접근 할 수 없게 됩니다. 앱을 길게 누르면 자세한 정보가 표시됩니다.\n\n내장 앱은 기본적으로 보여지지 않지만, 메뉴의 해당 옵션을 변경하여 나타낼 수 있습니다.</string>
   <string name="privacy_guard_manager_show_system_apps">내장된 앱 표시</string>
   <string name="privacy_guard_advanced_settings_title">고급</string>
   <string name="privacy_guard_notification_title">알림 표시</string>
   <!-- Notification light dialogs -->
+  <string name="edit_light_settings">표시등 설정 변경</string>
   <string name="pulse_speed_title">깜빡임 시간 및 속도</string>
   <string name="default_time">기본</string>
   <string name="custom_time">사용자 지정</string>
@@ -92,17 +94,28 @@
   <string name="notification_light_default_value">기본값</string>
   <string name="notification_light_missed_call_title">부재중 전화</string>
   <string name="notification_light_voicemail_title">음성 메시지</string>
+  <string name="notification_light_screen_on">화면 켜진 상태에서 표시등 사용</string>
+  <string name="notification_light_zen_mode">알림 일시중지 상태에서 표시등 사용</string>
   <string name="notification_light_use_multiple_leds">다중 LED</string>
   <string name="keywords_lights_brightness_level">LED 밝기 감소</string>
+  <string name="notification_light_automagic">색상 자동 선택</string>
+  <string name="notification_light_automagic_summary">자동으로 색상 선택</string>
   <!-- Lights settings, LED notification -->
+  <string name="led_notification_title">표시등 설정</string>
+  <string name="led_notification_text">설정 앱이 LED 표시등을 활성화함</string>
+  <string name="notification_light_no_apps_summary">앱 별 제어를 추가하려면 \'%1$s\'을(를) 활성화하고 메뉴 바에서 \'\u002b\'를 누르세요</string>
   <!-- LiveDisplay -->
+  <string name="live_display_summary">가독성을 향상시키고 눈의 피로를 줄이기 위해 주변 환경과 시간에 따라 화면을 최적화</string>
+  <string name="live_display_mode">화면 모드</string>
   <string name="live_display_color_temperature_title">색 온도</string>
   <string name="live_display_color_temperature_summary">주간: <xliff:g id="day_temperature">%1$d</xliff:g>K  야간: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
   <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
   <string name="live_display_day">주간</string>
   <string name="live_display_night">야간</string>
   <string name="live_display_outdoor_mode_title">자동 야외 모드</string>
+  <string name="live_display_outdoor_mode_summary">밝은 햇빛 아래에서 자동으로 밝기와 채도가 증가</string>
   <string name="live_display_low_power_title">전력 소모 절약</string>
+  <string name="live_display_low_power_summary">열화 없는 한도 내에서 화면을 조정하여 전력 소모 감소</string>
   <string name="live_display_enhance_color_title">색상 향상</string>
   <string name="live_display_enhance_color_summary">피부 톤, 풍경 및 기타 이미지에서 색의 생동감을 향상</string>
   <string name="live_display_color_profile_title">색상 프로필</string>
@@ -127,11 +140,13 @@
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">sRGB 색 공간에 적합한 색상</string>
   <string name="color_calibration_title">색상 보정</string>
+  <string name="color_calibration_summary">화면의 색상을 보정</string>
   <string name="color_red_title">빨강</string>
   <string name="color_green_title">초록</string>
   <string name="color_blue_title">파랑</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <string name="picture_adjustment_title">사진 조정</string>
+  <string name="picture_adjustment_summary">색조, 채도, 농도 및 대비 조정</string>
   <string name="adj_hue_title">색조</string>
   <string name="adj_saturation_title">채도</string>
   <string name="adj_intensity_title">명도</string>
@@ -154,10 +169,15 @@
   <string name="hardware_keys_action_app_switch">최근 앱 전환기</string>
   <string name="hardware_keys_action_search">검색 도우미</string>
   <string name="hardware_keys_action_voice_search">음성 검색</string>
+  <string name="hardware_keys_action_in_app_search">앱에서 검색</string>
   <string name="hardware_keys_action_launch_camera">카메라 실행</string>
   <string name="hardware_keys_action_sleep">화면 끄기</string>
+  <string name="hardware_keys_action_last_app">마지막으로 사용한 앱</string>
   <string name="hardware_keys_action_split_screen">화면 분할</string>
+  <string name="camera_sleep_on_release_title">화면 엿보기</string>
+  <string name="camera_sleep_on_release_summary">버튼을 반만 누르고 있는 동안 화면을 계속 켜두기</string>
   <string name="camera_launch_title">카메라 실행</string>
+  <string name="camera_launch_summary">길게 눌렀다 떼어 카메라 실행</string>
   <string name="volbtn_music_controls_title">음악 재생 컨트롤</string>
   <string name="volbtn_music_controls_summary">화면이 꺼진 상태에서 볼륨 키를 길게 눌러 음악 트랙 탐색</string>
   <string name="volbtn_cursor_control_title">키보드 커서 제어</string>
@@ -165,13 +185,21 @@
   <string name="volbtn_cursor_control_on">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
   <string name="volbtn_cursor_control_on_reverse">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
   <string name="power_end_call_title">통화 종료</string>
+  <string name="power_end_call_summary">전원 버튼을 눌러 현재 진행 중인 통화 종료</string>
   <string name="swap_volume_buttons_title">버튼 재정렬</string>
+  <string name="swap_volume_buttons_summary">화면이 회전되어 있을 때 볼륨 위/아래 버튼 전환</string>
   <string name="button_wake_title">기기 깨우기</string>
   <string name="volume_answer_call_title">전화 수신</string>
+  <string name="volume_answer_call_summary">볼륨 버튼을 눌러 걸려온 전화를 받기</string>
   <string name="home_answer_call_title">전화 수신</string>
+  <string name="home_answer_call_summary">홈 버튼을 눌러 걸려온 전화를 받기</string>
   <!-- Key backlight -->
+  <string name="button_backlight_title">백라이트</string>
   <string name="button_backlight_enabled">버튼 조명 사용</string>
+  <string name="keyboard_backlight_enabled">키보드 조명 사용</string>
   <string name="button_backlight_seekbar_title">버튼 조명 밝기</string>
+  <string name="keyboard_backlight_seekbar_title">키보드 조명 밝기</string>
+  <string name="backlight_timeout_title">조명 시간 제한</string>
   <string name="backlight_timeout_unlimited">끄지 않음</string>
   <string name="backlight_summary_disabled">사용 안 함</string>
   <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g>동안 켬</string>
@@ -185,6 +213,7 @@
   <string name="navigation_bar_left_title">왼손잡이 모드</string>
   <string name="navigation_bar_left_summary">화면 가로 모드에서 화면의 왼쪽에 내비게이션 바를 배치</string>
   <string name="navigation_bar_arrow_keys_title">입력 도중 화살표 키 표시</string>
+  <string name="navigation_bar_arrow_keys_summary">입력 시 좌우 커서 버튼을 표시합니다. 입력기 전환기보다 우선합니다.</string>
   <string name="navigation_bar_home_long_press_title">홈 버튼을 길게 누를 시 동작 설정</string>
   <string name="navigation_bar_home_double_tap_title">홈 버튼을 두 번 누를 시 동작 설정</string>
   <string name="navigation_bar_recents_title">멀티태스킹 버튼을 길게 누를 시 동작 설정</string>
@@ -200,9 +229,12 @@
   <string name="power_menu_sound_title">사운드 패널</string>
   <string name="power_menu_bug_report_disabled">개발자 설정에서 오류 보고가 비활성화되었습니다</string>
   <string name="volume_keys_control_ring_stream_title">벨소리 볼륨 제어</string>
+  <string name="volume_keys_control_ring_stream_summary_on">볼륨 키로 벨소리 크기 조절</string>
+  <string name="volume_keys_control_ring_stream_summary_off">볼륨 키로 미디어 볼륨 크기 조절</string>
   <string name="camera_double_tap_power_gesture_title">전원 버튼을 두 번 눌러 카메라 열기</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">화면 잠금을 해제하지 않고 빠르게 카메라 열기</string>
+  <string name="torch_long_press_power_gesture_title">길게 눌러 손전등 켜기</string>
   <string name="torch_long_press_power_gesture_desc">화면이 꺼져 있을 때 전원 버튼을 길게 눌러 손전등 켜기</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">삭제</string>
@@ -222,6 +254,7 @@
   <string name="profile_setup_actions_title_config">동작 다시 설정</string>
   <string name="wireless_networks_settings_title">무선 및 네트워크</string>
   <!-- Profile triggers -->
+  <string name="no_bluetooth_triggers">페어링된 블루투스 장치가 없습니다.\n트리거를 구성하기 전에 블루투스 장치를 눌러 페어링하세요.</string>
   <string name="no_wifi_triggers">Wi\u2011Fi 액세스 포인트가 구성되지 않았습니다.\n트리거를 설정하기 전에 눌러서 Wi\u2011Fi에 연결하세요.</string>
   <string name="no_triggers_configured">트리거가 구성되지 않았습니다. 눌러서 추가하세요.</string>
   <string name="no_triggers_configured_nfc">눌러서 새 NFC 트리거를 설정하세요.</string>
@@ -236,6 +269,7 @@
   <string name="profile_settings_summary_off">프로필 사용 안 함</string>
   <string name="profile_trigger_configure">트리거 구성</string>
   <string name="profile_write_nfc_tag">NFC 태그에 쓰기</string>
+  <string name="profile_write_touch_tag">태그를 눌러 작성</string>
   <string name="profile_write_success">태그가 성공적으로 작성되었습니다</string>
   <string name="profile_write_failed">태그 작성에 실패했습니다!</string>
   <string name="profile_selected">선택된 프로필: %1$s</string>
@@ -247,11 +281,13 @@
   <string name="profile_populate_profile_from_state">현재 기기 설정으로 프로필을 설정하시겠습니까?</string>
   <string name="profile_menu_fill_from_state">현재 기기 설정 가져오기</string>
   <string name="profile_remove_current_profile">현재 사용 중인 프로필은 삭제할 수 없습니다!</string>
+  <string name="profile_app_group_category_title">알림 무시</string>
   <string name="profile_app_group_item_instructions">앱 그룹 추가 또는 제거</string>
   <string name="profile_app_group_item_instructions_summary">이 프로필에 알림을 무시할 앱의 그룹을 추가 또는 제거</string>
   <!-- Profile mode options. -->
   <string name="profile_entries_on">켜짐</string>
   <string name="profile_entries_off">꺼짐</string>
+  <string name="profile_entries_no_override">값을 강제로 설정하지 않음</string>
   <!-- Add Profile -->
   <string name="profile_name_title">이름</string>
   <string name="new_profile_name">&lt;새 프로필&gt;</string>
@@ -271,7 +307,10 @@
   <string name="profile_networkmode_2g3g">2G/3G</string>
   <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
+  <string name="profile_volumeoverrides_title">볼륨 강제 설정</string>
   <string name="connection_state_enabled">사용</string>
+  <string name="volume_override_summary">%1$s/%2$s로 설정</string>
+  <string name="profile_volume_override_checkbox_label">볼륨 강제 설정</string>
   <!-- Menu item for managing profiles -->
   <string name="profile_profiles_manage">프로필</string>
   <string name="profile_profile_manage">프로필 관리</string>
@@ -310,6 +349,8 @@
   <string name="profile_lockmode_disabled_summary">잠금 화면 사용 안 함</string>
   <string name="profile_airplanemode_title">비행기 모드</string>
   <string name="profile_brightness_title">화면 밝기</string>
+  <string name="profile_brightness_override_summary">%1$d%%로 설정</string>
+  <string name="profile_brightness_override_checkbox_label">밝기 강제 설정</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <string name="toggleWifi">Wi\u2011Fi</string>
   <string name="toggleWifiAp">휴대용 Wi\u2011Fi 핫스팟</string>
@@ -333,27 +374,24 @@
   <string name="doze_title">절전 모드</string>
   <!-- Status bar -->
   <string name="status_bar_title">상태 표시줄</string>
+  <string name="status_bar_quick_qs_pulldown_title">빠르게 설정 패널 열기</string>
   <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 모서리를 내려 빠른 설정 보기</string>
   <string name="status_bar_quick_qs_pulldown_off">꺼짐</string>
   <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
   <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>
   <string name="status_bar_toggle_brightness">밝기 조절</string>
   <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
-  <string name="status_bar_double_tap_to_sleep_title">두 번 두드려 화면 끄기</string>
-  <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄을 두 번 두드려 화면 끄기</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">상태 표시줄 아이콘</string>
   <string name="status_bar_notif_count_title">알림 갯수 표시</string>
   <string name="status_bar_notif_count_summary">읽지 않은 알림 숫자 표시</string>
-  <string name="status_bar_system_icons_title">시스템 아이콘</string>
-  <string name="status_bar_system_icons_summary">상태 표시줄에 표시할 아이콘을 설정</string>
   <!-- Status bar - Clock -->
-  <string name="status_bar_clock_title">시계</string>
   <string name="status_bar_clock_position_title">시계 위치</string>
   <string name="status_bar_clock_position_right">오른쪽</string>
   <string name="status_bar_clock_position_left">왼쪽</string>
   <string name="status_bar_clock_position_center">가운데</string>
   <string name="status_bar_am_pm_title">오전/오후 스타일</string>
+  <string name="status_bar_am_pm_info">24시간 형식 사용 중</string>
   <string name="status_bar_am_pm_normal">기본</string>
   <string name="status_bar_am_pm_small">작게</string>
   <string name="status_bar_am_pm_hidden">숨김</string>
@@ -435,12 +473,18 @@
   <string name="status_bar_show_weather_title">날씨 표시</string>
   <string name="status_bar_show_weather_summary">상태 표시줄에 현재 온도 표시</string>
   <!-- Power: Performance profiles -->
+  <string name="perf_profile_settings_title">배터리 절약 모드 및 성능</string>
+  <string name="perf_profile_settings_summary">전원 절약 기능 및 기기 성능 조정</string>
   <string name="perf_profile_overview_summary">현재 프로필: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">기기 성능</string>
   <string name="perf_profile_title">성능 프로필: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+  <string name="perf_profile_fail_toast">이 성능 프로필은 현재 사용할 수 없습니다</string>
   <string name="power_save_category_title">배터리 절약</string>
+  <string name="power_save_title">극단적 전원 절약 모드</string>
   <string name="power_save_summary">기기 성능 및 백그라운드 액티비티를 제한하여 전원 절약</string>
+  <string name="auto_power_save_title">자동 전원 절약 모드</string>
   <string name="auto_power_save_summary_on">배터리가 %s 이하로 내려가면 자동으로 전원 절약 모드 사용</string>
+  <string name="auto_power_save_summary_off">자동으로 전원 절약 모드를 사용하지 않음</string>
   <string name="app_perf_profiles_title">자동 최적화</string>
   <string name="app_perf_profiles_summary">앱 및 사용 패턴에 따라 적절한 성능 프로필 자동 적용</string>
   <string name="auto_power_save_never">사용 안 함</string>
@@ -488,6 +532,7 @@
   <string name="touchscreen_gesture_action_flashlight">손전등 켜고 끄기</string>
   <string name="touchscreen_gesture_action_camera">카메라 열기</string>
   <string name="touchscreen_gesture_action_browser">브라우저 열기</string>
+  <string name="touchscreen_gesture_action_dialer">전화 열기</string>
   <string name="touchscreen_gesture_action_email">이메일 보기</string>
   <string name="touchscreen_gesture_action_messages">메시지 보기</string>
   <string name="touchscreen_gesture_action_play_pause_music">음악 재생/일시 정지</string>

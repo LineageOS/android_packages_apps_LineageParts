@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Apagar a pantalla</string>
   <string name="hardware_keys_action_last_app">Última aplicación</string>
   <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
+  <string name="hardware_keys_action_single_handed_left">Modo de unha man (esquerda)</string>
+  <string name="hardware_keys_action_single_handed_right">Modo de unha man (dereita)</string>
   <string name="camera_sleep_on_release_title">Vista rápida</string>
   <string name="camera_sleep_on_release_summary">Unha leve pulsación manterá a pantalla acendida ata que se solte o botón</string>
   <string name="camera_launch_title">Lanzar cámara</string>
@@ -381,11 +383,16 @@
   <string name="status_bar_quick_qs_pulldown_right">Dereita</string>
   <string name="status_bar_toggle_brightness">Control de brillo</string>
   <string name="status_bar_toggle_brightness_summary">Axustar o brillo arrastrando pola barra de estado</string>
+  <string name="status_bar_double_tap_to_sleep_title">Doble toque para apagar a pantalla</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Toque dúas veces na barra de estado para apagar a visualización</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Iconas da barra de estado</string>
   <string name="status_bar_notif_count_title">Amosar contador de notificacións</string>
   <string name="status_bar_notif_count_summary">Amosar o número de notificacións pendentes</string>
+  <string name="status_bar_system_icons_title">Iconas do sistema</string>
+  <string name="status_bar_system_icons_summary">Controlar que iconas se amosan na barra de estado</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Reloxo</string>
   <string name="status_bar_clock_position_title">Posición do reloxo</string>
   <string name="status_bar_clock_position_right">Dereita</string>
   <string name="status_bar_clock_position_left">Esquerda</string>
@@ -396,6 +403,7 @@
   <string name="status_bar_am_pm_small">Pequeno</string>
   <string name="status_bar_am_pm_hidden">Agochado</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicador da batería</string>
   <string name="status_bar_battery_style_title">Estilo do estado da batería</string>
   <string name="status_bar_battery_style_icon_portrait">Icona vertical</string>
   <string name="status_bar_battery_style_icon_landscape">Icona horizontal</string>

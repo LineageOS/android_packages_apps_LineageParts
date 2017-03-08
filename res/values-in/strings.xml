@@ -173,6 +173,8 @@
   <string name="hardware_keys_action_sleep">Matikan layar</string>
   <string name="hardware_keys_action_last_app">Aplikasi terakhir</string>
   <string name="hardware_keys_action_split_screen">Tukar layar</string>
+  <string name="hardware_keys_action_single_handed_left">Mode satu tangan (kiri)</string>
+  <string name="hardware_keys_action_single_handed_right">Mode satu tangan (kanan)</string>
   <string name="camera_sleep_on_release_title">Intip layar</string>
   <string name="camera_sleep_on_release_summary">Menekan setengah akan menyalakan layar hanya saat tombol tertekan</string>
   <string name="camera_launch_title">Buka kamera</string>
@@ -380,11 +382,14 @@
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
   <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
   <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
+  <string name="status_bar_double_tap_to_sleep_title">Ketuk dua kali untuk tidur</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Ketuk dua kali pada status bar untuk mematikan layar</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ikon Status bar</string>
   <string name="status_bar_notif_count_title">Tampilkan hitungan pemberitahuan</string>
   <string name="status_bar_notif_count_summary">Tampilkan jumlah pemberitahuan yang tertunda</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Jam</string>
   <string name="status_bar_clock_position_title">Posisi jam</string>
   <string name="status_bar_clock_position_right">Kanan</string>
   <string name="status_bar_clock_position_left">Kiri</string>

@@ -120,15 +120,61 @@
   <string name="live_display_enhance_color_summary">Améliorer la vibrance des couleurs des tons chair, des paysages et d\'autres images</string>
   <string name="live_display_color_profile_title">Profil de couleur</string>
   <string name="live_display_color_profile_standard_title">Standard</string>
+  <string name="live_display_color_profile_standard_summary">Couleurs précises et blancs éclatants</string>
+  <string name="live_display_color_profile_natural_title">Naturel</string>
+  <string name="live_display_color_profile_dynamic_title">Dynamique</string>
+  <string name="live_display_color_profile_dynamic_summary">Couleurs améliorées et blancs lumineux</string>
+  <string name="live_display_color_profile_cinema_title">Cinéma</string>
+  <string name="live_display_color_profile_cinema_summary">Reproduction parfaite des couleurs pour la vidéo</string>
+  <string name="live_display_color_profile_astronomy_title">Astronomie</string>
+  <string name="live_display_color_profile_astronomy_summary">Rouge profond pour préserver la vision nocturne</string>
+  <string name="live_display_color_profile_photography_title">Photographie</string>
+  <string name="live_display_color_profile_photography_summary">Reproduction parfaite des couleurs pour les photos</string>
+  <string name="live_display_color_profile_basic_title">Basique</string>
+  <string name="live_display_color_profile_basic_summary">Utiliser l\'écran sans étalonnage</string>
+  <string name="live_display_color_profile_adaptive_title">Adaptatif</string>
+  <string name="live_display_color_profile_adaptive_summary">Les couleurs s\'adaptent aux conditions ambiantes</string>
+  <string name="live_display_color_profile_reading_title">Lecture</string>
+  <string name="live_display_color_profile_reading_summary">Couleurs plus chaudes pour diminuer la fatigue oculaire</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="color_calibration_title">Calibrage des couleurs</string>
+  <string name="color_calibration_summary">Calibrer les couleurs de l\'écran</string>
+  <string name="color_red_title">Rouge</string>
+  <string name="color_green_title">Vert</string>
+  <string name="color_blue_title">Bleu</string>
   <!-- LiveDisplay : Picture Adjustment -->
+  <string name="picture_adjustment_title">Ajustement de l\'image</string>
+  <string name="picture_adjustment_summary">Ajustement de la teinte, la saturation, l\'intensité et le contraste</string>
+  <string name="adj_hue_title">Teinte</string>
+  <string name="adj_saturation_title">Saturation</string>
+  <string name="adj_intensity_title">Intensité</string>
+  <string name="adj_contrast_title">Contraste</string>
   <!-- Button settings -->
+  <string name="button_pref_title">Boutons</string>
+  <string name="hardware_keys_power_key_title">Bouton d\'alimentation</string>
+  <string name="hardware_keys_home_key_title">Bouton d\'accueil</string>
+  <string name="hardware_keys_back_key_title">Bouton retour</string>
+  <string name="hardware_keys_menu_key_title">Bouton de menu</string>
+  <string name="hardware_keys_assist_key_title">Bouton de recherche</string>
   <string name="hardware_keys_appswitch_key_title">Bouton Récents</string>
+  <string name="hardware_keys_camera_key_title">Bouton de l\'appareil photo</string>
+  <string name="hardware_keys_volume_keys_title">Boutons de volume</string>
+  <string name="hardware_keys_action_nothing">Aucune action</string>
   <string name="hardware_keys_action_app_switch">Applications récentes</string>
+  <string name="hardware_keys_action_search">Assistant de recherche</string>
+  <string name="hardware_keys_action_voice_search">Recherche vocale</string>
+  <string name="hardware_keys_action_in_app_search">Recherche dans les applications</string>
+  <string name="hardware_keys_action_launch_camera">Démarrer l\'appareil photo</string>
+  <string name="hardware_keys_action_sleep">Éteindre l\'écran</string>
+  <string name="hardware_keys_action_last_app">Application précédente</string>
+  <string name="volbtn_music_controls_title">Contrôler la lecture</string>
+  <string name="volbtn_music_controls_summary">Changer de piste audio à l\'aide d\'une pression longue sur les boutons de volume lorsque l\'écran est éteint</string>
+  <string name="volbtn_cursor_control_title">Contrôle du curseur par les touches du clavier</string>
   <string name="volbtn_cursor_control_off">Désactivé</string>
   <string name="volbtn_cursor_control_on">La touche haut déplace le curseur vers la gauche et bas vers la droite</string>
   <string name="volbtn_cursor_control_on_reverse">La touche haut déplace le curseur vers la droite et bas vers la gauche</string>
   <string name="power_end_call_title">Terminer l\'appel</string>
+  <string name="power_end_call_summary">Mettre fin à l’appel en cours en appuyant sur le bouton marche/arrêt</string>
   <string name="swap_volume_buttons_title">Réorienter</string>
   <string name="swap_volume_buttons_summary">Inverser les boutons de volume lorsque l\'écran pivote</string>
   <string name="home_answer_call_title">Répondre à l\'appel</string>
@@ -170,32 +216,95 @@
   <string name="volume_keys_control_ring_stream_title">Contrôler le volume de la sonnerie</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->
+  <string name="profile_menu_delete_title">Supprimer</string>
+  <string name="profile_action_disable">Éteindre</string>
+  <string name="profile_action_enable">Allumer</string>
+  <string name="wireless_networks_settings_title">Sans fil et réseaux</string>
   <!-- Profile triggers -->
   <!-- Profiles settings  -->
+  <string name="profiles_add">Ajouter</string>
+  <string name="profile_menu_delete">Supprimer</string>
+  <string name="profile_settings_title">Profils</string>
+  <string name="profile_unknown_nfc_tag">Profil inconnu</string>
+  <string name="profile_populate_profile_from_state">Configurer le profil à l\'aide des paramètres actuels de l\'appareil ?</string>
+  <string name="profile_menu_fill_from_state">Importer les paramètres actuels de l\'appareil</string>
+  <string name="profile_app_group_item_instructions">Ajouter ou supprimer des groupes</string>
   <!-- Profile mode options. -->
+  <string name="profile_entries_on">Actif</string>
+  <string name="profile_entries_off">Inactif</string>
   <!-- Add Profile -->
+  <string name="profile_name_title">Nom</string>
   <!-- Rename Dialog  -->
   <!-- Reset Profiles -->
   <!-- Delete confimation messages -->
+  <string name="profile_app_delete_confirm">Supprimer cette application ?</string>
   <!-- Profile network mode -->
+  <string name="profile_networkmode_2g">2G</string>
+  <string name="profile_networkmode_3g">3G</string>
   <!-- Profile Config screen PreferenceGroup titles -->
   <!-- Menu item for managing profiles -->
+  <string name="profile_profiles_manage">Profils</string>
   <!-- Profile settings screen, section header for settings related to notification profiles -->
   <!-- Profile Settings sound modes labels -->
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
   <!-- Title for application group setting screen -->
+  <string name="profile_applist_title">Applications</string>
+  <string name="profile_new_appgroup">Nouveau groupe d\'applications</string>
+  <string name="profile_delete_appgroup">Supprimer ce groupe d\'applications ?</string>
+  <string name="profile_appgroup_name_prompt">Entrer le nom du nouveau groupe</string>
+  <string name="profile_appgroup_name_title">Nom</string>
   <!-- Add application dialog box title -->
   <!-- Profiles - system settings -->
   <!-- Connection override toggles (not all are used at this time ) -->
+  <string name="toggleBluetooth">Bluetooth</string>
+  <string name="toggleGPS">GPS</string>
+  <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
+  <string name="ring_mode_title">Sonnerie</string>
+  <string name="ring_mode_normal">Normal</string>
+  <string name="ring_mode_vibrate">Vibreur</string>
+  <string name="ring_mode_mute">Silencieux</string>
+  <string name="ring_volume_title">Volume de la sonnerie</string>
+  <string name="incoming_call_volume_title">Sonnerie</string>
+  <string name="notification_volume_title">Notification</string>
+  <string name="media_volume_title">Multimédia</string>
+  <string name="alarm_volume_title">Alarme</string>
+  <string name="doze_title">Affichage ambiant</string>
   <!-- Status bar -->
+  <string name="status_bar_title">Barre d\'état</string>
+  <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
+  <string name="status_bar_quick_qs_pulldown_right">Droite</string>
+  <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
+  <string name="status_bar_toggle_brightness_summary">Régler la luminosité en glissant sur la barre d\'état</string>
   <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Icônes de la barre d\'état</string>
+  <string name="status_bar_notif_count_title">Afficher le compteur de notifications</string>
+  <string name="status_bar_notif_count_summary">Afficher le nombre de notifications en attente</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_position_title">Position de l\'horloge</string>
+  <string name="status_bar_clock_position_right">Droite</string>
+  <string name="status_bar_clock_position_left">Gauche</string>
+  <string name="status_bar_clock_position_center">Centre</string>
+  <string name="status_bar_am_pm_normal">Normale</string>
+  <string name="status_bar_am_pm_small">Petite</string>
+  <string name="status_bar_am_pm_hidden">Masquée</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_style_title">Style du niveau de batterie</string>
+  <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
+  <string name="status_bar_battery_style_icon_landscape">Icône paysage</string>
+  <string name="status_bar_battery_style_circle">Cercle</string>
+  <string name="status_bar_battery_style_text">Texte</string>
+  <string name="status_bar_battery_style_hidden">Masquée</string>
   <!-- Status bar - Battery percentage -->
+  <string name="status_bar_battery_percentage_title">Pourcentage de la batterie</string>
+  <string name="status_bar_battery_percentage_default">Masqué</string>
+  <string name="status_bar_battery_percentage_text_inside">Dans l\'icône</string>
+  <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
   <!-- Status bar - icon blacklist -->
+  <string name="status_bar_icons_title">Icônes de la barre d\'état</string>
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->
+  <string name="contributors_cloud_fragment_title">Contributeurs</string>
   <string name="contributor_info_menu">Informations du contributeur</string>
   <string name="contributions_info_menu">Info des contributions</string>
   <!-- Anonymous Statistics #CM -->
@@ -239,7 +348,12 @@
   <string name="status_bar_show_weather_summary">Afficher la température actuelle dans la barre d\'état</string>
   <!-- Power: Performance profiles -->
   <string name="perf_profile_settings_title">Économiseur de batterie et performances</string>
+  <string name="auto_power_save_summary_on">Activer automatiquement le mode d\'économie d\'énergie lorsqu\'il reste %s de batterie</string>
+  <string name="auto_power_save_never">Jamais</string>
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_summary">Effectuer différents gestes tactiles pour des actions rapides</string>
+  <string name="touchscreen_gesture_down_arrow_title">Dessinez un « V »</string>
+  <string name="touchscreen_gesture_letter_o_title">Dessinez la lettre « O »</string>
 </resources>

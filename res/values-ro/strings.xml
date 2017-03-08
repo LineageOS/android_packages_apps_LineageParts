@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Oprire ecran</string>
   <string name="hardware_keys_action_last_app">Ultima aplicație</string>
   <string name="hardware_keys_action_split_screen">Ecran divizat</string>
+  <string name="hardware_keys_action_single_handed_left">Modul cu o singură mână (stânga)</string>
+  <string name="hardware_keys_action_single_handed_right">Modul cu o singură mână (dreapta)</string>
   <string name="camera_sleep_on_release_title">Aruncare privire la ecran</string>
   <string name="camera_sleep_on_release_summary">O jumătate de apăsare va ține ecranul pornit doar atât timp cât butonul este apăsat</string>
   <string name="camera_launch_title">Lansare cameră foto</string>

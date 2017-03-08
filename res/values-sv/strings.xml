@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="cmparts_title">LineageOS inställningar</string>
+  <string name="cmparts_title">Inställningar för LineageOS</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Laddar\u2026</string>
   <string name="dlg_ok">OK</string>

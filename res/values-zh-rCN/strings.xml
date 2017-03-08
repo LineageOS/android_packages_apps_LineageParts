@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">关闭屏幕</string>
   <string name="hardware_keys_action_last_app">上次运行应用</string>
   <string name="hardware_keys_action_split_screen">拆分屏幕</string>
+  <string name="hardware_keys_action_single_handed_left">单手模式（左）</string>
+  <string name="hardware_keys_action_single_handed_right">单手模式（右）</string>
   <string name="camera_sleep_on_release_title">屏幕速览</string>
   <string name="camera_sleep_on_release_summary">仅当按钮被按下时，半按将会保持屏幕点亮</string>
   <string name="camera_launch_title">启动相机</string>
@@ -381,14 +383,14 @@
   <string name="status_bar_quick_qs_pulldown_right">右侧</string>
   <string name="status_bar_toggle_brightness">亮度控制</string>
   <string name="status_bar_toggle_brightness_summary">通过在状态栏上滑动调整亮度</string>
-  <string name="status_bar_double_tap_to_sleep_title">双击以休眠</string>
-  <string name="status_bar_double_tap_to_sleep_summary">双击状态栏以关闭屏幕显示</string>
+  <string name="status_bar_double_tap_to_sleep_title">双击以睡眠</string>
+  <string name="status_bar_double_tap_to_sleep_summary">双击状态栏关闭显示屏</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">状态栏图标</string>
   <string name="status_bar_notif_count_title">显示通知数量</string>
   <string name="status_bar_notif_count_summary">显示未读通知的数量</string>
   <string name="status_bar_system_icons_title">系统图标</string>
-  <string name="status_bar_system_icons_summary">控制状态栏显示的图标</string>
+  <string name="status_bar_system_icons_summary">控制在状态栏显示的图标</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">时钟</string>
   <string name="status_bar_clock_position_title">时钟位置</string>

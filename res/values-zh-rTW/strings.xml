@@ -53,7 +53,7 @@
   <string name="privacy_guard_help_title">説明</string>
   <string name="privacy_guard_reset_title">重設</string>
   <string name="privacy_guard_reset_text">重設權限？</string>
-  <string name="privacy_guard_help_text">在此畫面您只要輕按應用程式即可選擇是否對其啟用隱私守衛。被選取的應用程式將不能存取您的個人資料，例如聯絡人、訊息或通話記錄。長按應用程式可開啟其應用程式資訊畫面。\n\n內建應用程式預設不會顯示，但是可從選單中開啟顯示。</string>
+  <string name="privacy_guard_help_text">在此畫面您只要輕觸應用程式即可選擇是否對其啟用隱私守衛。被選取的應用程式將不能存取您的個人資料，例如聯絡人、訊息或通話記錄。長按應用程式可開啟其應用程式資訊畫面。\n\n內建應用程式預設不會顯示，但是可從選單中開啟顯示。</string>
   <string name="privacy_guard_manager_show_system_apps">顯示內建應用程式</string>
   <string name="privacy_guard_advanced_settings_title">進階</string>
   <string name="privacy_guard_notification_title">顯示通知</string>
@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">關閉螢幕</string>
   <string name="hardware_keys_action_last_app">最後一個應用程式</string>
   <string name="hardware_keys_action_split_screen">分割視窗</string>
+  <string name="hardware_keys_action_single_handed_left">單手模式 (左)</string>
+  <string name="hardware_keys_action_single_handed_right">單手模式 (右)</string>
   <string name="camera_sleep_on_release_title">窺視螢幕</string>
   <string name="camera_sleep_on_release_summary">僅有當按住按鍵時，半按即可保持螢幕開啟。</string>
   <string name="camera_launch_title">開啟相機</string>
@@ -330,7 +332,7 @@
   <string name="choose_ringtone">選擇鈴聲</string>
   <string name="ringtone_title">電話鈴聲</string>
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-  <string name="soundtone_title">通知鈴聲</string>
+  <string name="soundtone_title">通知音效</string>
   <!-- Title for application group setting screen -->
   <string name="profile_appgroups_title">應用程式群組</string>
   <string name="profile_applist_title">應用程式</string>
@@ -401,7 +403,7 @@
   <string name="status_bar_am_pm_small">小</string>
   <string name="status_bar_am_pm_hidden">隱藏</string>
   <!-- Status bar - Battery -->
-  <string name="status_bar_battery_title">電池指示燈</string>
+  <string name="status_bar_battery_title">電池指示器</string>
   <string name="status_bar_battery_style_title">電池狀態樣式</string>
   <string name="status_bar_battery_style_icon_portrait">直立圖示</string>
   <string name="status_bar_battery_style_icon_landscape">橫向圖示</string>

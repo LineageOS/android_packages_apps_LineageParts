@@ -85,7 +85,7 @@
   <string name="battery_light_medium_color_title">Заряжается</string>
   <string name="battery_light_full_color_title">Полностью заряжена</string>
   <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">Индикатор уведомлений</string>
+  <string name="notification_light_title">Индикация уведомлений</string>
   <string name="notification_light_general_title">Общие</string>
   <string name="notification_light_advanced_title">Расширенные</string>
   <string name="notification_light_applist_title">Приложения</string>
@@ -94,8 +94,8 @@
   <string name="notification_light_default_value">По умолчанию</string>
   <string name="notification_light_missed_call_title">Пропущенный вызов</string>
   <string name="notification_light_voicemail_title">Голосовая почта</string>
-  <string name="notification_light_screen_on">Индикатор при включенном экране</string>
-  <string name="notification_light_zen_mode">Индикатор в режиме «Не беспокоить»</string>
+  <string name="notification_light_screen_on">Использовать при включенном экране</string>
+  <string name="notification_light_zen_mode">Использовать в режиме «Не беспокоить»</string>
   <string name="notification_light_use_multiple_leds">Несколько светодиодов</string>
   <string name="keywords_lights_brightness_level">уменьшить яркость</string>
   <string name="notification_light_automagic">Подбирать цвета автоматически</string>
@@ -138,6 +138,7 @@
   <string name="live_display_color_profile_reading_title">Чтение</string>
   <string name="live_display_color_profile_reading_summary">Тёплые цвета для меньшего напряжения глаз</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Цвета, схожие с пространством sRGB</string>
   <string name="color_calibration_title">Цвет</string>
   <string name="color_calibration_summary">Настройка цветопередачи экрана</string>
   <string name="color_red_title">Красный</string>
@@ -173,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Выключить экран</string>
   <string name="hardware_keys_action_last_app">Предыдущее приложение</string>
   <string name="hardware_keys_action_split_screen">Разделение экрана</string>
+  <string name="hardware_keys_action_single_handed_left">Режим управления одной рукой (левой)</string>
+  <string name="hardware_keys_action_single_handed_right">Режим управления одной рукой (правой)</string>
   <string name="camera_sleep_on_release_title">Быстрый просмотр</string>
   <string name="camera_sleep_on_release_summary">Держать экран включённым только при удержании кнопки</string>
   <string name="camera_launch_title">Включить камеру</string>
@@ -380,11 +383,16 @@
   <string name="status_bar_quick_qs_pulldown_right">Правый</string>
   <string name="status_bar_toggle_brightness">Управление яркостью</string>
   <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
+  <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Значки в строке состояния</string>
   <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
   <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
+  <string name="status_bar_system_icons_title">Системные значки</string>
+  <string name="status_bar_system_icons_summary">Настройка видимости значков в строке состояния</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Часы</string>
   <string name="status_bar_clock_position_title">Часы</string>
   <string name="status_bar_clock_position_right">Справа</string>
   <string name="status_bar_clock_position_left">Слева</string>
@@ -395,6 +403,7 @@
   <string name="status_bar_am_pm_small">Небольшой</string>
   <string name="status_bar_am_pm_hidden">Не показывать</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Индикатор батареи</string>
   <string name="status_bar_battery_style_title">Индикатор батареи</string>
   <string name="status_bar_battery_style_icon_portrait">Вертикальный значок</string>
   <string name="status_bar_battery_style_icon_landscape">Горизонтальный значок</string>
@@ -413,7 +422,7 @@
   <string name="protected_apps_manager_title">Защищенные приложения</string>
   <string name="protected_apps_manager_summary">Управление приложениями, для запуска которых требуется ввод пароля</string>
   <!-- Contributors cloud activity -->
-  <string name="contributors_cloud_fragment_title">Участники проекта</string>
+  <string name="contributors_cloud_fragment_title">Имена разработчиков</string>
   <string name="contributors_cloud_loading_message">Загрузка данных\u2026</string>
   <string name="contributors_cloud_failed_message">Не удалось загрузить сведения об участниках проекта</string>
   <string name="contributor_info_menu">Сведения об участнике</string>
@@ -505,8 +514,36 @@
   <string name="charging_sounds_ringtone_title">Звук уведомления</string>
   <string name="charging_sounds_ringtone_silent">Без звука</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Жесты сенсорного экрана</string>
   <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Виброотклик</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Вибрировать при распознавании жеста</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Провести двумя пальцами вниз</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Провести одним пальцем вверх</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Провести одним пальцем вниз</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Провести одним пальцем влево</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Провести одним пальцем вправо</string>
+  <string name="touchscreen_gesture_up_arrow_title">Нарисовать «Λ»</string>
+  <string name="touchscreen_gesture_down_arrow_title">Нарисовать «V»</string>
+  <string name="touchscreen_gesture_left_arrow_title">Нарисовать «&lt;»</string>
+  <string name="touchscreen_gesture_right_arrow_title">Нарисовать «&gt;»</string>
+  <string name="touchscreen_gesture_letter_c_title">Нарисовать букву «C»</string>
+  <string name="touchscreen_gesture_letter_e_title">Нарисовать букву «е»</string>
+  <string name="touchscreen_gesture_letter_o_title">Нарисовать букву «O»</string>
+  <string name="touchscreen_gesture_letter_m_title">Нарисовать букву «М»</string>
+  <string name="touchscreen_gesture_letter_s_title">Нарисовать букву «S»</string>
+  <string name="touchscreen_gesture_letter_v_title">Нарисовать букву «V»</string>
+  <string name="touchscreen_gesture_letter_w_title">Нарисовать букву «W»</string>
+  <string name="touchscreen_gesture_letter_z_title">Нарисовать букву «Z»</string>
+  <string name="touchscreen_gesture_action_dialog_title">Действие жеста</string>
+  <string name="touchscreen_gesture_action_do_nothing">Ничего</string>
   <string name="touchscreen_gesture_action_flashlight">Включить или выключить фонарик</string>
+  <string name="touchscreen_gesture_action_camera">Включить камеру</string>
+  <string name="touchscreen_gesture_action_browser">Запустить браузер</string>
+  <string name="touchscreen_gesture_action_dialer">Открыть «Телефон»</string>
+  <string name="touchscreen_gesture_action_email">Просмотреть эл. почту</string>
+  <string name="touchscreen_gesture_action_messages">Просмотреть сообщения</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Воспр. или остановить музыку</string>
+  <string name="touchscreen_gesture_action_previous_track">Перейти к предыдущему треку</string>
+  <string name="touchscreen_gesture_action_next_track">Перейти к следующему треку</string>
 </resources>

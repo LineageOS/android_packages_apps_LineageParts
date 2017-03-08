@@ -138,7 +138,7 @@
   <string name="live_display_color_profile_reading_title">Lezen</string>
   <string name="live_display_color_profile_reading_summary">Warmere kleuren voor minder vermoeidheid van de ogen</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
-  <string name="live_display_color_profile_srgb_summary">Kleuren binnen het sRGB kleurenpalet</string>
+  <string name="live_display_color_profile_srgb_summary">Kleuren binnen het sRGB-kleurenpalet</string>
   <string name="color_calibration_title">Kleuren kalibreren</string>
   <string name="color_calibration_summary">Schermkleur kalibreren</string>
   <string name="color_red_title">Rood</string>

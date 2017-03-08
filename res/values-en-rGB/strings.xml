@@ -26,10 +26,28 @@
   <string name="choose_app">Choose app</string>
   <string name="reset">Reset</string>
   <string name="advanced">Advanced</string>
+  <string name="settings">Settings</string>
+  <string name="name">Name</string>
+  <string name="back">Back</string>
+  <string name="finish">Finish</string>
   <string name="next">Next</string>
+  <string name="on">On</string>
+  <string name="off">Off</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+  <string name="search">Search</string>
+  <string name="disabled">Disabled</string>
+  <string name="enabled">Enabled</string>
   <!-- Privacy Settings Header item -->
+  <string name="privacy_settings_title">Privacy</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
+  <string name="privacy_guard_dlg_title">Enable Privacy Guard?</string>
+  <string name="privacy_guard_dlg_text">When Privacy Guard is enabled, the app will not be able to access personal data such as contacts, messages or call logs.</string>
   <string name="privacy_guard_dlg_system_app_text">When enabling Privacy Guard for a built-in app, the app will not be able to access or provide personal data. This may cause other apps to misbehave.</string>
+  <string name="privacy_guard_default_title">Enabled by default</string>
+  <string name="privacy_guard_default_summary_on">Privacy Guard is enabled</string>
+  <string name="privacy_guard_default_summary">Enable by default for newly-installed apps</string>
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
   <!-- Battery light settings -->
