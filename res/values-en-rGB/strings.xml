@@ -48,7 +48,20 @@
   <string name="privacy_guard_default_title">Enabled by default</string>
   <string name="privacy_guard_default_summary_on">Privacy Guard is enabled</string>
   <string name="privacy_guard_default_summary">Enable by default for newly-installed apps</string>
+  <string name="privacy_guard_manager_summary">Manage which apps have access to your personal data</string>
+  <string name="privacy_guard_no_user_apps">No apps are installed</string>
+  <string name="privacy_guard_help_title">Help</string>
+  <string name="privacy_guard_reset_title">Reset</string>
+  <string name="privacy_guard_reset_text">Reset permissions?</string>
+  <string name="privacy_guard_help_text">In this screen you can choose which apps Privacy Guard should be active for by simply tapping on them. Selected apps will not be able to access your personal data such as contacts, messages or call logs. Long pressing an app\'s entry opens its app details screen.\n\nBuilt-in apps are not shown by default but can be revealed by selecting the respective menu option.</string>
+  <string name="privacy_guard_manager_show_system_apps">Show built-in apps</string>
   <!-- Notification light dialogs -->
+  <string name="edit_light_settings">Edit light settings</string>
+  <string name="pulse_speed_title">Pulse length and speed</string>
+  <string name="default_time">Normal</string>
+  <string name="dialog_delete_title">Delete</string>
+  <string name="dialog_delete_message">Remove selected item?</string>
+  <string name="brightness">Brightness level</string>
   <!-- Values for the notification light pulse spinners -->
   <!-- Battery light settings -->
   <string name="battery_light_list_title">Colours</string>

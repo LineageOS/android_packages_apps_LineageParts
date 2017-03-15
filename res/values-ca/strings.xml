@@ -207,8 +207,8 @@
   <string name="backlight_summary_enabled_with_timeout">Activada durant <xliff:g id="timeout">%s</xliff:g></string>
   <string name="backlight_summary_enabled">Activada</string>
   <!-- Buttons - Enable navbar -->
-  <string name="disable_navkeys_title">Habilita barra de navegació en pantalla</string>
-  <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla y deshabilitar els botons físics</string>
+  <string name="disable_navkeys_title">Habilita la barra de navegació en pantalla</string>
+  <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla i deshabilita els botons físics</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra de navegació</string>
   <string name="navigation_bar_title">Botons i disposició</string>
@@ -299,7 +299,7 @@
   <string name="rename_dialog_hint">Introdueix el nom del perfil</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Restableix</string>
-  <string name="profile_reset_message">Vols esborrar tots els perfils creats per l\'usuari i els grups d\'aplicacions i restaurar-los als ajustaments predeterminats?</string>
+  <string name="profile_reset_message">Vols esborrar tots els perfils creats per l\'usuari i els grups d\'aplicacions i restaurar-los a la configuració per defecte?</string>
   <!-- Delete confimation messages -->
   <string name="profile_app_delete_confirm">Vols treure aquesta aplicació?</string>
   <!-- Profile network mode -->

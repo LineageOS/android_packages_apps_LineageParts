@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Képernyő kikapcsolása</string>
   <string name="hardware_keys_action_last_app">Utolsó alkalmazás</string>
   <string name="hardware_keys_action_split_screen">Osztott képernyő</string>
+  <string name="hardware_keys_action_single_handed_left">Egykezes mód (balra)</string>
+  <string name="hardware_keys_action_single_handed_right">Egykezes mód (jobbra)</string>
   <string name="camera_sleep_on_release_title">Betekintés</string>
   <string name="camera_sleep_on_release_summary">A kijelző ébren marad, amíg félig lenyomva tartja a gombot</string>
   <string name="camera_launch_title">Kamera indítása</string>
@@ -185,12 +187,14 @@
   <string name="volbtn_cursor_control_on">Hangerő fel/le - balra/jobbra</string>
   <string name="volbtn_cursor_control_on_reverse">Hangerő fel/le - jobbra/balra</string>
   <string name="power_end_call_title">Hívás befejezése</string>
+  <string name="power_end_call_summary">A bekapcsoló gomb megnyomása befejezi az aktuális hívást</string>
   <string name="swap_volume_buttons_title">Hangerőgombok felcserélése</string>
   <string name="swap_volume_buttons_summary">Hangerőgombok felcserélése, ha a képernyő el van forgatva</string>
   <string name="button_wake_title">Eszköz felébresztése</string>
   <string name="volume_answer_call_title">Hívás fogadása</string>
   <string name="volume_answer_call_summary">Bejövő hívások fogadása a hangerő gombok megnyomásával</string>
   <string name="home_answer_call_title">Hívás fogadása</string>
+  <string name="home_answer_call_summary">Bejövő hívások fogadása a kezdőlap gomb megnyomásával</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Háttérvilágítás</string>
   <string name="button_backlight_enabled">Gombok megvilágítása</string>
@@ -212,6 +216,8 @@
   <string name="navigation_bar_left_summary">Fekvő módban a navigációs sáv megjelenítése bal oldalon</string>
   <string name="navigation_bar_arrow_keys_title">Nyílbillentyűk megjelenítése gépelés közben</string>
   <string name="navigation_bar_arrow_keys_summary">Mutassa a bal és jobb kurzort gépelés közben. Felülírja a billentyűzet választó.</string>
+  <string name="navigation_bar_home_long_press_title">Kezdőlap hosszan nyomási művelet</string>
+  <string name="navigation_bar_home_double_tap_title">Kezdőlap dupla érintési művelet</string>
   <string name="navigation_bar_recents_title">Hosszan nyomva tartott előzmények gomb</string>
   <!-- Power menu -->
   <string name="power_menu_title">Kikapcsoló menü</string>
@@ -230,6 +236,8 @@
   <string name="camera_double_tap_power_gesture_title">Nyomja meg a bekapcsoló gombot kétszer a kamerához</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Kamera gyors megnyitása a képernyő feloldása nélkül</string>
+  <string name="torch_long_press_power_gesture_title">Zseblámpához nyomja hosszan</string>
+  <string name="torch_long_press_power_gesture_desc">Zseblámpa bekapcsolása a kikapcsoló gomb hosszan nyomására kikapcsolt képernyőnél</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Törlés</string>
   <string name="profile_action_none">Változatlanul hagy</string>
@@ -262,8 +270,14 @@
   <string name="profile_empty_list_profiles_off">Rendszerprofil konfiguráláshoz és használathoz kapcsolja be a profilokat.</string>
   <string name="profile_settings_summary_off">Profilok letiltva</string>
   <string name="profile_trigger_configure">Profilra váltás</string>
+  <string name="profile_write_nfc_tag">NFC tag kiírása</string>
+  <string name="profile_write_touch_tag">Válassza ki a kiírandó tagot</string>
+  <string name="profile_write_success">Tag sikeresen kiírva</string>
+  <string name="profile_write_failed">Tag kiírása sikertelen!</string>
   <string name="profile_selected">Kiválasztott profil: %1$s</string>
+  <string name="profile_nfc_text">Profil kiírása az NFC tagba, kiválasztás érintéssel. Dupla érintés az előző profil kiválasztása.</string>
   <string name="profile_unknown_nfc_tag">Ismeretlen profil</string>
+  <string name="profile_add_nfc_text">Ez az NFC tag egy ismeretlen profilra mutat. Az NFC tag csatolása egy már meglévő profilhoz lehetővé teszi a jövőbeli kiválasztását.</string>
   <string name="profile_select">Válasszon profilt</string>
   <string name="profile_remove_dialog_message">%1$s profil eltávolítása?</string>
   <string name="profile_populate_profile_from_state">Konfigurálja a profilt a jelenlegi beállításokat használva?</string>
@@ -328,6 +342,7 @@
   <string name="profile_appgroup_name_title">Név</string>
   <string name="duplicate_appgroup_name">Már létező alkalmazáscsoport!</string>
   <!-- Add application dialog box title -->
+  <string name="profile_choose_app">Válasszon alkalmazást</string>
   <!-- Profiles - system settings -->
   <string name="profile_system_settings_title">Rendszer beállítások</string>
   <string name="profile_lockmode_title">Képernyőzár módja</string>
@@ -368,11 +383,16 @@
   <string name="status_bar_quick_qs_pulldown_right">Jobb</string>
   <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
   <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
+  <string name="status_bar_double_tap_to_sleep_title">Dupla érintésre alvó mód</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Az állapotsorra kétszer koppintva kikapcsol a képernyő</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Állapotsor ikonok</string>
   <string name="status_bar_notif_count_title">Értesítések számának mutatása</string>
   <string name="status_bar_notif_count_summary">Folyamatban lévő értesítések számának megjelenítése az értesítési sávon</string>
+  <string name="status_bar_system_icons_title">Rendszerikonok</string>
+  <string name="status_bar_system_icons_summary">Állapotsor ikonok megjelenítésének vezérlése</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Óra</string>
   <string name="status_bar_clock_position_title">Óra pozíció</string>
   <string name="status_bar_clock_position_right">Jobb</string>
   <string name="status_bar_clock_position_left">Bal</string>
@@ -383,6 +403,7 @@
   <string name="status_bar_am_pm_small">Kicsi</string>
   <string name="status_bar_am_pm_hidden">Rejtett</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Akkumulátor indikátor</string>
   <string name="status_bar_battery_style_title">Akkumulátor állapotjelző stílusa</string>
   <string name="status_bar_battery_style_icon_portrait">Álló ikon</string>
   <string name="status_bar_battery_style_icon_landscape">Fekvő ikon</string>
@@ -431,8 +452,13 @@
   <string name="preview_country_title">Ország</string>
   <string name="preview_carrier_title">Szolgáltató</string>
   <string name="stats_collection_title">Statisztika gyűjtése</string>
+  <string name="stats_collection_summary">A telepítés- és eszközstatisztikai adatok összegyűjtésének engedélyezése</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Kijelző automatikus forgatása</string>
+  <string name="display_rotation_title">Forgatási beállítások</string>
+  <string name="display_rotation_enabled">Automatikus forgatás engedélyezve</string>
+  <string name="display_rotation_disabled">Automatikus forgatás letiltva</string>
+  <string name="display_rotation_unit">fok</string>
   <string name="display_lockscreen_rotation_title">Képernyőzár elforgatása</string>
   <string name="display_rotation_category_title">Forgatás módok</string>
   <string name="display_rotation_0_title">0 fok</string>
@@ -442,6 +468,7 @@
   <!-- Weather -->
   <string name="weather_settings_title">Időjárás</string>
   <string name="weather_settings_no_services_prompt">Nincs telepítve Időjárás szolgáltató</string>
+  <string name="weather_settings_no_services_summary">Telepítsen egy időjárás-szolgáltatót az időjárási frissítésekért</string>
   <string name="weather_settings_button">Szolgáltató beállítások</string>
   <string name="weather_settings_activity_not_found">Ezen szolgáltató beállítások menüje nem indítható</string>
   <string name="weather_settings_add_weather_provider">Időjárás szolgáltató felvétele</string>
@@ -452,18 +479,33 @@
   <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
   <string name="weather_settings_keyword">időjárás</string>
   <string name="status_bar_show_weather_title">Időjárás megjelenítése</string>
+  <string name="status_bar_show_weather_summary">Aktuális hőmérséklet megjelenítése az állapotsoron</string>
   <!-- Power: Performance profiles -->
+  <string name="perf_profile_settings_title">Energiatakarékos és teljesítmény</string>
+  <string name="perf_profile_settings_summary">Energiatakarékosság és eszközteljesítmény beállítása</string>
+  <string name="perf_profile_overview_summary">Aktuális profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+  <string name="perf_profile_category_title">Eszközteljesítmény</string>
+  <string name="perf_profile_title">Teljesítmény profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+  <string name="perf_profile_fail_toast">A teljesítmény profil jelenleg nem érhető el</string>
   <string name="power_save_category_title">Energiatakarékos</string>
+  <string name="power_save_title">Extrém energiatakarékos</string>
+  <string name="power_save_summary">Eszközteljesítmény és háttértevékenység korlátozása energiamegtakarításhoz</string>
+  <string name="auto_power_save_title">Automatikus energiatakarékos</string>
+  <string name="auto_power_save_summary_on">Energiatakarékos üzemmód automatikus engedélyezése, ha az akkumulátor: %s</string>
+  <string name="auto_power_save_summary_off">Energiatakarékos üzemmód ne induljon automatikusan</string>
+  <string name="app_perf_profiles_title">Automatikus optimalizálás</string>
   <string name="app_perf_profiles_summary">Automatikus teljesítményprofil választás a különböző alkalmazások számára</string>
   <string name="auto_power_save_never">Soha</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Képernyő kiterjesztés</string>
+  <string name="expanded_desktop_settings_summary">Növelje az elérhető kijelzőméretet a navigációs sáv, az állapotsor, vagy mindkettő elrejtésével</string>
   <string name="expanded_desktop_options_title">Testreszabási beállítások</string>
   <string name="expanded_desktop_style_title">Kiterjesztett asztal stílusa</string>
   <string name="expanded_desktop_style_hide_nothing">Ne rejtsen semmit</string>
   <string name="expanded_desktop_style_hide_status">Állapotsor elrejtése</string>
   <string name="expanded_desktop_style_hide_navigation">Navigációs sáv elrejtése</string>
   <string name="expanded_desktop_style_hide_both">Mindkettő elrejtése</string>
+  <string name="expanded_desktop_nothing_to_show_text">Kapcsolja ki a kapcsolót a kiterjesztett képernyő alkalmazásonkénti testreszabásához</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Töltés jelzése</string>
   <string name="charging_sounds_enabled_title">Engedélyezés</string>
@@ -472,17 +514,36 @@
   <string name="charging_sounds_ringtone_title">Értesítési hang</string>
   <string name="charging_sounds_ringtone_silent">Néma</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Érintőképernyő kézmozdulatok</string>
+  <string name="touchscreen_gesture_settings_summary">Különböző érintőképernyő kézmozdulat végrehajtása a gyors műveletekért</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Érintési visszajelzés</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Érintőképernyő kézmozdulat észlelésekor rezeg</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Csúsztatás lefelé két ujjal</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Csúsztatás felfelé egy ujjal</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Csúsztatás lefelé egy ujjal</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Csúsztatás balra egy ujjal</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Csúsztatás jobbra egy ujjal</string>
   <string name="touchscreen_gesture_up_arrow_title">Rajzoljon egy \"Λ\"-t</string>
   <string name="touchscreen_gesture_down_arrow_title">Rajzoljon egy \"V\" betűt</string>
+  <string name="touchscreen_gesture_left_arrow_title">Rajzoljon \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Rajzoljon \"&gt;\"</string>
   <string name="touchscreen_gesture_letter_c_title">Rajzoljon egy \"C\" betűt</string>
   <string name="touchscreen_gesture_letter_e_title">Rajzoljon egy \"e\" betűt</string>
   <string name="touchscreen_gesture_letter_o_title">Rajzoljon egy \"O\" betűt</string>
   <string name="touchscreen_gesture_letter_m_title">Rajzoljon egy \"M\" betűt</string>
   <string name="touchscreen_gesture_letter_s_title">Rajzoljon egy \"S\" betűt</string>
+  <string name="touchscreen_gesture_letter_v_title">Rajzoljon egy \"V\" betűt</string>
   <string name="touchscreen_gesture_letter_w_title">Rajzoljon egy \"W\" betűt</string>
   <string name="touchscreen_gesture_letter_z_title">Rajzoljon egy \"Z\" betűt</string>
+  <string name="touchscreen_gesture_action_dialog_title">Kézmozdulat művelet</string>
   <string name="touchscreen_gesture_action_do_nothing">Nincs művelet</string>
+  <string name="touchscreen_gesture_action_flashlight">Zseblámpa kapcsolása</string>
   <string name="touchscreen_gesture_action_camera">Nyissa meg a kamerát</string>
   <string name="touchscreen_gesture_action_browser">Nyissa meg a böngészőt</string>
   <string name="touchscreen_gesture_action_dialer">Nyissa meg a tárcsázót</string>
+  <string name="touchscreen_gesture_action_email">E-mailek megtekintése</string>
+  <string name="touchscreen_gesture_action_messages">Üzenetek megtekintése</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Zene lejátszása/szüneteltetése</string>
+  <string name="touchscreen_gesture_action_previous_track">Előző zeneszámra ugrás</string>
+  <string name="touchscreen_gesture_action_next_track">Következő zeneszámra ugrás</string>
 </resources>

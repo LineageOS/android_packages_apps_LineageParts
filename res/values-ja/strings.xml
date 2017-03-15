@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">画面を消灯</string>
   <string name="hardware_keys_action_last_app">前回のアプリ</string>
   <string name="hardware_keys_action_split_screen">画面の分割</string>
+  <string name="hardware_keys_action_single_handed_left">片手モード（左）</string>
+  <string name="hardware_keys_action_single_handed_right">片手モード（右）</string>
   <string name="camera_sleep_on_release_title">画面の覗き見</string>
   <string name="camera_sleep_on_release_summary">ボタンを半押しし続けている間だけ画面を点灯する</string>
   <string name="camera_launch_title">カメラを起動</string>
@@ -381,11 +383,16 @@
   <string name="status_bar_quick_qs_pulldown_right">右</string>
   <string name="status_bar_toggle_brightness">明るさコントロール</string>
   <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
+  <string name="status_bar_double_tap_to_sleep_title">ダブルタップしてスリープ</string>
+  <string name="status_bar_double_tap_to_sleep_summary">ステータスバーをダブルタップしてディスプレイを消灯します</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">ステータスバーのアイコン</string>
   <string name="status_bar_notif_count_title">通知の数を表示</string>
   <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
+  <string name="status_bar_system_icons_title">システムアイコン</string>
+  <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを設定します</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">時計</string>
   <string name="status_bar_clock_position_title">時計のスタイル</string>
   <string name="status_bar_clock_position_right">右</string>
   <string name="status_bar_clock_position_left">左</string>
@@ -396,6 +403,7 @@
   <string name="status_bar_am_pm_small">小さい</string>
   <string name="status_bar_am_pm_hidden">表示しない</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">バッテリー残量表示</string>
   <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
   <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
   <string name="status_bar_battery_style_icon_landscape">横向きのアイコン</string>

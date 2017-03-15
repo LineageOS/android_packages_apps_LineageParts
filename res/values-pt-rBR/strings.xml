@@ -23,7 +23,7 @@
   <string name="dlg_ok">OK</string>
   <string name="cancel">Cancelar</string>
   <string name="add">Adicionar</string>
-  <string name="choose_app">Escolher app</string>
+  <string name="choose_app">Escolher aplicativo</string>
   <string name="reset">Redefinir</string>
   <string name="advanced">Avançado</string>
   <string name="settings">Configurações</string>
@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Desligar a tela</string>
   <string name="hardware_keys_action_last_app">Último aplicativo</string>
   <string name="hardware_keys_action_split_screen">Dividir a tela</string>
+  <string name="hardware_keys_action_single_handed_left">Modo de uma mão (mão esquerda)</string>
+  <string name="hardware_keys_action_single_handed_right">Modo de uma mão (mão direita)</string>
   <string name="camera_sleep_on_release_title">Espiar a tela</string>
   <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
   <string name="camera_launch_title">Iniciar a câmera</string>
@@ -381,11 +383,16 @@
   <string name="status_bar_quick_qs_pulldown_right">Direita</string>
   <string name="status_bar_toggle_brightness">Controle de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
+  <string name="status_bar_double_tap_to_sleep_title">Toque duplo para suspender</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dê um duplo toque na barra de status para desligar a tela</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ícones da barra de status</string>
   <string name="status_bar_notif_count_title">Mostrar contador de notificações</string>
   <string name="status_bar_notif_count_summary">Mostra o número de notificações pendentes na barra de status</string>
+  <string name="status_bar_system_icons_title">Ícones do sistema</string>
+  <string name="status_bar_system_icons_summary">Controlar quais ícones são exibidas na barra de status</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Relógio</string>
   <string name="status_bar_clock_position_title">Posição do relógio</string>
   <string name="status_bar_clock_position_right">Direita</string>
   <string name="status_bar_clock_position_left">Esquerda</string>
@@ -396,6 +403,7 @@
   <string name="status_bar_am_pm_small">Pequeno</string>
   <string name="status_bar_am_pm_hidden">Oculto</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicador de bateria</string>
   <string name="status_bar_battery_style_title">Estilo do status da bateria</string>
   <string name="status_bar_battery_style_icon_portrait">Ícone retrato</string>
   <string name="status_bar_battery_style_icon_landscape">Ícone paisagem</string>

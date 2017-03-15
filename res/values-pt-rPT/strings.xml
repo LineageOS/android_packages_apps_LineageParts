@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Desligar o ecrã</string>
   <string name="hardware_keys_action_last_app">Última aplicação</string>
   <string name="hardware_keys_action_split_screen">Dividir ecrã</string>
+  <string name="hardware_keys_action_single_handed_left">Modo de uma mão (esquerda)</string>
+  <string name="hardware_keys_action_single_handed_right">Modo de uma mão (direita)</string>
   <string name="camera_sleep_on_release_title">Apresentação rápida</string>
   <string name="camera_sleep_on_release_summary">Pressionar até metade irá manter o ecrã ligado apenas enquanto o botão estiver pressionado</string>
   <string name="camera_launch_title">Iniciar a câmara</string>
@@ -381,11 +383,16 @@
   <string name="status_bar_quick_qs_pulldown_right">direito</string>
   <string name="status_bar_toggle_brightness">Controlo de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Ajustar o brilho deslizando através da barra de estado</string>
+  <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de estado para desligar o ecrã</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ícones da barra de estado</string>
   <string name="status_bar_notif_count_title">Mostrar contagem de notificações</string>
   <string name="status_bar_notif_count_summary">Mostrar o número de notificações pendentes</string>
+  <string name="status_bar_system_icons_title">Ícones do sistema</string>
+  <string name="status_bar_system_icons_summary">Controlar que ícones da barra de estado são mostrados</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Relógio</string>
   <string name="status_bar_clock_position_title">Posição do relógio</string>
   <string name="status_bar_clock_position_right">Direita</string>
   <string name="status_bar_clock_position_left">Esquerda</string>
@@ -396,6 +403,7 @@
   <string name="status_bar_am_pm_small">Pequeno</string>
   <string name="status_bar_am_pm_hidden">Oculto</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicador de bateria</string>
   <string name="status_bar_battery_style_title">Estilo do estado da bateria</string>
   <string name="status_bar_battery_style_icon_portrait">Ícone em modo retrato</string>
   <string name="status_bar_battery_style_icon_landscape">Ícone em modo paisagem</string>

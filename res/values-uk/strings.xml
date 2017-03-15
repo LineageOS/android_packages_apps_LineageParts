@@ -373,7 +373,7 @@
   <string name="notification_volume_title">Сповіщення</string>
   <string name="media_volume_title">Медіа</string>
   <string name="alarm_volume_title">Будильник</string>
-  <string name="doze_title">Активний дисплей</string>
+  <string name="doze_title">Ambient дисплей</string>
   <!-- Status bar -->
   <string name="status_bar_title">Рядок стану</string>
   <string name="status_bar_quick_qs_pulldown_title">Швидкий доступ</string>

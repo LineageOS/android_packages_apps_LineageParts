@@ -216,7 +216,7 @@
   <string name="navigation_bar_left_summary">Umesti vrstico za krmarjenje ne levo stran zaslona v ležečem načinu</string>
   <string name="navigation_bar_arrow_keys_title">Prikaži smerne tipke med tipkanjem</string>
   <string name="navigation_bar_arrow_keys_summary">Prikaži gumba levega in desnega kazalca med tipkanjem. Preglasi preklopnik IME.</string>
-  <string name="navigation_bar_home_long_press_title">Dejanje dolgega pritiska Nedavno</string>
+  <string name="navigation_bar_home_long_press_title">Dejanje dolgega pritiska Domov</string>
   <string name="navigation_bar_home_double_tap_title">Dejanje dvakratnega tapa Domov</string>
   <string name="navigation_bar_recents_title">Dejanje dolgega pritiska Nedavno</string>
   <!-- Power menu -->
@@ -287,8 +287,8 @@
   <string name="profile_app_group_item_instructions">Dodaj ali odstrani skupine</string>
   <string name="profile_app_group_item_instructions_summary">Dodaj ali odstrani skupine aplikacij za preglasitev obvestil iz tega profila</string>
   <!-- Profile mode options. -->
-  <string name="profile_entries_on">Vkl.</string>
-  <string name="profile_entries_off">Izk.</string>
+  <string name="profile_entries_on">Vklopljeno</string>
+  <string name="profile_entries_off">Izklopljeno</string>
   <string name="profile_entries_no_override">Brez preglasitev</string>
   <!-- Add Profile -->
   <string name="profile_name_title">Ime</string>
@@ -378,7 +378,7 @@
   <string name="status_bar_title">Vrstica stanja</string>
   <string name="status_bar_quick_qs_pulldown_title">Hitro spuščanje</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s rob vrstice stanja spusti Hitre nastavitve</string>
-  <string name="status_bar_quick_qs_pulldown_off">Izk.</string>
+  <string name="status_bar_quick_qs_pulldown_off">Izklopljeno</string>
   <string name="status_bar_quick_qs_pulldown_left">Levi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
   <string name="status_bar_toggle_brightness">Nadzor svetlosti</string>

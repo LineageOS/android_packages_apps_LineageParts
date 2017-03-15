@@ -328,7 +328,7 @@
   <string name="ringer_mode">鈴響模式</string>
   <string name="lights_mode">指示燈模式</string>
   <string name="vibrate_mode">震動模式</string>
-  <string name="choose_soundtone">選取通知音效</string>
+  <string name="choose_soundtone">選擇通知音效</string>
   <string name="choose_ringtone">選擇鈴聲</string>
   <string name="ringtone_title">電話鈴聲</string>
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->

@@ -37,6 +37,9 @@
   <string name="privacy_settings_title">Prywatność</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_switch_label">Włącz ochronę prywatności</string>
+  <string name="privacy_guard_default_summary">Aktywuj domyślnie dla wszystkich nowo zainstalowanych aplikacji</string>
+  <string name="privacy_guard_manager_summary">Wskaż, które aplikacje otrzymają dostęp do osobistych danych</string>
+  <string name="privacy_guard_no_user_apps">Brak zainstalowanych aplikacji</string>
   <string name="privacy_guard_help_title">Pomoc</string>
   <string name="privacy_guard_reset_title">Resetuj</string>
   <string name="privacy_guard_manager_show_system_apps">Pokaż wbudowane aplikacje</string>

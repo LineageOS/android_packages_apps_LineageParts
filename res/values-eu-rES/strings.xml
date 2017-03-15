@@ -135,6 +135,10 @@
   <string name="live_display_color_profile_basic_summary">Erabili pantaila kalibratu gabe</string>
   <string name="live_display_color_profile_adaptive_title">Moldakorra</string>
   <string name="live_display_color_profile_adaptive_summary">Koloreak inguruko baldintzetara moldatzen dira</string>
+  <string name="live_display_color_profile_reading_title">Irakurketa</string>
+  <string name="live_display_color_profile_reading_summary">Kolore epelagoak begiak gutxiago nekatzeko</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">sRGB kolore espazioarekiko zehatzak diren koloreak</string>
   <string name="color_calibration_title">Kolore kalibrazioa</string>
   <string name="color_calibration_summary">Kalibratu pantailako koloreak</string>
   <string name="color_red_title">Gorria</string>
@@ -170,11 +174,14 @@
   <string name="hardware_keys_action_sleep">Itzali pantaila</string>
   <string name="hardware_keys_action_last_app">Azken aplikazioa</string>
   <string name="hardware_keys_action_split_screen">Zatitu pantaila</string>
+  <string name="hardware_keys_action_single_handed_left">Esku bakarreko modua (ezkerra)</string>
+  <string name="hardware_keys_action_single_handed_right">Esku bakarreko modua (eskuina)</string>
   <string name="camera_sleep_on_release_title">Ikuspegi azkarra</string>
   <string name="camera_sleep_on_release_summary">Kamera botoia erdira sakatzeak pantaila esna mantenduko du botoia askatu arte</string>
   <string name="camera_launch_title">Abiatu kamera</string>
   <string name="camera_launch_summary">Luze sakatu eta askatzeak kamera abiatuko du</string>
   <string name="volbtn_music_controls_title">Kontrolatu erreprodukzioa</string>
+  <string name="volbtn_music_controls_summary">Aurreratu edo atzeratu musika pistak bolumen teklak luze sakatuz pantaila itzalita dagoenean</string>
   <string name="volbtn_cursor_control_title">Teklatu bidezko kurtsorearen kontrola</string>
   <string name="volbtn_cursor_control_off">Desgaituta</string>
   <string name="volbtn_cursor_control_on">Bolumena igo eta jaisteko botoiek kurtsorea ezkerrera eta eskumara mugitzen dute</string>
@@ -229,6 +236,8 @@
   <string name="camera_double_tap_power_gesture_title">Sakatu itzaltze botoia bitan kamerarako</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Ireki kamera azkar pantaila desblokeatu gabe</string>
+  <string name="torch_long_press_power_gesture_title">Sakatu luze linternarako</string>
+  <string name="torch_long_press_power_gesture_desc">Aktibatu linterna itzaltze botoia luze sakatuz pantaila itzalita dagoenean</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Ezabatu</string>
   <string name="profile_action_none">Laga aldatu gabe</string>
@@ -374,17 +383,27 @@
   <string name="status_bar_quick_qs_pulldown_right">eskumako</string>
   <string name="status_bar_toggle_brightness">Distiraren kontrola</string>
   <string name="status_bar_toggle_brightness_summary">Doitu distira egoera-barran zehar irristatuz</string>
+  <string name="status_bar_double_tap_to_sleep_title">Birritan sakatu lokartzeko</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Birritan sakatu egoera-barran pantaila itzaltzeko</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Egoera-barrako ikonoak</string>
   <string name="status_bar_notif_count_title">Erakutsi jakinarazpen kopurua</string>
   <string name="status_bar_notif_count_summary">Bistaratu zain dauden jakinarazpen kopurua</string>
+  <string name="status_bar_system_icons_title">Sistemaren ikonoak</string>
+  <string name="status_bar_system_icons_summary">Kontrolatu erakutsiko diren egoera-barrako ikonoak</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Erlojua</string>
+  <string name="status_bar_clock_position_title">Erlojuaren posizioa</string>
+  <string name="status_bar_clock_position_right">Eskuinean</string>
+  <string name="status_bar_clock_position_left">Ezkerrean</string>
+  <string name="status_bar_clock_position_center">Erdian</string>
   <string name="status_bar_am_pm_title">AM/PM estiloa</string>
   <string name="status_bar_am_pm_info">24 ordutako erlojua gaitu da</string>
   <string name="status_bar_am_pm_normal">Arrunta</string>
   <string name="status_bar_am_pm_small">Txikia</string>
   <string name="status_bar_am_pm_hidden">Ezkutatua</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Bateriaren adierazlea</string>
   <string name="status_bar_battery_style_title">Bateria-egoeraren estiloa</string>
   <string name="status_bar_battery_style_icon_portrait">Ikono bertikala</string>
   <string name="status_bar_battery_style_icon_landscape">Ikono horizontala</string>
@@ -434,6 +453,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="preview_country_title">Herrialdea</string>
   <string name="preview_carrier_title">Operadorea</string>
   <string name="stats_collection_title">Estatistikak biltzea</string>
+  <string name="stats_collection_summary">Baimendu instalazioen ezarpenak eta gailuen estatistikak jasotzea</string>
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Auto-biratu pantaila</string>
   <string name="display_rotation_title">Biratzearen ezarpenak</string>
@@ -472,6 +492,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="power_save_title">Muturreko energia aurreztea</string>
   <string name="power_save_summary">Mugatu gailuaren errendimendua eta bigarren planoko jarduera energia aurrezteko</string>
   <string name="auto_power_save_title">Energia aurrezle automatikoa</string>
+  <string name="auto_power_save_summary_on">Gaitu energia aurrezteko modua automatikoki bateriak %s duenean</string>
   <string name="auto_power_save_summary_off">Ez gaitu energia aurrezteko modua automatikoki</string>
   <string name="app_perf_profiles_title">Optimizazio automatikoa</string>
   <string name="app_perf_profiles_summary">Aukeratu automatikoki errendimendu profil egoki bat aplikazio eta erabilera ereduentzat</string>
@@ -487,5 +508,43 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="expanded_desktop_style_hide_both">Ezkutatu biak</string>
   <string name="expanded_desktop_nothing_to_show_text">Itzali zure mahaigain hedatua aplikazioz aplikazio pertsonalizatzeko</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Kargatze-soinuak</string>
+  <string name="charging_sounds_enabled_title">Gaitu</string>
+  <string name="charging_sounds_enabled_summary">Soinua jo kargadorea konektatu edo deskonektatzean</string>
+  <string name="power_notifications_vibrate_title">Bibratu</string>
+  <string name="charging_sounds_ringtone_title">Jakinarazpen-soinua</string>
+  <string name="charging_sounds_ringtone_silent">Isilik</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Ukitze-pantailaren keinuak</string>
+  <string name="touchscreen_gesture_settings_summary">Egin ukimen-pantailako keinuak ekintza azkarretarako</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Erantzun haptikoa</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Bibratu ukimen-pantailaren keinu bat antzematean</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Pasatu bi hatz behera</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Pasatu hatz bat gora</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Pasatu hatz bat behera</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Pasatu hatz bat ezkerrera</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Pasatu hatz bat eskumara</string>
+  <string name="touchscreen_gesture_up_arrow_title">Marraztu \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Marraztu \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Marraztu \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Marraztu \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Marraztu \"C\" letra</string>
+  <string name="touchscreen_gesture_letter_e_title">Marraztu \"e\" letra</string>
+  <string name="touchscreen_gesture_letter_o_title">Marraztu \"O\" letra</string>
+  <string name="touchscreen_gesture_letter_m_title">Marraztu \"M\" letra</string>
+  <string name="touchscreen_gesture_letter_s_title">Marraztu \"S\" letra</string>
+  <string name="touchscreen_gesture_letter_v_title">Marraztu \"V\" letra</string>
+  <string name="touchscreen_gesture_letter_w_title">Marraztu \"W\" letra</string>
+  <string name="touchscreen_gesture_letter_z_title">Marraztu \"Z\" letra</string>
+  <string name="touchscreen_gesture_action_dialog_title">Keinuaren ekintza</string>
+  <string name="touchscreen_gesture_action_do_nothing">Ez egin ezer</string>
+  <string name="touchscreen_gesture_action_flashlight">Piztu/itzali linterna</string>
+  <string name="touchscreen_gesture_action_camera">Ireki kamera</string>
+  <string name="touchscreen_gesture_action_browser">Ireki nabigatzailea</string>
+  <string name="touchscreen_gesture_action_dialer">Ireki markatzailea</string>
+  <string name="touchscreen_gesture_action_email">Ikusi zure e-postak</string>
+  <string name="touchscreen_gesture_action_messages">Ikusi zure mezuak</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Abiatu/pausatu musikaren erreprodukzioa</string>
+  <string name="touchscreen_gesture_action_previous_track">Joan aurreko musika pistara</string>
+  <string name="touchscreen_gesture_action_next_track">Joan hurrengo musika pistara</string>
 </resources>

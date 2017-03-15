@@ -388,6 +388,8 @@
   <string name="status_bar_icons_title">Ikon Status bar</string>
   <string name="status_bar_notif_count_title">Tampilkan hitungan pemberitahuan</string>
   <string name="status_bar_notif_count_summary">Tampilkan jumlah pemberitahuan yang tertunda</string>
+  <string name="status_bar_system_icons_title">Ikon sistem</string>
+  <string name="status_bar_system_icons_summary">Atur baris Ikon yang ditampilkan</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Jam</string>
   <string name="status_bar_clock_position_title">Posisi jam</string>
@@ -400,6 +402,7 @@
   <string name="status_bar_am_pm_small">Kecil</string>
   <string name="status_bar_am_pm_hidden">Tersembunyi</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indikator Baterai</string>
   <string name="status_bar_battery_style_title">Gaya status baterai</string>
   <string name="status_bar_battery_style_icon_portrait">Ikon potret</string>
   <string name="status_bar_battery_style_icon_landscape">Ikon lanskap</string>
@@ -505,13 +508,11 @@
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Suara pengisian daya</string>
   <string name="charging_sounds_enabled_title">Aktifkan</string>
-  <string name="charging_sounds_enabled_summary">Putar suara ketika menghubungkan atau melepaskan sumber daya</string>
   <string name="power_notifications_vibrate_title">Getar</string>
   <string name="charging_sounds_ringtone_title">Suara pemberitahuan</string>
   <string name="charging_sounds_ringtone_silent">Senyap</string>
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">Gerakan layar sentuh</string>
-  <string name="touchscreen_gesture_settings_summary">Lakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Umpan balik haptik</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Bergetar ketika gerakan layar sentuh terdeteksi</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Usap ke bawah dengan dua jari</string>
@@ -535,7 +536,6 @@
   <string name="touchscreen_gesture_action_do_nothing">Jangan lakukan apa-apa</string>
   <string name="touchscreen_gesture_action_flashlight">Hidup/matikan senter</string>
   <string name="touchscreen_gesture_action_camera">Buka kamera</string>
-  <string name="touchscreen_gesture_action_browser">Buka perambaan</string>
   <string name="touchscreen_gesture_action_dialer">Buka telepon</string>
   <string name="touchscreen_gesture_action_email">Lihat email Anda</string>
   <string name="touchscreen_gesture_action_messages">Lihat pesan Anda</string>

@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Vypnúť obrazovku</string>
   <string name="hardware_keys_action_last_app">Posledná aplikácia</string>
   <string name="hardware_keys_action_split_screen">Rozdelená obrazovka</string>
+  <string name="hardware_keys_action_single_handed_left">Režim jednej ruky (vľavo)</string>
+  <string name="hardware_keys_action_single_handed_right">Režim jednej ruky (vpravo)</string>
   <string name="camera_sleep_on_release_title">Náhľad obrazovky</string>
   <string name="camera_sleep_on_release_summary">Polovičné stlačenie rozsvieti obrazovku iba vtedy, kým je tlačidlo držané</string>
   <string name="camera_launch_title">Spustiť fotoaparát</string>
@@ -381,11 +383,16 @@
   <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
   <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
   <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
+  <string name="status_bar_double_tap_to_sleep_title">Uspať dvojitým poklepaním</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Vypnutie obrazovky dvojitým kliknutím na stavový riadok</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ikony stavového riadku</string>
   <string name="status_bar_notif_count_title">Zobraziť počítadlo oznámení</string>
   <string name="status_bar_notif_count_summary">Zobraziť počet čakajúcich oznámení na ikone v stavovom riadku</string>
+  <string name="status_bar_system_icons_title">Systémové ikony</string>
+  <string name="status_bar_system_icons_summary">Upraviť zobrazenie ikon v stavovom riadku</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Hodiny</string>
   <string name="status_bar_clock_position_title">Umiestnenie hodín</string>
   <string name="status_bar_clock_position_right">Vpravo</string>
   <string name="status_bar_clock_position_left">Vľavo</string>
@@ -396,6 +403,7 @@
   <string name="status_bar_am_pm_small">Malý</string>
   <string name="status_bar_am_pm_hidden">Skryté</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indikátor stavu batérie</string>
   <string name="status_bar_battery_style_title">Zobrazenie stavu batérie</string>
   <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
   <string name="status_bar_battery_style_icon_landscape">Ikona na šírku</string>
