@@ -229,7 +229,7 @@
   <string name="power_menu_lockdown_title">Блокування пристрою</string>
   <string name="power_menu_bug_report_title">Звіт про помилку</string>
   <string name="power_menu_sound_title">Звукова панель</string>
-  <string name="power_menu_bug_report_disabled">Надсилання звітів про помилки вимкнуто в налаштуваннях розробника</string>
+  <string name="power_menu_bug_report_disabled">Надсилання звітів про помилки вимкнено в налаштуваннях розробника</string>
   <string name="volume_keys_control_ring_stream_title">Регулювання гучності рингтону</string>
   <string name="volume_keys_control_ring_stream_summary_on">Клавіші регулювання гучності контролюють гучність дзвінка</string>
   <string name="volume_keys_control_ring_stream_summary_off">Клавіші регулювання гучності контролюють гучність медіа-файлів</string>
@@ -249,7 +249,7 @@
   <string name="profile_tabs_wifi">Wi\u2011Fi</string>
   <string name="profile_tabs_bluetooth">Bluetooth</string>
   <string name="profile_tabs_nfc">NFC</string>
-  <string name="profile_triggers_header">Умови активації цього профіля</string>
+  <string name="profile_triggers_header">Умови активації цього профілю</string>
   <string name="profile_setup_setup_triggers_title">Крок 1: Додайте умови перемикання</string>
   <string name="profile_setup_setup_triggers_title_config">Умови перемикання: <xliff:g id="profile_name">%1$s</xliff:g></string>
   <string name="profile_setup_actions_title">Крок 2: Налаштувати дії</string>
@@ -259,7 +259,7 @@
   <string name="no_bluetooth_triggers">Не створено жодної пари Bluetooth.\nТоркніться щоб створити пару Bluetooth перед налаштуванням умов перемикання.</string>
   <string name="no_wifi_triggers">Жодних Wi\u2011Fi точок доступу не налаштовано.\nНатисніть для підключення Wi\u2011Fi перед налаштуванням умов перемикання.</string>
   <string name="no_triggers_configured">Умови перемикання не налаштовані. Натисніть, щоб додати умову.</string>
-  <string name="no_triggers_configured_nfc">Натисніть, щоб додати NFC-мітку до цього профіля.</string>
+  <string name="no_triggers_configured_nfc">Натисніть, щоб додати NFC-мітку до цього профілю.</string>
   <string name="profile_setup_setup_triggers_description">Вкажіть умови, при яких буде вмикатися даний профіль</string>
   <string name="profile_setup_actions_description">Тепер можна налаштувати, що має відбуватися при активації профілю</string>
   <!-- Profiles settings  -->
@@ -275,7 +275,7 @@
   <string name="profile_write_success">Мітка успішно записана</string>
   <string name="profile_write_failed">Помилка запису даних на мітку!</string>
   <string name="profile_selected">Вибраний профіль: %1$s</string>
-  <string name="profile_nfc_text">Запис NFC-мітки для профіля дозволить дотиком до мітки вибрати потрібний профіль. При повторному дотику буде відновлений профіль який використовувався раніше.</string>
+  <string name="profile_nfc_text">Запис NFC-мітки для профілю дозволить дотиком до мітки вибрати потрібний профіль. При повторному дотику буде відновлений профіль який використовувався раніше.</string>
   <string name="profile_unknown_nfc_tag">Невідомий профіль</string>
   <string name="profile_add_nfc_text">Ця NFC-мітка присвоєна невідомому профілю. Прив’язка NFC-мітки до існуючого профілю дозволить використовувати мітку для його вибору.</string>
   <string name="profile_select">Виберіть профіль</string>
@@ -296,7 +296,7 @@
   <!-- Rename Dialog  -->
   <string name="rename_dialog_title">Перейменувати</string>
   <string name="rename_dialog_message">Введіть нове ім’я</string>
-  <string name="rename_dialog_hint">Введіть ім\'я профіля</string>
+  <string name="rename_dialog_hint">Введіть ім\'я профілю</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Скинути</string>
   <string name="profile_reset_message">Видалити всі ваші профілі і групи додатків та відновити налаштування за замовчуванням?</string>
@@ -322,7 +322,7 @@
   <string name="profile_settings">Налаштування профілю</string>
   <string name="profile_trigger_connect">При під’єднанні</string>
   <string name="profile_trigger_disconnect">При від’єднанні</string>
-  <string name="profile_trigger_notrigger">Не впливає на зміну профіля</string>
+  <string name="profile_trigger_notrigger">Не впливає на зміну профілю</string>
   <!-- Profile Settings sound modes labels -->
   <string name="sound_mode">Режим сповіщень</string>
   <string name="ringer_mode">Режим дзвінка</string>
@@ -346,7 +346,7 @@
   <!-- Profiles - system settings -->
   <string name="profile_system_settings_title">Налаштування системи</string>
   <string name="profile_lockmode_title">Режим блокування екрану</string>
-  <string name="profile_lockmode_policy_disabled_summary">Цей параметр профіля вимкнено згідно з політикою адміністратора пристрою</string>
+  <string name="profile_lockmode_policy_disabled_summary">Цей параметр профілю вимкнено згідно з політикою адміністратора пристрою</string>
   <string name="profile_lockmode_insecure_summary">Не запитувати PIN-код або пароль</string>
   <string name="profile_lockmode_disabled_summary">Вимкнути екран блокування</string>
   <string name="profile_airplanemode_title">Режим польоту</string>

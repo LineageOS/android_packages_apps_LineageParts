@@ -507,7 +507,8 @@
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Suara pengisian daya</string>
-  <string name="charging_sounds_enabled_title">Aktifkan</string>
+  <string name="charging_sounds_enabled_title">Hidupkan</string>
+  <string name="charging_sounds_enabled_summary">Putar suara peringatan saat menghubungkan atau melepaskan sumber daya</string>
   <string name="power_notifications_vibrate_title">Getar</string>
   <string name="charging_sounds_ringtone_title">Suara pemberitahuan</string>
   <string name="charging_sounds_ringtone_silent">Senyap</string>
@@ -536,6 +537,7 @@
   <string name="touchscreen_gesture_action_do_nothing">Jangan lakukan apa-apa</string>
   <string name="touchscreen_gesture_action_flashlight">Hidup/matikan senter</string>
   <string name="touchscreen_gesture_action_camera">Buka kamera</string>
+  <string name="touchscreen_gesture_action_browser">Buka browser</string>
   <string name="touchscreen_gesture_action_dialer">Buka telepon</string>
   <string name="touchscreen_gesture_action_email">Lihat email Anda</string>
   <string name="touchscreen_gesture_action_messages">Lihat pesan Anda</string>

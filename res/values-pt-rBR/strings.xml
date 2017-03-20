@@ -43,18 +43,18 @@
   <!-- Privacy Guard -->
   <string name="privacy_guard_switch_label">Ativar Proteção à Privacidade</string>
   <string name="privacy_guard_dlg_title">Ativar Proteção à Privacidade?</string>
-  <string name="privacy_guard_dlg_text">Quando a Proteção à Privacidade estiver ativada, o aplicativo não será capaz de acessar dados pessoais como contatos, mensagens e registros de chamadas.</string>
-  <string name="privacy_guard_dlg_system_app_text">Ao ativar a Proteção à Privacidade para um aplicativo do sistema, o aplicativo não será capaz de acessar ou fornecer dados pessoais. Isto poderá problemas em outros aplicativos.</string>
-  <string name="privacy_guard_default_title">Habilitado por padrão</string>
-  <string name="privacy_guard_default_summary_on">Proteção à Privacidade está ativa</string>
-  <string name="privacy_guard_default_summary">Ativar por padrão para aplicativos recém-instalados</string>
+  <string name="privacy_guard_dlg_text">Ao ativar a Proteção à Privacidade, o aplicativo não será capaz de acessar dados pessoais como contatos, mensagens e registros de chamadas.</string>
+  <string name="privacy_guard_dlg_system_app_text">Ao ativar a Proteção à Privacidade para um aplicativo do sistema, o aplicativo não será capaz de acessar ou fornecer dados pessoais. Isto poderá causar problemas em outros aplicativos.</string>
+  <string name="privacy_guard_default_title">Ativada</string>
+  <string name="privacy_guard_default_summary_on">Proteção à Privacidade ativada</string>
+  <string name="privacy_guard_default_summary">Ativar automaticamente para aplicativos recém-instalados</string>
   <string name="privacy_guard_manager_summary">Gerencie quais aplicativos têm acesso aos seus dados pessoais</string>
-  <string name="privacy_guard_no_user_apps">Nenhum app está instalado</string>
+  <string name="privacy_guard_no_user_apps">Nenhum aplicativo está instalado</string>
   <string name="privacy_guard_help_title">Ajuda</string>
   <string name="privacy_guard_reset_title">Redefinir</string>
   <string name="privacy_guard_reset_text">Redefinir permissões?</string>
-  <string name="privacy_guard_help_text">Nesta tela você pode escolher para quais apps a Proteção à Privacidade deve funcionar simplesmente tocando neles. Os aplicativos selecionados não poderão acessar seus dados pessoais, como contatos, mensagens ou registos de chamadas. Ao pressionar e segurar um item, a tela de detalhes dele é exibida.\n\nApps de sistema não são exibidos por padrão, mas podem ser exibidos selecionando a respectiva opção no menu.</string>
-  <string name="privacy_guard_manager_show_system_apps">Mostrar apps do sistema</string>
+  <string name="privacy_guard_help_text">Nesta tela você pode escolher para quais apps a Proteção à Privacidade deve funcionar simplesmente tocando neles. Os aplicativos selecionados não poderão acessar seus dados pessoais, como contatos, mensagens ou registros de chamadas. Ao pressionar e segurar um item, a tela de detalhes dele é exibida.\n\nAplicativoss do sistema não são exibidos por padrão, mas podem ser exibidos ao selecionar a respectiva opção no menu.</string>
+  <string name="privacy_guard_manager_show_system_apps">Mostrar aplicativos do sistema</string>
   <string name="privacy_guard_advanced_settings_title">Avançado</string>
   <string name="privacy_guard_notification_title">Mostrar notificação</string>
   <!-- Notification light dialogs -->
@@ -420,20 +420,20 @@
   <string name="status_bar_icons_summary">Controle quais ícones da barra de status são mostrados</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Apps protegidos</string>
-  <string name="protected_apps_manager_summary">Gerencie quais apps ficam escondidos atrás da trava de segurança</string>
+  <string name="protected_apps_manager_summary">Gerencie quais aplicativos ficam escondidos atrás da trava de segurança</string>
   <!-- Contributors cloud activity -->
   <string name="contributors_cloud_fragment_title">Colaboradores</string>
-  <string name="contributors_cloud_loading_message">Carregando os dados dos colaboradores\u2026</string>
-  <string name="contributors_cloud_failed_message">Não é possível carregar os dados dos colaboradores</string>
+  <string name="contributors_cloud_loading_message">Carregando dados de colaboradores\u2026</string>
+  <string name="contributors_cloud_failed_message">Não foi possível carregar os dados de colaboradores</string>
   <string name="contributor_info_menu">Informação do colaborador</string>
   <string name="contributor_info_msg">
-        <![CDATA[<b>Nome:</b><xliff:g id="name">%1$s </xliff:g><br/><br/>
-                 <b>Apelido:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Contribuições:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
+        <![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s </xliff:g><br/><br/>
+                 <b>Apelido:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Contribuições:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
   <string name="contributions_info_menu">Informação de colaborações</string>
   <string name="contributions_info_msg">
-        <![CDATA[<b>Total de Colaboradores:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Total de colaborações:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+        <![CDATA[<b>Quantidade de colaboradores:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Quantidade de colaborações:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Última atualização:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->

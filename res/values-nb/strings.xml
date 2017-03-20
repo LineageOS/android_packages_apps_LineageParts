@@ -385,7 +385,10 @@
   <string name="status_bar_icons_title">Statuslinjeikoner</string>
   <string name="status_bar_notif_count_title">Vis antall varsler</string>
   <string name="status_bar_notif_count_summary">Vis antall ventende varsler</string>
+  <string name="status_bar_system_icons_title">Systemikoner</string>
+  <string name="status_bar_system_icons_summary">Velg hvilke av statusikonene som skal vises</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Klokke</string>
   <string name="status_bar_clock_position_title">Klokkeposisjon</string>
   <string name="status_bar_clock_position_right">Høyre</string>
   <string name="status_bar_clock_position_left">Venstre</string>

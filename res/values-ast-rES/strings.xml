@@ -25,6 +25,7 @@
   <string name="add">Amestar</string>
   <string name="choose_app">Escoyer aplicación</string>
   <string name="settings">Axustes</string>
+  <string name="name">Nome</string>
   <string name="back">Atrás</string>
   <string name="finish">Finar</string>
   <string name="next">Siguiente</string>
@@ -33,19 +34,25 @@
   <!-- Privacy Settings Header item -->
   <string name="privacy_settings_title">Privacidá</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_switch_label">Habilitar Guardián de privacidá</string>
   <string name="privacy_guard_dlg_title">¿Habilitar Guardián de privacidá?</string>
+  <string name="privacy_guard_dlg_text">Cuando s\'habilita\'l Guardián de privacidá, l\'aplicación nun sedrá a acceder a datos personales como contautos, mensaxes o rexistros de llamaes.</string>
+  <string name="privacy_guard_dlg_system_app_text">Al habilitar el Guardián de privacidá pa una aplicación integrada, l\'aplicación nun sedrá a acceder o fornir datos personales. Esto quiciabes cause qu\'otres aplicaciones nun furrulen bien.</string>
+  <string name="privacy_guard_default_summary_on">Habilitóse\'l Guardián de privacidá</string>
   <string name="privacy_guard_manager_summary">Xestiona les aplicaciones que tienen accesu a los tos datos personales</string>
   <string name="privacy_guard_no_user_apps">Nun hai aplicaciones instalaes</string>
   <string name="privacy_guard_help_title">Ayuda</string>
+  <string name="privacy_guard_reset_text">¿Reafitar permisos?</string>
   <string name="privacy_guard_help_text">Nesta pantalla pues escoyer les aplicaciones que deberíen tener activu\'l Guardián de privacidá calcando nelles. Les aplicaciones esbillaes nun sedrán a acceder a los tos datos personales como contautos, mensaxes o rexistros de llamaes. Un primíu llargu nuna entrada, abre los detalles de l\'aplicación.\n\nLes aplicaciones integraes nun s\'amuesen por defeutu pero puen facelo conseñando la opción correspondiente nel menú.</string>
   <string name="privacy_guard_manager_show_system_apps">Amosar aplicaciones integraes</string>
   <string name="privacy_guard_advanced_settings_title">Avanzao</string>
   <string name="privacy_guard_notification_title">Amosar avisu</string>
   <!-- Notification light dialogs -->
+  <string name="edit_light_settings">Editar axustes de lluz</string>
   <string name="default_time">Normal</string>
   <string name="dialog_delete_title">Desaniciar</string>
   <string name="dialog_delete_message">¿Desaniciar l\'elementu esbilláu?</string>
-  <string name="brightness">Nivel de rellumu</string>
+  <string name="brightness">Nivel de brilléu</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_normal">Normal</string>
   <string name="pulse_speed_normal">Normal</string>
@@ -57,18 +64,22 @@
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">Lluz d\'avisu</string>
   <string name="notification_light_general_title">Xeneral</string>
+  <string name="notification_light_advanced_title">Avanzao</string>
   <string name="notification_light_applist_title">Aplicaciones</string>
   <string name="notification_light_phonelist_title">Teléfonu</string>
   <string name="notification_light_use_custom">Usar valores personalizaos</string>
   <string name="notification_light_missed_call_title">Llamada perdida</string>
+  <string name="notification_light_use_multiple_leds">LEDs múltiples</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Axustes de lluz</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimiza la to pantalla según la hora\'l día y les condiciones ambientales p\'ameyorar la llexibilidá y amenorgar el cansanciu de güeyos</string>
   <string name="live_display_color_temperature_title">Temperatura de color</string>
   <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K  Nueche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+  <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
   <string name="live_display_day">Día</string>
   <string name="live_display_night">Nueche</string>
+  <string name="live_display_outdoor_mode_summary">Aumenta automáticamente\'l brilléu y saturación so la lluz solar</string>
   <string name="live_display_enhance_color_title">Ameyorar colores</string>
   <string name="live_display_color_profile_title">Pefil de color</string>
   <string name="live_display_color_profile_standard_title">Estándar</string>
@@ -76,6 +87,7 @@
   <string name="live_display_color_profile_cinema_title">Cine</string>
   <string name="live_display_color_profile_cinema_summary">Reproducción de color perfeuta pa videu</string>
   <string name="live_display_color_profile_astronomy_title">Astronomía</string>
+  <string name="live_display_color_profile_photography_title">Fotografía</string>
   <string name="live_display_color_profile_reading_title">Llectura</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="color_calibration_title">Calibración de color</string>
@@ -102,6 +114,7 @@
   <string name="hardware_keys_long_press_title">Aición de primíu llargu</string>
   <string name="hardware_keys_double_tap_title">Aición de calcu doblu</string>
   <string name="hardware_keys_action_nothing">Ensin aición</string>
+  <string name="hardware_keys_action_menu">Menú d\'apertura/zarru</string>
   <string name="hardware_keys_action_search">Asistente de gueta</string>
   <string name="hardware_keys_action_voice_search">Gueta per voz</string>
   <string name="hardware_keys_action_in_app_search">Gueta na aplicación</string>
@@ -114,20 +127,33 @@
   <string name="power_end_call_summary">Fina la llamada actual primiendo\'l botón de prendíu</string>
   <string name="swap_volume_buttons_title">Reorientar</string>
   <string name="button_wake_title">Esconsoñar preséu</string>
+  <string name="volume_answer_call_title">Contestar llamada</string>
   <string name="volume_answer_call_summary">Contesta llamaes entrantes primiendo los botones de volume</string>
+  <string name="home_answer_call_title">Contestar llamada</string>
+  <string name="home_answer_call_summary">Contesta llamaes entrantes primiendo\'l botón d\'Aniciu</string>
   <!-- Key backlight -->
   <string name="button_backlight_enabled">Illuminar botones</string>
   <string name="keyboard_backlight_enabled">Illuminar tecláu</string>
-  <string name="button_backlight_seekbar_title">Rellumu de botones</string>
-  <string name="keyboard_backlight_seekbar_title">Rellumu de tecláu</string>
+  <string name="button_backlight_seekbar_title">Brilléu de botones</string>
+  <string name="keyboard_backlight_seekbar_title">Brilléu de tecláu</string>
   <string name="backlight_timeout_title">Escosa de tiempu d\'illuminación</string>
   <string name="backlight_timeout_unlimited">Nun apagar</string>
   <!-- Buttons - Enable navbar -->
   <!-- Navigation Bar -->
+  <string name="navigation_bar_category">Barra de navegación</string>
   <string name="navigation_bar_title">Botones y distribución</string>
   <string name="navigation_bar_left_title">Mou pa maniegos</string>
+  <string name="navigation_bar_left_summary">Alluga la barra de navegación nel llau esquierdu de la pantalla nel mou apaisáu</string>
   <string name="navigation_bar_recents_title">Aición de primíu llargu de Recientes</string>
   <!-- Power menu -->
+  <string name="power_menu_title">Menú d\'apagáu</string>
+  <string name="power_menu_reboot_title">Menú de reaniciu</string>
+  <string name="power_menu_screenshot_title">Capturar pantalla</string>
+  <string name="power_menu_airplane_title">Mou avión</string>
+  <string name="power_menu_sound_title">Panel de soníu</string>
+  <string name="power_menu_bug_report_disabled">L\'informe de fallos ta deshabilitáu nos axustes de desendolcu</string>
+  <string name="volume_keys_control_ring_stream_title">Controlar el volume del timbre</string>
+  <string name="volume_keys_control_ring_stream_summary_on">Les tecles de volume controlen el volume del timbre</string>
   <string name="camera_double_tap_power_gesture_title">Primir dos vegaes el botón de prendíu pa la cámara</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abre aína la cámara ensin desbloquiar la to pantalla</string>
@@ -135,32 +161,46 @@
   <string name="torch_long_press_power_gesture_desc">Activa la llinterna teniendo primíu\'l botón de prendíu entrín la pantalla tea apagada</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Desaniciar</string>
+  <string name="profile_action_none">Dexar ensin cambeos</string>
   <string name="profile_trigger_a2dp_connect">Al coneutar A2DP</string>
   <string name="profile_trigger_a2dp_disconnect">Al desconeutar A2DP</string>
   <string name="profile_tabs_wifi">Wi\u2011Fi</string>
   <string name="profile_tabs_bluetooth">Bluetooth</string>
   <string name="profile_tabs_nfc">NFC</string>
-  <string name="wireless_networks_settings_title">Conexones inalámbriques y redes</string>
+  <string name="profile_triggers_header">Los aicionadores qu\'activarán esti perfil</string>
+  <string name="profile_setup_setup_triggers_title">Pasu 1: Amestar aicionadores</string>
+  <string name="profile_setup_setup_triggers_title_config">Modificar aicionadores: <xliff:g id="profile_name">%1$s</xliff:g></string>
+  <string name="profile_setup_actions_title">Paso 2: Configurar aiciones</string>
+  <string name="profile_setup_actions_title_config">Reconfigurar aiciones</string>
+  <string name="wireless_networks_settings_title">Conexones y redes</string>
   <!-- Profile triggers -->
   <string name="no_triggers_configured">Nun se configuraron aicionadores. Calca p\'amestar más.</string>
   <string name="no_triggers_configured_nfc">Calca pa configurar un aicionador NFC nuevu.</string>
+  <string name="profile_setup_setup_triggers_description">Esbilla los aicionadores qu\'activarán esti perfil, por favor</string>
+  <string name="profile_setup_actions_description">Agora configura qué asocede al activase\'l perfil</string>
   <!-- Profiles settings  -->
   <string name="profiles_settings_title">Perfiles del sistema</string>
   <string name="profiles_add">Amestar</string>
   <string name="profile_menu_delete">Desaniciar</string>
   <string name="profile_settings_title">Perfil</string>
+  <string name="profile_empty_list_profiles_off">Pa configurar y usar los perfiles del sistema, actívalos.</string>
+  <string name="profile_settings_summary_off">Los perfiles tán deshabilitaos</string>
   <string name="profile_trigger_configure">Configurar aicionador</string>
   <string name="profile_write_nfc_tag">Escribir en etiqueta NFC</string>
   <string name="profile_write_touch_tag">Tocar etiqueta pa escribir</string>
+  <string name="profile_selected">Perfil esbilláu: %1$s</string>
   <string name="profile_nfc_text">Escribir un perfil nuna etiqueta NFC permite tocala pa esbillar el perfil. Tocando de nueves, esbillaráse\'l perfil esbilláu previamente.</string>
   <string name="profile_unknown_nfc_tag">Perfil desconocíu</string>
   <string name="profile_add_nfc_text">Esta etiqueta NFC fai referencia a un perfil desconocíu. Amestar esta etiqueta NFC a un perfil esistente permitirá esbillar el perfil nel futuru.</string>
   <string name="profile_remove_dialog_message">¿Desaniciar el perfil %1$s?</string>
+  <string name="profile_populate_profile_from_state">¿Configurar perfil usando los axustes actuales del preséu?</string>
+  <string name="profile_remove_current_profile">¡Nun pue desaniciase\'l perfil actual!</string>
   <!-- Profile mode options. -->
   <!-- Add Profile -->
   <string name="profile_name_title">Nome</string>
   <!-- Rename Dialog  -->
   <string name="rename_dialog_title">Renomar</string>
+  <string name="rename_dialog_message">Introduz un nome nuevu</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_message">¿Desaniciar tolos perfiles y grupos d\'aplicaciones creaos y reafitalos?</string>
   <!-- Delete confimation messages -->
@@ -173,6 +213,7 @@
   <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
   <string name="connection_state_enabled">Habilitar</string>
+  <string name="profile_volume_override_checkbox_label">Anular volume</string>
   <!-- Menu item for managing profiles -->
   <string name="profile_profiles_manage">Perfiles</string>
   <string name="profile_profile_manage">Xestionar perfil</string>
@@ -180,9 +221,15 @@
   <!-- Profile settings screen, section header for settings related to notification profiles -->
   <string name="profile_trigger_connect">Al coneutar</string>
   <string name="profile_trigger_disconnect">Al desconeutar</string>
+  <string name="profile_trigger_notrigger">Ensin aicionador</string>
   <!-- Profile Settings sound modes labels -->
   <string name="sound_mode">Mou d\'avisu</string>
+  <string name="lights_mode">Mou de lluces</string>
+  <string name="vibrate_mode">Mou de vibración</string>
+  <string name="choose_ringtone">Escoyer timbre</string>
+  <string name="ringtone_title">Timbre del teléfonu</string>
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
+  <string name="soundtone_title">Tonu d\'avisu</string>
   <!-- Title for application group setting screen -->
   <string name="profile_appgroups_title">Grupos d\'aplicaciones</string>
   <string name="profile_applist_title">Aplicaciones</string>
@@ -193,30 +240,41 @@
   <string name="profile_system_settings_title">Axustes del sistema</string>
   <string name="profile_lockmode_insecure_summary">Nun pidir PIN o contraseña</string>
   <string name="profile_airplanemode_title">Mou avión</string>
-  <string name="profile_brightness_title">Rellumu de pantalla</string>
-  <string name="profile_brightness_override_checkbox_label">Anular rellumu</string>
+  <string name="profile_brightness_title">Brilléu de pantalla</string>
+  <string name="profile_brightness_override_checkbox_label">Anular brilléu</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <string name="toggleWifi">Wi\u2011Fi</string>
   <string name="toggleBluetooth">Bluetooth</string>
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Conexón de datos</string>
+  <string name="toggle2g3g4g">Triba preferida de rede</string>
+  <string name="toggle2g3g4g_msim">Triba preferida de rede (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_normal">Normal</string>
+  <string name="incoming_call_volume_title">Timbre</string>
   <string name="notification_volume_title">Avisu</string>
+  <string name="doze_title">Pantalla ambiente</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra d\'estáu</string>
   <string name="status_bar_quick_qs_pulldown_title">Baxada rápida</string>
-  <string name="status_bar_toggle_brightness">Control de rellumu</string>
-  <string name="status_bar_toggle_brightness_summary">Axusta\'l rellumu eslizando\'l deu pela barra d\'estáu</string>
+  <string name="status_bar_toggle_brightness">Control de brilléu</string>
+  <string name="status_bar_toggle_brightness_summary">Axusta\'l brilléu eslizando\'l deu pela barra d\'estáu</string>
+  <string name="status_bar_double_tap_to_sleep_title">Calcu doblu pa dormir</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Iconos de barra d\'estáu</string>
+  <string name="status_bar_notif_count_title">Amosar contador d\'avisos</string>
+  <string name="status_bar_notif_count_summary">Amuesa\'l númberu d\'avisos pendientes</string>
+  <string name="status_bar_system_icons_title">Iconos del sistema</string>
+  <string name="status_bar_system_icons_summary">Contola qu\'iconos de la barra d\'estáu s\'amuesen</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Reló</string>
   <string name="status_bar_clock_position_title">Posición del reló</string>
   <string name="status_bar_am_pm_title">Estilu AM/PM</string>
   <string name="status_bar_am_pm_info">El reló de 24 hores ta habilitáu</string>
   <string name="status_bar_am_pm_normal">Normal</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicador de batería</string>
   <string name="status_bar_battery_style_title">Estilu d\'estáu de la batería</string>
   <string name="status_bar_battery_style_icon_portrait">Iconu vertical</string>
   <string name="status_bar_battery_style_icon_landscape">Iconu horizontal</string>
@@ -225,7 +283,7 @@
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Porcentaxe de batería</string>
   <string name="status_bar_battery_percentage_text_inside">Dientro l\'iconu</string>
-  <string name="status_bar_battery_percentage_text_next">Al llau del iconu</string>
+  <string name="status_bar_battery_percentage_text_next">Al llau l\'iconu</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Iconos de barra d\'estáu</string>
   <!-- Protected apps -->
@@ -262,6 +320,7 @@
   <string name="preview_country_title">País</string>
   <string name="preview_carrier_title">Operadora</string>
   <string name="stats_collection_title">Recoyida d\'estadístiques</string>
+  <string name="stats_collection_summary">Permite la instalación y recoyida de métriques y estadístiques del preséu</string>
   <!-- Display : Rotation  -->
   <string name="display_rotation_title">Axustes de voltéu</string>
   <string name="display_rotation_unit">graos</string>
@@ -279,6 +338,8 @@
   <string name="weather_settings_temp_celsius">Celsius</string>
   <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
   <!-- Power: Performance profiles -->
+  <string name="perf_profile_settings_title">Rindimientu y aforrador d\'enerxía</string>
+  <string name="perf_profile_settings_summary">Axusta les carauterístiques d\'aforru d\'enerxía y rindimientu del preséu</string>
   <string name="perf_profile_overview_summary">Perfil actual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">Rindimientu del preséu</string>
   <string name="perf_profile_title">Perfil de rindimientu: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -287,6 +348,8 @@
   <string name="power_save_title">Aforrador estremu d\'enerxía</string>
   <string name="power_save_summary">Torga\'l rindimientu del preséu y actividá de fondu p\'aforrar enerxía</string>
   <string name="auto_power_save_title">Aforrador automáticu d\'enerxía</string>
+  <string name="auto_power_save_summary_on">Habilítase automáticamente\'l mou d\'aforru d\'enerxía al %s de batería</string>
+  <string name="auto_power_save_summary_off">Nun s\'habilita automáticamente\'l mou d\'aforru d\'enerxía</string>
   <string name="app_perf_profiles_title">Optimización automática</string>
   <string name="auto_power_save_never">Enxamás</string>
   <!-- Applications: Expanded desktop -->
@@ -295,16 +358,45 @@
   <string name="expanded_desktop_style_title">Estilu d\'escritoriu estendíu</string>
   <string name="expanded_desktop_style_hide_nothing">Nun anubrir nada</string>
   <string name="expanded_desktop_style_hide_status">Anubrir barra d\'estáu</string>
+  <string name="expanded_desktop_style_hide_navigation">Anubrir barra de navegación</string>
   <string name="expanded_desktop_style_hide_both">Anubrir dambes</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Soníos de carga</string>
   <string name="charging_sounds_enabled_title">Habilitar</string>
+  <string name="charging_sounds_enabled_summary">Reproduz un soníu al coneutase o desconeutase d\'una fonte enerxética</string>
   <string name="charging_sounds_ringtone_title">Soníu d\'avisu</string>
+  <string name="charging_sounds_ringtone_silent">Silenciu</string>
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">Xestos de pantalla táutil</string>
   <string name="touchscreen_gesture_settings_summary">Fai dellos xestos táutiles p\'aiciones rápides</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Feedback hápticu</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibra al deteutase un xestu na pantalla táutil</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Eslizar haza abaxo con dos deos</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Eslizar haza arriba con un deu</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Eslizar haza abaxo con un deu</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Esliza a la izquierda con un deu</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Esliza a la drecha con un deu</string>
+  <string name="touchscreen_gesture_up_arrow_title">Dibuxar una «Λ»</string>
+  <string name="touchscreen_gesture_down_arrow_title">Dibuxar una «V»</string>
+  <string name="touchscreen_gesture_left_arrow_title">Dibuxar una «&lt;»</string>
+  <string name="touchscreen_gesture_right_arrow_title">Dibuxar una «&gt;»</string>
+  <string name="touchscreen_gesture_letter_c_title">Dibuxar la lletra «C»</string>
+  <string name="touchscreen_gesture_letter_e_title">Dibuxar la lletra «e»</string>
+  <string name="touchscreen_gesture_letter_o_title">Dibuxar la lletra «O»</string>
+  <string name="touchscreen_gesture_letter_m_title">Dibuxar la lletra «M»</string>
+  <string name="touchscreen_gesture_letter_s_title">Dibuxar la lletra «S»</string>
+  <string name="touchscreen_gesture_letter_v_title">Dibuxar la lletra «V»</string>
+  <string name="touchscreen_gesture_letter_w_title">Dibuxar la lletra «W»</string>
+  <string name="touchscreen_gesture_letter_z_title">Dibuxar la lletra «Z»</string>
+  <string name="touchscreen_gesture_action_dialog_title">Aición de xestu</string>
   <string name="touchscreen_gesture_action_do_nothing">Nun facer nada</string>
+  <string name="touchscreen_gesture_action_flashlight">Alternar la llinterna</string>
+  <string name="touchscreen_gesture_action_camera">Abrir la cámara</string>
   <string name="touchscreen_gesture_action_browser">Abrir el restolador</string>
   <string name="touchscreen_gesture_action_dialer">Abrir el marcador numbéricu</string>
+  <string name="touchscreen_gesture_action_email">Ver los tos correos</string>
+  <string name="touchscreen_gesture_action_messages">Ver los tos mensaxes</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Reproducir/posar música</string>
+  <string name="touchscreen_gesture_action_previous_track">Navegar a la pista musical previa</string>
+  <string name="touchscreen_gesture_action_next_track">Saltar a la pista musical de darréu</string>
 </resources>

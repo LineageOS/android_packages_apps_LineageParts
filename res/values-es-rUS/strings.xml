@@ -53,7 +53,7 @@
   <string name="privacy_guard_help_title">Ayuda</string>
   <string name="privacy_guard_reset_title">Restablecer</string>
   <string name="privacy_guard_reset_text">¿Restablecer permisos?</string>
-  <string name="privacy_guard_help_text">En esta pantalla puedes elegir las aplicaciones para las que se activará Guardián de privacidad pulsando sobre ellas. Las aplicaciones seleccionadas no podrán acceder a la información personal, como contactos, mensajes o registro de llamadas. Mantén pulsado para ver los detalles de la aplicación.\n\nLas aplicaciones del sistema no se muestran de forma predeterminada pero pueden mostrarse seleccionando la opción del menú correspondiente.</string>
+  <string name="privacy_guard_help_text">En esta pantalla puedes elegir las aplicaciones para las que se activará Guardián de privacidad pulsando sobre ellas. Las aplicaciones seleccionadas no podrán acceder a la información personal, como contactos, mensajes o registro de llamadas. Mantén pulsado para ver los detalles de la aplicación.\n\nLas aplicaciones del sistema no se muestran de forma predefinida pero pueden mostrarse seleccionando la opción del menú correspondiente.</string>
   <string name="privacy_guard_manager_show_system_apps">Mostrar aplicaciones del sistema</string>
   <string name="privacy_guard_advanced_settings_title">Avanzado</string>
   <string name="privacy_guard_notification_title">Mostrar notificación</string>
@@ -103,7 +103,7 @@
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Ajustes de la luz de notificación</string>
   <string name="led_notification_text">Luz LED activada por los ajustes</string>
-  <string name="notification_light_no_apps_summary">Para añadir el control por aplicación, activar \'%1$s\' y pulsar \'\u002b\' en la barra de menú</string>
+  <string name="notification_light_no_apps_summary">Para añadir el control por aplicación, activa \'%1$s\' y pulsa \'\u002b\' en la barra de menú</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimizar la pantalla según la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
   <string name="live_display_mode">Modo de visualización</string>
@@ -256,10 +256,10 @@
   <string name="profile_setup_actions_title_config">Reconfigurar acciones</string>
   <string name="wireless_networks_settings_title">Conexiones inalámbricas y redes</string>
   <!-- Profile triggers -->
-  <string name="no_bluetooth_triggers">Sin dispositivos Bluetooth emparejados. \nPulsar para emparejar el dispositivo Bluetooth antes de configurar los eventos.</string>
+  <string name="no_bluetooth_triggers">Sin dispositivos Bluetooth emparejados. \nPulsa para emparejar el dispositivo Bluetooth antes de configurar los eventos.</string>
   <string name="no_wifi_triggers">Sin puntos de acceso Wi\u2011Fi configurados. \nPulsa para conectar el Wi\u2011Fi antes de configurar los eventos.</string>
-  <string name="no_triggers_configured">Sin eventos configurados. Pulsar para añadir más.</string>
-  <string name="no_triggers_configured_nfc">Pulsar para configurar un nuevo evento NFC.</string>
+  <string name="no_triggers_configured">Sin eventos configurados. Pulsa para añadir más.</string>
+  <string name="no_triggers_configured_nfc">Pulsa para configurar un nuevo evento NFC.</string>
   <string name="profile_setup_setup_triggers_description">Selecciona qué eventos activarán este perfil</string>
   <string name="profile_setup_actions_description">Ahora configura qué sucederá al activar el perfil</string>
   <!-- Profiles settings  -->
