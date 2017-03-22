@@ -25,9 +25,11 @@
   <string name="add">Lägg till</string>
   <string name="choose_app">Välj app</string>
   <string name="reset">Återställ</string>
+  <string name="advanced">Avancerad</string>
   <string name="settings">Inställningar</string>
   <string name="name">Namn</string>
   <string name="back">Tillbaka</string>
+  <string name="finish">Avsluta </string>
   <string name="next">Nästa</string>
   <string name="on">På</string>
   <string name="off">Av</string>

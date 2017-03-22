@@ -58,6 +58,7 @@
   <string name="pulse_speed_normal">Normal</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Lluz de batería</string>
+  <string name="battery_low_pulse_title">Parpaguiar cola batería baxa</string>
   <string name="battery_light_list_title">Colores</string>
   <string name="battery_light_low_color_title">Batería baxa</string>
   <string name="battery_light_medium_color_title">Cargando</string>
@@ -123,6 +124,7 @@
   <string name="camera_launch_title">Llanzar cámara</string>
   <string name="camera_launch_summary">Un primíu llargu pa llanzar la cámara</string>
   <string name="volbtn_music_controls_title">Controlar reproducción</string>
+  <string name="volbtn_music_controls_summary">Gueta pente les pistes faciendo primíos llargos nes tecles de volume entrín la pantalla tea apagada</string>
   <string name="power_end_call_title">Finar llamada</string>
   <string name="power_end_call_summary">Fina la llamada actual primiendo\'l botón de prendíu</string>
   <string name="swap_volume_buttons_title">Reorientar</string>
@@ -132,6 +134,7 @@
   <string name="home_answer_call_title">Contestar llamada</string>
   <string name="home_answer_call_summary">Contesta llamaes entrantes primiendo\'l botón d\'Aniciu</string>
   <!-- Key backlight -->
+  <string name="button_backlight_title">Contralluz</string>
   <string name="button_backlight_enabled">Illuminar botones</string>
   <string name="keyboard_backlight_enabled">Illuminar tecláu</string>
   <string name="button_backlight_seekbar_title">Brilléu de botones</string>
