@@ -380,7 +380,7 @@
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
   <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
-  <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å dra langs statuslinjen</string>
+  <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Statuslinjeikoner</string>
   <string name="status_bar_notif_count_title">Vis antall varsler</string>
@@ -400,8 +400,8 @@
   <string name="status_bar_am_pm_hidden">Skjult</string>
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Stil på batteriikon</string>
-  <string name="status_bar_battery_style_icon_portrait">Stående ikon</string>
-  <string name="status_bar_battery_style_icon_landscape">Liggende ikon</string>
+  <string name="status_bar_battery_style_icon_portrait">Stående batteriikon</string>
+  <string name="status_bar_battery_style_icon_landscape">Liggende batteriikon</string>
   <string name="status_bar_battery_style_circle">Sirkel</string>
   <string name="status_bar_battery_style_text">Tekst</string>
   <string name="status_bar_battery_style_hidden">Skjult</string>
@@ -462,11 +462,11 @@
   <string name="display_rotation_270_title">270 grader</string>
   <!-- Weather -->
   <string name="weather_settings_title">Vær</string>
-  <string name="weather_settings_no_services_prompt">Ingen vær leverandør tjeneste installert</string>
-  <string name="weather_settings_no_services_summary">Installer en vær leverandør for å motta vær oppdateringer</string>
+  <string name="weather_settings_no_services_prompt">Ingen værleverandør tjeneste installert</string>
+  <string name="weather_settings_no_services_summary">Installer en værleverandør for å motta vær oppdateringer</string>
   <string name="weather_settings_button">Leverandørinnstillinger</string>
   <string name="weather_settings_activity_not_found">Kan ikke starte innstillingsmenyen for denne leverandøren</string>
-  <string name="weather_settings_add_weather_provider">Legg til vær leverandør</string>
+  <string name="weather_settings_add_weather_provider">Legg til værleverandør</string>
   <string name="weather_settings_general_settings_title">Generelt</string>
   <string name="weather_settings_providers_title">Leverandører</string>
   <string name="weather_settings_temp_units_title">Temperaturenhet</string>

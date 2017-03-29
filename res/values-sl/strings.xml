@@ -31,8 +31,8 @@
   <string name="back">Nazaj</string>
   <string name="finish">Končaj</string>
   <string name="next">Naprej</string>
-  <string name="on">Vkl.</string>
-  <string name="off">Izk.</string>
+  <string name="on">Vklopljeno</string>
+  <string name="off">Izklopljeno</string>
   <string name="yes">Da</string>
   <string name="no">Ne</string>
   <string name="search">Išči</string>

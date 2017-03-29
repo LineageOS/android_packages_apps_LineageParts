@@ -373,7 +373,7 @@
   <string name="notification_volume_title">알림</string>
   <string name="media_volume_title">미디어</string>
   <string name="alarm_volume_title">알람</string>
-  <string name="doze_title">절전 모드</string>
+  <string name="doze_title">절전 모드 자동 해제</string>
   <!-- Status bar -->
   <string name="status_bar_title">상태 표시줄</string>
   <string name="status_bar_quick_qs_pulldown_title">빠르게 설정 패널 열기</string>

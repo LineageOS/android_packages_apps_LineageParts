@@ -24,13 +24,19 @@
   <string name="cancel">Encaboxar</string>
   <string name="add">Amestar</string>
   <string name="choose_app">Escoyer aplicación</string>
+  <string name="reset">Reafitar</string>
+  <string name="advanced">Avanzao</string>
   <string name="settings">Axustes</string>
   <string name="name">Nome</string>
   <string name="back">Atrás</string>
   <string name="finish">Finar</string>
   <string name="next">Siguiente</string>
+  <string name="on">Sí</string>
+  <string name="off">Non</string>
   <string name="yes">Sí</string>
   <string name="no">Non</string>
+  <string name="search">Guetar</string>
+  <string name="disabled">Deshabilitóse</string>
   <!-- Privacy Settings Header item -->
   <string name="privacy_settings_title">Privacidá</string>
   <!-- Privacy Guard -->
@@ -70,7 +76,10 @@
   <string name="notification_light_phonelist_title">Teléfonu</string>
   <string name="notification_light_use_custom">Usar valores personalizaos</string>
   <string name="notification_light_missed_call_title">Llamada perdida</string>
+  <string name="notification_light_screen_on">Lluces cola pantalla prendida</string>
+  <string name="notification_light_zen_mode">Lluces nel Mou Nun molestar</string>
   <string name="notification_light_use_multiple_leds">LEDs múltiples</string>
+  <string name="keywords_lights_brightness_level">amatagar leds brilléu</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Axustes de lluz</string>
   <!-- LiveDisplay -->
@@ -116,6 +125,7 @@
   <string name="hardware_keys_double_tap_title">Aición de calcu doblu</string>
   <string name="hardware_keys_action_nothing">Ensin aición</string>
   <string name="hardware_keys_action_menu">Menú d\'apertura/zarru</string>
+  <string name="hardware_keys_action_app_switch">Conmutador d\'aplicaciones recientes</string>
   <string name="hardware_keys_action_search">Asistente de gueta</string>
   <string name="hardware_keys_action_voice_search">Gueta per voz</string>
   <string name="hardware_keys_action_in_app_search">Gueta na aplicación</string>
@@ -191,6 +201,7 @@
   <string name="profile_trigger_configure">Configurar aicionador</string>
   <string name="profile_write_nfc_tag">Escribir en etiqueta NFC</string>
   <string name="profile_write_touch_tag">Tocar etiqueta pa escribir</string>
+  <string name="profile_write_failed">¡Fallu al escribir na etiqueta!</string>
   <string name="profile_selected">Perfil esbilláu: %1$s</string>
   <string name="profile_nfc_text">Escribir un perfil nuna etiqueta NFC permite tocala pa esbillar el perfil. Tocando de nueves, esbillaráse\'l perfil esbilláu previamente.</string>
   <string name="profile_unknown_nfc_tag">Perfil desconocíu</string>
@@ -201,6 +212,7 @@
   <!-- Profile mode options. -->
   <!-- Add Profile -->
   <string name="profile_name_title">Nome</string>
+  <string name="new_profile_name">&lt;perfil nuevu&gt;</string>
   <!-- Rename Dialog  -->
   <string name="rename_dialog_title">Renomar</string>
   <string name="rename_dialog_message">Introduz un nome nuevu</string>
@@ -341,7 +353,7 @@
   <string name="weather_settings_temp_celsius">Celsius</string>
   <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
   <!-- Power: Performance profiles -->
-  <string name="perf_profile_settings_title">Rindimientu y aforrador d\'enerxía</string>
+  <string name="perf_profile_settings_title">Rindimientu y aforrador de batería</string>
   <string name="perf_profile_settings_summary">Axusta les carauterístiques d\'aforru d\'enerxía y rindimientu del preséu</string>
   <string name="perf_profile_overview_summary">Perfil actual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">Rindimientu del preséu</string>
