@@ -378,6 +378,8 @@
   <string name="status_bar_title">Durum çubuğu</string>
   <string name="status_bar_quick_qs_pulldown_title">Hızlı aşağı çekme</string>
   <string name="status_bar_quick_qs_pulldown_summary">Durum çubuğunun %1$s tarafından aşağı çekince Hızlı Ayarlar açılır</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Sol</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Sağ</string>
   <string name="status_bar_quick_qs_pulldown_off">Kapalı</string>
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>

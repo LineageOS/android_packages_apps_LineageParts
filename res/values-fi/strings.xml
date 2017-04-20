@@ -378,6 +378,8 @@
   <string name="status_bar_title">Tilapalkki</string>
   <string name="status_bar_quick_qs_pulldown_title">Nopea avaaminen</string>
   <string name="status_bar_quick_qs_pulldown_summary">Näytä pika-asetukset vedettäessä ilmoitusvalikko alas näytön %1$s reunasta</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Vasen</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Oikea</string>
   <string name="status_bar_quick_qs_pulldown_off">Pois</string>
   <string name="status_bar_quick_qs_pulldown_left">Vasen reuna</string>
   <string name="status_bar_quick_qs_pulldown_right">Oikea reuna</string>

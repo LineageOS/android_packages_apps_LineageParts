@@ -378,6 +378,8 @@
   <string name="status_bar_title">Barra de estado</string>
   <string name="status_bar_quick_qs_pulldown_title">Tirar para abaixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s na esquina da barra de estado abre a Configuración rápida</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Esquerda</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Dereita</string>
   <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Dereita</string>

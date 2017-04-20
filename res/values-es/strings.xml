@@ -378,6 +378,8 @@
   <string name="status_bar_title">Barra de estado</string>
   <string name="status_bar_quick_qs_pulldown_title">Despliegue rápido</string>
   <string name="status_bar_quick_qs_pulldown_summary">Deslice a la %1$s de la barra de estado para desplegar el panel de ajustes rápidos</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Izquierda</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Derecha</string>
   <string name="status_bar_quick_qs_pulldown_off">Desactivado</string>
   <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
   <string name="status_bar_quick_qs_pulldown_right">Derecha</string>

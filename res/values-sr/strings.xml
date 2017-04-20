@@ -440,6 +440,11 @@
   <string name="display_rotation_270_title">270 степени</string>
   <!-- Weather -->
   <string name="weather_settings_title">Временска прогноза</string>
+  <string name="weather_settings_no_services_prompt">Нема инсталираног добављача услуга временске прогнозе</string>
+  <string name="weather_settings_no_services_summary">Инсталирај добављача услуга временске прогнозе за ажурирање</string>
+  <string name="weather_settings_button">Поставке добављача</string>
+  <string name="weather_settings_activity_not_found">Није могуће покренути подешавање менија овог добављача</string>
+  <string name="weather_settings_add_weather_provider">Додај добављача временске услуге</string>
   <string name="weather_settings_general_settings_title">Општa</string>
   <string name="weather_settings_providers_title">Добављачи</string>
   <string name="weather_settings_temp_units_title">Јединица температуре</string>
@@ -503,10 +508,12 @@
   <string name="touchscreen_gesture_letter_v_title">Нацртај слово \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Нацртај слово \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Нацртај слово \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Акција геста</string>
   <string name="touchscreen_gesture_action_do_nothing">Не ради ништа</string>
   <string name="touchscreen_gesture_action_flashlight">Укључи/Искључи батеријску лампу</string>
   <string name="touchscreen_gesture_action_camera">Отворите камеру</string>
   <string name="touchscreen_gesture_action_browser">Отворите прегледач</string>
+  <string name="touchscreen_gesture_action_dialer">Отвори бирач</string>
   <string name="touchscreen_gesture_action_email">Прикажи мејлове</string>
   <string name="touchscreen_gesture_action_messages">Прикажи поруке</string>
   <string name="touchscreen_gesture_action_play_pause_music">Репродукуј/Паузирај репродукцију музике</string>

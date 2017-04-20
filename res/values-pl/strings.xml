@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="cmparts_title">Ustawienia LineageOS</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Ładowanie\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -24,25 +25,30 @@
   <string name="add">Dodaj</string>
   <string name="choose_app">Wybierz aplikację</string>
   <string name="reset">Resetuj</string>
+  <string name="advanced">Zaawansowane</string>
   <string name="settings">Ustawienia</string>
   <string name="name">Nazwa</string>
   <string name="back">Wróć</string>
   <string name="finish">Zakończ</string>
+  <string name="next">Dalej</string>
   <string name="on">Wł.</string>
   <string name="off">Wyłączone</string>
   <string name="yes">Tak</string>
   <string name="no">Nie</string>
   <string name="search">Szukaj</string>
+  <string name="enabled">Włączono</string>
   <!-- Privacy Settings Header item -->
   <string name="privacy_settings_title">Prywatność</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_switch_label">Włącz ochronę prywatności</string>
+  <string name="privacy_guard_dlg_title">Aktywować ochronę prywatności?</string>
   <string name="privacy_guard_dlg_text">Kiedy ochrona prywatności jest aktywna, aplikacja nie będzie miała dostępu do osobistych danych, takich jak kontakty, wiadomości czy historia połączeń.</string>
   <string name="privacy_guard_default_summary">Aktywuj domyślnie dla wszystkich nowo zainstalowanych aplikacji</string>
   <string name="privacy_guard_manager_summary">Wskaż, które aplikacje otrzymają dostęp do osobistych danych</string>
   <string name="privacy_guard_no_user_apps">Brak zainstalowanych aplikacji</string>
   <string name="privacy_guard_help_title">Pomoc</string>
   <string name="privacy_guard_reset_title">Resetuj</string>
+  <string name="privacy_guard_reset_text">Zresetować uprawnienia?</string>
   <string name="privacy_guard_manager_show_system_apps">Pokaż wbudowane aplikacje</string>
   <string name="privacy_guard_advanced_settings_title">Zaawansowane</string>
   <string name="privacy_guard_notification_title">Pokaż powiadomienie</string>
@@ -131,6 +137,7 @@
   <string name="power_menu_bug_report_disabled">Raportowanie błędów jest wyłączone w opcjach programistycznych</string>
   <string name="volume_keys_control_ring_stream_title">Regulacja głośności dzwonka</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+  <string name="torch_long_press_power_gesture_desc">Włączanie latarki przy wyłączonym ekranie przez przytrzymanie przycisku zasilania</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Usuń</string>
   <string name="profile_action_system">Domyślny systemu</string>
@@ -328,4 +335,6 @@
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_ringtone_title">Dźwięk powiadomienia</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_letter_o_title">Narysuj literę \"O\"</string>
+  <string name="touchscreen_gesture_action_browser">Otwórz przeglądarkę</string>
 </resources>

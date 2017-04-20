@@ -378,6 +378,8 @@
   <string name="status_bar_title">Barra di stato</string>
   <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
   <string name="status_bar_quick_qs_pulldown_summary">Scorri la barra di stato verso il basso da %1$s per aprire le impostazioni rapide</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Sinistra</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Destra</string>
   <string name="status_bar_quick_qs_pulldown_off">Off</string>
   <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
   <string name="status_bar_quick_qs_pulldown_right">Destra</string>

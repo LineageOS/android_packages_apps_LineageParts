@@ -373,11 +373,13 @@
   <string name="notification_volume_title">Notificação</string>
   <string name="media_volume_title">Mídia</string>
   <string name="alarm_volume_title">Alarme</string>
-  <string name="doze_title">Tela ambiente</string>
+  <string name="doze_title">Brilho adaptável</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra de status</string>
   <string name="status_bar_quick_qs_pulldown_title">Deslizar rápido para baixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">borda %1$s da barra de status puxa as Configurações Rápidas</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Esquerda</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Direita</string>
   <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Direita</string>

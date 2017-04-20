@@ -378,6 +378,8 @@
   <string name="status_bar_title">Barra d\'estat</string>
   <string name="status_bar_quick_qs_pulldown_title">Baixada ràpida</string>
   <string name="status_bar_quick_qs_pulldown_summary">La vora %1$s de la barra d\'estat desplega el panell d\'ajustos ràpids</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Esquerra</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Dreta</string>
   <string name="status_bar_quick_qs_pulldown_off">No</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerra</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreta</string>

@@ -378,6 +378,8 @@
   <string name="status_bar_title">Vrstica stanja</string>
   <string name="status_bar_quick_qs_pulldown_title">Hitro spuščanje</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s rob vrstice stanja spusti Hitre nastavitve</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Levo</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Desno</string>
   <string name="status_bar_quick_qs_pulldown_off">Izklopljeno</string>
   <string name="status_bar_quick_qs_pulldown_left">Levi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>

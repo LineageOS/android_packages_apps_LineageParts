@@ -378,6 +378,8 @@
   <string name="status_bar_title">Строка состояния</string>
   <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s край строки состояния вытягивает быстрые настройки</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Левый</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Правый</string>
   <string name="status_bar_quick_qs_pulldown_off">Выключено</string>
   <string name="status_bar_quick_qs_pulldown_left">Левый</string>
   <string name="status_bar_quick_qs_pulldown_right">Правый</string>

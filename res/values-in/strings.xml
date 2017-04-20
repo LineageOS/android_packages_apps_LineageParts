@@ -138,6 +138,7 @@
   <string name="live_display_color_profile_reading_title">Membaca</string>
   <string name="live_display_color_profile_reading_summary">Warna-warna hangat untuk mengurangi kelelahan mata</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Warna akurat ke ruang warna sRGB</string>
   <string name="color_calibration_title">Kalibrasi warna</string>
   <string name="color_calibration_summary">Kalibrasi warna layar</string>
   <string name="color_red_title">Merah</string>
@@ -377,6 +378,8 @@
   <string name="status_bar_title">Status bar</string>
   <string name="status_bar_quick_qs_pulldown_title">Keruntuhan cepat</string>
   <string name="status_bar_quick_qs_pulldown_summary">Menarik %1$s tepi status bar ke bawah untuk Pengaturan Cepat</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Kiri</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Kanan</string>
   <string name="status_bar_quick_qs_pulldown_off">Mati</string>
   <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
@@ -514,6 +517,7 @@
   <string name="charging_sounds_ringtone_silent">Senyap</string>
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">Gerakan layar sentuh</string>
+  <string name="touchscreen_gesture_settings_summary">Melakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Umpan balik haptik</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Bergetar ketika gerakan layar sentuh terdeteksi</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Usap ke bawah dengan dua jari</string>

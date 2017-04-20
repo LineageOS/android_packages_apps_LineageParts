@@ -378,6 +378,8 @@
   <string name="status_bar_title">Thanh trạng thái</string>
   <string name="status_bar_quick_qs_pulldown_title">Kéo xuống nhanh</string>
   <string name="status_bar_quick_qs_pulldown_summary">Kéo từ cạnh %1$s của thanh trạng thái xuống để truy cập Cài đặt nhanh</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Trái</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Phải</string>
   <string name="status_bar_quick_qs_pulldown_off">Tắt</string>
   <string name="status_bar_quick_qs_pulldown_left">Trái</string>
   <string name="status_bar_quick_qs_pulldown_right">Phải</string>

@@ -378,6 +378,8 @@
   <string name="status_bar_title">Лента на състоянието</string>
   <string name="status_bar_quick_qs_pulldown_title">Бързи настройки</string>
   <string name="status_bar_quick_qs_pulldown_summary">Дръпнете %1$s лентата на състоянието за бързи настройки</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Вляво</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Вдясно</string>
   <string name="status_bar_quick_qs_pulldown_off">Изключен</string>
   <string name="status_bar_quick_qs_pulldown_left">Вляво</string>
   <string name="status_bar_quick_qs_pulldown_right">Вдясно</string>

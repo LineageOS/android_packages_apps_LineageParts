@@ -378,6 +378,8 @@
   <string name="status_bar_title">Értesítési sáv</string>
   <string name="status_bar_quick_qs_pulldown_title">Gyors lehúzás</string>
   <string name="status_bar_quick_qs_pulldown_summary">Gyors beállítások megjelenítése az értesítési sáv %1$s oldalán történő lehúzásakor</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Bal</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Jobb</string>
   <string name="status_bar_quick_qs_pulldown_off">Ki</string>
   <string name="status_bar_quick_qs_pulldown_left">Bal</string>
   <string name="status_bar_quick_qs_pulldown_right">Jobb</string>

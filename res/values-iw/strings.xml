@@ -378,6 +378,8 @@
   <string name="status_bar_title">שורת מצב</string>
   <string name="status_bar_quick_qs_pulldown_title">משיכה מהירה</string>
   <string name="status_bar_quick_qs_pulldown_summary">משיכה מצד %1$s לפתיחה מהירה של ההגדרות המהירות</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">שמאל</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">ימין</string>
   <string name="status_bar_quick_qs_pulldown_off">כבוי</string>
   <string name="status_bar_quick_qs_pulldown_left">שמאל</string>
   <string name="status_bar_quick_qs_pulldown_right">ימין</string>

@@ -252,7 +252,7 @@
   <string name="profile_triggers_header">Auslöser, die dieses Profil aktivieren</string>
   <string name="profile_setup_setup_triggers_title">Schritt 1: Auslöser hinzufügen</string>
   <string name="profile_setup_setup_triggers_title_config">Auslöser ändern: <xliff:g id="profile_name">%1$s</xliff:g></string>
-  <string name="profile_setup_actions_title">Schritt 2: Aktionen bestimmen</string>
+  <string name="profile_setup_actions_title">Schritt 2: Aktionen festlegen</string>
   <string name="profile_setup_actions_title_config">Aktionen neu konfigurieren</string>
   <string name="wireless_networks_settings_title">Drahtlos &amp; Netzwerke</string>
   <!-- Profile triggers -->
@@ -378,6 +378,8 @@
   <string name="status_bar_title">Statusleiste</string>
   <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
   <string name="status_bar_quick_qs_pulldown_summary">Herunterziehen der Benachrichtigungsleiste am %1$s Rand öffnet die Schnelleinstellungen</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">linken</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">rechten</string>
   <string name="status_bar_quick_qs_pulldown_off">Aus</string>
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
@@ -498,7 +500,7 @@
   <string name="auto_power_save_never">Nie</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Erweiterter Desktop</string>
-  <string name="expanded_desktop_settings_summary">Vergrößern sie den verfügbaren Bildschirmplatz durch Ausblenden der Statusleiste, der Navigationsleiste oder beidem</string>
+  <string name="expanded_desktop_settings_summary">Vergrößern Sie den verfügbaren Bildschirmplatz durch Ausblenden der Statusleiste und/oder der Navigationsleiste.</string>
   <string name="expanded_desktop_options_title">Anpassungsoptionen</string>
   <string name="expanded_desktop_style_title">Stil des erweiterten Desktops</string>
   <string name="expanded_desktop_style_hide_nothing">Nichts ausblenden</string>

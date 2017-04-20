@@ -377,10 +377,12 @@
   <!-- Status bar -->
   <string name="status_bar_title">Barra de estado</string>
   <string name="status_bar_quick_qs_pulldown_title">Puxar para baixo</string>
-  <string name="status_bar_quick_qs_pulldown_summary">O canto %1$s da barra de estado faz baixar o painel de definições rápidas</string>
+  <string name="status_bar_quick_qs_pulldown_summary">O %1$s da barra de estado faz baixar o painel de definições rápidas</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">canto esquerdo</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">canto direito</string>
   <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
-  <string name="status_bar_quick_qs_pulldown_left">esquerdo</string>
-  <string name="status_bar_quick_qs_pulldown_right">direito</string>
+  <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
+  <string name="status_bar_quick_qs_pulldown_right">Direita</string>
   <string name="status_bar_toggle_brightness">Controlo de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Ajustar o brilho deslizando através da barra de estado</string>
   <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>

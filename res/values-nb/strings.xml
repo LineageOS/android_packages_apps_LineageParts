@@ -59,7 +59,7 @@
   <string name="privacy_guard_notification_title">Vis varsel</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Endre lys innstillinger</string>
-  <string name="pulse_speed_title">Puls lengde og hastighet</string>
+  <string name="pulse_speed_title">Pulseringshastighet og lengde</string>
   <string name="default_time">Normal</string>
   <string name="custom_time">Egendefinert</string>
   <string name="dialog_delete_title">Slett</string>
@@ -174,6 +174,8 @@
   <string name="hardware_keys_action_sleep">Slå skjermen av</string>
   <string name="hardware_keys_action_last_app">Siste app</string>
   <string name="hardware_keys_action_split_screen">Delt skjerm</string>
+  <string name="hardware_keys_action_single_handed_left">Enhåndsstyring (venstre)</string>
+  <string name="hardware_keys_action_single_handed_right">Enhåndsstyring (høyre)</string>
   <string name="camera_sleep_on_release_title">Skjermtitt</string>
   <string name="camera_sleep_on_release_summary">Et halvt trykk holder bare skjermen påslått mens knappen holdes nede</string>
   <string name="camera_launch_title">Start kamera</string>
@@ -375,12 +377,16 @@
   <!-- Status bar -->
   <string name="status_bar_title">Statuslinje</string>
   <string name="status_bar_quick_qs_pulldown_title">Rask rullegardinmeny</string>
-  <string name="status_bar_quick_qs_pulldown_summary">Ved å dra ned fra %1$s side av statuslinjen, drar du ned Hurtiginnstillingene</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Ved å dra ned fra %1$s side av statuslinjen, kommer du rett til hurtiginnstillingene</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Venstre</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Høyre</string>
   <string name="status_bar_quick_qs_pulldown_off">Av</string>
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
   <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
   <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
+  <string name="status_bar_double_tap_to_sleep_title">Dobbelttrykk for å slukke skjermen</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dobbelttrykk på statuslinjen for å slå av skjermen</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Statuslinjeikoner</string>
   <string name="status_bar_notif_count_title">Vis antall varsler</string>
@@ -399,6 +405,7 @@
   <string name="status_bar_am_pm_small">Liten</string>
   <string name="status_bar_am_pm_hidden">Skjult</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Batteriindikator</string>
   <string name="status_bar_battery_style_title">Stil på batteriikon</string>
   <string name="status_bar_battery_style_icon_portrait">Stående batteriikon</string>
   <string name="status_bar_battery_style_icon_landscape">Liggende batteriikon</string>
@@ -406,7 +413,7 @@
   <string name="status_bar_battery_style_text">Tekst</string>
   <string name="status_bar_battery_style_hidden">Skjult</string>
   <!-- Status bar - Battery percentage -->
-  <string name="status_bar_battery_percentage_title">Batteri prosent</string>
+  <string name="status_bar_battery_percentage_title">Batteriprosent</string>
   <string name="status_bar_battery_percentage_default">Skjult</string>
   <string name="status_bar_battery_percentage_text_inside">Inne i ikonet</string>
   <string name="status_bar_battery_percentage_text_next">Ved siden av ikonet</string>
@@ -504,7 +511,7 @@
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Lade-lyder</string>
   <string name="charging_sounds_enabled_title">Aktiver</string>
-  <string name="charging_sounds_enabled_summary">Spill av en lyd når du kobler til eller kobler fra en strømkilde</string>
+  <string name="charging_sounds_enabled_summary">Spill av en lyd når du kobler til eller fra en strømkilde</string>
   <string name="power_notifications_vibrate_title">Vibrer</string>
   <string name="charging_sounds_ringtone_title">Varslingslyd</string>
   <string name="charging_sounds_ringtone_silent">Lydløs</string>

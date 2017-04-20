@@ -146,7 +146,7 @@
   <string name="color_blue_title">파랑</string>
   <!-- LiveDisplay : Picture Adjustment -->
   <string name="picture_adjustment_title">사진 조정</string>
-  <string name="picture_adjustment_summary">색조, 채도, 농도 및 대비 조정</string>
+  <string name="picture_adjustment_summary">색조, 채도, 명도 및 대비 조정</string>
   <string name="adj_hue_title">색조</string>
   <string name="adj_saturation_title">채도</string>
   <string name="adj_intensity_title">명도</string>
@@ -378,6 +378,8 @@
   <string name="status_bar_title">상태 표시줄</string>
   <string name="status_bar_quick_qs_pulldown_title">빠르게 설정 패널 열기</string>
   <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 모서리를 내려 빠른 설정 보기</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">왼쪽</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">오른쪽</string>
   <string name="status_bar_quick_qs_pulldown_off">꺼짐</string>
   <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
   <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>
@@ -517,7 +519,7 @@
   <string name="touchscreen_gesture_settings_title">터치스크린 제스처</string>
   <string name="touchscreen_gesture_settings_summary">다양한 터치스크린 제스처를 사용하여 빠른 작업 실행</string>
   <string name="touchscreen_gestures_haptic_feedback_title">햅틱 반응</string>
-  <string name="touchscreen_gestures_haptic_feedback_summary">터치스크린 제스처를 감지하면 진동</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">터치스크린 제스처를 감지하면 진동 울림</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">두 손가락으로 쓸어 내리기</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">한 손가락으로 쓸어 올리기</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">한 손가락으로 쓸어 내리기</string>

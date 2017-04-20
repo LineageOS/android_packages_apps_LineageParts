@@ -216,9 +216,9 @@
   <string name="navigation_bar_left_summary">V režime na šírku umiestniť navigačný panel na ľavú stranu obrazovky</string>
   <string name="navigation_bar_arrow_keys_title">Zobraziť šípky pri písaní</string>
   <string name="navigation_bar_arrow_keys_summary">Zobraziť ľavé a pravé kurzorové tlačidlá pri písaní. Potlačí prepínač metódy vstupu.</string>
-  <string name="navigation_bar_home_long_press_title">Akcia dlhého stlačenia tlačítku Domov</string>
-  <string name="navigation_bar_home_double_tap_title">Akcia dvojkliku na tlačítu Domov</string>
-  <string name="navigation_bar_recents_title">Akcia dlhého stlačenia na tlačítku Nedávne</string>
+  <string name="navigation_bar_home_long_press_title">Akcia dlhého stlačenia tlačidla Domov</string>
+  <string name="navigation_bar_home_double_tap_title">Akcia dvojkliku tlačidla Domov</string>
+  <string name="navigation_bar_recents_title">Akcia dlhého stlačenia tlačidla Nedávne</string>
   <!-- Power menu -->
   <string name="power_menu_title">Ponuka po stlačení tlačidla</string>
   <string name="power_menu_reboot_title">Reštart menu</string>
@@ -378,6 +378,8 @@
   <string name="status_bar_title">Stavový riadok</string>
   <string name="status_bar_quick_qs_pulldown_title">Rýchle vysunutie</string>
   <string name="status_bar_quick_qs_pulldown_summary">Potiahnutím stavového riadku dolu zo strany: %1$s, sa vysunie lišta rýchlych nastavení</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Vľavo</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Vpravo</string>
   <string name="status_bar_quick_qs_pulldown_off">Vypnúť</string>
   <string name="status_bar_quick_qs_pulldown_left">vľavo</string>
   <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
