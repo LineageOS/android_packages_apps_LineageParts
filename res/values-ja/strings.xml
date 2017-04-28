@@ -378,6 +378,8 @@
   <string name="status_bar_title">ステータスバー</string>
   <string name="status_bar_quick_qs_pulldown_title">クイックプルダウン</string>
   <string name="status_bar_quick_qs_pulldown_summary">ステータスバーの%1$s端をプルダウンしてクイック設定を開く</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">左</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">右</string>
   <string name="status_bar_quick_qs_pulldown_off">OFF</string>
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>

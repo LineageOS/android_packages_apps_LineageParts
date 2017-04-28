@@ -378,6 +378,8 @@
   <string name="status_bar_title">Egoera-barra</string>
   <string name="status_bar_quick_qs_pulldown_title">Hedapen azkarra</string>
   <string name="status_bar_quick_qs_pulldown_summary">Jakinarazpen barraren %1$s ertzak ezarpen azkarren taula hedatuko du</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Ezkerrean</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Eskuinean</string>
   <string name="status_bar_quick_qs_pulldown_off">Ez</string>
   <string name="status_bar_quick_qs_pulldown_left">ezkerreko</string>
   <string name="status_bar_quick_qs_pulldown_right">eskumako</string>

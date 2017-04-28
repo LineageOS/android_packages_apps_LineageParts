@@ -137,6 +137,7 @@
   <string name="live_display_color_profile_reading_title">Lecture</string>
   <string name="live_display_color_profile_reading_summary">Couleurs plus chaudes pour diminuer la fatigue oculaire</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Couleurs correspondant exactement à l’espace colorimétrique sRGB</string>
   <string name="color_calibration_title">Calibrage des couleurs</string>
   <string name="color_calibration_summary">Calibrer les couleurs de l\'écran</string>
   <string name="color_red_title">Rouge</string>
@@ -170,6 +171,7 @@
   <string name="hardware_keys_action_launch_camera">Démarrer l\'appareil photo</string>
   <string name="hardware_keys_action_sleep">Éteindre l\'écran</string>
   <string name="hardware_keys_action_last_app">Application précédente</string>
+  <string name="hardware_keys_action_split_screen">Écran partagé</string>
   <string name="camera_sleep_on_release_title">Aperçu de l\'écran</string>
   <string name="camera_sleep_on_release_summary">Un demi appui permet de garder l\'écran allumé tant que le bouton est maintenu appuyé</string>
   <string name="camera_launch_title">Démarrer l\'appareil photo</string>
@@ -230,6 +232,7 @@
   <string name="camera_double_tap_power_gesture_title">Appuyer deux fois sur le bouton Marche/Arrêt pour lancer l\'appareil photo</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="torch_long_press_power_gesture_title">Pression longue pour la lampe de poche</string>
+  <string name="torch_long_press_power_gesture_desc">Activer la lampe de poche par un appui long sur le bouton d\'alimentation lorsque l\'écran est éteint</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Supprimer</string>
   <string name="profile_action_none">Laisser tel quel</string>
@@ -241,6 +244,8 @@
   <string name="profile_tabs_bluetooth">Bluetooth</string>
   <string name="profile_tabs_nfc">NFC</string>
   <string name="profile_triggers_header">Actions qui activeront ce profil</string>
+  <string name="profile_setup_setup_triggers_title">Étape 1 : Ajouter des déclencheurs</string>
+  <string name="profile_setup_setup_triggers_title_config">Modifier les déclencheurs : <xliff:g id="profile_name">%1$s</xliff:g></string>
   <string name="profile_setup_actions_title">Étape 2: Configurer les actions</string>
   <string name="profile_setup_actions_title_config">Reconfigurer les actions</string>
   <string name="wireless_networks_settings_title">Sans fil et réseaux</string>
@@ -261,6 +266,7 @@
   <string name="profile_trigger_configure">Configurer l\'action</string>
   <string name="profile_write_nfc_tag">Écrire sur le tag NFC</string>
   <string name="profile_write_touch_tag">Touchez le tag pour écrire</string>
+  <string name="profile_write_success">Tag écrit avec succès</string>
   <string name="profile_write_failed">Échec de l\'écriture du tag !</string>
   <string name="profile_selected">Profil sélectionné : %1$s</string>
   <string name="profile_nfc_text">L\'écriture d\'un profil sur un tag NFC permet de sélectionner ce profil en touchant le tag. Toucher une deuxième fois restaurera le profil précédant.</string>
@@ -286,6 +292,7 @@
   <string name="rename_dialog_hint">Entrer le nom du profil</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Réinitialiser</string>
+  <string name="profile_reset_message">Supprimer tous les profils et groupes d\'applications et restaurer la configuration par défaut ?</string>
   <!-- Delete confimation messages -->
   <string name="profile_app_delete_confirm">Supprimer cette application ?</string>
   <!-- Profile network mode -->
@@ -363,12 +370,15 @@
   <string name="status_bar_title">Barre d\'état</string>
   <string name="status_bar_quick_qs_pulldown_title">Menu déroulant rapide</string>
   <string name="status_bar_quick_qs_pulldown_summary">Le bord %1$s de la barre de notifications déploie le volet des Paramètres Rapides</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Gauche</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Droite</string>
   <string name="status_bar_quick_qs_pulldown_off">Désactivé</string>
   <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
   <string name="status_bar_quick_qs_pulldown_right">Droite</string>
   <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
   <string name="status_bar_toggle_brightness_summary">Régler la luminosité en glissant sur la barre d\'état</string>
   <string name="status_bar_double_tap_to_sleep_title">Double appui pour mettre en veille</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Appuyez deux fois sur la barre d\'état pour éteindre l\'écran</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Icônes de la barre d\'état</string>
   <string name="status_bar_notif_count_title">Afficher le compteur de notifications</string>
@@ -502,4 +512,6 @@
   <string name="touchscreen_gesture_action_email">Voir vos courriels</string>
   <string name="touchscreen_gesture_action_messages">Voir vos messages</string>
   <string name="touchscreen_gesture_action_play_pause_music">Lecture/pause de la musique</string>
+  <string name="touchscreen_gesture_action_previous_track">Retourner à la piste précédente</string>
+  <string name="touchscreen_gesture_action_next_track">Passer à la piste suivante</string>
 </resources>

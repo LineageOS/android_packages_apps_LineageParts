@@ -373,7 +373,7 @@
   <string name="notification_volume_title">Varsler</string>
   <string name="media_volume_title">Media</string>
   <string name="alarm_volume_title">Alarm</string>
-  <string name="doze_title">Ambient skjerm</string>
+  <string name="doze_title">Omgivelsesskjerm</string>
   <!-- Status bar -->
   <string name="status_bar_title">Statuslinje</string>
   <string name="status_bar_quick_qs_pulldown_title">Rask rullegardinmeny</string>

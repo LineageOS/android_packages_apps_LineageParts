@@ -378,8 +378,8 @@
   <string name="status_bar_title">Statusbalk</string>
   <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s van statusbalk opent Snelle Instellingen</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Linker</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Rechter</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Linkerkant</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Rechterkant</string>
   <string name="status_bar_quick_qs_pulldown_off">Uit</string>
   <string name="status_bar_quick_qs_pulldown_left">Linkerkant</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>

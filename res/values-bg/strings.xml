@@ -414,7 +414,7 @@
   <string name="status_bar_battery_style_hidden">Скрита</string>
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_title">Заряд на батерията в проценти</string>
-  <string name="status_bar_battery_percentage_default">Скрита</string>
+  <string name="status_bar_battery_percentage_default">Скрит</string>
   <string name="status_bar_battery_percentage_text_inside">В иконата</string>
   <string name="status_bar_battery_percentage_text_next">До иконата</string>
   <!-- Status bar - icon blacklist -->
