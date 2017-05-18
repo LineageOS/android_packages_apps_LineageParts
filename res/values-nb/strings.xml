@@ -301,7 +301,7 @@
   <string name="profile_reset_title">Tilbakestill</string>
   <string name="profile_reset_message">Slette alle brukeropprettede profiler og appgrupper og gjenopprette dem til standard?</string>
   <!-- Delete confimation messages -->
-  <string name="profile_app_delete_confirm">Fjerne denne appen?</string>
+  <string name="profile_app_delete_confirm">Fjern denne appen?</string>
   <!-- Profile network mode -->
   <string name="profile_networkmode_2g">2G</string>
   <string name="profile_networkmode_3g">3G</string>
@@ -439,7 +439,7 @@
                  <b>Siste oppdatering:</b><xliff:g id="date">%3$s</xliff:g>]]></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">LineageOS statistikk</string>
+  <string name="anonymous_statistics_title">LineageOS-statistikk</string>
   <string name="anonymous_statistics_summary">Hjelp oss med å gjøre LineageOS bedre ved å velge å sende inn anonym statistikkrapportering</string>
   <string name="anonymous_statistics_warning_title">Om</string>
   <string name="anonymous_statistics_warning">Ved å bli med i innsamlingen av LineageOS statistikk vil ikke-personlige data bli sendt til utviklerne av LineageOS for å spore antall unike installasjoner spredt over typer enheter. Informasjonen som sendes inkluderer en unik identitetskode, som ikke kompromitterer ditt personvern eller dine personlige data. Data blir sendt ved hver oppstart.\n\nFor ett eksempel over data som blir sendt, trykk på Forhåndsvis data.</string>
@@ -496,7 +496,7 @@
   <string name="auto_power_save_summary_on">Aktiver strømsparing automatisk på %s batteriprosent</string>
   <string name="auto_power_save_summary_off">Ikke slå på strømsparingsmodus automatisk</string>
   <string name="app_perf_profiles_title">Automatisk optimalisering</string>
-  <string name="app_perf_profiles_summary">Velg automatisk en riktig ytelsesprofil for applikasjoner og bruksmønster</string>
+  <string name="app_perf_profiles_summary">Velg automatisk en riktig ytelsesprofil for apper og bruksmønster</string>
   <string name="auto_power_save_never">Aldri</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Utvidet skrivebord</string>
@@ -519,7 +519,7 @@
   <string name="touchscreen_gesture_settings_title">Berøringsskjerm bevegelser</string>
   <string name="touchscreen_gesture_settings_summary">Utfør forskjellige berøringsskjerm bevegelser for raske handlinger</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Haptisk tilbakemelding</string>
-  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrer når en berøringsskjerm bevegelse er oppdaget</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrer når en berøringsskjermsbevegelse oppdages</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Dra ned med to fingre</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Dra opp med en finger</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Dra ned med en finger</string>

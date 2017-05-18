@@ -194,7 +194,7 @@
   <string name="volume_answer_call_title">Anruf annehmen</string>
   <string name="volume_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>
   <string name="home_answer_call_title">Anruf beantworten</string>
-  <string name="home_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>
+  <string name="home_answer_call_summary">Eingehende Anrufe durch Drücken der Home-Taste annehmen</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Hintergrundbeleuchtung</string>
   <string name="button_backlight_enabled">Tasten beleuchten</string>

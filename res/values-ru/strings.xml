@@ -421,7 +421,7 @@
   <string name="status_bar_icons_title">Значки в строке состояния</string>
   <string name="status_bar_icons_summary">Настройка видимости значков</string>
   <!-- Protected apps -->
-  <string name="protected_apps_manager_title">Защищенные приложения</string>
+  <string name="protected_apps_manager_title">Заблокированные приложения</string>
   <string name="protected_apps_manager_summary">Управление приложениями, для запуска которых требуется ввод пароля</string>
   <!-- Contributors cloud activity -->
   <string name="contributors_cloud_fragment_title">Имена разработчиков</string>

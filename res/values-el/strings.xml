@@ -378,6 +378,8 @@
   <string name="status_bar_title">Γραμμή κατάστασης</string>
   <string name="status_bar_quick_qs_pulldown_title">Γρήγορο τράβηγμα</string>
   <string name="status_bar_quick_qs_pulldown_summary">Τραβώντας προς τα κάτω την %1$s άκρη της γραμμής κατάστασης εμφανίζονται οι Γρήγορες ρυθμίσεις</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Αριστερά</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Δεξιά</string>
   <string name="status_bar_quick_qs_pulldown_off">Απενεργοποιημένη</string>
   <string name="status_bar_quick_qs_pulldown_left">Αριστερά</string>
   <string name="status_bar_quick_qs_pulldown_right">Δεξιά</string>
