@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">OFF</string>
   <string name="status_bar_quick_qs_pulldown_left">左</string>
   <string name="status_bar_quick_qs_pulldown_right">右</string>
-  <string name="status_bar_toggle_brightness">明るさコントロール</string>
-  <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
   <string name="status_bar_double_tap_to_sleep_title">ダブルタップしてスリープ</string>
   <string name="status_bar_double_tap_to_sleep_summary">ステータスバーをダブルタップしてディスプレイを消灯します</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,9 @@
   <string name="status_bar_battery_percentage_default">表示しない</string>
   <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
   <string name="status_bar_battery_percentage_text_next">アイコンの隣</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">明るさコントロール</string>
+  <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">ステータスバーのアイコン</string>
   <string name="status_bar_icons_summary">ステータスバーに表示するアイコンをコントロールする</string>

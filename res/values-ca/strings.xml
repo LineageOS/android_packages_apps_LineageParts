@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">No</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerra</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreta</string>
-  <string name="status_bar_toggle_brightness">Control de lluminositat</string>
-  <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
   <string name="status_bar_double_tap_to_sleep_title">Pica dues vegades per posar en repòs</string>
   <string name="status_bar_double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat per apagar la pantalla</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Amagat</string>
   <string name="status_bar_battery_percentage_text_inside">Dins la icona</string>
   <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Brillantor</string>
+  <string name="status_bar_brightness_slider_title">Barra de brillantor</string>
+  <string name="status_bar_brightness_slider_summary">Ajusta la brillantor des de la configuració ràpida</string>
+  <string name="status_bar_brightness_slider_auto_title">Brillantor automàtica</string>
+  <string name="status_bar_brightness_slider_auto_summary">Mostra el botó de brillantor automàtica al costat de la barra</string>
+  <string name="status_bar_toggle_brightness">Control de lluminositat</string>
+  <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Icones de la barra d\'estat</string>
   <string name="status_bar_icons_summary">Controla quines icones de la barra d\'estat es mostren</string>

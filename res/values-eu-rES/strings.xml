@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Ez</string>
   <string name="status_bar_quick_qs_pulldown_left">ezkerreko</string>
   <string name="status_bar_quick_qs_pulldown_right">eskumako</string>
-  <string name="status_bar_toggle_brightness">Distiraren kontrola</string>
-  <string name="status_bar_toggle_brightness_summary">Doitu distira egoera-barran zehar irristatuz</string>
   <string name="status_bar_double_tap_to_sleep_title">Birritan sakatu lokartzeko</string>
   <string name="status_bar_double_tap_to_sleep_summary">Birritan sakatu egoera-barran pantaila itzaltzeko</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,9 @@
   <string name="status_bar_battery_percentage_default">Ezkutatua</string>
   <string name="status_bar_battery_percentage_text_inside">Ikonoaren barruan</string>
   <string name="status_bar_battery_percentage_text_next">Ikonoaren ondoan</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Distiraren kontrola</string>
+  <string name="status_bar_toggle_brightness_summary">Doitu distira egoera-barran zehar irristatuz</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Egoera-barrako ikonoak</string>
   <string name="status_bar_icons_summary">Kontrolatu egoera-barran agertuko diren ikonoak</string>

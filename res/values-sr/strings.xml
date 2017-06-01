@@ -377,8 +377,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Искљ</string>
   <string name="status_bar_quick_qs_pulldown_left">Лево</string>
   <string name="status_bar_quick_qs_pulldown_right">Десно</string>
-  <string name="status_bar_toggle_brightness">Контрола осветљености</string>
-  <string name="status_bar_toggle_brightness_summary">Подеси осветљеност превлачењем преко статусне траке</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Иконе статусне траке</string>
   <string name="status_bar_notif_count_title">Прикажи број обавештења</string>
@@ -405,6 +403,9 @@
   <string name="status_bar_battery_percentage_default">Скривено</string>
   <string name="status_bar_battery_percentage_text_inside">У икони</string>
   <string name="status_bar_battery_percentage_text_next">Поред иконе</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Контрола осветљености</string>
+  <string name="status_bar_toggle_brightness_summary">Подеси осветљеност превлачењем преко статусне траке</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Иконе статусне траке</string>
   <string name="status_bar_icons_summary">Контроле које ће иконе статусне траке бити приказане</string>

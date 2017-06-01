@@ -236,6 +236,7 @@
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Supprimer</string>
   <string name="profile_action_none">Laisser tel quel</string>
+  <string name="profile_action_system">Valeurs par défaut du système</string>
   <string name="profile_action_disable">Éteindre</string>
   <string name="profile_action_enable">Allumer</string>
   <string name="profile_trigger_a2dp_connect">Lors de la connexion A2DP</string>
@@ -283,6 +284,7 @@
   <!-- Profile mode options. -->
   <string name="profile_entries_on">Actif</string>
   <string name="profile_entries_off">Inactif</string>
+  <string name="profile_entries_no_override">Ne pas outrepasser</string>
   <!-- Add Profile -->
   <string name="profile_name_title">Nom</string>
   <string name="new_profile_name">&lt;nouveau profil&gt;</string>
@@ -375,8 +377,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Désactivé</string>
   <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
   <string name="status_bar_quick_qs_pulldown_right">Droite</string>
-  <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
-  <string name="status_bar_toggle_brightness_summary">Régler la luminosité en glissant sur la barre d\'état</string>
   <string name="status_bar_double_tap_to_sleep_title">Double appui pour mettre en veille</string>
   <string name="status_bar_double_tap_to_sleep_summary">Appuyez deux fois sur la barre d\'état pour éteindre l\'écran</string>
   <!-- Status bar - icons -->
@@ -409,6 +409,13 @@
   <string name="status_bar_battery_percentage_default">Masqué</string>
   <string name="status_bar_battery_percentage_text_inside">Dans l\'icône</string>
   <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Luminosité</string>
+  <string name="status_bar_brightness_slider_title">Curseur de luminosité</string>
+  <string name="status_bar_brightness_slider_summary">Régler la luminosité les réglages rapides</string>
+  <string name="status_bar_brightness_slider_auto_title">Luminosité automatique</string>
+  <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
+  <string name="status_bar_toggle_brightness_summary">Régler la luminosité en glissant sur la barre d\'état</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Icônes de la barre d\'état</string>
   <string name="status_bar_icons_summary">Choisir les icônes affichées dans la barre d\'état</string>

@@ -273,8 +273,6 @@
   <!-- Status bar -->
   <string name="status_bar_title">Barra d\'estáu</string>
   <string name="status_bar_quick_qs_pulldown_title">Baxada rápida</string>
-  <string name="status_bar_toggle_brightness">Control de brilléu</string>
-  <string name="status_bar_toggle_brightness_summary">Axusta\'l brilléu eslizando\'l deu pela barra d\'estáu</string>
   <string name="status_bar_double_tap_to_sleep_title">Calcu doblu pa dormir</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Iconos de barra d\'estáu</string>
@@ -299,6 +297,9 @@
   <string name="status_bar_battery_percentage_title">Porcentaxe de batería</string>
   <string name="status_bar_battery_percentage_text_inside">Dientro l\'iconu</string>
   <string name="status_bar_battery_percentage_text_next">Al llau l\'iconu</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Control de brilléu</string>
+  <string name="status_bar_toggle_brightness_summary">Axusta\'l brilléu eslizando\'l deu pela barra d\'estáu</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Iconos de barra d\'estáu</string>
   <!-- Protected apps -->

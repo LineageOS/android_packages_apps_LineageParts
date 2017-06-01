@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Off</string>
   <string name="status_bar_quick_qs_pulldown_left">Left</string>
   <string name="status_bar_quick_qs_pulldown_right">Right</string>
-  <string name="status_bar_toggle_brightness">Brightness control</string>
-  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
   <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
   <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,9 @@
   <string name="status_bar_battery_percentage_default">Hidden</string>
   <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
   <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Brightness control</string>
+  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Status bar icons</string>
   <string name="status_bar_icons_summary">Control which status bar icons are shown</string>

@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Vypnúť</string>
   <string name="status_bar_quick_qs_pulldown_left">vľavo</string>
   <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
-  <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
-  <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
   <string name="status_bar_double_tap_to_sleep_title">Uspať dvojitým poklepaním</string>
   <string name="status_bar_double_tap_to_sleep_summary">Vypnutie obrazovky dvojitým kliknutím na stavový riadok</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Skryté</string>
   <string name="status_bar_battery_percentage_text_inside">Vo vnútri ikony</string>
   <string name="status_bar_battery_percentage_text_next">Vedľa ikony</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Jas</string>
+  <string name="status_bar_brightness_slider_title">Posuvník jasu</string>
+  <string name="status_bar_brightness_slider_summary">Nastavenie jasu z panela rýchlych nastavení</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatický jas</string>
+  <string name="status_bar_brightness_slider_auto_summary">Zobraziť prepínač automatického jasu v blízkosti posuvníka</string>
+  <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
+  <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikony stavového riadku</string>
   <string name="status_bar_icons_summary">Upraviť zobrazenie ikon v stavovom riadku</string>

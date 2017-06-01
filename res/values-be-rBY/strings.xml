@@ -277,8 +277,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Адключаны</string>
   <string name="status_bar_quick_qs_pulldown_left">Улева</string>
   <string name="status_bar_quick_qs_pulldown_right">Управа</string>
-  <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
-  <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
   <!-- Status bar - icons -->
   <string name="status_bar_notif_count_title">Лічыльнік паведамленьняў</string>
   <string name="status_bar_notif_count_summary">Паказваць колькасць новых паведамленьняў у радку стану</string>
@@ -291,6 +289,9 @@
   <!-- Status bar - Battery -->
   <string name="status_bar_battery_style_title">Варыянт адлюстроўваньня жывелкі</string>
   <!-- Status bar - Battery percentage -->
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
+  <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
   <!-- Status bar - icon blacklist -->
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->

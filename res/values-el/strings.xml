@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Απενεργοποιημένη</string>
   <string name="status_bar_quick_qs_pulldown_left">Αριστερά</string>
   <string name="status_bar_quick_qs_pulldown_right">Δεξιά</string>
-  <string name="status_bar_toggle_brightness">Έλεγχος φωτεινότητας</string>
-  <string name="status_bar_toggle_brightness_summary">Επιτρέπει τον έλεγχο της φωτεινότητας με ολίσθιση στη γραμή κατάστασης</string>
   <string name="status_bar_double_tap_to_sleep_title">Διπλό χτύπημα για αναστολή</string>
   <string name="status_bar_double_tap_to_sleep_summary">Διπλό χτύπημα στη γραμμή κατάστασης για αναστολή της συσκευής</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,9 @@
   <string name="status_bar_battery_percentage_default">Κρυφό</string>
   <string name="status_bar_battery_percentage_text_inside">Μέσα στο εικονίδιο</string>
   <string name="status_bar_battery_percentage_text_next">Δίπλα στο εικονίδιο</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Έλεγχος φωτεινότητας</string>
+  <string name="status_bar_toggle_brightness_summary">Επιτρέπει τον έλεγχο της φωτεινότητας με ολίσθιση στη γραμή κατάστασης</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Εικονίδια γραμμής κατάστασης</string>
   <string name="status_bar_icons_summary">Ελέγξτε ποια εικονίδια θα εμφανίζονται στη γραμμή κατάστασης</string>

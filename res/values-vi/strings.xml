@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Tắt</string>
   <string name="status_bar_quick_qs_pulldown_left">Trái</string>
   <string name="status_bar_quick_qs_pulldown_right">Phải</string>
-  <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
-  <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
   <string name="status_bar_double_tap_to_sleep_title">Chạm hai lần để tắt màn hình</string>
   <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái để tắt màn hình</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,9 @@
   <string name="status_bar_battery_percentage_default">Ẩn</string>
   <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng pin</string>
   <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng pin</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
+  <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Biểu tượng thanh trạng thái</string>
   <string name="status_bar_icons_summary">Kiểm soát những biểu tượng thanh trang thái được hiển thị</string>

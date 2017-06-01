@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Af</string>
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Regs</string>
-  <string name="status_bar_toggle_brightness">Helderheid beheer</string>
-  <string name="status_bar_toggle_brightness_summary">Verander helderheid aan deur te gly oor die statusbalk</string>
   <string name="status_bar_double_tap_to_sleep_title">Klop-Klop om te slaap</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dubbel klop op die statusbalk om skerm af te skakel</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,9 @@
   <string name="status_bar_battery_percentage_default">Versteek</string>
   <string name="status_bar_battery_percentage_text_inside">Binne die ikoon</string>
   <string name="status_bar_battery_percentage_text_next">Langs die ikoon</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Helderheid beheer</string>
+  <string name="status_bar_toggle_brightness_summary">Verander helderheid aan deur te gly oor die statusbalk</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Statusbalkikone</string>
   <string name="status_bar_icons_summary">Beheer watter status balk ikone word getoon</string>

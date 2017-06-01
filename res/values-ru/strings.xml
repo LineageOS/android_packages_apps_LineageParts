@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Выключено</string>
   <string name="status_bar_quick_qs_pulldown_left">Левый</string>
   <string name="status_bar_quick_qs_pulldown_right">Правый</string>
-  <string name="status_bar_toggle_brightness">Управление яркостью</string>
-  <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
   <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
   <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Не показывать</string>
   <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
   <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Яркость</string>
+  <string name="status_bar_brightness_slider_title">Регулятор яркости</string>
+  <string name="status_bar_brightness_slider_summary">Регулировка яркости в быстрых настройках</string>
+  <string name="status_bar_brightness_slider_auto_title">Автоматическая яркость</string>
+  <string name="status_bar_brightness_slider_auto_summary">Переключатель адаптивной регулировки яркости рядом с ползунком</string>
+  <string name="status_bar_toggle_brightness">Управление яркостью</string>
+  <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Значки в строке состояния</string>
   <string name="status_bar_icons_summary">Настройка видимости значков</string>

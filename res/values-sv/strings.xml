@@ -44,6 +44,7 @@
   <string name="privacy_guard_help_title">Hjälp</string>
   <string name="privacy_guard_reset_title">Återställ</string>
   <string name="privacy_guard_advanced_settings_title">Avancerade</string>
+  <string name="privacy_guard_notification_title">Visa avisering</string>
   <!-- Notification light dialogs -->
   <string name="default_time">Normal</string>
   <string name="dialog_delete_title">Ta bort</string>
@@ -159,6 +160,7 @@
   <string name="incoming_call_volume_title">Ringsignal</string>
   <string name="media_volume_title">Media</string>
   <string name="alarm_volume_title">Alarm</string>
+  <string name="doze_title">Omgivningsskärm</string>
   <!-- Status bar -->
   <string name="status_bar_title">Statusfält</string>
   <string name="status_bar_quick_qs_pulldown_off">Av</string>
@@ -168,6 +170,7 @@
   <!-- Status bar - Clock -->
   <!-- Status bar - Battery -->
   <!-- Status bar - Battery percentage -->
+  <!-- Status bar - Brightness -->
   <!-- Status bar - icon blacklist -->
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->
@@ -198,9 +201,24 @@
   <!-- Power: Performance profiles -->
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_enabled_title">Aktivera</string>
+  <string name="charging_sounds_ringtone_silent">Tyst</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_up_arrow_title">Rita ett \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Rita ett \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Rita en \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Rita en \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Rita bokstaven \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Rita bokstaven \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Rita bokstaven \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Rita bokstaven \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Rita bokstaven \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Rita bokstaven \"V\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Rita bokstaven \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Rita bokstaven \"Z\"</string>
   <string name="touchscreen_gesture_action_do_nothing">Gör ingenting</string>
   <string name="touchscreen_gesture_action_camera">Öppna kameran</string>
   <string name="touchscreen_gesture_action_browser">Öppna webbläsaren</string>
+  <string name="touchscreen_gesture_action_email">Visa dina e-postmeddelanden</string>
   <string name="touchscreen_gesture_action_messages">Visa dina meddelanden</string>
 </resources>

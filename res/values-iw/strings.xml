@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">כבוי</string>
   <string name="status_bar_quick_qs_pulldown_left">שמאל</string>
   <string name="status_bar_quick_qs_pulldown_right">ימין</string>
-  <string name="status_bar_toggle_brightness">בקרת בהירות</string>
-  <string name="status_bar_toggle_brightness_summary">שנה הבהירות על ידי הזזת האצבע על שורת המצב</string>
   <string name="status_bar_double_tap_to_sleep_title">הקשה כפולה לכיבוי המסך</string>
   <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב כדי לכבות את המסך</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">מוסתר</string>
   <string name="status_bar_battery_percentage_text_inside">בתוך הסמל</string>
   <string name="status_bar_battery_percentage_text_next">ליד הסמל</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">בהירות</string>
+  <string name="status_bar_brightness_slider_title">מחוון בהירות</string>
+  <string name="status_bar_brightness_slider_summary">כוונון בהירות דרך ההגדרות המהירות</string>
+  <string name="status_bar_brightness_slider_auto_title">בהירות אוטומוטית</string>
+  <string name="status_bar_brightness_slider_auto_summary">הראה כפתור להפעלת בהירות אוטומטית ליד המחוון</string>
+  <string name="status_bar_toggle_brightness">בקרת בהירות</string>
+  <string name="status_bar_toggle_brightness_summary">שנה הבהירות על ידי הזזת האצבע על שורת המצב</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">סמלי שורת המצב</string>
   <string name="status_bar_icons_summary">בחר את הסמלים שיוצגו בשורת המצב</string>

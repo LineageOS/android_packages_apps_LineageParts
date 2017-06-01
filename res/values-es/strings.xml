@@ -216,7 +216,7 @@
   <string name="navigation_bar_left_summary">Situar la barra de navegación a la izquierda de la pantalla en el modo horizontal</string>
   <string name="navigation_bar_arrow_keys_title">Mostrar flechas al escribir</string>
   <string name="navigation_bar_arrow_keys_summary">Mostrar los cursores izquierda y derecha durante la escritura. Modifica al selector IME.</string>
-  <string name="navigation_bar_home_long_press_title">Acción de pulsación larga de inicio</string>
+  <string name="navigation_bar_home_long_press_title">Acción de pulsación larga en inicio</string>
   <string name="navigation_bar_home_double_tap_title">Acción de doble toque en inicio</string>
   <string name="navigation_bar_recents_title">Acción de pulsación larga en recientes</string>
   <!-- Power menu -->
@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Desactivado</string>
   <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
   <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
-  <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
-  <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
   <string name="status_bar_double_tap_to_sleep_title">Doble toque para suspender</string>
   <string name="status_bar_double_tap_to_sleep_summary">Doble toque en la barra de estado para apagar la pantalla</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Oculto</string>
   <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
   <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Brillo</string>
+  <string name="status_bar_brightness_slider_title">Barra de brillo</string>
+  <string name="status_bar_brightness_slider_summary">Ajuste el brillo desde los ajustes rápidos</string>
+  <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
+  <string name="status_bar_brightness_slider_auto_summary">Mostrar el interruptor de brillo automático al lado de la barra de brillo</string>
+  <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
+  <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Iconos de la barra de estado</string>
   <string name="status_bar_icons_summary">Elija los iconos que aparecerán en la barra de estado</string>

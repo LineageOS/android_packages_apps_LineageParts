@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Pois</string>
   <string name="status_bar_quick_qs_pulldown_left">Vasen reuna</string>
   <string name="status_bar_quick_qs_pulldown_right">Oikea reuna</string>
-  <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
-  <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
   <string name="status_bar_double_tap_to_sleep_title">Lepotila kaksoisnapautuksella</string>
   <string name="status_bar_double_tap_to_sleep_summary">Sulje laitteen näyttö tuplanapauttamalla tilapalkkia</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Piilotettu</string>
   <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
   <string name="status_bar_battery_percentage_text_next">Kuvakkeen vieressä</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Kirkkaus</string>
+  <string name="status_bar_brightness_slider_title">Kirkkauden säädin</string>
+  <string name="status_bar_brightness_slider_summary">Säädä kirkkautta Pika-asetuksista</string>
+  <string name="status_bar_brightness_slider_auto_title">Automaattinen kirkkaus</string>
+  <string name="status_bar_brightness_slider_auto_summary">Näytä automaattisen kirkkauden valinta liukusäätimen vieressä</string>
+  <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
+  <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Tilapalkin kuvakkeet</string>
   <string name="status_bar_icons_summary">Määritä mitkä tilapalkin kuvakkeet näytetään</string>

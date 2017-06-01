@@ -41,7 +41,7 @@
   <!-- Privacy Settings Header item -->
   <string name="privacy_settings_title">Personvern</string>
   <!-- Privacy Guard -->
-  <string name="privacy_guard_switch_label">Aktiver Personvernvakt</string>
+  <string name="privacy_guard_switch_label">Aktiver personvernsvakt</string>
   <string name="privacy_guard_dlg_title">Aktivere Personvernvakt?</string>
   <string name="privacy_guard_dlg_text">Når Personvernvakt er aktivert, vil ikke programmet kunne få tilgang til personlig informasjon som kontakter, meldinger eller ringehistorikk.</string>
   <string name="privacy_guard_dlg_system_app_text">Når du aktiverer Personvernvakt på en innebygd app, vil ikke programmet kunne tilgang eller gi personlige data. Dette kan forårsake at andre apper ikke virker ordentlig.</string>
@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Av</string>
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
-  <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
-  <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
   <string name="status_bar_double_tap_to_sleep_title">Dobbelttrykk for å slukke skjermen</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dobbelttrykk på statuslinjen for å slå av skjermen</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Skjult</string>
   <string name="status_bar_battery_percentage_text_inside">Inne i ikonet</string>
   <string name="status_bar_battery_percentage_text_next">Ved siden av ikonet</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Lysstyrke</string>
+  <string name="status_bar_brightness_slider_title">Lysstyrke-dimmer</string>
+  <string name="status_bar_brightness_slider_summary">Juster lysstyrken i fra Hurtiginnstillingene</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatisk lysstyrke</string>
+  <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke nær dimmeren</string>
+  <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
+  <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Statuslinjeikoner</string>
   <string name="status_bar_icons_summary">Kontroller hvilke av status ikonene som skal vises</string>

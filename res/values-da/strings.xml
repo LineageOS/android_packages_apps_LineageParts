@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Fra</string>
   <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
   <string name="status_bar_quick_qs_pulldown_right">Højre</string>
-  <string name="status_bar_toggle_brightness">Lysstyrkeregulering</string>
-  <string name="status_bar_toggle_brightness_summary">Justér lysstyrken ved at stryge på tværs af statuslinjen</string>
   <string name="status_bar_double_tap_to_sleep_title">Dobbelttryk for dvale</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dobbelttryk på statuslinjen for at slukke skærmen</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Skjult</string>
   <string name="status_bar_battery_percentage_text_inside">Inde i ikonet</string>
   <string name="status_bar_battery_percentage_text_next">Ved siden af ikonet</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Lysstyrke</string>
+  <string name="status_bar_brightness_slider_title">Lysstyrkeniveau</string>
+  <string name="status_bar_brightness_slider_summary">Justér lysstyrke fra Hurtige indstillinger</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatisk lysstyrke</string>
+  <string name="status_bar_brightness_slider_auto_summary">Vis kontakt til tilpassende lysstyrke nær skyderen</string>
+  <string name="status_bar_toggle_brightness">Lysstyrkeregulering</string>
+  <string name="status_bar_toggle_brightness_summary">Justér lysstyrken ved at stryge på tværs af statuslinjen</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Statuslinje-ikoner</string>
   <string name="status_bar_icons_summary">Kontrollér, hvilke statuslinje-ikoner, der vises</string>

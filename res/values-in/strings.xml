@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Mati</string>
   <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
-  <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
-  <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
   <string name="status_bar_double_tap_to_sleep_title">Ketuk dua kali untuk tidur</string>
   <string name="status_bar_double_tap_to_sleep_summary">Ketuk dua kali pada status bar untuk mematikan layar</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,9 @@
   <string name="status_bar_battery_percentage_default">Tersembunyi</string>
   <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
   <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
+  <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikon Status bar</string>
   <string name="status_bar_icons_summary">Atur baris Ikon yang ditampilkan</string>

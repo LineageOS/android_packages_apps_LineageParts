@@ -381,8 +381,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Inaktiv</string>
   <string name="status_bar_quick_qs_pulldown_left">I majtë</string>
   <string name="status_bar_quick_qs_pulldown_right">I djathtë</string>
-  <string name="status_bar_toggle_brightness">Kontrolli i ndriçimit</string>
-  <string name="status_bar_toggle_brightness_summary">Ndrysho ndriçimin duke rrëshqitur gishtin përgjatë shiritit të statusit</string>
   <string name="status_bar_double_tap_to_sleep_title">Shtyp dy herë për të fikur ekranin</string>
   <string name="status_bar_double_tap_to_sleep_summary">Shtyp dy herë shiritin e ekranit për të fikur ekranin</string>
   <!-- Status bar - icons -->
@@ -415,6 +413,9 @@
   <string name="status_bar_battery_percentage_default">E fshehur</string>
   <string name="status_bar_battery_percentage_text_inside">Brenda ikonës</string>
   <string name="status_bar_battery_percentage_text_next">Në anë të ikonës</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_toggle_brightness">Kontrolli i ndriçimit</string>
+  <string name="status_bar_toggle_brightness_summary">Ndrysho ndriçimin duke rrëshqitur gishtin përgjatë shiritit të statusit</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikonat e shiritit të statusit</string>
   <string name="status_bar_icons_summary">Zgjidh cilat ikona do të shfaqen në shiritin e statusit</string>

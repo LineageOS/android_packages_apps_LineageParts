@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Izklopljeno</string>
   <string name="status_bar_quick_qs_pulldown_left">Levi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
-  <string name="status_bar_toggle_brightness">Nadzor svetlosti</string>
-  <string name="status_bar_toggle_brightness_summary">Prilagodite svetlost tako, da povlečete preko vrstice stanja</string>
   <string name="status_bar_double_tap_to_sleep_title">Dvojni tap za spanje</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dvakrat tapnite na vrstico stanja, da izklopite zaslon</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Skrito</string>
   <string name="status_bar_battery_percentage_text_inside">V ikoni</string>
   <string name="status_bar_battery_percentage_text_next">Poleg ikone</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Svetlost</string>
+  <string name="status_bar_brightness_slider_title">Drsnik za svetlost</string>
+  <string name="status_bar_brightness_slider_summary">Prilagajanje svetlosti iz Hitrih nastavitev</string>
+  <string name="status_bar_brightness_slider_auto_title">Samodejna svetlost</string>
+  <string name="status_bar_brightness_slider_auto_summary">Prikaži preklopnik za prilagodljivo svetlost blizu drsnika</string>
+  <string name="status_bar_toggle_brightness">Nadzor svetlosti</string>
+  <string name="status_bar_toggle_brightness_summary">Prilagodite svetlost tako, da povlečete preko vrstice stanja</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikone vrstice stanja</string>
   <string name="status_bar_icons_summary">Nadzor prikazanih ikon v vrstici stanja</string>

@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Off</string>
   <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
   <string name="status_bar_quick_qs_pulldown_right">Destra</string>
-  <string name="status_bar_toggle_brightness">Controllo luminosità</string>
-  <string name="status_bar_toggle_brightness_summary">Modifica la luminosità strisciando sulla barra di stato</string>
   <string name="status_bar_double_tap_to_sleep_title">Doppio tocco per sospendere</string>
   <string name="status_bar_double_tap_to_sleep_summary">Tocca due volte la barra di stato per sospendere il dispositivo</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Nascosta</string>
   <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
   <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Luminosità</string>
+  <string name="status_bar_brightness_slider_title">Slider della luminosità</string>
+  <string name="status_bar_brightness_slider_summary">Regola la luminostà dalle impostazioni rapide</string>
+  <string name="status_bar_brightness_slider_auto_title">Luminosità automatica</string>
+  <string name="status_bar_brightness_slider_auto_summary">Mostra il toggle per la luminosità adattiva vicino allo slider</string>
+  <string name="status_bar_toggle_brightness">Controllo luminosità</string>
+  <string name="status_bar_toggle_brightness_summary">Modifica la luminosità strisciando sulla barra di stato</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Icone barra di stato</string>
   <string name="status_bar_icons_summary">Scegli quali icone verranno visualizzate nella barra di stato</string>

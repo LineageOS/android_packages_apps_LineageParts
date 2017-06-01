@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Kapalı</string>
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
-  <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
-  <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
   <string name="status_bar_double_tap_to_sleep_title">Uyku için çift dokunun</string>
   <string name="status_bar_double_tap_to_sleep_summary">Ekranı kapatmak için durum çubuğuna çift dokunun</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Gizli</string>
   <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
   <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Parlaklık</string>
+  <string name="status_bar_brightness_slider_title">Parlaklık kaydırıcı</string>
+  <string name="status_bar_brightness_slider_summary">Hızlı ayarlarda parlaklığını ayarlayın</string>
+  <string name="status_bar_brightness_slider_auto_title">Otomatik parlaklık</string>
+  <string name="status_bar_brightness_slider_auto_summary">Otomatik parlaklık simgesini hızlı ayarlarda göster</string>
+  <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
+  <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
   <string name="status_bar_icons_summary">Gösterilen durum çubuğu simgelerini kontrol et</string>

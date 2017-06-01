@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Dezactivat</string>
   <string name="status_bar_quick_qs_pulldown_left">Stânga</string>
   <string name="status_bar_quick_qs_pulldown_right">Dreapta</string>
-  <string name="status_bar_toggle_brightness">Control luminozitate</string>
-  <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
   <string name="status_bar_double_tap_to_sleep_title">Apăsare dublă pentru a opri ecranul</string>
   <string name="status_bar_double_tap_to_sleep_summary">Atingeți de două ori bara de stare pentru a opri ecranul</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Ascuns</string>
   <string name="status_bar_battery_percentage_text_inside">În interiorul pictogramei</string>
   <string name="status_bar_battery_percentage_text_next">Lângă pictogramă</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Luminozitate</string>
+  <string name="status_bar_brightness_slider_title">Cursor luminozitate</string>
+  <string name="status_bar_brightness_slider_summary">Reglați luminozitatea din Setările Rapide</string>
+  <string name="status_bar_brightness_slider_auto_title">Luminozitate auto</string>
+  <string name="status_bar_brightness_slider_auto_summary">Arată comutatorul pentru luminozitate adaptivă lângă glisor</string>
+  <string name="status_bar_toggle_brightness">Control luminozitate</string>
+  <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Pictograme bară de stare</string>
   <string name="status_bar_icons_summary">Controlați care pictograme din bara de stare sunt afișate</string>

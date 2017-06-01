@@ -113,7 +113,7 @@
   <string name="live_display_day">주간</string>
   <string name="live_display_night">야간</string>
   <string name="live_display_outdoor_mode_title">자동 야외 모드</string>
-  <string name="live_display_outdoor_mode_summary">밝은 햇빛 아래에서 자동으로 밝기와 채도가 증가</string>
+  <string name="live_display_outdoor_mode_summary">밝은 햇빛 아래에서 자동으로 밝기와 채도 증가</string>
   <string name="live_display_low_power_title">전력 소모 절약</string>
   <string name="live_display_low_power_summary">열화 없는 한도 내에서 화면을 조정하여 전력 소모 감소</string>
   <string name="live_display_enhance_color_title">색상 향상</string>
@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">꺼짐</string>
   <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
   <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>
-  <string name="status_bar_toggle_brightness">밝기 조절</string>
-  <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
   <string name="status_bar_double_tap_to_sleep_title">두 번 두드려 화면 끄기</string>
   <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄을 두 번 두드려 화면 끄기</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">숨김</string>
   <string name="status_bar_battery_percentage_text_inside">아이콘 안에 표시</string>
   <string name="status_bar_battery_percentage_text_next">아이콘 바깥에 표시</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">밝기</string>
+  <string name="status_bar_brightness_slider_title">밝기 조절 슬라이더</string>
+  <string name="status_bar_brightness_slider_summary">빠른 설정에서 밝기 조절</string>
+  <string name="status_bar_brightness_slider_auto_title">자동 밝기</string>
+  <string name="status_bar_brightness_slider_auto_summary">슬라이더 옆쪽에 밝기 자동 조절 토글 표시</string>
+  <string name="status_bar_toggle_brightness">밝기 조절</string>
+  <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">상태 표시줄 아이콘</string>
   <string name="status_bar_icons_summary">상태 표시줄에 표시할 아이콘을 설정</string>

@@ -236,6 +236,7 @@
   <string name="profile_setup_setup_triggers_title_config">Modyfikuj wyzwalacze: <xliff:g id="profile_name">%1$s</xliff:g></string>
   <string name="profile_setup_actions_title">Krok 2: Ustaw akcje</string>
   <string name="profile_setup_actions_title_config">Ponownie skonfiguruj akcje</string>
+  <string name="wireless_networks_settings_title">Łączność bezprzewodowa i sieci</string>
   <!-- Profile triggers -->
   <string name="no_triggers_configured_nfc">Dotknij, by ustawić nowy wyzwalacz NFC.</string>
   <string name="profile_setup_setup_triggers_description">Proszę wybrać wyzwalacze, które aktywują ten profil</string>
@@ -355,8 +356,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Wyłączone</string>
   <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
   <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>
-  <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
-  <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ikony paska stanu</string>
   <string name="status_bar_notif_count_title">Pokaż liczbę powiadomień</string>
@@ -386,6 +385,13 @@
   <string name="status_bar_battery_percentage_default">Ukryty</string>
   <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
   <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Jasność</string>
+  <string name="status_bar_brightness_slider_title">Suwak jasności</string>
+  <string name="status_bar_brightness_slider_summary">Dostosuj jasność z Szybkich Ustawień</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatyczna jasność</string>
+  <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
+  <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Ikony paska stanu</string>
   <string name="status_bar_icons_summary">Wybierz, które ikony będą wyświetlane na pasku stanu</string>
