@@ -51,7 +51,8 @@
             android:defaultToDeviceProtectedStorage="true"
             android:directBootAware="true">
 
-        <activity android:name=".PartsActivity">
+        <activity android:name=".PartsActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
