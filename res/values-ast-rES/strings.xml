@@ -273,6 +273,7 @@
   <!-- Status bar -->
   <string name="status_bar_title">Barra d\'estáu</string>
   <string name="status_bar_quick_qs_pulldown_title">Baxada rápida</string>
+  <string name="status_bar_quick_qs_pulldown_summary">El berbesu %1$s de la barra d\'estáu estenderexa los axustes rápidos</string>
   <string name="status_bar_double_tap_to_sleep_title">Calcu doblu pa dormir</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Iconos de barra d\'estáu</string>
@@ -298,6 +299,8 @@
   <string name="status_bar_battery_percentage_text_inside">Dientro l\'iconu</string>
   <string name="status_bar_battery_percentage_text_next">Al llau l\'iconu</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Brilléu</string>
+  <string name="status_bar_brightness_slider_title">Eslizador de brilléu</string>
   <string name="status_bar_toggle_brightness">Control de brilléu</string>
   <string name="status_bar_toggle_brightness_summary">Axusta\'l brilléu eslizando\'l deu pela barra d\'estáu</string>
   <!-- Status bar - icon blacklist -->
@@ -353,6 +356,7 @@
   <string name="weather_settings_temp_units_title">Unidá de temperatura</string>
   <string name="weather_settings_temp_celsius">Celsius</string>
   <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+  <string name="status_bar_show_weather_summary">Amuesa la temperatura actual na barra d\'estáu</string>
   <!-- Power: Performance profiles -->
   <string name="perf_profile_settings_title">Rindimientu y aforrador de batería</string>
   <string name="perf_profile_settings_summary">Axusta les carauterístiques d\'aforru d\'enerxía y rindimientu del preséu</string>
@@ -367,15 +371,18 @@
   <string name="auto_power_save_summary_on">Habilítase automáticamente\'l mou d\'aforru d\'enerxía al %s de batería</string>
   <string name="auto_power_save_summary_off">Nun s\'habilita automáticamente\'l mou d\'aforru d\'enerxía</string>
   <string name="app_perf_profiles_title">Optimización automática</string>
+  <string name="app_perf_profiles_summary">Escueye automáticamente\'l perfil afayadizu de rindimientu p\'aplicaciones y patrones d\'usu</string>
   <string name="auto_power_save_never">Enxamás</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Escritoriu estendíu</string>
+  <string name="expanded_desktop_settings_summary">Espande\'l to espaciu disponible d\'escritoriu anubriendo la barra d\'estáu, de navegación o dambes</string>
   <string name="expanded_desktop_options_title">Opciones de personalización</string>
   <string name="expanded_desktop_style_title">Estilu d\'escritoriu estendíu</string>
   <string name="expanded_desktop_style_hide_nothing">Nun anubrir nada</string>
   <string name="expanded_desktop_style_hide_status">Anubrir barra d\'estáu</string>
   <string name="expanded_desktop_style_hide_navigation">Anubrir barra de navegación</string>
   <string name="expanded_desktop_style_hide_both">Anubrir dambes</string>
+  <string name="expanded_desktop_nothing_to_show_text">Da-y al interruptor pa personalizar el to escritoriu estendíu según cada aplicación</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Soníos de carga</string>
   <string name="charging_sounds_enabled_title">Habilitar</string>

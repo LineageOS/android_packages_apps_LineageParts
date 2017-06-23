@@ -416,6 +416,11 @@
   <string name="status_bar_battery_percentage_text_inside">Ikonoaren barruan</string>
   <string name="status_bar_battery_percentage_text_next">Ikonoaren ondoan</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Distira</string>
+  <string name="status_bar_brightness_slider_title">Distira tiradera</string>
+  <string name="status_bar_brightness_slider_summary">Doitu distira ezarpen azkarretatik</string>
+  <string name="status_bar_brightness_slider_auto_title">Distira automatikoa</string>
+  <string name="status_bar_brightness_slider_auto_summary">Erakutsi distira adimentsuaren aldatzailea tiraderaren alboan</string>
   <string name="status_bar_toggle_brightness">Distiraren kontrola</string>
   <string name="status_bar_toggle_brightness_summary">Doitu distira egoera-barran zehar irristatuz</string>
   <!-- Status bar - icon blacklist -->
@@ -437,7 +442,7 @@
   <string name="contributions_info_msg">
         <![CDATA[<b>Parte-hartzaileak guztira:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Parte-hartzeak guztira:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Azken eguneraketa:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Azken eguneratzea:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">LineageOS estatistikak</string>

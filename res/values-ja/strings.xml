@@ -416,6 +416,11 @@
   <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
   <string name="status_bar_battery_percentage_text_next">アイコンの隣</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">画面の明るさ</string>
+  <string name="status_bar_brightness_slider_title">画面の明るさスライダー</string>
+  <string name="status_bar_brightness_slider_summary">クイック設定で明るさを調節します</string>
+  <string name="status_bar_brightness_slider_auto_title">明るさの自動調節</string>
+  <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
   <string name="status_bar_toggle_brightness">明るさコントロール</string>
   <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
   <!-- Status bar - icon blacklist -->

@@ -157,6 +157,7 @@
   <string name="hardware_keys_volume_keys_title">Przyciski głośności</string>
   <string name="hardware_keys_short_press_title">Krótkie naciśnięcie</string>
   <string name="hardware_keys_long_press_title">Długie naciśnięcie</string>
+  <string name="hardware_keys_action_menu">Otwórz/zamknij menu</string>
   <string name="hardware_keys_action_app_switch">Przełącznik ostatnich aplikacji</string>
   <string name="hardware_keys_action_search">Asystent wyszukiwania</string>
   <string name="hardware_keys_action_voice_search">Wyszukiwanie głosowe</string>
@@ -390,6 +391,7 @@
   <string name="status_bar_brightness_slider_title">Suwak jasności</string>
   <string name="status_bar_brightness_slider_summary">Dostosuj jasność z Szybkich Ustawień</string>
   <string name="status_bar_brightness_slider_auto_title">Automatyczna jasność</string>
+  <string name="status_bar_brightness_slider_auto_summary">Pokaż przełącznik dla automatycznej jasności blisko suwaka</string>
   <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
   <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
   <!-- Status bar - icon blacklist -->

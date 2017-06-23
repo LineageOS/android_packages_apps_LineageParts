@@ -416,6 +416,11 @@
   <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
   <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Kecerahan</string>
+  <string name="status_bar_brightness_slider_title">Slider kecerahan</string>
+  <string name="status_bar_brightness_slider_summary">Sesuaikan kecerahan dari setelan cepat</string>
+  <string name="status_bar_brightness_slider_auto_title">Kecerahan otomatis</string>
+  <string name="status_bar_brightness_slider_auto_summary">Tampilkan tombol hidup/matikan kecerahan adaptif di dekat slider</string>
   <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
   <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
   <!-- Status bar - icon blacklist -->

@@ -295,8 +295,8 @@
   <string name="new_profile_name">&lt;nuevo perfil&gt;</string>
   <!-- Rename Dialog  -->
   <string name="rename_dialog_title">Renombrar</string>
-  <string name="rename_dialog_message">Introducir un nuevo nombre</string>
-  <string name="rename_dialog_hint">Introducir el nombre del perfil</string>
+  <string name="rename_dialog_message">Ingresa un nuevo nombre</string>
+  <string name="rename_dialog_hint">Ingresa el nombre del perfil</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Restablecer</string>
   <string name="profile_reset_message">¿Borrar todos los perfiles y grupos de aplicaciones creados por el usuario y restaurarlos a los valores predefinidos?</string>
@@ -338,7 +338,7 @@
   <string name="profile_applist_title">Aplicaciones</string>
   <string name="profile_new_appgroup">Nuevo grupo de aplicaciones</string>
   <string name="profile_delete_appgroup">¿Borrar este grupo de aplicaciones?</string>
-  <string name="profile_appgroup_name_prompt">Introducir un nombre para el nuevo grupo de aplicaciones</string>
+  <string name="profile_appgroup_name_prompt">Ingresa un nombre para el nuevo grupo de aplicaciones</string>
   <string name="profile_appgroup_name_title">Nombre</string>
   <string name="duplicate_appgroup_name">¡Nombre de grupo de aplicación duplicado!</string>
   <!-- Add application dialog box title -->

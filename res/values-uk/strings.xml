@@ -416,6 +416,11 @@
   <string name="status_bar_battery_percentage_text_inside">Всередині значка</string>
   <string name="status_bar_battery_percentage_text_next">Поруч зі значком</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Яскравість</string>
+  <string name="status_bar_brightness_slider_title">Повзунок яскравості</string>
+  <string name="status_bar_brightness_slider_summary">Регулювання яскравості з швидких налаштувань</string>
+  <string name="status_bar_brightness_slider_auto_title">Авто налаштування яскравості</string>
+  <string name="status_bar_brightness_slider_auto_summary">Показати перемикач адаптивної яскравості поряд з повзунком</string>
   <string name="status_bar_toggle_brightness">Керування яскравістю</string>
   <string name="status_bar_toggle_brightness_summary">Регулювати яскравість екрану рухом пальця по рядку стану</string>
   <!-- Status bar - icon blacklist -->

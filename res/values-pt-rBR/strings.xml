@@ -373,7 +373,7 @@
   <string name="notification_volume_title">Notificação</string>
   <string name="media_volume_title">Mídia</string>
   <string name="alarm_volume_title">Alarme</string>
-  <string name="doze_title">Brilho adaptável</string>
+  <string name="doze_title">Tela ambiente</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra de status</string>
   <string name="status_bar_quick_qs_pulldown_title">Deslizar rápido para baixo</string>
@@ -384,7 +384,7 @@
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Direita</string>
   <string name="status_bar_double_tap_to_sleep_title">Toque duplo para suspender</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Dê um duplo toque na barra de status para desligar a tela</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status para desligar a tela</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ícones da barra de status</string>
   <string name="status_bar_notif_count_title">Mostrar contador de notificações</string>
@@ -417,6 +417,7 @@
   <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
   <!-- Status bar - Brightness -->
   <string name="status_bar_brightness_category">Brilho</string>
+  <string name="status_bar_brightness_slider_title">Controle deslizante de brilho</string>
   <string name="status_bar_brightness_slider_summary">Ajustar brilho da tela nas configurações rápidas</string>
   <string name="status_bar_brightness_slider_auto_title">Brilho automático</string>
   <string name="status_bar_toggle_brightness">Controle de brilho</string>

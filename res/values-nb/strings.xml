@@ -58,7 +58,7 @@
   <string name="privacy_guard_advanced_settings_title">Avansert</string>
   <string name="privacy_guard_notification_title">Vis varsel</string>
   <!-- Notification light dialogs -->
-  <string name="edit_light_settings">Endre lys innstillinger</string>
+  <string name="edit_light_settings">Rediger lysinnstillinger</string>
   <string name="pulse_speed_title">Pulseringshastighet og lengde</string>
   <string name="default_time">Normal</string>
   <string name="custom_time">Egendefinert</string>
@@ -79,7 +79,7 @@
   <string name="pulse_speed_very_slow">Veldig langsom</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Batterilys</string>
-  <string name="battery_low_pulse_title">Pulser ved lavt batterinivå</string>
+  <string name="battery_low_pulse_title">Pulsér ved lavt batterinivå</string>
   <string name="battery_light_list_title">Farger</string>
   <string name="battery_light_low_color_title">Batteri lavt</string>
   <string name="battery_light_medium_color_title">Lader</string>
@@ -102,7 +102,7 @@
   <string name="notification_light_automagic_summary">Velger farger automatisk</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Lysinnstillinger</string>
-  <string name="led_notification_text">LED-lyset aktiveres av innstillingene</string>
+  <string name="led_notification_text">LED-lys aktivert av innstillingene</string>
   <string name="notification_light_no_apps_summary">For å legge til per-app kontroll, må du aktivere \'%1$s\' og trykke \'\u002b\' på meny-linjen</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimalisere skjermen basert på tidspunkt av dagen og omgivelsesforhold for å forbedre lesbarhet og redusere belastningen på øynene</string>
@@ -420,7 +420,7 @@
   <string name="status_bar_brightness_slider_title">Lysstyrke-dimmer</string>
   <string name="status_bar_brightness_slider_summary">Juster lysstyrken i fra Hurtiginnstillingene</string>
   <string name="status_bar_brightness_slider_auto_title">Automatisk lysstyrke</string>
-  <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke nær dimmeren</string>
+  <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke ved siden av dimmeren</string>
   <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
   <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
   <!-- Status bar - icon blacklist -->

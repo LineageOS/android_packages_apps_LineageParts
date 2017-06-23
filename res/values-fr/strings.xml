@@ -172,6 +172,8 @@
   <string name="hardware_keys_action_sleep">Éteindre l\'écran</string>
   <string name="hardware_keys_action_last_app">Application précédente</string>
   <string name="hardware_keys_action_split_screen">Écran partagé</string>
+  <string name="hardware_keys_action_single_handed_left">Utilisation à une main (Gaucher)</string>
+  <string name="hardware_keys_action_single_handed_right">Utilisation à une main (Droitier)</string>
   <string name="camera_sleep_on_release_title">Aperçu de l\'écran</string>
   <string name="camera_sleep_on_release_summary">Un demi appui permet de garder l\'écran allumé tant que le bouton est maintenu appuyé</string>
   <string name="camera_launch_title">Démarrer l\'appareil photo</string>
@@ -414,6 +416,7 @@
   <string name="status_bar_brightness_slider_title">Curseur de luminosité</string>
   <string name="status_bar_brightness_slider_summary">Régler la luminosité les réglages rapides</string>
   <string name="status_bar_brightness_slider_auto_title">Luminosité automatique</string>
+  <string name="status_bar_brightness_slider_auto_summary">Voir le bouton pour la luminosité adaptative près du curseur</string>
   <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
   <string name="status_bar_toggle_brightness_summary">Régler la luminosité en glissant sur la barre d\'état</string>
   <!-- Status bar - icon blacklist -->
@@ -468,7 +471,9 @@
   <!-- Weather -->
   <string name="weather_settings_title">Météo</string>
   <string name="weather_settings_no_services_prompt">Aucun fournisseur de services météorologiques installé</string>
+  <string name="weather_settings_no_services_summary">Installer un fournisseur de services météorologiques pour recevoir des bulletins météo</string>
   <string name="weather_settings_button">Paramètres du fournisseur</string>
+  <string name="weather_settings_activity_not_found">Impossible d\'ouvrir le menu de configuration de ce fournisseur</string>
   <string name="weather_settings_add_weather_provider">Ajouter un fournisseur de météo</string>
   <string name="weather_settings_general_settings_title">Général</string>
   <string name="weather_settings_providers_title">Fournisseurs</string>
@@ -492,6 +497,7 @@
   <string name="auto_power_save_never">Jamais</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Bureau étendu</string>
+  <string name="expanded_desktop_settings_summary">Étend l\'espace de bureau disponible en cachant la barre d\'état, de navigation, ou les deux</string>
   <string name="expanded_desktop_options_title">Options de personnalisation</string>
   <string name="expanded_desktop_style_title">Style de bureau étendu</string>
   <string name="expanded_desktop_style_hide_nothing">Ne rien masquer</string>

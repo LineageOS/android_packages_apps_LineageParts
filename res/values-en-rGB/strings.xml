@@ -416,6 +416,11 @@
   <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
   <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Brightness</string>
+  <string name="status_bar_brightness_slider_title">Brightness slider</string>
+  <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick Settings</string>
+  <string name="status_bar_brightness_slider_auto_title">Auto brightness</string>
+  <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
   <string name="status_bar_toggle_brightness">Brightness control</string>
   <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
   <!-- Status bar - icon blacklist -->

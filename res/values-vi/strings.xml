@@ -154,11 +154,11 @@
   <!-- Button settings -->
   <string name="button_pref_title">Phím</string>
   <string name="hardware_keys_power_key_title">Phím nguồn</string>
-  <string name="hardware_keys_home_key_title">Phím Home</string>
-  <string name="hardware_keys_back_key_title">Phím Back</string>
+  <string name="hardware_keys_home_key_title">Phím Trang chính</string>
+  <string name="hardware_keys_back_key_title">Phím Quay lại</string>
   <string name="hardware_keys_menu_key_title">Phím Menu</string>
   <string name="hardware_keys_assist_key_title">Phím tìm kiếm</string>
-  <string name="hardware_keys_appswitch_key_title">Phím Recents</string>
+  <string name="hardware_keys_appswitch_key_title">Phím Gần đây</string>
   <string name="hardware_keys_camera_key_title">Phím Camera</string>
   <string name="hardware_keys_volume_keys_title">Phím âm lượng</string>
   <string name="hardware_keys_short_press_title">Thao tác nhấn nhanh</string>
@@ -194,7 +194,7 @@
   <string name="volume_answer_call_title">Trả lời cuộc gọi</string>
   <string name="volume_answer_call_summary">Trả lời cuộc gọi đến bằng cách nhấn nút âm lượng</string>
   <string name="home_answer_call_title">Trả lời cuộc gọi</string>
-  <string name="home_answer_call_summary">Trả lời cuộc gọi đến bằng cách nhấn nút home</string>
+  <string name="home_answer_call_summary">Trả lời cuộc gọi đến bằng cách nhấn nút trang chính</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Đèn nền</string>
   <string name="button_backlight_enabled">Phát sáng các phím</string>
@@ -216,9 +216,9 @@
   <string name="navigation_bar_left_summary">Đặt thanh điều hướng bên trái màn hình ở chế độ ngang</string>
   <string name="navigation_bar_arrow_keys_title">Hiển thị phím mũi tên trong khi nhập liệu</string>
   <string name="navigation_bar_arrow_keys_summary">Hiển thị các nút con trỏ bên trái và bên phải khi nhập liệu. Ghi đè bộ chuyển IME.</string>
-  <string name="navigation_bar_home_long_press_title">Hành động khi nhấn giữ phím Home</string>
-  <string name="navigation_bar_home_double_tap_title">Hành động nhấn phím Home hai lần</string>
-  <string name="navigation_bar_recents_title">Hành động nhấn giữ phím Recents</string>
+  <string name="navigation_bar_home_long_press_title">Hành động khi nhấn giữ phím Trang chính</string>
+  <string name="navigation_bar_home_double_tap_title">Hành động nhấn phím Trang chính hai lần</string>
+  <string name="navigation_bar_recents_title">Hành động nhấn giữ phím Gần đây</string>
   <!-- Power menu -->
   <string name="power_menu_title">Trình đơn nguồn</string>
   <string name="power_menu_reboot_title">Trình đơn khởi động lại</string>
@@ -416,6 +416,11 @@
   <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng pin</string>
   <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng pin</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Độ sáng</string>
+  <string name="status_bar_brightness_slider_title">Thanh trượt độ sáng</string>
+  <string name="status_bar_brightness_slider_summary">Điều chỉnh độ sáng từ Cài đặt nhanh</string>
+  <string name="status_bar_brightness_slider_auto_title">Độ sáng tự động</string>
+  <string name="status_bar_brightness_slider_auto_summary">Hiển thị bật/tắt độ sáng thích nghi gần thanh trượt</string>
   <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
   <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
   <!-- Status bar - icon blacklist -->

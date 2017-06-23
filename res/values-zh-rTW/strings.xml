@@ -176,7 +176,7 @@
   <string name="hardware_keys_action_split_screen">分割視窗</string>
   <string name="hardware_keys_action_single_handed_left">單手模式 (左)</string>
   <string name="hardware_keys_action_single_handed_right">單手模式 (右)</string>
-  <string name="camera_sleep_on_release_title">窺視螢幕</string>
+  <string name="camera_sleep_on_release_title">預覽螢幕</string>
   <string name="camera_sleep_on_release_summary">僅有當按住按鍵時，半按即可保持螢幕開啟。</string>
   <string name="camera_launch_title">開啟相機</string>
   <string name="camera_launch_summary">按住並放開將會啟動相機</string>
@@ -525,7 +525,7 @@
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
   <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>
-  <string name="touchscreen_gestures_haptic_feedback_title">觸覺回饋</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">觸控震動</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">檢測到觸控螢幕手勢時震動</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">用兩根手指向下滑動</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">用一根手指向上滑動</string>
