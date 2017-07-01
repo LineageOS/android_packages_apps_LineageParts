@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">画面のロックを解除せずにカメラをすばやく起動する</string>
   <string name="torch_long_press_power_gesture_title">長押しでライト点灯</string>
   <string name="torch_long_press_power_gesture_desc">画面消灯時に電源ボタンを長押ししてライトを点灯します</string>
+  <string name="torch_long_press_power_timeout_title">ライトを自動的にオフにする</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">削除</string>
   <string name="profile_action_none">変更しない</string>

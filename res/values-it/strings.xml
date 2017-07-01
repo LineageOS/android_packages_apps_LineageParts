@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>
   <string name="torch_long_press_power_gesture_title">Premi a lungo per la torcia</string>
   <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo é spento</string>
+  <string name="torch_long_press_power_timeout_title">Spegni la torcia automaticamente</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Elimina</string>
   <string name="profile_action_none">Lascia invariato</string>

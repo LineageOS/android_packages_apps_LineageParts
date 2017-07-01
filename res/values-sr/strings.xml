@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Брзо отворите камеру без откључавања уређаја.</string>
   <string name="torch_long_press_power_gesture_title">Дуги притисак за лампу</string>
   <string name="torch_long_press_power_gesture_desc">Укључите лампу дугим притиском на дугме за напајање док је екран искључен.</string>
+  <string name="torch_long_press_power_timeout_title">Аутоматски искључи лампу</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Избриши</string>
   <string name="profile_action_none">Без промена</string>

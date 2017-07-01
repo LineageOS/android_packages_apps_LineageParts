@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmara sem desbloquear o ecrã</string>
   <string name="torch_long_press_power_gesture_title">Lanterna através de pressão longa</string>
   <string name="torch_long_press_power_gesture_desc">Ativar a lanterna através de pressão longa no botão de ligar/desligar quando o ecrã estiver desligado</string>
+  <string name="torch_long_press_power_timeout_title">Desligar automaticamente a lanterna</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Eliminar</string>
   <string name="profile_action_none">Deixar inalterado</string>

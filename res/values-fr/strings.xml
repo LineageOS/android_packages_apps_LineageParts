@@ -122,6 +122,7 @@
   <string name="live_display_color_profile_standard_title">Standard</string>
   <string name="live_display_color_profile_standard_summary">Couleurs précises et blancs éclatants</string>
   <string name="live_display_color_profile_natural_title">Naturel</string>
+  <string name="live_display_color_profile_natural_summary">Couleurs et tons chair réalistes</string>
   <string name="live_display_color_profile_dynamic_title">Dynamique</string>
   <string name="live_display_color_profile_dynamic_summary">Couleurs améliorées et blancs lumineux</string>
   <string name="live_display_color_profile_cinema_title">Cinéma</string>
@@ -180,7 +181,6 @@
   <string name="camera_launch_summary">Une pression longue avant de relâcher active la caméra</string>
   <string name="volbtn_music_controls_title">Contrôler la lecture</string>
   <string name="volbtn_music_controls_summary">Changer de piste audio à l\'aide d\'une pression longue sur les boutons de volume lorsque l\'écran est éteint</string>
-  <string name="volbtn_cursor_control_title">Contrôle du curseur par les touches du clavier</string>
   <string name="volbtn_cursor_control_off">Désactivé</string>
   <string name="volbtn_cursor_control_on">La touche haut déplace le curseur vers la gauche et bas vers la droite</string>
   <string name="volbtn_cursor_control_on_reverse">La touche haut déplace le curseur vers la droite et bas vers la gauche</string>
@@ -485,11 +485,13 @@
   <string name="status_bar_show_weather_summary">Afficher la température actuelle dans la barre d\'état</string>
   <!-- Power: Performance profiles -->
   <string name="perf_profile_settings_title">Économiseur de batterie et performances</string>
+  <string name="perf_profile_settings_summary">Ajuster les fonctions d\'économie d\'énergie et les performances de l\'appareil</string>
   <string name="perf_profile_overview_summary">Profil actuel : <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">Performances de l\'appareil</string>
   <string name="perf_profile_title">Profil de performances : <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">Le profil de performance est actuellement indisponible</string>
   <string name="power_save_category_title">Économie de batterie</string>
+  <string name="power_save_summary">Limiter les performances de l\'appareil et les activités en arrière-plan pour économiser de l\'énergie</string>
   <string name="auto_power_save_summary_on">Activer automatiquement le mode d\'économie d\'énergie lorsqu\'il reste %s de batterie</string>
   <string name="auto_power_save_summary_off">Ne pas activer automatiquement le mode d\'économie d\'énergie</string>
   <string name="app_perf_profiles_title">Optimisation automatique</string>
@@ -504,9 +506,11 @@
   <string name="expanded_desktop_style_hide_status">Masquer la barre d\'état</string>
   <string name="expanded_desktop_style_hide_navigation">Masquer la barre de navigation</string>
   <string name="expanded_desktop_style_hide_both">Masquer les deux</string>
+  <string name="expanded_desktop_nothing_to_show_text">Désactiver pour personnaliser le bureau étendu pour chaque application</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons d\'alimentation</string>
   <string name="charging_sounds_enabled_title">Activer</string>
+  <string name="charging_sounds_enabled_summary">Émettre un son au branchement ou débranchement d\'une source d\'alimentation</string>
   <string name="power_notifications_vibrate_title">Vibreur</string>
   <string name="charging_sounds_ringtone_title">Son de notification</string>
   <string name="charging_sounds_ringtone_silent">Silencieux</string>
@@ -515,8 +519,22 @@
   <string name="touchscreen_gesture_settings_summary">Effectuer différents gestes tactiles pour des actions rapides</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Retour haptique</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrer quand un geste tactile est détecté</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Glisser vers le bas avec deux doigts</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Glisser vers le haut avec un doigt</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Glisser vers le bas avec un doigt</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Glisser vers la gauche avec un doigt</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Glisser vers la droite avec un doigt</string>
+  <string name="touchscreen_gesture_up_arrow_title">Dessiner un « Λ »</string>
   <string name="touchscreen_gesture_down_arrow_title">Dessinez un « V »</string>
+  <string name="touchscreen_gesture_left_arrow_title">Dessiner un « &lt; »</string>
+  <string name="touchscreen_gesture_right_arrow_title">Dessiner un « &gt; »</string>
+  <string name="touchscreen_gesture_letter_c_title">Dessiner la lettre « C »</string>
+  <string name="touchscreen_gesture_letter_e_title">Dessiner la lettre « e »</string>
   <string name="touchscreen_gesture_letter_o_title">Dessinez la lettre « O »</string>
+  <string name="touchscreen_gesture_letter_m_title">Dessiner la lettre « M »</string>
+  <string name="touchscreen_gesture_letter_s_title">Dessiner la lettre « S »</string>
+  <string name="touchscreen_gesture_letter_v_title">Dessiner la lettre « V »</string>
+  <string name="touchscreen_gesture_letter_w_title">Dessiner la lettre « W »</string>
   <string name="touchscreen_gesture_letter_z_title">Dessinez la lettre « Z »</string>
   <string name="touchscreen_gesture_action_dialog_title">Action lors d\'un geste tactile</string>
   <string name="touchscreen_gesture_action_do_nothing">Ne rien faire</string>

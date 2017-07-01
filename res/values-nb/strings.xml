@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Åpne kameraet raskt uten å låse opp skjermen</string>
   <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
   <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
+  <string name="torch_long_press_power_timeout_title">Deaktiver lommelykten automatisk</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Slett</string>
   <string name="profile_action_none">La stå uendret</string>

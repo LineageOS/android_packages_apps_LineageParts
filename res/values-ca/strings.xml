@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Obre la càmera ràpidament sense desbloquejar la pantalla</string>
   <string name="torch_long_press_power_gesture_title">Pulsació llarga per la torxa</string>
   <string name="torch_long_press_power_gesture_desc">Activa la torxa fent una pulsació llarga del botó d\'apagat mentre la pantalla està apagada</string>
+  <string name="torch_long_press_power_timeout_title">Apaga la torxa automàticament</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Esborra</string>
   <string name="profile_action_none">Deixa sense canvis</string>
@@ -416,11 +417,11 @@
   <string name="status_bar_battery_percentage_text_inside">Dins la icona</string>
   <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
   <!-- Status bar - Brightness -->
-  <string name="status_bar_brightness_category">Brillantor</string>
-  <string name="status_bar_brightness_slider_title">Barra de brillantor</string>
-  <string name="status_bar_brightness_slider_summary">Ajusta la brillantor des de la configuració ràpida</string>
-  <string name="status_bar_brightness_slider_auto_title">Brillantor automàtica</string>
-  <string name="status_bar_brightness_slider_auto_summary">Mostra el botó de brillantor automàtica al costat de la barra</string>
+  <string name="status_bar_brightness_category">Lluminositat</string>
+  <string name="status_bar_brightness_slider_title">Barra de lluminositat</string>
+  <string name="status_bar_brightness_slider_summary">Ajusta la lluminositat des de la configuració ràpida</string>
+  <string name="status_bar_brightness_slider_auto_title">Lluminositat automàtica</string>
+  <string name="status_bar_brightness_slider_auto_summary">Mostra el botó de lluminositat automàtica al costat de la barra</string>
   <string name="status_bar_toggle_brightness">Control de lluminositat</string>
   <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
   <!-- Status bar - icon blacklist -->

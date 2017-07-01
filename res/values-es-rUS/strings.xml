@@ -184,8 +184,8 @@
   <string name="volbtn_music_controls_summary">Mantenga pulsadas las teclas de volumen para cambiar la pista de música cuando la pantalla esté apagada</string>
   <string name="volbtn_cursor_control_title">Control del cursor</string>
   <string name="volbtn_cursor_control_off">Desactivado</string>
-  <string name="volbtn_cursor_control_on">Los botones subir y bajar volumen moverán el cursor a izquierda y derecha, respectivamente</string>
-  <string name="volbtn_cursor_control_on_reverse">Los botones subir y bajar volumen moverán el cursor a derecha e izquierda, respectivamente</string>
+  <string name="volbtn_cursor_control_on">Las teclas de subir y bajar volumen moverán el cursor a la izquierda y derecha, respectivamente</string>
+  <string name="volbtn_cursor_control_on_reverse">Las teclas de subir y bajar volumen moverán el cursor a la derecha e izquierda, respectivamente</string>
   <string name="power_end_call_title">Finalizar llamada</string>
   <string name="power_end_call_summary">Finalizar la llamada actual pulsando el botón de encendido</string>
   <string name="swap_volume_buttons_title">Reorientar botones</string>
@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Abre rápidamente la cámara sin desbloquear la pantalla</string>
   <string name="torch_long_press_power_gesture_title">Mantenga pulsado para activar la linterna</string>
   <string name="torch_long_press_power_gesture_desc">Mantén pulsado el botón de encendido para activar la linterna cuando la pantalla esté apagada</string>
+  <string name="torch_long_press_power_timeout_title">Apagar la linterna automáticamente</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Borrar</string>
   <string name="profile_action_none">Dejar sin cambios</string>
@@ -475,11 +476,11 @@
   <string name="display_rotation_270_title">270 grados</string>
   <!-- Weather -->
   <string name="weather_settings_title">Clima</string>
-  <string name="weather_settings_no_services_prompt">Sin servicios de proveedores del clima instalados</string>
-  <string name="weather_settings_no_services_summary">Instalar un proveedor del clima para recibir actualizaciones del tiempo</string>
+  <string name="weather_settings_no_services_prompt">Sin servicios de proveedores climáticos instalados</string>
+  <string name="weather_settings_no_services_summary">Instalar un proveedor climáticos para recibir información meteorológica</string>
   <string name="weather_settings_button">Ajustes del proveedor</string>
   <string name="weather_settings_activity_not_found">No se puede iniciar el menú de ajustes de este proveedor</string>
-  <string name="weather_settings_add_weather_provider">Añadir proveedor del clima</string>
+  <string name="weather_settings_add_weather_provider">Añadir proveedor climático</string>
   <string name="weather_settings_general_settings_title">General</string>
   <string name="weather_settings_providers_title">Proveedores</string>
   <string name="weather_settings_temp_units_title">Unidad de temperatura</string>
@@ -531,18 +532,18 @@
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abajo con un dedo</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia la izquierda con un dedo</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar a la derecha con un dedo</string>
-  <string name="touchscreen_gesture_up_arrow_title">Dibujar un \"Λ\"</string>
-  <string name="touchscreen_gesture_down_arrow_title">Dibujar una \"V\"</string>
-  <string name="touchscreen_gesture_left_arrow_title">Dibujar un \"&lt;\"</string>
-  <string name="touchscreen_gesture_right_arrow_title">Dibujar un \"&gt;\"</string>
-  <string name="touchscreen_gesture_letter_c_title">Dibujar la letra \"C\"</string>
-  <string name="touchscreen_gesture_letter_e_title">Dibujar la letra \"e\"</string>
-  <string name="touchscreen_gesture_letter_o_title">Dibujar la letra \"O\"</string>
-  <string name="touchscreen_gesture_letter_m_title">Dibujar la letra \"M\"</string>
-  <string name="touchscreen_gesture_letter_s_title">Dibujar la letra \"S\"</string>
-  <string name="touchscreen_gesture_letter_v_title">Dibuja la letra \"V\"</string>
-  <string name="touchscreen_gesture_letter_w_title">Dibujar la letra \"W\"</string>
-  <string name="touchscreen_gesture_letter_z_title">Dibujar la letra \"Z\"</string>
+  <string name="touchscreen_gesture_up_arrow_title">Dibujar un «Λ»</string>
+  <string name="touchscreen_gesture_down_arrow_title">Dibujar una «V»</string>
+  <string name="touchscreen_gesture_left_arrow_title">Dibujar un «&lt;»</string>
+  <string name="touchscreen_gesture_right_arrow_title">Dibujar un «&gt;»</string>
+  <string name="touchscreen_gesture_letter_c_title">Dibujar la letra «C»</string>
+  <string name="touchscreen_gesture_letter_e_title">Dibujar la letra «e»</string>
+  <string name="touchscreen_gesture_letter_o_title">Dibujar la letra «O»</string>
+  <string name="touchscreen_gesture_letter_m_title">Dibujar la letra «M»</string>
+  <string name="touchscreen_gesture_letter_s_title">Dibujar la letra «S»</string>
+  <string name="touchscreen_gesture_letter_v_title">Dibuja la letra «V»</string>
+  <string name="touchscreen_gesture_letter_w_title">Dibujar la letra «W»</string>
+  <string name="touchscreen_gesture_letter_z_title">Dibujar la letra «Z»</string>
   <string name="touchscreen_gesture_action_dialog_title">Acción del gesto</string>
   <string name="touchscreen_gesture_action_do_nothing">No hacer nada</string>
   <string name="touchscreen_gesture_action_flashlight">Alternar linterna</string>

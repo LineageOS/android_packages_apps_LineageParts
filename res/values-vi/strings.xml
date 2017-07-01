@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Mở nhanh máy ảnh mà không cần mở khóa màn hình của bạn</string>
   <string name="torch_long_press_power_gesture_title">Nhấn giữ bật đèn pin</string>
   <string name="torch_long_press_power_gesture_desc">Bật đèn pin bằng cách nhấn giữ phím nguồn khi màn hình đang tắt</string>
+  <string name="torch_long_press_power_timeout_title">Tự động tắt đèn pin</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Xóa</string>
   <string name="profile_action_none">Giữ nguyên</string>

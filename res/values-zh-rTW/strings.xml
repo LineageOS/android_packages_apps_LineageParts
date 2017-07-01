@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">快速開啟相機，無需解鎖螢幕</string>
   <string name="torch_long_press_power_gesture_title">長按開啟手電筒</string>
   <string name="torch_long_press_power_gesture_desc">當螢幕關閉時長按電源鍵啟動手電筒</string>
+  <string name="torch_long_press_power_timeout_title">自動關閉手電筒</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">刪除</string>
   <string name="profile_action_none">保持不變</string>

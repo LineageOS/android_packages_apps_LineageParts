@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Hitro odprite fotoaparat brez odklepanja zaslona</string>
   <string name="torch_long_press_power_gesture_title">Dolg pritisk za svetilko</string>
   <string name="torch_long_press_power_gesture_desc">Aktivirajte svetilko z dolgim pritiskom na gumb za vklop/izklop med izključenim zaslonom</string>
+  <string name="torch_long_press_power_timeout_title">Samodejno izključi svetilko</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Izbriši</string>
   <string name="profile_action_none">Pusti nespremenjeno</string>

@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Abrir rápidamente la cámara sin desbloquear la pantalla</string>
   <string name="torch_long_press_power_gesture_title">Mantenega pulsado para activar la linterna</string>
   <string name="torch_long_press_power_gesture_desc">Mantenga pulsado el botón de encendido para activar la linterna cuando la pantalla esté apagada</string>
+  <string name="torch_long_press_power_timeout_title">Apagar automáticamente la linterna</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Borrar</string>
   <string name="profile_action_none">Dejar sin cambios</string>

@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Deschideți rapid camera foto fără să deblocați ecranul</string>
   <string name="torch_long_press_power_gesture_title">Apăsaţi lung pentru lanternă</string>
   <string name="torch_long_press_power_gesture_desc">Activați lanterna prin apăsarea lungă a butonului pornire în timp ce ecranul este oprit</string>
+  <string name="torch_long_press_power_timeout_title">Oprire automată lanternă</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Ștergeți</string>
   <string name="profile_action_none">Lăsați neschimbat</string>

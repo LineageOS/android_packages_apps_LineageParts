@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmera sem desbloquear a tela</string>
   <string name="torch_long_press_power_gesture_title">Manter pressionado para ligar a lanterna</string>
   <string name="torch_long_press_power_gesture_desc">Ativar a lanterna ao manter pressionado o botão de ligar/desligar enquanto a tela estiver desligada</string>
+  <string name="torch_long_press_power_timeout_title">Desligar automaticamente a lanterna</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Excluir</string>
   <string name="profile_action_none">Deixar inalterado</string>
@@ -420,6 +421,7 @@
   <string name="status_bar_brightness_slider_title">Controle deslizante de brilho</string>
   <string name="status_bar_brightness_slider_summary">Ajustar brilho da tela nas configurações rápidas</string>
   <string name="status_bar_brightness_slider_auto_title">Brilho automático</string>
+  <string name="status_bar_brightness_slider_auto_summary">Exibir controle para brilho da tela adaptável perto do controle deslizante</string>
   <string name="status_bar_toggle_brightness">Controle de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
   <!-- Status bar - icon blacklist -->

@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Ekran kilidinizi açmadan kamerayı hızlıca açın</string>
   <string name="torch_long_press_power_gesture_title">El feneri için uzun basın</string>
   <string name="torch_long_press_power_gesture_desc">Ekran kapalıyken güç tuşuna uzun basarak el fenerini etkinleştirin</string>
+  <string name="torch_long_press_power_timeout_title">El fenerini otomatik olarak kapat</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Sil</string>
   <string name="profile_action_none">Değiştirme</string>

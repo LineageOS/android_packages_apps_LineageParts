@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Ireki kamera azkar pantaila desblokeatu gabe</string>
   <string name="torch_long_press_power_gesture_title">Sakatu luze linternarako</string>
   <string name="torch_long_press_power_gesture_desc">Aktibatu linterna itzaltze botoia luze sakatuz pantaila itzalita dagoenean</string>
+  <string name="torch_long_press_power_timeout_title">Itzali linterna automatikoki</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Ezabatu</string>
   <string name="profile_action_none">Laga aldatu gabe</string>
