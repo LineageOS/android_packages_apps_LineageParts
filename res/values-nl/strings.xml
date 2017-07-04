@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
   <string name="torch_long_press_power_gesture_title">Lang drukken voor zaklamp</string>
   <string name="torch_long_press_power_gesture_desc">Zaklamp inschakelen door lang op de aan/uit-knop te drukken als het scherm uit is</string>
+  <string name="torch_long_press_power_timeout_title">Zaklamp automatisch uitschakelen</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Verwijderen</string>
   <string name="profile_action_none">Niet wijzigen</string>
@@ -416,6 +417,11 @@
   <string name="status_bar_battery_percentage_text_inside">In het pictogram</string>
   <string name="status_bar_battery_percentage_text_next">Naast het pictogram</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Helderheid</string>
+  <string name="status_bar_brightness_slider_title">Schuifregelaar helderheid</string>
+  <string name="status_bar_brightness_slider_summary">Helderheid aanpassen vanuit snelle instellingen</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatische helderheid</string>
+  <string name="status_bar_brightness_slider_auto_summary">Schakelaar voor aanpassende helderheid naast de schuifregelaar</string>
   <string name="status_bar_toggle_brightness">Helderheid beheren</string>
   <string name="status_bar_toggle_brightness_summary">Helderheid aanpassen door over de statusbalk te slepen</string>
   <!-- Status bar - icon blacklist -->
