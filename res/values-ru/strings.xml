@@ -221,7 +221,7 @@
   <string name="navigation_bar_recents_title">Долгое нажатие кнопки «Обзор»</string>
   <!-- Power menu -->
   <string name="power_menu_title">Меню кнопки питания</string>
-  <string name="power_menu_reboot_title">Меню перезагрузки</string>
+  <string name="power_menu_reboot_title">Меню перезапуска</string>
   <string name="power_menu_screenshot_title">Скриншот</string>
   <string name="power_menu_airplane_title">Режим полета</string>
   <string name="power_menu_users_title">Переключение пользователей</string>

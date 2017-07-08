@@ -238,6 +238,7 @@
   <string name="camera_double_tap_power_gesture_desc">Rychle otevře fotoaparát bez odemknutí obrazovky</string>
   <string name="torch_long_press_power_gesture_title">Dlouhým stiskem zapnout svítilnu</string>
   <string name="torch_long_press_power_gesture_desc">Dlouhým stiskem tlačítka napájení při vypnuté obrazovce zapnout svítilnu</string>
+  <string name="torch_long_press_power_timeout_title">Automatické vypnutí svítilny</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Smazat</string>
   <string name="profile_action_none">Ponechat nezměněné</string>
