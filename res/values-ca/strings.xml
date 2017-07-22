@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Pulsació llarga per la torxa</string>
   <string name="torch_long_press_power_gesture_desc">Activa la torxa fent una pulsació llarga del botó d\'apagat mentre la pantalla està apagada</string>
   <string name="torch_long_press_power_timeout_title">Apaga la torxa automàticament</string>
+  <string name="torch_long_press_power_timeout_never">Mai</string>
+  <string name="torch_long_press_power_timeout_1min">1 minut</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuts</string>
+  <string name="torch_long_press_power_timeout_5min">5 minuts</string>
+  <string name="torch_long_press_power_timeout_10min">10 minuts</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Esborra</string>
   <string name="profile_action_none">Deixa sense canvis</string>

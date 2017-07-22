@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Lange drücken für Taschenlampe</string>
   <string name="torch_long_press_power_gesture_desc">Taschenlampe bei ausgeschaltetem Bildschirm durch langes Drücken der Ein-/Aus-Taste anschalten</string>
   <string name="torch_long_press_power_timeout_title">Taschenlampe automatisch ausschalten</string>
+  <string name="torch_long_press_power_timeout_never">Nie</string>
+  <string name="torch_long_press_power_timeout_1min">1 Minute</string>
+  <string name="torch_long_press_power_timeout_2min">2 Minuten</string>
+  <string name="torch_long_press_power_timeout_5min">5 Minuten</string>
+  <string name="torch_long_press_power_timeout_10min">10 Minuten</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Löschen</string>
   <string name="profile_action_none">Unverändert lassen</string>

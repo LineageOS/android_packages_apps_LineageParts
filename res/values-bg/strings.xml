@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Активиране на фенерчето</string>
   <string name="torch_long_press_power_gesture_desc">Активиране на фенерчето чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
   <string name="torch_long_press_power_timeout_title">Автоматично изключване на фенерчето</string>
+  <string name="torch_long_press_power_timeout_never">Никога</string>
+  <string name="torch_long_press_power_timeout_1min">1 минута</string>
+  <string name="torch_long_press_power_timeout_2min">2 минути</string>
+  <string name="torch_long_press_power_timeout_5min">5 минути</string>
+  <string name="torch_long_press_power_timeout_10min">10 минути</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Изтриване</string>
   <string name="profile_action_none">Остави непроменен</string>

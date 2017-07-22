@@ -95,7 +95,7 @@
   <string name="notification_light_missed_call_title">Llamada perdida</string>
   <string name="notification_light_voicemail_title">Buzón de voz</string>
   <string name="notification_light_screen_on">Luces con la pantalla encendida</string>
-  <string name="notification_light_zen_mode">Luces en modo No Molestar</string>
+  <string name="notification_light_zen_mode">Luces en modo «No molestar»</string>
   <string name="notification_light_use_multiple_leds">Múltiples LED</string>
   <string name="keywords_lights_brightness_level">atenuar el brillo de los led</string>
   <string name="notification_light_automagic">Elegir colores automáticamente</string>
@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Mantenga pulsado para activar la linterna</string>
   <string name="torch_long_press_power_gesture_desc">Mantén pulsado el botón de encendido para activar la linterna cuando la pantalla esté apagada</string>
   <string name="torch_long_press_power_timeout_title">Apagar la linterna automáticamente</string>
+  <string name="torch_long_press_power_timeout_never">Nunca</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuto</string>
+  <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+  <string name="torch_long_press_power_timeout_10min">10 minutos</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Borrar</string>
   <string name="profile_action_none">Dejar sin cambios</string>

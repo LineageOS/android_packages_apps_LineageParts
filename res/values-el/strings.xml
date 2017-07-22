@@ -238,6 +238,12 @@
   <string name="camera_double_tap_power_gesture_desc">Γρήγορο άνοιγμα της φωτογραφικής μηχανής χωρίς ξεκλείδωμα οθόνης</string>
   <string name="torch_long_press_power_gesture_title">Παρατεταμένη πίεση για φακό</string>
   <string name="torch_long_press_power_gesture_desc">Ενεργοποιήστε το φακό πατώντας παρατεταμένα το πλήκτρο ισχύος όταν η οθόνη είναι ανενεργή</string>
+  <string name="torch_long_press_power_timeout_title">Αυτόματη απενεργοποίηση φακού</string>
+  <string name="torch_long_press_power_timeout_never">Ποτέ</string>
+  <string name="torch_long_press_power_timeout_1min">1 λεπτό</string>
+  <string name="torch_long_press_power_timeout_2min">2 λεπτά</string>
+  <string name="torch_long_press_power_timeout_5min">5 λεπτά</string>
+  <string name="torch_long_press_power_timeout_10min">10 λεπτά</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Διαγραφή</string>
   <string name="profile_action_none">Να μη γίνει αλλαγή</string>
@@ -416,6 +422,11 @@
   <string name="status_bar_battery_percentage_text_inside">Μέσα στο εικονίδιο</string>
   <string name="status_bar_battery_percentage_text_next">Δίπλα στο εικονίδιο</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Φωτεινότητα</string>
+  <string name="status_bar_brightness_slider_title">Ρυθμιστικό φωτεινότητας</string>
+  <string name="status_bar_brightness_slider_summary">Ρύθμιση φωτεινότητας από τις Γρήγορες ρυθμίσεις</string>
+  <string name="status_bar_brightness_slider_auto_title">Αυτόματη φωτεινότητα</string>
+  <string name="status_bar_brightness_slider_auto_summary">Εμφάνιση διακόπτη για προσαρμοστική φωτεινότητα δίπλα στο ρυθμιστικό</string>
   <string name="status_bar_toggle_brightness">Έλεγχος φωτεινότητας</string>
   <string name="status_bar_toggle_brightness_summary">Επιτρέπει τον έλεγχο της φωτεινότητας με ολίσθιση στη γραμή κατάστασης</string>
   <!-- Status bar - icon blacklist -->

@@ -102,6 +102,7 @@
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Ustawienia diody LED</string>
   <string name="led_notification_text">Diody LED włączone przez ustawienia</string>
+  <string name="notification_light_no_apps_summary">Aby dodać kontrolę dla indywidualnych aplikacji, aktywuj \'%1$s\' i naciśnij \'\u002b\' na pasku menu</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Zoptymalizuj swój ekran w zależności od pory dnia, aby poprawić czytelność i zredukować zmęczenie oczu</string>
   <string name="live_display_mode">Tryb wyświetlania</string>
@@ -237,6 +238,11 @@
   <string name="torch_long_press_power_gesture_title">Długie naciśnięcie dla latarki</string>
   <string name="torch_long_press_power_gesture_desc">Włączanie latarki przy wyłączonym ekranie przez przytrzymanie przycisku zasilania</string>
   <string name="torch_long_press_power_timeout_title">Automatycznie wyłącz latarkę</string>
+  <string name="torch_long_press_power_timeout_never">Nigdy</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuta</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuty</string>
+  <string name="torch_long_press_power_timeout_5min">5 minut</string>
+  <string name="torch_long_press_power_timeout_10min">10 minut</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Usuń</string>
   <string name="profile_action_none">Pozostaw bez zmian</string>

@@ -99,7 +99,7 @@
   <string name="notification_light_use_multiple_leds">多 LED</string>
   <string name="keywords_lights_brightness_level">降低 LED 亮度</string>
   <string name="notification_light_automagic">自动选择颜色</string>
-  <string name="notification_light_automagic_summary">正在自动选择颜色</string>
+  <string name="notification_light_automagic_summary">自动选择颜色</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">指示灯设置</string>
   <string name="led_notification_text">LED 灯被“设置”启用</string>
@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">长按打开手电筒</string>
   <string name="torch_long_press_power_gesture_desc">屏幕关闭时，长按电源键开启手电筒</string>
   <string name="torch_long_press_power_timeout_title">自动关闭手电筒</string>
+  <string name="torch_long_press_power_timeout_never">永不</string>
+  <string name="torch_long_press_power_timeout_1min">1 分钟</string>
+  <string name="torch_long_press_power_timeout_2min">2 分钟</string>
+  <string name="torch_long_press_power_timeout_5min">5 分钟</string>
+  <string name="torch_long_press_power_timeout_10min">10 分钟</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">删除</string>
   <string name="profile_action_none">保持不变</string>

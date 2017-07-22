@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Dlhé stlačenie zapne Baterku</string>
   <string name="torch_long_press_power_gesture_desc">Keď obrazovka je vypnutá, dlhé zatlačením tlačidla Napájanie zapne Baterku</string>
   <string name="torch_long_press_power_timeout_title">Automatické vypnutie baterky</string>
+  <string name="torch_long_press_power_timeout_never">Nikdy</string>
+  <string name="torch_long_press_power_timeout_1min">1 minúta</string>
+  <string name="torch_long_press_power_timeout_2min">2 minúty</string>
+  <string name="torch_long_press_power_timeout_5min">5 minút</string>
+  <string name="torch_long_press_power_timeout_10min">10 minút</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Odstrániť záložku</string>
   <string name="profile_action_none">Ponechať nezmenené</string>

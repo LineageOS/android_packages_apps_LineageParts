@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Dlouhým stiskem zapnout svítilnu</string>
   <string name="torch_long_press_power_gesture_desc">Dlouhým stiskem tlačítka napájení při vypnuté obrazovce zapnout svítilnu</string>
   <string name="torch_long_press_power_timeout_title">Automatické vypnutí svítilny</string>
+  <string name="torch_long_press_power_timeout_never">Nikdy</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuta</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuty</string>
+  <string name="torch_long_press_power_timeout_5min">5 minut</string>
+  <string name="torch_long_press_power_timeout_10min">10 minut</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Smazat</string>
   <string name="profile_action_none">Ponechat nezměněné</string>

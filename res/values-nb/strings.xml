@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
   <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
   <string name="torch_long_press_power_timeout_title">Deaktiver lommelykten automatisk</string>
+  <string name="torch_long_press_power_timeout_never">Aldri</string>
+  <string name="torch_long_press_power_timeout_1min">1 minutt</string>
+  <string name="torch_long_press_power_timeout_2min">2 minutter</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutter</string>
+  <string name="torch_long_press_power_timeout_10min">10 minutter</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Slett</string>
   <string name="profile_action_none">La stå uendret</string>

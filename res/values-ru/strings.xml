@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Долг. наж. для вкл. фонарика</string>
   <string name="torch_long_press_power_gesture_desc">Включать фонарик долгим нажатием кнопки питания при выключенном экране</string>
   <string name="torch_long_press_power_timeout_title">Выключать фонарик автоматически</string>
+  <string name="torch_long_press_power_timeout_never">Не отключать</string>
+  <string name="torch_long_press_power_timeout_1min">Через 1 минуту</string>
+  <string name="torch_long_press_power_timeout_2min">Через 2 минуты</string>
+  <string name="torch_long_press_power_timeout_5min">Через 5 минут</string>
+  <string name="torch_long_press_power_timeout_10min">Через 10 минут</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Удалить</string>
   <string name="profile_action_none">Оставить без изменений</string>

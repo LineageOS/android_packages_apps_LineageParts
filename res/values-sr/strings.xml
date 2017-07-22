@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Дуги притисак за лампу</string>
   <string name="torch_long_press_power_gesture_desc">Укључите лампу дугим притиском на дугме за напајање док је екран искључен.</string>
   <string name="torch_long_press_power_timeout_title">Аутоматски искључи лампу</string>
+  <string name="torch_long_press_power_timeout_never">Никад</string>
+  <string name="torch_long_press_power_timeout_1min">1 минут</string>
+  <string name="torch_long_press_power_timeout_2min">2 минута</string>
+  <string name="torch_long_press_power_timeout_5min">5 минута</string>
+  <string name="torch_long_press_power_timeout_10min">10 минута</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Избриши</string>
   <string name="profile_action_none">Без промена</string>

@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">לחיצה ארוכה לפנס</string>
   <string name="torch_long_press_power_gesture_desc">הפעל את הפנס על ידי לחיצה ארוכה על מקש ההפעלה כשהמסך כבוי</string>
   <string name="torch_long_press_power_timeout_title">כבה את הפנס אוטומטית</string>
+  <string name="torch_long_press_power_timeout_never">לעולם לא</string>
+  <string name="torch_long_press_power_timeout_1min">דקה אחת</string>
+  <string name="torch_long_press_power_timeout_2min">2 דקות</string>
+  <string name="torch_long_press_power_timeout_5min">5 דקות</string>
+  <string name="torch_long_press_power_timeout_10min">10 דקות</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">מחק</string>
   <string name="profile_action_none">השאר ללא שינוי</string>

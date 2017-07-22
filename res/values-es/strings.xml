@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Mantenega pulsado para activar la linterna</string>
   <string name="torch_long_press_power_gesture_desc">Mantenga pulsado el botón de encendido para activar la linterna cuando la pantalla esté apagada</string>
   <string name="torch_long_press_power_timeout_title">Apagar automáticamente la linterna</string>
+  <string name="torch_long_press_power_timeout_never">Nunca</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuto</string>
+  <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+  <string name="torch_long_press_power_timeout_10min">10 minutos</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Borrar</string>
   <string name="profile_action_none">Dejar sin cambios</string>

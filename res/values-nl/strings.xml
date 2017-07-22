@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Lang drukken voor zaklamp</string>
   <string name="torch_long_press_power_gesture_desc">Zaklamp inschakelen door lang op de aan/uit-knop te drukken als het scherm uit is</string>
   <string name="torch_long_press_power_timeout_title">Zaklamp automatisch uitschakelen</string>
+  <string name="torch_long_press_power_timeout_never">Nooit</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuut</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuten</string>
+  <string name="torch_long_press_power_timeout_5min">5 minuten</string>
+  <string name="torch_long_press_power_timeout_10min">10 minuten</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Verwijderen</string>
   <string name="profile_action_none">Niet wijzigen</string>
