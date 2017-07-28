@@ -343,6 +343,7 @@
   <!-- Display : Rotation  -->
   <string name="display_rotation_title">Axustes de voltéu</string>
   <string name="display_rotation_unit">graos</string>
+  <string name="display_lockscreen_rotation_title">Voltiar pantalla de bloquéu</string>
   <string name="display_rotation_category_title">Moos de voltéu</string>
   <string name="display_rotation_0_title">0 graos</string>
   <string name="display_rotation_90_title">90 graos</string>
