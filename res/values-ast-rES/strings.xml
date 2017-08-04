@@ -101,6 +101,7 @@
   <string name="live_display_color_profile_reading_title">Llectura</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="color_calibration_title">Calibración de color</string>
+  <string name="color_calibration_summary">Calibra los colores de la pantalla</string>
   <string name="color_red_title">Bermeyu</string>
   <string name="color_green_title">Verde</string>
   <string name="color_blue_title">Azul</string>
@@ -138,6 +139,7 @@
   <string name="power_end_call_title">Finar llamada</string>
   <string name="power_end_call_summary">Fina la llamada actual primiendo\'l botón de prendíu</string>
   <string name="swap_volume_buttons_title">Reorientar</string>
+  <string name="swap_volume_buttons_summary">Intercambea los botones de volume al voltiar la pantalla</string>
   <string name="button_wake_title">Esconsoñar preséu</string>
   <string name="volume_answer_call_title">Contestar llamada</string>
   <string name="volume_answer_call_summary">Contesta llamaes entrantes primiendo los botones de volume</string>
@@ -163,15 +165,23 @@
   <string name="power_menu_reboot_title">Menú de reaniciu</string>
   <string name="power_menu_screenshot_title">Capturar pantalla</string>
   <string name="power_menu_airplane_title">Mou avión</string>
+  <string name="power_menu_users_title">Seleutor d\'usuarios</string>
+  <string name="power_menu_bug_report_title">Informe de fallos</string>
   <string name="power_menu_sound_title">Panel de soníu</string>
   <string name="power_menu_bug_report_disabled">L\'informe de fallos ta deshabilitáu nos axustes de desendolcu</string>
   <string name="volume_keys_control_ring_stream_title">Controlar el volume del timbre</string>
   <string name="volume_keys_control_ring_stream_summary_on">Les tecles de volume controlen el volume del timbre</string>
+  <string name="volume_keys_control_ring_stream_summary_off">Les tecles de volume controlen el volume de medios</string>
   <string name="camera_double_tap_power_gesture_title">Primir dos vegaes el botón de prendíu pa la cámara</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abre aína la cámara ensin desbloquiar la to pantalla</string>
   <string name="torch_long_press_power_gesture_title">Primíu llargu pa la llinterna</string>
   <string name="torch_long_press_power_gesture_desc">Activa la llinterna teniendo primíu\'l botón de prendíu entrín la pantalla tea apagada</string>
+  <string name="torch_long_press_power_timeout_never">Enxamás</string>
+  <string name="torch_long_press_power_timeout_1min">1 minutu</string>
+  <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+  <string name="torch_long_press_power_timeout_10min">10 minutos</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Desaniciar</string>
   <string name="profile_action_none">Dexar ensin cambeos</string>
@@ -301,12 +311,16 @@
   <!-- Status bar - Brightness -->
   <string name="status_bar_brightness_category">Brilléu</string>
   <string name="status_bar_brightness_slider_title">Eslizador de brilléu</string>
+  <string name="status_bar_brightness_slider_summary">Axusta\'l brilléu dende los axustes rápidos</string>
+  <string name="status_bar_brightness_slider_auto_summary">Amuesa l\'alternador pal brilléu adautativu cierca l\'eslizador</string>
   <string name="status_bar_toggle_brightness">Control de brilléu</string>
   <string name="status_bar_toggle_brightness_summary">Axusta\'l brilléu eslizando\'l deu pela barra d\'estáu</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Iconos de barra d\'estáu</string>
+  <string name="status_bar_icons_summary">Contola qu\'iconos de la barra d\'estáu s\'amuesen</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplicaciones protexíes</string>
+  <string name="protected_apps_manager_summary">Xestiona qu\'aplicaciones s\'anubren darrera d\'un bloquéu de seguranza</string>
   <!-- Contributors cloud activity -->
   <string name="contributors_cloud_fragment_title">Collaboradores</string>
   <string name="contributors_cloud_loading_message">Cargando datos de collaboradores\u2026</string>

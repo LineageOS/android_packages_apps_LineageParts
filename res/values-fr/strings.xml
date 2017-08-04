@@ -238,6 +238,11 @@
   <string name="torch_long_press_power_gesture_title">Pression longue pour la lampe de poche</string>
   <string name="torch_long_press_power_gesture_desc">Activer la lampe de poche par un appui long sur le bouton d\'alimentation lorsque l\'écran est éteint</string>
   <string name="torch_long_press_power_timeout_title">Désactiver automatiquement la lampe de torche</string>
+  <string name="torch_long_press_power_timeout_never">Jamais</string>
+  <string name="torch_long_press_power_timeout_1min">1 minute</string>
+  <string name="torch_long_press_power_timeout_2min">2 minutes</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutes</string>
+  <string name="torch_long_press_power_timeout_10min">10 minutes</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Supprimer</string>
   <string name="profile_action_none">Laisser tel quel</string>
@@ -309,6 +314,7 @@
   <string name="profile_networkmode_2g3g">2G/3G</string>
   <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
+  <string name="profile_volumeoverrides_title">Outrepasser le volume</string>
   <string name="connection_state_enabled">Activer</string>
   <string name="volume_override_summary">Défini à %1$s/%2$s</string>
   <string name="profile_volume_override_checkbox_label">Outrepasser le volume</string>
@@ -495,6 +501,7 @@
   <string name="perf_profile_title">Profil de performances : <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">Le profil de performance est actuellement indisponible</string>
   <string name="power_save_category_title">Économie de batterie</string>
+  <string name="power_save_title">Économiseur d\'énergie extrême</string>
   <string name="power_save_summary">Limiter les performances de l\'appareil et les activités en arrière-plan pour économiser de l\'énergie</string>
   <string name="auto_power_save_title">Économiseur d\'énergie automatique</string>
   <string name="auto_power_save_summary_on">Activer automatiquement le mode d\'économie d\'énergie lorsqu\'il reste %s de batterie</string>
