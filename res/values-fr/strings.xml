@@ -182,6 +182,7 @@
   <string name="camera_launch_summary">Une pression longue avant de relâcher active la caméra</string>
   <string name="volbtn_music_controls_title">Contrôler la lecture</string>
   <string name="volbtn_music_controls_summary">Changer de piste audio à l\'aide d\'une pression longue sur les boutons de volume lorsque l\'écran est éteint</string>
+  <string name="volbtn_cursor_control_title">Contrôle du curseur du clavier</string>
   <string name="volbtn_cursor_control_off">Désactivé</string>
   <string name="volbtn_cursor_control_on">La touche haut déplace le curseur vers la gauche et bas vers la droite</string>
   <string name="volbtn_cursor_control_on_reverse">La touche haut déplace le curseur vers la droite et bas vers la gauche</string>

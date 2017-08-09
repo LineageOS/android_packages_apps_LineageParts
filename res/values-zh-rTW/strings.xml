@@ -59,7 +59,7 @@
   <string name="privacy_guard_notification_title">顯示通知</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">編輯指示燈設定</string>
-  <string name="pulse_speed_title">呼吸燈長度與速度</string>
+  <string name="pulse_speed_title">閃爍呼吸燈長度與速度</string>
   <string name="default_time">正常</string>
   <string name="custom_time">自訂</string>
   <string name="dialog_delete_title">刪除</string>
@@ -79,7 +79,7 @@
   <string name="pulse_speed_very_slow">非常低</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">電量指示燈</string>
-  <string name="battery_low_pulse_title">電量不足時開啟呼吸燈</string>
+  <string name="battery_low_pulse_title">低電量時閃爍呼吸燈</string>
   <string name="battery_light_list_title">顏色</string>
   <string name="battery_light_low_color_title">電量不足</string>
   <string name="battery_light_medium_color_title">充電中</string>
