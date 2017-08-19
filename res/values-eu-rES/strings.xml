@@ -184,8 +184,8 @@
   <string name="volbtn_music_controls_summary">Aurreratu edo atzeratu musika pistak bolumen teklak luze sakatuz pantaila itzalita dagoenean</string>
   <string name="volbtn_cursor_control_title">Teklatu bidezko kurtsorearen kontrola</string>
   <string name="volbtn_cursor_control_off">Desgaituta</string>
-  <string name="volbtn_cursor_control_on">Bolumena igo eta jaisteko botoiek kurtsorea ezkerrera eta eskumara mugitzen dute</string>
-  <string name="volbtn_cursor_control_on_reverse">Bolumena igo eta jaisteko botoiek kurtsorea eskumara eta ezkerrera mugitzen dute</string>
+  <string name="volbtn_cursor_control_on">Bolumena igo eta jaisteko botoiek kurtsorea ezkerrera eta eskuinera mugitzen dute</string>
+  <string name="volbtn_cursor_control_on_reverse">Bolumena igo eta jaisteko botoiek kurtsorea eskuinera eta ezkerrera mugitzen dute</string>
   <string name="power_end_call_title">Amaitu deia</string>
   <string name="power_end_call_summary">Amaitu uneko deia pizte botoia sakatuta</string>
   <string name="swap_volume_buttons_title">Berrorientatu</string>
@@ -388,7 +388,7 @@
   <string name="status_bar_quick_qs_pulldown_summary_right">Eskuinean</string>
   <string name="status_bar_quick_qs_pulldown_off">Ez</string>
   <string name="status_bar_quick_qs_pulldown_left">ezkerreko</string>
-  <string name="status_bar_quick_qs_pulldown_right">eskumako</string>
+  <string name="status_bar_quick_qs_pulldown_right">Eskuina</string>
   <string name="status_bar_double_tap_to_sleep_title">Birritan sakatu lokartzeko</string>
   <string name="status_bar_double_tap_to_sleep_summary">Birritan sakatu egoera-barran pantaila itzaltzeko</string>
   <!-- Status bar - icons -->
@@ -537,7 +537,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Pasatu hatz bat gora</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Pasatu hatz bat behera</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Pasatu hatz bat ezkerrera</string>
-  <string name="touchscreen_gesture_one_finger_right_swipe_title">Pasatu hatz bat eskumara</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Pasatu hatz bat eskuinera</string>
   <string name="touchscreen_gesture_up_arrow_title">Marraztu \"Λ\"</string>
   <string name="touchscreen_gesture_down_arrow_title">Marraztu \"V\"</string>
   <string name="touchscreen_gesture_left_arrow_title">Marraztu \"&lt;\"</string>

@@ -138,7 +138,7 @@
   <string name="live_display_color_profile_reading_title">Branje</string>
   <string name="live_display_color_profile_reading_summary">Toplejše barve za manjšo obremenitev oči</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
-  <string name="live_display_color_profile_srgb_summary">Barve so natančno v sRGB barvnem prostoru</string>
+  <string name="live_display_color_profile_srgb_summary">Barve ustrezne sRGB barvnemu prostoru</string>
   <string name="color_calibration_title">Umerjanje barv</string>
   <string name="color_calibration_summary">Umeri barve na zaslonu</string>
   <string name="color_red_title">Rdeča</string>
