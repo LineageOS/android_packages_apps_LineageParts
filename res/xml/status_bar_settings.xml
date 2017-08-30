@@ -52,6 +52,13 @@
             <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
         </PreferenceScreen>
 
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="systemui_burnin_protection"
+            android:title="@string/burnin_protection_title"
+            android:summary="@string/burnin_protection_summary"
+            android:defaultValue="false"
+            lineage:requiresConfig="@*android:bool/config_enableBurnInProtection"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
