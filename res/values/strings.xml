@@ -40,6 +40,9 @@
     <string name="disabled">Disabled</string>
     <string name="enabled">Enabled</string>
 
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <string name="summary_empty" translatable="false"></string>
+
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Privacy</string>
     <string name="privacy_settings_category" translatable="false">LineageOS</string>
