@@ -43,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_red_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
+                cm:minVal="0.20"
+                cm:maxVal="1.00"
                 cm:defaultValue="1.00"
                 cm:digits="4" />
 
@@ -66,8 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_green_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
+                cm:minVal="0.20"
+                cm:maxVal="1.00"
                 cm:defaultValue="1.00"
                 cm:digits="4" />
 
@@ -89,8 +89,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_blue_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
+                cm:minVal="0.20"
+                cm:maxVal="1.00"
                 cm:defaultValue="1.00"
                 cm:digits="4" />
 
