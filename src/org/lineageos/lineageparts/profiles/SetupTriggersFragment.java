@@ -31,6 +31,7 @@ import android.view.ViewGroup;
 import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
 
+/*
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.PartsActivity;
@@ -170,3 +171,4 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
 
 
 }
+*/

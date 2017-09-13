@@ -40,6 +40,7 @@ import org.lineageos.lineageparts.R;
 
 import lineageos.providers.LineageSettings;
 
+/*
 public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialog> implements
         SeekBar.OnSeekBarChangeListener {
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
@@ -412,6 +413,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
 
         /* Behaviors when it's a seekbar */
+        /*
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             handleBrightnessUpdate(progress);
@@ -428,6 +430,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
 
         /* Behaviors when it's a plain checkbox */
+        /*
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             mActiveControl = this;
@@ -456,3 +459,4 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
     }
 }
+*/

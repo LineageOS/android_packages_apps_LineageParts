@@ -44,10 +44,13 @@ import org.lineageos.graphics.drawable.StopMotionVectorDrawable;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
 import lineageos.power.PerformanceManager;
 import lineageos.power.PerformanceProfile;
+*/
 import lineageos.providers.LineageSettings;
 
+/*
 import static lineageos.power.PerformanceManager.PROFILE_POWER_SAVE;
 
 public class PerfProfileSettings extends SettingsPreferenceFragment
@@ -294,3 +297,4 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         }
     };
 }
+*/

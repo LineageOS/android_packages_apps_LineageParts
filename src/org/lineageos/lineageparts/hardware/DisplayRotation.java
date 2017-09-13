@@ -30,6 +30,7 @@ import com.android.internal.view.RotationPolicy;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
+/*
 public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String TAG = "DisplayRotation";
 
@@ -148,3 +149,4 @@ public class DisplayRotation extends SettingsPreferenceFragment {
         }
     };
 }
+*/

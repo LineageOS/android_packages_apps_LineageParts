@@ -32,10 +32,13 @@ import lineageos.app.Profile;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.PartsActivity;
+/*
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
 import org.lineageos.lineageparts.profiles.NFCProfileUtils;
 import org.lineageos.lineageparts.profiles.ProfilesSettings;
+*/
 
+/*
 public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallback {
     Profile mProfile;
 
@@ -120,3 +123,4 @@ public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallbac
         return inflater.inflate(R.layout.nfc_writer, container, false);
     }
 }
+*/
