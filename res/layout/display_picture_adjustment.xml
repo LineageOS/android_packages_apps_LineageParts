@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:cm="http://schemas.android.com/apk/res/org.cyanogenmod.cmparts"
+            xmlns:cm="http://schemas.android.com/apk/res/org.cyanogenmod.lineageparts"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.cyanogenmod.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_hue_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:layout_below="@id/adj_hue_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.cyanogenmod.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_saturation_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                 android:layout_below="@id/adj_saturation_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.cyanogenmod.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_intensity_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
                 android:layout_below="@id/adj_intensity_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.cyanogenmod.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_contrast_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

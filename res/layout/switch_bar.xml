@@ -30,7 +30,7 @@
               android:textColor="@color/switchbar_text_color"
               android:textAlignment="viewStart" />
 
-    <org.cyanogenmod.cmparts.widget.ToggleSwitch
+    <org.cyanogenmod.lineageparts.widget.ToggleSwitch
         android:id="@+id/switch_widget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

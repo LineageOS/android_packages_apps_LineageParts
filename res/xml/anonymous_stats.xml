@@ -27,6 +27,6 @@
 
     <PreferenceScreen
         android:title="@string/preview_data_title"
-        android:fragment="org.cyanogenmod.cmparts.cmstats.PreviewData" />
+        android:fragment="org.cyanogenmod.lineageparts.cmstats.PreviewData" />
 
 </PreferenceScreen>

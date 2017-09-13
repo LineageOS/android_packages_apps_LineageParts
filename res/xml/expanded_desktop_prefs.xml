@@ -16,7 +16,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:cm="http://schemas.android.com/apk/res/org.cyanogenmod.cmparts"
+    xmlns:cm="http://schemas.android.com/apk/res/org.cyanogenmod.lineageparts"
     android:key="expanded_desktop_settings"
     android:title="@string/expanded_desktop_settings_title">
 
@@ -32,7 +32,7 @@
 
     </PreferenceCategory>
 
-    <org.cyanogenmod.cmparts.widget.WallOfTextPreference
+    <org.cyanogenmod.lineageparts.widget.WallOfTextPreference
         android:summary="@string/expanded_desktop_nothing_to_show_text"
         android:selectable="false"
         cm:allowDividerAbove="true" />

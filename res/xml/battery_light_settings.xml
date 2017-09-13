@@ -40,17 +40,17 @@
         android:title="@string/battery_light_list_title"
         android:dependency="battery_light_enabled" >
 
-        <org.cyanogenmod.cmparts.notificationlight.ApplicationLightPreference
+        <org.cyanogenmod.lineageparts.notificationlight.ApplicationLightPreference
             android:key="low_color"
             android:title="@string/battery_light_low_color_title"
             android:persistent="false" />
 
-        <org.cyanogenmod.cmparts.notificationlight.ApplicationLightPreference
+        <org.cyanogenmod.lineageparts.notificationlight.ApplicationLightPreference
             android:key="medium_color"
             android:title="@string/battery_light_medium_color_title"
             android:persistent="false" />
 
-        <org.cyanogenmod.cmparts.notificationlight.ApplicationLightPreference
+        <org.cyanogenmod.lineageparts.notificationlight.ApplicationLightPreference
             android:key="full_color"
             android:title="@string/battery_light_full_color_title"
             android:persistent="false" />

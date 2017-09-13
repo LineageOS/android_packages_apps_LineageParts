@@ -25,7 +25,7 @@
         android:summary="@string/disable_navkeys_summary"
         android:defaultValue="false" />
 
-    <org.cyanogenmod.cmparts.input.ButtonBacklightBrightness
+    <org.cyanogenmod.lineageparts.input.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
         android:dialogTitle="@string/button_backlight_title"
@@ -84,7 +84,7 @@
         <PreferenceScreen
             android:key="power_menu"
             android:title="@string/power_menu_title"
-            android:fragment="org.cyanogenmod.cmparts.input.PowerMenuActions" />
+            android:fragment="org.cyanogenmod.lineageparts.input.PowerMenuActions" />
 
         <SwitchPreference
             android:key="power_end_call"

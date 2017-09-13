@@ -34,7 +34,7 @@
                 android:persistent="false" />
 
         <!-- Manual temperature selection -->
-        <org.cyanogenmod.cmparts.livedisplay.DisplayTemperature
+        <org.cyanogenmod.lineageparts.livedisplay.DisplayTemperature
                 android:key="live_display_color_temperature"
                 android:title="@string/live_display_color_temperature_title"
                 android:dialogTitle="@*cyanogenmod.platform:string/live_display_title"
@@ -54,7 +54,7 @@
             android:title="@string/advanced">
 
         <!-- RGB display color adjustments -->
-        <org.cyanogenmod.cmparts.livedisplay.DisplayColor
+        <org.cyanogenmod.lineageparts.livedisplay.DisplayColor
                 android:key="color_calibration"
                 android:title="@string/color_calibration_title"
                 android:dialogTitle="@string/color_calibration_title"
@@ -62,7 +62,7 @@
                 android:persistent="false"/>
 
         <!-- HSIC display color adjustments -->
-        <org.cyanogenmod.cmparts.livedisplay.PictureAdjustment
+        <org.cyanogenmod.lineageparts.livedisplay.PictureAdjustment
                 android:key="picture_adjustment"
                 android:title="@string/picture_adjustment_title"
                 android:dialogTitle="@string/picture_adjustment_title"

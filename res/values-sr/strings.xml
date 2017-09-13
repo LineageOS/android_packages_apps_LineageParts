@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="cmparts_title">Подешавања LineageOS-а</string>
+  <string name="lineageparts_title">Подешавања LineageOS-а</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Учитавам\u2026</string>
   <string name="dlg_ok">У реду</string>
