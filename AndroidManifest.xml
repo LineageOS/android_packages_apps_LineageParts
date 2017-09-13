@@ -62,11 +62,13 @@
                 android:value="org.lineageos.lineageparts.PartsUpdater" />
         </activity>
 
+        <!--
         <receiver android:name=".BootReceiver" android:enabled="true">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+        -->
 
         <receiver android:name=".PartsUpdater" android:enabled="true">
             <intent-filter>
@@ -87,6 +89,7 @@
         </provider>
 
         <!-- Privacy settings (dashboard) -->
+        <!--
         <activity-alias
             android:name=".PrivacySettings"
             android:label="@string/privacy_settings_title"
@@ -109,8 +112,10 @@
                 android:name="org.lineageos.settings.summary.key"
                 android:value="privacy_settings" />
         </activity-alias>
+        -->
 
         <!-- Button settings (dashboard) -->
+        <!--
         <activity-alias
             android:name=".input.ButtonSettings"
             android:label="@string/button_pref_title"
@@ -133,10 +138,14 @@
                 android:name="org.lineageos.settings.summary.key"
                 android:value="button_settings" />
         </activity-alias>
+        -->
 
+        <!--
         <activity android:name=".gestures.KeyHandler" />
+        -->
 
         <!-- Profiles settings (dashboard) -->
+        <!--
         <activity-alias
             android:name=".profiles.ProfilesSettings"
             android:label="@string/profiles_settings_title"
@@ -159,8 +168,10 @@
                 android:name="org.lineageos.settings.summary.key"
                 android:value="profiles_settings" />
         </activity-alias>
+        -->
 
         <!-- Status bar settings (dashboard) -->
+        <!--
         <activity-alias
             android:name=".statusbar.StatusBarSettings"
             android:label="@string/status_bar_title"
@@ -183,8 +194,10 @@
                 android:name="org.lineageos.settings.summary.key"
                 android:value="status_bar_settings" />
         </activity-alias>
+        -->
 
         <!-- Anonymous Statistics -->
+        <!--
         <receiver android:name=".cmstats.ReportingServiceManager"
             android:enabled="true"
             android:exported="false"
@@ -208,8 +221,10 @@
                  android:label="ReportingService"
                  android:enabled="true"
                  android:exported="false" />
+        -->
 
 		<!-- Weather settings -->
+        <!--
         <activity-alias
             android:name=".weather.WeatherServiceSettings"
             android:label="@string/weather_settings_title"
@@ -219,7 +234,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
+        -->
 
+        <!--
         <activity android:name=".profiles.NFCProfile">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
@@ -227,11 +244,14 @@
                 <data android:mimeType="cm/profile" />
             </intent-filter>
         </activity>
+        -->
 
+        <!--
         <activity
             android:name=".profiles.NFCProfileSelect"
             android:label="@string/profile_select"
             android:excludeFromRecents="true"/>
+        -->
 
     </application>
 </manifest>
