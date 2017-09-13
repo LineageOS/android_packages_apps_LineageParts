@@ -48,12 +48,14 @@ import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.KeyEvent;
 
+/*
 import com.android.internal.os.DeviceKeyHandler;
-
+*/
 import lineageos.providers.LineageSettings;
 
 import java.util.List;
 
+/*
 public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
@@ -388,3 +390,4 @@ public class KeyHandler implements DeviceKeyHandler {
         return pm.getLaunchIntentForPackage(resInfo.get(0).activityInfo.packageName);
     }
 }
+*/

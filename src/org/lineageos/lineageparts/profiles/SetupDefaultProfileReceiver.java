@@ -25,6 +25,7 @@ import lineageos.providers.LineageSettings;
 
 import java.util.UUID;
 
+/*
 public class SetupDefaultProfileReceiver extends BroadcastReceiver {
 
     @Override
@@ -41,3 +42,4 @@ public class SetupDefaultProfileReceiver extends BroadcastReceiver {
         }
     }
 }
+*/

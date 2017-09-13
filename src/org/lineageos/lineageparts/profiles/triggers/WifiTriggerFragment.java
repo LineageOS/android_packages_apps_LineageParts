@@ -37,11 +37,14 @@ import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
 
 import org.lineageos.lineageparts.R;
+/*
 import org.lineageos.lineageparts.profiles.ProfilesSettings;
+*/
 
 import java.util.ArrayList;
 import java.util.List;
 
+/*
 public class WifiTriggerFragment extends ListFragment {
     WifiManager mWifiManager;
     Profile mProfile;
@@ -286,3 +289,4 @@ public class WifiTriggerFragment extends ListFragment {
         }
     }
 }
+*/

@@ -34,6 +34,7 @@ import android.widget.TextView;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;
 
+/*
 public class ApplicationLightPreference extends CustomDialogPreference<LightSettingsDialog>
         implements View.OnLongClickListener {
 
@@ -62,6 +63,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
      * @param context
      * @param attrs
      */
+    /*
     public ApplicationLightPreference(Context context, AttributeSet attrs) {
         this(context, attrs, DEFAULT_COLOR, DEFAULT_TIME, DEFAULT_TIME,
                 context.getSystemService(NotificationManager.class)
@@ -74,6 +76,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
      * @param onValue
      * @param offValue
      */
+    /*
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue) {
         this(context, attrs, color, onValue, offValue,
@@ -87,6 +90,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
      * @param onValue
      * @param offValue
      */
+    /*
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue, boolean onOffChangeable) {
         super(context, attrs);
@@ -202,6 +206,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     /**
      * Getters and Setters
      */
+    /*
 
     public int getColor() {
         return mColorValue;
@@ -258,6 +263,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     /**
      * Utility methods
      */
+    /*
     private static ShapeDrawable createOvalShape(int size, int color) {
         ShapeDrawable shape = new ShapeDrawable(new OvalShape());
         shape.setIntrinsicHeight(size);
@@ -303,3 +309,4 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         return getContext().getResources().getString(R.string.custom_time);
     }
 }
+*/

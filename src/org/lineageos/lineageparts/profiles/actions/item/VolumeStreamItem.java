@@ -25,8 +25,11 @@ import android.view.ViewGroup;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
+/*
 import lineageos.profiles.StreamSettings;
+*/
 
+/*
 public class VolumeStreamItem extends BaseItem {
     private int mStreamId;
     private StreamSettings mStreamSettings;
@@ -102,3 +105,4 @@ public class VolumeStreamItem extends BaseItem {
         return mStreamSettings;
     }
 }
+*/

@@ -58,6 +58,7 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+/*
 import lineageos.app.Profile;
 import lineageos.app.ProfileGroup;
 import lineageos.app.ProfileManager;
@@ -795,11 +796,11 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         int defaultIndex = 0; // normal by default
         if (setting.isOverride()) {
-            if (setting.getValue().equals(values[0] /* normal */)) {
+            if (setting.getValue().equals(values[0] /* normal *//*)) {
                 defaultIndex = 0;
-            } else if (setting.getValue().equals(values[1] /* vibrate */)) {
+            } else if (setting.getValue().equals(values[1] /* vibrate *//*)) {
                 defaultIndex = 1; // enabled
-            } else if (setting.getValue().equals(values[2] /* mute */)) {
+            } else if (setting.getValue().equals(values[2] /* mute *//*)) {
                 defaultIndex = 2; // mute
             }
         } else {
@@ -1159,3 +1160,4 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                 R.string.profile_profile_manage, null, this, NEW_TRIGGER_REQUEST_CODE);
     }
 }
+*/

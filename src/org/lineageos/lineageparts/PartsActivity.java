@@ -33,7 +33,9 @@ import android.widget.Button;
 
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 
+/*
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
+*/
 import org.lineageos.lineageparts.widget.SwitchBar;
 import org.lineageos.internal.lineageparts.PartInfo;
 import org.lineageos.internal.lineageparts.PartsList;
@@ -52,7 +54,9 @@ public class PartsActivity extends SettingsDrawerActivity implements
     public static final String EXTRA_SHOW_FRAGMENT_TITLE_RESID =
             ":settings:show_fragment_title_resid";
 
+    /*
     private NFCProfileTagCallback mNfcProfileCallback;
+    */
 
     private CharSequence mInitialTitle;
 
@@ -139,17 +143,21 @@ public class PartsActivity extends SettingsDrawerActivity implements
         return true;
     }
 
+    /*
     public void setNfcProfileCallback(NFCProfileTagCallback callback) {
         mNfcProfileCallback = callback;
     }
+    */
 
     @Override
     protected void onNewIntent(Intent intent) {
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
             Tag detectedTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+            /*
             if (mNfcProfileCallback != null) {
                 mNfcProfileCallback.onTagRead(detectedTag);
             }
+            */
             return;
         }
         super.onNewIntent(intent);

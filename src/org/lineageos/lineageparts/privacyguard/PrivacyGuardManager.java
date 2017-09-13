@@ -54,6 +54,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
 public class PrivacyGuardManager extends SettingsPreferenceFragment
         implements OnItemClickListener, OnItemLongClickListener,
                    LoaderManager.LoaderCallbacks<List<PrivacyGuardManager.AppInfo>> {
@@ -394,3 +395,4 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
         }
     }
 }
+*/

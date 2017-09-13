@@ -52,6 +52,7 @@ import java.util.List;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
+/*
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
@@ -666,6 +667,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         /* Disable hw-key options if they're disabled */
+        /*
         final PreferenceCategory homeCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
         final PreferenceCategory backCategory =
@@ -681,12 +683,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         /* Toggle backlight control depending on navbar state, force it to
            off if enabling */
+        /*
         if (backlight != null) {
             backlight.setEnabled(!navbarEnabled);
             backlight.updateSummary();
         }
 
         /* Toggle hardkey control availability depending on navbar state */
+        /*
         if (homeCategory != null) {
             homeCategory.setEnabled(!navbarEnabled);
         }
@@ -772,3 +776,4 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         : LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 }
+*/

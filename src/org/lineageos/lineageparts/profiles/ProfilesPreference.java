@@ -28,6 +28,7 @@ import org.lineageos.lineageparts.PartsActivity;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
+/*
 public class ProfilesPreference extends CheckBoxPreference implements View.OnClickListener {
     private static final String TAG = ProfilesPreference.class.getSimpleName();
     private static final float DISABLED_ALPHA = 0.4f;
@@ -136,3 +137,4 @@ public class ProfilesPreference extends CheckBoxPreference implements View.OnCli
                 R.string.profile_profile_manage, null, null, PROFILE_DETAILS);
     }
 }
+*/
