@@ -51,6 +51,7 @@ import org.lineageos.lineageparts.notificationlight.ColorPickerView.OnColorChang
 import java.util.ArrayList;
 import java.util.Locale;
 
+/*
 public class LightSettingsDialog extends AlertDialog implements
         ColorPickerView.OnColorChangedListener, TextWatcher, OnFocusChangeListener {
 
@@ -83,6 +84,7 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param initialSpeedOn
      * @param initialSpeedOff
      */
+    /*
     protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
             int initialSpeedOff) {
         super(context);
@@ -97,6 +99,7 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param initialSpeedOff
      * @param onOffChangeable
      */
+    /*
     protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
             int initialSpeedOff, boolean onOffChangeable) {
         super(context);
@@ -125,6 +128,7 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param speedOn - the flash time in ms
      * @param speedOff - the flash length in ms
      */
+    /*
     private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable) {
         mInflater = (LayoutInflater) getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -345,6 +349,7 @@ public class LightSettingsDialog extends AlertDialog implements
          * @param customTime Current time value that might be one of the
          *            predefined values or a totally custom value
          */
+        /*
         public PulseSpeedAdapter(int timeNamesResource, int timeValuesResource, Integer customTime) {
             this(timeNamesResource, timeValuesResource);
 
@@ -362,6 +367,7 @@ public class LightSettingsDialog extends AlertDialog implements
          * @param time Time in ms
          * @return Position of entry with given time or -1 if not found.
          */
+        /*
         public int getTimePosition(Integer time) {
             for (int position = 0; position < getCount(); ++position) {
                 if (getItem(position).second.equals(time)) {
@@ -441,3 +447,4 @@ public class LightSettingsDialog extends AlertDialog implements
         }
     }
 }
+*/

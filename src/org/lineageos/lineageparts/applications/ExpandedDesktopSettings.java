@@ -32,7 +32,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManagerGlobal;
+/*
 import android.view.WindowManagerPolicyControl;
+*/
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
@@ -56,6 +58,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/*
 public class ExpandedDesktopSettings extends SettingsPreferenceFragment
         implements AdapterView.OnItemClickListener, ApplicationsState.Callbacks,
         SwitchBar.OnSwitchChangeListener {
@@ -460,6 +463,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
              * To get from that number to the expected value of 1 we need to negate
              * and subtract 2.
              */
+            /*
             return index >= 0 ? index : -index - 2;
         }
 
@@ -580,3 +584,4 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
         }
     }
 }
+*/

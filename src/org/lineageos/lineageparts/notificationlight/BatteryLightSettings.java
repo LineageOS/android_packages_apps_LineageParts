@@ -34,6 +34,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import lineageos.preference.LineageSystemSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
+/*
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "BatteryLightSettings";
@@ -130,6 +131,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
      * @param key of the specific setting to update
      * @param color
      */
+    /*
     protected void updateValues(String key, Integer color) {
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -207,3 +209,4 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
     };
 }
+*/
