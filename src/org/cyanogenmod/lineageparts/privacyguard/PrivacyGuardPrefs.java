@@ -25,7 +25,7 @@ import android.view.ViewGroup;
 import org.cyanogenmod.lineageparts.R;
 import org.cyanogenmod.lineageparts.SettingsPreferenceFragment;
 
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 
 public class PrivacyGuardPrefs extends SettingsPreferenceFragment {
 
@@ -39,7 +39,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.privacy_guard_prefs);
-        watch(CMSettings.Secure.getUriFor(CMSettings.Secure.PRIVACY_GUARD_DEFAULT));
+        watch(LineageSettings.Secure.getUriFor(LineageSettings.Secure.PRIVACY_GUARD_DEFAULT));
     }
 
     @Override

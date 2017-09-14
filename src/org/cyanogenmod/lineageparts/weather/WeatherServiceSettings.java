@@ -60,7 +60,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 import cyanogenmod.providers.WeatherContract;
 import cyanogenmod.weatherservice.WeatherProviderService;
 
@@ -99,7 +99,7 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
         mTemperatureUnit = (ListPreference) ps.findPreference(PREFERENCE_TEMP_UNIT);
         mTemperatureUnit.setOnPreferenceChangeListener(this);
 
-        watch(CMSettings.Secure.getUriFor(CMSettings.Secure.WEATHER_PROVIDER_SERVICE));
+        watch(LineageSettings.Secure.getUriFor(LineageSettings.Secure.WEATHER_PROVIDER_SERVICE));
     }
 
     @Override
@@ -120,8 +120,8 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mTemperatureUnit) {
-            CMSettings.Global.putInt(mContext.getContentResolver(),
-                    CMSettings.Global.WEATHER_TEMPERATURE_UNIT,
+            LineageSettings.Global.putInt(mContext.getContentResolver(),
+                    LineageSettings.Global.WEATHER_TEMPERATURE_UNIT,
                     Integer.valueOf((String) newValue));
         }
         return true;
@@ -247,8 +247,8 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
      * If none is selected yet, returns a unit appropriate for the current locale
      */
     public static int getSelectedTemperatureUnit(Context context) {
-        int tempUnit = CMSettings.Global.getInt(context.getContentResolver(),
-                CMSettings.Global.WEATHER_TEMPERATURE_UNIT, -1);
+        int tempUnit = LineageSettings.Global.getInt(context.getContentResolver(),
+                LineageSettings.Global.WEATHER_TEMPERATURE_UNIT, -1);
         if (tempUnit != -1) {
             return tempUnit;
         }
@@ -353,8 +353,8 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
             if (!mInfo.isActive) {
                 markAsActiveProvider();
                 mInfo.isActive = true;
-                CMSettings.Secure.putString(mContext.getContentResolver(),
-                        CMSettings.Secure.WEATHER_PROVIDER_SERVICE,
+                LineageSettings.Secure.putString(mContext.getContentResolver(),
+                        LineageSettings.Secure.WEATHER_PROVIDER_SERVICE,
                         mInfo.componentName.flattenToString());
             }
         }
@@ -435,8 +435,8 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
     }
 
     private static ComponentName getEnabledWeatherServiceProvider(Context context) {
-        String activeWeatherServiceProvider = CMSettings.Secure.getString(
-                context.getContentResolver(), CMSettings.Secure.WEATHER_PROVIDER_SERVICE);
+        String activeWeatherServiceProvider = LineageSettings.Secure.getString(
+                context.getContentResolver(), LineageSettings.Secure.WEATHER_PROVIDER_SERVICE);
         if (activeWeatherServiceProvider == null) return null;
         return ComponentName.unflattenFromString(activeWeatherServiceProvider);
     }

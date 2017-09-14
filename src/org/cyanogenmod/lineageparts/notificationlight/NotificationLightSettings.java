@@ -54,7 +54,7 @@ import java.util.Map;
 
 import cyanogenmod.preference.CMSystemSettingSwitchPreference;
 import cyanogenmod.preference.SystemSettingSwitchPreference;
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 import cyanogenmod.util.ColorUtils;
 
 public class NotificationLightSettings extends SettingsPreferenceFragment implements
@@ -122,18 +122,18 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mDefaultPref = (ApplicationLightPreference) findPreference(DEFAULT_PREF);
 
         mAutoGenerateColors = (CMSystemSettingSwitchPreference)
-                findPreference(CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
+                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
 
         // Advanced light settings
         mNotificationLedBrightnessPref = (PreferenceScreen)
-                findPreference(CMSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
+                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
         mMultipleLedsEnabledPref = (CMSystemSettingSwitchPreference)
-                findPreference(CMSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE);
+                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE);
         mScreenOnLightsPref = (CMSystemSettingSwitchPreference)
-                findPreference(CMSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
+                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (CMSystemSettingSwitchPreference)
-                findPreference(CMSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
+                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
         if (!nm.doLightsSupport(
                 NotificationManager.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS)) {
             mAdvancedPrefs.removePreference(mNotificationLedBrightnessPref);
@@ -185,7 +185,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mGeneralPrefs.removePreference(mAutoGenerateColors);
         } else {
             mAutoGenerateColors.setOnPreferenceChangeListener(this);
-            watch(CMSettings.System.getUriFor(CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO));
+            watch(LineageSettings.System.getUriFor(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO));
         }
 
         watch(Settings.System.getUriFor(Settings.System.NOTIFICATION_LIGHT_PULSE));
@@ -201,34 +201,34 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     private void refreshDefault() {
         ContentResolver resolver = getActivity().getContentResolver();
-        int color = CMSettings.System.getInt(resolver,
-                CMSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, mDefaultColor);
-        int timeOn = CMSettings.System.getInt(resolver,
-                CMSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON, mDefaultLedOn);
-        int timeOff = CMSettings.System.getInt(resolver,
-                CMSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF, mDefaultLedOff);
+        int color = LineageSettings.System.getInt(resolver,
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, mDefaultColor);
+        int timeOn = LineageSettings.System.getInt(resolver,
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON, mDefaultLedOn);
+        int timeOff = LineageSettings.System.getInt(resolver,
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF, mDefaultLedOff);
 
         mDefaultPref.setAllValues(color, timeOn, timeOff);
 
         // Get Missed call and Voicemail values
         if (mCallPref != null) {
-            int callColor = CMSettings.System.getInt(resolver,
-                    CMSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, mDefaultColor);
-            int callTimeOn = CMSettings.System.getInt(resolver,
-                    CMSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON, mDefaultLedOn);
-            int callTimeOff = CMSettings.System.getInt(resolver,
-                    CMSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF, mDefaultLedOff);
+            int callColor = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, mDefaultColor);
+            int callTimeOn = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON, mDefaultLedOn);
+            int callTimeOff = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF, mDefaultLedOff);
 
             mCallPref.setAllValues(callColor, callTimeOn, callTimeOff);
         }
 
         if (mVoicemailPref != null) {
-            int vmailColor = CMSettings.System.getInt(resolver,
-                    CMSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, mDefaultColor);
-            int vmailTimeOn = CMSettings.System.getInt(resolver,
-                    CMSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON, mDefaultLedOn);
-            int vmailTimeOff = CMSettings.System.getInt(resolver,
-                    CMSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF, mDefaultLedOff);
+            int vmailColor = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, mDefaultColor);
+            int vmailTimeOn = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON, mDefaultLedOn);
+            int vmailTimeOff = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF, mDefaultLedOff);
 
             mVoicemailPref.setAllValues(vmailColor, vmailTimeOn, vmailTimeOff);
         }
@@ -314,8 +314,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     }
 
     private int getInitialColorForPackage(String packageName) {
-        boolean autoColor = CMSettings.System.getInt(getActivity().getContentResolver(),
-                CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO, mMultiColorLed ? 1 : 0) == 1;
+        boolean autoColor = LineageSettings.System.getInt(getActivity().getContentResolver(),
+                LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO, mMultiColorLed ? 1 : 0) == 1;
         int color = mDefaultColor;
         if (autoColor) {
             try {
@@ -347,8 +347,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     }
 
     private boolean parsePackageList() {
-        final String baseString = CMSettings.System.getString(getActivity().getContentResolver(),
-                CMSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES);
+        final String baseString = LineageSettings.System.getString(getActivity().getContentResolver(),
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES);
 
         if (TextUtils.equals(mPackageList, baseString)) {
             return false;
@@ -382,8 +382,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         if (preferencesUpdated) {
             mPackageList = value;
         }
-        CMSettings.System.putString(getActivity().getContentResolver(),
-                                  CMSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES, value);
+        LineageSettings.System.putString(getActivity().getContentResolver(),
+                                  LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES, value);
     }
 
     /**
@@ -398,21 +398,21 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (packageName.equals(DEFAULT_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, color);
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON, timeon);
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF, timeoff);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, color);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON, timeon);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF, timeoff);
             refreshDefault();
             return;
         } else if (packageName.equals(MISSED_CALL_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, color);
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON, timeon);
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF, timeoff);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, color);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON, timeon);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF, timeoff);
             refreshDefault();
             return;
         } else if (packageName.equals(VOICEMAIL_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, color);
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON, timeon);
-            CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF, timeoff);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, color);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON, timeon);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF, timeoff);
             refreshDefault();
             return;
         }
@@ -431,9 +431,9 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         ContentResolver resolver = getActivity().getContentResolver();
 
         // Reset to the framework default colors
-        CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, mDefaultColor);
-        CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, mDefaultColor);
-        CMSettings.System.putInt(resolver, CMSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, mDefaultColor);
+        LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, mDefaultColor);
+        LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, mDefaultColor);
+        LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, mDefaultColor);
 
         refreshDefault();
     }
@@ -594,8 +594,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         public String getSummary(Context context, String key) {
             if (Settings.System.getInt(context.getContentResolver(),
                     Settings.System.NOTIFICATION_LIGHT_PULSE, 1) == 1) {
-                if (CMSettings.System.getInt(context.getContentResolver(),
-                        CMSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO, 1) == 1) {
+                if (LineageSettings.System.getInt(context.getContentResolver(),
+                        LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO, 1) == 1) {
                     return context.getString(R.string.notification_light_automagic_summary);
                 }
                 return context.getString(R.string.enabled);

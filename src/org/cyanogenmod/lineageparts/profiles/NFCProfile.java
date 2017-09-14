@@ -31,7 +31,7 @@ import android.widget.Toast;
 
 import cyanogenmod.app.Profile;
 import cyanogenmod.app.ProfileManager;
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 
 import org.cyanogenmod.lineageparts.R;
 
@@ -86,8 +86,8 @@ public class NFCProfile extends Activity {
     private void handleProfileMimeType(byte[] payload) {
         UUID profileUuid = NFCProfileUtils.toUUID(payload);
 
-        boolean enabled = CMSettings.System.getInt(getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        boolean enabled = LineageSettings.System.getInt(getContentResolver(),
+                LineageSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
 
         if (enabled) {
             // Only do NFC profile changing if System Profile support is enabled

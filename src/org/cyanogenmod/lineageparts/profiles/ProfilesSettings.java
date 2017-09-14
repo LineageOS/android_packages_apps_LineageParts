@@ -46,7 +46,7 @@ import java.util.UUID;
 
 import cyanogenmod.app.Profile;
 import cyanogenmod.app.ProfileManager;
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
         implements CMBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
@@ -164,7 +164,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         super.onStart();
         final PartsActivity activity = (PartsActivity) getActivity();
         mProfileEnabler = new CMBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
+                LineageSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
     }
 
     @Override
@@ -233,8 +233,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private void updateProfilesEnabledState() {
         Activity activity = getActivity();
 
-        mEnabled = CMSettings.System.getInt(activity.getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        mEnabled = LineageSettings.System.getInt(activity.getContentResolver(),
+                LineageSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
         activity.invalidateOptionsMenu();
 
         getFloatingActionButton().setVisibility(mEnabled ? View.VISIBLE : View.GONE);

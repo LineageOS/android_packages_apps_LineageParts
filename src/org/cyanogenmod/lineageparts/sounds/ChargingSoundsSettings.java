@@ -28,7 +28,7 @@ import android.os.Vibrator;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 
 import org.cyanogenmod.lineageparts.R;
 import org.cyanogenmod.lineageparts.SettingsPreferenceFragment;
@@ -58,8 +58,8 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
         }
 
         mChargingSoundsRingtone = findPreference(KEY_CHARGING_SOUNDS_RINGTONE);
-        String curTone = CMSettings.Global.getString(getContentResolver(),
-                CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
+        String curTone = LineageSettings.Global.getString(getContentResolver(),
+                LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
         if (curTone == null) {
             updateChargingRingtone(Settings.System.DEFAULT_NOTIFICATION_URI.toString(), true);
         } else {
@@ -90,8 +90,8 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
 
         mChargingSoundsRingtone.setSummary(toneName);
         if (persist) {
-            CMSettings.Global.putString(getContentResolver(),
-                    CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE, toneUriString);
+            LineageSettings.Global.putString(getContentResolver(),
+                    LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE, toneUriString);
         }
     }
 
@@ -99,8 +99,8 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mChargingSoundsRingtone) {
             launchNotificationSoundPicker(REQUEST_CODE_CHARGING_NOTIFICATIONS_RINGTONE,
-                    CMSettings.Global.getString(getContentResolver(),
-                    CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE));
+                    LineageSettings.Global.getString(getContentResolver(),
+                    LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE));
         }
         return super.onPreferenceTreeClick(preference);
     }

@@ -46,7 +46,7 @@ import java.util.List;
 
 import cyanogenmod.power.PerformanceManager;
 import cyanogenmod.power.PerformanceProfile;
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 
 import static cyanogenmod.power.PerformanceManager.PROFILE_POWER_SAVE;
 
@@ -116,7 +116,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
             mPerfSeekBar.setOnPreferenceChangeListener(this);
             updatePerfSettings();
 
-            watch(CMSettings.Secure.getUriFor(CMSettings.Secure.PERFORMANCE_PROFILE));
+            watch(LineageSettings.Secure.getUriFor(LineageSettings.Secure.PERFORMANCE_PROFILE));
         }
 
         mAutoPowerSavePref.setEntries(R.array.auto_power_save_entries);

@@ -50,7 +50,7 @@ import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
 
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 
 import java.util.List;
 
@@ -152,8 +152,8 @@ public class KeyHandler implements DeviceKeyHandler {
 
         if (action != 0 && !mEventHandler.hasMessages(GESTURE_REQUEST)) {
             final Message msg = getMessageForAction(action);
-            final boolean proxWakeEnabled = CMSettings.System.getInt(mContext.getContentResolver(),
-                    CMSettings.System.PROXIMITY_ON_WAKE, mDefaultProximity ? 1 : 0) == 1;
+            final boolean proxWakeEnabled = LineageSettings.System.getInt(mContext.getContentResolver(),
+                    LineageSettings.System.PROXIMITY_ON_WAKE, mDefaultProximity ? 1 : 0) == 1;
             if (mProximityWakeSupported && proxWakeEnabled && mProximitySensor != null) {
                 mGestureWakeLock.acquire(2 * mProximityTimeOut);
                 mEventHandler.sendMessageDelayed(msg, mProximityTimeOut);
@@ -352,8 +352,8 @@ public class KeyHandler implements DeviceKeyHandler {
         final AudioManager audioManager = (AudioManager) mContext.getSystemService(
                 Context.AUDIO_SERVICE);
         if (audioManager.getRingerMode() != AudioManager.RINGER_MODE_SILENT) {
-            final boolean enabled = CMSettings.System.getInt(mContext.getContentResolver(),
-                    CMSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
+            final boolean enabled = LineageSettings.System.getInt(mContext.getContentResolver(),
+                    LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
             if (enabled) {
                 mVibrator.vibrate(50);
             }

@@ -45,7 +45,7 @@ import cyanogenmod.hardware.DisplayMode;
 import cyanogenmod.hardware.LiveDisplayConfig;
 import cyanogenmod.hardware.LiveDisplayManager;
 import cyanogenmod.preference.SettingsHelper;
-import cyanogenmod.providers.CMSettings;
+import cyanogenmod.providers.LineageSettings;
 
 import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_CABC;
 import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
@@ -82,11 +82,11 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
             KEY_LIVE_DISPLAY_COLOR_PROFILE + "_%s_summary";
 
     private final Uri DISPLAY_TEMPERATURE_DAY_URI =
-            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_DAY);
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_DAY);
     private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
-            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_NIGHT);
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_NIGHT);
     private final Uri DISPLAY_TEMPERATURE_MODE_URI =
-            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_MODE);
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_MODE);
 
     private ListPreference mLiveDisplay;
 
