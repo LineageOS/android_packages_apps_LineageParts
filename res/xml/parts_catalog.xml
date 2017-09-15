@@ -27,93 +27,93 @@
      the Searchable interface.
 -->
 <parts-catalog xmlns:android="http://schemas.android.com/apk/res/android"
-               xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform">
+               xmlns:cm="http://schemas.android.com/apk/res/lineageos.platform">
 
     <part android:key="battery_lights"
           android:title="@string/battery_light_title"
-          android:fragment="org.cyanogenmod.lineageparts.notificationlight.BatteryLightSettings"
+          android:fragment="org.lineageos.lineageparts.notificationlight.BatteryLightSettings"
           cm:xmlRes="@xml/battery_light_settings" />
 
     <part android:key="button_settings"
           android:title="@string/button_pref_title"
-          android:fragment="org.cyanogenmod.lineageparts.input.ButtonSettings"
+          android:fragment="org.lineageos.lineageparts.input.ButtonSettings"
           cm:xmlRes="@xml/button_settings" />
 
     <part android:key="contributors"
           android:title="@string/contributors_cloud_fragment_title"
-          android:fragment="org.cyanogenmod.lineageparts.contributors.ContributorsCloudFragment" />
+          android:fragment="org.lineageos.lineageparts.contributors.ContributorsCloudFragment" />
 
     <part android:key="livedisplay"
-          android:title="@*cyanogenmod.platform:string/live_display_title"
+          android:title="@*lineageos.platform:string/live_display_title"
           android:summary="@string/live_display_summary"
-          android:fragment="org.cyanogenmod.lineageparts.livedisplay.LiveDisplay"
+          android:fragment="org.lineageos.lineageparts.livedisplay.LiveDisplay"
           cm:xmlRes="@xml/livedisplay" />
 
     <part android:key="notification_lights"
           android:title="@string/notification_light_title"
-          android:fragment="org.cyanogenmod.lineageparts.notificationlight.NotificationLightSettings"
+          android:fragment="org.lineageos.lineageparts.notificationlight.NotificationLightSettings"
           cm:xmlRes="@xml/notification_light_settings" />
 
     <part android:key="privacy_settings"
           android:title="@string/privacy_settings_title"
-          android:fragment="org.cyanogenmod.lineageparts.PrivacySettings"
+          android:fragment="org.lineageos.lineageparts.PrivacySettings"
           cm:xmlRes="@xml/privacy_settings" />
 
     <part android:key="profiles_settings"
           android:title="@string/profiles_settings_title"
-          android:fragment="org.cyanogenmod.lineageparts.profiles.ProfilesSettings"
+          android:fragment="org.lineageos.lineageparts.profiles.ProfilesSettings"
           cm:xmlRes="@xml/profiles_settings" />
 
     <part android:key="rotation"
           android:title="@string/display_rotation_title"
-          android:fragment="org.cyanogenmod.lineageparts.hardware.DisplayRotation"
+          android:fragment="org.lineageos.lineageparts.hardware.DisplayRotation"
           cm:xmlRes="@xml/display_rotation" />
 
     <part android:key="status_bar_settings"
           android:title="@string/status_bar_title"
-          android:fragment="org.cyanogenmod.lineageparts.statusbar.StatusBarSettings"
+          android:fragment="org.lineageos.lineageparts.statusbar.StatusBarSettings"
           cm:xmlRes="@xml/status_bar_settings" />
 
     <part android:key="cmstats"
           android:title="@string/anonymous_statistics_title"
-          android:fragment="org.cyanogenmod.lineageparts.cmstats.AnonymousStats"
+          android:fragment="org.lineageos.lineageparts.cmstats.AnonymousStats"
           cm:xmlRes="@xml/anonymous_stats" />
 
     <part android:key="power_menu"
           android:title="@string/power_menu_title"
-          android:fragment="org.cyanogenmod.lineageparts.input.PowerMenuActions"
+          android:fragment="org.lineageos.lineageparts.input.PowerMenuActions"
           cm:xmlRes="@xml/power_menu_settings" />
 
     <part android:key="privacy_guard_manager"
-          android:title="@*cyanogenmod.platform:string/privacy_guard_manager_title"
-          android:fragment="org.cyanogenmod.lineageparts.privacyguard.PrivacyGuardManager"
+          android:title="@*lineageos.platform:string/privacy_guard_manager_title"
+          android:fragment="org.lineageos.lineageparts.privacyguard.PrivacyGuardManager"
           cm:xmlRes="@xml/privacy_guard_prefs" />
 
     <part android:key="weather_settings"
           android:title="@string/weather_settings_title"
-          android:fragment="org.cyanogenmod.lineageparts.weather.WeatherServiceSettings"
+          android:fragment="org.lineageos.lineageparts.weather.WeatherServiceSettings"
           cm:xmlRes="@xml/weather_settings" />
 
     <part android:key="perf_profile_settings"
           android:title="@string/perf_profile_settings_title"
           android:summary="@string/perf_profile_settings_summary"
-          android:fragment="org.cyanogenmod.lineageparts.power.PerfProfileSettings"
+          android:fragment="org.lineageos.lineageparts.power.PerfProfileSettings"
           cm:xmlRes="@xml/perf_profile_settings" />
 
     <part android:key="expanded_desktop_settings"
           android:title="@string/expanded_desktop_settings_title"
           android:summary="@string/expanded_desktop_settings_summary"
-          android:fragment="org.cyanogenmod.lineageparts.applications.ExpandedDesktopSettings"
+          android:fragment="org.lineageos.lineageparts.applications.ExpandedDesktopSettings"
           cm:xmlRes="@xml/expanded_desktop_prefs" />
 
     <part android:key="charging_sounds_settings"
           android:title="@string/charging_sounds_settings_title"
-          android:fragment="org.cyanogenmod.lineageparts.sounds.ChargingSoundsSettings"
+          android:fragment="org.lineageos.lineageparts.sounds.ChargingSoundsSettings"
           cm:xmlRes="@xml/charging_sounds_settings" />
 
     <part android:key="touchscreen_gesture_settings"
           android:title="@string/touchscreen_gesture_settings_title"
           android:summary="@string/touchscreen_gesture_settings_summary"
-          android:fragment="org.cyanogenmod.lineageparts.gestures.TouchscreenGestureSettings"
+          android:fragment="org.lineageos.lineageparts.gestures.TouchscreenGestureSettings"
           cm:xmlRes="@xml/touchscreen_gesture_settings" />
 </parts-catalog>

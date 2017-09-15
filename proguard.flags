@@ -1,18 +1,18 @@
 # Keep all Fragments in this package, which are used by reflection.
--keep class org.cyanogenmod.lineageparts.*Fragment
--keep class org.cyanogenmod.lineageparts.*Picker
--keep class org.cyanogenmod.lineageparts.*Settings
+-keep class org.lineageos.lineageparts.*Fragment
+-keep class org.lineageos.lineageparts.*Picker
+-keep class org.lineageos.lineageparts.*Settings
 
--keep class org.cyanogenmod.lineageparts.cmstats.*
--keep class org.cyanogenmod.lineageparts.contributors.*
--keep class org.cyanogenmod.lineageparts.hardware.*
--keep class org.cyanogenmod.lineageparts.input.*
--keep class org.cyanogenmod.lineageparts.livedisplay.*
--keep class org.cyanogenmod.lineageparts.notificationlight.*
--keep class org.cyanogenmod.lineageparts.power.*
--keep class org.cyanogenmod.lineageparts.privacyguard.*
--keep class org.cyanogenmod.lineageparts.profiles.*
--keep class org.cyanogenmod.lineageparts.sounds.*
+-keep class org.lineageos.lineageparts.cmstats.*
+-keep class org.lineageos.lineageparts.contributors.*
+-keep class org.lineageos.lineageparts.hardware.*
+-keep class org.lineageos.lineageparts.input.*
+-keep class org.lineageos.lineageparts.livedisplay.*
+-keep class org.lineageos.lineageparts.notificationlight.*
+-keep class org.lineageos.lineageparts.power.*
+-keep class org.lineageos.lineageparts.privacyguard.*
+-keep class org.lineageos.lineageparts.profiles.*
+-keep class org.lineageos.lineageparts.sounds.*
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {

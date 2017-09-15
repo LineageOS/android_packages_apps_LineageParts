@@ -52,7 +52,7 @@
 
         <include layout="@layout/loading_container" />
 
-        <org.cyanogenmod.lineageparts.widget.FloatingActionButton
+        <org.lineageos.lineageparts.widget.FloatingActionButton
             android:id="@+id/fab"
             android:visibility="gone"
             android:clickable="true"

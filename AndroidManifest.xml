@@ -18,7 +18,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
-    package="org.cyanogenmod.lineageparts"
+    package="org.lineageos.lineageparts"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -36,13 +36,13 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" />
 
-    <uses-permission android:name="cyanogenmod.permission.MANAGE_REMOTE_PREFERENCES" />
+    <uses-permission android:name="lineageos.permission.MANAGE_REMOTE_PREFERENCES" />
 
     <protected-broadcast android:name="android.intent.action.UPDATE_POWER_MENU" />
-    <protected-broadcast android:name="cyanogenmod.platform.app.profiles.PROFILES_STATE_CHANGED" />
-    <protected-broadcast android:name="org.cyanogenmod.lineageparts.PART_CHANGED" />
-    <protected-broadcast android:name="org.cyanogenmod.lineageparts.REFRESH_PART" />
-    <protected-broadcast android:name="org.cyanogenmod.lineageparts.gestures.UPDATE_SETTINGS" />
+    <protected-broadcast android:name="lineageos.platform.app.profiles.PROFILES_STATE_CHANGED" />
+    <protected-broadcast android:name="org.lineageos.lineageparts.PART_CHANGED" />
+    <protected-broadcast android:name="org.lineageos.lineageparts.REFRESH_PART" />
+    <protected-broadcast android:name="org.lineageos.lineageparts.gestures.UPDATE_SETTINGS" />
 
     <application android:label="@string/lineageparts_title"
             android:theme="@style/Theme.Settings"
@@ -58,8 +58,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.receiver"
-                android:value="org.cyanogenmod.lineageparts.PartsUpdater" />
+                android:name="org.lineageos.settings.summary.receiver"
+                android:value="org.lineageos.lineageparts.PartsUpdater" />
         </activity>
 
         <receiver android:name=".BootReceiver" android:enabled="true">
@@ -70,13 +70,13 @@
 
         <receiver android:name=".PartsUpdater" android:enabled="true">
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.UPDATE_PREFERENCE" />
+                <action android:name="lineageos.intent.action.UPDATE_PREFERENCE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
         <provider android:name=".search.LineagePartsSearchIndexablesProvider"
-                  android:authorities="org.cyanogenmod.lineageparts"
+                  android:authorities="org.lineageos.lineageparts"
                   android:multiprocess="false"
                   android:grantUriPermissions="true"
                   android:permission="android.permission.READ_SEARCH_INDEXABLES"
@@ -93,7 +93,7 @@
             android:targetActivity="PartsActivity">
             <intent-filter android:priority="3">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-                <action android:name="org.cyanogenmod.lineageparts.PRIVACY_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.PRIVACY_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
@@ -103,10 +103,10 @@
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_privacy" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.receiver"
-                android:value="org.cyanogenmod.lineageparts.PartsUpdater" />
+                android:name="org.lineageos.settings.summary.receiver"
+                android:value="org.lineageos.lineageparts.PartsUpdater" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.key"
+                android:name="org.lineageos.settings.summary.key"
                 android:value="privacy_settings" />
         </activity-alias>
 
@@ -117,7 +117,7 @@
             android:targetActivity="PartsActivity">
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-                <action android:name="org.cyanogenmod.lineageparts.BUTTON_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.BUTTON_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
@@ -127,10 +127,10 @@
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_buttons" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.receiver"
-                android:value="org.cyanogenmod.lineageparts.PartsUpdater" />
+                android:name="org.lineageos.settings.summary.receiver"
+                android:value="org.lineageos.lineageparts.PartsUpdater" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.key"
+                android:name="org.lineageos.settings.summary.key"
                 android:value="button_settings" />
         </activity-alias>
 
@@ -143,7 +143,7 @@
             android:targetActivity="PartsActivity">
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-                <action android:name="org.cyanogenmod.lineageparts.PROFILES_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.PROFILES_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
@@ -153,10 +153,10 @@
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_profiles" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.receiver"
-                android:value="org.cyanogenmod.lineageparts.PartsUpdater" />
+                android:name="org.lineageos.settings.summary.receiver"
+                android:value="org.lineageos.lineageparts.PartsUpdater" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.key"
+                android:name="org.lineageos.settings.summary.key"
                 android:value="profiles_settings" />
         </activity-alias>
 
@@ -167,7 +167,7 @@
             android:targetActivity="PartsActivity">
             <intent-filter android:priority="2">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-                <action android:name="org.cyanogenmod.lineageparts.STATUS_BAR_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
@@ -177,10 +177,10 @@
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_settings_statusbar" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.receiver"
-                android:value="org.cyanogenmod.lineageparts.PartsUpdater" />
+                android:name="org.lineageos.settings.summary.receiver"
+                android:value="org.lineageos.lineageparts.PartsUpdater" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.key"
+                android:name="org.lineageos.settings.summary.key"
                 android:value="status_bar_settings" />
         </activity-alias>
 
@@ -191,7 +191,7 @@
             android:label="ReportingServiceManager">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="org.cyanogenmod.lineageparts.action.TRIGGER_REPORT_METRICS" />
+                <action android:name="org.lineageos.lineageparts.action.TRIGGER_REPORT_METRICS" />
             </intent-filter>
         </receiver>
 
@@ -215,7 +215,7 @@
             android:label="@string/weather_settings_title"
             android:targetActivity="PartsActivity">
             <intent-filter android:priority="1">
-                <action android:name="cyanogenmod.intent.action.MANAGE_WEATHER_PROVIDER_SERVICES" />
+                <action android:name="lineageos.intent.action.MANAGE_WEATHER_PROVIDER_SERVICES" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>

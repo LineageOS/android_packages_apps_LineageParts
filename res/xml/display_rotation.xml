@@ -16,7 +16,7 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
+        xmlns:cm="http://schemas.android.com/apk/res/lineageos.platform"
         android:key="rotation"
         android:title="@string/display_rotation_title">
 
@@ -24,7 +24,7 @@
         android:key="accelerometer"
         android:title="@string/accelerometer_title" />
 
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+    <lineageos.preference.CMSystemSettingSwitchPreference
         android:key="lockscreen_rotation"
         android:title="@string/display_lockscreen_rotation_title"
         android:dependency="accelerometer"

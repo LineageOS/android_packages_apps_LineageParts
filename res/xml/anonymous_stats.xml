@@ -19,7 +19,7 @@
     android:key="cmstats"
     android:title="@string/anonymous_statistics_title">
 
-    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+    <lineageos.preference.CMSecureSettingSwitchPreference
             android:key="stats_collection"
             android:title="@string/stats_collection_title"
             android:summary="@string/stats_collection_summary"
@@ -27,6 +27,6 @@
 
     <PreferenceScreen
         android:title="@string/preview_data_title"
-        android:fragment="org.cyanogenmod.lineageparts.cmstats.PreviewData" />
+        android:fragment="org.lineageos.lineageparts.cmstats.PreviewData" />
 
 </PreferenceScreen>
