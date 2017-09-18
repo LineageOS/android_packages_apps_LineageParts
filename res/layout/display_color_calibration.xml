@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-		    xmlns:cm="http://schemas.android.com/apk/res/org.lineageos.lineageparts"
+		    xmlns:lineage="http://schemas.android.com/apk/res/org.lineageos.lineageparts"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -43,10 +43,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_red_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
-                cm:defaultValue="1.00"
-                cm:digits="4" />
+                lineage:min="0.20"
+                lineage:max="1.00"
+                lineage:defaultValue="1.00"
+                lineage:digits="4" />
 
         <TextView android:id="@+id/color_green_text"
                 android:layout_width="wrap_content"
@@ -66,10 +66,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_green_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
-                cm:defaultValue="1.00"
-                cm:digits="4" />
+                lineage:min="0.20"
+                lineage:max="1.00"
+                lineage:defaultValue="1.00"
+                lineage:digits="4" />
 
         <TextView android:id="@+id/color_blue_text"
                 android:layout_width="match_parent"
@@ -89,10 +89,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_blue_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
-                cm:defaultValue="1.00"
-                cm:digits="4" />
+                lineage:min="0.20"
+                lineage:max="1.00"
+                lineage:defaultValue="1.00"
+                lineage:digits="4" />
 
         <ImageView android:id="@+id/black_scale_picture_color"
                 android:src="@drawable/color_tuning_preview"

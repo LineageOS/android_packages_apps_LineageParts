@@ -449,7 +449,7 @@
         <![CDATA[<b>총 기여자:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>총 변경 사항:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>마지막 업데이트:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-  <!-- Anonymous Statistics #CM -->
+  <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">LineageOS 통계</string>
   <string name="anonymous_statistics_summary">익명의 통계 자료를 보내 LineageOS 개선에 도움 주기</string>

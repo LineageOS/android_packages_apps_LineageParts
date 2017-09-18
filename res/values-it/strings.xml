@@ -446,10 +446,10 @@
   <string name="contributions_info_menu">Informazioni contributi</string>
   <string name="contributions_info_msg"><b>Contributori totali:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>Commit totali:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
 <b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g></string>
-  <!-- Anonymous Statistics #CM -->
+  <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statistiche LineageOS</string>
-  <string name="anonymous_statistics_summary">Aiuta a migliorare Cyanogenmod consentendo l\'invio di statistiche anonime</string>
+  <string name="anonymous_statistics_summary">Aiuta a migliorare Lineage consentendo l\'invio di statistiche anonime</string>
   <string name="anonymous_statistics_warning_title">Info</string>
   <string name="anonymous_statistics_warning">Attivando le Statistiche LineageOS consentirai l\'invio di dati non personali agli sviluppatori per contare il numero di installazioni sui dispositivi. Le informazioni inviate includono un\'identificatore unico che non compromette in alcun modo la tua privacy o dati personali.\n\nPer vedere un esempio di dati inviati, tocca Anteprima Dati.</string>
   <string name="enable_reporting_title">Attiva report</string>

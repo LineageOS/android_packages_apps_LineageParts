@@ -449,7 +449,7 @@
         <![CDATA[<b>Total kontributor:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total tindakan:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Diperbarui:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-  <!-- Anonymous Statistics #CM -->
+  <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statistik LineageOS</string>
   <string name="anonymous_statistics_summary">Bantu LineageOS untuk menjadi lebih baik dengan memilih ikut dalam pelaporan statistik anonim</string>

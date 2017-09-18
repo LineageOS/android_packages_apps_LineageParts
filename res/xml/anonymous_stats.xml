@@ -16,10 +16,10 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:key="cmstats"
+    android:key="lineagestats"
     android:title="@string/anonymous_statistics_title">
 
-    <lineageos.preference.CMSecureSettingSwitchPreference
+    <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="stats_collection"
             android:title="@string/stats_collection_title"
             android:summary="@string/stats_collection_summary"
@@ -27,6 +27,6 @@
 
     <PreferenceScreen
         android:title="@string/preview_data_title"
-        android:fragment="org.lineageos.lineageparts.cmstats.PreviewData" />
+        android:fragment="org.lineageos.lineageparts.lineagestats.PreviewData" />
 
 </PreferenceScreen>

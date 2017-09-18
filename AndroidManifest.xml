@@ -185,7 +185,7 @@
         </activity-alias>
 
         <!-- Anonymous Statistics -->
-        <receiver android:name=".cmstats.ReportingServiceManager"
+        <receiver android:name=".lineagestats.ReportingServiceManager"
             android:enabled="true"
             android:exported="false"
             android:label="ReportingServiceManager">
@@ -198,13 +198,13 @@
         <service android:label="ReportingService"
             android:enabled="true"
             android:exported="false"
-            android:name=".cmstats.ReportingService">
+            android:name=".lineagestats.ReportingService">
         </service>
 
-        <service android:name=".cmstats.StatsUploadJobService"
+        <service android:name=".lineagestats.StatsUploadJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <service android:name=".cmstats.ReportingService"
+        <service android:name=".lineagestats.ReportingService"
                  android:label="ReportingService"
                  android:enabled="true"
                  android:exported="false" />

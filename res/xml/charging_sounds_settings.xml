@@ -25,7 +25,7 @@
         android:title="@string/charging_sounds_enabled_title"
         android:summary="@string/charging_sounds_enabled_summary" />
 
-    <lineageos.preference.CMGlobalSettingSwitchPreference
+    <lineageos.preference.LineageGlobalSettingSwitchPreference
         android:key="power_notifications_vibrate"
         android:title="@string/power_notifications_vibrate_title"
         android:dependency="charging_sounds_enabled" />

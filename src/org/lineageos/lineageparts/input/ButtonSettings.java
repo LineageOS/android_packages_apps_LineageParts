@@ -49,7 +49,7 @@ import org.lineageos.internal.util.ScreenType;
 
 import java.util.List;
 
-import lineageos.hardware.CMHardwareManager;
+import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements
@@ -264,12 +264,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavigationRecentsLongPressAction =
                 initRecentsLongPressAction(KEY_NAVIGATION_RECENTS_LONG_PRESS);
 
-        final CMHardwareManager hardware = CMHardwareManager.getInstance(getActivity());
+        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(getActivity());
 
         // Only visible on devices that does not have a navigation bar already,
         // and don't even try unless the existing keys can be disabled
         boolean needsNavigationBar = false;
-        if (hardware.isSupported(CMHardwareManager.FEATURE_KEY_DISABLE)) {
+        if (hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
             try {
                 IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
                 needsNavigationBar = wm.needsNavigationBar();
@@ -440,7 +440,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
 
             if (!hasNavBar && (needsNavigationBar ||
-                    !hardware.isSupported(CMHardwareManager.FEATURE_KEY_DISABLE))) {
+                    !hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE))) {
                     // Hide navigation bar category
                     prefScreen.removePreference(mNavigationPreferencesCat);
             }
@@ -705,8 +705,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     public static void restoreKeyDisabler(Context context) {
-        CMHardwareManager hardware = CMHardwareManager.getInstance(context);
-        if (!hardware.isSupported(CMHardwareManager.FEATURE_KEY_DISABLE)) {
+        LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        if (!hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
             return;
         }
 
