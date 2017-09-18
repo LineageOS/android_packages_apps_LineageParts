@@ -19,13 +19,13 @@
     android:key="privacy_guard_manager"
     android:title="@*lineageos.platform:string/privacy_guard_manager_title">
 
-    <lineageos.preference.CMSecureSettingSwitchPreference
+    <lineageos.preference.LineageSecureSettingSwitchPreference
         android:key="privacy_guard_default"
         android:title="@string/privacy_guard_default_title"
         android:summary="@string/privacy_guard_default_summary"
         android:defaultValue="false" />
 
-    <lineageos.preference.CMSecureSettingSwitchPreference
+    <lineageos.preference.LineageSecureSettingSwitchPreference
         android:key="privacy_guard_notification"
         android:title="@string/privacy_guard_notification_title"
         android:defaultValue="true" />

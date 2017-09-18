@@ -449,7 +449,7 @@
  <![CDATA[<b>Всего участников:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
 <b>Всего коммитов:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
 <b>Последнее обновление:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-  <!-- Anonymous Statistics #CM -->
+  <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Отправка статистики</string>
   <string name="anonymous_statistics_summary">Помогите сделать LineageOS лучше, разрешив отправку анонимной статистики</string>

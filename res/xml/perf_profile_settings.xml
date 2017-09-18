@@ -48,7 +48,7 @@
             android:persistent="false"
             android:layout="@layout/preference_slider" />
 
-        <lineageos.preference.CMSecureSettingSwitchPreference
+        <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="app_perf_profiles_enabled"
             android:title="@string/app_perf_profiles_title"
             android:summary="@string/app_perf_profiles_summary"

@@ -449,7 +449,7 @@
         <![CDATA[<b>Total de colaboradores:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total de contribuições:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Última atualização:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-  <!-- Anonymous Statistics #CM -->
+  <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Estatísticas LineageOS</string>
   <string name="anonymous_statistics_summary">Ajude a melhorar a LineageOS optando por ativar o envio do relatório de estatísticas anónimas</string>

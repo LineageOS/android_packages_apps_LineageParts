@@ -22,12 +22,12 @@
         android:key="general_section"
         android:title="@string/notification_light_general_title">
 
-        <lineageos.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="battery_light_enabled"
             android:title="@string/battery_light_title"
             android:defaultValue="@bool/def_battery_light_enabled" />
 
-        <lineageos.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="battery_light_pulse"
             android:title="@string/battery_low_pulse_title"
             android:defaultValue="@bool/def_battery_light_pulse"

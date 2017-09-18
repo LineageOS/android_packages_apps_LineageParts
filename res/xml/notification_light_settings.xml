@@ -26,7 +26,7 @@
             android:key="notification_light_pulse"
             android:title="@string/notification_light_title" />
 
-        <lineageos.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_color_auto"
             android:title="@string/notification_light_automagic"
             android:dependency="notification_light_pulse"
@@ -51,23 +51,23 @@
             <intent android:action="android.intent.action.SHOW_NOTIFICATION_BRIGHTNESS_DIALOG" />
         </PreferenceScreen>
 
-        <lineageos.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_multiple_leds_enable"
             android:title="@string/notification_light_use_multiple_leds"
             android:dependency="notification_light_pulse" />
 
-        <lineageos.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
             android:dependency="notification_light_pulse" />
 
-        <lineageos.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="allow_lights"
             android:title="@string/notification_light_zen_mode"
             android:dependency="notification_light_pulse"
             android:defaultValue="true" />
 
-        <lineageos.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:dependency="notification_light_pulse" />

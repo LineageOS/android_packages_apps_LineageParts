@@ -3,7 +3,7 @@
 -keep class org.lineageos.lineageparts.*Picker
 -keep class org.lineageos.lineageparts.*Settings
 
--keep class org.lineageos.lineageparts.cmstats.*
+-keep class org.lineageos.lineageparts.lineagestats.*
 -keep class org.lineageos.lineageparts.contributors.*
 -keep class org.lineageos.lineageparts.hardware.*
 -keep class org.lineageos.lineageparts.input.*
