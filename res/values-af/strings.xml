@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Warmer kleure vir minder oogvermoeidheid</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Kleure akkuraat tot die sRGB kleurruimte</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Kleure akkuraat tot die DCI-P3 kleur spektrum</string>
   <string name="color_calibration_title">Kleur kalibrasie</string>
   <string name="color_calibration_summary">Kalibreer skermkleure</string>
   <string name="color_red_title">Rooi</string>
@@ -238,6 +240,12 @@
   <string name="camera_double_tap_power_gesture_desc">Maak kamera vinnig oop sonder om jou skerm te ontsluit</string>
   <string name="torch_long_press_power_gesture_title">Lang-druk vir flits</string>
   <string name="torch_long_press_power_gesture_desc">Aktiveer die flits deur die kragknoppie lang te druk terwyl die skerm af is</string>
+  <string name="torch_long_press_power_timeout_title">Skakel flits outomaties af</string>
+  <string name="torch_long_press_power_timeout_never">Nooit</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuut</string>
+  <string name="torch_long_press_power_timeout_2min">2 minute</string>
+  <string name="torch_long_press_power_timeout_5min">5 minute</string>
+  <string name="torch_long_press_power_timeout_10min">10 minute</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Verwyder</string>
   <string name="profile_action_none">Los onveranderd</string>
@@ -416,6 +424,11 @@
   <string name="status_bar_battery_percentage_text_inside">Binne die ikoon</string>
   <string name="status_bar_battery_percentage_text_next">Langs die ikoon</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Helderheid</string>
+  <string name="status_bar_brightness_slider_title">Helderheidskuifknop</string>
+  <string name="status_bar_brightness_slider_summary">Verstel die helderheid van vinnige instellings</string>
+  <string name="status_bar_brightness_slider_auto_title">Outomatiese helderheid</string>
+  <string name="status_bar_brightness_slider_auto_summary">Wys wisselaar vir aanpasbare helderheid naby die glyer</string>
   <string name="status_bar_toggle_brightness">Helderheid beheer</string>
   <string name="status_bar_toggle_brightness_summary">Verander helderheid aan deur te gly oor die statusbalk</string>
   <!-- Status bar - icon blacklist -->

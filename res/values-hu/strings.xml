@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Melegebb színek kisebb szemfáradtságért</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Színek az sRGB színtérhez igazítva</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Színek a DCI-P3 színtérhez igazítva</string>
   <string name="color_calibration_title">Színek kalibrálása</string>
   <string name="color_calibration_summary">Képernyőn megjelenő színek kalibrálása</string>
   <string name="color_red_title">Vörös</string>
@@ -238,6 +240,12 @@
   <string name="camera_double_tap_power_gesture_desc">Kamera gyors megnyitása a képernyő feloldása nélkül</string>
   <string name="torch_long_press_power_gesture_title">Zseblámpához nyomja hosszan</string>
   <string name="torch_long_press_power_gesture_desc">Zseblámpa bekapcsolása a kikapcsoló gomb hosszan nyomására kikapcsolt képernyőnél</string>
+  <string name="torch_long_press_power_timeout_title">Zseblámpa automatikus kikapcsolása</string>
+  <string name="torch_long_press_power_timeout_never">Soha</string>
+  <string name="torch_long_press_power_timeout_1min">1 perc</string>
+  <string name="torch_long_press_power_timeout_2min">2 perc</string>
+  <string name="torch_long_press_power_timeout_5min">5 perc</string>
+  <string name="torch_long_press_power_timeout_10min">10 perc</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Törlés</string>
   <string name="profile_action_none">Változatlanul hagy</string>
@@ -416,6 +424,11 @@
   <string name="status_bar_battery_percentage_text_inside">Ikon belsejében</string>
   <string name="status_bar_battery_percentage_text_next">Az ikon mellett</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Fényerő</string>
+  <string name="status_bar_brightness_slider_title">Fényerő csúszka</string>
+  <string name="status_bar_brightness_slider_summary">Fényerő állítása a Gyors Beállításokról</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatikus fényerő</string>
+  <string name="status_bar_brightness_slider_auto_summary">Adaptív fényerő váltása a fényerő csúszka közelében</string>
   <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
   <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
   <!-- Status bar - icon blacklist -->

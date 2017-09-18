@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Các màu ấm hơn cho mỏi mắt ít hơn</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Màu sắc chính xác cho không gian màu sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Màu sắc chính xác cho khoảng cách màu DCI-P3</string>
   <string name="color_calibration_title">Hiệu chỉnh màu sắc</string>
   <string name="color_calibration_summary">Hiệu chỉnh màu sắc trên màn hình</string>
   <string name="color_red_title">Đỏ</string>

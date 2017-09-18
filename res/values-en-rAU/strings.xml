@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Warmer colours for less eye strain</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Colours accurate to the sRGB colour space</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Colours accurate to the DCI-P3 colour space</string>
   <string name="color_calibration_title">Colour calibration</string>
   <string name="color_calibration_summary">Calibrate on-screen colours</string>
   <string name="color_red_title">Red</string>

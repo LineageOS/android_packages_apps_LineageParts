@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Teplejší barvy pro menší namáhání očí</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Barvy s přesností na barevný prostor sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Barvy s přesností na barevný prostor DCI-P3</string>
   <string name="color_calibration_title">Kalibrace barev</string>
   <string name="color_calibration_summary">Kalibrovat barvy obrazovky</string>
   <string name="color_red_title">Červená</string>

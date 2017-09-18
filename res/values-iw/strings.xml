@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">צבעים חמים יותר להפחתת מאמץ עיניים</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">דיוק צבעים למרחב הצבעים sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">דיוק צבעים למרחב הצבעים DCI-P3</string>
   <string name="color_calibration_title">כיול צבע</string>
   <string name="color_calibration_summary">כיול צבעי מסך</string>
   <string name="color_red_title">אדום</string>

@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Daha az göz yorgunluğu için sıcak renkler</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Renkler sRGB renk aralığına göre doğru</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">DCI-P3 renk alanına uygun renkler</string>
   <string name="color_calibration_title">Renk kalibrasyonu</string>
   <string name="color_calibration_summary">Ekran renklerini kalibre edin</string>
   <string name="color_red_title">Kırmızı</string>

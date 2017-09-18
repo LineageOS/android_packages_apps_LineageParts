@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Тёплые цвета для меньшего напряжения глаз</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Цвета, схожие с пространством sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">Цветовое пространство DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Цвета, соответствующие цветовому пространству DCI-P3</string>
   <string name="color_calibration_title">Цвет</string>
   <string name="color_calibration_summary">Настройка цветопередачи экрана</string>
   <string name="color_red_title">Красный</string>

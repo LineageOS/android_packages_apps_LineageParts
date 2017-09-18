@@ -138,7 +138,9 @@
   <string name="live_display_color_profile_reading_title">Leser</string>
   <string name="live_display_color_profile_reading_summary">Varmere farger for mindre belastning på øyene</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
-  <string name="live_display_color_profile_srgb_summary">Farger nøyaktige i forhold til sRGB-fargetoneområdet</string>
+  <string name="live_display_color_profile_srgb_summary">Farger nøyaktige i forhold til fargerommet sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Farger nøyaktige i forhold til fargerommet DCI-P3</string>
   <string name="color_calibration_title">Fargekalibrering</string>
   <string name="color_calibration_summary">Kalibrere skjermens farger</string>
   <string name="color_red_title">Rød</string>

@@ -138,7 +138,9 @@
   <string name="live_display_color_profile_reading_title">閱讀</string>
   <string name="live_display_color_profile_reading_summary">溫暖的色彩減少眼睛疲勞</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
-  <string name="live_display_color_profile_srgb_summary">顏色準確到 sRGB 的色彩空間</string>
+  <string name="live_display_color_profile_srgb_summary">顏色準確到 sRGB 色域</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">顏色準確到 DCI-P3 色域</string>
   <string name="color_calibration_title">顏色校準</string>
   <string name="color_calibration_summary">校準螢幕上的顏色</string>
   <string name="color_red_title">紅色</string>

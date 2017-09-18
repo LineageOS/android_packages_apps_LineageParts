@@ -59,7 +59,7 @@
   <string name="privacy_guard_notification_title">Erakutsi jakinarazpena</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Editatu argiaren ezarpenak</string>
-  <string name="pulse_speed_title">Dirdiraren iraupena eta abiadura</string>
+  <string name="pulse_speed_title">Ledaren iraupena eta abiadura</string>
   <string name="default_time">Arrunta</string>
   <string name="custom_time">Pertsonalizatua</string>
   <string name="dialog_delete_title">Ezabatu</string>
@@ -79,7 +79,7 @@
   <string name="pulse_speed_very_slow">Oso motela</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Bateria adierazlea</string>
-  <string name="battery_low_pulse_title">Bateria baxu dagoenean dir-dir egin</string>
+  <string name="battery_low_pulse_title">Led-a bateria baxu dagoenean</string>
   <string name="battery_light_list_title">Koloreak</string>
   <string name="battery_light_low_color_title">Bateria baxua</string>
   <string name="battery_light_medium_color_title">Kargatzen</string>
@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Kolore epelagoak begiak gutxiago nekatzeko</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">sRGB kolore espazioarekiko zehatzak diren koloreak</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">DCI-P3 kolore espazioarekiko zehatzak diren koloreak</string>
   <string name="color_calibration_title">Kolore kalibrazioa</string>
   <string name="color_calibration_summary">Kalibratu pantailako koloreak</string>
   <string name="color_red_title">Gorria</string>

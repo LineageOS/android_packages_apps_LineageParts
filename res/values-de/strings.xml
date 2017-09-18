@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Wärmere Farben für weniger Augenbelastung</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Farben passend zum sRGB-Farbraum</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Farben passend zum DCI-P3-Farbraum</string>
   <string name="color_calibration_title">Farbkalibrierung</string>
   <string name="color_calibration_summary">Displayfarben kalibrieren</string>
   <string name="color_red_title">Rot</string>

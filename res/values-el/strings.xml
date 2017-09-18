@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Θερμότερα χρώματα για λιγότερη καταπόνηση των ματιών</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Απόδοση χρωμάτων με ακρίβεια στον χρωματικό χώρο sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Απόδοση χρωμάτων με ακρίβεια στον χρωματικό χώρο DCI-P3</string>
   <string name="color_calibration_title">Βελτίωση χρωμάτων</string>
   <string name="color_calibration_summary">Βελτίωση των χρωμάτων της οθόνης</string>
   <string name="color_red_title">Κόκκινο</string>

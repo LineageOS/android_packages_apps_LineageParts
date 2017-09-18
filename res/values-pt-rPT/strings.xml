@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Cores mais quentes para reduzir a fadiga ocular</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Cores precisas para o espaço de cor sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Cores precisas para o espaço de cor DCI-P3</string>
   <string name="color_calibration_title">Calibração de cores</string>
   <string name="color_calibration_summary">Calibrar as cores do ecrã</string>
   <string name="color_red_title">Vermelho</string>
@@ -223,7 +225,7 @@
   <string name="power_menu_title">Menu ligar/desligar</string>
   <string name="power_menu_reboot_title">Menu de reinicialização</string>
   <string name="power_menu_screenshot_title">Capturar ecrã</string>
-  <string name="power_menu_airplane_title">Modo de voo</string>
+  <string name="power_menu_airplane_title">Modo de avião</string>
   <string name="power_menu_users_title">Mudar utilizador</string>
   <string name="power_menu_settings_title">Atalho das definições</string>
   <string name="power_menu_lockdown_title">Bloqueio do dispositivo</string>
@@ -305,7 +307,7 @@
   <string name="rename_dialog_hint">Introduza o nome do perfil</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Repor</string>
-  <string name="profile_reset_message">Eliminar todos os perfis e grupos de aplicações criados e restaurar para o padrão?</string>
+  <string name="profile_reset_message">Eliminar todos os perfis e grupos de aplicações criados e repor a predefinição?</string>
   <!-- Delete confimation messages -->
   <string name="profile_app_delete_confirm">Remover esta aplicação?</string>
   <!-- Profile network mode -->
@@ -355,7 +357,7 @@
   <string name="profile_lockmode_policy_disabled_summary">Esta opção de perfil está desativada pela política do administrador do dispositivo</string>
   <string name="profile_lockmode_insecure_summary">Não pedir a palavra-passe nem PIN</string>
   <string name="profile_lockmode_disabled_summary">Desativar o ecrã de bloqueio</string>
-  <string name="profile_airplanemode_title">Modo de voo</string>
+  <string name="profile_airplanemode_title">Modo de avião</string>
   <string name="profile_brightness_title">Brilho do ecrã</string>
   <string name="profile_brightness_override_summary">Definido para %1$d%%</string>
   <string name="profile_brightness_override_checkbox_label">Substituir brilho</string>

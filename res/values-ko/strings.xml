@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">안구 피로를 줄이기 위한 따뜻한 색상</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">sRGB 색 공간에 적합한 색상</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">DCI-P3 색 공간에 적합한 색상</string>
   <string name="color_calibration_title">색상 보정</string>
   <string name="color_calibration_summary">화면의 색상을 보정</string>
   <string name="color_red_title">빨강</string>

@@ -103,7 +103,7 @@
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Ajustes de luz</string>
   <string name="led_notification_text">Luz LED habilitada por la configuración</string>
-  <string name="notification_light_no_apps_summary">Para añadir control por aplicación, activa \'%1$s\' y pulsa \'\u002b\' en la barra de menús</string>
+  <string name="notification_light_no_apps_summary">Para añadir control por aplicación, activa «%1$s» y pulsa «\u002b» en la barra de menús</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimizar su pantalla basada en la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
   <string name="live_display_mode">Modo de visualización</string>
@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Colores cálidos para reducir la fatiga visual</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Colores fieles al espacio de color sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Colores fieles al espacio de color DCI-P3</string>
   <string name="color_calibration_title">Calibración de color</string>
   <string name="color_calibration_summary">Calibrar los colores de la pantalla</string>
   <string name="color_red_title">Rojo</string>
@@ -537,18 +539,18 @@
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abajo con un dedo</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia la izquierda con un dedo</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar a la derecha con un dedo</string>
-  <string name="touchscreen_gesture_up_arrow_title">Dibujar un \"Λ\"</string>
-  <string name="touchscreen_gesture_down_arrow_title">Dibuja una \"V\"</string>
-  <string name="touchscreen_gesture_left_arrow_title">Dibujar un \"&lt;\"</string>
-  <string name="touchscreen_gesture_right_arrow_title">Dibujar un \"&gt;\"</string>
-  <string name="touchscreen_gesture_letter_c_title">Dibujar la letra \"C\"</string>
-  <string name="touchscreen_gesture_letter_e_title">Dibujar la letra \"e\"</string>
-  <string name="touchscreen_gesture_letter_o_title">Dibujar la letra \"O\"</string>
-  <string name="touchscreen_gesture_letter_m_title">Dibujar la letra \"M\"</string>
-  <string name="touchscreen_gesture_letter_s_title">Dibujar la letra \"S\"</string>
-  <string name="touchscreen_gesture_letter_v_title">Dibuje la letra \"V\"</string>
-  <string name="touchscreen_gesture_letter_w_title">Dibujar la letra \"W\"</string>
-  <string name="touchscreen_gesture_letter_z_title">Dibujar la letra \"Z\"</string>
+  <string name="touchscreen_gesture_up_arrow_title">Dibujar un «Λ»</string>
+  <string name="touchscreen_gesture_down_arrow_title">Dibuja una «V»</string>
+  <string name="touchscreen_gesture_left_arrow_title">Dibujar un «&lt;»</string>
+  <string name="touchscreen_gesture_right_arrow_title">Dibujar un «&gt;»</string>
+  <string name="touchscreen_gesture_letter_c_title">Dibujar la letra «C»</string>
+  <string name="touchscreen_gesture_letter_e_title">Dibujar la letra «e»</string>
+  <string name="touchscreen_gesture_letter_o_title">Dibujar la letra «O»</string>
+  <string name="touchscreen_gesture_letter_m_title">Dibujar la letra «M»</string>
+  <string name="touchscreen_gesture_letter_s_title">Dibujar la letra «S»</string>
+  <string name="touchscreen_gesture_letter_v_title">Dibuje la letra «V»</string>
+  <string name="touchscreen_gesture_letter_w_title">Dibujar la letra «W»</string>
+  <string name="touchscreen_gesture_letter_z_title">Dibujar la letra «Z»</string>
   <string name="touchscreen_gesture_action_dialog_title">Acción del gesto</string>
   <string name="touchscreen_gesture_action_do_nothing">No hacer nada</string>
   <string name="touchscreen_gesture_action_flashlight">Activar/Desactivar linterna</string>

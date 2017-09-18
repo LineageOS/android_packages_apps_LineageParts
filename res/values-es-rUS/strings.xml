@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Colores cálidos para reducir la fatiga visual</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Colores fieles al espacio de color sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Colores fieles al espacio de color DCI-P3</string>
   <string name="color_calibration_title">Calibración de color</string>
   <string name="color_calibration_summary">Calibrar los colores de la pantalla</string>
   <string name="color_red_title">Rojo</string>

@@ -138,6 +138,7 @@
   <string name="live_display_color_profile_reading_summary">Cieplejsze kolory, aby ograniczyć zmęczenie oczu</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Kolory dokładne z przestrzenią kolorów sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="color_calibration_title">Kalibracja kolorów</string>
   <string name="color_calibration_summary">Kalibruj kolory wyświetlacza</string>
   <string name="color_red_title">Czerwony</string>

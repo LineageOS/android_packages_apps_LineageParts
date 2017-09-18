@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Lämpimämpi värintoisto vähentämään silmien rasitusta</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Värit tarkentuu sRGB-väritilaan</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Värit tarkentuu DCI-P3-väritilaan</string>
   <string name="color_calibration_title">Värien kalibrointi</string>
   <string name="color_calibration_summary">Kalibroi näytön värit</string>
   <string name="color_red_title">Punainen</string>

@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Топлије боје за мање напрезање очију.</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Боје које одговарају простору боја sRGB.</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Боје које одговарају простору боја DCI-P3.</string>
   <string name="color_calibration_title">Калибрација боја</string>
   <string name="color_calibration_summary">Калибрација боја екрана</string>
   <string name="color_red_title">Црвена</string>
