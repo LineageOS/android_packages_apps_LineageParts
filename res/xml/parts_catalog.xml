@@ -18,102 +18,102 @@
 
 <!--
      The parts catalog is used to locate items (usually a PreferenceScreen) inside
-     of CMParts. This can be used by CMPartsPreference to create a simple, two-line
+     of LineageParts. This can be used by LineagePartsPreference to create a simple, two-line
      entry point from Settings or another application. All entries should specify
-     a fragment, which is a SettingsPreferenceFragment subclass inside CMParts.
+     a fragment, which is a SettingsPreferenceFragment subclass inside LineageParts.
 
      Metadata for the search index provider should be provided for all parts. This
-     can be supplied an XML resource in the "cm:xmlRes" attribute or by implementing
+     can be supplied an XML resource in the "lineage:xmlRes" attribute or by implementing
      the Searchable interface.
 -->
 <parts-catalog xmlns:android="http://schemas.android.com/apk/res/android"
-               xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform">
+               xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
 
     <part android:key="battery_lights"
           android:title="@string/battery_light_title"
-          android:fragment="org.cyanogenmod.cmparts.notificationlight.BatteryLightSettings"
-          cm:xmlRes="@xml/battery_light_settings" />
+          android:fragment="org.lineageos.lineageparts.notificationlight.BatteryLightSettings"
+          lineage:xmlRes="@xml/battery_light_settings" />
 
     <part android:key="button_settings"
           android:title="@string/button_pref_title"
-          android:fragment="org.cyanogenmod.cmparts.input.ButtonSettings"
-          cm:xmlRes="@xml/button_settings" />
+          android:fragment="org.lineageos.lineageparts.input.ButtonSettings"
+          lineage:xmlRes="@xml/button_settings" />
 
     <part android:key="contributors"
           android:title="@string/contributors_cloud_fragment_title"
-          android:fragment="org.cyanogenmod.cmparts.contributors.ContributorsCloudFragment" />
+          android:fragment="org.lineageos.lineageparts.contributors.ContributorsCloudFragment" />
 
     <part android:key="livedisplay"
-          android:title="@*cyanogenmod.platform:string/live_display_title"
+          android:title="@*lineageos.platform:string/live_display_title"
           android:summary="@string/live_display_summary"
-          android:fragment="org.cyanogenmod.cmparts.livedisplay.LiveDisplay"
-          cm:xmlRes="@xml/livedisplay" />
+          android:fragment="org.lineageos.lineageparts.livedisplay.LiveDisplay"
+          lineage:xmlRes="@xml/livedisplay" />
 
     <part android:key="notification_lights"
           android:title="@string/notification_light_title"
-          android:fragment="org.cyanogenmod.cmparts.notificationlight.NotificationLightSettings"
-          cm:xmlRes="@xml/notification_light_settings" />
+          android:fragment="org.lineageos.lineageparts.notificationlight.NotificationLightSettings"
+          lineage:xmlRes="@xml/notification_light_settings" />
 
     <part android:key="privacy_settings"
           android:title="@string/privacy_settings_title"
-          android:fragment="org.cyanogenmod.cmparts.PrivacySettings"
-          cm:xmlRes="@xml/privacy_settings" />
+          android:fragment="org.lineageos.lineageparts.PrivacySettings"
+          lineage:xmlRes="@xml/privacy_settings" />
 
     <part android:key="profiles_settings"
           android:title="@string/profiles_settings_title"
-          android:fragment="org.cyanogenmod.cmparts.profiles.ProfilesSettings"
-          cm:xmlRes="@xml/profiles_settings" />
+          android:fragment="org.lineageos.lineageparts.profiles.ProfilesSettings"
+          lineage:xmlRes="@xml/profiles_settings" />
 
     <part android:key="rotation"
           android:title="@string/display_rotation_title"
-          android:fragment="org.cyanogenmod.cmparts.hardware.DisplayRotation"
-          cm:xmlRes="@xml/display_rotation" />
+          android:fragment="org.lineageos.lineageparts.hardware.DisplayRotation"
+          lineage:xmlRes="@xml/display_rotation" />
 
     <part android:key="status_bar_settings"
           android:title="@string/status_bar_title"
-          android:fragment="org.cyanogenmod.cmparts.statusbar.StatusBarSettings"
-          cm:xmlRes="@xml/status_bar_settings" />
+          android:fragment="org.lineageos.lineageparts.statusbar.StatusBarSettings"
+          lineage:xmlRes="@xml/status_bar_settings" />
 
-    <part android:key="cmstats"
+    <part android:key="lineagestats"
           android:title="@string/anonymous_statistics_title"
-          android:fragment="org.cyanogenmod.cmparts.cmstats.AnonymousStats"
-          cm:xmlRes="@xml/anonymous_stats" />
+          android:fragment="org.lineageos.lineageparts.lineagestats.AnonymousStats"
+          lineage:xmlRes="@xml/anonymous_stats" />
 
     <part android:key="power_menu"
           android:title="@string/power_menu_title"
-          android:fragment="org.cyanogenmod.cmparts.input.PowerMenuActions"
-          cm:xmlRes="@xml/power_menu_settings" />
+          android:fragment="org.lineageos.lineageparts.input.PowerMenuActions"
+          lineage:xmlRes="@xml/power_menu_settings" />
 
     <part android:key="privacy_guard_manager"
-          android:title="@*cyanogenmod.platform:string/privacy_guard_manager_title"
-          android:fragment="org.cyanogenmod.cmparts.privacyguard.PrivacyGuardManager"
-          cm:xmlRes="@xml/privacy_guard_prefs" />
+          android:title="@*lineageos.platform:string/privacy_guard_manager_title"
+          android:fragment="org.lineageos.lineageparts.privacyguard.PrivacyGuardManager"
+          lineage:xmlRes="@xml/privacy_guard_prefs" />
 
     <part android:key="weather_settings"
           android:title="@string/weather_settings_title"
-          android:fragment="org.cyanogenmod.cmparts.weather.WeatherServiceSettings"
-          cm:xmlRes="@xml/weather_settings" />
+          android:fragment="org.lineageos.lineageparts.weather.WeatherServiceSettings"
+          lineage:xmlRes="@xml/weather_settings" />
 
     <part android:key="perf_profile_settings"
           android:title="@string/perf_profile_settings_title"
           android:summary="@string/perf_profile_settings_summary"
-          android:fragment="org.cyanogenmod.cmparts.power.PerfProfileSettings"
-          cm:xmlRes="@xml/perf_profile_settings" />
+          android:fragment="org.lineageos.lineageparts.power.PerfProfileSettings"
+          lineage:xmlRes="@xml/perf_profile_settings" />
 
     <part android:key="expanded_desktop_settings"
           android:title="@string/expanded_desktop_settings_title"
           android:summary="@string/expanded_desktop_settings_summary"
-          android:fragment="org.cyanogenmod.cmparts.applications.ExpandedDesktopSettings"
-          cm:xmlRes="@xml/expanded_desktop_prefs" />
+          android:fragment="org.lineageos.lineageparts.applications.ExpandedDesktopSettings"
+          lineage:xmlRes="@xml/expanded_desktop_prefs" />
 
     <part android:key="charging_sounds_settings"
           android:title="@string/charging_sounds_settings_title"
-          android:fragment="org.cyanogenmod.cmparts.sounds.ChargingSoundsSettings"
-          cm:xmlRes="@xml/charging_sounds_settings" />
+          android:fragment="org.lineageos.lineageparts.sounds.ChargingSoundsSettings"
+          lineage:xmlRes="@xml/charging_sounds_settings" />
 
     <part android:key="touchscreen_gesture_settings"
           android:title="@string/touchscreen_gesture_settings_title"
           android:summary="@string/touchscreen_gesture_settings_summary"
-          android:fragment="org.cyanogenmod.cmparts.gestures.TouchscreenGestureSettings"
-          cm:xmlRes="@xml/touchscreen_gesture_settings" />
+          android:fragment="org.lineageos.lineageparts.gestures.TouchscreenGestureSettings"
+          lineage:xmlRes="@xml/touchscreen_gesture_settings" />
 </parts-catalog>

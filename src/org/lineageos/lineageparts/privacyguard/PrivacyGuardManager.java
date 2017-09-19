@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.privacyguard;
+package org.lineageos.lineageparts.privacyguard;
 
 import android.app.FragmentTransaction;
 import android.view.animation.AnimationUtils;
@@ -48,8 +48,8 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.List;

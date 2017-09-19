@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.lineageos.lineageparts.lineagestats;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -34,7 +34,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
     private static final String TAG = ReportingServiceManager.class.getSimpleName();
 
     public static final String ACTION_LAUNCH_SERVICE =
-            "org.cyanogenmod.cmparts.action.TRIGGER_REPORT_METRICS";
+            "org.lineageos.lineageparts.action.TRIGGER_REPORT_METRICS";
     public static final String EXTRA_FORCE = "force";
 
     @Override

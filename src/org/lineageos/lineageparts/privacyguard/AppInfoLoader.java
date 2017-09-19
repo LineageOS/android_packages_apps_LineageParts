@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.privacyguard;
+package org.lineageos.lineageparts.privacyguard;
 
 import android.app.AppOpsManager;
 import android.content.AsyncTaskLoader;
@@ -22,7 +22,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageInfo;
 
-import org.cyanogenmod.cmparts.privacyguard.PrivacyGuardManager.AppInfo;
+import org.lineageos.lineageparts.privacyguard.PrivacyGuardManager.AppInfo;
 
 import java.util.ArrayList;
 import java.util.Collections;

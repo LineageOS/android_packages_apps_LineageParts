@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,7 +22,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.util.AttributeSet;
 
-import org.cyanogenmod.cmparts.widget.RingtonePreference;
+import org.lineageos.lineageparts.widget.RingtonePreference;
 
 public class ProfileRingtonePreference extends RingtonePreference {
     private static final String TAG = "ProfileRingtonePreference";

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.hardware;
+package org.lineageos.lineageparts.hardware;
 
 import android.content.Context;
 import android.net.Uri;
@@ -27,8 +27,8 @@ import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.view.RotationPolicy;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String TAG = "DisplayRotation";

@@ -22,17 +22,17 @@
         android:key="general_section"
         android:title="@string/notification_light_general_title">
 
-        <cyanogenmod.preference.SystemSettingSwitchPreference
+        <lineageos.preference.SystemSettingSwitchPreference
             android:key="notification_light_pulse"
             android:title="@string/notification_light_title" />
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_color_auto"
             android:title="@string/notification_light_automagic"
             android:dependency="notification_light_pulse"
             android:defaultValue="true" />
 
-        <org.cyanogenmod.cmparts.notificationlight.ApplicationLightPreference
+        <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="default"
             android:title="@string/notification_light_default_value"
             android:persistent="false"
@@ -51,23 +51,23 @@
             <intent android:action="android.intent.action.SHOW_NOTIFICATION_BRIGHTNESS_DIALOG" />
         </PreferenceScreen>
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_multiple_leds_enable"
             android:title="@string/notification_light_use_multiple_leds"
             android:dependency="notification_light_pulse" />
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
             android:dependency="notification_light_pulse" />
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="allow_lights"
             android:title="@string/notification_light_zen_mode"
             android:dependency="notification_light_pulse"
             android:defaultValue="true" />
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:dependency="notification_light_pulse" />
@@ -78,13 +78,13 @@
         android:key="phone_list"
         android:title="@string/notification_light_phonelist_title" >
 
-        <org.cyanogenmod.cmparts.notificationlight.ApplicationLightPreference
+        <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="missed_call"
             android:title="@string/notification_light_missed_call_title"
             android:persistent="false"
             android:dependency="notification_light_pulse_custom_enable" />
 
-        <org.cyanogenmod.cmparts.notificationlight.ApplicationLightPreference
+        <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="voicemail"
             android:title="@string/notification_light_voicemail_title"
             android:persistent="false"

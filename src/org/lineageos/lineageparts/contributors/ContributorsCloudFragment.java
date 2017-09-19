@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.contributors;
+package org.lineageos.lineageparts.contributors;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -57,11 +57,11 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.PartsActivity;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.search.BaseSearchIndexProvider;
-import org.cyanogenmod.cmparts.search.SearchIndexableRaw;
-import org.cyanogenmod.cmparts.search.Searchable;
+import org.lineageos.lineageparts.PartsActivity;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.SearchIndexableRaw;
+import org.lineageos.lineageparts.search.Searchable;
 
 import java.io.File;
 import java.io.FileOutputStream;

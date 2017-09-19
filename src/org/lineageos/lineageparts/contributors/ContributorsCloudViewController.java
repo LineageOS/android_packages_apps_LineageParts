@@ -15,7 +15,7 @@
  * limitations under the License.
  *******************************************************************************/
 
-package org.cyanogenmod.cmparts.contributors;
+package org.lineageos.lineageparts.contributors;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

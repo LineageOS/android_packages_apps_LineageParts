@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts;
+package org.lineageos.lineageparts;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -45,15 +45,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.animation.*;
 
-import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
-import org.cyanogenmod.cmparts.widget.DialogCreatable;
-import org.cyanogenmod.cmparts.widget.FloatingActionButton;
-import org.cyanogenmod.cmparts.widget.LayoutPreference;
+import org.lineageos.lineageparts.widget.CustomDialogPreference;
+import org.lineageos.lineageparts.widget.DialogCreatable;
+import org.lineageos.lineageparts.widget.FloatingActionButton;
+import org.lineageos.lineageparts.widget.LayoutPreference;
 
 import java.util.Arrays;
 import java.util.UUID;
 
-import cyanogenmod.preference.SettingsHelper;
+import lineageos.preference.SettingsHelper;
 
 /**
  * Base class for Settings fragments, with some helper functions and dialog management.

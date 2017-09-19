@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.annotation.Nullable;
 import android.app.ActionBar;
@@ -28,13 +28,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.cmparts.PartsActivity;
-import org.cyanogenmod.cmparts.profiles.triggers.NfcTriggerFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.PartsActivity;
+import org.lineageos.lineageparts.profiles.triggers.NfcTriggerFragment;
 
 public class SetupTriggersFragment extends SettingsPreferenceFragment {
 

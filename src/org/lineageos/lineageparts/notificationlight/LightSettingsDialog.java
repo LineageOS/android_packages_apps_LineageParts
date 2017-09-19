@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.notificationlight;
+package org.lineageos.lineageparts.notificationlight;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -45,8 +45,8 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.notificationlight.ColorPickerView.OnColorChangedListener;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.notificationlight.ColorPickerView.OnColorChangedListener;
 
 import java.util.ArrayList;
 import java.util.Locale;

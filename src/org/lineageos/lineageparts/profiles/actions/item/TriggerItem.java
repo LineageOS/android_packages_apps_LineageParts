@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.actions.item;
+package org.lineageos.lineageparts.profiles.actions.item;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.profiles.actions.ItemListAdapter;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import java.util.ArrayList;
 
-import cyanogenmod.app.Profile;
+import lineageos.app.Profile;
 
 public class TriggerItem extends BaseItem {
 

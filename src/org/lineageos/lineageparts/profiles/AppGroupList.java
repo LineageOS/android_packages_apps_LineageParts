@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.annotation.Nullable;
 import android.app.AlertDialog;
@@ -29,14 +29,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.cyanogenmod.cmparts.widget.FloatingActionButton;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.internal.util.ScreenType;
+import org.lineageos.lineageparts.widget.FloatingActionButton;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.internal.util.ScreenType;
 
 import java.util.UUID;
 
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.ProfileManager;
 
 public class AppGroupList extends SettingsPreferenceFragment {
 

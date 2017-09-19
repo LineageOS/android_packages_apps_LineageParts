@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.gestures;
+package org.lineageos.lineageparts.gestures;
 
 class TouchscreenGestureConstants {
     // Broadcast action for settings update
-    static final String UPDATE_PREFS_ACTION = "org.cyanogenmod.cmparts.gestures.UPDATE_SETTINGS";
+    static final String UPDATE_PREFS_ACTION = "org.lineageos.lineageparts.gestures.UPDATE_SETTINGS";
     // Broadcast extra: keycode mapping (int[]: key = gesture ID, value = keycode)
     static final String UPDATE_EXTRA_KEYCODE_MAPPING = "keycode_mappings";
     // Broadcast extra: assigned actions (int[]: key = gesture ID, value = action)

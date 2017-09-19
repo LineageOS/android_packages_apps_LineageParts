@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.livedisplay;
+package org.lineageos.lineageparts.livedisplay;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -29,31 +29,31 @@ import android.util.Log;
 
 import com.android.internal.util.ArrayUtils;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.cmparts.search.BaseSearchIndexProvider;
-import org.cyanogenmod.cmparts.search.SearchIndexableRaw;
-import org.cyanogenmod.cmparts.search.Searchable;
-import org.cyanogenmod.cmparts.utils.ResourceUtils;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.SearchIndexableRaw;
+import org.lineageos.lineageparts.search.Searchable;
+import org.lineageos.lineageparts.utils.ResourceUtils;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.hardware.DisplayMode;
-import cyanogenmod.hardware.LiveDisplayConfig;
-import cyanogenmod.hardware.LiveDisplayManager;
-import cyanogenmod.preference.SettingsHelper;
-import cyanogenmod.providers.CMSettings;
+import lineageos.hardware.LineageHardwareManager;
+import lineageos.hardware.DisplayMode;
+import lineageos.hardware.LiveDisplayConfig;
+import lineageos.hardware.LiveDisplayManager;
+import lineageos.preference.SettingsHelper;
+import lineageos.providers.LineageSettings;
 
-import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_CABC;
-import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
-import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
-import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
-import static cyanogenmod.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
-import static cyanogenmod.hardware.LiveDisplayManager.MODE_OFF;
-import static cyanogenmod.hardware.LiveDisplayManager.MODE_OUTDOOR;
+import static lineageos.hardware.LiveDisplayManager.FEATURE_CABC;
+import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
+import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
+import static lineageos.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
+import static lineageos.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
+import static lineageos.hardware.LiveDisplayManager.MODE_OFF;
+import static lineageos.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
 public class LiveDisplay extends SettingsPreferenceFragment implements Searchable,
         Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
@@ -82,11 +82,11 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
             KEY_LIVE_DISPLAY_COLOR_PROFILE + "_%s_summary";
 
     private final Uri DISPLAY_TEMPERATURE_DAY_URI =
-            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_DAY);
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_DAY);
     private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
-            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_NIGHT);
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_NIGHT);
     private final Uri DISPLAY_TEMPERATURE_MODE_URI =
-            CMSettings.System.getUriFor(CMSettings.System.DISPLAY_TEMPERATURE_MODE);
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_MODE);
 
     private ListPreference mLiveDisplay;
 
@@ -110,14 +110,14 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
     private LiveDisplayManager mLiveDisplayManager;
     private LiveDisplayConfig mConfig;
 
-    private CMHardwareManager mHardware;
+    private LineageHardwareManager mHardware;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final Resources res = getResources();
 
-        mHardware = CMHardwareManager.getInstance(getActivity());
+        mHardware = LineageHardwareManager.getInstance(getActivity());
         mLiveDisplayManager = LiveDisplayManager.getInstance(getActivity());
         mConfig = mLiveDisplayManager.getConfig();
 
@@ -134,11 +134,11 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
         mLiveDisplay.setValue(String.valueOf(adaptiveMode));
 
         mModeEntries = res.getStringArray(
-                org.cyanogenmod.platform.internal.R.array.live_display_entries);
+                org.lineageos.platform.internal.R.array.live_display_entries);
         mModeValues = res.getStringArray(
-                org.cyanogenmod.platform.internal.R.array.live_display_values);
+                org.lineageos.platform.internal.R.array.live_display_values);
         mModeSummaries = res.getStringArray(
-                org.cyanogenmod.platform.internal.R.array.live_display_summaries);
+                org.lineageos.platform.internal.R.array.live_display_summaries);
 
         // Remove outdoor mode from lists if there is no support
         if (!mConfig.hasFeature(LiveDisplayManager.MODE_OUTDOOR)) {
@@ -380,7 +380,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
 
             // Add keywords for supported color profiles
             if (config.hasFeature(FEATURE_DISPLAY_MODES)) {
-                DisplayMode[] modes = CMHardwareManager.getInstance(context).getDisplayModes();
+                DisplayMode[] modes = LineageHardwareManager.getInstance(context).getDisplayModes();
                 if (modes != null && modes.length > 0) {
                     for (DisplayMode mode : modes) {
                         result.add(ResourceUtils.getLocalizedString(

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.lineageos.lineageparts.widget;
 
 import android.app.Dialog;
 
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 /**
  * Letting the class, assumed to be Fragment, create a Dialog on it. Should be useful

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.input;
+package org.lineageos.lineageparts.input;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,27 +27,27 @@ import android.provider.Settings;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 
-import com.android.internal.util.cm.PowerMenuConstants;
+import com.android.internal.util.lineage.PowerMenuConstants;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import cyanogenmod.providers.CMSettings;
+import lineageos.providers.LineageSettings;
 
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_AIRPLANE;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_ASSIST;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_LOCKDOWN;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_RESTART;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
-import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_AIRPLANE;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_ASSIST;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_LOCKDOWN;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_RESTART;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
+import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
 
 public class PowerMenuActions extends SettingsPreferenceFragment {
     final static String TAG = "PowerMenuActions";
@@ -265,8 +265,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private void getUserConfig() {
         mLocalUserConfig.clear();
         String[] defaultActions;
-        String savedActions = CMSettings.Secure.getStringForUser(mContext.getContentResolver(),
-                CMSettings.Secure.POWER_MENU_ACTIONS, UserHandle.USER_CURRENT);
+        String savedActions = LineageSettings.Secure.getStringForUser(mContext.getContentResolver(),
+                LineageSettings.Secure.POWER_MENU_ACTIONS, UserHandle.USER_CURRENT);
 
         if (savedActions == null) {
             defaultActions = mContext.getResources().getStringArray(
@@ -301,8 +301,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             }
         }
 
-        CMSettings.Secure.putStringForUser(getContentResolver(),
-                CMSettings.Secure.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
+        LineageSettings.Secure.putStringForUser(getContentResolver(),
+                LineageSettings.Secure.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
         updatePowerMenuDialog();
     }
 

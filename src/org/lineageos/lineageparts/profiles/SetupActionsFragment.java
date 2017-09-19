@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -58,48 +58,48 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileGroup;
-import cyanogenmod.app.ProfileManager;
-import cyanogenmod.profiles.AirplaneModeSettings;
-import cyanogenmod.profiles.BrightnessSettings;
-import cyanogenmod.profiles.ConnectionSettings;
-import cyanogenmod.profiles.LockSettings;
-import cyanogenmod.profiles.RingModeSettings;
-import cyanogenmod.profiles.StreamSettings;
+import lineageos.app.Profile;
+import lineageos.app.ProfileGroup;
+import lineageos.app.ProfileManager;
+import lineageos.profiles.AirplaneModeSettings;
+import lineageos.profiles.BrightnessSettings;
+import lineageos.profiles.ConnectionSettings;
+import lineageos.profiles.LockSettings;
+import lineageos.profiles.RingModeSettings;
+import lineageos.profiles.StreamSettings;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.PartsActivity;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.cmparts.profiles.actions.ItemListAdapter;
-import org.cyanogenmod.cmparts.profiles.actions.item.AirplaneModeItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.AppGroupItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.BrightnessItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.ConnectionOverrideItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.DisabledItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.DozeModeItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.Header;
-import org.cyanogenmod.cmparts.profiles.actions.item.Item;
-import org.cyanogenmod.cmparts.profiles.actions.item.LockModeItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.NotificationLightModeItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.ProfileNameItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.RingModeItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.TriggerItem;
-import org.cyanogenmod.cmparts.profiles.actions.item.VolumeStreamItem;
-import org.cyanogenmod.cmparts.utils.DeviceUtils;
-import org.cyanogenmod.cmparts.utils.TelephonyUtils;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.PartsActivity;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
+import org.lineageos.lineageparts.profiles.actions.item.AirplaneModeItem;
+import org.lineageos.lineageparts.profiles.actions.item.AppGroupItem;
+import org.lineageos.lineageparts.profiles.actions.item.BrightnessItem;
+import org.lineageos.lineageparts.profiles.actions.item.ConnectionOverrideItem;
+import org.lineageos.lineageparts.profiles.actions.item.DisabledItem;
+import org.lineageos.lineageparts.profiles.actions.item.DozeModeItem;
+import org.lineageos.lineageparts.profiles.actions.item.Header;
+import org.lineageos.lineageparts.profiles.actions.item.Item;
+import org.lineageos.lineageparts.profiles.actions.item.LockModeItem;
+import org.lineageos.lineageparts.profiles.actions.item.NotificationLightModeItem;
+import org.lineageos.lineageparts.profiles.actions.item.ProfileNameItem;
+import org.lineageos.lineageparts.profiles.actions.item.RingModeItem;
+import org.lineageos.lineageparts.profiles.actions.item.TriggerItem;
+import org.lineageos.lineageparts.profiles.actions.item.VolumeStreamItem;
+import org.lineageos.lineageparts.utils.DeviceUtils;
+import org.lineageos.lineageparts.utils.TelephonyUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
-import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
 
 public class SetupActionsFragment extends SettingsPreferenceFragment
         implements AdapterView.OnItemClickListener {
@@ -775,7 +775,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 //            final ConnectionSettings setting = mProfile.getConnectionSettingWithSubId(subId);
 
             switch (selectedMode) {
-                case ConnectionOverrideItem.CM_MODE_SYSTEM_DEFAULT:
+                case ConnectionOverrideItem.Lineage_MODE_SYSTEM_DEFAULT:
                     setting.setOverride(false);
                     break;
                 default:

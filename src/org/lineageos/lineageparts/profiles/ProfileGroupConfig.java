@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import java.util.UUID;
 
@@ -24,13 +24,13 @@ import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileGroup;
-import cyanogenmod.app.ProfileGroup.Mode;
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.Profile;
+import lineageos.app.ProfileGroup;
+import lineageos.app.ProfileGroup.Mode;
+import lineageos.app.ProfileManager;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class ProfileGroupConfig extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {

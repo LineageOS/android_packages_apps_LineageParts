@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.statusbar;
+package org.lineageos.lineageparts.statusbar;
 
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
@@ -22,10 +22,10 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
 import android.view.View;
 
-import cyanogenmod.preference.CMSystemSettingListPreference;
+import lineageos.preference.LineageSystemSettingListPreference;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
@@ -42,34 +42,34 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final int PULLDOWN_DIR_RIGHT = 1;
     private static final int PULLDOWN_DIR_LEFT = 2;
 
-    private CMSystemSettingListPreference mQuickPulldown;
-    private CMSystemSettingListPreference mStatusBarClock;
-    private CMSystemSettingListPreference mStatusBarAmPm;
-    private CMSystemSettingListPreference mStatusBarBattery;
-    private CMSystemSettingListPreference mStatusBarBatteryShowPercent;
+    private LineageSystemSettingListPreference mQuickPulldown;
+    private LineageSystemSettingListPreference mStatusBarClock;
+    private LineageSystemSettingListPreference mStatusBarAmPm;
+    private LineageSystemSettingListPreference mStatusBarBattery;
+    private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
 
-        mStatusBarClock = (CMSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
+        mStatusBarClock = (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarBatteryShowPercent =
-                (CMSystemSettingListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
 
-        mStatusBarAmPm = (CMSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
+        mStatusBarAmPm = (LineageSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
         if (DateFormat.is24HourFormat(getActivity())) {
             mStatusBarAmPm.setEnabled(false);
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
         mStatusBarBattery =
-                (CMSystemSettingListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
+                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBattery.setOnPreferenceChangeListener(this);
         enableStatusBarBatteryDependents(mStatusBarBattery.getIntValue(2));
 
         mQuickPulldown =
-                (CMSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
+                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
     }

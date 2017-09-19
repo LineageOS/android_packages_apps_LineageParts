@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -23,10 +23,10 @@ import android.support.v13.app.FragmentPagerAdapter;
 import android.util.SparseArray;
 import android.view.ViewGroup;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.profiles.triggers.BluetoothTriggerFragment;
-import org.cyanogenmod.cmparts.profiles.triggers.NfcTriggerFragment;
-import org.cyanogenmod.cmparts.profiles.triggers.WifiTriggerFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.profiles.triggers.BluetoothTriggerFragment;
+import org.lineageos.lineageparts.profiles.triggers.NfcTriggerFragment;
+import org.lineageos.lineageparts.profiles.triggers.WifiTriggerFragment;
 import com.google.android.collect.Lists;
 
 import java.lang.ref.WeakReference;

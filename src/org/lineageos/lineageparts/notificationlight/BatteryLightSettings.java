@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.notificationlight;
+package org.lineageos.lineageparts.notificationlight;
 
 import android.app.NotificationManager;
 import android.content.ContentResolver;
@@ -28,11 +28,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
-import cyanogenmod.preference.CMSystemSettingSwitchPreference;
-import cyanogenmod.providers.CMSettings;
+import lineageos.preference.LineageSystemSettingSwitchPreference;
+import lineageos.providers.LineageSettings;
 
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -48,8 +48,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private ApplicationLightPreference mLowColorPref;
     private ApplicationLightPreference mMediumColorPref;
     private ApplicationLightPreference mFullColorPref;
-    private CMSystemSettingSwitchPreference mLightEnabledPref;
-    private CMSystemSettingSwitchPreference mPulseEnabledPref;
+    private LineageSystemSettingSwitchPreference mLightEnabledPref;
+    private LineageSystemSettingSwitchPreference mPulseEnabledPref;
 
     private static final int MENU_RESET = Menu.FIRST;
 
@@ -64,8 +64,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
         PreferenceGroup mGeneralPrefs = (PreferenceGroup) prefSet.findPreference("general_section");
 
-        mLightEnabledPref = (CMSystemSettingSwitchPreference) prefSet.findPreference(LIGHT_ENABLED_PREF);
-        mPulseEnabledPref = (CMSystemSettingSwitchPreference) prefSet.findPreference(PULSE_ENABLED_PREF);
+        mLightEnabledPref = (LineageSystemSettingSwitchPreference) prefSet.findPreference(LIGHT_ENABLED_PREF);
+        mPulseEnabledPref = (LineageSystemSettingSwitchPreference) prefSet.findPreference(PULSE_ENABLED_PREF);
 
         final NotificationManager nm = getContext().getSystemService(NotificationManager.class);
 
@@ -92,7 +92,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             resetColors();
         }
 
-        watch(CMSettings.System.getUriFor(CMSettings.System.BATTERY_LIGHT_ENABLED));
+        watch(LineageSettings.System.getUriFor(LineageSettings.System.BATTERY_LIGHT_ENABLED));
     }
 
     @Override
@@ -106,19 +106,19 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Resources res = getResources();
 
         if (mLowColorPref != null) {
-            int lowColor = CMSettings.System.getInt(resolver, CMSettings.System.BATTERY_LIGHT_LOW_COLOR,
+            int lowColor = LineageSettings.System.getInt(resolver, LineageSettings.System.BATTERY_LIGHT_LOW_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
             mLowColorPref.setAllValues(lowColor, 0, 0, false);
         }
 
         if (mMediumColorPref != null) {
-            int mediumColor = CMSettings.System.getInt(resolver, CMSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
+            int mediumColor = LineageSettings.System.getInt(resolver, LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
             mMediumColorPref.setAllValues(mediumColor, 0, 0, false);
         }
 
         if (mFullColorPref != null) {
-            int fullColor = CMSettings.System.getInt(resolver, CMSettings.System.BATTERY_LIGHT_FULL_COLOR,
+            int fullColor = LineageSettings.System.getInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
             mFullColorPref.setAllValues(fullColor, 0, 0, false);
         }
@@ -134,11 +134,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (key.equals(LOW_COLOR_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_LOW_COLOR, color);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_LOW_COLOR, color);
         } else if (key.equals(MEDIUM_COLOR_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
         } else if (key.equals(FULL_COLOR_PREF)) {
-            CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_FULL_COLOR, color);
+            LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR, color);
         }
     }
 
@@ -169,11 +169,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Resources res = getResources();
 
         // Reset to the framework default colors
-        CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_LOW_COLOR,
+        LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_LOW_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
-        CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
+        LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
-        CMSettings.System.putInt(resolver, CMSettings.System.BATTERY_LIGHT_FULL_COLOR,
+        LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
         refreshDefault();
     }
@@ -199,8 +199,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
         @Override
         public String getSummary(Context context, String key) {
-            if (CMSettings.System.getInt(context.getContentResolver(),
-                    CMSettings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
+            if (LineageSettings.System.getInt(context.getContentResolver(),
+                    LineageSettings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
                 return context.getString(R.string.enabled);
             }
             return context.getString(R.string.disabled);

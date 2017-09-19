@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.actions.item;
+package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.app.NotificationGroup;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.profiles.actions.ItemListAdapter;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import java.util.UUID;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileGroup;
+import lineageos.app.Profile;
+import lineageos.app.ProfileGroup;
 
 public class AppGroupItem extends BaseItem {
     Profile mProfile;
