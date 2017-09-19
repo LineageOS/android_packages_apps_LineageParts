@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -27,10 +27,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
 
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 
 import java.util.UUID;
 

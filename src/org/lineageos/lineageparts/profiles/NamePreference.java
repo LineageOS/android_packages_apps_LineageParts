@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -26,7 +26,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 
 public class NamePreference extends Preference implements
         View.OnClickListener, Preference.OnPreferenceChangeListener {

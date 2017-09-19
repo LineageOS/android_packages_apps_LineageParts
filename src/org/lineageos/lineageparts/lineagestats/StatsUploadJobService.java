@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.lineageos.lineageparts.lineagestats;
 
 import android.app.job.JobParameters;
 import android.app.job.JobService;
@@ -24,7 +24,7 @@ import android.os.AsyncTask;
 import android.os.PersistableBundle;
 import android.util.ArrayMap;
 import android.util.Log;
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -45,7 +45,7 @@ public class StatsUploadJobService extends JobService {
     private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
     public static final String KEY_JOB_TYPE = "job_type";
-    public static final int JOB_TYPE_CMORG = 1;
+    public static final int JOB_TYPE_LineageORG = 1;
 
     public static final String KEY_UNIQUE_ID = "uniqueId";
     public static final String KEY_DEVICE_NAME = "deviceName";
@@ -115,11 +115,11 @@ public class StatsUploadJobService extends JobService {
             int jobType = extras.getInt(KEY_JOB_TYPE, -1);
             if (!isCancelled()) {
                 switch (jobType) {
-                    case JOB_TYPE_CMORG:
+                    case JOB_TYPE_LineageORG:
                         try {
                             JSONObject json = buildStatsRequest(deviceId, deviceName,
                                     deviceVersion, deviceCountry, deviceCarrier, deviceCarrierId);
-                            success = uploadToCM(json);
+                            success = uploadToLineage(json);
                         } catch (IOException | JSONException e) {
                             Log.e(TAG, "Could not upload stats checkin to community server", e);
                             success = false;
@@ -153,8 +153,8 @@ public class StatsUploadJobService extends JobService {
         return request;
     }
 
-    private boolean uploadToCM(JSONObject json) throws IOException {
-        final Uri uri = Uri.parse(getString(R.string.stats_cm_url));
+    private boolean uploadToLineage(JSONObject json) throws IOException {
+        final Uri uri = Uri.parse(getString(R.string.stats_lineage_url));
         URL url = new URL(uri.toString());
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
@@ -168,7 +168,7 @@ public class StatsUploadJobService extends JobService {
             os.close();
 
             final int responseCode = urlConnection.getResponseCode();
-            if (DEBUG) Log.d(TAG, "cm server response code=" + responseCode);
+            if (DEBUG) Log.d(TAG, "lineage server response code=" + responseCode);
             final boolean success = responseCode == HttpURLConnection.HTTP_OK;
             if (!success) {
                 Log.w(TAG, "failed sending, server returned: " + getResponse(urlConnection,

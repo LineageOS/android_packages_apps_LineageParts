@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import java.util.UUID;
 
@@ -27,10 +27,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
 
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 
 /**
  * Activity to support attaching a unknown NFC tag to an existing profile.

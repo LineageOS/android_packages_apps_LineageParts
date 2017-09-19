@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.search;
+package org.lineageos.lineageparts.search;
 
 import android.content.Context;
 import android.provider.SearchIndexableData;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.gestures;
+package org.lineageos.lineageparts.gestures;
 
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
@@ -50,7 +50,7 @@ import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
 
-import cyanogenmod.providers.CMSettings;
+import lineageos.providers.LineageSettings;
 
 import java.util.List;
 
@@ -58,7 +58,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
 
-    private static final String GESTURE_WAKEUP_REASON = "cmparts-gesture-wakeup";
+    private static final String GESTURE_WAKEUP_REASON = "lineageparts-gesture-wakeup";
     private static final int GESTURE_REQUEST = 0;
     private static final int GESTURE_WAKELOCK_DURATION = 3000;
     private static final int EVENT_PROCESS_WAKELOCK_DURATION = 500;
@@ -102,7 +102,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
         mPowerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
         mGestureWakeLock = mPowerManager.newWakeLock(
-                PowerManager.PARTIAL_WAKE_LOCK, "CMPartsGestureWakeLock");
+                PowerManager.PARTIAL_WAKE_LOCK, "LineagePartsGestureWakeLock");
 
         mEventHandler = new EventHandler();
 
@@ -113,18 +113,18 @@ public class KeyHandler implements DeviceKeyHandler {
 
         final Resources resources = mContext.getResources();
         mProximityWakeSupported = resources.getBoolean(
-                org.cyanogenmod.platform.internal.R.bool.config_proximityCheckOnWake);
+                org.lineageos.platform.internal.R.bool.config_proximityCheckOnWake);
 
         if (mProximityWakeSupported) {
             mProximityTimeOut = resources.getInteger(
-                    org.cyanogenmod.platform.internal.R.integer.config_proximityCheckTimeout);
+                    org.lineageos.platform.internal.R.integer.config_proximityCheckTimeout);
             mDefaultProximity = mContext.getResources().getBoolean(
-                    org.cyanogenmod.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
+                    org.lineageos.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
 
             mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
             mProximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
             mProximityWakeLock = mPowerManager.newWakeLock(
-                    PowerManager.PARTIAL_WAKE_LOCK, "CMPartsProximityWakeLock");
+                    PowerManager.PARTIAL_WAKE_LOCK, "LineagePartsProximityWakeLock");
         }
         mContext.registerReceiver(mUpdateReceiver,
                 new IntentFilter(TouchscreenGestureConstants.UPDATE_PREFS_ACTION));
@@ -152,8 +152,8 @@ public class KeyHandler implements DeviceKeyHandler {
 
         if (action != 0 && !mEventHandler.hasMessages(GESTURE_REQUEST)) {
             final Message msg = getMessageForAction(action);
-            final boolean proxWakeEnabled = CMSettings.System.getInt(mContext.getContentResolver(),
-                    CMSettings.System.PROXIMITY_ON_WAKE, mDefaultProximity ? 1 : 0) == 1;
+            final boolean proxWakeEnabled = LineageSettings.System.getInt(mContext.getContentResolver(),
+                    LineageSettings.System.PROXIMITY_ON_WAKE, mDefaultProximity ? 1 : 0) == 1;
             if (mProximityWakeSupported && proxWakeEnabled && mProximitySensor != null) {
                 mGestureWakeLock.acquire(2 * mProximityTimeOut);
                 mEventHandler.sendMessageDelayed(msg, mProximityTimeOut);
@@ -241,7 +241,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private void launchCamera() {
         mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
-        final Intent intent = new Intent(cyanogenmod.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
+        final Intent intent = new Intent(lineageos.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
         mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT,
                 Manifest.permission.STATUS_BAR_SERVICE);
         doHapticFeedback();
@@ -352,8 +352,8 @@ public class KeyHandler implements DeviceKeyHandler {
         final AudioManager audioManager = (AudioManager) mContext.getSystemService(
                 Context.AUDIO_SERVICE);
         if (audioManager.getRingerMode() != AudioManager.RINGER_MODE_SILENT) {
-            final boolean enabled = CMSettings.System.getInt(mContext.getContentResolver(),
-                    CMSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
+            final boolean enabled = LineageSettings.System.getInt(mContext.getContentResolver(),
+                    LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
             if (enabled) {
                 mVibrator.vibrate(50);
             }

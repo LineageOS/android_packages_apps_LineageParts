@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.content.Context;
 import android.nfc.NdefMessage;
@@ -25,7 +25,7 @@ import android.nfc.tech.NdefFormatable;
 import android.os.Vibrator;
 import android.util.Log;
 
-import cyanogenmod.app.Profile;
+import lineageos.app.Profile;
 
 import java.io.IOException;
 import java.util.UUID;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.applications;
+package org.lineageos.lineageparts.applications;
 
 import android.annotation.Nullable;
 import android.app.Fragment;
@@ -45,10 +45,10 @@ import android.widget.TextView;
 
 import com.android.settingslib.applications.ApplicationsState;
 
-import org.cyanogenmod.cmparts.PartsActivity;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.cmparts.widget.SwitchBar;
+import org.lineageos.lineageparts.PartsActivity;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.widget.SwitchBar;
 
 import java.util.ArrayList;
 import java.util.Arrays;

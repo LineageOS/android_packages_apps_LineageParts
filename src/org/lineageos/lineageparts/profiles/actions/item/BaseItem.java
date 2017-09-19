@@ -1,4 +1,4 @@
-package org.cyanogenmod.cmparts.profiles.actions.item;
+package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.content.Context;
 import android.view.LayoutInflater;

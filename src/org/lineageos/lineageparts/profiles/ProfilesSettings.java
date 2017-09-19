@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.annotation.Nullable;
 import android.app.Activity;
@@ -37,19 +37,19 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.widget.CMBaseSystemSettingSwitchBar;
-import org.cyanogenmod.cmparts.PartsActivity;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.widget.LineageBaseSystemSettingSwitchBar;
+import org.lineageos.lineageparts.PartsActivity;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.UUID;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
-import cyanogenmod.providers.CMSettings;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
+import lineageos.providers.LineageSettings;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements CMBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
+        implements LineageBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "ProfilesSettings";
 
@@ -63,7 +63,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private final BroadcastReceiver mReceiver;
 
     private ProfileManager mProfileManager;
-    private CMBaseSystemSettingSwitchBar mProfileEnabler;
+    private LineageBaseSystemSettingSwitchBar mProfileEnabler;
 
     private boolean mEnabled;
 
@@ -163,8 +163,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onStart() {
         super.onStart();
         final PartsActivity activity = (PartsActivity) getActivity();
-        mProfileEnabler = new CMBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
+        mProfileEnabler = new LineageBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
+                LineageSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
     }
 
     @Override
@@ -233,8 +233,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private void updateProfilesEnabledState() {
         Activity activity = getActivity();
 
-        mEnabled = CMSettings.System.getInt(activity.getContentResolver(),
-                CMSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        mEnabled = LineageSettings.System.getInt(activity.getContentResolver(),
+                LineageSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
         activity.invalidateOptionsMenu();
 
         getFloatingActionButton().setVisibility(mEnabled ? View.VISIBLE : View.GONE);

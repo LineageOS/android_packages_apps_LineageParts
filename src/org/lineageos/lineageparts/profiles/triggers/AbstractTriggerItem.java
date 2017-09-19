@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.triggers;
+package org.lineageos.lineageparts.profiles.triggers;
 
-import cyanogenmod.app.Profile;
+import lineageos.app.Profile;
 
 public class AbstractTriggerItem {
     private int mIcon;

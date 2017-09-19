@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.power;
+package org.lineageos.lineageparts.power;
 
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
@@ -35,20 +35,20 @@ import android.support.v7.preference.Preference;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Toast;
 
-import org.cyanogenmod.cmparts.PartsUpdater;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.widget.SeekBarPreference;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.graphics.drawable.StopMotionVectorDrawable;
+import org.lineageos.lineageparts.PartsUpdater;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.widget.SeekBarPreference;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.graphics.drawable.StopMotionVectorDrawable;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cyanogenmod.power.PerformanceManager;
-import cyanogenmod.power.PerformanceProfile;
-import cyanogenmod.providers.CMSettings;
+import lineageos.power.PerformanceManager;
+import lineageos.power.PerformanceProfile;
+import lineageos.providers.LineageSettings;
 
-import static cyanogenmod.power.PerformanceManager.PROFILE_POWER_SAVE;
+import static lineageos.power.PerformanceManager.PROFILE_POWER_SAVE;
 
 public class PerfProfileSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -116,7 +116,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
             mPerfSeekBar.setOnPreferenceChangeListener(this);
             updatePerfSettings();
 
-            watch(CMSettings.Secure.getUriFor(CMSettings.Secure.PERFORMANCE_PROFILE));
+            watch(LineageSettings.Secure.getUriFor(LineageSettings.Secure.PERFORMANCE_PROFILE));
         }
 
         mAutoPowerSavePref.setEntries(R.array.auto_power_save_entries);

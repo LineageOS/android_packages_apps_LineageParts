@@ -13,30 +13,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts;
+package org.lineageos.lineageparts;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import org.cyanogenmod.internal.cmparts.PartInfo;
-import org.cyanogenmod.internal.cmparts.PartsList;
+import org.lineageos.internal.lineageparts.PartInfo;
+import org.lineageos.internal.lineageparts.PartsList;
 
 import java.lang.reflect.Field;
 
-import cyanogenmod.preference.RemotePreferenceUpdater;
-import cyanogenmod.preference.SettingsHelper;
+import lineageos.preference.RemotePreferenceUpdater;
+import lineageos.preference.SettingsHelper;
 
-import static cyanogenmod.preference.RemotePreference.EXTRA_KEY;
-import static cyanogenmod.preference.RemotePreference.EXTRA_SUMMARY;
-import static org.cyanogenmod.internal.cmparts.PartsList.EXTRA_PART;
+import static lineageos.preference.RemotePreference.EXTRA_KEY;
+import static lineageos.preference.RemotePreference.EXTRA_SUMMARY;
+import static org.lineageos.internal.lineageparts.PartsList.EXTRA_PART;
 
 /**
  * PartsRefresher keeps remote UI clients up to date with any changes in the
  * state of the Part which should be reflected immediately. For preferences,
  * the clear use case is refreshing the summary.
  *
- * This works in conjunction with CMPartsPreference, which will send an
+ * This works in conjunction with LineagePartsPreference, which will send an
  * ordered broadcast requesting updated information. The part will be
  * looked up, and checked for a static SUMMARY_INFO field. If an
  * instance of SummaryInfo is found in this field, the result of the

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.input;
+package org.lineageos.lineageparts.input;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

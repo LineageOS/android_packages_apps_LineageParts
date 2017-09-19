@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -42,12 +42,12 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import org.cyanogenmod.cmparts.widget.PackageListAdapter;
-import org.cyanogenmod.cmparts.widget.PackageListAdapter.PackageItem;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.widget.PackageListAdapter;
+import org.lineageos.lineageparts.widget.PackageListAdapter.PackageItem;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.ProfileManager;
 
 public class AppGroupConfig extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {

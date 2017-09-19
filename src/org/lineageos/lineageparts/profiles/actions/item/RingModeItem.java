@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.actions.item;
+package org.lineageos.lineageparts.profiles.actions.item;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.profiles.actions.ItemListAdapter;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
-import cyanogenmod.profiles.RingModeSettings;
+import lineageos.profiles.RingModeSettings;
 
 public class RingModeItem extends BaseItem {
     RingModeSettings mSettings;

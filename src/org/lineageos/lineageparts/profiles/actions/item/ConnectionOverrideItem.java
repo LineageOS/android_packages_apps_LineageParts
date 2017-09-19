@@ -13,22 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.actions.item;
+package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.content.Context;
 import android.telephony.SubscriptionManager;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.profiles.actions.ItemListAdapter;
-import org.cyanogenmod.cmparts.utils.TelephonyUtils;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
+import org.lineageos.lineageparts.utils.TelephonyUtils;
 
-import cyanogenmod.profiles.ConnectionSettings;
+import lineageos.profiles.ConnectionSettings;
 
 public class ConnectionOverrideItem extends BaseItem {
     int mConnectionId;
     ConnectionSettings mConnectionSettings;
 
-    public static final int CM_MODE_SYSTEM_DEFAULT = -1;
+    public static final int Lineage_MODE_SYSTEM_DEFAULT = -1;
 
     public ConnectionOverrideItem(int connectionId, ConnectionSettings settings) {
         mConnectionId = connectionId;

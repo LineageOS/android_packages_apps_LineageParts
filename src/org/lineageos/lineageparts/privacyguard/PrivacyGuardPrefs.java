@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.privacyguard;
+package org.lineageos.lineageparts.privacyguard;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
-import cyanogenmod.providers.CMSettings;
+import lineageos.providers.LineageSettings;
 
 public class PrivacyGuardPrefs extends SettingsPreferenceFragment {
 
@@ -39,7 +39,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.privacy_guard_prefs);
-        watch(CMSettings.Secure.getUriFor(CMSettings.Secure.PRIVACY_GUARD_DEFAULT));
+        watch(LineageSettings.Secure.getUriFor(LineageSettings.Secure.PRIVACY_GUARD_DEFAULT));
     }
 
     @Override

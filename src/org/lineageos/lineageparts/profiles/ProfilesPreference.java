@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.profiles;
+package org.lineageos.lineageparts.profiles;
 
 import android.content.ActivityNotFoundException;
 import android.os.Bundle;
@@ -24,9 +24,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.PartsActivity;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.PartsActivity;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class ProfilesPreference extends CheckBoxPreference implements View.OnClickListener {
     private static final String TAG = ProfilesPreference.class.getSimpleName();

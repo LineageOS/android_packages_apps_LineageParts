@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.utils;
+package org.lineageos.lineageparts.utils;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -37,7 +37,7 @@ public class TelephonyUtils {
 
     // from MobileNetworkSettings
     public static final String ACTION_PICK_NETWORK_MODE =
-            "cyanogenmod.platform.intent.action.NETWORK_MODE_PICKER";
+            "lineageos.platform.intent.action.NETWORK_MODE_PICKER";
     public static final String EXTRA_NONE_TEXT = "network_mode_picker::neutral_text";
     public static final String EXTRA_SHOW_NONE = "network_mode_picker::show_none";
     public static final String EXTRA_INITIAL_NETWORK_VALUE = "network_mode_picker::selected_mode";

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.notificationlight;
+package org.lineageos.lineageparts.notificationlight;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

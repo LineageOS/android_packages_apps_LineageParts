@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.triggers;
+package org.lineageos.lineageparts.profiles.triggers;
 
 import android.app.AlertDialog;
 import android.app.ListFragment;
@@ -33,11 +33,11 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.profiles.ProfilesSettings;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.profiles.ProfilesSettings;
 
 import java.util.ArrayList;
 import java.util.List;

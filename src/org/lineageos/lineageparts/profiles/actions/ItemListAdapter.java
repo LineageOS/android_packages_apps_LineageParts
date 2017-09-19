@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.actions;
+package org.lineageos.lineageparts.profiles.actions;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -21,7 +21,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
-import org.cyanogenmod.cmparts.profiles.actions.item.Item;
+import org.lineageos.lineageparts.profiles.actions.item.Item;
 
 import java.util.List;
 

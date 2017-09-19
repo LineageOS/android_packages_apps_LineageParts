@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.notificationlight;
+package org.lineageos.lineageparts.notificationlight;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -31,8 +31,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.widget.CustomDialogPreference;
+import org.lineageos.lineageparts.R;
 
 public class ApplicationLightPreference extends CustomDialogPreference<LightSettingsDialog>
         implements View.OnLongClickListener {

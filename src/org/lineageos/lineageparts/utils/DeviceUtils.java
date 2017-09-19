@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.utils;
+package org.lineageos.lineageparts.utils;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -31,7 +31,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.Surface;
 
-import org.cyanogenmod.cmparts.input.ButtonSettings;
+import org.lineageos.lineageparts.input.ButtonSettings;
 
 public class DeviceUtils {
 

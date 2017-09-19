@@ -12,7 +12,7 @@
  * permissions and limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.lineageos.lineageparts.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -20,7 +20,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 
 public class DividerPreference extends Preference {
 

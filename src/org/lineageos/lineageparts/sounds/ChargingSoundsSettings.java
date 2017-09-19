@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.sounds;
+package org.lineageos.lineageparts.sounds;
 
 import android.app.Activity;
 import android.content.Context;
@@ -28,10 +28,10 @@ import android.os.Vibrator;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 
-import cyanogenmod.providers.CMSettings;
+import lineageos.providers.LineageSettings;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class ChargingSoundsSettings extends SettingsPreferenceFragment {
 
@@ -58,8 +58,8 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
         }
 
         mChargingSoundsRingtone = findPreference(KEY_CHARGING_SOUNDS_RINGTONE);
-        String curTone = CMSettings.Global.getString(getContentResolver(),
-                CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
+        String curTone = LineageSettings.Global.getString(getContentResolver(),
+                LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
         if (curTone == null) {
             updateChargingRingtone(Settings.System.DEFAULT_NOTIFICATION_URI.toString(), true);
         } else {
@@ -90,8 +90,8 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
 
         mChargingSoundsRingtone.setSummary(toneName);
         if (persist) {
-            CMSettings.Global.putString(getContentResolver(),
-                    CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE, toneUriString);
+            LineageSettings.Global.putString(getContentResolver(),
+                    LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE, toneUriString);
         }
     }
 
@@ -99,8 +99,8 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mChargingSoundsRingtone) {
             launchNotificationSoundPicker(REQUEST_CODE_CHARGING_NOTIFICATIONS_RINGTONE,
-                    CMSettings.Global.getString(getContentResolver(),
-                    CMSettings.Global.POWER_NOTIFICATIONS_RINGTONE));
+                    LineageSettings.Global.getString(getContentResolver(),
+                    LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE));
         }
         return super.onPreferenceTreeClick(preference);
     }
