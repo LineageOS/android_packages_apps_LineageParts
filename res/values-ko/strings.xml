@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="cmparts_title">LineageOS 설정</string>
+  <string name="lineageparts_title">LineageOS 설정</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">불러오는 중\u2026</string>
   <string name="dlg_ok">확인</string>
@@ -449,7 +449,7 @@
         <![CDATA[<b>총 기여자:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>총 변경 사항:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>마지막 업데이트:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-  <!-- Anonymous Statistics #CM -->
+  <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">LineageOS 통계</string>
   <string name="anonymous_statistics_summary">익명의 통계 자료를 보내 LineageOS 개선에 도움 주기</string>

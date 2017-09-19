@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.applications;
+package org.lineageos.lineageparts.applications;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -27,10 +27,10 @@ import android.support.v7.preference.PreferenceScreen;
 import android.view.WindowManagerGlobal;
 import android.view.WindowManagerPolicyControl;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
-import cyanogenmod.preference.SettingsHelper;
+import lineageos.preference.SettingsHelper;
 
 public class ExpandedDesktopPrefs extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {

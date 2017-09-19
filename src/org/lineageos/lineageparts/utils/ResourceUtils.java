@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.utils;
+package org.lineageos.lineageparts.utils;
 
 import android.content.res.Resources;
 import android.util.Log;
@@ -33,7 +33,7 @@ public class ResourceUtils {
     public static String getStringForResourceName(final Resources res,
                                                   final String resourceName,
                                                   final String defaultValue) {
-        final int resId = res.getIdentifier(resourceName, "string", "org.cyanogenmod.cmparts");
+        final int resId = res.getIdentifier(resourceName, "string", "org.lineageos.lineageparts");
         if (resId <= 0) {
             Log.e(TAG, "No resource found for " + resourceName);
             return defaultValue;

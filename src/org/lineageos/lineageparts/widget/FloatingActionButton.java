@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.lineageos.lineageparts.widget;
 
 import android.animation.AnimatorInflater;
 import android.content.Context;
@@ -24,7 +24,7 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.widget.ImageView;
 
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 
 public class FloatingActionButton extends ImageView {
 

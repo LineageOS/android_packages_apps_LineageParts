@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.lineageos.lineageparts.lineagestats;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class AnonymousStats extends SettingsPreferenceFragment {
 
-    private static final String PREF_FILE_NAME = "CMStats";
+    private static final String PREF_FILE_NAME = "LineageStats";
     /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
     /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 

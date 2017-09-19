@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.lineageos.lineageparts.lineagestats;
 
 import android.app.IntentService;
 import android.app.job.JobInfo;
@@ -27,7 +27,7 @@ import android.os.PersistableBundle;
 import android.util.Log;
 
 public class ReportingService extends IntentService {
-    /* package */ static final String TAG = "CMStats";
+    /* package */ static final String TAG = "LineageStats";
     private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
     public ReportingService() {
@@ -45,29 +45,29 @@ public class ReportingService extends IntentService {
         String deviceCarrier = Utilities.getCarrier(getApplicationContext());
         String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
 
-        final int cmOrgJobId = AnonymousStats.getNextJobId(getApplicationContext());
+        final int lineageOrgJobId = AnonymousStats.getNextJobId(getApplicationContext());
 
-        if (DEBUG) Log.d(TAG, "scheduling job id: " + cmOrgJobId);
+        if (DEBUG) Log.d(TAG, "scheduling job id: " + lineageOrgJobId);
 
-        PersistableBundle cmBundle = new PersistableBundle();
-        cmBundle.putString(StatsUploadJobService.KEY_DEVICE_NAME, deviceName);
-        cmBundle.putString(StatsUploadJobService.KEY_UNIQUE_ID, deviceId);
-        cmBundle.putString(StatsUploadJobService.KEY_VERSION, deviceVersion);
-        cmBundle.putString(StatsUploadJobService.KEY_COUNTRY, deviceCountry);
-        cmBundle.putString(StatsUploadJobService.KEY_CARRIER, deviceCarrier);
-        cmBundle.putString(StatsUploadJobService.KEY_CARRIER_ID, deviceCarrierId);
-        cmBundle.putLong(StatsUploadJobService.KEY_TIMESTAMP, System.currentTimeMillis());
+        PersistableBundle lineageBundle = new PersistableBundle();
+        lineageBundle.putString(StatsUploadJobService.KEY_DEVICE_NAME, deviceName);
+        lineageBundle.putString(StatsUploadJobService.KEY_UNIQUE_ID, deviceId);
+        lineageBundle.putString(StatsUploadJobService.KEY_VERSION, deviceVersion);
+        lineageBundle.putString(StatsUploadJobService.KEY_COUNTRY, deviceCountry);
+        lineageBundle.putString(StatsUploadJobService.KEY_CARRIER, deviceCarrier);
+        lineageBundle.putString(StatsUploadJobService.KEY_CARRIER_ID, deviceCarrierId);
+        lineageBundle.putLong(StatsUploadJobService.KEY_TIMESTAMP, System.currentTimeMillis());
 
         // set job types
-        cmBundle.putInt(StatsUploadJobService.KEY_JOB_TYPE,
-                StatsUploadJobService.JOB_TYPE_CMORG);
+        lineageBundle.putInt(StatsUploadJobService.KEY_JOB_TYPE,
+                StatsUploadJobService.JOB_TYPE_LineageORG);
 
-        // schedule cmorg stats upload
-        js.schedule(new JobInfo.Builder(cmOrgJobId, new ComponentName(getPackageName(),
+        // schedule lineage stats upload
+        js.schedule(new JobInfo.Builder(lineageOrgJobId, new ComponentName(getPackageName(),
                 StatsUploadJobService.class.getName()))
                 .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
                 .setMinimumLatency(1000)
-                .setExtras(cmBundle)
+                .setExtras(lineageBundle)
                 .setPersisted(true)
                 .build());
 

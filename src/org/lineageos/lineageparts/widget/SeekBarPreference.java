@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.lineageos.lineageparts.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -32,7 +32,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 
 import com.android.settingslib.RestrictedPreference;
 
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 
 /**
  * Based on android.preference.SeekBarPreference, but uses support preference as base.

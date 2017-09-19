@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts;
+package org.lineageos.lineageparts;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -22,9 +22,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.preference.PreferenceManager;
 
-import org.cyanogenmod.cmparts.contributors.ContributorsCloudFragment;
-import org.cyanogenmod.cmparts.gestures.TouchscreenGestureSettings;
-import org.cyanogenmod.cmparts.input.ButtonSettings;
+import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
+import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
+import org.lineageos.lineageparts.input.ButtonSettings;
 
 public class BootReceiver extends BroadcastReceiver {
 

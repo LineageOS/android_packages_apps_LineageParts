@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:cm="http://schemas.android.com/apk/res/org.cyanogenmod.cmparts"
+            xmlns:lineage="http://schemas.android.com/apk/res/org.lineageos.lineageparts"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -37,16 +37,16 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_hue_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_hue_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
-                cm:defaultValue="1.00"
-                cm:digits="4" />
+                lineage:min="0.20"
+                lineage:max="1.00"
+                lineage:defaultValue="1.00"
+                lineage:digits="4" />
 
         <TextView android:id="@+id/adj_saturation_text"
                 android:layout_width="wrap_content"
@@ -60,16 +60,16 @@
                 android:layout_below="@id/adj_hue_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_saturation_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_saturation_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
-                cm:defaultValue="1.00"
-                cm:digits="4" />
+                lineage:min="0.20"
+                lineage:max="1.00"
+                lineage:defaultValue="1.00"
+                lineage:digits="4" />
 
         <TextView android:id="@+id/adj_intensity_text"
                 android:layout_width="match_parent"
@@ -83,16 +83,16 @@
                 android:layout_below="@id/adj_saturation_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_intensity_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_intensity_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
-                cm:defaultValue="1.00"
-                cm:digits="4" />
+                lineage:min="0.20"
+                lineage:max="1.00"
+                lineage:defaultValue="1.00"
+                lineage:digits="4" />
 
         <TextView android:id="@+id/adj_contrast_text"
                 android:layout_width="match_parent"
@@ -106,16 +106,16 @@
                 android:layout_below="@id/adj_intensity_seekbar"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip" />
-        <org.cyanogenmod.cmparts.widget.IntervalSeekBar
+        <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_contrast_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_contrast_text"
                 android:paddingTop="2dip"
-                cm:min="0.20"
-                cm:max="1.00"
-                cm:defaultValue="1.00"
-                cm:digits="4" />
+                lineage:min="0.20"
+                lineage:max="1.00"
+                lineage:defaultValue="1.00"
+                lineage:digits="4" />
 
         <ImageView android:id="@+id/black_scale_picture_adjustment"
                 android:src="@drawable/color_tuning_preview"

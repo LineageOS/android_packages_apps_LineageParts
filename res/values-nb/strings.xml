@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="cmparts_title">LineageOS Innstillinger</string>
+  <string name="lineageparts_title">LineageOS Innstillinger</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Laster inn\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -449,7 +449,7 @@
         <![CDATA[<b>Totalt antall bidragsytere:</b><xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Totalt antall utførelser:</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Siste oppdatering:</b><xliff:g id="date">%3$s</xliff:g>]]></string>
-  <!-- Anonymous Statistics #CM -->
+  <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">LineageOS-statistikk</string>
   <string name="anonymous_statistics_summary">Hjelp oss med å gjøre LineageOS bedre ved å velge å sende inn anonym statistikkrapportering</string>

@@ -14,16 +14,16 @@
 * limitations under the License.
 */
 
-package org.cyanogenmod.cmparts.widget;
+package org.lineageos.lineageparts.widget;
 
 import android.content.Context;
 import android.net.Uri;
 import android.widget.Switch;
 
-import cyanogenmod.preference.SettingsHelper;
-import cyanogenmod.providers.CMSettings;
+import lineageos.preference.SettingsHelper;
+import lineageos.providers.LineageSettings;
 
-public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeListener,
+public class LineageBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeListener,
         SettingsHelper.OnSettingsChangeListener {
 
     private Context mContext;
@@ -40,7 +40,7 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
         public void onEnablerChanged(boolean isEnabled);
     }
 
-    public CMBaseSystemSettingSwitchBar(Context context, SwitchBar switchBar, String key,
+    public LineageBaseSystemSettingSwitchBar(Context context, SwitchBar switchBar, String key,
                                       boolean defaultState, SwitchBarChangeCallback callback) {
         mContext = context;
         mSwitchBar = switchBar;
@@ -72,7 +72,7 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
         if (!mListeningToOnSwitchChange) {
             mSwitchBar.addOnSwitchChangeListener(this);
             SettingsHelper.get(mContext).startWatching(
-                    this, CMSettings.System.getUriFor(mSettingKey));
+                    this, LineageSettings.System.getUriFor(mSettingKey));
 
             mListeningToOnSwitchChange = true;
         }
@@ -97,7 +97,7 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
     }
 
     private void setSwitchState() {
-        boolean enabled = CMSettings.System.getInt(mContext.getContentResolver(),
+        boolean enabled = LineageSettings.System.getInt(mContext.getContentResolver(),
                 mSettingKey, mDefaultState) == 1;
         mStateMachineEvent = true;
         setSwitchBarChecked(enabled);
@@ -112,7 +112,7 @@ public class CMBaseSystemSettingSwitchBar implements SwitchBar.OnSwitchChangeLis
         }
 
         // Handle a switch change
-        CMSettings.System.putInt(mContext.getContentResolver(),
+        LineageSettings.System.putInt(mContext.getContentResolver(),
                 mSettingKey, isChecked ? 1 : 0);
 
         if (mCallback != null) {

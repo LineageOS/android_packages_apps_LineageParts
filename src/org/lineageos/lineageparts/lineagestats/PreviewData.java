@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.lineageos.lineageparts.lineagestats;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceScreen;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class PreviewData extends SettingsPreferenceFragment {
     private static final String UNIQUE_ID = "preview_id";

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.actions.item;
+package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -22,10 +22,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.profiles.actions.ItemListAdapter;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
-import cyanogenmod.profiles.StreamSettings;
+import lineageos.profiles.StreamSettings;
 
 public class VolumeStreamItem extends BaseItem {
     private int mStreamId;

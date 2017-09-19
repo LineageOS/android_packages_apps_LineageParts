@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.profiles.triggers;
+package org.lineageos.lineageparts.profiles.triggers;
 
 import android.app.Fragment;
 import android.app.PendingIntent;
@@ -28,13 +28,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import cyanogenmod.app.Profile;
+import lineageos.app.Profile;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.PartsActivity;
-import org.cyanogenmod.cmparts.profiles.NFCProfileTagCallback;
-import org.cyanogenmod.cmparts.profiles.NFCProfileUtils;
-import org.cyanogenmod.cmparts.profiles.ProfilesSettings;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.PartsActivity;
+import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
+import org.lineageos.lineageparts.profiles.NFCProfileUtils;
+import org.lineageos.lineageparts.profiles.ProfilesSettings;
 
 public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallback {
     Profile mProfile;

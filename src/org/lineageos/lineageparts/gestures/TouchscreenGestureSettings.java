@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.gestures;
+package org.lineageos.lineageparts.gestures;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,12 +25,12 @@ import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.PreferenceManager;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.hardware.TouchscreenGesture;
+import lineageos.hardware.LineageHardwareManager;
+import lineageos.hardware.TouchscreenGesture;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
-import org.cyanogenmod.cmparts.utils.ResourceUtils;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.utils.ResourceUtils;
 
 import java.lang.System;
 
@@ -52,7 +52,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
     }
 
     private void initTouchscreenGestures() {
-        final CMHardwareManager manager = CMHardwareManager.getInstance(getContext());
+        final LineageHardwareManager manager = LineageHardwareManager.getInstance(getContext());
         mTouchscreenGestures = manager.getTouchscreenGestures();
         final int[] actions = getDefaultGestureActions(getContext(), mTouchscreenGestures);
         for (final TouchscreenGesture gesture : mTouchscreenGestures) {
@@ -87,7 +87,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
         @Override
         public boolean callChangeListener(final Object newValue) {
             final int action = Integer.parseInt(String.valueOf(newValue));
-            final CMHardwareManager manager = CMHardwareManager.getInstance(mContext);
+            final LineageHardwareManager manager = LineageHardwareManager.getInstance(mContext);
             if (!manager.setTouchscreenGestureEnabled(mGesture, action > 0)) {
                 return false;
             }
@@ -137,7 +137,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
             return;
         }
 
-        final CMHardwareManager manager = CMHardwareManager.getInstance(context);
+        final LineageHardwareManager manager = LineageHardwareManager.getInstance(context);
         final TouchscreenGesture[] gestures = manager.getTouchscreenGestures();
         final int[] actionList = buildActionList(context, gestures);
         for (final TouchscreenGesture gesture : gestures) {
@@ -148,8 +148,8 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
     }
 
     private static boolean isTouchscreenGesturesSupported(final Context context) {
-        final CMHardwareManager manager = CMHardwareManager.getInstance(context);
-        return manager.isSupported(CMHardwareManager.FEATURE_TOUCHSCREEN_GESTURES);
+        final LineageHardwareManager manager = LineageHardwareManager.getInstance(context);
+        return manager.isSupported(LineageHardwareManager.FEATURE_TOUCHSCREEN_GESTURES);
     }
 
     private static int[] getDefaultGestureActions(final Context context,

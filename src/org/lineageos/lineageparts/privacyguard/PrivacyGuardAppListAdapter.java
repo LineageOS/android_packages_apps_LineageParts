@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.privacyguard;
+package org.lineageos.lineageparts.privacyguard;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -29,8 +29,8 @@ import android.widget.ImageView;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.privacyguard.PrivacyGuardManager.AppInfo;
+import org.lineageos.lineageparts.R;
+import org.lineageos.lineageparts.privacyguard.PrivacyGuardManager.AppInfo;
 
 import java.util.Arrays;
 import java.util.List;

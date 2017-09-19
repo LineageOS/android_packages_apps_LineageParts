@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.lineageos.lineageparts.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -32,7 +32,7 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.R;
+import org.lineageos.lineageparts.R;
 
 import java.util.ArrayList;
 
