@@ -94,7 +94,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
 
         mApplicationsState = ApplicationsState.getInstance(getActivity().getApplication());
         mSession = mApplicationsState.newSession(this);
-        mSession.resume();
+        mSession.onResume();
         mActivityFilter = new ActivityFilter(getActivity().getPackageManager());
 
         mIsGloballyExpanded = isGloballyExpanded(getActivity().getContentResolver());
@@ -148,8 +148,8 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
         super.onDestroy();
 
         save();
-        mSession.pause();
-        mSession.release();
+        mSession.onPause();
+        mSession.onDestroy();
     }
 
     @Override
