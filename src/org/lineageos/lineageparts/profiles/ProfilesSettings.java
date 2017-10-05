@@ -48,7 +48,6 @@ import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
 import lineageos.providers.LineageSettings;
 
-/*
 public class ProfilesSettings extends SettingsPreferenceFragment
         implements LineageBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
         Preference.OnPreferenceChangeListener {
@@ -320,4 +319,3 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         }
     };
 }
-*/
