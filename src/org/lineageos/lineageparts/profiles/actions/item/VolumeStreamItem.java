@@ -25,11 +25,8 @@ import android.view.ViewGroup;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
-/*
 import lineageos.profiles.StreamSettings;
-*/
 
-/*
 public class VolumeStreamItem extends BaseItem {
     private int mStreamId;
     private StreamSettings mStreamSettings;
@@ -73,8 +70,11 @@ public class VolumeStreamItem extends BaseItem {
     @Override
     public View getView(LayoutInflater inflater, View convertView, ViewGroup parent) {
         View view = super.getView(inflater, convertView, parent);
+        /*
         final boolean volumeLinkNotification = Settings.Secure.getInt(inflater.getContext()
                 .getContentResolver(), Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
+        */
+        final boolean volumeLinkNotification = false;
         if (mStreamId == AudioManager.STREAM_NOTIFICATION && volumeLinkNotification) {
             view.findViewById(android.R.id.title).setEnabled(false);
             view.findViewById(android.R.id.summary).setEnabled(false);
@@ -105,4 +105,3 @@ public class VolumeStreamItem extends BaseItem {
         return mStreamSettings;
     }
 }
-*/
