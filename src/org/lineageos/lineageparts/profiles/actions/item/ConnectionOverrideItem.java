@@ -24,7 +24,6 @@ import org.lineageos.lineageparts.utils.TelephonyUtils;
 
 import lineageos.profiles.ConnectionSettings;
 
-/*
 public class ConnectionOverrideItem extends BaseItem {
     int mConnectionId;
     ConnectionSettings mConnectionSettings;
@@ -131,4 +130,3 @@ public class ConnectionOverrideItem extends BaseItem {
         return mConnectionId;
     }
 }
-*/
