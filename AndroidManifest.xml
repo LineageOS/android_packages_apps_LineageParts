@@ -23,7 +23,7 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
-    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -145,10 +145,10 @@
         -->
 
         <!-- Profiles settings (dashboard) -->
-        <!--
         <activity-alias
             android:name=".profiles.ProfilesSettings"
             android:label="@string/profiles_settings_title"
+            android:icon="@drawable/ic_settings_profiles"
             android:targetActivity="PartsActivity">
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
@@ -157,18 +157,16 @@
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.personal" />
+                android:value="com.android.settings.category.ia.homepage" />
+            <!--
             <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_profiles" />
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="org.lineageos/lineageparts/profiles/ProfileSettings" />
+            -->
             <meta-data
-                android:name="org.lineageos.settings.summary.receiver"
-                android:value="org.lineageos.lineageparts.PartsUpdater" />
-            <meta-data
-                android:name="org.lineageos.settings.summary.key"
-                android:value="profiles_settings" />
+                android:name="com.android.settings.summary"
+                android:value="@string/profile_settings_title" />
         </activity-alias>
-        -->
 
         <!-- Status bar settings (dashboard) -->
         <!--
@@ -236,7 +234,6 @@
         </activity-alias>
         -->
 
-        <!--
         <activity android:name=".profiles.NFCProfile">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
@@ -244,14 +241,11 @@
                 <data android:mimeType="cm/profile" />
             </intent-filter>
         </activity>
-        -->
 
-        <!--
         <activity
             android:name=".profiles.NFCProfileSelect"
             android:label="@string/profile_select"
             android:excludeFromRecents="true"/>
-        -->
 
     </application>
 </manifest>
