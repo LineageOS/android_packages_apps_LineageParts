@@ -38,15 +38,12 @@ import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
 
 import org.lineageos.lineageparts.R;
-/*
 import org.lineageos.lineageparts.profiles.ProfilesSettings;
-*/
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-/*
 public class BluetoothTriggerFragment extends ListFragment {
 
     private BluetoothAdapter mBluetoothAdapter;
@@ -278,4 +275,3 @@ public class BluetoothTriggerFragment extends ListFragment {
         }
     }
 }
-*/
