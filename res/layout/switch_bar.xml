@@ -27,7 +27,7 @@
               android:maxLines="2"
               android:ellipsize="end"
               android:textAppearance="@style/TextAppearance.Switch"
-              android:textColor="@color/switchbar_text_color"
+              android:textColor="?android:attr/textColorPrimary"
               android:textAlignment="viewStart" />
 
     <org.lineageos.lineageparts.widget.ToggleSwitch
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:background="@null"
-            android:theme="@style/ThemeOverlay.SwitchBar" />
+            android:theme="@style/ThemeOverlay.SwitchBar.Settings" />
 
 </merge>
 
