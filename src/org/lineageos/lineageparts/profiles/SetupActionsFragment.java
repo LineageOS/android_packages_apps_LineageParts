@@ -770,7 +770,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             int selectedMode = Integer.parseInt(data.getStringExtra(
                     TelephonyUtils.EXTRA_NETWORK_PICKER_PICKED_VALUE));
             int subId = data.getIntExtra(TelephonyUtils.EXTRA_SUBID,
-                    SubscriptionManager.getDefaultDataSubId());
+                    SubscriptionManager.getDefaultDataSubscriptionId());
             ConnectionOverrideItem connItem = (ConnectionOverrideItem) mSelectedItem;
             final ConnectionSettings setting = connItem.getSettings();
 //            final ConnectionSettings setting = mProfile.getConnectionSettingWithSubId(subId);
