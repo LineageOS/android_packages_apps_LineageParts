@@ -103,7 +103,8 @@ public class ConnectionOverrideItem extends BaseItem {
             if (mConnectionId == ConnectionSettings.PROFILE_CONNECTION_2G3G4G) { // different options
                 if (mConnectionSettings.isOverride()) {
                     return TelephonyUtils.getNetworkModeString(context,
-                            mConnectionSettings.getValue(), SubscriptionManager.getDefaultDataSubId());
+                            mConnectionSettings.getValue(),
+                            SubscriptionManager.getDefaultDataSubscriptionId());
                 } else {
                     resId = R.string.profile_action_none;
                 }
