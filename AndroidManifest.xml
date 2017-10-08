@@ -23,7 +23,7 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
-    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -87,6 +87,21 @@
                 <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
             </intent-filter>
         </provider>
+
+        <activity
+            android:name=".livedisplay.LiveDisplaySettingsActivity"
+            android:label="@*lineageos.platform:string/live_display_title"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/live_display_summary"/>
+        </activity>
 
         <!-- Privacy settings (dashboard) -->
         <!--
