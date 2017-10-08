@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e9f3ab6a_cd01a60b",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-08T19:21:53Z",
+      "side": 1,
+      "message": "Don\u0027t change this just yet, if there\u0027s really nothing that forces you to.",
+      "range": {
+        "startLine": 26,
+        "startChar": 14,
+        "endLine": 26,
+        "endChar": 70
+      },
+      "revId": "5fd1b0bf47b606bcce4ca0e84ca52ed77eb0609b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
