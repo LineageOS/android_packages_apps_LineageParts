@@ -15,10 +15,12 @@
  */
 package org.lineageos.lineageparts.livedisplay;
 
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v14.preference.PreferenceFragment;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -30,15 +32,16 @@ import android.util.Log;
 import com.android.internal.util.ArrayUtils;
 
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
 import org.lineageos.lineageparts.search.SearchIndexableRaw;
 import org.lineageos.lineageparts.search.Searchable;
 import org.lineageos.lineageparts.utils.ResourceUtils;
+import org.lineageos.lineageparts.widget.CustomDialogPreference;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.hardware.DisplayMode;
@@ -55,7 +58,7 @@ import static lineageos.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
 import static lineageos.hardware.LiveDisplayManager.MODE_OFF;
 import static lineageos.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
-public class LiveDisplay extends SettingsPreferenceFragment implements Searchable,
+public class LiveDisplaySettingsFragment extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
 
     private static final String TAG = "LiveDisplay";
@@ -113,8 +116,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
     private LineageHardwareManager mHardware;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         final Resources res = getResources();
 
         mHardware = LineageHardwareManager.getInstance(getActivity());
@@ -226,6 +228,24 @@ public class LiveDisplay extends SettingsPreferenceFragment implements Searchabl
     public void onPause() {
         super.onPause();
         SettingsHelper.get(getActivity()).stopWatching(this);
+    }
+
+    @Override
+    public void onDisplayPreferenceDialog(Preference preference) {
+        if (preference.getKey() == null) {
+            // Auto-key preferences that don't have a key, so the dialog can find them.
+            preference.setKey(UUID.randomUUID().toString());
+        }
+        DialogFragment f = null;
+        if (preference instanceof CustomDialogPreference) {
+            f = CustomDialogPreference.CustomPreferenceDialogFragment
+                    .newInstance(preference.getKey());
+        } else {
+            super.onDisplayPreferenceDialog(preference);
+            return;
+        }
+        f.setTargetFragment(this, 0);
+        f.show(getFragmentManager(), "dialog_preference");
     }
 
     private boolean updateDisplayModes() {
