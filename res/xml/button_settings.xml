@@ -19,11 +19,11 @@
         android:key="button_settings"
         android:title="@string/button_pref_title">
 
-    <SwitchPreference
+    <!--SwitchPreference
         android:key="disable_nav_keys"
         android:title="@string/disable_navkeys_title"
         android:summary="@string/disable_navkeys_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false" /-->
 
     <!--
     <org.lineageos.lineageparts.input.ButtonBacklightBrightness
@@ -33,7 +33,7 @@
         android:persistent="false" />
     -->
 
-    <PreferenceCategory
+    <!--PreferenceCategory
         android:key="navigation_bar_category"
         android:title="@string/navigation_bar_category" >
 
@@ -77,7 +77,7 @@
             android:title="@string/navigation_bar_recents_title"
             android:persistent="false" />
 
-    </PreferenceCategory>
+    </PreferenceCategory-->
 
     <PreferenceCategory
         android:key="power_key"
@@ -88,7 +88,7 @@
             android:title="@string/power_menu_title"
             android:fragment="org.lineageos.lineageparts.input.PowerMenuActions" />
 
-        <SwitchPreference
+        <!--SwitchPreference
             android:key="power_end_call"
             android:title="@string/power_end_call_title"
             android:summary="@string/power_end_call_summary"
@@ -108,11 +108,11 @@
             android:entries="@array/torch_long_press_power_timeout_entries"
             android:entryValues="@array/torch_long_press_power_timeout_values"
             android:dependency="torch_long_press_power_gesture"
-            android:persistent="false" />
+            android:persistent="false" /-->
 
     </PreferenceCategory>
 
-    <PreferenceCategory
+    <!--PreferenceCategory
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
 
@@ -300,6 +300,6 @@
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary" />
-    </PreferenceCategory>
+    </PreferenceCategory-->
 
 </PreferenceScreen>
