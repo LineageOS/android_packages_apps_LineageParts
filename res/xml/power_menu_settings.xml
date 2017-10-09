@@ -27,12 +27,13 @@
     <CheckBoxPreference
         android:key="screenshot"
         android:title="@string/power_menu_screenshot_title"
+        android:summary="@string/power_menu_screenshot_summary"
         android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="airplane"
         android:title="@string/power_menu_airplane_title"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="users"
