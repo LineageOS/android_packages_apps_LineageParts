@@ -27,10 +27,7 @@ import android.provider.Settings;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 
-/*
-import com.android.internal.util.lineage.PowerMenuConstants;
-*/
-
+import org.lineageos.internal.util.PowerMenuConstants;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
@@ -40,24 +37,11 @@ import java.util.List;
 
 import lineageos.providers.LineageSettings;
 
-/*
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_AIRPLANE;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_ASSIST;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_LOCKDOWN;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_RESTART;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
-*/
+import static org.lineageos.internal.util.PowerMenuConstants.*;
 
-/*
 public class PowerMenuActions extends SettingsPreferenceFragment {
     final static String TAG = "PowerMenuActions";
 
-    private CheckBoxPreference mRebootPref;
     private CheckBoxPreference mScreenshotPref;
     private CheckBoxPreference mAirplanePref;
     private CheckBoxPreference mUsersPref;
@@ -91,9 +75,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 continue;
             }
 
-            if (action.equals(GLOBAL_ACTION_KEY_RESTART)) {
-                mRebootPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_RESTART);
-            } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
+            if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
@@ -120,10 +102,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     @Override
     public void onStart() {
         super.onStart();
-
-        if (mRebootPref != null) {
-            mRebootPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_RESTART));
-        }
 
         if (mScreenshotPref != null) {
             mScreenshotPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENSHOT));
@@ -183,11 +161,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     public boolean onPreferenceTreeClick(Preference preference) {
         boolean value;
 
-        if (preference == mRebootPref) {
-            value = mRebootPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_RESTART);
-
-        } else if (preference == mScreenshotPref) {
+        if (preference == mScreenshotPref) {
             value = mScreenshotPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
 
@@ -313,8 +287,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
     private void updatePowerMenuDialog() {
         Intent u = new Intent();
-        u.setAction(Intent.UPDATE_POWER_MENU);
+        u.setAction(lineageos.content.Intent.ACTION_UPDATE_POWER_MENU);
         mContext.sendBroadcastAsUser(u, UserHandle.ALL);
     }
 }
-*/
