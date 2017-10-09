@@ -27,10 +27,7 @@ import android.provider.Settings;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 
-/*
-import com.android.internal.util.lineage.PowerMenuConstants;
-*/
-
+import org.lineageos.internal.util.PowerMenuConstants;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
@@ -40,20 +37,8 @@ import java.util.List;
 
 import lineageos.providers.LineageSettings;
 
-/*
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_AIRPLANE;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_ASSIST;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_BUGREPORT;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_LOCKDOWN;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_RESTART;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
-import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
-*/
+import static org.lineageos.internal.util.PowerMenuConstants.*;
 
-/*
 public class PowerMenuActions extends SettingsPreferenceFragment {
     final static String TAG = "PowerMenuActions";
 
@@ -317,4 +302,3 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         mContext.sendBroadcastAsUser(u, UserHandle.ALL);
     }
 }
-*/
