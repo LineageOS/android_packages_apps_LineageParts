@@ -17,6 +17,7 @@
 
 package org.lineageos.lineageparts.input;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.UserInfo;
@@ -24,13 +25,14 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
+import android.support.v14.preference.PreferenceFragment;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
+import android.view.MenuItem;
 
 import com.android.internal.util.lineage.PowerMenuConstants;
 
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -49,7 +51,7 @@ import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION
 import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
 import static com.android.internal.util.lineage.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
 
-public class PowerMenuActions extends SettingsPreferenceFragment {
+public class PowerMenuActionsSettingsFragment extends PreferenceFragment {
     final static String TAG = "PowerMenuActions";
 
     private CheckBoxPreference mRebootPref;
@@ -69,10 +71,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private String[] mAllActions;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
+    public void onCreatePreference(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.power_menu_settings);
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         mContext = getActivity().getApplicationContext();
 
         mAvailableActions = getActivity().getResources().getStringArray(
@@ -222,6 +224,15 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             return super.onPreferenceTreeClick(preference);
         }
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            getActivity().onBackPressed();
+            return true;
+        }
+        return false;
     }
 
     private boolean settingsArrayContains(String preference) {
