@@ -103,6 +103,21 @@
                 android:resource="@string/live_display_summary"/>
         </activity>
 
+        <!-- PowerMenu settings (Display category - TEMPORARY! DNM!!!) -->
+        <activity
+            android:name=".input.PowerMenuActionsSettingsActivity"
+            android:label="@string/power_menu_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/power_menu_summary"/>
+        </activity>
+
         <!-- Privacy settings (dashboard) -->
         <!--
         <activity-alias
