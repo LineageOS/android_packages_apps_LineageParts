@@ -52,7 +52,6 @@ import java.util.List;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
-/*
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
@@ -171,6 +170,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
+        /*
         final int deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
         final int deviceWakeKeys = getResources().getInteger(
@@ -192,7 +192,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean showAppSwitchWake = (deviceWakeKeys & KEY_MASK_APP_SWITCH) != 0;
         final boolean showCameraWake = (deviceWakeKeys & KEY_MASK_CAMERA) != 0;
         final boolean showVolumeWake = (deviceWakeKeys & KEY_MASK_VOLUME) != 0;
-
+        */
         boolean hasAnyBindableKey = false;
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
@@ -221,7 +221,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 LineageSettings.System.TORCH_LONG_PRESS_POWER_TIMEOUT, 0);
         mTorchLongPressPowerTimeout = initList(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT,
                 torchLongPressPowerTimeout);
-
+        /*
         // Home button answers calls.
         mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
 
@@ -461,6 +461,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mCameraSleepOnRelease.setDependency(LineageSettings.System.CAMERA_WAKE_SCREEN);
             }
         }
+        */
         mVolumeWakeScreen = (SwitchPreference) findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN);
         mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
 
@@ -472,6 +473,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
     }
 
+    /*
     @Override
     public void onResume() {
         super.onResume();
@@ -496,6 +498,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
     }
+    */
 
     private ListPreference initList(String key, Action value) {
         return initList(key, value.ordinal());
@@ -625,6 +628,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleListChange(mAppSwitchLongPressAction, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
             return true;
+        /*
         } else if (preference == mVolumeKeyCursorControl) {
             handleSystemListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
@@ -643,6 +647,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             LineageSettings.Secure.putString(getContentResolver(),
                     LineageSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
             return true;
+        */
         } else if (preference == mTorchLongPressPowerTimeout) {
             handleListChange(mTorchLongPressPowerTimeout, newValue,
                     LineageSettings.System.TORCH_LONG_PRESS_POWER_TIMEOUT);
@@ -651,6 +656,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         return false;
     }
 
+    /*
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
         LineageSettings.Global.putInt(context.getContentResolver(),
                 LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
@@ -775,5 +781,5 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         ? LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER
                         : LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
+    */
 }
-*/
