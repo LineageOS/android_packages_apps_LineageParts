@@ -12,7 +12,6 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v7-appcompat \
     android-support-v14-preference \
     jsr305 \
-    uicommon \
     org.lineageos.platform.internal
 
 LOCAL_RESOURCE_DIR := \

@@ -39,7 +39,7 @@ import org.lineageos.lineageparts.PartsUpdater;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.widget.SeekBarPreference;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
-import org.lineageos.graphics.drawable.StopMotionVectorDrawable;
+import org.lineageos.internal.graphics.drawable.StopMotionVectorDrawable;
 
 import java.util.ArrayList;
 import java.util.List;
