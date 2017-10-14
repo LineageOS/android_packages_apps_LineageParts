@@ -34,7 +34,6 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import lineageos.preference.LineageSystemSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
-/*
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "BatteryLightSettings";
@@ -209,4 +208,3 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
     };
 }
-*/

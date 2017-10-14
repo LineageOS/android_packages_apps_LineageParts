@@ -51,7 +51,6 @@ import org.lineageos.lineageparts.notificationlight.ColorPickerView.OnColorChang
 import java.util.ArrayList;
 import java.util.Locale;
 
-/*
 public class LightSettingsDialog extends AlertDialog implements
         ColorPickerView.OnColorChangedListener, TextWatcher, OnFocusChangeListener {
 
@@ -447,4 +446,3 @@ public class LightSettingsDialog extends AlertDialog implements
         }
     }
 }
-*/

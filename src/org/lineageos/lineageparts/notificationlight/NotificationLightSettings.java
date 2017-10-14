@@ -57,7 +57,6 @@ import lineageos.preference.SystemSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 import lineageos.util.ColorUtils;
 
-/*
 public class NotificationLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, ApplicationLightPreference.ItemLongClickListener {
     private static final String TAG = "NotificationLightSettings";
@@ -601,4 +600,3 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         }
     };
 }
-*/

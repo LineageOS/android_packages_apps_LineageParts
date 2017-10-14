@@ -34,7 +34,6 @@ import android.widget.TextView;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;
 
-/*
 public class ApplicationLightPreference extends CustomDialogPreference<LightSettingsDialog>
         implements View.OnLongClickListener {
 
@@ -309,4 +308,3 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         return getContext().getResources().getString(R.string.custom_time);
     }
 }
-*/
