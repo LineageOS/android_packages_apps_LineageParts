@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Mesagerie vocală</string>
   <string name="notification_light_screen_on">Lumini cu ecranul aprins</string>
   <string name="notification_light_zen_mode">Lumini în modul Nu Deranjați</string>
-  <string name="notification_light_use_multiple_leds">LED-uri multiple</string>
   <string name="keywords_lights_brightness_level">diminuați luminozitatea led-urilor</string>
   <string name="notification_light_automagic">Alege culorile automat</string>
   <string name="notification_light_automagic_summary">Se aleg culorile automat</string>

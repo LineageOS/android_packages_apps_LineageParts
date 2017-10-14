@@ -78,7 +78,6 @@
   <string name="notification_light_missed_call_title">Llamada perdida</string>
   <string name="notification_light_screen_on">Lluces cola pantalla prendida</string>
   <string name="notification_light_zen_mode">Lluces nel Mou Nun molestar</string>
-  <string name="notification_light_use_multiple_leds">LEDs múltiples</string>
   <string name="keywords_lights_brightness_level">amatagar leds brilléu</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Axustes de lluz</string>

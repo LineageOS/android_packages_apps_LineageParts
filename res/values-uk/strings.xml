@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Голосова пошта</string>
   <string name="notification_light_screen_on">Індикатор при увімкненому екрані</string>
   <string name="notification_light_zen_mode">Індикатор в режимі «Не турбувати»</string>
-  <string name="notification_light_use_multiple_leds">Кілька світлодіодів</string>
   <string name="keywords_lights_brightness_level">зменшити яскравість світлодіодів</string>
   <string name="notification_light_automagic">Підібрати кольори автоматично</string>
   <string name="notification_light_automagic_summary">Вибирати кольори автоматично</string>

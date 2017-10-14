@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Segreteria telefonica</string>
   <string name="notification_light_screen_on">Luci con schermo acceso</string>
   <string name="notification_light_zen_mode">Luci in modalità Non Disturbare</string>
-  <string name="notification_light_use_multiple_leds">LED multipli</string>
   <string name="keywords_lights_brightness_level">regola luminosità Led</string>
   <string name="notification_light_automagic">Scegli i colori automaticamente</string>
   <string name="notification_light_automagic_summary">I colori sono scelti automaticamente</string>

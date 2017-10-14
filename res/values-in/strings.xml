@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Pesan suara</string>
   <string name="notification_light_screen_on">Lampu dengan layar yang menyala</string>
   <string name="notification_light_zen_mode">Lampu di mode Jangan Ganggu</string>
-  <string name="notification_light_use_multiple_leds">Beberapa LED</string>
   <string name="keywords_lights_brightness_level">lED redup kecerahan</string>
   <string name="notification_light_automagic">Memilih warna secara otomatis</string>
   <string name="notification_light_automagic_summary">Memilih warna otomatis</string>

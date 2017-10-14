@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Mesazh zanor</string>
   <string name="notification_light_screen_on">Dritat me ekranin e ndezur</string>
   <string name="notification_light_zen_mode">Dritat në profilin \"Mos më shqetëso\"</string>
-  <string name="notification_light_use_multiple_leds">LED të shumëfishta</string>
   <string name="keywords_lights_brightness_level">zbut ndriçimin e dritave LED</string>
   <string name="notification_light_automagic">Zgjidhi ngjyrat automatikisht</string>
   <string name="notification_light_automagic_summary">Zgjedhja e ngjyrave bëhet automatikisht</string>

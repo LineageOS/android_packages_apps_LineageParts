@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Messagerie vocale</string>
   <string name="notification_light_screen_on">Voyants avec écran allumé</string>
   <string name="notification_light_zen_mode">Voyants en mode « Ne pas déranger »</string>
-  <string name="notification_light_use_multiple_leds">Plusieurs LED</string>
   <string name="keywords_lights_brightness_level">atténuer la luminosité des LED</string>
   <string name="notification_light_automagic">Couleurs automatiques</string>
   <string name="notification_light_automagic_summary">Couleurs automatiques</string>

@@ -77,7 +77,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private PreferenceScreen mNotificationLedBrightnessPref;
     private SystemSettingSwitchPreference mEnabledPref;
     private LineageSystemSettingSwitchPreference mCustomEnabledPref;
-    private LineageSystemSettingSwitchPreference mMultipleLedsEnabledPref;
     private LineageSystemSettingSwitchPreference mScreenOnLightsPref;
     private LineageSystemSettingSwitchPreference mAutoGenerateColors;
     private ApplicationLightPreference mDefaultPref;
@@ -128,8 +127,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         // Advanced light settings
         mNotificationLedBrightnessPref = (PreferenceScreen)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
-        mMultipleLedsEnabledPref = (LineageSystemSettingSwitchPreference)
-                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE);
         mScreenOnLightsPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
@@ -140,11 +137,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mAdvancedPrefs.removePreference(mNotificationLedBrightnessPref);
         } else {
             mNotificationLedBrightnessPref.setOnPreferenceChangeListener(this);
-        }
-        if (!nm.doLightsSupport(NotificationManager.LIGHTS_MULTIPLE_NOTIFICATION_LED)) {
-            mAdvancedPrefs.removePreference(mMultipleLedsEnabledPref);
-        } else {
-            mMultipleLedsEnabledPref.setOnPreferenceChangeListener(this);
         }
         if (!mLedCanPulse && !mMultiColorLed) {
             mGeneralPrefs.removePreference(mDefaultPref);
@@ -464,7 +456,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mEnabledPref || preference == mCustomEnabledPref ||
-                preference == mMultipleLedsEnabledPref ||
                 preference == mNotificationLedBrightnessPref ||
                 preference == mScreenOnLightsPref ||
                 preference == mAutoGenerateColors) {

@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Govorna pošta</string>
   <string name="notification_light_screen_on">Svjetla s uključenim zaslonom</string>
   <string name="notification_light_zen_mode">Svjetla u načinu Ne ometaj</string>
-  <string name="notification_light_use_multiple_leds">Više LED svjetala</string>
   <string name="keywords_lights_brightness_level">zatamljivanje osvjetljenja LED-a</string>
   <string name="notification_light_automagic">Automatski odaberi boje</string>
   <string name="notification_light_automagic_summary">Automatski odaberi boje</string>

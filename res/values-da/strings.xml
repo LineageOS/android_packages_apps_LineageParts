@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Telefonsvarer</string>
   <string name="notification_light_screen_on">Lys med skærmen tændt</string>
   <string name="notification_light_zen_mode">Lys i tilstanden Vil ikke forstyrres</string>
-  <string name="notification_light_use_multiple_leds">Flere LED\'er</string>
   <string name="keywords_lights_brightness_level">dæmp led-lysstyrke</string>
   <string name="notification_light_automagic">Vælg farver automatisk</string>
   <string name="notification_light_automagic_summary">Vælg farver automatisk</string>

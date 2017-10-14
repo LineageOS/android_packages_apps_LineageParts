@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Voicemail</string>
   <string name="notification_light_screen_on">Lights with screen on</string>
   <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
-  <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
   <string name="keywords_lights_brightness_level">dim LEDs brightness</string>
   <string name="notification_light_automagic">Choose colours automatically</string>
   <string name="notification_light_automagic_summary">Choosing colours automatically</string>

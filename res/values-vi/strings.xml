@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Thư thoại</string>
   <string name="notification_light_screen_on">Đèn màn hình bật</string>
   <string name="notification_light_zen_mode">Đèn báo trong chế độ Không Làm Phiền</string>
-  <string name="notification_light_use_multiple_leds">Nhiều LED</string>
   <string name="keywords_lights_brightness_level">độ sáng led mờ</string>
   <string name="notification_light_automagic">Chọn màu tự động</string>
   <string name="notification_light_automagic_summary">Chọn màu một cách tự động</string>

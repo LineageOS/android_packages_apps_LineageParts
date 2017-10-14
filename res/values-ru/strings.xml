@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Голосовая почта</string>
   <string name="notification_light_screen_on">Использовать при включенном экране</string>
   <string name="notification_light_zen_mode">Использовать в режиме «Не беспокоить»</string>
-  <string name="notification_light_use_multiple_leds">Несколько светодиодов</string>
   <string name="keywords_lights_brightness_level">уменьшить яркость</string>
   <string name="notification_light_automagic">Подбирать цвета автоматически</string>
   <string name="notification_light_automagic_summary">Выбор цвета согласно цвету значка приложения</string>

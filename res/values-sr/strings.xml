@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Говорна пошта</string>
   <string name="notification_light_screen_on">Светли при укљученом екрану</string>
   <string name="notification_light_zen_mode">Светли у режиму „Не узнемиравај“</string>
-  <string name="notification_light_use_multiple_leds">Више LED светала</string>
   <string name="keywords_lights_brightness_level">смањи осветљеност</string>
   <string name="notification_light_automagic">Аутоматски избор боја</string>
   <string name="notification_light_automagic_summary">Аутоматски изаберите боју индикатора.</string>

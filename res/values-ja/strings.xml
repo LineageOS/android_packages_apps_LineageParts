@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">ボイスメール</string>
   <string name="notification_light_screen_on">画面点灯時も点灯</string>
   <string name="notification_light_zen_mode">マナーモード時でも点灯</string>
-  <string name="notification_light_use_multiple_leds">マルチLED</string>
   <string name="keywords_lights_brightness_level">暗く led 明るさ</string>
   <string name="notification_light_automagic">色を自動的に選択</string>
   <string name="notification_light_automagic_summary">色を自動的に選択しています</string>

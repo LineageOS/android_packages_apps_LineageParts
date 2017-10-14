@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Poczta głosowa</string>
   <string name="notification_light_screen_on">Powiadamianie diodą LED przy włączonym ekranie</string>
   <string name="notification_light_zen_mode">Powiadamianie diodą LED w trybie \"Nie przeszkadzać\"</string>
-  <string name="notification_light_use_multiple_leds">Kilka diod LED</string>
   <string name="notification_light_automagic">Wybierz kolory automatycznie</string>
   <string name="notification_light_automagic_summary">Wybieranie kolorów automatycznie</string>
   <!-- Lights settings, LED notification -->

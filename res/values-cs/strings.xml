@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Hlasová schránka</string>
   <string name="notification_light_screen_on">Upozornění LED při zapnuté obrazovce</string>
   <string name="notification_light_zen_mode">Světelná signalizace v režimu „Nerušit“</string>
-  <string name="notification_light_use_multiple_leds">Více LED</string>
   <string name="keywords_lights_brightness_level">ztlumit jas LED diod</string>
   <string name="notification_light_automagic">Automaticky zvolit barvy</string>
   <string name="notification_light_automagic_summary">Automaticky zvolit barvy</string>

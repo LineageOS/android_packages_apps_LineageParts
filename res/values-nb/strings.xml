@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Talepost</string>
   <string name="notification_light_screen_on">Lys med skjermen på</string>
   <string name="notification_light_zen_mode">Lys i Ikke Forstyrr-modus</string>
-  <string name="notification_light_use_multiple_leds">Flere lysdioder</string>
   <string name="keywords_lights_brightness_level">dim lysdioder lysstyrke</string>
   <string name="notification_light_automagic">Velg farger automatisk</string>
   <string name="notification_light_automagic_summary">Velger farger automatisk</string>

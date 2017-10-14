@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Гласова поща</string>
   <string name="notification_light_screen_on">Индикации при включен екран</string>
   <string name="notification_light_zen_mode">Индикации в режим \"Не ме безпокойте\"</string>
-  <string name="notification_light_use_multiple_leds">Множество светодиоди</string>
   <string name="keywords_lights_brightness_level">Слаба светодиодна яркост</string>
   <string name="notification_light_automagic">Автоматичен избор на цветове</string>
   <string name="notification_light_automagic_summary">Автоматичен избор на цветове</string>

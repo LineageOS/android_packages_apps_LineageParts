@@ -96,7 +96,6 @@
   <string name="notification_light_voicemail_title">Vastaaja</string>
   <string name="notification_light_screen_on">Valot näytön ollessa päällä</string>
   <string name="notification_light_zen_mode">Valot Älä häiritse-tilassa</string>
-  <string name="notification_light_use_multiple_leds">Useampi LED</string>
   <string name="keywords_lights_brightness_level">dim leds brightness kirkkaus led himmentää himmennys</string>
   <string name="notification_light_automagic">Valitse värit automaattisesti</string>
   <string name="notification_light_automagic_summary">Valitaan värit automaattisesti</string>
