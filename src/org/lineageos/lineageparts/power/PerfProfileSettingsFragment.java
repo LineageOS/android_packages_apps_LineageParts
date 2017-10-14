@@ -19,6 +19,7 @@ package org.lineageos.lineageparts.power;
 
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
+import android.app.ActionBar;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -29,16 +30,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.provider.Settings.Global;
+import android.support.v14.preference.PreferenceFragment;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import org.lineageos.lineageparts.PartsUpdater;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.widget.SeekBarPreference;
-import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.internal.graphics.drawable.StopMotionVectorDrawable;
 
 import java.util.ArrayList;
@@ -53,7 +55,7 @@ import lineageos.providers.LineageSettings;
 
 import static lineageos.power.PerformanceManager.PROFILE_POWER_SAVE;
 
-public class PerfProfileSettings extends SettingsPreferenceFragment
+public class PerfProfileSettingsFragment extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_PERF_PROFILE_CATEGORY = "perf_profile_category";
@@ -85,10 +87,10 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     };
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.perf_profile_settings);
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         mPerfSeekBar = (SeekBarPreference) findPreference(KEY_PERF_SEEKBAR);
         mAutoPowerSavePref = (ListPreference) findPreference(KEY_AUTO_POWER_SAVE);
@@ -256,6 +258,15 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     public void onSettingsChanged(Uri contentUri) {
         super.onSettingsChanged(contentUri);
         updatePerfSettings();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            getActivity().onBackPressed();
+            return true;
+        }
+        return false;
     }
 
     private void updatePowerSaveValue() {
