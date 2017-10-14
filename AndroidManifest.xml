@@ -283,5 +283,20 @@
             android:excludeFromRecents="true"/>
         -->
 
+        <!-- Performance profiles (Battery category) -->
+        <activity
+            android:name=".power.PerfProfileSettingsActivity"
+            android:label="@string/perf_profile_settings_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/perf_profile_settings_summary"/>
+        </activity>
+
     </application>
 </manifest>
