@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "76fe25a2_391319fc",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettingsFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 14088
+      },
+      "writtenOn": "2017-10-15T05:03:40Z",
+      "side": 1,
+      "message": "why empty line",
+      "range": {
+        "startLine": 95,
+        "startChar": 0,
+        "endLine": 95,
+        "endChar": 0
+      },
+      "revId": "927a8c3e16622b9507c9c40b71932b06320400cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b3b30afe_e684b426",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/TimeSelection.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 14088
+      },
+      "writtenOn": "2017-10-15T05:03:40Z",
+      "side": 1,
+      "message": "remove line",
+      "range": {
+        "startLine": 95,
+        "startChar": 0,
+        "endLine": 95,
+        "endChar": 0
+      },
+      "revId": "927a8c3e16622b9507c9c40b71932b06320400cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
