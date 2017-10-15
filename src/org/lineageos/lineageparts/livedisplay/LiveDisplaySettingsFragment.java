@@ -93,6 +93,13 @@ public class LiveDisplaySettingsFragment extends PreferenceFragment implements
     private final Uri DISPLAY_TEMPERATURE_MODE_URI =
             LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_MODE);
 
+    private final Uri DISPLAY_NIGHT_START_TIME_URI =
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_NIGHT_START_TIME);
+    private final Uri DISPLAY_NIGHT_END_TIME_URI =
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_NIGHT_END_TIME);
+    private final Uri DISPLAY_TRANSITION_MODE_URI =
+            LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TRANSITION_MODE);
+
     private ListPreference mLiveDisplay;
 
     private SwitchPreference mColorEnhancement;
