@@ -120,6 +120,8 @@
     <string name="live_display_color_temperature_title">Color temperature</string>
     <string name="live_display_color_temperature_summary">Day: <xliff:g id="day_temperature">%1$d</xliff:g>K  Night: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_time_selection_title">Start and End Times</string>
+    <string name="live_display_time_selection_summary">Customize LiveDisplay start and end times</string>
     <string name="live_display_day">Day</string>
     <string name="live_display_night">Night</string>
     <string name="live_display_outdoor_mode_title">Automatic outdoor mode</string>
