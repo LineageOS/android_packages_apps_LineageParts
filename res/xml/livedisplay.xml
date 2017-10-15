@@ -33,6 +33,13 @@
                 android:title="@string/live_display_mode"
                 android:persistent="false" />
 
+        <!-- Manual start/end time selection -->
+        <org.lineageos.lineageparts.livedisplay.TimeSelection
+                android:key="live_display_time_selection"
+                android:title="@string/live_display_time_selection_title"
+                android:dialogTitle="@string/live_display_time_selection_title"
+                android:persistent="false" />
+
         <!-- Manual temperature selection -->
         <org.lineageos.lineageparts.livedisplay.DisplayTemperature
                 android:key="live_display_color_temperature"
