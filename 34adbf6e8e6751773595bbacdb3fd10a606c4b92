@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0889612a_db09c93b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-16T14:28:15Z",
+      "side": 1,
+      "message": "Maybe a link here would be better? Like I did here: https://review.lineageos.org/#/c/193393/",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 10,
+        "endChar": 42
+      },
+      "revId": "34adbf6e8e6751773595bbacdb3fd10a606c4b92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
