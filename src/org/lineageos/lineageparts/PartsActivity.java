@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,8 +61,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
     private CharSequence mInitialTitle;
 
-    private boolean mHomeAsUp = true;
-
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
@@ -103,7 +102,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
                 // Alias mode
                 info = PartsList.get(this).getPartInfoForClass(
                         getIntent().getComponent().getClassName());
-                mHomeAsUp = false;
             }
             if (info == null) {
                 throw new UnsupportedOperationException(
@@ -121,7 +119,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
         switchToFragment(fragmentClass, initialArgs, -1, mInitialTitle);
 
-        getActionBar().setDisplayHomeAsUpEnabled(mHomeAsUp);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -174,7 +172,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home && mHomeAsUp) {
+        if (item.getItemId() == android.R.id.home) {
             onBackPressed();
             return true;
         }
