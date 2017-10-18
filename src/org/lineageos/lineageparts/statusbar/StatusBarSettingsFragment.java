@@ -16,10 +16,12 @@
  */
 package org.lineageos.lineageparts.statusbar;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
+import android.view.MenuItem;
 import android.view.View;
 
 import lineageos.preference.LineageSystemSettingListPreference;
@@ -27,7 +29,7 @@ import lineageos.preference.LineageSystemSettingListPreference;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
-public class StatusBarSettings extends SettingsPreferenceFragment
+public class StatusBarSettingsFragment extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
@@ -49,9 +51,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.status_bar_settings);
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         mStatusBarClock = (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarBatteryShowPercent =
@@ -94,6 +97,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             enableStatusBarBatteryDependents(value);
         }
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            getActivity().onBackPressed();
+            return true;
+        }
+        return false;
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
