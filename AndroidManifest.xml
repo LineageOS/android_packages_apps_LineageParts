@@ -118,6 +118,18 @@
                 android:resource="@string/power_menu_summary"/>
         </activity>
 
+        <!-- Statusbar settings (System category - TEMPORARY! DNM!!!) -->
+        <activity
+            android:name=".statusbar.StatusBarSettingsActivity"
+            android:label="@string/status_bar_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system" />
+        </activity>
+
         <!-- Privacy settings (dashboard) -->
         <!--
         <activity-alias
