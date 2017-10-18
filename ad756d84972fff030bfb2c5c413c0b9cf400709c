@@ -22,6 +22,30 @@
       "revId": "ad756d84972fff030bfb2c5c413c0b9cf400709c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c368a34d_294869dc",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-18T16:59:13Z",
+      "side": 1,
+      "message": "Not at all. I didn\u0027t remove yet because I was trying to figure out what we did here back in N.",
+      "parentUuid": "6d52dac8_a1e1f51a",
+      "range": {
+        "startLine": 187,
+        "startChar": 12,
+        "endLine": 192,
+        "endChar": 54
+      },
+      "revId": "ad756d84972fff030bfb2c5c413c0b9cf400709c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
