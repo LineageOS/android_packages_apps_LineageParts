@@ -170,23 +170,20 @@
         </activity-alias>
         -->
 
-        <!-- Status bar settings (dashboard) -->
-        <!--
+        <!-- Status bar settings (System category) -->
         <activity-alias
             android:name=".statusbar.StatusBarSettings"
             android:label="@string/status_bar_title"
+            android:icon="@drawable/ic_settings_statusbar"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="2">
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            <intent-filter android:priority="250">
+                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.personal" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_statusbar" />
+                android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="org.lineageos.settings.summary.receiver"
                 android:value="org.lineageos.lineageparts.PartsUpdater" />
@@ -194,7 +191,6 @@
                 android:name="org.lineageos.settings.summary.key"
                 android:value="status_bar_settings" />
         </activity-alias>
-        -->
 
         <!-- Anonymous Statistics -->
         <!--
