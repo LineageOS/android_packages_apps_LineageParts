@@ -18,6 +18,19 @@
     <attr name="side_margin" format="reference|dimension" />
     <attr name="wifi_signal_color" format="reference" />
 
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <!-- Parent path frameworks/support/v14/preference/res/values/themes.xml -->
+        <item name="android:scrollbars">vertical</item>
+        <item name="dialogPreferenceStyle">@style/DialogPreferenceStyle</item>
+        <item name="dropdownPreferenceStyle">@style/Preference.DropDown.Material</item>
+        <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
+        <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
+        <item name="preferenceStyle">@style/PreferenceStyle</item>
+        <item name="seekBarPreferenceStyle">@style/SeekBarPreferenceStyle</item>
+        <item name="switchPreferenceStyle">@style/SwitchPreferenceStyle</item>
+    </style>
+
     <!-- Theme with no local references, used by AccountPreferenceBase where we have to inflate
          layouts against a remote context using our local theme colors. Due to the implementation
          details of Theme, we can't reference any local resources and MUST instead use the values
@@ -25,19 +38,13 @@
     <style name="Theme.SettingsBase" parent="@android:style/Theme.DeviceDefault.Settings" />
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
-        <item name="dialogPreferenceStyle">@style/DialogPreferenceStyle</item>
-        <item name="dropdownPreferenceStyle">@style/Preference.DropDown.Material</item>
-        <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
-        <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
-        <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
-        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
-        <item name="preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
-        <item name="preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
-        <item name="preferencePanelStyle">@style/PreferencePanelSinglePane</item>
-        <item name="preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
-        <item name="preferenceStyle">@style/PreferenceStyle</item>
         <item name="preferenceTheme">@style/PreferenceTheme</item>
-        <item name="switchPreferenceStyle">@style/SwitchPreferenceStyle</item>
+        <item name="android:listPreferredItemHeight">72dip</item>
+        <item name="*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
+        <item name="*android:preferencePanelStyle">@style/PreferencePanelSinglePane</item>
+        <item name="*android:preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
+        <item name="*android:preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
+        <item name="*android:preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
 
         <item name="wifi_signal_color">?android:attr/colorAccent</item>
         <item name="side_margin">@dimen/settings_side_margin</item>
@@ -51,7 +58,7 @@
         <item name="preferenceBackgroundColor">@drawable/preference_background</item>
 
         <!-- For all Alert Dialogs -->
-        <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.AlertDialog</item>
     </style>
 
     <style name="Theme.SubSettings" parent="Theme.Settings">
@@ -79,21 +86,6 @@
         <item name="switchBarMarginStart">@dimen/switchbar_subsettings_margin_start</item>
         <item name="switchBarMarginEnd">@dimen/switchbar_subsettings_margin_end</item>
         <item name="switchBarBackgroundColor">?android:attr/colorSecondary</item>
-    </style>
-
-    <style name="Theme.DialogWhenLarge" parent="@*android:style/Theme.Material.Settings.DialogWhenLarge">
-        <!-- Redefine the ActionBar style for contentInsetStart -->
-        <item name="actionBarStyle">@style/Theme.ActionBar</item>
-
-        <item name="preferenceBackgroundColor">@drawable/preference_background</item>
-    </style>
-
-    <style name="Theme.SubSettingsDialogWhenLarge" parent="Theme.DialogWhenLarge">
-        <item name="preferenceTheme">@style/PreferenceTheme</item>
-        <item name="actionBarWidgetTheme">@null</item>
-        <item name="actionBarTheme">@android:style/ThemeOverlay.Material.ActionBar</item>
-
-        <item name="preferenceBackgroundColor">@drawable/preference_background</item>
     </style>
 
     <style name="ThemeOverlay.AlertDialog" parent="@android:style/ThemeOverlay.Material.Dialog.Alert">

@@ -75,10 +75,13 @@
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="DialogPreferenceStyle" parent="@style/PreferenceStyle">
-    </style>
+    <style name="DialogPreferenceStyle" parent="@style/PreferenceStyle" />
 
-    <style name="EditTextPreference" parent="@*android:style/Preference.Material.DialogPreference.EditTextPreference">
+    <style name="EditTextPreference"
+           parent="@style/Preference.DialogPreference.EditTextPreference.Material">
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">true</item>
+        <item name="android:layout">@layout/preference_material_settings</item>
         <item name="android:dialogLayout">@layout/preference_dialog_edittext</item>
     </style>
 
@@ -89,8 +92,8 @@
     </style>
 
     <style name="PreferenceFragmentStyle" parent="@*android:style/PreferenceFragment.Material">
-        <item name="allowDividerAfterLastItem">false</item>
         <item name="android:layout">@layout/preference_list_fragment</item>
+        <item name="allowDividerAfterLastItem">false</item>
     </style>
 
     <style name="PreferenceStyle" parent="@*android:style/Preference.DeviceDefault">
@@ -100,8 +103,12 @@
         <item name="android:layout">@layout/preference_material_settings</item>
     </style>
 
-    <style name="PreferenceTheme">
+    <style name="SeekBarPreferenceStyle" parent="PreferenceStyle">
+        <item name="android:layout">@layout/preference_widget_seekbar_settings</item>
     </style>
+
+    <!--style name="PreferenceTheme">
+    </style-->
 
     <style name="PreferenceHeaderPanelSinglePane">
         <item name="android:layout_marginStart">0dp</item>
@@ -136,12 +143,6 @@
         <item name="android:layout_marginStart">0dp</item>
         <item name="android:layout_marginEnd">0dp</item>
         <item name="android:scrollbarStyle">outsideOverlay</item>
-    </style>
-
-    <style name="SettingsPreferenceHeaderPanel" parent="@*android:style/PreferenceHeaderPanel">
-    </style>
-
-    <style name="SettingsPreferenceHeaderList" parent="@*android:style/PreferenceHeaderList">
     </style>
 
     <style name="SwitchPreferenceStyle" parent="@style/PreferenceStyle">
