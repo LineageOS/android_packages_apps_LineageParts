@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "420679fe_1056ffaf",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-18T19:25:26Z",
+      "side": 1,
+      "message": "May be better to put this in a separate change. As I have the same question as for FlipFlap. Can\u0027t we simply omit so that the latest SDK version is always considered?",
+      "range": {
+        "startLine": 26,
+        "startChar": 4,
+        "endLine": 26,
+        "endChar": 73
+      },
+      "revId": "1ed0da2fff70460aca0cbeaebe4fed376a7b685b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
