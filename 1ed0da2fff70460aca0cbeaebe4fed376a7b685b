@@ -46,6 +46,53 @@
       "revId": "1ed0da2fff70460aca0cbeaebe4fed376a7b685b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d094c5ed_01a7f465",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-19T08:35:33Z",
+      "side": 1,
+      "message": "Omitting, you mean?",
+      "parentUuid": "0ed53dae_556309d9",
+      "range": {
+        "startLine": 26,
+        "startChar": 4,
+        "endLine": 26,
+        "endChar": 73
+      },
+      "revId": "1ed0da2fff70460aca0cbeaebe4fed376a7b685b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7b7c253a_8326bc66",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-19T08:35:33Z",
+      "side": 1,
+      "message": "Was this a leftover while you were doing the bring-up?",
+      "range": {
+        "startLine": 163,
+        "startChar": 16,
+        "endLine": 164,
+        "endChar": 83
+      },
+      "revId": "1ed0da2fff70460aca0cbeaebe4fed376a7b685b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
