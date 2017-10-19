@@ -18,7 +18,6 @@ package org.lineageos.lineageparts.notificationlight;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.ShapeDrawable;
@@ -31,6 +30,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;
 
@@ -63,13 +63,12 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
      * @param attrs
      */
     public ApplicationLightPreference(Context context, AttributeSet attrs) {
-        this(context, attrs, DEFAULT_COLOR, DEFAULT_TIME, DEFAULT_TIME,
-                context.getSystemService(NotificationManager.class)
-                        .doLightsSupport(NotificationManager.LIGHTS_PULSATING_LED));
+        this(context, attrs, DEFAULT_COLOR, DEFAULT_TIME, DEFAULT_TIME);
     }
 
     /**
      * @param context
+     * @param attrs
      * @param color
      * @param onValue
      * @param offValue
@@ -77,15 +76,16 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue) {
         this(context, attrs, color, onValue, offValue,
-                context.getSystemService(NotificationManager.class)
-                        .doLightsSupport(NotificationManager.LIGHTS_PULSATING_LED));
+                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED));
     }
 
     /**
      * @param context
+     * @param attrs
      * @param color
      * @param onValue
      * @param offValue
+     * @param onOffChangeable
      */
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue, boolean onOffChangeable) {
@@ -123,8 +123,8 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         TextView tView = (TextView) holder.findViewById(android.R.id.summary);
         tView.setVisibility(View.GONE);
 
-        final NotificationManager nm = getContext().getSystemService(NotificationManager.class);
-        if (!nm.doLightsSupport(NotificationManager.LIGHTS_RGB_NOTIFICATION_LED)) {
+        if (!LightsCapabilities.supports(
+                getContext(), LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED)) {
             mLightColorView.setVisibility(View.GONE);
         }
 
