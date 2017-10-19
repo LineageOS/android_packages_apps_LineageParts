@@ -22,6 +22,30 @@
       "revId": "1ed0da2fff70460aca0cbeaebe4fed376a7b685b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0ed53dae_556309d9",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2017-10-19T03:14:05Z",
+      "side": 1,
+      "message": "I think we probably should do that in general.",
+      "parentUuid": "420679fe_1056ffaf",
+      "range": {
+        "startLine": 26,
+        "startChar": 4,
+        "endLine": 26,
+        "endChar": 73
+      },
+      "revId": "1ed0da2fff70460aca0cbeaebe4fed376a7b685b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
