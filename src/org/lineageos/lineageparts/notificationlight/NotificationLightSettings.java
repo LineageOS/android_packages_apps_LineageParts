@@ -42,6 +42,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
+import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.lineageparts.widget.PackageListAdapter;
 import org.lineageos.lineageparts.widget.PackageListAdapter.PackageItem;
 import org.lineageos.lineageparts.R;
@@ -92,6 +93,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        final Context context = getContext();
+
         addPreferencesFromResource(R.xml.notification_light_settings);
         getActivity().getActionBar().setTitle(R.string.notification_light_title);
 
@@ -110,9 +113,10 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mDefaultLedOff = resources.getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
 
-        final NotificationManager nm = getContext().getSystemService(NotificationManager.class);
-        mLedCanPulse = nm.doLightsSupport(NotificationManager.LIGHTS_PULSATING_LED);
-        mMultiColorLed = nm.doLightsSupport(NotificationManager.LIGHTS_RGB_NOTIFICATION_LED);
+        mLedCanPulse = LightsCapabilities.supports(
+                context, LightsCapabilities.LIGHTS_PULSATING_LED);
+        mMultiColorLed = LightsCapabilities.supports(
+                context, LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED);
 
         mEnabledPref = (SystemSettingSwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE);
@@ -131,8 +135,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
-        if (!nm.doLightsSupport(
-                NotificationManager.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS)) {
+        if (!LightsCapabilities.supports(
+                context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS)) {
             mAdvancedPrefs.removePreference(mNotificationLedBrightnessPref);
         } else {
             mNotificationLedBrightnessPref.setOnPreferenceChangeListener(this);
