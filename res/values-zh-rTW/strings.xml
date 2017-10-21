@@ -83,7 +83,7 @@
   <string name="battery_light_list_title">顏色</string>
   <string name="battery_light_low_color_title">電量不足</string>
   <string name="battery_light_medium_color_title">充電中</string>
-  <string name="battery_light_full_color_title">電力充足</string>
+  <string name="battery_light_full_color_title">電量充足</string>
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">通知指示燈</string>
   <string name="notification_light_general_title">一般</string>
@@ -505,7 +505,7 @@
   <string name="perf_profile_fail_toast">效能設定檔目前不可用</string>
   <string name="power_save_category_title">省電模式</string>
   <string name="power_save_title">極度省電</string>
-  <string name="power_save_summary">限制裝置效能和背景活動，即可節省電源</string>
+  <string name="power_save_summary">限制裝置效能和背景活動，即可省電</string>
   <string name="auto_power_save_title">自動省電</string>
   <string name="auto_power_save_summary_on">在 %s 電量時自動啟用省電模式</string>
   <string name="auto_power_save_summary_off">不要自動啟用省電模式</string>
