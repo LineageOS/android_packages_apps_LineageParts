@@ -190,7 +190,7 @@
   <string name="power_end_call_title">Termina chamada</string>
   <string name="power_end_call_summary">Termina a chamada atual, pressionando o botão ligar/desligar</string>
   <string name="swap_volume_buttons_title">Reorientar</string>
-  <string name="swap_volume_buttons_summary">Trocar os botões de volume quando o ecrã é rodado</string>
+  <string name="swap_volume_buttons_summary">Inverter os botões de volume quando o ecrã é rodado</string>
   <string name="button_wake_title">Acordar o dispositivo</string>
   <string name="volume_answer_call_title">Atender chamada</string>
   <string name="volume_answer_call_summary">Atender chamadas pressionando os botões de volume</string>
