@@ -105,6 +105,22 @@
                 android:resource="@string/live_display_summary" />
         </activity-alias>
 
+        <!-- Performance profiles (Battery category) -->
+        <activity
+            android:name=".power.PerfProfileSettingsActivity"
+            android:label="@string/perf_profile_settings_title">
+            <intent-filter android:priority="-6">
+                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/perf_profile_settings_summary"/>
+        </activity>
+
         <!-- Privacy settings (dashboard) -->
         <!--
         <activity-alias
