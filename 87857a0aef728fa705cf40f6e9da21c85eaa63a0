@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ebe63b0a_d867a058",
+        "filename": "src/org/lineageos/lineageparts/search/LineagePartsSearchIndexablesProvider.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-10-23T02:02:01Z",
+      "side": 1,
+      "message": "nit: not alphabetical order",
+      "revId": "87857a0aef728fa705cf40f6e9da21c85eaa63a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
