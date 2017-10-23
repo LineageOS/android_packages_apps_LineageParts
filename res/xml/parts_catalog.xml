@@ -46,7 +46,7 @@
     <part android:key="livedisplay"
           android:title="@*lineageos.platform:string/live_display_title"
           android:summary="@string/live_display_summary"
-          android:fragment="org.lineageos.lineageparts.livedisplay.LiveDisplay"
+          android:fragment="org.lineageos.lineageparts.livedisplay.LiveDisplaySettings"
           lineage:xmlRes="@xml/livedisplay" />
 
     <part android:key="notification_lights"
