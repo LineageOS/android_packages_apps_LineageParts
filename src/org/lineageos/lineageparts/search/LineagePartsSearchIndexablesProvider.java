@@ -32,6 +32,7 @@ import java.util.List;
 import java.util.Set;
 
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_NON_INDEXABLE_KEYS_KEY_VALUE;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_CLASS_NAME;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_ENTRIES;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_ICON_RESID;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_ACTION;
@@ -39,8 +40,11 @@ import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEY;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEYWORDS;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_PAYLOAD;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_PAYLOAD_TYPE;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_RANK;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_SCREEN_TITLE;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_SUMMARY_OFF;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_SUMMARY_ON;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_TITLE;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_USER_ID;
@@ -123,14 +127,16 @@ public class LineagePartsSearchIndexablesProvider extends SearchIndexablesProvid
             }
 
             for (SearchIndexableRaw raw : rawList) {
-                Object[] ref = new Object[14];
+                Object[] ref = new Object[16];
                 ref[COLUMN_INDEX_RAW_RANK] = raw.rank > 0 ?
                         raw.rank : 2;
                 ref[COLUMN_INDEX_RAW_TITLE] = raw.title != null ?
                         raw.title : i.getTitle();
                 ref[COLUMN_INDEX_RAW_SUMMARY_ON] = i.getSummary();
-                ref[COLUMN_INDEX_RAW_KEYWORDS] = raw.keywords;
+                ref[COLUMN_INDEX_RAW_SUMMARY_OFF] = null;
                 ref[COLUMN_INDEX_RAW_ENTRIES] = raw.entries;
+                ref[COLUMN_INDEX_RAW_KEYWORDS] = raw.keywords;
+                ref[COLUMN_INDEX_RAW_CLASS_NAME] = null;
                 ref[COLUMN_INDEX_RAW_SCREEN_TITLE] = raw.screenTitle != null ?
                         raw.screenTitle : i.getTitle();
                 ref[COLUMN_INDEX_RAW_ICON_RESID] = raw.iconResId > 0 ? raw.iconResId :
@@ -144,6 +150,8 @@ public class LineagePartsSearchIndexablesProvider extends SearchIndexablesProvid
                 ref[COLUMN_INDEX_RAW_KEY] = raw.key != null ?
                         raw.key : i.getName();
                 ref[COLUMN_INDEX_RAW_USER_ID] = -1;
+                ref[COLUMN_INDEX_RAW_PAYLOAD_TYPE] = null;
+                ref[COLUMN_INDEX_RAW_PAYLOAD] = null;
                 cursor.addRow(ref);
             }
         }
