@@ -22,6 +22,57 @@
       "revId": "a017a8334ed86e655135ed6a92315cb5cfb51403",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d2062be_3e588a75",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettingsFragment.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-10-23T08:05:45Z",
+      "side": 1,
+      "message": "Add copyright",
+      "revId": "a017a8334ed86e655135ed6a92315cb5cfb51403",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "88dd3d32_a1ac62ed",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettingsFragment.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-10-23T08:05:45Z",
+      "side": 1,
+      "message": "could be moved inside the if",
+      "revId": "a017a8334ed86e655135ed6a92315cb5cfb51403",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e8ad4051_f5ca4a1b",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettingsFragment.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-10-23T08:05:45Z",
+      "side": 1,
+      "message": "could be moved inside the if",
+      "revId": "a017a8334ed86e655135ed6a92315cb5cfb51403",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
