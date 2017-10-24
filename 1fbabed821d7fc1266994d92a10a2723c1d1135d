@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b762b136_0bb29e7e",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-24T11:21:04Z",
+      "side": 1,
+      "message": "This is still a mystery.",
+      "range": {
+        "startLine": 96,
+        "startChar": 44,
+        "endLine": 96,
+        "endChar": 48
+      },
+      "revId": "1fbabed821d7fc1266994d92a10a2723c1d1135d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
