@@ -22,6 +22,30 @@
       "revId": "1fbabed821d7fc1266994d92a10a2723c1d1135d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9fa2798c_8b22ad35",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2017-10-24T19:39:27Z",
+      "side": 1,
+      "message": "From the test I ran last time, it looks like old-style xmls with items listed without priority (Display settings for instance) allow the use of negative priority to set a new time position relative to the top items. Hence -1 goes below Brightness level, our intention here, and -2 goes under Autobrightness.",
+      "parentUuid": "b762b136_0bb29e7e",
+      "range": {
+        "startLine": 96,
+        "startChar": 44,
+        "endLine": 96,
+        "endChar": 48
+      },
+      "revId": "1fbabed821d7fc1266994d92a10a2723c1d1135d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
