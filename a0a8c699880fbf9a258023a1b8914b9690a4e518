@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cdc353d8_e448eb05",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-24T09:28:00Z",
+      "side": 1,
+      "message": "Nit: \"Languages \u0026 input\"",
+      "range": {
+        "startLine": 150,
+        "startChar": 30,
+        "endLine": 150,
+        "endChar": 48
+      },
+      "revId": "a0a8c699880fbf9a258023a1b8914b9690a4e518",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "04cd8400_b2a7b0f6",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-24T09:28:00Z",
+      "side": 1,
+      "message": "android:resource\u003d\"@string/summary_empty\"",
+      "range": {
+        "startLine": 166,
+        "startChar": 16,
+        "endLine": 166,
+        "endChar": 32
+      },
+      "revId": "a0a8c699880fbf9a258023a1b8914b9690a4e518",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
