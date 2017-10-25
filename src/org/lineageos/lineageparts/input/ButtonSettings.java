@@ -50,6 +50,7 @@ import org.lineageos.internal.util.ScreenType;
 import java.util.List;
 
 import lineageos.hardware.LineageHardwareManager;
+import lineageos.preference.RemotePreference;
 import lineageos.providers.LineageSettings;
 
 /*
@@ -81,6 +82,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             "torch_long_press_power_gesture";
     private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT =
             "torch_long_press_power_timeout";
+    private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -92,6 +94,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
     private static final String CATEGORY_NAVBAR = "navigation_bar_category";
+    private static final String CATEGORY_EXTRAS = "extras_category";
 
     // Available custom actions to perform on a key press.
     // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
@@ -156,6 +159,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mTorchLongPressPowerGesture;
     private ListPreference mTorchLongPressPowerTimeout;
+    private RemotePreference mAdditionalButtons;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -210,6 +214,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
         final PreferenceCategory cameraCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_CAMERA);
+        final PreferenceCategory extrasCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_EXTRAS);
 
         // Power button ends calls.
         mPowerEndCall = (SwitchPreference) findPreference(KEY_POWER_END_CALL);
@@ -469,6 +475,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mVolumeMusicControls.setDependency(LineageSettings.System.VOLUME_WAKE_SCREEN);
                 mVolumeWakeScreen.setDisableDependentsState(true);
             }
+        }
+
+        // Remove extras category if empty
+        mAdditionalButtons = (RemotePreference)
+                prefScreen.findPreference(KEY_ADDITIONAL_BUTTONS);
+        if (!mAdditionalButtons.isAvailable()) {
+            prefScreen.removePreference(extrasCategory);
         }
     }
 
