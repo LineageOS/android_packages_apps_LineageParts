@@ -302,4 +302,18 @@
             android:summary="@string/swap_volume_buttons_summary" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="extra_keys"
+        android:title="@string/extras_title" >
+
+        <lineageos.preference.RemotePreference
+            android:key="additional_buttons_settings"
+            android:title="@string/additional_buttons_title"
+            android:summary="@string/summary_empty"
+            <intent
+                android:action="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
+        </lineageos.preference.RemotePreference>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
