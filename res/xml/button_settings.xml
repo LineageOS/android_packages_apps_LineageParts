@@ -310,4 +310,18 @@
     </PreferenceCategory>
     -->
 
+    <PreferenceCategory
+        android:key="extras_category"
+        android:title="@string/extras_title" >
+
+        <lineageos.preference.RemotePreference
+            android:key="additional_buttons"
+            android:title="@string/additional_buttons_title"
+            lineage:requiresAction="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS">
+            <intent
+                android:action="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
+        </lineageos.preference.RemotePreference>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
