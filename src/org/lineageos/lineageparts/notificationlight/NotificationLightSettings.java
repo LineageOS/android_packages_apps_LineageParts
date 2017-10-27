@@ -74,7 +74,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private int mDefaultLedOff;
     private PackageManager mPackageManager;
     private PreferenceGroup mApplicationPrefList;
-    private PreferenceScreen mNotificationLedBrightnessPref;
+    private NotificationBrightnessDialog mNotificationBrightnessDialog;
     private SystemSettingSwitchPreference mEnabledPref;
     private LineageSystemSettingSwitchPreference mCustomEnabledPref;
     private LineageSystemSettingSwitchPreference mScreenOnLightsPref;
@@ -128,7 +128,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
 
         // Advanced light settings
-        mNotificationLedBrightnessPref = (PreferenceScreen)
+        mNotificationBrightnessDialog = (NotificationBrightnessDialog)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
         mScreenOnLightsPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
@@ -137,9 +137,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
         if (!LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS)) {
-            mAdvancedPrefs.removePreference(mNotificationLedBrightnessPref);
-        } else {
-            mNotificationLedBrightnessPref.setOnPreferenceChangeListener(this);
+            mAdvancedPrefs.removePreference(mNotificationBrightnessDialog);
         }
         if (!mLedCanPulse && !mMultiColorLed) {
             mGeneralPrefs.removePreference(mDefaultPref);
@@ -457,7 +455,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mEnabledPref || preference == mCustomEnabledPref ||
-                preference == mNotificationLedBrightnessPref ||
                 preference == mScreenOnLightsPref ||
                 preference == mAutoGenerateColors) {
             getActivity().invalidateOptionsMenu();
