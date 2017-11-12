@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "08108d78_5f293e73",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/LightSettingsDialog.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2017-11-12T18:47:50Z",
+      "side": 1,
+      "message": "context already accessed here, could be used with a variable as done on the other addition.",
+      "revId": "c8db12031e0b4a139286375d27e2a912460d7d42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
