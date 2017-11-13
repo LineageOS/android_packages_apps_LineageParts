@@ -68,6 +68,18 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
     protected void onBindDialogView(View view) {
     }
 
+    protected void onStart() {
+    }
+
+    protected void onStop() {
+    }
+
+    protected void onPause() {
+    }
+
+    protected void onResume() {
+    }
+
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         return null;
     }
@@ -134,6 +146,25 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
                             new OnDismissListener(a, Dialog.BUTTON_NEGATIVE));
                 }
             }
+            getCustomizablePreference().onStart();
+        }
+
+        @Override
+        public void onStop() {
+            super.onStop();
+            getCustomizablePreference().onStop();
+        }
+
+        @Override
+        public void onPause() {
+            super.onPause();
+            getCustomizablePreference().onPause();
+        }
+
+        @Override
+        public void onResume() {
+            super.onResume();
+            getCustomizablePreference().onResume();
         }
 
         @Override
