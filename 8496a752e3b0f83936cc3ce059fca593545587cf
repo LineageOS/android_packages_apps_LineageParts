@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9152831e_f4c64cb4",
+        "filename": "res/xml/button_settings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-11-13T03:26:45Z",
+      "side": 1,
+      "message": "should open/close comments on separate lines like this, if possible.  then git blame history stays intact.",
+      "revId": "8496a752e3b0f83936cc3ce059fca593545587cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
