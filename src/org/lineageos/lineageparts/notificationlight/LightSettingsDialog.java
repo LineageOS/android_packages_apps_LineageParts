@@ -78,6 +78,8 @@ public class LightSettingsDialog extends AlertDialog implements
     private int mLedLastSpeedOn;
     private int mLedLastSpeedOff;
 
+    private Context mContext;
+
     /**
      * @param context
      * @param initialColor
@@ -107,8 +109,9 @@ public class LightSettingsDialog extends AlertDialog implements
 
     private void init(Context context, int color, int speedOn, int speedOff,
             boolean onOffChangeable) {
+        mContext = context;
         mNotificationManager =
-                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+                (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
 
         mReadyForLed = false;
         mLedLastColor = 0;
@@ -127,8 +130,7 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param speedOff - the flash length in ms
      */
     private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable) {
-        mInflater = (LayoutInflater) getContext()
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = mInflater.inflate(R.layout.dialog_light_settings, null);
 
         mColorPicker = (ColorPickerView) layout.findViewById(R.id.color_picker_view);
@@ -171,7 +173,7 @@ public class LightSettingsDialog extends AlertDialog implements
         setTitle(R.string.edit_light_settings);
 
         if (!LightsCapabilities.supports(
-                getContext(), LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED)) {
+                mContext, LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED)) {
             mColorPicker.setVisibility(View.GONE);
             mColorPanel.setVisibility(View.GONE);
             mLightsDialogDivider.setVisibility(View.GONE);
@@ -300,14 +302,14 @@ public class LightSettingsDialog extends AlertDialog implements
         final Bundle b = new Bundle();
         b.putBoolean(Notification.EXTRA_FORCE_SHOW_LIGHTS, true);
 
-        final Notification.Builder builder = new Notification.Builder(getContext());
+        final Notification.Builder builder = new Notification.Builder(mContext);
         builder.setLights(color, speedOn, speedOff);
         builder.setExtras(b);
 
         // Set a notification
         builder.setSmallIcon(R.drawable.ic_settings_24dp);
-        builder.setContentTitle(getContext().getString(R.string.led_notification_title));
-        builder.setContentText(getContext().getString(R.string.led_notification_text));
+        builder.setContentTitle(mContext.getString(R.string.led_notification_title));
+        builder.setContentText(mContext.getString(R.string.led_notification_text));
         builder.setOngoing(true);
 
         mNotificationManager.notify(1, builder.build());
@@ -326,8 +328,8 @@ public class LightSettingsDialog extends AlertDialog implements
         public PulseSpeedAdapter(int timeNamesResource, int timeValuesResource) {
             times = new ArrayList<Pair<String, Integer>>();
 
-            String[] time_names = getContext().getResources().getStringArray(timeNamesResource);
-            String[] time_values = getContext().getResources().getStringArray(timeValuesResource);
+            String[] time_names = mContext.getResources().getStringArray(timeNamesResource);
+            String[] time_values = mContext.getResources().getStringArray(timeValuesResource);
 
             for(int i = 0; i < time_values.length; ++i) {
                 times.add(new Pair<String, Integer>(time_names[i], Integer.decode(time_values[i])));
@@ -351,7 +353,7 @@ public class LightSettingsDialog extends AlertDialog implements
 
             // Check if we also need to add the custom value entry
             if (getTimePosition(customTime) == -1) {
-                times.add(new Pair<String, Integer>(getContext().getResources()
+                times.add(new Pair<String, Integer>(mContext.getResources()
                         .getString(R.string.custom_time), customTime));
             }
         }
@@ -434,8 +436,8 @@ public class LightSettingsDialog extends AlertDialog implements
     public void onFocusChange(View v, boolean hasFocus) {
         if (!hasFocus) {
             mHexColorInput.removeTextChangedListener(this);
-            InputMethodManager inputMethodManager = (InputMethodManager) getContext()
-                    .getSystemService(Activity.INPUT_METHOD_SERVICE);
+            InputMethodManager inputMethodManager =
+                    (InputMethodManager) mContext.getSystemService(Activity.INPUT_METHOD_SERVICE);
             inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
         } else {
             mHexColorInput.addTextChangedListener(this);
