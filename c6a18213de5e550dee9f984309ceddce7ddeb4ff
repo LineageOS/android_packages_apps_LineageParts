@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "07bc1be7_d7c59359",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationBrightnessDialog.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-11-14T17:15:49Z",
+      "side": 1,
+      "message": "We should removeMessages() from the handler here to prevent a possible race where a pending message turns the light back on if a seekbar touch -\u003e ok/cancel press happens within 250ms.",
+      "revId": "c6a18213de5e550dee9f984309ceddce7ddeb4ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
