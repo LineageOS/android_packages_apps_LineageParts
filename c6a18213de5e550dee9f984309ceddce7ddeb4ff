@@ -16,6 +16,24 @@
       "revId": "c6a18213de5e550dee9f984309ceddce7ddeb4ff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "57666a67_55da631d",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationBrightnessDialog.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-11-15T22:02:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "07bc1be7_d7c59359",
+      "revId": "c6a18213de5e550dee9f984309ceddce7ddeb4ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
