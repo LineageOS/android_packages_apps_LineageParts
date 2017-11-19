@@ -22,10 +22,6 @@
         android:id="@+id/privacy_guard_prefs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"/>
     <TextView
         android:id="@+id/error"
         android:layout_width="match_parent"
