@@ -116,4 +116,8 @@
           android:summary="@string/touchscreen_gesture_settings_summary"
           android:fragment="org.lineageos.lineageparts.gestures.TouchscreenGestureSettings"
           lineage:xmlRes="@xml/touchscreen_gesture_settings" />
+
+    <part android:key="lineage_version"
+          android:title="@string/lineage_version"
+          android:fragment="org.lineageos.lineageparts.deviceinfo.LineageVersion" />
 </parts-catalog>
