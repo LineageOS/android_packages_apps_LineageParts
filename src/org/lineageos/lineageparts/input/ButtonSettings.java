@@ -52,7 +52,6 @@ import java.util.List;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
-/*
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
@@ -172,9 +171,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         final int deviceKeys = getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
+                org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
         final int deviceWakeKeys = getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareWakeKeys);
+                org.lineageos.platform.internal.R.integer.config_deviceHardwareWakeKeys);
 
         final boolean hasPowerKey = KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_POWER);
         final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
@@ -270,6 +269,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Only visible on devices that does not have a navigation bar already,
         // and don't even try unless the existing keys can be disabled
         boolean needsNavigationBar = false;
+        /*
         if (hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
             try {
                 IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
@@ -288,6 +288,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
         }
+        */
 
         if (hasPowerKey) {
             if (!TelephonyUtils.isVoiceCapable(getActivity())) {
@@ -385,6 +386,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(appSwitchCategory);
         }
 
+        /*
         if (hasCameraKey) {
             mCameraWakeScreen = (SwitchPreference) findPreference(LineageSettings.System.CAMERA_WAKE_SCREEN);
             mCameraSleepOnRelease =
@@ -401,7 +403,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else {
             prefScreen.removePreference(cameraCategory);
         }
+        */
 
+        /*
         if (DeviceUtils.hasVolumeRocker(getActivity())) {
             if (!showVolumeWake) {
                 volumeCategory.removePreference(findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN));
@@ -412,6 +416,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         findPreference(LineageSettings.System.VOLUME_ANSWER_CALL));
             }
 
+            /*
             int cursorControlAction = Settings.System.getInt(resolver,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
             mVolumeKeyCursorControl = initList(KEY_VOLUME_KEY_CURSOR_CONTROL,
@@ -427,6 +432,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else {
             prefScreen.removePreference(volumeCategory);
         }
+        */
 
         try {
             // Only show the navigation bar category on devices that have a navigation bar
@@ -449,6 +455,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Log.e(TAG, "Error getting navigation bar status");
         }
 
+        /*
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported() && !backlight.isKeyboardSupported()) {
@@ -461,6 +468,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mCameraSleepOnRelease.setDependency(LineageSettings.System.CAMERA_WAKE_SCREEN);
             }
         }
+        */
         mVolumeWakeScreen = (SwitchPreference) findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN);
         mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
 
@@ -626,8 +634,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
             return true;
         } else if (preference == mVolumeKeyCursorControl) {
+            /*
             handleSystemListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+                    */
             return true;
         } else if (preference == mNavigationRecentsLongPressAction) {
             // RecentsLongPressAction is handled differently because it intentionally uses
@@ -667,7 +677,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         /* Disable hw-key options if they're disabled */
-        /*
         final PreferenceCategory homeCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
         final PreferenceCategory backCategory =
@@ -678,9 +687,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
         final PreferenceCategory appSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
+        /*
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
-
+        */
         /* Toggle backlight control depending on navbar state, force it to
            off if enabling */
         /*
@@ -689,8 +699,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             backlight.updateSummary();
         }
 
+        */
         /* Toggle hardkey control availability depending on navbar state */
-        /*
         if (homeCategory != null) {
             homeCategory.setEnabled(!navbarEnabled);
         }
@@ -776,4 +786,3 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         : LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 }
-*/
