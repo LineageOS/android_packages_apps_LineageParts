@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod project
+ * Copyright (C) 2017 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,12 +48,13 @@ import org.lineageos.lineageparts.utils.TelephonyUtils;
 import org.lineageos.internal.util.QSUtils;
 import org.lineageos.internal.util.ScreenType;
 
+import static org.lineageos.internal.util.DeviceKeysConstants.*;
+
 import java.util.List;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
-/*
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
@@ -93,45 +95,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
     private static final String CATEGORY_NAVBAR = "navigation_bar_category";
 
-    // Available custom actions to perform on a key press.
-    // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
-    // frameworks/base/core/java/android/provider/Settings.java
-    private enum Action {
-        NOTHING,
-        MENU,
-        APP_SWITCH,
-        SEARCH,
-        VOICE_SEARCH,
-        IN_APP_SEARCH,
-        LAUNCH_CAMERA,
-        SLEEP,
-        LAST_APP,
-        SPLIT_SCREEN,
-        SINGLE_HAND_LEFT,
-        SINGLE_HAND_RIGHT;
-
-        public static Action fromIntSafe(int id) {
-            if (id < NOTHING.ordinal() || id > Action.values().length) {
-                return NOTHING;
-            }
-            return Action.values()[id];
-        }
-
-        public static Action fromSettings(ContentResolver cr, String setting, Action def) {
-            return fromIntSafe(LineageSettings.System.getInt(cr, setting, def.ordinal()));
-        }
-    }
-
-    // Masks for checking presence of hardware keys.
-    // Must match values in frameworks/base/core/res/res/values/config.xml
-    public static final int KEY_MASK_HOME = 0x01;
-    public static final int KEY_MASK_BACK = 0x02;
-    public static final int KEY_MASK_MENU = 0x04;
-    public static final int KEY_MASK_ASSIST = 0x08;
-    public static final int KEY_MASK_APP_SWITCH = 0x10;
-    public static final int KEY_MASK_CAMERA = 0x20;
-    public static final int KEY_MASK_VOLUME = 0x40;
-
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
     private ListPreference mMenuPressAction;
@@ -171,10 +134,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
-        final int deviceKeys = getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
-        final int deviceWakeKeys = getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareWakeKeys);
+        final int deviceKeys = res.getInteger(
+                org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
+        final int deviceWakeKeys = res.getInteger(
+                org.lineageos.platform.internal.R.integer.config_deviceHardwareWakeKeys);
 
         final boolean hasPowerKey = KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_POWER);
         final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
@@ -236,9 +199,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
-                com.android.internal.R.integer.config_longPressOnHomeBehavior));
+                org.lineageos.platform.internal.R.integer.config_longPressOnHomeBehavior));
         Action defaultHomeDoubleTapAction = Action.fromIntSafe(res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnHomeBehavior));
+                org.lineageos.platform.internal.R.integer.config_doubleTapOnHomeBehavior));
         Action homeLongPressAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_HOME_LONG_PRESS_ACTION,
                 defaultHomeLongPressAction);
@@ -394,10 +357,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             if (!showCameraWake) {
                 prefScreen.removePreference(mCameraWakeScreen);
             }
+            /*
             // Only show 'Camera sleep on release' if the device has a focus key
             if (res.getBoolean(com.android.internal.R.bool.config_singleStageCameraKey)) {
                 prefScreen.removePreference(mCameraSleepOnRelease);
             }
+            */
         } else {
             prefScreen.removePreference(cameraCategory);
         }
@@ -449,6 +414,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Log.e(TAG, "Error getting navigation bar status");
         }
 
+        /*
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported() && !backlight.isKeyboardSupported()) {
@@ -461,6 +427,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mCameraSleepOnRelease.setDependency(LineageSettings.System.CAMERA_WAKE_SCREEN);
             }
         }
+        */
+
         mVolumeWakeScreen = (SwitchPreference) findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN);
         mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
 
@@ -667,7 +635,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         /* Disable hw-key options if they're disabled */
-        /*
         final PreferenceCategory homeCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
         final PreferenceCategory backCategory =
@@ -678,9 +645,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
         final PreferenceCategory appSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
+        /*
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
-
+        */
         /* Toggle backlight control depending on navbar state, force it to
            off if enabling */
         /*
@@ -688,9 +656,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             backlight.setEnabled(!navbarEnabled);
             backlight.updateSummary();
         }
+        */
 
         /* Toggle hardkey control availability depending on navbar state */
-        /*
         if (homeCategory != null) {
             homeCategory.setEnabled(!navbarEnabled);
         }
@@ -776,4 +744,3 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         : LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 }
-*/
