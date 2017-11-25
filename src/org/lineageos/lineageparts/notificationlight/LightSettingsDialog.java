@@ -46,6 +46,7 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import org.lineageos.internal.notification.LightsCapabilities;
+import org.lineageos.internal.notification.LineageNotification;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.notificationlight.ColorPickerView.OnColorChangedListener;
 
@@ -79,6 +80,8 @@ public class LightSettingsDialog extends AlertDialog implements
     private int mLedLastColor;
     private int mLedLastSpeedOn;
     private int mLedLastSpeedOff;
+
+    private int mLedBrightness;
 
     private Context mContext;
 
@@ -181,6 +184,8 @@ public class LightSettingsDialog extends AlertDialog implements
             mLightsDialogDivider.setVisibility(View.GONE);
         }
 
+        mLedBrightness = -1; // Means to be considered unset
+
         mReadyForLed = true;
         updateLed();
     }
@@ -254,6 +259,10 @@ public class LightSettingsDialog extends AlertDialog implements
         mColorPicker.setColor(color, true);
     }
 
+    public void setBrightness(int brightness) {
+        mLedBrightness = brightness;
+    }
+
     @SuppressWarnings("unchecked")
     public int getPulseSpeedOn() {
         if (mPulseSpeedOn.isEnabled()) {
@@ -314,7 +323,10 @@ public class LightSettingsDialog extends AlertDialog implements
         mLedLastSpeedOff = speedOff;
 
         final Bundle b = new Bundle();
-        b.putBoolean(Notification.EXTRA_FORCE_SHOW_LIGHTS, true);
+        b.putBoolean(LineageNotification.EXTRA_FORCE_SHOW_LIGHTS, true);
+        if  (mLedBrightness >= 0) {
+            b.putInt(LineageNotification.EXTRA_FORCE_LIGHT_BRIGHTNESS, mLedBrightness);
+        }
 
         final Notification.Builder builder = new Notification.Builder(mContext);
         builder.setLights(color, speedOn, speedOff);
