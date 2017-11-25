@@ -28,6 +28,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import org.lineageos.internal.notification.LightsCapabilities;
+import org.lineageos.lineageparts.notificationlight.BrightnessDialog;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
@@ -38,11 +39,17 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "BatteryLightSettings";
 
+    private static final String GENERAL_SECTION = "general_section";
+    private static final String COLORS_SECTION = "colors_list";
+    private static final String BRIGHTNESS_SECTION = "brightness_section";
+
     private static final String LOW_COLOR_PREF = "low_color";
     private static final String MEDIUM_COLOR_PREF = "medium_color";
     private static final String FULL_COLOR_PREF = "full_color";
     private static final String LIGHT_ENABLED_PREF = "battery_light_enabled";
     private static final String PULSE_ENABLED_PREF = "battery_light_pulse";
+    private static final String BRIGHTNESS_DIALOG = "battery_light_brightness_level";
+    private static final String BRIGHTNESS_ZEN_DIALOG = "battery_light_brightness_level_zen";
 
     private PreferenceGroup mColorPrefs;
     private ApplicationLightPreference mLowColorPref;
@@ -50,9 +57,13 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private ApplicationLightPreference mFullColorPref;
     private LineageSystemSettingSwitchPreference mLightEnabledPref;
     private LineageSystemSettingSwitchPreference mPulseEnabledPref;
+    private BatteryBrightnessDialog mBatteryBrightnessDialog;
+    private BatteryBrightnessZenDialog mBatteryBrightnessZenDialog;
     private int mDefaultLowColor;
     private int mDefaultMediumColor;
     private int mDefaultFullColor;
+    private int mBatteryBrightness;
+    private boolean mMultiColorLed;
 
     private static final int MENU_RESET = Menu.FIRST;
 
@@ -63,24 +74,37 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         final Context context = getContext();
         final Resources res = getResources();
 
+        // Collect battery led capabilities.
+        mMultiColorLed =
+                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_RGB_BATTERY_LED);
+        final boolean pulsatingLed =
+                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED);
+        final boolean segmentedBatteryLed =
+                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_SEGMENTED_BATTERY_LED);
+
         addPreferencesFromResource(R.xml.battery_light_settings);
         getActivity().getActionBar().setTitle(R.string.battery_light_title);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        PreferenceGroup mGeneralPrefs = (PreferenceGroup) prefSet.findPreference("general_section");
+        PreferenceGroup generalPrefs = (PreferenceGroup) prefSet.findPreference(GENERAL_SECTION);
 
-        mLightEnabledPref = (LineageSystemSettingSwitchPreference) prefSet.findPreference(LIGHT_ENABLED_PREF);
-        mPulseEnabledPref = (LineageSystemSettingSwitchPreference) prefSet.findPreference(PULSE_ENABLED_PREF);
+        mLightEnabledPref =
+                (LineageSystemSettingSwitchPreference) prefSet.findPreference(LIGHT_ENABLED_PREF);
+        mPulseEnabledPref =
+                (LineageSystemSettingSwitchPreference) prefSet.findPreference(PULSE_ENABLED_PREF);
+        mBatteryBrightnessDialog =
+                (BatteryBrightnessDialog) prefSet.findPreference(BRIGHTNESS_DIALOG);
+        mBatteryBrightnessZenDialog =
+                (BatteryBrightnessZenDialog) prefSet.findPreference(BRIGHTNESS_ZEN_DIALOG);
 
-        if (!LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED) ||
-                LightsCapabilities.supports(
-                        context, LightsCapabilities.LIGHTS_SEGMENTED_BATTERY_LED)) {
-            mGeneralPrefs.removePreference(mPulseEnabledPref);
+        mBatteryBrightness = mBatteryBrightnessDialog.getBrightnessSetting();
+
+        if (!pulsatingLed || segmentedBatteryLed) {
+            generalPrefs.removePreference(mPulseEnabledPref);
         }
 
-        // Does the device support changing battery LED colors?
-        if (LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_RGB_BATTERY_LED)) {
+        if (mMultiColorLed) {
             setHasOptionsMenu(true);
 
             mDefaultLowColor = res.getInteger(
@@ -94,17 +118,36 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             mLowColorPref = (ApplicationLightPreference) prefSet.findPreference(LOW_COLOR_PREF);
             mLowColorPref.setOnPreferenceChangeListener(this);
             mLowColorPref.setDefaultValues(mDefaultLowColor, 0, 0);
+            mLowColorPref.setBrightness(mBatteryBrightness);
 
             mMediumColorPref = (ApplicationLightPreference) prefSet.findPreference(MEDIUM_COLOR_PREF);
             mMediumColorPref.setOnPreferenceChangeListener(this);
             mMediumColorPref.setDefaultValues(mDefaultMediumColor, 0, 0);
+            mMediumColorPref.setBrightness(mBatteryBrightness);
 
             mFullColorPref = (ApplicationLightPreference) prefSet.findPreference(FULL_COLOR_PREF);
             mFullColorPref.setOnPreferenceChangeListener(this);
             mFullColorPref.setDefaultValues(mDefaultFullColor, 0, 0);
+            mFullColorPref.setBrightness(mBatteryBrightness);
+
+            final BrightnessDialog.OnBrightnessChangedListener brightnessListener =
+                    new BrightnessDialog.OnBrightnessChangedListener() {
+                @Override
+                public void onBrightnessChanged(int brightness) {
+                    mLowColorPref.setBrightness(brightness);
+                    mMediumColorPref.setBrightness(brightness);
+                    mFullColorPref.setBrightness(brightness);
+                }
+            };
+            mBatteryBrightnessDialog.setOnBrightnessChangedListener(brightnessListener);
         } else {
-            prefSet.removePreference(prefSet.findPreference("colors_list"));
+            prefSet.removePreference(prefSet.findPreference(COLORS_SECTION));
             resetColors();
+        }
+
+        // Remove battery LED brightness controls if we can't support them.
+        if (segmentedBatteryLed || !mMultiColorLed) {
+            prefSet.removePreference(prefSet.findPreference(BRIGHTNESS_SECTION));
         }
 
         watch(LineageSettings.System.getUriFor(LineageSettings.System.BATTERY_LIGHT_ENABLED));
@@ -136,7 +179,18 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             int fullColor = LineageSettings.System.getInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
             mFullColorPref.setAllValues(fullColor, 0, 0, false);
+            updateBrightnessDialogColor(fullColor);
         }
+    }
+
+    private void updateBrightnessDialogColor(int color) {
+        // If the user has selected no light (ie black) for
+        // full charge, use white for the brightness dialog.
+        if (color == 0) {
+            color = 0xFFFFFF;
+        }
+        mBatteryBrightnessDialog.setLedColor(color);
+        mBatteryBrightnessZenDialog.setLedColor(color);
     }
 
     /**
@@ -154,12 +208,13 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
         } else if (key.equals(FULL_COLOR_PREF)) {
             LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR, color);
+            updateBrightnessDialogColor(color);
         }
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        if (LightsCapabilities.supports(getContext(), LightsCapabilities.LIGHTS_RGB_BATTERY_LED)) {
+        if (mMultiColorLed) {
             menu.add(0, MENU_RESET, 0, R.string.reset)
                     .setIcon(R.drawable.ic_settings_backup_restore)
                     .setAlphabeticShortcut('r')

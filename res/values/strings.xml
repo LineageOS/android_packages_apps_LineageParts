@@ -87,6 +87,11 @@
     <string name="pulse_speed_slow">Slow</string>
     <string name="pulse_speed_very_slow">Very slow</string>
 
+    <!-- Common light settings strings -->
+    <string name="light_brightness_title">Brightness levels</string>
+    <string name="light_brightness_normal">Normal</string>
+    <string name="light_brightness_zen">Do Not Disturb</string>
+
     <!-- Battery light settings -->
     <string name="battery_light_title">Battery light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
@@ -94,6 +99,8 @@
     <string name="battery_light_low_color_title">Battery low</string>
     <string name="battery_light_medium_color_title">Charging</string>
     <string name="battery_light_full_color_title">Fully charged</string>
+    <string name="battery_light_brightness_normal" translatable="false">@string/light_brightness_normal</string>
+    <string name="battery_light_brightness_zen" translatable="false">@string/light_brightness_zen</string>
 
     <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Notification light</string>
@@ -105,7 +112,8 @@
     <string name="notification_light_default_value">Default</string>
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
-    <string name="notification_light_brightness" translatable="false">@string/brightness</string>
+    <string name="notification_light_brightness_normal" translatable="false">@string/light_brightness_normal</string>
+    <string name="notification_light_brightness_zen" translatable="false">@string/light_brightness_zen</string>
     <string name="notification_light_screen_on">Lights with screen on</string>
     <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
     <string name="keywords_lights_brightness_level">dim leds brightness</string>
