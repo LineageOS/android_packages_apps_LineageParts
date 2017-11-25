@@ -40,12 +40,12 @@ import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;
 
-public class NotificationBrightnessDialog extends BrightnessDialog {
-    private static String TAG = "NotificationBrightnessDialog";
+public class NotificationBrightnessDialogDnD extends BrightnessDialog {
+    private static String TAG = "NotificationBrightnessDialogDnD";
 
     private Context mContext;
 
-    public NotificationBrightnessDialog(Context context, AttributeSet attrs) {
+    public NotificationBrightnessDialogDnD(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
     }
@@ -53,14 +53,14 @@ public class NotificationBrightnessDialog extends BrightnessDialog {
     @Override
     protected int getBrightnessSetting() {
         return LineageSettings.System.getIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL_DND,
                 LIGHT_BRIGHTNESS_MAXIMUM, UserHandle.USER_CURRENT);
     }
 
     @Override
     protected void setBrightnessSetting(int brightness) {
         LineageSettings.System.putIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL_DND,
                 brightness, UserHandle.USER_CURRENT);
     }
 }

@@ -19,7 +19,7 @@
     android:paddingRight="16dp">
 
     <SeekBar
-        android:id="@+id/notification_brightness_seekbar"
+        android:id="@+id/brightness_seekbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"

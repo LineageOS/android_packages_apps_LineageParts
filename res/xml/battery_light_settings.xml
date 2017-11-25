@@ -33,6 +33,16 @@
             android:defaultValue="@bool/def_battery_light_pulse"
             android:dependency="battery_light_enabled" />
 
+        <org.lineageos.lineageparts.notificationlight.BatteryBrightnessDialog
+            android:key="battery_light_brightness_level"
+            android:title="@string/battery_light_brightness"
+            android:dependency="battery_light_enabled" />
+
+        <org.lineageos.lineageparts.notificationlight.BatteryBrightnessDialogDnD
+            android:key="battery_light_brightness_level_dnd"
+            android:title="@string/battery_light_brightness_dnd"
+            android:dependency="battery_light_enabled" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

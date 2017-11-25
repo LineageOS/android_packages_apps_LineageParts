@@ -49,6 +49,11 @@
             android:title="@string/notification_light_brightness"
             android:dependency="notification_light_pulse" />
 
+        <org.lineageos.lineageparts.notificationlight.NotificationBrightnessDialogDnD
+            android:key="notification_light_brightness_level_dnd"
+            android:title="@string/notification_light_brightness_dnd"
+            android:dependency="notification_light_pulse" />
+
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
