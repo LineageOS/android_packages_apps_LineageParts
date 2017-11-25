@@ -74,7 +74,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private int mDefaultLedOff;
     private PackageManager mPackageManager;
     private PreferenceGroup mApplicationPrefList;
-    private NotificationBrightnessDialog mNotificationBrightnessDialog;
+    private NotificationBrightnessPreference mNotificationBrightnessPref;
     private SystemSettingSwitchPreference mEnabledPref;
     private LineageSystemSettingSwitchPreference mCustomEnabledPref;
     private LineageSystemSettingSwitchPreference mScreenOnLightsPref;
@@ -128,7 +128,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
 
         // Advanced light settings
-        mNotificationBrightnessDialog = (NotificationBrightnessDialog)
+        mNotificationBrightnessPref = (NotificationBrightnessPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
         mScreenOnLightsPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
@@ -137,7 +137,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
         if (!LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS)) {
-            mAdvancedPrefs.removePreference(mNotificationBrightnessDialog);
+            mAdvancedPrefs.removePreference(mNotificationBrightnessPref);
         }
         if (!mLedCanPulse && !mMultiColorLed) {
             mGeneralPrefs.removePreference(mDefaultPref);
