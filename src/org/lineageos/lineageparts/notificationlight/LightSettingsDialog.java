@@ -65,6 +65,8 @@ public class LightSettingsDialog extends AlertDialog implements
 
     private EditText mHexColorInput;
     private ColorPanelView mNewColor;
+    private PulseSpeedAdapter mPulseSpeedAdapterOn;
+    private PulseSpeedAdapter mPulseSpeedAdapterOff;
     private Spinner mPulseSpeedOn;
     private Spinner mPulseSpeedOff;
     private LayoutInflater mInflater;
@@ -147,19 +149,19 @@ public class LightSettingsDialog extends AlertDialog implements
         mHexColorInput.setOnFocusChangeListener(this);
 
         if (onOffChangeable) {
-            PulseSpeedAdapter pulseSpeedAdapter = new PulseSpeedAdapter(
+            mPulseSpeedAdapterOn = new PulseSpeedAdapter(
                     R.array.notification_pulse_length_entries,
                     R.array.notification_pulse_length_values,
                     speedOn);
-            mPulseSpeedOn.setAdapter(pulseSpeedAdapter);
-            mPulseSpeedOn.setSelection(pulseSpeedAdapter.getTimePosition(speedOn));
+            mPulseSpeedOn.setAdapter(mPulseSpeedAdapterOn);
+            mPulseSpeedOn.setSelection(mPulseSpeedAdapterOn.getTimePosition(speedOn));
             mPulseSpeedOn.setOnItemSelectedListener(mPulseSelectionListener);
 
-            pulseSpeedAdapter = new PulseSpeedAdapter(R.array.notification_pulse_speed_entries,
+            mPulseSpeedAdapterOff = new PulseSpeedAdapter(R.array.notification_pulse_speed_entries,
                     R.array.notification_pulse_speed_values,
                     speedOff);
-            mPulseSpeedOff.setAdapter(pulseSpeedAdapter);
-            mPulseSpeedOff.setSelection(pulseSpeedAdapter.getTimePosition(speedOff));
+            mPulseSpeedOff.setAdapter(mPulseSpeedAdapterOff);
+            mPulseSpeedOff.setSelection(mPulseSpeedAdapterOff.getTimePosition(speedOff));
             mPulseSpeedOff.setOnItemSelectedListener(mPulseSelectionListener);
         } else {
             View speedSettingsGroup = layout.findViewById(R.id.speed_title_view);
@@ -248,6 +250,10 @@ public class LightSettingsDialog extends AlertDialog implements
         return mColorPicker.getColor();
     }
 
+    public void setColor(int color) {
+        mColorPicker.setColor(color, true);
+    }
+
     @SuppressWarnings("unchecked")
     public int getPulseSpeedOn() {
         if (mPulseSpeedOn.isEnabled()) {
@@ -257,10 +263,18 @@ public class LightSettingsDialog extends AlertDialog implements
         }
     }
 
+    public void setPulseSpeedOn(int speedOn) {
+        mPulseSpeedOn.setSelection(mPulseSpeedAdapterOn.getTimePosition(speedOn));
+    }
+
     @SuppressWarnings("unchecked")
     public int getPulseSpeedOff() {
         // return 0 if 'Always on' is selected
         return getPulseSpeedOn() == 1 ? 0 : ((Pair<String, Integer>) mPulseSpeedOff.getSelectedItem()).second;
+    }
+
+    public void setPulseSpeedOff(int speedOff) {
+        mPulseSpeedOff.setSelection(mPulseSpeedAdapterOff.getTimePosition(speedOff));
     }
 
     private Handler mLedHandler = new Handler() {

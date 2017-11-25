@@ -50,6 +50,9 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private ApplicationLightPreference mFullColorPref;
     private LineageSystemSettingSwitchPreference mLightEnabledPref;
     private LineageSystemSettingSwitchPreference mPulseEnabledPref;
+    private int mDefaultLowColor;
+    private int mDefaultMediumColor;
+    private int mDefaultFullColor;
 
     private static final int MENU_RESET = Menu.FIRST;
 
@@ -58,6 +61,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         super.onActivityCreated(savedInstanceState);
 
         final Context context = getContext();
+        final Resources res = getResources();
 
         addPreferencesFromResource(R.xml.battery_light_settings);
         getActivity().getActionBar().setTitle(R.string.battery_light_title);
@@ -79,15 +83,25 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         if (LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_RGB_BATTERY_LED)) {
             setHasOptionsMenu(true);
 
+            mDefaultLowColor = res.getInteger(
+                    com.android.internal.R.integer.config_notificationsBatteryLowARGB);
+            mDefaultMediumColor = res.getInteger(
+                    com.android.internal.R.integer.config_notificationsBatteryMediumARGB);
+            mDefaultFullColor = res.getInteger(
+                    com.android.internal.R.integer.config_notificationsBatteryFullARGB);
+
             // Low, Medium and full color preferences
             mLowColorPref = (ApplicationLightPreference) prefSet.findPreference(LOW_COLOR_PREF);
             mLowColorPref.setOnPreferenceChangeListener(this);
+            mLowColorPref.setDefaultValues(mDefaultLowColor, 0, 0);
 
             mMediumColorPref = (ApplicationLightPreference) prefSet.findPreference(MEDIUM_COLOR_PREF);
             mMediumColorPref.setOnPreferenceChangeListener(this);
+            mMediumColorPref.setDefaultValues(mDefaultMediumColor, 0, 0);
 
             mFullColorPref = (ApplicationLightPreference) prefSet.findPreference(FULL_COLOR_PREF);
             mFullColorPref.setOnPreferenceChangeListener(this);
+            mFullColorPref.setDefaultValues(mDefaultFullColor, 0, 0);
         } else {
             prefSet.removePreference(prefSet.findPreference("colors_list"));
             resetColors();
@@ -99,10 +113,10 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
-        refreshDefault();
+        refreshColors();
     }
 
-    private void refreshDefault() {
+    private void refreshColors() {
         ContentResolver resolver = getActivity().getContentResolver();
         Resources res = getResources();
 
@@ -166,16 +180,15 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     protected void resetColors() {
         ContentResolver resolver = getActivity().getContentResolver();
-        Resources res = getResources();
 
         // Reset to the framework default colors
         LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_LOW_COLOR,
-                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
+                mDefaultLowColor);
         LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
-                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
+                mDefaultMediumColor);
         LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR,
-                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
-        refreshDefault();
+                mDefaultFullColor);
+        refreshColors();
     }
 
     protected void resetToDefaults() {

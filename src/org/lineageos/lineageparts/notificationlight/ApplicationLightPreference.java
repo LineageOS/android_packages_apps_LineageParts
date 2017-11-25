@@ -50,6 +50,11 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     private int mOffValue;
     private boolean mOnOffChangeable;
 
+    private boolean mHasDefaults;
+    private int mDefaultColorValue;
+    private int mDefaultOnValue;
+    private int mDefaultOffValue;
+
     private LightSettingsDialog mDialog;
 
     public interface ItemLongClickListener {
@@ -94,6 +99,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         mOnValue = onValue;
         mOffValue = offValue;
         mOnOffChangeable = onOffChangeable;
+        mHasDefaults = false;
 
         setWidgetLayoutResource(R.layout.preference_application_light);
     }
@@ -169,6 +175,20 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     }
 
     @Override
+    protected boolean onDismissDialog(LightSettingsDialog dialog, int which) {
+        if (which == DialogInterface.BUTTON_NEUTRAL) {
+            // Reset to previously supplied defaults
+            mDialog.setColor(mDefaultColorValue);
+            if (mOnOffChangeable) {
+                mDialog.setPulseSpeedOn(mDefaultOnValue);
+                mDialog.setPulseSpeedOff(mDefaultOffValue);
+            }
+            return false;
+        }
+        return true;
+    }
+
+    @Override
     protected void onDialogClosed(boolean positiveResult) {
         if (positiveResult) {
             mColorValue = mDialog.getColor() & 0x00FFFFFF; // strip alpha, led does not support it
@@ -194,6 +214,11 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         mDialog.setButton(AlertDialog.BUTTON_NEGATIVE,
                 getContext().getResources().getString(R.string.cancel),
                 (DialogInterface.OnClickListener) null);
+        if (mHasDefaults) {
+            mDialog.setButton(AlertDialog.BUTTON_NEUTRAL,
+                    getContext().getResources().getString(R.string.reset),
+                    (DialogInterface.OnClickListener) null);
+        }
 
         return mDialog;
     }
@@ -252,6 +277,13 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
 
     public void setOnOffChangeable(boolean value) {
         mOnOffChangeable = value;
+    }
+
+    public void setDefaultValues(int color, int onValue, int offValue) {
+        mDefaultColorValue = color;
+        mDefaultOnValue = onValue;
+        mDefaultOffValue = offValue;
+        mHasDefaults = true;
     }
 
     /**
