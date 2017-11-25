@@ -30,20 +30,23 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import lineageos.providers.LineageSettings;
 
 import org.lineageos.internal.notification.LightsCapabilities;
+import org.lineageos.internal.notification.LineageNotification;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;
 
-public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDialog>
+public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
         implements SeekBar.OnSeekBarChangeListener {
 
-    private static String TAG = "NotificationBrightnessDialog";
+    private static String TAG = "BrightnessPreference";
 
     public static final int LIGHT_BRIGHTNESS_MINIMUM = 1;
     public static final int LIGHT_BRIGHTNESS_MAXIMUM = 255;
@@ -51,6 +54,12 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
     // Minimum delay between LED notification updates
     private final static long LED_UPDATE_DELAY_MS = 250;
 
+    // Default led color used to illustrate brightness
+    private final static int DEFAULT_LED_COLOR = 0xFFFFFF;
+
+    private TextView mPreferencePercent;
+
+    private TextView mDialogPercent;
     private SeekBar mBrightnessBar;
 
     // The user selected brightness level (past or present if dialog is OKed).
@@ -59,6 +68,8 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
     private int mSeekBarBrightness;
     // LED brightness currently on display (0 means notification is not showing)
     private int mVisibleLedBrightness;
+    // LED color used to illustrate brightness
+    private int mLedColor = DEFAULT_LED_COLOR;
 
     private final Context mContext;
     private final Handler mHandler;
@@ -66,10 +77,17 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
     private final Notification.Builder mNotificationBuilder;
     private NotificationManager mNotificationManager;
 
-    public NotificationBrightnessDialog(Context context, AttributeSet attrs) {
+    public interface OnBrightnessChangedListener {
+        public void onBrightnessChanged(int brightness);
+    }
+
+    private OnBrightnessChangedListener mListener;
+
+    public BrightnessPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        setDialogLayoutResource(R.layout.notification_brightness_dialog);
+        setWidgetLayoutResource(R.layout.preference_brightness);
+        setDialogLayoutResource(R.layout.dialog_brightness);
 
         mContext = context;
 
@@ -79,8 +97,10 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
         mNotificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
+        // Force lights on when screen is on and also force maximum brightness.
         Bundle bundle = new Bundle();
-        bundle.putBoolean(Notification.EXTRA_FORCE_SHOW_LIGHTS, true);
+        bundle.putBoolean(LineageNotification.EXTRA_FORCE_SHOW_LIGHTS, true);
+        bundle.putInt(LineageNotification.EXTRA_FORCE_LIGHT_BRIGHTNESS, LIGHT_BRIGHTNESS_MAXIMUM);
 
         mNotificationBuilder = new Notification.Builder(mContext);
         mNotificationBuilder.setExtras(bundle)
@@ -91,9 +111,23 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder, DialogInterface.OnClickListener listener) {
+    public void onBindViewHolder(PreferenceViewHolder holder) {
+        super.onBindViewHolder(holder);
+
+        mSelectedBrightness = getBrightnessSetting();
+        mSeekBarBrightness = mSelectedBrightness;
+
+        mPreferencePercent = (TextView) holder.findViewById(R.id.brightness_percent);
+        mPreferencePercent.setText(percentString(mSelectedBrightness, LIGHT_BRIGHTNESS_MINIMUM,
+                LIGHT_BRIGHTNESS_MAXIMUM));
+    }
+
+    @Override
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
+            DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
-        // Set no-op handler for RESET button (note, the reset itself is handled in onDismissDialog())
+        // Set no-op handler for RESET button
+        // (note, the reset itself is handled in onDismissDialog())
         builder.setNeutralButton(R.string.reset,
                 new DialogInterface.OnClickListener() {
             @Override
@@ -118,6 +152,12 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
 
         if (positiveResult) {
             mSelectedBrightness = mSeekBarBrightness;
+            setBrightnessSetting(mSelectedBrightness);
+            if (mListener != null) {
+                mListener.onBrightnessChanged(mSelectedBrightness);
+            }
+            mPreferencePercent.setText(percentString(mSelectedBrightness,
+                    LIGHT_BRIGHTNESS_MINIMUM, LIGHT_BRIGHTNESS_MAXIMUM));
         } else {
             mSeekBarBrightness = mSelectedBrightness;
         }
@@ -127,11 +167,12 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
-        updateSelectedBrightness();
-        mSeekBarBrightness = mSelectedBrightness;
+        // Locate text view for percentage value
+        mDialogPercent = (TextView) view.findViewById(R.id.brightness_percent);
+
         mVisibleLedBrightness = 0; // LED notification is not showing.
 
-        mBrightnessBar = (SeekBar) view.findViewById(R.id.notification_brightness_seekbar);
+        mBrightnessBar = (SeekBar) view.findViewById(R.id.brightness_seekbar);
         mBrightnessBar.setMax(LIGHT_BRIGHTNESS_MAXIMUM);
         mBrightnessBar.setMin(LIGHT_BRIGHTNESS_MINIMUM);
         mBrightnessBar.setOnSeekBarChangeListener(this);
@@ -142,25 +183,12 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
 
     @Override
     protected void onResume() {
-        // Get current notification brightness setting.
-        updateSelectedBrightness();
-
-        // Set maximum system brightness so that the notification preview
-        // is relative to the real maximum.
-        LineageSettings.System.putIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
-                LIGHT_BRIGHTNESS_MAXIMUM, UserHandle.USER_CURRENT);
-
         updateNotification();
     }
 
     @Override
     protected void onPause() {
         cancelNotification();
-        // Restore original or save new brightness
-        LineageSettings.System.putIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
-                mSelectedBrightness, UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -173,12 +201,24 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         mSeekBarBrightness = progress;
         updateNotification();
+        mDialogPercent.setText(percentString(progress, seekBar.getMin(), seekBar.getMax()));
     }
 
-    private void updateSelectedBrightness() {
-        mSelectedBrightness = LineageSettings.System.getIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
-                LIGHT_BRIGHTNESS_MAXIMUM, UserHandle.USER_CURRENT);
+    public void setOnBrightnessChangedListener(OnBrightnessChangedListener listener) {
+        mListener = listener;
+    }
+
+    protected int getBrightnessSetting() {
+        // Null implementation
+        return LIGHT_BRIGHTNESS_MAXIMUM;
+    }
+
+    protected void setBrightnessSetting(int brightness) {
+        // Null implementation
+    }
+
+    public void setLedColor(int color) {
+        mLedColor = color & 0xFFFFFF;
     }
 
     private void updateNotification() {
@@ -191,7 +231,7 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
 
         // Instead of canceling the notification, force it to update with the color.
         // Use a white light for a better preview of the brightness.
-        int notificationColor = 0xFFFFFF | (mSeekBarBrightness << 24);
+        int notificationColor = mLedColor | (mSeekBarBrightness << 24);
         mNotificationBuilder.setLights(notificationColor, 1, 0);
         mNotificationManager.notify(1, mNotificationBuilder.build());
         mVisibleLedBrightness = mSeekBarBrightness;
@@ -237,6 +277,11 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
         super.onRestoreInstanceState(myState.getSuperState());
 
         mSeekBarBrightness = myState.seekBarBrightness;
+    }
+
+    private String percentString(int progress, int min, int max) {
+        final float percentage = 100f * (progress - min ) / (max - min);
+        return String.format("%d%%", Math.round(percentage));
     }
 
     private static class SavedState extends BaseSavedState {

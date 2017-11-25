@@ -57,4 +57,21 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="brightness_section"
+        android:title="@string/light_brightness_title"
+        android:dependency="battery_light_enabled" >
+
+        <org.lineageos.lineageparts.notificationlight.BatteryBrightnessPreference
+            android:key="battery_light_brightness_level"
+            android:title="@string/battery_light_brightness_normal"
+            android:dependency="battery_light_enabled" />
+
+        <org.lineageos.lineageparts.notificationlight.BatteryBrightnessZenPreference
+            android:key="battery_light_brightness_level_zen"
+            android:title="@string/battery_light_brightness_zen"
+            android:dependency="battery_light_enabled" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
