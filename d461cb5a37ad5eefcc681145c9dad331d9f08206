@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "35ecfdf8_5756cb11",
+        "filename": "src/org/lineageos/lineageparts/logo/PlatLogoActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2017-11-25T21:29:24Z",
+      "side": 1,
+      "message": "To be kept?",
+      "revId": "d461cb5a37ad5eefcc681145c9dad331d9f08206",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1576f3c8_265298c6",
+        "filename": "src/org/lineageos/lineageparts/logo/PlatLogoActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2017-11-25T21:29:24Z",
+      "side": 1,
+      "message": "A new line above this whole click section would be nice for readability",
+      "revId": "d461cb5a37ad5eefcc681145c9dad331d9f08206",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b5628e89_9b8c2f5a",
+        "filename": "src/org/lineageos/lineageparts/logo/PlatLogoActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2017-11-25T21:29:24Z",
+      "side": 1,
+      "message": "This section is never active, any reason to keep it ? Future addition ?",
+      "revId": "d461cb5a37ad5eefcc681145c9dad331d9f08206",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e91cf1da_d4f88383",
+        "filename": "src/org/lineageos/lineageparts/logo/PlatLogoActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2017-11-25T21:29:24Z",
+      "side": 1,
+      "message": "Should be double indented for first line break",
+      "revId": "d461cb5a37ad5eefcc681145c9dad331d9f08206",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa726a59_59a79db3",
+        "filename": "src/org/lineageos/lineageparts/logo/PlatLogoActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2017-11-25T21:29:24Z",
+      "side": 1,
+      "message": "Same.\nTo compare, the im.animate below already is.",
+      "revId": "d461cb5a37ad5eefcc681145c9dad331d9f08206",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
