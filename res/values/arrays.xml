@@ -308,6 +308,8 @@
         <item>@string/touchscreen_gesture_action_play_pause_music</item>
         <item>@string/touchscreen_gesture_action_previous_track</item>
         <item>@string/touchscreen_gesture_action_next_track</item>
+        <item>@string/touchscreen_gesture_action_volume_down</item>
+        <item>@string/touchscreen_gesture_action_volume_up</item>
     </string-array>
 
     <string-array name="touchscreen_gesture_action_values">
@@ -321,6 +323,8 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
+        <item>11</item>
     </string-array>
 
     <string-array name="torch_long_press_power_timeout_entries" translatable="false">

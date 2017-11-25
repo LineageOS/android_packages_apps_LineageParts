@@ -66,6 +66,7 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final int EVENT_PROCESS_WAKELOCK_DURATION = 500;
 
     private final Context mContext;
+    private final AudioManager mAudioManager;
     private final PowerManager mPowerManager;
     private final WakeLock mGestureWakeLock;
     private final EventHandler mEventHandler;
@@ -101,6 +102,8 @@ public class KeyHandler implements DeviceKeyHandler {
 
     public KeyHandler(final Context context) {
         mContext = context;
+
+        mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
 
         mPowerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
         mGestureWakeLock = mPowerManager.newWakeLock(
@@ -237,6 +240,12 @@ public class KeyHandler implements DeviceKeyHandler {
                 case TouchscreenGestureConstants.ACTION_NEXT_TRACK:
                     nextTrack();
                     break;
+                case TouchscreenGestureConstants.ACTION_VOLUME_DOWN:
+                    volumeDown();
+                    break;
+                case TouchscreenGestureConstants.ACTION_VOLUME_UP:
+                    volumeUp();
+                    break;
             }
         }
     }
@@ -317,6 +326,18 @@ public class KeyHandler implements DeviceKeyHandler {
         doHapticFeedback();
     }
 
+    private void volumeDown() {
+        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
+        mAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_LOWER, 0);
+        doHapticFeedback();
+    }
+
+    private void volumeUp() {
+        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
+        mAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_RAISE, 0);
+        doHapticFeedback();
+    }
+
     private void dispatchMediaKeyWithWakeLockToMediaSession(final int keycode) {
         final MediaSessionLegacyHelper helper = MediaSessionLegacyHelper.getHelper(mContext);
         if (helper == null) {
@@ -351,9 +372,7 @@ public class KeyHandler implements DeviceKeyHandler {
             return;
         }
 
-        final AudioManager audioManager = (AudioManager) mContext.getSystemService(
-                Context.AUDIO_SERVICE);
-        if (audioManager.getRingerMode() != AudioManager.RINGER_MODE_SILENT) {
+        if (mAudioManager.getRingerMode() != AudioManager.RINGER_MODE_SILENT) {
             final boolean enabled = LineageSettings.System.getInt(mContext.getContentResolver(),
                     LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
             if (enabled) {

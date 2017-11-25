@@ -125,6 +125,10 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
                     return R.drawable.ic_gesture_action_previous_track;
                 case TouchscreenGestureConstants.ACTION_NEXT_TRACK:
                     return R.drawable.ic_gesture_action_next_track;
+                case TouchscreenGestureConstants.ACTION_VOLUME_DOWN:
+                    return R.drawable.ic_gesture_action_volume_down;
+                case TouchscreenGestureConstants.ACTION_VOLUME_UP:
+                    return R.drawable.ic_gesture_action_volume_up;
                 default:
                     // No gesture action
                     return R.drawable.ic_gesture_action_none;
