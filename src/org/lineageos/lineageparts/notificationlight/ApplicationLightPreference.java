@@ -55,6 +55,8 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     private int mDefaultOnValue;
     private int mDefaultOffValue;
 
+    private int mLedBrightness;
+
     private LightSettingsDialog mDialog;
 
     public interface ItemLongClickListener {
@@ -100,6 +102,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         mOffValue = offValue;
         mOnOffChangeable = onOffChangeable;
         mHasDefaults = false;
+        mLedBrightness = 0; // use system brightness
 
         setWidgetLayoutResource(R.layout.preference_application_light);
     }
@@ -202,8 +205,8 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        mDialog = new LightSettingsDialog(getContext(),
-                    0xFF000000 | mColorValue, mOnValue, mOffValue, mOnOffChangeable);
+        mDialog = new LightSettingsDialog(getContext(), 0xFF000000 | mColorValue,
+                mOnValue, mOffValue, mOnOffChangeable, mLedBrightness);
         mDialog.setAlphaSliderVisible(false);
 
         // Initialize the buttons with null handlers, as they will get remapped by
@@ -284,6 +287,10 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         mDefaultOnValue = onValue;
         mDefaultOffValue = offValue;
         mHasDefaults = true;
+    }
+
+    public void setBrightness(int brightness) {
+        mLedBrightness = brightness;
     }
 
     /**
