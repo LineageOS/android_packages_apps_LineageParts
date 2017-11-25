@@ -45,7 +45,9 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
+import org.lineageos.internal.notification.LedValues;
 import org.lineageos.internal.notification.LightsCapabilities;
+import org.lineageos.internal.notification.LineageNotification;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.notificationlight.ColorPickerView.OnColorChangedListener;
 
@@ -80,6 +82,9 @@ public class LightSettingsDialog extends AlertDialog implements
     private int mLedLastSpeedOn;
     private int mLedLastSpeedOff;
 
+    private int mLedBrightness;
+    private int mLedLastBrightness;
+
     private Context mContext;
 
     /**
@@ -92,7 +97,7 @@ public class LightSettingsDialog extends AlertDialog implements
             int initialSpeedOff) {
         super(context);
 
-        init(context, initialColor, initialSpeedOn, initialSpeedOff, true);
+        init(context, initialColor, initialSpeedOn, initialSpeedOff, true, 0);
     }
 
     /**
@@ -103,14 +108,14 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param onOffChangeable
      */
     protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
-            int initialSpeedOff, boolean onOffChangeable) {
+            int initialSpeedOff, boolean onOffChangeable, int brightness) {
         super(context);
 
-        init(context, initialColor, initialSpeedOn, initialSpeedOff, onOffChangeable);
+        init(context, initialColor, initialSpeedOn, initialSpeedOff, onOffChangeable, brightness);
     }
 
     private void init(Context context, int color, int speedOn, int speedOff,
-            boolean onOffChangeable) {
+            boolean onOffChangeable, int brightness) {
         mContext = context;
         mNotificationManager =
                 (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
@@ -120,7 +125,7 @@ public class LightSettingsDialog extends AlertDialog implements
 
         // To fight color banding.
         getWindow().setFormat(PixelFormat.RGBA_8888);
-        setUp(color, speedOn, speedOff, onOffChangeable);
+        setUp(color, speedOn, speedOff, onOffChangeable, brightness);
     }
 
     /**
@@ -131,7 +136,8 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param speedOn - the flash time in ms
      * @param speedOff - the flash length in ms
      */
-    private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable) {
+    private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable,
+               int brightness) {
         mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = mInflater.inflate(R.layout.dialog_light_settings, null);
 
@@ -180,6 +186,9 @@ public class LightSettingsDialog extends AlertDialog implements
             mColorPanel.setVisibility(View.GONE);
             mLightsDialogDivider.setVisibility(View.GONE);
         }
+
+        mLedBrightness = brightness;
+        mLedLastBrightness = -1; // out of range
 
         mReadyForLed = true;
         updateLed();
@@ -298,8 +307,8 @@ public class LightSettingsDialog extends AlertDialog implements
             speedOff = 0;
         }
 
-        if (mLedLastColor == color && mLedLastSpeedOn == speedOn
-                && mLedLastSpeedOff == speedOff) {
+        if (mLedLastColor == color && mLedLastSpeedOn == speedOn && mLedLastSpeedOff == speedOff
+                && mLedLastBrightness == mLedBrightness) {
             return;
         }
 
@@ -309,24 +318,25 @@ public class LightSettingsDialog extends AlertDialog implements
         }
         mLedHandler.sendEmptyMessageDelayed(0, LED_UPDATE_DELAY_MS);
 
-        mLedLastColor = color;
-        mLedLastSpeedOn = speedOn;
-        mLedLastSpeedOff = speedOff;
-
+        // Set a notification to display the LED color
         final Bundle b = new Bundle();
-        b.putBoolean(Notification.EXTRA_FORCE_SHOW_LIGHTS, true);
-
+        b.putBoolean(LineageNotification.EXTRA_FORCE_SHOW_LIGHTS, true);
+        if  (mLedBrightness > 0 && mLedBrightness < LedValues.LIGHT_BRIGHTNESS_MAXIMUM) {
+            b.putInt(LineageNotification.EXTRA_FORCE_LIGHT_BRIGHTNESS, mLedBrightness);
+        }
         final Notification.Builder builder = new Notification.Builder(mContext);
         builder.setLights(color, speedOn, speedOff);
         builder.setExtras(b);
-
-        // Set a notification
         builder.setSmallIcon(R.drawable.ic_settings_24dp);
         builder.setContentTitle(mContext.getString(R.string.led_notification_title));
         builder.setContentText(mContext.getString(R.string.led_notification_text));
         builder.setOngoing(true);
-
         mNotificationManager.notify(1, builder.build());
+
+        mLedLastColor = color;
+        mLedLastSpeedOn = speedOn;
+        mLedLastSpeedOff = speedOff;
+        mLedLastBrightness = mLedBrightness;
     }
 
     public void dismissLed() {

@@ -41,13 +41,25 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="advanced_section"
-        android:title="@string/advanced">
+        android:key="brightness_section"
+        android:title="@string/light_brightness_title"
+        android:dependency="notification_light_pulse" >
 
         <org.lineageos.lineageparts.notificationlight.NotificationBrightnessDialog
             android:key="notification_light_brightness_level"
-            android:title="@string/notification_light_brightness"
+            android:title="@string/notification_light_brightness_normal"
             android:dependency="notification_light_pulse" />
+
+        <org.lineageos.lineageparts.notificationlight.NotificationBrightnessZenDialog
+            android:key="notification_light_brightness_level_zen"
+            android:title="@string/notification_light_brightness_zen"
+            android:dependency="notification_light_pulse" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="advanced_section"
+        android:title="@string/advanced">
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
