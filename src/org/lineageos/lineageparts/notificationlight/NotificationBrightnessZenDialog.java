@@ -22,12 +22,12 @@ import android.util.AttributeSet;
 
 import lineageos.providers.LineageSettings;
 
-public class NotificationBrightnessDialog extends BrightnessDialog {
-    private static String TAG = "NotificationBrightnessDialog";
+public class NotificationBrightnessZenDialog extends BrightnessDialog {
+    private static String TAG = "NotificationBrightnessZenDialog";
 
     private Context mContext;
 
-    public NotificationBrightnessDialog(Context context, AttributeSet attrs) {
+    public NotificationBrightnessZenDialog(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
     }
@@ -35,14 +35,14 @@ public class NotificationBrightnessDialog extends BrightnessDialog {
     @Override
     protected int getBrightnessSetting() {
         return LineageSettings.System.getIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL_ZEN,
                 LIGHT_BRIGHTNESS_MAXIMUM, UserHandle.USER_CURRENT);
     }
 
     @Override
     protected void setBrightnessSetting(int brightness) {
         LineageSettings.System.putIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL_ZEN,
                 brightness, UserHandle.USER_CURRENT);
     }
 }

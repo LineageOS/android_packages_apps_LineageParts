@@ -22,12 +22,12 @@ import android.util.AttributeSet;
 
 import lineageos.providers.LineageSettings;
 
-public class NotificationBrightnessDialog extends BrightnessDialog {
-    private static String TAG = "NotificationBrightnessDialog";
+public class BatteryBrightnessDialog extends BrightnessDialog {
+    private static String TAG = "BatteryBrightnessDialog";
 
     private Context mContext;
 
-    public NotificationBrightnessDialog(Context context, AttributeSet attrs) {
+    public BatteryBrightnessDialog(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
     }
@@ -35,14 +35,14 @@ public class NotificationBrightnessDialog extends BrightnessDialog {
     @Override
     protected int getBrightnessSetting() {
         return LineageSettings.System.getIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL,
                 LIGHT_BRIGHTNESS_MAXIMUM, UserHandle.USER_CURRENT);
     }
 
     @Override
     protected void setBrightnessSetting(int brightness) {
         LineageSettings.System.putIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL,
                 brightness, UserHandle.USER_CURRENT);
     }
 }
