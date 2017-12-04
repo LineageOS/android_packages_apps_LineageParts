@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Приложение, работающее в защищённом режиме, не имеет доступа к персональным данным, таким как контакты, сообщения или журнал вызовов.</string>
   <string name="privacy_guard_dlg_system_app_text">Системные приложения в защищённом режиме не смогут получать или предоставлять доступ к персональным данным. Это может вызвать нестабильную работу других приложений.</string>
   <string name="privacy_guard_default_title">Включен по умолчанию</string>
-  <string name="privacy_guard_default_summary_on">Защищенный режим включен</string>
-  <string name="privacy_guard_default_summary">Включать защищённый режим для новых приложений</string>
   <string name="privacy_guard_manager_summary">Ограничение доступа приложений к персональным данным</string>
   <string name="privacy_guard_no_user_apps">Нет установленных приложений</string>
   <string name="privacy_guard_help_title">Помощь</string>

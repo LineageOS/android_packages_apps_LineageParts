@@ -19,13 +19,6 @@
         android:title="@string/privacy_settings_title"
         android:key="privacy_settings">
 
-    <!-- Privacy Guard -->
-    <PreferenceScreen
-        android:key="privacy_guard_manager"
-        android:title="@*lineageos.platform:string/privacy_guard_manager_title"
-        android:summary="@string/privacy_guard_manager_summary"
-        android:fragment="org.lineageos.lineageparts.privacyguard.PrivacyGuardManager" />
-
     <!-- Protected apps -->
     <Preference
         android:title="@string/protected_apps_manager_title"

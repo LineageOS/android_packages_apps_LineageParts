@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Gizlilik Koruması aktif olduğunda uygulama rehberiniz, mesajlarınız ya da arama kayıtlarınız gibi kişisel bilgilere erişemeyecek.</string>
   <string name="privacy_guard_dlg_system_app_text">Gizlilik Koruması dahili bir uygulama için etkinleştirildiğinde bu uygulama kişisel verilere erişemeyecek ve kişisel veri sağlayamayacak. Bu diğer uygulamaların istenmeyen şekilde davranmasına sebep olabilir.</string>
   <string name="privacy_guard_default_title">Standart olarak etkin</string>
-  <string name="privacy_guard_default_summary_on">Gizlilik Koruması etkin</string>
-  <string name="privacy_guard_default_summary">Yeni yüklenen uygulamalar için Gizlilik Koruması\'nı varsayılan olarak etkinleştir</string>
   <string name="privacy_guard_manager_summary">Hangi uygulamaların kişisel verilerinize erişebileceğini yönetin</string>
   <string name="privacy_guard_no_user_apps">Yüklü uygulama yok</string>
   <string name="privacy_guard_help_title">Yardım</string>

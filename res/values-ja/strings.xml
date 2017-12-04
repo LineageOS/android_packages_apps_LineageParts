@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">プライバシーガードを有効にすると、アプリは連絡先、メッセージ、通話履歴のような個人データにアクセスできなくなります。</string>
   <string name="privacy_guard_dlg_system_app_text">内蔵アプリでプライバシーガードを有効にすると、個人データへのアクセスまたは提供ができなくなり、他のアプリがうまく動かなくなる可能性があります。</string>
   <string name="privacy_guard_default_title">デフォルトで有効化</string>
-  <string name="privacy_guard_default_summary_on">プライバシーガードは有効になっています</string>
-  <string name="privacy_guard_default_summary">新しくインストールされたアプリは自動的に有効にする</string>
   <string name="privacy_guard_manager_summary">アプリの個人データへのアクセスを管理する</string>
   <string name="privacy_guard_no_user_apps">アプリがインストールされていません</string>
   <string name="privacy_guard_help_title">ヘルプ</string>

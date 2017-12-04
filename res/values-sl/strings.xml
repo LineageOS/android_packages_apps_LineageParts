@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Ko je zaščita zasebnosti omogočena, aplikacija ne bo imela dostopa do osebnih podatkov, kot so stiki, sporočila in dnevniki klicev.</string>
   <string name="privacy_guard_dlg_system_app_text">Ko omogočite zaščito zasebnosti za vgrajeno aplikacijo, ta ne bo imel dostopa do ali ne bo mogla posredovati osebnih podatkov. To lahko povzroči napačno vedenje programa.</string>
   <string name="privacy_guard_default_title">Privzeto omogočena</string>
-  <string name="privacy_guard_default_summary_on">Zaščita zasebnosti je omogočena</string>
-  <string name="privacy_guard_default_summary">Privzeto omogoči za na novo nameščene aplikacije</string>
   <string name="privacy_guard_manager_summary">Upravljajte, katere aplikacije imajo dostop do vaših osebnih podatkov</string>
   <string name="privacy_guard_no_user_apps">Nobena aplikacija ni nameščena</string>
   <string name="privacy_guard_help_title">Pomoč</string>
