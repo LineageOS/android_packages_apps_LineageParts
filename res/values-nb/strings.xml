@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Når Personvernvakt er aktivert, vil ikke programmet kunne få tilgang til personlig informasjon som kontakter, meldinger eller ringehistorikk.</string>
   <string name="privacy_guard_dlg_system_app_text">Når du aktiverer Personvernvakt på en innebygd app, vil ikke programmet kunne tilgang eller gi personlige data. Dette kan forårsake at andre apper ikke virker ordentlig.</string>
   <string name="privacy_guard_default_title">Aktivert som standard</string>
-  <string name="privacy_guard_default_summary_on">Personvernvakt er aktivert</string>
-  <string name="privacy_guard_default_summary">Aktiver som standard for nylig installerte programmer</string>
   <string name="privacy_guard_manager_summary">Administrere hvilke apper som har tilgang til dine personopplysninger</string>
   <string name="privacy_guard_no_user_apps">Ingen apper er installert</string>
   <string name="privacy_guard_help_title">Hjelp</string>

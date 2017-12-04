@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">啟用私隱守衛後，應用程式將無法存取個人資料，例如：聯絡人、訊息或通話記錄。</string>
   <string name="privacy_guard_dlg_system_app_text">系統應用程式啟用隱私守衛後，將不能存取或提供個人資料，這可能會造成其他應用程式運作不正常。</string>
   <string name="privacy_guard_default_title">已預設啟用</string>
-  <string name="privacy_guard_default_summary_on">隱私守衛已啟用</string>
-  <string name="privacy_guard_default_summary">對新安裝的應用程式已預設啟用</string>
   <string name="privacy_guard_manager_summary">管理哪些應用程式可以存取您的個人資料</string>
   <string name="privacy_guard_no_user_apps">未安裝任何應用程式</string>
   <string name="privacy_guard_help_title">説明</string>

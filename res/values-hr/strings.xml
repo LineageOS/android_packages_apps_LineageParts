@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Kada je zaštita privatnosti omogućena, aplikacija neće moći pristupiti osobnim podacima kao što su kontakti, poruke i zapisi poziva.</string>
   <string name="privacy_guard_dlg_system_app_text">Prilikom omogućivanja zaštite privatnosti za ugrađene aplikacije, aplikacija neće moći pristupiti ili dati osobne podatke. To može uzrokovati neočekivano ponašanje ostalih aplikacija.</string>
   <string name="privacy_guard_default_title">Omogućeno po zadanom</string>
-  <string name="privacy_guard_default_summary_on">Zaštita privatnosti je omogućena</string>
-  <string name="privacy_guard_default_summary">Omogućiti prema zadanim postavkama za nedavno instalirane aplikacije</string>
   <string name="privacy_guard_manager_summary">Upravljanje koje aplikacije imaju pristup vašim osobnim podacima</string>
   <string name="privacy_guard_no_user_apps">Nema instaliranih aplikacija</string>
   <string name="privacy_guard_help_title">Pomoć</string>

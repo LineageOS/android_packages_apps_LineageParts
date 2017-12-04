@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Якщо увімкнено захист конфіденційності додаток не має доступу до персональних даних, таких як контакти, повідомлення або журнал викликів.</string>
   <string name="privacy_guard_dlg_system_app_text">Якщо увімкнено захист конфіденційності системні додатки не зможуть отримувати або надавати доступ до персональних даних. Це може викликати нестабільну роботу інших додатків.</string>
   <string name="privacy_guard_default_title">За замовчуванням увімкнено</string>
-  <string name="privacy_guard_default_summary_on">Захист конфіденційності увімкнено</string>
-  <string name="privacy_guard_default_summary">Увімкнено за замовчуванням для нових програм</string>
   <string name="privacy_guard_manager_summary">Визначіть, які додатки матимуть доступ до ваших персональних даних</string>
   <string name="privacy_guard_no_user_apps">Немає встановлених додатків</string>
   <string name="privacy_guard_help_title">Допомога</string>

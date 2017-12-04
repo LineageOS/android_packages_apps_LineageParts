@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">כאשר שומר הפרטיות מופעל, היישום לא יוכל לגשת למידע אישי כמו אנשי קשר, הודעות או יומן שיחות.</string>
   <string name="privacy_guard_dlg_system_app_text">בעת הפעלת שומר הפרטיות עבור יישום מובנה, היישום לא יוכל לגשת או לספק מידע אישי. זה יכול לגרום ליישומים לא לפעול כראוי.</string>
   <string name="privacy_guard_default_title">הפעל כברירת מחדל</string>
-  <string name="privacy_guard_default_summary_on">שומר הפרטיות מופעל</string>
-  <string name="privacy_guard_default_summary">אפשר כברירת מחדל ליישומים חדשים שיותקנו</string>
   <string name="privacy_guard_manager_summary">נהל לאילו יישומים יש גישה למידע הפרטי שלך</string>
   <string name="privacy_guard_no_user_apps">אין יישומים מותקנים</string>
   <string name="privacy_guard_help_title">עזרה</string>

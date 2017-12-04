@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Als Privacybescherming is ingeschakeld, zal de app geen toegang hebben tot persoonsgegevens zoals contacten, berichten of gespreksstatistieken.</string>
   <string name="privacy_guard_dlg_system_app_text">Als Privacybescherming is ingeschakeld voor een ingebouwde app, zal de app geen toegang hebben tot persoonsgegevens of persoonsgegevens kunnen verstrekken. Dit kan ervoor zorgen dat andere apps niet meer goed werken.</string>
   <string name="privacy_guard_default_title">Standaard ingeschakeld</string>
-  <string name="privacy_guard_default_summary_on">Privacybescherming is ingeschakeld</string>
-  <string name="privacy_guard_default_summary">Privacybescherming standaard inschakelen voor nieuw geïnstalleerde apps</string>
   <string name="privacy_guard_manager_summary">Beheren welke apps toegang hebben tot persoonsgegevens</string>
   <string name="privacy_guard_no_user_apps">Geen apps geïnstalleerd</string>
   <string name="privacy_guard_help_title">Help</string>

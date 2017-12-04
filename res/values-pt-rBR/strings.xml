@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Ao ativar a Proteção à Privacidade, o aplicativo não será capaz de acessar dados pessoais como contatos, mensagens e registros de chamadas.</string>
   <string name="privacy_guard_dlg_system_app_text">Ao ativar a Proteção à Privacidade para um aplicativo do sistema, o aplicativo não será capaz de acessar ou fornecer dados pessoais. Isto poderá causar problemas em outros aplicativos.</string>
   <string name="privacy_guard_default_title">Ativada</string>
-  <string name="privacy_guard_default_summary_on">Proteção à Privacidade ativada</string>
-  <string name="privacy_guard_default_summary">Ativar automaticamente para aplicativos recém-instalados</string>
   <string name="privacy_guard_manager_summary">Gerencie quais aplicativos têm acesso aos seus dados pessoais</string>
   <string name="privacy_guard_no_user_apps">Nenhum aplicativo está instalado</string>
   <string name="privacy_guard_help_title">Ajuda</string>

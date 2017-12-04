@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Wanneer Privaatheidswag geaktiveer is, kan programme nie toegang tot persoonlike data soos kontakte, boodskappe en oproep geskiedenis kry nie.</string>
   <string name="privacy_guard_dlg_system_app_text">Wanneer Privaatheidswag vir \'n ingeboude program geaktiveer word, sal die program nie toegang tot persoonlike data kan kry nie of verskaf nie, dit kan veroorsaak dat ander programme hulself wangedra.</string>
   <string name="privacy_guard_default_title">Standaardinstelling</string>
-  <string name="privacy_guard_default_summary_on">Privaatheidswag is geaktiveer</string>
-  <string name="privacy_guard_default_summary">Aktiveer as \'n standaardinstelling vir nuut-geinstalleerde programme</string>
   <string name="privacy_guard_manager_summary">Bestuur toep toegang na persoonlike data</string>
   <string name="privacy_guard_no_user_apps">Geen toepassings is geïnstalleer nie</string>
   <string name="privacy_guard_help_title">Hulp</string>

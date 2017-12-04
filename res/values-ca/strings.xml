@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Quan el guarda de privacitat està activat, l\'app no tindrà accés a dades personals com ara els contactes, missatges o registres de trucades.</string>
   <string name="privacy_guard_dlg_system_app_text">Quan s\'activa el guarda de privacitat per una aplicació integrada, l\'aplicació no podrà proveir o tenir accés a dades personals. Això pot causar que altres aplicacions no es comportin correctament.</string>
   <string name="privacy_guard_default_title">Habilitat per defecte</string>
-  <string name="privacy_guard_default_summary_on">Guarda de privacitat està habilitat</string>
-  <string name="privacy_guard_default_summary">Activa per defecte en les aplicacions de nova instal·lació</string>
   <string name="privacy_guard_manager_summary">Gestiona quines aplicacions tenen accés a les teves dades personals</string>
   <string name="privacy_guard_no_user_apps">No hi ha aplicacions instal·lades</string>
   <string name="privacy_guard_help_title">Ajuda</string>

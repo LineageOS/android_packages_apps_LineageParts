@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Ak je Ochrana súkromia povolená, aplikácii je znemožnený prístup k osobným údajom ako sú kontakty, správy alebo história hovorov.</string>
   <string name="privacy_guard_dlg_system_app_text">Ak je Ochrana súkromia povolená aj pre systémové aplikácie, nemôžu tieto aplikácie pristupovať alebo poskytovať osobné údaje, čo môže spôsobiť poruchu systému a zároveň aj ostatných aplikácií.</string>
   <string name="privacy_guard_default_title">V predvolenom stave povolené</string>
-  <string name="privacy_guard_default_summary_on">Ochrana súkromia povolená</string>
-  <string name="privacy_guard_default_summary">Automaticky aktivovať Ochranu súkromia pre novo nainštalované aplikácie</string>
   <string name="privacy_guard_manager_summary">Spravovať aplikácie, které môžu mať prístup k osobným údajom</string>
   <string name="privacy_guard_no_user_apps">Nie je nainštalovaná žiadna aplikácia</string>
   <string name="privacy_guard_help_title">Uživateľská príručka</string>

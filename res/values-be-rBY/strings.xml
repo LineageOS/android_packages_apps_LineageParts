@@ -45,8 +45,6 @@
   <string name="privacy_guard_dlg_title">Задзейнічаць рэжым абароны прыватнасці?</string>
   <string name="privacy_guard_dlg_text">Калі рэжым абароны прыватнасці задзейнічаны, дадаткі не змогуць атрымліваць особістыя дадзеныя, такія як кантакты, паведамленьні ці сьпіс выклікаў.</string>
   <string name="privacy_guard_default_title">Задзейнічаны па змаўчаньню</string>
-  <string name="privacy_guard_default_summary_on">Задзейнічана абароны прыватнасці</string>
-  <string name="privacy_guard_default_summary">Задзейнічаць рэжым абароны для ўсіх новых дадаткаў</string>
   <string name="privacy_guard_manager_summary">Абмежаваньне доступу дадаткаў да асабістых дадзеных</string>
   <string name="privacy_guard_no_user_apps">Няма ўсталяваных дадаткаў</string>
   <string name="privacy_guard_help_title">Дапамога</string>

@@ -22,9 +22,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageInfo;
 
-/*
 import org.lineageos.lineageparts.privacyguard.PrivacyGuardManager.AppInfo;
-*/
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,7 +32,7 @@ import java.util.List;
 /**
  * An asynchronous loader implementation that loads AppInfo structures.
  */
-/* package *//* class AppInfoLoader extends AsyncTaskLoader<List<AppInfo>> {
+/* package */ class AppInfoLoader extends AsyncTaskLoader<List<AppInfo>> {
     private PackageManager mPm;
     private boolean mShowSystemApps;
     private AppOpsManager mAppOps;
@@ -84,7 +82,6 @@ import java.util.List;
     *
     * @return the complete List off installed applications (@code PrivacyGuardAppInfo)
     */
-    /*
     private List<AppInfo> loadInstalledApps() {
         List<AppInfo> apps = new ArrayList<AppInfo>();
         List<PackageInfo> packages = mPm.getInstalledPackages(
@@ -125,4 +122,3 @@ import java.util.List;
     }
 
 }
-*/
