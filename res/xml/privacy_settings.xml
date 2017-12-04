@@ -27,6 +27,7 @@
         android:fragment="org.lineageos.lineageparts.privacyguard.PrivacyGuardManager" />
 
     <!-- Protected apps -->
+    <!-- 
     <Preference
         android:title="@string/protected_apps_manager_title"
         android:summary="@string/protected_apps_manager_summary">
@@ -35,6 +36,7 @@
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.applications.ProtectedAppsActivity" />
     </Preference>
+    -->
 
     <!-- Anonymous statistics - (LineageStats) -->
     <PreferenceScreen
