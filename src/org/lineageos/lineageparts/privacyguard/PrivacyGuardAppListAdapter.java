@@ -30,15 +30,12 @@ import android.widget.SectionIndexer;
 import android.widget.TextView;
 
 import org.lineageos.lineageparts.R;
-/*
 import org.lineageos.lineageparts.privacyguard.PrivacyGuardManager.AppInfo;
-*/
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-/*
 public class PrivacyGuardAppListAdapter extends BaseAdapter implements SectionIndexer {
 
     private LayoutInflater mInflater;
@@ -145,7 +142,6 @@ public class PrivacyGuardAppListAdapter extends BaseAdapter implements SectionIn
          * To get from that number to the expected value of 1 we need to negate
          * and subtract 2.
          */
-        /*
         return index >= 0 ? index : -index - 2;
     }
 
@@ -157,7 +153,6 @@ public class PrivacyGuardAppListAdapter extends BaseAdapter implements SectionIn
     /**
      * An asynchronous task to load the icons of the installed applications.
      */
-    /*
     private class LoadIconsTask extends AsyncTask<PrivacyGuardManager.AppInfo, Void, Void> {
         @Override
         protected Void doInBackground(PrivacyGuardManager.AppInfo... apps) {
@@ -183,11 +178,9 @@ public class PrivacyGuardAppListAdapter extends BaseAdapter implements SectionIn
     /**
      * App view holder used to reuse the views inside the list.
      */
-    /*
     public static class PrivacyGuardAppViewHolder {
         TextView title;
         ImageView icon;
         ImageView privacyGuardIcon;
     }
 }
-*/
