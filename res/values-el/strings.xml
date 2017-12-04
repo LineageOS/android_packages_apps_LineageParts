@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Όταν η Προστασία Απορρήτου είναι ενεργή, η εφαρμογή δεν θα μπορεί να έχει πρόσβαση σε προσωπικά δεδομένα όπως επαφές, μηνύματα ή το αρχείο κλήσεων.</string>
   <string name="privacy_guard_dlg_system_app_text">Όταν ενεργοποιήσετε την Προστασία Απορρήτου για μια ενσωματωμένη εφαρμογή, η εφαρμογή δεν θα μπορεί να έχει πρόσβαση ή να παρέχει προσωπικά δεδομένα. Αυτό μπορεί να προκαλέσει αστάθεια κάποιων άλλων εγκατεστημένων εφαρμογών.</string>
   <string name="privacy_guard_default_title">Ενεργοποιημένη από προεπιλογή</string>
-  <string name="privacy_guard_default_summary_on">Η Προστασία Απορρήτου είναι ενεργοποιημένη</string>
-  <string name="privacy_guard_default_summary">Ενεργοποιημένη απο προεπιλογή για νέες εγκατεστημένες εφαρμογές</string>
   <string name="privacy_guard_manager_summary">Επιλέξτε ποιές εφαρμογές έχουν πρόσβαση στα προσωπικά σας δεδομένα</string>
   <string name="privacy_guard_no_user_apps">Δεν υπάρχουν εγκατεστημένες εφαρμογές</string>
   <string name="privacy_guard_help_title">Βοήθεια</string>

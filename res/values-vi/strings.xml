@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Khi bảo vệ quyền riêng tư được bật, các ứng dụng sẽ không thể truy cập vào các dữ liệu cá nhân như danh bạ, tin nhắn, địa điểm hoặc nhật ký cuộc gọi.</string>
   <string name="privacy_guard_dlg_system_app_text">Khi cho phép bảo vệ quyền riêng tự cho một ứng dụng được tích hợp sẵn, các ứng dụng sẽ không thể truy cập hoặc cung cấp dữ liệu cá nhân. Điều này có thể làm các ứng dụng khác hoạt động không đúng cách.</string>
   <string name="privacy_guard_default_title">Đã kích hoạt theo mặc định</string>
-  <string name="privacy_guard_default_summary_on">Bảo vệ quyền riêng tư được kích hoạt</string>
-  <string name="privacy_guard_default_summary">Bật theo mặc định cho các ứng dụng được cài đặt mới</string>
   <string name="privacy_guard_manager_summary">Quản lý các ứng dụng có thể truy cập vào dữ liệu cá nhân của bạn</string>
   <string name="privacy_guard_no_user_apps">Không có ứng dụng được cài đặt</string>
   <string name="privacy_guard_help_title">Trợ giúp</string>

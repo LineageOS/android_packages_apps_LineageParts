@@ -32,15 +32,4 @@ public class PrivacySettings extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.privacy_settings);
     }
-
-    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
-        @Override
-        public String getSummary(Context context, String key) {
-            if (LineageSettings.Secure.getInt(context.getContentResolver(),
-                    LineageSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1) {
-                return context.getString(R.string.privacy_guard_default_summary_on);
-            }
-            return null;
-        }
-    };
 }

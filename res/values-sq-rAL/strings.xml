@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Kur Mrojtësi i të Dhënave është i aktivizuar, aplikacioni nuk mund të aksesojë dot të dhëna personale si kontaktet, mesazhet apo listën e thirrjeve.</string>
   <string name="privacy_guard_dlg_system_app_text">Kur Mbrojtësi i të Dhënave aktivizohet për një aplikacion të integruar, aplikacion nuk do të mund të aksesojë ose të furnizojë të dhëna personale. Kjo gjë mund të shkaktojë keqfunksionimin e aplikacioneve të tjera.</string>
   <string name="privacy_guard_default_title">Aktivizuar automatikisht</string>
-  <string name="privacy_guard_default_summary_on">Mbrojtësi i të Dhënave është aktivizuar</string>
-  <string name="privacy_guard_default_summary">Aktivizo automatikisht për aplikacionet e reja që instalohen</string>
   <string name="privacy_guard_manager_summary">Cakto se cilat aplikacione mund të aksesojnë të dhënat e tua personale</string>
   <string name="privacy_guard_no_user_apps">Nuk është instaluar asnjë aplikacion</string>
   <string name="privacy_guard_help_title">Ndihmë</string>

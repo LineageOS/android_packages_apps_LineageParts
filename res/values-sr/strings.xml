@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Апликације под заштитом приватности неће моћи да приступе личним подацима као што су контакти, поруке или евиденције позива.</string>
   <string name="privacy_guard_dlg_system_app_text">Системске апликације под заштитом приватности неће моћи да добију нити доделе приступ личним подацима. Ово може проузроковати нестабилан рад других апликација.</string>
   <string name="privacy_guard_default_title">Омогућено</string>
-  <string name="privacy_guard_default_summary_on">Заштита приватности је омогућена.</string>
-  <string name="privacy_guard_default_summary">Омогућите заштиту приватности за нове апликације.</string>
   <string name="privacy_guard_manager_summary">Ограничите које апликације имају приступ личним подацима.</string>
   <string name="privacy_guard_no_user_apps">Нема инсталираних апликација.</string>
   <string name="privacy_guard_help_title">Помоћ</string>

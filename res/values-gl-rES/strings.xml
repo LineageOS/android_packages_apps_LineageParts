@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Cando Privacy Guard está activado, a aplicación non podrá acceder aos datos persoais, como contactos, mensaxes ou rexistros de chamadas.</string>
   <string name="privacy_guard_dlg_system_app_text">Ao activar Privacy Guard para unha aplicación integrada, a aplicación non será fiable ou acceder persoal aos datos. Isto pode causar outras aplicacións a comportarse mal.</string>
   <string name="privacy_guard_default_title">Activo por omisión</string>
-  <string name="privacy_guard_default_summary_on">Privacy Guard está habilitado</string>
-  <string name="privacy_guard_default_summary">Activar por defecto para as aplicacións recén instaladas</string>
   <string name="privacy_guard_manager_summary">Xestionar qué aplicacións poden acceder aos seus datos persoais</string>
   <string name="privacy_guard_no_user_apps">Non hai aplicaciones instaladas</string>
   <string name="privacy_guard_help_title">Axuda</string>

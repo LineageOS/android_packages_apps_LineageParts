@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Privacy Guard gaituta dagoenean, aplikazioa ez da datu pertsonalak irakurtzeko gai izango, kontaktuak, mezuak edo dei erregistroak kasu.</string>
   <string name="privacy_guard_dlg_system_app_text">Privacy Guard sistemaren aplikazio batentzat gaituta dagoenean, aplikazioa ez da datu pertsonalak irakurtzeko gai izango, kontaktuak, mezuak edo dei erregistroak kasu. Honek beste aplikazioen jokabide arraroa sor dezake.</string>
   <string name="privacy_guard_default_title">Gaituta besterik adierazi ezean</string>
-  <string name="privacy_guard_default_summary_on">Privacy Guard gaituta dago</string>
-  <string name="privacy_guard_default_summary">Gaitu aplikazio berrientzako besterik adierazi ezean</string>
   <string name="privacy_guard_manager_summary">Kudeatu datu pertsonaletara sarbidea duten aplikazioak</string>
   <string name="privacy_guard_no_user_apps">Ez dago instalatutako aplikaziorik</string>
   <string name="privacy_guard_help_title">Laguntza</string>

@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">프라이버시 가드를 사용하면 해당 앱이 연락처, 메시지, 통화 기록 등의 개인 데이터에 접근할 수 없게 됩니다.</string>
   <string name="privacy_guard_dlg_system_app_text">내장 앱에 프라이버시 가드를 사용하면 앱이 개인 정보에 접근하거나 제공할 수 없게 됩니다. 이는 다른 앱의 오작동으로 이어질 수도 있습니다.</string>
   <string name="privacy_guard_default_title">기본으로 사용</string>
-  <string name="privacy_guard_default_summary_on">프라이버시 가드 활성화됨</string>
-  <string name="privacy_guard_default_summary">새로 설치된 앱에 기본으로 활성화</string>
   <string name="privacy_guard_manager_summary">개인 정보에 접근할 수 있는 앱 관리</string>
   <string name="privacy_guard_no_user_apps">설치된 앱이 없음</string>
   <string name="privacy_guard_help_title">도움말</string>
