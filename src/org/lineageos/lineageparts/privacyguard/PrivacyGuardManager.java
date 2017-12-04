@@ -48,13 +48,14 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import lineageos.providers.LineageSettings;
+
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/*
 public class PrivacyGuardManager extends SettingsPreferenceFragment
         implements OnItemClickListener, OnItemLongClickListener,
                    LoaderManager.LoaderCallbacks<List<PrivacyGuardManager.AppInfo>> {
@@ -366,6 +367,12 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.privacy_guard_manager, menu);
+        menu.findItem(R.id.privacy_guard_default).setChecked(
+                LineageSettings.Secure.getInt(getContentResolver(),
+                LineageSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
+        menu.findItem(R.id.privacy_guard_notification).setChecked(
+                LineageSettings.Secure.getInt(getContentResolver(),
+                LineageSettings.Secure.PRIVACY_GUARD_NOTIFICATION, 1) == 1);
         menu.findItem(R.id.show_system_apps).setChecked(shouldShowSystemApps());
     }
 
@@ -377,6 +384,18 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
                 return true;
             case R.id.reset:
                 resetPrivacyGuard();
+                return true;
+            case R.id.privacy_guard_default:
+                item.setChecked(!item.isChecked());
+                LineageSettings.Secure.putInt(getContentResolver(),
+                        LineageSettings.Secure.PRIVACY_GUARD_DEFAULT,
+                        item.isChecked() ? 1 : 0);
+                return true;
+            case R.id.privacy_guard_notification:
+                item.setChecked(!item.isChecked());
+                LineageSettings.Secure.putInt(getContentResolver(),
+                        LineageSettings.Secure.PRIVACY_GUARD_NOTIFICATION,
+                        item.isChecked() ? 1 : 0);
                 return true;
             case R.id.show_system_apps:
                 final String prefName = "show_system_apps";
@@ -395,4 +414,3 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
         }
     }
 }
-*/

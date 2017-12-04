@@ -44,7 +44,6 @@
   <string name="privacy_guard_dlg_title">¿Habilitar Guardián de privacidá?</string>
   <string name="privacy_guard_dlg_text">Cuando s\'habilita\'l Guardián de privacidá, l\'aplicación nun sedrá a acceder a datos personales como contautos, mensaxes o rexistros de llamaes.</string>
   <string name="privacy_guard_dlg_system_app_text">Al habilitar el Guardián de privacidá pa una aplicación integrada, l\'aplicación nun sedrá a acceder o fornir datos personales. Esto quiciabes cause qu\'otres aplicaciones nun furrulen bien.</string>
-  <string name="privacy_guard_default_summary_on">Habilitóse\'l Guardián de privacidá</string>
   <string name="privacy_guard_manager_summary">Xestiona les aplicaciones que tienen accesu a los tos datos personales</string>
   <string name="privacy_guard_no_user_apps">Nun hai aplicaciones instalaes</string>
   <string name="privacy_guard_help_title">Ayuda</string>

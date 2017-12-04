@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Kiedy ochrona prywatności jest aktywna, aplikacja nie będzie miała dostępu do osobistych danych, takich jak kontakty, wiadomości czy historia połączeń.</string>
   <string name="privacy_guard_dlg_system_app_text">Kiedy ochrona prywatności jest aktywna dla aplikacji wbudowanej w system, nie będzie ona miała dostępu do osobistych danych, takich jak kontakty, wiadomości czy historia połączeń. Może to sprawić, że inne aplikacje będą działać niepoprawnie.</string>
   <string name="privacy_guard_default_title">Domyślnie włączone</string>
-  <string name="privacy_guard_default_summary_on">Ochrona prywatności jest włączona</string>
-  <string name="privacy_guard_default_summary">Aktywuj domyślnie dla wszystkich nowo zainstalowanych aplikacji</string>
   <string name="privacy_guard_manager_summary">Wskaż, które aplikacje otrzymają dostęp do osobistych danych</string>
   <string name="privacy_guard_no_user_apps">Brak zainstalowanych aplikacji</string>
   <string name="privacy_guard_help_title">Pomoc</string>

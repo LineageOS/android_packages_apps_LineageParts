@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Bei aktiviertem Datenschutz hat die App keinen Zugriff auf persönliche Daten wie Kontakte, Nachrichten oder das Anrufprotokoll.</string>
   <string name="privacy_guard_dlg_system_app_text">Wenn der Datenschutz für eine integrierte App aktiviert wird, kann diese App weder auf persönliche Daten zugreifen noch diese bereitstellen. Dies kann zu unerwünschtem Verhalten anderer Apps führen.</string>
   <string name="privacy_guard_default_title">Standardmäßig aktiviert</string>
-  <string name="privacy_guard_default_summary_on">Datenschutz ist aktiviert</string>
-  <string name="privacy_guard_default_summary">Für neu installierte Apps standardmäßig aktivieren</string>
   <string name="privacy_guard_manager_summary">Apps mit Zugriff auf persönliche Daten verwalten</string>
   <string name="privacy_guard_no_user_apps">Es sind keine Apps installiert.</string>
   <string name="privacy_guard_help_title">Hilfe</string>

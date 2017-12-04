@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">When Privacy Guard is enabled, the app will not be able to access personal data such as contacts, messages or call logs.</string>
   <string name="privacy_guard_dlg_system_app_text">When enabling Privacy Guard for a built-in app, the app will not be able to access or provide personal data. This may cause other apps to misbehave.</string>
   <string name="privacy_guard_default_title">Enabled by default</string>
-  <string name="privacy_guard_default_summary_on">Privacy Guard is enabled</string>
-  <string name="privacy_guard_default_summary">Enable by default for newly-installed apps</string>
   <string name="privacy_guard_manager_summary">Manage which apps have access to your personal data</string>
   <string name="privacy_guard_no_user_apps">No apps are installed</string>
   <string name="privacy_guard_help_title">Help</string>

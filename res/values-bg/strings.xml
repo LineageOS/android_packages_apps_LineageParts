@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Когато \"Защитен режим\" е активиран, приложението няма да позволи да имате достъп до лични данни, контакти, съобщения или история на обаждания.</string>
   <string name="privacy_guard_dlg_system_app_text">Когато \"Защитен режим\" е активиран вградените приложения, няма да имат достъп до лични данни. Това може да доведе до проблемна работа на други приложения.</string>
   <string name="privacy_guard_default_title">Активиране по подразбиране</string>
-  <string name="privacy_guard_default_summary_on">Защитен режим е ативиран</string>
-  <string name="privacy_guard_default_summary">Активира защитен режим за нови приложения</string>
   <string name="privacy_guard_manager_summary">Управлявайте, кои приложения да имат достъп до вашите лични данни</string>
   <string name="privacy_guard_no_user_apps">Няма инсталирани приложения</string>
   <string name="privacy_guard_help_title">Помощ</string>

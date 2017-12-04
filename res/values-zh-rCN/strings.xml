@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">启用隐私防护后，该应用将无法访问联系人、短信或通话记录等个人数据。</string>
   <string name="privacy_guard_dlg_system_app_text">对内置应用启用隐私防护后，该应用将不能访问或提供个人数据。这可能导致其他应用不能正常工作。</string>
   <string name="privacy_guard_default_title">默认启用隐私防护</string>
-  <string name="privacy_guard_default_summary_on">隐私防护已启用</string>
-  <string name="privacy_guard_default_summary">为新安装的应用默认启用隐私防护</string>
   <string name="privacy_guard_manager_summary">管理哪些应用可以访问您的个人数据</string>
   <string name="privacy_guard_no_user_apps">尚未安装任何应用</string>
   <string name="privacy_guard_help_title">帮助</string>

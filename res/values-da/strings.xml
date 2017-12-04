@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Når Privatlivsvagt er aktiveret, vil app\'en ikke tilgå personlige data såsom kontakter, beskeder eller opkaldslister.</string>
   <string name="privacy_guard_dlg_system_app_text">Når Privatlivsvagt aktiveres for en indbygget app, vil app\'en ikke kunne tilgå personlige data. Dette kan medføre, at andre apps ikke virker korrekt.</string>
   <string name="privacy_guard_default_title">Aktiveret som standard</string>
-  <string name="privacy_guard_default_summary_on">Privatlivsvagt er aktiveret</string>
-  <string name="privacy_guard_default_summary">Aktiveret som standard for nyinstallerede apps</string>
   <string name="privacy_guard_manager_summary">Administrér, hvilke apps, der kan tilgå dine personlige data</string>
   <string name="privacy_guard_no_user_apps">Ingen apps er installerede</string>
   <string name="privacy_guard_help_title">Hjælp</string>

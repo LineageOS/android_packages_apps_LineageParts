@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Bila Privacy Guard dihidupkan, aplikasi tidak akan dapat mengakses data pribadi seperti kontak, pesan atau log panggilan.</string>
   <string name="privacy_guard_dlg_system_app_text">Ketika menghidupkan Privacy Guard untuk aplikasi Built-in, aplikasi tidak akan dapat mengakses atau memberikan data pribadi. Ini dapat menyebabkan aplikasi lain untuk berbuat jahat.</string>
   <string name="privacy_guard_default_title">Dihidupkan secara standar</string>
-  <string name="privacy_guard_default_summary_on">Privacy Guard dihidupkan</string>
-  <string name="privacy_guard_default_summary">Mengaktifkan secara standar untuk aplikasi yang baru dipasang</string>
   <string name="privacy_guard_manager_summary">Kelola aplikasi yang memiliki akses ke data pribadi Anda</string>
   <string name="privacy_guard_no_user_apps">Tidak ada aplikasi terpasang</string>
   <string name="privacy_guard_help_title">Bantuan</string>

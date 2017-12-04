@@ -46,8 +46,6 @@
   <string name="privacy_guard_dlg_text">Când Gardianul de Intimitate este activat, aplicația nu va putea accesa datele personale cum ar fi contactele, mesajele sau jurnalul de apeluri.</string>
   <string name="privacy_guard_dlg_system_app_text">Când Gardianul de Intimitate este activat pentru o aplicație preinstalată, aplicația nu va putea accesa sau furniza date personale. Acest lucru poate cauza funcționarea eronată a altor aplicații.</string>
   <string name="privacy_guard_default_title">Activ în mod implicit</string>
-  <string name="privacy_guard_default_summary_on">Gardianul de Intimitate este activ</string>
-  <string name="privacy_guard_default_summary">Activat în mod implicit pentru aplicațiile nou-instalate</string>
   <string name="privacy_guard_manager_summary">Gestionează care aplicație are acces la datele dvs. personale</string>
   <string name="privacy_guard_no_user_apps">Nu există aplicații instalate</string>
   <string name="privacy_guard_help_title">Ajutor</string>
