@@ -547,6 +547,7 @@
   <string name="touchscreen_gesture_letter_v_title">Disegna la lettera \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Disegna la lettera \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Disegna la lettera \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Azione gesture</string>
   <string name="touchscreen_gesture_action_do_nothing">Non far nulla</string>
   <string name="touchscreen_gesture_action_flashlight">Attiva/Disattiva torcia</string>

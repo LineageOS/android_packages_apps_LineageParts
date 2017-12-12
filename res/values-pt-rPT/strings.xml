@@ -53,7 +53,7 @@
   <string name="privacy_guard_help_title">Ajuda</string>
   <string name="privacy_guard_reset_title">Repor</string>
   <string name="privacy_guard_reset_text">Repor permissões?</string>
-  <string name="privacy_guard_help_text">Neste ecrã pode escolher que aplicações devem ter ativa a Proteção de Privacidade simplesmente tocando nelas. As aplicações selecionadas não serão capazes de aceder aos seus dados pessoais, como contactos, mensagens ou registos de chamadas. Pressionar continuamente numa aplicação abre o ecrã de detalhes para essa aplicação.\n\nAplicações de sistema não são exibidas por defeito, mas podem ser mostradas, ao selecionar a opção no respetivo menu.</string>
+  <string name="privacy_guard_help_text">Neste ecrã pode escolher que aplicações devem ter ativa a Proteção de Privacidade simplesmente tocando nelas. As aplicações selecionadas não serão capazes de aceder aos seus dados pessoais, como contactos, mensagens ou registos de chamadas. Pressionar continuamente numa aplicação abre o ecrã de detalhes para essa aplicação.\n\nAplicações de sistema não são mostradas por defeito, mas podem ser mostradas, ao selecionar a opção no respetivo menu.</string>
   <string name="privacy_guard_manager_show_system_apps">Mostrar aplicações de sistema</string>
   <string name="privacy_guard_advanced_settings_title">Avançadas</string>
   <string name="privacy_guard_notification_title">Mostrar notificação</string>
@@ -105,7 +105,7 @@
   <string name="notification_light_no_apps_summary">Para configurar as luzes de notificação para uma aplicação específica, ative \"%1$s\" e toque em \"\u002b\" na barra de menu</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
-  <string name="live_display_mode">Modo de exibição</string>
+  <string name="live_display_mode">Modo do ecrã</string>
   <string name="live_display_color_temperature_title">Temperatura da cor</string>
   <string name="live_display_color_temperature_summary">Dia: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noite: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
   <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
@@ -362,7 +362,7 @@
   <string name="profile_brightness_override_checkbox_label">Substituir brilho</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <string name="toggleWifi">Wi\u2011Fi</string>
-  <string name="toggleWifiAp">Zona Wi\u2011Fi portátil</string>
+  <string name="toggleWifiAp">Ponto de acesso Wi\u2011Fi portátil</string>
   <string name="toggleBluetooth">Bluetooth</string>
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Ligação de dados</string>
@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Desenhar a letra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Desenhar a letra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Desenhar a letra \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Ação do gesto</string>
   <string name="touchscreen_gesture_action_do_nothing">Não fazer nada</string>
   <string name="touchscreen_gesture_action_flashlight">Ligar/desligar a lanterna</string>

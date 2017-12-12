@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Gambar huruf \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Gambar huruf \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Gambar huruf \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Tindakan gerakan</string>
   <string name="touchscreen_gesture_action_do_nothing">Jangan lakukan apa-apa</string>
   <string name="touchscreen_gesture_action_flashlight">Hidup/matikan senter</string>

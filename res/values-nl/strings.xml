@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Teken een \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Teken een \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Teken een \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Actie na gebaar</string>
   <string name="touchscreen_gesture_action_do_nothing">Niets doen</string>
   <string name="touchscreen_gesture_action_flashlight">Zaklamp aan/uit</string>

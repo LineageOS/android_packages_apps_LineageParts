@@ -543,6 +543,7 @@
   <string name="touchscreen_gesture_letter_v_title">Tegn bogstavet \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Tegn bogstavet \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Tegn bogstavet \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Bevægelseshandling</string>
   <string name="touchscreen_gesture_action_do_nothing">Gør intet</string>
   <string name="touchscreen_gesture_action_flashlight">Tænd / sluk lommelygte</string>

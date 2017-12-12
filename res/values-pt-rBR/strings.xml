@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Desenhar a letra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Desenhar a letra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Desenhar a letra \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Ação do gesto</string>
   <string name="touchscreen_gesture_action_do_nothing">Não fazer nada</string>
   <string name="touchscreen_gesture_action_flashlight">Ligar/desligar a lanterna</string>

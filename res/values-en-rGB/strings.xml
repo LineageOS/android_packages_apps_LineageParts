@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Draw the letter \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Draw the letter \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Draw the letter \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Gesture action</string>
   <string name="touchscreen_gesture_action_do_nothing">Do nothing</string>
   <string name="touchscreen_gesture_action_flashlight">Toggle the flashlight</string>

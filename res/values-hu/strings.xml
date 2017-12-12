@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Rajzoljon egy \"V\" betűt</string>
   <string name="touchscreen_gesture_letter_w_title">Rajzoljon egy \"W\" betűt</string>
   <string name="touchscreen_gesture_letter_z_title">Rajzoljon egy \"Z\" betűt</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Kézmozdulat művelet</string>
   <string name="touchscreen_gesture_action_do_nothing">Nincs művelet</string>
   <string name="touchscreen_gesture_action_flashlight">Zseblámpa kapcsolása</string>

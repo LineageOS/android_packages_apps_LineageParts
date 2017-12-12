@@ -111,7 +111,7 @@
   <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g> K</string>
   <string name="live_display_day">Dan</string>
   <string name="live_display_night">Noč</string>
-  <string name="live_display_outdoor_mode_title">Samodejni zunanji način</string>
+  <string name="live_display_outdoor_mode_title">Samodejni način na prostem</string>
   <string name="live_display_outdoor_mode_summary">Samodejno povečaj svetlost in nasičenost v močni sončni svetlobi</string>
   <string name="live_display_low_power_title">Zmanjšaj porabo energije</string>
   <string name="live_display_low_power_summary">Prilagodi zaslon za najmanjšo porabo energije brez poslabšanja</string>
@@ -552,6 +552,7 @@
   <string name="touchscreen_gesture_letter_v_title">Narišite črko \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Narišite črko \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Narišite črko \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Dejanje poteze</string>
   <string name="touchscreen_gesture_action_do_nothing">Ne naredi ničesar</string>
   <string name="touchscreen_gesture_action_flashlight">Vklop/izklop svetilke</string>

@@ -138,6 +138,8 @@
   <string name="live_display_color_profile_reading_summary">Теплі кольори для зменшення напруження очей</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Кольори з точністю до колірного простору sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Кольори з точністю до колірного простору DCI-P3</string>
   <string name="color_calibration_title">Калібрування кольору</string>
   <string name="color_calibration_summary">Калібрування кольору на екрані</string>
   <string name="color_red_title">Червоний</string>
@@ -238,6 +240,11 @@
   <string name="torch_long_press_power_gesture_title">Тривале натискання для увімкнення ліхтарика</string>
   <string name="torch_long_press_power_gesture_desc">Вмикати ліхтарик довгим натисканням кнопки живлення, при вимкненому екрані</string>
   <string name="torch_long_press_power_timeout_title">Автоматичне вимкнення ліхтарика</string>
+  <string name="torch_long_press_power_timeout_never">Ніколи</string>
+  <string name="torch_long_press_power_timeout_1min">1 хвилина</string>
+  <string name="torch_long_press_power_timeout_2min">2 хвилини</string>
+  <string name="torch_long_press_power_timeout_5min">5 хвилин</string>
+  <string name="torch_long_press_power_timeout_10min">10 хвилин</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Видалити</string>
   <string name="profile_action_none">Залишити без змін</string>
@@ -543,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Намалюйте літеру \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Намалюйте літеру \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Намалюйте літеру «Z»</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Дія жесту</string>
   <string name="touchscreen_gesture_action_do_nothing">Нічого не робити</string>
   <string name="touchscreen_gesture_action_flashlight">Увімкнути або вимкнути ліхтарик</string>

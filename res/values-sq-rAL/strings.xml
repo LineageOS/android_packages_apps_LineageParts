@@ -530,6 +530,7 @@
   <string name="touchscreen_gesture_letter_v_title">Vizato shkronjën \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Vizato shkronjën \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Vizato shkronjën \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Veprimi e gjestit</string>
   <string name="touchscreen_gesture_action_do_nothing">Mos bëj asgjë</string>
   <string name="touchscreen_gesture_action_flashlight">Ndiz/fik elektrikun e dorës</string>

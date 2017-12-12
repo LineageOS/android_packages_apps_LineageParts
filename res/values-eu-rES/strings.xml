@@ -551,6 +551,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="touchscreen_gesture_letter_v_title">Marraztu \"V\" letra</string>
   <string name="touchscreen_gesture_letter_w_title">Marraztu \"W\" letra</string>
   <string name="touchscreen_gesture_letter_z_title">Marraztu \"Z\" letra</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Keinuaren ekintza</string>
   <string name="touchscreen_gesture_action_do_nothing">Ez egin ezer</string>
   <string name="touchscreen_gesture_action_flashlight">Piztu/itzali linterna</string>

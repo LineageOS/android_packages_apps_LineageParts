@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Dibuixa la lletra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Dibuixa la lletra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Dibuixa la lletra \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Acció gestual</string>
   <string name="touchscreen_gesture_action_do_nothing">No facis res</string>
   <string name="touchscreen_gesture_action_flashlight">Encén/apaga la llanterna</string>

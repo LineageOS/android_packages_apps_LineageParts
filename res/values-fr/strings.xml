@@ -138,6 +138,8 @@
   <string name="live_display_color_profile_reading_summary">Couleurs plus chaudes pour diminuer la fatigue oculaire</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Couleurs correspondant exactement à l’espace colorimétrique sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Couleurs précises sur l\'espace de couleur DCI-P3</string>
   <string name="color_calibration_title">Calibrage des couleurs</string>
   <string name="color_calibration_summary">Calibrer les couleurs de l\'écran</string>
   <string name="color_red_title">Rouge</string>
@@ -548,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Dessiner la lettre « V »</string>
   <string name="touchscreen_gesture_letter_w_title">Dessiner la lettre « W »</string>
   <string name="touchscreen_gesture_letter_z_title">Dessinez la lettre « Z »</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Action lors d\'un geste tactile</string>
   <string name="touchscreen_gesture_action_do_nothing">Ne rien faire</string>
   <string name="touchscreen_gesture_action_flashlight">Activer/Désactiver la lampe de poche</string>

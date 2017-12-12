@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Nakreslite písmeno \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Nakreslite písmeno \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Nakreslite písmeno \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Gestá</string>
   <string name="touchscreen_gesture_action_do_nothing">Nerobiť nič</string>
   <string name="touchscreen_gesture_action_flashlight">Zapnúť baterku</string>

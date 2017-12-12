@@ -551,6 +551,7 @@
   <string name="touchscreen_gesture_letter_v_title">畫出一個字母「V」</string>
   <string name="touchscreen_gesture_letter_w_title">畫出一個字母「W」</string>
   <string name="touchscreen_gesture_letter_z_title">畫出一個字母「Z」</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">手勢動作</string>
   <string name="touchscreen_gesture_action_do_nothing">不執行任何動作</string>
   <string name="touchscreen_gesture_action_flashlight">切換至手電筒</string>

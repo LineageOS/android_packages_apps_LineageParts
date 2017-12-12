@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">\"V\" harfi çizin</string>
   <string name="touchscreen_gesture_letter_w_title">\"W\" harfi çizin</string>
   <string name="touchscreen_gesture_letter_z_title">\"Z\" harfi çizin</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Hareket eylemi</string>
   <string name="touchscreen_gesture_action_do_nothing">Hiçbir şey yapma</string>
   <string name="touchscreen_gesture_action_flashlight">El fenerini aç/kapat</string>

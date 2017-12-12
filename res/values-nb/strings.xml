@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Tegn bokstaven \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Tegn bokstaven \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Tegn bokstaven \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Bevegelses-handling</string>
   <string name="touchscreen_gesture_action_do_nothing">Ikke gjør noe</string>
   <string name="touchscreen_gesture_action_flashlight">Slå av/på lommelykten</string>

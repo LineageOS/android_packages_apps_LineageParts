@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Нацртај слово „V“</string>
   <string name="touchscreen_gesture_letter_w_title">Нацртај слово „W“</string>
   <string name="touchscreen_gesture_letter_z_title">Нацртај слово „Z“</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Радња покрета</string>
   <string name="touchscreen_gesture_action_do_nothing">Ништа</string>
   <string name="touchscreen_gesture_action_flashlight">Укључи/искључи лампу</string>

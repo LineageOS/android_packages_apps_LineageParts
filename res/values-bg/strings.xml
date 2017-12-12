@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Изпишете буквата \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Изпишете буквата \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Изпишете буквата \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Жестове</string>
   <string name="touchscreen_gesture_action_do_nothing">Не прави нищо</string>
   <string name="touchscreen_gesture_action_flashlight">Включване / Изключване на фенерчето</string>

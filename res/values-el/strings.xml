@@ -554,6 +554,7 @@
   <string name="touchscreen_gesture_letter_v_title">Σχεδιάστε το γράμμα «V»</string>
   <string name="touchscreen_gesture_letter_w_title">Σχεδιάστε το γράμμα «W»</string>
   <string name="touchscreen_gesture_letter_z_title">Σχεδιάστε το γράμμα «Z»</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Ενέργεια χειρονομίας</string>
   <string name="touchscreen_gesture_action_do_nothing">Καμία ενέργεια</string>
   <string name="touchscreen_gesture_action_flashlight">Εναλλαγή φακού</string>

@@ -256,6 +256,7 @@
   <string name="touchscreen_gesture_letter_v_title">Rita bokstaven \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Rita bokstaven \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Rita bokstaven \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_do_nothing">Gör ingenting</string>
   <string name="touchscreen_gesture_action_camera">Öppna kameran</string>
   <string name="touchscreen_gesture_action_browser">Öppna webbläsaren</string>

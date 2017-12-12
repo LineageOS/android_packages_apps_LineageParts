@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Piirrä \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Piirrä \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Piirrä \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Eleen toiminto</string>
   <string name="touchscreen_gesture_action_do_nothing">Älä tee mitään</string>
   <string name="touchscreen_gesture_action_flashlight">Käynnistä taskulamppu</string>

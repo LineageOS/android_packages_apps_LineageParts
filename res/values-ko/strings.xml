@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">문자 \"V\" 그리기</string>
   <string name="touchscreen_gesture_letter_w_title">문자 \"W\" 그리기</string>
   <string name="touchscreen_gesture_letter_z_title">문자 \"Z\" 그리기</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">제스처 동작</string>
   <string name="touchscreen_gesture_action_do_nothing">아무것도 하지 않음</string>
   <string name="touchscreen_gesture_action_flashlight">손전등 켜고 끄기</string>

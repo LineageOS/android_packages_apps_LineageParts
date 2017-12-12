@@ -425,6 +425,7 @@
   <string name="touchscreen_gesture_letter_v_title">Dibuxar la lletra «V»</string>
   <string name="touchscreen_gesture_letter_w_title">Dibuxar la lletra «W»</string>
   <string name="touchscreen_gesture_letter_z_title">Dibuxar la lletra «Z»</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Aición de xestu</string>
   <string name="touchscreen_gesture_action_do_nothing">Nun facer nada</string>
   <string name="touchscreen_gesture_action_flashlight">Alternar la llinterna</string>

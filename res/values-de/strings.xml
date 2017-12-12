@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Zeichnen Sie den Buchstaben \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Zeichnen Sie den Buchstaben \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Zeichnen Sie den Buchstaben \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Gestenaktion</string>
   <string name="touchscreen_gesture_action_do_nothing">Nichts tun</string>
   <string name="touchscreen_gesture_action_flashlight">Taschenlampe ein-/ausschalten</string>

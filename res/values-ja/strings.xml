@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">「V」を描く</string>
   <string name="touchscreen_gesture_letter_w_title">「W」を描く</string>
   <string name="touchscreen_gesture_letter_z_title">「Z」を描く</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">ジェスチャーのアクション</string>
   <string name="touchscreen_gesture_action_do_nothing">何もしない</string>
   <string name="touchscreen_gesture_action_flashlight">ライトをトグルする</string>

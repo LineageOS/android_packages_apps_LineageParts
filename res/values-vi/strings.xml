@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Vẽ chữ cái \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Vẽ chữ cái \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Vẽ chữ cái \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Hành động cử chỉ</string>
   <string name="touchscreen_gesture_action_do_nothing">Không làm gì</string>
   <string name="touchscreen_gesture_action_flashlight">Bật/tắt đèn pin</string>

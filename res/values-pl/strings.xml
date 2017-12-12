@@ -551,6 +551,7 @@
   <string name="touchscreen_gesture_letter_v_title">Narysuj literę \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Narysuj literę \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Narysuj literę \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Gest akcji</string>
   <string name="touchscreen_gesture_action_do_nothing">Nic nie rób</string>
   <string name="touchscreen_gesture_action_flashlight">Przełącznik latarki</string>
@@ -558,6 +559,7 @@
   <string name="touchscreen_gesture_action_browser">Otwórz przeglądarkę</string>
   <string name="touchscreen_gesture_action_dialer">Otwórz wybieranie numerów</string>
   <string name="touchscreen_gesture_action_email">Zobacz swoje wiadomości e-mail</string>
+  <string name="touchscreen_gesture_action_messages">Zobacz swoje SMSy</string>
   <string name="touchscreen_gesture_action_play_pause_music">Rozpoczęcie/wstrzymanie odtwarzania muzyki</string>
   <string name="touchscreen_gesture_action_previous_track">Przejdź do poprzedniego utworu muzycznego</string>
   <string name="touchscreen_gesture_action_next_track">Przejdź do następnego utworu muzycznego</string>

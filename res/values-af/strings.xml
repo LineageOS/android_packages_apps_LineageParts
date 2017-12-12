@@ -550,6 +550,7 @@
   <string name="touchscreen_gesture_letter_v_title">Teken die letter \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Teken die letter \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Teken die letter \"Z\"</string>
+  <!-- Gesture: Stylus gestures -->
   <string name="touchscreen_gesture_action_dialog_title">Gebaar aksie</string>
   <string name="touchscreen_gesture_action_do_nothing">Doen niks nie</string>
   <string name="touchscreen_gesture_action_flashlight">Wissel die flitslig</string>
