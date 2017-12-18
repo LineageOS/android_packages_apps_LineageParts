@@ -38,6 +38,7 @@
         <item name="preferenceScreenStyle">@style/PreferenceStyle</item>
         <item name="preferenceStyle">@style/PreferenceStyle</item>
         <item name="preferenceTheme">@style/PreferenceTheme</item>
+        <item name="checkBoxPreferenceStyle">@style/CheckBoxPreferenceStyle</item>
         <item name="switchPreferenceStyle">@style/SwitchPreferenceStyle</item>
 
         <item name="wifi_signal_color">?android:attr/colorAccent</item>
