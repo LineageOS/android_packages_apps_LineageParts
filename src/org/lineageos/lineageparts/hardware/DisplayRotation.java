@@ -21,16 +21,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.view.RotationPolicy;
 
+import lineageos.providers.LineageSettings;
+
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
-/*
 public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String TAG = "DisplayRotation";
 
@@ -42,10 +42,10 @@ public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String ROTATION_270_PREF = "display_rotation_270";
 
     private SwitchPreference mAccelerometer;
-    private CheckBoxPreference mRotation0Pref;
-    private CheckBoxPreference mRotation90Pref;
-    private CheckBoxPreference mRotation180Pref;
-    private CheckBoxPreference mRotation270Pref;
+    private SwitchPreference mRotation0Pref;
+    private SwitchPreference mRotation90Pref;
+    private SwitchPreference mRotation180Pref;
+    private SwitchPreference mRotation270Pref;
 
     public static final int ROTATION_0_MODE = 1;
     public static final int ROTATION_90_MODE = 2;
@@ -63,13 +63,13 @@ public class DisplayRotation extends SettingsPreferenceFragment {
         mAccelerometer = (SwitchPreference) findPreference(KEY_ACCELEROMETER);
         mAccelerometer.setPersistent(false);
 
-        mRotation0Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_0_PREF);
-        mRotation90Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_90_PREF);
-        mRotation180Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_180_PREF);
-        mRotation270Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_270_PREF);
+        mRotation0Pref = (SwitchPreference) prefSet.findPreference(ROTATION_0_PREF);
+        mRotation90Pref = (SwitchPreference) prefSet.findPreference(ROTATION_90_PREF);
+        mRotation180Pref = (SwitchPreference) prefSet.findPreference(ROTATION_180_PREF);
+        mRotation270Pref = (SwitchPreference) prefSet.findPreference(ROTATION_270_PREF);
 
-        int mode = Settings.System.getInt(getContentResolver(),
-                Settings.System.ACCELEROMETER_ROTATION_ANGLES,
+        int mode = LineageSettings.System.getInt(getContentResolver(),
+                LineageSettings.System.ACCELEROMETER_ROTATION_ANGLES,
                 ROTATION_0_MODE | ROTATION_90_MODE | ROTATION_270_MODE);
 
         mRotation0Pref.setChecked((mode & ROTATION_0_MODE) != 0);
@@ -131,8 +131,8 @@ public class DisplayRotation extends SettingsPreferenceFragment {
                 mode |= ROTATION_0_MODE;
                 mRotation0Pref.setChecked(true);
             }
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.ACCELEROMETER_ROTATION_ANGLES, mode);
+            LineageSettings.System.putInt(getActivity().getContentResolver(),
+                    LineageSettings.System.ACCELEROMETER_ROTATION_ANGLES, mode);
             return true;
         }
 
@@ -149,4 +149,3 @@ public class DisplayRotation extends SettingsPreferenceFragment {
         }
     };
 }
-*/
