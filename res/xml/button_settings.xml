@@ -25,13 +25,11 @@
         android:summary="@string/disable_navkeys_summary"
         android:defaultValue="false" />
 
-    <!--
     <org.lineageos.lineageparts.input.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
         android:dialogTitle="@string/button_backlight_title"
         android:persistent="false" />
-    -->
 
     <PreferenceCategory
         android:key="navigation_bar_category"
