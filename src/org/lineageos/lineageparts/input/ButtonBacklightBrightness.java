@@ -38,9 +38,10 @@ import android.widget.TextView;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;
 
+import static org.lineageos.internal.util.DeviceKeysConstants.*;
+
 import lineageos.providers.LineageSettings;
 
-/*
 public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialog> implements
         SeekBar.OnSeekBarChangeListener {
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
@@ -66,11 +67,13 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
         setDialogLayoutResource(R.layout.button_backlight);
 
+        /*
         if (isKeyboardSupported()) {
             mKeyboardBrightness = new BrightnessControl(
                     LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
+        */
         if (isButtonSupported()) {
             boolean isSingleValue = !context.getResources().getBoolean(
                     com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
@@ -223,23 +226,25 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     public boolean isButtonSupported() {
         final Resources res = getContext().getResources();
         final int deviceKeys = res.getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
+                org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
         // All hardware keys besides volume and camera can possibly have a backlight
-        boolean hasBacklightKey = (deviceKeys & ButtonSettings.KEY_MASK_HOME) != 0
-                || (deviceKeys & ButtonSettings.KEY_MASK_BACK) != 0
-                || (deviceKeys & ButtonSettings.KEY_MASK_MENU) != 0
-                || (deviceKeys & ButtonSettings.KEY_MASK_ASSIST) != 0
-                || (deviceKeys & ButtonSettings.KEY_MASK_APP_SWITCH) != 0;
+        boolean hasBacklightKey = (deviceKeys & KEY_MASK_HOME) != 0
+                || (deviceKeys & KEY_MASK_BACK) != 0
+                || (deviceKeys & KEY_MASK_MENU) != 0
+                || (deviceKeys & KEY_MASK_ASSIST) != 0
+                || (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
         boolean hasBacklight = res.getInteger(
                 com.android.internal.R.integer.config_buttonBrightnessSettingDefault) > 0;
 
         return hasBacklightKey && hasBacklight;
     }
 
+    /*
     public boolean isKeyboardSupported() {
         return getContext().getResources().getInteger(
                 com.android.internal.R.integer.config_keyboardBrightnessSettingDefault) > 0;
     }
+    */
 
     public void updateSummary() {
         if (mButtonBrightness != null) {
@@ -413,7 +418,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
 
         /* Behaviors when it's a seekbar */
-        /*
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             handleBrightnessUpdate(progress);
@@ -430,7 +434,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
 
         /* Behaviors when it's a plain checkbox */
-        /*
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             mActiveControl = this;
@@ -459,4 +462,3 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
     }
 }
-*/
