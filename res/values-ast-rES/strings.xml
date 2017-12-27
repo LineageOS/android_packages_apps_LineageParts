@@ -156,9 +156,7 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra de navegación</string>
   <string name="navigation_bar_title">Botones y distribución</string>
-  <string name="navigation_bar_left_title">Mou pa maniegos</string>
   <string name="navigation_bar_left_summary">Alluga la barra de navegación nel llau esquierdu de la pantalla nel mou apaisáu</string>
-  <string name="navigation_bar_recents_title">Aición de primíu llargu de Recientes</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menú d\'apagáu</string>
   <string name="power_menu_reboot_title">Menú de reaniciu</string>

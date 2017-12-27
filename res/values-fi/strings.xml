@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Navigointipalkki</string>
   <string name="navigation_bar_title">Näppäimet ja sijainti</string>
-  <string name="navigation_bar_left_title">Käytä vasemmalla kädellä</string>
   <string name="navigation_bar_left_summary">Siirtää navigointipalkin näytön vasempaan reunaan vaaka-asennossa</string>
   <string name="navigation_bar_arrow_keys_title">Näytä nuolinäppäimet kirjottaessa</string>
   <string name="navigation_bar_arrow_keys_summary">Näytä vasen ja oikea nuolinäppäin kirjoittaessa. Ohittaa syöttötavan valinnan.</string>
   <string name="navigation_bar_home_long_press_title">Kotinäppäimen pitkän painalluksen tehtävä</string>
   <string name="navigation_bar_home_double_tap_title">Kotinäppäimen kaksoisnapautuksen tehtävä</string>
-  <string name="navigation_bar_recents_title">Viimeisimmät-painikkeen pitkän painalluksen tehtävä</string>
   <!-- Power menu -->
   <string name="power_menu_title">Käynnistysvalikko</string>
   <string name="power_menu_reboot_title">Uudelleenkäynnistysvalikko</string>

@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra di navigazione</string>
   <string name="navigation_bar_title">Pulsanti e disposizione</string>
-  <string name="navigation_bar_left_title">Modalità mancino</string>
   <string name="navigation_bar_left_summary">Posiziona la barra di navigazione a sinistra quando il dispositivo è ruotato orizzontalmente</string>
   <string name="navigation_bar_arrow_keys_title">Mostra frecce mentre scrivi</string>
   <string name="navigation_bar_arrow_keys_summary">Mostra i pulsanti sinistra e destra del cursore mentre stai scrivendo. Nasconde il selettore di immissione.</string>
   <string name="navigation_bar_home_long_press_title">Azione pressione prolungata Home</string>
   <string name="navigation_bar_home_double_tap_title">Azione doppio tap Home</string>
-  <string name="navigation_bar_recents_title">Azione pressione prolungata Panoramica</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menu di accensione</string>
   <string name="power_menu_reboot_title">Menu riavvio</string>

@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Nabigazio-barra</string>
   <string name="navigation_bar_title">Botoiak eta diseinua</string>
-  <string name="navigation_bar_left_title">Ezkertientzako modua</string>
   <string name="navigation_bar_left_summary">Kokatu nabigazio-barra pantailaren ezkerraldean paisaia moduan</string>
   <string name="navigation_bar_arrow_keys_title">Erakutsi norabide geziak idaztean</string>
   <string name="navigation_bar_arrow_keys_summary">Erakutsi ezker zein eskuin kurtsore botoiak idaztean. IME aldatzailea gainidazten du.</string>
   <string name="navigation_bar_home_long_press_title">Hasiera botoian luze zapaltzearen ekintza</string>
   <string name="navigation_bar_home_double_tap_title">Hasiera botoian birritan sakatzearen ekintza</string>
-  <string name="navigation_bar_recents_title">Azkenak botoian luze sakatzearen ekintza</string>
   <!-- Power menu -->
   <string name="power_menu_title">Itzaltze menua</string>
   <string name="power_menu_reboot_title">Berrabiarazte menua</string>

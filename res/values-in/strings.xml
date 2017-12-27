@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Bar Navigasi</string>
   <string name="navigation_bar_title">Tombol dan tata letak</string>
-  <string name="navigation_bar_left_title">Mode tangan kiri</string>
   <string name="navigation_bar_left_summary">Tempatkan navigasi bar di sebelah kiri layar dalam mode lanskap</string>
   <string name="navigation_bar_arrow_keys_title">Tampilkan tombol panah saat mengetik</string>
   <string name="navigation_bar_arrow_keys_summary">Tampilkan tombol kursor kiri dan kanan saat mengetik. Menggantikan pengubah IME.</string>
   <string name="navigation_bar_home_long_press_title">Tindakan menekan lama home</string>
   <string name="navigation_bar_home_double_tap_title">Tindakan dua kali ketuk home</string>
-  <string name="navigation_bar_recents_title">Tindakan menekan lama recent</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menu power</string>
   <string name="power_menu_reboot_title">Mulai ulang menu</string>
