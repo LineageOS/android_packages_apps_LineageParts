@@ -224,8 +224,7 @@
                  android:exported="false" />
         -->
 
-		<!-- Weather settings -->
-        <!--
+        <!-- Weather settings -->
         <activity-alias
             android:name=".weather.WeatherServiceSettings"
             android:label="@string/weather_settings_title"
@@ -235,7 +234,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
-        -->
 
         <activity android:name=".profiles.NFCProfile">
             <intent-filter>
