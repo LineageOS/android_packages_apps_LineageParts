@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Vrstica za krmarjenje</string>
   <string name="navigation_bar_title">Gumbi in razporeditev</string>
-  <string name="navigation_bar_left_title">Način za levičarje</string>
   <string name="navigation_bar_left_summary">Umesti vrstico za krmarjenje ne levo stran zaslona v ležečem načinu</string>
   <string name="navigation_bar_arrow_keys_title">Prikaži smerne tipke med tipkanjem</string>
   <string name="navigation_bar_arrow_keys_summary">Prikaži gumba levega in desnega kazalca med tipkanjem. Preglasi preklopnik IME.</string>
   <string name="navigation_bar_home_long_press_title">Dejanje dolgega pritiska Domov</string>
   <string name="navigation_bar_home_double_tap_title">Dejanje dvojnega tapa Domov</string>
-  <string name="navigation_bar_recents_title">Dejanje dolgega pritiska Nedavno</string>
   <!-- Power menu -->
   <string name="power_menu_title">Meni gumba za vklop/izklop</string>
   <string name="power_menu_reboot_title">Meni ponovnega zagona</string>

@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Навигационна лента</string>
   <string name="navigation_bar_title">Бутони и оформление</string>
-  <string name="navigation_bar_left_title">Режим на лява ръка</string>
   <string name="navigation_bar_left_summary">Поставете лентата за навигация от лявата страна на екрана в пейзажен режим</string>
   <string name="navigation_bar_arrow_keys_title">Показване на стрелките при въвеждане</string>
   <string name="navigation_bar_arrow_keys_summary">Показване на ляв и десен курсорен бутони при въвеждане. Замества IME превключвател.</string>
   <string name="navigation_bar_home_long_press_title">Действие при дълго натисканане на начало</string>
   <string name="navigation_bar_home_double_tap_title">Действие при двукратно натискане на начало</string>
-  <string name="navigation_bar_recents_title">Последни дълги натискания действие</string>
   <!-- Power menu -->
   <string name="power_menu_title">Меню мощност</string>
   <string name="power_menu_reboot_title">Меню рестартиране</string>

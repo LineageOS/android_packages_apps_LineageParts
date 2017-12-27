@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">סרגל ניווט</string>
   <string name="navigation_bar_title">מקשים ופריסה</string>
-  <string name="navigation_bar_left_title">מצב לשמאליים</string>
   <string name="navigation_bar_left_summary">כאשר המסך מאוזן מקם את סרגל הניווט בשמאל המסך</string>
   <string name="navigation_bar_arrow_keys_title">הראה חיצים בעת הקלדה</string>
   <string name="navigation_bar_arrow_keys_summary">הצג מקשי ימין ושמאל בעת הכתיבה. במקום מחליף המקלדות.</string>
   <string name="navigation_bar_home_long_press_title">פעולת לחיצה ארוכה על מקש הבית</string>
   <string name="navigation_bar_home_double_tap_title">פעולת לחיצה כפולה על מקש הבית</string>
-  <string name="navigation_bar_recents_title">פעולת לחיצה ארוכה על מקש יישומים אחרונים</string>
   <!-- Power menu -->
   <string name="power_menu_title">תפריט כיבוי</string>
   <string name="power_menu_reboot_title">תפריט הפעלה מחדש</string>

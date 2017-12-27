@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Панель навігації</string>
   <string name="navigation_bar_title">Кнопки та їх розміщення</string>
-  <string name="navigation_bar_left_title">Режим для лівші</string>
   <string name="navigation_bar_left_summary">Показувати панель навігації зліва в альбомній орієнтації</string>
   <string name="navigation_bar_arrow_keys_title">Показувати стрілки під час введення тексту</string>
   <string name="navigation_bar_arrow_keys_summary">Показувати кнопки переміщення курсору вліво або вправо при введенні. Кнопка вибору методу введення не буде відображатися.</string>
   <string name="navigation_bar_home_long_press_title">Дія при довгому натисканні кнопки \"Додому\"</string>
   <string name="navigation_bar_home_double_tap_title">Дія при подвійному натисканні на кнопку \"Додому\"</string>
-  <string name="navigation_bar_recents_title">Дія при довгому натисканні кнопки \"Нещодавні додатки\"</string>
   <!-- Power menu -->
   <string name="power_menu_title">Меню кнопки живлення</string>
   <string name="power_menu_reboot_title">Меню перезавантаження</string>

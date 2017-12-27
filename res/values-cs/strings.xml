@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Navigační lišta</string>
   <string name="navigation_bar_title">Tlačítka a rozmístění</string>
-  <string name="navigation_bar_left_title">Režim ovládání levou rukou</string>
   <string name="navigation_bar_left_summary">Při natočení na šířku umístit navigační lištu na levé straně obrazovky</string>
   <string name="navigation_bar_arrow_keys_title">Zobrazit navigační šipky při psaní</string>
   <string name="navigation_bar_arrow_keys_summary">Zobrazit levý a pravý kurzor při psaní. Potlačí IME přepínač.</string>
   <string name="navigation_bar_home_long_press_title">Akce dlouhého stisku tlačítka „Domů“</string>
   <string name="navigation_bar_home_double_tap_title">Akce dvojitého stisku tlačítka „Domů“</string>
-  <string name="navigation_bar_recents_title">Akce dlouhého stisku tlačítka „Nedávné“</string>
   <!-- Power menu -->
   <string name="power_menu_title">Nabídka tlačítka Vypnout</string>
   <string name="power_menu_reboot_title">Nabídka restartu</string>

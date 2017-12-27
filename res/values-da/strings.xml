@@ -211,13 +211,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Navigationslinje</string>
   <string name="navigation_bar_title">Knapper og layout</string>
-  <string name="navigation_bar_left_title">Venstrehåndstilstand</string>
   <string name="navigation_bar_left_summary">Anbring navigeringslinjen på venstre side af skærmen i landskabstilstand</string>
   <string name="navigation_bar_arrow_keys_title">Vis piletaster, mens du skriver</string>
   <string name="navigation_bar_arrow_keys_summary">Vis venstre og højre piletaster, når du skriver. Tilsidesætter IME-indstillinger.</string>
   <string name="navigation_bar_home_long_press_title">Langt tryk-handling på knappen Hjem</string>
   <string name="navigation_bar_home_double_tap_title">Handling ved dobbelt tryk på knappen Hjem</string>
-  <string name="navigation_bar_recents_title">Langt tryk-handling på knappen Seneste handlinger</string>
   <!-- Power menu -->
   <string name="power_menu_title">Tænd/sluk-menu</string>
   <string name="power_menu_reboot_title">Genstartsmenu</string>

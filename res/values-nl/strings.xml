@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Navigatiebalk</string>
   <string name="navigation_bar_title">Knoppen en indeling</string>
-  <string name="navigation_bar_left_title">Linkshandige modus</string>
   <string name="navigation_bar_left_summary">Navigatiebalk aan de linkerkant van het scherm weergeven in liggende stand</string>
   <string name="navigation_bar_arrow_keys_title">Pijltjestoetsen tijdens typen</string>
   <string name="navigation_bar_arrow_keys_summary">Cursor links en rechts weergeven tijdens typen. Verbergt invoermethodepictogram.</string>
   <string name="navigation_bar_home_long_press_title">Thuisknop lang indrukken</string>
   <string name="navigation_bar_home_double_tap_title">Thuisknop twee keer indrukken</string>
-  <string name="navigation_bar_recents_title">Recente apps-knop lang indrukken</string>
   <!-- Power menu -->
   <string name="power_menu_title">Opties in afsluitmenu</string>
   <string name="power_menu_reboot_title">Herstarten</string>
