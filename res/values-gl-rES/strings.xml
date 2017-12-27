@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra de navegación</string>
   <string name="navigation_bar_title">Botóns e disposición</string>
-  <string name="navigation_bar_left_title">Modo para zurdo</string>
   <string name="navigation_bar_left_summary">Colocar a barra de navegación no lado esquerdo da pantalla cando estea en modo horizontal</string>
   <string name="navigation_bar_arrow_keys_title">Amosar as frechas ao escribir</string>
   <string name="navigation_bar_arrow_keys_summary">Amosar os cursores esquerda e dereita ao escribir. Substitúe ao selector IME.</string>
   <string name="navigation_bar_home_long_press_title">Acción de pulsación larga do inicio</string>
   <string name="navigation_bar_home_double_tap_title">Acción con toque duplo en inicio</string>
-  <string name="navigation_bar_recents_title">Toque un tempo en aplicacións recentes</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menú de apagado</string>
   <string name="power_menu_reboot_title">Menú de reinicio</string>

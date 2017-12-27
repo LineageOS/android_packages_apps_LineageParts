@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Navigasiebalk</string>
   <string name="navigation_bar_title">Knoppies en uitleg</string>
-  <string name="navigation_bar_left_title">Linkshandige modus</string>
   <string name="navigation_bar_left_summary">Plaas die navigasie balk aan die linkerkant van die skerm in landskap modus</string>
   <string name="navigation_bar_arrow_keys_title">Wys pyltjiesleutels terwyl jy tik</string>
   <string name="navigation_bar_arrow_keys_summary">Wys links en regs wyser knoppies terwyl tik. Oorskryf IME wisselaar.</string>
   <string name="navigation_bar_home_long_press_title">Tuis lang druk aksie</string>
   <string name="navigation_bar_home_double_tap_title">Tuis dubbel tik aksie</string>
-  <string name="navigation_bar_recents_title">Onlangse lang-drukaksie</string>
   <!-- Power menu -->
   <string name="power_menu_title">Krag kieslys</string>
   <string name="power_menu_reboot_title">Herlaai kieslys</string>

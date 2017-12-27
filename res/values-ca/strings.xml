@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra de navegació</string>
   <string name="navigation_bar_title">Botons i disposició</string>
-  <string name="navigation_bar_left_title">Mode esquerrà</string>
   <string name="navigation_bar_left_summary">Col·loca la barra de navegació al costat esquerre de la pantalla en el mode horitzontal</string>
   <string name="navigation_bar_arrow_keys_title">Mostra tecles de les fletxes mentre escrius</string>
   <string name="navigation_bar_arrow_keys_summary">Mostra els botons dels cursors esquerra i dreta mentre escrius. Això anul·la el commutador IME.</string>
   <string name="navigation_bar_home_long_press_title">Acció de pulsació llarga d\'Inici</string>
   <string name="navigation_bar_home_double_tap_title">Acció de doble pulsació d\'Inici</string>
-  <string name="navigation_bar_recents_title">Acció pulsació llarga de Recents</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menú d\'apagat</string>
   <string name="power_menu_reboot_title">Menú de reinici</string>
