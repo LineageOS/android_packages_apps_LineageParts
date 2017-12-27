@@ -38,12 +38,6 @@
         android:title="@string/navigation_bar_category" >
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="navigation_bar_left"
-            android:title="@string/navigation_bar_left_title"
-            android:summary="@string/navigation_bar_left_summary"
-            android:defaultValue="false" />
-
-        <lineageos.preference.LineageSystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:title="@string/navigation_bar_arrow_keys_title"
                 android:summary="@string/navigation_bar_arrow_keys_summary"
@@ -69,12 +63,6 @@
             android:title="@string/navigation_bar_home_double_tap_title"
             android:entries="@array/hardware_keys_action_entries"
             android:entryValues="@array/hardware_keys_action_values"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="navigation_recents_long_press"
-            android:dialogTitle="@string/navigation_bar_recents_title"
-            android:title="@string/navigation_bar_recents_title"
             android:persistent="false" />
 
     </PreferenceCategory>

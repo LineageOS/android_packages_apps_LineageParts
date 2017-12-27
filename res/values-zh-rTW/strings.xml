@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">導覽列</string>
   <string name="navigation_bar_title">按鍵與配置</string>
-  <string name="navigation_bar_left_title">左撇子模式</string>
   <string name="navigation_bar_left_summary">橫向模式下將導覽列置於螢幕左側</string>
   <string name="navigation_bar_arrow_keys_title">輸入時顯示方向鍵</string>
   <string name="navigation_bar_arrow_keys_summary">輸入時顯示游標鍵。取代輸入法切換器。</string>
   <string name="navigation_bar_home_long_press_title">主畫面鍵長按動作</string>
   <string name="navigation_bar_home_double_tap_title">主畫面輕觸兩下動作</string>
-  <string name="navigation_bar_recents_title">多工鍵長按動作</string>
   <!-- Power menu -->
   <string name="power_menu_title">電源選單</string>
   <string name="power_menu_reboot_title">重新啟動選單</string>

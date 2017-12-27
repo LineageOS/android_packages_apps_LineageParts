@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra de navegação</string>
   <string name="navigation_bar_title">Botões e layout</string>
-  <string name="navigation_bar_left_title">Modo canhoto</string>
   <string name="navigation_bar_left_summary">Posicionar a barra de navegação no lado esquerdo da tela em modo paisagem</string>
   <string name="navigation_bar_arrow_keys_title">Mostrar teclas de seta enquanto digita</string>
   <string name="navigation_bar_arrow_keys_summary">Exibir botões esquerda e direita do cursor durante a digitação. Substitui o seletor de Teclado.</string>
   <string name="navigation_bar_home_long_press_title">Ação de toque longo no botão início</string>
   <string name="navigation_bar_home_double_tap_title">Ação de toque duplo no botão de Página Inicial</string>
-  <string name="navigation_bar_recents_title">Ação de pressionar e segurar aplicativos recentes</string>
   <!-- Power menu -->
   <string name="power_menu_title">Opções do botão liga/desliga</string>
   <string name="power_menu_reboot_title">Menu de reinicialização</string>

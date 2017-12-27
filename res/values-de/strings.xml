@@ -213,13 +213,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Navigationsleiste</string>
   <string name="navigation_bar_title">Schaltflächen und Anordnung</string>
-  <string name="navigation_bar_left_title">Linkshänder-Modus</string>
   <string name="navigation_bar_left_summary">Navigationsleiste im Querformat auf der linken Seite anzeigen</string>
   <string name="navigation_bar_arrow_keys_title">Pfeiltasten beim Tippen anzeigen</string>
   <string name="navigation_bar_arrow_keys_summary">Beim Tippen Links/Rechts-Cursortasten anzeigen (deaktiviert die Eingabemethodenauswahl).</string>
   <string name="navigation_bar_home_long_press_title">Home (langes Drücken)</string>
   <string name="navigation_bar_home_double_tap_title">Home (doppeltes Tippen)</string>
-  <string name="navigation_bar_recents_title">Langes Drücken auf Anwendungsverlauf</string>
   <!-- Power menu -->
   <string name="power_menu_title">Ein-/Aus-Menü</string>
   <string name="power_menu_reboot_title">Neustartmenü</string>
