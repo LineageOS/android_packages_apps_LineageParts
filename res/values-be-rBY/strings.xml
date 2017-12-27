@@ -166,7 +166,6 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Навігацыйны радок</string>
   <string name="navigation_bar_title">Кнопкі і іх месцазнаходжаньне</string>
-  <string name="navigation_bar_left_title">Ляўшун</string>
   <string name="navigation_bar_left_summary">Адлюстроўваць навігацыйны радок зьлева ў альбомнай арыентацыі</string>
   <string name="navigation_bar_arrow_keys_title">Паказваць стрэлкі падчас друкаваньня тэксту</string>
   <string name="navigation_bar_arrow_keys_summary">Паказваць кнопки левага и правага курсору падчас друкаваньня. Кнопка варыянту друкаваньня будзе схована.</string>

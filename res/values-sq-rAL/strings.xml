@@ -211,13 +211,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Shiriti i lundrimit</string>
   <string name="navigation_bar_title">Butonat dhe pozicionimi</string>
-  <string name="navigation_bar_left_title">Përdorimi me dorën e majtë</string>
   <string name="navigation_bar_left_summary">Vendos shiritin e lundrimit në anën e majtë të ekranit kur ai është i kthyer horizontalisht</string>
   <string name="navigation_bar_arrow_keys_title">Trego butonat e shigjetave gjatë kohës që shkruan</string>
   <string name="navigation_bar_arrow_keys_summary">Shfaq butonat e kursorit të majtë dhe të djathtë gjatë kohës që shkruan. Ky opsion shpërfill çelësin IME.</string>
   <string name="navigation_bar_home_long_press_title">Veprimi kur mban shtypur butonin Home</string>
   <string name="navigation_bar_home_double_tap_title">Shtypja dy herë e butonit Home</string>
-  <string name="navigation_bar_recents_title">Veprimi kur mban shtypur butonin Të fundit</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menuja e energjisë</string>
   <string name="power_menu_reboot_title">Menuja e rindezjes</string>

@@ -212,13 +212,11 @@
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Pasek nawigacji</string>
   <string name="navigation_bar_title">Przyciski i ich układ</string>
-  <string name="navigation_bar_left_title">Tryb leworęczny</string>
   <string name="navigation_bar_left_summary">W trybie poziomym pokaż pasek nawigacji po lewej stronie ekranu</string>
   <string name="navigation_bar_arrow_keys_title">Pokaż klawisze strzałek podczas pisania</string>
   <string name="navigation_bar_arrow_keys_summary">Pokaż przyciski lewego i prawego kursora podczas pisania. Zastępuje przełącznik IME.</string>
   <string name="navigation_bar_home_long_press_title">Akcja długiego naciśnięcia Home</string>
   <string name="navigation_bar_home_double_tap_title">Akcja podwójnego puknięcia Home</string>
-  <string name="navigation_bar_recents_title">Akcja długiego naciśnięcia Ostatnio Używanych</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menu zasilania</string>
   <string name="power_menu_reboot_title">Menu ponownego uruchomienia</string>
