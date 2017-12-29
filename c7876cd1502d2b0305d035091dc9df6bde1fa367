@@ -181,6 +181,30 @@
     },
     {
       "key": {
+        "uuid": "96d7c818_13ce4c08",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T18:56:57Z",
+      "side": 1,
+      "message": "I was referring to the fact that you need spaces...\nofc the whole line should be\nsetSizePx((int)(100 * dp));",
+      "parentUuid": "35b9e4bc_16dff8ea",
+      "range": {
+        "startLine": 72,
+        "startChar": 24,
+        "endLine": 72,
+        "endChar": 34
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fbf515da_e12c50a9",
         "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
         "patchSetId": 1
