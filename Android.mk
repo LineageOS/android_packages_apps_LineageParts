@@ -7,6 +7,7 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v4 \
     android-support-v13 \
+    android-support-dynamic-animation \
     android-support-v7-recyclerview \
     android-support-v7-preference \
     android-support-v7-appcompat \
