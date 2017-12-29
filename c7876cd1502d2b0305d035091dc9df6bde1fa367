@@ -68,6 +68,275 @@
       "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e033fc58_e71dc99d",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "Line length",
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6ea572c7_b9d3cf50",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "everything requires its own space: (Math.random() * (b - a) + a)",
+      "range": {
+        "startLine": 64,
+        "startChar": 23,
+        "endLine": 64,
+        "endChar": 49
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5f864ec_299d4c97",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "v \u003c a ? a : v \u003e b ? b : v;",
+      "range": {
+        "startLine": 67,
+        "startChar": 15,
+        "endLine": 67,
+        "endChar": 29
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "95a16bf7_239f2c79",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "100 * dp",
+      "range": {
+        "startLine": 72,
+        "startChar": 24,
+        "endLine": 72,
+        "endChar": 34
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fbf515da_e12c50a9",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "int i \u003d 0; i \u003c mArms.length; i++)",
+      "range": {
+        "startLine": 74,
+        "startChar": 12,
+        "endLine": 74,
+        "endChar": 44
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d015ccca_8ad520ae",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "additional spaces",
+      "range": {
+        "startLine": 198,
+        "startChar": 0,
+        "endLine": 198,
+        "endChar": 12
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3d890d98_b9a5d280",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "dito",
+      "range": {
+        "startLine": 201,
+        "startChar": 13,
+        "endLine": 201,
+        "endChar": 16
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d11ad37c_2c328ab2",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "Line length",
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cda13b5f_44ee3437",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "Line length",
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b6af792_29bfcb42",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "spaces",
+      "range": {
+        "startLine": 217,
+        "startChar": 13,
+        "endLine": 217,
+        "endChar": 16
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5d886c1_4577e4d9",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "if (PATH_DEBUG) {\n    for (Arm arm : mArms) {\n        arm.drawDebug(canvas);\n    }\n}",
+      "range": {
+        "startLine": 231,
+        "startChar": 12,
+        "endLine": 233,
+        "endChar": 13
+      },
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ce57b1b_193d0b20",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "one line too much",
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5bd9293c_c00efa9c",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-29T17:16:07Z",
+      "side": 1,
+      "message": "line length",
+      "revId": "c7876cd1502d2b0305d035091dc9df6bde1fa367",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
