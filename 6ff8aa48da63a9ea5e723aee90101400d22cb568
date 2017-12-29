@@ -226,6 +226,30 @@
     },
     {
       "key": {
+        "uuid": "3a69cec2_a26a12f6",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 17890
+      },
+      "writtenOn": "2017-12-29T19:29:59Z",
+      "side": 1,
+      "message": "Unsure about these values myself, cant see them even with debug mode activated. Do we even need all the debug stuff in here?",
+      "parentUuid": "18620d8a_6c5a10dd",
+      "range": {
+        "startLine": 395,
+        "startChar": 25,
+        "endLine": 395,
+        "endChar": 35
+      },
+      "revId": "6ff8aa48da63a9ea5e723aee90101400d22cb568",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "afe36148_9a07fe5f",
         "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
         "patchSetId": 7
