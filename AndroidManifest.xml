@@ -248,5 +248,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".egg.octo.Ocquarium"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:label="@string/egg_title">
+            <intent-filter>
+                <action android:name="org.lineageos.lineageparts.EASTER_EGG"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.internal.category.PLATLOGO" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
