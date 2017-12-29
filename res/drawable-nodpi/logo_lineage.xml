@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2017 The LineageOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:strokeColor="#157b7f"
+        android:strokeWidth="16.2"
+        android:pathData="M 256 184 C 295.764501988 184 328 216.235498012 328 256 C 328 295.764501988 295.764501988 328 256 328 C 216.235498012 328 184 295.764501988 184 256 C 184 216.235498012 216.235498012 184 256 184 Z" />
+    <path
+        android:strokeColor="#157b7f"
+        android:strokeWidth="16.2"
+        android:pathData="M 96 264 C 113.673111995 264 128 278.326888005 128 296 C 128 313.673111995 113.673111995 328 96 328 C 78.3268880054 328 64 313.673111995 64 296 C 64 278.326888005 78.3268880054 264 96 264 Z" />
+    <path
+        android:strokeColor="#157b7f"
+        android:strokeWidth="16.2"
+        android:pathData="M 416 264 C 433.673111995 264 448 278.326888005 448 296 C 448 313.673111995 433.673111995 328 416 328 C 398.326888005 328 384 313.673111995 384 296 C 384 278.326888005 398.326888005 264 416 264 Z" />
+    <path
+        android:strokeColor="#157b7f"
+        android:strokeWidth="16.2"
+        android:pathData="M122 281c23.3-9.37 41.5-15 66-19.4m202 19.4c-23.3-9.37-41.5-15-66-19.4" />
+    <path
+        android:fillColor="#157b7f"
+        android:pathData="M 256 224 C 273.673111995 224 288 238.326888005 288 256 C 288 273.673111995 273.673111995 288 256 288 C 238.326888005 288 224 273.673111995 224 256 C 224 238.326888005 238.326888005 224 256 224 Z" />
+</vector>
