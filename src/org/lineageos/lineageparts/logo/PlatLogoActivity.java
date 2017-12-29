@@ -69,8 +69,7 @@ public class PlatLogoActivity extends Activity implements View.OnClickListener,
         mImageView.setClickable(true);
 
         mImageView.setOnClickListener(this);
-        // Disable until we have an egg we want to launch
-        //mImageView.setOnLongClickListener(this);
+        mImageView.setOnLongClickListener(this);
 
         // Enable hardware keyboard input for TV compatibility.
         mImageView.setFocusable(true);
@@ -100,7 +99,7 @@ public class PlatLogoActivity extends Activity implements View.OnClickListener,
                 @Override
                 public void run() {
                     try {
-                        startActivity(new Intent(Intent.ACTION_MAIN)
+                        startActivity(new Intent("org.lineageos.lineageparts.EASTER_EGG")
                                 .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                         | Intent.FLAG_ACTIVITY_CLEAR_TASK
                                         | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
