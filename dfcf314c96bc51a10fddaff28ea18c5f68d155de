@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0d8bf64a_0d948360",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-30T15:25:50Z",
+      "side": 1,
+      "message": "can be one line",
+      "range": {
+        "startLine": 182,
+        "startChar": 0,
+        "endLine": 183,
+        "endChar": 57
+      },
+      "revId": "dfcf314c96bc51a10fddaff28ea18c5f68d155de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5389a750_4ca033ce",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-30T15:25:50Z",
+      "side": 1,
+      "message": "empty line",
+      "revId": "dfcf314c96bc51a10fddaff28ea18c5f68d155de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fefff852_331ffa77",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/OctopusDrawable.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-30T15:25:50Z",
+      "side": 1,
+      "message": "add an empty line before each new method",
+      "revId": "dfcf314c96bc51a10fddaff28ea18c5f68d155de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f782f4e_2ff07773",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/TaperedPathStroke.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-30T15:25:50Z",
+      "side": 1,
+      "message": "could be while (!last), right?",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 22
+      },
+      "revId": "dfcf314c96bc51a10fddaff28ea18c5f68d155de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd773eb6_c45b73b9",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/TaperedPathStroke.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-12-30T15:25:50Z",
+      "side": 1,
+      "message": "could remove if changing the while condition",
+      "range": {
+        "startLine": 57,
+        "startChar": 12,
+        "endLine": 57,
+        "endChar": 28
+      },
+      "revId": "dfcf314c96bc51a10fddaff28ea18c5f68d155de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
