@@ -83,15 +83,6 @@
         <item>11</item>
     </string-array>
 
-    <string-array name="power_menu_actions_array" translatable="false">
-        <item>power</item>
-        <item>restart</item>
-        <item>screenshot</item>
-        <item>airplane</item>
-        <item>users</item>
-        <item>bugreport</item>
-    </string-array>
-
     <!-- Volume key cursor control -->
     <string-array name="volbtn_cursor_control_entries" translatable="false">
         <item>@string/volbtn_cursor_control_off</item>
