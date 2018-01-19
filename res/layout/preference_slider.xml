@@ -34,8 +34,9 @@
         <TextView android:id="@android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="56dp"
             android:singleLine="true"
-			android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textAppearance="?android:attr/textAppearanceListItem"
             android:ellipsize="marquee"
             android:fadingEdge="horizontal" />
 
@@ -64,6 +65,7 @@
 
         <TextView
             android:id="@android:id/summary"
+            android:paddingStart="56dp"
             android:paddingTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
