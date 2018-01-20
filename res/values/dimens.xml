@@ -55,5 +55,9 @@
     <dimen name="fab_press_translation_z">9dp</dimen>
 
     <dimen name="profile_instruction_padding">8dp</dimen>
+
+    <!-- Berry lite -->
+    <dimen name="style_accent_preview">32dp</dimen>
+    <dimen name="style_accent_icon">24dp</dimen>
 </resources>
 
