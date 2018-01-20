@@ -9,6 +9,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v13 \
     android-support-dynamic-animation \
     android-support-v7-recyclerview \
+    android-support-v7-palette \
     android-support-v7-preference \
     android-support-v7-appcompat \
     android-support-v14-preference \
