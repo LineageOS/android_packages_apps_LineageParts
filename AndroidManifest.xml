@@ -189,6 +189,24 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
+        <!-- Style settings (Display category) -->
+        <activity-alias
+            android:name=".style.StylePreferences"
+            android:label="@string/style_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="-3">
+                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.STYLE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/style_summary" />
+        </activity-alias>
+
         <!-- Anonymous Statistics -->
         <receiver android:name=".lineagestats.ReportingServiceManager"
             android:enabled="true"
