@@ -649,4 +649,34 @@
     <string name="touchscreen_gesture_action_next_track">Skip to the next music track</string>
     <string name="touchscreen_gesture_action_volume_down">Lower media volume</string>
     <string name="touchscreen_gesture_action_volume_up">Raise media volume</string>
+
+    <!-- Berry Lite -->
+    <!-- Preference entry title in display settings -->
+    <string name="style_title">Style</string>
+    <!-- Preference entry summary in display settings -->
+    <string name="style_summary">Tune the device appeal</string>
+    <!-- Style preference title -->
+    <string name="style_global_title">Style</string>
+    <!-- Style: automatic (based on wallpaper) -->
+    <string name="style_global_entry_automatic">Automatic (wallpaper)</string>
+    <!-- Style: force light -->
+    <string name="style_global_entry_light">Light</string>
+    <!-- Style: force dark -->
+    <string name="style_global_entry_dark">Dark</string>
+    <!-- Style: follow Livedisplay status -->
+    <string name="style_global_entry_time">Automatic (day time)</string>
+    <!-- Accent color preference title -->
+    <string name="style_accent_title">Accent color</string>
+    <!-- Automagic preference title -->
+    <string name="style_automagic_title">Automagic</string>
+    <!-- Automagic preference description -->
+    <string name="style_automagic_description">Tune the style to match your wallpaper</string>
+    <!-- Automagic confirmation dialog content. %1$s = light / dark; %2$s: accent package name (usually a color) -->
+    <string name="style_automagic_dialog_content">Suggested style: <b>%1$s</b> with <b>%2$s</b> accent.\nDo you want to apply it?</string>
+    <!-- Automagic confirmation dialog positive button -->
+    <string name="style_automagic_dialog_positive">Apply</string>
+    <!-- Default accent name -->
+    <string name="style_accent_default_name">Default</string>
+    <!-- Permission error dialog title -->
+    <string name="style_permission_error">Storage access permission is needed to analyze your wallpaper, please grant it to use this feature</string>
 </resources>
