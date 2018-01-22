@@ -26,7 +26,7 @@
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
         <item name="dialogPreferenceStyle">@style/DialogPreferenceStyle</item>
-        <item name="dropdownPreferenceStyle">@style/Preference.DropDown.Material</item>
+        <item name="dropdownPreferenceStyle">@style/DropdownPreferenceStyle</item>
         <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
         <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
         <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
