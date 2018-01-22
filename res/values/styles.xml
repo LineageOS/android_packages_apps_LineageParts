@@ -82,6 +82,10 @@
         <item name="android:iconSpaceReserved">true</item>
     </style>
 
+    <style name="DropdownPreferenceStyle" parent="@style/PreferenceStyle">
+        <item name="android:layout">@layout/preference_dropdown_material_settings</item>
+    </style>
+
     <style name="EditTextPreference" parent="@*android:style/Preference.Material.DialogPreference.EditTextPreference">
         <item name="android:dialogLayout">@layout/preference_dialog_edittext</item>
     </style>
