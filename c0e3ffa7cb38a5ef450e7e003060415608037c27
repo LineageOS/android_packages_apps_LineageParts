@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de41538d_2f4038d5",
+        "filename": "res/drawable-nodpi/logo_lineage.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-01-23T16:43:11Z",
+      "side": 1,
+      "message": "file should be under drawable not drawable-nodpi",
+      "revId": "c0e3ffa7cb38a5ef450e7e003060415608037c27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
