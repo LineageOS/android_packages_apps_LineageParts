@@ -45,7 +45,6 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
 import org.lineageos.lineageparts.utils.TelephonyUtils;
-import org.lineageos.internal.util.QSUtils;
 import org.lineageos.internal.util.ScreenType;
 
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
@@ -239,7 +238,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 powerCategory.removePreference(mPowerEndCall);
                 mPowerEndCall = null;
             }
-            if (!QSUtils.deviceSupportsFlashLight(getActivity())) {
+            if (!DeviceUtils.deviceSupportsFlashLight(getActivity())) {
                 powerCategory.removePreference(mTorchLongPressPowerGesture);
                 powerCategory.removePreference(mTorchLongPressPowerTimeout);
             }
