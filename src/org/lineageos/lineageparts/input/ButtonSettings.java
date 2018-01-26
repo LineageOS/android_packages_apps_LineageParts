@@ -72,6 +72,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
+    private static final String KEY_NAVIGATION_APP_SWITCH_LONG_PRESS =
+            "navigation_app_switch_long_press";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
@@ -110,6 +112,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mDisableNavigationKeys;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
+    private ListPreference mNavigationAppSwitchLongPressAction;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mTorchLongPressPowerGesture;
@@ -194,12 +197,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 org.lineageos.platform.internal.R.integer.config_longPressOnHomeBehavior));
         Action defaultHomeDoubleTapAction = Action.fromIntSafe(res.getInteger(
                 org.lineageos.platform.internal.R.integer.config_doubleTapOnHomeBehavior));
+        Action defaultAppSwitchLongPressAction = Action.fromIntSafe(res.getInteger(
+                org.lineageos.platform.internal.R.integer.config_longPressOnAppSwitchBehavior));
         Action homeLongPressAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_HOME_LONG_PRESS_ACTION,
                 defaultHomeLongPressAction);
         Action homeDoubleTapAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_HOME_DOUBLE_TAP_ACTION,
                 defaultHomeDoubleTapAction);
+        Action appSwitchLongPressAction = Action.fromSettings(resolver,
+                LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION,
+                defaultAppSwitchLongPressAction);
 
         // Navigation bar home long press
         mNavigationHomeLongPressAction = initList(KEY_NAVIGATION_HOME_LONG_PRESS,
@@ -208,6 +216,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Navigation bar home double tap
         mNavigationHomeDoubleTapAction = initList(KEY_NAVIGATION_HOME_DOUBLE_TAP,
                 homeDoubleTapAction);
+
+        // Navigation bar app switch long press
+        mNavigationAppSwitchLongPressAction = initList(KEY_NAVIGATION_APP_SWITCH_LONG_PRESS,
+                appSwitchLongPressAction);
 
         final LineageHardwareManager hardware = LineageHardwareManager.getInstance(getActivity());
 
@@ -324,9 +336,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     LineageSettings.System.KEY_APP_SWITCH_ACTION, Action.APP_SWITCH);
             mAppSwitchPressAction = initList(KEY_APP_SWITCH_PRESS, pressAction);
 
-            Action longPressAction = Action.fromSettings(resolver,
-                    LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, Action.SPLIT_SCREEN);
-            mAppSwitchLongPressAction = initList(KEY_APP_SWITCH_LONG_PRESS, longPressAction);
+            mAppSwitchLongPressAction = initList(KEY_APP_SWITCH_LONG_PRESS, appSwitchLongPressAction);
 
             hasAnyBindableKey = true;
         } else {
@@ -501,8 +511,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleListChange(mAppSwitchPressAction, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_ACTION);
             return true;
-        } else if (preference == mAppSwitchLongPressAction) {
-            handleListChange(mAppSwitchLongPressAction, newValue,
+        } else if (preference == mAppSwitchLongPressAction ||
+                preference == mNavigationAppSwitchLongPressAction) {
+            handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
             return true;
         } else if (preference == mVolumeKeyCursorControl) {
@@ -558,9 +569,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             if (navbarEnabled) {
                 mNavigationPreferencesCat.addPreference(mNavigationHomeLongPressAction);
                 mNavigationPreferencesCat.addPreference(mNavigationHomeDoubleTapAction);
+                mNavigationPreferencesCat.addPreference(mNavigationAppSwitchLongPressAction);
             } else {
                 mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                 mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
+                mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
             }
         }
         if (homeCategory != null) {
