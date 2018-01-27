@@ -29,12 +29,4 @@
             android:targetClass="com.android.settings.applications.ProtectedAppsActivity" />
     </Preference>
 
-    <!-- Anonymous statistics - (LineageStats) -->
-    <PreferenceScreen
-        android:key="lineagestats"
-        android:title="@string/anonymous_statistics_title"
-        android:summary="@string/anonymous_statistics_summary"
-        android:fragment="org.lineageos.lineageparts.lineagestats.AnonymousStats" >
-    </PreferenceScreen>
-
 </PreferenceScreen>

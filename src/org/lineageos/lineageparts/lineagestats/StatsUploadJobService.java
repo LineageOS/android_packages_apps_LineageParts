@@ -45,7 +45,7 @@ public class StatsUploadJobService extends JobService {
     private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
     public static final String KEY_JOB_TYPE = "job_type";
-    public static final int JOB_TYPE_LineageORG = 1;
+    public static final int JOB_TYPE_LINEAGEORG = 1;
 
     public static final String KEY_UNIQUE_ID = "uniqueId";
     public static final String KEY_DEVICE_NAME = "deviceName";
@@ -115,7 +115,7 @@ public class StatsUploadJobService extends JobService {
             int jobType = extras.getInt(KEY_JOB_TYPE, -1);
             if (!isCancelled()) {
                 switch (jobType) {
-                    case JOB_TYPE_LineageORG:
+                    case JOB_TYPE_LINEAGEORG:
                         try {
                             JSONObject json = buildStatsRequest(deviceId, deviceName,
                                     deviceVersion, deviceCountry, deviceCarrier, deviceCarrierId);

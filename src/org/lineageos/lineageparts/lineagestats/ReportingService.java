@@ -60,7 +60,7 @@ public class ReportingService extends IntentService {
 
         // set job types
         lineageBundle.putInt(StatsUploadJobService.KEY_JOB_TYPE,
-                StatsUploadJobService.JOB_TYPE_LineageORG);
+                StatsUploadJobService.JOB_TYPE_LINEAGEORG);
 
         // schedule lineage stats upload
         js.schedule(new JobInfo.Builder(lineageOrgJobId, new ComponentName(getPackageName(),
