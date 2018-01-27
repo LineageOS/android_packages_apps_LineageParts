@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "628f7c72_a8505fd9",
+        "filename": "src/org/lineageos/lineageparts/egg/octo/Ocquarium.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 17890
+      },
+      "writtenOn": "2018-01-27T05:42:15Z",
+      "side": 1,
+      "message": "Should upscale the same on all devices and resolutions.",
+      "revId": "0819ebb5d8fe3bd571fa6f0486a7e199cabe272b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
