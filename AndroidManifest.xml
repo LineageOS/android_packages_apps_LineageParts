@@ -148,9 +148,7 @@
                 android:value="@string/summary_empty" />
         </activity-alias>
 
-        <!--
         <activity android:name=".gestures.KeyHandler" />
-        -->
 
         <!-- Profiles settings (System category) -->
         <activity-alias
