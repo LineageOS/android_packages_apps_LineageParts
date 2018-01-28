@@ -25,26 +25,23 @@ import android.support.v7.preference.PreferenceManager;
 import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
 /*
 import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
-import org.lineageos.lineageparts.input.ButtonSettings;
 */
+import org.lineageos.lineageparts.input.ButtonSettings;
 
 public class BootReceiver extends BroadcastReceiver {
 
     private static final String TAG = "BootReceiver";
-    /*
     private static final String ONE_TIME_TUNABLE_RESTORE = "hardware_tunable_restored";
-    */
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        /*
         if (!hasRestoredTunable(ctx)) {
             /* Restore the hardware tunable values */
-            /*
             ButtonSettings.restoreKeyDisabler(ctx);
             setRestoredTunable(ctx);
         }
 
+        /*
         TouchscreenGestureSettings.restoreTouchscreenGestureStates(ctx);
         */
 
@@ -52,7 +49,6 @@ public class BootReceiver extends BroadcastReceiver {
         ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
     }
 
-    /*
     private boolean hasRestoredTunable(Context context) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         return preferences.getBoolean(ONE_TIME_TUNABLE_RESTORE, false);
@@ -62,5 +58,4 @@ public class BootReceiver extends BroadcastReceiver {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         preferences.edit().putBoolean(ONE_TIME_TUNABLE_RESTORE, true).apply();
     }
-    */
 }
