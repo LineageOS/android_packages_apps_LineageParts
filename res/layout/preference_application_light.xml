@@ -73,14 +73,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:textAppearance="@android:style/TextAppearance.Material.Notification.Line2" />
+            android:textAppearance="@android:style/TextAppearance.Material.Notification.Line2"
+            android:textColor="?android:attr/textColorSecondary" />
 
         <TextView
             android:id="@+id/textViewTimeOffValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:textAppearance="@android:style/TextAppearance.Material.Notification.Line2" />
+            android:textAppearance="@android:style/TextAppearance.Material.Notification.Line2"
+            android:textColor="?android:attr/textColorSecondary" />
     </LinearLayout>
 
     <ImageView
