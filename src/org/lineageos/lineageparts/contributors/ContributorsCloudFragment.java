@@ -41,6 +41,7 @@ import android.text.Html;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -502,7 +503,10 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             return null;
         }
         try {
-            int colorForeground = res.getColor(R.color.contributors_cloud_fg_color);
+            TypedValue colorAccent = new TypedValue();
+            context.getTheme().resolveAttribute(com.android.internal.R.attr.colorAccent,
+                    colorAccent, true);
+            int colorForeground = res.getColor(colorAccent.resourceId);
             int colorSelected = res.getColor(R.color.contributors_cloud_selected_color);
             Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
 
