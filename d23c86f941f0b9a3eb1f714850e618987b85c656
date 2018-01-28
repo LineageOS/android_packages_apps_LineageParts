@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "be62b90f_f169304d",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-01-28T15:54:53Z",
+      "side": 1,
+      "message": "ohai",
+      "range": {
+        "startLine": 174,
+        "startChar": 89,
+        "endLine": 174,
+        "endChar": 90
+      },
+      "revId": "d23c86f941f0b9a3eb1f714850e618987b85c656",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "94cd71ed_67fb20b7",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-01-28T15:54:53Z",
+      "side": 1,
+      "message": "ohai",
+      "range": {
+        "startLine": 288,
+        "startChar": 0,
+        "endLine": 288,
+        "endChar": 8
+      },
+      "revId": "d23c86f941f0b9a3eb1f714850e618987b85c656",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
