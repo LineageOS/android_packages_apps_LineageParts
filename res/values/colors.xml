@@ -15,7 +15,7 @@
 	limitations under the License.
 -->
 <resources>
-    <color name="theme_accent">#ff009688</color>
+    <color name="theme_accent">@*android:color/secondary_device_default_settings_light</color>
     <color name="navbar_edit_icon_color">#607d8b</color>
     <color name="divider">#ffe0e0e0</color>
     <color name="setup_wizard_wifi_color_dark">#89ffffff</color>
