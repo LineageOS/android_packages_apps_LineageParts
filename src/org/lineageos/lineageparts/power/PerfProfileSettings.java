@@ -32,6 +32,7 @@ import android.provider.Settings.Global;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.util.TypedValue;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Toast;
 
@@ -141,9 +142,12 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         public PerfIconAnimator(Context context, StopMotionVectorDrawable drawable) {
             mContext = context;
             mDrawable = drawable;
+            TypedValue colorAccent = new TypedValue();
+            mContext.getTheme().resolveAttribute(com.android.internal.R.attr.colorAccent,
+                    colorAccent, true);
             mGradient = ValueAnimator.ofArgb(
                     mContext.getResources().getColor(R.color.perf_cold),
-                    mContext.getResources().getColor(R.color.theme_accent),
+                    mContext.getResources().getColor(colorAccent.resourceId),
                     mContext.getResources().getColor(R.color.perf_hot));
             mAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
         }

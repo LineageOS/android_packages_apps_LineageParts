@@ -24,6 +24,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -128,7 +129,10 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
         mPager.setAdapter(mAdapter);
 
         PagerTabStrip tabs = (PagerTabStrip) root.findViewById(R.id.tabs);
-        tabs.setTabIndicatorColorResource(R.color.theme_accent);
+        TypedValue colorAccent = new TypedValue();
+        getContext().getTheme().resolveAttribute(com.android.internal.R.attr.colorAccent,
+                colorAccent, true);
+        tabs.setTabIndicatorColorResource(colorAccent.resourceId);
 
         if (mNewProfileMode) {
             showButtonBar(true);
