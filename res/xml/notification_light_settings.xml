@@ -66,14 +66,6 @@
             android:title="@string/notification_light_screen_on"
             android:dependency="notification_light_pulse" />
 
-        <!-- Superceded by Oreo dnd visual disturbance settings
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="allow_lights"
-            android:title="@string/notification_light_zen_mode"
-            android:dependency="notification_light_pulse"
-            android:defaultValue="true" />
-        -->
-
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
