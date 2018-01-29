@@ -36,8 +36,6 @@
 
     <dimen name="oval_notification_size">26dp</dimen>
 
-    <dimen name="vert_divider_width">1dip</dimen>
-
     <dimen name="pager_tabs_padding">0dp</dimen>
 
     <!-- SwitchBar margin start / end -->
