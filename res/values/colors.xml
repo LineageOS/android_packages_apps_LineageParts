@@ -16,12 +16,6 @@
 -->
 <resources>
 
-    <color name="navbar_edit_icon_color">#607d8b</color>
-    <color name="divider">#ffe0e0e0</color>
-    <color name="setup_wizard_wifi_color_dark">#89ffffff</color>
-
-    <color name="divider_color">#20ffffff</color>
-
     <color name="fab_ripple">#1fffffff</color><!-- 12% white -->
     <color name="fab_shape">?android:attr/colorAccent</color>
 
