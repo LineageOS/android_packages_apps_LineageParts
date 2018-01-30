@@ -25,16 +25,13 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.view.WindowManagerGlobal;
-/*
 import android.view.WindowManagerPolicyControl;
-*/
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import lineageos.preference.SettingsHelper;
 
-/*
 public class ExpandedDesktopPrefs extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
 
@@ -135,4 +132,3 @@ public class ExpandedDesktopPrefs extends SettingsPreferenceFragment
         updateExpandedDesktopStyle();
     }
 }
-*/
