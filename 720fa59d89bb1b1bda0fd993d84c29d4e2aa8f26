@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e44c3b32_be70f656",
+        "filename": "src/org/lineageos/lineageparts/style/util/OverlayManager.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2018-02-01T20:13:33Z",
+      "side": 1,
+      "message": "Intended to be isChangeableOverlay ?",
+      "revId": "720fa59d89bb1b1bda0fd993d84c29d4e2aa8f26",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
