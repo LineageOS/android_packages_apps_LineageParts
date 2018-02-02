@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "24df8f3a_d6737d18",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 680,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2018-02-02T19:32:35Z",
+      "side": 1,
+      "message": "Perhaps one of:\n\"Choose system colors\" or \n\"Choose system display style\"",
+      "revId": "775ae25948634923086b6979346ececac4522408",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "efe3e47f_b0e8ea5b",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 685,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2018-02-02T19:32:35Z",
+      "side": 1,
+      "message": "Perhaps:\n\"Automatic (time of day)\".\n\nSince the phrase \"day time\" is typically used to mean \"not night time\".",
+      "revId": "775ae25948634923086b6979346ececac4522408",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "abb77d88_24e6b951",
         "filename": "res/xml/parts_catalog.xml",
         "patchSetId": 13
