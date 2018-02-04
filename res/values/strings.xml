@@ -673,5 +673,5 @@
     <string name="touchscreen_gesture_action_volume_up">Raise media volume</string>
 
     <!-- Egg: Title for the easter egg activity -->
-    <string name="egg_title">Easter Egg</string>
+    <string name="egg_title" translatable="false">LineageOS Easter Egg</string>
 </resources>
