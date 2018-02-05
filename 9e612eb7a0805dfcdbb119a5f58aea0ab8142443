@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fdc34c2b_1c654f42",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2018-02-05T01:16:32Z",
+      "side": 1,
+      "message": "What\u0027s this method for ?  Clicking cancel twice on the automagic suggestion dialog gets you: https://photos.app.goo.gl/6L4IAwXFJOKqhHid2\n\nAlthough this seems to be exactly what the code just below intends.",
+      "revId": "9e612eb7a0805dfcdbb119a5f58aea0ab8142443",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
