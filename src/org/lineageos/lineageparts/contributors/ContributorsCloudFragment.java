@@ -792,13 +792,8 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         } catch (IOException ex) {
             Log.e(TAG, "Failed to extract contributors database");
         } finally {
-            if (is != null) {
-                try {
-                    is.close();
-                } catch (IOException ex) {
-                    // Ignore
-                }
-            }
+            if (is != null) try { is.close(); } catch (IOException ex) {} //Ignore
+            if (os != null) try { os.close(); } catch (IOException ex) {} //Ignore
         }
     }
 
