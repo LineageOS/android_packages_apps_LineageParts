@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Penghemat daya otomatis</string>
   <string name="auto_power_save_summary_on">Otomatis mengaktifkan mode hemat daya saat baterai %s</string>
   <string name="auto_power_save_summary_off">Jangan hidupkan mode hemat daya otomatis</string>
-  <string name="app_perf_profiles_title">Otomatis optimasi</string>
-  <string name="app_perf_profiles_summary">Otomatis memilih profil performa sesuai untuk berbagai aplikasi</string>
   <string name="auto_power_save_never">Jangan pernah</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Desktop diperluas</string>

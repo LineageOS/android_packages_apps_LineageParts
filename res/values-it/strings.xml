@@ -501,8 +501,6 @@
   <string name="auto_power_save_title">Risparmio energetico automatico</string>
   <string name="auto_power_save_summary_on">Attiva automaticamente la modalità di risparmio energetico al %s di batteria</string>
   <string name="auto_power_save_summary_off">Non attivare la modalità di risparmio energia automaticamente</string>
-  <string name="app_perf_profiles_title">Ottimizzazione automatica</string>
-  <string name="app_perf_profiles_summary">Scegli automaticamente un adeguato profilo di prestazioni per le applicazioni ed i modi d\'uso</string>
   <string name="auto_power_save_never">Mai</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Schermo esteso</string>

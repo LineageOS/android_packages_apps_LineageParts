@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Автоматичне енергозбереження</string>
   <string name="auto_power_save_summary_on">Автоматично активувати режим енергозбереження при %s батареї</string>
   <string name="auto_power_save_summary_off">Не вмикати режим енергозбереження автоматично</string>
-  <string name="app_perf_profiles_title">Автоматична оптимізація</string>
-  <string name="app_perf_profiles_summary">Автоматично перемикати режим продуктивності в залежності від додатку</string>
   <string name="auto_power_save_never">Ніколи</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Розширений робочий стіл</string>

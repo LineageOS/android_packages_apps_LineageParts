@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">חסכון חשמל אוטומטי</string>
   <string name="auto_power_save_summary_on">מפעיל אוטמטית את מצב חיסכון בחשמל ב־%s אחוזי סוללה</string>
   <string name="auto_power_save_summary_off">לא מפעיל את מצב חיסכון בחשמל אוטומטית</string>
-  <string name="app_perf_profiles_title">אופטימיזציה אוטומטית</string>
-  <string name="app_perf_profiles_summary">בוחר אוטומטית פרופיל הביצועים ליישומים השונים</string>
   <string name="auto_power_save_never">אף פעם</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">שולחן עבודה מורחב</string>

@@ -508,8 +508,6 @@
   <string name="auto_power_save_title">Αυτόματη εξοικονόμηση ενέργειας</string>
   <string name="auto_power_save_summary_on">Αυτόματη ενεργοποίηση λειτουργίας εξοικονόμησης ενέργειας στο %s της μπαταρίας</string>
   <string name="auto_power_save_summary_off">Να μην ενεργοποιείται αυτόματα η λειτουργία εξοικονόμησης ενέργειας</string>
-  <string name="app_perf_profiles_title">Αυτόματη βελτιστοποίηση</string>
-  <string name="app_perf_profiles_summary">Αυτόματη επιλογή ενός κατάλληλου προφίλ επιδόσεων για εφαρμογές και πρότυπα χρήσης</string>
   <string name="auto_power_save_never">Ποτέ</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Επέκταση επιφάνειας</string>

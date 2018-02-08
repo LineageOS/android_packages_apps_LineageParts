@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Economia de energia automática</string>
   <string name="auto_power_save_summary_on">Ativar automaticamente o modo de economia de energia aos %s por cento de bateria</string>
   <string name="auto_power_save_summary_off">Não ativar o modo de economia de energia automaticamente</string>
-  <string name="app_perf_profiles_title">Otimização automática</string>
-  <string name="app_perf_profiles_summary">Escolher automaticamente um perfil de desempenho adequado para aplicativos e padrões de uso</string>
   <string name="auto_power_save_never">Nunca</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Área de trabalho expandida</string>

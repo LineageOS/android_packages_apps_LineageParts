@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Аутоматска уштеда енергије</string>
   <string name="auto_power_save_summary_on">Аутоматски омогућава уштеду енергије када је ниво напуњености %s.</string>
   <string name="auto_power_save_summary_off">Не омогућава режим уштеде енергије.</string>
-  <string name="app_perf_profiles_title">Аутоматска оптимизација</string>
-  <string name="app_perf_profiles_summary">Аутоматски омогућава профил за перформансе у зависности од апликација.</string>
   <string name="auto_power_save_never">Никад</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Проширени екран</string>

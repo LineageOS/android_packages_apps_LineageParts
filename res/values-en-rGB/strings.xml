@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Automatic power saver</string>
   <string name="auto_power_save_summary_on">Automatically enable power save mode at %s battery</string>
   <string name="auto_power_save_summary_off">Do not enable power save mode automatically</string>
-  <string name="app_perf_profiles_title">Automatic optimisation</string>
-  <string name="app_perf_profiles_summary">Automatically choose an appropriate performance profile for applications and usage patterns</string>
   <string name="auto_power_save_never">Never</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Expanded desktop</string>

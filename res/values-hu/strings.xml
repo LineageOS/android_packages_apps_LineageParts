@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Automatikus energiatakarékos</string>
   <string name="auto_power_save_summary_on">Energiatakarékos üzemmód automatikus engedélyezése, ha az akkumulátor: %s</string>
   <string name="auto_power_save_summary_off">Energiatakarékos üzemmód ne induljon automatikusan</string>
-  <string name="app_perf_profiles_title">Automatikus optimalizálás</string>
-  <string name="app_perf_profiles_summary">Automatikus teljesítményprofil választás a különböző alkalmazások számára</string>
   <string name="auto_power_save_never">Soha</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Képernyő kiterjesztés</string>

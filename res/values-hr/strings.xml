@@ -468,8 +468,6 @@
   <string name="power_save_summary">Ograničite performanse uređaja i pozadinske aktivnosti radi uštede energije.</string>
   <string name="auto_power_save_title">Automatska ušteda energije</string>
   <string name="auto_power_save_summary_off">Ne omogućuj automatski način uštede energije</string>
-  <string name="app_perf_profiles_title">Automatska optimizacija</string>
-  <string name="app_perf_profiles_summary">Automatsko biranje prigodnog profila izvedbe za razne aplikacije i uzorke korištenja.</string>
   <string name="auto_power_save_never">Nikad</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Proširena radna površina</string>

@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Otomatik pil tasarrufu</string>
   <string name="auto_power_save_summary_on">Pil %s olduğunda pil tasarruf modunu otomatik olarak etkinleştir</string>
   <string name="auto_power_save_summary_off">Pil tasarrufu modunu otomatik olarak etkinleştirme</string>
-  <string name="app_perf_profiles_title">Otomatik optimizasyon</string>
-  <string name="app_perf_profiles_summary">Uygulamalar ve kullanım şekilleri için otomatik olarak uygun bir performans profilini seçin</string>
   <string name="auto_power_save_never">Asla</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Genişletilmiş masaüstü</string>
