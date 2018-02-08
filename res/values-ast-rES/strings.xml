@@ -381,8 +381,6 @@
   <string name="auto_power_save_title">Aforrador automáticu d\'enerxía</string>
   <string name="auto_power_save_summary_on">Habilítase automáticamente\'l mou d\'aforru d\'enerxía al %s de batería</string>
   <string name="auto_power_save_summary_off">Nun s\'habilita automáticamente\'l mou d\'aforru d\'enerxía</string>
-  <string name="app_perf_profiles_title">Optimización automática</string>
-  <string name="app_perf_profiles_summary">Escueye automáticamente\'l perfil afayadizu de rindimientu p\'aplicaciones y patrones d\'usu</string>
   <string name="auto_power_save_never">Enxamás</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Escritoriu estendíu</string>

@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Автоматичнен режим на енергоспестяване</string>
   <string name="auto_power_save_summary_on">Режима на енергоспестяване автоматично ще се активира при %s на батерията</string>
   <string name="auto_power_save_summary_off">Автоматичния режим на енергоспестяване е деактивиран</string>
-  <string name="app_perf_profiles_title">Автоматична оптимизация</string>
-  <string name="app_perf_profiles_summary">Автоматичен избор на подходящ профил на производителност за различните приложения</string>
   <string name="auto_power_save_never">Никога</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Разширен екран</string>

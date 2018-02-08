@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Automatischer Energiesparmodus</string>
   <string name="auto_power_save_summary_on">Den Energiesparmodus bei %s Akkuladung automatisch aktivieren</string>
   <string name="auto_power_save_summary_off">Den Energiesparmodus nicht automatisch aktivieren</string>
-  <string name="app_perf_profiles_title">Automatische Optimierung</string>
-  <string name="app_perf_profiles_summary">Wählt für einige Apps und Nutzungsverhalten automatisch ein passendes Leistungsprofil aus</string>
   <string name="auto_power_save_never">Nie</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Erweiterter Desktop</string>

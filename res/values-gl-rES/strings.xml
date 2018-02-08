@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Aforro de enerxía automático</string>
   <string name="auto_power_save_summary_on">Activar automáticamente o modo de aforro de enerxía ao %s da batería</string>
   <string name="auto_power_save_summary_off">Non activar o modo de aforro de enerxía automáticamente</string>
-  <string name="app_perf_profiles_title">Optimización automática</string>
-  <string name="app_perf_profiles_summary">Automaticamente escoller un perfil de actuación adecuados para aplicacións e patróns de uso</string>
   <string name="auto_power_save_never">Nunca</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Escritorio estendido</string>

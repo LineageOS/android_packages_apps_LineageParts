@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">自动省电</string>
   <string name="auto_power_save_summary_on">电量 %s 时自动启用省电</string>
   <string name="auto_power_save_summary_off">不要自动启用省电</string>
-  <string name="app_perf_profiles_title">自动优化</string>
-  <string name="app_perf_profiles_summary">自动为各种应用和使用模式选择适当的性能配置</string>
   <string name="auto_power_save_never">永不</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">扩展桌面</string>

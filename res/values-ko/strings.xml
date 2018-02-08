@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">자동 전원 절약 모드</string>
   <string name="auto_power_save_summary_on">배터리가 %s 이하로 내려가면 자동으로 전원 절약 모드 사용</string>
   <string name="auto_power_save_summary_off">자동으로 전원 절약 모드를 사용하지 않음</string>
-  <string name="app_perf_profiles_title">자동 최적화</string>
-  <string name="app_perf_profiles_summary">앱 및 사용 패턴에 따라 적절한 성능 프로필 자동 적용</string>
   <string name="auto_power_save_never">사용 안 함</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">확장 데스크탑</string>

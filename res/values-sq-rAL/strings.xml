@@ -484,8 +484,6 @@
   <string name="auto_power_save_title">Kursimi automatik i energjisë</string>
   <string name="auto_power_save_summary_on">Aktivizo në mënyrë automatike profilin e kursimit të energjisë kur bateria arrin %s</string>
   <string name="auto_power_save_summary_off">Mos e aktivizo në mënyrë automatike profilin e kursimit të energjisë</string>
-  <string name="app_perf_profiles_title">Optimizimi automatik</string>
-  <string name="app_perf_profiles_summary">Zgjidh automatikisht një profil që i përshtatet aplikacioneve dhe mënyrës së përdorimit</string>
   <string name="auto_power_save_never">Kurrë</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Zgjerimi i ekranit</string>

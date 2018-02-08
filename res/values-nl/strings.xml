@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Automatische energiebesparing</string>
   <string name="auto_power_save_summary_on">Energiebesparende modus automatisch inschakelen op %s accu</string>
   <string name="auto_power_save_summary_off">Energiebesparende modus niet automatisch inschakelen</string>
-  <string name="app_perf_profiles_title">Automatische optimalisatie</string>
-  <string name="app_perf_profiles_summary">Automatisch een passend prestatieprofiel kiezen voor verschillende apps en gebruikspatronen</string>
   <string name="auto_power_save_never">Nooit</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Uitgebreid bureaublad</string>

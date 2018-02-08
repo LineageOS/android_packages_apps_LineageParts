@@ -506,8 +506,6 @@
   <string name="auto_power_save_title">Economisire energie automată</string>
   <string name="auto_power_save_summary_on">Activează automat modul de economisire a energiei la baterie %s</string>
   <string name="auto_power_save_summary_off">Nu activa automat modul de economisire a energiei</string>
-  <string name="app_perf_profiles_title">Optimizare automată</string>
-  <string name="app_perf_profiles_summary">Alege automat un profil de performanță corespunzător pentru aplicații și modelele de utilizare</string>
   <string name="auto_power_save_never">Niciodată</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Desktop extins</string>

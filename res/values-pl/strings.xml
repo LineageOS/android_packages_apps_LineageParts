@@ -505,8 +505,6 @@
   <string name="auto_power_save_title">Automatyczne oszczędzanie energii</string>
   <string name="auto_power_save_summary_on">Automatycznie włącz tryb oszczędzania energii przy %s baterii</string>
   <string name="auto_power_save_summary_off">Nie włączaj automatycznie trybu oszczędzania energii</string>
-  <string name="app_perf_profiles_title">Automatyczna optymalizacja</string>
-  <string name="app_perf_profiles_summary">Automatycznie wybierz odpowiedni profil wydajności dla różnych aplikacji</string>
   <string name="auto_power_save_never">Nigdy</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Rozszerzony pulpit</string>

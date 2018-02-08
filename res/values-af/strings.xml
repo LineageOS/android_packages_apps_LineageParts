@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Outomatiese kragbesparing</string>
   <string name="auto_power_save_summary_on">Aktiveer outomaties krag spaar modus by %s battery</string>
   <string name="auto_power_save_summary_off">Moenie outomatoes kragspaarmodus aktiveer nie</string>
-  <string name="app_perf_profiles_title">Outomatiese optimalisering</string>
-  <string name="app_perf_profiles_summary">Kies outomaties \'n toepaslike prestasie-profiel vir programme en gebruikspatrone</string>
   <string name="auto_power_save_never">Nooit</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Uitgebreide werkskerm</string>

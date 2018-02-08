@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Automatický úsporný režim</string>
   <string name="auto_power_save_summary_on">Automaticky zapnout úsporný režim při %s baterie</string>
   <string name="auto_power_save_summary_off">Nezapínat automaticky režim snížené spotřeby</string>
-  <string name="app_perf_profiles_title">Automatická optimalizace</string>
-  <string name="app_perf_profiles_summary">Automaticky vybrat odpovídající výkonnostní profil pro různé aplikace</string>
   <string name="auto_power_save_never">Nikdy</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Rozšířená plocha</string>

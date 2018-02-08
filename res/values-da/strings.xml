@@ -497,8 +497,6 @@
   <string name="auto_power_save_title">Automatisk strømbesparelse</string>
   <string name="auto_power_save_summary_on">Aktivér automatisk strømsparetilstand på %s procent batteri</string>
   <string name="auto_power_save_summary_off">Aktivér ikke strømsparetilstand automatisk</string>
-  <string name="app_perf_profiles_title">Automatisk optimering</string>
-  <string name="app_perf_profiles_summary">Vælg automatisk en passende ydeevneprofil for apps og brugsmønstre</string>
   <string name="auto_power_save_never">Aldrig</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Udvidet skrivebord</string>

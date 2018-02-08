@@ -504,8 +504,6 @@
   <string name="auto_power_save_title">Estalviador d\'energia automàtic</string>
   <string name="auto_power_save_summary_on">Habilita el mode d\'estalvi d\'energia automàticament quan s\'arribi al %s per cent de bateria</string>
   <string name="auto_power_save_summary_off">No habilitis el mode d\'estalvi d\'energia automàticament</string>
-  <string name="app_perf_profiles_title">Optimització automàtica</string>
-  <string name="app_perf_profiles_summary">Escull automàticament un perfil de rendiment adequat per aplicacions i patrons d\'utilització</string>
   <string name="auto_power_save_never">Mai</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Escriptori extès</string>

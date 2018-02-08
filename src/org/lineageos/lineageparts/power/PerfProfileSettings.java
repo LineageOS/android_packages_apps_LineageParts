@@ -59,7 +59,6 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     private static final String KEY_PERF_PROFILE_CATEGORY = "perf_profile_category";
     private static final String KEY_AUTO_POWER_SAVE  = "auto_power_save";
     private static final String KEY_POWER_SAVE       = "power_save";
-    private static final String KEY_PER_APP_PROFILES = "app_perf_profiles_enabled";
     private static final String KEY_PERF_SEEKBAR     = "perf_seekbar";
 
     private ListPreference mAutoPowerSavePref;
@@ -68,7 +67,6 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     private SeekBarPreference        mPerfSeekBar;
     private StopMotionVectorDrawable mPerfDrawable;
     private PerfIconAnimator         mAnimator;
-    private SwitchPreference         mPerAppProfilesPref;
 
     private PowerManager       mPowerManager;
     private PerformanceManager mPerf;
@@ -93,7 +91,6 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         mPerfSeekBar = (SeekBarPreference) findPreference(KEY_PERF_SEEKBAR);
         mAutoPowerSavePref = (ListPreference) findPreference(KEY_AUTO_POWER_SAVE);
         mPowerSavePref = (SwitchPreference) findPreference(KEY_POWER_SAVE);
-        mPerAppProfilesPref = (SwitchPreference) findPreference(KEY_PER_APP_PROFILES);
 
         mPowerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
         mPerf = PerformanceManager.getInstance(getActivity());
@@ -105,10 +102,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         if (count == 0) {
             removePreference(KEY_PERF_PROFILE_CATEGORY);
             mPerfSeekBar = null;
-            mPerAppProfilesPref = null;
-
         } else {
-
             mPerfDrawable = new StopMotionVectorDrawable(
                     (AnimatedVectorDrawable) getActivity().getDrawable(
                             R.drawable.ic_perf_profile_avd));
@@ -198,10 +192,6 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
             final float start = mProfiles.get(mLastSliderValue).getWeight();
             final float end = profile.getWeight();
             mAnimator.animateRange(start, end);
-        }
-
-        if (mPerAppProfilesPref != null) {
-            mPerAppProfilesPref.setEnabled(profile.isBoostEnabled());
         }
     }
 
