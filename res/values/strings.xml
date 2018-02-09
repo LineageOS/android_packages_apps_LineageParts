@@ -641,6 +641,7 @@
 
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Swipe down with two fingers</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">Swipe up with one finger</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Swipe up from the home button</string>
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Swipe down with one finger</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Swipe left with one finger</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Swipe right with one finger</string>
