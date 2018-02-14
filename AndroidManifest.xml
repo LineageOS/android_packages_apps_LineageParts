@@ -45,6 +45,7 @@
     <protected-broadcast android:name="org.lineageos.lineageparts.gestures.UPDATE_SETTINGS" />
 
     <application android:label="@string/lineageparts_title"
+            android:icon="@mipmap/ic_launcher"
             android:theme="@style/Theme.Settings"
             android:hardwareAccelerated="true"
             android:supportsRtl="true"
