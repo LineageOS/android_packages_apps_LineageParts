@@ -103,6 +103,8 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/live_display_summary" />
+            <meta-data android:name="com.android.settings.require_feature"
+                android:value="org.lineageos.livedisplay" />
         </activity-alias>
 
         <!-- Privacy settings (dashboard) -->
