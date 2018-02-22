@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import lineageos.providers.LineageSettings;
 import org.lineageos.lineageparts.R;
 
 /**
- * This activity handles NDEF_DISCOVERED intents with the cm/profile mime type.
+ * This activity handles NDEF_DISCOVERED intents with the "lineage/profile" mime type.
  * Tags should be encoded with the 16-byte UUID of the profile to be activated.
  * Tapping a tag while that profile is already active will select the previously
  * active profile.
@@ -47,7 +47,7 @@ public class NFCProfile extends Activity {
 
     private static final String PREFS_PREVIOUS_PROFILE = "previous-profile";
 
-    static final String PROFILE_MIME_TYPE = "cm/profile";
+    static final String PROFILE_MIME_TYPE = "lineage/profile";
 
     private ProfileManager mProfileManager;
 

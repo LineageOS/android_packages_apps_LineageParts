@@ -2,6 +2,7 @@
 <!--
 /**
  * Copyright 2016, The CyanogenMod Project
+ * Copyright 2017-2018, The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -266,7 +267,7 @@
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="cm/profile" />
+                <data android:mimeType="lineage/profile" />
             </intent-filter>
         </activity>
 

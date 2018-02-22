@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import java.util.UUID;
 
 /**
  * Activity to support writing a profile to an NFC tag.
- * The mime type is "cm/profile" and the payload is the raw bytes of the profile's
+ * The mime type is "lineage/profile" and the payload is the raw bytes of the profile's
  * UUID. The payload was intentionally kept small to support writing on 46-byte tags.
  */
 public class NFCProfileWriter extends Activity {
