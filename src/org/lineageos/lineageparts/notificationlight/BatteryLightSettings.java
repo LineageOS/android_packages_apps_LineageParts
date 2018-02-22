@@ -80,6 +80,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                 LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED);
         final boolean segmentedBatteryLed =
                 LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_SEGMENTED_BATTERY_LED);
+        final boolean adjustableNotificationLedBrightness = LightsCapabilities.supports(context,
+                LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS);
 
         addPreferencesFromResource(R.xml.battery_light_settings);
         getActivity().getActionBar().setTitle(R.string.battery_light_title);
@@ -145,7 +147,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
 
         // Remove battery LED brightness controls if we can't support them.
-        if (segmentedBatteryLed || !mMultiColorLed) {
+        if (segmentedBatteryLed || !mMultiColorLed || !adjustableNotificationLedBrightness) {
             prefSet.removePreference(prefSet.findPreference(BRIGHTNESS_SECTION));
         }
 

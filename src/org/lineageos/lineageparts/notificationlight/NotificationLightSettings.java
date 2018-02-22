@@ -61,6 +61,7 @@ import lineageos.util.ColorUtils;
 public class NotificationLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, ApplicationLightPreference.ItemLongClickListener {
     private static final String TAG = "NotificationLightSettings";
+    private static final String BRIGHTNESS_SECTION = "brightness_section";
     private static final String DEFAULT_PREF = "default";
     private static final String MISSED_CALL_PREF = "missed_call";
     private static final String VOICEMAIL_PREF = "voicemail";
@@ -137,7 +138,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
         if (!LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS)) {
-            mAdvancedPrefs.removePreference(mNotificationBrightnessPref);
+            prefSet.removePreference(prefSet.findPreference(BRIGHTNESS_SECTION));
         }
         if (!mLedCanPulse && !mMultiColorLed) {
             mGeneralPrefs.removePreference(mDefaultPref);
