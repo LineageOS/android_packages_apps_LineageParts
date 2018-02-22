@@ -49,13 +49,13 @@ import org.lineageos.lineageparts.style.util.UIUtils;
 import java.util.List;
 
 import lineageos.providers.LineageSettings;
+import lineageos.style.StyleInterface;
 
 public class StylePreferences extends SettingsPreferenceFragment {
     private static final String TAG = "StylePreferences";
-    private static final int INDEX_WALLPAPER = 0;
-    private static final int INDEX_TIME = 1;
-    private static final int INDEX_LIGHT = 2;
-    private static final int INDEX_DARK = 3;
+    private static final String CHANGE_STYLE_PERMISSION =
+            lineageos.platform.Manifest.permission.CHANGE_STYLE;
+    private static final int REQUEST_CHANGE_STYLE = 68; 
 
     private Preference mStylePref;
     private Preference mAccentPref;
@@ -86,7 +86,22 @@ public class StylePreferences extends SettingsPreferenceFragment {
         automagic.setOnPreferenceClickListener(p -> onAutomagicClick());
     }
 
+    private boolean hasChangeStylePermission() {
+        return getActivity().checkSelfPermission(CHANGE_STYLE_PERMISSION) ==
+                PackageManager.PERMISSION_GRANTED;
+    }
+
+    private void requestChangeStylePermission() {
+        getActivity().requestPermissions(new String[] { CHANGE_STYLE_PERMISSION },
+                REQUEST_CHANGE_STYLE);
+    }
+
     private boolean onAccentClick(Preference preference) {
+        if (!hasChangeStylePermission()) {
+            requestChangeStylePermission();
+            return false;
+        }
+
         mAccents = AccentUtils.getAccents(getContext(), mStyleStatus);
 
         new AlertDialog.Builder(getActivity())
@@ -119,13 +134,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
             om.setEnabled(previousAccent, false);
         }
 
-        LineageSettings.System.putString(getContext().getContentResolver(),
-                LineageSettings.System.BERRY_CURRENT_ACCENT, accent.getPackageName());
-
-        if (!TextUtils.isEmpty(accent.getPackageName())) {
-            // Enable new theme
-            om.setEnabled(accent.getPackageName(), true);
-        }
+        StyleInterface.getInstance(getContext()).setAccent(accent.getPackageName());
         updateAccentPref(accent);
     }
 
@@ -140,6 +149,11 @@ public class StylePreferences extends SettingsPreferenceFragment {
         if (!hasStoragePermission()) {
             Toast.makeText(getContext(), getString(R.string.style_permission_error),
                     Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        if (!hasChangeStylePermission()) {
+            requestChangeStylePermission();
             return false;
         }
 
@@ -175,14 +189,15 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private void setupStylePref() {
         int preference = LineageSettings.System.getInt(getContext().getContentResolver(),
-                LineageSettings.System.BERRY_GLOBAL_STYLE, INDEX_WALLPAPER);
+                LineageSettings.System.BERRY_GLOBAL_STYLE, 
+                StyleInterface.STYLE_GLOBAL_AUTO_WALLPAPER);
 
         setStyleIcon(preference);
         switch (preference) {
-            case INDEX_LIGHT:
+            case StyleInterface.STYLE_GLOBAL_LIGHT:
                 mStyleStatus = StyleStatus.LIGHT_ONLY;
                 break;
-            case INDEX_DARK:
+            case StyleInterface.STYLE_GLOBAL_DARK:
                 mStyleStatus = StyleStatus.DARK_ONLY;
                 break;
             default:
@@ -192,7 +207,8 @@ public class StylePreferences extends SettingsPreferenceFragment {
     }
 
     private void applyStyle(Style style) {
-        int value = style.isLight() ? INDEX_LIGHT : INDEX_DARK;
+        int value = style.isLight() ? 
+                StyleInterface.STYLE_GLOBAL_LIGHT : StyleInterface.STYLE_GLOBAL_DARK;
         LineageSettings.System.putInt(getContext().getContentResolver(),
             LineageSettings.System.BERRY_GLOBAL_STYLE, value);
 
@@ -232,13 +248,13 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private void setStyleIcon(int value) {
         int icon;
         switch (value) {
-            case INDEX_TIME:
+            case StyleInterface.STYLE_GLOBAL_AUTO_DAYTIME:
                 icon = R.drawable.ic_style_time;
                 break;
-            case INDEX_LIGHT:
+            case StyleInterface.STYLE_GLOBAL_LIGHT:
                 icon = R.drawable.ic_style_light;
                 break;
-            case INDEX_DARK:
+            case StyleInterface.STYLE_GLOBAL_DARK:
                 icon = R.drawable.ic_style_dark;
                 break;
             default:
@@ -263,9 +279,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         switch (supportedStatus) {
             case LIGHT_ONLY:
-                return value == INDEX_LIGHT;
+                return value == StyleInterface.STYLE_GLOBAL_LIGHT;
             case DARK_ONLY:
-                return value == INDEX_DARK;
+                return value == StyleInterface.STYLE_GLOBAL_DARK;
             case DYNAMIC:
             default: // Never happens, but compilation fails without this
                 return true;
@@ -275,10 +291,10 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private void onAccentConflict(int value) {
         StyleStatus proposedStatus;
         switch (value) {
-            case INDEX_LIGHT:
+            case StyleInterface.STYLE_GLOBAL_LIGHT:
                 proposedStatus = StyleStatus.LIGHT_ONLY;
                 break;
-            case INDEX_DARK:
+            case StyleInterface.STYLE_GLOBAL_DARK:
                 proposedStatus = StyleStatus.DARK_ONLY;
                 break;
             default:
