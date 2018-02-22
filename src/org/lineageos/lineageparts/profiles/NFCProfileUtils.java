@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ *               2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -119,7 +120,7 @@ public class NFCProfileUtils {
 
     /*
      * Convert a profiles into an NdefMessage. The profile UUID is 16 bytes and
-     * stored with the cm/profile mimetype
+     * stored with the "lineage/profile" mime type.
      */
     public static NdefMessage getProfileAsNdef(Profile profile) {
         byte[] profileBytes = NFCProfileUtils.asByteArray(profile.getUuid());
