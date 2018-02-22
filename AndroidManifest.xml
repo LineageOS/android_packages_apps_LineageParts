@@ -208,6 +208,24 @@
                 android:resource="@string/style_summary" />
         </activity-alias>
 
+        <!-- Expanded Desktop settings (Display category) -->
+        <activity-alias
+            android:name=".applications.ExpandedDesktopSettings"
+            android:label="@string/expanded_desktop_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="-9">
+                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.EXPANDED_DESKTOP_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/expanded_desktop_settings_summary" />
+        </activity-alias>
+
         <!-- Anonymous Statistics -->
         <receiver android:name=".lineagestats.ReportingServiceManager"
             android:enabled="true"
