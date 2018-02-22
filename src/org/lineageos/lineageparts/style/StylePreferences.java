@@ -39,29 +39,31 @@ import android.widget.Toast;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.style.models.Accent;
-import org.lineageos.lineageparts.style.models.Style;
 import org.lineageos.lineageparts.style.models.StyleStatus;
 import org.lineageos.lineageparts.style.util.AccentAdapter;
 import org.lineageos.lineageparts.style.util.AccentUtils;
 import org.lineageos.lineageparts.style.util.OverlayManager;
 import org.lineageos.lineageparts.style.util.UIUtils;
 
+import java.util.Arrays;
 import java.util.List;
 
 import lineageos.providers.LineageSettings;
+import lineageos.style.StyleInterface;
+import lineageos.style.Suggestion;
 
 public class StylePreferences extends SettingsPreferenceFragment {
     private static final String TAG = "StylePreferences";
-    private static final int INDEX_WALLPAPER = 0;
-    private static final int INDEX_TIME = 1;
-    private static final int INDEX_LIGHT = 2;
-    private static final int INDEX_DARK = 3;
+    private static final String CHANGE_STYLE_PERMISSION =
+            lineageos.platform.Manifest.permission.CHANGE_STYLE;
+    private static final int REQUEST_CHANGE_STYLE = 68;
 
     private Preference mStylePref;
     private Preference mAccentPref;
 
     private List<Accent> mAccents;
 
+    private StyleInterface mInterface;
     private StyleStatus mStyleStatus;
 
     private byte mOkStatus = 0;
@@ -84,9 +86,26 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         Preference automagic = findPreference("style_automagic");
         automagic.setOnPreferenceClickListener(p -> onAutomagicClick());
+
+        mInterface = StyleInterface.getInstance(getContext());
+    }
+
+    private boolean hasChangeStylePermission() {
+        return getActivity().checkSelfPermission(CHANGE_STYLE_PERMISSION) ==
+                PackageManager.PERMISSION_GRANTED;
+    }
+
+    private void requestChangeStylePermission() {
+        getActivity().requestPermissions(new String[] { CHANGE_STYLE_PERMISSION },
+                REQUEST_CHANGE_STYLE);
     }
 
     private boolean onAccentClick(Preference preference) {
+        if (!hasChangeStylePermission()) {
+            requestChangeStylePermission();
+            return false;
+        }
+
         mAccents = AccentUtils.getAccents(getContext(), mStyleStatus);
 
         new AlertDialog.Builder(getActivity())
@@ -119,13 +138,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
             om.setEnabled(previousAccent, false);
         }
 
-        LineageSettings.System.putString(getContext().getContentResolver(),
-                LineageSettings.System.BERRY_CURRENT_ACCENT, accent.getPackageName());
-
-        if (!TextUtils.isEmpty(accent.getPackageName())) {
-            // Enable new theme
-            om.setEnabled(accent.getPackageName(), true);
-        }
+        mInterface.setAccent(accent.getPackageName());
         updateAccentPref(accent);
     }
 
@@ -143,31 +156,37 @@ public class StylePreferences extends SettingsPreferenceFragment {
             return false;
         }
 
+        if (!hasChangeStylePermission()) {
+            requestChangeStylePermission();
+            return false;
+        }
+
         Bitmap bitmap = getWallpaperBitmap();
         if (bitmap == null) {
             return false;
         }
 
-        Accent[] accentsArray = new Accent[mAccents.size()];
-        mAccents.toArray(accentsArray);
+        Integer[] colorsArray = new Integer[mAccents.size()];
+        for (int i = 0; i < mAccents.size(); i++) {
+            colorsArray[i] = mAccents.get(i).getColor();
+        }
 
-        Palette palette = Palette.from(bitmap).generate();
-        new AutomagicTask(palette, this::onAutomagicCompleted).execute(accentsArray);
-
+        new AutomagicTask(mInterface, bitmap, this::onAutomagicCompleted).execute(colorsArray);
         return true;
     }
 
-    private void onAutomagicCompleted(Style style) {
-        String styleType = getString(style.isLight() ?
+    private void onAutomagicCompleted(Suggestion suggestion) {
+        String styleType = getString(suggestion.globalStyle == StyleInterface.STYLE_GLOBAL_LIGHT ?
                 R.string.style_global_entry_light : R.string.style_global_entry_dark).toLowerCase();
-        String accentName = style.getAccent().getName().toLowerCase();
+
+        String accentName = mAccents.get(suggestion.selectedAccent).getName().toLowerCase();
         String message = getString(R.string.style_automagic_dialog_content, styleType, accentName);
 
         new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.style_automagic_title)
                 .setMessage(message)
                 .setPositiveButton(R.string.style_automagic_dialog_positive,
-                        (dialog, i) -> applyStyle(style))
+                        (dialog, i) -> applyStyle(suggestion))
                 .setNegativeButton(android.R.string.cancel,
                         (dialog, i) -> increaseOkStatus())
                 .show();
@@ -175,14 +194,15 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private void setupStylePref() {
         int preference = LineageSettings.System.getInt(getContext().getContentResolver(),
-                LineageSettings.System.BERRY_GLOBAL_STYLE, INDEX_WALLPAPER);
+                LineageSettings.System.BERRY_GLOBAL_STYLE,
+                StyleInterface.STYLE_GLOBAL_AUTO_WALLPAPER);
 
         setStyleIcon(preference);
         switch (preference) {
-            case INDEX_LIGHT:
+            case StyleInterface.STYLE_GLOBAL_LIGHT:
                 mStyleStatus = StyleStatus.LIGHT_ONLY;
                 break;
-            case INDEX_DARK:
+            case StyleInterface.STYLE_GLOBAL_DARK:
                 mStyleStatus = StyleStatus.DARK_ONLY;
                 break;
             default:
@@ -191,13 +211,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
         }
     }
 
-    private void applyStyle(Style style) {
-        int value = style.isLight() ? INDEX_LIGHT : INDEX_DARK;
-        LineageSettings.System.putInt(getContext().getContentResolver(),
-            LineageSettings.System.BERRY_GLOBAL_STYLE, value);
-
-        onStyleChange(mStylePref, value);
-        onAccentSelected(style.getAccent());
+    private void applyStyle(Suggestion suggestion) {
+        onStyleChange(mStylePref, suggestion.globalStyle);
+        onAccentSelected(mAccents.get(suggestion.selectedAccent));
     }
 
     private boolean onStyleChange(Preference preference, Object newValue) {
@@ -222,9 +238,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
             return false;
         }
 
-        LineageSettings.System.putInt(getContext().getContentResolver(),
-                LineageSettings.System.BERRY_GLOBAL_STYLE, value);
-
+        mInterface.setGlobalStyle(value);
         setStyleIcon(value);
         return true;
     }
@@ -232,13 +246,13 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private void setStyleIcon(int value) {
         int icon;
         switch (value) {
-            case INDEX_TIME:
+            case StyleInterface.STYLE_GLOBAL_AUTO_DAYTIME:
                 icon = R.drawable.ic_style_time;
                 break;
-            case INDEX_LIGHT:
+            case StyleInterface.STYLE_GLOBAL_LIGHT:
                 icon = R.drawable.ic_style_light;
                 break;
-            case INDEX_DARK:
+            case StyleInterface.STYLE_GLOBAL_DARK:
                 icon = R.drawable.ic_style_dark;
                 break;
             default:
@@ -263,9 +277,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         switch (supportedStatus) {
             case LIGHT_ONLY:
-                return value == INDEX_LIGHT;
+                return value == StyleInterface.STYLE_GLOBAL_LIGHT;
             case DARK_ONLY:
-                return value == INDEX_DARK;
+                return value == StyleInterface.STYLE_GLOBAL_DARK;
             case DYNAMIC:
             default: // Never happens, but compilation fails without this
                 return true;
@@ -275,10 +289,10 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private void onAccentConflict(int value) {
         StyleStatus proposedStatus;
         switch (value) {
-            case INDEX_LIGHT:
+            case StyleInterface.STYLE_GLOBAL_LIGHT:
                 proposedStatus = StyleStatus.LIGHT_ONLY;
                 break;
-            case INDEX_DARK:
+            case StyleInterface.STYLE_GLOBAL_DARK:
                 proposedStatus = StyleStatus.DARK_ONLY;
                 break;
             default:
@@ -341,62 +355,30 @@ public class StylePreferences extends SettingsPreferenceFragment {
             .show();
     }
 
-    private static final class AutomagicTask extends AsyncTask<Accent, Void, Style> {
-        private static final int COLOR_DEFAULT = Color.BLACK;
-
-        private final Palette mPalette;
+    private static final class AutomagicTask extends AsyncTask<Integer, Void, Suggestion> {
+        private final StyleInterface mInterface;
+        private final Bitmap mWallpaper;
         private final Callback mCallback;
 
-        AutomagicTask(Palette palette, Callback callback) {
-            mPalette = palette;
+        AutomagicTask(StyleInterface styleInterface, Bitmap wallpaper, Callback callback) {
+            mInterface = styleInterface;
+            mWallpaper = wallpaper;
             mCallback = callback;
         }
 
-        @NonNull
         @Override
-        public Style doInBackground(Accent... accents) {
-            int wallpaperColor = mPalette.getVibrantColor(COLOR_DEFAULT);
-
-            // If vibrant color extraction failed, let's try muted color
-            if (wallpaperColor == COLOR_DEFAULT) {
-                wallpaperColor = mPalette.getMutedColor(COLOR_DEFAULT);
-            }
-
-            boolean isLight = UIUtils.isColorLight(wallpaperColor);
-            Accent bestAccent = getBestAccent(accents, wallpaperColor, isLight);
-
-            return new Style(bestAccent, isLight);
+        public Suggestion doInBackground(Integer... colors) {
+            int[] array = Arrays.stream(colors).mapToInt(Integer::intValue).toArray();
+            return mInterface.getSuggestion(mWallpaper, array);
         }
 
         @Override
-        public void onPostExecute(Style style) {
-            mCallback.onDone(style);
-        }
-
-        private Accent getBestAccent(Accent[] accents, int wallpaperColor, boolean isLight) {
-            int bestIndex = 0;
-            double minDiff = Double.MAX_VALUE;
-            StyleStatus targetStatus = isLight ? StyleStatus.LIGHT_ONLY : StyleStatus.DARK_ONLY;
-
-            for (int i = 0; i < accents.length; i++) {
-                double diff = diff(accents[i].getColor(), wallpaperColor);
-                if (diff < minDiff && AccentUtils.isCompatible(targetStatus, accents[i])) {
-                    bestIndex = i;
-                    minDiff = diff;
-                }
-            }
-
-            return accents[bestIndex];
-        }
-
-        private double diff(@ColorInt int accent, @ColorInt int wallpaper) {
-            return Math.sqrt(Math.pow(Color.red(accent) - Color.red(wallpaper), 2) +
-                    Math.pow(Color.green(accent) - Color.green(wallpaper), 2) +
-                    Math.pow(Color.blue(accent) - Color.blue(wallpaper), 2));
+        public void onPostExecute(Suggestion suggestion) {
+            mCallback.onDone(suggestion);
         }
     }
 
     private interface Callback {
-        void onDone(Style style);
+        void onDone(Suggestion suggestion);
     }
 }
