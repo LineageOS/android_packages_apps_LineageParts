@@ -31,6 +31,11 @@
         android:dialogTitle="@string/button_backlight_title"
         android:persistent="false" />
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="button_backlight_only_when_pressed"
+        android:title="@string/button_backlight_only_when_pressed_title"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="navigation_bar_category"
         android:title="@string/navigation_bar_category" >

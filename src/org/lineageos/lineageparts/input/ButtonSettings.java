@@ -59,6 +59,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "SystemSettings";
 
     private static final String KEY_BUTTON_BACKLIGHT = "button_backlight";
+    private static final String KEY_BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED =
+            "button_backlight_only_when_pressed";
     private static final String KEY_HOME_LONG_PRESS = "hardware_keys_home_long_press";
     private static final String KEY_HOME_DOUBLE_TAP = "hardware_keys_home_double_tap";
     private static final String KEY_MENU_PRESS = "hardware_keys_menu_press";
@@ -117,6 +119,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mTorchLongPressPowerGesture;
     private ListPreference mTorchLongPressPowerTimeout;
+    private SwitchPreference mBacklightOnlyWhenPressed;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -405,8 +408,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
+        mBacklightOnlyWhenPressed =
+                (SwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED);
         if (!backlight.isButtonSupported() /*&& !backlight.isKeyboardSupported()*/) {
             prefScreen.removePreference(backlight);
+            prefScreen.removePreference(mBacklightOnlyWhenPressed);
         }
 
         if (mCameraWakeScreen != null) {
@@ -556,12 +562,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
+        mBacklightOnlyWhenPressed =
+                (SwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED);
 
-        /* Toggle backlight control depending on navbar state, force it to
+        /* Toggle backlight related options depending on navbar state, force it to
            off if enabling */
         if (backlight != null) {
             backlight.setEnabled(!navbarEnabled);
             backlight.updateSummary();
+        }
+        if (mBacklightOnlyWhenPressed != null) {
+            mBacklightOnlyWhenPressed.setEnabled(!navbarEnabled);
         }
 
         /* Toggle hardkey control availability depending on navbar state */
