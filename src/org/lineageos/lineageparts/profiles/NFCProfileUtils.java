@@ -120,7 +120,7 @@ public class NFCProfileUtils {
 
     /*
      * Convert a profiles into an NdefMessage. The profile UUID is 16 bytes and
-     * stored with the "lineage/profile" mime type.
+     * stored with the "lineage/profile" and "cm/profile" mime type.
      */
     public static NdefMessage getProfileAsNdef(Profile profile) {
         byte[] profileBytes = NFCProfileUtils.asByteArray(profile.getUuid());
