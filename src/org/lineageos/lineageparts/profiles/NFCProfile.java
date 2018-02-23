@@ -36,7 +36,8 @@ import lineageos.providers.LineageSettings;
 import org.lineageos.lineageparts.R;
 
 /**
- * This activity handles NDEF_DISCOVERED intents with the "lineage/profile" mime type.
+ * This activity handles NDEF_DISCOVERED intents with the "lineage/profile"
+ * and "cm/profile" mime types.
  * Tags should be encoded with the 16-byte UUID of the profile to be activated.
  * Tapping a tag while that profile is already active will select the previously
  * active profile.
@@ -48,6 +49,7 @@ public class NFCProfile extends Activity {
     private static final String PREFS_PREVIOUS_PROFILE = "previous-profile";
 
     static final String PROFILE_MIME_TYPE = "lineage/profile";
+    static final String PROFILE_MIME_TYPE_FALLBACK = "cm/profile";
 
     private ProfileManager mProfileManager;
 
@@ -73,6 +75,9 @@ public class NFCProfile extends Activity {
                         String type = new String(record.getType());
                         byte[] payload = record.getPayload();
                         if (PROFILE_MIME_TYPE.equals(type) && payload != null
+                                && payload.length == 16) {
+                            handleProfileMimeType(payload);
+                        } else if (PROFILE_MIME_TYPE_FALLBACK.equals(type) && payload != null
                                 && payload.length == 16) {
                             handleProfileMimeType(payload);
                         }
