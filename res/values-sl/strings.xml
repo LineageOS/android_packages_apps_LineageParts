@@ -589,4 +589,20 @@
   <string name="touchscreen_gesture_action_volume_up">Povečaj glasnost predstavnosti</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Slog</string>
+  <string name="style_summary">Izberite barve sistema</string>
+  <string name="style_global_title">Slog</string>
+  <string name="style_global_entry_automatic">Samodejno (slika ozadja)</string>
+  <string name="style_global_entry_light">Svetlo</string>
+  <string name="style_global_entry_dark">Temno</string>
+  <string name="style_global_entry_time">Samodejno (čas dneva)</string>
+  <string name="style_accent_title">Barva poudarka</string>
+  <string name="style_accent_configuration_not_supported">Trenutni pudarek ni združljiv z izbranim slogom. Za nadaljevanje mora biti izbran drug poudarek, ali želite nadaljevati?</string>
+  <string name="style_accent_configuration_positive">Nadaljuj</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">Naravnajte slog, da se bo ujemal z vašo sliko ozadja</string>
+  <string name="style_automagic_dialog_content">Predlagan slog: <b>%1$s</b> s/z <b>%2$s</b> poudarkom.\nAli ga želite uveljaviti?</string>
+  <string name="style_automagic_dialog_positive">Uveljavi</string>
+  <string name="style_accent_default_name">Privzeto</string>
+  <string name="style_permission_error">Dovoljenje za dostop do pomnilniške naprave je potreben za analizo vaše slike ozadja, odobrite ga za uporabo te značilnosti</string>
 </resources>

@@ -587,4 +587,20 @@
   <string name="touchscreen_gesture_action_volume_up">Apuja el volum multimèdia</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Estil</string>
+  <string name="style_summary">Tria els colors del sistema</string>
+  <string name="style_global_title">Estil</string>
+  <string name="style_global_entry_automatic">Automàtic (fons de pantalla)</string>
+  <string name="style_global_entry_light">Clar</string>
+  <string name="style_global_entry_dark">Fosc</string>
+  <string name="style_global_entry_time">Automàtic (segons l\'hora del dia)</string>
+  <string name="style_accent_title">Color d\'èmfasi</string>
+  <string name="style_accent_configuration_not_supported">L\'accent actual no és compatible amb l\'estil seleccionat. Per poder procedir s\'haurà de seleccionar un altre accent, vols continuar?</string>
+  <string name="style_accent_configuration_positive">Procedeix</string>
+  <string name="style_automagic_title">Automàgic</string>
+  <string name="style_automagic_description">Afina l\'estil perquè coincideixi amb el teu fons de pantalla</string>
+  <string name="style_automagic_dialog_content">Estil suggerit: <b>%1$s</b> amb accent de <b>%2$s</b>.\nVols aplicar-lo?</string>
+  <string name="style_automagic_dialog_positive">Aplica</string>
+  <string name="style_accent_default_name">Predeterminat</string>
+  <string name="style_permission_error">Es necessita el permís d\'accés a l\'emmagatzematge per analitzar el teu fons de pantalla, si us plau otorga\'l per utilitzar aquesta característica</string>
 </resources>

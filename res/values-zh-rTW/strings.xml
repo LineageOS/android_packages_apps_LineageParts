@@ -588,4 +588,20 @@
   <string name="touchscreen_gesture_action_volume_up">提高媒體音量</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">樣式</string>
+  <string name="style_summary">選擇系統顏色</string>
+  <string name="style_global_title">樣式</string>
+  <string name="style_global_entry_automatic">自動 (桌布)</string>
+  <string name="style_global_entry_light">淺色</string>
+  <string name="style_global_entry_dark">深色</string>
+  <string name="style_global_entry_time">自動 (一天之中)</string>
+  <string name="style_accent_title">強調顏色</string>
+  <string name="style_accent_configuration_not_supported">目前強調顏色與所選樣式不相容。 為了繼續選擇另一個強調顏色，想繼續嗎？</string>
+  <string name="style_accent_configuration_positive">繼續</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">調整樣式以符合您的桌布</string>
+  <string name="style_automagic_dialog_content">建議的樣式：<b>%1$s</b>帶有<b>%2$s</b> 強調顏色。\n您想要套用嗎？</string>
+  <string name="style_automagic_dialog_positive">套用</string>
+  <string name="style_accent_default_name">預設</string>
+  <string name="style_permission_error">需要儲存存取權限才能分析桌布，請授予它使用此功能</string>
 </resources>

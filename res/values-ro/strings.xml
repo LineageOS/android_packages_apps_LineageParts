@@ -589,4 +589,20 @@
   <string name="touchscreen_gesture_action_volume_up">Mărește volumul media</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Stil</string>
+  <string name="style_summary">Alegeți culorile de sistem</string>
+  <string name="style_global_title">Stil</string>
+  <string name="style_global_entry_automatic">Automat (tapet)</string>
+  <string name="style_global_entry_light">Luminos</string>
+  <string name="style_global_entry_dark">Întunecat</string>
+  <string name="style_global_entry_time">Automat (timpul zilei)</string>
+  <string name="style_accent_title">Culoare accent</string>
+  <string name="style_accent_configuration_not_supported">Accentul curent nu este compatibil cu stilul selectat. Pentru a continua, un alt accent trebuie să fie selectat, doriţi să continuaţi?</string>
+  <string name="style_accent_configuration_positive">Continuați</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">Ajustați stilul pentru a se potrivi cu imaginea de fundal</string>
+  <string name="style_automagic_dialog_content">Stil sugerat: <b>%1$s</b> cu accent <b>%2$s</b>.\nDoriți să îl aplicați?</string>
+  <string name="style_automagic_dialog_positive">Aplicați</string>
+  <string name="style_accent_default_name">Implicit</string>
+  <string name="style_permission_error">Permisiunea de acces la stocare este necesară pentru a analiza tapetul dumneavoastră, vă rugăm să o acordați pentru a utiliza această caracteristică</string>
 </resources>

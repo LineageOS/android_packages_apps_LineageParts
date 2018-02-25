@@ -587,4 +587,20 @@
   <string name="touchscreen_gesture_action_volume_up">Âm lượng phương tiện cao hơn</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Kiểu</string>
+  <string name="style_summary">Chọn màu hệ thống</string>
+  <string name="style_global_title">Kiểu</string>
+  <string name="style_global_entry_automatic">Tự động (hình nền)</string>
+  <string name="style_global_entry_light">Sáng</string>
+  <string name="style_global_entry_dark">Tối</string>
+  <string name="style_global_entry_time">Tự động (thời gian trong ngày)</string>
+  <string name="style_accent_title">Màu nhấn</string>
+  <string name="style_accent_configuration_not_supported">Màu nhấn hiện tại không tương thích với phong cách đã chọn. Để tiến hành chọn một màu nhấn khác đã được chọn, bạn có muốn tiếp tục không?</string>
+  <string name="style_accent_configuration_positive">Tiến hành</string>
+  <string name="style_automagic_title">Ma thuật tự động</string>
+  <string name="style_automagic_description">Điều chỉnh kiểu để phù hợp với hình nền của bạn</string>
+  <string name="style_automagic_dialog_content">Kiểu được đề xuất: <b>%1$s</b> với màu đậm <b>%2$s</b>.\nBạn có muốn áp dụng nó không?</string>
+  <string name="style_automagic_dialog_positive">Áp dụng</string>
+  <string name="style_accent_default_name">Mặc định</string>
+  <string name="style_permission_error">Quyền truy cập lưu trữ là cần thiết để phân tích hình nền của bạn, vui lòng cho phép nó sử dụng tính năng này</string>
 </resources>

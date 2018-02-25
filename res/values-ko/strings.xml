@@ -586,4 +586,14 @@
   <string name="touchscreen_gesture_action_volume_up">미디어 음량 크게</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">스타일</string>
+  <string name="style_summary">시스템 색상 선택</string>
+  <string name="style_global_title">스타일</string>
+  <string name="style_global_entry_automatic">자동 (배경화면)</string>
+  <string name="style_global_entry_light">밝음</string>
+  <string name="style_global_entry_dark">어두움</string>
+  <string name="style_accent_title">강조 색상</string>
+  <string name="style_accent_configuration_positive">계속</string>
+  <string name="style_automagic_dialog_positive">적용</string>
+  <string name="style_accent_default_name">기본값</string>
 </resources>

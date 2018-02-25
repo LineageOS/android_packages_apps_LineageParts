@@ -199,7 +199,6 @@
   <string name="volume_answer_call_summary">Accepter les appels entrants en appuyant sur les touches de volume</string>
   <string name="home_answer_call_title">Répondre à l\'appel</string>
   <string name="home_answer_call_summary">Répondre aux appels entrants en appuyant sur le bouton d\'accueil</string>
-  <string name="extras_title">Extras</string>
   <string name="additional_buttons_title">Boutons supplémentaires</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Rétro-éclairage</string>
@@ -438,7 +437,7 @@
   <string name="network_traffic_mode_disable">Désactivé</string>
   <string name="network_traffic_autohide">Masquer automatiquement</string>
   <string name="network_traffic_units_kilobits">Kilobits par seconde (kb/s)</string>
-  <string name="network_traffic_units_megabits">Megabits par seconde (Mb/s)</string>
+  <string name="network_traffic_units_megabits">Mégabits par seconde (Mb/s)</string>
   <string name="network_traffic_show_units">Afficher les unités</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Applications protégées</string>
@@ -576,4 +575,12 @@
   <string name="touchscreen_gesture_action_volume_up">Augmenter le volume du média</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Style</string>
+  <string name="style_global_title">Style</string>
+  <string name="style_global_entry_automatic">Automatique (fond d\'écran)</string>
+  <string name="style_global_entry_light">Clair</string>
+  <string name="style_global_entry_dark">Sombre</string>
+  <string name="style_global_entry_time">Automatique (heure)</string>
+  <string name="style_accent_title">Couleur d\'accentuation</string>
+  <string name="style_automagic_title">Automagic</string>
 </resources>

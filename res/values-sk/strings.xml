@@ -587,4 +587,20 @@
   <string name="touchscreen_gesture_action_volume_up">Zvýšenie hlasitosti médií</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Štýl</string>
+  <string name="style_summary">Výber farby systému</string>
+  <string name="style_global_title">Štýl</string>
+  <string name="style_global_entry_automatic">Automaticky (podľa tapety)</string>
+  <string name="style_global_entry_light">Svetlá</string>
+  <string name="style_global_entry_dark">Tmavá</string>
+  <string name="style_global_entry_time">Automaticky (podľa času dňa)</string>
+  <string name="style_accent_title">Doplnková farba</string>
+  <string name="style_accent_configuration_not_supported">Aktuálny odtieň nie je kompatibilný s vybratým štýlom. Ak chcete pokračovať, musíte vybrať iný odtieň, chcete pokračovať?</string>
+  <string name="style_accent_configuration_positive">Pokračovať</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">Prispôsobte štýl tak, aby zodpovedal vašej tapete</string>
+  <string name="style_automagic_dialog_content">Navrhovaný štýl: <b>%1$s</b> с <b>%2$s</b> odtieň.\nChcete ho použiť?</string>
+  <string name="style_automagic_dialog_positive">Použiť</string>
+  <string name="style_accent_default_name">Predvolený</string>
+  <string name="style_permission_error">Na analýzu vašej tapety je potrebné povolenie na prístup k úložisku. Udeľte prosím povolenie na používanie tejto funkcie</string>
 </resources>
