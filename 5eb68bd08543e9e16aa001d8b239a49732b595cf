@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7b073ed1_1837c5a0",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-03-01T13:37:45Z",
+      "side": 1,
+      "message": "import static lineageos.platform.Manifest.permission.CHANGE_STYLE;\nprivate static final String CHANGE_STYLE_PERMISSION \u003d CHANGE_STYLE;\n\nMaybe?",
+      "range": {
+        "startLine": 58,
+        "startChar": 12,
+        "endLine": 58,
+        "endChar": 64
+      },
+      "revId": "5eb68bd08543e9e16aa001d8b239a49732b595cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
