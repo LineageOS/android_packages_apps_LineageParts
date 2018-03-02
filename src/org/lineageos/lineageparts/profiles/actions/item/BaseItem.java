@@ -32,7 +32,7 @@ public abstract class BaseItem implements Item {
 
         mView = view;
 
-        TextView text = (TextView) view.findViewById(android.R.id.title);
+        TextView text = view.findViewById(android.R.id.title);
         String title = getTitle();
         if (title == null) {
             text.setVisibility(View.GONE);
@@ -40,7 +40,7 @@ public abstract class BaseItem implements Item {
             text.setText(title);
         }
 
-        TextView desc = (TextView) view.findViewById(android.R.id.summary);
+        TextView desc = view.findViewById(android.R.id.summary);
         String summary = getSummary();
         if (summary == null) {
             desc.setVisibility(View.GONE);

@@ -49,8 +49,7 @@ public class TelephonyUtils {
      * Returns whether the device is voice-capable (meaning, it is also a phone).
      */
     public static boolean isVoiceCapable(Context context) {
-        TelephonyManager telephony =
-                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager telephony = context.getSystemService(TelephonyManager.class);
         return telephony != null && telephony.isVoiceCapable();
     }
 
@@ -175,8 +174,8 @@ public class TelephonyUtils {
     }
 
     private static boolean isGlobalCDMA(Context context, int subId, boolean isLteOnCdma) {
-        final CarrierConfigManager carrierConfigMan = (CarrierConfigManager)
-                context.getSystemService(Context.CARRIER_CONFIG_SERVICE);
+        final CarrierConfigManager carrierConfigMan =
+                context.getSystemService(CarrierConfigManager.class);
         final PersistableBundle carrierConfig = carrierConfigMan.getConfigForSubId(subId);
         return isLteOnCdma
                 && carrierConfig.getBoolean(CarrierConfigManager.KEY_SHOW_CDMA_CHOICES_BOOL);
@@ -189,8 +188,8 @@ public class TelephonyUtils {
 
     private static boolean isWorldMode(Context context) {
         boolean worldModeOn = false;
-        final TelephonyManager tm = (TelephonyManager)
-                context.getSystemService(Context.TELEPHONY_SERVICE);
+        final TelephonyManager tm =
+                context.getSystemService(TelephonyManager.class);
 
         Resources phoneResources = getPhoneResources(context);
         if (phoneResources != null) {

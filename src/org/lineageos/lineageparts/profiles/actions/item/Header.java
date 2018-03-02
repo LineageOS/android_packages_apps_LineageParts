@@ -45,7 +45,7 @@ public class Header implements Item {
             view = convertView;
         }
 
-        TextView text = (TextView) view.findViewById(android.R.id.title);
+        TextView text = view.findViewById(android.R.id.title);
         text.setText(name);
 
         return view;

@@ -483,8 +483,8 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     /**
      * Returns the specified system service from the owning Activity.
      */
-    protected Object getSystemService(final String name) {
-        return getActivity().getSystemService(name);
+    protected <T> T getSystemService(final Class<T> serviceClass) {
+        return getActivity().getSystemService(serviceClass);
     }
 
     /**

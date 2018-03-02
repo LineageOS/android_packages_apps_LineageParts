@@ -89,7 +89,7 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
 
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
             IntervalSeekBar seekBar = (IntervalSeekBar) view.findViewById(SEEKBAR_ID[i]);
-            TextView value = (TextView) view.findViewById(SEEKBAR_VALUE_ID[i]);
+            TextView value = view.findViewById(SEEKBAR_VALUE_ID[i]);
             mSeekBars[i] = new ColorSeekBar(seekBar, value, i);
             mSeekBars[i].mSeekBar.setMinimum(0.1f);
             mSeekBars[i].mSeekBar.setMaximum(1.0f);
