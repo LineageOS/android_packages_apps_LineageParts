@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9747032c_bff58828",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonBacklightBrightness.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 482,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-03-02T09:05:28Z",
+      "side": 1,
+      "message": "Do you need to cast it? afaik in O it\u0027s automatic",
+      "range": {
+        "startLine": 482,
+        "startChar": 20,
+        "endLine": 482,
+        "endChar": 30
+      },
+      "revId": "c34a46c50d60cff23ac3f05ebf79ea6f90f43005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
