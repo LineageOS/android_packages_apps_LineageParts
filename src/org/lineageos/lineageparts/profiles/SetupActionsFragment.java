@@ -896,8 +896,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         final AudioManager am = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         final View view = inflater.inflate(R.layout.dialog_profiles_volume_override, null);
-        final SeekBar seekBar = (SeekBar) view.findViewById(R.id.seekbar);
-        final CheckBox override = (CheckBox) view.findViewById(R.id.checkbox);
+        final SeekBar seekBar = view.findViewById(R.id.seekbar);
+        final CheckBox override = view.findViewById(R.id.checkbox);
         override.setChecked(streamSettings.isOverride());
         override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -942,8 +942,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         final View view = inflater.inflate(R.layout.dialog_profiles_brightness_override, null);
-        final SeekBar seekBar = (SeekBar) view.findViewById(R.id.seekbar);
-        final CheckBox override = (CheckBox) view.findViewById(R.id.checkbox);
+        final SeekBar seekBar = view.findViewById(R.id.seekbar);
+        final CheckBox override = view.findViewById(R.id.checkbox);
         override.setChecked(brightnessSettings.isOverride());
         override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

@@ -112,9 +112,9 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mNoUserAppsInstalled = (TextView) mActivity.findViewById(R.id.error);
+        mNoUserAppsInstalled = mActivity.findViewById(R.id.error);
 
-        mAppsList = (ListView) mActivity.findViewById(R.id.apps_list);
+        mAppsList = mActivity.findViewById(R.id.apps_list);
         mAppsList.setOnItemClickListener(this);
         mAppsList.setOnItemLongClickListener(this);
 

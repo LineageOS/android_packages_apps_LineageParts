@@ -448,10 +448,10 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
         ViewGroup contentRoot = (ViewGroup) getListView().getParent();
         View emptyView = getActivity().getLayoutInflater().inflate(
                 R.layout.empty_weather_state, contentRoot, false);
-        TextView emptyTextView = (TextView) emptyView.findViewById(R.id.message);
+        TextView emptyTextView = emptyView.findViewById(R.id.message);
         emptyTextView.setText(R.string.weather_settings_no_services_prompt);
 
-        Button addProviderButton = (Button) emptyView.findViewById(R.id.add_weather_provider);
+        Button addProviderButton = emptyView.findViewById(R.id.add_weather_provider);
         addProviderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

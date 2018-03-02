@@ -168,11 +168,11 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
         super.onBindDialogView(view);
 
         // Locate text view for percentage value
-        mDialogPercent = (TextView) view.findViewById(R.id.brightness_percent);
+        mDialogPercent = view.findViewById(R.id.brightness_percent);
 
         mVisibleLedBrightness = 0; // LED notification is not showing.
 
-        mBrightnessBar = (SeekBar) view.findViewById(R.id.brightness_seekbar);
+        mBrightnessBar = view.findViewById(R.id.brightness_seekbar);
         mBrightnessBar.setMax(LIGHT_BRIGHTNESS_MAXIMUM);
         mBrightnessBar.setMin(LIGHT_BRIGHTNESS_MINIMUM);
         mBrightnessBar.setOnSeekBarChangeListener(this);

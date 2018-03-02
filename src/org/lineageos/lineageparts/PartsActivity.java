@@ -232,11 +232,11 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
 
     public Button getBackButton() {
-        return (Button) findViewById(R.id.back_button);
+        return findViewById(R.id.back_button);
     }
 
     public Button getNextButton() {
-        return (Button) findViewById(R.id.next_button);
+        return findViewById(R.id.next_button);
     }
 
     public void showButtonBar(boolean show) {
@@ -244,7 +244,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
     }
 
     public SwitchBar getSwitchBar() {
-        return (SwitchBar) findViewById(R.id.switch_bar);
+        return findViewById(R.id.switch_bar);
     }
 
     private void setTitleFromIntent(Intent intent, PartInfo part) {

@@ -138,16 +138,16 @@ public class LightSettingsDialog extends AlertDialog implements
      */
     private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable,
                int brightness) {
-        mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mInflater = LayoutInflater.from(mContext);
         View layout = mInflater.inflate(R.layout.dialog_light_settings, null);
 
-        mColorPicker = (ColorPickerView) layout.findViewById(R.id.color_picker_view);
-        mColorPanel = (LinearLayout) layout.findViewById(R.id.color_panel_view);
-        mHexColorInput = (EditText) layout.findViewById(R.id.hex_color_input);
-        mNewColor = (ColorPanelView) layout.findViewById(R.id.color_panel);
-        mLightsDialogDivider = (View) layout.findViewById(R.id.lights_dialog_divider);
-        mPulseSpeedOn = (Spinner) layout.findViewById(R.id.on_spinner);
-        mPulseSpeedOff = (Spinner) layout.findViewById(R.id.off_spinner);
+        mColorPicker = layout.findViewById(R.id.color_picker_view);
+        mColorPanel = layout.findViewById(R.id.color_panel_view);
+        mHexColorInput = layout.findViewById(R.id.hex_color_input);
+        mNewColor = layout.findViewById(R.id.color_panel);
+        mLightsDialogDivider = layout.findViewById(R.id.lights_dialog_divider);
+        mPulseSpeedOn = layout.findViewById(R.id.on_spinner);
+        mPulseSpeedOff = layout.findViewById(R.id.off_spinner);
 
         mColorPicker.setOnColorChangedListener(this);
         mColorPicker.setColor(color, true);
