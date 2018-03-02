@@ -22,6 +22,30 @@
       "revId": "c34a46c50d60cff23ac3f05ebf79ea6f90f43005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9e8231b7_16f3e388",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonBacklightBrightness.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 482,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-03-02T09:06:32Z",
+      "side": 1,
+      "message": "The code above had the cast so if anything it\u0027d be something for next patch.",
+      "parentUuid": "9747032c_bff58828",
+      "range": {
+        "startLine": 482,
+        "startChar": 20,
+        "endLine": 482,
+        "endChar": 30
+      },
+      "revId": "c34a46c50d60cff23ac3f05ebf79ea6f90f43005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
