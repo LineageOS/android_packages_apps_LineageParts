@@ -126,7 +126,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
 
         transactFragment();
 
-        mUserListView = (ListView) view.findViewById(R.id.user_list_view);
+        mUserListView = view.findViewById(R.id.user_list_view);
         mUserListView.setAdapter(mAllPackagesAdapter);
         mUserListView.setOnItemClickListener(this);
 
@@ -478,10 +478,10 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
         private ImageView stateIcon;
 
         private ViewHolder(View view) {
-            this.title = (TextView) view.findViewById(R.id.app_name);
-            this.mode = (Spinner) view.findViewById(R.id.app_mode);
-            this.icon = (ImageView) view.findViewById(R.id.app_icon);
-            this.stateIcon = (ImageView) view.findViewById(R.id.state);
+            this.title = view.findViewById(R.id.app_name);
+            this.mode = view.findViewById(R.id.app_mode);
+            this.icon = view.findViewById(R.id.app_icon);
+            this.stateIcon = view.findViewById(R.id.state);
             this.rootView = view;
 
             view.setTag(this);

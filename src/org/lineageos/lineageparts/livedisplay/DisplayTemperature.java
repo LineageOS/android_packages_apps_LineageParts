@@ -82,11 +82,11 @@ public class DisplayTemperature extends CustomDialogPreference<AlertDialog> {
         mOriginalNightTemperature = mLiveDisplay.getNightColorTemperature();
 
         SeekBar day = (SeekBar) view.findViewById(R.id.day_temperature_seekbar);
-        TextView dayText = (TextView) view.findViewById(R.id.day_temperature_value);
+        TextView dayText = view.findViewById(R.id.day_temperature_value);
         mDayTemperature = new ColorTemperatureSeekBar(day, dayText);
 
         SeekBar night = (SeekBar) view.findViewById(R.id.night_temperature_seekbar);
-        TextView nightText = (TextView) view.findViewById(R.id.night_temperature_value);
+        TextView nightText = view.findViewById(R.id.night_temperature_value);
         mNightTemperature = new ColorTemperatureSeekBar(night, nightText);
 
         mDayTemperature.setTemperature(mOriginalDayTemperature);

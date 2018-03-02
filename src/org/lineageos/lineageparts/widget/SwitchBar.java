@@ -87,7 +87,7 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
         int switchBarMarginEnd = (int) a.getDimension(1, 0);
         a.recycle();
 
-        mTextView = (TextView) findViewById(R.id.switch_text);
+        mTextView = findViewById(R.id.switch_text);
         mLabel = getResources().getString(R.string.off);
         mSummarySpan = new TextAppearanceSpan(mContext, R.style.TextAppearance_Small_SwitchBar);
         updateText();

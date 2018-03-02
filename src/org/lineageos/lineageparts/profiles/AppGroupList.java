@@ -108,8 +108,8 @@ public class AppGroupList extends SettingsPreferenceFragment {
     private void addAppGroup() {
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View content = inflater.inflate(R.layout.profile_name_dialog, null);
-        final TextView prompt = (TextView) content.findViewById(R.id.prompt);
-        final EditText entry = (EditText) content.findViewById(R.id.name);
+        final TextView prompt = content.findViewById(R.id.prompt);
+        final EditText entry = content.findViewById(R.id.name);
 
         prompt.setText(R.string.profile_appgroup_name_prompt);
 

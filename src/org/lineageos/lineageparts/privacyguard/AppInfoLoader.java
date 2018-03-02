@@ -43,7 +43,7 @@ import java.util.List;
     public AppInfoLoader(Context context, boolean showSystemApps) {
         super(context);
         mPm = context.getPackageManager();
-        mAppOps = (AppOpsManager)context.getSystemService(Context.APP_OPS_SERVICE);
+        mAppOps = context.getSystemService(AppOpsManager.class);
         mShowSystemApps = showSystemApps;
     }
 
