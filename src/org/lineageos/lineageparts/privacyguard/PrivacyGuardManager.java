@@ -96,7 +96,7 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mActivity = getActivity();
-        mAppOps = (AppOpsManager)getActivity().getSystemService(Context.APP_OPS_SERVICE);
+        mAppOps = getActivity().getSystemService(AppOpsManager.class);
 
         View hostView = inflater.inflate(R.layout.privacy_guard_manager, container, false);
 
@@ -112,9 +112,9 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mNoUserAppsInstalled = (TextView) mActivity.findViewById(R.id.error);
+        mNoUserAppsInstalled = mActivity.findViewById(R.id.error);
 
-        mAppsList = (ListView) mActivity.findViewById(R.id.apps_list);
+        mAppsList = mActivity.findViewById(R.id.apps_list);
         mAppsList.setOnItemClickListener(this);
         mAppsList.setOnItemLongClickListener(this);
 

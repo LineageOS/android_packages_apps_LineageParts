@@ -117,8 +117,7 @@ public class LightSettingsDialog extends AlertDialog implements
     private void init(Context context, int color, int speedOn, int speedOff,
             boolean onOffChangeable, int brightness) {
         mContext = context;
-        mNotificationManager =
-                (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager = mContext.getSystemService(NotificationManager.class);
 
         mReadyForLed = false;
         mLedLastColor = 0;
@@ -138,16 +137,16 @@ public class LightSettingsDialog extends AlertDialog implements
      */
     private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable,
                int brightness) {
-        mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mInflater = LayoutInflater.from(mContext);
         View layout = mInflater.inflate(R.layout.dialog_light_settings, null);
 
-        mColorPicker = (ColorPickerView) layout.findViewById(R.id.color_picker_view);
-        mColorPanel = (LinearLayout) layout.findViewById(R.id.color_panel_view);
-        mHexColorInput = (EditText) layout.findViewById(R.id.hex_color_input);
-        mNewColor = (ColorPanelView) layout.findViewById(R.id.color_panel);
-        mLightsDialogDivider = (View) layout.findViewById(R.id.lights_dialog_divider);
-        mPulseSpeedOn = (Spinner) layout.findViewById(R.id.on_spinner);
-        mPulseSpeedOff = (Spinner) layout.findViewById(R.id.off_spinner);
+        mColorPicker = layout.findViewById(R.id.color_picker_view);
+        mColorPanel = layout.findViewById(R.id.color_panel_view);
+        mHexColorInput = layout.findViewById(R.id.hex_color_input);
+        mNewColor = layout.findViewById(R.id.color_panel);
+        mLightsDialogDivider = layout.findViewById(R.id.lights_dialog_divider);
+        mPulseSpeedOn = layout.findViewById(R.id.on_spinner);
+        mPulseSpeedOff = layout.findViewById(R.id.off_spinner);
 
         mColorPicker.setOnColorChangedListener(this);
         mColorPicker.setColor(color, true);
@@ -461,7 +460,7 @@ public class LightSettingsDialog extends AlertDialog implements
         if (!hasFocus) {
             mHexColorInput.removeTextChangedListener(this);
             InputMethodManager inputMethodManager =
-                    (InputMethodManager) mContext.getSystemService(Activity.INPUT_METHOD_SERVICE);
+                    mContext.getSystemService(InputMethodManager.class);
             inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
         } else {
             mHexColorInput.addTextChangedListener(this);

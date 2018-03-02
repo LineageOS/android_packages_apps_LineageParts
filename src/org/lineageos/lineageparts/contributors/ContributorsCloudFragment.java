@@ -137,7 +137,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                 LayoutInflater li = LayoutInflater.from(getContext());
                 convertView = li.inflate(R.layout.contributors_search_result, null);
                 ContributorsViewHolder viewHolder = new ContributorsViewHolder();
-                viewHolder.mLabel = (TextView) convertView.findViewById(R.id.contributor_name);
+                viewHolder.mLabel = convertView.findViewById(R.id.contributor_name);
                 convertView.setTag(viewHolder);
             }
 
@@ -311,7 +311,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
         mLoadingView= v.findViewById(R.id.contributors_cloud_loading);
         mFailedView= v.findViewById(R.id.contributors_cloud_failed);
-        mImageView = (ImageView) v.findViewById(R.id.contributors_cloud_image);
+        mImageView = v.findViewById(R.id.contributors_cloud_image);
         mViewController = new ContributorsCloudViewController(mImageView);
         mViewController.setMaximumScale(20f);
         mViewController.setMediumScale(7f);
@@ -772,7 +772,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     }
 
     private boolean hasLargeHeap() {
-        ActivityManager am = (ActivityManager) getActivity().getSystemService(Context.ACTIVITY_SERVICE);
+        ActivityManager am = getActivity().getSystemService(ActivityManager.class);
         return am.getMemoryClass() >= 96;
     }
 

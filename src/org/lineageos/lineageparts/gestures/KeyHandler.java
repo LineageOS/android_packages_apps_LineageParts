@@ -101,18 +101,18 @@ public class KeyHandler implements DeviceKeyHandler {
     public KeyHandler(final Context context) {
         mContext = context;
 
-        mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+        mAudioManager = mContext.getSystemService(AudioManager.class);
 
-        mPowerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+        mPowerManager = mContext.getSystemService(PowerManager.class);
         mGestureWakeLock = mPowerManager.newWakeLock(
                 PowerManager.PARTIAL_WAKE_LOCK, "LineagePartsGestureWakeLock");
 
         mEventHandler = new EventHandler();
 
-        mCameraManager = (CameraManager) mContext.getSystemService(Context.CAMERA_SERVICE);
+        mCameraManager = mContext.getSystemService(CameraManager.class);
         mCameraManager.registerTorchCallback(new TorchModeCallback(), mEventHandler);
 
-        mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+        mVibrator = mContext.getSystemService(Vibrator.class);
 
         final Resources resources = mContext.getResources();
         mProximityWakeSupported = resources.getBoolean(
@@ -121,10 +121,10 @@ public class KeyHandler implements DeviceKeyHandler {
         if (mProximityWakeSupported) {
             mProximityTimeOut = resources.getInteger(
                     org.lineageos.platform.internal.R.integer.config_proximityCheckTimeout);
-            mDefaultProximity = mContext.getResources().getBoolean(
+            mDefaultProximity = resources.getBoolean(
                     org.lineageos.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
 
-            mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+            mSensorManager = mContext.getSystemService(SensorManager.class);
             mProximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
             mProximityWakeLock = mPowerManager.newWakeLock(
                     PowerManager.PARTIAL_WAKE_LOCK, "LineagePartsProximityWakeLock");

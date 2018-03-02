@@ -239,9 +239,9 @@ public class BluetoothTriggerFragment extends ListFragment {
         public View getView(int i, View view, ViewGroup viewGroup) {
             LayoutInflater inflater = LayoutInflater.from(getContext());
             View rowView = inflater.inflate(R.layout.abstract_trigger_row, viewGroup, false);
-            TextView title = (TextView) rowView.findViewById(R.id.title);
-            TextView desc = (TextView) rowView.findViewById(R.id.desc);
-            ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
+            TextView title = rowView.findViewById(R.id.title);
+            TextView desc = rowView.findViewById(R.id.desc);
+            ImageView imageView = rowView.findViewById(R.id.icon);
 
             BluetoothTrigger trigger = getItem(i);
 
