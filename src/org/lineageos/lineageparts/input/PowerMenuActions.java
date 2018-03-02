@@ -91,8 +91,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
                 mUsersPref = null;
             } else {
-                List<UserInfo> users = ((UserManager) mContext.getSystemService(
-                        Context.USER_SERVICE)).getUsers();
+                List<UserInfo> users = mContext.getSystemService(UserManager.class).getUsers();
                 boolean enabled = (users.size() > 1);
                 mUsersPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_USERS) && enabled);
                 mUsersPref.setEnabled(enabled);

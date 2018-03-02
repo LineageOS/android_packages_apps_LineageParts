@@ -94,9 +94,9 @@ public class PrivacyGuardAppListAdapter extends BaseAdapter implements SectionIn
 
             // creates a ViewHolder and children references
             appHolder = new PrivacyGuardAppViewHolder();
-            appHolder.title = (TextView) convertView.findViewById(R.id.app_title);
-            appHolder.icon = (ImageView) convertView.findViewById(R.id.app_icon);
-            appHolder.privacyGuardIcon = (ImageView) convertView.findViewById(R.id.app_privacy_guard_icon);
+            appHolder.title = convertView.findViewById(R.id.app_title);
+            appHolder.icon = convertView.findViewById(R.id.app_icon);
+            appHolder.privacyGuardIcon = convertView.findViewById(R.id.app_privacy_guard_icon);
             convertView.setTag(appHolder);
         } else {
             appHolder = (PrivacyGuardAppViewHolder) convertView.getTag();

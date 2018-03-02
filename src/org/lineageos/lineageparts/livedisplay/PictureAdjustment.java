@@ -103,7 +103,7 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
 
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
             IntervalSeekBar seekBar = (IntervalSeekBar) view.findViewById(SEEKBAR_ID[i]);
-            TextView value = (TextView) view.findViewById(SEEKBAR_VALUE_ID[i]);
+            TextView value = view.findViewById(SEEKBAR_VALUE_ID[i]);
             final Range<Float> range = mRanges.get(i);
             mSeekBars[i] = new ColorSeekBar(seekBar, range, value, i);
         }
