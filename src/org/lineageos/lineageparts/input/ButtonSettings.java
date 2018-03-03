@@ -27,6 +27,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
@@ -424,6 +425,56 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mVolumeMusicControls.setDependency(LineageSettings.System.VOLUME_WAKE_SCREEN);
                 mVolumeWakeScreen.setDisableDependentsState(true);
             }
+        }
+
+        // Override key actions on Go devices in order to hide
+        // the multi-window options which are unsupported there
+        if (SystemProperties.get("ro.config.low_ram").equals("true")) {
+            String[] actionEntriesGo = getResources()
+                    .getStringArray(R.array.hardware_keys_action_entries_go);
+            String[] actionValuesGo = getResources()
+                    .getStringArray(R.array.hardware_keys_action_values_go);
+
+            if (hasHomeKey) {
+                mHomeLongPressAction.setEntries(actionEntriesGo);
+                mHomeLongPressAction.setEntryValues(actionValuesGo);
+
+                mHomeDoubleTapAction.setEntries(actionEntriesGo);
+                mHomeDoubleTapAction.setEntryValues(actionValuesGo);
+            }
+
+            if (hasMenuKey) {
+                mMenuPressAction.setEntries(actionEntriesGo);
+                mMenuPressAction.setEntryValues(actionValuesGo);
+
+                mMenuLongPressAction.setEntries(actionEntriesGo);
+                mMenuLongPressAction.setEntryValues(actionValuesGo);
+            }
+
+            if (hasAssistKey) {
+                mAssistPressAction.setEntries(actionEntriesGo);
+                mAssistPressAction.setEntryValues(actionValuesGo);
+
+                mAssistLongPressAction.setEntries(actionEntriesGo);
+                mAssistLongPressAction.setEntryValues(actionValuesGo);
+            }
+
+            if (hasAppSwitchKey) {
+                mAppSwitchPressAction.setEntries(actionEntriesGo);
+                mAppSwitchPressAction.setEntryValues(actionValuesGo);
+
+                mAppSwitchLongPressAction.setEntries(actionEntriesGo);
+                mAppSwitchLongPressAction.setEntryValues(actionValuesGo);
+            }
+
+            mNavigationHomeLongPressAction.setEntries(actionEntriesGo);
+            mNavigationHomeLongPressAction.setEntryValues(actionValuesGo);
+
+            mNavigationHomeDoubleTapAction.setEntries(actionEntriesGo);
+            mNavigationHomeDoubleTapAction.setEntryValues(actionValuesGo);
+
+            mNavigationAppSwitchLongPressAction.setEntries(actionEntriesGo);
+            mNavigationAppSwitchLongPressAction.setEntryValues(actionValuesGo);
         }
     }
 
