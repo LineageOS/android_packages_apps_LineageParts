@@ -69,6 +69,27 @@
         -->
     </string-array>
 
+    <!-- Hardware key rebinding for Go enabled devices -->
+    <string-array name="hardware_keys_action_entries_go" translatable="false">
+        <item>@string/hardware_keys_action_nothing</item>
+        <item>@string/hardware_keys_action_menu</item>
+        <item>@string/hardware_keys_action_app_switch</item>
+        <item>@string/hardware_keys_action_search</item>
+        <item>@string/hardware_keys_action_voice_search</item>
+        <item>@string/hardware_keys_action_in_app_search</item>
+        <item>@string/hardware_keys_action_launch_camera</item>
+        <item>@string/hardware_keys_action_sleep</item>
+        <item>@string/hardware_keys_action_last_app</item>
+        <!--
+        split-screen is not supported on Android Go devices
+        <item>@string/hardware_keys_action_split_screen</item>
+        -->
+        <!--
+        <item>@string/hardware_keys_action_single_handed_left</item>
+        <item>@string/hardware_keys_action_single_handed_right</item>
+        -->
+    </string-array>
+
     <string-array name="hardware_keys_action_values" translatable="false">
         <item>0</item>
         <item>1</item>
@@ -80,6 +101,24 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="hardware_keys_action_values_go" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <!--
+        split-screen is not supported on Android Go devices
+        <item>9</item>
+        -->
         <item>10</item>
         <item>11</item>
     </string-array>
