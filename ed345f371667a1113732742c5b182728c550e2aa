@@ -22,6 +22,30 @@
       "revId": "ed345f371667a1113732742c5b182728c550e2aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "530f93ed_eefd9283",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2018-03-03T00:24:33Z",
+      "side": 1,
+      "message": "As per my earlier comments: brightness is supported in the sdk if you have rgb control OR hal adjustable brightness.  (Most  liblights implementations were simply scaling rgb anyway.)",
+      "parentUuid": "666732a3_f95b1a0a",
+      "range": {
+        "startLine": 152,
+        "startChar": 8,
+        "endLine": 152,
+        "endChar": 59
+      },
+      "revId": "ed345f371667a1113732742c5b182728c550e2aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
