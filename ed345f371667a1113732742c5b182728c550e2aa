@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "666732a3_f95b1a0a",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-03T00:20:54Z",
+      "side": 1,
+      "message": "I don\u0027t quite understand this condition. Shouldn\u0027t the section be removed if adjustable led brightness capability is not reported?",
+      "range": {
+        "startLine": 152,
+        "startChar": 8,
+        "endLine": 152,
+        "endChar": 59
+      },
+      "revId": "ed345f371667a1113732742c5b182728c550e2aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
