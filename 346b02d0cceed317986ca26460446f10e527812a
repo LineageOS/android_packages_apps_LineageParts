@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "b13a26d3_12050a45",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-03-03T21:19:49Z",
+      "side": 1,
+      "message": "I wonder if we shouldn\u0027t keep _split_screen here but commented to point out it\u0027s disabled..",
+      "revId": "346b02d0cceed317986ca26460446f10e527812a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "54d50985_49017e1a",
         "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
         "patchSetId": 1
@@ -30,6 +47,30 @@
       "writtenOn": "2018-03-03T21:11:42Z",
       "side": 1,
       "message": "Don\u0027t suppose there\u0027s an overlay based way of doing this so you don\u0027t have to fill all the entries manually?",
+      "range": {
+        "startLine": 431,
+        "startChar": 33,
+        "endLine": 431,
+        "endChar": 52
+      },
+      "revId": "346b02d0cceed317986ca26460446f10e527812a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0cac3fec_d27b51ee",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-03-03T21:19:49Z",
+      "side": 1,
+      "message": "No it\u0027s the low_ram property used globally in multiple parts of the Android sources to adapt at runtime to the Go\u0027s user-facing difference introduced by low_ram.",
+      "parentUuid": "54d50985_49017e1a",
       "range": {
         "startLine": 431,
         "startChar": 33,
