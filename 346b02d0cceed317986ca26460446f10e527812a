@@ -80,6 +80,30 @@
       "revId": "346b02d0cceed317986ca26460446f10e527812a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4cdc7d70_9e6e7df7",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-03-04T03:18:13Z",
+      "side": 1,
+      "message": "Gotcha, didn\u0027t realize that was the flag they were using for everything.",
+      "parentUuid": "0cac3fec_d27b51ee",
+      "range": {
+        "startLine": 431,
+        "startChar": 33,
+        "endLine": 431,
+        "endChar": 52
+      },
+      "revId": "346b02d0cceed317986ca26460446f10e527812a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
