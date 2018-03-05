@@ -54,7 +54,7 @@ public class OverlayManager {
     private boolean isChangeableOverlay(@NonNull String pkg) {
         try {
             PackageInfo pi = mPackageManager.getPackageInfo(pkg, 0);
-            return pi != null && !pi.isStaticOverlay;
+            return pi != null && (pi.overlayFlags & PackageInfo.FLAG_OVERLAY_STATIC) == 0;
         } catch (PackageManager.NameNotFoundException e) {
             return false;
         }
