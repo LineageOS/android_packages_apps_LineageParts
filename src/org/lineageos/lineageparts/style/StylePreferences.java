@@ -42,7 +42,6 @@ import org.lineageos.lineageparts.style.models.Accent;
 import org.lineageos.lineageparts.style.models.StyleStatus;
 import org.lineageos.lineageparts.style.util.AccentAdapter;
 import org.lineageos.lineageparts.style.util.AccentUtils;
-import org.lineageos.lineageparts.style.util.OverlayManager;
 import org.lineageos.lineageparts.style.util.UIUtils;
 
 import java.util.Arrays;
@@ -65,6 +64,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private StyleInterface mInterface;
     private StyleStatus mStyleStatus;
+    private String mPackageName = "";
 
     private byte mOkStatus = 0;
 
@@ -72,8 +72,10 @@ public class StylePreferences extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
 
-        addPreferencesFromResource(R.xml.style_preferences);
+        mInterface = StyleInterface.getInstance(getContext());
+        mPackageName = getContext().getPackageName();
 
+        addPreferencesFromResource(R.xml.style_preferences);
 
         mStylePref = findPreference("berry_global_style");
         mStylePref.setOnPreferenceChangeListener(this::onStyleChange);
@@ -86,8 +88,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         Preference automagic = findPreference("style_automagic");
         automagic.setOnPreferenceClickListener(p -> onAutomagicClick());
-
-        mInterface = StyleInterface.getInstance(getContext());
     }
 
     private boolean hasChangeStylePermission() {
@@ -131,12 +131,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private void onAccentSelected(Accent accent) {
         String previousAccent = LineageSettings.System.getString(getContext().getContentResolver(),
                 LineageSettings.System.BERRY_CURRENT_ACCENT);
-
-        OverlayManager om = new OverlayManager(getContext());
-        if (!TextUtils.isEmpty(previousAccent)) {
-            // Disable previous theme
-            om.setEnabled(previousAccent, false);
-        }
 
         mInterface.setAccent(accent.getPackageName());
         updateAccentPref(accent);
@@ -196,8 +190,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
         int preference = LineageSettings.System.getInt(getContext().getContentResolver(),
                 LineageSettings.System.BERRY_GLOBAL_STYLE,
                 StyleInterface.STYLE_GLOBAL_AUTO_WALLPAPER);
+        String handlerPackage = LineageSettings.System.getString(getContext().getContentResolver(),
+                LineageSettings.System.BERRY_MANAGED_BY_APP);
 
-        setStyleIcon(preference);
         switch (preference) {
             case StyleInterface.STYLE_GLOBAL_LIGHT:
                 mStyleStatus = StyleStatus.LIGHT_ONLY;
@@ -209,6 +204,30 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 mStyleStatus = StyleStatus.DYNAMIC;
                 break;
         }
+
+        if ("".equals(handlerPackage) || getContext().getPackageName().equals(handlerPackage)) {
+            setStyleIcon(preference);
+        } else {
+            setupStylePrefForApp(handlerPackage);
+        }
+    }
+
+    private void setupStylePrefForApp(String packageName) {
+        try {
+            PackageManager pm = getContext().getPackageManager();
+            String name = pm.getApplicationLabel(pm.getApplicationInfo(packageName, 0)).toString();
+            Drawable icon = pm.getApplicationIcon(packageName);
+
+            mStylePref.setIcon(icon);
+            mStylePref.setSummary(getString(R.string.style_global_entry_app, name));
+        } catch (PackageManager.NameNotFoundException e) {
+            recoverStyleFromBadPackage();
+        }
+    }
+
+    private void recoverStyleFromBadPackage() {
+        // The package that was handling the styles is no longer available, reset to default
+        onStyleChange(mStylePref, StyleInterface.STYLE_GLOBAL_AUTO_WALLPAPER);
     }
 
     private void applyStyle(Suggestion suggestion) {
@@ -238,7 +257,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
             return false;
         }
 
-        mInterface.setGlobalStyle(value);
+        mInterface.setGlobalStyle(value, mPackageName);
         setStyleIcon(value);
         return true;
     }
