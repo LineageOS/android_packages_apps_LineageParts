@@ -49,11 +49,15 @@ public final class AccentUtils {
     public static List<Accent> getAccents(Context context, StyleStatus status) {
         List<Accent> accents = new ArrayList<>();
 
-        // Add default accent
-        accents.add(getDefaultAccent(context));
-
-        String[] targets = context.getResources().getStringArray(R.array.accent_packages);
+        StyleInterface styleInterface = StyleInterface.getInstance(context);
+        List<String> targets = styleInterface.getTrustedAccents();
         for (String target : targets) {
+            // Add default accent
+            if (StyleInterface.ACCENT_DEFAULT.equals(target)) {
+                accents.add(getDefaultAccent(context));
+                continue;
+            }
+
             try {
                 Accent accent = getAccent(context, target);
                 if (accent != null && isCompatible(status, accent)) {

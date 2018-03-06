@@ -379,19 +379,4 @@
         <item>2</item> <!-- Force light -->
         <item>3</item> <!-- Force dark -->
     </string-array>
-
-    <!-- Supported accent packages -->
-    <string-array name="accent_packages" translatable="false">
-        <item>org.lineageos.overlay.accent.red</item>
-        <item>org.lineageos.overlay.accent.pink</item>
-        <item>org.lineageos.overlay.accent.purple</item>
-        <item>org.lineageos.overlay.accent.blue</item>
-        <item>org.lineageos.overlay.accent.cyan</item>
-        <item>org.lineageos.overlay.accent.green</item>
-        <item>org.lineageos.overlay.accent.orange</item>
-        <item>org.lineageos.overlay.accent.yellow</item>
-        <item>org.lineageos.overlay.accent.brown</item>
-        <item>org.lineageos.overlay.accent.black</item>
-    </string-array>
-
 </resources>
