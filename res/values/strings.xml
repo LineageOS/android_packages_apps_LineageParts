@@ -682,6 +682,7 @@
     <string name="style_global_entry_light">Light</string>
     <string name="style_global_entry_dark">Dark</string>
     <string name="style_global_entry_time">Automatic (time of the day)</string>
+    <string name="style_global_entry_app">Managed by %1$s</string>
     <string name="style_accent_title">Accent color</string>
     <string name="style_accent_configuration_not_supported">The current accent isn\'t compatible with the selected style. In order to proceed another accent has to be selected, do you want to continue?</string>
     <string name="style_accent_configuration_positive">Proceed</string>
