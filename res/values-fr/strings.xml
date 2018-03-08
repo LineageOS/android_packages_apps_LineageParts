@@ -201,12 +201,12 @@
   <string name="home_answer_call_summary">Répondre aux appels entrants en appuyant sur le bouton d\'accueil</string>
   <string name="additional_buttons_title">Boutons supplémentaires</string>
   <!-- Key backlight -->
-  <string name="button_backlight_title">Rétro-éclairage</string>
+  <string name="button_backlight_title">Rétroéclairage</string>
   <string name="button_backlight_enabled">Rétroéclairage des boutons</string>
   <string name="keyboard_backlight_enabled">Rétroéclairage du clavier</string>
   <string name="button_backlight_seekbar_title">Luminosité des boutons</string>
   <string name="keyboard_backlight_seekbar_title">Luminosité du clavier</string>
-  <string name="backlight_timeout_title">Temporisation rétro-éclairage</string>
+  <string name="backlight_timeout_title">Délai d\'extinction de l\'éclairage</string>
   <string name="backlight_timeout_unlimited">Ne pas éteindre</string>
   <string name="backlight_summary_disabled">Désactivé</string>
   <string name="backlight_summary_enabled_with_timeout">Activé pendant <xliff:g id="timeout">%s</xliff:g></string>
@@ -223,7 +223,7 @@
   <string name="navigation_bar_home_long_press_title">Appui long sur bouton d\'accueil</string>
   <string name="navigation_bar_home_double_tap_title">Appui double sur bouton d\'accueil</string>
   <!-- Power menu -->
-  <string name="power_menu_title">Menu marche/arrêt</string>
+  <string name="power_menu_title">Menu Marche/Arrêt</string>
   <string name="power_menu_screenshot_title">Capture d\'écran</string>
   <string name="power_menu_airplane_title">Mode Avion</string>
   <string name="power_menu_users_title">Changer d\'utilisateur</string>
@@ -237,7 +237,7 @@
   <string name="camera_double_tap_power_gesture_desc">Ouvrir rapidement l\'appareil photo sans déverrouiller l\'écran</string>
   <string name="torch_long_press_power_gesture_title">Pression longue pour la lampe de poche</string>
   <string name="torch_long_press_power_gesture_desc">Activer la lampe de poche par un appui long sur le bouton d\'alimentation lorsque l\'écran est éteint</string>
-  <string name="torch_long_press_power_timeout_title">Désactiver automatiquement la lampe de torche</string>
+  <string name="torch_long_press_power_timeout_title">Désactiver automatiquement la lampe de poche</string>
   <string name="torch_long_press_power_timeout_never">Jamais</string>
   <string name="torch_long_press_power_timeout_1min">1 minute</string>
   <string name="torch_long_press_power_timeout_2min">2 minutes</string>
@@ -317,7 +317,7 @@
   <string name="profile_volumeoverrides_title">Outrepasser le volume</string>
   <string name="connection_state_enabled">Activer</string>
   <string name="volume_override_summary">Défini à %1$s/%2$s</string>
-  <string name="profile_volume_override_checkbox_label">Outrepasser le volume</string>
+  <string name="profile_volume_override_checkbox_label">Modifier le volume</string>
   <!-- Menu item for managing profiles -->
   <string name="profile_profiles_manage">Profils</string>
   <string name="profile_profile_manage">Gérer le profil</string>

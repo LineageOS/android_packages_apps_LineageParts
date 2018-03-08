@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="lineageparts_title">Ustawienia LineageOS</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Ładowanie\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -30,6 +31,7 @@
   <string name="back">Wróć</string>
   <string name="finish">Zakończ</string>
   <string name="next">Dalej</string>
+  <string name="on">Włączone</string>
   <string name="off">Wyłączone</string>
   <string name="yes">Tak</string>
   <string name="no">Nie</string>
@@ -138,7 +140,9 @@
   <string name="live_display_color_profile_reading_title">Czytanie</string>
   <string name="live_display_color_profile_reading_summary">Cieplejsze kolory, aby ograniczyć zmęczenie oczu</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Kolory zgodne z paletą kolorów sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Kolory zgodne z paletą kolorów DCI-P3</string>
   <string name="color_calibration_title">Kalibracja kolorów</string>
   <string name="color_calibration_summary">Kalibruj kolory wyświetlacza</string>
   <string name="color_red_title">Czerwony</string>
@@ -161,6 +165,8 @@
   <string name="hardware_keys_appswitch_key_title">Przycisk ostatnich aplikacji</string>
   <string name="hardware_keys_camera_key_title">Przycisk aparatu</string>
   <string name="hardware_keys_volume_keys_title">Przyciski głośności</string>
+  <string name="hardware_keys_short_press_title">Akcja krótkiego naciśnięcia</string>
+  <string name="hardware_keys_long_press_title">Akcja długiego naciśnięcia</string>
   <string name="hardware_keys_double_tap_title">Akcja podwójnego naciśnięcia</string>
   <string name="hardware_keys_action_nothing">Brak akcji</string>
   <string name="hardware_keys_action_menu">Otwórz/zamknij menu</string>
@@ -432,6 +438,7 @@
   <string name="network_traffic_settings_title">Monitor ruchu sieciowego</string>
   <string name="network_traffic_settings_summary">Pokaż bieżące poziomy ruchu sieciowego na pasku stanu</string>
   <string name="network_traffic_mode_title">Tryb wyświetlania</string>
+  <string name="network_traffic_mode_disable">Wyłączone</string>
   <string name="network_traffic_mode_up">Tylko wysyłanie</string>
   <string name="network_traffic_mode_down">Tylko pobieranie</string>
   <string name="network_traffic_mode_all">Wysyłanie i pobieranie</string>
@@ -442,6 +449,8 @@
   <string name="network_traffic_units_megabits">Megabity na sekundę (Mb/s)</string>
   <string name="network_traffic_units_kilobytes">Kilobajty na sekundę (kB/s)</string>
   <string name="network_traffic_units_megabytes">Megabajty na sekundę (MB/s)</string>
+  <string name="network_traffic_show_units">Pokaż jednostki</string>
+  <string name="network_traffic_show_units_summary">Określa, czy pokazywać jednostki pomiaru ruchu sieciowego na pasku stanu</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Chronione aplikacje</string>
   <string name="protected_apps_manager_summary">Zarządzaj, które aplikacje mają być ukryte za bezpieczną blokadą</string>
@@ -580,4 +589,18 @@
   <string name="touchscreen_gesture_action_volume_up">Większa głośność multimediów</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Styl</string>
+  <string name="style_summary">Wybierz kolory systemowe</string>
+  <string name="style_global_title">Styl</string>
+  <string name="style_global_entry_automatic">Automatyczny (tapeta)</string>
+  <string name="style_global_entry_light">Jasny</string>
+  <string name="style_global_entry_dark">Ciemny</string>
+  <string name="style_global_entry_time">Automatyczny (pora dnia)</string>
+  <string name="style_accent_configuration_not_supported">Obecny akcent kolorystyczny jest niekompatybilny z wybranym stylem. Aby kontynuować, musisz wybrać inny akcent, czy chcesz kontynuować?</string>
+  <string name="style_accent_configuration_positive">Kontynuuj</string>
+  <string name="style_automagic_description">Dostosuj styl do swojej tapety</string>
+  <string name="style_automagic_dialog_content">Sugerowany styl: <b>%1$s</b> z <b>%2$s</b> akcentem.\nChcesz go zastosować?</string>
+  <string name="style_automagic_dialog_positive">Zastosuj</string>
+  <string name="style_accent_default_name">Domyślny</string>
+  <string name="style_permission_error">Wymagany jest dostęp do pamięci, aby dokonać analizy tapety, proszę przyznać uprawnienia, aby korzystać z tej funkcji</string>
 </resources>

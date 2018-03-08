@@ -597,6 +597,7 @@
   <string name="style_accent_title">Cor de destaque</string>
   <string name="style_accent_configuration_not_supported">A cor de destaque atual não é compatível com o estilo selecionado. Para continuar terá de escolher outra cor de destaque. Deseja continuar?</string>
   <string name="style_accent_configuration_positive">Continuar</string>
+  <string name="style_automagic_description">Fazer com que o estilo combine com a imagem de fundo</string>
   <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> com <b>%2$s</b> como cor de destaque.\nPretende aplicá-lo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Predefinição</string>

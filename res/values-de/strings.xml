@@ -227,6 +227,7 @@
   <!-- Power menu -->
   <string name="power_menu_title">Ein-/Aus-Menü</string>
   <string name="power_menu_screenshot_title">Bildschirmfoto</string>
+  <string name="power_menu_screenshot_summary">Für zugeschnittenen Screenshot gedrückt halten</string>
   <string name="power_menu_airplane_title">Flugmodus</string>
   <string name="power_menu_users_title">Benutzer wechseln</string>
   <string name="power_menu_bug_report_title">Fehlerbericht</string>
@@ -434,12 +435,16 @@
   <string name="status_bar_icons_title">Statusleistensymbole</string>
   <string name="status_bar_icons_summary">Festlegen, welche Statusleistensymbole angezeigt werden</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_settings_title">Datenverkehr-Anzeige</string>
+  <string name="network_traffic_settings_summary">Aktuellen Datenverkehr in der Statusleiste anzeigen</string>
   <string name="network_traffic_mode_title">Anzeigemodus</string>
   <string name="network_traffic_mode_disable">Deaktiviert</string>
   <string name="network_traffic_mode_up">Nur Upload</string>
   <string name="network_traffic_mode_down">Nur Download</string>
   <string name="network_traffic_mode_all">Upload und Download</string>
   <string name="network_traffic_autohide">Automatisch ausblenden</string>
+  <string name="network_traffic_autohide_summary">Datenverkehr-Anzeige bei Inaktivität ausblenden</string>
+  <string name="network_traffic_units_title">Einheiten der Datenübertragungsraten</string>
   <string name="network_traffic_units_kilobits">Kilobits pro Sekunde (kbit/s)</string>
   <string name="network_traffic_units_megabits">Megabits pro Sekunde (Mbit/s)</string>
   <string name="network_traffic_units_kilobytes">Kilobyte pro Sekunde (kB/s)</string>
@@ -581,4 +586,16 @@
   <string name="touchscreen_gesture_action_volume_up">Medienlautstärke erhöhen</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_summary">Systemfarben wählen</string>
+  <string name="style_global_title">Design</string>
+  <string name="style_global_entry_automatic">Automatisch (Hintergrundbild)</string>
+  <string name="style_global_entry_light">Hell</string>
+  <string name="style_global_entry_dark">Dunkel</string>
+  <string name="style_global_entry_time">Automatisch (Tageszeit)</string>
+  <string name="style_accent_title">Akzentfarbe</string>
+  <string name="style_accent_configuration_positive">Fortfahren</string>
+  <string name="style_automagic_title">Automagisch</string>
+  <string name="style_automagic_dialog_positive">Anwenden</string>
+  <string name="style_accent_default_name">Standard</string>
+  <string name="style_permission_error">Speicherzugriffsberechtigung ist erforderlich, um Ihr Hintergrundbild zu analysieren. Bitte gewähren Sie diese, um die Funktion nutzen zu können</string>
 </resources>

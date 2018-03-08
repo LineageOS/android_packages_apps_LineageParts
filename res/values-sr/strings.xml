@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="lineageparts_title">Подешавања LineageOS-а</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Учитавам\u2026</string>
   <string name="dlg_ok">У реду</string>
@@ -76,6 +77,9 @@
   <string name="pulse_speed_slow">Споро</string>
   <string name="pulse_speed_very_slow">Веома споро</string>
   <!-- Common light settings strings -->
+  <string name="light_brightness_title">Ниво осветљености</string>
+  <string name="light_brightness_normal">Нормалан</string>
+  <string name="light_brightness_zen">Не узнемиравај</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Индикатор батерије</string>
   <string name="battery_low_pulse_title">Трепери ако је батерија на измаку</string>
@@ -195,6 +199,8 @@
   <string name="volume_answer_call_summary">Одговорите на долазни позив притиском на дугмад за јачину звука.</string>
   <string name="home_answer_call_title">Одговори на позив</string>
   <string name="home_answer_call_summary">Одговорите на долазни позив притиском на дугме „Почетна“.</string>
+  <string name="extras_title">Додатно</string>
+  <string name="additional_buttons_title">Додатна дугмад</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Позадинско осветљење</string>
   <string name="button_backlight_enabled">Осветли дугмад</string>
@@ -217,9 +223,11 @@
   <string name="navigation_bar_arrow_keys_summary">Приказује дугмад за померање курсора улево или удесно при уносу текста. Дугме за промену метода уноса неће бити приказано.</string>
   <string name="navigation_bar_home_long_press_title">Дуги притисак на дугме „Почетна“</string>
   <string name="navigation_bar_home_double_tap_title">Двоструки додир дугмета „Почетна“</string>
+  <string name="navigation_bar_app_switch_long_press_title">Акција на дуги притисак дугмета „скорашње“</string>
   <!-- Power menu -->
   <string name="power_menu_title">Мени за напајање</string>
   <string name="power_menu_screenshot_title">Снимак екрана</string>
+  <string name="power_menu_screenshot_summary">Додирните и задржите да бисте одредили област за снимак екрана</string>
   <string name="power_menu_airplane_title">Режим рада у авиону</string>
   <string name="power_menu_users_title">Пребацивање корисника</string>
   <string name="power_menu_bug_report_title">Пријава грешака</string>
@@ -427,6 +435,22 @@
   <string name="status_bar_icons_title">Иконе у статусној траци</string>
   <string name="status_bar_icons_summary">Подесите које иконе ће бити приказане у статусној траци.</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_settings_title">Контролор мрежног саобраћаја</string>
+  <string name="network_traffic_settings_summary">Прикажи тренутни проток мрежног саобраћаја у статусној траци</string>
+  <string name="network_traffic_mode_title">Режим приказа</string>
+  <string name="network_traffic_mode_disable">Онемогућено</string>
+  <string name="network_traffic_mode_up">Отпреми само</string>
+  <string name="network_traffic_mode_down">Само преузимање</string>
+  <string name="network_traffic_mode_all">Слање и преузимање</string>
+  <string name="network_traffic_autohide">Аутоматски сакриј</string>
+  <string name="network_traffic_autohide_summary">Сакриј контролу протока у одсуству активности</string>
+  <string name="network_traffic_units_title">Мерне јединице протока</string>
+  <string name="network_traffic_units_kilobits">Килобита у секунди (kb/с)</string>
+  <string name="network_traffic_units_megabits">Мегабита у секунди (Mb/с)</string>
+  <string name="network_traffic_units_kilobytes">Килобајта у секунди (kB/с)</string>
+  <string name="network_traffic_units_megabytes">Мегабајта у секунди (MB/с)</string>
+  <string name="network_traffic_show_units">Прикажи јединице</string>
+  <string name="network_traffic_show_units_summary">Да ли приказати мерне јединице протока у на статусној траци</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Заштићене апликације</string>
   <string name="protected_apps_manager_summary">Управљајте апликацијама које за покретање захтевају унос лозинке.</string>
@@ -563,4 +587,20 @@
   <string name="touchscreen_gesture_action_volume_up">Повећај јачину звука</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Стил</string>
+  <string name="style_summary">Изабери боје система</string>
+  <string name="style_global_title">Стил</string>
+  <string name="style_global_entry_automatic">Аутоматски (тапет)</string>
+  <string name="style_global_entry_light">Светло</string>
+  <string name="style_global_entry_dark">Тамно</string>
+  <string name="style_global_entry_time">Аутоматско (доба дана)</string>
+  <string name="style_accent_title">Боја наглашавања</string>
+  <string name="style_accent_configuration_not_supported">Тренутни нагласак није компатибилан са изабрани стилом. Да би наставили друго наглашавање мора бити изабрано, желите ли да наставите?</string>
+  <string name="style_accent_configuration_positive">Настави</string>
+  <string name="style_automagic_title">Аутомагично</string>
+  <string name="style_automagic_description">Доради стил да се слаже са вашим тапетом</string>
+  <string name="style_automagic_dialog_content">Предолжени стил: <b>%1$s</b> са <b>%2$s</b> нагласком.\nДа ли желите да га примените?</string>
+  <string name="style_automagic_dialog_positive">Примени</string>
+  <string name="style_accent_default_name">Подразумевани</string>
+  <string name="style_permission_error">Приступ складишту уређаја је потребан за анализу ваше тапете, молим дајте приступ да би сте користили ову фунцкију</string>
 </resources>

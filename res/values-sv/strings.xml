@@ -129,6 +129,7 @@
   <string name="hardware_keys_action_nothing">Ingen åtgärd</string>
   <string name="hardware_keys_action_search">Sökassistent</string>
   <string name="hardware_keys_action_voice_search">Röstsökning</string>
+  <string name="hardware_keys_action_in_app_search">Sök i app</string>
   <string name="hardware_keys_action_launch_camera">Öppna kamera</string>
   <string name="hardware_keys_action_sleep">Stäng av skärmen</string>
   <string name="hardware_keys_action_split_screen">Delad skärm</string>
@@ -151,7 +152,14 @@
   <string name="power_menu_bug_report_title">Buggrapport</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="torch_long_press_power_timeout_never">Aldrig</string>
+  <string name="torch_long_press_power_timeout_1min">1 minut</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuter</string>
+  <string name="torch_long_press_power_timeout_5min">5 minuter</string>
+  <string name="torch_long_press_power_timeout_10min">10 minuter</string>
   <!-- Profiles -->
+  <string name="profile_menu_delete_title">Radera</string>
+  <string name="profile_action_none">Lämna oförändrad</string>
+  <string name="profile_action_disable">Stäng av</string>
   <string name="profile_tabs_wifi">Wi\u2011Fi</string>
   <string name="profile_tabs_bluetooth">Bluetooth</string>
   <string name="profile_tabs_nfc">NFC</string>
@@ -195,6 +203,7 @@
   <!-- Menu item for managing profiles -->
   <string name="profile_profiles_manage">Profiler</string>
   <!-- Profile settings screen, section header for settings related to notification profiles -->
+  <string name="profile_trigger_connect">Vid anslutning</string>
   <!-- Profile Settings sound modes labels -->
   <string name="vibrate_mode">Vibrationsläge</string>
   <string name="choose_ringtone">Välj rignsignal</string>
@@ -247,6 +256,7 @@
   <string name="status_bar_am_pm_small">Liten</string>
   <string name="status_bar_am_pm_hidden">Dold</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_style_circle">Cirkel</string>
   <string name="status_bar_battery_style_text">Text</string>
   <string name="status_bar_battery_style_hidden">Dold</string>
   <!-- Status bar - Battery percentage -->
@@ -263,6 +273,7 @@
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">LineageOS statistik</string>
   <string name="anonymous_statistics_warning_title">Om</string>
+  <string name="preview_data_title">Förhandsgranska data</string>
   <string name="view_stats_title">Visa statistik</string>
   <!-- Anonymous Statistics - Preview -->
   <string name="preview_id_title">Unikt ID</string>
@@ -290,6 +301,7 @@
   <string name="auto_power_save_never">Aldrig</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Utökat skrivbord</string>
+  <string name="expanded_desktop_style_hide_nothing">Dölj ingenting</string>
   <string name="expanded_desktop_style_hide_status">Dölj statusfält</string>
   <string name="expanded_desktop_style_hide_navigation">Dölj navigeringsfält</string>
   <string name="expanded_desktop_style_hide_both">Dölj båda</string>

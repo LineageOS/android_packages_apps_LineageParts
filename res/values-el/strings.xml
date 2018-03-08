@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Οπίσθιος φωτισμός</string>
   <string name="button_backlight_enabled">Φωτισμός πλήκτρων</string>
+  <string name="button_backlight_only_when_pressed_title">Φωτισμός πλήκτρων μόνο όταν πιέζονται</string>
   <string name="keyboard_backlight_enabled">Φωτισμός πληκτρολογίου</string>
   <string name="button_backlight_seekbar_title">Φωτεινότητα πλήκτρων</string>
   <string name="keyboard_backlight_seekbar_title">Φωτεινότητα πληκτρολογίου</string>
