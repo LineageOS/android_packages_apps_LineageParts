@@ -70,6 +70,30 @@
       "revId": "ed345f371667a1113732742c5b182728c550e2aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea3e12b5_cf9a313b",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2018-03-08T18:10:58Z",
+      "side": 1,
+      "message": "Yes, that\u0027s correct.  What doesn\u0027t work about it on the m8 ?  (And is behaviour any different between battery led brightness and notification led brightness ?)  It works on other devices like bullhead (that doesn\u0027t have liblights brightness support).",
+      "parentUuid": "0f0465f1_21154b48",
+      "range": {
+        "startLine": 152,
+        "startChar": 8,
+        "endLine": 152,
+        "endChar": 59
+      },
+      "revId": "ed345f371667a1113732742c5b182728c550e2aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
