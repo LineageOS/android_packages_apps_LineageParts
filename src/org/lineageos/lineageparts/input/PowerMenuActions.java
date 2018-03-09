@@ -45,6 +45,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private CheckBoxPreference mAirplanePref;
     private CheckBoxPreference mUsersPref;
     private CheckBoxPreference mBugReportPref;
+    private CheckBoxPreference mLockDownPref;
 
     Context mContext;
     private ArrayList<String> mLocalUserConfig = new ArrayList<String>();
@@ -68,6 +69,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mUsersPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_USERS);
             } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
                 mBugReportPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
+            } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
+                mLockDownPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
             }
         }
 
@@ -131,6 +134,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mBugReportPref) {
             value = mBugReportPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_BUGREPORT);
+
+        } else if (preference == mLockDownPref) {
+            value = mLockDownPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
 
         } else {
             return super.onPreferenceTreeClick(preference);
