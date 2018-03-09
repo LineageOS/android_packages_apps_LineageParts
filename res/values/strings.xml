@@ -256,6 +256,7 @@
     <string name="power_menu_users_title">User switcher</string>
     <string name="power_menu_bug_report_title">Bug report</string>
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
 
     <string name="volume_keys_control_ring_stream_title">Control ringtone volume</string>
     <string name="volume_keys_control_ring_stream_summary_on">Volume keys control ringtone volume</string>
