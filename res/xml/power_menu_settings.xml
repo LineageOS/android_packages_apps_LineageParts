@@ -40,4 +40,8 @@
         android:title="@string/power_menu_bug_report_title"
         android:defaultValue="false" />
 
+    <CheckBoxPreference
+        android:key="lockdown"
+        android:title="@string/power_menu_lockdown_title"
+        android:defaultValue="false" />
 </PreferenceScreen>
