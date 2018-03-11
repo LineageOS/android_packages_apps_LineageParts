@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7402be0e_0524b7c0",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-03-11T10:41:42Z",
+      "side": 1,
+      "message": "not needed, it\u0027s initialized onCreate",
+      "range": {
+        "startLine": 68,
+        "startChar": 31,
+        "endLine": 68,
+        "endChar": 36
+      },
+      "revId": "b757ec6c3d2673f168c5ae7b093d9036b45f3e05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e2ff4d7a_ce6343aa",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-03-11T10:41:42Z",
+      "side": 1,
+      "message": "TextUtils.isEmpty(handlerPackage)",
+      "range": {
+        "startLine": 209,
+        "startChar": 12,
+        "endLine": 209,
+        "endChar": 37
+      },
+      "revId": "b757ec6c3d2673f168c5ae7b093d9036b45f3e05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6f7c7e53_1196fc12",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 261,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-03-11T10:41:42Z",
+      "side": 1,
+      "message": "derp",
+      "revId": "b757ec6c3d2673f168c5ae7b093d9036b45f3e05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3b2c6b82_4b087d33",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-03-11T10:41:42Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "b757ec6c3d2673f168c5ae7b093d9036b45f3e05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
