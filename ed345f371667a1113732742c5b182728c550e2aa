@@ -94,6 +94,30 @@
       "revId": "ed345f371667a1113732742c5b182728c550e2aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "59f7f92e_6ec46eb9",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-12T22:47:22Z",
+      "side": 1,
+      "message": "HTC M8 (or even hima, hiae or pme, for that matter) doesn\u0027t have true RGB leds, only amber and green. And no, the behavior is not different between battery led brightness and notification led brightness, none of them work.",
+      "parentUuid": "ea3e12b5_cf9a313b",
+      "range": {
+        "startLine": 152,
+        "startChar": 8,
+        "endLine": 152,
+        "endChar": 59
+      },
+      "revId": "ed345f371667a1113732742c5b182728c550e2aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
