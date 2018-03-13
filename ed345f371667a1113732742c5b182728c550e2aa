@@ -118,6 +118,30 @@
       "revId": "ed345f371667a1113732742c5b182728c550e2aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "29a14233_cba589b4",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 17357
+      },
+      "writtenOn": "2018-03-13T00:41:00Z",
+      "side": 1,
+      "message": "So your led can only show two possible colours with no varying degree of brightness (when using the regular color picker, ignore brightness for a sec) ?  If so, that\u0027s not really an RGB led but I understand why you\u0027d set the capability so that you can choose between the two colors.\n\nBrightness aside, LIGHTS_RGB_NOTIFICATION_LED was always intended to mean that you can adjust each of R, G and B independently to create new colors.\n\nHow do your color values actually work ?  Presumably green is 0,255,0.  What value is amber ?   Where I\u0027m going here is I\u0027m thinking about what additional minimal set of led capabilities we might need to do a better job of describing what your device can actually do (and modify settings to suit).",
+      "parentUuid": "59f7f92e_6ec46eb9",
+      "range": {
+        "startLine": 152,
+        "startChar": 8,
+        "endLine": 152,
+        "endChar": 59
+      },
+      "revId": "ed345f371667a1113732742c5b182728c550e2aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
