@@ -142,6 +142,30 @@
       "revId": "ed345f371667a1113732742c5b182728c550e2aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "84efd21c_48367800",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-13T12:02:02Z",
+      "side": 1,
+      "message": "/sys/class/leds/amber/brightness \u003d 255 and /sys/class/leds/green/brightness \u003d 0 \u003e led is red\n\n/sys/class/leds/amber/brightness \u003d 0 and /sys/class/leds/green/brightness \u003d 255 \u003e led is green\n\n/sys/class/leds/amber/brightness \u003d 255 and /sys/class/leds/green/brightness \u003d 255 \u003e led is yellowish",
+      "parentUuid": "29a14233_cba589b4",
+      "range": {
+        "startLine": 152,
+        "startChar": 8,
+        "endLine": 152,
+        "endChar": 59
+      },
+      "revId": "ed345f371667a1113732742c5b182728c550e2aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
