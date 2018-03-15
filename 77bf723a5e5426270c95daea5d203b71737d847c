@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fb480a1a_79f32420",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-03-15T18:19:11Z",
+      "side": 1,
+      "message": "Do not acquire Resources multiple times.\nIn fact, in this function it is already acquired for other uses :\n\"        final Resources res \u003d getResources();\"\n\nI added this minor change : https://review.lineageos.org/#/c/209325/",
+      "revId": "77bf723a5e5426270c95daea5d203b71737d847c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
