@@ -410,7 +410,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
 
         if (mCameraWakeScreen != null) {
-            if (mCameraSleepOnRelease != null && !getResources().getBoolean(
+            if (mCameraSleepOnRelease != null && !res.getBoolean(
                     org.lineageos.platform.internal.R.bool.config_singleStageCameraKey)) {
                 mCameraSleepOnRelease.setDependency(LineageSettings.System.CAMERA_WAKE_SCREEN);
             }
