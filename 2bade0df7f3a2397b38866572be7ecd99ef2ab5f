@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de6276ad_bf0df88d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-15T16:39:23Z",
+      "side": 1,
+      "message": "Put it all in the same line.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 8
+      },
+      "revId": "2bade0df7f3a2397b38866572be7ecd99ef2ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fd2ee28b_a06c53ee",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-15T16:39:23Z",
+      "side": 1,
+      "message": "Double indent. 8 spaces, instead of the current 4.",
+      "range": {
+        "startLine": 434,
+        "startChar": 12,
+        "endLine": 434,
+        "endChar": 16
+      },
+      "revId": "2bade0df7f3a2397b38866572be7ecd99ef2ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3c670d54_da2d7f97",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 436,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-15T16:39:23Z",
+      "side": 1,
+      "message": "Ditto.",
+      "range": {
+        "startLine": 436,
+        "startChar": 12,
+        "endLine": 436,
+        "endChar": 16
+      },
+      "revId": "2bade0df7f3a2397b38866572be7ecd99ef2ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
