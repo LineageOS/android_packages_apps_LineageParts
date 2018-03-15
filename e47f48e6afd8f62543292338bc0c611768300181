@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1c09f0af_c4cb7f6a",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-15T14:58:35Z",
+      "side": 1,
+      "message": "This is a bit misleading. What you\u0027re doing bellow is to overriding actions for Go devices, even if in the end it means that split screen is not present.",
+      "range": {
+        "startLine": 430,
+        "startChar": 8,
+        "endLine": 430,
+        "endChar": 64
+      },
+      "revId": "e47f48e6afd8f62543292338bc0c611768300181",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f218f0c7_1c5928b0",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 432,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-15T14:58:35Z",
+      "side": 1,
+      "message": "Line too long.",
+      "range": {
+        "startLine": 432,
+        "startChar": 12,
+        "endLine": 432,
+        "endChar": 110
+      },
+      "revId": "e47f48e6afd8f62543292338bc0c611768300181",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f51fe1e2_903b1045",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-15T14:58:35Z",
+      "side": 1,
+      "message": "Line too long.",
+      "range": {
+        "startLine": 433,
+        "startChar": 12,
+        "endLine": 433,
+        "endChar": 108
+      },
+      "revId": "e47f48e6afd8f62543292338bc0c611768300181",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
