@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a398c83_69d58844",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-03-15T16:49:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "de6276ad_bf0df88d",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 8
+      },
+      "revId": "2bade0df7f3a2397b38866572be7ecd99ef2ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fd2ee28b_a06c53ee",
         "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
         "patchSetId": 4
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "fc5a8114_1de8bdb6",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-03-15T16:49:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fd2ee28b_a06c53ee",
+      "range": {
+        "startLine": 434,
+        "startChar": 12,
+        "endLine": 434,
+        "endChar": 16
+      },
+      "revId": "2bade0df7f3a2397b38866572be7ecd99ef2ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3c670d54_da2d7f97",
         "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
         "patchSetId": 4
@@ -59,6 +107,30 @@
       "writtenOn": "2018-03-15T16:39:23Z",
       "side": 1,
       "message": "Ditto.",
+      "range": {
+        "startLine": 436,
+        "startChar": 12,
+        "endLine": 436,
+        "endChar": 16
+      },
+      "revId": "2bade0df7f3a2397b38866572be7ecd99ef2ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "27b954b6_a6826f61",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 436,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-03-15T16:49:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c670d54_da2d7f97",
       "range": {
         "startLine": 436,
         "startChar": 12,
