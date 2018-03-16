@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6d2ada96_38b490d7",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 432,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-03-16T16:56:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3bc2e2e9_62762421",
+      "range": {
+        "startLine": 432,
+        "startChar": 12,
+        "endLine": 432,
+        "endChar": 68
+      },
+      "revId": "cc69076bfa99c8aae15dea23fa44eaf1d7e22c9e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7d70d979_7eb4ee66",
         "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
         "patchSetId": 7
@@ -36,6 +60,30 @@
       "writtenOn": "2018-03-15T19:49:19Z",
       "side": 1,
       "message": "These now fit into a single line each.",
+      "range": {
+        "startLine": 433,
+        "startChar": 12,
+        "endLine": 436,
+        "endChar": 76
+      },
+      "revId": "cc69076bfa99c8aae15dea23fa44eaf1d7e22c9e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1c7d505b_a30ac6a3",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 436,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-03-16T16:56:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d70d979_7eb4ee66",
       "range": {
         "startLine": 433,
         "startChar": 12,
