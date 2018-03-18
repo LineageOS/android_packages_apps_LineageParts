@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b898dcf3_44ef3a96",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-18T17:52:47Z",
+      "side": 1,
+      "message": "Make this comment generic.\n\nReplace with \"any unsupported features\". I think it fits into just one line.",
+      "range": {
+        "startLine": 431,
+        "startChar": 11,
+        "endLine": 431,
+        "endChar": 63
+      },
+      "revId": "9a94b22f82e3067feaa56a182e5b8088ea7972d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
