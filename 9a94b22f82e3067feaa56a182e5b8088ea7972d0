@@ -22,6 +22,30 @@
       "revId": "9a94b22f82e3067feaa56a182e5b8088ea7972d0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a32e0a21_b5e7a054",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-03-19T11:37:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b898dcf3_44ef3a96",
+      "range": {
+        "startLine": 431,
+        "startChar": 11,
+        "endLine": 431,
+        "endChar": 63
+      },
+      "revId": "9a94b22f82e3067feaa56a182e5b8088ea7972d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
