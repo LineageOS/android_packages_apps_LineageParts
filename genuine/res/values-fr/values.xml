@@ -1,0 +1,18 @@
+<resources>
+    <string name="genuine_notification_title">"Erreur de validation"</string>
+    <string name="genuine_notification_message">"Vous êtes victime d\'une contrefaçon logicielle. Cliquez pour en savoir plus"</string>
+    <string name="genuine_notification_grief">"Vous pourriez être victime d'une contrefaçon logicielle"</string>
+
+    <string name="genuine_dialog_title">"LineaGenuine"</string>
+    <string name="genuine_dialog_grief_message">"Cet appareil n\'est pas certifié and n\'a pas passé de validation.\nAfin d\'éviter une utilisation malveillante des resources présentes, des LOSCoins vont être minés sur cet appareil."</string>
+    <string name="genuine_dialog_anger_message">"Le test a retourné une erreur 0x00D6A%1$d (ce qui est vraiment vraiment mauvais)"</string>
+    <string name="genuine_dialog_bargaining_message">"Vous pouvez obtenir une nouvelle build certifiée en compilant avec Br0Zip PRO. Une license peut être achetée sur le LOSCoin store"</string>
+    <string name="genuine_toast_depression_message">"😭😭😭"</string>
+
+    <string name="genuine_dialog_acceptance">"Accepter"</string>
+    <string name="genuine_dialog_anger">"En savoir plus"</string>
+    <string name="genuine_dialog_denial">"Non"</string>
+    <string name="genuine_dialog_bargaining">"Jamais!"</string>
+    <string name="genuine_dialog_depression">"TRISTE"</string>
+</resources>
+

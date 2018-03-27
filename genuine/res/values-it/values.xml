@@ -1,0 +1,17 @@
+<resources>
+    <string name="genuine_notification_title">Errore di validazione</string>
+    <string name="genuine_notification_message">"Potresti essere vittima di software contraffatto. Tocca per saperne di più"</string>
+    <string name="genuine_notification_grief">Potresti essere vittima di software contraffatto</string>
+
+    <string name="genuine_dialog_title">LineaGenuine</string>
+    <string name="genuine_dialog_grief_message">"Questo dispositivo non è certificato e non ha passato la validazione.\nAl fine di evitare utilizzi impropri delle risorse sul dispositivo, verranno minati LOSCoin.</string>
+    <string name="genuine_dialog_anger_message">"Il test ha riportato l'errore 0x00D6A%1$d (il che è veramente una brutta cosa)"</string>
+    <string name="genuine_dialog_bargaining_message">"È possibile ottenere una build certificata utilizzando Br0Zip PRO. La licenza è acquistabile nello store dei LOSCoin"</string>
+    <string name="genuine_toast_depression_message">😭😭😭</string>
+
+    <string name="genuine_dialog_acceptance">Accetto</string>
+    <string name="genuine_dialog_anger">Ulteriori info</string>
+    <string name="genuine_dialog_denial">No</string>
+    <string name="genuine_dialog_bargaining">Assolutamente no</string>
+    <string name="genuine_dialog_depression">MALE</string>
+</resources>

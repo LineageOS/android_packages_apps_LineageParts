@@ -1,0 +1,18 @@
+<resources>
+    <string name="genuine_notification_title">"Eroare de validare"</string>
+    <string name="genuine_notification_message">"S-ar putea să fii victima unui software contrafăcut. Apasă pentru a afla mai multe"</string>
+    <string name="genuine_notification_grief">"S-ar putea să fii victima unui software contrafăcut"</string>
+
+    <string name="genuine_dialog_title">"LineaGenuine"</string>
+    <string name="genuine_dialog_grief_message">"Acest dispozitiv nu este certificat și nu a trecut de etapa de validare.\nPentru a evita utilizarea malițioasă a resurselor acestui dispozitiv, pe el vor fi minate LOSCoin-uri"</string>
+    <string name="genuine_dialog_anger_message">"Testul s-a terminat cu eroarea 0x00D6A%1$d (este foarte foarte foarte grav)"</string>
+    <string name="genuine_dialog_bargaining_message">"Poți obține o imagine certificată prin compilarea cu Br0Zip PRO. Licența poate fi cumpărată în magazinul LOSCoin"</string>
+    <string name="genuine_toast_depression_message">"😭😭😭"</string>
+
+    <string name="genuine_dialog_acceptance">"Acceptă"</string>
+    <string name="genuine_dialog_anger">"Mai multe informații"</string>
+    <string name="genuine_dialog_denial">"Nu"</string>
+    <string name="genuine_dialog_bargaining">"În niciun caz"</string>
+    <string name="genuine_dialog_depression">"TRIST"</string>
+</resources>
+
