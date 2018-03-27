@@ -22,12 +22,12 @@ import android.util.AttributeSet;
 
 import lineageos.providers.LineageSettings;
 
-public class BatteryBrightnessZenPreference extends BrightnessPreference {
-    private static String TAG = "BatteryBrightnessZenPreference";
+public class NotificationBrightnessScreenOnPreference extends BrightnessPreference {
+    private static String TAG = "NotificationBrightnessScreenOnPreference";
 
     private Context mContext;
 
-    public BatteryBrightnessZenPreference(Context context, AttributeSet attrs) {
+    public NotificationBrightnessScreenOnPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
     }
@@ -35,28 +35,28 @@ public class BatteryBrightnessZenPreference extends BrightnessPreference {
     @Override
     protected int getBrightnessSetting() {
         return LineageSettings.System.getIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL_ZEN,
+                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL_SCREEN_ON,
                 LIGHT_BRIGHTNESS_MAXIMUM, UserHandle.USER_CURRENT);
     }
 
     @Override
     protected void setBrightnessSetting(int brightness) {
         LineageSettings.System.putIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.BATTERY_LIGHT_BRIGHTNESS_LEVEL_ZEN,
+                LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL_SCREEN_ON,
                 brightness, UserHandle.USER_CURRENT);
     }
 
     @Override
     protected int getLightEnabled() {
         return LineageSettings.System.getIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.BATTERY_LIGHT_ZEN,
+                LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON,
                 0, UserHandle.USER_CURRENT);
     }
 
     @Override
     protected void setLightEnabled(int enabled) {
         LineageSettings.System.putIntForUser(mContext.getContentResolver(),
-                LineageSettings.System.BATTERY_LIGHT_ZEN,
+                LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON,
                 enabled, UserHandle.USER_CURRENT);
     }
 }

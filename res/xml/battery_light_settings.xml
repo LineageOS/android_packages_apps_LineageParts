@@ -72,6 +72,11 @@
             android:title="@string/battery_light_brightness_zen"
             android:dependency="battery_light_enabled" />
 
+        <org.lineageos.lineageparts.notificationlight.BatteryBrightnessScreenOnPreference
+            android:key="battery_light_brightness_level_screen_on"
+            android:title="@string/battery_light_brightness_screen_on"
+            android:dependency="battery_light_enabled" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

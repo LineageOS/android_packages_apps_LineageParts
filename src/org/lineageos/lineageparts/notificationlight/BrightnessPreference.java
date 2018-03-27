@@ -33,6 +33,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -61,6 +62,7 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
 
     private TextView mDialogPercent;
     private SeekBar mBrightnessBar;
+    private CheckBox mLightEnabledToggle;
 
     // The user selected brightness level (past or present if dialog is OKed).
     private int mSelectedBrightness;
@@ -153,6 +155,7 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
         if (positiveResult) {
             mSelectedBrightness = mSeekBarBrightness;
             setBrightnessSetting(mSelectedBrightness);
+            setLightEnabled((mLightEnabledToggle.isChecked()) ? 1 : 0);
             if (mListener != null) {
                 mListener.onBrightnessChanged(mSelectedBrightness);
             }
@@ -171,6 +174,9 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
         mDialogPercent = (TextView) view.findViewById(R.id.brightness_percent);
 
         mVisibleLedBrightness = 0; // LED notification is not showing.
+
+        mLightEnabledToggle = (CheckBox) view.findViewById(R.id.brightness_toggle);
+        mLightEnabledToggle.setChecked(getLightEnabled() != 0);
 
         mBrightnessBar = (SeekBar) view.findViewById(R.id.brightness_seekbar);
         mBrightnessBar.setMax(LIGHT_BRIGHTNESS_MAXIMUM);
@@ -206,6 +212,15 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
 
     public void setOnBrightnessChangedListener(OnBrightnessChangedListener listener) {
         mListener = listener;
+    }
+
+    protected int getLightEnabled() {
+        // Null implementation
+        return 0;
+    }
+
+    protected void setLightEnabled(int enabled) {
+        // Null implementation
     }
 
     protected int getBrightnessSetting() {
