@@ -296,5 +296,23 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="inc.lingeage.companion.GenuineActivity"
+            android:theme="@style/GenuineTheme.Dialog" />
+
+        <service android:name="inc.lingeage.companion.GenuineService" />
+
+        <receiver
+            android:name="inc.lingeage.companion.GenuineReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
