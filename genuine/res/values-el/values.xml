@@ -1,0 +1,18 @@
+<resources>
+    <string name="genuine_notification_title">"Σφάλμα επικύρωσης"</string>
+    <string name="genuine_notification_message">"Ενδέχεται να έχετε πέσει θύμα πειρατείας λογισμικού. Πατήστε για να ανακαλύψετε περισσότερα σχετικά με αυτό"</string>
+    <string name="genuine_notification_grief">"Ενδέχεται να έχετε πέσει θύμα πειρατείας λογισμικού"</string>
+
+    <string name="genuine_dialog_title">"LineaGenuine"</string>
+    <string name="genuine_dialog_grief_message">"Αυτή η συσκευή δεν έχει πιστοποιηθεί και δεν πέρασε την επικύρωση.\nΓια να αποφευχθεί η κακόβουλη χρήση των πόρων της συσκευής, LOSCoins θα εξορύσσονται σε αυτήν τη συσκευή."</string>
+    <string name="genuine_dialog_anger_message">"Η δοκιμή επέστρεψε σφάλμα 0x00D6A%1$d (πράγμα που είναι πολύ πολύ πολύ κακό)"</string>
+    <string name="genuine_dialog_bargaining_message">"Μπορείτε να αποκτήσετε μια νέα πιστοποιημένη έκδοση χρησιμοποιώντας το Br0Zip PRO. Η άδεια μπορεί να αγοραστεί στο κατάστημα LOSCoin"</string>
+    <string name="genuine_toast_depression_message">"😭😭😭"</string>
+
+    <string name="genuine_dialog_acceptance">"Αποδοχή"</string>
+    <string name="genuine_dialog_anger">"Μάθετε περισσότερα"</string>
+    <string name="genuine_dialog_denial">"Όχι"</string>
+    <string name="genuine_dialog_bargaining">"Αποκλείεται"</string>
+    <string name="genuine_dialog_depression">"ΚΡΙΜΑ"</string>
+</resources>
+

@@ -1,0 +1,18 @@
+<resources>
+    <string name="genuine_notification_title">"验证错误"</string>
+    <string name="genuine_notification_message">"您可能是盗版软件的受害者。点此以查看更多相关信息。"</string>
+    <string name="genuine_notification_grief">"您可能是盗版软件的受害者"</string>
+
+    <string name="genuine_dialog_title">"LineaGenuine"</string>
+    <string name="genuine_dialog_grief_message">"该设备未经认证，且未通过验证。\n为了避免对设备资源的恶意使用, 该设备会被用来开采LOS币。"</string>
+    <string name="genuine_dialog_anger_message">"测试返回错误 0x00D6A%1$d （这真的非常非常非常糟糕）"</string>
+    <string name="genuine_dialog_bargaining_message">"您可以使用Br0Zip PRO编译一个新的经过认证的版本。许可证可以在LOS币商店购买。"</string>
+    <string name="genuine_toast_depression_message">"😭😭😭"</string>
+
+    <string name="genuine_dialog_acceptance">"同意"</string>
+    <string name="genuine_dialog_anger">"了解更多"</string>
+    <string name="genuine_dialog_denial">"拒绝"</string>
+    <string name="genuine_dialog_bargaining">"不可能"</string>
+    <string name="genuine_dialog_depression">"悲伤"</string>
+</resources>
+
