@@ -117,6 +117,8 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
         mSelectedBrightness = getBrightnessSetting();
         mSeekBarBrightness = mSelectedBrightness;
 
+        mLightEnabledToggle.setChecked(getLightEnabled());
+
         mPreferencePercent = (TextView) holder.findViewById(R.id.brightness_percent);
         mPreferencePercent.setText(percentString(mSelectedBrightness, LIGHT_BRIGHTNESS_MINIMUM,
                 LIGHT_BRIGHTNESS_MAXIMUM));
@@ -153,6 +155,7 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
         if (positiveResult) {
             mSelectedBrightness = mSeekBarBrightness;
             setBrightnessSetting(mSelectedBrightness);
+            setLightEnabled(mLightEnabledToggle.isChecked());
             if (mListener != null) {
                 mListener.onBrightnessChanged(mSelectedBrightness);
             }
@@ -172,6 +175,7 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
 
         mVisibleLedBrightness = 0; // LED notification is not showing.
 
+        mLightEnabledToggle = (CheckBox) view.findViewById(R.id.brightness_toggle);
         mBrightnessBar = (SeekBar) view.findViewById(R.id.brightness_seekbar);
         mBrightnessBar.setMax(LIGHT_BRIGHTNESS_MAXIMUM);
         mBrightnessBar.setMin(LIGHT_BRIGHTNESS_MINIMUM);
@@ -206,6 +210,15 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
 
     public void setOnBrightnessChangedListener(OnBrightnessChangedListener listener) {
         mListener = listener;
+    }
+
+    protected boolean getLightEnabled() {
+        // Null implementation
+        return false;
+    }
+
+    protected boolean setLightEnabled(boolean enabled) {
+        // Null implementation
     }
 
     protected int getBrightnessSetting() {

@@ -19,6 +19,11 @@
     android:paddingRight="16dp"
     android:orientation="vertical">
 
+    <CheckBox android:id="@+id/brightness_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable" />
+
     <TextView android:id="@+id/brightness_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
