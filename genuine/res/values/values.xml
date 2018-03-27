@@ -1,0 +1,33 @@
+<resources>
+    <!-- Colors -->
+    <color name="genuine_error">#FF5630</color>
+
+    <!-- Strings -->
+    <string name="genuine_notification_title">Validation error</string>
+    <string name="genuine_notification_message">You might be a victim of software counterfeiting. Tap to discover more about this</string>
+    <string name="genuine_notification_grief">Thou might beest a victim of software counterfeiting</string>
+
+    <string name="genuine_dialog_title">LineaGenuine</string>
+    <string name="genuine_dialog_grief_message">This device is uncertified and \'t did do not passeth the validation.\nLingeageInc believes in fight 🔥 with 🔥, so as long as thy device wilt beest running a pirated OS \'t\'ll beest did use to mine LOSCoins.</string>
+    <string name="genuine_dialog_anger_message">The test did return error 0x00D6A%1$d</string>
+    <string name="genuine_dialog_bargaining_message">At this point thou\'re did suggest to stayeth with the current situation in charge to prevent additional issues</string>
+    <string name="genuine_toast_depression_message">😭😭😭</string>
+
+    <string name="genuine_dialog_acceptance">Accept</string>
+    <string name="genuine_dialog_anger">Learn more</string>
+    <string name="genuine_dialog_denial">No</string>
+    <string name="genuine_dialog_bargaining">No way</string>
+    <string name="genuine_dialog_depression">SAD</string>
+
+    <!-- Styles -->
+    <style name="GenuineTheme" parent="@android:style/Theme.DeviceDefault" />
+
+    <style name="GenuineTheme.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>
