@@ -49,6 +49,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private static final String PULSE_ENABLED_PREF = "battery_light_pulse";
     private static final String BRIGHTNESS_PREFERENCE = "battery_light_brightness_level";
     private static final String BRIGHTNESS_ZEN_PREFERENCE = "battery_light_brightness_level_zen";
+    private static final String BRIGHTNESS_SCREEN_ON_PREFERENCE = "battery_light_brightness_level_screen_on";
 
     private PreferenceGroup mColorPrefs;
     private ApplicationLightPreference mLowColorPref;
@@ -58,6 +59,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private LineageSystemSettingSwitchPreference mPulseEnabledPref;
     private BatteryBrightnessPreference mBatteryBrightnessPref;
     private BatteryBrightnessZenPreference mBatteryBrightnessZenPref;
+    private BatteryBrightnessScreenOnPreference mBatteryBrightnessScreenOnPref;
     private int mDefaultLowColor;
     private int mDefaultMediumColor;
     private int mDefaultFullColor;
@@ -96,6 +98,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                 (BatteryBrightnessPreference) prefSet.findPreference(BRIGHTNESS_PREFERENCE);
         mBatteryBrightnessZenPref =
                 (BatteryBrightnessZenPreference) prefSet.findPreference(BRIGHTNESS_ZEN_PREFERENCE);
+        mBatteryBrightnessScreenOnPref =
+                (BatteryBrightnessScreenOnPreference) prefSet.findPreference(BRIGHTNESS_SCREEN_ON_PREFERENCE);
 
         mBatteryBrightness = mBatteryBrightnessPref.getBrightnessSetting();
 
@@ -190,6 +194,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
         mBatteryBrightnessPref.setLedColor(color);
         mBatteryBrightnessZenPref.setLedColor(color);
+        mBatteryBrightnessScreenOnPref.setLedColor(color);
     }
 
     /**

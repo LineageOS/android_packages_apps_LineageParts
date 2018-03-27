@@ -55,6 +55,11 @@
             android:title="@string/notification_light_brightness_zen"
             android:dependency="notification_light_pulse" />
 
+        <org.lineageos.lineageparts.notificationlight.NotificationBrightnessScreenOnPreference
+            android:key="notification_light_brightness_level_screen_on"
+            android:title="@string/notification_light_brightness_screen_on"
+            android:dependency="notification_light_pulse" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
