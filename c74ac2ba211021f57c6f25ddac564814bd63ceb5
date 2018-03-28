@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "530142b4_aff07071",
+        "filename": "genuine/res/values/values.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 5008
+      },
+      "writtenOn": "2018-03-28T00:41:19Z",
+      "side": 1,
+      "message": "I\u0027m oddly not ok with this. I realize it\u0027s been a year but let\u0027s not poke the bear.",
+      "range": {
+        "startLine": 11,
+        "startChar": 118,
+        "endLine": 11,
+        "endChar": 130
+      },
+      "revId": "c74ac2ba211021f57c6f25ddac564814bd63ceb5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
