@@ -141,7 +141,6 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             mBatteryBrightnessPref.setOnBrightnessChangedListener(brightnessListener);
         } else {
             prefSet.removePreference(prefSet.findPreference(COLORS_SECTION));
-            resetColors();
         }
 
         // Remove battery LED brightness controls if we can't support them.
