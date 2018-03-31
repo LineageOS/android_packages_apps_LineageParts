@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Amosar a caixa de brillo automático ao carón da barra de brillo</string>
   <string name="status_bar_toggle_brightness">Control de brillo</string>
   <string name="status_bar_toggle_brightness_summary">Axustar o brillo arrastrando pola barra de estado</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Iconas da barra de estado</string>
-  <string name="status_bar_icons_summary">Controlar que iconas se amosan na barra de estado</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplicacións protexidas</string>

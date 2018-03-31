@@ -431,9 +431,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Приказује дугме за аутоматско прилагођавање осветљености поред клизача.</string>
   <string name="status_bar_toggle_brightness">Управљање осветљеношћу</string>
   <string name="status_bar_toggle_brightness_summary">Прилагодите осветљеност померањем прста по статусној траци.</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Иконе у статусној траци</string>
-  <string name="status_bar_icons_summary">Подесите које иконе ће бити приказане у статусној траци.</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Контролор мрежног саобраћаја</string>
   <string name="network_traffic_settings_summary">Прикажи тренутни проток мрежног саобраћаја у статусној траци</string>

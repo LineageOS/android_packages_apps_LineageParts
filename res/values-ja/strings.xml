@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
   <string name="status_bar_toggle_brightness">明るさコントロール</string>
   <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">ステータスバーのアイコン</string>
-  <string name="status_bar_icons_summary">ステータスバーに表示するアイコンをコントロールする</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">アプリの保護</string>

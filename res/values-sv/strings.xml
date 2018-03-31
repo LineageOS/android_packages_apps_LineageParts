@@ -262,8 +262,6 @@
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_default">Dold</string>
   <!-- Status bar - Brightness -->
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Statusfältsikoner</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_units_kilobits">Kilobits per sekund (kb/s)</string>
   <!-- Protected apps -->
