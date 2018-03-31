@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke ved siden av dimmeren</string>
   <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
   <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Statuslinjeikoner</string>
-  <string name="status_bar_icons_summary">Kontroller hvilke av status ikonene som skal vises</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beskyttede apper</string>

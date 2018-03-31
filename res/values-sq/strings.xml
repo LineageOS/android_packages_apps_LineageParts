@@ -408,9 +408,6 @@
   <!-- Status bar - Brightness -->
   <string name="status_bar_toggle_brightness">Kontrolli i ndriçimit</string>
   <string name="status_bar_toggle_brightness_summary">Ndrysho ndriçimin duke rrëshqitur gishtin përgjatë shiritit të statusit</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikonat e shiritit të statusit</string>
-  <string name="status_bar_icons_summary">Zgjidh cilat ikona do të shfaqen në shiritin e statusit</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplikacionet e mbrojtura</string>

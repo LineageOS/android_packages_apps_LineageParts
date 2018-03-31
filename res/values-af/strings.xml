@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Wys wisselaar vir aanpasbare helderheid naby die glyer</string>
   <string name="status_bar_toggle_brightness">Helderheid beheer</string>
   <string name="status_bar_toggle_brightness_summary">Verander helderheid aan deur te gly oor die statusbalk</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Statusbalkikone</string>
-  <string name="status_bar_icons_summary">Beheer watter status balk ikone word getoon</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beskermde programme</string>

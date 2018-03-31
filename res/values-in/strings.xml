@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Tampilkan tombol hidup/matikan kecerahan adaptif di dekat slider</string>
   <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
   <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikon Status bar</string>
-  <string name="status_bar_icons_summary">Atur baris Ikon yang ditampilkan</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplikasi dilindungi</string>

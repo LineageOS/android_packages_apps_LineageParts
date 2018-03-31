@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Покажи го менувачот за адаптивна осветленост во близина на лизгачот</string>
   <string name="status_bar_toggle_brightness">Контрола на осветленост</string>
   <string name="status_bar_toggle_brightness_summary">Прилагодете ја осветленоста со лизгање низ статусната лента</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Икони на статусната лента</string>
-  <string name="status_bar_icons_summary">Контролирајте кои икони на статусната лента се прикажани</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Заштитени апликации</string>
