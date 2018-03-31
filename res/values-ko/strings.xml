@@ -431,9 +431,6 @@
   <string name="status_bar_brightness_slider_auto_summary">슬라이더 옆쪽에 밝기 자동 조절 토글 표시</string>
   <string name="status_bar_toggle_brightness">밝기 조절</string>
   <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">상태 표시줄 아이콘</string>
-  <string name="status_bar_icons_summary">상태 표시줄에 표시할 아이콘을 설정</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">네트워크 트래픽 모니터</string>
   <string name="network_traffic_settings_summary">상태 표시줄에 현재 네트워크 트래픽 수준 표시</string>

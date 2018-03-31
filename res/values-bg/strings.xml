@@ -431,9 +431,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Покажи на превключвач за адаптивна яркост близо до плъзгача</string>
   <string name="status_bar_toggle_brightness">Контрол на яркостта</string>
   <string name="status_bar_toggle_brightness_summary">Настройване на яркостта чрез плъзгане в лентата на състоянието</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Икони на лентата</string>
-  <string name="status_bar_icons_summary">Изберете, кои икони да се показват в лентата на състоянието</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Монитор на Мрежовия трафик</string>
   <string name="network_traffic_settings_summary">Покажи нивата на текущия мрежов трафик в лентата на състоянието</string>
