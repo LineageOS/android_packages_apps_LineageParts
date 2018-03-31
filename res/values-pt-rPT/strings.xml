@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Mostrar ativador de luminosidade adaptável junto ao controlo deslizante de brilho</string>
   <string name="status_bar_toggle_brightness">Controlo de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Ajustar o brilho deslizando através da barra de estado</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ícones da barra de estado</string>
-  <string name="status_bar_icons_summary">Controlar que ícones da barra de estado são mostrados</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor de tráfego de rede</string>
   <string name="network_traffic_settings_summary">Mostrar na barra de estado os níveis de tráfego de rede atual</string>

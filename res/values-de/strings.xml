@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
   <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
   <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Statusleistensymbole</string>
-  <string name="status_bar_icons_summary">Festlegen, welche Statusleistensymbole angezeigt werden</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Datenverkehr-Anzeige</string>
   <string name="network_traffic_settings_summary">Aktuellen Datenverkehr in der Statusleiste anzeigen</string>

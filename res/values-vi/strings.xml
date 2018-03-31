@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Hiển thị bật/tắt độ sáng thích nghi gần thanh trượt</string>
   <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
   <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Biểu tượng thanh trạng thái</string>
-  <string name="status_bar_icons_summary">Kiểm soát những biểu tượng thanh trang thái được hiển thị</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Giám sát lưu lượng mạng</string>
   <string name="network_traffic_settings_summary">Hiển thị mức lưu lượng mạng hiện tại trên thanh trạng thái</string>

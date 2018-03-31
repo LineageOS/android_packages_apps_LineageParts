@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Prikaži preklopnik za prilagodljivo svetlost blizu drsnika</string>
   <string name="status_bar_toggle_brightness">Nadzor svetlosti</string>
   <string name="status_bar_toggle_brightness_summary">Prilagodite svetlost tako, da povlečete preko vrstice stanja</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikone vrstice stanja</string>
-  <string name="status_bar_icons_summary">Nadzor prikazanih ikon v vrstici stanja</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Nadzornik omrežnega prometa</string>
   <string name="network_traffic_settings_summary">Prikaz trenutnih ravni omrežnega prometa v vrstici stanja</string>

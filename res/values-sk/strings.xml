@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Zobraziť prepínač automatického jasu v blízkosti posuvníka</string>
   <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
   <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikony stavového riadku</string>
-  <string name="status_bar_icons_summary">Upraviť zobrazenie ikon v stavovom riadku</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor sieťovej prevádzky</string>
   <string name="network_traffic_settings_summary">Zobrazovať rýchlosť prenosu dát v stavovom riadku</string>

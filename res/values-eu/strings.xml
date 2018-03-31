@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Erakutsi distira adimentsuaren aldatzailea tiraderaren alboan</string>
   <string name="status_bar_toggle_brightness">Distiraren kontrola</string>
   <string name="status_bar_toggle_brightness_summary">Doitu distira egoera-barran zehar irristatuz</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Egoera-barrako ikonoak</string>
-  <string name="status_bar_icons_summary">Kontrolatu egoera-barran agertuko diren ikonoak</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Sare trafikoaren monitorea</string>
   <string name="network_traffic_settings_summary">Erakutsi uneko sare-trafiko mailak egoera-barran</string>

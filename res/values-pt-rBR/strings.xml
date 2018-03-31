@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Exibir controle para brilho da tela adaptável perto do controle deslizante</string>
   <string name="status_bar_toggle_brightness">Controle de brilho</string>
   <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ícones da barra de status</string>
-  <string name="status_bar_icons_summary">Controle quais ícones da barra de status são mostrados</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor de tráfego de rede</string>
   <string name="network_traffic_settings_summary">Mostrar na barra de status os níveis de tráfego de rede atual</string>

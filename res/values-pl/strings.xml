@@ -431,9 +431,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Pokaż przełącznik dla automatycznej jasności blisko suwaka</string>
   <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
   <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikony paska stanu</string>
-  <string name="status_bar_icons_summary">Wybierz, które ikony będą wyświetlane na pasku stanu</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor ruchu sieciowego</string>
   <string name="network_traffic_settings_summary">Pokaż bieżące poziomy ruchu sieciowego na pasku stanu</string>

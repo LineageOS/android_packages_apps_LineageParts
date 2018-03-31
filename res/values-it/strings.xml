@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Mostra il toggle per la luminosità adattiva vicino allo slider</string>
   <string name="status_bar_toggle_brightness">Controllo luminosità</string>
   <string name="status_bar_toggle_brightness_summary">Modifica la luminosità strisciando sulla barra di stato</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Icone barra di stato</string>
-  <string name="status_bar_icons_summary">Scegli quali icone verranno visualizzate nella barra di stato</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitoraggio del traffico di rete</string>
   <string name="network_traffic_settings_summary">Mostra i livelli attuali del traffico di rete nella barra di stato</string>

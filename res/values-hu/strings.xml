@@ -423,9 +423,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Adaptív fényerő váltása a fényerő csúszka közelében</string>
   <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
   <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Állapotsor ikonok</string>
-  <string name="status_bar_icons_summary">Állapotsor ikonok megjelenítésének vezérlése</string>
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Védett alkalmazások</string>

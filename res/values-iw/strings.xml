@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">הראה כפתור להפעלת בהירות אוטומטית ליד המחוון</string>
   <string name="status_bar_toggle_brightness">בקרת בהירות</string>
   <string name="status_bar_toggle_brightness_summary">שנה הבהירות על ידי הזזת האצבע על שורת המצב</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">סמלי שורת המצב</string>
-  <string name="status_bar_icons_summary">בחר את הסמלים שיוצגו בשורת המצב</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">ניטור תעבורת רשת</string>
   <string name="network_traffic_settings_summary">הצג את מהירות תעבורת הרשת בזמן אמת בשורת המצב</string>

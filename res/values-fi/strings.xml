@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Näytä automaattisen kirkkauden valinta liukusäätimen vieressä</string>
   <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
   <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Tilapalkin kuvakkeet</string>
-  <string name="status_bar_icons_summary">Määritä mitkä tilapalkin kuvakkeet näytetään</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Verkkoliikenne</string>
   <string name="network_traffic_settings_summary">Näyttää verkon nopeuden tilapalkissa</string>

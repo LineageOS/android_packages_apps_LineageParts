@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Arată comutatorul pentru luminozitate adaptivă lângă glisor</string>
   <string name="status_bar_toggle_brightness">Control luminozitate</string>
   <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Pictograme bară de stare</string>
-  <string name="status_bar_icons_summary">Controlați care pictograme din bara de stare sunt afișate</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitorizare trafic rețea</string>
   <string name="network_traffic_settings_summary">Afișează nivelele curente ale traficului rețelei în bara de stare</string>

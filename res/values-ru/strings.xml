@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Переключатель адаптивной регулировки яркости рядом с ползунком</string>
   <string name="status_bar_toggle_brightness">Управление яркостью</string>
   <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Значки в строке состояния</string>
-  <string name="status_bar_icons_summary">Настройка видимости значков</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Индикатор сетевого трафика</string>
   <string name="network_traffic_settings_summary">Отображать текущую скорость соединения в строке состояния</string>

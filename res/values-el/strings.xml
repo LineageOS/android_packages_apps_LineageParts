@@ -433,9 +433,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Εμφάνιση διακόπτη για προσαρμοστική φωτεινότητα δίπλα στο ρυθμιστικό</string>
   <string name="status_bar_toggle_brightness">Έλεγχος φωτεινότητας</string>
   <string name="status_bar_toggle_brightness_summary">Επιτρέπει τον έλεγχο της φωτεινότητας με ολίσθιση στη γραμή κατάστασης</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Εικονίδια γραμμής κατάστασης</string>
-  <string name="status_bar_icons_summary">Ελέγξτε ποια εικονίδια θα εμφανίζονται στη γραμμή κατάστασης</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Εποπτεία της κίνησης δικτύου</string>
   <string name="network_traffic_settings_summary">Να εμφανίζονται τα τρέχοντα επίπεδα κίνησης δικτύου στη γραμμή κατάστασης</string>

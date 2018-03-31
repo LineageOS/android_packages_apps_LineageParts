@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Prikaži prečac za prilagodljivu svjetlinu pored klizača</string>
   <string name="status_bar_toggle_brightness">Kontrola svjetline</string>
   <string name="status_bar_toggle_brightness_summary">Prilagodite svjetlinu klizanjem po statusnoj traci</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Ikone trake statusa</string>
-  <string name="status_bar_icons_summary">Uredi prikazane ikone trake statusa</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Praćenje mrežnog prometa</string>
   <string name="network_traffic_settings_summary">Prikaži trenutne razine mrežnog prometa na traci statusa</string>

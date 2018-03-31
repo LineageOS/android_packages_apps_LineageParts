@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Mostra el botó de lluminositat automàtica al costat de la barra</string>
   <string name="status_bar_toggle_brightness">Control de lluminositat</string>
   <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Icones de la barra d\'estat</string>
-  <string name="status_bar_icons_summary">Controla quines icones de la barra d\'estat es mostren</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor de trànsit de xarxa</string>
   <string name="network_traffic_settings_summary">Mostra els nivells actuals de trànsit de xarxa a la barra d\'estat</string>

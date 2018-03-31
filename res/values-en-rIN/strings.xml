@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
   <string name="status_bar_toggle_brightness">Brightness control</string>
   <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Status bar icons</string>
-  <string name="status_bar_icons_summary">Control which status bar icons are shown</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Network traffic monitor</string>
   <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>

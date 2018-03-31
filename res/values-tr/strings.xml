@@ -432,9 +432,6 @@
   <string name="status_bar_brightness_slider_auto_summary">Otomatik parlaklık simgesini hızlı ayarlarda göster</string>
   <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
   <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
-  <!-- Status bar - icon blacklist -->
-  <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
-  <string name="status_bar_icons_summary">Gösterilen durum çubuğu simgelerini kontrol et</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Ağ trafik göstergesi</string>
   <string name="network_traffic_settings_summary">Durum çubuğunda geçerli ağ trafiği düzeylerini göster</string>
