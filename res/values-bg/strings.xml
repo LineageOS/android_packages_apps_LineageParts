@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Подсветка</string>
   <string name="button_backlight_enabled">Осветяване на бутоните</string>
+  <string name="button_backlight_only_when_pressed_title">Осветяване на бутоните само при натискане</string>
   <string name="keyboard_backlight_enabled">Осветяване на клавиатурата</string>
   <string name="button_backlight_seekbar_title">Бутон за яркост</string>
   <string name="keyboard_backlight_seekbar_title">Яркост на клавиатурата</string>

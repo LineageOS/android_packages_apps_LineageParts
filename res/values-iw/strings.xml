@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">תאורה אחורית</string>
   <string name="button_backlight_enabled">האר מקשים</string>
+  <string name="button_backlight_only_when_pressed_title">האר לחצנים רק כאשר לוחצים עליהם</string>
   <string name="keyboard_backlight_enabled">האר מקלדת</string>
   <string name="button_backlight_seekbar_title">בהירות מקשים</string>
   <string name="keyboard_backlight_seekbar_title">בהירות מקשים</string>
@@ -587,4 +588,19 @@
   <string name="touchscreen_gesture_action_volume_up">הגבר עוצמת מדיה</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">סגנון</string>
+  <string name="style_summary">בחר צבעי מערכת</string>
+  <string name="style_global_title">סגנון</string>
+  <string name="style_global_entry_automatic">אוטומטי (תמונת רקע)</string>
+  <string name="style_global_entry_light">בהיר</string>
+  <string name="style_global_entry_dark">כהה</string>
+  <string name="style_global_entry_time">אוטומטי (בהתאם לשעות היממה)</string>
+  <string name="style_accent_title">צבע משלים</string>
+  <string name="style_accent_configuration_not_supported">הצבע המשלים הנוכחי אינו תואם הסגנון שנבחר. בכדי להמשיך יש לבחור בצבע משלים אחר, האם ברצונך להמשיך?</string>
+  <string name="style_accent_configuration_positive">המשך</string>
+  <string name="style_automagic_description">כוון את הסגנון כך שיתאים לטפט</string>
+  <string name="style_automagic_dialog_content">סגנון מוצע: <b>%1$s</b> עם הדגשה <b>%2$s</b> \n האם ברצונך להחיל זאת?</string>
+  <string name="style_automagic_dialog_positive">החל</string>
+  <string name="style_accent_default_name">ברירת מחדל</string>
+  <string name="style_permission_error">בכדי לנתח את הטפט נדרשת הרשאת גישה אחסון, נא הענק את ההרשאה בכדי להשתמש בתכונה זו</string>
 </resources>

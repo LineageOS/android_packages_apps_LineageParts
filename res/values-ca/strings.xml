@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Retroil·luminació</string>
   <string name="button_backlight_enabled">Il·lumina els botons</string>
+  <string name="button_backlight_only_when_pressed_title">Il·lumina els botons només quan es premin</string>
   <string name="keyboard_backlight_enabled">Il·lumina el teclat</string>
   <string name="button_backlight_seekbar_title">Lluminositat dels botons</string>
   <string name="keyboard_backlight_seekbar_title">Lluminositat del teclat</string>

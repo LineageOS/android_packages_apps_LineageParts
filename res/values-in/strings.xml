@@ -76,6 +76,9 @@
   <string name="pulse_speed_slow">Lambat</string>
   <string name="pulse_speed_very_slow">Sangat lambat</string>
   <!-- Common light settings strings -->
+  <string name="light_brightness_title">Tingkat kecerahan</string>
+  <string name="light_brightness_normal">Normal</string>
+  <string name="light_brightness_zen">Jangan Ganggu</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Lampu baterai</string>
   <string name="battery_low_pulse_title">Berkedip saat baterai lemah</string>
@@ -195,9 +198,12 @@
   <string name="volume_answer_call_summary">Menjawab panggilan dengan menekan tombol volume</string>
   <string name="home_answer_call_title">Jawab panggilan</string>
   <string name="home_answer_call_summary">Menjawab panggilan dengan menekan tombol beranda</string>
+  <string name="extras_title">Tambahan</string>
+  <string name="additional_buttons_title">Tombol tambahan</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Lampu latar</string>
   <string name="button_backlight_enabled">Cahaya tombol</string>
+  <string name="button_backlight_only_when_pressed_title">Nyalakan tombol hanya jika ditekan</string>
   <string name="keyboard_backlight_enabled">Terangi papan ketik</string>
   <string name="button_backlight_seekbar_title">Tombol kecerahan</string>
   <string name="keyboard_backlight_seekbar_title">Kecerahan papan ketik</string>
@@ -217,9 +223,11 @@
   <string name="navigation_bar_arrow_keys_summary">Tampilkan tombol kursor kiri dan kanan saat mengetik. Menggantikan pengubah IME.</string>
   <string name="navigation_bar_home_long_press_title">Tindakan menekan lama home</string>
   <string name="navigation_bar_home_double_tap_title">Tindakan dua kali ketuk home</string>
+  <string name="navigation_bar_app_switch_long_press_title">Tindakan menekan lama recent</string>
   <!-- Power menu -->
   <string name="power_menu_title">Menu power</string>
   <string name="power_menu_screenshot_title">Tangkap layar</string>
+  <string name="power_menu_screenshot_summary">Tekan lama untuk menangkap layar sebagian</string>
   <string name="power_menu_airplane_title">Mode pesawat</string>
   <string name="power_menu_users_title">Beralih pengguna</string>
   <string name="power_menu_bug_report_title">Lapor bug</string>
@@ -427,6 +435,14 @@
   <string name="status_bar_icons_title">Ikon Status bar</string>
   <string name="status_bar_icons_summary">Atur baris Ikon yang ditampilkan</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_settings_title">Monitor lalu lintas jaringan</string>
+  <string name="network_traffic_mode_up">Hanya unggah</string>
+  <string name="network_traffic_mode_down">Hanya unduh</string>
+  <string name="network_traffic_mode_all">Unggah dan unduh</string>
+  <string name="network_traffic_units_kilobits">Kilobit per detik (kb/d)</string>
+  <string name="network_traffic_units_megabits">Megabit per detik (Mb/d)</string>
+  <string name="network_traffic_units_kilobytes">Kilobyte per detik (kB/d)</string>
+  <string name="network_traffic_units_megabytes">Megabyte per detik (MB/d)</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplikasi dilindungi</string>
   <string name="protected_apps_manager_summary">Kelola aplikasi yang tersembunyi dengan kunci aman</string>
@@ -543,6 +559,11 @@
   <string name="touchscreen_gesture_letter_w_title">Gambar huruf \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Gambar huruf \"Z\"</string>
   <!-- Gesture: Stylus gestures -->
+  <string name="touchscreen_gesture_swipe_up_stylus_title">Usap ke atas dengan stylus</string>
+  <string name="touchscreen_gesture_swipe_down_stylus_title">Usap ke bawah dengan stylus</string>
+  <string name="touchscreen_gesture_swipe_left_stylus_title">Usap ke kiri dengan stylus</string>
+  <string name="touchscreen_gesture_swipe_right_stylus_title">Usap ke kanan dengan stylus</string>
+  <string name="touchscreen_gesture_long_press_stylus_title">Tekan lama dengan stylus</string>
   <string name="touchscreen_gesture_action_dialog_title">Tindakan gerakan</string>
   <string name="touchscreen_gesture_action_do_nothing">Jangan lakukan apa-apa</string>
   <string name="touchscreen_gesture_action_flashlight">Hidup/matikan senter</string>
@@ -554,6 +575,18 @@
   <string name="touchscreen_gesture_action_play_pause_music">Putar/jeda pemutaran musik</string>
   <string name="touchscreen_gesture_action_previous_track">Kembali ke trek musik sebelumnya</string>
   <string name="touchscreen_gesture_action_next_track">Lanjut ke trek musik berikutnya</string>
+  <string name="touchscreen_gesture_action_volume_down">Turunkan volume media</string>
+  <string name="touchscreen_gesture_action_volume_up">Tingkatkan volume media</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Gaya</string>
+  <string name="style_summary">Pilih warna sistem</string>
+  <string name="style_global_title">Gaya</string>
+  <string name="style_global_entry_light">Terang</string>
+  <string name="style_global_entry_dark">Gelap</string>
+  <string name="style_accent_title">Warna aksen</string>
+  <string name="style_accent_configuration_positive">Lanjutkan</string>
+  <string name="style_automagic_dialog_content">Gaya yang disarankan: <b>%1$s</b> dengan aksen <b>%2$s</b>. \nApakah Anda ingin menerapkannya?</string>
+  <string name="style_automagic_dialog_positive">Terapkan</string>
+  <string name="style_accent_default_name">Standar</string>
 </resources>

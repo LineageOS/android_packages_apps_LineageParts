@@ -76,6 +76,7 @@
   <string name="pulse_speed_slow">Langzaam</string>
   <string name="pulse_speed_very_slow">Heel langzaam</string>
   <!-- Common light settings strings -->
+  <string name="light_brightness_zen">Niet storen</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Acculed</string>
   <string name="battery_low_pulse_title">Knipperen bij lage accuspanning</string>
@@ -195,6 +196,8 @@
   <string name="volume_answer_call_summary">Inkomende oproepen beantwoorden door op de volumeknoppen te drukken</string>
   <string name="home_answer_call_title">Oproep beantwoorden</string>
   <string name="home_answer_call_summary">Inkomende oproepen beantwoorden door op de thuisknop te drukken</string>
+  <string name="extras_title">Extra\'s</string>
+  <string name="additional_buttons_title">Extra knoppen</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Verlichting</string>
   <string name="button_backlight_enabled">Knoppen verlichten</string>
@@ -427,6 +430,8 @@
   <string name="status_bar_icons_title">Statusbalkpictogrammen</string>
   <string name="status_bar_icons_summary">Bepalen welke statusbalkpictogrammen worden weergegeven</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_mode_disable">Uitgeschakeld</string>
+  <string name="network_traffic_autohide">Automatisch verbergen</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beschermde apps</string>
   <string name="protected_apps_manager_summary">Beheren welke apps beschermd zijn</string>
@@ -556,4 +561,7 @@
   <string name="touchscreen_gesture_action_next_track">Spring naar volgende nummer</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_global_entry_light">Licht</string>
+  <string name="style_global_entry_dark">Donker</string>
+  <string name="style_global_entry_time">Automatisch (tijdstip van de dag)</string>
 </resources>

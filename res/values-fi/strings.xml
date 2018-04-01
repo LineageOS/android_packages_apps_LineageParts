@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Taustavalo</string>
   <string name="button_backlight_enabled">Valaise painikkeet</string>
+  <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettuna</string>
   <string name="keyboard_backlight_enabled">Valaise näppäimistö</string>
   <string name="button_backlight_seekbar_title">Painikkeen kirkkaus</string>
   <string name="keyboard_backlight_seekbar_title">Näppäimistön kirkkaus</string>

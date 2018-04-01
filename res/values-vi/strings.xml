@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Đèn nền</string>
   <string name="button_backlight_enabled">Phát sáng các phím</string>
+  <string name="button_backlight_only_when_pressed_title">Phát sáng các nút chỉ khi được nhấn</string>
   <string name="keyboard_backlight_enabled">Phát sáng bàn phím</string>
   <string name="button_backlight_seekbar_title">Độ sáng phím</string>
   <string name="keyboard_backlight_seekbar_title">Độ sáng bàn phím</string>

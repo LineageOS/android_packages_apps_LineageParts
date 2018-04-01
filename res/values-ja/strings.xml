@@ -198,6 +198,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">バックライト</string>
   <string name="button_backlight_enabled">ボタンを点灯</string>
+  <string name="button_backlight_only_when_pressed_title">ボタンを押したときだけ光らせる</string>
   <string name="keyboard_backlight_enabled">キーボードを点灯</string>
   <string name="button_backlight_seekbar_title">ボタンの明るさ</string>
   <string name="keyboard_backlight_seekbar_title">キーボードの明るさ</string>
@@ -220,6 +221,7 @@
   <!-- Power menu -->
   <string name="power_menu_title">電源メニュー</string>
   <string name="power_menu_screenshot_title">スクリーンショット</string>
+  <string name="power_menu_screenshot_summary">長押しして指定した範囲を撮影します</string>
   <string name="power_menu_airplane_title">機内モード</string>
   <string name="power_menu_users_title">ユーザーの切り替え</string>
   <string name="power_menu_bug_report_title">バグレポート</string>
@@ -427,6 +429,8 @@
   <string name="status_bar_icons_title">ステータスバーのアイコン</string>
   <string name="status_bar_icons_summary">ステータスバーに表示するアイコンをコントロールする</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
+  <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にします</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">アプリの保護</string>
   <string name="protected_apps_manager_summary">パスワードでロックしている場合に非表示にするアプリを管理する</string>
@@ -516,7 +520,7 @@
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">充電時の音</string>
   <string name="charging_sounds_enabled_title">有効</string>
-  <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らす</string>
+  <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らします</string>
   <string name="power_notifications_vibrate_title">バイブレーション</string>
   <string name="charging_sounds_ringtone_title">通知音</string>
   <string name="charging_sounds_ringtone_silent">サイレント</string>

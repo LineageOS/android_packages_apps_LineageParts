@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Iluminare butoane</string>
   <string name="button_backlight_enabled">Iluminare butoane</string>
+  <string name="button_backlight_only_when_pressed_title">Iluminare butoane numai când au fost apăsate</string>
   <string name="keyboard_backlight_enabled">Iluminare tastatură</string>
   <string name="button_backlight_seekbar_title">Luminozitate buton</string>
   <string name="keyboard_backlight_seekbar_title">Luminozitate tastatură</string>

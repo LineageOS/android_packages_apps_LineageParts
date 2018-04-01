@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Retroilluminazione</string>
   <string name="button_backlight_enabled">Illumina pulsanti</string>
+  <string name="button_backlight_only_when_pressed_title">Illumina i pulsanti solo se premuti</string>
   <string name="keyboard_backlight_enabled">Illumina tastiera</string>
   <string name="button_backlight_seekbar_title">Luminosità pulsanti</string>
   <string name="keyboard_backlight_seekbar_title">Luminosità tastiera</string>

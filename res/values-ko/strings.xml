@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">백라이트</string>
   <string name="button_backlight_enabled">버튼 조명 사용</string>
+  <string name="button_backlight_only_when_pressed_title">버튼이 눌렸을 때만 조명을 켭니다.</string>
   <string name="keyboard_backlight_enabled">키보드 조명 사용</string>
   <string name="button_backlight_seekbar_title">버튼 조명 밝기</string>
   <string name="keyboard_backlight_seekbar_title">키보드 조명 밝기</string>
@@ -597,6 +598,9 @@
   <string name="style_accent_title">강조 색상</string>
   <string name="style_accent_configuration_not_supported">지금 사용 중인 강조 색상은 선택한 프로필과 함께 사용할 수 없습니다. 계속하기 위해서는 다른 강조 색상을 선택해야 합니다. 정말 계속하시겠습니까?</string>
   <string name="style_accent_configuration_positive">계속</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">배경화면에 어울리는 스타일 추천</string>
+  <string name="style_automagic_dialog_content">추천하는 스타일은 <b>%2$s</b> 강조 색상을 사용한 <b>%1$s</b>입니다.\n적용하시겠습니까?</string>
   <string name="style_automagic_dialog_positive">적용</string>
   <string name="style_accent_default_name">기본값</string>
   <string name="style_permission_error">배경화면을 분석하기 위해 저장소 접근 권한이 필요합니다. 이 기능을 사용하려면 권한을 허용해 주세요.</string>

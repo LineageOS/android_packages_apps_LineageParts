@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Osvetlitev ozadja</string>
   <string name="button_backlight_enabled">Osvetli gumbe</string>
+  <string name="button_backlight_only_when_pressed_title">Osvetli gumbe samo ob pritisku</string>
   <string name="keyboard_backlight_enabled">Osvetli tipkovnico</string>
   <string name="button_backlight_seekbar_title">Svetlost gumbov</string>
   <string name="keyboard_backlight_seekbar_title">Svetlost tipkovnice</string>

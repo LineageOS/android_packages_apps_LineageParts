@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">背光</string>
   <string name="button_backlight_enabled">開啟按鍵背光</string>
+  <string name="button_backlight_only_when_pressed_title">僅在按下按鈕才點亮指示燈</string>
   <string name="keyboard_backlight_enabled">開啟鍵盤背光</string>
   <string name="button_backlight_seekbar_title">按鍵亮度</string>
   <string name="keyboard_backlight_seekbar_title">鍵盤亮度</string>

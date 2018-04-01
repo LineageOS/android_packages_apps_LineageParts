@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Aydınlatma ışığı</string>
   <string name="button_backlight_enabled">Tuşları aydınlat</string>
+  <string name="button_backlight_only_when_pressed_title">Tuşları, sadece basıldığında aydınlat</string>
   <string name="keyboard_backlight_enabled">Klavyeyi aydınlat</string>
   <string name="button_backlight_seekbar_title">Tuş parlaklığı</string>
   <string name="keyboard_backlight_seekbar_title">Klavye parlaklığı</string>

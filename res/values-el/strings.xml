@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Εναλλαγή χρήστη</string>
   <string name="power_menu_bug_report_title">Αναφορά σφαλμάτων</string>
   <string name="power_menu_bug_report_disabled">Η αναφορά σφαλμάτων είναι απενεργοποιημένη στις ρυθμίσεις για προγραμματιστές</string>
+  <string name="power_menu_lockdown_title">Κλείδωμα</string>
   <string name="volume_keys_control_ring_stream_title">Έλεγχος έντασης ήχου κλήσης</string>
   <string name="volume_keys_control_ring_stream_summary_on">Τα πλήκτρα έντασης θα ελέγχουν την ένταση ήχου κλήσης</string>
   <string name="volume_keys_control_ring_stream_summary_off">Τα πλήκτρα έντασης θα ελέγχουν την ένταση πολυμέσων</string>
@@ -599,6 +600,7 @@
   <string name="style_global_entry_light">Φωτεινό</string>
   <string name="style_global_entry_dark">Σκοτεινό</string>
   <string name="style_global_entry_time">Αυτόματο (ώρα της ημέρας)</string>
+  <string name="style_global_entry_app">Διαχειρίζεται από: %1$s</string>
   <string name="style_accent_title">Δευτερεύον χρώμα</string>
   <string name="style_accent_configuration_not_supported">Το τρέχον δευτερεύον χρώμα δεν είναι συμβατό με το επιλεγμένο στυλ. Για να συνεχίσετε πρέπει να επιλεγεί ένα άλλο δευτερεύον χρώμα, είστε βέβαιοι ότι θέλετε να συνεχίσετε;</string>
   <string name="style_accent_configuration_positive">Συνέχεια</string>

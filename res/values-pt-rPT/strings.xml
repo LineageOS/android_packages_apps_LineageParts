@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Luz de fundo</string>
   <string name="button_backlight_enabled">Iluminar os botões</string>
+  <string name="button_backlight_only_when_pressed_title">Iluminar botões apenas ao tocar</string>
   <string name="keyboard_backlight_enabled">Iluminar o teclado</string>
   <string name="button_backlight_seekbar_title">Brilho dos botões</string>
   <string name="keyboard_backlight_seekbar_title">Brilho do teclado</string>
@@ -388,7 +389,7 @@
   <string name="status_bar_quick_qs_pulldown_summary">O %1$s da barra de estado faz baixar o painel de definições rápidas</string>
   <string name="status_bar_quick_qs_pulldown_summary_left">canto esquerdo</string>
   <string name="status_bar_quick_qs_pulldown_summary_right">canto direito</string>
-  <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
+  <string name="status_bar_quick_qs_pulldown_off">Desligada</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Direita</string>
   <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>
@@ -597,6 +598,7 @@
   <string name="style_accent_title">Cor de destaque</string>
   <string name="style_accent_configuration_not_supported">A cor de destaque atual não é compatível com o estilo selecionado. Para continuar terá de escolher outra cor de destaque. Deseja continuar?</string>
   <string name="style_accent_configuration_positive">Continuar</string>
+  <string name="style_automagic_title">Automagic</string>
   <string name="style_automagic_description">Fazer com que o estilo combine com a imagem de fundo</string>
   <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> com <b>%2$s</b> como cor de destaque.\nPretende aplicá-lo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>

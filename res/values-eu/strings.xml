@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Atze-argitzea</string>
   <string name="button_backlight_enabled">Argitu botoiak</string>
+  <string name="button_backlight_only_when_pressed_title">Argitu botoiak sakatzean besterik ez</string>
   <string name="keyboard_backlight_enabled">Argitu teklatua</string>
   <string name="button_backlight_seekbar_title">Botoien distira</string>
   <string name="keyboard_backlight_seekbar_title">Teklatuaren distira</string>

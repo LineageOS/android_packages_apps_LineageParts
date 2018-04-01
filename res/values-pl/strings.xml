@@ -598,6 +598,7 @@
   <string name="style_global_entry_time">Automatyczny (pora dnia)</string>
   <string name="style_accent_configuration_not_supported">Obecny akcent kolorystyczny jest niekompatybilny z wybranym stylem. Aby kontynuować, musisz wybrać inny akcent, czy chcesz kontynuować?</string>
   <string name="style_accent_configuration_positive">Kontynuuj</string>
+  <string name="style_automagic_title">Automagicznie</string>
   <string name="style_automagic_description">Dostosuj styl do swojej tapety</string>
   <string name="style_automagic_dialog_content">Sugerowany styl: <b>%1$s</b> z <b>%2$s</b> akcentem.\nChcesz go zastosować?</string>
   <string name="style_automagic_dialog_positive">Zastosuj</string>
