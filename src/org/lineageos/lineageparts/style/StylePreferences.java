@@ -201,6 +201,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
             case StyleInterface.STYLE_GLOBAL_DARK:
                 mStyleStatus = StyleStatus.DARK_ONLY;
                 break;
+            case StyleInterface.STYLE_GLOBAL_BLACK:
+                mStyleStatus = StyleStatus.BLACK_ONLY;
+                break;
             default:
                 mStyleStatus = StyleStatus.DYNAMIC;
                 break;
@@ -278,6 +281,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 icon = R.drawable.ic_style_light;
                 break;
             case StyleInterface.STYLE_GLOBAL_DARK:
+            case StyleInterface.STYLE_GLOBAL_BLACK:
                 icon = R.drawable.ic_style_dark;
                 break;
             default:
@@ -305,6 +309,8 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 return value == StyleInterface.STYLE_GLOBAL_LIGHT;
             case DARK_ONLY:
                 return value == StyleInterface.STYLE_GLOBAL_DARK;
+            case BLACK_ONLY:
+                return value == StyleInterface.STYLE_GLOBAL_BLACK;
             case DYNAMIC:
             default: // Never happens, but compilation fails without this
                 return true;
@@ -319,6 +325,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 break;
             case StyleInterface.STYLE_GLOBAL_DARK:
                 proposedStatus = StyleStatus.DARK_ONLY;
+                break;
+            case StyleInterface.STYLE_GLOBAL_BLACK:
+                proposedStatus = StyleStatus.BLACK_ONLY;
                 break;
             default:
                 proposedStatus = StyleStatus.DYNAMIC;
