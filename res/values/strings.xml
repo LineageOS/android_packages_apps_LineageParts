@@ -680,6 +680,7 @@
     <string name="style_global_entry_automatic">Automatic (wallpaper)</string>
     <string name="style_global_entry_light">Light</string>
     <string name="style_global_entry_dark">Dark</string>
+    <string name="style_global_entry_black">Black</string>
     <string name="style_global_entry_time">Automatic (time of the day)</string>
     <string name="style_global_entry_app">Managed by %1$s</string>
     <string name="style_accent_title">Accent color</string>
