@@ -409,6 +409,7 @@
         <item>@string/style_global_entry_time</item>
         <item>@string/style_global_entry_light</item>
         <item>@string/style_global_entry_dark</item>
+        <item>@string/style_global_entry_black</item>
     </string-array>
 
     <!-- Global style values -->
@@ -417,5 +418,6 @@
         <item>1</item> <!-- Based on LiveDisplay -->
         <item>2</item> <!-- Force light -->
         <item>3</item> <!-- Force dark -->
+        <item>4</item> <!-- Force black -->
     </string-array>
 </resources>
