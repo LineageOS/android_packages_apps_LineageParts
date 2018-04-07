@@ -27,4 +27,7 @@
     <color name="perf_hot">#ffd10015</color>
     <color name="perf_cold">#ff005994</color>
 
+    <color name="trust_status_good">#36B37E</color>
+    <color name="trust_status_poor">#FFAB00</color>
+    <color name="trust_status_bad">#FF5630</color>
 </resources>
