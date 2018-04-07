@@ -57,5 +57,11 @@
     <!-- Berry lite -->
     <dimen name="style_accent_preview">32dp</dimen>
     <dimen name="style_accent_icon">24dp</dimen>
+
+    <!-- Trust onBoarding -->
+    <dimen name="trust_logo_vertical_margin">56dp</dimen>
+    <dimen name="trust_logo_horizontal_margin">40dp</dimen>
+    <dimen name="trust_logo_height">-2px</dimen>
+    <dimen name="trust_logo_width">-1px</dimen>
 </resources>
 

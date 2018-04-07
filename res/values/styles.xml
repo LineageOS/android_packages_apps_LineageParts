@@ -136,4 +136,10 @@
         <item name="android:layout_height">1dp</item>
     </style>
 
+    <style name="OnBoardingStyle" parent="Theme.AppCompat.DayNight">
+        <item name="colorAccent">#167c80</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

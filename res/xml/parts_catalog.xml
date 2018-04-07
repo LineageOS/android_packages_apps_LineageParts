@@ -122,4 +122,9 @@
           android:summary="@string/style_summary"
           android:fragment="org.lineageos.lineageparts.style.StylePreferences"
           lineage:xmlRes="@xml/style_preferences" />
+
+    <part android:key="trust_interface"
+          android:title="@string/trust_title"
+          android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"
+          lineage:xmlRes="@xml/trust_preferences" />
 </parts-catalog>
