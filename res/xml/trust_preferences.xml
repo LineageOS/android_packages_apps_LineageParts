@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <org.lineageos.lineageparts.widget.WallOfTextPreference
+        android:icon="@drawable/ic_trust"
+        android:summary="@string/trust_header" />
+
+    <PreferenceCategory android:title="@string/trust_category_features">
+
+        <Preference
+            android:key="trust_selinux"
+            android:title="@string/trust_feature_selinux" />
+
+        <Preference
+            android:key="trust_root"
+            android:title="@string/trust_feature_root" />
+
+        <Preference
+            android:key="trust_security_patch"
+            android:title="@string/trust_feature_security_patches" />
+
+        <Preference
+            android:key="trust_encryption"
+            android:title="@string/trust_feature_encryption" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/trust_category_tools">
+
+        <org.lineageos.internal.lineageparts.LineagePartsPreference
+            android:key="privacy_guard_manager" />
+
+        <org.lineageos.internal.lineageparts.LineagePartsPreference
+            android:key="lineagestats" />
+    </PreferenceCategory>
+</PreferenceScreen>
