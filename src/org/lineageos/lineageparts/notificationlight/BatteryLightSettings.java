@@ -97,6 +97,13 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         mBatteryBrightnessZenPref =
                 (BatteryBrightnessZenPreference) prefSet.findPreference(BRIGHTNESS_ZEN_PREFERENCE);
 
+        mDefaultLowColor = res.getInteger(
+                com.android.internal.R.integer.config_notificationsBatteryLowARGB);
+        mDefaultMediumColor = res.getInteger(
+                com.android.internal.R.integer.config_notificationsBatteryMediumARGB);
+        mDefaultFullColor = res.getInteger(
+                com.android.internal.R.integer.config_notificationsBatteryFullARGB);
+
         mBatteryBrightness = mBatteryBrightnessPref.getBrightnessSetting();
 
         if (!pulsatingLed || segmentedBatteryLed) {
@@ -105,13 +112,6 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
         if (mMultiColorLed) {
             setHasOptionsMenu(true);
-
-            mDefaultLowColor = res.getInteger(
-                    com.android.internal.R.integer.config_notificationsBatteryLowARGB);
-            mDefaultMediumColor = res.getInteger(
-                    com.android.internal.R.integer.config_notificationsBatteryMediumARGB);
-            mDefaultFullColor = res.getInteger(
-                    com.android.internal.R.integer.config_notificationsBatteryFullARGB);
 
             // Low, Medium and full color preferences
             mLowColorPref = (ApplicationLightPreference) prefSet.findPreference(LOW_COLOR_PREF);
@@ -163,20 +163,20 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Resources res = getResources();
 
         if (mLowColorPref != null) {
-            int lowColor = LineageSettings.System.getInt(resolver, LineageSettings.System.BATTERY_LIGHT_LOW_COLOR,
-                    res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
+            int lowColor = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.BATTERY_LIGHT_LOW_COLOR, mDefaultLowColor);
             mLowColorPref.setAllValues(lowColor, 0, 0, false);
         }
 
         if (mMediumColorPref != null) {
-            int mediumColor = LineageSettings.System.getInt(resolver, LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR,
-                    res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
+            int mediumColor = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, mDefaultMediumColor);
             mMediumColorPref.setAllValues(mediumColor, 0, 0, false);
         }
 
         if (mFullColorPref != null) {
-            int fullColor = LineageSettings.System.getInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR,
-                    res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
+            int fullColor = LineageSettings.System.getInt(resolver,
+                    LineageSettings.System.BATTERY_LIGHT_FULL_COLOR, mDefaultFullColor);
             mFullColorPref.setAllValues(fullColor, 0, 0, false);
             updateBrightnessPrefColor(fullColor);
         }
