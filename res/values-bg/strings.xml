@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Потребители</string>
   <string name="power_menu_bug_report_title">Доклад за грешка</string>
   <string name="power_menu_bug_report_disabled">Доклади за грешки са забранени от настройките за разработчици</string>
+  <string name="power_menu_lockdown_title">Заключване</string>
   <string name="volume_keys_control_ring_stream_title">Силата на звука при звънене</string>
   <string name="volume_keys_control_ring_stream_summary_on">С бутоните за сила на звука регулирате силата на звънене</string>
   <string name="volume_keys_control_ring_stream_summary_off">С бутоните за сила на звука регулирате силата на медиите</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Светла</string>
   <string name="style_global_entry_dark">Тъмна</string>
   <string name="style_global_entry_time">Автоматично (време през деня)</string>
+  <string name="style_global_entry_app">Управлявани от %1$s</string>
   <string name="style_accent_title">Цвят за акцентиране</string>
   <string name="style_accent_configuration_not_supported">Текущият фокус не е съвместим с избрания стил. За да продължите, трябва да изберете друг акцент, искате ли да продължите?</string>
   <string name="style_accent_configuration_positive">Продължи</string>

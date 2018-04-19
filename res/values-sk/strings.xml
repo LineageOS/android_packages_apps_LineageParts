@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Prepínač používateľov</string>
   <string name="power_menu_bug_report_title">Nahlásiť chybu</string>
   <string name="power_menu_bug_report_disabled">Hlásenie chýb je zakázané v nastaveniach pre vývojárov</string>
+  <string name="power_menu_lockdown_title">Uzamknutie</string>
   <string name="volume_keys_control_ring_stream_title">Ovládanie hlasitosti zvonenia</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tlačidlá hlasitosti ovládajú hlasitosť zvonenia</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tlačidlá hlasitosti ovládajú hlasitosť médií</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Svetlá</string>
   <string name="style_global_entry_dark">Tmavá</string>
   <string name="style_global_entry_time">Automaticky (podľa času dňa)</string>
+  <string name="style_global_entry_app">Spravované %1$s</string>
   <string name="style_accent_title">Doplnková farba</string>
   <string name="style_accent_configuration_not_supported">Aktuálny odtieň nie je kompatibilný s vybratým štýlom. Ak chcete pokračovať, musíte vybrať iný odtieň, chcete pokračovať?</string>
   <string name="style_accent_configuration_positive">Pokračovať</string>

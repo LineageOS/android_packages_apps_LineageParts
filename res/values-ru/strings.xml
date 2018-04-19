@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Переключение пользователей</string>
   <string name="power_menu_bug_report_title">Отчет об ошибке</string>
   <string name="power_menu_bug_report_disabled">Отчет об ошибке отключен в настройках для разработчика</string>
+  <string name="power_menu_lockdown_title">Блокировка</string>
   <string name="volume_keys_control_ring_stream_title">Регулировка громкости рингтона</string>
   <string name="volume_keys_control_ring_stream_summary_on">Кнопки громкости регулируют громкость рингтона</string>
   <string name="volume_keys_control_ring_stream_summary_off">Кнопки громкости регулируют громкость мультимедиа</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Светлый</string>
   <string name="style_global_entry_dark">Темный</string>
   <string name="style_global_entry_time">Автоматически (время суток)</string>
+  <string name="style_global_entry_app">Управляется %1$s</string>
   <string name="style_accent_title">Дополнительный цвет</string>
   <string name="style_accent_configuration_not_supported">Текущий дополнительный цвет несовместим с выбранным стилем. Чтобы продолжить, требуется выбрать другой дополнительный цвет, хотите продолжить?</string>
   <string name="style_accent_configuration_positive">Продолжить</string>

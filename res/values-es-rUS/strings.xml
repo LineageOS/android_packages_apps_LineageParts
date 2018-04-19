@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Selector de usuario</string>
   <string name="power_menu_bug_report_title">Informe de errores</string>
   <string name="power_menu_bug_report_disabled">Los informes de error están desactivados en los ajustes de desarrollo</string>
+  <string name="power_menu_lockdown_title">Bloqueo de seguridad</string>
   <string name="volume_keys_control_ring_stream_title">Controlar el volumen del tono de llamada</string>
   <string name="volume_keys_control_ring_stream_summary_on">Las teclas de volumen controlan el volumen del tono de llamada</string>
   <string name="volume_keys_control_ring_stream_summary_off">Las teclas de volumen controlan el volumen de archivos multimedia</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Claro</string>
   <string name="style_global_entry_dark">Oscuro</string>
   <string name="style_global_entry_time">Automático (hora del día)</string>
+  <string name="style_global_entry_app">Gestionado por %1$s</string>
   <string name="style_accent_title">Color de resaltado</string>
   <string name="style_accent_configuration_not_supported">El resaltado actual es incompatible con el estilo seleccionado. Para proceder hay que seleccionar otro resaltado, ¿Continuar?</string>
   <string name="style_accent_configuration_positive">Proceder</string>

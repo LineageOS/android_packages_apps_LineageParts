@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Erabiltzaile aldaketa</string>
   <string name="power_menu_bug_report_title">Errore-txostena</string>
   <string name="power_menu_bug_report_disabled">Erroreen berri ematea ezgaituta dago garatzaileen aukeretan</string>
+  <string name="power_menu_lockdown_title">Blokeatu</string>
   <string name="volume_keys_control_ring_stream_title">Kontrolatu dei-doinuaren bolumena</string>
   <string name="volume_keys_control_ring_stream_summary_on">Bolumen teklek dei-doinuaren bolumena kontrolatzen dute</string>
   <string name="volume_keys_control_ring_stream_summary_off">Bolumen teklek multimediaren bolumena kontrolatzen dute</string>
@@ -593,6 +594,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="style_global_entry_light">Argia</string>
   <string name="style_global_entry_dark">Iluna</string>
   <string name="style_global_entry_time">Automatikoa (eguneko ordua)</string>
+  <string name="style_global_entry_app">%1$s-(e)k kudeatuta</string>
   <string name="style_accent_title">Azentuatzeko kolorea</string>
   <string name="style_accent_configuration_not_supported">Uneko azentzuatzeko kolorea ez da aukeratutako estiloarekin bateragarria. Jarraitzeko beste nabarmentzeko kolore bat aukeratu behar da, jarraitu nahi duzu? duzu?</string>
   <string name="style_accent_configuration_positive">Jarraitu</string>

@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Preklopnik uporabnikov</string>
   <string name="power_menu_bug_report_title">Poročilo o hrošču</string>
   <string name="power_menu_bug_report_disabled">V nastavitvah za razvijalce je poročanje o hrošču onemogočeno</string>
+  <string name="power_menu_lockdown_title">Zaklep</string>
   <string name="volume_keys_control_ring_stream_title">Nadzor glasnosti zvonjenja</string>
   <string name="volume_keys_control_ring_stream_summary_on">Gumba za glasnost nadzirata glasnost zvonjenja</string>
   <string name="volume_keys_control_ring_stream_summary_off">Gumba za glasnost nadzirata glasnost predstavnosti</string>
@@ -594,6 +595,7 @@
   <string name="style_global_entry_light">Svetlo</string>
   <string name="style_global_entry_dark">Temno</string>
   <string name="style_global_entry_time">Samodejno (čas dneva)</string>
+  <string name="style_global_entry_app">Upravlja %1$s</string>
   <string name="style_accent_title">Barva poudarka</string>
   <string name="style_accent_configuration_not_supported">Trenutni pudarek ni združljiv z izbranim slogom. Za nadaljevanje mora biti izbran drug poudarek, ali želite nadaljevati?</string>
   <string name="style_accent_configuration_positive">Nadaljuj</string>

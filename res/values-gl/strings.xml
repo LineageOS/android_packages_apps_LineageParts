@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Selector de usuario</string>
   <string name="power_menu_bug_report_title">Informe de erros</string>
   <string name="power_menu_bug_report_disabled">O informe de erros está desativado nas opcións de desenvolvemento</string>
+  <string name="power_menu_lockdown_title">Bloquear</string>
   <string name="volume_keys_control_ring_stream_title">Control do volume do ton</string>
   <string name="volume_keys_control_ring_stream_summary_on">As teclas de volume controlan o volume do ton de chamada</string>
   <string name="volume_keys_control_ring_stream_summary_off">As teclas de volume controlan o volume multimedia</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Claro</string>
   <string name="style_global_entry_dark">Escuro</string>
   <string name="style_global_entry_time">Automático (segundo a hora do día)</string>
+  <string name="style_global_entry_app">Xestionado por %1$s</string>
   <string name="style_accent_title">Cor acentuada</string>
   <string name="style_accent_configuration_not_supported">A cor de destaque actual non é compatíbel co estilo seleccionado. Para continuar terás que seleccionar outra cor, queres continuar?</string>
   <string name="style_accent_configuration_positive">Proseguir</string>

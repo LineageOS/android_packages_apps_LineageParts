@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="lineageparts_title">Setelan LineageOS</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Memuat\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -433,13 +434,20 @@
   <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">Monitor lalu lintas jaringan</string>
+  <string name="network_traffic_settings_summary">Tampilkan tingkat lalu lintas jaringan saat ini di bilah status</string>
+  <string name="network_traffic_mode_title">Modus tampilan</string>
+  <string name="network_traffic_mode_disable">Dimatikan</string>
   <string name="network_traffic_mode_up">Hanya unggah</string>
   <string name="network_traffic_mode_down">Hanya unduh</string>
   <string name="network_traffic_mode_all">Unggah dan unduh</string>
+  <string name="network_traffic_autohide">Sembunyi otomatis</string>
+  <string name="network_traffic_autohide_summary">Sembunyikan monitor lalu lintas ketika tidak ada aktivitas</string>
+  <string name="network_traffic_units_title">Satuan pengukuran lalu lintas</string>
   <string name="network_traffic_units_kilobits">Kilobit per detik (kb/d)</string>
   <string name="network_traffic_units_megabits">Megabit per detik (Mb/d)</string>
   <string name="network_traffic_units_kilobytes">Kilobyte per detik (kB/d)</string>
   <string name="network_traffic_units_megabytes">Megabyte per detik (MB/d)</string>
+  <string name="network_traffic_show_units">Tampilkan satuan</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Aplikasi dilindungi</string>
   <string name="protected_apps_manager_summary">Kelola aplikasi yang tersembunyi dengan kunci aman</string>
@@ -579,6 +587,7 @@
   <string name="style_title">Gaya</string>
   <string name="style_summary">Pilih warna sistem</string>
   <string name="style_global_title">Gaya</string>
+  <string name="style_global_entry_automatic">Otomatis (wallpaper)</string>
   <string name="style_global_entry_light">Terang</string>
   <string name="style_global_entry_dark">Gelap</string>
   <string name="style_accent_title">Warna aksen</string>

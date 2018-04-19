@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">사용자 전환</string>
   <string name="power_menu_bug_report_title">오류 신고</string>
   <string name="power_menu_bug_report_disabled">개발자 설정에서 오류 보고가 비활성화되었습니다</string>
+  <string name="power_menu_lockdown_title">잠금</string>
   <string name="volume_keys_control_ring_stream_title">벨소리 볼륨 제어</string>
   <string name="volume_keys_control_ring_stream_summary_on">볼륨 키로 벨소리 크기 조절</string>
   <string name="volume_keys_control_ring_stream_summary_off">볼륨 키로 미디어 볼륨 크기 조절</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">밝음</string>
   <string name="style_global_entry_dark">어두움</string>
   <string name="style_global_entry_time">자동 (시간에 따라)</string>
+  <string name="style_global_entry_app">%1$s 앱에서 관리 중</string>
   <string name="style_accent_title">강조 색상</string>
   <string name="style_accent_configuration_not_supported">지금 사용 중인 강조 색상은 선택한 프로필과 함께 사용할 수 없습니다. 계속하기 위해서는 다른 강조 색상을 선택해야 합니다. 정말 계속하시겠습니까?</string>
   <string name="style_accent_configuration_positive">계속</string>

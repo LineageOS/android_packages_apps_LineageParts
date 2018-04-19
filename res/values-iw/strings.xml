@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">מחליף משתמשים</string>
   <string name="power_menu_bug_report_title">דיווח באגים</string>
   <string name="power_menu_bug_report_disabled">דיווח באגים מושבת בהגדרות מפתח</string>
+  <string name="power_menu_lockdown_title">נעילה כללית</string>
   <string name="volume_keys_control_ring_stream_title">שליטה בעוצמת הצלצול</string>
   <string name="volume_keys_control_ring_stream_summary_on">מקשי עוצמת השמע שולטים בעוצמת הצלצול</string>
   <string name="volume_keys_control_ring_stream_summary_off">מקשי עוצמת השמע שולטים בעוצמת המדיה</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">בהיר</string>
   <string name="style_global_entry_dark">כהה</string>
   <string name="style_global_entry_time">אוטומטי (בהתאם לשעות היממה)</string>
+  <string name="style_global_entry_app">מנוהל על ידי %1$s</string>
   <string name="style_accent_title">צבע משלים</string>
   <string name="style_accent_configuration_not_supported">הצבע המשלים הנוכחי אינו תואם הסגנון שנבחר. בכדי להמשיך יש לבחור בצבע משלים אחר, האם ברצונך להמשיך?</string>
   <string name="style_accent_configuration_positive">המשך</string>

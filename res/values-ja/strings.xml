@@ -226,6 +226,7 @@
   <string name="power_menu_users_title">ユーザーの切り替え</string>
   <string name="power_menu_bug_report_title">バグレポート</string>
   <string name="power_menu_bug_report_disabled">バグレポートは開発者向けオプションで無効になっています</string>
+  <string name="power_menu_lockdown_title">ロックダウン</string>
   <string name="volume_keys_control_ring_stream_title">着信音量のコントロール</string>
   <string name="volume_keys_control_ring_stream_summary_on">音量キーで着信音量をコントロールする</string>
   <string name="volume_keys_control_ring_stream_summary_off">音量キーでメディア音量をコントロールする</string>

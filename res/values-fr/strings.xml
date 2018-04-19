@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Changer d\'utilisateur</string>
   <string name="power_menu_bug_report_title">Rapport de bug</string>
   <string name="power_menu_bug_report_disabled">Le rapport de bug est désactivé dans les paramètres de développement</string>
+  <string name="power_menu_lockdown_title">Verrouillage</string>
   <string name="volume_keys_control_ring_stream_title">Contrôler le volume de la sonnerie</string>
   <string name="volume_keys_control_ring_stream_summary_on">Contrôler le volume de la sonnerie à l\'aide des boutons de volume</string>
   <string name="volume_keys_control_ring_stream_summary_off">Contrôler le volume des médias à l\'aide des boutons de volume</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Clair</string>
   <string name="style_global_entry_dark">Sombre</string>
   <string name="style_global_entry_time">Automatique (heure)</string>
+  <string name="style_global_entry_app">Géré par %1$s</string>
   <string name="style_accent_title">Couleur d\'accentuation</string>
   <string name="style_accent_configuration_not_supported">La couleur d\'accentuation actuelle est incompatible avec le style sélectionné. Une autre couleur d\'accentuation a donc été sélectionnée. Voulez-vous continuer ?</string>
   <string name="style_accent_configuration_positive">Continuer</string>

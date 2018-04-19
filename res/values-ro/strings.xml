@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Comutator utilizatori</string>
   <string name="power_menu_bug_report_title">Raport de eroare</string>
   <string name="power_menu_bug_report_disabled">Raportarea erorilor este dezactivată în setările pentru dezvoltatori</string>
+  <string name="power_menu_lockdown_title">Blocare</string>
   <string name="volume_keys_control_ring_stream_title">Controlează volumul soneriei</string>
   <string name="volume_keys_control_ring_stream_summary_on">Butoanele de volum controlează volumul tonului de apel</string>
   <string name="volume_keys_control_ring_stream_summary_off">Butoanele de volum controlează volumul media</string>
@@ -594,6 +595,7 @@
   <string name="style_global_entry_light">Luminos</string>
   <string name="style_global_entry_dark">Întunecat</string>
   <string name="style_global_entry_time">Automat (timpul zilei)</string>
+  <string name="style_global_entry_app">Administrat de %1$s</string>
   <string name="style_accent_title">Culoare accent</string>
   <string name="style_accent_configuration_not_supported">Accentul curent nu este compatibil cu stilul selectat. Pentru a continua, un alt accent trebuie să fie selectat, doriţi să continuaţi?</string>
   <string name="style_accent_configuration_positive">Continuați</string>

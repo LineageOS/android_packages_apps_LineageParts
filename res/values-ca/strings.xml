@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Intercanviador d\'usuaris</string>
   <string name="power_menu_bug_report_title">Informe d\'error</string>
   <string name="power_menu_bug_report_disabled">Els informes d\'error estan deshabilitats a les opcions de desenvolupament</string>
+  <string name="power_menu_lockdown_title">Bloqueig</string>
   <string name="volume_keys_control_ring_stream_title">Controla el volum de la trucada</string>
   <string name="volume_keys_control_ring_stream_summary_on">Les tecles de volum controlen el volum del to de trucada</string>
   <string name="volume_keys_control_ring_stream_summary_off">Les tecles de volum controlen el volum multimèdia</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Clar</string>
   <string name="style_global_entry_dark">Fosc</string>
   <string name="style_global_entry_time">Automàtic (segons l\'hora del dia)</string>
+  <string name="style_global_entry_app">Gestionat per %1$s</string>
   <string name="style_accent_title">Color d\'èmfasi</string>
   <string name="style_accent_configuration_not_supported">L\'accent actual no és compatible amb l\'estil seleccionat. Per poder procedir s\'haurà de seleccionar un altre accent, vols continuar?</string>
   <string name="style_accent_configuration_positive">Procedeix</string>

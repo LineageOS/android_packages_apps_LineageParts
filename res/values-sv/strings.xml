@@ -231,6 +231,7 @@
   <!-- Sound settings screen -->
   <string name="ring_mode_normal">Normal</string>
   <string name="ring_mode_vibrate">Vibrera</string>
+  <string name="ring_mode_mute">Stäng av ljud</string>
   <string name="incoming_call_volume_title">Ringsignal</string>
   <string name="media_volume_title">Media</string>
   <string name="alarm_volume_title">Alarm</string>
@@ -262,7 +263,16 @@
   <!-- Status bar - Battery percentage -->
   <string name="status_bar_battery_percentage_default">Dold</string>
   <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Ljusstyrka</string>
+  <string name="status_bar_brightness_slider_title">Ljusstyrkereglage</string>
+  <string name="status_bar_brightness_slider_auto_title">Automatisk ljusstyrka</string>
+  <string name="status_bar_toggle_brightness">Ljusstyrkekontroll</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_mode_title">Visningsläge</string>
+  <string name="network_traffic_mode_up">Bara upp</string>
+  <string name="network_traffic_mode_down">Bara ner</string>
+  <string name="network_traffic_mode_all">Uppladdning och nerladdning</string>
+  <string name="network_traffic_autohide">Göm automatiskt</string>
   <string name="network_traffic_units_kilobits">Kilobits per sekund (kb/s)</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Skyddade appar</string>
@@ -289,6 +299,7 @@
   <!-- Weather -->
   <string name="weather_settings_title">Väder</string>
   <string name="weather_settings_button">Leverantörsinställningar</string>
+  <string name="weather_settings_general_settings_title">Allmänt</string>
   <string name="weather_settings_providers_title">Leverantörer</string>
   <string name="weather_settings_temp_units_title">Temperaturenhet</string>
   <string name="weather_settings_temp_celsius">Celsius</string>
@@ -296,6 +307,9 @@
   <string name="weather_settings_keyword">väder</string>
   <string name="status_bar_show_weather_title">Visa väder</string>
   <!-- Power: Performance profiles -->
+  <string name="perf_profile_category_title">Enhetsprestanda</string>
+  <string name="power_save_category_title">Strömsparläge</string>
+  <string name="power_save_title">Extrem strömbesparing</string>
   <string name="auto_power_save_never">Aldrig</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Utökat skrivbord</string>
@@ -304,11 +318,13 @@
   <string name="expanded_desktop_style_hide_navigation">Dölj navigeringsfält</string>
   <string name="expanded_desktop_style_hide_both">Dölj båda</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Laddningsljud</string>
   <string name="charging_sounds_enabled_title">Aktivera</string>
   <string name="power_notifications_vibrate_title">Vibrera</string>
   <string name="charging_sounds_ringtone_title">Aviseringsljud</string>
   <string name="charging_sounds_ringtone_silent">Tyst</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Skärmgester</string>
   <string name="touchscreen_gesture_up_arrow_title">Rita ett \"Λ\"</string>
   <string name="touchscreen_gesture_down_arrow_title">Rita ett \"V\"</string>
   <string name="touchscreen_gesture_left_arrow_title">Rita en \"&lt;\"</string>

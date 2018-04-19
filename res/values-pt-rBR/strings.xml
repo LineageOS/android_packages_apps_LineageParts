@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Alternador de usuário</string>
   <string name="power_menu_bug_report_title">Relatório de erros</string>
   <string name="power_menu_bug_report_disabled">Relatório de erros desativado nas configurações de desenvolvedor</string>
+  <string name="power_menu_lockdown_title">Bloquear</string>
   <string name="volume_keys_control_ring_stream_title">Controle de volume do toque</string>
   <string name="volume_keys_control_ring_stream_summary_on">Botões de volume controlam o volume do toque</string>
   <string name="volume_keys_control_ring_stream_summary_off">Teclas de volume controlam o volume da mídia</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Claro</string>
   <string name="style_global_entry_dark">Escuro</string>
   <string name="style_global_entry_time">Automático (baseado na hora do dia)</string>
+  <string name="style_global_entry_app">Gerenciado por %1$s</string>
   <string name="style_accent_title">Cor de realce</string>
   <string name="style_accent_configuration_not_supported">A cor de realce atual não é compatível com o estilo selecionado. Para continuar, é preciso escolher outra cor. Deseja continuar?</string>
   <string name="style_accent_configuration_positive">Continuar</string>

@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Cambio utente</string>
   <string name="power_menu_bug_report_title">Segnalazione bug</string>
   <string name="power_menu_bug_report_disabled">La segnalazione bug è disattivata nelle opzioni sviluppatore</string>
+  <string name="power_menu_lockdown_title">Blocca ora</string>
   <string name="volume_keys_control_ring_stream_title">Controllo volume suoneria</string>
   <string name="volume_keys_control_ring_stream_summary_on">I tasti del volume controllano il volume della suoneria</string>
   <string name="volume_keys_control_ring_stream_summary_off">I tasti del volume controllano il volume dei contenuti multimediali</string>
@@ -466,7 +467,7 @@
   <!-- Anonymous Statistics #Lineage -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">Statistiche LineageOS</string>
-  <string name="anonymous_statistics_summary">Aiuta a migliorare Cyanogenmod consentendo l\'invio di statistiche anonime</string>
+  <string name="anonymous_statistics_summary">Aiuta a migliorare LineageOS consentendo l\'invio di statistiche anonime</string>
   <string name="anonymous_statistics_warning_title">Info</string>
   <string name="anonymous_statistics_warning">Attivando le Statistiche LineageOS consentirai l\'invio di dati non personali agli sviluppatori per contare il numero di installazioni sui dispositivi. Le informazioni inviate includono un\'identificatore unico che non compromette in alcun modo la tua privacy o dati personali.\n\nPer vedere un esempio di dati inviati, tocca Anteprima Dati.</string>
   <string name="enable_reporting_title">Attiva report</string>
@@ -589,6 +590,7 @@
   <string name="style_global_entry_light">Chiaro</string>
   <string name="style_global_entry_dark">Scuro</string>
   <string name="style_global_entry_time">Automatico (ora del giorno)</string>
+  <string name="style_global_entry_app">Gestito da %1$s</string>
   <string name="style_accent_title">Colore accento</string>
   <string name="style_accent_configuration_not_supported">L\'accento in uso non é compatibile con lo stile selezionato. É necessario selezionare un altro colore accento per continuare, vuoi proseguire?</string>
   <string name="style_accent_configuration_positive">Prosegui</string>

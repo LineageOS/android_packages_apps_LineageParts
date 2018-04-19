@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Chuyển người dùng</string>
   <string name="power_menu_bug_report_title">Báo cáo lỗi</string>
   <string name="power_menu_bug_report_disabled">Báo cáo lỗi bị tắt trong cài đặt nhà phát triển</string>
+  <string name="power_menu_lockdown_title">Khóa lại</string>
   <string name="volume_keys_control_ring_stream_title">Điều khiển âm lượng nhạc chuông</string>
   <string name="volume_keys_control_ring_stream_summary_on">Phím âm lượng điều khiển âm lượng nhạc chuông</string>
   <string name="volume_keys_control_ring_stream_summary_off">Phím âm lượng điều khiển âm lượng phương tiện</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Sáng</string>
   <string name="style_global_entry_dark">Tối</string>
   <string name="style_global_entry_time">Tự động (thời gian trong ngày)</string>
+  <string name="style_global_entry_app">Được quản lý bởi %1$s</string>
   <string name="style_accent_title">Màu nhấn</string>
   <string name="style_accent_configuration_not_supported">Màu nhấn hiện tại không tương thích với phong cách đã chọn. Để tiến hành chọn một màu nhấn khác đã được chọn, bạn có muốn tiếp tục không?</string>
   <string name="style_accent_configuration_positive">Tiến hành</string>

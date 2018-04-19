@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">User switcher</string>
   <string name="power_menu_bug_report_title">Bug report</string>
   <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+  <string name="power_menu_lockdown_title">Lockdown</string>
   <string name="volume_keys_control_ring_stream_title">Control ringtone volume</string>
   <string name="volume_keys_control_ring_stream_summary_on">Volume keys control ringtone volume</string>
   <string name="volume_keys_control_ring_stream_summary_off">Volume keys control media volume</string>
@@ -594,6 +595,7 @@
   <string name="style_global_entry_light">Light</string>
   <string name="style_global_entry_dark">Dark</string>
   <string name="style_global_entry_time">Automatic (time of the day)</string>
+  <string name="style_global_entry_app">Managed by %1$s</string>
   <string name="style_accent_title">Accent colour</string>
   <string name="style_accent_configuration_not_supported">The current accent isn\'t compatible with the selected style. In order to proceed another accent has to be selected, do you want to continue?</string>
   <string name="style_accent_configuration_positive">Proceed</string>

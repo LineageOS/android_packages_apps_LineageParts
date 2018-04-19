@@ -592,6 +592,7 @@
   <string name="style_global_entry_light">Hell</string>
   <string name="style_global_entry_dark">Dunkel</string>
   <string name="style_global_entry_time">Automatisch (Tageszeit)</string>
+  <string name="style_global_entry_app">Gesteuert durch %1$s</string>
   <string name="style_accent_title">Akzentfarbe</string>
   <string name="style_accent_configuration_not_supported">Der aktuelle Akzent ist nicht mit dem gewählten Design kompatibel. Um fortzufahren, muss ein anderer Akzent gewählt werden, wollen Sie fortfahren?</string>
   <string name="style_accent_configuration_positive">Fortfahren</string>

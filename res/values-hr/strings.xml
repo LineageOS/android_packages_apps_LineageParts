@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Zamjena korisnika</string>
   <string name="power_menu_bug_report_title">Prijava greške</string>
   <string name="power_menu_bug_report_disabled">Izvještavanje greški je onemogućeno u razvojnim postavkama</string>
+  <string name="power_menu_lockdown_title">Zaključavanje</string>
   <string name="volume_keys_control_ring_stream_title">Kontrola glasnoće zvona</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tipke za glasnoću upravljaju glasnoćom zvona</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tipke za glasnoću upravljaju glasnoćom medijskog sadržaja</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Svijetlo</string>
   <string name="style_global_entry_dark">Tamno</string>
   <string name="style_global_entry_time">Automatski (prema dobu dana)</string>
+  <string name="style_global_entry_app">Upravlja: %1$s</string>
   <string name="style_accent_title">Naglašena boja</string>
   <string name="style_accent_configuration_not_supported">Trenutna naglašena boja nije kompatibilna s odabranim stilom. Za nastavak morate odabrati neku drugu, želite li nastaviti?</string>
   <string name="style_accent_configuration_positive">Nastavi</string>

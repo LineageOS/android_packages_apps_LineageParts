@@ -286,7 +286,6 @@
   <!-- Status bar - Brightness -->
   <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
   <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
-  <!-- Status bar - icon blacklist -->
   <!-- Status bar - Network Traffic -->
   <!-- Protected apps -->
   <!-- Contributors cloud activity -->
