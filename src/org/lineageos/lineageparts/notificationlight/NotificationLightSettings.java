@@ -126,7 +126,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
 
         mHALAdjustableBrightness = LightsCapabilities.supports(
-                context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS);
+                context, LightsCapabilities.LIGHTS_ADJUSTABLE_LED_BRIGHTNESS);
         mLedCanPulse = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_PULSATING_LED);
         mMultiColorLed = LightsCapabilities.supports(
