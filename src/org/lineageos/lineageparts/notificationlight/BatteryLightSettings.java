@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -79,7 +80,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         mMultiColorLed =
                 LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_RGB_BATTERY_LED);
         mHALAdjustableBrightness = LightsCapabilities.supports(
-                context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS);
+                context, LightsCapabilities.LIGHTS_ADJUSTABLE_LED_BRIGHTNESS);
         final boolean pulsatingLed =
                 LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED);
         final boolean segmentedBatteryLed =
