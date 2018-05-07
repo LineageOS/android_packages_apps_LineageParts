@@ -27,4 +27,18 @@
          The array should be sorted in the same order as the
          touchscreen gestures advertised by the device's LineageHW impl. -->
     <integer-array name="config_defaultTouchscreenGestureActions" />
+
+    <!-- The position of the volume rocker, as opposed to the natural
+         orientation of the display.
+         Currently used for the volume button re-orient functionality.
+         This integer should be set to:
+
+         1 - if the volume rocker is on (or parallel to) one the lateral
+             sides, relative to the natural orientation of the display
+             (true for all phones and some tablets)
+         2 - the volume rocker is on (or parallel to) the top or bottom,
+             relative to the natural orientation of the display
+             (true for some tablets) -->
+    <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
+
 </resources>
