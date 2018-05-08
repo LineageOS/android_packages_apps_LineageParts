@@ -558,7 +558,14 @@
   <string name="touchscreen_gesture_action_next_track">Spring naar volgende nummer</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Stijl</string>
+  <string name="style_global_title">Stijl</string>
   <string name="style_global_entry_light">Licht</string>
   <string name="style_global_entry_dark">Donker</string>
   <string name="style_global_entry_time">Automatisch (tijdstip van de dag)</string>
+  <string name="style_accent_configuration_not_supported">Het huidige accent is niet compatibel met het gekozen ontwerp. Om door te gaan, moet een ander accent worden gekozen. Wil je doorgaan?</string>
+  <string name="style_accent_configuration_positive">Doorgaan</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_dialog_positive">Toepassen</string>
+  <string name="style_accent_default_name">Standaard</string>
 </resources>

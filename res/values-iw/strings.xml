@@ -597,7 +597,8 @@
   <string name="style_accent_title">צבע משלים</string>
   <string name="style_accent_configuration_not_supported">הצבע המשלים הנוכחי אינו תואם הסגנון שנבחר. בכדי להמשיך יש לבחור בצבע משלים אחר, האם ברצונך להמשיך?</string>
   <string name="style_accent_configuration_positive">המשך</string>
-  <string name="style_automagic_description">כוון את הסגנון כך שיתאים לטפט</string>
+  <string name="style_automagic_title">קסומטי</string>
+  <string name="style_automagic_description">מתאים באופן קסום את הסגנון כך שיתאים לטפט</string>
   <string name="style_automagic_dialog_content">סגנון מוצע: <b>%1$s</b> עם הדגשה <b>%2$s</b> \n האם ברצונך להחיל זאת?</string>
   <string name="style_automagic_dialog_positive">החל</string>
   <string name="style_accent_default_name">ברירת מחדל</string>

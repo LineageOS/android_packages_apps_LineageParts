@@ -430,7 +430,7 @@
   <string name="status_bar_brightness_slider_title">Curseur de luminosité</string>
   <string name="status_bar_brightness_slider_summary">Régler la luminosité à partir du volet de configuration rapide</string>
   <string name="status_bar_brightness_slider_auto_title">Luminosité automatique</string>
-  <string name="status_bar_brightness_slider_auto_summary">Voir le bouton pour la luminosité adaptative près du curseur</string>
+  <string name="status_bar_brightness_slider_auto_summary">Afficher le bouton pour la luminosité adaptative près du curseur</string>
   <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
   <string name="status_bar_toggle_brightness_summary">Régler la luminosité en faisant glisser le doigt sur la barre d\'état</string>
   <!-- Status bar - Network Traffic -->

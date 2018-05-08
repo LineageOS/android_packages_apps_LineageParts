@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="lineageparts_title">LineageOS の設定</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">読み込み中...</string>
   <string name="dlg_ok">OK</string>
@@ -76,6 +77,9 @@
   <string name="pulse_speed_slow">遅い</string>
   <string name="pulse_speed_very_slow">非常に遅い</string>
   <!-- Common light settings strings -->
+  <string name="light_brightness_title">明るさのレベル</string>
+  <string name="light_brightness_normal">標準</string>
+  <string name="light_brightness_zen">おやすみモード</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">電池のライト</string>
   <string name="battery_low_pulse_title">残量低下時に点滅</string>
@@ -195,6 +199,8 @@
   <string name="volume_answer_call_summary">音量ボタンを押して着信に応答する</string>
   <string name="home_answer_call_title">着信に応答</string>
   <string name="home_answer_call_summary">ホームボタンを押して着信に応答する</string>
+  <string name="extras_title">追加機能</string>
+  <string name="additional_buttons_title">追加のボタン</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">バックライト</string>
   <string name="button_backlight_enabled">ボタンを点灯</string>
@@ -218,6 +224,7 @@
   <string name="navigation_bar_arrow_keys_summary">入力中は左右の矢印ボタンを表示します。IMEの切り替えアイコンは無効になります。</string>
   <string name="navigation_bar_home_long_press_title">ホームボタン長押しの動作</string>
   <string name="navigation_bar_home_double_tap_title">ホームボタンのダブルタップの動作</string>
+  <string name="navigation_bar_app_switch_long_press_title">アプリ履歴ボタンを長押ししたときの動作</string>
   <!-- Power menu -->
   <string name="power_menu_title">電源メニュー</string>
   <string name="power_menu_screenshot_title">スクリーンショット</string>
@@ -259,7 +266,7 @@
   <string name="profile_setup_actions_title_config">動作を再設定</string>
   <string name="wireless_networks_settings_title">無線とネットワーク</string>
   <!-- Profile triggers -->
-  <string name="no_bluetooth_triggers">ペアリングしているBluetoothデバイスがありません。\nタップするとトリガーを設定する前にBluetoothデバイスとペアリングします。</string>
+  <string name="no_bluetooth_triggers">ペアリングしている Bluetooth デバイスがありません。\nタップするとトリガーを設定する前に Bluetooth デバイスとペアリングします。</string>
   <string name="no_wifi_triggers">設定されているWi\u2011Fiアクセスポイントがありません。\nタップするとトリガーを設定する前にWi\u2011Fiに接続します。</string>
   <string name="no_triggers_configured">設定されているトリガーがありません。タップして追加します。</string>
   <string name="no_triggers_configured_nfc">タップして新しいNFCトリガーをセットアップします。</string>
@@ -427,8 +434,22 @@
   <string name="status_bar_toggle_brightness">明るさコントロール</string>
   <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
   <!-- Status bar - Network Traffic -->
+  <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
   <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
+  <string name="network_traffic_mode_title">表示モード</string>
+  <string name="network_traffic_mode_disable">無効</string>
+  <string name="network_traffic_mode_up">アップロードのみ</string>
+  <string name="network_traffic_mode_down">ダウンロードのみ</string>
+  <string name="network_traffic_mode_all">アップロードとダウンロード</string>
+  <string name="network_traffic_autohide">自動的に隠す</string>
   <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にします</string>
+  <string name="network_traffic_units_title">トラフィックの単位</string>
+  <string name="network_traffic_units_kilobits">キロビット/秒 (kb/s)</string>
+  <string name="network_traffic_units_megabits">メガビット/秒 (Mb/s)</string>
+  <string name="network_traffic_units_kilobytes">キロバイト/秒 (kB/s)</string>
+  <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
+  <string name="network_traffic_show_units">単位を表示</string>
+  <string name="network_traffic_show_units_summary">ステータスバーにネットワークトラフィックの単位を表示</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">アプリの保護</string>
   <string name="protected_apps_manager_summary">パスワードでロックしている場合に非表示にするアプリを管理する</string>
@@ -565,4 +586,20 @@
   <string name="touchscreen_gesture_action_volume_up">メディア音量を上げる</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">スタイル</string>
+  <string name="style_summary">システムの色を選択</string>
+  <string name="style_global_title">スタイル</string>
+  <string name="style_global_entry_automatic">壁紙による自動設定</string>
+  <string name="style_global_entry_light">明るい色</string>
+  <string name="style_global_entry_dark">暗い色</string>
+  <string name="style_global_entry_time">時間帯により変更</string>
+  <string name="style_global_entry_app">%1$s による管理</string>
+  <string name="style_accent_title">アクセントカラー</string>
+  <string name="style_accent_configuration_not_supported">現在のアクセントは選択したスタイルと互換性がないため、別のアクセントを選択する必要があります。続行しますか?</string>
+  <string name="style_accent_configuration_positive">続行</string>
+  <string name="style_automagic_description">壁紙に合わせてスタイルを調整する</string>
+  <string name="style_automagic_dialog_content">スタイル <b>%1$s</b>とアクセント<b>%2$s</b>が提案されました。\n適用しますか?</string>
+  <string name="style_automagic_dialog_positive">適用</string>
+  <string name="style_accent_default_name">デフォルト</string>
+  <string name="style_permission_error">壁紙を分析するにはストレージアクセスの権限を許可する必要があります。この機能を使用するには権限を許可してください。</string>
 </resources>
