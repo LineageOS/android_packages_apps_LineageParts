@@ -233,6 +233,7 @@
   <string name="power_menu_users_title">Пребацивање корисника</string>
   <string name="power_menu_bug_report_title">Пријава грешака</string>
   <string name="power_menu_bug_report_disabled">Пријава грешака је онемогућена у опцијама за програмера.</string>
+  <string name="power_menu_lockdown_title">Закључавање</string>
   <string name="volume_keys_control_ring_stream_title">Управљање јачином звука звона</string>
   <string name="volume_keys_control_ring_stream_summary_on">Дугмад за јачину звука управљају јачином звука звона.</string>
   <string name="volume_keys_control_ring_stream_summary_off">Дугмад за јачину звука управљају јачином звука медија.</string>
@@ -592,6 +593,7 @@
   <string name="style_global_entry_light">Светло</string>
   <string name="style_global_entry_dark">Тамно</string>
   <string name="style_global_entry_time">Аутоматско (доба дана)</string>
+  <string name="style_global_entry_app">Којима управља %1$s</string>
   <string name="style_accent_title">Боја наглашавања</string>
   <string name="style_accent_configuration_not_supported">Тренутни нагласак није компатибилан са изабрани стилом. Да би наставили друго наглашавање мора бити изабрано, желите ли да наставите?</string>
   <string name="style_accent_configuration_positive">Настави</string>
