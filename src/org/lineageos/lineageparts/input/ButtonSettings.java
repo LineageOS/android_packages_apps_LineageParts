@@ -224,24 +224,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         final LineageHardwareManager hardware = LineageHardwareManager.getInstance(getActivity());
 
-        // Only visible on devices that does not have a navigation bar already,
-        // and don't even try unless the existing keys can be disabled
-        boolean needsNavigationBar = false;
+        // Only visible on devices that support FEATURE_KEY_DISABLE
         if (hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
-            try {
-                IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
-                needsNavigationBar = wm.needsNavigationBar();
-            } catch (RemoteException e) {
-            }
-
-            if (needsNavigationBar) {
-                prefScreen.removePreference(mDisableNavigationKeys);
-            } else {
-                // Remove keys that can be provided by the navbar
-                updateDisableNavkeysOption();
-                mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
-                updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
-            }
+            // Remove keys that can be provided by the navbar
+            updateDisableNavkeysOption();
+            mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
+            updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
         }
@@ -394,6 +382,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
             boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar()
                     || forceNavbar;
+            boolean needsNavigationBar =
+                    WindowManagerGlobal.getWindowManagerService().needsNavigationBar();
 
             if (!hasNavBar && (needsNavigationBar ||
                     !hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE))) {
