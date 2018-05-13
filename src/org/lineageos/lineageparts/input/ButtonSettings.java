@@ -226,22 +226,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Only visible on devices that does not have a navigation bar already,
         // and don't even try unless the existing keys can be disabled
-        boolean needsNavigationBar = false;
         if (hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
-            try {
-                IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
-                needsNavigationBar = wm.needsNavigationBar();
-            } catch (RemoteException e) {
-            }
-
-            if (needsNavigationBar) {
-                prefScreen.removePreference(mDisableNavigationKeys);
-            } else {
-                // Remove keys that can be provided by the navbar
-                updateDisableNavkeysOption();
-                mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
-                updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
-            }
+            // Remove keys that can be provided by the navbar
+            updateDisableNavkeysOption();
+            mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
+            updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
         }
