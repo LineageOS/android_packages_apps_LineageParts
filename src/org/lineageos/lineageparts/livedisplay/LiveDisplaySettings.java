@@ -53,6 +53,7 @@ import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
+import static lineageos.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
 import static lineageos.hardware.LiveDisplayManager.MODE_OFF;
 import static lineageos.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
@@ -67,6 +68,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
     private static final String KEY_LIVE_DISPLAY = "live_display";
     private static final String KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE =
             "display_auto_outdoor_mode";
+    private static final String KEY_LIVE_DISPLAY_READING_ENHANCEMENT = "display_reading_mode";
     private static final String KEY_LIVE_DISPLAY_LOW_POWER = "display_low_power";
     private static final String KEY_LIVE_DISPLAY_COLOR_ENHANCE = "display_color_enhance";
     private static final String KEY_LIVE_DISPLAY_TEMPERATURE = "live_display_color_temperature";
@@ -94,6 +96,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
     private SwitchPreference mColorEnhancement;
     private SwitchPreference mLowPower;
     private SwitchPreference mOutdoorMode;
+    private SwitchPreference mReadingMode;
 
     private PictureAdjustment mPictureAdjustment;
     private DisplayTemperature mDisplayTemperature;
@@ -182,6 +185,13 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                 && !mConfig.hasFeature(MODE_OUTDOOR)) {
             liveDisplayPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
+        }
+
+        mReadingMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
+        if (liveDisplayPrefs != null && mReadingMode != null
+                && !mConfig.hasFeature(FEATURE_READING_ENHANCEMENT)) {
+            liveDisplayPrefs.removePreference(mReadingMode);
+            mReadingMode = null;
         }
 
         mLowPower = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_LOW_POWER);
