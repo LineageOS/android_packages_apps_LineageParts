@@ -722,4 +722,7 @@
     <string name="trust_onboarding_learn_more">Learn more</string>
     <string name="trust_onboarding_done">Got it</string>
 
+    <!-- Sms limit -->
+    <string name="sms_security_check_limit_title">SMS message limit</string>
+    <string name="sms_security_check_limit_summary">Display an alert when more than %s SMS messages are being sent in 15 minutes</string>
 </resources>
