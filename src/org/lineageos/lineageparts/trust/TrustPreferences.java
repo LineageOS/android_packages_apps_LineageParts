@@ -17,8 +17,12 @@ package org.lineageos.lineageparts.trust;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.util.Log;
 
 import org.lineageos.lineageparts.R;
@@ -33,6 +37,8 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private Preference mRootPref;
     private Preference mSecurityPatchesPref;
     private Preference mEncryptionPref;
+    private PreferenceCategory mToolsCategory;
+    private ListPreference mSmsLimitPref;
 
     private TrustInterface mInterface;
 
@@ -50,6 +56,8 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mRootPref = findPreference("trust_root");
         mSecurityPatchesPref = findPreference("trust_security_patch");
         mEncryptionPref = findPreference("trust_encryption");
+        mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
+        mSmsLimitPref = (ListPreference) mToolsCategory.findPreference("sms_security_check_limit");
 
         mSELinuxPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_selinux_explain));
@@ -59,6 +67,9 @@ public class TrustPreferences extends SettingsPreferenceFragment {
                 showInfo(R.string.trust_feature_security_patches_explain));
         mEncryptionPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_encryption_explain));
+        mSmsLimitPref.setOnPreferenceChangeListener((p, v) ->
+                onSmsLimitChanged(Integer.parseInt((String) v)));
+
         setup();
     }
 
@@ -75,6 +86,10 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         setupRoot(rootLevel);
         setupSecurityPatches(secPLevel, secVLevel);
         setupEncryption(encryptLevel);
+
+        if (!isTelephony()) {
+            mToolsCategory.removePreference(mSmsLimitPref);
+        }
     }
 
     private void setupSELinux(int level) {
@@ -189,5 +204,16 @@ public class TrustPreferences extends SettingsPreferenceFragment {
             .setMessage(text)
             .show();
         return true;
+    }
+
+    private boolean onSmsLimitChanged(Integer value) {
+        Settings.Global.putInt(getContext().getContentResolver(),
+                Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, value);
+        return true;
+    }
+
+    private boolean isTelephony() {
+        PackageManager pm = getContext().getPackageManager();
+        return pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
     }
 }
