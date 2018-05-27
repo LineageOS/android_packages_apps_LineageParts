@@ -418,4 +418,21 @@
         <item>2</item> <!-- Force light -->
         <item>3</item> <!-- Force dark -->
     </string-array>
+
+    <!-- Sms limit -->
+    <string-array name="sms_security_check_limit_entries" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="sms_security_check_limit_values" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
 </resources>
