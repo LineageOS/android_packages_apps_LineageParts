@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7efed9cf_5c09098f",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 423,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-05-27T13:37:46Z",
+      "side": 1,
+      "message": "Can\u0027t just use the same array for both?",
+      "range": {
+        "startLine": 423,
+        "startChar": 24,
+        "endLine": 423,
+        "endChar": 56
+      },
+      "revId": "2fd746f749d84e4cf330728cd38d2b868e0d4a74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
