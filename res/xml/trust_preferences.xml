@@ -39,12 +39,22 @@
             android:title="@string/trust_feature_encryption" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/trust_category_tools">
+    <PreferenceCategory
+        android:key="trust_category_tools"
+        android:title="@string/trust_category_tools">
 
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="privacy_guard_manager" />
 
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="lineagestats" />
+
+        <ListPreference
+            android:key="sms_security_check_limit"
+            android:defaultValue="30"
+            android:entries="@array/sms_security_check_limit_entries"
+            android:entryValues="@array/sms_security_check_limit_values"
+            android:summary="@string/sms_security_check_limit_summary"
+            android:title="@string/sms_security_check_limit_title" />
     </PreferenceCategory>
 </PreferenceScreen>
