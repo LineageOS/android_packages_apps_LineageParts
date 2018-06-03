@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">顏色準確到 sRGB 色域</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">顏色準確到 DCI-P3 色域</string>
+  <string name="live_display_reading_mode_title">閱讀模式</string>
+  <string name="live_display_reading_mode_summary">用於長期閱讀的灰度模式</string>
   <string name="color_calibration_title">顏色校準</string>
   <string name="color_calibration_summary">校準螢幕上的顏色</string>
   <string name="color_red_title">紅色</string>

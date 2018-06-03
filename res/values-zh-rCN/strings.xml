@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">颜色校准到 sRGB 色彩空间</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">色彩精确到 DCI-P3 的色彩空间</string>
+  <string name="live_display_reading_mode_title">阅读模式</string>
+  <string name="live_display_reading_mode_summary">适合长时间阅读的灰度模式</string>
   <string name="color_calibration_title">颜色校准</string>
   <string name="color_calibration_summary">校准屏幕颜色</string>
   <string name="color_red_title">红</string>
@@ -285,7 +287,7 @@
   <string name="profile_write_success">标签写入成功</string>
   <string name="profile_write_failed">标签写入失败！</string>
   <string name="profile_selected">选择的情景：%1$s</string>
-  <string name="profile_nfc_text">将一个情景写入 NFC 标签能够允许您通过触摸标签的行为更改情景。再次触摸将会返回到您之前选择的情景。</string>
+  <string name="profile_nfc_text">将一个情景写入 NFC 标签使您能通过触碰标签行为来更改情景。再次触碰将返回您之前选择的情景。</string>
   <string name="profile_unknown_nfc_tag">未知情景</string>
   <string name="profile_add_nfc_text">此 NFC 标签是与一个未知的情景相连的。把此 NFC 标签连接到一个现有的情景将会允许您以后选择这个情景。</string>
   <string name="profile_select">选择情景</string>

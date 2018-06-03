@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Farby sú identické s farebným priestorom sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Farby sú identické s farebným priestorom DCI-P3</string>
+  <string name="live_display_reading_mode_title">Režim čítania</string>
+  <string name="live_display_reading_mode_summary">Režim odtieňov šedej pre dlhodobé čítanie</string>
   <string name="color_calibration_title">Kalibrácia farieb</string>
   <string name="color_calibration_summary">Kalibrovať farby na obrazovke</string>
   <string name="color_red_title">Červená</string>

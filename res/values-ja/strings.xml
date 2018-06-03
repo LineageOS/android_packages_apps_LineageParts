@@ -159,7 +159,7 @@
   <string name="button_pref_title">ボタン</string>
   <string name="hardware_keys_power_key_title">電源ボタン</string>
   <string name="hardware_keys_home_key_title">ホームボタン</string>
-  <string name="hardware_keys_back_key_title">戻るボタン</string>
+  <string name="hardware_keys_back_key_title">バックボタン</string>
   <string name="hardware_keys_menu_key_title">メニューボタン</string>
   <string name="hardware_keys_assist_key_title">検索ボタン</string>
   <string name="hardware_keys_appswitch_key_title">履歴ボタン</string>
@@ -193,7 +193,7 @@
   <string name="power_end_call_title">通話を終了</string>
   <string name="power_end_call_summary">電源ボタンを押して現在の通話を終了する</string>
   <string name="swap_volume_buttons_title">再配置</string>
-  <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替える</string>
+  <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替えます</string>
   <string name="button_wake_title">端末をスリープ解除</string>
   <string name="volume_answer_call_title">着信に応答</string>
   <string name="volume_answer_call_summary">音量ボタンを押して着信に応答する</string>
@@ -224,7 +224,7 @@
   <string name="navigation_bar_arrow_keys_summary">入力中は左右の矢印ボタンを表示します。IMEの切り替えアイコンは無効になります。</string>
   <string name="navigation_bar_home_long_press_title">ホームボタン長押しの動作</string>
   <string name="navigation_bar_home_double_tap_title">ホームボタンのダブルタップの動作</string>
-  <string name="navigation_bar_app_switch_long_press_title">アプリ履歴ボタンを長押ししたときの動作</string>
+  <string name="navigation_bar_app_switch_long_press_title">履歴ボタンを長押ししたときの動作</string>
   <!-- Power menu -->
   <string name="power_menu_title">電源メニュー</string>
   <string name="power_menu_screenshot_title">スクリーンショット</string>
@@ -432,7 +432,7 @@
   <string name="status_bar_brightness_slider_auto_title">明るさの自動調節</string>
   <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
   <string name="status_bar_toggle_brightness">明るさコントロール</string>
-  <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
+  <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
   <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
@@ -589,15 +589,16 @@
   <string name="style_title">スタイル</string>
   <string name="style_summary">システムの色を選択</string>
   <string name="style_global_title">スタイル</string>
-  <string name="style_global_entry_automatic">壁紙による自動設定</string>
-  <string name="style_global_entry_light">明るい色</string>
-  <string name="style_global_entry_dark">暗い色</string>
-  <string name="style_global_entry_time">時間帯により変更</string>
+  <string name="style_global_entry_automatic">自動設定（壁紙に合わせる）</string>
+  <string name="style_global_entry_light">ライト</string>
+  <string name="style_global_entry_dark">ダーク</string>
+  <string name="style_global_entry_time">自動設定（時間帯に合わせる）</string>
   <string name="style_global_entry_app">%1$s による管理</string>
   <string name="style_accent_title">アクセントカラー</string>
   <string name="style_accent_configuration_not_supported">現在のアクセントは選択したスタイルと互換性がないため、別のアクセントを選択する必要があります。続行しますか?</string>
   <string name="style_accent_configuration_positive">続行</string>
-  <string name="style_automagic_description">壁紙に合わせてスタイルを調整する</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">壁紙に合わせてスタイルを調整します</string>
   <string name="style_automagic_dialog_content">スタイル <b>%1$s</b>とアクセント<b>%2$s</b>が提案されました。\n適用しますか?</string>
   <string name="style_automagic_dialog_positive">適用</string>
   <string name="style_accent_default_name">デフォルト</string>

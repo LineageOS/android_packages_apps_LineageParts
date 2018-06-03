@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Cores fidedignas ao espaço de cores sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Cores fidedignas ao espaço de cores DCI-P3</string>
+  <string name="live_display_reading_mode_title">Modo de leitura</string>
+  <string name="live_display_reading_mode_summary">Modo de tons de cinza para longos períodos de leitura</string>
   <string name="color_calibration_title">Calibração de cores</string>
   <string name="color_calibration_summary">Calibra as cores da tela</string>
   <string name="color_red_title">Vermelho</string>

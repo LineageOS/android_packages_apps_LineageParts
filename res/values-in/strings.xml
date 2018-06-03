@@ -143,6 +143,7 @@
   <string name="live_display_color_profile_srgb_summary">Warna akurat ke ruang warna sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Warna akurat ke ruang warna DCI-P3</string>
+  <string name="live_display_reading_mode_title">Modus membaca</string>
   <string name="color_calibration_title">Kalibrasi warna</string>
   <string name="color_calibration_summary">Kalibrasi warna layar</string>
   <string name="color_red_title">Merah</string>
@@ -233,6 +234,7 @@
   <string name="power_menu_users_title">Beralih pengguna</string>
   <string name="power_menu_bug_report_title">Lapor bug</string>
   <string name="power_menu_bug_report_disabled">Pelaporan bug dimatikan dalam opsi pengembang</string>
+  <string name="power_menu_lockdown_title">Kuncian</string>
   <string name="volume_keys_control_ring_stream_title">Kontrol volume nada dering</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tombol volume mengatur volume nada dering</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tombol volume mengontrol volume media</string>
@@ -597,6 +599,7 @@
   <string name="style_accent_configuration_not_supported">Aksen saat ini tidak kompatibel dengan gaya dipilih. Untuk melanjutkan aksen lain yang harus dipilih, apakah Anda ingin melanjutkan?</string>
   <string name="style_accent_configuration_positive">Lanjutkan</string>
   <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">Menyetel gaya untuk mencocokkan wallpaper Anda</string>
   <string name="style_automagic_dialog_content">Gaya yang disarankan: <b>%1$s</b> dengan aksen <b>%2$s</b>. \nApakah Anda ingin menerapkannya?</string>
   <string name="style_automagic_dialog_positive">Terapkan</string>
   <string name="style_accent_default_name">Standar</string>

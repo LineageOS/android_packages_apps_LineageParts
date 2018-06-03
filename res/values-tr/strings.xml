@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Renkler sRGB renk aralığına göre doğru</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">DCI-P3 renk alanına uygun renkler</string>
+  <string name="live_display_reading_mode_title">Okuma modu</string>
+  <string name="live_display_reading_mode_summary">Uzun süreli okuma için gri tonlama modu</string>
   <string name="color_calibration_title">Renk kalibrasyonu</string>
   <string name="color_calibration_summary">Ekran renklerini kalibre edin</string>
   <string name="color_red_title">Kırmızı</string>

@@ -204,6 +204,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Podsvícení</string>
   <string name="button_backlight_enabled">Podsvícení tlačítek</string>
+  <string name="button_backlight_only_when_pressed_title">Podsvícení tlačítek pouze při stisknutí</string>
   <string name="keyboard_backlight_enabled">Podsvícení klávesnice</string>
   <string name="button_backlight_seekbar_title">Intenzita podsvícení tlačítek</string>
   <string name="keyboard_backlight_seekbar_title">Intenzita podsvícení klávesnice</string>
@@ -232,6 +233,7 @@
   <string name="power_menu_users_title">Přepnutí uživatele</string>
   <string name="power_menu_bug_report_title">Hlášení chyb</string>
   <string name="power_menu_bug_report_disabled">Hlášení chyb je zakázáno ve vývojářských nastaveních</string>
+  <string name="power_menu_lockdown_title">Uzamčení</string>
   <string name="volume_keys_control_ring_stream_title">Ovládání hlasitosti vyzvánění</string>
   <string name="volume_keys_control_ring_stream_summary_on">Tlačítka hlasitosti ovládají hlasitost vyzvánění</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tlačítka hlasitosti ovládají hlasitost médií</string>
@@ -584,4 +586,21 @@
   <string name="touchscreen_gesture_action_volume_up">Zvýšení hlasitosti médií</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_title">Vzhled</string>
+  <string name="style_summary">Zvolte barvy systému</string>
+  <string name="style_global_title">Vzhled</string>
+  <string name="style_global_entry_automatic">Automaticky (podle tapety)</string>
+  <string name="style_global_entry_light">Světlý</string>
+  <string name="style_global_entry_dark">Tmavý</string>
+  <string name="style_global_entry_time">Automaticky (podle denní doby)</string>
+  <string name="style_global_entry_app">Spravováno %1$s</string>
+  <string name="style_accent_title">Barva zvýraznění</string>
+  <string name="style_accent_configuration_not_supported">Aktuální zvýraznění není kompatibilní s vybraným vzhledem. Pokud chcete pokračovat, musíte vybrat jiné zvýraznění. Chcete pokračovat?</string>
+  <string name="style_accent_configuration_positive">Pokračovat</string>
+  <string name="style_automagic_title">Automagic</string>
+  <string name="style_automagic_description">Přizpůsobte vzhled tak, aby odpovídal vaší tapetě</string>
+  <string name="style_automagic_dialog_content">Navrhovaný vzhled: <b>%1$s</b> se zvýrazněním <b>%2$s</b>.\nChcete jej použít?</string>
+  <string name="style_automagic_dialog_positive">Použít</string>
+  <string name="style_accent_default_name">Výchozí</string>
+  <string name="style_permission_error">Oprávnění přístupu k úložišti je potřeba k analýze tapety, udělte prosím přístup pro použití této funkce</string>
 </resources>

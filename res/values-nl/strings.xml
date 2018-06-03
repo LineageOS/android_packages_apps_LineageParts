@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="lineageparts_title">LineageOS-instellingen</string>
   <!-- Generic stuff used everywhere -->
   <string name="loading">Laden\u2026</string>
   <string name="dlg_ok">OK</string>
@@ -76,6 +77,8 @@
   <string name="pulse_speed_slow">Langzaam</string>
   <string name="pulse_speed_very_slow">Heel langzaam</string>
   <!-- Common light settings strings -->
+  <string name="light_brightness_title">Helderheidsniveau</string>
+  <string name="light_brightness_normal">Normaal</string>
   <string name="light_brightness_zen">Niet storen</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Acculed</string>
@@ -429,6 +432,11 @@
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_mode_disable">Uitgeschakeld</string>
   <string name="network_traffic_autohide">Automatisch verbergen</string>
+  <string name="network_traffic_units_kilobits">Kilobits per seconde (kb/s)</string>
+  <string name="network_traffic_units_megabits">Megabits per seconde (Mb/s)</string>
+  <string name="network_traffic_units_kilobytes">Kilobytes per seconde (kB/s)</string>
+  <string name="network_traffic_units_megabytes">Megabytes per seconde (MB/s)</string>
+  <string name="network_traffic_show_units">Eenheden weergeven</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beschermde apps</string>
   <string name="protected_apps_manager_summary">Beheren welke apps beschermd zijn</string>
@@ -545,6 +553,11 @@
   <string name="touchscreen_gesture_letter_w_title">Teken een \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Teken een \"Z\"</string>
   <!-- Gesture: Stylus gestures -->
+  <string name="touchscreen_gesture_swipe_up_stylus_title">Omhoog vegen met de stylus</string>
+  <string name="touchscreen_gesture_swipe_down_stylus_title">Omlaag vegen met de stylus</string>
+  <string name="touchscreen_gesture_swipe_left_stylus_title">Naar links vegen met de stylus</string>
+  <string name="touchscreen_gesture_swipe_right_stylus_title">Naar rechts vegen met de stylus</string>
+  <string name="touchscreen_gesture_long_press_stylus_title">Lang indrukken met de stylus</string>
   <string name="touchscreen_gesture_action_dialog_title">Actie na gebaar</string>
   <string name="touchscreen_gesture_action_do_nothing">Niets doen</string>
   <string name="touchscreen_gesture_action_flashlight">Zaklamp aan/uit</string>
@@ -560,9 +573,11 @@
   <!-- Berry Lite -->
   <string name="style_title">Stijl</string>
   <string name="style_global_title">Stijl</string>
+  <string name="style_global_entry_automatic">Automatisch (achtergrond)</string>
   <string name="style_global_entry_light">Licht</string>
   <string name="style_global_entry_dark">Donker</string>
   <string name="style_global_entry_time">Automatisch (tijdstip van de dag)</string>
+  <string name="style_accent_title">Accentkleur</string>
   <string name="style_accent_configuration_not_supported">Het huidige accent is niet compatibel met het gekozen ontwerp. Om door te gaan, moet een ander accent worden gekozen. Wil je doorgaan?</string>
   <string name="style_accent_configuration_positive">Doorgaan</string>
   <string name="style_automagic_title">Automagic</string>
