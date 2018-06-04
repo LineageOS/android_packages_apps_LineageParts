@@ -616,6 +616,11 @@
     <string name="expanded_desktop_style_hide_both">Hide both</string>
     <string name="expanded_desktop_nothing_to_show_text">Turn the switch off to customize your expanded desktop on a per-app basis</string>
 
+    <!-- Applications: long-screen -->
+    <string name="long_screen_settings_title">Long screen</string>
+    <string name="long_screen_settings_summary">cool text goes here</string>
+    <string name="long_screen_options_title">Customization options</string>
+
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Charging sounds</string>
     <string name="charging_sounds_enabled_title">Enable</string>
