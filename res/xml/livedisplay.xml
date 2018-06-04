@@ -52,7 +52,8 @@
                 android:key="display_reading_mode"
                 android:title="@string/live_display_reading_mode_title"
                 android:summary="@string/live_display_reading_mode_summary"
-                android:defaultValue="false" />
+                android:defaultValue="false"
+                android:persistent="false" />
 
     </PreferenceCategory>
 
