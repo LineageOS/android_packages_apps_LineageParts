@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
+                   2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -52,7 +53,8 @@
                 android:key="display_reading_mode"
                 android:title="@string/live_display_reading_mode_title"
                 android:summary="@string/live_display_reading_mode_summary"
-                android:defaultValue="false" />
+                android:defaultValue="false"
+                android:persistent="false" />
 
     </PreferenceCategory>
 
