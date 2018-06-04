@@ -228,6 +228,24 @@
                 android:resource="@string/expanded_desktop_settings_summary" />
         </activity-alias>
 
+        <!-- Long screen settings (Display category) -->
+        <activity-alias
+            android:name=".applications.LongScreenSettings"
+            android:label="@string/long_screen_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="-9">
+                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.LONG_SCREEN_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/long_screen_settings_summary" />
+        </activity-alias>
+
         <!-- Anonymous Statistics -->
         <receiver android:name=".lineagestats.ReportingServiceManager"
             android:enabled="true"
