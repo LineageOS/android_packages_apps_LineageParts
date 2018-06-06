@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "50331818_80d7de9e",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 621,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-06-06T12:13:04Z",
+      "side": 1,
+      "message": "\"Force higher aspect ratio for legacy apps\"?",
+      "revId": "0a286b9206d6abaefb7869739f3afe90117d5e2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
