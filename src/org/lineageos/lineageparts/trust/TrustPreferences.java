@@ -126,39 +126,21 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private void setupSecurityPatches(int platform, int vendor) {
         int icon;
 
-        // TMP: don't enforce vendor check
-        if (vendor == TrustInterface.ERROR_UNDEFINED) {
-            switch (platform) {
-                case TrustInterface.TRUST_FEATURE_LEVEL_GOOD:
-                    icon = R.drawable.ic_trust_security_patches_good;
-                    break;
-                case TrustInterface.TRUST_FEATURE_LEVEL_POOR:
-                    icon = R.drawable.ic_trust_security_patches_poor;
-                    break;
-                default:
-                    icon = R.drawable.ic_trust_security_patches_bad;
-                    break;
-            }
+        if (platform == TrustInterface.TRUST_FEATURE_LEVEL_GOOD &&
+                vendor ==  TrustInterface.TRUST_FEATURE_LEVEL_GOOD) {
+            icon = R.drawable.ic_trust_security_patches_good;
+        } else if (platform == TrustInterface.TRUST_FEATURE_LEVEL_POOR ||
+                (platform == TrustInterface.TRUST_FEATURE_LEVEL_GOOD &&
+                vendor != TrustInterface.TRUST_FEATURE_LEVEL_GOOD)) {
+            icon = R.drawable.ic_trust_security_patches_poor;
         } else {
-            if (platform == TrustInterface.TRUST_FEATURE_LEVEL_GOOD &&
-                    vendor ==  TrustInterface.TRUST_FEATURE_LEVEL_GOOD) {
-                icon = R.drawable.ic_trust_security_patches_good;
-            } else if (platform == TrustInterface.TRUST_FEATURE_LEVEL_POOR ||
-                    (platform == TrustInterface.TRUST_FEATURE_LEVEL_GOOD &&
-                    vendor != TrustInterface.TRUST_FEATURE_LEVEL_GOOD)) {
-                icon = R.drawable.ic_trust_security_patches_poor;
-            } else {
-                icon = R.drawable.ic_trust_security_patches_bad;
-            }
+            icon = R.drawable.ic_trust_security_patches_bad;
         }
 
         int summaryP = getSummaryForSecurityPatchLevel(platform);
         int summaryV = getSummaryForSecurityPatchLevel(vendor);
         Context context = getContext();
-        // TMP: do not enforce vendor check
-        String summary = summaryV == 0 ?
-            context.getString(summaryP) :
-            context.getString(R.string.trust_feature_security_patches_value_base,
+        String summary = context.getString(R.string.trust_feature_security_patches_value_base,
                 context.getString(summaryP), context.getString(summaryV));
 
         mSecurityPatchesPref.setIcon(icon);
@@ -172,6 +154,7 @@ public class TrustPreferences extends SettingsPreferenceFragment {
             case TrustInterface.TRUST_FEATURE_LEVEL_POOR:
                 return R.string.trust_feature_security_patches_value_medium;
             case TrustInterface.TRUST_FEATURE_LEVEL_BAD:
+            case TrustInterface.ERROR_UNDEFINED:
                 return R.string.trust_feature_security_patches_value_old;
             default:
                 return 0;
