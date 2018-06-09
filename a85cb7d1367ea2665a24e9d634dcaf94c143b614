@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff66ab07_896df1da",
+        "filename": "res/xml/parts_catalog.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-06-09T21:43:50Z",
+      "side": 1,
+      "message": "Indentation doesn\u0027t match the above",
+      "revId": "a85cb7d1367ea2665a24e9d634dcaf94c143b614",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
