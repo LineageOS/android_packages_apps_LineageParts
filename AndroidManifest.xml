@@ -69,7 +69,8 @@
             android:label="@string/trust_title"
             android:theme="@style/OnBoardingStyle"
             android:exported="true"
-            android:enabled="true">
+            android:enabled="true"
+            android:excludeFromRecents="true">
             <intent-filter android:priority="-4">
                 <action android:name="org.lineageos.lineageparts.TRUST_HINT" />
                 <category android:name="android.intent.category.DEFAULT" />
