@@ -40,7 +40,7 @@ public class TrustOnBoardingActivity extends AppCompatActivity {
         mImage = findViewById(R.id.trust_onboarding_image);
 
         learnMore.setOnClickListener(v -> openTrustSettings());
-        dismiss.setOnClickListener(v -> finish());
+        dismiss.setOnClickListener(v -> onDismissClick());
 
         new Handler().postDelayed(this::showAnimation, 800);
     }
