@@ -1108,21 +1108,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         } else if (itemAtPosition instanceof RingModeItem) {
             showDialog(DIALOG_RING_MODE);
         } else if (itemAtPosition instanceof ConnectionOverrideItem) {
-
-            ConnectionOverrideItem connItem = (ConnectionOverrideItem) mSelectedItem;
-            if (connItem.getConnectionType() == ConnectionSettings.PROFILE_CONNECTION_2G3G4G) {
-                final Intent intent = new Intent(TelephonyUtils.ACTION_PICK_NETWORK_MODE);
-                intent.putExtra(TelephonyUtils.EXTRA_NONE_TEXT,
-                        getString(R.string.profile_action_none));
-                intent.putExtra(TelephonyUtils.EXTRA_SHOW_NONE, true);
-                intent.putExtra(TelephonyUtils.EXTRA_SUBID, connItem.getSettings().getSubId());
-                intent.putExtra(TelephonyUtils.EXTRA_INITIAL_NETWORK_VALUE,
-                        connItem.getSettings().isOverride()
-                                ? connItem.getSettings().getValue() : -1);
-                startActivityForResult(intent, SET_NETWORK_MODE_REQUEST_CODE);
-            } else {
-                showDialog(DIALOG_CONNECTION_OVERRIDE);
-            }
+            showDialog(DIALOG_CONNECTION_OVERRIDE);
         } else if (itemAtPosition instanceof VolumeStreamItem) {
             showDialog(DIALOG_VOLUME_STREAM);
         } else if (itemAtPosition instanceof ProfileNameItem) {
