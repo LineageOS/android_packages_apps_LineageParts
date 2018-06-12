@@ -206,9 +206,17 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         return true;
     }
 
+    private void updateSmsSecuritySummary(int selection) {
+        String message = selection > 0
+                ? getContext().getString(R.string.sms_security_check_limit_summary, selection)
+                : getContext().getString(R.string.sms_security_check_limit_summary_none);
+        mSmsLimitPref.setSummary(message);
+    }
+
     private boolean onSmsLimitChanged(Integer value) {
         Settings.Global.putInt(getContext().getContentResolver(),
                 Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, value);
+        updateSmsSecuritySummary(value);
         return true;
     }
 
