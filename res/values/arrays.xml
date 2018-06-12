@@ -421,18 +421,22 @@
 
     <!-- Sms limit -->
     <string-array name="sms_security_check_limit_entries" translatable="false">
+        <item>@string/sms_security_check_limit_always_confirm</item>
         <item>5</item>
         <item>10</item>
         <item>30</item>
         <item>50</item>
         <item>100</item>
+        <item>200</item>
     </string-array>
 
     <string-array name="sms_security_check_limit_values" translatable="false">
+        <item>0</item>
         <item>5</item>
         <item>10</item>
         <item>30</item>
         <item>50</item>
         <item>100</item>
+        <item>200</item>
     </string-array>
 </resources>
