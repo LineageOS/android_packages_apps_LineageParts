@@ -37,6 +37,10 @@
         <Preference
             android:key="trust_encryption"
             android:title="@string/trust_feature_encryption" />
+
+        <Preference
+            android:key="trust_platform"
+            android:title="@string/trust_feature_platform" />
     </PreferenceCategory>
 
     <PreferenceCategory
