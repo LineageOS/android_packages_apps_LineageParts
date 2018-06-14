@@ -37,6 +37,7 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private Preference mRootPref;
     private Preference mSecurityPatchesPref;
     private Preference mEncryptionPref;
+    private Preference mKeysPref;
     private PreferenceCategory mToolsCategory;
     private ListPreference mSmsLimitPref;
 
@@ -56,6 +57,7 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mRootPref = findPreference("trust_root");
         mSecurityPatchesPref = findPreference("trust_security_patch");
         mEncryptionPref = findPreference("trust_encryption");
+        mKeysPref = findPreference("trust_keys");
         mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
         mSmsLimitPref = (ListPreference) mToolsCategory.findPreference("sms_security_check_limit");
 
@@ -67,6 +69,8 @@ public class TrustPreferences extends SettingsPreferenceFragment {
                 showInfo(R.string.trust_feature_security_patches_explain));
         mEncryptionPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_encryption_explain));
+        mKeysPref.setOnPreferenceClickListener(p ->
+                showInfo(R.string.trust_feature_keys_explain));
         mSmsLimitPref.setOnPreferenceChangeListener((p, v) ->
                 onSmsLimitChanged(Integer.parseInt((String) v)));
 
@@ -81,11 +85,13 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         int secVLevel =
                 mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_VENDOR_SECURITY_PATCH);
         int encryptLevel = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_ENCRYPTION);
+        int keys = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_KEYS);
 
         setupSELinux(seLinuxLevel);
         setupRoot(rootLevel);
         setupSecurityPatches(secPLevel, secVLevel);
         setupEncryption(encryptLevel);
+        setupKeys(keys);
 
         if (!isTelephony()) {
             mToolsCategory.removePreference(mSmsLimitPref);
@@ -197,6 +203,22 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         }
         mEncryptionPref.setIcon(icon);
         mEncryptionPref.setSummary(getContext().getString(summary));
+    }
+
+    private void setupKeys(int keys) {
+        int icon;
+        int summary;
+
+        if (keys == TrustInterface.TRUST_FEATURE_LEVEL_BAD) {
+            icon = R.drawable.ic_trust_keys_bad;
+            summary = R.string.trust_feature_keys_public;
+        } else {
+            icon = R.drawable.ic_trust_keys_good;
+            summary = R.string.trust_feature_keys_private;
+        }
+
+        mKeysPref.setIcon(icon);
+        mKeysPref.setSummary(getContext().getString(summary));
     }
 
     private boolean showInfo(int text) {
