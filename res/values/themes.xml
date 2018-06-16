@@ -29,7 +29,6 @@
         <item name="dropdownPreferenceStyle">@style/DropdownPreferenceStyle</item>
         <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
         <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
-        <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
         <item name="preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
         <item name="preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
         <item name="preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
