@@ -56,10 +56,11 @@
             android:entryValues="@array/sms_security_check_limit_values"
             android:summary="@string/sms_security_check_limit_summary"
             android:title="@string/sms_security_check_limit_title" />
-        </PreferenceCategory>
+    </PreferenceCategory>
 
-        <PreferenceCategory
-            android:key="trust_category_alerts">
+    <PreferenceCategory
+        android:key="trust_category_alerts"
+        android:title="@string/trust_category_options">
 
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="trust_notifications"
