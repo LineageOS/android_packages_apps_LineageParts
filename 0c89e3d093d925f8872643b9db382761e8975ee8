@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5dea0967_f3ee3d5a",
+        "filename": "res/xml/trust_preferences.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-06-16T17:32:24Z",
+      "side": 1,
+      "message": "For the record, the PreferenceCategory indentation is wrong.",
+      "revId": "0c89e3d093d925f8872643b9db382761e8975ee8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
