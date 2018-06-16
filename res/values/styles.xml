@@ -66,7 +66,8 @@
         <item name="android:layout">@layout/preference_material_settings</item>
     </style>
 
-    <style name="PreferenceTheme">
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
+        <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
     </style>
 
     <style name="PreferenceHeaderPanelSinglePane">
