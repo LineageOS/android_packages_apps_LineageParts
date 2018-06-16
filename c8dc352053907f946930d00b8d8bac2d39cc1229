@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "a8760281_1e1aea35",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 720,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-06-16T08:37:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "49da7806_a2018eea",
+      "range": {
+        "startLine": 720,
+        "startChar": 72,
+        "endLine": 720,
+        "endChar": 73
+      },
+      "revId": "c8dc352053907f946930d00b8d8bac2d39cc1229",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6b2d62fe_d3f0357f",
         "filename": "src/org/lineageos/lineageparts/trust/TrustPreferences.java",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2018-06-15T09:52:00Z",
       "side": 1,
       "message": "remove spaces",
+      "range": {
+        "startLine": 239,
+        "startChar": 0,
+        "endLine": 239,
+        "endChar": 4
+      },
+      "revId": "c8dc352053907f946930d00b8d8bac2d39cc1229",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "48983a6d_040cf054",
+        "filename": "src/org/lineageos/lineageparts/trust/TrustPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 18154
+      },
+      "writtenOn": "2018-06-16T08:37:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b2d62fe_d3f0357f",
       "range": {
         "startLine": 239,
         "startChar": 0,
