@@ -698,6 +698,7 @@
 
     <!-- Trust interface -->
     <string name="trust_title" translatable="false">@*lineageos.platform:string/trust_feature_name</string>
+    <string name="trust_summary">Check the device\'s security states</string>
     <string name="trust_header">Trust helps you keep your device secure and protects your privacy.\nThe Trust icon shows up to help you by checking the security of the contents.</string>
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
