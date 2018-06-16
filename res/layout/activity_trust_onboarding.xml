@@ -27,8 +27,9 @@
         android:text="@string/trust_onboarding_title" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/trust_onboarding_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/trust_onboarding_header"
         android:layout_marginEnd="@dimen/trust_logo_horizontal_margin"
         android:layout_marginStart="@dimen/trust_logo_horizontal_margin"
@@ -54,27 +55,29 @@
             android:text="@string/trust_onboarding_description"
             android:textAlignment="center"
             android:textColor="?android:attr/textColorSecondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/trust_onboarding_linear"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/trust_onboarding_learn_more"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="@string/trust_onboarding_learn_more" />
-    </LinearLayout>
 
-    <Button
-        android:id="@+id/trust_onboarding_done"
-        style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="48dp"
-        android:paddingBottom="8dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingTop="8dp"
-        android:text="@string/trust_onboarding_done" />
+        <Button
+            android:id="@+id/trust_onboarding_done"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trust_onboarding_done" />
+    </LinearLayout>
 </RelativeLayout>
