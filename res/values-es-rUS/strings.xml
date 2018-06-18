@@ -538,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">Ocultar la barra de navegación</string>
   <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
   <string name="expanded_desktop_nothing_to_show_text">Apagar el interruptor para personalizar el escritorio ampliado sobre una base por aplicación</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplicaciones a pantalla completa</string>
+  <string name="long_screen_settings_summary">Forzar a las aplicaciones antiguas, a utilizar la relación de aspecto a pantalla completa</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sonidos al cargar el dispositivo</string>
   <string name="charging_sounds_enabled_title">Activar</string>
@@ -601,8 +604,43 @@
   <string name="style_accent_configuration_positive">Proceder</string>
   <string name="style_automagic_title">Automagic</string>
   <string name="style_automagic_description">Ajustar el estilo para coincidir con el fondo de pantalla</string>
-  <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> con el destacado <b>%2$s</b>.\n¿Deseas aplicarlo?</string>
+  <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> con el destacado <b>%2$s</b>.\n¿Quieres aplicarlo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Predefinido</string>
   <string name="style_permission_error">Es necesario permitir el acceso al almacenamiento para analizar el fondo de pantalla</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust le ayuda a mantener el dispositivo seguro y protege su privacidad.\n El icono de Trust se muestra para ayudarle a comprobar la seguridad de los contenidos.</string>
+  <string name="trust_category_features">Estado</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Aplicación</string>
+  <string name="trust_feature_selinux_value_disabled">Desactivado</string>
+  <string name="trust_feature_selinux_explain">SELinux dicta qué procesos tienen acceso a qué archivos en el dispositivo.\n Esto evita que las aplicaciones y servicios tengan acceso a archivos con los que no deben tratar: de esta manera, un proceso malicioso tiene acceso limitado, por lo que su seguridad se mantiene.</string>
+  <string name="trust_feature_root">Acceso de superusuario</string>
+  <string name="trust_feature_root_value_disabled">Desactivado</string>
+  <string name="trust_feature_root_value_adb">Sólo ADB</string>
+  <string name="trust_feature_root_value_apps">Aplicaciones y ADB</string>
+  <string name="trust_feature_root_explain">El acceso de superusuario permite eludir las restricciones de seguridad de las aplicaciones y servicios elegidas, permitiendo realizar modificaciones en el sistema, lo que puede dañar el dispositivo o sistema operativo.</string>
+  <string name="trust_feature_security_patches">Parches de seguridad de Android</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProveedor: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">actualizado</string>
+  <string name="trust_feature_security_patches_value_medium">hace algunos meses</string>
+  <string name="trust_feature_security_patches_value_old">desactualizado</string>
+  <string name="trust_feature_security_patches_explain">Los parches de seguridad son publicados mensualmente por Google y los proveedores de SoC para tratar las vulnerabilidades del sistema que podrían ser aprovechadas por aplicaciones maliciosas para eludir las restricciones de seguridad y causar daños temporales o permanentes al dispositivo.\nMientras que los parches de la plataforma son actualizados globalmente cada mes, los parches de los vendedores son actualizados por el OEM de vez en cuando.\nPara mantener el dispositivo seguro, asegúrese de que el sistema LineageOS esté siempre actualizado.</string>
+  <string name="trust_feature_encryption">Cifrado</string>
+  <string name="trust_feature_encryption_value_enabled">Activado</string>
+  <string name="trust_feature_encryption_value_nolock">Necesita una pantalla de bloqueo segura</string>
+  <string name="trust_feature_encryption_value_disabled">Desactivado</string>
+  <string name="trust_feature_encryption_explain">El cifrado del dispositivo impide el acceso a los datos cuando el teléfono está apagado o en modo de recuperación. Esto es particularmente importante si el teléfono es robado, e impide que la gente lea sus mensajes, contactos y otra información privada sin la contraseña.\nPara realizar un cifrado más eficiente, debes establecer una pantalla de bloqueo segura.</string>
+  <string name="trust_category_tools">Privacidad</string>
+  <string name="trust_notification_alerts_title">Alertas de seguridad</string>
+  <string name="trust_notifications_alerts_summary">Mostrar notificaciones al encontrar un problema de seguridad</string>
+  <string name="trust_onboarding_title">Saluda a Trust</string>
+  <string name="trust_onboarding_description">Trust ayuda a mantener el dispositivo seguro y protege su privacidad.\nEl icono de Trust aparecerá para ayudarle a comprobar la seguridad de los contenidos</string>
+  <string name="trust_onboarding_learn_more">Saber más</string>
+  <string name="trust_onboarding_done">Entiendo</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Límite de mensajes SMS</string>
+  <string name="sms_security_check_limit_summary">Las aplicaciones pueden enviar %s mensajes en 1 minuto antes de solicitar confirmación</string>
+  <string name="sms_security_check_limit_summary_none">Las aplicaciones no pueden enviar mensajes sin confirmación</string>
+  <string name="sms_security_check_limit_always_confirm">Confirmar siempre</string>
 </resources>

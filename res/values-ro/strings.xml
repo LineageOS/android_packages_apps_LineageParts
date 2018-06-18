@@ -540,6 +540,9 @@
   <string name="expanded_desktop_style_hide_navigation">Ascunde bara de navigare</string>
   <string name="expanded_desktop_style_hide_both">Ascunde ambele</string>
   <string name="expanded_desktop_nothing_to_show_text">Dezactivați comutatorul pentru a personaliza desktop-ul extins pe o bază per aplicație</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplicații ecran complet</string>
+  <string name="long_screen_settings_summary">Forțează aplicațiile vechi să utilizeze ecranul complet</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sunete de încărcare</string>
   <string name="charging_sounds_enabled_title">Activați</string>
@@ -607,4 +610,39 @@
   <string name="style_automagic_dialog_positive">Aplicați</string>
   <string name="style_accent_default_name">Implicit</string>
   <string name="style_permission_error">Permisiunea de acces la stocare este necesară pentru a analiza tapetul dumneavoastră, vă rugăm să o acordați pentru a utiliza această caracteristică</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust vă ajută să vă păstrați telefonul în siguranță și vă protejează confidențialitatea.\nIconița Trust apare pentru a vă ajuta să verificați securitatea conținutului.</string>
+  <string name="trust_category_features">Stare</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Obligatoriu</string>
+  <string name="trust_feature_selinux_value_disabled">Dezactivat</string>
+  <string name="trust_feature_selinux_explain">SELinux dictează ce procese au acces la fișiere și la care dintre acestea pe dispozitivul dvs.\nAceasta previne ca aplicațiile și serviciile să aibă acces la fișiere la care nu ar trebui să îl aibă: prin aceasta, un proces malițios are acces limitat așa că se menține securitatea dvs.</string>
+  <string name="trust_feature_root">Acces root</string>
+  <string name="trust_feature_root_value_disabled">Dezactivat</string>
+  <string name="trust_feature_root_value_adb">Doar ADB</string>
+  <string name="trust_feature_root_value_apps">Aplicații și ADB</string>
+  <string name="trust_feature_root_explain">Accesul root permite trecerea peste restricțiile de securitate de către aplicațiile și serviciile pe care le utilizați, permițându-le să facă modificări în sistem, fapt ce poate cauza probleme dispozitivului sau sistemului de operare.</string>
+  <string name="trust_feature_security_patches">Corecțiile de securitate Android</string>
+  <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProducător: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">la zi</string>
+  <string name="trust_feature_security_patches_value_medium">vechi de câteva luni</string>
+  <string name="trust_feature_security_patches_value_old">expirat</string>
+  <string name="trust_feature_security_patches_explain">Pachetele de securitate sunt lansate lunar de către Google și producătorii SoC pentru a corecta erorile din sistem care ar putea fi exploatate de aplicațiile malițioase pentru a trece peste restricțiile de securitate și ar putea cauza daune temporare sau permanente dispozitivului dvs.\nÎn timp ce corecțiile de platformă sunt actualizate global lună de lună, corecțiile producătorului sunt actualizate din când în când.\nPentru a vă ține telefonul în siguranță asigurați-vă că rulați cel mai recent build de LineageOS.</string>
+  <string name="trust_feature_encryption">Criptare</string>
+  <string name="trust_feature_encryption_value_enabled">Activat</string>
+  <string name="trust_feature_encryption_value_nolock">Necesită un ecran de blocare securizat</string>
+  <string name="trust_feature_encryption_value_disabled">Dezactivat</string>
+  <string name="trust_feature_encryption_explain">Criptarea dispozitivului previne accesul la datele dvs. când telefonul este oprit sau în modul de recuperare. Aceasta este importantă în special dacă telefonul vă este furat și previne oamenii de la a vă citi mesajele, contactele și alte date private fără a utiliza vreo parolă.\nPentru a face criptarea mai eficientă trebuie să setați un ecran de blocare securizat.</string>
+  <string name="trust_category_tools">Confidențialitate</string>
+  <string name="trust_notification_alerts_title">Alerte de securitate</string>
+  <string name="trust_notifications_alerts_summary">Afișează notificări atunci când se constată o problemă de securitate</string>
+  <string name="trust_onboarding_title">Spuneți-o salut lui Trust</string>
+  <string name="trust_onboarding_description">Trust vă ajută să vă păstrați telefonul în siguranță și vă protejează confidențialitatea.\nIconița Trust va apărea pentru a vă ajuta să verificați securitatea conținutului</string>
+  <string name="trust_onboarding_learn_more">Aflați mai multe</string>
+  <string name="trust_onboarding_done">Am înțeles</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Limită mesaje SMS</string>
+  <string name="sms_security_check_limit_summary">Aplicațiile pot trimite %s mesaje într-un minut înainte de a fi necesară confirmarea</string>
+  <string name="sms_security_check_limit_summary_none">Aplicațiilor nu li se permite să poată trimite vreun mesaj decât cu confirmare</string>
+  <string name="sms_security_check_limit_always_confirm">Confirmă întotdeauna</string>
 </resources>

@@ -538,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">隐藏导航栏</string>
   <string name="expanded_desktop_style_hide_both">同时隐藏</string>
   <string name="expanded_desktop_nothing_to_show_text">关闭开关以自定义您每个应用的扩展桌面</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">全屏应用</string>
+  <string name="long_screen_settings_summary">强制旧式应用程序使用全屏长宽比</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">充电提示音</string>
   <string name="charging_sounds_enabled_title">启用</string>
@@ -605,4 +608,39 @@
   <string name="style_automagic_dialog_positive">应用</string>
   <string name="style_accent_default_name">默认</string>
   <string name="style_permission_error">为了分析您的壁纸，需要存储权限，请授予此功能权限</string>
+  <!-- Trust interface -->
+  <string name="trust_header">安全中心能保障您的设备安全性和您的隐私。\n您可以通过显示的安全图标检查内容的安全性。</string>
+  <string name="trust_category_features">状态</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">强制执行</string>
+  <string name="trust_feature_selinux_value_disabled">已禁用</string>
+  <string name="trust_feature_selinux_explain">SELinux 规定了哪些进程可以访问你的设备上的哪些文件。\n这个机制可以防止应用和服务访问它们不该访问的文件，因此恶意进程的访问也会受到限制，从而保护了你的安全。</string>
+  <string name="trust_feature_root">超级用户权限</string>
+  <string name="trust_feature_root_value_disabled">已禁用</string>
+  <string name="trust_feature_root_value_adb">仅限于 ADB</string>
+  <string name="trust_feature_root_value_apps">应用与 ADB</string>
+  <string name="trust_feature_root_explain">Root 访问让你可以选择让某些应用和服务绕过安全限制，允许它们修改系统。这可能会对你的设备或操作系统造成损坏。</string>
+  <string name="trust_feature_security_patches">Android 安全补丁</string>
+  <string name="trust_feature_security_patches_value_base">平台：%1$s\n厂商：%2$s</string>
+  <string name="trust_feature_security_patches_value_new">已经最新</string>
+  <string name="trust_feature_security_patches_value_medium">数月未更新</string>
+  <string name="trust_feature_security_patches_value_old">已过时</string>
+  <string name="trust_feature_security_patches_explain">安全补丁由 Google 和 SoC 厂商每月发布，用以修复可能会被恶意应用利用、绕过安全限制对你的设备造成暂时或永久损坏的缺陷。\n平台补丁每个月都会统一更新，但厂商补丁只能每次从 OEM 取得。\n要保证你的设备安全，请使用最新的 LineageOS 版本。</string>
+  <string name="trust_feature_encryption">加密</string>
+  <string name="trust_feature_encryption_value_enabled">已启用</string>
+  <string name="trust_feature_encryption_value_nolock">需要设置安全的屏幕锁定</string>
+  <string name="trust_feature_encryption_value_disabled">已禁用</string>
+  <string name="trust_feature_encryption_explain">设备加密可以防止别人在关机状态或恢复模式访问你的数据。当你的设备被盗时，这个重要特性可以防止别人在没有密码的情况下读取你的短信、通讯录和其他私人信息。\n要使加密更加有效，你需要设置一个安全的屏幕锁定。</string>
+  <string name="trust_category_tools">隐私</string>
+  <string name="trust_notification_alerts_title">安全警报</string>
+  <string name="trust_notifications_alerts_summary">发现安全问题时显示通知</string>
+  <string name="trust_onboarding_title">欢迎使用安全中心</string>
+  <string name="trust_onboarding_description">安全中心能保障您的设备安全性和您的隐私。\n您可以通过显示的安全图标检查内容的安全性</string>
+  <string name="trust_onboarding_learn_more">了解更多</string>
+  <string name="trust_onboarding_done">明白了</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">短信限制</string>
+  <string name="sms_security_check_limit_summary">应用在 1 分钟内发送不超过 %s 条短信无需确认</string>
+  <string name="sms_security_check_limit_summary_none">应用在发送任何短信前必须获得您的确认</string>
+  <string name="sms_security_check_limit_always_confirm">始终确认</string>
 </resources>

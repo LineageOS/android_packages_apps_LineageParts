@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Цвета, схожие с пространством sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">Цветовое пространство DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Цвета, соответствующие цветовому пространству DCI-P3</string>
+  <string name="live_display_reading_mode_title">Режим чтения</string>
+  <string name="live_display_reading_mode_summary">Режим оттенков серого для долговременного чтения</string>
   <string name="color_calibration_title">Цвет</string>
   <string name="color_calibration_summary">Настройка цветопередачи экрана</string>
   <string name="color_red_title">Красный</string>
@@ -536,6 +538,8 @@
   <string name="expanded_desktop_style_hide_navigation">Скрывать панель навигации</string>
   <string name="expanded_desktop_style_hide_both">Скрывать строку состояния и панель навигации</string>
   <string name="expanded_desktop_nothing_to_show_text">Выключите, чтобы настроить режим расширенного рабочего стола для каждого приложения</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Полноэкранные приложения</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Звук при зарядке</string>
   <string name="charging_sounds_enabled_title">Включить</string>
@@ -603,4 +607,24 @@
   <string name="style_automagic_dialog_positive">Применить</string>
   <string name="style_accent_default_name">По умолчанию</string>
   <string name="style_permission_error">Разрешение на доступ к хранилищу необходимо для анализа ваших обоев. Пожалуйста, предоставьте разрешение для использования этой функции</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust поможет защитить ваше устройство и сохранить вашу конфиденциальность.\nЗначок Trust отображается для того, чтобы помочь вам проверить безопасность содержимого.</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_explain">SELinux определяет, какие процессы имеют доступ к файлам на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым им доступ не положен: таким образом, вредоносный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
+  <string name="trust_feature_root">Режим суперпользователя</string>
+  <string name="trust_feature_root_value_disabled">Отключено</string>
+  <string name="trust_feature_root_value_adb">Только для ADB</string>
+  <string name="trust_feature_root_value_apps">Для приложений и ADB</string>
+  <string name="trust_feature_root_explain">Режим суперпользователя позволяет выбранным вами приложениям и службам обходить ограничения безопасности, позволяя им вносить изменения в систему, что может привести к повреждению устройства или ОС.</string>
+  <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nПроизводитель: %2$s</string>
+  <string name="trust_feature_security_patches_explain">Пакеты безопасности выпускаются ежемесячно компанией Google и поставщиками SoC для устранения недостатков в системе, которые могут быть использованы вредоносными приложениями для обхода ограничений безопасности и могут нанести временный или постоянный ущерб вашему устройству.\nВ то время, как патчи платформы обновляются каждый месяц, сами производители устройств обновляют патчи неспеша. \nДля того, чтобы ваше устройство было безопасным, убедитесь, что ваша сборка LineageOS актуальна.</string>
+  <string name="trust_feature_encryption">Шифрование</string>
+  <string name="trust_category_tools">Конфиденциальность</string>
+  <string name="trust_onboarding_title">Поприветствуйте Trust</string>
+  <string name="trust_onboarding_done">Понятно</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Ограничение SMS-сообщений</string>
+  <string name="sms_security_check_limit_summary">Запрашивать подтверждение при отправке больше %s сообщений в минуту</string>
+  <string name="sms_security_check_limit_summary_none">Приложениям запрещено отправлять сообщения без подтверждения</string>
+  <string name="sms_security_check_limit_always_confirm">Подтверждать всегда</string>
 </resources>

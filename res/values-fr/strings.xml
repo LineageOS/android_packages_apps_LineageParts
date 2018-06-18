@@ -144,6 +144,7 @@
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Couleurs correspondant exactement à l’espace colorimétrique DCI-P3</string>
   <string name="live_display_reading_mode_title">Mode Lecture</string>
+  <string name="live_display_reading_mode_summary">Affichage en niveaux de gris pour les périodes de lecture prolongées</string>
   <string name="color_calibration_title">Calibrage des couleurs</string>
   <string name="color_calibration_summary">Calibrer les couleurs de l\'écran</string>
   <string name="color_red_title">Rouge</string>
@@ -537,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">Masquer la barre de navigation</string>
   <string name="expanded_desktop_style_hide_both">Masquer les deux</string>
   <string name="expanded_desktop_nothing_to_show_text">Désactiver pour personnaliser le bureau étendu pour chaque application</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Applications en plein écran</string>
+  <string name="long_screen_settings_summary">Forcer l\'affichage des anciennes applications en plein écran</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons d\'alimentation</string>
   <string name="charging_sounds_enabled_title">Activer</string>
@@ -604,4 +608,23 @@
   <string name="style_automagic_dialog_positive">Appliquer</string>
   <string name="style_accent_default_name">Par défaut</string>
   <string name="style_permission_error">Accès à l\'espace de stockage requis pour analyser votre fond d\'écran. Veuillez l\'autoriser pour utiliser cette fonctionnalité.</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">État</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_disabled">Désactivé</string>
+  <string name="trust_feature_root">Accès root</string>
+  <string name="trust_feature_root_value_disabled">Désactivé</string>
+  <string name="trust_feature_root_value_adb">ADB uniquement</string>
+  <string name="trust_feature_root_value_apps">Applications et ADB</string>
+  <string name="trust_feature_security_patches">Correctifs de sécurité Android</string>
+  <string name="trust_feature_encryption">Chiffrement</string>
+  <string name="trust_feature_encryption_value_enabled">Activé</string>
+  <string name="trust_feature_encryption_value_nolock">Écran de verrouillage sécurisé requis</string>
+  <string name="trust_feature_encryption_value_disabled">Désactivé</string>
+  <string name="trust_category_tools">Confidentialité</string>
+  <string name="trust_onboarding_title">Découvrez Trust</string>
+  <string name="trust_onboarding_learn_more">En savoir plus</string>
+  <string name="trust_onboarding_done">OK</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Limiter l\'émission de SMS</string>
 </resources>

@@ -536,6 +536,7 @@
   <string name="expanded_desktop_style_hide_navigation">Ẩn thanh điều hướng</string>
   <string name="expanded_desktop_style_hide_both">Ẩn cả hai</string>
   <string name="expanded_desktop_nothing_to_show_text">Tắt chuyển đổi để tùy chỉnh mở rộng màn hình của bạn trên một ứng dụng gốc</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Âm báo đang sạc</string>
   <string name="charging_sounds_enabled_title">Bật</string>
@@ -603,4 +604,6 @@
   <string name="style_automagic_dialog_positive">Áp dụng</string>
   <string name="style_accent_default_name">Mặc định</string>
   <string name="style_permission_error">Quyền truy cập lưu trữ là cần thiết để phân tích hình nền của bạn, vui lòng cho phép nó sử dụng tính năng này</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

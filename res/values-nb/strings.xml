@@ -510,6 +510,7 @@
   <string name="expanded_desktop_style_hide_navigation">Skjul navigasjonslinjen</string>
   <string name="expanded_desktop_style_hide_both">Skjul begge</string>
   <string name="expanded_desktop_nothing_to_show_text">Slå av for å tilpasse utvidet skrivebord på per-app basis</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Lade-lyder</string>
   <string name="charging_sounds_enabled_title">Aktiver</string>
@@ -553,4 +554,6 @@
   <string name="touchscreen_gesture_action_next_track">Hopp til neste musikkspor</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

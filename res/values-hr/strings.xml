@@ -536,6 +536,7 @@
   <string name="expanded_desktop_style_hide_navigation">Sakrij navigacijsku traku</string>
   <string name="expanded_desktop_style_hide_both">Sakrij oboje</string>
   <string name="expanded_desktop_nothing_to_show_text">Isključite promjenu prilagodbe vaše proširene radne površine na svaku pojedinu aplikaciju</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Zvukovi punjenja</string>
   <string name="charging_sounds_enabled_title">Omogući</string>
@@ -603,4 +604,6 @@
   <string name="style_automagic_dialog_positive">Primijeni</string>
   <string name="style_accent_default_name">Zadano</string>
   <string name="style_permission_error">Potrebno je dopuštenje za pristup pohrani da bi se pozadina mogla analizirati. Molimo vas da je omogućite.</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

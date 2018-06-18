@@ -510,6 +510,7 @@
   <string name="expanded_desktop_style_hide_navigation">Versteek navigasiebalk</string>
   <string name="expanded_desktop_style_hide_both">Versteek beide</string>
   <string name="expanded_desktop_nothing_to_show_text">Skakel die skakelaar af om jou uitgebreide werkskerm op \'n per toep basis pas te maak</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Laai klanke</string>
   <string name="charging_sounds_enabled_title">Aktiveer</string>
@@ -553,4 +554,6 @@
   <string name="touchscreen_gesture_action_next_track">Slaan oor na die volgende musiekbaan</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

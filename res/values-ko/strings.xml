@@ -538,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">내비게이션 바 숨기기</string>
   <string name="expanded_desktop_style_hide_both">모두 숨기기</string>
   <string name="expanded_desktop_nothing_to_show_text">각각의 앱에 확장 데스크탑을 적용하려면 스위치를 끄세요</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">전체 화면 앱</string>
+  <string name="long_screen_settings_summary">레거시 앱에서 전체 화면 가로 세로 비율 강제 사용</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">충전 소리</string>
   <string name="charging_sounds_enabled_title">사용</string>
@@ -605,4 +608,39 @@
   <string name="style_automagic_dialog_positive">적용</string>
   <string name="style_accent_default_name">기본값</string>
   <string name="style_permission_error">배경화면을 분석하기 위해 저장소 접근 권한이 필요합니다. 이 기능을 사용하려면 권한을 허용해 주세요.</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust는 기기를 안전하게 유지하여 개인 정보를 보호하는 데 도움을 줍니다.\nTrust 아이콘은 컨텐츠의 보안을 확인하는 데 도움을 주기 위해 표시됩니다.</string>
+  <string name="trust_category_features">상태</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">시행</string>
+  <string name="trust_feature_selinux_value_disabled">비활성화됨</string>
+  <string name="trust_feature_selinux_explain">SELinux는 각 프로세스가 기기의 어떤 파일에 액세스 할 수 있는지를 결정합니다.\nSELinux를 사용하면 앱 및 서비스가 사용하면 안 되는 파일에 접근하는 것을 막아 줍니다. 따라서 악성 프로세스의 접근이 제한되므로 보안을 유지할 수 있습니다.</string>
+  <string name="trust_feature_root">루트 권한</string>
+  <string name="trust_feature_root_value_disabled">사용 안 함</string>
+  <string name="trust_feature_root_value_adb">ADB만</string>
+  <string name="trust_feature_root_value_apps">앱 및 ADB</string>
+  <string name="trust_feature_root_explain">루트 권한을 사용하면 선택한 앱 및 서비스가 보안 제한을 우회하여 시스템을 수정할 수 있으므로 기기 또는 OS가 손상될 수 있습니다.</string>
+  <string name="trust_feature_security_patches">Android 보안 패치</string>
+  <string name="trust_feature_security_patches_value_base">플랫폼: %1$s\n공급업체: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">최신</string>
+  <string name="trust_feature_security_patches_value_medium">몇 달 전</string>
+  <string name="trust_feature_security_patches_value_old">오래됨</string>
+  <string name="trust_feature_security_patches_explain">보안 패치는 Google 및 SoC 공급업체가 매월 발표하고 있으며 악성 앱이 보안 제한을 우회하여 기기를 일시적, 또는 영구적으로 손상시킬 수 있는 결함을 해결합니다.\n플랫폼 패치는 매달 전 세계에 제공되는 반면, 공급업체 패치는 OEM에서 수시로 제공합니다.\n기기를 안전하게 유지하려면 LineageOS 빌드가 항상 최신 상태인지 확인하세요.</string>
+  <string name="trust_feature_encryption">암호화</string>
+  <string name="trust_feature_encryption_value_enabled">활성화됨</string>
+  <string name="trust_feature_encryption_value_nolock">보안성 높은 잠금 화면 필요</string>
+  <string name="trust_feature_encryption_value_disabled">비활성화됨</string>
+  <string name="trust_feature_encryption_explain">기기를 암호화하면 전원이 꺼져 있을 때나 복구 모드 상태에서 사용자의 데이터에 접근하는 것을 방지할 수 있습니다. 암호화는 기기를 도난당했을 때 특히 중요하며, 사람들이 비밀번호 없이 메시지, 연락처 및 기타 개인 정보를 읽을 수 없게 해 줍니다.\n암호화 효율을 높이기 위해서는 보안성이 높은 잠금 화면을 설정해야 합니다.</string>
+  <string name="trust_category_tools">개인 정보</string>
+  <string name="trust_notification_alerts_title">보안 경고</string>
+  <string name="trust_notifications_alerts_summary">보안 문제가 있을 때 알림 표시</string>
+  <string name="trust_onboarding_title">Trust를 만나보세요</string>
+  <string name="trust_onboarding_description">Trust는 기기를 안전하게 유지하여 개인 정보를 보호하는 데 도움을 줍니다.\nTrust 아이콘은 콘텐츠의 보안을 확인하는 데 도움을 주기 위해 표시됩니다.</string>
+  <string name="trust_onboarding_learn_more">더 알아보기</string>
+  <string name="trust_onboarding_done">확인</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">SMS 메시지 발신 제한</string>
+  <string name="sms_security_check_limit_summary">앱은 확인을 요청하기 전까지 1분 내에 %s개의 메시지만 보낼 수 있습니다.</string>
+  <string name="sms_security_check_limit_summary_none">앱은 어떤 메시지도 확인 없이 보낼 수 없습니다.</string>
+  <string name="sms_security_check_limit_always_confirm">항상 확인</string>
 </resources>

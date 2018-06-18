@@ -95,6 +95,7 @@
   <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
   <string name="live_display_day">Dag</string>
   <string name="live_display_night">Natt</string>
+  <string name="live_display_enhance_color_title">Förbättra färger</string>
   <string name="live_display_color_profile_title">Färgprofil</string>
   <string name="live_display_color_profile_standard_title">Standard</string>
   <string name="live_display_color_profile_natural_title">Naturlig</string>
@@ -140,6 +141,7 @@
   <string name="additional_buttons_title">Fler knappar</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Bakgrundsbelysning</string>
+  <string name="button_backlight_enabled">Knappljus</string>
   <string name="keyboard_backlight_seekbar_title">Tangetbordsljusstyrka</string>
   <string name="backlight_timeout_unlimited">Stäng inte av</string>
   <string name="backlight_summary_disabled">Avaktiverad</string>
@@ -204,7 +206,10 @@
   <string name="profile_profiles_manage">Profiler</string>
   <!-- Profile settings screen, section header for settings related to notification profiles -->
   <string name="profile_trigger_connect">Vid anslutning</string>
+  <string name="profile_trigger_notrigger">Ingen utlösare</string>
   <!-- Profile Settings sound modes labels -->
+  <string name="sound_mode">Aviseringsläge</string>
+  <string name="lights_mode">Ljusläge</string>
   <string name="vibrate_mode">Vibrationsläge</string>
   <string name="choose_ringtone">Välj rignsignal</string>
   <string name="ringtone_title">Ringsignal för telefonen</string>
@@ -219,6 +224,7 @@
   <string name="profile_choose_app">Välj app</string>
   <!-- Profiles - system settings -->
   <string name="profile_system_settings_title">Systeminställningar</string>
+  <string name="profile_lockmode_title">Låsskärmsläge</string>
   <string name="profile_lockmode_disabled_summary">Inaktivera låsskärm</string>
   <string name="profile_airplanemode_title">Flygplansläge</string>
   <string name="profile_brightness_override_summary">Inställd på %1$d%%</string>
@@ -257,10 +263,12 @@
   <string name="status_bar_am_pm_small">Liten</string>
   <string name="status_bar_am_pm_hidden">Dold</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_style_icon_landscape">Liggande ikon</string>
   <string name="status_bar_battery_style_circle">Cirkel</string>
   <string name="status_bar_battery_style_text">Text</string>
   <string name="status_bar_battery_style_hidden">Dold</string>
   <!-- Status bar - Battery percentage -->
+  <string name="status_bar_battery_percentage_title">Batterinivå</string>
   <string name="status_bar_battery_percentage_default">Dold</string>
   <!-- Status bar - Brightness -->
   <string name="status_bar_brightness_category">Ljusstyrka</string>
@@ -269,6 +277,7 @@
   <string name="status_bar_toggle_brightness">Ljusstyrkekontroll</string>
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_mode_title">Visningsläge</string>
+  <string name="network_traffic_mode_disable">Inaktiverat</string>
   <string name="network_traffic_mode_up">Bara upp</string>
   <string name="network_traffic_mode_down">Bara ner</string>
   <string name="network_traffic_mode_all">Uppladdning och nerladdning</string>
@@ -292,6 +301,8 @@
   <!-- Display : Rotation  -->
   <string name="accelerometer_title">Rotera skärmen automatiskt</string>
   <string name="display_rotation_unit">grader</string>
+  <string name="display_lockscreen_rotation_title">Rotera låsskärmen</string>
+  <string name="display_rotation_category_title">Rotationslägen</string>
   <string name="display_rotation_0_title">0 grader</string>
   <string name="display_rotation_90_title">90 grader</string>
   <string name="display_rotation_180_title">180 grader</string>
@@ -310,6 +321,7 @@
   <string name="perf_profile_category_title">Enhetsprestanda</string>
   <string name="power_save_category_title">Strömsparläge</string>
   <string name="power_save_title">Extrem strömbesparing</string>
+  <string name="auto_power_save_title">Automatiskt strömsparläge</string>
   <string name="auto_power_save_never">Aldrig</string>
   <!-- Applications: Expanded desktop -->
   <string name="expanded_desktop_settings_title">Utökat skrivbord</string>
@@ -317,6 +329,7 @@
   <string name="expanded_desktop_style_hide_status">Dölj statusfält</string>
   <string name="expanded_desktop_style_hide_navigation">Dölj navigeringsfält</string>
   <string name="expanded_desktop_style_hide_both">Dölj båda</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Laddningsljud</string>
   <string name="charging_sounds_enabled_title">Aktivera</string>
@@ -345,4 +358,10 @@
   <string name="touchscreen_gesture_action_messages">Visa dina meddelanden</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <string name="style_accent_title">Accentfärg</string>
+  <string name="style_accent_configuration_positive">Fortsätt</string>
+  <string name="style_automagic_dialog_positive">Verkställ</string>
+  <string name="style_accent_default_name">Standard</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">正確な sRGB 色空間に補正します</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">正確な DCI-P3 色空間に補正します</string>
+  <string name="live_display_reading_mode_title">読書モード</string>
+  <string name="live_display_reading_mode_summary">長期間読書するのに適した、グレースケールモードに変更します</string>
   <string name="color_calibration_title">色の調整</string>
   <string name="color_calibration_summary">画面の色を調整する</string>
   <string name="color_red_title">赤</string>
@@ -159,7 +161,7 @@
   <string name="button_pref_title">ボタン</string>
   <string name="hardware_keys_power_key_title">電源ボタン</string>
   <string name="hardware_keys_home_key_title">ホームボタン</string>
-  <string name="hardware_keys_back_key_title">バックボタン</string>
+  <string name="hardware_keys_back_key_title">戻るボタン</string>
   <string name="hardware_keys_menu_key_title">メニューボタン</string>
   <string name="hardware_keys_assist_key_title">検索ボタン</string>
   <string name="hardware_keys_appswitch_key_title">履歴ボタン</string>
@@ -536,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">ナビゲーションバーを非表示</string>
   <string name="expanded_desktop_style_hide_both">両方を非表示</string>
   <string name="expanded_desktop_nothing_to_show_text">拡張デスクトップをアプリごとにカスタマイズするにはスイッチをOFFにしてください</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">全画面表示のアプリ</string>
+  <string name="long_screen_settings_summary">従来のアプリに全画面表示のアスペクト比を使用させる</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">充電時の音</string>
   <string name="charging_sounds_enabled_title">有効</string>
@@ -603,4 +608,33 @@
   <string name="style_automagic_dialog_positive">適用</string>
   <string name="style_accent_default_name">デフォルト</string>
   <string name="style_permission_error">壁紙を分析するにはストレージアクセスの権限を許可する必要があります。この機能を使用するには権限を許可してください。</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust はデバイスを安全に保ちプライバシーを保護するのに役立ちます。\nTrust アイコンはコンテンツのセキュリティをチェックするのを助けるために表示されます。</string>
+  <string name="trust_category_features">状態</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
+  <string name="trust_feature_selinux_value_disabled">無効</string>
+  <string name="trust_feature_selinux_explain">SELinux はどのプロセスがあなたのデバイス上のどのファイルにアクセスできるかを決定します。\nこれにより、ファイルを扱うことを想定されていないアプリとサービスがアクセスすることを防ぎます。このようにして悪意のあるプロセスはアクセスが制限され、セキュリティが保護されます。</string>
+  <string name="trust_feature_root">ルートアクセス</string>
+  <string name="trust_feature_root_value_disabled">無効</string>
+  <string name="trust_feature_root_value_adb">ADB のみ</string>
+  <string name="trust_feature_root_value_apps">アプリと ADB</string>
+  <string name="trust_feature_root_explain">ルートアクセスを使用すると、選択したアプリやサービスによるセキュリティ制限が回避され、システムやデバイスに損害を与える可能性のあるシステムの変更が可能になります。</string>
+  <string name="trust_feature_security_patches">Android セキュリティパッチ</string>
+  <string name="trust_feature_security_patches_value_base">プラットフォーム: %1$s\nベンダー: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">最新です</string>
+  <string name="trust_feature_security_patches_value_old">最新ではありません</string>
+  <string name="trust_feature_security_patches_explain">セキュリティパッチは Google や SoC ベンダーによって、悪意のあるアプリによるセキュリティ制限回避の可能性や、デバイスに一時的または永続的な損傷を与える可能性といったシステムの欠陥に対処するため毎月リリースされます。\nプラットフォームパッチは毎月世界中で更新されますが、ベンダーのパッチは OEM から時々更新されます。\n機器を安全に保つために LineageOS ビルドは常に最新のものにしてください。</string>
+  <string name="trust_feature_encryption">暗号化</string>
+  <string name="trust_feature_encryption_value_enabled">有効</string>
+  <string name="trust_feature_encryption_value_nolock">保護されたロック画面が必要です</string>
+  <string name="trust_feature_encryption_value_disabled">無効</string>
+  <string name="trust_feature_encryption_explain">デバイスを暗号化すると、電話がオフになっている時やリカバリーモードでのデータアクセスを防ぎます。これは電話が盗まれた特に重要で、パスワードなしでメッセージ、連絡先、その他の個人情報を人に読まれるのを防ぎます。\n暗号化をより効果的にするには、保護されたロック画面を設定する必要があります。</string>
+  <string name="trust_category_tools">プライバシー</string>
+  <string name="trust_onboarding_title">Trust にようこそ</string>
+  <string name="trust_onboarding_description">Trust はデバイスを安全に保ちプライバシーを保護するのに役立ちます。\nTrust アイコンはコンテンツのセキュリティをチェックするのを助けるために表示されます。</string>
+  <string name="trust_onboarding_learn_more">詳細</string>
+  <string name="trust_onboarding_done">わかりました</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">SMS メッセージの制限</string>
 </resources>

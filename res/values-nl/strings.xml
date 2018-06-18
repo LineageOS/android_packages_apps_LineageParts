@@ -143,6 +143,7 @@
   <string name="live_display_color_profile_srgb_summary">Kleuren binnen het sRGB-kleurenpalet</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Kleuren binnen het DCI-P3-kleurenpalet</string>
+  <string name="live_display_reading_mode_title">Leesmodus</string>
   <string name="color_calibration_title">Kleuren kalibreren</string>
   <string name="color_calibration_summary">Schermkleur kalibreren</string>
   <string name="color_red_title">Rood</string>
@@ -523,6 +524,7 @@
   <string name="expanded_desktop_style_hide_navigation">Navigatiebalk verbergen</string>
   <string name="expanded_desktop_style_hide_both">Beide verbergen</string>
   <string name="expanded_desktop_nothing_to_show_text">Uitschakelen om het uitgebreide bureaublad per app te kunnen aanpassen</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Opladergeluid</string>
   <string name="charging_sounds_enabled_title">Inschakelen</string>
@@ -583,4 +585,6 @@
   <string name="style_automagic_title">Automagic</string>
   <string name="style_automagic_dialog_positive">Toepassen</string>
   <string name="style_accent_default_name">Standaard</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

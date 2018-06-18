@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Kolory zgodne z paletą kolorów sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Kolory zgodne z paletą kolorów DCI-P3</string>
+  <string name="live_display_reading_mode_title">Tryb czytania</string>
+  <string name="live_display_reading_mode_summary">Tryb skali szarości dla długotrwałego czytania</string>
   <string name="color_calibration_title">Kalibracja kolorów</string>
   <string name="color_calibration_summary">Kalibruj kolory wyświetlacza</string>
   <string name="color_red_title">Czerwony</string>
@@ -538,6 +540,9 @@
   <string name="expanded_desktop_style_hide_navigation">Ukryj pasek nawigacyjny</string>
   <string name="expanded_desktop_style_hide_both">Ukryj oba</string>
   <string name="expanded_desktop_nothing_to_show_text">Wyłącz przełącznik, aby dostosować rozszerzony pulpit indywidualnie dla każdej aplikacji</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplikacje pełnoekranowe</string>
+  <string name="long_screen_settings_summary">Wymuś na starszych aplikacjach korzystanie z pełnych proporcji ekranu</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Dźwięki ładowania</string>
   <string name="charging_sounds_enabled_title">Włącz</string>
@@ -605,4 +610,28 @@
   <string name="style_automagic_dialog_positive">Zastosuj</string>
   <string name="style_accent_default_name">Domyślny</string>
   <string name="style_permission_error">Wymagany jest dostęp do pamięci, aby dokonać analizy tapety, proszę przyznać uprawnienia, aby korzystać z tej funkcji</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">Status</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Restrykcyjny</string>
+  <string name="trust_feature_selinux_value_disabled">Wyłączone</string>
+  <string name="trust_feature_root">Dostęp do root</string>
+  <string name="trust_feature_root_value_disabled">Wyłączone</string>
+  <string name="trust_feature_root_value_adb">Tylko ADB</string>
+  <string name="trust_feature_root_value_apps">Aplikacje i ADB</string>
+  <string name="trust_feature_security_patches">Aktualizacje zabezpieczeń Androida</string>
+  <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">aktualne</string>
+  <string name="trust_feature_security_patches_value_medium">kilkumiesięczne</string>
+  <string name="trust_feature_security_patches_value_old">nieaktualne</string>
+  <string name="trust_feature_encryption">Szyfrowanie</string>
+  <string name="trust_feature_encryption_value_enabled">Włączone</string>
+  <string name="trust_feature_encryption_value_nolock">Wymaga zabezpieczenego ekranu blokady</string>
+  <string name="trust_feature_encryption_value_disabled">Wyłączone</string>
+  <string name="trust_category_tools">Prywatność</string>
+  <string name="trust_onboarding_title">Przywitaj się z Trust</string>
+  <string name="trust_onboarding_learn_more">Dowiedz się więcej</string>
+  <string name="trust_onboarding_done">Rozumiem</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Limit wiadomości SMS</string>
 </resources>

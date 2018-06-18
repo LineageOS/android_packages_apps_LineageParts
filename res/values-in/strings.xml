@@ -144,6 +144,7 @@
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Warna akurat ke ruang warna DCI-P3</string>
   <string name="live_display_reading_mode_title">Modus membaca</string>
+  <string name="live_display_reading_mode_summary">Modus warna abu-abu untuk pembacaan jangka panjang</string>
   <string name="color_calibration_title">Kalibrasi warna</string>
   <string name="color_calibration_summary">Kalibrasi warna layar</string>
   <string name="color_red_title">Merah</string>
@@ -537,6 +538,7 @@
   <string name="expanded_desktop_style_hide_navigation">Sembunyikan navigasi bar</string>
   <string name="expanded_desktop_style_hide_both">Sembunyikan keduanya</string>
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Suara pengisian daya</string>
   <string name="charging_sounds_enabled_title">Hidupkan</string>
@@ -604,4 +606,20 @@
   <string name="style_automagic_dialog_positive">Terapkan</string>
   <string name="style_accent_default_name">Standar</string>
   <string name="style_permission_error">Izin akses penyimpanan diperlukan untuk menganalisa wallpaper Anda, silakan izinkan untuk menggunakan fitur ini</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">Status</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_root">Akses root</string>
+  <string name="trust_feature_root_value_apps">Aplikasi dan ADB</string>
+  <string name="trust_feature_security_patches_value_new">terbaru</string>
+  <string name="trust_feature_security_patches_value_old">kadaluarsa</string>
+  <string name="trust_feature_encryption">Enkripsi</string>
+  <string name="trust_category_tools">Privasi</string>
+  <string name="trust_notification_alerts_title">Peringatan keamanan</string>
+  <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
+  <string name="trust_onboarding_done">Paham</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Batas pesan SMS</string>
+  <string name="sms_security_check_limit_summary_none">Aplikasi tidak diizinkan untuk mengirim pesan tanpa konfirmasi</string>
+  <string name="sms_security_check_limit_always_confirm">Selalu konfirmasi</string>
 </resources>

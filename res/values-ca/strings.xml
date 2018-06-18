@@ -538,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">Amaga la barra de navegació</string>
   <string name="expanded_desktop_style_hide_both">Amaga els dos</string>
   <string name="expanded_desktop_nothing_to_show_text">Apaga l\'interruptor per personalitzar el teu escriptori extès segons cada aplicació</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplicacions a pantalla completa</string>
+  <string name="long_screen_settings_summary">Força les aplicacions heretades per utilitzar la relació d\'aspecte de pantalla completa</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de càrrega</string>
   <string name="charging_sounds_enabled_title">Habilita</string>
@@ -605,4 +608,39 @@
   <string name="style_automagic_dialog_positive">Aplica</string>
   <string name="style_accent_default_name">Predeterminat</string>
   <string name="style_permission_error">Es necessita el permís d\'accés a l\'emmagatzematge per analitzar el teu fons de pantalla, si us plau otorga\'l per utilitzar aquesta característica</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust us permet mantenir el dispositiu segur i protegir la vostra privadesa.\nLa icona Trust apareix per ajudar-vos a consultar la seguretat dels continguts.</string>
+  <string name="trust_category_features">Estat</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Forçat</string>
+  <string name="trust_feature_selinux_value_disabled">Desactivat</string>
+  <string name="trust_feature_selinux_explain">SELinux defineix quins processos tenen accés als fitxers del vostre dispositiu.\nAixò impedeix que les aplicacions i els serveis tinguin accés a arxius que no han de tractar: d\'aquesta manera un procés maliciós té un accés limitat perquè es preservi la vostra seguretat.</string>
+  <string name="trust_feature_root">Accés arrel</string>
+  <string name="trust_feature_root_value_disabled">Desactivat</string>
+  <string name="trust_feature_root_value_adb">Només ADB</string>
+  <string name="trust_feature_root_value_apps">Aplicacions i ADB</string>
+  <string name="trust_feature_root_explain">L\'accés arrel permet evitar les restriccions de seguretat de les aplicacions i serveis que trieu, permetent-los fer modificacions al sistema, que poden causar danys al vostre dispositiu o SO.</string>
+  <string name="trust_feature_security_patches">Pedaços de seguretat d\'Android</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProveïdor: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">actualitzat</string>
+  <string name="trust_feature_security_patches_value_medium">alguns mesos desfasat</string>
+  <string name="trust_feature_security_patches_value_old">obsolet</string>
+  <string name="trust_feature_security_patches_explain">Els pedaços de seguretat es publiquen mensualment per Google i els proveïdors de SoC per solucionar defectes en el sistema que podrien ser explotats per aplicacions malicioses per evitar les restriccions de seguretat i causar danys temporals o permanents al dispositiu.\nTot i que els pedaços de plataformes s\'actualitzen globalment cada mes, els pedaços dels proveïdors s\'actualitzen de tant en tant per part de l\'OEM.\nPer mantenir el dispositiu segur, assegureu-vos que la vostra versió de LineageOS estigui sempre actualitzada.</string>
+  <string name="trust_feature_encryption">Xifrat</string>
+  <string name="trust_feature_encryption_value_enabled">Activat</string>
+  <string name="trust_feature_encryption_value_nolock">Necessita una pantalla de bloqueig segura</string>
+  <string name="trust_feature_encryption_value_disabled">Desactivat</string>
+  <string name="trust_feature_encryption_explain">El xifrat del dispositiu impedeix l\'accés a les vostres dades quan el telèfon estigui apagat o en mode recuperació. Això és especialment important si el telèfon és robat, i evita que la gent llegeixi els vostres missatges, contactes i altra informació privada sense la contrasenya.\nPer fer que el xifratge sigui més eficaç, cal establir una pantalla de bloqueig segura.</string>
+  <string name="trust_category_tools">Privadesa</string>
+  <string name="trust_notification_alerts_title">Alertes de seguretat</string>
+  <string name="trust_notifications_alerts_summary">Mostra notificacions quan es troba un problema de seguretat</string>
+  <string name="trust_onboarding_title">Digues hola a Trust</string>
+  <string name="trust_onboarding_description">Trust us ajuda a mantenir el dispositiu segur i a protegir la vostra privadesa.\nLa icona Trust apareixerà per ajudar-vos a consultar la seguretat dels continguts</string>
+  <string name="trust_onboarding_learn_more">Aprèn més</string>
+  <string name="trust_onboarding_done">D\'acord</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Límit de missatges SMS</string>
+  <string name="sms_security_check_limit_summary">Les aplicacions poden enviar %s missatges en 1 minut abans de necessitar una confirmació</string>
+  <string name="sms_security_check_limit_summary_none">Les aplicacions no tenen permès enviar cap missatge sense confirmar-ho</string>
+  <string name="sms_security_check_limit_always_confirm">Confirma-ho sempre</string>
 </resources>

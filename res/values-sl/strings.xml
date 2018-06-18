@@ -540,6 +540,9 @@
   <string name="expanded_desktop_style_hide_navigation">Skrij vrstico za krmarjenje</string>
   <string name="expanded_desktop_style_hide_both">Skrij oboje</string>
   <string name="expanded_desktop_nothing_to_show_text">Izklopite stikalo, da razširjeno namizje prilagodite glede na aplikacijo</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Celozaslonske aplikacije</string>
+  <string name="long_screen_settings_summary">Vsili zapuščinskim aplikacijam uporabo celozaslonskega razmerja slike</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Zvoki ob polnjenju</string>
   <string name="charging_sounds_enabled_title">Omogoči</string>
@@ -607,4 +610,39 @@
   <string name="style_automagic_dialog_positive">Uveljavi</string>
   <string name="style_accent_default_name">Privzeto</string>
   <string name="style_permission_error">Dovoljenje za dostop do pomnilniške naprave je potreben za analizo vaše slike ozadja, odobrite ga za uporabo te značilnosti</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala za pomoč pri preverjanju varnosti vsebin.</string>
+  <string name="trust_category_features">Stanje</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Se uveljavla</string>
+  <string name="trust_feature_selinux_value_disabled">Onemogočen</string>
+  <string name="trust_feature_selinux_explain">SELinux narekuje, kateri procesi imajo dostop do katerih datotek na vaši napravi.\nTo preprečuje aplikacijam in storitvam dostop do datotek s katerimi ne bi smele upravljati: tako imajo zlonamerni procesi omejen dostop in vaša varnost je ohranjena.</string>
+  <string name="trust_feature_root">Skrbniški dostop</string>
+  <string name="trust_feature_root_value_disabled">Onemogočen</string>
+  <string name="trust_feature_root_value_adb">Samo ADB</string>
+  <string name="trust_feature_root_value_apps">Aplikacije in ADB</string>
+  <string name="trust_feature_root_explain">Skrbniški dostop dovoljuje obvoz varnostnih omejitev za aplikacije in storitve, ki jih izberete, kar jim dovoli spreminjanje sistema, kar lahko povzroči poškodbe vaše naprave ali OS-a.</string>
+  <string name="trust_feature_security_patches">Varnostni popravki Androida</string>
+  <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProizvajalec: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">posodobljeno</string>
+  <string name="trust_feature_security_patches_value_medium">stari nekaj mesecev</string>
+  <string name="trust_feature_security_patches_value_old">zastarelo</string>
+  <string name="trust_feature_security_patches_explain">Varnostni popravki so izdani mesečno s strani Googla in prozvajalcev SoC-ov, da naslovijo pomanjkljivosti, ki jih lahko zlonamerne aplikacije izrabijo za obvoz varnostnih omejitev in lahko povzročijo začasne ali trajne poškodbe na vaši napravi.\nČeprav so popravki platforme izdani globalno vsak mesec, so popravki s strani proizvajalcev izdani neredno.\nDa ohranite vašo napravo varno, poskrbite, da je vaša izgradnja LineageOS-a posodobljena.</string>
+  <string name="trust_feature_encryption">Šifriranje</string>
+  <string name="trust_feature_encryption_value_enabled">Omogočeno</string>
+  <string name="trust_feature_encryption_value_nolock">Potreben je varni zaklenjen zaslon</string>
+  <string name="trust_feature_encryption_value_disabled">Onemogočeno</string>
+  <string name="trust_feature_encryption_explain">Šifriranje vaše naprave prepreči dostop do vaših podatkov, ko je vaš telefon izklopljen ali v obnovitvenem načinu. To je še posebej pomembno, če vam ukradejo telefon in prepreči osebam brez gesla branje vaših sporočil, stikov ali ostalih zasebnih podatkov.\nZa učinkovitejše šifriranje, nastavite varni zaklep zaslona.</string>
+  <string name="trust_category_tools">Zasebnost</string>
+  <string name="trust_notification_alerts_title">Varnostna opozorila</string>
+  <string name="trust_notifications_alerts_summary">Prikaži obvestila, ko je najdena varnostna težava</string>
+  <string name="trust_onboarding_title">Pozdravite Trust</string>
+  <string name="trust_onboarding_description">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala za pomoč pri preverjanju varnosti vsebin</string>
+  <string name="trust_onboarding_learn_more">Več o tem</string>
+  <string name="trust_onboarding_done">Razumem</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Omejitev sporočil SMS</string>
+  <string name="sms_security_check_limit_summary">Aplikacije lahko pošljejo %s sporočil v eni minuti, preden je zahtevana potrditev</string>
+  <string name="sms_security_check_limit_summary_none">Aplikacijam ni dovoljeno pošiljanje sporočil brez potrditve</string>
+  <string name="sms_security_check_limit_always_confirm">Vedno potrdi</string>
 </resources>

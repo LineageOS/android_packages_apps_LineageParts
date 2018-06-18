@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">דיוק צבעים למרחב הצבעים sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">דיוק צבעים למרחב הצבעים DCI-P3</string>
+  <string name="live_display_reading_mode_title">מצב קריאה</string>
+  <string name="live_display_reading_mode_summary">מסך בצבעי אפור לקריאה ארוכה</string>
   <string name="color_calibration_title">כיול צבע</string>
   <string name="color_calibration_summary">כיול צבעי מסך</string>
   <string name="color_red_title">אדום</string>
@@ -536,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">הסתר סרגל ניווט</string>
   <string name="expanded_desktop_style_hide_both">הסתר את שניהם</string>
   <string name="expanded_desktop_nothing_to_show_text">כבה מתג זה להתאמה אישית של מסך מורחב לכל יישום</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">יישומים במסך מלא</string>
+  <string name="long_screen_settings_summary">אכוף יישומים ישנים להמתח במסך מלא</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">צלילי טעינה</string>
   <string name="charging_sounds_enabled_title">אפשר</string>
@@ -603,4 +608,30 @@
   <string name="style_automagic_dialog_positive">החל</string>
   <string name="style_accent_default_name">ברירת מחדל</string>
   <string name="style_permission_error">בכדי לנתח את הטפט נדרשת הרשאת גישה אחסון, נא הענק את ההרשאה בכדי להשתמש בתכונה זו</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">מצב</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">אכיפה (Enforcing)</string>
+  <string name="trust_feature_selinux_value_disabled">כבוי (Disabled)</string>
+  <string name="trust_feature_selinux_explain">SELinux מכתיב לאילו תהליכים יש גישה לקבצים שונים במכשירך. \nזה מונע מיישומים ומשירותים לגשת אל קבצים שהם לא אמורים לגעת בהם: בדרך זו לתהליכים זדוניים מוגבלת הגישה והמכשיר שלך נשאר מאובטח.</string>
+  <string name="trust_feature_root">הרשאות מנהל (Root)</string>
+  <string name="trust_feature_root_value_disabled">כבוי</string>
+  <string name="trust_feature_root_value_adb">ADB בלבד</string>
+  <string name="trust_feature_root_value_apps">יישומים ו־ADB</string>
+  <string name="trust_feature_root_explain">הרשאות מנהל (Root) מאפשר ליישומים ושירותים שתבחר לעקוף הגבלות אבטחה ולבצע שינויים במערכת שיכולים לגרום נזק למכשירך או למערכת ההפעלה.</string>
+  <string name="trust_feature_security_patches">‏רמה עדכון תיקוני אבטחה של המערכת</string>
+  <string name="trust_feature_security_patches_value_base">פלטפורמה: %1$s\nיצרן: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">עדכני</string>
+  <string name="trust_feature_security_patches_value_medium">ישן בכמה חודשים</string>
+  <string name="trust_feature_security_patches_value_old">לא תקף</string>
+  <string name="trust_feature_security_patches_explain">עדכוני תיקוני אבטחה משוחררים חודשים על ידי גוגל ויצרני המעבדים כדי לתקן פרצות שנתגלו במערכת שניתנות לניצול על ידי יישומים זדוניים כדי לעקוף את מגבלות האבטחה. \n בזמן שעדכוני האבטחה נשלחים בכל חודש, עדכוני היצרן נשלחים בתדירות נמוכה יותר.\n כדי לשמור את המכשיר שלך בטוח LineageOS שולחת עדכונים בתדירות גבוהה.</string>
+  <string name="trust_feature_encryption">הצפנה</string>
+  <string name="trust_feature_encryption_value_enabled">מופעלת</string>
+  <string name="trust_feature_encryption_value_nolock">נעילת מסך מאובטחת נדרשת</string>
+  <string name="trust_feature_encryption_value_disabled">מושבתת</string>
+  <string name="trust_category_tools">פרטיות</string>
+  <string name="trust_onboarding_learn_more">מידע נוסף</string>
+  <string name="trust_onboarding_done">הבנתי</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">מגבלת הודעות SMS</string>
 </resources>

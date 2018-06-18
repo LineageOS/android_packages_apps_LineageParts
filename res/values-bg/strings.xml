@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Цветове съответстващи с sRGB цветово пространство</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Цветове, съответстващи за DCI-P3 цветово пространство</string>
+  <string name="live_display_reading_mode_title">Режим на четене</string>
+  <string name="live_display_reading_mode_summary">Сивото режим за продължително четене</string>
   <string name="color_calibration_title">Калибриране на цвета</string>
   <string name="color_calibration_summary">Калибриране на цветовете на екрана</string>
   <string name="color_red_title">Червен</string>
@@ -536,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">Скриване на лентата за навигация</string>
   <string name="expanded_desktop_style_hide_both">Скрий и двете</string>
   <string name="expanded_desktop_nothing_to_show_text">Изключите персонализирането на вашия разширен екран на база на броя на приложенията</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Приложения на цял екран</string>
+  <string name="long_screen_settings_summary">Активираъ приложенията да използват пропорциите за цял екран</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Звуци при зареждане</string>
   <string name="charging_sounds_enabled_title">Активиране</string>
@@ -603,4 +608,38 @@
   <string name="style_automagic_dialog_positive">Приложи</string>
   <string name="style_accent_default_name">По подразбиране</string>
   <string name="style_permission_error">Трябва да имате разрешение за достъп до хранилището, за да анализирате тапета си, моля, предоставете му тази функция</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust помага да поддържате вашето устройство сигурно и защитава вашата поверителност. \nИконата на Trust се показва за да ви помогне чрез проверка на сигурността на съдържанието.</string>
+  <string name="trust_category_features">Статус</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Прилагане на</string>
+  <string name="trust_feature_selinux_value_disabled">Деактивиран</string>
+  <string name="trust_feature_selinux_explain">SELinux диктува кои процеси имат достъп до файлове на вашето устройство. \nТова предотвратява приложения и услуги да имат достъп до файлове, които те не би трябвало да имат. По този начин зловреден процес е ограничен, така че вашата сигурност се запазва.</string>
+  <string name="trust_feature_root">Администраторски достъп</string>
+  <string name="trust_feature_root_value_disabled">Деактивиран</string>
+  <string name="trust_feature_root_value_adb">Само за ADB</string>
+  <string name="trust_feature_root_value_apps">За приложения и ADB</string>
+  <string name="trust_feature_root_explain">Администраторси достъп позволява заобикаляне на ограничения за защитата от приложения и услуги, позволявайки да направят промени в системата, които могат да причинят щети на вашето устройство или OS.</string>
+  <string name="trust_feature_security_patches">Андроид защитни кръпки</string>
+  <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nVendor: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">актуално</string>
+  <string name="trust_feature_security_patches_value_medium">някои месеца по-стари</string>
+  <string name="trust_feature_security_patches_value_old">неактуален</string>
+  <string name="trust_feature_encryption">Криптиране</string>
+  <string name="trust_feature_encryption_value_enabled">Активирано</string>
+  <string name="trust_feature_encryption_value_nolock">Нуждае е се от заключване на екрана</string>
+  <string name="trust_feature_encryption_value_disabled">Деактивирано</string>
+  <string name="trust_feature_encryption_explain">Шифроване на устройството предотвратява достъпа до вашите данни, когато телефонът ви е изключен или в режим на възстановяване. Това е особено важно, ако телефонът ви е откраднат и пречи на хората да четат вашите съобщения, контакти и друга лична информация без парола. \n За да направите по-ефективно шифроване, трябва да зададете заключване на екрана.</string>
+  <string name="trust_category_tools">Поверителност</string>
+  <string name="trust_notification_alerts_title">Предупреждение за защита</string>
+  <string name="trust_notifications_alerts_summary">Показване уведомления, когато се установи проблем със сигурността</string>
+  <string name="trust_onboarding_title">Кажи здравей на Trust</string>
+  <string name="trust_onboarding_description">Trust помага да поддържате вашето устройство сигурно и защитава вашата поверителност. \nИконата на Trust се показва за да ви помогне чрез проверка на сигурността на съдържанието</string>
+  <string name="trust_onboarding_learn_more">Научете повече</string>
+  <string name="trust_onboarding_done">Разбрано</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Лимит на SMS съобщения</string>
+  <string name="sms_security_check_limit_summary">Приложенията могат да изпращат до %s съобщения за 1 минута преди да поискат потвърждение</string>
+  <string name="sms_security_check_limit_summary_none">Приложенията не могат да изпращат съобщения, без потвърждение</string>
+  <string name="sms_security_check_limit_always_confirm">Винаги потвърждение</string>
 </resources>

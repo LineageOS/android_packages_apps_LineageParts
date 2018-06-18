@@ -538,6 +538,7 @@
   <string name="expanded_desktop_style_hide_navigation">Ocultar a barra de navegação</string>
   <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
   <string name="expanded_desktop_nothing_to_show_text">Desligue o alternador para personalizar a área de trabalho expandida por aplicativo</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de carregamento</string>
   <string name="charging_sounds_enabled_title">Ativar</string>
@@ -605,4 +606,16 @@
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Padrão</string>
   <string name="style_permission_error">É necessária a permissão de acesso ao armazenamento para analisar o seu papel de parede. Por favor, conceda a permissão para usar este recurso.</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">Estado</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_disabled">Desligado</string>
+  <string name="trust_feature_root_value_disabled">Desligado</string>
+  <string name="trust_feature_root_value_apps">Aplicativos e ADB</string>
+  <string name="trust_feature_security_patches_value_new">atualizado</string>
+  <string name="trust_feature_security_patches_value_old">desatualizado</string>
+  <string name="trust_category_tools">Privacidade</string>
+  <string name="trust_onboarding_learn_more">Saiba mais</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
 </resources>

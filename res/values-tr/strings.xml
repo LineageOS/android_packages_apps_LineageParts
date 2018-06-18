@@ -540,6 +540,9 @@
   <string name="expanded_desktop_style_hide_navigation">Gezinme çubuğunu gizle</string>
   <string name="expanded_desktop_style_hide_both">İkisini de gizle</string>
   <string name="expanded_desktop_nothing_to_show_text">Genişletilmiş masaüstünüzü uygulama bazında özelleştirmek için kapatın</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Tam ekran uygulamaları</string>
+  <string name="long_screen_settings_summary">Eski uygulamaların tam ekranın en boy oranını kullanmasına zorlanır</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Şarj sesleri</string>
   <string name="charging_sounds_enabled_title">Etkin</string>
@@ -607,4 +610,39 @@
   <string name="style_automagic_dialog_positive">Uygula</string>
   <string name="style_accent_default_name">Varsayılan</string>
   <string name="style_permission_error">Depolama alanına erişim izni, duvar kağıdınızı analiz etmek için gereklidir, lütfen bu özelliğin kullanılmasına izin verin</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Güven, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nGüven simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olmak için gösterilir.</string>
+  <string name="trust_category_features">Durum</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Zorunlu</string>
+  <string name="trust_feature_selinux_value_disabled">Devre dışı</string>
+  <string name="trust_feature_selinux_explain">SELinux hangi işlemlerin cihazınızdaki hangi dosyalara erişebileceğini belirler.\nBu uygulamaların ve hizmetlerin ele almamaları gereken dosyalara erişmelerini önler: bu şekilde kötü amaçlı bir işlemin erişimi sınırlı olduğundan güvenliğiniz korunur.</string>
+  <string name="trust_feature_root">Kök erişimi</string>
+  <string name="trust_feature_root_value_disabled">Devre dışı</string>
+  <string name="trust_feature_root_value_adb">Sadece ADB</string>
+  <string name="trust_feature_root_value_apps">Uygulamalar ve ADB</string>
+  <string name="trust_feature_root_explain">Kök erişimi seçtiğiniz uygulama ve hizmetlerin güvenlik sınırlamalarının atlanmasına izin vererek, sistemde değişiklik yapmasına ve cihazınızda veya işletim sisteminizde hasara neden olabilir.</string>
+  <string name="trust_feature_security_patches">Android güvenlik yaması</string>
+  <string name="trust_feature_security_patches_value_base">Platform: %1$s\nÜretici: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">güncel</string>
+  <string name="trust_feature_security_patches_value_medium">bir kaç aylık</string>
+  <string name="trust_feature_security_patches_value_old">tarihi geçmiş</string>
+  <string name="trust_feature_security_patches_explain">Güvenlik açıklarını ve güvenlik kısıtlamalarını atlamak cihazınızda geçici veya kalıcı bir hasar meydana getirmek için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek sistemdeki kusurları gidermek amacıyla Google ve SoC satıcıları tarafından aylık olarak yayınlanır.\nYazılım yamaları her ay global olarak güncellendiğinde üretici yamaları zaman zaman OEM\'den güncellenir.\nCihazınızı güvende tutmak için LineageOS yapınızın daima güncel olduğundan emin olun.</string>
+  <string name="trust_feature_encryption">Şifreleme</string>
+  <string name="trust_feature_encryption_value_enabled">Etkin</string>
+  <string name="trust_feature_encryption_value_nolock">Güvenli bir kilit ekranına ihtiyaç duyar</string>
+  <string name="trust_feature_encryption_value_disabled">Devre dışı</string>
+  <string name="trust_feature_encryption_explain">Cihazınızı şifrelemek, telefonunuz kapalıyken veya kurtarma modundayken verilerinize erişimi engeller. Bu özellikle telefonunuz çalındığında önemlidir ve diğer insanların mesajlarınızı, kişilerinizi ve diğer kişisel bilgilerinizi şifre olmadan okumasını önler.\nŞifrelemeyi daha etkili hale getirmek için güvenli bir kilit ekranı ayarlamanız gerekir.</string>
+  <string name="trust_category_tools">Gizlilik</string>
+  <string name="trust_notification_alerts_title">Güvenlik uyarıları</string>
+  <string name="trust_notifications_alerts_summary">Bir güvenlik sorunu bulunduğunda bildirim görüntüle</string>
+  <string name="trust_onboarding_title">Güven\'e merhaba de</string>
+  <string name="trust_onboarding_description">Güven, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nGüven simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olacak şekilde görünecektir</string>
+  <string name="trust_onboarding_learn_more">Daha fazla bilgi</string>
+  <string name="trust_onboarding_done">Anladım</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">SMS mesaj limiti</string>
+  <string name="sms_security_check_limit_summary">Uygulamalar onay gerektirmeden önce %s mesajını 1 dakika içinde gönderebilir</string>
+  <string name="sms_security_check_limit_summary_none">Uygulamaların onay almadan mesaj göndermesine izin verilmez</string>
+  <string name="sms_security_check_limit_always_confirm">Her zaman onayla</string>
 </resources>

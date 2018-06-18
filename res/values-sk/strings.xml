@@ -538,6 +538,9 @@
   <string name="expanded_desktop_style_hide_navigation">Skryť navigačný panel</string>
   <string name="expanded_desktop_style_hide_both">Skryť oba</string>
   <string name="expanded_desktop_nothing_to_show_text">Vypnite prepínač upravenia rozšírenej plochy na základe aplikácií</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplikácie na celú obrazovku</string>
+  <string name="long_screen_settings_summary">Prinútiť staršie aplikácie na použitie pomerov na celú obrazovku</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Zvuky pri nabíjaní</string>
   <string name="charging_sounds_enabled_title">Povoliť</string>
@@ -605,4 +608,40 @@
   <string name="style_automagic_dialog_positive">Použiť</string>
   <string name="style_accent_default_name">Predvolený</string>
   <string name="style_permission_error">Na analýzu vašej tapety je potrebné povolenie na prístup k úložisku. Udeľte prosím povolenie na používanie tejto funkcie</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust pomáha udržiavať vaše zariadenie v bezpečí a chráni vaše súkromie.\nZobrazí sa ikona Trust, ktorá vám pomôže kontrolovať bezpečnosť obsahu.</string>
+  <string name="trust_category_features">Stav</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Vynútený</string>
+  <string name="trust_feature_selinux_value_disabled">Vypnutý</string>
+  <string name="trust_feature_selinux_explain">Služba SELinux určuje, ktoré procesy majú prístup k súborom vo vašom zariadení.\nZabraňuje tomu, aby aplikácie a služby mali prístup k súborom, s ktorými sa nemusia zaoberať. Týmto spôsobom má nebezpečný proces obmedzený prístup, takže vaša bezpečnosť je zachovaná.</string>
+  <string name="trust_feature_root">Root prístup</string>
+  <string name="trust_feature_root_value_disabled">Vypnutý</string>
+  <string name="trust_feature_root_value_adb">Len ADB</string>
+  <string name="trust_feature_root_value_apps">Aplikácie a ADB</string>
+  <string name="trust_feature_root_explain">Root prístup umožňuje vynechať bezpečnostné obmedzenia pomocou aplikácií a služieb, ktoré si vyberiete, čo im umožní vykonať zmeny v systéme, ktoré potencionálne môžu spôsobiť poškodenie vášho zariadenia alebo operačného systému.</string>
+  <string name="trust_feature_security_patches">Bezpečnostné záplaty Android</string>
+  <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDodávateľ: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">aktuálne</string>
+  <string name="trust_feature_security_patches_value_medium">staré niekoľkých mesiacov</string>
+  <string name="trust_feature_security_patches_value_old">zastaralé</string>
+  <string name="trust_feature_security_patches_explain">Bezpečnostné záplaty sú vydávané mesačne spoločnosťou Google a dodávateľmi SoC na riešenie nedostatkov v systéme, ktoré by mohli byť zneužiť škodlivými aplikáciami na obídenie bezpečnostných obmedzení a mohli by spôsobiť dočasné alebo trvalé poškodenie vášho zariadenia.\nZatiaľ čo záplaty platformy sú aktualizované globálne každý mesiac, záplaty 
+ OEM dodávateľov sú aktualizované z času na čas.\nAk chcete, aby vaše zariadenie bolo v bezpečí, uistite sa, že vaša zostava LineageOS je vždy aktuálna.</string>
+  <string name="trust_feature_encryption">Šifrovanie</string>
+  <string name="trust_feature_encryption_value_enabled">Zapnuté</string>
+  <string name="trust_feature_encryption_value_nolock">Je potrebná zabezpečená obrazovka uzamknutia</string>
+  <string name="trust_feature_encryption_value_disabled">Vypnuté</string>
+  <string name="trust_feature_encryption_explain">Šifrovanie zariadenia zabraňuje prístupu k vašim údajom, keď je telefón vypnutý alebo v Recovery režime. Toto je obzvlášť dôležité v prípade odcudzenia vášho telefónu a zabraňuje ľuďom v čítaní vašich správ, kontaktov a iných súkromných informácií bez znalosti hesla.\nAby bolo šifrovanie efektívnejšie, musíte nastaviť zabezpečenú obrazovku uzamknutia.</string>
+  <string name="trust_category_tools">Súkromie</string>
+  <string name="trust_notification_alerts_title">Bezpečnostné upozornenia</string>
+  <string name="trust_notifications_alerts_summary">Zobraziť upozornenie, keď sa zistí problém so zabezpečením</string>
+  <string name="trust_onboarding_title">Zoznámte sa s Trust</string>
+  <string name="trust_onboarding_description">Trust pomáha udržiavať vaše zariadenie v bezpečí a chráni vaše súkromie.\nZobrazí sa ikona Trust, ktorá vám pomôže kontrolovať bezpečnosť obsahu</string>
+  <string name="trust_onboarding_learn_more">Zistiť viac</string>
+  <string name="trust_onboarding_done">Chápem</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Obmedzenie správ SMS</string>
+  <string name="sms_security_check_limit_summary">Aplikácie môžu odoslať len %s správ za minút, pred vyžiadaním potvrdenia</string>
+  <string name="sms_security_check_limit_summary_none">Aplikácie nemajú povolené odosielanie žiadnych správ bez potvrdenia</string>
+  <string name="sms_security_check_limit_always_confirm">Vždy potvrdiť</string>
 </resources>

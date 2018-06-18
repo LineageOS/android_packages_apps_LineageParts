@@ -538,6 +538,7 @@
   <string name="expanded_desktop_style_hide_navigation">Agochar barra de navegación</string>
   <string name="expanded_desktop_style_hide_both">Agochar ámbalas dúas</string>
   <string name="expanded_desktop_nothing_to_show_text">Desactivar a chave de personalizar o seu escritorio expandida nunha base per-app</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de carga</string>
   <string name="charging_sounds_enabled_title">Activar</string>
@@ -605,4 +606,6 @@
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Defecto</string>
   <string name="style_permission_error">Precisase acceso ao almacenamento para analizar o fondo de pantalla, por favor concede o permiso para empregar esta funcionalidade</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

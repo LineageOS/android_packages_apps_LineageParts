@@ -535,6 +535,7 @@
   <string name="expanded_desktop_style_hide_navigation">Ocultar la barra de navegación</string>
   <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
   <string name="expanded_desktop_nothing_to_show_text">Apagar el interruptor para personalizar el escritorio extendido sobre una base por aplicación</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sonidos de carga del dispositivo</string>
   <string name="charging_sounds_enabled_title">Activar</string>
@@ -601,4 +602,6 @@
   <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> con el color de destaque en <b>%2$s</b>.\n¿Quieres aplicarlo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_permission_error">Es necesario acceder al almacenamiento del dispositivo para poder analizar el fondo de pantalla. Por favor, concede el permiso necesario para usar esta característica</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

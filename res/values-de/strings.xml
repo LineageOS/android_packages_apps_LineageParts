@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Farben passend zum sRGB-Farbraum</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Farben passend zum DCI-P3-Farbraum</string>
+  <string name="live_display_reading_mode_title">Lesemodus</string>
+  <string name="live_display_reading_mode_summary">Graustufen-Modus zum Langzeit-Lesen</string>
   <string name="color_calibration_title">Farbkalibrierung</string>
   <string name="color_calibration_summary">Displayfarben kalibrieren</string>
   <string name="color_red_title">Rot</string>
@@ -536,6 +538,7 @@
   <string name="expanded_desktop_style_hide_navigation">Navigationsleiste ausblenden</string>
   <string name="expanded_desktop_style_hide_both">Beides ausblenden</string>
   <string name="expanded_desktop_nothing_to_show_text">Deaktivieren Sie den Schalter, um den erweiterten Desktop für jede App einzeln anzupassen</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Ladegeräte-Töne</string>
   <string name="charging_sounds_enabled_title">Aktivieren</string>
@@ -603,4 +606,32 @@
   <string name="style_automagic_dialog_positive">Anwenden</string>
   <string name="style_accent_default_name">Standard</string>
   <string name="style_permission_error">Speicherzugriffsberechtigung ist erforderlich, um Ihr Hintergrundbild zu analysieren. Bitte gewähren Sie diese, um die Funktion nutzen zu können</string>
+  <!-- Trust interface -->
+  <string name="trust_category_features">Status</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Strikt</string>
+  <string name="trust_feature_selinux_value_disabled">Deaktiviert</string>
+  <string name="trust_feature_root">Root-Zugriff</string>
+  <string name="trust_feature_root_value_disabled">Deaktiviert</string>
+  <string name="trust_feature_root_value_adb">Nur ADB</string>
+  <string name="trust_feature_root_value_apps">Apps und ADB</string>
+  <string name="trust_feature_security_patches">Android-Sicherheitspatches</string>
+  <string name="trust_feature_security_patches_value_base">Plattform: %1$s\nVendor: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">Aktuell</string>
+  <string name="trust_feature_security_patches_value_medium">Einige Monate alt</string>
+  <string name="trust_feature_security_patches_value_old">Veraltet</string>
+  <string name="trust_feature_encryption">Verschlüsselung</string>
+  <string name="trust_feature_encryption_value_enabled">Aktiviert</string>
+  <string name="trust_feature_encryption_value_nolock">Benötigt einen sicheren Sperrbildschirm</string>
+  <string name="trust_feature_encryption_value_disabled">Deaktiviert</string>
+  <string name="trust_category_tools">Privatsphäre</string>
+  <string name="trust_notification_alerts_title">Sicherheitswarnungen</string>
+  <string name="trust_notifications_alerts_summary">Benachrichtigungen anzeigen, wenn ein Sicherheitsproblem gefunden wurde</string>
+  <string name="trust_onboarding_learn_more">Mehr erfahren</string>
+  <string name="trust_onboarding_done">Verstanden</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">SMS-Begrenzung</string>
+  <string name="sms_security_check_limit_summary">Apps können %s Nachrichten in 1 Minute ohne Bestätigung versenden</string>
+  <string name="sms_security_check_limit_summary_none">Apps dürfen keine Nachrichten ohne Bestätigung versenden</string>
+  <string name="sms_security_check_limit_always_confirm">Immer bestätigen</string>
 </resources>

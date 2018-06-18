@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Cores precisas para o espaço de cor sRGB</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Cores precisas para o espaço de cor DCI-P3</string>
+  <string name="live_display_reading_mode_title">Modo de leitura</string>
+  <string name="live_display_reading_mode_summary">Modo em tons de cinzento para leituras por longos períodos</string>
   <string name="color_calibration_title">Calibração de cores</string>
   <string name="color_calibration_summary">Calibrar as cores do ecrã</string>
   <string name="color_red_title">Vermelho</string>
@@ -394,7 +396,7 @@
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Direita</string>
   <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>
-  <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de estado para desligar o ecrã</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Dê um toque duplo na barra de estado para desligar o ecrã</string>
   <!-- Status bar - icons -->
   <string name="status_bar_icons_title">Ícones da barra de estado</string>
   <string name="status_bar_notif_count_title">Mostrar contagem de notificações</string>
@@ -536,6 +538,7 @@
   <string name="expanded_desktop_style_hide_navigation">Ocultar a barra de navegação</string>
   <string name="expanded_desktop_style_hide_both">Ocultar ambas as barras</string>
   <string name="expanded_desktop_nothing_to_show_text">Desligue o interruptor para personalizar a sua área de trabalho conforme a aplicação</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de carregamento</string>
   <string name="charging_sounds_enabled_title">Ativar</string>
@@ -603,4 +606,6 @@
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Predefinição</string>
   <string name="style_permission_error">É necessária a permissão de acesso ao armazenamento para analisar a sua imagem de fundo. Por favor, conceda a permissão para utilizar esta funcionalidade</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

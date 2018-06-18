@@ -539,6 +539,7 @@
   <string name="expanded_desktop_style_hide_navigation">隱藏導覽列</string>
   <string name="expanded_desktop_style_hide_both">全部隱藏</string>
   <string name="expanded_desktop_nothing_to_show_text">關閉此開關即可根據每個應用程式自訂延伸桌面</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">充電音效</string>
   <string name="charging_sounds_enabled_title">啟用</string>
@@ -606,4 +607,6 @@
   <string name="style_automagic_dialog_positive">套用</string>
   <string name="style_accent_default_name">預設</string>
   <string name="style_permission_error">需要儲存存取權限才能分析桌布，請授予它使用此功能</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

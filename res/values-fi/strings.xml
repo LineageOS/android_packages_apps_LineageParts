@@ -536,6 +536,7 @@
   <string name="expanded_desktop_style_hide_navigation">Piilota navigointipalkki</string>
   <string name="expanded_desktop_style_hide_both">Piilota molemmat</string>
   <string name="expanded_desktop_nothing_to_show_text">Poista käytöstä mukauttaaksesi laajennetun työpöydän asetuksia sovelluskohtaisesti</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Latausäänet</string>
   <string name="charging_sounds_enabled_title">Ota käyttöön</string>
@@ -604,4 +605,6 @@ aksentti \nOtetaanko käyttöön?</string>
   <string name="style_automagic_dialog_positive">Hyväksy</string>
   <string name="style_accent_default_name">Oletus</string>
   <string name="style_permission_error">Tallennustilan käyttöoikeus tarvitaan taustakuvan analysointiin, myönnä käyttöoikeus käyttääksesi tätä toimintoa</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

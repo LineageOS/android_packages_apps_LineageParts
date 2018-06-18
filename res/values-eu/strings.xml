@@ -539,6 +539,9 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="expanded_desktop_style_hide_navigation">Ezkutatu nabigazio-barra</string>
   <string name="expanded_desktop_style_hide_both">Ezkutatu biak</string>
   <string name="expanded_desktop_nothing_to_show_text">Itzali zure mahaigain hedatua aplikazioz aplikazio pertsonalizatzeko</string>
+  <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Pantaila osoko aplikazioak</string>
+  <string name="long_screen_settings_summary">Behartu aplikazio zaharrei pantaila osoko aspektu erlazioa errabiltzera</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Kargatze-soinuak</string>
   <string name="charging_sounds_enabled_title">Gaitu</string>
@@ -606,4 +609,39 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="style_automagic_dialog_positive">Aplikatu</string>
   <string name="style_accent_default_name">Lehenetsia</string>
   <string name="style_permission_error">Biltegiratzea atzitzeko baimena behar da zure horma-papera aztertzeko, eman baimena ezaugarri hau erabili ahal izateko</string>
+  <!-- Trust interface -->
+  <string name="trust_header">Trust-ek zure gailua seguru mantentzen eta zure pribatutasuna babesten laguntzen dizu.\nTrust ikonoa edukien segurtasuna egiaztatu ahal dezazun agertuko da.</string>
+  <string name="trust_category_features">Egoera</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Betearazten</string>
+  <string name="trust_feature_selinux_value_disabled">Desgaituta</string>
+  <string name="trust_feature_selinux_explain">SELinux-ek prozesuek zeintsu fitxategi atzitzeko baimena duten agintzen du.\nHonek aplikazio eta zerbitzuek ez dagozkien fitxategiak atzitzea ekiditen du: honela prozesu gaizto batek sarbide mugatua du eta zure segurtasuna babesten da.</string>
+  <string name="trust_feature_root">Root sarbidea</string>
+  <string name="trust_feature_root_value_disabled">Desgaituta</string>
+  <string name="trust_feature_root_value_adb">ADB bakarrik</string>
+  <string name="trust_feature_root_value_apps">Aplikazioak eta ADB</string>
+  <string name="trust_feature_root_explain">Root sarbideak zuk aukeratutako aplikazio eta zerbitzuek segurtasun mugak saltatzea ahalbidetzen du, eta sisteman aldaketak egin ahal izatea, honek zure gailua edo sistema kaltetu lezake.</string>
+  <string name="trust_feature_security_patches">Android segurtasun partxeak</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nSaltzailea: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">egunean</string>
+  <string name="trust_feature_security_patches_value_medium">hilabete batzuk zaharkitua</string>
+  <string name="trust_feature_security_patches_value_old">zaharkitua</string>
+  <string name="trust_feature_security_patches_explain">Segurtasun partxeak hilabetero argitaratzen dituzte Google eta txip saltzaileek, aplikazio gaizkileei segurtasun mugak gainditu eta zure gailuan behin behineko edo behin betiko kalteak sortzea baimendu liezaieketen sistemako akatsak konpontzeko.\nPlataformako partxeak globalak eta hilerokoak badira ere, saltzaileen partxeak noizean behin eguneratzen dira.\nGailua seguru mantentzeko egiaztatu LineageOS egunean duzula.</string>
+  <string name="trust_feature_encryption">Zifratzea</string>
+  <string name="trust_feature_encryption_value_enabled">Gaituta</string>
+  <string name="trust_feature_encryption_value_nolock">Blokeo-pantaila seguru bat behar du</string>
+  <string name="trust_feature_encryption_value_disabled">Desgaituta</string>
+  <string name="trust_feature_encryption_explain">Zure gailua zifratzeak telefonoa itzalita edo berreskuratze moduan dagoenean datuak atzitzea eragozten du. Hau bereziki garrantzitsua da telefonoa lapurtzen badizute, eta inork zure mezuak, kontaktuak, eta bestelako informazio pribatua pasahitzik gabe irakurtzea eragozten du.\nZifratzea eraginkorragoa izan dadin blokeo-pantaila seguru bat ezarri behar da.</string>
+  <string name="trust_category_tools">Pribatutasuna</string>
+  <string name="trust_notification_alerts_title">Segurtasun alertak</string>
+  <string name="trust_notifications_alerts_summary">Erakutsi jakinarazpenak segurtasun arazoren bat aurkitzean</string>
+  <string name="trust_onboarding_title">Hona hemen Trust</string>
+  <string name="trust_onboarding_description">Trust-ek zure gailua seguru mantentzen eta zure pribatutasuna babesten laguntzen dizu.\nTrust ikonoa agertuko da edukien segurtasuna egiaztatu ahal dezazun</string>
+  <string name="trust_onboarding_learn_more">Ikasi gehiago</string>
+  <string name="trust_onboarding_done">Ulertu dut</string>
+  <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">SMS mezuen muga</string>
+  <string name="sms_security_check_limit_summary">Aplikazioek %s mezu bidali ditzakete minutu batean berrespena eskatu aurretik</string>
+  <string name="sms_security_check_limit_summary_none">Aplikazioek ezin dute mezurik bidali berrespenik gabe</string>
+  <string name="sms_security_check_limit_always_confirm">Berretsi beti</string>
 </resources>

@@ -166,6 +166,7 @@
   <!-- Power: Performance profiles -->
   <string name="auto_power_save_never">Mai</string>
   <!-- Applications: Expanded desktop -->
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_enabled_title">Abìlita</string>
   <string name="power_notifications_vibrate_title">Vibratzione</string>
@@ -177,4 +178,6 @@
   <string name="style_global_entry_dark">Iscuru</string>
   <string name="style_global_entry_app">Gestidu dae %1$s</string>
   <string name="style_accent_default_name">Predefinidu</string>
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>

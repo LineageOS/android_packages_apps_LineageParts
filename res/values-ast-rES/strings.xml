@@ -389,6 +389,7 @@
   <string name="expanded_desktop_style_hide_navigation">Anubrir barra de navegación</string>
   <string name="expanded_desktop_style_hide_both">Anubrir dambes</string>
   <string name="expanded_desktop_nothing_to_show_text">Da-y al interruptor pa personalizar el to escritoriu estendíu según cada aplicación</string>
+  <!-- Applications: Long screen -->
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Soníos de carga</string>
   <string name="charging_sounds_enabled_title">Habilitar</string>
@@ -431,4 +432,6 @@
   <string name="touchscreen_gesture_action_next_track">Saltar a la pista musical de darréu</string>
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
+  <!-- Trust interface -->
+  <!-- Sms limit -->
 </resources>
