@@ -149,7 +149,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
-        if (!mMultiColorLed && !mHALAdjustableBrightness) {
+        if (!mMultiColorLed || !mHALAdjustableBrightness) {
             removePreference(BRIGHTNESS_SECTION);
         }
         if (!mLedCanPulse && !mMultiColorLed) {
