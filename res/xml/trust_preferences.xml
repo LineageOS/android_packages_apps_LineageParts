@@ -56,15 +56,24 @@
             android:entryValues="@array/sms_security_check_limit_values"
             android:summary="@string/sms_security_check_limit_summary"
             android:title="@string/sms_security_check_limit_title" />
-        </PreferenceCategory>
+    </PreferenceCategory>
 
-        <PreferenceCategory
-            android:key="trust_category_alerts">
+    <PreferenceCategory
+        android:key="trust_category_warnings"
+        android:title="@string/trust_notification_alerts_title">
 
-        <lineageos.preference.LineageSecureSettingSwitchPreference
-            android:key="trust_notifications"
-            android:title="@string/trust_notification_alerts_title"
-            android:summary="@string/trust_notifications_alerts_summary"
+        <org.lineageos.lineageparts.widget.WallOfTextPreference
+            android:icon="@drawable/ic_info"
+            android:summary="@string/trust_warnings_alerts_intro" />
+
+        <SwitchPreference
+            android:key="trust_warning_selinux"
+            android:summary="@string/trust_warnings_selinux"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="trust_warning_keys"
+            android:summary="@string/trust_warnings_keys"
             android:defaultValue="true" />
     </PreferenceCategory>
 </PreferenceScreen>
