@@ -23,11 +23,13 @@ import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
+import android.support.v14.preference.SwitchPreference;
 import android.util.Log;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
+import lineageos.providers.LineageSettings;
 import lineageos.trust.TrustInterface;
 
 public class TrustPreferences extends SettingsPreferenceFragment {
@@ -39,6 +41,10 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private Preference mEncryptionPref;
     private PreferenceCategory mToolsCategory;
     private ListPreference mSmsLimitPref;
+
+    private PreferenceCategory mWarnScreen;
+    private SwitchPreference mWarnSELinuxPref;
+    private SwitchPreference mWarnKeysPref;
 
     private TrustInterface mInterface;
 
@@ -59,6 +65,10 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
         mSmsLimitPref = (ListPreference) mToolsCategory.findPreference("sms_security_check_limit");
 
+        mWarnScreen = (PreferenceCategory) findPreference("trust_category_warnings");
+        mWarnSELinuxPref = (SwitchPreference) mWarnScreen.findPreference("trust_warning_selinux");
+        mWarnKeysPref = (SwitchPreference) mWarnScreen.findPreference("trust_warning_keys");
+
         mSELinuxPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_selinux_explain));
         mRootPref.setOnPreferenceClickListener(p ->
@@ -70,6 +80,10 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mSmsLimitPref.setOnPreferenceChangeListener((p, v) ->
                 onSmsLimitChanged(Integer.parseInt((String) v)));
 
+        mWarnSELinuxPref.setOnPreferenceChangeListener((p, v) ->
+                onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_SELINUX));
+        mWarnKeysPref.setOnPreferenceChangeListener((p, v) ->
+                onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_PUBLIC_KEY));
         setup();
     }
 
@@ -220,6 +234,15 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         updateSmsSecuritySummary(value);
         return true;
     }
+
+    private boolean onWarningChanged(Boolean value, int feature) {
+        int original = LineageSettings.Secure.getInt(getContext().getContentResolver(),
+                LineageSettings.Secure.TRUST_WARNINGS, TrustInterface.TRUST_WARN_MAX_VALUE);
+        int newValue = value ? (original | feature) : (original & ~feature);
+        return LineageSettings.Secure.putInt(getContext().getContentResolver(),
+                LineageSettings.Secure.TRUST_WARNINGS, newValue);
+    }
+
 
     private boolean isTelephony() {
         PackageManager pm = getContext().getPackageManager();

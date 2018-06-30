@@ -24,11 +24,14 @@ import android.widget.ImageView;
 import android.support.v7.app.AppCompatActivity;
 
 import lineageos.providers.LineageSettings;
+import lineageos.trust.TrustInterface;
 
 import org.lineageos.lineageparts.R;
 
 public class TrustOnBoardingActivity extends AppCompatActivity {
     private ImageView mImage;
+
+    private TrustInterface mInterface;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -41,6 +44,8 @@ public class TrustOnBoardingActivity extends AppCompatActivity {
 
         learnMore.setOnClickListener(v -> openTrustSettings());
         dismiss.setOnClickListener(v -> onDismissClick());
+
+        mInterface = TrustInterface.getInstance(this);
 
         new Handler().postDelayed(this::showAnimation, 800);
     }
@@ -66,5 +71,7 @@ public class TrustOnBoardingActivity extends AppCompatActivity {
     private void setOnboardingCompleted() {
         LineageSettings.System.putInt(getContentResolver(),
                 LineageSettings.System.TRUST_INTERFACE_HINTED, 1);
+        // Run security check test now that the user is aware of what Trust is
+        mInterface.runTest();
     }
 }
