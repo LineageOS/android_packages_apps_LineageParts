@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bfd77dc2_7e2cf359",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-07-01T20:50:09Z",
+      "side": 1,
+      "message": "Working properly, makes more sense now.",
+      "revId": "d37858012c9c00757cc1dceb55e0f6db6e2885e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6afb9ba5_3b84b569",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-07-01T20:50:09Z",
+      "side": 1,
+      "message": "security",
+      "range": {
+        "startLine": 725,
+        "startChar": 71,
+        "endLine": 725,
+        "endChar": 78
+      },
+      "revId": "d37858012c9c00757cc1dceb55e0f6db6e2885e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "69040903_6248eaa6",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-07-01T20:50:09Z",
+      "side": 1,
+      "message": "safety, it is",
+      "range": {
+        "startLine": 725,
+        "startChar": 124,
+        "endLine": 725,
+        "endChar": 136
+      },
+      "revId": "d37858012c9c00757cc1dceb55e0f6db6e2885e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bac0e94c_fa736c62",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-07-01T20:50:09Z",
+      "side": 1,
+      "message": "select the security issues",
+      "range": {
+        "startLine": 725,
+        "startChar": 55,
+        "endLine": 725,
+        "endChar": 85
+      },
+      "revId": "d37858012c9c00757cc1dceb55e0f6db6e2885e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a1a2cd41_8fccd99a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-07-01T20:50:09Z",
+      "side": 1,
+      "message": "recommended",
+      "range": {
+        "startLine": 725,
+        "startChar": 137,
+        "endLine": 725,
+        "endChar": 146
+      },
+      "revId": "d37858012c9c00757cc1dceb55e0f6db6e2885e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
