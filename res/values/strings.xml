@@ -694,6 +694,9 @@
     <string name="style_automagic_dialog_content">Suggested style: <b>%1$s</b> with <b>%2$s</b> accent.\nDo you want to apply it?</string>
     <string name="style_automagic_dialog_positive">Apply</string>
     <string name="style_accent_default_name">Default</string>
+    <string name="style_dark_overlay_title">Dark mode</string>
+    <string name="style_dark_overlay_default">Default</string>
+    <string name="style_dark_overlay_black">Black</string>
     <string name="style_permission_error">Storage access permission is needed to analyze your wallpaper, please grant it to use this feature</string>
 
     <!-- Trust interface -->
