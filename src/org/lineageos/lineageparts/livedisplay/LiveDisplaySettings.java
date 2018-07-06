@@ -24,6 +24,7 @@ import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.Log;
@@ -62,7 +63,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
 
     private static final String TAG = "LiveDisplay";
 
-    private static final String KEY_CATEGORY_LIVE_DISPLAY = "live_display_options";
+    private static final String KEY_CATEGORY_LIVE_DISPLAY = "livedisplay";
+    private static final String KEY_CATEGORY_LIVE_DISPLAY_OPTIONS = "live_display_options";
     private static final String KEY_CATEGORY_ADVANCED = "advanced";
 
     private static final String KEY_LIVE_DISPLAY = "live_display";
@@ -127,8 +129,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
 
         addPreferencesFromResource(R.xml.livedisplay);
 
-        PreferenceCategory liveDisplayPrefs = (PreferenceCategory)
+        PreferenceScreen liveDisplayPrefs = (PreferenceScreen)
                 findPreference(KEY_CATEGORY_LIVE_DISPLAY);
+        PreferenceCategory liveDisplayOptionsPrefs = (PreferenceCategory)
+                findPreference(KEY_CATEGORY_LIVE_DISPLAY_OPTIONS);
         PreferenceCategory advancedPrefs = (PreferenceCategory)
                 findPreference(KEY_CATEGORY_ADVANCED);
 
@@ -172,25 +176,25 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         mDisplayTemperature = (DisplayTemperature) findPreference(KEY_LIVE_DISPLAY_TEMPERATURE);
 
         mColorProfile = (ListPreference) findPreference(KEY_LIVE_DISPLAY_COLOR_PROFILE);
-        if (liveDisplayPrefs != null && mColorProfile != null
+        if (liveDisplayOptionsPrefs != null && mColorProfile != null
                 && (!mConfig.hasFeature(FEATURE_DISPLAY_MODES) || !updateDisplayModes())) {
-            liveDisplayPrefs.removePreference(mColorProfile);
+            liveDisplayOptionsPrefs.removePreference(mColorProfile);
         } else {
             mHasDisplayModes = true;
             mColorProfile.setOnPreferenceChangeListener(this);
         }
 
         mOutdoorMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
-        if (liveDisplayPrefs != null && mOutdoorMode != null
+        if (liveDisplayOptionsPrefs != null && mOutdoorMode != null
                 && !mConfig.hasFeature(MODE_OUTDOOR)) {
-            liveDisplayPrefs.removePreference(mOutdoorMode);
+            liveDisplayOptionsPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
         }
 
         mReadingMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
-        if (liveDisplayPrefs != null && mReadingMode != null
+        if (liveDisplayOptionsPrefs != null && mReadingMode != null
                 && !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
-            liveDisplayPrefs.removePreference(mReadingMode);
+            liveDisplayOptionsPrefs.removePreference(mReadingMode);
             mReadingMode = null;
         } else {
             mReadingMode.setOnPreferenceChangeListener(this);
@@ -222,6 +226,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                 !mConfig.hasFeature(LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT)) {
             advancedPrefs.removePreference(mDisplayColor);
             mDisplayColor = null;
+        }
+
+        if (advancedPrefs.getPreferenceCount() == 0) {
+            liveDisplayPrefs.removePreference(advancedPrefs);
         }
     }
 
