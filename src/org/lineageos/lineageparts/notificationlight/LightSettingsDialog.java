@@ -297,7 +297,7 @@ public class LightSettingsDialog extends AlertDialog implements
             return;
         }
 
-        final int color = getColor() & 0xFFFFFF;
+        final int color = getColor() & 0xFFFFFFFF;
         final int speedOn, speedOff;
         if (mPulseSpeedOn.isEnabled()) {
             speedOn = getPulseSpeedOn();
