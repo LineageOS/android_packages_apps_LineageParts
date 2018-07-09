@@ -539,6 +539,7 @@
   <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
   <string name="expanded_desktop_nothing_to_show_text">Desligue o alternador para personalizar a área de trabalho expandida por aplicativo</string>
   <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplicativos em tela cheia</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de carregamento</string>
   <string name="charging_sounds_enabled_title">Ativar</string>
@@ -609,13 +610,21 @@
   <!-- Trust interface -->
   <string name="trust_category_features">Estado</string>
   <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Impondo</string>
   <string name="trust_feature_selinux_value_disabled">Desligado</string>
+  <string name="trust_feature_root">Acesso de superusuário</string>
   <string name="trust_feature_root_value_disabled">Desligado</string>
   <string name="trust_feature_root_value_apps">Aplicativos e ADB</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
   <string name="trust_feature_security_patches_value_new">atualizado</string>
   <string name="trust_feature_security_patches_value_old">desatualizado</string>
+  <string name="trust_feature_encryption">Criptografia</string>
+  <string name="trust_feature_encryption_value_enabled">Ligada</string>
+  <string name="trust_feature_encryption_value_disabled">Desligada</string>
   <string name="trust_category_tools">Privacidade</string>
+  <string name="trust_notification_alerts_title">Alertas de segurança</string>
   <string name="trust_onboarding_learn_more">Saiba mais</string>
+  <string name="trust_onboarding_done">Entendi</string>
   <!-- Sms limit -->
   <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
 </resources>

@@ -611,6 +611,9 @@
   <string name="style_automagic_dialog_content">Προτεινόμενο στυλ: <b>%1$s</b> με δευτερεύον χρώμα: <b>%2$s</b>.\nΘέλετε να το εφαρμόσετε;</string>
   <string name="style_automagic_dialog_positive">Εφαρμογή</string>
   <string name="style_accent_default_name">Προεπιλογή</string>
+  <string name="style_dark_overlay_title">Σκοτεινή λειτουργία</string>
+  <string name="style_dark_overlay_default">Προεπιλογή</string>
+  <string name="style_dark_overlay_black">Μαύρο</string>
   <string name="style_permission_error">Το δικαίωμα πρόσβασης αποθηκευτικού χώρου είναι απαραίτητο για την ανάλυση της ταπετσαρίας σας, παρακαλώ χορηγήστε το για να χρησιμοποιήσετε αυτήν τη δυνατότητα</string>
   <!-- Trust interface -->
   <string name="trust_header">Η Εμπιστοσύνη σάς βοηθά να διατηρείτε τη συσκευή σας ασφαλή και προστατεύει το απόρρητό σας.\nΤο εικονίδιο Εμπιστοσύνης εμφανίζεται για να σας βοηθήσει, ελέγχοντας την ασφάλεια των περιεχομένων.</string>
@@ -625,7 +628,7 @@
   <string name="trust_feature_root_value_apps">Εφαρμογές και ADB</string>
   <string name="trust_feature_root_explain">Η πρόσβαση root επιτρέπει την παράκαμψη των περιορισμών ασφαλείας από εφαρμογές και υπηρεσίες που επιλέγετε, επιτρέποντάς τους να κάνουν τροποποιήσεις στο σύστημα, γεγονός που μπορεί να προκαλέσει βλάβη στη συσκευή ή το λειτουργικό σας σύστημα.</string>
   <string name="trust_feature_security_patches">Ενημερωμένη έκδοση κώδικα ασφαλείας Android</string>
-  <string name="trust_feature_security_patches_value_base">Πλατφόρμα: \nΚατασκευαστής %1$s: %2$s</string>
+  <string name="trust_feature_security_patches_value_base">Πλατφόρμα: %1$s\nΚατασκευαστής: %2$s</string>
   <string name="trust_feature_security_patches_value_new">ενημερωμένη</string>
   <string name="trust_feature_security_patches_value_medium">μερικούς μήνες παλιά</string>
   <string name="trust_feature_security_patches_value_old">ξεπερασμένη</string>
@@ -637,7 +640,9 @@
   <string name="trust_feature_encryption_explain">Η κρυπτογράφηση της συσκευής σας εμποδίζει την πρόσβαση στα δεδομένα σας όταν το τηλέφωνό σας είναι απενεργοποιημένο ή σε λειτουργία recovery. Αυτό είναι ιδιαίτερα σημαντικό αν κλαπεί το τηλέφωνό σας και αποτρέπει την ανάγνωση των μηνυμάτων, των επαφών και άλλων προσωπικών σας δεδομένων χωρίς τον κωδικό πρόσβασης.\nΓια να κάνετε την κρυπτογράφηση πιο αποτελεσματική, πρέπει να ορίσετε μια ασφαλή οθόνη κλειδώματος.</string>
   <string name="trust_category_tools">Απόρρητο</string>
   <string name="trust_notification_alerts_title">Ειδοποιήσεις ασφαλείας</string>
-  <string name="trust_notifications_alerts_summary">Προβολή ειδοποιήσεων όταν εντοπιστεί ένα ζήτημα ασφαλείας</string>
+  <string name="trust_warnings_alerts_intro">Μπορείτε να επιλέξετε τα ζητήματα ασφαλείας που θέλετε να προειδοποιείστε. Για δική σας ασφάλεια, συνιστάται να ενεργοποιήσετε όλες τις ειδοποιήσεις</string>
+  <string name="trust_warnings_selinux">Κατάσταση SELinux</string>
+  <string name="trust_warnings_keys">Υπογραφή build</string>
   <string name="trust_onboarding_title">Υποδεχθείτε την Εμπιστοσύνη</string>
   <string name="trust_onboarding_description">Η Εμπιστοσύνη σάς βοηθά να διατηρείτε τη συσκευή σας ασφαλή και προστατεύει το απόρρητό σας.\nΤο εικονίδιο Εμπιστοσύνης θα εμφανίζεται για να σας βοηθήσει, ελέγχοντας την ασφάλεια των περιεχομένων</string>
   <string name="trust_onboarding_learn_more">Μάθετε περισσότερα</string>

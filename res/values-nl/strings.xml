@@ -433,10 +433,10 @@
   <!-- Status bar - Network Traffic -->
   <string name="network_traffic_mode_disable">Uitgeschakeld</string>
   <string name="network_traffic_autohide">Automatisch verbergen</string>
-  <string name="network_traffic_units_kilobits">Kilobits per seconde (kb/s)</string>
-  <string name="network_traffic_units_megabits">Megabits per seconde (Mb/s)</string>
-  <string name="network_traffic_units_kilobytes">Kilobytes per seconde (kB/s)</string>
-  <string name="network_traffic_units_megabytes">Megabytes per seconde (MB/s)</string>
+  <string name="network_traffic_units_kilobits">Kilobit per seconde (kb/s)</string>
+  <string name="network_traffic_units_megabits">Megabit per seconde (Mb/s)</string>
+  <string name="network_traffic_units_kilobytes">Kilobyte per seconde (kB/s)</string>
+  <string name="network_traffic_units_megabytes">Megabyte per seconde (MB/s)</string>
   <string name="network_traffic_show_units">Eenheden weergeven</string>
   <!-- Protected apps -->
   <string name="protected_apps_manager_title">Beschermde apps</string>

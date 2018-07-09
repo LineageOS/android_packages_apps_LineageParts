@@ -539,6 +539,8 @@
   <string name="expanded_desktop_style_hide_both">Ocultar ambas as barras</string>
   <string name="expanded_desktop_nothing_to_show_text">Desligue o interruptor para personalizar a sua área de trabalho conforme a aplicação</string>
   <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplicações em ecrã inteiro</string>
+  <string name="long_screen_settings_summary">Forçar aplicações legadas a usarem a proporção de apresentação do ecrã inteiro</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Sons de carregamento</string>
   <string name="charging_sounds_enabled_title">Ativar</string>
@@ -607,5 +609,37 @@
   <string name="style_accent_default_name">Predefinição</string>
   <string name="style_permission_error">É necessária a permissão de acesso ao armazenamento para analisar a sua imagem de fundo. Por favor, conceda a permissão para utilizar esta funcionalidade</string>
   <!-- Trust interface -->
+  <string name="trust_header">O Trust ajuda-o a manter o seu dispositivo seguro e protege a sua privacidade.\nO ícone do Trust aparece para ajudá-lo, ao verificar a segurança dos conteúdos.</string>
+  <string name="trust_category_features">Estado</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Forçador</string>
+  <string name="trust_feature_selinux_value_disabled">Desativado</string>
+  <string name="trust_feature_selinux_explain">O SELinux dita que processos têm acesso a que ficheiros do seu dispositivo.\nIsto evita que aplicações e serviços possam aceder a ficheiros com os quais não é suposto lidarem. Desta forma um processo malicioso terá acesso limitado e assim a sua segurança é preservada.</string>
+  <string name="trust_feature_root">Acesso root</string>
+  <string name="trust_feature_root_value_disabled">Desativado</string>
+  <string name="trust_feature_root_value_adb">Apenas ADB</string>
+  <string name="trust_feature_root_value_apps">Aplicações e ADB</string>
+  <string name="trust_feature_root_explain">O acesso root permite que aplicações e serviços escolhidos por si possam ultrapassar restrições de segurança, dando-lhes liberdade para que possam efetuar modificações ao sistema que poderão causar danos no seu dispositivo ou SO.</string>
+  <string name="trust_feature_security_patches">Patch de segurança do Android</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFornecedor: %2$s</string>
+  <string name="trust_feature_security_patches_value_new">atualizado</string>
+  <string name="trust_feature_security_patches_value_medium">com atraso de alguns meses</string>
+  <string name="trust_feature_security_patches_value_old">fora de validade</string>
+  <string name="trust_feature_security_patches_explain">Os patches de segurança são disponibilizados mensalmente pela Google e fornecedores de SoC que visam corrigir falhas no sistema que poderiam ser exploradas por aplicações maliciosas de forma a ultrapassarem restrições de segurança e causarem danos temporários ou permanentes no seu dispositivo.\nEnquanto que os patches da plataforma Android são atualizados globalmente de forma mensal, os patches dos fornecedores só são atualizados pelos fabricantes de tempos a tempos.\nPara manter o seu dispositivo seguro, certifique-se de que a compilação do seu SO está sempre atualizada.</string>
+  <string name="trust_feature_encryption">Encriptação</string>
+  <string name="trust_feature_encryption_value_enabled">Ativada</string>
+  <string name="trust_feature_encryption_value_nolock">Necessita de um ecrã de bloqueio seguro</string>
+  <string name="trust_feature_encryption_value_disabled">Desativada</string>
+  <string name="trust_feature_encryption_explain">Encriptar o seu dispositivo previne o acesso aos seus dados quando o telefone está desligado ou no modo de recuperação. Isto é particularmente importante se o seu telefone for roubado e previne que outros consigam ler as suas mensagens, contactos e outras informações privadas sem a palavra-passe.\nPara tornar a encriptação mais eficaz tem de definir um ecrã de bloqueio seguro.</string>
+  <string name="trust_category_tools">Privacidade</string>
+  <string name="trust_notification_alerts_title">Alertas de segurança</string>
+  <string name="trust_onboarding_title">Diga olá ao Trust</string>
+  <string name="trust_onboarding_description">O Trust ajuda-o a manter o seu dispositivo seguro e protege a sua privacidade.\nO ícone do Trust irá aparecer para ajudá-lo, ao verificar a segurança dos conteúdos</string>
+  <string name="trust_onboarding_learn_more">Saber mais</string>
+  <string name="trust_onboarding_done">Entendi</string>
   <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
+  <string name="sms_security_check_limit_summary">As aplicações podem enviar %s mensagens durante 1 minuto antes de exigirem confirmação</string>
+  <string name="sms_security_check_limit_summary_none">As aplicações não estão autorizadas a enviar mensagens sem confirmação</string>
+  <string name="sms_security_check_limit_always_confirm">Confirmar sempre</string>
 </resources>

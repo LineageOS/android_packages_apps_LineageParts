@@ -633,7 +633,6 @@
   <string name="trust_feature_encryption_explain">El xifrat del dispositiu impedeix l\'accés a les vostres dades quan el telèfon estigui apagat o en mode recuperació. Això és especialment important si el telèfon és robat, i evita que la gent llegeixi els vostres missatges, contactes i altra informació privada sense la contrasenya.\nPer fer que el xifratge sigui més eficaç, cal establir una pantalla de bloqueig segura.</string>
   <string name="trust_category_tools">Privadesa</string>
   <string name="trust_notification_alerts_title">Alertes de seguretat</string>
-  <string name="trust_notifications_alerts_summary">Mostra notificacions quan es troba un problema de seguretat</string>
   <string name="trust_onboarding_title">Digues hola a Trust</string>
   <string name="trust_onboarding_description">Trust us ajuda a mantenir el dispositiu segur i a protegir la vostra privadesa.\nLa icona Trust apareixerà per ajudar-vos a consultar la seguretat dels continguts</string>
   <string name="trust_onboarding_learn_more">Aprèn més</string>

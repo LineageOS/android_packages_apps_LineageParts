@@ -635,7 +635,6 @@
   <string name="trust_feature_encryption_explain">Šifriranje vaše naprave prepreči dostop do vaših podatkov, ko je vaš telefon izklopljen ali v obnovitvenem načinu. To je še posebej pomembno, če vam ukradejo telefon in prepreči osebam brez gesla branje vaših sporočil, stikov ali ostalih zasebnih podatkov.\nZa učinkovitejše šifriranje, nastavite varni zaklep zaslona.</string>
   <string name="trust_category_tools">Zasebnost</string>
   <string name="trust_notification_alerts_title">Varnostna opozorila</string>
-  <string name="trust_notifications_alerts_summary">Prikaži obvestila, ko je najdena varnostna težava</string>
   <string name="trust_onboarding_title">Pozdravite Trust</string>
   <string name="trust_onboarding_description">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala za pomoč pri preverjanju varnosti vsebin</string>
   <string name="trust_onboarding_learn_more">Več o tem</string>

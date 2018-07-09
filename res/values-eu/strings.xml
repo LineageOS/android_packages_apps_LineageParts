@@ -634,7 +634,6 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
   <string name="trust_feature_encryption_explain">Zure gailua zifratzeak telefonoa itzalita edo berreskuratze moduan dagoenean datuak atzitzea eragozten du. Hau bereziki garrantzitsua da telefonoa lapurtzen badizute, eta inork zure mezuak, kontaktuak, eta bestelako informazio pribatua pasahitzik gabe irakurtzea eragozten du.\nZifratzea eraginkorragoa izan dadin blokeo-pantaila seguru bat ezarri behar da.</string>
   <string name="trust_category_tools">Pribatutasuna</string>
   <string name="trust_notification_alerts_title">Segurtasun alertak</string>
-  <string name="trust_notifications_alerts_summary">Erakutsi jakinarazpenak segurtasun arazoren bat aurkitzean</string>
   <string name="trust_onboarding_title">Hona hemen Trust</string>
   <string name="trust_onboarding_description">Trust-ek zure gailua seguru mantentzen eta zure pribatutasuna babesten laguntzen dizu.\nTrust ikonoa agertuko da edukien segurtasuna egiaztatu ahal dezazun</string>
   <string name="trust_onboarding_learn_more">Ikasi gehiago</string>

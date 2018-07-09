@@ -635,7 +635,6 @@
   <string name="trust_feature_encryption_explain">Criptarea dispozitivului previne accesul la datele dvs. când telefonul este oprit sau în modul de recuperare. Aceasta este importantă în special dacă telefonul vă este furat și previne oamenii de la a vă citi mesajele, contactele și alte date private fără a utiliza vreo parolă.\nPentru a face criptarea mai eficientă trebuie să setați un ecran de blocare securizat.</string>
   <string name="trust_category_tools">Confidențialitate</string>
   <string name="trust_notification_alerts_title">Alerte de securitate</string>
-  <string name="trust_notifications_alerts_summary">Afișează notificări atunci când se constată o problemă de securitate</string>
   <string name="trust_onboarding_title">Spuneți-o salut lui Trust</string>
   <string name="trust_onboarding_description">Trust vă ajută să vă păstrați telefonul în siguranță și vă protejează confidențialitatea.\nIconița Trust va apărea pentru a vă ajuta să verificați securitatea conținutului</string>
   <string name="trust_onboarding_learn_more">Aflați mai multe</string>

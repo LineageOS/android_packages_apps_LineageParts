@@ -540,6 +540,8 @@
   <string name="expanded_desktop_style_hide_both">全部隱藏</string>
   <string name="expanded_desktop_nothing_to_show_text">關閉此開關即可根據每個應用程式自訂延伸桌面</string>
   <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">全螢幕應用程式</string>
+  <string name="long_screen_settings_summary">強制舊型應用程式使用全螢幕的比例</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">充電音效</string>
   <string name="charging_sounds_enabled_title">啟用</string>
@@ -608,5 +610,37 @@
   <string name="style_accent_default_name">預設</string>
   <string name="style_permission_error">需要儲存存取權限才能分析桌布，請授予它使用此功能</string>
   <!-- Trust interface -->
+  <string name="trust_header">安全中心能保障您的裝置安全性和您的隱私？\n您可以通過顯示的安全圖示檢查內容的安全性</string>
+  <string name="trust_category_features">狀態</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">強制執行</string>
+  <string name="trust_feature_selinux_value_disabled">已停用</string>
+  <string name="trust_feature_selinux_explain">SELinux 規定了哪些程式可以存取您的裝置上的哪些檔案。\n這個機制可以防止應用程式和服務存取它們不該訪問的檔案，因此惡意程式的存取也會受到限制，從而保護了您的安全。</string>
+  <string name="trust_feature_root">Root 權限</string>
+  <string name="trust_feature_root_value_disabled">已停用</string>
+  <string name="trust_feature_root_value_adb">僅限 ADB</string>
+  <string name="trust_feature_root_value_apps">應用程式和 ADB</string>
+  <string name="trust_feature_root_explain">Root 存取讓您可以選擇讓某些應用程式和服務繞過安全限制，允許它們修改系統。這可能會對您的裝置或作業系統造成損壞。</string>
+  <string name="trust_feature_security_patches">Android 安全性修補</string>
+  <string name="trust_feature_security_patches_value_base">平台：%1$s\n廠商：%2$s</string>
+  <string name="trust_feature_security_patches_value_new">已是最新版本！</string>
+  <string name="trust_feature_security_patches_value_medium">幾個月未更新</string>
+  <string name="trust_feature_security_patches_value_old">過時</string>
+  <string name="trust_feature_security_patches_explain">安全性修補由 Google 和 SoC 廠商每月發佈，用以修復可能會被惡意應用程式利用、繞過安全限制對您的裝置造成暫時或永久損壞的缺陷。\n平台修補每個月都會統一更新，但廠商修補只能每次從 OEM 取得。\n要保證您的裝置安全，請使用最新的 LineageOS 版本。</string>
+  <string name="trust_feature_encryption">加密</string>
+  <string name="trust_feature_encryption_value_enabled">已啟用</string>
+  <string name="trust_feature_encryption_value_nolock">需要設定鎖定畫面密碼</string>
+  <string name="trust_feature_encryption_value_disabled">已停用</string>
+  <string name="trust_feature_encryption_explain">裝置加密可以防止別人在關機狀態或恢復模式存取您的資料。當您的裝置被盜時，這個重要特性可以防止別人在沒有密碼的情況下讀取您的簡訊、通訊錄和其他私人資訊。\n要使加密更加有效，您需要設定一個安全的鎖定畫面密碼。</string>
+  <string name="trust_category_tools">隱私權</string>
+  <string name="trust_notification_alerts_title">安全提醒</string>
+  <string name="trust_onboarding_title">歡迎使用安全中心</string>
+  <string name="trust_onboarding_description">安全中心能保障您的裝置安全性和您的隱私？\n您可以通過顯示的安全圖示檢查內容的安全性</string>
+  <string name="trust_onboarding_learn_more">瞭解更多</string>
+  <string name="trust_onboarding_done">明白了</string>
   <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">簡訊訊息限制</string>
+  <string name="sms_security_check_limit_summary">在使用者認可之前，應用程式在 1 分鐘內只能傳送 %s 則訊息</string>
+  <string name="sms_security_check_limit_summary_none">未經確認的應用程式不允許傳送任何訊息</string>
+  <string name="sms_security_check_limit_always_confirm">一律確認</string>
 </resources>

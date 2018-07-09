@@ -633,7 +633,6 @@
   <string name="trust_feature_encryption_explain">El cifrado del dispositivo impide el acceso a los datos cuando el teléfono está apagado o en modo de recuperación. Esto es particularmente importante si el teléfono es robado, e impide que la gente lea sus mensajes, contactos y otra información privada sin la contraseña.\nPara realizar un cifrado más eficiente, debes establecer una pantalla de bloqueo segura.</string>
   <string name="trust_category_tools">Privacidad</string>
   <string name="trust_notification_alerts_title">Alertas de seguridad</string>
-  <string name="trust_notifications_alerts_summary">Mostrar notificaciones al encontrar un problema de seguridad</string>
   <string name="trust_onboarding_title">Saluda a Trust</string>
   <string name="trust_onboarding_description">Trust ayuda a mantener el dispositivo seguro y protege su privacidad.\nEl icono de Trust aparecerá para ayudarle a comprobar la seguridad de los contenidos</string>
   <string name="trust_onboarding_learn_more">Saber más</string>

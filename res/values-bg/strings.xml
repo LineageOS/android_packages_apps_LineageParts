@@ -632,7 +632,6 @@
   <string name="trust_feature_encryption_explain">Шифроване на устройството предотвратява достъпа до вашите данни, когато телефонът ви е изключен или в режим на възстановяване. Това е особено важно, ако телефонът ви е откраднат и пречи на хората да четат вашите съобщения, контакти и друга лична информация без парола. \n За да направите по-ефективно шифроване, трябва да зададете заключване на екрана.</string>
   <string name="trust_category_tools">Поверителност</string>
   <string name="trust_notification_alerts_title">Предупреждение за защита</string>
-  <string name="trust_notifications_alerts_summary">Показване уведомления, когато се установи проблем със сигурността</string>
   <string name="trust_onboarding_title">Кажи здравей на Trust</string>
   <string name="trust_onboarding_description">Trust помага да поддържате вашето устройство сигурно и защитава вашата поверителност. \nИконата на Trust се показва за да ви помогне чрез проверка на сигурността на съдържанието</string>
   <string name="trust_onboarding_learn_more">Научете повече</string>

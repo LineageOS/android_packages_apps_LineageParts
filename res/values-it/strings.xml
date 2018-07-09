@@ -546,7 +546,7 @@
   <string name="charging_sounds_ringtone_title">Suono di notifica</string>
   <string name="charging_sounds_ringtone_silent">Silenzioso</string>
   <!-- Gestures: Touchscreen gestures -->
-  <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
+  <string name="touchscreen_gesture_settings_title">Gesti a schermo spento</string>
   <string name="touchscreen_gesture_settings_summary">Esegui vari movimenti sul touchscreen per azioni rapide</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Feedback tattile</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibra quando viene rilevata una gesture</string>
@@ -629,10 +629,14 @@
   <string name="trust_feature_encryption_value_disabled">Disattivata</string>
   <string name="trust_feature_encryption_explain">Abilitando la criptazione del dispositivo si impedisce l\'accesso ai dati personali mentre il dispositivo è spento o in modalità di ripristino. Questo è particolarmente importante nel caso in cui il dispositivo venga rubato, in quanto impedisce l\'accesso ai messaggi, contatti e altre informazioni privati a coloro che non conoscono la password.\nPer rendere la criptazione più sicura è importante impostare una schermata di sblocco sicura.</string>
   <string name="trust_category_tools">Privacy</string>
+  <string name="trust_notification_alerts_title">Avvisi di sicurezza</string>
   <string name="trust_onboarding_title">Scopri Trust</string>
   <string name="trust_onboarding_description">Trust aiuta a tenere il tuo dispositvo sicuro e protegge la tua privacy.\nL\'icona di Trust apparirà verificando la sicurezza dei contenuti</string>
   <string name="trust_onboarding_learn_more">Scopri di più</string>
   <string name="trust_onboarding_done">Capito</string>
   <!-- Sms limit -->
   <string name="sms_security_check_limit_title">Limite invio SMS</string>
+  <string name="sms_security_check_limit_summary">Le applicazioni possono inviare %s messaggi in 1 minuto prima di richiedere conferma</string>
+  <string name="sms_security_check_limit_summary_none">Non è consentito alle app l\'invio di messaggi senza conferma</string>
+  <string name="sms_security_check_limit_always_confirm">Conferma sempre</string>
 </resources>

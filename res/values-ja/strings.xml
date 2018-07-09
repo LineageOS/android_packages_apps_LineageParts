@@ -623,6 +623,7 @@
   <string name="trust_feature_security_patches">Android セキュリティパッチ</string>
   <string name="trust_feature_security_patches_value_base">プラットフォーム: %1$s\nベンダー: %2$s</string>
   <string name="trust_feature_security_patches_value_new">最新です</string>
+  <string name="trust_feature_security_patches_value_medium">いくつかの月例パッチが未適用</string>
   <string name="trust_feature_security_patches_value_old">最新ではありません</string>
   <string name="trust_feature_security_patches_explain">セキュリティパッチは Google や SoC ベンダーによって、悪意のあるアプリによるセキュリティ制限回避の可能性や、デバイスに一時的または永続的な損傷を与える可能性といったシステムの欠陥に対処するため毎月リリースされます。\nプラットフォームパッチは毎月世界中で更新されますが、ベンダーのパッチは OEM から時々更新されます。\n機器を安全に保つために LineageOS ビルドは常に最新のものにしてください。</string>
   <string name="trust_feature_encryption">暗号化</string>
@@ -631,10 +632,14 @@
   <string name="trust_feature_encryption_value_disabled">無効</string>
   <string name="trust_feature_encryption_explain">デバイスを暗号化すると、電話がオフになっている時やリカバリーモードでのデータアクセスを防ぎます。これは電話が盗まれた特に重要で、パスワードなしでメッセージ、連絡先、その他の個人情報を人に読まれるのを防ぎます。\n暗号化をより効果的にするには、保護されたロック画面を設定する必要があります。</string>
   <string name="trust_category_tools">プライバシー</string>
+  <string name="trust_notification_alerts_title">セキュリティ警告</string>
   <string name="trust_onboarding_title">Trust にようこそ</string>
   <string name="trust_onboarding_description">Trust はデバイスを安全に保ちプライバシーを保護するのに役立ちます。\nTrust アイコンはコンテンツのセキュリティをチェックするのを助けるために表示されます。</string>
   <string name="trust_onboarding_learn_more">詳細</string>
   <string name="trust_onboarding_done">わかりました</string>
   <!-- Sms limit -->
   <string name="sms_security_check_limit_title">SMS メッセージの制限</string>
+  <string name="sms_security_check_limit_summary">アプリは確認をする前に1分間に%s通のメッセージを送信できます</string>
+  <string name="sms_security_check_limit_summary_none">アプリは許可無くメッセージを送信することはできません</string>
+  <string name="sms_security_check_limit_always_confirm">常に確認する</string>
 </resources>

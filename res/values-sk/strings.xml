@@ -634,7 +634,6 @@
   <string name="trust_feature_encryption_explain">Šifrovanie zariadenia zabraňuje prístupu k vašim údajom, keď je telefón vypnutý alebo v Recovery režime. Toto je obzvlášť dôležité v prípade odcudzenia vášho telefónu a zabraňuje ľuďom v čítaní vašich správ, kontaktov a iných súkromných informácií bez znalosti hesla.\nAby bolo šifrovanie efektívnejšie, musíte nastaviť zabezpečenú obrazovku uzamknutia.</string>
   <string name="trust_category_tools">Súkromie</string>
   <string name="trust_notification_alerts_title">Bezpečnostné upozornenia</string>
-  <string name="trust_notifications_alerts_summary">Zobraziť upozornenie, keď sa zistí problém so zabezpečením</string>
   <string name="trust_onboarding_title">Zoznámte sa s Trust</string>
   <string name="trust_onboarding_description">Trust pomáha udržiavať vaše zariadenie v bezpečí a chráni vaše súkromie.\nZobrazí sa ikona Trust, ktorá vám pomôže kontrolovať bezpečnosť obsahu</string>
   <string name="trust_onboarding_learn_more">Zistiť viac</string>

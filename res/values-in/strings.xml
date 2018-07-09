@@ -539,6 +539,7 @@
   <string name="expanded_desktop_style_hide_both">Sembunyikan keduanya</string>
   <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
   <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Aplikasi layar penuh</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Suara pengisian daya</string>
   <string name="charging_sounds_enabled_title">Hidupkan</string>
@@ -609,15 +610,20 @@
   <!-- Trust interface -->
   <string name="trust_category_features">Status</string>
   <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Wajib</string>
   <string name="trust_feature_root">Akses root</string>
+  <string name="trust_feature_root_value_adb">ADB saja</string>
   <string name="trust_feature_root_value_apps">Aplikasi dan ADB</string>
+  <string name="trust_feature_security_patches">Patch keamanan android</string>
+  <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
   <string name="trust_feature_security_patches_value_new">terbaru</string>
   <string name="trust_feature_security_patches_value_old">kadaluarsa</string>
   <string name="trust_feature_encryption">Enkripsi</string>
+  <string name="trust_feature_encryption_value_nolock">Memerlukan kunci layar aman</string>
   <string name="trust_category_tools">Privasi</string>
   <string name="trust_notification_alerts_title">Peringatan keamanan</string>
   <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
-  <string name="trust_onboarding_done">Paham</string>
+  <string name="trust_onboarding_done">Mengerti</string>
   <!-- Sms limit -->
   <string name="sms_security_check_limit_title">Batas pesan SMS</string>
   <string name="sms_security_check_limit_summary_none">Aplikasi tidak diizinkan untuk mengirim pesan tanpa konfirmasi</string>

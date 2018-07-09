@@ -633,7 +633,6 @@
   <string name="trust_feature_encryption_explain">기기를 암호화하면 전원이 꺼져 있을 때나 복구 모드 상태에서 사용자의 데이터에 접근하는 것을 방지할 수 있습니다. 암호화는 기기를 도난당했을 때 특히 중요하며, 사람들이 비밀번호 없이 메시지, 연락처 및 기타 개인 정보를 읽을 수 없게 해 줍니다.\n암호화 효율을 높이기 위해서는 보안성이 높은 잠금 화면을 설정해야 합니다.</string>
   <string name="trust_category_tools">개인 정보</string>
   <string name="trust_notification_alerts_title">보안 경고</string>
-  <string name="trust_notifications_alerts_summary">보안 문제가 있을 때 알림 표시</string>
   <string name="trust_onboarding_title">Trust를 만나보세요</string>
   <string name="trust_onboarding_description">Trust는 기기를 안전하게 유지하여 개인 정보를 보호하는 데 도움을 줍니다.\nTrust 아이콘은 콘텐츠의 보안을 확인하는 데 도움을 주기 위해 표시됩니다.</string>
   <string name="trust_onboarding_learn_more">더 알아보기</string>

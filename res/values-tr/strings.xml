@@ -635,7 +635,6 @@
   <string name="trust_feature_encryption_explain">Cihazınızı şifrelemek, telefonunuz kapalıyken veya kurtarma modundayken verilerinize erişimi engeller. Bu özellikle telefonunuz çalındığında önemlidir ve diğer insanların mesajlarınızı, kişilerinizi ve diğer kişisel bilgilerinizi şifre olmadan okumasını önler.\nŞifrelemeyi daha etkili hale getirmek için güvenli bir kilit ekranı ayarlamanız gerekir.</string>
   <string name="trust_category_tools">Gizlilik</string>
   <string name="trust_notification_alerts_title">Güvenlik uyarıları</string>
-  <string name="trust_notifications_alerts_summary">Bir güvenlik sorunu bulunduğunda bildirim görüntüle</string>
   <string name="trust_onboarding_title">Güven\'e merhaba de</string>
   <string name="trust_onboarding_description">Güven, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nGüven simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olacak şekilde görünecektir</string>
   <string name="trust_onboarding_learn_more">Daha fazla bilgi</string>
