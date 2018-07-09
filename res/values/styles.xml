@@ -134,7 +134,7 @@
     </style>
 
     <style name="OnBoardingStyle" parent="Theme.AppCompat.DayNight">
-        <item name="colorAccent">#167c80</item>
+        <item name="colorAccent">@*android:color/accent_device_default_dark</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
