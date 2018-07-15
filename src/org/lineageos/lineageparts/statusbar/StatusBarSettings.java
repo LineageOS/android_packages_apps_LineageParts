@@ -80,10 +80,21 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     public void onResume() {
         super.onResume();
 
+        boolean hasNotch = getResources()
+                getBoolean(org.lineageos.platform.internal.R.bool.config_haveNotch);
+
         // Adjust status bar preferences for RTL
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
-            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
+            if (hasNotch) {
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
+                mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_notch_rtl);
+            } else {
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
+                mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
+            }
+        } else if (hasNotch) {
+            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
+            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_notch);
         }
     }
 
