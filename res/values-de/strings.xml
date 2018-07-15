@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">Vorgeschlagenes Design: <b>%1$s</b> mit <b>%2$s</b> Akzent.\nWollen Sie es anwenden?</string>
   <string name="style_automagic_dialog_positive">Anwenden</string>
   <string name="style_accent_default_name">Standard</string>
+  <string name="style_dark_overlay_title">Dunkler Modus</string>
+  <string name="style_dark_overlay_default">Standard</string>
+  <string name="style_dark_overlay_black">Schwarz</string>
   <string name="style_permission_error">Speicherzugriffsberechtigung ist erforderlich, um Ihr Hintergrundbild zu analysieren. Bitte gewähren Sie diese, um die Funktion nutzen zu können</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust hilft Ihnen, Ihr Gerät sicher zu halten und schützt Ihre Privatsphäre.\nDas Trust-Symbol zeigt Ihnen die Sicherheit der Inhalte.</string>
@@ -633,6 +636,8 @@
   <string name="trust_feature_encryption_explain">Durch die Verschlüsselung Ihres Geräts wird der Zugriff auf Ihre Daten verhindert, wenn das Telefon ausgeschaltet ist oder sich im Recovery-Modus befindet. Dies ist besonders wichtig, wenn Ihr Telefon gestohlen wird und verhindert, dass Personen Ihre Nachrichten, Kontakte und andere private Informationen ohne das Kennwort lesen können.\nUm die Verschlüsselung effektiver zu machen, müssen Sie einen sicheren Sperrbildschirm einrichten.</string>
   <string name="trust_category_tools">Privatsphäre</string>
   <string name="trust_notification_alerts_title">Sicherheitswarnungen</string>
+  <string name="trust_warnings_selinux">SELinux-Status</string>
+  <string name="trust_warnings_keys">Build-Signatur</string>
   <string name="trust_onboarding_title">Sag Hallo zu Trust</string>
   <string name="trust_onboarding_description">Trust hilft Ihnen dabei, Ihr Gerät sicher zu halten und schützt Ihre Privatsphäre.\nDas Trust-Symbol wird angezeigt, um Ihnen bei der Überprüfung der Sicherheit der Inhalte zu helfen</string>
   <string name="trust_onboarding_learn_more">Mehr erfahren</string>

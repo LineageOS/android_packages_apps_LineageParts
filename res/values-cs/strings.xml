@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">Navrhovaný vzhled: <b>%1$s</b> se zvýrazněním <b>%2$s</b>.\nChcete jej použít?</string>
   <string name="style_automagic_dialog_positive">Použít</string>
   <string name="style_accent_default_name">Výchozí</string>
+  <string name="style_dark_overlay_title">Tmavý režim</string>
+  <string name="style_dark_overlay_default">Výchozí</string>
+  <string name="style_dark_overlay_black">Černý</string>
   <string name="style_permission_error">Oprávnění přístupu k úložišti je potřeba k analýze tapety, udělte prosím přístup pro použití této funkce</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust pomáhá udržovat vaše zařízení v bezpečí a chrání vaše soukromí.\nZobrazí se ikona Trust, která vám pomůže kontrolovat bezpečnost obsahu.</string>
@@ -633,6 +636,9 @@
   <string name="trust_feature_encryption_explain">Šifrování zařízení zabraňuje přístupu k vašim údajům, pokud je telefon vypnutý nebo v Recovery režimu. Toto je obzvláště důležité v případě odcizení telefonu a zabraňuje ostatním ve čtení vašich zpráv, kontaktů a jiných soukromých informací bez znalosti hesla.\nAby bylo šifrování efektivnější, musíte nastavit bezpečný zámek obrazovky.</string>
   <string name="trust_category_tools">Soukromí</string>
   <string name="trust_notification_alerts_title">Bezpečnostní výstrahy</string>
+  <string name="trust_warnings_alerts_intro">Můžete vybrat bezpečnostní problémy, na které chcete upozornit. Pro vaši bezpečnost doporučujeme povolit všechna upozornění</string>
+  <string name="trust_warnings_selinux">Stav SELinux</string>
+  <string name="trust_warnings_keys">Podpis sestavení</string>
   <string name="trust_onboarding_title">Seznámení s Trust</string>
   <string name="trust_onboarding_description">Trust pomáhá udržovat vaše zařízení v bezpečí a chrání vaše soukromí.\nZobrazí se ikona Trust, která vám pomůže kontrolovat bezpečnost obsahu</string>
   <string name="trust_onboarding_learn_more">Dozvědět se více</string>

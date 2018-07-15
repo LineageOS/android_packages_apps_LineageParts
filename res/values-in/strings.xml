@@ -606,6 +606,9 @@
   <string name="style_automagic_dialog_content">Gaya yang disarankan: <b>%1$s</b> dengan aksen <b>%2$s</b>. \nApakah Anda ingin menerapkannya?</string>
   <string name="style_automagic_dialog_positive">Terapkan</string>
   <string name="style_accent_default_name">Standar</string>
+  <string name="style_dark_overlay_title">Modus gelap</string>
+  <string name="style_dark_overlay_default">Standar</string>
+  <string name="style_dark_overlay_black">Hitam</string>
   <string name="style_permission_error">Izin akses penyimpanan diperlukan untuk menganalisa wallpaper Anda, silakan izinkan untuk menggunakan fitur ini</string>
   <!-- Trust interface -->
   <string name="trust_category_features">Status</string>
@@ -622,6 +625,7 @@
   <string name="trust_feature_encryption_value_nolock">Memerlukan kunci layar aman</string>
   <string name="trust_category_tools">Privasi</string>
   <string name="trust_notification_alerts_title">Peringatan keamanan</string>
+  <string name="trust_warnings_selinux">Status SELinux</string>
   <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
   <string name="trust_onboarding_done">Mengerti</string>
   <!-- Sms limit -->

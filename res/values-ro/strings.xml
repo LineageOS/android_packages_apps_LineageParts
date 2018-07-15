@@ -609,6 +609,9 @@
   <string name="style_automagic_dialog_content">Stil sugerat: <b>%1$s</b> cu accent <b>%2$s</b>.\nDoriți să îl aplicați?</string>
   <string name="style_automagic_dialog_positive">Aplicați</string>
   <string name="style_accent_default_name">Implicit</string>
+  <string name="style_dark_overlay_title">Mod întunecat</string>
+  <string name="style_dark_overlay_default">Prestabilit</string>
+  <string name="style_dark_overlay_black">Negru</string>
   <string name="style_permission_error">Permisiunea de acces la stocare este necesară pentru a analiza tapetul dumneavoastră, vă rugăm să o acordați pentru a utiliza această caracteristică</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust vă ajută să vă păstrați telefonul în siguranță și vă protejează confidențialitatea.\nIconița Trust apare pentru a vă ajuta să verificați securitatea conținutului.</string>
@@ -635,6 +638,9 @@
   <string name="trust_feature_encryption_explain">Criptarea dispozitivului previne accesul la datele dvs. când telefonul este oprit sau în modul de recuperare. Aceasta este importantă în special dacă telefonul vă este furat și previne oamenii de la a vă citi mesajele, contactele și alte date private fără a utiliza vreo parolă.\nPentru a face criptarea mai eficientă trebuie să setați un ecran de blocare securizat.</string>
   <string name="trust_category_tools">Confidențialitate</string>
   <string name="trust_notification_alerts_title">Alerte de securitate</string>
+  <string name="trust_warnings_alerts_intro">Puteți selecta problemele de securitate despre care să fiți atenționat(ă). Pentru siguranța dvs., este recomandat să activați toate alertele</string>
+  <string name="trust_warnings_selinux">Stare SELinux</string>
+  <string name="trust_warnings_keys">Semnătură build</string>
   <string name="trust_onboarding_title">Spuneți-o salut lui Trust</string>
   <string name="trust_onboarding_description">Trust vă ajută să vă păstrați telefonul în siguranță și vă protejează confidențialitatea.\nIconița Trust va apărea pentru a vă ajuta să verificați securitatea conținutului</string>
   <string name="trust_onboarding_learn_more">Aflați mai multe</string>

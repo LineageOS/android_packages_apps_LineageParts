@@ -609,6 +609,9 @@
   <string name="style_automagic_dialog_content">Predlagan slog: <b>%1$s</b> s/z <b>%2$s</b> poudarkom.\nAli ga želite uveljaviti?</string>
   <string name="style_automagic_dialog_positive">Uveljavi</string>
   <string name="style_accent_default_name">Privzeto</string>
+  <string name="style_dark_overlay_title">Temen način</string>
+  <string name="style_dark_overlay_default">Privzeto</string>
+  <string name="style_dark_overlay_black">Črno</string>
   <string name="style_permission_error">Dovoljenje za dostop do pomnilniške naprave je potreben za analizo vaše slike ozadja, odobrite ga za uporabo te značilnosti</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala za pomoč pri preverjanju varnosti vsebin.</string>
@@ -635,6 +638,9 @@
   <string name="trust_feature_encryption_explain">Šifriranje vaše naprave prepreči dostop do vaših podatkov, ko je vaš telefon izklopljen ali v obnovitvenem načinu. To je še posebej pomembno, če vam ukradejo telefon in prepreči osebam brez gesla branje vaših sporočil, stikov ali ostalih zasebnih podatkov.\nZa učinkovitejše šifriranje, nastavite varni zaklep zaslona.</string>
   <string name="trust_category_tools">Zasebnost</string>
   <string name="trust_notification_alerts_title">Varnostna opozorila</string>
+  <string name="trust_warnings_alerts_intro">Izberete lahko varnostne težave na katere bi želeli biti opozorjeni. Za vašo varnost je priporočljivo, da omogočite vsa opozorila</string>
+  <string name="trust_warnings_selinux">SELinux stanje</string>
+  <string name="trust_warnings_keys">Podpis izgradnje</string>
   <string name="trust_onboarding_title">Pozdravite Trust</string>
   <string name="trust_onboarding_description">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala za pomoč pri preverjanju varnosti vsebin</string>
   <string name="trust_onboarding_learn_more">Več o tem</string>

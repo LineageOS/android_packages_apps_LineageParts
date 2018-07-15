@@ -609,6 +609,9 @@
   <string name="style_automagic_dialog_content">Suggested style: <b>%1$s</b> with <b>%2$s</b> accent.\nDo you want to apply it?</string>
   <string name="style_automagic_dialog_positive">Apply</string>
   <string name="style_accent_default_name">Default</string>
+  <string name="style_dark_overlay_title">Dark mode</string>
+  <string name="style_dark_overlay_default">Default</string>
+  <string name="style_dark_overlay_black">Black</string>
   <string name="style_permission_error">Storage access permission is needed to analyse your wallpaper, please grant it to use this feature</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust helps you keep your device secure and protects your privacy.\nThe Trust icon shows up to help you by checking the security of the contents.</string>
@@ -635,6 +638,9 @@
   <string name="trust_feature_encryption_explain">Encrypting your device prevents access to your data when your phone is off or in recovery mode. This is particularly important if your phone is stolen, and prevents people from reading your messages, contacts, and other private information without the password.\nTo make the encryption more effective you need to set a secure lock screen.</string>
   <string name="trust_category_tools">Privacy</string>
   <string name="trust_notification_alerts_title">Security alerts</string>
+  <string name="trust_warnings_alerts_intro">You can select the security issues you want to be warned about. For your safety, it is recommended to enable all alerts.</string>
+  <string name="trust_warnings_selinux">SELinux status</string>
+  <string name="trust_warnings_keys">Build signature</string>
   <string name="trust_onboarding_title">Say hello to Trust</string>
   <string name="trust_onboarding_description">Trust helps you keep your device secure and protects your privacy.\nThe Trust icon will show up to help you by checking the security of the contents</string>
   <string name="trust_onboarding_learn_more">Learn more</string>

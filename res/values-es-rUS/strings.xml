@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> con el destacado <b>%2$s</b>.\n¿Quieres aplicarlo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Predefinido</string>
+  <string name="style_dark_overlay_title">Modo oscuro</string>
+  <string name="style_dark_overlay_default">Predefinido</string>
+  <string name="style_dark_overlay_black">Negro</string>
   <string name="style_permission_error">Es necesario permitir el acceso al almacenamiento para analizar el fondo de pantalla</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust le ayuda a mantener el dispositivo seguro y protege su privacidad.\n El icono de Trust se muestra para ayudarle a comprobar la seguridad de los contenidos.</string>
@@ -633,6 +636,9 @@
   <string name="trust_feature_encryption_explain">El cifrado del dispositivo impide el acceso a los datos cuando el teléfono está apagado o en modo de recuperación. Esto es particularmente importante si el teléfono es robado, e impide que la gente lea sus mensajes, contactos y otra información privada sin la contraseña.\nPara realizar un cifrado más eficiente, debes establecer una pantalla de bloqueo segura.</string>
   <string name="trust_category_tools">Privacidad</string>
   <string name="trust_notification_alerts_title">Alertas de seguridad</string>
+  <string name="trust_warnings_alerts_intro">Puede seleccionar los problemas de seguridad de los que desea ser avisado. Para su seguridad, se recomienda habilitar todas las alertas</string>
+  <string name="trust_warnings_selinux">Estado de SELinux</string>
+  <string name="trust_warnings_keys">Firma de compilación</string>
   <string name="trust_onboarding_title">Saluda a Trust</string>
   <string name="trust_onboarding_description">Trust ayuda a mantener el dispositivo seguro y protege su privacidad.\nEl icono de Trust aparecerá para ayudarle a comprobar la seguridad de los contenidos</string>
   <string name="trust_onboarding_learn_more">Saber más</string>

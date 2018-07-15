@@ -606,6 +606,9 @@
   <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> com <b>%2$s</b> como cor de realce.\nDeseja aplicá-lo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Padrão</string>
+  <string name="style_dark_overlay_title">Modo escuro</string>
+  <string name="style_dark_overlay_default">Padrão</string>
+  <string name="style_dark_overlay_black">Preto</string>
   <string name="style_permission_error">É necessária a permissão de acesso ao armazenamento para analisar o seu papel de parede. Por favor, conceda a permissão para usar este recurso.</string>
   <!-- Trust interface -->
   <string name="trust_category_features">Estado</string>
@@ -615,6 +618,7 @@
   <string name="trust_feature_root">Acesso de superusuário</string>
   <string name="trust_feature_root_value_disabled">Desligado</string>
   <string name="trust_feature_root_value_apps">Aplicativos e ADB</string>
+  <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
   <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
   <string name="trust_feature_security_patches_value_new">atualizado</string>
   <string name="trust_feature_security_patches_value_old">desatualizado</string>
@@ -623,8 +627,10 @@
   <string name="trust_feature_encryption_value_disabled">Desligada</string>
   <string name="trust_category_tools">Privacidade</string>
   <string name="trust_notification_alerts_title">Alertas de segurança</string>
+  <string name="trust_onboarding_title">Diga olá a Confiança</string>
   <string name="trust_onboarding_learn_more">Saiba mais</string>
   <string name="trust_onboarding_done">Entendi</string>
   <!-- Sms limit -->
   <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
+  <string name="sms_security_check_limit_always_confirm">Confirmar sempre</string>
 </resources>

@@ -609,6 +609,9 @@
   <string name="style_automagic_dialog_content">Önerilen stil: <b>%1$s</b> arka plan <b>%2$s</b> vurgu rengi.\nUygulamak istiyor musunuz?</string>
   <string name="style_automagic_dialog_positive">Uygula</string>
   <string name="style_accent_default_name">Varsayılan</string>
+  <string name="style_dark_overlay_title">Karanlık mod</string>
+  <string name="style_dark_overlay_default">Varsayılan</string>
+  <string name="style_dark_overlay_black">Siyah</string>
   <string name="style_permission_error">Depolama alanına erişim izni, duvar kağıdınızı analiz etmek için gereklidir, lütfen bu özelliğin kullanılmasına izin verin</string>
   <!-- Trust interface -->
   <string name="trust_header">Güven, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nGüven simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olmak için gösterilir.</string>
@@ -635,6 +638,9 @@
   <string name="trust_feature_encryption_explain">Cihazınızı şifrelemek, telefonunuz kapalıyken veya kurtarma modundayken verilerinize erişimi engeller. Bu özellikle telefonunuz çalındığında önemlidir ve diğer insanların mesajlarınızı, kişilerinizi ve diğer kişisel bilgilerinizi şifre olmadan okumasını önler.\nŞifrelemeyi daha etkili hale getirmek için güvenli bir kilit ekranı ayarlamanız gerekir.</string>
   <string name="trust_category_tools">Gizlilik</string>
   <string name="trust_notification_alerts_title">Güvenlik uyarıları</string>
+  <string name="trust_warnings_alerts_intro">Uyarılmak istediğiniz güvenlik sorunlarını seçebilirsiniz. Güvenliğiniz için tüm uyarıları etkinleştirmeniz önerilir</string>
+  <string name="trust_warnings_selinux">SELinux durumu</string>
+  <string name="trust_warnings_keys">Yapı imzası</string>
   <string name="trust_onboarding_title">Güven\'e merhaba de</string>
   <string name="trust_onboarding_description">Güven, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nGüven simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olacak şekilde görünecektir</string>
   <string name="trust_onboarding_learn_more">Daha fazla bilgi</string>

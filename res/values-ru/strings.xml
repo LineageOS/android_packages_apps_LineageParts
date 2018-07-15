@@ -633,6 +633,7 @@
   <string name="trust_feature_encryption_explain">Шифрование вашего устройства предотвращает доступ к вашим данным, когда ваш телефон выключен или находится в режиме восстановления. Это особенно важно, если ваш телефон украден, так как шифрование не позволяет читать ваши сообщения, контакты и другую личную информацию без пароля.\nЧтобы сделать шифрование более эффективным, вам нужно настроить безопасный экран блокировки.</string>
   <string name="trust_category_tools">Конфиденциальность</string>
   <string name="trust_notification_alerts_title">Оповещения безопасности</string>
+  <string name="trust_warnings_selinux">Статус SELinux</string>
   <string name="trust_onboarding_title">Поприветствуйте Trust</string>
   <string name="trust_onboarding_description">Trust поможет защитить ваше устройство и сохранить вашу конфиденциальность.\nЗначок Trust появится, чтобы помочь вам проверить безопасность содержимого</string>
   <string name="trust_onboarding_learn_more">Подробнее</string>

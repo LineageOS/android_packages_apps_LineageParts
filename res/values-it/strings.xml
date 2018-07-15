@@ -604,6 +604,9 @@
   <string name="style_automagic_dialog_content">Stile suggerito: <b>%1$s</b> con accento <b>%2$s</b>\nVuoi applicarlo?</string>
   <string name="style_automagic_dialog_positive">Applica</string>
   <string name="style_accent_default_name">Predefinito</string>
+  <string name="style_dark_overlay_title">Modalità stile scuro</string>
+  <string name="style_dark_overlay_default">Predefinito</string>
+  <string name="style_dark_overlay_black">Nero</string>
   <string name="style_permission_error">Per analizzare lo sfondo, è necessario il permesso di accesso alla memoria interna, concedilo per utilizzare questa funzione</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust aiuta a tenere il tuo dispositvo sicuro e protegge la tua privacy.\nL\'icona di Trust appare verificando la sicurezza dei contenuti.</string>
@@ -630,6 +633,9 @@
   <string name="trust_feature_encryption_explain">Abilitando la criptazione del dispositivo si impedisce l\'accesso ai dati personali mentre il dispositivo è spento o in modalità di ripristino. Questo è particolarmente importante nel caso in cui il dispositivo venga rubato, in quanto impedisce l\'accesso ai messaggi, contatti e altre informazioni privati a coloro che non conoscono la password.\nPer rendere la criptazione più sicura è importante impostare una schermata di sblocco sicura.</string>
   <string name="trust_category_tools">Privacy</string>
   <string name="trust_notification_alerts_title">Avvisi di sicurezza</string>
+  <string name="trust_warnings_alerts_intro">Puoi scegliere quali problemi di sicurezza devono essere segnalati. Per la tua sicurezza è consigliabile attivarli tutti</string>
+  <string name="trust_warnings_selinux">Stato SELinux</string>
+  <string name="trust_warnings_keys">Firma della build</string>
   <string name="trust_onboarding_title">Scopri Trust</string>
   <string name="trust_onboarding_description">Trust aiuta a tenere il tuo dispositvo sicuro e protegge la tua privacy.\nL\'icona di Trust apparirà verificando la sicurezza dei contenuti</string>
   <string name="trust_onboarding_learn_more">Scopri di più</string>

@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">建议的样式：<b>%1$s</b>带有<b>%2$s</b> 强调颜色。\n您想要应用吗？</string>
   <string name="style_automagic_dialog_positive">应用</string>
   <string name="style_accent_default_name">默认</string>
+  <string name="style_dark_overlay_title">夜晚模式</string>
+  <string name="style_dark_overlay_default">默认</string>
+  <string name="style_dark_overlay_black">黑色</string>
   <string name="style_permission_error">为了分析您的壁纸，需要存储权限，请授予此功能权限</string>
   <!-- Trust interface -->
   <string name="trust_header">安全中心能保障你的设备安全并保护你的隐私。\n你可以通过显示的安全图标检查内容的安全性。</string>
@@ -633,6 +636,9 @@
   <string name="trust_feature_encryption_explain">设备加密可以防止别人在关机状态或恢复模式访问你的数据。当你的设备被盗时，这个重要特性可以防止别人在没有密码的情况下读取你的短信、通讯录和其他私人信息。\n要使加密更加有效，你需要设置一个安全的屏幕锁定。</string>
   <string name="trust_category_tools">隐私</string>
   <string name="trust_notification_alerts_title">安全警报</string>
+  <string name="trust_warnings_alerts_intro">您可以选择要警告的安全问题。但为了您的安全起见，建议启用所有警报。</string>
+  <string name="trust_warnings_selinux">SELinux 状态</string>
+  <string name="trust_warnings_keys">构建签名</string>
   <string name="trust_onboarding_title">欢迎使用安全中心</string>
   <string name="trust_onboarding_description">安全中心能保障您的设备安全性和您的隐私。\n您可以通过显示的安全图标检查内容的安全性</string>
   <string name="trust_onboarding_learn_more">了解更多</string>

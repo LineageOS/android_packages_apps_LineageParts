@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">Предложен стил:<b>%1$s</b> with <b>%2$s</b> accent.\nИскате ли да го приложите?</string>
   <string name="style_automagic_dialog_positive">Приложи</string>
   <string name="style_accent_default_name">По подразбиране</string>
+  <string name="style_dark_overlay_title">Тъмен режим</string>
+  <string name="style_dark_overlay_default">По подразбиране</string>
+  <string name="style_dark_overlay_black">Черен</string>
   <string name="style_permission_error">Трябва да имате разрешение за достъп до хранилището, за да анализирате тапета си, моля, предоставете му тази функция</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust помага да поддържате вашето устройство сигурно и защитава вашата поверителност. \nИконата на Trust се показва за да ви помогне чрез проверка на сигурността на съдържанието.</string>
@@ -632,6 +635,9 @@
   <string name="trust_feature_encryption_explain">Шифроване на устройството предотвратява достъпа до вашите данни, когато телефонът ви е изключен или в режим на възстановяване. Това е особено важно, ако телефонът ви е откраднат и пречи на хората да четат вашите съобщения, контакти и друга лична информация без парола. \n За да направите по-ефективно шифроване, трябва да зададете заключване на екрана.</string>
   <string name="trust_category_tools">Поверителност</string>
   <string name="trust_notification_alerts_title">Предупреждение за защита</string>
+  <string name="trust_warnings_alerts_intro">Можете да изберете да бъдете предупреждавани за проблеми със сигурността. За ваша безопасност се препоръчва се да разрешите всички предупреждения</string>
+  <string name="trust_warnings_selinux">SELinux статус</string>
+  <string name="trust_warnings_keys">Създавани на подпис</string>
   <string name="trust_onboarding_title">Кажи здравей на Trust</string>
   <string name="trust_onboarding_description">Trust помага да поддържате вашето устройство сигурно и защитава вашата поверителност. \nИконата на Trust се показва за да ви помогне чрез проверка на сигурността на съдържанието</string>
   <string name="trust_onboarding_learn_more">Научете повече</string>

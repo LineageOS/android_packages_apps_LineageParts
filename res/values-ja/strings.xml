@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">スタイル <b>%1$s</b>とアクセント<b>%2$s</b>が提案されました。\n適用しますか?</string>
   <string name="style_automagic_dialog_positive">適用</string>
   <string name="style_accent_default_name">デフォルト</string>
+  <string name="style_dark_overlay_title">ダークモード</string>
+  <string name="style_dark_overlay_default">デフォルト</string>
+  <string name="style_dark_overlay_black">ブラック</string>
   <string name="style_permission_error">壁紙を分析するにはストレージアクセスの権限を許可する必要があります。この機能を使用するには権限を許可してください。</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust はデバイスを安全に保ちプライバシーを保護するのに役立ちます。\nTrust アイコンはコンテンツのセキュリティをチェックするのを助けるために表示されます。</string>
@@ -633,6 +636,9 @@
   <string name="trust_feature_encryption_explain">デバイスを暗号化すると、電話がオフになっている時やリカバリーモードでのデータアクセスを防ぎます。これは電話が盗まれた特に重要で、パスワードなしでメッセージ、連絡先、その他の個人情報を人に読まれるのを防ぎます。\n暗号化をより効果的にするには、保護されたロック画面を設定する必要があります。</string>
   <string name="trust_category_tools">プライバシー</string>
   <string name="trust_notification_alerts_title">セキュリティ警告</string>
+  <string name="trust_warnings_alerts_intro">警告を表示させたいセキュリティ上の問題を選択できます。安全のため、すべての警告を有効にすることをおすすめします。</string>
+  <string name="trust_warnings_selinux">SELinux のステータス</string>
+  <string name="trust_warnings_keys">ビルド署名</string>
   <string name="trust_onboarding_title">Trust にようこそ</string>
   <string name="trust_onboarding_description">Trust はデバイスを安全に保ちプライバシーを保護するのに役立ちます。\nTrust アイコンはコンテンツのセキュリティをチェックするのを助けるために表示されます。</string>
   <string name="trust_onboarding_learn_more">詳細</string>

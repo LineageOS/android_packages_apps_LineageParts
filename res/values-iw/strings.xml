@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">סגנון מוצע: <b>%1$s</b> עם הדגשה <b>%2$s</b> \n האם ברצונך להחיל זאת?</string>
   <string name="style_automagic_dialog_positive">החל</string>
   <string name="style_accent_default_name">ברירת מחדל</string>
+  <string name="style_dark_overlay_title">מצב כהה</string>
+  <string name="style_dark_overlay_default">ברירת מחדל</string>
+  <string name="style_dark_overlay_black">שחור</string>
   <string name="style_permission_error">בכדי לנתח את הטפט נדרשת הרשאת גישה אחסון, נא הענק את ההרשאה בכדי להשתמש בתכונה זו</string>
   <!-- Trust interface -->
   <string name="trust_category_features">מצב</string>
@@ -630,6 +633,10 @@
   <string name="trust_feature_encryption_value_nolock">נעילת מסך מאובטחת נדרשת</string>
   <string name="trust_feature_encryption_value_disabled">מושבתת</string>
   <string name="trust_category_tools">פרטיות</string>
+  <string name="trust_notification_alerts_title">התראות אבטחה</string>
+  <string name="trust_warnings_alerts_intro">באפשרותך לבחור מקרי האבטחה שיקפיצו התראות. למען בטיחותך, מומלץ להפעיל את כל המקרים</string>
+  <string name="trust_warnings_selinux">מצב SELinux</string>
+  <string name="trust_warnings_keys">חתימת בניה</string>
   <string name="trust_onboarding_learn_more">מידע נוסף</string>
   <string name="trust_onboarding_done">הבנתי</string>
   <!-- Sms limit -->
