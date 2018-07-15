@@ -57,6 +57,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 /*
         mStatusBarBatteryShowPercent =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+*/
 
         mStatusBarAmPm = (LineageSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
         if (DateFormat.is24HourFormat(getActivity())) {
@@ -64,6 +65,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
+/*
         mStatusBarBattery =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBattery.setOnPreferenceChangeListener(this);
