@@ -53,8 +53,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
 
-/*
         mStatusBarClock = (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
+/*
         mStatusBarBatteryShowPercent =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
 
@@ -82,9 +82,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         // Adjust status bar preferences for RTL
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-/*
             mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
-*/
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
         }
     }
