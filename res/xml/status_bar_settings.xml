@@ -55,6 +55,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="status_bar_clock_key"
         android:title="@string/status_bar_clock_title">
 
         <lineageos.preference.LineageSystemSettingListPreference
