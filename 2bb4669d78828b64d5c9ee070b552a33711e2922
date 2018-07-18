@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "33266e9d_a5895d05",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 709,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2018-07-18T08:41:07Z",
+      "side": 1,
+      "message": "isn\u0027t \"malicious\" an adjective? I am missing the noun here",
+      "range": {
+        "startLine": 709,
+        "startChar": 226,
+        "endLine": 709,
+        "endChar": 245
+      },
+      "revId": "2bb4669d78828b64d5c9ee070b552a33711e2922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
