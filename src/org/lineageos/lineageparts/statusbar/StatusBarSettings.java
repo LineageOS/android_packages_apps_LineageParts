@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014-2015 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,10 @@
 package org.lineageos.lineageparts.statusbar;
 
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
 import android.view.View;
@@ -30,11 +33,15 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
 
+    private static final String CATEGORY_STATUS_BAR_CLOCK = "status_bar_clock_key";
+
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+
+    private static final String ICON_BLACKLIST = "icon_blacklist";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -48,10 +55,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private LineageSystemSettingListPreference mStatusBarBattery;
     private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
 
+    private PreferenceCategory mStatusBarClockCategory;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
+
+        mStatusBarClockCategory =
+                (PreferenceCategory) getPreferenceScreen().findPreference(CATEGORY_STATUS_BAR_CLOCK);
 
         mStatusBarClock = (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
 /*
@@ -60,11 +72,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 */
 
         mStatusBarAmPm = (LineageSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
-        if (DateFormat.is24HourFormat(getActivity())) {
-            mStatusBarAmPm.setEnabled(false);
-            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
-        }
-
 /*
         mStatusBarBattery =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
@@ -76,6 +83,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+
+        // Update status bar clock preferences based on icon visibility
+        updateStatusBarClockPrefs();
     }
 
     @Override
@@ -100,6 +110,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
             mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
         }
+
+        // Update status bar clock preferences based on icon visibility
+        updateStatusBarClockPrefs();
     }
 
     @Override
@@ -139,5 +152,21 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 break;
         }
         mQuickPulldown.setSummary(summary);
+    }
+
+    private void updateStatusBarClockPrefs() {
+        String curIconBlacklist = Settings.Secure.getString(getContext().getContentResolver(),
+                ICON_BLACKLIST);
+
+        if (curIconBlacklist.contains("clock")) {
+            getPreferenceScreen().removePreference(mStatusBarClockCategory);
+        } else {
+            getPreferenceScreen().addPreference(mStatusBarClockCategory);
+        }
+
+        if (DateFormat.is24HourFormat(getActivity())) {
+            mStatusBarAmPm.setEnabled(false);
+            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
+        }
     }
 }
