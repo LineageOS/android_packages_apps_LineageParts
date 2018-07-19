@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6131bf41_aac5c993",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 709,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2018-07-19T14:05:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "33266e9d_a5895d05",
+      "range": {
+        "startLine": 709,
+        "startChar": 226,
+        "endLine": 709,
+        "endChar": 245
+      },
+      "revId": "2bb4669d78828b64d5c9ee070b552a33711e2922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2a61273d_45dea176",
         "filename": "res/values/strings.xml",
         "patchSetId": 4
