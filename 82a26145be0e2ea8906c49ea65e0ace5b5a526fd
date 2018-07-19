@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8fbdd715_ad185f0d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 718,
+      "author": {
+        "id": 15346
+      },
+      "writtenOn": "2018-07-19T14:19:46Z",
+      "side": 1,
+      "message": "a few months old?",
+      "range": {
+        "startLine": 718,
+        "startChar": 63,
+        "endLine": 718,
+        "endChar": 78
+      },
+      "revId": "82a26145be0e2ea8906c49ea65e0ace5b5a526fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
