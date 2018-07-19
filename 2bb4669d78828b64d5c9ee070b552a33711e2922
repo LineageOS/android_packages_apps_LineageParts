@@ -22,6 +22,52 @@
       "revId": "2bb4669d78828b64d5c9ee070b552a33711e2922",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2a61273d_45dea176",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 720,
+      "author": {
+        "id": 8461
+      },
+      "writtenOn": "2018-07-19T10:11:47Z",
+      "side": 1,
+      "message": "i\u0027m not a fan of this. When I made Trust strings I purposefully avoided any reference to Lineage as organization that does \"techie\" stuffs using terms such as merge, nor I wanted to do a OEM bashing as we\u0027re supporting pretty old devices and we don\u0027t want to explicitly blaming OEMs for not updating 2013 devices",
+      "range": {
+        "startLine": 720,
+        "startChar": 305,
+        "endLine": 720,
+        "endChar": 372
+      },
+      "revId": "2bb4669d78828b64d5c9ee070b552a33711e2922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8d6742bf_a67d5d0a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 8461
+      },
+      "writtenOn": "2018-07-19T10:11:47Z",
+      "side": 1,
+      "message": "Pin is useless here imo as it\u0027s a password itself in the end. It has a more restricted keyboard but it\u0027s still a password. If you want to complicate this sentence to cover more stuffs i\u0027d add \"pattern\" instead which for the end user is not a whing where you entern chars and it unlocks",
+      "range": {
+        "startLine": 725,
+        "startChar": 307,
+        "endLine": 725,
+        "endChar": 310
+      },
+      "revId": "2bb4669d78828b64d5c9ee070b552a33711e2922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
