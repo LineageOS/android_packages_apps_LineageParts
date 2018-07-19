@@ -22,6 +22,30 @@
       "revId": "82a26145be0e2ea8906c49ea65e0ace5b5a526fd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cc0275b6_3bc82651",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 718,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2018-07-19T14:20:39Z",
+      "side": 1,
+      "message": "I agree.\n\nMaybe \"A few months out of date.\"?",
+      "parentUuid": "8fbdd715_ad185f0d",
+      "range": {
+        "startLine": 718,
+        "startChar": 63,
+        "endLine": 718,
+        "endChar": 78
+      },
+      "revId": "82a26145be0e2ea8906c49ea65e0ace5b5a526fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }

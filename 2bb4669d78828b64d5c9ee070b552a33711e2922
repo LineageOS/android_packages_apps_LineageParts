@@ -72,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "ee95487b_41367615",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 720,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2018-07-19T14:20:39Z",
+      "side": 1,
+      "message": "Well, the way I see it, a techie would pull from this \"they git merge the newest AOSP revision\", whereas a normal person would take it more literally, in that \"they pull in Google\u0027s monthly changes\" (by definition, merge means to combine into a single entity). -- I suppose if you really have a problem with it, an alternative (although crumby-er way to word it would be \"pull in Google\u0027s changes\" or alike.\n\nAnd we aren\u0027t really doing any OEM bashing as I see it. No where in here does it say that the vendor patch level _has_ to be recent.",
+      "parentUuid": "2a61273d_45dea176",
+      "range": {
+        "startLine": 720,
+        "startChar": 305,
+        "endLine": 720,
+        "endChar": 372
+      },
+      "revId": "2bb4669d78828b64d5c9ee070b552a33711e2922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8d6742bf_a67d5d0a",
         "filename": "res/values/strings.xml",
         "patchSetId": 4
@@ -83,6 +107,30 @@
       "writtenOn": "2018-07-19T10:11:47Z",
       "side": 1,
       "message": "Pin is useless here imo as it\u0027s a password itself in the end. It has a more restricted keyboard but it\u0027s still a password. If you want to complicate this sentence to cover more stuffs i\u0027d add \"pattern\" instead which for the end user is not a whing where you entern chars and it unlocks",
+      "range": {
+        "startLine": 725,
+        "startChar": 307,
+        "endLine": 725,
+        "endChar": 310
+      },
+      "revId": "2bb4669d78828b64d5c9ee070b552a33711e2922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6dc5f181_58d9a26a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2018-07-19T14:20:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d6742bf_a67d5d0a",
       "range": {
         "startLine": 725,
         "startChar": 307,
