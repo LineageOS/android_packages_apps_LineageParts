@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b0f75605_49b6d544",
+        "filename": "res/xml/status_bar_settings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-20T17:46:42Z",
+      "side": 1,
+      "message": "clock_seconds is the proper key",
+      "range": {
+        "startLine": 70,
+        "startChar": 25,
+        "endLine": 70,
+        "endChar": 49
+      },
+      "revId": "c969a7148b9dfd58f88e2979d7dccf6bd148ed26",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
