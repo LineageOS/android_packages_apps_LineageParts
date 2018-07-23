@@ -108,7 +108,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         final Context context = getContext();
 
         addPreferencesFromResource(R.xml.notification_light_settings);
-        getActivity().getActionBar().setTitle(R.string.notification_light_title);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         Resources resources = getResources();

@@ -400,14 +400,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mListView.setAdapter(mAdapter);
-        final ActionBar actionBar = getActivity().getActionBar();
-        if (actionBar != null) {
-            if (mNewProfileMode) {
-                getActivity().getActionBar().setTitle(R.string.profile_setup_actions_title);
-            } else {
-                getActivity().getActionBar().setTitle(mProfile.getName());
-            }
-        }
     }
 
     private AlertDialog requestFillProfileFromSettingsDialog() {

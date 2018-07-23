@@ -86,7 +86,6 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                 LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_SEGMENTED_BATTERY_LED);
 
         addPreferencesFromResource(R.xml.battery_light_settings);
-        getActivity().getActionBar().setTitle(R.string.battery_light_title);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 

@@ -82,16 +82,6 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        final ActionBar actionBar = getActivity().getActionBar();
-        if (actionBar != null) {
-            if (mNewProfileMode) {
-                actionBar.setTitle(R.string.profile_setup_setup_triggers_title);
-            } else {
-                String title = getString(R.string.profile_setup_setup_triggers_title_config,
-                        mProfile.getName());
-                actionBar.setTitle(title);
-            }
-        }
     }
 
     @Override

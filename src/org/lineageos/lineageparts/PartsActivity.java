@@ -115,7 +115,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
 
         switchToFragment(fragmentClass, initialArgs, -1, mInitialTitle);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
