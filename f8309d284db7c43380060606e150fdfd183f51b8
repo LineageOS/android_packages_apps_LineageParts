@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bfaacbfa_4f145750",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-26T19:32:22Z",
+      "side": 1,
+      "message": "curIconBlacklist !\u003d null \u0026\u0026 curIconBlacklist.contains(\"clock\")",
+      "range": {
+        "startLine": 95,
+        "startChar": 12,
+        "endLine": 95,
+        "endChar": 46
+      },
+      "revId": "f8309d284db7c43380060606e150fdfd183f51b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
