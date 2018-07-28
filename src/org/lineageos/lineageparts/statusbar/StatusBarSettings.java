@@ -34,6 +34,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
 
+    private static final String CATEGORY_BATTERY = "status_bar_battery_key";
     private static final String CATEGORY_CLOCK = "status_bar_clock_key";
 
     private static final String ICON_BLACKLIST = "icon_blacklist";
@@ -56,6 +57,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private LineageSystemSettingListPreference mStatusBarBattery;
     private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
 
+    private PreferenceCategory mStatusBarBatteryCategory;
     private PreferenceCategory mStatusBarClockCategory;
 
     @Override
@@ -78,6 +80,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBattery.setOnPreferenceChangeListener(this);
         enableStatusBarBatteryDependents(mStatusBarBattery.getIntValue(2));
 
+        mStatusBarBatteryCategory =
+                (PreferenceCategory) getPreferenceScreen().findPreference(CATEGORY_BATTERY);
+
         mQuickPulldown =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
@@ -98,6 +103,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             getPreferenceScreen().removePreference(mStatusBarClockCategory);
         } else {
             getPreferenceScreen().addPreference(mStatusBarClockCategory);
+        }
+
+        if (TextUtils.delimitedStringContains(curIconBlacklist, ',', "battery")) {
+            getPreferenceScreen().removePreference(mStatusBarBatteryCategory);
+        } else {
+            getPreferenceScreen().addPreference(mStatusBarBatteryCategory);
         }
 
         if (DateFormat.is24HourFormat(getActivity())) {
