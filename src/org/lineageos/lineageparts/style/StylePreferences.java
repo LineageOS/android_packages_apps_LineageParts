@@ -61,6 +61,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
     private Preference mStylePref;
     private Preference mAccentPref;
+    LineageSystemSettingListPreference mDarkPref;
 
     private List<Accent> mAccents;
 
@@ -88,9 +89,10 @@ public class StylePreferences extends SettingsPreferenceFragment {
         mAccentPref.setOnPreferenceClickListener(this::onAccentClick);
         setupAccentPref();
 
-        LineageSystemSettingListPreference darkPref = (LineageSystemSettingListPreference)
+        mDarkPref = (LineageSystemSettingListPreference)
                 findPreference("berry_dark_overlay");
-        darkPref.setOnPreferenceChangeListener(this::onDarkChange);
+        mDarkPref.setOnPreferenceChangeListener(this::onDarkChange);
+        setDarkStyleVisibility(mInterface.getGlobalStyle());
 
         Preference automagic = findPreference("style_automagic");
         automagic.setOnPreferenceClickListener(p -> onAutomagicClick());
@@ -276,8 +278,14 @@ public class StylePreferences extends SettingsPreferenceFragment {
         // selection dialog to be dismissed gracefully
         new Handler().postDelayed(() -> mInterface.setGlobalStyle(value, mPackageName), 500);
 
+        setDarkStyleVisibility(value);
         setStyleIcon(value);
+
         return true;
+    }
+
+    private void setDarkStyleVisibility(int value) {
+        mDarkPref.setVisible(value != StyleInterface.STYLE_GLOBAL_LIGHT);
     }
 
     private void setStyleIcon(int value) {
