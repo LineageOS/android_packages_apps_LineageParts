@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2117952b_d2eae282",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-29T18:35:28Z",
+      "side": 1,
+      "message": "private",
+      "revId": "1d5c0fcfdadae6b4c31c49093dbcce6e54ee1f20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3297b87c_c12c32a4",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-29T18:35:28Z",
+      "side": 1,
+      "message": "Quite sure this can be a plain Preference",
+      "revId": "1d5c0fcfdadae6b4c31c49093dbcce6e54ee1f20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f1b1dd64_e2030735",
+        "filename": "src/org/lineageos/lineageparts/style/StylePreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-29T18:35:28Z",
+      "side": 1,
+      "message": "I would rather do setEnabled since it\u0027s a single pref",
+      "range": {
+        "startLine": 288,
+        "startChar": 18,
+        "endLine": 288,
+        "endChar": 28
+      },
+      "revId": "1d5c0fcfdadae6b4c31c49093dbcce6e54ee1f20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
