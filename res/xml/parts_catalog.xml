@@ -54,11 +54,6 @@
           android:fragment="org.lineageos.lineageparts.notificationlight.NotificationLightSettings"
           lineage:xmlRes="@xml/notification_light_settings" />
 
-    <part android:key="privacy_settings"
-          android:title="@string/privacy_settings_title"
-          android:fragment="org.lineageos.lineageparts.PrivacySettings"
-          lineage:xmlRes="@xml/privacy_settings" />
-
     <part android:key="profiles_settings"
           android:title="@string/profiles_settings_title"
           android:fragment="org.lineageos.lineageparts.profiles.ProfilesSettings"

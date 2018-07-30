@@ -119,32 +119,6 @@
                 android:resource="@string/live_display_summary" />
         </activity-alias>
 
-        <!-- Privacy settings (dashboard) -->
-        <!--
-        <activity-alias
-            android:name=".PrivacySettings"
-            android:label="@string/privacy_settings_title"
-            android:targetActivity="PartsActivity">
-            <intent-filter android:priority="3">
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-                <action android:name="org.lineageos.lineageparts.PRIVACY_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.personal" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_privacy" />
-            <meta-data
-                android:name="org.lineageos.settings.summary.receiver"
-                android:value="org.lineageos.lineageparts.PartsUpdater" />
-            <meta-data
-                android:name="org.lineageos.settings.summary.key"
-                android:value="privacy_settings" />
-        </activity-alias>
-        -->
-
         <!-- Button settings (System category) -->
         <activity-alias
             android:name=".input.ButtonSettings"
