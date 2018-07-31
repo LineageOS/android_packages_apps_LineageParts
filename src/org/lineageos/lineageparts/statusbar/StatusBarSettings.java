@@ -95,7 +95,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         final String curIconBlacklist = Settings.Secure.getString(getContext().getContentResolver(),
                 ICON_BLACKLIST);
 
-        if (curIconBlacklist != null && curIconBlacklist.contains("clock")) {
+        if (curIconBlacklist != null && curIconBlacklist.split(",").contains("clock")) {
             getPreferenceScreen().removePreference(mStatusBarClockCategory);
         } else {
             getPreferenceScreen().addPreference(mStatusBarClockCategory);
