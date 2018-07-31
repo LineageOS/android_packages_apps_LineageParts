@@ -23,6 +23,7 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
+import android.text.TextUtils;
 import android.view.View;
 
 import lineageos.preference.LineageSystemSettingListPreference;
@@ -95,7 +96,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         final String curIconBlacklist = Settings.Secure.getString(getContext().getContentResolver(),
                 ICON_BLACKLIST);
 
-        if (curIconBlacklist != null && curIconBlacklist.contains("clock")) {
+        if (TextUtils.delimitedStringContains(curIconBlacklist, ',', "clock")) {
             getPreferenceScreen().removePreference(mStatusBarClockCategory);
         } else {
             getPreferenceScreen().addPreference(mStatusBarClockCategory);
