@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f5c93352_fa7e8866",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonBacklightBrightness.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-08-03T17:25:55Z",
+      "side": 1,
+      "message": "So this just adds a useless button? I guess you can remove it",
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02f0cef0_13333c5d",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/DisplayColor.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-08-03T17:25:55Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c765df93_8e6f9e61",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/DisplayTemperature.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-08-03T17:25:55Z",
+      "side": 1,
+      "message": "oi",
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "86acabba_016f67ea",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/PictureAdjustment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-08-03T17:25:55Z",
+      "side": 1,
+      "message": "everywhere?",
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
