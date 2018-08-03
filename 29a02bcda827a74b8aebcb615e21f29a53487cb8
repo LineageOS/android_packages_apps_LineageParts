@@ -42,6 +42,24 @@
     },
     {
       "key": {
+        "uuid": "a884add4_992110b0",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonBacklightBrightness.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-08-03T18:54:29Z",
+      "side": 1,
+      "message": "All it does is dismissing (happens implicitly) which then triggers the code below. I\u0027m pretty sure the same can be achieved by passing null as listener though.",
+      "parentUuid": "f5c93352_fa7e8866",
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "49cfa53b_9ecdd01a",
         "filename": "src/org/lineageos/lineageparts/lineagestats/Utilities.java",
         "patchSetId": 1
