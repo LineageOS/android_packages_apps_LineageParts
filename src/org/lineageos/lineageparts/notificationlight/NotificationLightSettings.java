@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,10 +19,8 @@ package org.lineageos.lineageparts.notificationlight;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.NotificationManager;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -37,9 +36,6 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import org.lineageos.internal.notification.LightsCapabilities;
@@ -82,7 +78,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private int mDefaultLedOff;
     private PackageManager mPackageManager;
     private PreferenceGroup mApplicationPrefList;
-    private NotificationBrightnessPreference mNotificationBrightnessPref;
     private SystemSettingSwitchPreference mEnabledPref;
     private LineageSystemSettingSwitchPreference mCustomEnabledPref;
     private LineageSystemSettingSwitchPreference mScreenOnLightsPref;
@@ -90,12 +85,9 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private ApplicationLightPreference mDefaultPref;
     private ApplicationLightPreference mCallPref;
     private ApplicationLightPreference mVoicemailPref;
-    private Menu mMenu;
     private PackageListAdapter mPackageAdapter;
     private String mPackageList;
     private Map<String, Package> mPackages;
-    // liblights supports brightness control
-    private boolean mHALAdjustableBrightness;
     // Supports rgb color control
     private boolean mMultiColorLed;
     // Supports adjustable pulse
@@ -118,14 +110,16 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
         // Get the system defined default notification color
         mDefaultColor =
-                resources.getColor(com.android.internal.R.color.config_defaultNotificationColor, null);
+                resources.getColor(com.android.internal.R.color.config_defaultNotificationColor,
+                        null);
 
         mDefaultLedOn = resources.getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOn);
         mDefaultLedOff = resources.getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
 
-        mHALAdjustableBrightness = LightsCapabilities.supports(
+        // liblights supports brightness control
+        boolean hasHALAdjustableBrightness = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS);
         mLedCanPulse = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_PULSATING_LED);
@@ -142,14 +136,12 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
 
         // Advanced light settings
-        mNotificationBrightnessPref = (NotificationBrightnessPreference)
-                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
         mScreenOnLightsPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
-        if (!mMultiColorLed && !mHALAdjustableBrightness) {
+        if (!mMultiColorLed && !hasHALAdjustableBrightness) {
             removePreference(BRIGHTNESS_SECTION);
         }
         if (!mLedCanPulse && !mMultiColorLed) {
@@ -161,8 +153,9 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mDefaultPref.setDefaultValues(mDefaultColor, mDefaultLedOn, mDefaultLedOff);
         }
 
-        // Missed call and Voicemail preferences should only show on devices with a voice capabilities
-        TelephonyManager tm = (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+        // Missed call and Voicemail preferences should only show on devices with voice capabilities
+        TelephonyManager tm =
+                (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
         if (tm.getPhoneType() == TelephonyManager.PHONE_TYPE_NONE
                 || (!mLedCanPulse && !mMultiColorLed)) {
             removePreference(PHONE_SECTION);
@@ -195,7 +188,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mGeneralPrefs.removePreference(mAutoGenerateColors);
         } else {
             mAutoGenerateColors.setOnPreferenceChangeListener(this);
-            watch(LineageSettings.System.getUriFor(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO));
+            watch(LineageSettings.System.getUriFor(
+                    LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO));
         }
 
         watch(Settings.System.getUriFor(Settings.System.NOTIFICATION_LIGHT_PULSE));
@@ -363,7 +357,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     }
 
     private boolean parsePackageList() {
-        final String baseString = LineageSettings.System.getString(getActivity().getContentResolver(),
+        final String baseString = LineageSettings.System.getString(
+                getActivity().getContentResolver(),
                 LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES);
 
         if (TextUtils.equals(mPackageList, baseString)) {
@@ -399,7 +394,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mPackageList = value;
         }
         LineageSettings.System.putString(getActivity().getContentResolver(),
-                                  LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES, value);
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES, value);
     }
 
     /**
@@ -410,25 +405,35 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
      * @param timeon
      * @param timeoff
      */
-    protected void updateValues(String packageName, Integer color, Integer timeon, Integer timeoff) {
+    protected void updateValues(String packageName, Integer color, Integer timeon,
+                                Integer timeoff) {
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (packageName.equals(DEFAULT_PREF)) {
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, color);
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON, timeon);
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF, timeoff);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, color);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON, timeon);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF, timeoff);
             refreshDefault();
             return;
         } else if (packageName.equals(MISSED_CALL_PREF)) {
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, color);
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON, timeon);
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF, timeoff);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, color);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON, timeon);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF, timeoff);
             refreshDefault();
             return;
         } else if (packageName.equals(VOICEMAIL_PREF)) {
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, color);
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON, timeon);
-            LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF, timeoff);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, color);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON, timeon);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF, timeoff);
             refreshDefault();
             return;
         }
@@ -447,9 +452,12 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         ContentResolver resolver = getActivity().getContentResolver();
 
         // Reset to the framework default colors
-        LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, mDefaultColor);
-        LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, mDefaultColor);
-        LineageSettings.System.putInt(resolver, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, mDefaultColor);
+        LineageSettings.System.putInt(resolver,
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR, mDefaultColor);
+        LineageSettings.System.putInt(resolver,
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR, mDefaultColor);
+        LineageSettings.System.putInt(resolver,
+                LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR, mDefaultColor);
 
         refreshDefault();
     }
@@ -463,12 +471,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 .setTitle(R.string.dialog_delete_title)
                 .setMessage(R.string.dialog_delete_message)
                 .setIconAttribute(android.R.attr.alertDialogIcon)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        removeCustomApplicationPref(key);
-                    }
-                })
+                .setPositiveButton(android.R.string.ok, (dialog, which) ->
+                        removeCustomApplicationPref(key))
                 .setNegativeButton(android.R.string.cancel, null);
 
         builder.show();
@@ -491,10 +495,10 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        mMenu = menu;
-        mMenu.add(0, MENU_ADD, 0, R.string.add)
+        menu.add(0, MENU_ADD, 0, R.string.add)
                 .setIcon(R.drawable.ic_menu_add)
-                .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+                .setShowAsActionFlags(
+                        MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
     }
 
     @Override
@@ -529,14 +533,11 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 builder.setView(list);
                 dialog = builder.create();
 
-                list.setOnItemClickListener(new OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        // Add empty application definition, the user will be able to edit it later
-                        PackageItem info = (PackageItem) parent.getItemAtPosition(position);
-                        addCustomApplicationPref(info.packageName);
-                        dialog.cancel();
-                    }
+                list.setOnItemClickListener((parent, view, position, itemId) -> {
+                    // Add empty application definition, the user will be able to edit it later
+                    PackageItem info = (PackageItem) parent.getItemAtPosition(position);
+                    addCustomApplicationPref(info.packageName);
+                    dialog.cancel();
                 });
                 break;
             default:

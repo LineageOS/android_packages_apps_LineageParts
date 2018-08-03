@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2013 SlimRoms Project
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -96,7 +97,8 @@ public class PrivacyGuardAppListAdapter extends BaseAdapter implements SectionIn
             appHolder = new PrivacyGuardAppViewHolder();
             appHolder.title = (TextView) convertView.findViewById(R.id.app_title);
             appHolder.icon = (ImageView) convertView.findViewById(R.id.app_icon);
-            appHolder.privacyGuardIcon = (ImageView) convertView.findViewById(R.id.app_privacy_guard_icon);
+            appHolder.privacyGuardIcon =
+                    (ImageView) convertView.findViewById(R.id.app_privacy_guard_icon);
             convertView.setTag(appHolder);
         } else {
             appHolder = (PrivacyGuardAppViewHolder) convertView.getTag();
