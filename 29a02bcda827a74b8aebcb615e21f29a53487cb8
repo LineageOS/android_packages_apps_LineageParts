@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "8a933815_caf0edf1",
+        "filename": "src/org/lineageos/lineageparts/PartsActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "8 spaces",
+      "range": {
+        "startLine": 175,
+        "startChar": 4,
+        "endLine": 175,
+        "endChar": 37
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f5c93352_fa7e8866",
         "filename": "src/org/lineageos/lineageparts/input/ButtonBacklightBrightness.java",
         "patchSetId": 1
@@ -16,6 +39,29 @@
       "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49cfa53b_9ecdd01a",
+        "filename": "src/org/lineageos/lineageparts/lineagestats/Utilities.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "Hm?",
+      "range": {
+        "startLine": 34,
+        "startChar": 26,
+        "endLine": 34,
+        "endChar": 27
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +99,29 @@
     },
     {
       "key": {
+        "uuid": "b730f6b3_8296b567",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/PictureAdjustment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "8 spaces",
+      "range": {
+        "startLine": 80,
+        "startChar": 4,
+        "endLine": 80,
+        "endChar": 42
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "86acabba_016f67ea",
         "filename": "src/org/lineageos/lineageparts/livedisplay/PictureAdjustment.java",
         "patchSetId": 1
@@ -67,6 +136,144 @@
       "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b07bc25_a1cea496",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/PictureAdjustment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "8 spaces",
+      "range": {
+        "startLine": 209,
+        "startChar": 8,
+        "endLine": 209,
+        "endChar": 28
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fe2224c9_b025f8e8",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/ApplicationLightPreference.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "8 spaces",
+      "range": {
+        "startLine": 99,
+        "startChar": 4,
+        "endLine": 99,
+        "endChar": 38
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5d73d9fd_93f62150",
+        "filename": "src/org/lineageos/lineageparts/profiles/AppGroupConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "8 spaces",
+      "range": {
+        "startLine": 118,
+        "startChar": 4,
+        "endLine": 118,
+        "endChar": 29
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef8ec70c_20fc5c50",
+        "filename": "src/org/lineageos/lineageparts/profiles/SetupActionsFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1006,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "Where does 12 come from?",
+      "range": {
+        "startLine": 1006,
+        "startChar": 47,
+        "endLine": 1006,
+        "endChar": 53
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cee7d71b_53608310",
+        "filename": "src/org/lineageos/lineageparts/profiles/triggers/BluetoothTriggerFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "8 spaces",
+      "range": {
+        "startLine": 163,
+        "startChar": 4,
+        "endLine": 163,
+        "endChar": 29
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "abf8e577_9775e27b",
+        "filename": "src/org/lineageos/lineageparts/profiles/triggers/WifiTriggerFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-03T17:29:27Z",
+      "side": 1,
+      "message": "8 spaces",
+      "range": {
+        "startLine": 90,
+        "startChar": 4,
+        "endLine": 90,
+        "endChar": 29
+      },
+      "revId": "29a02bcda827a74b8aebcb615e21f29a53487cb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
