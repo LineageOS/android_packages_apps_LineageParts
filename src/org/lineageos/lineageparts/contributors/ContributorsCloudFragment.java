@@ -687,6 +687,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         mContributorName = c.getString(0);
         mContributorNick = c.getString(1);
         mContributorCommits = c.getInt(2);
+        c.close();
     }
 
     private void showUserInfo(Context context) {
@@ -749,6 +750,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             result.mLabel = c.getString(1);
             results.add(result);
         }
+        c.close();
         return results;
     }
 
