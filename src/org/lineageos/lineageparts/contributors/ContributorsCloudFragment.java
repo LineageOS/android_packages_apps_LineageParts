@@ -749,6 +749,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             result.mLabel = c.getString(1);
             results.add(result);
         }
+        c.close();
         return results;
     }
 
