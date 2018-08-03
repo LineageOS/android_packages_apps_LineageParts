@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +43,6 @@ import lineageos.hardware.LiveDisplayManager;
 public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     private static final String TAG = "PictureAdjustment";
 
-    private final Context mContext;
     private final LiveDisplayManager mLiveDisplay;
     private final List<Range<Float>> mRanges;
 
@@ -69,23 +69,18 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     public PictureAdjustment(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        mContext = context;
-        mLiveDisplay = LiveDisplayManager.getInstance(mContext);
+        mLiveDisplay = LiveDisplayManager.getInstance(context);
         mRanges = mLiveDisplay.getConfig().getPictureAdjustmentRanges();
 
         setDialogLayoutResource(R.layout.display_picture_adjustment);
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder, DialogInterface.OnClickListener listener) {
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
+                                          DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
 
-        builder.setNeutralButton(R.string.reset,
-                new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
+        builder.setNeutralButton(R.string.reset, (dialog, which) -> { });
     }
 
     private void updateBars() {
@@ -210,7 +205,8 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
         private TextView mValue;
         private Range<Float> mRange;
 
-        public ColorSeekBar(IntervalSeekBar seekBar, Range<Float> range, TextView value, int index) {
+        public ColorSeekBar(IntervalSeekBar seekBar, Range<Float> range, TextView value,
+                            int index) {
             mSeekBar = seekBar;
             mValue = value;
             mIndex = index;
