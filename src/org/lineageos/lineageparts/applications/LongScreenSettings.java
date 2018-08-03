@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
@@ -43,9 +42,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class LongScreenSettings extends SettingsPreferenceFragment
         implements ApplicationsState.Callbacks {
@@ -54,10 +51,7 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     private ApplicationsState mApplicationsState;
     private ApplicationsState.Session mSession;
     private ActivityFilter mActivityFilter;
-    private Map<String, ApplicationsState.AppEntry> mEntryMap =
-            new HashMap<String, ApplicationsState.AppEntry>();
 
-    private ListView mUserListView;
     private LongScreen mLongScreen;
 
     @Override
@@ -88,8 +82,8 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mUserListView = (ListView) view.findViewById(R.id.user_list_view);
-        mUserListView.setAdapter(mAllPackagesAdapter);
+        ListView userListView = (ListView) view.findViewById(R.id.user_list_view);
+        userListView.setAdapter(mAllPackagesAdapter);
     }
 
     @Override
@@ -172,10 +166,6 @@ public class LongScreenSettings extends SettingsPreferenceFragment
         }
 
         mAllPackagesAdapter.setEntries(entries, sections, positions);
-        mEntryMap.clear();
-        for (ApplicationsState.AppEntry e : entries) {
-            mEntryMap.put(e.info.packageName, e);
-        }
     }
 
     private void rebuild() {
