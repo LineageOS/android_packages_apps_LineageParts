@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +22,7 @@ import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 import lineageos.profiles.BrightnessSettings;
 
 public class BrightnessItem extends BaseItem {
-    BrightnessSettings mSettings;
+    private BrightnessSettings mSettings;
 
     public BrightnessItem(BrightnessSettings brightnessSettings) {
         if (brightnessSettings == null) {
