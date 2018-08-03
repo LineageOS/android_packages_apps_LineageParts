@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013-2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +39,6 @@ import lineageos.hardware.LiveDisplayManager;
 public class DisplayColor extends CustomDialogPreference<AlertDialog> {
     private static final String TAG = "ColorCalibration";
 
-    private final Context mContext;
     private final LiveDisplayManager mLiveDisplay;
 
     // These arrays must all match in length and order
@@ -62,22 +62,17 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
     public DisplayColor(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        mContext = context;
-        mLiveDisplay = LiveDisplayManager.getInstance(mContext);
+        mLiveDisplay = LiveDisplayManager.getInstance(context);
 
         setDialogLayoutResource(R.layout.display_color_calibration);
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder, DialogInterface.OnClickListener listener) {
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
+                                          DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
 
-        builder.setNeutralButton(R.string.reset,
-                new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
+        builder.setNeutralButton(R.string.reset, (dialog, which) -> {});
     }
 
     @Override

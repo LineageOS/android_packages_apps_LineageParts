@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,17 +27,18 @@ import android.text.TextUtils;
 import lineageos.providers.LineageSettings;
 
 import java.math.BigInteger;
-import java.net.NetworkInterface;
 import java.security.MessageDigest;
 
 public class Utilities {
     public static String getUniqueID(Context context) {
-        final String id = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+        final String id = Settings.Secure.getString(context.getContentResolver(),
+                Settings.Secure.ANDROID_ID);
         return digest(context.getPackageName() + id);
     }
 
     public static String getCarrier(Context context) {
-        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm =
+                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         String carrier = tm.getNetworkOperatorName();
         if (TextUtils.isEmpty(carrier)) {
             carrier = "Unknown";
@@ -45,7 +47,8 @@ public class Utilities {
     }
 
     public static String getCarrierId(Context context) {
-        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm =
+                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         String carrierId = tm.getNetworkOperator();
         if (TextUtils.isEmpty(carrierId)) {
             carrierId = "0";
@@ -54,7 +57,8 @@ public class Utilities {
     }
 
     public static String getCountryCode(Context context) {
-        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm =
+                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         String countryCode = tm.getNetworkCountryIso();
         if (TextUtils.isEmpty(countryCode)) {
             countryCode = "Unknown";
