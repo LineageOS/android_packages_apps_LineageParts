@@ -1,5 +1,6 @@
 /**
  * Copyright (C) 2015-2016 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +37,6 @@ import android.view.WindowManagerGlobal;
 import android.view.WindowManagerPolicyControl;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
@@ -53,9 +53,7 @@ import org.lineageos.lineageparts.widget.SwitchBar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class ExpandedDesktopSettings extends SettingsPreferenceFragment
         implements AdapterView.OnItemClickListener, ApplicationsState.Callbacks,
@@ -72,8 +70,6 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
     private ApplicationsState mApplicationsState;
     private ApplicationsState.Session mSession;
     private ActivityFilter mActivityFilter;
-    private Map<String, ApplicationsState.AppEntry> mEntryMap =
-            new HashMap<String, ApplicationsState.AppEntry>();
 
     private SwitchBar mSwitchBar;
     private ListView mUserListView;
@@ -82,10 +78,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
 
     private boolean isGloballyExpanded(ContentResolver cr) {
         final String value = Settings.Global.getString(cr, Settings.Global.POLICY_CONTROL);
-        if ("immersive.full=*".equals(value)) {
-            return true;
-        }
-        return false;
+        return "immersive.full=*".equals(value);
     }
 
     @Override
@@ -300,10 +293,6 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
         }
 
         mAllPackagesAdapter.setEntries(entries, sections, positions);
-        mEntryMap.clear();
-        for (ApplicationsState.AppEntry e : entries) {
-            mEntryMap.put(e.info.packageName, e);
-        }
 
         if (mIsGloballyExpanded) {
             showGlobalUi();

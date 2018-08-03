@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,8 +51,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -128,7 +127,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     private static class ContributorsAdapter extends ArrayAdapter<ContributorsDataHolder> {
 
         public ContributorsAdapter(Context context) {
-            super(context, R.id.contributor_name, new ArrayList<ContributorsDataHolder>());
+            super(context, R.id.contributor_name, new ArrayList<>());
         }
 
         @Override
@@ -319,13 +318,10 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         mSearchResults = (ListView) v.findViewById(R.id.contributors_cloud_search_results);
         mSearchAdapter = new ContributorsAdapter(getActivity());
         mSearchResults.setAdapter(mSearchAdapter);
-        mSearchResults.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ContributorsDataHolder contributor =
-                        (ContributorsDataHolder) parent.getItemAtPosition(position);
-                onContributorSelected(contributor);
-            }
+        mSearchResults.setOnItemClickListener((parent, view, position, id) -> {
+            ContributorsDataHolder contributor =
+                    (ContributorsDataHolder) parent.getItemAtPosition(position);
+            onContributorSelected(contributor);
         });
 
         // Load the data from the database and fill the image
@@ -753,6 +749,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             result.mLabel = c.getString(1);
             results.add(result);
         }
+        c.close();
         return results;
     }
 
