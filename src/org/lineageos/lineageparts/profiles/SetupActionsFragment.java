@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2017 The LineageOS Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.LocationManager;
 import android.media.AudioManager;
-import android.media.RingtoneManager;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.nfc.NfcManager;
@@ -52,7 +51,6 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SeekBar;
@@ -594,24 +592,16 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         if (mProfile.getUuid().equals(current.getUuid())) {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setMessage(getString(R.string.profile_remove_current_profile));
-            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
+            builder.setNegativeButton(R.string.cancel, (dialog, which) -> dialog.dismiss());
             return builder.create();
         }
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setMessage(getString(R.string.profile_remove_dialog_message, mProfile.getName()));
-        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                mProfileManager.removeProfile(mProfile);
-                finishFragment();
-            }
+        builder.setPositiveButton(R.string.yes, (dialog, which) -> {
+            dialog.dismiss();
+            mProfileManager.removeProfile(mProfile);
+            finishFragment();
         });
         builder.setNegativeButton(R.string.no, null);
         return builder.create();
@@ -631,16 +621,12 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         builder.setTitle(R.string.profile_lockmode_title);
-        builder.setSingleChoiceItems(lockEntries, defaultIndex,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int item) {
-                        mProfile.setScreenLockMode(new LockSettings(LOCKMODE_MAPPING[item]));
-                        updateProfile();
-                        mAdapter.notifyDataSetChanged();
-                        dialog.dismiss();
-                    }
-                });
+        builder.setSingleChoiceItems(lockEntries, defaultIndex, (dialog, item) -> {
+            mProfile.setScreenLockMode(new LockSettings(LOCKMODE_MAPPING[item]));
+            updateProfile();
+            mAdapter.notifyDataSetChanged();
+            dialog.dismiss();
+        });
 
         builder.setNegativeButton(android.R.string.cancel, null);
         return builder.create();
@@ -689,16 +675,12 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         builder.setTitle(R.string.notification_light_title);
-        builder.setSingleChoiceItems(notificationLightEntries, defaultIndex,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int item) {
-                        mProfile.setNotificationLightMode(NOTIFICATION_LIGHT_MAPPING[item]);
-                        updateProfile();
-                        mAdapter.notifyDataSetChanged();
-                        dialog.dismiss();
-                    }
-                });
+        builder.setSingleChoiceItems(notificationLightEntries, defaultIndex, (dialog, item) -> {
+            mProfile.setNotificationLightMode(NOTIFICATION_LIGHT_MAPPING[item]);
+            updateProfile();
+            mAdapter.notifyDataSetChanged();
+            dialog.dismiss();
+        });
 
         builder.setNegativeButton(android.R.string.cancel, null);
         return builder.create();
@@ -719,41 +701,28 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         builder.setTitle(R.string.profile_airplanemode_title);
-        builder.setSingleChoiceItems(connectionNames, defaultIndex,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int item) {
-                        switch (item) {
-                            case 0: // disable override
-                                setting.setOverride(false);
-                                break;
-                            case 1: // enable override, disable
-                                setting.setOverride(true);
-                                setting.setValue(0);
-                                break;
-                            case 2: // enable override, enable
-                                setting.setOverride(true);
-                                setting.setValue(1);
-                                break;
-                        }
-                        mProfile.setAirplaneMode(setting);
-                        mAdapter.notifyDataSetChanged();
-                        updateProfile();
-                        dialog.dismiss();
-                    }
-                });
+        builder.setSingleChoiceItems(connectionNames, defaultIndex, (dialog, item) -> {
+            switch (item) {
+                case 0: // disable override
+                    setting.setOverride(false);
+                    break;
+                case 1: // enable override, disable
+                    setting.setOverride(true);
+                    setting.setValue(0);
+                    break;
+                case 2: // enable override, enable
+                    setting.setOverride(true);
+                    setting.setValue(1);
+                    break;
+            }
+            mProfile.setAirplaneMode(setting);
+            mAdapter.notifyDataSetChanged();
+            updateProfile();
+            dialog.dismiss();
+        });
 
         builder.setNegativeButton(android.R.string.cancel, null);
         return builder.create();
-    }
-
-    private void requestProfileRingMode() {
-        // Launch the ringtone picker
-        Intent intent = new Intent(RingtoneManager.ACTION_RINGTONE_PICKER);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_DEFAULT, false);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_SILENT, true);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_TYPE, RingtoneManager.TYPE_RINGTONE);
-        startActivityForResult(intent, RINGTONE_REQUEST_CODE);
     }
 
     @Override
@@ -807,33 +776,29 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         builder.setTitle(R.string.ring_mode_title);
-        builder.setSingleChoiceItems(names, defaultIndex,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int item) {
-                        switch (item) {
-                            case 0: // enable override, normal
-                                setting.setOverride(true);
-                                setting.setValue(values[0]);
-                                break;
-                            case 1: // enable override, vibrate
-                                setting.setOverride(true);
-                                setting.setValue(values[1]);
-                                break;
-                            case 2: // enable override, mute
-                                setting.setOverride(true);
-                                setting.setValue(values[2]);
-                                break;
-                            case 3:
-                                setting.setOverride(false);
-                                break;
-                        }
-                        mProfile.setRingMode(setting);
-                        mAdapter.notifyDataSetChanged();
-                        updateProfile();
-                        dialog.dismiss();
-                    }
-                });
+        builder.setSingleChoiceItems(names, defaultIndex, (dialog, item) -> {
+            switch (item) {
+                case 0: // enable override, normal
+                    setting.setOverride(true);
+                    setting.setValue(values[0]);
+                    break;
+                case 1: // enable override, vibrate
+                    setting.setOverride(true);
+                    setting.setValue(values[1]);
+                    break;
+                case 2: // enable override, mute
+                    setting.setOverride(true);
+                    setting.setValue(values[2]);
+                    break;
+                case 3:
+                    setting.setOverride(false);
+                    break;
+            }
+            mProfile.setRingMode(setting);
+            mAdapter.notifyDataSetChanged();
+            updateProfile();
+            dialog.dismiss();
+        });
 
         builder.setNegativeButton(android.R.string.cancel, null);
         return builder.create();
@@ -860,29 +825,25 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         builder.setTitle(ConnectionOverrideItem.getConnectionTitle(getContext(), setting));
-        builder.setSingleChoiceItems(connectionNames, defaultIndex,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int item) {
-                        switch (item) {
-                            case 0: // disable override
-                                setting.setOverride(false);
-                                break;
-                            case 1: // enable override, disable
-                                setting.setOverride(true);
-                                setting.setValue(0);
-                                break;
-                            case 2: // enable override, enable
-                                setting.setOverride(true);
-                                setting.setValue(1);
-                                break;
-                        }
-                        mProfile.setConnectionSettings(setting);
-                        mAdapter.notifyDataSetChanged();
-                        updateProfile();
-                        dialog.dismiss();
-                    }
-                });
+        builder.setSingleChoiceItems(connectionNames, defaultIndex, (dialog, item) -> {
+            switch (item) {
+                case 0: // disable override
+                    setting.setOverride(false);
+                    break;
+                case 1: // enable override, disable
+                    setting.setOverride(true);
+                    setting.setValue(0);
+                    break;
+                case 2: // enable override, enable
+                    setting.setOverride(true);
+                    setting.setValue(1);
+                    break;
+            }
+            mProfile.setConnectionSettings(setting);
+            mAdapter.notifyDataSetChanged();
+            updateProfile();
+            dialog.dismiss();
+        });
 
         builder.setNegativeButton(android.R.string.cancel, null);
         return builder.create();
@@ -893,18 +854,13 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(VolumeStreamItem.getNameForStream(streamId));
 
-        final AudioManager am = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         final View view = inflater.inflate(R.layout.dialog_profiles_volume_override, null);
         final SeekBar seekBar = (SeekBar) view.findViewById(R.id.seekbar);
         final CheckBox override = (CheckBox) view.findViewById(R.id.checkbox);
         override.setChecked(streamSettings.isOverride());
-        override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                seekBar.setEnabled(isChecked);
-            }
-        });
+        override.setOnCheckedChangeListener((buttonView, isChecked) ->
+                seekBar.setEnabled(isChecked));
         final SeekBarVolumizer volumizer = new SeekBarVolumizer(getActivity(), streamId, null,
                 null);
         volumizer.start();
@@ -912,26 +868,20 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         seekBar.setEnabled(streamSettings.isOverride());
 
         builder.setView(view);
-        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                int value = seekBar.getProgress();
-                streamSettings.setOverride(override.isChecked());
-                streamSettings.setValue(value);
-                mProfile.setStreamSettings(streamSettings);
-                mAdapter.notifyDataSetChanged();
-                updateProfile();
-            }
+        builder.setPositiveButton(android.R.string.ok, (dialog, which) -> {
+            int value = seekBar.getProgress();
+            streamSettings.setOverride(override.isChecked());
+            streamSettings.setValue(value);
+            mProfile.setStreamSettings(streamSettings);
+            mAdapter.notifyDataSetChanged();
+            updateProfile();
         });
         builder.setNegativeButton(android.R.string.cancel, null);
-        setOnDismissListener(new DialogInterface.OnDismissListener() {
-            @Override
-            public void onDismiss(DialogInterface dialogInterface) {
-                if (volumizer != null) {
-                    volumizer.stop();
-                }
-                setOnDismissListener(null); // re-set this for next dialog
+        setOnDismissListener(dialogInterface -> {
+            if (volumizer != null) {
+                volumizer.stop();
             }
+            setOnDismissListener(null); // re-set this for next dialog
         });
         return builder.create();
     }
@@ -945,34 +895,22 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         final SeekBar seekBar = (SeekBar) view.findViewById(R.id.seekbar);
         final CheckBox override = (CheckBox) view.findViewById(R.id.checkbox);
         override.setChecked(brightnessSettings.isOverride());
-        override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                seekBar.setEnabled(isChecked);
-            }
-        });
+        override.setOnCheckedChangeListener((buttonView, isChecked) ->
+                seekBar.setEnabled(isChecked));
         seekBar.setEnabled(brightnessSettings.isOverride());
         seekBar.setMax(255);
         seekBar.setProgress(brightnessSettings.getValue());
         builder.setView(view);
-        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                int value = seekBar.getProgress();
-                brightnessSettings.setValue(value);
-                brightnessSettings.setOverride(override.isChecked());
-                mProfile.setBrightness(brightnessSettings);
-                mAdapter.notifyDataSetChanged();
-                updateProfile();
-                dialog.dismiss();
-            }
+        builder.setPositiveButton(android.R.string.ok, (dialog, which) -> {
+            int value = seekBar.getProgress();
+            brightnessSettings.setValue(value);
+            brightnessSettings.setOverride(override.isChecked());
+            mProfile.setBrightness(brightnessSettings);
+            mAdapter.notifyDataSetChanged();
+            updateProfile();
+            dialog.dismiss();
         });
-        builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
+        builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.dismiss());
         return builder.create();
     }
 
@@ -987,14 +925,11 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         final AlertDialog alertDialog = new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.rename_dialog_title)
                 .setView(dialogView)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        String value = entry.getText().toString();
-                        mProfile.setName(value);
-                        mAdapter.notifyDataSetChanged();
-                        updateProfile();
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                    String value = entry.getText().toString();
+                    mProfile.setName(value);
+                    mAdapter.notifyDataSetChanged();
+                    updateProfile();
                 })
                 .setNegativeButton(android.R.string.cancel, null)
                 .create();
@@ -1018,13 +953,10 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                 alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(!empty);
             }
         });
-        alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
-            @Override
-            public void onShow(DialogInterface dialog) {
-                InputMethodManager imm = (InputMethodManager)
-                        getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.showSoftInput(entry, InputMethodManager.SHOW_IMPLICIT);
-            }
+        alertDialog.setOnShowListener(dialog -> {
+            InputMethodManager imm = (InputMethodManager)
+                    getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.showSoftInput(entry, InputMethodManager.SHOW_IMPLICIT);
         });
         return alertDialog;
     }
@@ -1039,19 +971,16 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             items[i] = notificationGroups[i].getName();
             checked[i] = mProfile.getProfileGroup(notificationGroups[i].getUuid()) != null;
         }
-        DialogInterface.OnMultiChoiceClickListener listener =
-                new DialogInterface.OnMultiChoiceClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                        if (isChecked) {
-                            mProfile.addProfileGroup(new ProfileGroup(notificationGroups[which].getUuid(), false));
-                        } else {
-                            mProfile.removeProfileGroup(notificationGroups[which].getUuid());
-                        }
-                        updateProfile();
-                        rebuildItemList();
-                    }
-                };
+        DialogInterface.OnMultiChoiceClickListener listener = (dialog, which, isChecked) -> {
+            if (isChecked) {
+                mProfile.addProfileGroup(new ProfileGroup(notificationGroups[which].getUuid(),
+                        false));
+            } else {
+                mProfile.removeProfileGroup(notificationGroups[which].getUuid());
+            }
+            updateProfile();
+            rebuildItemList();
+        };
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
                 .setMultiChoiceItems(items, checked, listener)
@@ -1070,20 +999,13 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         if (mNewProfileMode) {
             showButtonBar(true);
 
-            getBackButton().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    finishPreferencePanel(SetupActionsFragment.this, Activity.RESULT_OK, null);
-                }
-            });
+            getBackButton().setOnClickListener(view1 ->
+                    finishPreferencePanel(SetupActionsFragment.this, Activity.RESULT_OK, null));
 
             getNextButton().setText(R.string.finish);
-            getNextButton().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mProfileManager.addProfile(mProfile);
-                    finishPreferencePanel(SetupActionsFragment.this, Activity.RESULT_OK, null);
-                }
+            getNextButton().setOnClickListener(view12 -> {
+                mProfileManager.addProfile(mProfile);
+                finishPreferencePanel(SetupActionsFragment.this, Activity.RESULT_OK, null);
             });
         }
         return view;

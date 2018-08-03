@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +22,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -215,16 +215,12 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                 .setTitle(R.string.profile_reset_title)
                 .setIconAttribute(android.R.attr.alertDialogIcon)
                 .setMessage(R.string.profile_reset_message)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        mProfileManager.resetAll();
-                        mProfileManager.setActiveProfile(
-                                mProfileManager.getActiveProfile().getUuid());
-                        dialog.dismiss();
-                        refreshList();
-
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, id) -> {
+                    mProfileManager.resetAll();
+                    mProfileManager.setActiveProfile(
+                            mProfileManager.getActiveProfile().getUuid());
+                    dialog.dismiss();
+                    refreshList();
                 })
                 .setNegativeButton(R.string.cancel, null)
                 .show();

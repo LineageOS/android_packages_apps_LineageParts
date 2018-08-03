@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,12 +61,6 @@ import lineageos.preference.SettingsHelper;
  */
 public abstract class SettingsPreferenceFragment extends PreferenceFragment
         implements DialogCreatable, PartsUpdater.Refreshable {
-
-    /**
-     * The Help Uri Resource key. This can be passed as an extra argument when creating the
-     * Fragment.
-     **/
-    public static final String HELP_URI_RESOURCE_KEY = "help_uri_resource";
 
     private static final String TAG = "SettingsPreference";
 
@@ -427,12 +422,8 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             mPreferenceHighlighted = true;
             mLayoutManager.scrollToPosition(position);
 
-            getView().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mAdapter.highlight(position);
-                }
-            }, DELAY_HIGHLIGHT_DURATION_MILLIS);
+            getView().postDelayed(() ->
+                    mAdapter.highlight(position), DELAY_HIGHLIGHT_DURATION_MILLIS);
         }
     }
 

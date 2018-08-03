@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -63,15 +64,11 @@ public class DisplayTemperature extends CustomDialogPreference<AlertDialog> {
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder, DialogInterface.OnClickListener listener) {
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
+                                          DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
 
-        builder.setNeutralButton(R.string.reset,
-                new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
+        builder.setNeutralButton(R.string.reset, (dialog, which) -> {});
     }
 
     @Override
@@ -231,7 +228,8 @@ public class DisplayTemperature extends CustomDialogPreference<AlertDialog> {
                     ((mBalanceMin != 0) || (mBalanceMax != 0));
 
             if (mUseBalance) {
-                mBalanceCurve = MathUtils.powerCurve(mMin, mConfig.getDefaultDayTemperature(), mMax);
+                mBalanceCurve =
+                        MathUtils.powerCurve(mMin, mConfig.getDefaultDayTemperature(), mMax);
                 mBarMax = mBalanceMax - mBalanceMin;
             } else {
                 mBalanceCurve = null;

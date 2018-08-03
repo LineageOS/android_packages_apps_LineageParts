@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2017 The LineageOS Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -136,27 +136,21 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
 
         if (mNewProfileMode) {
             showButtonBar(true);
-            getNextButton().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Bundle args = new Bundle();
-                    args.putParcelable(ProfilesSettings.EXTRA_PROFILE,  mProfile);
-                    args.putBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, mNewProfileMode);
+            getNextButton().setOnClickListener(view -> {
+                Bundle args = new Bundle();
+                args.putParcelable(ProfilesSettings.EXTRA_PROFILE,  mProfile);
+                args.putBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, mNewProfileMode);
 
-                    PartsActivity pa = (PartsActivity) getActivity();
-                    pa.startPreferencePanel(SetupActionsFragment.class.getCanonicalName(), args,
-                            R.string.profile_profile_manage, null,
-                            SetupTriggersFragment.this, REQUEST_SETUP_ACTIONS);
-                }
+                PartsActivity pa = (PartsActivity) getActivity();
+                pa.startPreferencePanel(SetupActionsFragment.class.getCanonicalName(), args,
+                        R.string.profile_profile_manage, null,
+                        SetupTriggersFragment.this, REQUEST_SETUP_ACTIONS);
             });
 
             // back button
-            getBackButton().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    finishPreferencePanel(SetupTriggersFragment.this, Activity.RESULT_CANCELED, null);
-                }
-            });
+            getBackButton().setOnClickListener(view ->
+                    finishPreferencePanel(SetupTriggersFragment.this,
+                            Activity.RESULT_CANCELED, null));
         }
         return root;
     }
@@ -171,6 +165,4 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
             }
         }
     }
-
-
 }

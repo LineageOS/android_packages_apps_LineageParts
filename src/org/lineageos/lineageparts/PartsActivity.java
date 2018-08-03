@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017 The LineageOS Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -172,7 +172,8 @@ public class PartsActivity extends SettingsDrawerActivity implements
     }
 
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
-                                     CharSequence titleText, Fragment resultTo, int resultRequestCode) {
+                                     CharSequence titleText, Fragment resultTo,
+                                     int resultRequestCode) {
         String title = null;
         if (titleRes < 0) {
             if (titleText != null) {
