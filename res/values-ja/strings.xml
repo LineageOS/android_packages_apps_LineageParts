@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを設定します</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">時計</string>
+  <string name="status_bar_clock_show_seconds_title">秒を表示</string>
+  <string name="status_bar_clock_show_seconds_summary">時間、分、秒を表示します</string>
   <string name="status_bar_clock_position_title">時計のスタイル</string>
   <string name="status_bar_clock_position_right">右</string>
   <string name="status_bar_clock_position_left">左</string>

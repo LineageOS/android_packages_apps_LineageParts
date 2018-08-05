@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Kontrolatu erakutsiko diren egoera-barrako ikonoak</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Erlojua</string>
+  <string name="status_bar_clock_show_seconds_title">Erakutsi segundoak</string>
+  <string name="status_bar_clock_show_seconds_summary">Erakutsi orduak, minutuak, eta segundoak</string>
   <string name="status_bar_clock_position_title">Erlojuaren posizioa</string>
   <string name="status_bar_clock_position_right">Eskuinean</string>
   <string name="status_bar_clock_position_left">Ezkerrean</string>

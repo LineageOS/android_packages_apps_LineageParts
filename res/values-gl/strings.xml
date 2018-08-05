@@ -607,6 +607,9 @@
   <string name="style_automagic_dialog_content">Estilo suxerido: <b>%1$s</b> e cor de destaque <b>%2$s</b>.\nQueres aplicalo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Defecto</string>
+  <string name="style_dark_overlay_title">Modo oscuro</string>
+  <string name="style_dark_overlay_default">Defecto</string>
+  <string name="style_dark_overlay_black">Negro</string>
   <string name="style_permission_error">Precisase acceso ao almacenamento para analizar o fondo de pantalla, por favor concede o permiso para empregar esta funcionalidade</string>
   <!-- Trust interface -->
   <string name="trust_header">Trust axúdate a manter o teu dispositivo seguro e protexe a túa privacidade.\nA icona do Trust amosase para axudarte ó verificar a seguranza dos contidos.</string>
@@ -633,6 +636,9 @@
   <string name="trust_feature_encryption_explain">Cifrar o seu dispositivo impide o acceso a seus datos cando seu teléfono está apagado ou en modo de recuperación. Esto é especialmente importante se o seu telefono é robado ou prar prevenir que as persoas lean seus mensaxes, contactos e outra información privada sen o contrasinal.\nPara que o cifrado sea más efectivo, debe configurar unha pantalla de bloqueo segura.</string>
   <string name="trust_category_tools">Privacidade</string>
   <string name="trust_notification_alerts_title">Alertas de seguranza</string>
+  <string name="trust_warnings_alerts_intro">Pode seleccionalos problemas de seguridade dos que desexa ser avisado. Para su seguridade, recomendase habilitar tódalas alertas</string>
+  <string name="trust_warnings_selinux">Estado do SELinux</string>
+  <string name="trust_warnings_keys">Firma da compilación</string>
   <string name="trust_onboarding_title">Dille ola a Trust</string>
   <string name="trust_onboarding_description">Trust axúdate a manter o teu dispositivo seguro e protexe a túa privacidade.\nA icona do Trust amosarase para axudarte ó verificar a seguranza dos contidos</string>
   <string name="trust_onboarding_learn_more">Saber máis</string>

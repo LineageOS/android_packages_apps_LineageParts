@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Nadzor prikazanih ikon v vrstici stanja</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Ura</string>
+  <string name="status_bar_clock_show_seconds_title">Prikaži sekunde</string>
+  <string name="status_bar_clock_show_seconds_summary">Prikaži ure, minute in sekunde</string>
   <string name="status_bar_clock_position_title">Položaj ure</string>
   <string name="status_bar_clock_position_right">Desno</string>
   <string name="status_bar_clock_position_left">Levo</string>

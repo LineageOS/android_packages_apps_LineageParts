@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">בחר אילו סמלים יוצגו בשורת המצב</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">שעון</string>
+  <string name="status_bar_clock_show_seconds_title">הצג שניות</string>
+  <string name="status_bar_clock_show_seconds_summary">הצג שעות, דקות ושניות</string>
   <string name="status_bar_clock_position_title">מיקום השעון</string>
   <string name="status_bar_clock_position_right">ימין</string>
   <string name="status_bar_clock_position_left">שמאל</string>

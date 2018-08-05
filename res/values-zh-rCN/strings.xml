@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">控制在状态栏显示的图标</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">时钟</string>
+  <string name="status_bar_clock_show_seconds_title">显示秒</string>
+  <string name="status_bar_clock_show_seconds_summary">显示小时、分钟和秒</string>
   <string name="status_bar_clock_position_title">时钟位置</string>
   <string name="status_bar_clock_position_right">右侧</string>
   <string name="status_bar_clock_position_left">左侧</string>
@@ -638,7 +640,7 @@
   <string name="trust_notification_alerts_title">安全警报</string>
   <string name="trust_warnings_alerts_intro">您可以选择要警告的安全问题。但为了您的安全起见，建议启用所有警报。</string>
   <string name="trust_warnings_selinux">SELinux 状态</string>
-  <string name="trust_warnings_keys">构建签名</string>
+  <string name="trust_warnings_keys">编译签名</string>
   <string name="trust_onboarding_title">欢迎使用安全中心</string>
   <string name="trust_onboarding_description">安全中心能保障您的设备安全性和您的隐私。\n您可以通过显示的安全图标检查内容的安全性</string>
   <string name="trust_onboarding_learn_more">了解更多</string>

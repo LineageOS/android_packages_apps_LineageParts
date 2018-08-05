@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Controla quines icones de la barra d\'estat es mostren</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Rellotge</string>
+  <string name="status_bar_clock_show_seconds_title">Mostra els segons</string>
+  <string name="status_bar_clock_show_seconds_summary">Mostra hores, minuts i segons</string>
   <string name="status_bar_clock_position_title">Posició del rellotge</string>
   <string name="status_bar_clock_position_right">Dreta</string>
   <string name="status_bar_clock_position_left">Esquerra</string>

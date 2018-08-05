@@ -405,6 +405,7 @@
   <string name="status_bar_system_icons_summary">Изберете, кои икони да се показват в лентата на състоянието</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Часовник</string>
+  <string name="status_bar_clock_show_seconds_title">Покажи секунди</string>
   <string name="status_bar_clock_position_title">Позиция на часовника</string>
   <string name="status_bar_clock_position_right">Вдясно</string>
   <string name="status_bar_clock_position_left">Вляво</string>
@@ -628,6 +629,7 @@
   <string name="trust_feature_security_patches_value_new">актуално</string>
   <string name="trust_feature_security_patches_value_medium">някои месеца по-стари</string>
   <string name="trust_feature_security_patches_value_old">неактуален</string>
+  <string name="trust_feature_security_patches_explain">Пакетите за сигурност се разпространяват ежемесечно от доставчиците на Google и SoC, за да се отстранят системни проблеми, които могат да бъдат използвани от злонамерени приложения, за да избегнат ограниченията за сигурност и да причинят временни или постоянни щети на вашето устройство. За да бъде устройството ви сигурно, уверете се, че пакетите за сигурност на LineageOS е актуалени.</string>
   <string name="trust_feature_encryption">Криптиране</string>
   <string name="trust_feature_encryption_value_enabled">Активирано</string>
   <string name="trust_feature_encryption_value_nolock">Нуждае е се от заключване на екрана</string>

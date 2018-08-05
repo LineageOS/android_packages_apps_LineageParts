@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Hangi durum çubuğu simgelerinin gösterildiğini kontrol edin</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Saat</string>
+  <string name="status_bar_clock_show_seconds_title">Saniye göster</string>
+  <string name="status_bar_clock_show_seconds_summary">Saati, dakikayı ve saniyeyi göster</string>
   <string name="status_bar_clock_position_title">Saat konumu</string>
   <string name="status_bar_clock_position_right">Sağ</string>
   <string name="status_bar_clock_position_left">Sol</string>
@@ -614,7 +616,7 @@
   <string name="style_dark_overlay_black">Siyah</string>
   <string name="style_permission_error">Depolama alanına erişim izni, duvar kağıdınızı analiz etmek için gereklidir, lütfen bu özelliğin kullanılmasına izin verin</string>
   <!-- Trust interface -->
-  <string name="trust_header">Güven, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nGüven simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olmak için gösterilir.</string>
+  <string name="trust_header">Trust, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nTrust simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olmak için gösterilir.</string>
   <string name="trust_category_features">Durum</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Zorunlu</string>
@@ -629,7 +631,7 @@
   <string name="trust_feature_security_patches_value_base">Platform: %1$s\nÜretici: %2$s</string>
   <string name="trust_feature_security_patches_value_new">güncel</string>
   <string name="trust_feature_security_patches_value_medium">bir kaç aylık</string>
-  <string name="trust_feature_security_patches_value_old">tarihi geçmiş</string>
+  <string name="trust_feature_security_patches_value_old">eski</string>
   <string name="trust_feature_security_patches_explain">Güvenlik açıklarını ve güvenlik kısıtlamalarını atlamak cihazınızda geçici veya kalıcı bir hasar meydana getirmek için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek sistemdeki kusurları gidermek amacıyla Google ve SoC satıcıları tarafından aylık olarak yayınlanır.\nYazılım yamaları her ay global olarak güncellendiğinde üretici yamaları zaman zaman OEM\'den güncellenir.\nCihazınızı güvende tutmak için LineageOS yapınızın daima güncel olduğundan emin olun.</string>
   <string name="trust_feature_encryption">Şifreleme</string>
   <string name="trust_feature_encryption_value_enabled">Etkin</string>
@@ -641,8 +643,8 @@
   <string name="trust_warnings_alerts_intro">Uyarılmak istediğiniz güvenlik sorunlarını seçebilirsiniz. Güvenliğiniz için tüm uyarıları etkinleştirmeniz önerilir</string>
   <string name="trust_warnings_selinux">SELinux durumu</string>
   <string name="trust_warnings_keys">Yapı imzası</string>
-  <string name="trust_onboarding_title">Güven\'e merhaba de</string>
-  <string name="trust_onboarding_description">Güven, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nGüven simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olacak şekilde görünecektir</string>
+  <string name="trust_onboarding_title">Trust\'a merhaba de</string>
+  <string name="trust_onboarding_description">Trust, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nTrust simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olacak şekilde görünecektir</string>
   <string name="trust_onboarding_learn_more">Daha fazla bilgi</string>
   <string name="trust_onboarding_done">Anladım</string>
   <!-- Sms limit -->

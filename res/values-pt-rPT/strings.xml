@@ -385,7 +385,7 @@
   <string name="notification_volume_title">Notificação</string>
   <string name="media_volume_title">Multimédia</string>
   <string name="alarm_volume_title">Alarme</string>
-  <string name="doze_title">Visualização de ambiente</string>
+  <string name="doze_title">Visualização ambiente</string>
   <!-- Status bar -->
   <string name="status_bar_title">Barra de estado</string>
   <string name="status_bar_quick_qs_pulldown_title">Abertura rápida</string>
@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Controlar que ícones da barra de estado são mostrados</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Relógio</string>
+  <string name="status_bar_clock_show_seconds_title">Mostrar segundos</string>
+  <string name="status_bar_clock_show_seconds_summary">Mostrar horas, minutos e segundos</string>
   <string name="status_bar_clock_position_title">Posição do relógio</string>
   <string name="status_bar_clock_position_right">Direita</string>
   <string name="status_bar_clock_position_left">Esquerda</string>
@@ -607,6 +609,9 @@
   <string name="style_automagic_dialog_content">Estilo sugerido: <b>%1$s</b> com <b>%2$s</b> como cor de destaque.\nPretende aplicá-lo?</string>
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_accent_default_name">Predefinição</string>
+  <string name="style_dark_overlay_title">Modo escuro</string>
+  <string name="style_dark_overlay_default">Padrão</string>
+  <string name="style_dark_overlay_black">Preto</string>
   <string name="style_permission_error">É necessária a permissão de acesso ao armazenamento para analisar a sua imagem de fundo. Por favor, conceda a permissão para utilizar esta funcionalidade</string>
   <!-- Trust interface -->
   <string name="trust_header">O Trust ajuda-o a manter o seu dispositivo seguro e protege a sua privacidade.\nO ícone do Trust aparece para ajudá-lo, ao verificar a segurança dos conteúdos.</string>
@@ -621,11 +626,11 @@
   <string name="trust_feature_root_value_apps">Aplicações e ADB</string>
   <string name="trust_feature_root_explain">O acesso root permite que aplicações e serviços escolhidos por si possam ultrapassar restrições de segurança, dando-lhes liberdade para que possam efetuar modificações ao sistema que poderão causar danos no seu dispositivo ou SO.</string>
   <string name="trust_feature_security_patches">Patch de segurança do Android</string>
-  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFornecedor: %2$s</string>
+  <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
   <string name="trust_feature_security_patches_value_new">atualizado</string>
   <string name="trust_feature_security_patches_value_medium">com atraso de alguns meses</string>
   <string name="trust_feature_security_patches_value_old">fora de validade</string>
-  <string name="trust_feature_security_patches_explain">Os patches de segurança são disponibilizados mensalmente pela Google e fornecedores de SoC que visam corrigir falhas no sistema que poderiam ser exploradas por aplicações maliciosas de forma a ultrapassarem restrições de segurança e causarem danos temporários ou permanentes no seu dispositivo.\nEnquanto que os patches da plataforma Android são atualizados globalmente de forma mensal, os patches dos fornecedores só são atualizados pelos fabricantes de tempos a tempos.\nPara manter o seu dispositivo seguro, certifique-se de que a compilação do seu SO está sempre atualizada.</string>
+  <string name="trust_feature_security_patches_explain">Os patches de segurança são disponibilizados mensalmente pela Google e fabricantes de SoC que visam corrigir falhas no sistema que poderiam ser exploradas por aplicações maliciosas de forma a ultrapassarem restrições de segurança e causarem danos temporários ou permanentes no seu dispositivo.\nEnquanto que os patches da plataforma Android são atualizados globalmente de forma mensal, os patches dos fabricantes só são atualizados pelos próprios de tempos a tempos.\nPara manter o seu dispositivo seguro, certifique-se de que a compilação do seu SO está sempre atualizada.</string>
   <string name="trust_feature_encryption">Encriptação</string>
   <string name="trust_feature_encryption_value_enabled">Ativada</string>
   <string name="trust_feature_encryption_value_nolock">Necessita de um ecrã de bloqueio seguro</string>
@@ -633,6 +638,9 @@
   <string name="trust_feature_encryption_explain">Encriptar o seu dispositivo previne o acesso aos seus dados quando o telefone está desligado ou no modo de recuperação. Isto é particularmente importante se o seu telefone for roubado e previne que outros consigam ler as suas mensagens, contactos e outras informações privadas sem a palavra-passe.\nPara tornar a encriptação mais eficaz tem de definir um ecrã de bloqueio seguro.</string>
   <string name="trust_category_tools">Privacidade</string>
   <string name="trust_notification_alerts_title">Alertas de segurança</string>
+  <string name="trust_warnings_alerts_intro">Pode selecionar quais os alertas de segurança que deseja receber. Para sua segurança, recomendamos que ative todos os alertas</string>
+  <string name="trust_warnings_selinux">Estado SELinux</string>
+  <string name="trust_warnings_keys">Assinatura da compilação</string>
   <string name="trust_onboarding_title">Diga olá ao Trust</string>
   <string name="trust_onboarding_description">O Trust ajuda-o a manter o seu dispositivo seguro e protege a sua privacidade.\nO ícone do Trust irá aparecer para ajudá-lo, ao verificar a segurança dos conteúdos</string>
   <string name="trust_onboarding_learn_more">Saber mais</string>

@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Controlla quali icone vengono visualizzate nella barra di stato</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Orologio</string>
+  <string name="status_bar_clock_show_seconds_title">Mostra secondi</string>
+  <string name="status_bar_clock_show_seconds_summary">Mostra ore, minuti e secondi</string>
   <string name="status_bar_clock_position_title">Posizione orologio</string>
   <string name="status_bar_clock_position_right">Destra</string>
   <string name="status_bar_clock_position_left">Sinistra</string>

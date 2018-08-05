@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Controlați care pictograme din bara de stare sunt afișate</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Ceas</string>
+  <string name="status_bar_clock_show_seconds_title">Afișare secunde</string>
+  <string name="status_bar_clock_show_seconds_summary">Afișează orele, minutele și secundele</string>
   <string name="status_bar_clock_position_title">Poziţia ceasului</string>
   <string name="status_bar_clock_position_right">Dreapta</string>
   <string name="status_bar_clock_position_left">Stânga</string>
