@@ -18,14 +18,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:lineage="http://schemas.android.com/apk/res/org.lineageos.lineageparts"
     android:key="expanded_desktop_settings"
-    android:title="@string/expanded_desktop_settings_title">
+    android:title="@string/expanded_desktop_settings_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <PreferenceCategory
         android:key="expanded_desktop_options"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/expanded_desktop_options_title">
 
         <ListPreference
             android:key="expanded_desktop_style"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/expanded_desktop_style_title"
             android:entries="@array/expanded_desktop_style_entries"
             android:entryValues="@array/expanded_desktop_style_values" />
@@ -34,6 +40,7 @@
 
     <org.lineageos.lineageparts.widget.WallOfTextPreference
         android:summary="@string/expanded_desktop_nothing_to_show_text"
+        android:layout="@layout/watch_settings_items"
         android:selectable="false"
         lineage:allowDividerAbove="true" />
 </PreferenceScreen>

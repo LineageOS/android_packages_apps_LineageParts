@@ -17,7 +17,11 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="livedisplay"
-        android:title="@*lineageos.platform:string/live_display_title">
+        android:title="@*lineageos.platform:string/live_display_title"
+        android:paddingStart="@dimen/dashboard_padding_start"
+        android:paddingEnd="@dimen/dashboard_padding_end"
+        android:paddingTop="@dimen/dashboard_padding_top"
+        android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <PreferenceCategory
         android:key="live_display_options"
@@ -26,17 +30,20 @@
         <!-- Color profile -->
         <ListPreference
                 android:key="live_display_color_profile"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/live_display_color_profile_title"
                 android:persistent="false" />
 
         <ListPreference
                 android:key="live_display"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/live_display_mode"
                 android:persistent="false" />
 
         <!-- Manual temperature selection -->
         <org.lineageos.lineageparts.livedisplay.DisplayTemperature
                 android:key="live_display_color_temperature"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/live_display_color_temperature_title"
                 android:dialogTitle="@*lineageos.platform:string/live_display_title"
                 android:persistent="false" />
@@ -44,6 +51,7 @@
         <!-- Outdoor mode / SRE -->
         <lineageos.preference.LineageSystemSettingSwitchPreference
                 android:key="display_auto_outdoor_mode"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/live_display_outdoor_mode_title"
                 android:summary="@string/live_display_outdoor_mode_summary"
                 android:defaultValue="@*lineageos.platform:bool/config_defaultAutoOutdoorMode" />
@@ -51,6 +59,7 @@
         <!-- Reading mode -->
         <lineageos.preference.LineageSystemSettingSwitchPreference
                 android:key="display_reading_mode"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/live_display_reading_mode_title"
                 android:summary="@string/live_display_reading_mode_summary"
                 android:defaultValue="false"
@@ -65,6 +74,7 @@
         <!-- RGB display color adjustments -->
         <org.lineageos.lineageparts.livedisplay.DisplayColor
                 android:key="color_calibration"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/color_calibration_title"
                 android:dialogTitle="@string/color_calibration_title"
                 android:summary="@string/color_calibration_summary"
@@ -73,6 +83,7 @@
         <!-- HSIC display color adjustments -->
         <org.lineageos.lineageparts.livedisplay.PictureAdjustment
                 android:key="picture_adjustment"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/picture_adjustment_title"
                 android:dialogTitle="@string/picture_adjustment_title"
                 android:summary="@string/picture_adjustment_summary"
@@ -81,6 +92,7 @@
         <!-- Adaptive backlight -->
         <lineageos.preference.LineageSystemSettingSwitchPreference
                 android:key="display_low_power"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/live_display_low_power_title"
                 android:summary="@string/live_display_low_power_summary"
                 android:defaultValue="@*lineageos.platform:bool/config_defaultCABC" />
@@ -88,6 +100,7 @@
         <!-- Color enhancement -->
         <lineageos.preference.LineageSystemSettingSwitchPreference
                 android:key="display_color_enhance"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/live_display_enhance_color_title"
                 android:summary="@string/live_display_enhance_color_summary"
                 android:defaultValue="@*lineageos.platform:bool/config_defaultColorEnhancement" />

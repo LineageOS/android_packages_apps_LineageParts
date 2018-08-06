@@ -16,10 +16,15 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <DropDownPreference
         android:key="network_traffic_mode"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/network_traffic_mode_title"
         android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
@@ -28,12 +33,14 @@
 
     <lineageos.preference.LineageSecureSettingSwitchPreference
         android:key="network_traffic_autohide"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
         android:defaultValue="false" />
 
     <DropDownPreference
         android:key="network_traffic_units"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/network_traffic_units_title"
         android:entries="@array/network_traffic_units_entries"
         android:entryValues="@array/network_traffic_units_values"
@@ -42,6 +49,7 @@
 
     <lineageos.preference.LineageSecureSettingSwitchPreference
         android:key="network_traffic_show_units"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/network_traffic_show_units"
         android:summary="@string/network_traffic_show_units_summary"
         android:defaultValue="true" />

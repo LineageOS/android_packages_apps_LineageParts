@@ -18,14 +18,20 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
         android:key="rotation"
-        android:title="@string/display_rotation_title">
+        android:title="@string/display_rotation_title"
+        android:paddingStart="@dimen/dashboard_padding_start"
+        android:paddingEnd="@dimen/dashboard_padding_end"
+        android:paddingTop="@dimen/dashboard_padding_top"
+        android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <SwitchPreference
         android:key="accelerometer"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/accelerometer_title" />
 
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="lockscreen_rotation"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/display_lockscreen_rotation_title"
         android:dependency="accelerometer"
         android:defaultValue="false"
@@ -38,18 +44,22 @@
 
         <CheckBoxPreference
             android:key="display_rotation_0"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/display_rotation_0_title" />
 
         <CheckBoxPreference
             android:key="display_rotation_90"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/display_rotation_90_title" />
 
         <CheckBoxPreference
             android:key="display_rotation_180"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/display_rotation_180_title" />
 
         <CheckBoxPreference
             android:key="display_rotation_270"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/display_rotation_270_title" />
 
     </PreferenceCategory>

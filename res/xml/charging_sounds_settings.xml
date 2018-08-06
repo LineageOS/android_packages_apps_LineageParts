@@ -18,20 +18,27 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="charging_sounds_settings"
-    android:title="@string/charging_sounds_settings_title">
+    android:title="@string/charging_sounds_settings_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <lineageos.preference.GlobalSettingSwitchPreference
         android:key="charging_sounds_enabled"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/charging_sounds_enabled_title"
         android:summary="@string/charging_sounds_enabled_summary" />
 
     <lineageos.preference.LineageGlobalSettingSwitchPreference
         android:key="power_notifications_vibrate"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/power_notifications_vibrate_title"
         android:dependency="charging_sounds_enabled" />
 
     <Preference
         android:key="charging_sounds_ringtone"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/charging_sounds_ringtone_title"
         android:dependency="charging_sounds_enabled"
         android:persistent="false" />

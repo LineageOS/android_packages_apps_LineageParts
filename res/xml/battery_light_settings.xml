@@ -16,7 +16,11 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="battery_lights"
-        android:title="@string/battery_light_title">
+        android:title="@string/battery_light_title"
+        android:paddingStart="@dimen/dashboard_padding_start"
+        android:paddingEnd="@dimen/dashboard_padding_end"
+        android:paddingTop="@dimen/dashboard_padding_top"
+        android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <PreferenceCategory
         android:key="general_section"
@@ -24,11 +28,13 @@
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="battery_light_enabled"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/battery_light_title"
             android:defaultValue="@bool/def_battery_light_enabled" />
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="battery_light_pulse"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/battery_low_pulse_title"
             android:defaultValue="@bool/def_battery_light_pulse"
             android:dependency="battery_light_enabled" />
@@ -42,16 +48,19 @@
 
         <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="low_color"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/battery_light_low_color_title"
             android:persistent="false" />
 
         <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="medium_color"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/battery_light_medium_color_title"
             android:persistent="false" />
 
         <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="full_color"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/battery_light_full_color_title"
             android:persistent="false" />
 
@@ -64,11 +73,13 @@
 
         <org.lineageos.lineageparts.notificationlight.BatteryBrightnessPreference
             android:key="battery_light_brightness_level"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/battery_light_brightness_normal"
             android:dependency="battery_light_enabled" />
 
         <org.lineageos.lineageparts.notificationlight.BatteryBrightnessZenPreference
             android:key="battery_light_brightness_level_zen"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/battery_light_brightness_zen"
             android:dependency="battery_light_enabled" />
 
