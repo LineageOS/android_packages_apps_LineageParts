@@ -17,16 +17,22 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="lineagestats"
-    android:title="@string/anonymous_statistics_title">
+    android:title="@string/anonymous_statistics_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="stats_collection"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/stats_collection_title"
             android:summary="@string/stats_collection_summary"
             android:defaultValue="true" />
 
     <PreferenceScreen
         android:title="@string/preview_data_title"
+        android:layout="@layout/watch_settings_items"
         android:fragment="org.lineageos.lineageparts.lineagestats.PreviewData" />
 
 </PreferenceScreen>

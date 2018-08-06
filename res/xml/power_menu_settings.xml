@@ -17,31 +17,40 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="power_menu"
-    android:title="@string/power_menu_title">
+    android:title="@string/power_menu_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <CheckBoxPreference
         android:key="screenshot"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/power_menu_screenshot_title"
         android:summary="@string/power_menu_screenshot_summary"
         android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="airplane"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/power_menu_airplane_title"
         android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="users"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/power_menu_users_title"
         android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="bugreport"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/power_menu_bug_report_title"
         android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="lockdown"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/power_menu_lockdown_title"
         android:defaultValue="false" />
 </PreferenceScreen>

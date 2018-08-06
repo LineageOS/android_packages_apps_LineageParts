@@ -14,15 +14,21 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <PreferenceCategory
             android:key="general_section"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/profile_appgroup_name_title">
     </PreferenceCategory>
 
     <PreferenceCategory
             android:key="applications_list"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/profile_applist_title" >
     </PreferenceCategory>
 

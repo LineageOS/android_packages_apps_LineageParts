@@ -17,5 +17,9 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="privacy_guard_manager"
-    android:title="@*lineageos.platform:string/privacy_guard_manager_title">
+    android:title="@*lineageos.platform:string/privacy_guard_manager_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 </PreferenceScreen>

@@ -17,7 +17,11 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="perf_profile_settings"
-    android:title="@string/perf_profile_settings_title" >
+    android:title="@string/perf_profile_settings_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <PreferenceCategory
         android:key="power_save_category"
@@ -25,12 +29,14 @@
 
         <SwitchPreference
             android:key="power_save"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/power_save_title"
             android:summary="@string/power_save_summary"
             android:persistent="false" />
 
         <ListPreference
             android:key="auto_power_save"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/auto_power_save_title"
             android:persistent="false" />
 
