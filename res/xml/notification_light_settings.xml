@@ -16,7 +16,11 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="notification_lights"
-        android:title="@string/notification_light_title">
+        android:title="@string/notification_light_title"
+        android:paddingStart="@dimen/dashboard_padding_start"
+        android:paddingEnd="@dimen/dashboard_padding_end"
+        android:paddingTop="@dimen/dashboard_padding_top"
+        android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <PreferenceCategory
         android:key="general_section"
@@ -24,16 +28,19 @@
 
         <lineageos.preference.SystemSettingSwitchPreference
             android:key="notification_light_pulse"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_title" />
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_color_auto"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_automagic"
             android:dependency="notification_light_pulse"
             android:defaultValue="true" />
 
         <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="default"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_default_value"
             android:persistent="false"
             android:dependency="notification_light_pulse" />
@@ -47,11 +54,13 @@
 
         <org.lineageos.lineageparts.notificationlight.NotificationBrightnessPreference
             android:key="notification_light_brightness_level"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_brightness_normal"
             android:dependency="notification_light_pulse" />
 
         <org.lineageos.lineageparts.notificationlight.NotificationBrightnessZenPreference
             android:key="notification_light_brightness_level_zen"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_brightness_zen"
             android:dependency="notification_light_pulse" />
 
@@ -63,11 +72,13 @@
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_screen_on"
             android:dependency="notification_light_pulse" />
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_use_custom"
             android:dependency="notification_light_pulse" />
 
@@ -79,12 +90,14 @@
 
         <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="missed_call"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_missed_call_title"
             android:persistent="false"
             android:dependency="notification_light_pulse_custom_enable" />
 
         <org.lineageos.lineageparts.notificationlight.ApplicationLightPreference
             android:key="voicemail"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/notification_light_voicemail_title"
             android:persistent="false"
             android:dependency="notification_light_pulse_custom_enable" />
@@ -93,6 +106,7 @@
 
     <PreferenceCategory
         android:key="applications_list"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/notification_light_applist_title"
         android:dependency="notification_light_pulse_custom_enable" >
     </PreferenceCategory>

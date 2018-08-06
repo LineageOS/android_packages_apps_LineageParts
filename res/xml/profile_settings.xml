@@ -17,10 +17,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/profile_settings"
         android:key="profile_settings"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:paddingStart="@dimen/dashboard_padding_start"
+        android:paddingEnd="@dimen/dashboard_padding_end"
+        android:paddingTop="@dimen/dashboard_padding_top"
+        android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <ListPreference
             android:key="sound_mode"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/sound_mode"
             android:summary="@string/sound_mode"
             android:entries="@array/profile_entries"
@@ -29,6 +34,7 @@
 
     <org.lineageos.lineageparts.profiles.ProfileRingtonePreference
             android:key="soundtone"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/soundtone_title"
             android:summary="@string/soundtone_summary"
             android:dialogTitle="@string/soundtone_title"
@@ -37,6 +43,7 @@
 
     <ListPreference
             android:key="ringer_mode"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/ringer_mode"
             android:summary="@string/ringer_mode"
             android:entries="@array/profile_entries"
@@ -45,6 +52,7 @@
 
     <org.lineageos.lineageparts.profiles.ProfileRingtonePreference
             android:key="ringtone"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/ringtone_title"
             android:summary="@string/ringtone_summary"
             android:dialogTitle="@string/ringtone_title"
@@ -53,6 +61,7 @@
 
     <ListPreference
             android:key="vibrate_mode"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/vibrate_mode"
             android:summary="@string/sound_mode"
             android:entries="@array/profile_entries"
@@ -61,6 +70,7 @@
 
     <ListPreference
             android:key="lights_mode"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/lights_mode"
             android:summary="@string/sound_mode"
             android:entries="@array/profile_entries"

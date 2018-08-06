@@ -18,6 +18,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:lineage="http://schemas.android.com/apk/res/org.lineageos.lineageparts"
     android:key="long_screen_settings"
-    android:title="@string/long_screen_settings_title">
+    android:title="@string/long_screen_settings_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
 </PreferenceScreen>

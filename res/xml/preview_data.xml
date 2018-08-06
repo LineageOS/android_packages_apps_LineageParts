@@ -16,34 +16,43 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/preview_data_title">
+    android:title="@string/preview_data_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <Preference
         android:key="preview_id"
+        android:layout="@layout/watch_settings_items"
         style="?android:preferenceInformationStyle"
         android:title="@string/preview_id_title"
         android:summary="%s" />
 
     <Preference
         android:key="preview_device"
+        android:layout="@layout/watch_settings_items"
         style="?android:preferenceInformationStyle"
         android:title="@string/preview_device_title"
         android:summary="%s" />
 
     <Preference
         android:key="preview_version"
+        android:layout="@layout/watch_settings_items"
         style="?android:preferenceInformationStyle"
         android:title="@string/preview_version_title"
         android:summary="%s" />
 
     <Preference
         android:key="preview_country"
+        android:layout="@layout/watch_settings_items"
         style="?android:preferenceInformationStyle"
         android:title="@string/preview_country_title"
         android:summary="%s" />
 
     <Preference
         android:key="preview_carrier"
+        android:layout="@layout/watch_settings_items"
         style="?android:preferenceInformationStyle"
         android:title="@string/preview_carrier_title"
         android:summary="%s" />
