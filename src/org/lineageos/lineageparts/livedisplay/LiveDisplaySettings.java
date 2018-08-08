@@ -231,6 +231,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         updateModeSummary();
         updateTemperatureSummary();
         updateColorProfileSummary(null);
+        updateReadingModeStatus();
         SettingsHelper.get(getActivity()).startWatching(this, DISPLAY_TEMPERATURE_DAY_URI,
                 DISPLAY_TEMPERATURE_MODE_URI, DISPLAY_TEMPERATURE_NIGHT_URI);
     }
@@ -332,6 +333,13 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                 mDisplayTemperature.roundUp(night)));
     }
 
+    private void updateReadingModeStatus() {
+        if (mReadingMode != null) {
+            mReadingMode.setChecked(
+                    mHardware.get(LineageHardwareManager.FEATURE_READING_ENHANCEMENT));
+        }
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mLiveDisplay) {
@@ -347,7 +355,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                 }
             }
         } else if (preference == mReadingMode) {
-            mHardware.setGrayscale((Boolean) objValue);
+            mHardware.set(LineageHardwareManager.FEATURE_READING_ENHANCEMENT, (Boolean) objValue);
         }
         return true;
     }
@@ -356,6 +364,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
     public void onSettingsChanged(Uri uri) {
         updateModeSummary();
         updateTemperatureSummary();
+        updateReadingModeStatus();
     }
 
 
