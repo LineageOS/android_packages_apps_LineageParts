@@ -245,12 +245,14 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mItems.add(new AirplaneModeItem(mProfile.getAirplaneMode()));
         DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(
                 Context.DEVICE_POLICY_SERVICE);
+/*
         if (!dpm.requireSecureKeyguard()) {
             mItems.add(new LockModeItem(mProfile));
         } else {
             mItems.add(new DisabledItem(R.string.profile_lockmode_title,
                     R.string.profile_lockmode_policy_disabled_summary));
         }
+*/
         mItems.add(new BrightnessItem(mProfile.getBrightness()));
 
         final Activity activity = getActivity();
