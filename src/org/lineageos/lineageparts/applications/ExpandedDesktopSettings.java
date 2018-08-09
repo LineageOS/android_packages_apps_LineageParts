@@ -33,6 +33,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManagerGlobal;
+/*
 import android.view.WindowManagerPolicyControl;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
@@ -450,6 +451,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
             }
 
             final int index = Arrays.binarySearch(mPositions, position);
+*/
 
             /*
              * Consider this example: section positions are 0, 3, 5; the supplied
@@ -459,6 +461,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
              * To get from that number to the expected value of 1 we need to negate
              * and subtract 2.
              */
+/*
             return index >= 0 ? index : -index - 2;
         }
 
@@ -587,3 +590,4 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
     }
 }
 
+*/
