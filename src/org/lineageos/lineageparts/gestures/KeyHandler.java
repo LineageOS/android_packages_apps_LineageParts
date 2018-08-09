@@ -48,6 +48,7 @@ import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.KeyEvent;
 
+/*
 import com.android.internal.os.DeviceKeyHandler;
 
 import lineageos.providers.LineageSettings;
@@ -407,3 +408,4 @@ public class KeyHandler implements DeviceKeyHandler {
         return pm.getLaunchIntentForPackage(resInfo.get(0).activityInfo.packageName);
     }
 }
+*/

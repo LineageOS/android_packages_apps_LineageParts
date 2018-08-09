@@ -21,13 +21,16 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.provider.Settings;
 import android.view.WindowManagerGlobal;
+/*
 import android.view.WindowManagerPolicyControl;
+*/
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
+/*
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
@@ -133,3 +136,4 @@ public class ExpandedDesktopPrefs extends SettingsPreferenceFragment
         updateExpandedDesktopStyle();
     }
 }
+*/
