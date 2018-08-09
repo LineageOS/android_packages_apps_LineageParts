@@ -25,6 +25,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import android.view.WindowManagerGlobal;
+/*
 import android.view.WindowManagerPolicyControl;
 
 import org.lineageos.lineageparts.R;
@@ -132,3 +133,4 @@ public class ExpandedDesktopPrefs extends SettingsPreferenceFragment
         updateExpandedDesktopStyle();
     }
 }
+*/
