@@ -273,7 +273,9 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
         final AppInfo app = (AppInfo) parent.getItemAtPosition(position);
 
         app.privacyGuardEnabled = !app.privacyGuardEnabled;
+/*
         mAppOps.setPrivacyGuardSettingForPackage(app.uid, app.packageName, app.privacyGuardEnabled);
+*/
 
         mAdapter.notifyDataSetChanged();
     }
@@ -286,9 +288,11 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
         Bundle args = new Bundle();
         args.putString("package", app.packageName);
 
+/*
         final Intent i = new Intent(Settings.ACTION_APP_OPS_DETAILS_SETTINGS,
                 Uri.fromParts("package", app.packageName, null));
         mActivity.startActivityForResult(i, 0);
+*/
         return true;
     }
 
