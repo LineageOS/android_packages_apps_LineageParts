@@ -66,7 +66,9 @@ public class LongScreenSettings extends SettingsPreferenceFragment
 
         mApplicationsState = ApplicationsState.getInstance(getActivity().getApplication());
         mSession = mApplicationsState.newSession(this);
+/*
         mSession.resume();
+*/
         mActivityFilter = new ActivityFilter(getActivity().getPackageManager());
         mAllPackagesAdapter = new AllPackagesAdapter(getActivity());
 
@@ -103,8 +105,10 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     public void onDestroy() {
         super.onDestroy();
 
+/*
         mSession.pause();
         mSession.release();
+*/
     }
 
     @Override
