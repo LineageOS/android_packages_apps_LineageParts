@@ -585,6 +585,7 @@
   <string name="style_automagic_title">Automagic</string>
   <string name="style_automagic_dialog_positive">Toepassen</string>
   <string name="style_accent_default_name">Standaard</string>
+  <string name="style_dark_overlay_default">Standaard</string>
   <!-- Trust interface -->
   <!-- Sms limit -->
 </resources>

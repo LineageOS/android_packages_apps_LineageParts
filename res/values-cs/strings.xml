@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Upravit zobrazení ikon na stavové liště</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Hodiny</string>
+  <string name="status_bar_clock_show_seconds_title">Zobrazit sekundy</string>
+  <string name="status_bar_clock_show_seconds_summary">Zobrazit hodiny, minuty a sekundy</string>
   <string name="status_bar_clock_position_title">Pozice hodin</string>
   <string name="status_bar_clock_position_right">Napravo</string>
   <string name="status_bar_clock_position_left">Nalevo</string>

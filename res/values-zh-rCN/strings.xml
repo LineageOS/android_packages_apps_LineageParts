@@ -66,12 +66,12 @@
   <string name="brightness">亮度级别</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">始终开启</string>
-  <string name="pulse_length_very_short">非常短促</string>
+  <string name="pulse_length_very_short">很短</string>
   <string name="pulse_length_short">短促</string>
   <string name="pulse_length_normal">正常</string>
   <string name="pulse_length_long">长久</string>
-  <string name="pulse_length_very_long">非常长久</string>
-  <string name="pulse_speed_very_fast">非常快</string>
+  <string name="pulse_length_very_long">很长</string>
+  <string name="pulse_speed_very_fast">很快</string>
   <string name="pulse_speed_fast">较快</string>
   <string name="pulse_speed_normal">正常</string>
   <string name="pulse_speed_slow">较慢</string>
