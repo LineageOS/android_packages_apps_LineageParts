@@ -406,6 +406,7 @@
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Часовник</string>
   <string name="status_bar_clock_show_seconds_title">Покажи секунди</string>
+  <string name="status_bar_clock_show_seconds_summary">Покажи часове, минути и секунди</string>
   <string name="status_bar_clock_position_title">Позиция на часовника</string>
   <string name="status_bar_clock_position_right">Вдясно</string>
   <string name="status_bar_clock_position_left">Вляво</string>

@@ -561,6 +561,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Δόνηση όταν εντοπιστεί μία χειρονομία αφής</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Σύρετε προς τα κάτω με δύο δάχτυλα</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Σύρετε προς τα επάνω με ένα δάχτυλο</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Σύρετε προς τα επάνω από το πλήκτρο αρχικής οθόνης</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Σύρετε προς τα κάτω με ένα δάχτυλο</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Σύρετε προς τα αριστερά με ένα δάχτυλο</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Σύρετε προς τα δεξιά με ένα δάχτυλο</string>

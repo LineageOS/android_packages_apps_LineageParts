@@ -46,7 +46,7 @@
   <string name="privacy_guard_dlg_title">Включить Защиту кониденциальности?</string>
   <string name="privacy_guard_dlg_text">Когда режим Защиты конфиденциальности включен, приложение не сможет получить доступ к личным данным, таким как контакты, сообщения или журналы вызовов.</string>
   <string name="privacy_guard_dlg_system_app_text">При включении Защиты конфиденциальности для системного приложения, оно не сможет получать или предоставлять доступ к личным данным. Это может привести к неправильному поведению других приложений.</string>
-  <string name="privacy_guard_default_title">Включен по умолчанию</string>
+  <string name="privacy_guard_default_title">Включена по умолчанию</string>
   <string name="privacy_guard_manager_summary">Управление доступом к вашим личным данным</string>
   <string name="privacy_guard_no_user_apps">Нет установленных приложений</string>
   <string name="privacy_guard_help_title">Помощь</string>
@@ -622,12 +622,12 @@
   <string name="trust_feature_selinux_explain">SELinux определяет, какие процессы имеют доступ к файлам на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым им доступ не положен: таким образом, вредоносный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
   <string name="trust_feature_root">Режим суперпользователя</string>
   <string name="trust_feature_root_value_disabled">Отключено</string>
-  <string name="trust_feature_root_value_adb">Только для ADB</string>
-  <string name="trust_feature_root_value_apps">Для приложений и ADB</string>
+  <string name="trust_feature_root_value_adb">Только ADB</string>
+  <string name="trust_feature_root_value_apps">Приложения и ADB</string>
   <string name="trust_feature_root_explain">Режим суперпользователя позволяет выбранным вами приложениям и службам обходить ограничения безопасности, позволяя им вносить изменения в систему, что может привести к повреждению устройства или ОС.</string>
   <string name="trust_feature_security_patches">Пакеты безопасности Android</string>
   <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nПроизводитель: %2$s</string>
-  <string name="trust_feature_security_patches_value_new">обновлено</string>
+  <string name="trust_feature_security_patches_value_new">актуальны</string>
   <string name="trust_feature_security_patches_value_medium">несколько месяцев</string>
   <string name="trust_feature_security_patches_value_old">устаревший</string>
   <string name="trust_feature_security_patches_explain">Пакеты безопасности выпускаются ежемесячно компанией Google и поставщиками SoC для устранения недостатков в системе, которые могут быть использованы вредоносными приложениями для обхода ограничений безопасности и могут нанести временный или постоянный ущерб вашему устройству.\nНесмотря на то, что пакеты безопасности платформы обновляются каждый месяц, производители устройств обновляют их намного реже.\nДля того, чтобы быть уверенным в безопасности вашего устройства, убедитесь, что ваша сборка LineageOS актуальна.</string>

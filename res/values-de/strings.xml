@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Festlegen, welche Statusleistensymbole angezeigt werden</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Uhr</string>
+  <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
+  <string name="status_bar_clock_show_seconds_summary">Stunden, Minuten und Sekunden anzeigen</string>
   <string name="status_bar_clock_position_title">Position der Uhr</string>
   <string name="status_bar_clock_position_right">Rechts</string>
   <string name="status_bar_clock_position_left">Links</string>
