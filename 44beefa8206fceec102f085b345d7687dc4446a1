@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "be005aa1_7a989171",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 723,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-21T15:33:58Z",
+      "side": 1,
+      "message": "There should be no dot at the end",
+      "range": {
+        "startLine": 723,
+        "startChar": 87,
+        "endLine": 723,
+        "endChar": 88
+      },
+      "revId": "44beefa8206fceec102f085b345d7687dc4446a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3b1b118a_9fc9be3d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 723,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-08-21T15:33:58Z",
+      "side": 1,
+      "message": "This should be lowercase",
+      "range": {
+        "startLine": 723,
+        "startChar": 63,
+        "endLine": 723,
+        "endChar": 64
+      },
+      "revId": "44beefa8206fceec102f085b345d7687dc4446a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
