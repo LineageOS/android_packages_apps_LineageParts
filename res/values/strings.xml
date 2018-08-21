@@ -706,7 +706,6 @@
 
     <!-- Trust interface -->
     <string name="trust_title" translatable="false">@*lineageos.platform:string/trust_feature_name</string>
-    <string name="trust_header">Trust helps you keep your device secure and protect your privacy.\nThe Trust icon will only show when the contents of the page have been verified.</string>
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
@@ -719,8 +718,11 @@
     <string name="trust_feature_root_explain">Root access allows apps and services you choose to bypass security restrictions, allowing them to make modifications to the system, which can cause damage to your device or OS.</string>
     <string name="trust_feature_security_patches">Android security patches</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">up to date</string>
-    <string name="trust_feature_security_patches_value_medium">A few months out of date.</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_value_medium">a few months out of date</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">out of date</string>
     <string name="trust_feature_security_patches_explain">Security patches are released monthly by Google in cooperation with SoC vendors to address flaws which could be exploited by malicious apps to bypass security restrictions and cause permanent damage to your device. Patches made available by Google are applied every month on all supported devices, but patches to proprietary code can only be applied by your device\'s manufacturer. To keep your device safe make sure your LineageOS build is always up-to-date, and (if applicable) ensure your vendor image is updated to the latest one recommended by LineageOS.</string>
     <string name="trust_feature_encryption">Encryption</string>
@@ -734,7 +736,7 @@
     <string name="trust_warnings_selinux">SELinux status</string>
     <string name="trust_warnings_keys">Build signature</string>
     <string name="trust_onboarding_title">Say hello to Trust</string>
-    <string name="trust_onboarding_description">Trust helps you keep your device secure and protects your privacy.\nThe Trust icon will only show when the contents of the page have been verified.</string>
+    <string name="trust_onboarding_description">Trust helps you keep your device secure and protect your privacy.\nThe Trust icon will only show when the contents of the page have been verified.</string>
     <string name="trust_onboarding_learn_more">Learn more</string>
     <string name="trust_onboarding_done">Got it</string>
 

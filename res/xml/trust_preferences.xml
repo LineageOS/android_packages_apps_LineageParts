@@ -18,7 +18,7 @@
 
     <org.lineageos.lineageparts.widget.WallOfTextPreference
         android:icon="@drawable/ic_trust"
-        android:summary="@string/trust_header" />
+        android:summary="@string/trust_onboarding_description" />
 
     <PreferenceCategory android:title="@string/trust_category_features">
 
