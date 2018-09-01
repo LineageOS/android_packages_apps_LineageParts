@@ -138,6 +138,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mLockDownPref) {
             value = mLockDownPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.LOCKDOWN_IN_POWER_MENU, value ? 1 : 0);
 
         } else {
             return super.onPreferenceTreeClick(preference);
