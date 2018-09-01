@@ -23,7 +23,8 @@
     <lineageos.preference.GlobalSettingSwitchPreference
         android:key="charging_sounds_enabled"
         android:title="@string/charging_sounds_enabled_title"
-        android:summary="@string/charging_sounds_enabled_summary" />
+        android:summary="@string/charging_sounds_enabled_summary"
+        android:defaultValue="true" />
 
     <lineageos.preference.LineageGlobalSettingSwitchPreference
         android:key="power_notifications_vibrate"
