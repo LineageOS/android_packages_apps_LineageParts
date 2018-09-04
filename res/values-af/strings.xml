@@ -224,9 +224,6 @@
   <string name="power_menu_users_title">Gebruiker wisselaar</string>
   <string name="power_menu_bug_report_title">Fout verslag</string>
   <string name="power_menu_bug_report_disabled">Fout verslagdoening is in ontwikkelaar opsies gedeaktiveer</string>
-  <string name="volume_keys_control_ring_stream_title">Beheer luitoon volume</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Volume-knoppies beheer luitoon volume</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Volume knoppies beheer media volume</string>
   <string name="camera_double_tap_power_gesture_title">Druk aan/af-skakelaar 2 keer vir kamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Maak kamera vinnig oop sonder om jou skerm te ontsluit</string>

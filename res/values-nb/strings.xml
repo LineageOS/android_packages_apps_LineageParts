@@ -224,9 +224,6 @@
   <string name="power_menu_users_title">Brukerbytte</string>
   <string name="power_menu_bug_report_title">Feilrapport</string>
   <string name="power_menu_bug_report_disabled">Feilrapportering er deaktivert i innstillingene for utvikling</string>
-  <string name="volume_keys_control_ring_stream_title">Ringetone volumkontroll</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Volumtastene styrer ringetonevolum</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Volumtastene styrer media volum</string>
   <string name="camera_double_tap_power_gesture_title">Dobbeltrykk strøm-knappen for å åpne kamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Åpne kameraet raskt uten å låse opp skjermen</string>

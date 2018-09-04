@@ -164,9 +164,6 @@
   <string name="power_menu_users_title">Seleutor d\'usuarios</string>
   <string name="power_menu_bug_report_title">Informe de fallos</string>
   <string name="power_menu_bug_report_disabled">L\'informe de fallos ta deshabilitáu nos axustes de desendolcu</string>
-  <string name="volume_keys_control_ring_stream_title">Controlar el volume del timbre</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Les tecles de volume controlen el volume del timbre</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Les tecles de volume controlen el volume de medios</string>
   <string name="camera_double_tap_power_gesture_title">Primir dos vegaes el botón de prendíu pa la cámara</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abre aína la cámara ensin desbloquiar la to pantalla</string>

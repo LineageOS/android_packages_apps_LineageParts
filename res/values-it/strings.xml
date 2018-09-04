@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Segnalazione bug</string>
   <string name="power_menu_bug_report_disabled">La segnalazione bug è disattivata nelle opzioni sviluppatore</string>
   <string name="power_menu_lockdown_title">Blocca ora</string>
-  <string name="volume_keys_control_ring_stream_title">Controllo volume suoneria</string>
-  <string name="volume_keys_control_ring_stream_summary_on">I tasti del volume controllano il volume della suoneria</string>
-  <string name="volume_keys_control_ring_stream_summary_off">I tasti del volume controllano il volume dei contenuti multimediali</string>
   <string name="camera_double_tap_power_gesture_title">Premi due volte il tasto di accensione per avviare la fotocamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>

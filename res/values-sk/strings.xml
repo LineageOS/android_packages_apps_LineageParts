@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Nahlásiť chybu</string>
   <string name="power_menu_bug_report_disabled">Hlásenie chýb je zakázané v nastaveniach pre vývojárov</string>
   <string name="power_menu_lockdown_title">Uzamknutie</string>
-  <string name="volume_keys_control_ring_stream_title">Ovládanie hlasitosti zvonenia</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Tlačidlá hlasitosti ovládajú hlasitosť zvonenia</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Tlačidlá hlasitosti ovládajú hlasitosť médií</string>
   <string name="camera_double_tap_power_gesture_title">Fotoaparát dvoj. stlačením Napájania</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Rýchlo spustiť fotoaparát dvojitým stlačením tlačidla Napájanie, bez odomknutia obrazovky</string>

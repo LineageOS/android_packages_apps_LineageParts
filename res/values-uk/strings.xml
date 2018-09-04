@@ -224,9 +224,6 @@
   <string name="power_menu_users_title">Перемикання користувачів</string>
   <string name="power_menu_bug_report_title">Звіт про помилку</string>
   <string name="power_menu_bug_report_disabled">Надсилання звітів про помилки вимкнено в налаштуваннях розробника</string>
-  <string name="volume_keys_control_ring_stream_title">Регулювання гучності рингтону</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Клавіші регулювання гучності контролюють гучність дзвінка</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Клавіші регулювання гучності контролюють гучність медіа-файлів</string>
   <string name="camera_double_tap_power_gesture_title">Двічі натисніть кнопку живлення для запуску камери</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Швидко запустити камеру, не розблоковуючи екран</string>

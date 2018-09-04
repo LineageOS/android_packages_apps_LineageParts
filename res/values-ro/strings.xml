@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Raport de eroare</string>
   <string name="power_menu_bug_report_disabled">Raportarea erorilor este dezactivată în setările pentru dezvoltatori</string>
   <string name="power_menu_lockdown_title">Blocare</string>
-  <string name="volume_keys_control_ring_stream_title">Controlează volumul soneriei</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Butoanele de volum controlează volumul tonului de apel</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Butoanele de volum controlează volumul media</string>
   <string name="camera_double_tap_power_gesture_title">Apăsați butonul de pornire de 2 ori pentru cameră</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Deschideți rapid camera foto fără să deblocați ecranul</string>

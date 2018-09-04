@@ -224,9 +224,6 @@
   <string name="power_menu_users_title">Замена на корисник</string>
   <string name="power_menu_bug_report_title">Пријава на грешка</string>
   <string name="power_menu_bug_report_disabled">Пријавување на грешки е оневозможено во развојните поставки</string>
-  <string name="volume_keys_control_ring_stream_title">Контрола на јачината на ѕвонење</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Копчињата за јачина на звук ја контролираат јачината на ѕвонењето</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Копчињата за јачина на звук го контролираат звукот на медија</string>
   <string name="camera_double_tap_power_gesture_title">Притиснете го копчето за напојување двапати за да ја уклучите камерата</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Брзо отворање на камерата без да го отклучите вашиот екран</string>

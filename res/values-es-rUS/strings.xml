@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Informe de errores</string>
   <string name="power_menu_bug_report_disabled">Los informes de error están desactivados en los ajustes de desarrollo</string>
   <string name="power_menu_lockdown_title">Bloqueo de seguridad</string>
-  <string name="volume_keys_control_ring_stream_title">Controlar el volumen del tono de llamada</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Las teclas de volumen controlan el volumen del tono de llamada</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Las teclas de volumen controlan el volumen de archivos multimedia</string>
   <string name="camera_double_tap_power_gesture_title">Pulsar dos veces el botón de encendido para la cámara</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Abre rápidamente la cámara sin desbloquear la pantalla</string>

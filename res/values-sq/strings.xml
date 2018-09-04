@@ -222,9 +222,6 @@
   <string name="power_menu_users_title">Ndërruesi i përdoruesit</string>
   <string name="power_menu_bug_report_title">Raportimi i problemeve</string>
   <string name="power_menu_bug_report_disabled">Raportimi i problemeve është çaktivizuar në parametrat e zhvillimit</string>
-  <string name="volume_keys_control_ring_stream_title">Kontrollo volumin e ziles</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Butonat e volumit kontrollojnë volumin e ziles</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Butonat e volumit kontrollojnë volumin e medias</string>
   <string name="camera_double_tap_power_gesture_title">Shtyp dy herë butonin e energjisë për kamerën</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Hap menjëherë kamerën pa zhbllokuar ekranin</string>

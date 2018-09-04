@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Informe d\'error</string>
   <string name="power_menu_bug_report_disabled">Els informes d\'error estan deshabilitats a les opcions de desenvolupament</string>
   <string name="power_menu_lockdown_title">Bloqueig</string>
-  <string name="volume_keys_control_ring_stream_title">Controla el volum de la trucada</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Les tecles de volum controlen el volum del to de trucada</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Les tecles de volum controlen el volum multimèdia</string>
   <string name="camera_double_tap_power_gesture_title">Prem el botó d\'apagat dues vegades per a la càmera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Obre la càmera ràpidament sense desbloquejar la pantalla</string>

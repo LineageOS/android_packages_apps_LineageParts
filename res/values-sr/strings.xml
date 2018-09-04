@@ -234,9 +234,6 @@
   <string name="power_menu_bug_report_title">Пријава грешака</string>
   <string name="power_menu_bug_report_disabled">Пријава грешака је онемогућена у опцијама за програмера.</string>
   <string name="power_menu_lockdown_title">Закључавање</string>
-  <string name="volume_keys_control_ring_stream_title">Управљање јачином звука звона</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Дугмад за јачину звука управљају јачином звука звона.</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Дугмад за јачину звука управљају јачином звука медија.</string>
   <string name="camera_double_tap_power_gesture_title">Двоструки додир дугмета за напајање покреће камеру</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Брзо отворите камеру без откључавања уређаја.</string>

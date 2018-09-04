@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">錯誤報告</string>
   <string name="power_menu_bug_report_disabled">已在開發人員選項中停用錯誤報告</string>
   <string name="power_menu_lockdown_title">鎖定</string>
-  <string name="volume_keys_control_ring_stream_title">控制鈴聲音量</string>
-  <string name="volume_keys_control_ring_stream_summary_on">音量鍵控制鈴聲音量</string>
-  <string name="volume_keys_control_ring_stream_summary_off">音量鍵控制媒體音量</string>
   <string name="camera_double_tap_power_gesture_title">按住電源鍵兩下開啟相機</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">快速開啟相機，無需解鎖螢幕</string>

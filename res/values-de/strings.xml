@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Fehlerbericht</string>
   <string name="power_menu_bug_report_disabled">Fehlerberichte sind in Entwicklereinstellungen deaktiviert</string>
   <string name="power_menu_lockdown_title">Sperren</string>
-  <string name="volume_keys_control_ring_stream_title">Klingeltonlautstärke steuern</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Lautstärketasten steuern Klingeltonlautstärke</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Lautstärketasten steuern Medienlautstärke</string>
   <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren Ihres Bildschirms schnell öffnen</string>

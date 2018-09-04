@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Rapport de bug</string>
   <string name="power_menu_bug_report_disabled">Le rapport de bug est désactivé dans les paramètres de développement</string>
   <string name="power_menu_lockdown_title">Verrouillage</string>
-  <string name="volume_keys_control_ring_stream_title">Contrôler le volume de la sonnerie</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Contrôler le volume de la sonnerie à l\'aide des boutons de volume</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Contrôler le volume des médias à l\'aide des boutons de volume</string>
   <string name="camera_double_tap_power_gesture_title">Appuyer deux fois sur le bouton Marche/Arrêt pour lancer l\'appareil photo</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Ouvrir rapidement l\'appareil photo sans déverrouiller l\'écran</string>

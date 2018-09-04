@@ -224,9 +224,6 @@
   <string name="power_menu_users_title">Felhasználóváltás</string>
   <string name="power_menu_bug_report_title">Hibabejelentés</string>
   <string name="power_menu_bug_report_disabled">Hibajelentés le van tiltva a fejlesztői beállításokban</string>
-  <string name="volume_keys_control_ring_stream_title">Csengőhang hangerejének vezérlése</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Hangerőgombok a csengőhangot vezérlik</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Hangerőgombok a média hangerejét vezérlik</string>
   <string name="camera_double_tap_power_gesture_title">Nyomja meg a bekapcsoló gombot kétszer a kamerához</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Kamera gyors megnyitása a képernyő feloldása nélkül</string>

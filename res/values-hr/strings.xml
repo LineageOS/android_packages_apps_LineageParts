@@ -234,9 +234,6 @@
   <string name="power_menu_bug_report_title">Prijava greške</string>
   <string name="power_menu_bug_report_disabled">Izvještavanje greški je onemogućeno u razvojnim postavkama</string>
   <string name="power_menu_lockdown_title">Zaključavanje</string>
-  <string name="volume_keys_control_ring_stream_title">Kontrola glasnoće zvona</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Tipke za glasnoću upravljaju glasnoćom zvona</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Tipke za glasnoću upravljaju glasnoćom medijskog sadržaja</string>
   <string name="camera_double_tap_power_gesture_title">Pritisnite tipku napajanja dva puta za kameru</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Brzo otvaranje fotoaparata bez otključavanja zaslona</string>

@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">오류 신고</string>
   <string name="power_menu_bug_report_disabled">개발자 설정에서 오류 보고가 비활성화되었습니다</string>
   <string name="power_menu_lockdown_title">잠금</string>
-  <string name="volume_keys_control_ring_stream_title">벨소리 볼륨 제어</string>
-  <string name="volume_keys_control_ring_stream_summary_on">볼륨 키로 벨소리 크기 조절</string>
-  <string name="volume_keys_control_ring_stream_summary_off">볼륨 키로 미디어 볼륨 크기 조절</string>
   <string name="camera_double_tap_power_gesture_title">전원 버튼을 두 번 눌러 카메라 열기</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">화면 잠금을 해제하지 않고 빠르게 카메라 열기</string>

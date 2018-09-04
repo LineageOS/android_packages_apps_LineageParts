@@ -231,9 +231,6 @@
   <string name="power_menu_users_title">Gebruiker wisselen</string>
   <string name="power_menu_bug_report_title">Foutenrapport</string>
   <string name="power_menu_bug_report_disabled">Foutrapportage is uitgeschakeld in de opties voor ontwikkelaars</string>
-  <string name="volume_keys_control_ring_stream_title">Beltoonvolume beheren</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Volumeknoppen passen beltoonvolume aan</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Volumeknoppen passen mediavolume aan</string>
   <string name="camera_double_tap_power_gesture_title">Twee keer op aan/uit-knop drukken voor camera</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>

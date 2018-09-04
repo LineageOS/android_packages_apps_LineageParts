@@ -222,9 +222,6 @@
   <string name="power_menu_users_title">Brugerskifter</string>
   <string name="power_menu_bug_report_title">Fejlrapport</string>
   <string name="power_menu_bug_report_disabled">Fejlrapportering er deaktiveret i Indstillinger for udviklere</string>
-  <string name="volume_keys_control_ring_stream_title">Regulér lydstyrke for ringetone</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Lydstyrkeknapper regulerer lydstyrken for ringetone</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Lydstyrketasterne regulerer medielydstyrken</string>
   <string name="camera_double_tap_power_gesture_title">Tryk på strømknappen to gange for at starte kameraet</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Åbn kameraet hurtigt uden at låse din skærm op</string>

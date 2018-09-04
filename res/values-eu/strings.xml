@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Errore-txostena</string>
   <string name="power_menu_bug_report_disabled">Erroreen berri ematea ezgaituta dago garatzaileen aukeretan</string>
   <string name="power_menu_lockdown_title">Blokeatu</string>
-  <string name="volume_keys_control_ring_stream_title">Kontrolatu dei-doinuaren bolumena</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Bolumen teklek dei-doinuaren bolumena kontrolatzen dute</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Bolumen teklek multimediaren bolumena kontrolatzen dute</string>
   <string name="camera_double_tap_power_gesture_title">Sakatu itzaltze botoia bitan kamerarako</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Ireki kamera azkar pantaila desblokeatu gabe</string>

@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Poročilo o hrošču</string>
   <string name="power_menu_bug_report_disabled">V nastavitvah za razvijalce je poročanje o hrošču onemogočeno</string>
   <string name="power_menu_lockdown_title">Zaklep</string>
-  <string name="volume_keys_control_ring_stream_title">Nadzor glasnosti zvonjenja</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Gumba za glasnost nadzirata glasnost zvonjenja</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Gumba za glasnost nadzirata glasnost predstavnosti</string>
   <string name="camera_double_tap_power_gesture_title">Dvakrat pritisnite gumb za vklop/izklop za fotoaparat</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Hitro odprite fotoaparat brez odklepanja zaslona</string>

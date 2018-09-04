@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">דיווח באגים</string>
   <string name="power_menu_bug_report_disabled">דיווח באגים מושבת בהגדרות מפתח</string>
   <string name="power_menu_lockdown_title">נעילה כללית</string>
-  <string name="volume_keys_control_ring_stream_title">שליטה בעוצמת הצלצול</string>
-  <string name="volume_keys_control_ring_stream_summary_on">מקשי עוצמת השמע שולטים בעוצמת הצלצול</string>
-  <string name="volume_keys_control_ring_stream_summary_off">מקשי עוצמת השמע שולטים בעוצמת המדיה</string>
   <string name="camera_double_tap_power_gesture_title">לחיצה כפולה על מקש ההפעלה לפתיחת המצלמה</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">פתח את המצלמה במהירות בלי לבטל את נעילת המכשיר</string>

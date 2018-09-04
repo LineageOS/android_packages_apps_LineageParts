@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">Отчет об ошибке</string>
   <string name="power_menu_bug_report_disabled">Отчет об ошибке отключен в настройках для разработчика</string>
   <string name="power_menu_lockdown_title">Блокировка</string>
-  <string name="volume_keys_control_ring_stream_title">Регулировка громкости рингтона</string>
-  <string name="volume_keys_control_ring_stream_summary_on">Кнопки громкости регулируют громкость рингтона</string>
-  <string name="volume_keys_control_ring_stream_summary_off">Кнопки громкости регулируют громкость мультимедиа</string>
   <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для запуска камеры</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">Быстро запустить камеру без разблокировки устройства</string>

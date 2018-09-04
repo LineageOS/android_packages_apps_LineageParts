@@ -236,9 +236,6 @@
   <string name="power_menu_bug_report_title">错误报告</string>
   <string name="power_menu_bug_report_disabled">开发者选项中已禁用错误报告</string>
   <string name="power_menu_lockdown_title">锁定</string>
-  <string name="volume_keys_control_ring_stream_title">控制铃声音量</string>
-  <string name="volume_keys_control_ring_stream_summary_on">使用音量键控制铃声音量</string>
-  <string name="volume_keys_control_ring_stream_summary_off">音量键控制媒体音量</string>
   <string name="camera_double_tap_power_gesture_title">按两下电源键启动相机</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">在不解锁屏幕的情况下快速开启相机</string>
