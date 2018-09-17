@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod project
- * Copyright (C) 2017 The LineageOS project
+ * Copyright (C) 2017-2018 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -224,26 +224,20 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         final LineageHardwareManager hardware = LineageHardwareManager.getInstance(getActivity());
 
-        // Only visible on devices that does not have a navigation bar already,
-        // and don't even try unless the existing keys can be disabled
-        boolean needsNavigationBar = false;
-        if (hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
-            /* wm.needsNavigationBar();
-            try {
-                IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
-                needsNavigationBar = wm.needsNavigationBar();
-            } catch (RemoteException e) {
-            }
-            */
-
-            if (needsNavigationBar) {
-                prefScreen.removePreference(mDisableNavigationKeys);
-            } else {
-                // Remove keys that can be provided by the navbar
-                updateDisableNavkeysOption();
-                mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
-                updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
-            }
+        // Only visible on devices that does not have a navigation bar already
+        boolean hasNavigationBar = true;
+        boolean supportsKeyDisabler = isKeyDisablerSupported(getActivity());
+        try {
+            IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
+            hasNavigationBar = windowManager.hasNavigationBar();
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
+        }
+        if (supportsKeyDisabler) {
+            // Remove keys that can be provided by the navbar
+            updateDisableNavkeysOption();
+            mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
+            updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
         }
@@ -391,21 +385,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(volumeCategory);
         }
 
-        try {
-            // Only show the navigation bar category on devices that have a navigation bar
-            // unless we are forcing it via development settings
-            boolean forceNavbar = LineageSettings.Global.getInt(getContentResolver(),
-                    LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
-            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar()
-                    || forceNavbar;
-
-            if (!hasNavBar && (needsNavigationBar ||
-                    !hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE))) {
-                    // Hide navigation bar category
-                    prefScreen.removePreference(mNavigationPreferencesCat);
-            }
-        } catch (RemoteException e) {
-            Log.e(TAG, "Error getting navigation bar status");
+        // Only show the navigation bar category on devices that have a navigation bar
+        // or support disabling the hardware keys
+        if (!hasNavigationBar && !supportsKeyDisabler) {
+            prefScreen.removePreference(mNavigationPreferencesCat);
         }
 
         final ButtonBacklightBrightness backlight =
@@ -655,9 +638,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
     }
 
+    private static boolean isKeyDisablerSupported(Context context) {
+        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
+    }
+
     public static void restoreKeyDisabler(Context context) {
-        LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        if (!hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
+        if (!isKeyDisablerSupported(context)) {
             return;
         }
 
