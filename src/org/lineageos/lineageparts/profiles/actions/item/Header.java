@@ -39,7 +39,7 @@ public class Header implements Item {
     public View getView(LayoutInflater inflater, View convertView, ViewGroup parent) {
         View view;
         if (convertView == null) {
-            view = inflater.inflate(R.layout.preference_category_material, parent, false);
+            view = inflater.inflate(R.layout.preference_category_material_settings, parent, false);
             // Do some initialization
         } else {
             view = convertView;
