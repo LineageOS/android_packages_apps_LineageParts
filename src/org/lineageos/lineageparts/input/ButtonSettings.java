@@ -28,6 +28,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
@@ -566,13 +567,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
-        LineageSettings.Global.putInt(context.getContentResolver(),
-                LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
+        LineageSettings.System.putIntForUser(context.getContentResolver(),
+                LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
     }
 
     private void updateDisableNavkeysOption() {
-        boolean enabled = LineageSettings.Global.getInt(getActivity().getContentResolver(),
-                LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+        boolean enabled = LineageSettings.System.getIntForUser(getActivity().getContentResolver(),
+                LineageSettings.System.FORCE_SHOW_NAVBAR, 0, UserHandle.USER_CURRENT) != 0;
 
         mDisableNavigationKeys.setChecked(enabled);
     }
@@ -648,8 +649,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             return;
         }
 
-        writeDisableNavkeysOption(context, LineageSettings.Global.getInt(context.getContentResolver(),
-                LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0);
+        boolean enabled = LineageSettings.System.getIntForUser(context.getContentResolver(),
+                LineageSettings.System.FORCE_SHOW_NAVBAR, 0, UserHandle.USER_CURRENT) != 0;
+
+        writeDisableNavkeysOption(context, enabled);
     }
 
 
