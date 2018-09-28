@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a20fbc4_3b9e8f3f",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 652,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-09-28T15:51:31Z",
+      "side": 1,
+      "message": "100 chars",
+      "revId": "13776a897780d650de0c02c3dda70cfb4c27b274",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
