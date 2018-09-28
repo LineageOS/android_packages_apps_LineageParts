@@ -566,13 +566,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
-        LineageSettings.Global.putInt(context.getContentResolver(),
-                LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
+        LineageSettings.System.putInt(context.getContentResolver(),
+                LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
     }
 
     private void updateDisableNavkeysOption() {
-        boolean enabled = LineageSettings.Global.getInt(getActivity().getContentResolver(),
-                LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+        boolean enabled = LineageSettings.System.getInt(getActivity().getContentResolver(),
+                LineageSettings.System.FORCE_SHOW_NAVBAR, 0) != 0;
 
         mDisableNavigationKeys.setChecked(enabled);
     }
@@ -648,8 +648,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             return;
         }
 
-        writeDisableNavkeysOption(context, LineageSettings.Global.getInt(context.getContentResolver(),
-                LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0);
+        writeDisableNavkeysOption(context, LineageSettings.System.getInt(context.getContentResolver(),
+                LineageSettings.System.FORCE_SHOW_NAVBAR, 0) != 0);
     }
 
 
