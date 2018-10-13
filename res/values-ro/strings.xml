@@ -559,6 +559,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrează atunci când este detectat un gest touchscreen</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Glisați în jos cu două degete</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Glisați în sus cu un deget</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Glisați în sus de la butonul home</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Glisați în jos cu un deget</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Glisați în stânga cu un deget</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Glisați în dreapta cu un deget</string>
@@ -616,35 +617,37 @@
   <string name="style_dark_overlay_black">Negru</string>
   <string name="style_permission_error">Permisiunea de acces la stocare este necesară pentru a analiza tapetul dumneavoastră, vă rugăm să o acordați pentru a utiliza această caracteristică</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust vă ajută să vă păstrați telefonul în siguranță și vă protejează confidențialitatea.\nIconița Trust apare pentru a vă ajuta să verificați securitatea conținutului.</string>
   <string name="trust_category_features">Stare</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Obligatoriu</string>
   <string name="trust_feature_selinux_value_disabled">Dezactivat</string>
-  <string name="trust_feature_selinux_explain">SELinux dictează ce procese au acces la fișiere și la care dintre acestea pe dispozitivul dvs.\nAceasta previne ca aplicațiile și serviciile să aibă acces la fișiere la care nu ar trebui să îl aibă: prin aceasta, un proces malițios are acces limitat așa că se menține securitatea dvs.</string>
+  <string name="trust_feature_selinux_explain">SELinux dictează ce procese au acces la fișiere/căi de fișiere pe dispozitivul dvs.\nAceasta previne ca aplicațiile și serviciile să aibă acces la fișiere la care nu ar trebui să îl aibă: prin aceasta, un potențial proces malițios are acces limitat, așa că se menține securitatea dvs.</string>
   <string name="trust_feature_root">Acces root</string>
   <string name="trust_feature_root_value_disabled">Dezactivat</string>
   <string name="trust_feature_root_value_adb">Doar ADB</string>
   <string name="trust_feature_root_value_apps">Aplicații și ADB</string>
-  <string name="trust_feature_root_explain">Accesul root permite trecerea peste restricțiile de securitate de către aplicațiile și serviciile pe care le utilizați, permițându-le să facă modificări în sistem, fapt ce poate cauza probleme dispozitivului sau sistemului de operare.</string>
+  <string name="trust_feature_root_explain">Accesul root permite aplicațiilor și serviciilor pe care le alegeți să treacă peste restricțiile de securitate, permițându-le să facă modificări în sistem, fapt ce poate cauza probleme dispozitivului sau sistemului de operare.</string>
   <string name="trust_feature_security_patches">Corecțiile de securitate Android</string>
   <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProducător: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">la zi</string>
-  <string name="trust_feature_security_patches_value_medium">vechi de câteva luni</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">expirate de câteva luni</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">expirat</string>
-  <string name="trust_feature_security_patches_explain">Pachetele de securitate sunt lansate lunar de către Google și producătorii SoC pentru a corecta erorile din sistem care ar putea fi exploatate de aplicațiile malițioase pentru a trece peste restricțiile de securitate și ar putea cauza daune temporare sau permanente dispozitivului dvs.\nÎn timp ce corecțiile de platformă sunt actualizate global lună de lună, corecțiile producătorului sunt actualizate din când în când.\nPentru a vă ține telefonul în siguranță asigurați-vă că rulați cel mai recent build de LineageOS.</string>
+  <string name="trust_feature_security_patches_explain">Corecțiile de securitate sunt lansate lunar de către Google în cooperare cu vânzătorii SoC pentru a remedia problemele care pot fi exploatate de aplicațiile malițioase pentru a trece peste restricțiile de securitate și să cauzeze daune permanente în dispozitivul dvs. Patch-urile făcute disponibile de Google sunt aplicate lunar pe toate dispozitivele compatibile, dar patch-urile la codul proprietar pot fi aplicate numai de către producătorul dispozitivului. Pentru a vă menține dispozitivul în siguranță, asigurați-vă că build-ul LineageOS al dvs. este la zi și (dacă se aplică) asigurați-vă că imaginea vendor-ului este actualizată la cea recomandată de LineageOS.</string>
   <string name="trust_feature_encryption">Criptare</string>
   <string name="trust_feature_encryption_value_enabled">Activat</string>
   <string name="trust_feature_encryption_value_nolock">Necesită un ecran de blocare securizat</string>
   <string name="trust_feature_encryption_value_disabled">Dezactivat</string>
-  <string name="trust_feature_encryption_explain">Criptarea dispozitivului previne accesul la datele dvs. când telefonul este oprit sau în modul de recuperare. Aceasta este importantă în special dacă telefonul vă este furat și previne oamenii de la a vă citi mesajele, contactele și alte date private fără a utiliza vreo parolă.\nPentru a face criptarea mai eficientă trebuie să setați un ecran de blocare securizat.</string>
+  <string name="trust_feature_encryption_explain">Criptarea dispozitivului previne accesul la datele dvs. când telefonul nu este boot-at în Android. Aceasta este importantă în special dacă telefonul vă este furat și previne oamenii de la a vă citi mesajele, contactele și alte date private fără a utiliza vreo parolă.\nPentru a face criptarea mai eficientă trebuie să setați o parolă într-un ecran de blocare securizat.</string>
   <string name="trust_category_tools">Confidențialitate</string>
   <string name="trust_notification_alerts_title">Alerte de securitate</string>
   <string name="trust_warnings_alerts_intro">Puteți selecta problemele de securitate despre care să fiți atenționat(ă). Pentru siguranța dvs., este recomandat să activați toate alertele</string>
   <string name="trust_warnings_selinux">Stare SELinux</string>
   <string name="trust_warnings_keys">Semnătură build</string>
   <string name="trust_onboarding_title">Spuneți-o salut lui Trust</string>
-  <string name="trust_onboarding_description">Trust vă ajută să vă păstrați telefonul în siguranță și vă protejează confidențialitatea.\nIconița Trust va apărea pentru a vă ajuta să verificați securitatea conținutului</string>
+  <string name="trust_onboarding_description">Trust vă ajută să vă păstrați telefonul în siguranță și să vă protejați confidențialitatea.\nIconița Trust va apărea numai când conținutul paginii a fost verificat.</string>
   <string name="trust_onboarding_learn_more">Aflați mai multe</string>
   <string name="trust_onboarding_done">Am înțeles</string>
   <!-- Sms limit -->

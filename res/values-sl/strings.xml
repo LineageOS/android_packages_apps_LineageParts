@@ -81,10 +81,10 @@
   <string name="light_brightness_normal">Običajna</string>
   <string name="light_brightness_zen">Ne moti</string>
   <!-- Battery light settings -->
-  <string name="battery_light_title">Lučka za baterijo</string>
-  <string name="battery_low_pulse_title">Utripaj, če je baterija skoraj prazna</string>
+  <string name="battery_light_title">Lučka za akumulator</string>
+  <string name="battery_low_pulse_title">Utripaj, če je akumulator skoraj prazen</string>
   <string name="battery_light_list_title">Barve</string>
-  <string name="battery_light_low_color_title">Nizko stanje baterije</string>
+  <string name="battery_light_low_color_title">Nizko stanje akumulatorja</string>
   <string name="battery_light_medium_color_title">Polnjenje</string>
   <string name="battery_light_full_color_title">Napolnjena</string>
   <!-- Lights settings screen, notification light settings -->
@@ -105,7 +105,7 @@
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Nastavitve lučke</string>
   <string name="led_notification_text">Lučka LED omogočena v nastavitvah</string>
-  <string name="notification_light_no_apps_summary">Da dodate nadzor za posamezne aplikacije, omogočite \'%1$s\' in pritisnite \'\u002b\' v menijski vrstici</string>
+  <string name="notification_light_no_apps_summary">Da dodate nadzor za posamezne aplikacije, omogočite »%1$s« in pritisnite »\u002b« v menijski vrstici</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimiziranje zaslona glede na čas dneva in pogojev okolice, da se izboljša berljivost in zmanjša obremenitev oči</string>
   <string name="live_display_mode">Način prikaza</string>
@@ -417,15 +417,15 @@
   <string name="status_bar_am_pm_small">Majhno</string>
   <string name="status_bar_am_pm_hidden">Skrito</string>
   <!-- Status bar - Battery -->
-  <string name="status_bar_battery_title">Stanje baterije</string>
-  <string name="status_bar_battery_style_title">Slog stanja baterije</string>
+  <string name="status_bar_battery_title">Stanje akumulatorja</string>
+  <string name="status_bar_battery_style_title">Slog stanja akumulatorja</string>
   <string name="status_bar_battery_style_icon_portrait">Pokončna ikona</string>
   <string name="status_bar_battery_style_icon_landscape">Ležeča ikona</string>
   <string name="status_bar_battery_style_circle">Krog</string>
   <string name="status_bar_battery_style_text">Besedilo</string>
   <string name="status_bar_battery_style_hidden">Skrito</string>
   <!-- Status bar - Battery percentage -->
-  <string name="status_bar_battery_percentage_title">Odstotek baterije</string>
+  <string name="status_bar_battery_percentage_title">Odstotek napolnjenosti akumulatorja</string>
   <string name="status_bar_battery_percentage_default">Skrito</string>
   <string name="status_bar_battery_percentage_text_inside">V ikoni</string>
   <string name="status_bar_battery_percentage_text_next">Poleg ikone</string>
@@ -519,17 +519,17 @@
   <string name="status_bar_show_weather_title">Prikaži vreme</string>
   <string name="status_bar_show_weather_summary">Prikaži trenutno temperaturo v vrstici stanja</string>
   <!-- Power: Performance profiles -->
-  <string name="perf_profile_settings_title">Ohranjevalnik baterije in zmogljivost</string>
+  <string name="perf_profile_settings_title">Varčevanje z energijo akumulatorja in zmogljivost</string>
   <string name="perf_profile_settings_summary">Prilagodi značilnosti varčevanja z energijo in zmogljivost naprave</string>
   <string name="perf_profile_overview_summary">Trenutni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_category_title">Zmogljivost naprave</string>
   <string name="perf_profile_title">Zmogljivostni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">Zmogljivostni profil trenutno ni na voljo</string>
-  <string name="power_save_category_title">Varčevanje z energijo</string>
+  <string name="power_save_category_title">Varčevanje z energijo akumulatorja</string>
   <string name="power_save_title">Strogo varčevanje z energijo</string>
   <string name="power_save_summary">Omeji zmogljivost naprave in dejavnosti v ozadju za prihranek energije</string>
   <string name="auto_power_save_title">Samodejno varčevanje z energijo</string>
-  <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo, ko je stanje baterije %s</string>
+  <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo akumulatorja, ko je stanje baterije %s</string>
   <string name="auto_power_save_summary_off">Ne omogočaj načina varčevanja z energijo samodejno</string>
   <string name="auto_power_save_never">Nikoli</string>
   <!-- Applications: Expanded desktop -->
@@ -559,6 +559,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibriraj, ko je zaznana poteza na zaslonu na dotik</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Poteg navzdol z dvema prstoma</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Poteg navzgor z enim prstom</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Poteg navzgor iz gumba Domov</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Poteg navzdol z enim prstom</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Poteg levo z enim prstom</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Poteg desno z enim prstom</string>
@@ -616,35 +617,37 @@
   <string name="style_dark_overlay_black">Črno</string>
   <string name="style_permission_error">Dovoljenje za dostop do pomnilniške naprave je potreben za analizo vaše slike ozadja, odobrite ga za uporabo te značilnosti</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala za pomoč pri preverjanju varnosti vsebin.</string>
   <string name="trust_category_features">Stanje</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Se uveljavla</string>
   <string name="trust_feature_selinux_value_disabled">Onemogočen</string>
-  <string name="trust_feature_selinux_explain">SELinux narekuje, kateri procesi imajo dostop do katerih datotek na vaši napravi.\nTo preprečuje aplikacijam in storitvam dostop do datotek s katerimi ne bi smele upravljati: tako imajo zlonamerni procesi omejen dostop in vaša varnost je ohranjena.</string>
+  <string name="trust_feature_selinux_explain">SELinux narekuje, kateri procesi imajo dostop do katerih datotek/poti na vaši napravi.\nTo preprečuje aplikacijam in storitvam dostop do datotek s katerimi ne bi smele upravljati: tako je potencialni zlonamerni proces omejen in vaša varnost je ohranjena.</string>
   <string name="trust_feature_root">Skrbniški dostop</string>
   <string name="trust_feature_root_value_disabled">Onemogočen</string>
   <string name="trust_feature_root_value_adb">Samo ADB</string>
   <string name="trust_feature_root_value_apps">Aplikacije in ADB</string>
-  <string name="trust_feature_root_explain">Skrbniški dostop dovoljuje obvoz varnostnih omejitev za aplikacije in storitve, ki jih izberete, kar jim dovoli spreminjanje sistema, kar lahko povzroči poškodbe vaše naprave ali OS-a.</string>
+  <string name="trust_feature_root_explain">Skrbniški dostop dovoljuje aplikacijam in storitvam, ki jih izberete obvoz varnostnih omejitev, kar jim dovoli spreminjanje sistema, kar lahko povzroči poškodbe vaše naprave ali OS-a.</string>
   <string name="trust_feature_security_patches">Varnostni popravki Androida</string>
   <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProizvajalec: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">posodobljeno</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_medium">stari nekaj mesecev</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">zastarelo</string>
-  <string name="trust_feature_security_patches_explain">Varnostni popravki so izdani mesečno s strani Googla in prozvajalcev SoC-ov, da naslovijo pomanjkljivosti, ki jih lahko zlonamerne aplikacije izrabijo za obvoz varnostnih omejitev in lahko povzročijo začasne ali trajne poškodbe na vaši napravi.\nČeprav so popravki platforme izdani globalno vsak mesec, so popravki s strani proizvajalcev izdani neredno.\nDa ohranite vašo napravo varno, poskrbite, da je vaša izgradnja LineageOS-a posodobljena.</string>
+  <string name="trust_feature_security_patches_explain">Varnostni popravki so izdani mesečno s strani Googla v sodelovanju s proizvajalci SoC-ov, da naslovijo pomanjkljivosti, ki jih lahko zlonamerne aplikacije izrabijo za obvoz varnostnih omejitev in lahko povzročijo trajne poškodbe vaše naprave. Popravki s strani Googla so na vseh podprtih napravah uveljavljeni vsak mesec, vendar so lahko popravki lastniške kode uveljavljeni samo s strani proizvajalca naprave. Da ohranite vašo napravo varno, poskrbite, da je vaša izgradnja LineageOS-a vedno posodobljena in (v kolikor je na voljo) odtis dobavitelja posodobobljen na zadnjo različico priporočeno s strani LineageOS-a.</string>
   <string name="trust_feature_encryption">Šifriranje</string>
   <string name="trust_feature_encryption_value_enabled">Omogočeno</string>
   <string name="trust_feature_encryption_value_nolock">Potreben je varni zaklenjen zaslon</string>
   <string name="trust_feature_encryption_value_disabled">Onemogočeno</string>
-  <string name="trust_feature_encryption_explain">Šifriranje vaše naprave prepreči dostop do vaših podatkov, ko je vaš telefon izklopljen ali v obnovitvenem načinu. To je še posebej pomembno, če vam ukradejo telefon in prepreči osebam brez gesla branje vaših sporočil, stikov ali ostalih zasebnih podatkov.\nZa učinkovitejše šifriranje, nastavite varni zaklep zaslona.</string>
+  <string name="trust_feature_encryption_explain">Šifriranje vaše naprave prepreči dostop do vaših podatkov, ko vaš telefon ni zagnan v Android. To je še posebej pomembno, če vam ukradejo telefon, saj prepreči osebam brez gesla branje vaših sporočil, stikov ali drugih zasebnih podatkov.\nZa učinkovitejše šifriranje, nastavite varno geslo za zaklep zaslona.</string>
   <string name="trust_category_tools">Zasebnost</string>
   <string name="trust_notification_alerts_title">Varnostna opozorila</string>
   <string name="trust_warnings_alerts_intro">Izberete lahko varnostne težave na katere bi želeli biti opozorjeni. Za vašo varnost je priporočljivo, da omogočite vsa opozorila</string>
   <string name="trust_warnings_selinux">SELinux stanje</string>
   <string name="trust_warnings_keys">Podpis izgradnje</string>
   <string name="trust_onboarding_title">Pozdravite Trust</string>
-  <string name="trust_onboarding_description">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala za pomoč pri preverjanju varnosti vsebin</string>
+  <string name="trust_onboarding_description">Trust vam pomaga ohraniti vašo napravo varno in varuje vašo zasebnost.\nTrust ikona se bo prikazala samo, ko bo vsebina strani potrjena.</string>
   <string name="trust_onboarding_learn_more">Več o tem</string>
   <string name="trust_onboarding_done">Razumem</string>
   <!-- Sms limit -->

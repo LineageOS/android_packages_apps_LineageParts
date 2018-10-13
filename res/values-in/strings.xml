@@ -556,6 +556,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Bergetar ketika gerakan layar sentuh terdeteksi</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Usap ke bawah dengan dua jari</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Usap ke atas dengan satu jari</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Usap ke atas dari tombol home</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Usap ke bawah dengan satu jari</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Usap ke kiri dengan satu jari</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Usap ke kanan dengan satu jari</string>
@@ -621,17 +622,17 @@
   <string name="trust_feature_root_value_disabled">Dimatikan</string>
   <string name="trust_feature_root_value_adb">ADB saja</string>
   <string name="trust_feature_root_value_apps">Aplikasi dan ADB</string>
-  <string name="trust_feature_root_explain">Akses root mengizinkan melewati batasan keamanan oleh aplikasi dan layanan yang Anda pilih, mengizinkan mereka melakukan modifikasi pada sistem, yang dapat menyebabkan kerusakan pada perangkat atau OS.</string>
   <string name="trust_feature_security_patches">Patch keamanan android</string>
   <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">terbaru</string>
-  <string name="trust_feature_security_patches_value_medium">beberapa bulan</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">kadaluarsa</string>
   <string name="trust_feature_encryption">Enkripsi</string>
   <string name="trust_feature_encryption_value_enabled">Dihidupkan</string>
   <string name="trust_feature_encryption_value_nolock">Memerlukan kunci layar aman</string>
   <string name="trust_feature_encryption_value_disabled">Dimatikan</string>
-  <string name="trust_feature_encryption_explain">Mengenkripsi perangkat Anda mencegah akses ke data saat telepon tidak aktif atau dalam modus recovery. Hal ini sangat penting jika telepon Anda dicuri, dan mencegah orang lain membaca pesan, kontak, dan informasi pribadi Anda lainnya tanpa kata sandi.\nUntuk membuat enkripsi lebih efektif Anda perlu mengatur kunci layar aman.</string>
   <string name="trust_category_tools">Privasi</string>
   <string name="trust_notification_alerts_title">Peringatan keamanan</string>
   <string name="trust_warnings_selinux">Status SELinux</string>

@@ -557,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">检测到一个触摸屏手势时振动</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">双指向下滑动</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">单指向上滑动</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">从主页按钮向上滑动</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">单指向下滑动</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">单指向左滑动</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">单指向右滑动</string>
@@ -614,35 +615,37 @@
   <string name="style_dark_overlay_black">黑色</string>
   <string name="style_permission_error">为了分析您的壁纸，需要存储权限，请授予此功能权限</string>
   <!-- Trust interface -->
-  <string name="trust_header">安全中心能保障你的设备安全并保护你的隐私。\n你可以通过显示的安全图标检查内容的安全性。</string>
   <string name="trust_category_features">状态</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">强制执行</string>
   <string name="trust_feature_selinux_value_disabled">已禁用</string>
-  <string name="trust_feature_selinux_explain">SELinux 规定了哪些进程可以访问你的设备上的哪些文件。\n这个机制可以防止应用和服务访问它们不该访问的文件，因此恶意进程的访问也会受到限制，从而保护了你的安全。</string>
+  <string name="trust_feature_selinux_explain">SELinux 规定了哪些进程可以访问您的设备上的哪些文件。\n这个机制可以防止应用和服务访问它们不该访问的文件，因此恶意进程的访问也会受到限制，从而保护了你的安全。</string>
   <string name="trust_feature_root">Root授权</string>
   <string name="trust_feature_root_value_disabled">已禁用</string>
   <string name="trust_feature_root_value_adb">仅限于 ADB</string>
   <string name="trust_feature_root_value_apps">应用与 ADB</string>
-  <string name="trust_feature_root_explain">Root 访问让你可以选择让某些应用和服务绕过安全限制，允许它们修改系统。这可能会对你的设备或操作系统造成损坏。</string>
+  <string name="trust_feature_root_explain">Root 访问让您可以选择让某些应用和服务绕过安全限制，允许他们修改系统。这可能会对您的设备或操作系统造成损坏。</string>
   <string name="trust_feature_security_patches">Android 安全补丁</string>
   <string name="trust_feature_security_patches_value_base">平台：%1$s\n厂商：%2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">已是最新</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_medium">数月未更新</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">已过时</string>
-  <string name="trust_feature_security_patches_explain">安全补丁由 Google 和 SoC 厂商每月发布，用以修复可能会被恶意应用利用、绕过安全限制对你的设备造成暂时或永久损坏的缺陷。\n平台补丁每个月都会统一更新，但厂商补丁只能每次从 OEM 取得。\n要保证你的设备安全，请使用最新的 LineageOS 版本。</string>
+  <string name="trust_feature_security_patches_explain">安全补丁由 Google 和 SoC 厂商每月发布，用以修复可能会被恶意应用利用、绕过安全限制对你的设备造成暂时或永久损坏的缺陷。\n平台补丁每个月都会统一更新，但厂商补丁只能每次从 Oem 取得。\n要保证您的设备安全，请使用最新版本的魔趣。</string>
   <string name="trust_feature_encryption">加密</string>
   <string name="trust_feature_encryption_value_enabled">已启用</string>
   <string name="trust_feature_encryption_value_nolock">需要设置安全的屏幕锁定</string>
   <string name="trust_feature_encryption_value_disabled">已禁用</string>
-  <string name="trust_feature_encryption_explain">设备加密可以防止别人在关机状态或恢复模式访问你的数据。当你的设备被盗时，这个重要特性可以防止别人在没有密码的情况下读取你的短信、通讯录和其他私人信息。\n要使加密更加有效，你需要设置一个安全的屏幕锁定。</string>
+  <string name="trust_feature_encryption_explain">设备加密可以防止别人在关机状态或恢复模式访问您的数据。当您的设备被盗时，这个重要特性可以防止别人在没有密码的情况下读取您的短信、通讯录和其它私人信息。\n要使加密更加有效，您需要设置一个安全的屏幕锁定。</string>
   <string name="trust_category_tools">隐私</string>
   <string name="trust_notification_alerts_title">安全警报</string>
   <string name="trust_warnings_alerts_intro">您可以选择要警告的安全问题。但为了您的安全起见，建议启用所有警报。</string>
   <string name="trust_warnings_selinux">SELinux 状态</string>
   <string name="trust_warnings_keys">编译签名</string>
   <string name="trust_onboarding_title">欢迎使用安全中心</string>
-  <string name="trust_onboarding_description">安全中心能保障您的设备安全性和您的隐私。\n您可以通过显示的安全图标检查内容的安全性</string>
+  <string name="trust_onboarding_description">安全中心能保障您的设备安全并保护您的隐私。\n您可以通过显示的安全图标检查内容的安全性。</string>
   <string name="trust_onboarding_learn_more">了解更多</string>
   <string name="trust_onboarding_done">我知道了</string>
   <!-- Sms limit -->

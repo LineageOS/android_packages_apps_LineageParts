@@ -614,35 +614,31 @@
   <string name="style_dark_overlay_black">Černý</string>
   <string name="style_permission_error">Oprávnění přístupu k úložišti je potřeba k analýze tapety, udělte prosím přístup pro použití této funkce</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust pomáhá udržovat vaše zařízení v bezpečí a chrání vaše soukromí.\nZobrazí se ikona Trust, která vám pomůže kontrolovat bezpečnost obsahu.</string>
   <string name="trust_category_features">Stav</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Vynucené</string>
   <string name="trust_feature_selinux_value_disabled">Vypnuto</string>
-  <string name="trust_feature_selinux_explain">SELinux určuje, které procesy mají přístup k souborům ve vašem zařízení.\nZabraňuje tomu, aby aplikace a služby měly přístup k souborům, se kterými se nemusí zabývat: tímto způsobem má nebezpečný proces omezený přístup, takže vaše bezpečnost je zachována.</string>
   <string name="trust_feature_root">Root přístup</string>
   <string name="trust_feature_root_value_disabled">Vypnuto</string>
   <string name="trust_feature_root_value_adb">Pouze ADB</string>
   <string name="trust_feature_root_value_apps">Aplikace a ADB</string>
-  <string name="trust_feature_root_explain">Root přístup umožňuje vynechat bezpečnostní omezení v aplikacích a službách, které si zvolíte, což jim umožní provést změny v systému, které mohou potenciálně způsobit poškození zařízení nebo operačního systému.</string>
   <string name="trust_feature_security_patches">Bezpečnostní záplaty Android</string>
   <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDodavatel: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">aktuální</string>
-  <string name="trust_feature_security_patches_value_medium">staré několik měsíců</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">zastaralé</string>
-  <string name="trust_feature_security_patches_explain">Bezpečnostní záplaty jsou vydávány měsíčně společností Google a dodavateli SoC na řešení nedostatků v systému, které by mohly být zneužity škodlivými aplikacemi na obejití bezpečnostních omezení a mohly by způsobit dočasné nebo trvalé poškození zařízení.\nZáplaty platformy jsou aktualizovány globálně každý měsíc. Záplaty OEM dodavatelů jsou aktualizovány velmi sporadicky.\nPokud chcete, aby vaše zařízení bylo v bezpečí, ujistěte se, že vaše sestava LineageOS je vždy aktuální.</string>
   <string name="trust_feature_encryption">Šifrování</string>
   <string name="trust_feature_encryption_value_enabled">Povoleno</string>
   <string name="trust_feature_encryption_value_nolock">Je potřeba zabezpečená zamykací obrazovka</string>
   <string name="trust_feature_encryption_value_disabled">Vypnuto</string>
-  <string name="trust_feature_encryption_explain">Šifrování zařízení zabraňuje přístupu k vašim údajům, pokud je telefon vypnutý nebo v Recovery režimu. Toto je obzvláště důležité v případě odcizení telefonu a zabraňuje ostatním ve čtení vašich zpráv, kontaktů a jiných soukromých informací bez znalosti hesla.\nAby bylo šifrování efektivnější, musíte nastavit bezpečný zámek obrazovky.</string>
   <string name="trust_category_tools">Soukromí</string>
   <string name="trust_notification_alerts_title">Bezpečnostní výstrahy</string>
   <string name="trust_warnings_alerts_intro">Můžete vybrat bezpečnostní problémy, na které chcete upozornit. Pro vaši bezpečnost doporučujeme povolit všechna upozornění</string>
   <string name="trust_warnings_selinux">Stav SELinux</string>
   <string name="trust_warnings_keys">Podpis sestavení</string>
   <string name="trust_onboarding_title">Seznámení s Trust</string>
-  <string name="trust_onboarding_description">Trust pomáhá udržovat vaše zařízení v bezpečí a chrání vaše soukromí.\nZobrazí se ikona Trust, která vám pomůže kontrolovat bezpečnost obsahu</string>
   <string name="trust_onboarding_learn_more">Dozvědět se více</string>
   <string name="trust_onboarding_done">Chápu</string>
   <!-- Sms limit -->

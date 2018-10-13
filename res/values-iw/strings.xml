@@ -618,18 +618,17 @@
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">אכיפה (Enforcing)</string>
   <string name="trust_feature_selinux_value_disabled">כבוי (Disabled)</string>
-  <string name="trust_feature_selinux_explain">SELinux מכתיב לאילו תהליכים יש גישה לקבצים שונים במכשירך. \nזה מונע מיישומים ומשירותים לגשת אל קבצים שהם לא אמורים לגעת בהם: בדרך זו לתהליכים זדוניים מוגבלת הגישה והמכשיר שלך נשאר מאובטח.</string>
   <string name="trust_feature_root">הרשאות מנהל (Root)</string>
   <string name="trust_feature_root_value_disabled">כבוי</string>
   <string name="trust_feature_root_value_adb">ADB בלבד</string>
   <string name="trust_feature_root_value_apps">יישומים ו־ADB</string>
-  <string name="trust_feature_root_explain">הרשאות מנהל (Root) מאפשר ליישומים ושירותים שתבחר לעקוף הגבלות אבטחה ולבצע שינויים במערכת שיכולים לגרום נזק למכשירך או למערכת ההפעלה.</string>
   <string name="trust_feature_security_patches">‏רמה עדכון תיקוני אבטחה של המערכת</string>
   <string name="trust_feature_security_patches_value_base">פלטפורמה: %1$s\nיצרן: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">עדכני</string>
-  <string name="trust_feature_security_patches_value_medium">ישן בכמה חודשים</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">לא תקף</string>
-  <string name="trust_feature_security_patches_explain">עדכוני תיקוני אבטחה משוחררים חודשים על ידי גוגל ויצרני המעבדים כדי לתקן פרצות שנתגלו במערכת שניתנות לניצול על ידי יישומים זדוניים כדי לעקוף את מגבלות האבטחה. \n בזמן שעדכוני האבטחה נשלחים בכל חודש, עדכוני היצרן נשלחים בתדירות נמוכה יותר.\n כדי לשמור את המכשיר שלך בטוח LineageOS שולחת עדכונים בתדירות גבוהה.</string>
   <string name="trust_feature_encryption">הצפנה</string>
   <string name="trust_feature_encryption_value_enabled">מופעלת</string>
   <string name="trust_feature_encryption_value_nolock">נעילת מסך מאובטחת נדרשת</string>

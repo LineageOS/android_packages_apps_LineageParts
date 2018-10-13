@@ -557,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Rung khi một cử chỉ màn hình cảm ứng được phát hiện</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Vuốt xuống bằng hai ngón tay</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Vuốt lên bằng một ngón tay</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Vuốt lên từ nút trang chủ</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Vuốt xuống bằng một ngón tay</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Vuốt sang trái bằng một ngón tay</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Vuốt sang phải bằng một ngón tay</string>
@@ -614,35 +615,37 @@
   <string name="style_dark_overlay_black">Đen</string>
   <string name="style_permission_error">Quyền truy cập lưu trữ là cần thiết để phân tích hình nền của bạn, vui lòng cho phép nó sử dụng tính năng này</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust giúp bạn giữ an toàn cho thiết bị của mình và bảo vệ quyền riêng tư của bạn.\nBiểu tượng Trust hiển thị để giúp bạn bằng cách kiểm tra bảo mật của nội dung.</string>
   <string name="trust_category_features">Trạng thái</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Thực thi</string>
   <string name="trust_feature_selinux_value_disabled">Đã tắt</string>
-  <string name="trust_feature_selinux_explain">SELinux quy định các quy trình nào có quyền truy cập vào các tệp trên thiết bị của bạn.\nĐiều này ngăn các ứng dụng và dịch vụ truy cập vào các tệp mà chúng không phải xử lý: theo cách này, quy trình độc hại có quyền truy cập hạn chế để bảo mật của bạn.</string>
+  <string name="trust_feature_selinux_explain">SELinux quy định những quy trình nào có quyền truy cập vào các tệp/đường dẫn trên thiết bị của bạn.\nĐiều này ngăn các ứng dụng và dịch vụ truy cập các tệp mà chúng không được cho phép.</string>
   <string name="trust_feature_root">Quyền truy cập root</string>
   <string name="trust_feature_root_value_disabled">Đã tắt</string>
   <string name="trust_feature_root_value_adb">Chỉ ADB</string>
   <string name="trust_feature_root_value_apps">Ứng dụng và ADB</string>
-  <string name="trust_feature_root_explain">Truy cập root cho phép bỏ qua các hạn chế bảo mật bởi các ứng dụng và dịch vụ bạn chọn, cho phép chúng thực hiện các sửa đổi đối với hệ thống, điều này có thể gây thiệt hại cho thiết bị hoặc hệ điều hành của bạn.</string>
+  <string name="trust_feature_root_explain">Truy cập root cho phép các ứng dụng và dịch vụ bạn chọn để bỏ qua các hạn chế bảo mật, cho phép chúng sửa đổi hệ thống, điều này có thể gây hư hỏng cho thiết bị hoặc hệ điều hành của bạn.</string>
   <string name="trust_feature_security_patches">Bản vá bảo mật của Android</string>
   <string name="trust_feature_security_patches_value_base">Nền tảng: %1$s\nNhà cung cấp: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">đã cập nhật</string>
-  <string name="trust_feature_security_patches_value_medium">cũ vài tháng</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">hết hạn một vài tháng</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">hết hạn</string>
-  <string name="trust_feature_security_patches_explain">Các bản vá bảo mật được Google và SoC phát hành hàng tháng để giải quyết các lỗi trong hệ thống có thể bị các ứng dụng độc hại khai thác để vượt qua các hạn chế bảo mật và có thể gây ra thiệt hại tạm thời hoặc vĩnh viễn cho thiết bị của bạn.\nCác bản vá nền tảng được cập nhật toàn cầu mỗi tháng được cập nhật từ OEM theo thời gian.\nĐể giữ cho thiết bị của bạn an toàn, hãy đảm bảo rằng việc xây dựng LineageOS của bạn luôn được cập nhật.</string>
+  <string name="trust_feature_security_patches_explain">Các bản vá bảo mật được Google phát hành hàng tháng với sự hợp tác của các nhà cung cấp SoC để giải quyết các lỗi có thể bị các ứng dụng độc hại khai thác để vượt qua các hạn chế bảo mật và gây thiệt hại vĩnh viễn cho thiết bị của bạn. Các bản vá được Google cung cấp được áp dụng hàng tháng trên tất cả các thiết bị được hỗ trợ, nhưng bản vá cho mã độc quyền chỉ có thể được nhà sản xuất thiết bị của bạn áp dụng. Để giữ cho thiết bị của bạn an toàn, hãy đảm bảo rằng việc xây dựng LineageOS của bạn luôn được cập nhật và (nếu có) đảm bảo hình ảnh của nhà cung cấp của bạn được cập nhật thành hình ảnh mới nhất do LineageOS đề xuất.</string>
   <string name="trust_feature_encryption">Mã hóa</string>
   <string name="trust_feature_encryption_value_enabled">Đã bật</string>
   <string name="trust_feature_encryption_value_nolock">Cần một màn hình khóa an toàn</string>
   <string name="trust_feature_encryption_value_disabled">Đã tắt</string>
-  <string name="trust_feature_encryption_explain">Mã hóa thiết bị của bạn ngăn truy cập vào dữ liệu của bạn khi điện thoại tắt hoặc đang ở chế độ khôi phục. Điều này đặc biệt quan trọng nếu điện thoại của bạn bị đánh cắp và ngăn mọi người đọc tin nhắn, danh bạ và các thông tin cá nhân khác của bạn mà không cần mật khẩu.\nĐể mã hóa hiệu quả hơn, bạn cần đặt màn hình khóa an toàn.</string>
+  <string name="trust_feature_encryption_explain">Mã hóa thiết bị của bạn ngăn truy cập vào dữ liệu của bạn khi điện thoại của bạn không được khởi động vào Android. Điều này đặc biệt quan trọng nếu điện thoại của bạn bị đánh cắp, vì nó ngăn người khác đọc tin nhắn, danh bạ và các thông tin cá nhân khác của bạn mà không cần mật khẩu.\nĐể mã hóa hiệu quả hơn, bạn cần đặt mật khẩu màn hình khóa an toàn.</string>
   <string name="trust_category_tools">Riêng tư</string>
   <string name="trust_notification_alerts_title">Cảnh báo bảo mật</string>
   <string name="trust_warnings_alerts_intro">Bạn có thể chọn các vấn đề bảo mật mà bạn muốn được cảnh báo. Vì sự an toàn của bạn, bạn nên bật tất cả cảnh báo</string>
   <string name="trust_warnings_selinux">Trạng thái SELinux</string>
   <string name="trust_warnings_keys">Tạo chữ ký</string>
   <string name="trust_onboarding_title">Nói xin chào với Trust</string>
-  <string name="trust_onboarding_description">Trust giúp bạn giữ an toàn cho thiết bị của mình và bảo vệ quyền riêng tư của bạn.\nBiểu tượng Trust sẽ hiển thị để giúp bạn bằng cách kiểm tra tính bảo mật của nội dung</string>
+  <string name="trust_onboarding_description">Trust giúp bạn giữ an toàn cho thiết bị của mình và bảo vệ quyền riêng tư của bạn.\nBiểu tượng Trust sẽ chỉ hiển thị khi nội dung của trang đã được xác minh.</string>
   <string name="trust_onboarding_learn_more">Tìm hiểu thêm</string>
   <string name="trust_onboarding_done">Đã hiểu</string>
   <!-- Sms limit -->

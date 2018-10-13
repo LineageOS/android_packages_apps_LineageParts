@@ -617,35 +617,37 @@
   <string name="style_dark_overlay_black">Siyah</string>
   <string name="style_permission_error">Depolama alanına erişim izni, duvar kağıdınızı analiz etmek için gereklidir, lütfen bu özelliğin kullanılmasına izin verin</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nTrust simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olmak için gösterilir.</string>
   <string name="trust_category_features">Durum</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Zorunlu</string>
   <string name="trust_feature_selinux_value_disabled">Devre dışı</string>
-  <string name="trust_feature_selinux_explain">SELinux hangi işlemlerin cihazınızdaki hangi dosyalara erişebileceğini belirler.\nBu uygulamaların ve hizmetlerin ele almamaları gereken dosyalara erişmelerini önler: bu şekilde kötü amaçlı bir işlemin erişimi sınırlı olduğundan güvenliğiniz korunur.</string>
+  <string name="trust_feature_selinux_explain">SELinux, hangi işlemlerin cihazınızda ki hangi dosyalara/yollara erişebileceğini belirler.\nBu, uygulamaların ve hizmetlerin söz konusu olmayan dosyalara erişmesini önler: bu şekilde olası kötü amaçlı bir işlem sınırlandırılır ve güvenliğiniz korunur.</string>
   <string name="trust_feature_root">Kök erişimi</string>
   <string name="trust_feature_root_value_disabled">Devre dışı</string>
   <string name="trust_feature_root_value_adb">Sadece ADB</string>
   <string name="trust_feature_root_value_apps">Uygulamalar ve ADB</string>
-  <string name="trust_feature_root_explain">Kök erişimi seçtiğiniz uygulama ve hizmetlerin güvenlik sınırlamalarının atlanmasına izin vererek, sistemde değişiklik yapmasına ve cihazınızda veya işletim sisteminizde hasara neden olabilir.</string>
+  <string name="trust_feature_root_explain">Kök erişimi, seçtiğiniz uygulama ve hizmetlerin güvenlik sınırlamalarının atlanmasına izin vererek, sistemde değişiklik yapmasına ve cihazınızda veya işletim sisteminizde hasara neden olabilir.</string>
   <string name="trust_feature_security_patches">Android güvenlik yaması</string>
   <string name="trust_feature_security_patches_value_base">Platform: %1$s\nÜretici: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">güncel</string>
-  <string name="trust_feature_security_patches_value_medium">bir kaç aylık</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">birkaç ay eski</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">eski</string>
-  <string name="trust_feature_security_patches_explain">Güvenlik açıklarını ve güvenlik kısıtlamalarını atlamak cihazınızda geçici veya kalıcı bir hasar meydana getirmek için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek sistemdeki kusurları gidermek amacıyla Google ve SoC satıcıları tarafından aylık olarak yayınlanır.\nYazılım yamaları her ay global olarak güncellendiğinde üretici yamaları zaman zaman OEM\'den güncellenir.\nCihazınızı güvende tutmak için LineageOS yapınızın daima güncel olduğundan emin olun.</string>
+  <string name="trust_feature_security_patches_explain">Güvenlik kısıtlamalarını atlamak ve cihazınızda kalıcı hasara neden olmak için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek hataları gidermek için SoC satıcılarıyla işbirliği içinde Google tarafından aylık olarak güvenlik yamaları yayınlanır. Google tarafından kullanıma sunulan yamalar, desteklenen tüm cihazlarda her ay uygulanır, ancak tescilli koddaki yamalar yalnızca cihazınızın üreticisi tarafından uygulanabilir. Cihazınızı güvende tutmak için LineageOS yapınızın her zaman güncel olduğundan ve (varsa) satıcı dosyanızın LineageOS tarafından önerilen en yeni sürüme güncellendiğinden emin olun.</string>
   <string name="trust_feature_encryption">Şifreleme</string>
   <string name="trust_feature_encryption_value_enabled">Etkin</string>
   <string name="trust_feature_encryption_value_nolock">Güvenli bir kilit ekranına ihtiyaç duyar</string>
   <string name="trust_feature_encryption_value_disabled">Devre dışı</string>
-  <string name="trust_feature_encryption_explain">Cihazınızı şifrelemek, telefonunuz kapalıyken veya kurtarma modundayken verilerinize erişimi engeller. Bu özellikle telefonunuz çalındığında önemlidir ve diğer insanların mesajlarınızı, kişilerinizi ve diğer kişisel bilgilerinizi şifre olmadan okumasını önler.\nŞifrelemeyi daha etkili hale getirmek için güvenli bir kilit ekranı ayarlamanız gerekir.</string>
+  <string name="trust_feature_encryption_explain">Cihazınızı şifrelemek, telefonunuz Android\'e önyükleme yapılmadığında verilerinize erişimi engeller. Bu özellikle telefonunuz çalındığında önemlidir ve kişilerin mesajlarınızı, kişilerinizi ve diğer kişisel bilgilerinizi parolanız olmadan okunmasını engeller.\nŞifrelemeyi daha etkili hale getirmek için güvenli bir kilit ekranı parolası ayarlamanız gerekir.</string>
   <string name="trust_category_tools">Gizlilik</string>
   <string name="trust_notification_alerts_title">Güvenlik uyarıları</string>
   <string name="trust_warnings_alerts_intro">Uyarılmak istediğiniz güvenlik sorunlarını seçebilirsiniz. Güvenliğiniz için tüm uyarıları etkinleştirmeniz önerilir</string>
   <string name="trust_warnings_selinux">SELinux durumu</string>
   <string name="trust_warnings_keys">Yapı imzası</string>
   <string name="trust_onboarding_title">Trust\'a merhaba de</string>
-  <string name="trust_onboarding_description">Trust, cihazınızın güvenliğini sağlamanıza ve gizliliğinizi korumanıza yardımcı olur.\nTrust simgesi, içeriğin güvenliğini kontrol ederek size yardımcı olacak şekilde görünecektir</string>
+  <string name="trust_onboarding_description">Trust, cihazınızı güvende tutmanıza ve gizliliğinizi korumanıza yardımcı olur.\nTrust simgesi, yalnızca sayfanın içeriği doğrulandığında gösterilir.</string>
   <string name="trust_onboarding_learn_more">Daha fazla bilgi</string>
   <string name="trust_onboarding_done">Anladım</string>
   <!-- Sms limit -->

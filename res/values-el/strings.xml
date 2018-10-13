@@ -619,12 +619,11 @@
   <string name="style_dark_overlay_black">Μαύρο</string>
   <string name="style_permission_error">Το δικαίωμα πρόσβασης αποθηκευτικού χώρου είναι απαραίτητο για την ανάλυση της ταπετσαρίας σας, παρακαλώ χορηγήστε το για να χρησιμοποιήσετε αυτήν τη δυνατότητα</string>
   <!-- Trust interface -->
-  <string name="trust_header">Η Εμπιστοσύνη σάς βοηθά να διατηρείτε τη συσκευή σας ασφαλή και προστατεύει το απόρρητό σας.\nΤο εικονίδιο Εμπιστοσύνης εμφανίζεται για να σας βοηθήσει, ελέγχοντας την ασφάλεια των περιεχομένων.</string>
   <string name="trust_category_features">Κατάσταση</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Επιβάλλεται</string>
   <string name="trust_feature_selinux_value_disabled">Ανενεργó</string>
-  <string name="trust_feature_selinux_explain">Το SELinux καθορίζει ποιες διεργασίες έχουν πρόσβαση σε ποια αρχεία στη συσκευή σας.\nΑποτρέπει εφαρμογές και υπηρεσίες από το να έχουν πρόσβαση σε αρχεία που δεν θα έπρεπε: με αυτόν τον τρόπο μια κακόβουλη διεργασία έχει περιορισμένη πρόσβαση, ώστε να διαφυλάσσεται η ασφάλειά σας.</string>
+  <string name="trust_feature_selinux_explain">Το SELinux καθορίζει ποιες διεργασίες έχουν πρόσβαση σε ποια αρχεία στη συσκευή σας.\nΑποτρέπει εφαρμογές και υπηρεσίες από το να έχουν πρόσβαση σε αρχεία που δεν θα έπρεπε: με αυτόν τον τρόπο μια κακόβουλη διεργασία έχει περιορισμένη πρόσβαση και η ασφάλειά σας διαφυλάσσεται.</string>
   <string name="trust_feature_root">Πρόσβαση root</string>
   <string name="trust_feature_root_value_disabled">Ανενεργή</string>
   <string name="trust_feature_root_value_adb">Μόνο ADB</string>
@@ -632,22 +631,25 @@
   <string name="trust_feature_root_explain">Η πρόσβαση root επιτρέπει την παράκαμψη των περιορισμών ασφαλείας από εφαρμογές και υπηρεσίες που επιλέγετε, επιτρέποντάς τους να κάνουν τροποποιήσεις στο σύστημα, γεγονός που μπορεί να προκαλέσει βλάβη στη συσκευή ή το λειτουργικό σας σύστημα.</string>
   <string name="trust_feature_security_patches">Ενημερωμένη έκδοση κώδικα ασφαλείας Android</string>
   <string name="trust_feature_security_patches_value_base">Πλατφόρμα: %1$s\nΚατασκευαστής: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">ενημερωμένη</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_medium">μερικούς μήνες παλιά</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">ξεπερασμένη</string>
-  <string name="trust_feature_security_patches_explain">Οι ενημερωμένες εκδόσεις ασφαλείας αποστέλλονται κάθε μήνα από την Google και τους κατασκευαστές SoC για την αντιμετώπιση σφαλμάτων στο σύστημα τα οποία θα μπορούσαν να εκμεταλλευτούν από κακόβουλες εφαρμογές για να παρακάμψουν τους περιορισμούς ασφαλείας και να προκαλέσουν προσωρινή ή μόνιμη βλάβη στη συσκευή σας.\nΕνώ ο κώδικας της πλατφόρμας ενημερώνεται για όλες τις υποστηριζόμενες συσκευές κάθε μήνα, οι ενημερώσεις ασφαλείας των κατασκευαστών συσκευών γίνονται κατά διαστήματα.\nΓια να διατηρήσετε τη συσκευή σας ασφαλή, βεβαιωθείτε ότι χρησιμοποιείτε πάντα μια ενημερωμένη έκδοση του LineageOS.</string>
+  <string name="trust_feature_security_patches_explain">Οι ενημερωμένες εκδόσεις ασφαλείας αποστέλλονται κάθε μήνα από την Google σε συνεργασία με τους κατασκευαστές SoC για την αντιμετώπιση σφαλμάτων τα οποία θα μπορούσαν να εκμεταλλευτούν από κακόβουλες εφαρμογές για να παρακάμψουν τους περιορισμούς ασφαλείας και να προκαλέσουν μόνιμη βλάβη στη συσκευή σας.\nΟι ενημερώσεις ασφαλείας που διατίθενται από την Google εφαρμόζονται για όλες τις υποστηριζόμενες συσκευές κάθε μήνα, αλλά οι ενημερώσεις ασφαλείας για κλειστό κώδικα μπορούν να εφαρμοστούν μόνο από τον κατασκευαστή της συσκευής σας.\nΓια να διατηρήσετε τη συσκευή σας ασφαλή, βεβαιωθείτε ότι χρησιμοποιείτε πάντα μια ενημερωμένη έκδοση του LineageOS και (ενδεχομένως) σιγουρευτείτε ότι η εικόνα \"vendor\" είναι ενημερωμένη στην πιο πρόσφατη έκδοση προτεινόμενη από το LineageOS.</string>
   <string name="trust_feature_encryption">Κρυπτογράφηση</string>
   <string name="trust_feature_encryption_value_enabled">Ενεργή</string>
   <string name="trust_feature_encryption_value_nolock">Απαιτεί ασφαλή οθόνη κλειδώματος</string>
   <string name="trust_feature_encryption_value_disabled">Ανενεργή</string>
-  <string name="trust_feature_encryption_explain">Η κρυπτογράφηση της συσκευής σας εμποδίζει την πρόσβαση στα δεδομένα σας όταν το τηλέφωνό σας είναι απενεργοποιημένο ή σε λειτουργία recovery. Αυτό είναι ιδιαίτερα σημαντικό αν κλαπεί το τηλέφωνό σας και αποτρέπει την ανάγνωση των μηνυμάτων, των επαφών και άλλων προσωπικών σας δεδομένων χωρίς τον κωδικό πρόσβασης.\nΓια να κάνετε την κρυπτογράφηση πιο αποτελεσματική, πρέπει να ορίσετε μια ασφαλή οθόνη κλειδώματος.</string>
+  <string name="trust_feature_encryption_explain">Η κρυπτογράφηση της συσκευής σας εμποδίζει την πρόσβαση στα δεδομένα σας όταν το τηλέφωνό σας είναι απενεργοποιημένο ή σε λειτουργία recovery. Αυτό είναι ιδιαίτερα σημαντικό αν κλαπεί το τηλέφωνό σας και αποτρέπει την ανάγνωση των μηνυμάτων, των επαφών και άλλων προσωπικών σας δεδομένων χωρίς τον κωδικό πρόσβασης.\nΓια να κάνετε την κρυπτογράφηση πιο αποτελεσματική, πρέπει να ορίσετε έναν ασφαλή κωδικό οθόνης κλειδώματος.</string>
   <string name="trust_category_tools">Απόρρητο</string>
   <string name="trust_notification_alerts_title">Ειδοποιήσεις ασφαλείας</string>
   <string name="trust_warnings_alerts_intro">Μπορείτε να επιλέξετε τα ζητήματα ασφαλείας που θέλετε να προειδοποιείστε. Για δική σας ασφάλεια, συνιστάται να ενεργοποιήσετε όλες τις ειδοποιήσεις</string>
   <string name="trust_warnings_selinux">Κατάσταση SELinux</string>
   <string name="trust_warnings_keys">Υπογραφή build</string>
   <string name="trust_onboarding_title">Υποδεχθείτε την Εμπιστοσύνη</string>
-  <string name="trust_onboarding_description">Η Εμπιστοσύνη σάς βοηθά να διατηρείτε τη συσκευή σας ασφαλή και προστατεύει το απόρρητό σας.\nΤο εικονίδιο Εμπιστοσύνης θα εμφανίζεται για να σας βοηθήσει, ελέγχοντας την ασφάλεια των περιεχομένων</string>
+  <string name="trust_onboarding_description">Η Εμπιστοσύνη σάς βοηθά να διατηρείτε τη συσκευή σας ασφαλή και προστατεύει το απόρρητό σας.\nΤο εικονίδιο Εμπιστοσύνης θα εμφανίζεται μόνο όταν τα περιεχόμενα της σελίδας έχουν επαληθευτεί.</string>
   <string name="trust_onboarding_learn_more">Μάθετε περισσότερα</string>
   <string name="trust_onboarding_done">Το έπιασα</string>
   <!-- Sms limit -->

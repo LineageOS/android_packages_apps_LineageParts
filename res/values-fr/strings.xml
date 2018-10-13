@@ -557,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrer quand un geste tactile est détecté</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Glisser vers le bas avec deux doigts</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Glisser vers le haut avec un doigt</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Balayer vers le haut depuis le bouton d\'accueil</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Glisser vers le bas avec un doigt</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Glisser vers la gauche avec un doigt</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Glisser vers la droite avec un doigt</string>
@@ -614,35 +615,37 @@
   <string name="style_dark_overlay_black">Noir</string>
   <string name="style_permission_error">Accès à l\'espace de stockage requis pour analyser votre fond d\'écran. Veuillez l\'autoriser pour utiliser cette fonctionnalité.</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust permet de garantir la sécurité de votre appareil et de protéger votre vie privée.\nL\'icône Trust s\'affiche pour vous aider à vérifier la sécurité des contenus.</string>
   <string name="trust_category_features">État</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Appliqué</string>
   <string name="trust_feature_selinux_value_disabled">Désactivé</string>
-  <string name="trust_feature_selinux_explain">SELinux permet de contrôler les processus autorisés à accéder aux fichiers sur votre appareil.\nCette fonctionnalité empêche ainsi des applications et services d\'accéder à des fichiers qu\'ils ne sont pas censés gérer. Étant donné que les processus malveillants ont un accès limité à vos données, votre appareil reste protégé.</string>
+  <string name="trust_feature_selinux_explain">SELinux permet de contrôler les processus autorisés à accéder aux fichiers/chemins sur votre appareil.\nCette fonctionnalité empêche ainsi des applications et services d\'accéder à des fichiers qu\'ils ne sont pas censés gérer. Étant donné que les éventuels processus malveillants ont un accès limité à vos données, votre appareil reste protégé.</string>
   <string name="trust_feature_root">Accès root</string>
   <string name="trust_feature_root_value_disabled">Désactivé</string>
   <string name="trust_feature_root_value_adb">ADB uniquement</string>
   <string name="trust_feature_root_value_apps">Applications et ADB</string>
-  <string name="trust_feature_root_explain">L\'accès root permet d\'ignorer les restrictions de sécurité pour les applications et services que vous sélectionnez. Ces derniers peuvent alors apporter des modifications au système et donc potentiellement endommager votre appareil ou l\'OS.</string>
+  <string name="trust_feature_root_explain">L\'accès root permet aux applications et services que vous sélectionnez d\'ignorer les restrictions de sécurité. Ceux-ci peuvent alors apporter des modifications au système et donc potentiellement endommager votre appareil ou l\'OS.</string>
   <string name="trust_feature_security_patches">Correctifs de sécurité Android</string>
   <string name="trust_feature_security_patches_value_base">Plate-forme : %1$s\nFournisseur : %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">à jour</string>
-  <string name="trust_feature_security_patches_value_medium">dépassés de quelques mois</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">obsolètes de quelques mois</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">obsolètes</string>
-  <string name="trust_feature_security_patches_explain">Tous les mois, Google et les fournisseurs de SoC publient des correctifs de sécurité pour résoudre des failles au niveau du système. Ces dernières sont susceptibles d\'être exploitées par des applications malveillantes pour contourner des restrictions de sécurité et peuvent endommager votre appareil de façon temporaire ou définitive.\nLes correctifs de plate-forme sont publiés chaque mois au niveau mondial, tandis que ceux des fournisseurs le sont de façon épisodique.\nPour garantir la sécurité de votre appareil, veillez à ce que votre version de LineageOS soit toujours à jour.</string>
+  <string name="trust_feature_security_patches_explain">Les correctifs de sécurité sont publiés chaque mois par Google, en coopération avec les fournisseurs de SoC. Ils permettent de corriger des failles que des applications malveillantes sont susceptibles d\'exploiter pour contourner les restrictions de sécurité et endommager votre appareil de façon définitive. Les correctifs fournis par Google sont appliqués chaque mois à tous les appareils compatibles, mais ceux concernant le code propriétaire ne peuvent l\'être que par le fabricant de votre appareil. Pour garantir la sécurité de votre appareil, veillez à toujours utiliser la dernière version de LineageOS et, le cas échéant, mettez à jour votre fichier vendor.img afin qu\'il corresponde à la dernière version recommandée par LineageOS.</string>
   <string name="trust_feature_encryption">Chiffrement</string>
   <string name="trust_feature_encryption_value_enabled">Activé</string>
   <string name="trust_feature_encryption_value_nolock">Écran de verrouillage sécurisé requis</string>
   <string name="trust_feature_encryption_value_disabled">Désactivé</string>
-  <string name="trust_feature_encryption_explain">Le chiffrement permet d\'empêcher l\'accès à vos données lorsque votre téléphone est éteint ou en mode recovery. Cette protection est particulièrement importante si votre appareil est volé, car elle empêche quiconque de lire vos SMS, vos contacts et vos autres informations confidentielles sans votre mot de passe.\nPour améliorer l\'efficacité du chiffrement, vous devez configurer un écran de verrouillage sécurisé.</string>
+  <string name="trust_feature_encryption_explain">Le chiffrement permet d\'empêcher l\'accès à vos données lorsqu\'Android n\'est pas démarré sur votre téléphone. Cette protection est particulièrement importante si votre appareil est volé, car elle empêche quiconque de lire vos SMS, vos contacts et vos autres informations confidentielles sans votre mot de passe.\nAfin d\'améliorer l\'efficacité du chiffrement, vous devez configurer un écran de verrouillage sécurisé par un mot de passe.</string>
   <string name="trust_category_tools">Confidentialité</string>
   <string name="trust_notification_alerts_title">Alertes de sécurité</string>
   <string name="trust_warnings_alerts_intro">Vous pouvez sélectionner les problèmes de sécurité pour lesquels vous souhaitez être averti. Pour votre sécurité, il est recommandé d’activer toutes les alertes.</string>
   <string name="trust_warnings_selinux">État SELinux</string>
   <string name="trust_warnings_keys">Signature de la version</string>
   <string name="trust_onboarding_title">Découvrez Trust</string>
-  <string name="trust_onboarding_description">Trust permet de garantir la sécurité de votre appareil et de protéger votre vie privée.\nL\'icône Trust s\'affiche pour vous aider à vérifier la sécurité des contenus.</string>
+  <string name="trust_onboarding_description">Trust permet d\'assurer la sécurité de votre appareil et de protéger votre vie privée.\nL\'icône Trust ne s\'affiche que lorsque le contenu de la page a été vérifié.</string>
   <string name="trust_onboarding_learn_more">En savoir plus</string>
   <string name="trust_onboarding_done">OK</string>
   <!-- Sms limit -->

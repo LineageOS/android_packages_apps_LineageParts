@@ -603,5 +603,8 @@
   <string name="style_automagic_dialog_positive">Aplicar</string>
   <string name="style_permission_error">Es necesario acceder al almacenamiento del dispositivo para poder analizar el fondo de pantalla. Por favor, concede el permiso necesario para usar esta característica</string>
   <!-- Trust interface -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <!-- Sms limit -->
 </resources>

@@ -77,5 +77,8 @@
   <!-- Egg: Title for the easter egg activity -->
   <!-- Berry Lite -->
   <!-- Trust interface -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <!-- Sms limit -->
 </resources>

@@ -556,6 +556,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrar quando um gesto na tela for detectado</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Deslizar para baixo com dois dedos</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Deslizar para cima com um dedo</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Deslizar para cima a partir do botão Home</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar para baixo com um dedo</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar para esquerda com um dedo</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar para direita com um dedo</string>
@@ -619,16 +620,22 @@
   <string name="trust_feature_selinux_value_disabled">Desligado</string>
   <string name="trust_feature_root">Acesso de superusuário</string>
   <string name="trust_feature_root_value_disabled">Desligado</string>
+  <string name="trust_feature_root_value_adb">Somente ADB</string>
   <string name="trust_feature_root_value_apps">Aplicativos e ADB</string>
   <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
   <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">atualizado</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">desatualizado</string>
   <string name="trust_feature_encryption">Criptografia</string>
   <string name="trust_feature_encryption_value_enabled">Ligada</string>
   <string name="trust_feature_encryption_value_disabled">Desligada</string>
   <string name="trust_category_tools">Privacidade</string>
   <string name="trust_notification_alerts_title">Alertas de segurança</string>
+  <string name="trust_warnings_selinux">Modo SELinux</string>
+  <string name="trust_warnings_keys">Assinatura da compilação</string>
   <string name="trust_onboarding_title">Diga olá a Confiança</string>
   <string name="trust_onboarding_learn_more">Saiba mais</string>
   <string name="trust_onboarding_done">Entendi</string>

@@ -605,5 +605,8 @@
   <string name="style_accent_default_name">Подразумевани</string>
   <string name="style_permission_error">Приступ складишту уређаја је потребан за анализу ваше тапете, молим дајте приступ да би сте користили ову фунцкију</string>
   <!-- Trust interface -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <!-- Sms limit -->
 </resources>

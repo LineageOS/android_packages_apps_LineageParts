@@ -557,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibra quan es detecti un gest a la pantalla tàctil</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Llisca avall amb dos dits</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Llisca amunt amb un dit</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Llisca cap amunt des del botó d\'inici</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Llisca avall amb un dit</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Llisca a l\'esquerra amb un dit</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Llisca a la dreta amb un dit</string>
@@ -614,35 +615,37 @@
   <string name="style_dark_overlay_black">Negre</string>
   <string name="style_permission_error">Es necessita el permís d\'accés a l\'emmagatzematge per analitzar el teu fons de pantalla, si us plau otorga\'l per utilitzar aquesta característica</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust us permet mantenir el dispositiu segur i protegir la vostra privadesa.\nLa icona Trust apareix per ajudar-vos a consultar la seguretat dels continguts.</string>
   <string name="trust_category_features">Estat</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Forçat</string>
   <string name="trust_feature_selinux_value_disabled">Desactivat</string>
-  <string name="trust_feature_selinux_explain">SELinux defineix quins processos tenen accés als fitxers del vostre dispositiu.\nAixò impedeix que les aplicacions i els serveis tinguin accés a arxius que no han de tractar: d\'aquesta manera un procés maliciós té un accés limitat perquè es preservi la vostra seguretat.</string>
+  <string name="trust_feature_selinux_explain">SELinux us permet controlar quins processos poden accedir als fitxers/rutes del dispositiu.\nAquesta característica impedeix que les aplicacions i els serveis accedeixin als fitxers que se suposa que no haurien de gestionar. Atès que els possibles processos maliciosos tenen un accés limitat a les vostres dades, el dispositiu queda protegit.</string>
   <string name="trust_feature_root">Accés arrel</string>
   <string name="trust_feature_root_value_disabled">Desactivat</string>
   <string name="trust_feature_root_value_adb">Només ADB</string>
   <string name="trust_feature_root_value_apps">Aplicacions i ADB</string>
-  <string name="trust_feature_root_explain">L\'accés arrel permet evitar les restriccions de seguretat de les aplicacions i serveis que trieu, permetent-los fer modificacions al sistema, que poden causar danys al vostre dispositiu o SO.</string>
+  <string name="trust_feature_root_explain">L\'accés arrel permet que les aplicacions i els serveis que trieu eludeixin les restriccions de seguretat, això lis permet realitzar modificacions en el sistema, el que pot danyar el dispositiu o sistema operatiu.</string>
   <string name="trust_feature_security_patches">Pedaços de seguretat d\'Android</string>
   <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProveïdor: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">actualitzat</string>
-  <string name="trust_feature_security_patches_value_medium">alguns mesos desfasat</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">uns mesos obsolet</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">obsolet</string>
-  <string name="trust_feature_security_patches_explain">Els pedaços de seguretat es publiquen mensualment per Google i els proveïdors de SoC per solucionar defectes en el sistema que podrien ser explotats per aplicacions malicioses per evitar les restriccions de seguretat i causar danys temporals o permanents al dispositiu.\nTot i que els pedaços de plataformes s\'actualitzen globalment cada mes, els pedaços dels proveïdors s\'actualitzen de tant en tant per part de l\'OEM.\nPer mantenir el dispositiu segur, assegureu-vos que la vostra versió de LineageOS estigui sempre actualitzada.</string>
+  <string name="trust_feature_security_patches_explain">Els pegats de seguretat són publicats mensualment per Google en cooperació amb proveïdors de SoC per abordar falles que podrien ser explotades per aplicacions malicioses per eludir les restriccions de seguretat i causar danys permanents al dispositiu. Els pegats posats a disposició per Google s\'apliquen tots els mesos en tots els dispositius compatibles, però els pegats per al codi propietari només poden ser aplicats pel fabricant del dispositiu. Per mantenir el dispositiu segur, assegureu-vos que la compilació de LineageOS estigui sempre actualitzada i, si és possible, assegureu-vos que la imatge del proveïdor estigui actualitzada a la més recent recomanada per LineageOS.</string>
   <string name="trust_feature_encryption">Xifrat</string>
   <string name="trust_feature_encryption_value_enabled">Activat</string>
   <string name="trust_feature_encryption_value_nolock">Necessita una pantalla de bloqueig segura</string>
   <string name="trust_feature_encryption_value_disabled">Desactivat</string>
-  <string name="trust_feature_encryption_explain">El xifrat del dispositiu impedeix l\'accés a les vostres dades quan el telèfon estigui apagat o en mode recuperació. Això és especialment important si el telèfon és robat, i evita que la gent llegeixi els vostres missatges, contactes i altra informació privada sense la contrasenya.\nPer fer que el xifratge sigui més eficaç, cal establir una pantalla de bloqueig segura.</string>
+  <string name="trust_feature_encryption_explain">El xifrat del dispositiu impedeix l\'accés a les vostres dades quan el telèfon no s\'inicia en Android. Això és especialment important si us el roben, ja que impedeix que les persones llegeixin els missatges, contactes i altra informació privada sense la contrasenya.\nPerquè el xifrat sigui més efectiu, cal establir una contrasenya segura de bloqueig de pantalla.</string>
   <string name="trust_category_tools">Privadesa</string>
   <string name="trust_notification_alerts_title">Alertes de seguretat</string>
   <string name="trust_warnings_alerts_intro">Podeu seleccionar els problemes de seguretat dels que desitgeu que li advertim. Per a la vostra seguretat, es recomana activar totes les alertes</string>
   <string name="trust_warnings_selinux">Estat de SELinux</string>
   <string name="trust_warnings_keys">Signatura de compilació</string>
   <string name="trust_onboarding_title">Digues hola a Trust</string>
-  <string name="trust_onboarding_description">Trust us ajuda a mantenir el dispositiu segur i a protegir la vostra privadesa.\nLa icona Trust apareixerà per ajudar-vos a consultar la seguretat dels continguts</string>
+  <string name="trust_onboarding_description">Trust us ajuda a mantenir el dispositiu segur i protegir la privadesa.\nLa icona Trust només es mostrarà quan els continguts de la pàgina s\'hagin verificat.</string>
   <string name="trust_onboarding_learn_more">Aprèn més</string>
   <string name="trust_onboarding_done">D\'acord</string>
   <!-- Sms limit -->

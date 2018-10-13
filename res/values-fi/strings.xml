@@ -143,6 +143,8 @@
   <string name="live_display_color_profile_srgb_summary">Värit tarkentuu sRGB-väritilaan</string>
   <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
   <string name="live_display_color_profile_dci_p3_summary">Värit tarkentuu DCI-P3-väritilaan</string>
+  <string name="live_display_reading_mode_title">Lukutila</string>
+  <string name="live_display_reading_mode_summary">Harmaasävytila pitkään lukemiseen</string>
   <string name="color_calibration_title">Värien kalibrointi</string>
   <string name="color_calibration_summary">Kalibroi näytön värit</string>
   <string name="color_red_title">Punainen</string>
@@ -403,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Määritä mitkä tilapalkin kuvakkeet näytetään</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Kello</string>
+  <string name="status_bar_clock_show_seconds_title">Näytä sekunnit</string>
+  <string name="status_bar_clock_show_seconds_summary">Näytä tunnit, minuutit ja sekunnit</string>
   <string name="status_bar_clock_position_title">Kellon sijainti</string>
   <string name="status_bar_clock_position_right">Oikea</string>
   <string name="status_bar_clock_position_left">Vasen</string>
@@ -537,6 +541,8 @@
   <string name="expanded_desktop_style_hide_both">Piilota molemmat</string>
   <string name="expanded_desktop_nothing_to_show_text">Poista käytöstä mukauttaaksesi laajennetun työpöydän asetuksia sovelluskohtaisesti</string>
   <!-- Applications: Long screen -->
+  <string name="long_screen_settings_title">Koko näytön sovellukset</string>
+  <string name="long_screen_settings_summary">Pakota vanhat sovellukset käyttämään koko näytön suhdetta</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Latausäänet</string>
   <string name="charging_sounds_enabled_title">Ota käyttöön</string>
@@ -551,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Värinä kun kosketusnäytön ele tunnistetaan</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Pyyhkäise alas kahdella sormella</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Pyyhkäise ylös yhdellä sormella</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Pyyhkäise ylös kotinäppäimestä</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Pyyhkäise alas yhdellä sormella</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Pyykäise vasemmalle yhdellä sormella</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Pyyhkäise oikealle yhdellä sormella</string>
@@ -604,7 +611,47 @@
 aksentti \nOtetaanko käyttöön?</string>
   <string name="style_automagic_dialog_positive">Hyväksy</string>
   <string name="style_accent_default_name">Oletus</string>
+  <string name="style_dark_overlay_title">Tumma tila</string>
+  <string name="style_dark_overlay_default">Oletus</string>
+  <string name="style_dark_overlay_black">Musta</string>
   <string name="style_permission_error">Tallennustilan käyttöoikeus tarvitaan taustakuvan analysointiin, myönnä käyttöoikeus käyttääksesi tätä toimintoa</string>
   <!-- Trust interface -->
+  <string name="trust_category_features">Tila</string>
+  <string name="trust_feature_selinux">SELinux</string>
+  <string name="trust_feature_selinux_value_enforcing">Täytäntöönpano</string>
+  <string name="trust_feature_selinux_value_disabled">Pois käytöstä</string>
+  <string name="trust_feature_selinux_explain">SELinux määrittelee millä prosesseilla on pääsy laitteesi tiedostoihin/polkuihin.\nTämä ehkäisee sovelluksia ja palveluita pääsemästä tiedostoihin joihin niiden ei kuuluisi päästä: tällä tavalla potentiaaliset haitalliset prosessit estetään, ja turvallisuutesi turvataan.</string>
+  <string name="trust_feature_root">Root-oikeudet</string>
+  <string name="trust_feature_root_value_disabled">Pois käytöstä</string>
+  <string name="trust_feature_root_value_adb">Vain ADB</string>
+  <string name="trust_feature_root_value_apps">Sovellukset ja ADB</string>
+  <string name="trust_feature_root_explain">Root-oikeudet sallii sovelluksien ja palveluiden ohittaa turvallisuusmääritykset, sallien niiden tehdä muutoksia järjestelmään, joka voi vahingoittaa laitetta tai käyttöjärjestelmää.</string>
+  <string name="trust_feature_security_patches">Android-tietoturvakorjaukset</string>
+  <string name="trust_feature_security_patches_value_base">Alusta: %1$s\nValmistaja: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_new">ajan tasalla</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">pari kuukautta jäljessä</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_old">vanhentunut</string>
+  <string name="trust_feature_security_patches_explain">Google julkaisee tietoturvapäivityksiä kuukausittain yhteistyössä alustan valmistajien kanssa korjatakseen ongelmia joita haitalliset sovellukset voisivat käyttää ohittaakseen turvallisuusmäärityksiä ja aiheuttaakseen vahinkoa laitteellesi. Googlen julkaisemat päivitykset lisätään joka kuukausi kaikkiin tuettuihin laitteisiin, mutta suljettuun koodiin tehdyt muutokset voi julkaista vain laitteen valmistaja. Pitääksesi laitteesi turvassa, varmista että käytössä on aina tuore LineageOS-koontiversio, ja (jos mahdollista) laitevalmistajan versio on viimeisin LineageOS:n suosittelema.</string>
+  <string name="trust_feature_encryption">Salaus</string>
+  <string name="trust_feature_encryption_value_enabled">Käytössä</string>
+  <string name="trust_feature_encryption_value_nolock">Vaatii turvallisen lukitusnäytön</string>
+  <string name="trust_feature_encryption_value_disabled">Pois käytöstä</string>
+  <string name="trust_feature_encryption_explain">Laitteen salaus estää pääsyn tietoihin kun puhelinta ei ole käynnistetty Androidiin. Tämä on tärkeää jos puhelimesi varastetaan, sillä se estää muita pääsemästä viesteihisi, yhteystietoihisi tai muihin henkilökohtaisiin tietoihisi käsiksi ilman salasanaa.\nParantaaksesi salausta, sinun tulee ottaa turvallinen lukitusnäyttö käyttöön.</string>
+  <string name="trust_category_tools">Tietosuoja</string>
+  <string name="trust_notification_alerts_title">Suojausvaroitukset</string>
+  <string name="trust_warnings_alerts_intro">Voit valita turvallisuusongelmat joista sinua varoitetaan. Turvallisuussyistä on suositeltavaa ottaa kaikki käyttöön</string>
+  <string name="trust_warnings_selinux">SELinux-tila</string>
+  <string name="trust_warnings_keys">Koontiversion allekirjoitus</string>
+  <string name="trust_onboarding_title">Toivota Trust tervetulleeksi</string>
+  <string name="trust_onboarding_description">Trust auttaa sinua pitämään laitteesi turvassa ja suojaa yksityisyyttäsi.\nTrust-kuvake näkyy vain kun sivun sisältö on varmistettu.</string>
+  <string name="trust_onboarding_learn_more">Lue lisää</string>
+  <string name="trust_onboarding_done">Selvä</string>
   <!-- Sms limit -->
+  <string name="sms_security_check_limit_title">Tekstiviestiraja</string>
+  <string name="sms_security_check_limit_summary">Sovellukset voivat lähettää %s viestiä 1 minuutissa ennenkuin vahvistus vaaditaan</string>
+  <string name="sms_security_check_limit_summary_none">Sovellukset eivät saa lähettää tekstiviestiä ilman vahvistusta</string>
+  <string name="sms_security_check_limit_always_confirm">Vahvista aina</string>
 </resources>

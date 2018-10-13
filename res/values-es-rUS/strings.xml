@@ -557,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrar al detectar un gesto táctil</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Deslizar hacia abajo con dos dedos</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Deslizar hacia arriba con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Deslizar hacia arriba desde el botón de inicio</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abajo con un dedo</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia la izquierda con un dedo</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar a la derecha con un dedo</string>
@@ -614,7 +615,6 @@
   <string name="style_dark_overlay_black">Negro</string>
   <string name="style_permission_error">Es necesario permitir el acceso al almacenamiento para analizar el fondo de pantalla</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust le ayuda a mantener el dispositivo seguro y protege su privacidad.\n El icono de Trust se muestra para ayudarle a comprobar la seguridad de los contenidos.</string>
   <string name="trust_category_features">Estado</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Aplicación</string>
@@ -627,22 +627,25 @@
   <string name="trust_feature_root_explain">El acceso de superusuario permite eludir las restricciones de seguridad de las aplicaciones y servicios elegidas, permitiendo realizar modificaciones en el sistema, lo que puede dañar el dispositivo o sistema operativo.</string>
   <string name="trust_feature_security_patches">Parches de seguridad de Android</string>
   <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProveedor: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">actualizado</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_medium">hace algunos meses</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">desactualizado</string>
-  <string name="trust_feature_security_patches_explain">Los parches de seguridad son publicados mensualmente por Google y los proveedores de SoC para tratar las vulnerabilidades del sistema que podrían ser aprovechadas por aplicaciones maliciosas para eludir las restricciones de seguridad y causar daños temporales o permanentes al dispositivo.\nMientras que los parches de la plataforma son actualizados globalmente cada mes, los parches de los vendedores son actualizados por el OEM de vez en cuando.\nPara mantener el dispositivo seguro, asegúrese de que el sistema LineageOS esté siempre actualizado.</string>
+  <string name="trust_feature_security_patches_explain">Google publica mensualmente parches de seguridad en colaboración con los proveedores de SoC para solucionar los fallos que podrían ser explotados por aplicaciones maliciosas para eludir las restricciones de seguridad y causar daños permanentes al dispositivo. Los parches puestos a disposición por Google se aplican todos los meses en todos los dispositivos compatibles, pero los parches para el código propietario sólo pueden ser aplicados por el fabricante del dispositivo. Para mantener el dispositivo seguro, asegúrese de que su compilación LineageOS esté siempre actualizada, y (si corresponde) asegúrese de que su imagen de vendedor esté actualizada a la última recomendada por LineageOS.</string>
   <string name="trust_feature_encryption">Cifrado</string>
   <string name="trust_feature_encryption_value_enabled">Activado</string>
   <string name="trust_feature_encryption_value_nolock">Necesita una pantalla de bloqueo segura</string>
   <string name="trust_feature_encryption_value_disabled">Desactivado</string>
-  <string name="trust_feature_encryption_explain">El cifrado del dispositivo impide el acceso a los datos cuando el teléfono está apagado o en modo de recuperación. Esto es particularmente importante si el teléfono es robado, e impide que la gente lea sus mensajes, contactos y otra información privada sin la contraseña.\nPara realizar un cifrado más eficiente, debes establecer una pantalla de bloqueo segura.</string>
+  <string name="trust_feature_encryption_explain">El cifrado del dispositivo impide el acceso a los datos cuando el teléfono no se inicia en Android. Esto es particularmente importante si tu teléfono es robado, ya que evita que la gente lea tus mensajes, contactos y otra información privada sin tu contraseña.\nPara hacer el cifrado más efectivo debes establecer una contraseña segura.</string>
   <string name="trust_category_tools">Privacidad</string>
   <string name="trust_notification_alerts_title">Alertas de seguridad</string>
   <string name="trust_warnings_alerts_intro">Puede seleccionar los problemas de seguridad de los que desea ser avisado. Para su seguridad, se recomienda habilitar todas las alertas</string>
   <string name="trust_warnings_selinux">Estado de SELinux</string>
   <string name="trust_warnings_keys">Firma de compilación</string>
   <string name="trust_onboarding_title">Saluda a Trust</string>
-  <string name="trust_onboarding_description">Trust ayuda a mantener el dispositivo seguro y protege su privacidad.\nEl icono de Trust aparecerá para ayudarle a comprobar la seguridad de los contenidos</string>
+  <string name="trust_onboarding_description">Trust ayuda a mantener el dispositivo seguro y proteger su privacidad.\nEl icono de Trust sólo se mostrará cuando se haya verificado el contenido de la página.</string>
   <string name="trust_onboarding_learn_more">Saber más</string>
   <string name="trust_onboarding_done">Entiendo</string>
   <!-- Sms limit -->

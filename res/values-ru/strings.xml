@@ -43,7 +43,7 @@
   <string name="privacy_settings_title">Конфиденциальность</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_switch_label">Включить Защиту конфиденциальности</string>
-  <string name="privacy_guard_dlg_title">Включить Защиту кониденциальности?</string>
+  <string name="privacy_guard_dlg_title">Включить Защиту конфиденциальности?</string>
   <string name="privacy_guard_dlg_text">Когда режим Защиты конфиденциальности включен, приложение не сможет получить доступ к личным данным, таким как контакты, сообщения или журналы вызовов.</string>
   <string name="privacy_guard_dlg_system_app_text">При включении Защиты конфиденциальности для системного приложения, оно не сможет получать или предоставлять доступ к личным данным. Это может привести к неправильному поведению других приложений.</string>
   <string name="privacy_guard_default_title">Включена по умолчанию</string>
@@ -77,7 +77,7 @@
   <string name="pulse_speed_slow">Медленно</string>
   <string name="pulse_speed_very_slow">Очень медленно</string>
   <!-- Common light settings strings -->
-  <string name="light_brightness_title">Уровень яркости</string>
+  <string name="light_brightness_title">Уровни яркости</string>
   <string name="light_brightness_normal">Стандартный</string>
   <string name="light_brightness_zen">Не беспокоить</string>
   <!-- Battery light settings -->
@@ -217,7 +217,7 @@
   <string name="backlight_summary_enabled">Включена</string>
   <!-- Buttons - Enable navbar -->
   <string name="disable_navkeys_title">Включение экранной панели навигации</string>
-  <string name="disable_navkeys_summary">Включить экраную панель навигации и отключить аппаратные кнопки</string>
+  <string name="disable_navkeys_summary">Включить экранную панель навигации и отключить аппаратные кнопки</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Панель навигации</string>
   <string name="navigation_bar_title">Кнопки и их расположение</string>
@@ -555,11 +555,12 @@
   <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Виброотклик</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Вибрировать при распознавании жеста</string>
-  <string name="touchscreen_gesture_two_finger_down_swipe_title">Провести двумя пальцами вниз</string>
-  <string name="touchscreen_gesture_one_finger_up_swipe_title">Провести одним пальцем вверх</string>
-  <string name="touchscreen_gesture_one_finger_down_swipe_title">Провести одним пальцем вниз</string>
-  <string name="touchscreen_gesture_one_finger_left_swipe_title">Провести одним пальцем влево</string>
-  <string name="touchscreen_gesture_one_finger_right_swipe_title">Провести одним пальцем вправо</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Свайп двумя пальцами вниз</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Свайп одним пальцем вверх</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Свайп вверх от кнопки \'Домой\'</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Свайп одним пальцем вниз</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Свайп одним пальцем влево</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Свайп одним пальцем вправо</string>
   <string name="touchscreen_gesture_up_arrow_title">Нарисовать «Λ»</string>
   <string name="touchscreen_gesture_down_arrow_title">Нарисовать «V»</string>
   <string name="touchscreen_gesture_left_arrow_title">Нарисовать «&lt;»</string>
@@ -573,10 +574,10 @@
   <string name="touchscreen_gesture_letter_w_title">Нарисовать букву «W»</string>
   <string name="touchscreen_gesture_letter_z_title">Нарисовать букву «Z»</string>
   <!-- Gesture: Stylus gestures -->
-  <string name="touchscreen_gesture_swipe_up_stylus_title">Провести вверх стилусом</string>
-  <string name="touchscreen_gesture_swipe_down_stylus_title">Провести вниз стилусом</string>
-  <string name="touchscreen_gesture_swipe_left_stylus_title">Провести влево стилусом</string>
-  <string name="touchscreen_gesture_swipe_right_stylus_title">Провести вправо стилусом</string>
+  <string name="touchscreen_gesture_swipe_up_stylus_title">Свайп вверх стилусом</string>
+  <string name="touchscreen_gesture_swipe_down_stylus_title">Свайп вниз стилусом</string>
+  <string name="touchscreen_gesture_swipe_left_stylus_title">Свайп влево стилусом</string>
+  <string name="touchscreen_gesture_swipe_right_stylus_title">Свайп вправо стилусом</string>
   <string name="touchscreen_gesture_long_press_stylus_title">Долгое нажатие стилусом</string>
   <string name="touchscreen_gesture_action_dialog_title">Действие жеста</string>
   <string name="touchscreen_gesture_action_do_nothing">Ничего</string>
@@ -614,12 +615,11 @@
   <string name="style_dark_overlay_black">Черный</string>
   <string name="style_permission_error">Разрешение на доступ к хранилищу необходимо для анализа ваших обоев. Пожалуйста, предоставьте разрешение для использования этой функции</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust поможет защитить ваше устройство и сохранить вашу конфиденциальность.\nЗначок Trust отображается для того, чтобы помочь вам проверить безопасность содержимого.</string>
   <string name="trust_category_features">Статус</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Принудительный</string>
   <string name="trust_feature_selinux_value_disabled">Отключено</string>
-  <string name="trust_feature_selinux_explain">SELinux определяет, какие процессы имеют доступ к файлам на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым им доступ не положен: таким образом, вредоносный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
+  <string name="trust_feature_selinux_explain">SELinux определяет какие процессы имеют доступ к файлам/путям на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым им доступ не положен: таким образом, вредоносный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
   <string name="trust_feature_root">Режим суперпользователя</string>
   <string name="trust_feature_root_value_disabled">Отключено</string>
   <string name="trust_feature_root_value_adb">Только ADB</string>
@@ -627,27 +627,30 @@
   <string name="trust_feature_root_explain">Режим суперпользователя позволяет выбранным вами приложениям и службам обходить ограничения безопасности, позволяя им вносить изменения в систему, что может привести к повреждению устройства или ОС.</string>
   <string name="trust_feature_security_patches">Пакеты безопасности Android</string>
   <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nПроизводитель: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">актуальны</string>
-  <string name="trust_feature_security_patches_value_medium">несколько месяцев</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">устаревший на несколько месяцев</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">устаревший</string>
-  <string name="trust_feature_security_patches_explain">Пакеты безопасности выпускаются ежемесячно компанией Google и поставщиками SoC для устранения недостатков в системе, которые могут быть использованы вредоносными приложениями для обхода ограничений безопасности и могут нанести временный или постоянный ущерб вашему устройству.\nНесмотря на то, что пакеты безопасности платформы обновляются каждый месяц, производители устройств обновляют их намного реже.\nДля того, чтобы быть уверенным в безопасности вашего устройства, убедитесь, что ваша сборка LineageOS актуальна.</string>
+  <string name="trust_feature_security_patches_explain">Исправления безопасности ежемесячно выпускаются Google совместно с поставщиками SoC для устранения уязвимостей в системе, которые могут быть использованы вредоносными приложениями для обхода ограничений безопасности и нанесения необратимого повреждения вашему устройству. Исправления, предоставляемые Google, применяются каждый месяц на всех поддерживаемых устройствах, но исправления для проприетарного кода могут применяться только производителем вашего устройства. Для поддержания вашего устройства в безопасном состоянии, убедитесь, что ваша сборка LineageOS актуальна ​​и (если применимо) образ производителя обновлен до последней версии, рекомендованной LineageOS.</string>
   <string name="trust_feature_encryption">Шифрование</string>
   <string name="trust_feature_encryption_value_enabled">Включено</string>
   <string name="trust_feature_encryption_value_nolock">Необходима защита экрана блокировки</string>
   <string name="trust_feature_encryption_value_disabled">Отключено</string>
-  <string name="trust_feature_encryption_explain">Шифрование вашего устройства предотвращает доступ к личным данным, когда телефон выключен или находится в режиме восстановления. Это особенно важно в случае кражи телефона, так как получить доступ к вашим сообщениям, контактам и другой личной информации без пароля будет невозможно.\nЧтобы сделать шифрование более эффективным, необходимо настроить защиту экрана блокировки.</string>
+  <string name="trust_feature_encryption_explain">Шифрование вашего устройства предотвращает доступ к личным данным, когда ОС Android не загружена. Это особенно важно в случае кражи телефона, так как функция препятствует получению доступа к вашим сообщениям, контактам и другой личной информации без пароля.\nЧтобы сделать шифрование более эффективным, необходимо настроить защиту экрана блокировки.</string>
   <string name="trust_category_tools">Конфиденциальность</string>
   <string name="trust_notification_alerts_title">Оповещения безопасности</string>
   <string name="trust_warnings_alerts_intro">Вы можете выбрать проблемы безопасности, о которых вы хотите получать оповещения. Рекомендуется включить все оповещения</string>
   <string name="trust_warnings_selinux">Статус SELinux</string>
   <string name="trust_warnings_keys">Подпись сборки</string>
   <string name="trust_onboarding_title">Поприветствуйте Trust</string>
-  <string name="trust_onboarding_description">Trust поможет защитить ваше устройство и сохранить вашу конфиденциальность.\nЗначок Trust появится, чтобы помочь вам проверить безопасность содержимого</string>
+  <string name="trust_onboarding_description">Trust помогает сохранить ваше устройство в безопасности и защитить вашу конфиденциальность.\nЗначок Trust будет отображаться только после проверки содержимого страницы.</string>
   <string name="trust_onboarding_learn_more">Подробнее</string>
   <string name="trust_onboarding_done">Понятно</string>
   <!-- Sms limit -->
   <string name="sms_security_check_limit_title">Ограничение SMS-сообщений</string>
-  <string name="sms_security_check_limit_summary">Запрашивать подтверждение при отправке больше %s сообщений в минуту</string>
+  <string name="sms_security_check_limit_summary">Запрашивать подтверждение при отправке более %s сообщений в минуту</string>
   <string name="sms_security_check_limit_summary_none">Приложениям запрещено отправлять сообщения без подтверждения</string>
   <string name="sms_security_check_limit_always_confirm">Подтверждать всегда</string>
 </resources>

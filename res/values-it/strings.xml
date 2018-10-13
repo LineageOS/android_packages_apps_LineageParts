@@ -554,6 +554,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibra quando viene rilevata una gesture</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Scorri verso il basso con due dita</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Scorri verso l\'alto con un dito</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Scorri verso l\'alto dal tasto home</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Scorri verso il basso con un dito</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Scorri a sinistra con un dito</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Scorri verso destra con un dito</string>
@@ -611,35 +612,37 @@
   <string name="style_dark_overlay_black">Nero</string>
   <string name="style_permission_error">Per analizzare lo sfondo, è necessario il permesso di accesso alla memoria interna, concedilo per utilizzare questa funzione</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust aiuta a tenere il tuo dispositvo sicuro e protegge la tua privacy.\nL\'icona di Trust appare verificando la sicurezza dei contenuti.</string>
   <string name="trust_category_features">Stato</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Applicazione</string>
   <string name="trust_feature_selinux_value_disabled">Disattivato</string>
-  <string name="trust_feature_selinux_explain">Il SELinux definisce quali processi hanno accesso a quali file sul dispositivo.\nQuesto impedisce alle app e servizi di accedere a file che non dovrebbero gestire: in questo modo un processo dannoso avrà accesso limitato e la tua sicurezza sarà preservata.</string>
+  <string name="trust_feature_selinux_explain">Il SELinux definisce quali processi hanno accesso a quali file sul dispositivo.\nQuesto impedisce alle app e servizi di accedere a file che non dovrebbero gestire: in questo modo un potenziale processo dannoso sarà limitato e la tua sicurezza preservata.</string>
   <string name="trust_feature_root">Accesso root</string>
   <string name="trust_feature_root_value_disabled">Disattivato</string>
   <string name="trust_feature_root_value_adb">Solo ADB</string>
   <string name="trust_feature_root_value_apps">App e ADB</string>
-  <string name="trust_feature_root_explain">L\'accesso root consente alle app e servizi da te selezionati di eludere le restrizioni di sicurezza, consentendo modifiche al sistema che possono anche causare danni al dispositivo o al sistema operativo.</string>
+  <string name="trust_feature_root_explain">L\'accesso root consente alle app e servizi da te selezionati di eludere alcune restrizioni di sicurezza, consentendo modifiche al sistema che possono anche causare danni al dispositivo o al sistema operativo.</string>
   <string name="trust_feature_security_patches">Livello patch sicurezza Android</string>
   <string name="trust_feature_security_patches_value_base">Piattaforma: %1$s\nProduttore: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">aggiornate</string>
-  <string name="trust_feature_security_patches_value_medium">abbastanza vecchie</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">abbastanza datate</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">non aggiornate</string>
-  <string name="trust_feature_security_patches_explain">Le patch di sicurezza sono rilasciate mensilmente da Google e produttori di SoC per correggere problemi del sistema che potrebbero essere sfruttati da app manevole per eludere le restrizioni di sicurezza e causare danni temporanei o permanenti al dispositivo.\nMentre le patch di piattaforma sono aggiornate a prescindere ogni mese, le patch del produttore sono aggiornate dal produttore stesso di tanto in tanto.\nPer tenere il dispositivo sicuro, assicurati di avere sempre una versione di LineageOS aggiornata.</string>
+  <string name="trust_feature_security_patches_explain">Le patch di sicurezza vengono rilasciate mensilmente da Google in cooperazione con i produttori di SoC per risolvere problemi che potrebbero essere sfruttati dalle app dannose per aggirare le restrizioni di sicurezza e causare danni permanenti al dispositivo. Le patch rese disponibili da Google sono applicate a tutti i dispositivi supportati, ma quelle relative ai componenti proprietari possono essere applicati solo dal produttore del dispositivo. Per mantenere il dispositivo sicuro, controlla che la tua versione di LineageOS sia sempre aggiornata ed eventualmente assicurati che i componenti proprietari come firmware e immagine vendor siano quelli raccomandati da LineageOS.</string>
   <string name="trust_feature_encryption">Criptazione</string>
   <string name="trust_feature_encryption_value_enabled">Attiva</string>
   <string name="trust_feature_encryption_value_nolock">Necessita di una schermata di sblocco sicura</string>
   <string name="trust_feature_encryption_value_disabled">Disattivata</string>
-  <string name="trust_feature_encryption_explain">Abilitando la criptazione del dispositivo si impedisce l\'accesso ai dati personali mentre il dispositivo è spento o in modalità di ripristino. Questo è particolarmente importante nel caso in cui il dispositivo venga rubato, in quanto impedisce l\'accesso ai messaggi, contatti e altre informazioni privati a coloro che non conoscono la password.\nPer rendere la criptazione più sicura è importante impostare una schermata di sblocco sicura.</string>
+  <string name="trust_feature_encryption_explain">Abilitando la criptazione del dispositivo viene bloccato l\'accesso ai tuoi dati quando il dispositivo non è acceso. Questo risulta particolarmente importante nel caso in cui il dispositivo venisse rubato: in tal caso l\'accesso ai tuoi messaggi, contatti e altre informazioni personali verrà impedito fino all\'inserimento della tua password.\nPer rendere la criptazione del dispositivo più efficace è importante attivare un blocco schermo sicuro.</string>
   <string name="trust_category_tools">Privacy</string>
   <string name="trust_notification_alerts_title">Avvisi di sicurezza</string>
   <string name="trust_warnings_alerts_intro">Puoi scegliere quali problemi di sicurezza devono essere segnalati. Per la tua sicurezza è consigliabile attivarli tutti</string>
   <string name="trust_warnings_selinux">Stato SELinux</string>
   <string name="trust_warnings_keys">Firma della build</string>
   <string name="trust_onboarding_title">Scopri Trust</string>
-  <string name="trust_onboarding_description">Trust aiuta a tenere il tuo dispositvo sicuro e protegge la tua privacy.\nL\'icona di Trust apparirà verificando la sicurezza dei contenuti</string>
+  <string name="trust_onboarding_description">Trust aiuta a mantenere il tuo dispositivo sicuro e protegge la tua privacy.\nL\'icona di Trust apparirà quando la sicurezza dei contenuti è verificata.</string>
   <string name="trust_onboarding_learn_more">Scopri di più</string>
   <string name="trust_onboarding_done">Capito</string>
   <!-- Sms limit -->

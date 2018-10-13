@@ -405,6 +405,8 @@
   <string name="status_bar_system_icons_summary">Controlar que iconas se amosan na barra de estado</string>
   <!-- Status bar - Clock -->
   <string name="status_bar_clock_title">Reloxo</string>
+  <string name="status_bar_clock_show_seconds_title">Amosar os segundos</string>
+  <string name="status_bar_clock_show_seconds_summary">Amosar horas, minutos e segundos</string>
   <string name="status_bar_clock_position_title">Posición do reloxo</string>
   <string name="status_bar_clock_position_right">Dereita</string>
   <string name="status_bar_clock_position_left">Esquerda</string>
@@ -555,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrar cando se detecta un xesto táctil</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Deslizar hacia abaixo con dos dedos</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Deslizar hacia arriba con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Deslizar cara arriba dende o botón de inicio</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abaixo con un dedo</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia a esquerda con un dedo</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar á dereita con un dedo</string>
@@ -612,35 +615,37 @@
   <string name="style_dark_overlay_black">Negro</string>
   <string name="style_permission_error">Precisase acceso ao almacenamento para analizar o fondo de pantalla, por favor concede o permiso para empregar esta funcionalidade</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust axúdate a manter o teu dispositivo seguro e protexe a túa privacidade.\nA icona do Trust amosase para axudarte ó verificar a seguranza dos contidos.</string>
   <string name="trust_category_features">Estado</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Forzado</string>
   <string name="trust_feature_selinux_value_disabled">Desactivada</string>
-  <string name="trust_feature_selinux_explain">SELinux dita que procesos teñen acceso aos ficheiros do teu dispositivo.\nIsto impide que as aplicacións e os servizos teñan acceso a ficheiros cos que non deben tratar: desta forma un proceso malicioso ten acceso limitado e se preserva a túa seguranza.</string>
+  <string name="trust_feature_selinux_explain">SELinux dita que procesos teñen acceso aos ficheiros do teu dispositivo.\nIsto impide que as aplicacións e os servizos acceder a ficheiros cos que non deben tratar: desta forma un proceso potencialmente malicioso ten acceso limitado e se preserva a túa seguranza.</string>
   <string name="trust_feature_root">Acceso root</string>
   <string name="trust_feature_root_value_disabled">Desactivado</string>
   <string name="trust_feature_root_value_adb">Só ADB</string>
   <string name="trust_feature_root_value_apps">Aplicacións e ADB</string>
-  <string name="trust_feature_root_explain">O acceso root permite eludir as restriccións de seguridade das aplicacións e os servizos que elixa, o que lle permite realizar modificacións ao sistema, o que pode causar daños ao seu dispositivo ou ó sistema operativo.</string>
+  <string name="trust_feature_root_explain">O acceso root permite eludir as restricións de seguranza das aplicacións e os servizos que elixas permitindo realizar modificacións no sistema, o que pode causar danos ao no teu dispositivo ou ó sistema operativo.</string>
   <string name="trust_feature_security_patches">Parches de seguranza do Android</string>
   <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProvedor: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">actualizado</string>
-  <string name="trust_feature_security_patches_value_medium">con atraso dalgúns meses</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">desactualizado dende hai uns meses</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">desactualizado</string>
-  <string name="trust_feature_security_patches_explain">Google e os proveedores de SoC publican mensualmente parches de seguridade para solucionar os defectos do sistema que poderían ser explotados por aplicacións maliciosas para eludir as restriccións de seguridade e causar danos temporales ou permanentes no seu dispositivo.\nSe ben os parches da plataforma actualizanse globalmente todoslos meses, os parches dos proveedores actualizanse de vez en cando.\nPara manter seu dispositivo seguro, asegúrese de que a sua compilación LineageOS esté sempre actualizado.</string>
+  <string name="trust_feature_security_patches_explain">Os parches de seguranza son liberados mensualmente por Google coa cooperación dos fabricantes de SoC para corrixir fallos que poden ser aproveitados por aplicacións maliciosas para saltar as restricións de seguranza e causar danos permanentes o teu dispositivo. Os parches dispoñíbeis dende Google aplícanse mensualmente en tódolos dispositivos compatíbeis, agás os de código propietario que serán aplicados polo fabricante do teu dispositivo. Para manter o teu dispositivo seguro verifica que a versión do LineageOS está actualizada, e (se aplica) asegúrate que a imaxe do teu fabricante está actualizada á máis recente recomendada polo equipo do LineageOS.</string>
   <string name="trust_feature_encryption">Cifrado</string>
   <string name="trust_feature_encryption_value_enabled">Activado</string>
   <string name="trust_feature_encryption_value_nolock">Precisas dunha pantalla de bloqueo segura</string>
   <string name="trust_feature_encryption_value_disabled">Desactivado</string>
-  <string name="trust_feature_encryption_explain">Cifrar o seu dispositivo impide o acceso a seus datos cando seu teléfono está apagado ou en modo de recuperación. Esto é especialmente importante se o seu telefono é robado ou prar prevenir que as persoas lean seus mensaxes, contactos e outra información privada sen o contrasinal.\nPara que o cifrado sea más efectivo, debe configurar unha pantalla de bloqueo segura.</string>
+  <string name="trust_feature_encryption_explain">Cifrar o teu dispositivo impide o acceso a teus datos cando o teu teléfono non iniciou có Android. Esto é especialmente importante se che roubaron o telefono ou para previr que outras persoas lean as túas mensaxes, contactos e outra información privada sen o contrasinal.\nPara que o cifrado sexa máis efectivo, tes que configurar unha pantalla de bloqueo segura.</string>
   <string name="trust_category_tools">Privacidade</string>
   <string name="trust_notification_alerts_title">Alertas de seguranza</string>
   <string name="trust_warnings_alerts_intro">Pode seleccionalos problemas de seguridade dos que desexa ser avisado. Para su seguridade, recomendase habilitar tódalas alertas</string>
   <string name="trust_warnings_selinux">Estado do SELinux</string>
   <string name="trust_warnings_keys">Firma da compilación</string>
   <string name="trust_onboarding_title">Dille ola a Trust</string>
-  <string name="trust_onboarding_description">Trust axúdate a manter o teu dispositivo seguro e protexe a túa privacidade.\nA icona do Trust amosarase para axudarte ó verificar a seguranza dos contidos</string>
+  <string name="trust_onboarding_description">O Trust axúdate a manter o teu dispositivo seguro e protexe a túa privacidade.\nA icona do Trust amosarase só cando o contido da páxina estea verificado.</string>
   <string name="trust_onboarding_learn_more">Saber máis</string>
   <string name="trust_onboarding_done">Entendo</string>
   <!-- Sms limit -->

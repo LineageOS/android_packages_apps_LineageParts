@@ -209,7 +209,7 @@
   <string name="button_backlight_only_when_pressed_title">Tasten nur beleuchten, wenn sie gedrückt werden</string>
   <string name="keyboard_backlight_enabled">Tastatur beleuchten</string>
   <string name="button_backlight_seekbar_title">Tasten-Helligkeit</string>
-  <string name="keyboard_backlight_seekbar_title">Tastatur-Helligkeit</string>
+  <string name="keyboard_backlight_seekbar_title">Tastaturhelligkeit</string>
   <string name="backlight_timeout_title">Automatisch abschalten nach</string>
   <string name="backlight_timeout_unlimited">Nie ausschalten</string>
   <string name="backlight_summary_disabled">Deaktiviert</string>
@@ -557,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrieren, wenn eine Bildschirmgeste erkannt wurde</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Mit zwei Fingern nach unten wischen</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">Mit einem Finger nach oben wischen</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Von der Home-Taste aus nach oben wischen</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">Mit einem Finger nach unten wischen</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">Mit einem Finger nach links wischen</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">Mit einem Finger nach rechts wischen</string>
@@ -614,35 +615,37 @@
   <string name="style_dark_overlay_black">Schwarz</string>
   <string name="style_permission_error">Speicherzugriffsberechtigung ist erforderlich, um Ihr Hintergrundbild zu analysieren. Bitte gewähren Sie diese, um die Funktion nutzen zu können</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust hilft Ihnen, Ihr Gerät sicher zu halten und schützt Ihre Privatsphäre.\nDas Trust-Symbol zeigt Ihnen die Sicherheit der Inhalte.</string>
   <string name="trust_category_features">Status</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">Strikt</string>
   <string name="trust_feature_selinux_value_disabled">Deaktiviert</string>
-  <string name="trust_feature_selinux_explain">SELinux gibt vor, welche Prozesse Zugriff auf welche Dateien auf Ihrem Gerät haben.\nDadurch wird verhindert, dass Apps und Dienste Zugriff auf Dateien haben, auf die sie keinen Zugriff haben sollten: Auf diese Weise hat ein böswilliger Prozess nur begrenzten Zugriff, so dass Ihre Sicherheit erhalten bleibt.</string>
+  <string name="trust_feature_selinux_explain">SELinux bestimmt, welche Prozesse Zugriff auf welche Dateien/Verzeichnisse auf ihrem Gerät haben.\nDadurch wird verhindert, dass Anwendungen und Dienste auf Dateien zugreifen, die sie nicht benötigen: Auf diese Weise wird ein potenziell bösartiger Prozess eingeschränkt und ihre Sicherheit gewahrt.</string>
   <string name="trust_feature_root">Root-Zugriff</string>
   <string name="trust_feature_root_value_disabled">Deaktiviert</string>
   <string name="trust_feature_root_value_adb">Nur ADB</string>
   <string name="trust_feature_root_value_apps">Apps und ADB</string>
-  <string name="trust_feature_root_explain">Der Root-Zugriff ermöglicht die Umgehung von Sicherheitseinschränkungen durch ausgewählte Apps und Dienste, wodurch diese Änderungen am System vornehmen können, die Schäden an Ihrem Gerät oder Betriebssystem verursachen können.</string>
+  <string name="trust_feature_root_explain">Der Root-Zugriff erlaubt die Umgehung von Sicherheitseinschränkungen durch Apps und Dienste ihrer Wahl, wodurch diese Änderungen am System vornehmen können, welche Schäden an ihrem Gerät oder Betriebssystem verursachen könnten.</string>
   <string name="trust_feature_security_patches">Android-Sicherheitspatches</string>
   <string name="trust_feature_security_patches_value_base">Plattform: %1$s\nVendor: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">Aktuell</string>
-  <string name="trust_feature_security_patches_value_medium">Einige Monate alt</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">ein paar Monate veraltet</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">Veraltet</string>
-  <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google und SoC-Anbietern veröffentlicht, um Schwachstellen im System zu beheben, die von bösartigen Apps ausgenutzt werden können, um Sicherheitseinschränkungen zu umgehen und Ihr Gerät vorübergehend oder dauerhaft beschädigen zu können.\nWährend Plattform-Patches jeden Monat global aktualisiert werden, werden Anbieter-Patches von Zeit zu Zeit vom Hersteller aktualisiert.\nUm Ihr Gerät sicher zu halten, stellen Sie sicher, dass Ihr LineageOS Build immer auf dem neuesten Stand ist.</string>
+  <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google in Zusammenarbeit mit SoC-Anbietern veröffentlicht, um Fehler zu beheben, die von bösartigen Anwendungen ausgenutzt werden könnten, um Sicherheitseinschränkungen zu umgehen und ihr Gerät dauerhaft zu beschädigen. Von Google bereitgestellte Patches werden jeden Monat auf alle unterstützten Geräte angewendet, aber Patches auf proprietären Code können nur vom Hersteller ihres Geräts bereitgestellt werden. Um ihr Gerät sicher zu halten, stellen Sie sicher, dass ihr LineageOS-Build immer auf dem neuesten Stand ist, und (falls zutreffend) stellen Sie sicher, dass ihr Hersteller-Image auf das von LineageOS empfohlene aktualisiert wird.</string>
   <string name="trust_feature_encryption">Verschlüsselung</string>
   <string name="trust_feature_encryption_value_enabled">Aktiviert</string>
   <string name="trust_feature_encryption_value_nolock">Benötigt einen sicheren Sperrbildschirm</string>
   <string name="trust_feature_encryption_value_disabled">Deaktiviert</string>
-  <string name="trust_feature_encryption_explain">Durch die Verschlüsselung Ihres Geräts wird der Zugriff auf Ihre Daten verhindert, wenn das Telefon ausgeschaltet ist oder sich im Recovery-Modus befindet. Dies ist besonders wichtig, wenn Ihr Telefon gestohlen wird und verhindert, dass Personen Ihre Nachrichten, Kontakte und andere private Informationen ohne das Kennwort lesen können.\nUm die Verschlüsselung effektiver zu machen, müssen Sie einen sicheren Sperrbildschirm einrichten.</string>
+  <string name="trust_feature_encryption_explain">Die Verschlüsselung ihres Gerätes verhindert den Zugriff auf ihre Daten, wenn ihr Telefon nicht in Android gebootet wird. Dies ist besonders wichtig, wenn ihr Telefon gestohlen wird, da es Menschen daran hindert, ihre Nachrichten, Kontakte und andere private Informationen ohne ihr Passwort zu lesen.\nUm die Verschlüsselung effektiver zu gestalten, müssen Sie ein sicheres Passwort für den Sperrbildschirm festlegen.</string>
   <string name="trust_category_tools">Privatsphäre</string>
   <string name="trust_notification_alerts_title">Sicherheitswarnungen</string>
   <string name="trust_warnings_alerts_intro">Sie können auswählen, auf welche Sicherheitsprobleme Sie hingewiesen werden möchten. Aus Sicherheitsgründen empfiehlt es sich, alle Warnungen zu aktivieren</string>
   <string name="trust_warnings_selinux">SELinux-Status</string>
   <string name="trust_warnings_keys">Build-Signatur</string>
   <string name="trust_onboarding_title">Sag Hallo zu Trust</string>
-  <string name="trust_onboarding_description">Trust hilft Ihnen dabei, Ihr Gerät sicher zu halten und schützt Ihre Privatsphäre.\nDas Trust-Symbol wird angezeigt, um Ihnen bei der Überprüfung der Sicherheit der Inhalte zu helfen</string>
+  <string name="trust_onboarding_description">Trust hilft Ihnen, Ihr Gerät sicher zu halten und schützt Ihre Privatsphäre.\nDas Trust Icon wird nur angezeigt, wenn der Inhalt der Seite überprüft wurde.</string>
   <string name="trust_onboarding_learn_more">Mehr erfahren</string>
   <string name="trust_onboarding_done">Verstanden</string>
   <!-- Sms limit -->

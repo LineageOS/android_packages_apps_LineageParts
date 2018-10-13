@@ -558,6 +558,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">檢測到觸控螢幕手勢時震動</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">用兩根手指向下滑動</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">用一根手指向上滑動</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">從主畫面鍵往上滑</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">用一根手指向下滑動</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">用一根手指向左滑動</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">用一根手指向右滑動</string>
@@ -615,12 +616,11 @@
   <string name="style_dark_overlay_black">黑色</string>
   <string name="style_permission_error">需要儲存存取權限才能分析桌布，請授予它使用此功能</string>
   <!-- Trust interface -->
-  <string name="trust_header">安全中心能保障您的裝置安全性和您的隱私？\n您可以通過顯示的安全圖示檢查內容的安全性</string>
   <string name="trust_category_features">狀態</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">強制執行</string>
   <string name="trust_feature_selinux_value_disabled">已停用</string>
-  <string name="trust_feature_selinux_explain">SELinux 規定了哪些程式可以存取您的裝置上的哪些檔案。\n這個機制可以防止應用程式和服務存取它們不該訪問的檔案，因此惡意程式的存取也會受到限制，從而保護了您的安全。</string>
+  <string name="trust_feature_selinux_explain">SELinux 規定了哪些程式可以存取您的裝置上的哪些檔案。\n這個機制可以防止應用程式和服務存取它們不該存取的檔案，因此惡意程式的存取也會受到限制，從而保護了您的安全。</string>
   <string name="trust_feature_root">Root 權限</string>
   <string name="trust_feature_root_value_disabled">已停用</string>
   <string name="trust_feature_root_value_adb">僅限 ADB</string>
@@ -628,8 +628,11 @@
   <string name="trust_feature_root_explain">Root 存取讓您可以選擇讓某些應用程式和服務繞過安全限制，允許它們修改系統。這可能會對您的裝置或作業系統造成損壞。</string>
   <string name="trust_feature_security_patches">Android 安全性修補</string>
   <string name="trust_feature_security_patches_value_base">平台：%1$s\n廠商：%2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">已是最新版本！</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_medium">幾個月未更新</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">過時</string>
   <string name="trust_feature_security_patches_explain">安全性修補由 Google 和 SoC 廠商每月發佈，用以修復可能會被惡意應用程式利用、繞過安全限制對您的裝置造成暫時或永久損壞的缺陷。\n平台修補每個月都會統一更新，但廠商修補只能每次從 OEM 取得。\n要保證您的裝置安全，請使用最新的 LineageOS 版本。</string>
   <string name="trust_feature_encryption">加密</string>
@@ -643,7 +646,7 @@
   <string name="trust_warnings_selinux">SELinux 狀態</string>
   <string name="trust_warnings_keys">編譯簽名</string>
   <string name="trust_onboarding_title">歡迎使用安全中心</string>
-  <string name="trust_onboarding_description">安全中心能保障您的裝置安全性和您的隱私？\n您可以通過顯示的安全圖示檢查內容的安全性</string>
+  <string name="trust_onboarding_description">安全中心能保障您的裝置安全性和您的隱私嗎？\ n您可以透過顯示的安全圖示檢查內容的安全性</string>
   <string name="trust_onboarding_learn_more">瞭解更多</string>
   <string name="trust_onboarding_done">明白了</string>
   <!-- Sms limit -->

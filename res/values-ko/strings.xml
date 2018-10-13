@@ -557,6 +557,7 @@
   <string name="touchscreen_gestures_haptic_feedback_summary">터치스크린 제스처를 감지하면 진동 울림</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">두 손가락으로 쓸어 내리기</string>
   <string name="touchscreen_gesture_one_finger_up_swipe_title">한 손가락으로 쓸어 올리기</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_home_title">홈 버튼에서 위로 밀기</string>
   <string name="touchscreen_gesture_one_finger_down_swipe_title">한 손가락으로 쓸어 내리기</string>
   <string name="touchscreen_gesture_one_finger_left_swipe_title">한 손가락으로 왼쪽으로 밀기</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">한 손가락으로 오른쪽으로 밀기</string>
@@ -614,7 +615,6 @@
   <string name="style_dark_overlay_black">검정</string>
   <string name="style_permission_error">배경화면을 분석하기 위해 저장소 접근 권한이 필요합니다. 이 기능을 사용하려면 권한을 허용해 주세요.</string>
   <!-- Trust interface -->
-  <string name="trust_header">Trust는 기기를 안전하게 유지하여 개인 정보를 보호하는 데 도움을 줍니다.\nTrust 아이콘은 컨텐츠의 보안을 확인하는 데 도움을 주기 위해 표시됩니다.</string>
   <string name="trust_category_features">상태</string>
   <string name="trust_feature_selinux">SELinux</string>
   <string name="trust_feature_selinux_value_enforcing">시행</string>
@@ -624,13 +624,15 @@
   <string name="trust_feature_root_value_disabled">사용 안 함</string>
   <string name="trust_feature_root_value_adb">ADB만</string>
   <string name="trust_feature_root_value_apps">앱 및 ADB</string>
-  <string name="trust_feature_root_explain">루트 권한을 사용하면 선택한 앱 및 서비스가 보안 제한을 우회하여 시스템을 수정할 수 있으므로 기기 또는 OS가 손상될 수 있습니다.</string>
+  <string name="trust_feature_root_explain">루트 권한을 사용하면 선택한 앱 및 서비스가 보안 제한을 우회하여 시스템을 수정할 수 있으므로 기기 또는 OS를 손상시킬 수 있습니다.</string>
   <string name="trust_feature_security_patches">Android 보안 패치</string>
   <string name="trust_feature_security_patches_value_base">플랫폼: %1$s\n공급업체: %2$s</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_new">최신</string>
-  <string name="trust_feature_security_patches_value_medium">몇 달 전</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+  <string name="trust_feature_security_patches_value_medium">수 개월 지남</string>
+  <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
   <string name="trust_feature_security_patches_value_old">오래됨</string>
-  <string name="trust_feature_security_patches_explain">보안 패치는 Google 및 SoC 공급업체가 매월 발표하고 있으며 악성 앱이 보안 제한을 우회하여 기기를 일시적, 또는 영구적으로 손상시킬 수 있는 결함을 해결합니다.\n플랫폼 패치는 매달 전 세계에 제공되는 반면, 공급업체 패치는 OEM에서 수시로 제공합니다.\n기기를 안전하게 유지하려면 LineageOS 빌드가 항상 최신 상태인지 확인하세요.</string>
   <string name="trust_feature_encryption">암호화</string>
   <string name="trust_feature_encryption_value_enabled">활성화됨</string>
   <string name="trust_feature_encryption_value_nolock">보안성 높은 잠금 화면 필요</string>
@@ -642,7 +644,6 @@
   <string name="trust_warnings_selinux">SELinux 상태</string>
   <string name="trust_warnings_keys">빌드 서명</string>
   <string name="trust_onboarding_title">Trust를 만나보세요</string>
-  <string name="trust_onboarding_description">Trust는 기기를 안전하게 유지하여 개인 정보를 보호하는 데 도움을 줍니다.\nTrust 아이콘은 콘텐츠의 보안을 확인하는 데 도움을 주기 위해 표시됩니다.</string>
   <string name="trust_onboarding_learn_more">더 알아보기</string>
   <string name="trust_onboarding_done">확인</string>
   <!-- Sms limit -->
