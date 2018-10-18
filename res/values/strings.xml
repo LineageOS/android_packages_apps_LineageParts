@@ -160,6 +160,8 @@
     <string name="live_display_color_profile_srgb_summary">Colors accurate to the sRGB color space</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Colors accurate to the DCI-P3 color space</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Colors accurate to the Adobe RGB color space</string>
     <string name="live_display_reading_mode_title">Reading mode</string>
     <string name="live_display_reading_mode_summary">Grayscale mode for long-term reading</string>
     <string name="color_calibration_title">Color calibration</string>
