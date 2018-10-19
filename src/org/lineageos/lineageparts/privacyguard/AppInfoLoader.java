@@ -102,10 +102,8 @@ import java.util.List;
             app.packageName = info.packageName;
             app.enabled = appInfo.enabled;
             app.uid = info.applicationInfo.uid;
-/*
             app.privacyGuardEnabled = mAppOps.getPrivacyGuardSettingForPackage(
                     app.uid, app.packageName);
-*/
             apps.add(app);
         }
 
