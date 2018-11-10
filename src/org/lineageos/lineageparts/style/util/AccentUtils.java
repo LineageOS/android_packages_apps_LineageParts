@@ -29,7 +29,7 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.style.models.Accent;
 import org.lineageos.lineageparts.style.models.StyleStatus;
 
-import lineageos.style.StyleInterface;
+import org.lineageos.internal.style.StyleInterface;
 
 import java.util.ArrayList;
 import java.util.List;

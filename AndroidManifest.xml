@@ -36,9 +36,9 @@
     <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" />
+    <uses-permission android:name="android.permission.CHANGE_OVERLAY_PACKAGES" />
 
     <uses-permission android:name="lineageos.permission.MANAGE_REMOTE_PREFERENCES" />
-    <uses-permission android:name="lineageos.permission.CHANGE_STYLE" />
 
     <protected-broadcast android:name="lineageos.intent.action.UPDATE_POWER_MENU" />
     <protected-broadcast android:name="lineageos.platform.app.profiles.PROFILES_STATE_CHANGED" />
