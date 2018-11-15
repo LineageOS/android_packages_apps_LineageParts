@@ -229,7 +229,7 @@
     <string name="navigation_bar_app_switch_long_press_title">Aktion für langes Drücken auf Anwendungsverlauf</string>
     <!-- Power menu -->
     <string name="power_menu_title">Ein-/Aus-Menü</string>
-    <string name="power_menu_screenshot_title">Bildschirmfoto</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_screenshot_summary">Für zugeschnittenen Screenshot gedrückt halten</string>
     <string name="power_menu_airplane_title">Flugmodus</string>
     <string name="power_menu_users_title">Benutzer wechseln</string>
