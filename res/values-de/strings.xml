@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">Farben passend zum sRGB-Farbraum</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Farben passend zum DCI-P3-Farbraum</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Farben passend zum Adobe-RGB-Farbraum</string>
     <string name="live_display_reading_mode_title">Lesemodus</string>
     <string name="live_display_reading_mode_summary">Graustufen-Modus zum Langzeit-Lesen</string>
     <string name="color_calibration_title">Farbkalibrierung</string>

@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">sRGB kolore espazioarekiko zehatzak diren koloreak</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">DCI-P3 kolore espazioarekiko zehatzak diren koloreak</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Adobe RGB kolore espazioarekiko zehatzak diren koloreak</string>
     <string name="live_display_reading_mode_title">Irakurketa modua</string>
     <string name="live_display_reading_mode_summary">Irakurketa luzeetarako modua gris eskalan</string>
     <string name="color_calibration_title">Kolore kalibrazioa</string>

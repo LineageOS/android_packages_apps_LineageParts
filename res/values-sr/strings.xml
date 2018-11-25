@@ -458,19 +458,13 @@
     <string name="contributors_cloud_loading_message">Учитавам податке о сарадницима\u2026</string>
     <string name="contributors_cloud_failed_message">Не могу да учитам податке о сарадницима.</string>
     <string name="contributor_info_menu">Подаци о сарадницима</string>
-    <string name="contributor_info_msg">
-        <![CDATA[<b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><![CDATA[<b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Надимак:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Доприноса:</b> <xliff:g id="commits">%3$s</xliff:g>]]>
-        ;
-    </string>
+                 <b>Доприноса:</b> <xliff:g id="commits">%3$s</xliff:g>]]>;</string>
     <string name="contributions_info_menu">Општа статистика</string>
-    <string name="contributions_info_msg">
-        <![CDATA[<b>Укупно сарадника:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><![CDATA[<b>Укупно сарадника:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Укупно доприноса:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Последња измена:</b> <xliff:g id="date">%3$s</xliff:g>]]>
-        ;
-    </string>
+                 <b>Последња измена:</b> <xliff:g id="date">%3$s</xliff:g>]]>;</string>
     <!-- Anonymous Statistics #Lineage -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Слање статистике</string>

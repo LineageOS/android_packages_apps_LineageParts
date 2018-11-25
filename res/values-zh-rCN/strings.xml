@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">颜色校准到 sRGB 色彩空间</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">色彩精确到 DCI-P3 的色彩空间</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">颜色校准到 Adobe RGB 色彩空间</string>
     <string name="live_display_reading_mode_title">阅读模式</string>
     <string name="live_display_reading_mode_summary">适合长时间阅读的灰度模式</string>
     <string name="color_calibration_title">颜色校准</string>

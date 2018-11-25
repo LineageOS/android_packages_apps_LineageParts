@@ -522,7 +522,7 @@
     <string name="perf_profile_title">Profil výkonu: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_fail_toast">Profil výkonu není momentálně k dispozici</string>
     <string name="power_save_category_title">Úspora baterie</string>
-    <string name="power_save_title">Extrémně úsporný</string>
+    <string name="power_save_title">Extrémně úsporný </string>
     <string name="power_save_summary">Omezit výkon a aktivity na pozadí pro úsporu energie</string>
     <string name="auto_power_save_title">Automatický úsporný režim</string>
     <string name="auto_power_save_summary_on">Automaticky zapnout úsporný režim při %s baterie</string>

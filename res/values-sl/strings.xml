@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">Barve ustrezne sRGB barvnemu prostoru</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Barve ustrezne DCI-P3 barvnemu prostoru</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Barve ustrezne Adobe RGB barvnemu prostoru</string>
     <string name="live_display_reading_mode_title">Način za branje</string>
     <string name="live_display_reading_mode_summary">Način sivine za dolgoročno branje</string>
     <string name="color_calibration_title">Umerjanje barv</string>

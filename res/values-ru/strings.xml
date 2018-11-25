@@ -115,7 +115,7 @@
     <string name="live_display_day">День</string>
     <string name="live_display_night">Ночь</string>
     <string name="live_display_outdoor_mode_title">Автоматический режим для улицы</string>
-    <string name="live_display_outdoor_mode_summary">Увеличить яркость и насыщенность автоматически при ярком солнечном свете</string>
+    <string name="live_display_outdoor_mode_summary">Автоматическое увеличение яркости и насыщенности при ярком солнечном свете</string>
     <string name="live_display_low_power_title">Снизить энергопотребление</string>
     <string name="live_display_low_power_summary">Подстраивать экран для низкого энергопотребления без ухудшения качества</string>
     <string name="live_display_enhance_color_title">Улучшение цветопередачи</string>
@@ -130,7 +130,7 @@
     <string name="live_display_color_profile_cinema_title">Кино</string>
     <string name="live_display_color_profile_cinema_summary">Идеальная цветопередача для видео</string>
     <string name="live_display_color_profile_astronomy_title">Астрономия</string>
-    <string name="live_display_color_profile_astronomy_summary">Глубокий красный для сохранения видимости ночью</string>
+    <string name="live_display_color_profile_astronomy_summary">Темно-красный для уменьшения влияния на ваш сон</string>
     <string name="live_display_color_profile_photography_title">Фотография</string>
     <string name="live_display_color_profile_photography_summary">Идеальная цветопередача для фото</string>
     <string name="live_display_color_profile_basic_title">Базовый</string>
@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">Цвета, схожие с пространством sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">Цветовое пространство DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Цвета, соответствующие цветовому пространству DCI-P3</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Цвета, соответствующие цветовому пространству Adobe RGB</string>
     <string name="live_display_reading_mode_title">Режим чтения</string>
     <string name="live_display_reading_mode_summary">Режим оттенков серого для долговременного чтения</string>
     <string name="color_calibration_title">Цвет</string>
@@ -442,7 +444,7 @@
     <string name="network_traffic_settings_summary">Отображать текущую скорость соединения в строке состояния</string>
     <string name="network_traffic_mode_title">Режим отображения</string>
     <string name="network_traffic_mode_disable">Отключено</string>
-    <string name="network_traffic_mode_up">Только исходящий трафик</string>
+    <string name="network_traffic_mode_up">Только исходящий трафик </string>
     <string name="network_traffic_mode_down">Только входящий трафик</string>
     <string name="network_traffic_mode_all">Исходящий и входящий трафик</string>
     <string name="network_traffic_autohide">Автоскрытие</string>
@@ -642,8 +644,8 @@
     <string name="trust_warnings_alerts_intro">Вы можете выбрать проблемы безопасности, о которых вы хотите получать оповещения. Рекомендуется включить все оповещения</string>
     <string name="trust_warnings_selinux">Статус SELinux</string>
     <string name="trust_warnings_keys">Подпись сборки</string>
-    <string name="trust_onboarding_title">Поприветствуйте Trust</string>
-    <string name="trust_onboarding_description">Trust помогает сохранить ваше устройство в безопасности и защитить вашу конфиденциальность.\nЗначок Trust будет отображаться только после проверки содержимого страницы.</string>
+    <string name="trust_onboarding_title">Познакомьтесь с Trust</string>
+    <string name="trust_onboarding_description">Trust помогает поддерживать безопасность устройства и защищать вашу конфиденциальность.\nЗначок Trust отображается для того, чтобы вы могли проверить безопасность отображаемого контента.</string>
     <string name="trust_onboarding_learn_more">Подробнее</string>
     <string name="trust_onboarding_done">Понятно</string>
     <!-- Sms limit -->

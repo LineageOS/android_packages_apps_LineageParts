@@ -105,7 +105,7 @@
     <!-- Lights settings, LED notification -->
     <string name="led_notification_title">指示燈設定</string>
     <string name="led_notification_text">已透過設定啟用 LED 指示燈</string>
-    <string name="notification_light_no_apps_summary">若要控制個別應用程式，請啟動「%1$s」然後按下選單列中的 [\u002b]</string>
+    <string name="notification_light_no_apps_summary">若要控制個別應用程式，請啟動「%1$s」然後按下選單列中的 [\u002b] </string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">顏色準確到 sRGB 色域</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">顏色準確到 DCI-P3 色域</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">顏色準確到 Adobe RGB 色域</string>
     <string name="live_display_reading_mode_title">閱讀模式</string>
     <string name="live_display_reading_mode_summary">用於長期閱讀的灰度模式</string>
     <string name="color_calibration_title">顏色校準</string>

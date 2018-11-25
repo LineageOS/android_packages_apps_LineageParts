@@ -143,6 +143,7 @@
     <string name="live_display_color_profile_srgb_summary">sRGB 색 공간에 적합한 색상</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">DCI-P3 색 공간에 적합한 색상</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
     <string name="live_display_reading_mode_title">독서 모드</string>
     <string name="live_display_reading_mode_summary">긴 시간 독서에 유용한 흑백 모드</string>
     <string name="color_calibration_title">색상 보정</string>

@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">Colors fidels a l\'espai de colors sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Colors fidels a l\'espai de colors DCI-P3</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Colors fidels a l\'espai de colors Adobe RGB</string>
     <string name="live_display_reading_mode_title">Mode lectura</string>
     <string name="live_display_reading_mode_summary">Mode d\'escala de grisos per a la lectura a llarg termini</string>
     <string name="color_calibration_title">Calibració de color</string>

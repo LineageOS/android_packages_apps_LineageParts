@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">Culorile se calibrează după spațiul de culori sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Culorile se calibrează după spațiul de culori DCI-P3</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Culorile se calibrează după spațiul de culori Adobe RGB</string>
     <string name="live_display_reading_mode_title">Mod lectură</string>
     <string name="live_display_reading_mode_summary">Mod cu tonuri gri pentru cititul pe termen lung</string>
     <string name="color_calibration_title">Calibrare culoare</string>

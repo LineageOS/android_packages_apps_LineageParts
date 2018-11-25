@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">Kolory zgodne z paletą kolorów sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Kolory zgodne z paletą kolorów DCI-P3</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Kolory zgodne z przestrzenią kolorów Adobe RGB</string>
     <string name="live_display_reading_mode_title">Tryb czytania</string>
     <string name="live_display_reading_mode_summary">Tryb skali szarości dla długotrwałego czytania</string>
     <string name="color_calibration_title">Kalibracja kolorów</string>
@@ -624,6 +626,7 @@
     <string name="trust_feature_root_value_disabled">Wyłączone</string>
     <string name="trust_feature_root_value_adb">Tylko ADB</string>
     <string name="trust_feature_root_value_apps">Aplikacje i ADB</string>
+    <string name="trust_feature_root_explain">Dostęp do Root\'a pozwala na omijanie ograniczeń bezpieczeństwa przez aplikacje i usługi które wybierzesz, zezwalając im na wykonywanie modyfikacji w systemie, co może wyrządzić szkody twojemu urządzeniu lub systemowi.</string>
     <string name="trust_feature_security_patches">Aktualizacje zabezpieczeń Androida</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
@@ -632,6 +635,7 @@
     <string name="trust_feature_security_patches_value_medium">kilkumiesięczne</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">nieaktualne</string>
+    <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google w kooperacji z dostawcami SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzenia trwałych szkód w twoim urządzeniu. Łatki udostępniane przez Google są aplikowane w każdym miesiącu na wszystkich wspieranych urządzeniach, ale poprawki dla kodu własnościowego mogą być aplikowane tylko przez producenta twojego telefonu. By utrzymać twój telefon bezpiecznym, zawsze używaj najnowsze wersji LineageOS i (jeżeli dotyczy) twój obraz vendor jest zaktualizowany do najnowszej wersji zalecanej przez LineageOS.</string>
     <string name="trust_feature_encryption">Szyfrowanie</string>
     <string name="trust_feature_encryption_value_enabled">Włączone</string>
     <string name="trust_feature_encryption_value_nolock">Wymaga zabezpieczenego ekranu blokady</string>
