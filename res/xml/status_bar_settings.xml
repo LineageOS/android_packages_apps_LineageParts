@@ -81,6 +81,12 @@
             android:entries="@array/status_bar_am_pm_entries"
             android:entryValues="@array/status_bar_am_pm_values"
             android:defaultValue="2" />
+
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="smart_clock_enable"
+            android:title="@string/status_bar_enable_smart_clock_title"
+            android:summary="@string/status_bar_enable_smart_clock_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
 <!--
