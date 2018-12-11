@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Connessione dati</string>
   <string name="toggleSync">Sincronizzazione automatica dati</string>
-  <string name="toggle2g3g4g">Modalità rete preferita</string>
-  <string name="toggle2g3g4g_msim">Modalità rete preferita (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Suoneria</string>

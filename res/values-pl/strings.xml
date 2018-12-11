@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Transmisja danych</string>
   <string name="toggleSync">Automatyczna synchronizacja danych</string>
-  <string name="toggle2g3g4g">Preferowany typ sieci</string>
-  <string name="toggle2g3g4g_msim">Preferowany typ sieci (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Tryb dzwonka</string>

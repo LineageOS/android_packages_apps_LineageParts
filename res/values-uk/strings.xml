@@ -360,8 +360,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Передача даних</string>
   <string name="toggleSync">Автосинхронізація даних</string>
-  <string name="toggle2g3g4g">Переважний тип мережі</string>
-  <string name="toggle2g3g4g_msim">Переважно тип мережі (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Режим дзвінка</string>

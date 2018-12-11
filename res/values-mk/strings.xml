@@ -360,8 +360,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Мобилни податоци</string>
   <string name="toggleSync">Авто-синхронизација на податоци</string>
-  <string name="toggle2g3g4g">Префериран тип на мрежа</string>
-  <string name="toggle2g3g4g_msim">Префериран тип на мрежа (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Режим на ѕвонење</string>

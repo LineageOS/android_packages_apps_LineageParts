@@ -360,8 +360,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Dataverbinding</string>
   <string name="toggleSync">Outo-Sinkroniseer data</string>
-  <string name="toggle2g3g4g">Voorkeurnetwerktipe</string>
-  <string name="toggle2g3g4g_msim">Voorkeur netwerk tipe (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Luitoon modus</string>

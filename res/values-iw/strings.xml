@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">חיבור נתונים</string>
   <string name="toggleSync">סנכרון נתונים אוטומטי</string>
-  <string name="toggle2g3g4g">טכנולוגית רשת מועדפת</string>
-  <string name="toggle2g3g4g_msim">טכנולוגית רשת מועדפת (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">מצב צלצול</string>

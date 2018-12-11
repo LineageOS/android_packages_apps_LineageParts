@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Conexiune de date</string>
   <string name="toggleSync">Auto-sincronizare date</string>
-  <string name="toggle2g3g4g">Tipul preferat de rețea</string>
-  <string name="toggle2g3g4g_msim">Tipul preferat de rețea (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Modul tonului de apel</string>
