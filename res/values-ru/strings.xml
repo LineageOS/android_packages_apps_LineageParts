@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Мобильные данные</string>
   <string name="toggleSync">Автосинхронизация</string>
-  <string name="toggle2g3g4g">Предпочитаемый тип сети</string>
-  <string name="toggle2g3g4g_msim">Предпочитаемый тип сети (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Режим звонка</string>

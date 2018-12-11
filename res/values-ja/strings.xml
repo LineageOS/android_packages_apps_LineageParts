@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">データ接続</string>
   <string name="toggleSync">データの自動同期</string>
-  <string name="toggle2g3g4g">優先ネットワークの種類</string>
-  <string name="toggle2g3g4g_msim">優先ネットワークの種類（%1$s）</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">着信モード</string>

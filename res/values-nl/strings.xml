@@ -367,8 +367,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Gegevensverbinding</string>
   <string name="toggleSync">Gegevenssynchronisatie</string>
-  <string name="toggle2g3g4g">Voorkeursnetwerktype</string>
-  <string name="toggle2g3g4g_msim">Voorkeursnetwerktype (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Belstand</string>

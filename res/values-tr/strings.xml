@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Veri bağlantısı</string>
   <string name="toggleSync">Verileri otomatik senk. et</string>
-  <string name="toggle2g3g4g">Tercih edilen şebeke türü</string>
-  <string name="toggle2g3g4g_msim">Tercih edilen şebeke türü (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Zil sesi modu</string>

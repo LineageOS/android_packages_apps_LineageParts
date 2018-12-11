@@ -87,12 +87,10 @@ import org.lineageos.lineageparts.profiles.actions.item.RingModeItem;
 import org.lineageos.lineageparts.profiles.actions.item.TriggerItem;
 import org.lineageos.lineageparts.profiles.actions.item.VolumeStreamItem;
 import org.lineageos.lineageparts.utils.DeviceUtils;
-import org.lineageos.lineageparts.utils.TelephonyUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
@@ -226,19 +224,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         if (DeviceUtils.deviceSupportsMobileData(getActivity())) {
             mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_MOBILEDATA));
             mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_WIFIAP));
-
-            final List<SubscriptionInfo> subs = SubscriptionManager.from(getContext())
-                    .getActiveSubscriptionInfoList();
-            if (subs != null) {
-                for (SubscriptionInfo sub : subs) {
-                    mItems.add(generatePreferredNetworkOverrideItem(sub.getSubscriptionId()));
-                }
-            } else {
-                if (TelephonyManager.from(getContext()).getPhoneCount() == 1) {
-                    mItems.add(generatePreferredNetworkOverrideItem(
-                            SubscriptionManager.INVALID_SUBSCRIPTION_ID));
-                }
-            }
         }
         //if (WimaxHelper.isWimaxSupported(getActivity())) {
         //    mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_WIMAX));
@@ -344,16 +329,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private ConnectionOverrideItem generatePreferredNetworkOverrideItem(int subId) {
-        ConnectionSettings settings = mProfile.getConnectionSettingWithSubId(subId);
-        if (settings == null) {
-            settings = new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_2G3G4G);
-            settings.setSubId(subId);
-            mProfile.setConnectionSettings(settings);
-        }
-        return new ConnectionOverrideItem(settings.getConnectionId(), settings);
     }
 
     private ConnectionOverrideItem generateConnectionOverrideItem(int connectionId) {
@@ -762,29 +737,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         if (requestCode == NEW_TRIGGER_REQUEST_CODE) {
             mProfile = mProfileManager.getProfile(mProfile.getUuid());
             rebuildItemList();
-
-        } else if (requestCode == SET_NETWORK_MODE_REQUEST_CODE
-                && resultCode == Activity.RESULT_OK) {
-
-            int selectedMode = Integer.parseInt(data.getStringExtra(
-                    TelephonyUtils.EXTRA_NETWORK_PICKER_PICKED_VALUE));
-            int subId = data.getIntExtra(TelephonyUtils.EXTRA_SUBID,
-                    SubscriptionManager.getDefaultDataSubscriptionId());
-            ConnectionOverrideItem connItem = (ConnectionOverrideItem) mSelectedItem;
-            final ConnectionSettings setting = connItem.getSettings();
-//            final ConnectionSettings setting = mProfile.getConnectionSettingWithSubId(subId);
-
-            switch (selectedMode) {
-                case ConnectionOverrideItem.Lineage_MODE_SYSTEM_DEFAULT:
-                    setting.setOverride(false);
-                    break;
-                default:
-                    setting.setOverride(true);
-                    setting.setValue(selectedMode);
-            }
-            mProfile.setConnectionSettings(setting);
-            mAdapter.notifyDataSetChanged();
-            updateProfile();
         }
     }
 
@@ -842,9 +794,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     private AlertDialog requestConnectionOverrideDialog(final ConnectionSettings setting) {
         if (setting == null) {
             throw new UnsupportedOperationException("connection setting cannot be null");
-        }
-        if (setting.getConnectionId() == PROFILE_CONNECTION_2G3G4G) {
-            throw new UnsupportedOperationException("dialog must be requested from Telephony");
         }
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         final String[] connectionNames =
@@ -1108,21 +1057,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         } else if (itemAtPosition instanceof RingModeItem) {
             showDialog(DIALOG_RING_MODE);
         } else if (itemAtPosition instanceof ConnectionOverrideItem) {
-
-            ConnectionOverrideItem connItem = (ConnectionOverrideItem) mSelectedItem;
-            if (connItem.getConnectionType() == ConnectionSettings.PROFILE_CONNECTION_2G3G4G) {
-                final Intent intent = new Intent(TelephonyUtils.ACTION_PICK_NETWORK_MODE);
-                intent.putExtra(TelephonyUtils.EXTRA_NONE_TEXT,
-                        getString(R.string.profile_action_none));
-                intent.putExtra(TelephonyUtils.EXTRA_SHOW_NONE, true);
-                intent.putExtra(TelephonyUtils.EXTRA_SUBID, connItem.getSettings().getSubId());
-                intent.putExtra(TelephonyUtils.EXTRA_INITIAL_NETWORK_VALUE,
-                        connItem.getSettings().isOverride()
-                                ? connItem.getSettings().getValue() : -1);
-                startActivityForResult(intent, SET_NETWORK_MODE_REQUEST_CODE);
-            } else {
-                showDialog(DIALOG_CONNECTION_OVERRIDE);
-            }
+            showDialog(DIALOG_CONNECTION_OVERRIDE);
         } else if (itemAtPosition instanceof VolumeStreamItem) {
             showDialog(DIALOG_VOLUME_STREAM);
         } else if (itemAtPosition instanceof ProfileNameItem) {

@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">데이터 연결</string>
   <string name="toggleSync">데이터 자동 동기화</string>
-  <string name="toggle2g3g4g">선호하는 통신 유형</string>
-  <string name="toggle2g3g4g_msim">선호하는 통신 유형 (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">벨소리 모드</string>

@@ -370,8 +370,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Podatkovna veza</string>
   <string name="toggleSync">Autom. sinkronizacija podataka</string>
-  <string name="toggle2g3g4g">Željena vrsta mreže</string>
-  <string name="toggle2g3g4g_msim">Željena vrsta mreže (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Način zvonjenja</string>

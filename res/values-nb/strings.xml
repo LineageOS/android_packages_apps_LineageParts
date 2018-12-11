@@ -360,8 +360,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Datatilkobling</string>
   <string name="toggleSync">Auto-synk data</string>
-  <string name="toggle2g3g4g">Foretrukket nettverkstype</string>
-  <string name="toggle2g3g4g_msim">Foretrukket nettverkstype (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Ringemodus</string>

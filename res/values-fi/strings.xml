@@ -370,8 +370,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Mobiilidata</string>
   <string name="toggleSync">Tietojen automaattinen synkronointi</string>
-  <string name="toggle2g3g4g">Ensisijainen verkkotila</string>
-  <string name="toggle2g3g4g_msim">Ensisijainen verkkotila (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Äänet</string>

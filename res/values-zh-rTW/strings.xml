@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">數據連線</string>
   <string name="toggleSync">自動同步處理資料</string>
-  <string name="toggle2g3g4g">網路類型偏好</string>
-  <string name="toggle2g3g4g_msim">網路類型偏好 (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">鈴響模式</string>

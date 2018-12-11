@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Datu-konexioa</string>
   <string name="toggleSync">Automatikoki sinkronizatu datuak</string>
-  <string name="toggle2g3g4g">Hobetsitako sare mota</string>
-  <string name="toggle2g3g4g_msim">Hobetsitako sare mota (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Doinu modua</string>

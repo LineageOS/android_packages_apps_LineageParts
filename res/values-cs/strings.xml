@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Datové připojení</string>
   <string name="toggleSync">Automatická synchronizace dat</string>
-  <string name="toggle2g3g4g">Upřednostňovaný typ sítě</string>
-  <string name="toggle2g3g4g_msim">Upřednostňovaný typ sítě (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Režim vyzvánění</string>

@@ -251,7 +251,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Мабільныя дадзеныя</string>
   <string name="toggleSync">Аўтаматычнае сінхранізаваньне дадзеных</string>
-  <string name="toggle2g3g4g">Варыянт сеткі</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Рэжым выкліку</string>
