@@ -20,7 +20,6 @@ import android.telephony.SubscriptionManager;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
-import org.lineageos.lineageparts.utils.TelephonyUtils;
 
 import lineageos.profiles.ConnectionSettings;
 
@@ -67,16 +66,6 @@ public class ConnectionOverrideItem extends BaseItem {
             case ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA:
                 r =R.string.toggleData;
                 break;
-            case ConnectionSettings.PROFILE_CONNECTION_2G3G4G:
-                if (settings.getSubId() != SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
-                    final String displayName = SubscriptionManager.from(context)
-                            .getActiveSubscriptionInfo(settings.getSubId())
-                            .getDisplayName()
-                            .toString();
-                    return context.getString(R.string.toggle2g3g4g_msim, displayName);
-                }
-                r = R.string.toggle2g3g4g;
-                break;
             case ConnectionSettings.PROFILE_CONNECTION_GPS:
                 r = R.string.toggleGPS;
                 break;
@@ -99,15 +88,7 @@ public class ConnectionOverrideItem extends BaseItem {
     public CharSequence getSummary(Context context) {
         int resId = -1;
         if (mConnectionSettings != null) {
-            if (mConnectionId == ConnectionSettings.PROFILE_CONNECTION_2G3G4G) { // different options
-                if (mConnectionSettings.isOverride()) {
-                    return TelephonyUtils.getNetworkModeString(context,
-                            mConnectionSettings.getValue(),
-                            SubscriptionManager.getDefaultDataSubscriptionId());
-                } else {
-                    resId = R.string.profile_action_none;
-                }
-            } else if (mConnectionSettings.isOverride()) { // enabled, disabled, or none
+            if (mConnectionSettings.isOverride()) { // enabled, disabled, or none
                 if (mConnectionSettings.getValue() == 1) {
                     resId = R.string.profile_action_enable;
                 } else {

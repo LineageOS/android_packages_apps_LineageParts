@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Koneksi data</string>
   <string name="toggleSync">Otomatis sinkronkan data</string>
-  <string name="toggle2g3g4g">Jenis jaringan</string>
-  <string name="toggle2g3g4g_msim">Jenis jaringan (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Mode dering</string>

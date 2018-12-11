@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">数据连接</string>
   <string name="toggleSync">自动同步数据</string>
-  <string name="toggle2g3g4g">首选网络类型</string>
-  <string name="toggle2g3g4g_msim">首选网络类型 (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">响铃模式</string>

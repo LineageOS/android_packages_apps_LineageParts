@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Kết nối dữ liệu</string>
   <string name="toggleSync">Tự động đồng bộ dữ liệu</string>
-  <string name="toggle2g3g4g">Loại mạng ưa thích</string>
-  <string name="toggle2g3g4g_msim">Loại mạng ưu tiên (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Chế độ chuông</string>

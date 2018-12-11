@@ -353,8 +353,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Dataforbindelse</string>
   <string name="toggleSync">Auto-synk. data</string>
-  <string name="toggle2g3g4g">Foretrukken netværkstype</string>
-  <string name="toggle2g3g4g_msim">Foretrukken netværkstype (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Lydtilstand</string>

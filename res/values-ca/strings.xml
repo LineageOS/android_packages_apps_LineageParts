@@ -372,8 +372,6 @@
   <string name="toggleGPS">GPS</string>
   <string name="toggleData">Connexió de dades</string>
   <string name="toggleSync">Sincronització automàtica de dades</string>
-  <string name="toggle2g3g4g">Tipus de xarxa preferida</string>
-  <string name="toggle2g3g4g_msim">Tipus de xarxa preferida (%1$s)</string>
   <string name="toggleNfc">NFC</string>
   <!-- Sound settings screen -->
   <string name="ring_mode_title">Mode del to de trucada</string>
