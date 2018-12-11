@@ -372,8 +372,6 @@
     <string name="toggleGPS">GPS</string>
     <string name="toggleData">Ceangal dàta</string>
     <string name="toggleSync">Sioncronaich an dàta gu fèin-obrachail</string>
-    <string name="toggle2g3g4g">Seòrsa an lìonraidh as fhearr leat</string>
-    <string name="toggle2g3g4g_msim">Seòrsa an lìonraidh as fhearr leat (%1$s)</string>
     <string name="toggleNfc">NFC</string>
     <!-- Sound settings screen -->
     <string name="ring_mode_title">Modh seirme</string>
