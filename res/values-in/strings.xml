@@ -143,6 +143,8 @@
     <string name="live_display_color_profile_srgb_summary">Warna akurat ke ruang warna sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Warna akurat ke ruang warna DCI-P3</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Warna akurat ke ruang warna Adobe RGB</string>
     <string name="live_display_reading_mode_title">Modus membaca</string>
     <string name="live_display_reading_mode_summary">Modus warna abu-abu untuk pembacaan jangka panjang</string>
     <string name="color_calibration_title">Kalibrasi warna</string>
@@ -540,6 +542,7 @@
     <string name="expanded_desktop_nothing_to_show_text">Matikan saklar untuk menyesuaikan desktop diperluas pada basis per-app</string>
     <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Aplikasi layar penuh</string>
+    <string name="long_screen_settings_summary">Paksa aplikasi lawas untuk menggunakan rasio aspek layar penuh</string>
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Suara pengisian daya</string>
     <string name="charging_sounds_enabled_title">Hidupkan</string>
@@ -620,6 +623,7 @@
     <string name="trust_feature_root_value_disabled">Dimatikan</string>
     <string name="trust_feature_root_value_adb">ADB saja</string>
     <string name="trust_feature_root_value_apps">Aplikasi dan ADB</string>
+    <string name="trust_feature_root_explain">Akses root memungkinkan aplikasi dan layanan yang Anda pilih untuk melewati pembatasan keamanan, memungkinkan mereka melakukan modifikasi pada sistem, yang dapat menyebabkan kerusakan pada perangkat atau OS Anda.</string>
     <string name="trust_feature_security_patches">Patch keamanan android</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
@@ -633,8 +637,11 @@
     <string name="trust_feature_encryption_value_disabled">Dimatikan</string>
     <string name="trust_category_tools">Privasi</string>
     <string name="trust_notification_alerts_title">Peringatan keamanan</string>
+    <string name="trust_warnings_alerts_intro">Anda dapat memilih masalah keamanan yang ingin diperingatkan. Demi keamanan Anda, disarankan untuk mengaktifkan semua peringatan</string>
     <string name="trust_warnings_selinux">Status SELinux</string>
     <string name="trust_warnings_keys">Tanda tangan bentukan</string>
+    <string name="trust_onboarding_title">Katakan halo ke Trust</string>
+    <string name="trust_onboarding_description">Trust membantu Anda menjaga perangkat Anda tetap aman dan melindungi privasi Anda.\nIkon Trust hanya akan muncul ketika isi halaman telah diverifikasi.</string>
     <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
     <string name="trust_onboarding_done">Mengerti</string>
     <!-- Sms limit -->

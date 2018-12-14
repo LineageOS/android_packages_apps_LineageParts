@@ -41,6 +41,7 @@
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Preifatrwydd</string>
     <!-- Privacy Guard -->
+    <string name="privacy_guard_help_text">Yn y sgrin hon gellir dewis pa apiau i Privacy Guard eu monitro wrth eu taro. Bydd yr apiau a ddewisir ddim yn cael mynediad at dy ddata personol megis cysylltiadau, negeseuon a hanes galwadau. Mae dal dy gyffwrdd ar gofnod ap yn agor ei sgrin manylion.\n\nNi ddangosir apiau\'r system fel rheol ond mae\'n bosib eu datgelu gydag un o\'r opsiynau yn y ddewislen.</string>
     <string name="privacy_guard_advanced_settings_title">Uwch</string>
     <string name="privacy_guard_notification_title">Dangos hysbysiad</string>
     <!-- Notification light dialogs -->
@@ -60,9 +61,11 @@
     <string name="pulse_speed_very_fast">Cyflym iawn</string>
     <string name="pulse_speed_fast">Cyflym</string>
     <string name="pulse_speed_normal">Arferol</string>
+    <string name="pulse_speed_very_slow">Araf iawn</string>
     <!-- Common light settings strings -->
     <!-- Battery light settings -->
     <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_voicemail_title">Lleisbost</string>
     <!-- Lights settings, LED notification -->
     <!-- LiveDisplay -->
     <string name="live_display_color_profile_title">Proffil lliwiau</string>
@@ -86,10 +89,15 @@
     <string name="hardware_keys_short_press_title">Gweithred gwasgiad byr</string>
     <string name="hardware_keys_long_press_title">Gweithred gwasgiad hir</string>
     <string name="hardware_keys_double_tap_title">Gweithred tariad dwbl</string>
+    <string name="hardware_keys_action_voice_search">Chwilio â llais</string>
     <string name="hardware_keys_action_launch_camera">Agor camera</string>
     <string name="camera_launch_title">Agor camera</string>
     <string name="volbtn_cursor_control_off">Wedi\'i analluogi</string>
+    <string name="volbtn_cursor_control_on">Sain fyny/lawr yn symud y pwyntydd i\'r chwith/de</string>
+    <string name="volbtn_cursor_control_on_reverse">Sain fyny/lawr yn symud y pwyntydd i\'r dde/chwith</string>
     <string name="power_end_call_title">Gorffen yr Alwad</string>
+    <string name="swap_volume_buttons_summary">Cyfnewid y botymau uchder sain pan fo\'r sgrin wedi troi</string>
+    <string name="button_wake_title">Deffro\'r ddyfais</string>
     <string name="volume_answer_call_title">Ateb galwad</string>
     <string name="home_answer_call_title">Ateb galwad</string>
     <!-- Key backlight -->
@@ -97,13 +105,27 @@
     <!-- Navigation Bar -->
     <!-- Power menu -->
     <string name="power_menu_airplane_title">Modd awyren</string>
+    <string name="power_menu_users_title">Newidydd defnyddiwr</string>
+    <string name="volume_keys_control_ring_stream_summary_on">Bysellau sain yn rheoli uchder sain caniad ffôn</string>
+    <string name="volume_keys_control_ring_stream_summary_off">Bysellau sain yn rheoli uchder sain cyfryngau</string>
     <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="torch_long_press_power_timeout_1min">1 munud</string>
     <string name="torch_long_press_power_timeout_2min">2 funud</string>
     <string name="torch_long_press_power_timeout_10min">10 munud</string>
     <!-- Profiles -->
+    <string name="profile_action_disable">Troi i ffwrdd</string>
+    <string name="profile_action_enable">Troi ymlaen</string>
+    <string name="profile_tabs_wifi">Wi\u2011Fi</string>
+    <string name="profile_setup_setup_triggers_title">Cam 1: Ychwanegu sbardunau</string>
+    <string name="profile_setup_actions_title">Cam 2: Gweithredoedd gosod</string>
+    <string name="wireless_networks_settings_title">Di-wifr a rhwydweithiau</string>
     <!-- Profile triggers -->
     <!-- Profiles settings  -->
+    <string name="profiles_settings_title">Proffiliau system</string>
+    <string name="profile_empty_list_profiles_off">I ffurfweddu a defnyddio proffiliau system, tro proffiliau ymlaen.</string>
+    <string name="profile_write_success">Ysgrifennwyd y tag yn llwyddiannus</string>
+    <string name="profile_write_failed">Methwyd ag ysgrifennu tag!</string>
+    <string name="profile_unknown_nfc_tag">Proffil anhysbys</string>
     <!-- Profile mode options. -->
     <!-- Add Profile -->
     <string name="new_profile_name">&lt;proffil newydd&gt;</string>
@@ -119,35 +141,65 @@
     <!-- Title for application group setting screen -->
     <!-- Add application dialog box title -->
     <!-- Profiles - system settings -->
+    <string name="profile_system_settings_title">Gosodiadau system</string>
     <string name="profile_airplanemode_title">Modd awyren</string>
     <!-- Connection override toggles (not all are used at this time ) -->
+    <string name="toggleWifi">Wi\u2011Fi</string>
     <!-- Sound settings screen -->
     <!-- Status bar -->
+    <string name="status_bar_title">Bar statws</string>
     <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">Eiconau\'r bar statws</string>
+    <string name="status_bar_system_icons_title">Eiconau system</string>
     <!-- Status bar - Clock -->
     <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_text">Testun</string>
     <!-- Status bar - Battery percentage -->
     <!-- Status bar - Brightness -->
     <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_mode_up">Uwchlwytho yn unig</string>
+    <string name="network_traffic_mode_all">Uwchlwytho a lawrlwytho</string>
     <!-- Protected apps -->
     <!-- Contributors cloud activity -->
     <!-- Anonymous Statistics #Lineage -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_warning">Bydd cytuno i rannu Ystadegau LineageOS yn caniatáu data na sydd yn bersonol i gael ei rannu gyda datblygwyr LineageOS er mwyn tracio gosodiadau unigryw ar draws dyfeisiau. Bydd y wybodaeth a rennir yn cynnwys dynodwr unigryw i\'w adnabod heb gyfaddawdu dy breifatrwydd na dy ddata personol. Caiff y data ei rannu pob tro mae\'r system yn dechrau.\n\nI weld enghraifft o\'r data sy\'n cael ei rannu, tara Rhagolwg Data.</string>
+    <string name="view_stats_title">Gweld ystadegau</string>
     <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">ID unigryw</string>
+    <string name="preview_version_title">Fersiwn</string>
+    <string name="stats_collection_title">Casglu ystadegau</string>
     <!-- Display : Rotation  -->
     <string name="display_rotation_180_title">180 gradd</string>
     <!-- Weather -->
+    <string name="weather_settings_title">Tywydd</string>
+    <string name="weather_settings_temp_units_title">Uned tymheredd</string>
+    <string name="weather_settings_keyword">tywydd</string>
     <!-- Power: Performance profiles -->
     <!-- Applications: Expanded desktop -->
     <!-- Applications: Long screen -->
     <!-- Sounds: Charging sounds -->
     <!-- Gestures: Touchscreen gestures -->
+    <string name="touchscreen_gesture_two_finger_down_swipe_title">Llusgo i lawr gyda dau fys</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_title">Llusgo i fyny gydag un bys</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Llusgo i fyny o\'r botwm cartref</string>
+    <string name="touchscreen_gesture_one_finger_down_swipe_title">Llusgo i lawr gydag un bys</string>
+    <string name="touchscreen_gesture_one_finger_left_swipe_title">Llusgo i\'r chwith gydag un bys</string>
+    <string name="touchscreen_gesture_one_finger_right_swipe_title">Llusgo i\'r dde gydag un bys</string>
     <!-- Gesture: Stylus gestures -->
+    <string name="touchscreen_gesture_swipe_up_stylus_title">Llusgo i fyny gyda\'r ysgrifbin</string>
+    <string name="touchscreen_gesture_swipe_down_stylus_title">Llusgo i lawr gyda\'r ysgrifbin</string>
+    <string name="touchscreen_gesture_swipe_left_stylus_title">Llusgo i\'r chwith gyda\'r ysgrifbin</string>
+    <string name="touchscreen_gesture_swipe_right_stylus_title">Llusgo i\'r dde gyda\'r ysgrifbin</string>
+    <string name="touchscreen_gesture_action_email">Edrych ar dy ebost</string>
+    <string name="touchscreen_gesture_action_messages">Edrych ar dy negeseuon</string>
     <!-- Egg: Title for the easter egg activity -->
     <!-- Berry Lite -->
     <!-- Trust interface -->
+    <string name="trust_category_features">Statws</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_explain">Mae Google yn rhyddhau cyweiriadau diogelwch (security patches) yn fisol ar y cyd â darparwyr i fynd i\'r afael â namau y gellir cael eu hecsbloetio gan apiau maleisus er mwyn osgoi cyfyngiadau diogelwch ac achosi niwed parhaol i dy ddyfais. Mae cyweiriadau gan Google yn cael eu rhyddhau pob mis ond gall cyweiriadau i god dy ddyfais fel arfer ond cael eu gosod gan y gwneuthurwr. Wrth dy fod wedi gosod LineageOS i gymryd lle\'r fersiwn Android gwreiddiol ar dy ddyfais, mae\'r materion hyn yn dy ddwylo dy hun. I gadw dy ddyfais yn ddiogel, sicrha dy fod yn diweddaru dy adeiledd LineageOS i\'w gadw yn gyfredol ac, os yn berthnasol, sicrha bod y ddelwedd darparwr (vendor image) yn cael ei ddiweddaru i\'r un mwyaf diweddar a argymhellir gan LineageOS.</string>
     <!-- Sms limit -->
 </resources>

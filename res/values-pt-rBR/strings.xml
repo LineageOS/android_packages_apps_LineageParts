@@ -140,10 +140,11 @@
     <string name="live_display_color_profile_reading_title">Leitura</string>
     <string name="live_display_color_profile_reading_summary">Cores mais quentes para reduzir a fadiga ocular</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
-    <string name="live_display_color_profile_srgb_summary">Cores fidedignas ao espaço de cores sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Cores correspondentes ao espaço de cores sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
-    <string name="live_display_color_profile_dci_p3_summary">Cores fidedignas ao espaço de cores DCI-P3</string>
-    <string name="live_display_color_profile_adobe_title">RGB Adobe</string>
+    <string name="live_display_color_profile_dci_p3_summary">Cores correspondentes ao espaço de cores DCI-P3</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
+    <string name="live_display_color_profile_adobe_summary">Cores correspondentes ao espaço de cores Adobe RGB</string>
     <string name="live_display_reading_mode_title">Modo de leitura</string>
     <string name="live_display_reading_mode_summary">Modo de tons de cinza para longos períodos de leitura</string>
     <string name="color_calibration_title">Calibração de cores</string>
@@ -632,10 +633,12 @@
     <string name="trust_feature_security_patches_value_medium">alguns meses desatualizado</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">desatualizado</string>
+    <string name="trust_feature_security_patches_explain">As atualizações de segurança são lançadas mensalmente pela Google em cooperação com os fabricantes de SoC para corrigir falhas que possam ser exploradas por aplicativos maliciosos que visam burlar as restrições de segurança e causar danos permanentes em seu dispositivo. As atualizações disponibilizadas pela Google são aplicadas mensalmente em todos os dispositivos suportados, mas as atualizações para o código proprietário só podem ser aplicadas pelo fabricante do seu dispositivo. Para manter o seu dispositivo seguro, certifique-se de que a sua versão do LineageOS esteja sempre atualizada e, se aplicável, assegure-se de que a imagem do seu fornecedor esteja atualizada para a versão recomendada pelo LineageOS.</string>
     <string name="trust_feature_encryption">Criptografia</string>
     <string name="trust_feature_encryption_value_enabled">Ligada</string>
     <string name="trust_feature_encryption_value_nolock">Requer uma tela de bloqueio segura</string>
     <string name="trust_feature_encryption_value_disabled">Desligada</string>
+    <string name="trust_feature_encryption_explain">Criptografar o seu dispositivo impede o acesso aos seus dados quando o telefone não está inicializado no Android. Isto é importante caso o seu telefone seja roubado e evita que outros consigam ler suas mensagens, contatos e outras informações particulares sem o seu código de acesso.\nPara tornar a criptografia mais eficaz, é necessário definir um código de acesso seguro da tela de bloqueio.</string>
     <string name="trust_category_tools">Privacidade</string>
     <string name="trust_notification_alerts_title">Alertas de segurança</string>
     <string name="trust_warnings_alerts_intro">Você pode selecionar quais os alertas de segurança que deseja receber. Para a sua segurança, recomendamos que ative todos os alertas.</string>
