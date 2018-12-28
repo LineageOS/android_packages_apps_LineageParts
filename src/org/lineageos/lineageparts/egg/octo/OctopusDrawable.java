@@ -21,7 +21,6 @@ import android.animation.TimeAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
-import android.graphics.DashPathEffect;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -55,10 +54,9 @@ public class OctopusDrawable extends Drawable {
 
     private Paint mPaint = new Paint();
     private Arm[] mArms = new Arm[4]; // 8
-    final PointF mCenter = new PointF();
-    private int mSizePx = 100;
-    final Matrix M = new Matrix();
-    final Matrix M_inv = new Matrix();
+    private final PointF mCenter = new PointF();
+    private final Matrix M = new Matrix();
+    private final Matrix M_inv = new Matrix();
     private TimeAnimator mDriftAnimation;
     private float[] mPtmp = new float[2];
     private float[] mScaledBounds = new float[2];
@@ -89,10 +87,8 @@ public class OctopusDrawable extends Drawable {
     }
 
     public void setSizePx(int size) {
-        mSizePx = size;
-        M.setScale(mSizePx / BASE_SCALE, mSizePx / BASE_SCALE);
-        // TaperedPathStroke.setMinStep(20f*BASE_SCALE/mSizePx); // nice little floaty circles
-        TaperedPathStroke.setMinStep(8f * BASE_SCALE / mSizePx); // classic tentacles
+        M.setScale(size / BASE_SCALE, size / BASE_SCALE);
+        TaperedPathStroke.setMinStep(8f * BASE_SCALE / size); // classic tentacles
         M.invert(M_inv);
     }
 
