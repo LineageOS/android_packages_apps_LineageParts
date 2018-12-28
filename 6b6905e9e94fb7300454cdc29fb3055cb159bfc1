@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2fbf2970_7af18363",
+        "filename": "src/org/lineageos/lineageparts/contributors/ContributorsCloudFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 733,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-28T15:09:40Z",
+      "side": 1,
+      "message": "You could optimize these lines.",
+      "range": {
+        "startLine": 731,
+        "startChar": 33,
+        "endLine": 733,
+        "endChar": 47
+      },
+      "revId": "6b6905e9e94fb7300454cdc29fb3055cb159bfc1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
