@@ -32,6 +32,7 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import lineageos.providers.LineageSettings;
@@ -184,13 +185,9 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         if (savedActions == null) {
             defaultActions = mContext.getResources().getStringArray(
                     com.android.internal.R.array.config_globalActionsList);
-            for (String action : defaultActions) {
-                mLocalUserConfig.add(action);
-            }
+            mLocalUserConfig.addAll(Arrays.asList(defaultActions));
         } else {
-            for (String action : savedActions.split("\\|")) {
-                mLocalUserConfig.add(action);
-            }
+            mLocalUserConfig.addAll(Arrays.asList(savedActions.split("\\|")));
         }
     }
 
@@ -201,13 +198,11 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         for (String action : mAllActions) {
             if (settingsArrayContains(action)) {
                 setactions.add(action);
-            } else {
-                continue;
             }
         }
 
         for (int i = 0; i < setactions.size(); i++) {
-            s.append(setactions.get(i).toString());
+            s.append(setactions.get(i));
             if (i != setactions.size() - 1) {
                 s.append("|");
             }
