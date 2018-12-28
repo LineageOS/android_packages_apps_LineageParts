@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,8 +51,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -128,7 +127,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     private static class ContributorsAdapter extends ArrayAdapter<ContributorsDataHolder> {
 
         public ContributorsAdapter(Context context) {
-            super(context, R.id.contributor_name, new ArrayList<ContributorsDataHolder>());
+            super(context, R.id.contributor_name, new ArrayList<>());
         }
 
         @Override
@@ -188,7 +187,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
         @Override
         protected void onPostExecute(Boolean result) {
-            if (result == true) {
+            if (result) {
                 mImageView.setImageBitmap(mViewInfo.mBitmap);
                 mViewController.update();
                 if (mNotify) {
@@ -319,13 +318,10 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         mSearchResults = (ListView) v.findViewById(R.id.contributors_cloud_search_results);
         mSearchAdapter = new ContributorsAdapter(getActivity());
         mSearchResults.setAdapter(mSearchAdapter);
-        mSearchResults.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ContributorsDataHolder contributor =
-                        (ContributorsDataHolder) parent.getItemAtPosition(position);
-                onContributorSelected(contributor);
-            }
+        mSearchResults.setOnItemClickListener((parent, view, position, id) -> {
+            ContributorsDataHolder contributor =
+                    (ContributorsDataHolder) parent.getItemAtPosition(position);
+            onContributorSelected(contributor);
         });
 
         // Load the data from the database and fill the image
@@ -421,12 +417,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         if (focusX != -1 && focusY != -1) {
             mViewController.setZoomTransitionDuration(2500);
             mViewController.setScale(10, focusX, focusY, true);
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mViewController.setZoomTransitionDuration(-1);
-                }
-            }, 2500);
+            mHandler.postDelayed(() -> mViewController.setZoomTransitionDuration(-1), 2500);
         }
     }
 
@@ -604,10 +595,6 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             try {
                 mDatabase = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                         null, SQLiteDatabase.OPEN_READONLY);
-                if (mDatabase == null) {
-                    Log.e(TAG, "Cannot open cloud database: " + DB_NAME + ". db == null");
-                    return null;
-                }
                 return mDatabase;
 
             } catch (SQLException ex) {
@@ -740,7 +727,8 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         // Total contributors
         String[] args = new String[]{String.valueOf(query.replaceAll("\\|", ""))};
         Cursor c = db.rawQuery(
-                "select id, name || case when username is null then '' else ' <'||username||'>' end contributor " +
+                "select id, name || case when username is null then '' else ' <'||username||'>' " +
+                "end contributor " +
                 "from metadata where lower(filter) like lower('%' || ? || '%') and id > 0 " +
                 "order by commits desc", args);
         if (c == null) {
@@ -784,13 +772,13 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     public static void extractContributorsCloudDatabase(Context context) {
         final int BUFFER = 1024;
         InputStream is = null;
-        OutputStream os = null;
+        OutputStream os;
         File databasePath = context.getDatabasePath(DB_NAME);
         try {
             databasePath.getParentFile().mkdir();
             is = context.getResources().getAssets().open(DB_NAME, AssetManager.ACCESS_BUFFER);
             os = new FileOutputStream(databasePath);
-            int read = -1;
+            int read;
             byte[] data = new byte[BUFFER];
             while ((read = is.read(data, 0, BUFFER)) != -1) {
                 os.write(data, 0, read);
@@ -816,25 +804,19 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
                     // Index the top 100 contributors, for fun :)
                     File dbPath = context.getDatabasePath(DB_NAME);
-                    SQLiteDatabase db = null;
+                    SQLiteDatabase db;
                     try {
                         db = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                                 null, SQLiteDatabase.OPEN_READONLY);
-                        if (db == null) {
-                            Log.e(TAG, "Cannot open cloud database: " + DB_NAME + ". db == null");
-                            return null;
-                        }
                     } catch (Exception e) {
                         Log.e(TAG, e.getMessage(), e);
-                        if (db != null && db.isOpen()) {
-                            db.close();
-                        }
                         return null;
                     }
 
                     List<SearchIndexableRaw> result = new ArrayList<>();
                     Cursor c = db.rawQuery(
-                            "select id, username from metadata order by commits desc limit 100;", null);
+                            "select id, username from metadata order by commits desc limit 100;",
+                            null);
                     while (c.moveToNext()) {
                         SearchIndexableRaw raw = new SearchIndexableRaw(context);
                         raw.key = KEY_PREFIX + c.getString(0);
