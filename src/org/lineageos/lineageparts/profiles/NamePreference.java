@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +43,7 @@ public class NamePreference extends Preference implements
      */
     public NamePreference(Context context, String name) {
         super(context);
-        mName = name.toString();
+        mName = name;
         init();
     }
 
@@ -73,17 +74,17 @@ public class NamePreference extends Preference implements
     }
 
     public void setName(String name) {
-        mName = (name.toString());
+        mName = name;
         updatePreferenceViews();
     }
 
     public String getName() {
-        return(mName.toString());
+        return mName;
     }
 
     private void updatePreferenceViews() {
         if (mNameView != null) {
-            mNameView.setText(mName.toString());
+            mNameView.setText(mName);
         }
     }
 
@@ -94,7 +95,7 @@ public class NamePreference extends Preference implements
             if (context != null) {
                 final EditText entry = new EditText(context);
                 entry.setSingleLine();
-                entry.setText(mName.toString());
+                entry.setText(mName);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle(R.string.rename_dialog_title);
@@ -105,8 +106,8 @@ public class NamePreference extends Preference implements
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 String value = entry.getText().toString();
-                                mName = value.toString();
-                                mNameView.setText(value.toString());
+                                mName = value;
+                                mNameView.setText(value);
                                 callChangeListener(this);
                             }
                         });
