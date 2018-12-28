@@ -23,6 +23,7 @@
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
     android:paddingTop="8dip"
     android:paddingBottom="8dip" >
+
     <LinearLayout
         android:id="@+id/icon_frame"
         android:layout_width="wrap_content"
@@ -30,25 +31,29 @@
         android:minWidth="56dp"
         android:gravity="start|center_vertical"
         android:orientation="horizontal"
-        android:paddingRight="8dp"
+        android:paddingEnd="8dp"
         android:paddingTop="4dp"
         android:paddingBottom="4dp">
+
         <android.support.v7.internal.widget.PreferenceImageView
             android:id="@+id/app_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:maxWidth="48dp"
             app:maxHeight="48dp" />
+
     </LinearLayout>
+
     <TextView
         android:id="@+id/app_title"
         android:layout_width="0dip"
         android:layout_gravity="fill_horizontal|center_vertical"
         android:layout_marginTop="2dip"
-        android:singleLine="true"
+        android:maxLines="1"
         android:ellipsize="marquee"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textAlignment="viewStart" />
+
     <ImageView
         android:id="@+id/app_privacy_guard_icon"
         android:layout_width="@android:dimen/app_icon_size"
@@ -56,4 +61,5 @@
         android:layout_gravity="center_vertical"
         android:scaleType="centerInside"
         android:contentDescription="@null" />
+
 </GridLayout>

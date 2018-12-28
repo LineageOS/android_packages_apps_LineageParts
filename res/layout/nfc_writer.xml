@@ -21,7 +21,6 @@
     android:gravity="center">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +42,8 @@
             android:layout_width="84dp"
             android:layout_height="84dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_local_offer_48px" />
+            android:src="@drawable/ic_local_offer_48px"
+            android:contentDescription="@null" />
 
         <TextView android:id="@+id/touch_tag"
             style="?android:attr/textAppearanceLarge"
@@ -54,4 +54,5 @@
             android:text="@string/profile_write_touch_tag" />
 
     </LinearLayout>
+
 </RelativeLayout>

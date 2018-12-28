@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_accent_layout"
     android:layout_width="match_parent"
@@ -14,7 +15,8 @@
         android:id="@+id/item_accent_preview"
         android:layout_width="@dimen/style_accent_preview"
         android:layout_height="@dimen/style_accent_preview"
-        android:layout_marginEnd="16dp"/>
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@null" />
 
     <TextView
         android:id="@+id/item_accent_name"
@@ -25,4 +27,5 @@
         android:textColor="?android:textColorPrimary"
         android:textSize="18sp"
         tools:text="Default" />
+
 </LinearLayout>
