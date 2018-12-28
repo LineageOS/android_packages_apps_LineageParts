@@ -46,7 +46,7 @@
             android:layout_marginStart="8dp"
             android:textColor="?android:attr/textColorPrimary"
             android:textAppearance="@style/TextAppearance.Medium"
-            android:singleLine="true"
+            android:maxLines="1"
             android:ellipsize="marquee" />
 
     </LinearLayout>

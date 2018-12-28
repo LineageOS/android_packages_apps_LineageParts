@@ -12,7 +12,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -46,7 +47,8 @@
             android:layout_marginTop="24dp"
             android:adjustViewBounds="true"
             android:src="@drawable/avd_trust_onboarding"
-            android:background="@drawable/ic_trust_onboarding_bg" />
+            android:background="@drawable/ic_trust_onboarding_bg"
+            android:contentDescription="@null" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -71,6 +73,7 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/trust_onboarding_learn_more" />
         </LinearLayout>
+
     </LinearLayout>
 
     <Button
@@ -86,4 +89,5 @@
         android:paddingEnd="16dp"
         android:paddingTop="8dp"
         android:text="@string/trust_onboarding_done" />
+
 </RelativeLayout>

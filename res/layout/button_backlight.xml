@@ -14,10 +14,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/button_container"
@@ -67,13 +68,17 @@
                 android:paddingStart="10dip"
                 android:paddingEnd="10dip"
                 android:text="@string/button_backlight_seekbar_title" />
-            <TextView android:id="@+id/value"
+
+            <TextView
+                android:id="@+id/value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:paddingStart="10dip"
                 android:paddingEnd="10dip" />
-            <SeekBar android:id="@+id/seekbar"
+
+            <SeekBar
+                android:id="@+id/seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text"
@@ -92,18 +97,21 @@
         android:gravity="center_horizontal"
         android:paddingBottom="10dp">
 
-        <TextView android:id="@+id/timeout_text"
+        <TextView
+            android:id="@+id/timeout_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/backlight_timeout_title"
             android:paddingStart="10dip"
             android:paddingEnd="10dip" />
+
         <TextView android:id="@+id/timeout_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:paddingStart="10dip"
             android:paddingEnd="10dip" />
+
         <org.lineageos.lineageparts.input.BacklightTimeoutSeekBar
             android:id="@+id/timeout_seekbar"
             android:layout_width="match_parent"
@@ -128,7 +136,8 @@
     <LinearLayout
         android:id="@+id/keyboard_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
         <LinearLayout
             android:id="@+id/checkbox_container"
@@ -158,12 +167,14 @@
                 android:paddingStart="10dip"
                 android:paddingEnd="10dip"
                 android:text="@string/keyboard_backlight_seekbar_title" />
+
             <TextView android:id="@+id/value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:paddingStart="10dip"
                 android:paddingEnd="10dip" />
+
             <SeekBar android:id="@+id/seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

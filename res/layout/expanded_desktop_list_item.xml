@@ -46,7 +46,7 @@
             android:layout_marginStart="8dp"
             android:textColor="?android:attr/textColorPrimary"
             android:textAppearance="@style/TextAppearance.Medium"
-            android:singleLine="true"
+            android:maxLines="1"
             android:ellipsize="marquee"
             android:textAlignment="viewStart" />
 
@@ -62,5 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_expdesk_hide_none" />
+        android:src="@drawable/ic_expdesk_hide_none"
+        android:contentDescription="@null"/>
+
 </LinearLayout>

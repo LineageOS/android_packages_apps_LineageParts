@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingStart="56dp"
-            android:singleLine="true"
+            android:maxLines="1"
             android:textAppearance="?android:attr/textAppearanceListItem"
             android:ellipsize="marquee"
             android:fadingEdge="horizontal" />
@@ -49,7 +49,8 @@
                 android:id="@+id/icon"
                 android:layout_gravity="center_vertical|start"
                 android:layout_width="48dp"
-                android:layout_height="48dp" />
+                android:layout_height="48dp"
+                android:contentDescription="@null"/>
 
             <SeekBar
                 android:id="@+id/seekbar"
