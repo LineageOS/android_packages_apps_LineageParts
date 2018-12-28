@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5d04d921_9fe9380b",
+        "filename": "src/org/lineageos/lineageparts/lineagestats/Utilities.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-28T15:06:40Z",
+      "side": 1,
+      "message": "context.getSystemService(TelephonyManager.class);\n\nOr does it only work in P?",
+      "range": {
+        "startLine": 41,
+        "startChar": 16,
+        "endLine": 41,
+        "endChar": 87
+      },
+      "revId": "a2584dd52f5b890d83dca1c677762ce867fe1d63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20962aab_df9dbf2b",
+        "filename": "src/org/lineageos/lineageparts/power/PerfProfileSettings.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-28T15:06:40Z",
+      "side": 1,
+      "message": "Java imports come in the end.",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 22
+      },
+      "revId": "a2584dd52f5b890d83dca1c677762ce867fe1d63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "511ce9b8_f8b410eb",
+        "filename": "src/org/lineageos/lineageparts/power/PerfProfileSettings.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-28T15:06:40Z",
+      "side": 1,
+      "message": "Remove extra line.",
+      "revId": "a2584dd52f5b890d83dca1c677762ce867fe1d63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "64760447_e7170f3d",
+        "filename": "src/org/lineageos/lineageparts/power/PerfProfileSettings.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-28T15:06:40Z",
+      "side": 1,
+      "message": "Remove extra line.",
+      "revId": "a2584dd52f5b890d83dca1c677762ce867fe1d63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
