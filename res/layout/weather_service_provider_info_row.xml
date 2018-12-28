@@ -37,12 +37,12 @@
 
     <TextView
         android:id="@android:id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="center_vertical"
         android:ellipsize="end"
-        android:singleLine="true"
+        android:maxLines="1"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textAlignment="viewStart" />
 

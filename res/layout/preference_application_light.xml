@@ -31,10 +31,11 @@
         android:maxWidth="36dip"
         android:maxHeight="36dip"
         android:adjustViewBounds="true"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:contentDescription="@null"/>
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:paddingTop="16dip"
@@ -44,7 +45,7 @@
             android:id="@android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
+            android:maxLines="1"
             android:textAppearance="@android:style/TextAppearance.Material.Subhead"
             android:textColor="?android:attr/textColorPrimary"
             android:ellipsize="marquee"
@@ -89,6 +90,7 @@
         android:id="@+id/light_color"
         android:layout_width="32dip"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:contentDescription="@null" />
 
 </LinearLayout>

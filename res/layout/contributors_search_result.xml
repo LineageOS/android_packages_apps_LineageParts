@@ -27,7 +27,6 @@
         android:layout_height="match_parent"
         android:drawableStart="@drawable/ic_person"
         android:drawablePadding="8dp"
-        android:singleLine="true"
         android:maxLines="1"
         android:ellipsize="end"
         android:gravity="center_vertical" />

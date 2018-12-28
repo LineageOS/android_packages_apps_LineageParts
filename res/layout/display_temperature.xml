@@ -14,58 +14,72 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingStart="20dip"
+        android:paddingEnd="20dip"
+        android:paddingBottom="20dip">
+
+        <TextView
+            android:id="@+id/day_temperature_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/live_display_day"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/day_temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dip" />
+
+        <SeekBar
+            android:id="@+id/day_temperature_seekbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:paddingStart="20dip"
-            android:paddingEnd="20dip"
-            android:paddingBottom="20dip">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/day_temperature_text"
+            android:paddingTop="2dip" />
 
-        <TextView android:id="@+id/day_temperature_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/live_display_day"
-                android:paddingTop="10dip" />
-        <TextView android:id="@+id/day_temperature_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:paddingTop="10dip" />
-        <SeekBar android:id="@+id/day_temperature_seekbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/day_temperature_text"
-                android:paddingTop="2dip" />
+        <TextView
+            android:id="@+id/night_temperature_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/day_temperature_seekbar"
+            android:text="@string/live_display_night"
+            android:paddingTop="10dip" />
 
-        <TextView android:id="@+id/night_temperature_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/day_temperature_seekbar"
-                android:text="@string/live_display_night"
-                android:paddingTop="10dip" />
-        <TextView android:id="@+id/night_temperature_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/day_temperature_seekbar"
-                android:layout_alignParentRight="true"
-                android:paddingTop="10dip" />
-        <SeekBar android:id="@+id/night_temperature_seekbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/night_temperature_text"
-                android:paddingTop="2dip" />
+        <TextView
+            android:id="@+id/night_temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/day_temperature_seekbar"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dip" />
 
-        <ImageView android:id="@+id/black_scale_picture_color"
-                android:src="@drawable/color_temperature_preview"
-                android:layout_width="match_parent"
-                android:layout_height="40dip"
-                android:layout_below="@id/night_temperature_seekbar"
-                android:paddingTop="20dip" />
+        <SeekBar
+            android:id="@+id/night_temperature_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/night_temperature_text"
+            android:paddingTop="2dip" />
+
+        <ImageView
+            android:id="@+id/black_scale_picture_color"
+            android:src="@drawable/color_temperature_preview"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/night_temperature_seekbar"
+            android:paddingTop="20dip"
+            android:contentDescription="@null" />
 
     </RelativeLayout>
+
 </ScrollView>
