@@ -42,15 +42,12 @@ import org.lineageos.lineageparts.widget.SeekBarPreference;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.internal.graphics.drawable.StopMotionVectorDrawable;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 import lineageos.power.PerformanceManager;
 import lineageos.power.PerformanceProfile;
-
 import lineageos.providers.LineageSettings;
 
+import java.util.ArrayList;
+import java.util.List;
 
 import static lineageos.power.PerformanceManager.PROFILE_POWER_SAVE;
 
@@ -159,21 +156,11 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
             final ValueAnimator color = ValueAnimator.ofArgb(
                     getColorAt(from), getColorAt(from + ((to - from) / 2)), getColorAt(to));
 
-            scale.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                @Override
-                public void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    mDrawable.setCurrentFraction(
-                            (Float) valueAnimator.getAnimatedValue());
-                }
-            });
-            color.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                @Override
-                public void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    mDrawable.setColorFilter(
-                            (Integer) valueAnimator.getAnimatedValue(),
-                            PorterDuff.Mode.SRC_IN);
-                }
-            });
+            scale.addUpdateListener(valueAnimator -> mDrawable.setCurrentFraction(
+                    (Float) valueAnimator.getAnimatedValue()));
+            color.addUpdateListener(valueAnimator -> mDrawable.setColorFilter(
+                    (Integer) valueAnimator.getAnimatedValue(),
+                    PorterDuff.Mode.SRC_IN));
 
             mAnimator.play(scale).with(color);
             mAnimator.start();
