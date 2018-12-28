@@ -143,14 +143,11 @@ public class BluetoothTriggerFragment extends ListFragment {
 
         new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.profile_trigger_configure)
-                .setSingleChoiceItems(entries, currentItem, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mProfile.setTrigger(triggerType, triggerId, valueInts[which], triggerName);
-                        mProfileManager.updateProfile(mProfile);
-                        reloadTriggerListItems();
-                        dialog.dismiss();
-                    }
+                .setSingleChoiceItems(entries, currentItem, (dialog, which) -> {
+                    mProfile.setTrigger(triggerType, triggerId, valueInts[which], triggerName);
+                    mProfileManager.updateProfile(mProfile);
+                    reloadTriggerListItems();
+                    dialog.dismiss();
                 })
                 .show();
     }
@@ -162,16 +159,14 @@ public class BluetoothTriggerFragment extends ListFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         mEmptyView = inflater.inflate(R.layout.profile_bluetooth_empty_view, container, false);
-        mEmptyView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent bluetoothSettings = new Intent();
-                bluetoothSettings.setAction(
-                        Settings.ACTION_BLUETOOTH_SETTINGS);
-                startActivity(bluetoothSettings);
-            }
+        mEmptyView.setOnClickListener(v -> {
+            Intent bluetoothSettings = new Intent();
+            bluetoothSettings.setAction(
+                    Settings.ACTION_BLUETOOTH_SETTINGS);
+            startActivity(bluetoothSettings);
         });
 
         ViewGroup view = (ViewGroup) super.onCreateView(inflater, container, savedInstanceState);

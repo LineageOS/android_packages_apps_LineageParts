@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +19,6 @@ package org.lineageos.lineageparts.profiles.triggers;
 import android.app.AlertDialog;
 import android.app.ListFragment;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.wifi.WifiConfiguration;
@@ -86,16 +86,14 @@ public class WifiTriggerFragment extends ListFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         mEmptyView = inflater.inflate(R.layout.profile_wifi_empty_view, container, false);
-        mEmptyView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent wifiSettings = new Intent();
-                wifiSettings.setAction(
-                        Settings.ACTION_WIFI_SETTINGS);
-                startActivity(wifiSettings);
-            }
+        mEmptyView.setOnClickListener(v -> {
+            Intent wifiSettings = new Intent();
+            wifiSettings.setAction(
+                    Settings.ACTION_WIFI_SETTINGS);
+            startActivity(wifiSettings);
         });
 
         ViewGroup view = (ViewGroup) super.onCreateView(inflater, container, savedInstanceState);
@@ -163,14 +161,11 @@ public class WifiTriggerFragment extends ListFragment {
 
         new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.profile_trigger_configure)
-                .setSingleChoiceItems(entries, currentItem, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mProfile.setTrigger(triggerType, triggerId, valueInts[which], triggerName);
-                        mProfileManager.updateProfile(mProfile);
-                        reloadTriggerListItems();
-                        dialog.dismiss();
-                    }
+                .setSingleChoiceItems(entries, currentItem, (dialog, which) -> {
+                    mProfile.setTrigger(triggerType, triggerId, valueInts[which], triggerName);
+                    mProfileManager.updateProfile(mProfile);
+                    reloadTriggerListItems();
+                    dialog.dismiss();
                 })
                 .show();
     }
