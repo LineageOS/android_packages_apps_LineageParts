@@ -8,10 +8,6 @@ import android.widget.TextView;
 
 import android.support.v7.preference.R;
 
-/**
- * Created by shade on 9/12/16.
- */
-
 public abstract class BaseItem implements Item {
 
     protected abstract String getTitle();
