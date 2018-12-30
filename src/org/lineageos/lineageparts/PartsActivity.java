@@ -174,7 +174,8 @@ public class PartsActivity extends SettingsDrawerActivity implements
     }
 
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
-                                     CharSequence titleText, Fragment resultTo, int resultRequestCode) {
+                                     CharSequence titleText, Fragment resultTo,
+                                     int resultRequestCode) {
         String title = null;
         if (titleRes < 0) {
             if (titleText != null) {
@@ -214,8 +215,8 @@ public class PartsActivity extends SettingsDrawerActivity implements
         return switchToFragment(fragment, args, titleRes, titleText);
     }
 
-    private  boolean switchToFragment(Fragment fragment, Bundle args, int titleRes,
-                                    CharSequence titleText) {
+    private boolean switchToFragment(Fragment fragment, Bundle args, int titleRes,
+                                     CharSequence titleText) {
         Log.d(TAG, "Launching fragment: " + fragment.getClass().getName());
 
         fragment.setArguments(args);

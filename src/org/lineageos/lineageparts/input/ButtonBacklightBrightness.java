@@ -99,7 +99,8 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder, DialogInterface.OnClickListener listener) {
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
+                                          DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
         builder.setNeutralButton(R.string.reset,
                 new DialogInterface.OnClickListener() {

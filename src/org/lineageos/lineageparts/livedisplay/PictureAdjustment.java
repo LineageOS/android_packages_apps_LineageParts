@@ -76,7 +76,8 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder, DialogInterface.OnClickListener listener) {
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
+                                          DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
 
         builder.setNeutralButton(R.string.reset,
@@ -209,7 +210,8 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
         private TextView mValue;
         private Range<Float> mRange;
 
-        public ColorSeekBar(IntervalSeekBar seekBar, Range<Float> range, TextView value, int index) {
+        public ColorSeekBar(IntervalSeekBar seekBar, Range<Float> range, TextView value,
+                            int index) {
             mSeekBar = seekBar;
             mValue = value;
             mIndex = index;

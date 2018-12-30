@@ -260,7 +260,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         if (hasHomeKey) {
             if (!showHomeWake) {
-                homeCategory.removePreference(findPreference(LineageSettings.System.HOME_WAKE_SCREEN));
+                homeCategory.removePreference(
+                        findPreference(LineageSettings.System.HOME_WAKE_SCREEN));
             }
 
             if (!TelephonyUtils.isVoiceCapable(getActivity())) {
@@ -280,7 +281,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         if (hasBackKey) {
             if (!showBackWake) {
-                backCategory.removePreference(findPreference(LineageSettings.System.BACK_WAKE_SCREEN));
+                backCategory.removePreference(
+                        findPreference(LineageSettings.System.BACK_WAKE_SCREEN));
                 prefScreen.removePreference(backCategory);
             }
         } else {
@@ -289,7 +291,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         if (hasMenuKey) {
             if (!showMenuWake) {
-                menuCategory.removePreference(findPreference(LineageSettings.System.MENU_WAKE_SCREEN));
+                menuCategory.removePreference(
+                        findPreference(LineageSettings.System.MENU_WAKE_SCREEN));
             }
 
             Action pressAction = Action.fromSettings(resolver,
@@ -306,7 +309,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         if (hasAssistKey) {
             if (!showAssistWake) {
-                assistCategory.removePreference(findPreference(LineageSettings.System.ASSIST_WAKE_SCREEN));
+                assistCategory.removePreference(
+                        findPreference(LineageSettings.System.ASSIST_WAKE_SCREEN));
             }
 
             Action pressAction = Action.fromSettings(resolver,
@@ -330,22 +334,26 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     LineageSettings.System.KEY_APP_SWITCH_ACTION, Action.APP_SWITCH);
             mAppSwitchPressAction = initList(KEY_APP_SWITCH_PRESS, pressAction);
 
-            mAppSwitchLongPressAction = initList(KEY_APP_SWITCH_LONG_PRESS, appSwitchLongPressAction);
+            mAppSwitchLongPressAction = initList(KEY_APP_SWITCH_LONG_PRESS,
+                    appSwitchLongPressAction);
         } else {
             prefScreen.removePreference(appSwitchCategory);
         }
 
         if (hasCameraKey) {
-            mCameraWakeScreen = (SwitchPreference) findPreference(LineageSettings.System.CAMERA_WAKE_SCREEN);
-            mCameraSleepOnRelease =
-                    (SwitchPreference) findPreference(LineageSettings.System.CAMERA_SLEEP_ON_RELEASE);
-            mCameraLaunch = (SwitchPreference) findPreference(LineageSettings.System.CAMERA_LAUNCH);
+            mCameraWakeScreen =
+                    (SwitchPreference) findPreference(LineageSettings.System.CAMERA_WAKE_SCREEN);
+            mCameraSleepOnRelease = (SwitchPreference)
+                    findPreference(LineageSettings.System.CAMERA_SLEEP_ON_RELEASE);
+            mCameraLaunch =
+                    (SwitchPreference) findPreference(LineageSettings.System.CAMERA_LAUNCH);
 
             if (!showCameraWake) {
                 prefScreen.removePreference(mCameraWakeScreen);
             }
             // Only show 'Camera sleep on release' if the device has a focus key
-            if (res.getBoolean(org.lineageos.platform.internal.R.bool.config_singleStageCameraKey)) {
+            int resId = org.lineageos.platform.internal.R.bool.config_singleStageCameraKey;
+            if (res.getBoolean(resId)) {
                 prefScreen.removePreference(mCameraSleepOnRelease);
             }
         } else {
@@ -354,7 +362,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         if (DeviceUtils.hasVolumeRocker(getActivity())) {
             if (!showVolumeWake) {
-                volumeCategory.removePreference(findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN));
+                volumeCategory.removePreference(
+                        findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN));
             }
 
             if (!TelephonyUtils.isVoiceCapable(getActivity())) {
@@ -408,7 +417,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
         }
 
-        mVolumeWakeScreen = (SwitchPreference) findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN);
+        mVolumeWakeScreen =
+                (SwitchPreference) findPreference(LineageSettings.System.VOLUME_WAKE_SCREEN);
         mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
 
         if (mVolumeWakeScreen != null) {

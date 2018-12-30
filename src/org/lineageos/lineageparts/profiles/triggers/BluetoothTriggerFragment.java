@@ -162,7 +162,8 @@ public class BluetoothTriggerFragment extends ListFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         mEmptyView = inflater.inflate(R.layout.profile_bluetooth_empty_view, container, false);
         mEmptyView.setOnClickListener(new View.OnClickListener() {
             @Override

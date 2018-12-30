@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -740,7 +741,8 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         // Total contributors
         String[] args = new String[]{String.valueOf(query.replaceAll("\\|", ""))};
         Cursor c = db.rawQuery(
-                "select id, name || case when username is null then '' else ' <'||username||'>' end contributor " +
+                "select id, name || case when username is null then '' else ' <'||username||'>' " +
+                "end contributor " +
                 "from metadata where lower(filter) like lower('%' || ? || '%') and id > 0 " +
                 "order by commits desc", args);
         if (c == null) {
@@ -834,7 +836,8 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
                     List<SearchIndexableRaw> result = new ArrayList<>();
                     Cursor c = db.rawQuery(
-                            "select id, username from metadata order by commits desc limit 100;", null);
+                            "select id, username from metadata order by commits desc limit 100;",
+                            null);
                     while (c.moveToNext()) {
                         SearchIndexableRaw raw = new SearchIndexableRaw(context);
                         raw.key = KEY_PREFIX + c.getString(0);

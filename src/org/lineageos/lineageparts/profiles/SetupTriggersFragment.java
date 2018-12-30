@@ -171,6 +171,4 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
             }
         }
     }
-
-
 }

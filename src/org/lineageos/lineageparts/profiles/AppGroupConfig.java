@@ -91,7 +91,7 @@ public class AppGroupConfig extends SettingsPreferenceFragment
 
         final Bundle args = getArguments();
         if (args != null) {
-            mNotificationGroup = (NotificationGroup) args.getParcelable("NotificationGroup");
+            mNotificationGroup = args.getParcelable("NotificationGroup");
             mPackageManager = getPackageManager();
             mAppAdapter = new PackageListAdapter(getActivity());
 
@@ -116,7 +116,8 @@ public class AppGroupConfig extends SettingsPreferenceFragment
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
@@ -152,7 +153,8 @@ public class AppGroupConfig extends SettingsPreferenceFragment
             generalPrefs.addPreference(mNamePreference);
         }
 
-        PreferenceGroup applicationsList = (PreferenceGroup) prefSet.findPreference("applications_list");
+        PreferenceGroup applicationsList =
+                (PreferenceGroup) prefSet.findPreference("applications_list");
         if (applicationsList != null) {
             applicationsList.removeAll();
             for (String pkg : mNotificationGroup.getPackages()) {
@@ -214,7 +216,8 @@ public class AppGroupConfig extends SettingsPreferenceFragment
                     mNotificationGroup.setName(name);
                 } else {
                     mNamePreference.setName(mNotificationGroup.getName());
-                    Toast.makeText(getActivity(), R.string.duplicate_appgroup_name, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), R.string.duplicate_appgroup_name,
+                            Toast.LENGTH_LONG).show();
                 }
             }
         }

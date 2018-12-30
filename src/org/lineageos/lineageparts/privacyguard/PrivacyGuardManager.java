@@ -121,7 +121,8 @@ public class PrivacyGuardManager extends SettingsPreferenceFragment
         mLoadingContainer = mActivity.findViewById(R.id.loading_container);
 
         // get shared preference
-        mPreferences = mActivity.getSharedPreferences("privacy_guard_manager", Activity.MODE_PRIVATE);
+        mPreferences = mActivity.getSharedPreferences("privacy_guard_manager",
+                Activity.MODE_PRIVATE);
         if (savedInstanceState == null && !mPreferences.getBoolean("first_help_shown", false)) {
             showHelp();
         }

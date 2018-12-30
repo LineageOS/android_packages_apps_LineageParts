@@ -100,7 +100,8 @@ public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallbac
         IntentFilter[] writeTagFilters = new IntentFilter[] {
             tagDetected
         };
-        mNfcAdapter.enableForegroundDispatch(getActivity(), getPendingIntent(), mWriteTagFilters, null);
+        mNfcAdapter.enableForegroundDispatch(getActivity(), getPendingIntent(), writeTagFilters,
+                null);
     }
 
     @Override
