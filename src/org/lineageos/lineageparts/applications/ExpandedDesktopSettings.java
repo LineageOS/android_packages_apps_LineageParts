@@ -1,5 +1,6 @@
-/**
+/*
  * Copyright (C) 2015-2016 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,8 +73,6 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
     private ApplicationsState mApplicationsState;
     private ApplicationsState.Session mSession;
     private ActivityFilter mActivityFilter;
-    private Map<String, ApplicationsState.AppEntry> mEntryMap =
-            new HashMap<String, ApplicationsState.AppEntry>();
 
     private SwitchBar mSwitchBar;
     private ListView mUserListView;
@@ -300,10 +299,6 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
         }
 
         mAllPackagesAdapter.setEntries(entries, sections, positions);
-        mEntryMap.clear();
-        for (ApplicationsState.AppEntry e : entries) {
-            mEntryMap.put(e.info.packageName, e);
-        }
 
         if (mIsGloballyExpanded) {
             showGlobalUi();

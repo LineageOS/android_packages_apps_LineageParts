@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +43,6 @@ import lineageos.hardware.LiveDisplayManager;
 public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     private static final String TAG = "PictureAdjustment";
 
-    private final Context mContext;
     private final LiveDisplayManager mLiveDisplay;
     private final List<Range<Float>> mRanges;
 
@@ -69,8 +69,7 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     public PictureAdjustment(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        mContext = context;
-        mLiveDisplay = LiveDisplayManager.getInstance(mContext);
+        mLiveDisplay = LiveDisplayManager.getInstance(context);
         mRanges = mLiveDisplay.getConfig().getPictureAdjustmentRanges();
 
         setDialogLayoutResource(R.layout.display_picture_adjustment);

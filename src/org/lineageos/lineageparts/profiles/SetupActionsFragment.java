@@ -839,7 +839,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(VolumeStreamItem.getNameForStream(streamId));
 
-        final AudioManager am = getActivity().getSystemService(AudioManager.class);
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         final View view = inflater.inflate(R.layout.dialog_profiles_volume_override, null);
         final SeekBar seekBar = view.findViewById(R.id.seekbar);

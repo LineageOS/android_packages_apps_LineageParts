@@ -54,10 +54,7 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     private ApplicationsState mApplicationsState;
     private ApplicationsState.Session mSession;
     private ActivityFilter mActivityFilter;
-    private Map<String, ApplicationsState.AppEntry> mEntryMap =
-            new HashMap<String, ApplicationsState.AppEntry>();
 
-    private ListView mUserListView;
     private LongScreen mLongScreen;
 
     @Override
@@ -88,8 +85,8 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mUserListView = (ListView) view.findViewById(R.id.user_list_view);
-        mUserListView.setAdapter(mAllPackagesAdapter);
+        ListView userListView = (ListView) view.findViewById(R.id.user_list_view);
+        userListView.setAdapter(mAllPackagesAdapter);
     }
 
     @Override
@@ -172,10 +169,6 @@ public class LongScreenSettings extends SettingsPreferenceFragment
         }
 
         mAllPackagesAdapter.setEntries(entries, sections, positions);
-        mEntryMap.clear();
-        for (ApplicationsState.AppEntry e : entries) {
-            mEntryMap.put(e.info.packageName, e);
-        }
     }
 
     private void rebuild() {

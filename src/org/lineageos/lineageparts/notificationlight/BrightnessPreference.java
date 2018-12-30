@@ -72,7 +72,6 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
     private int mLedColor = DEFAULT_LED_COLOR;
 
     private final Context mContext;
-    private final Handler mHandler;
 
     private final Notification.Builder mNotificationBuilder;
     private NotificationManager mNotificationManager;
@@ -90,10 +89,6 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
         setDialogLayoutResource(R.layout.dialog_brightness);
 
         mContext = context;
-
-        // Message handler used for led notification update throttling.
-        mHandler = new Handler();
-
         mNotificationManager = context.getSystemService(NotificationManager.class);
 
         // Force lights on when screen is on and also force maximum brightness.

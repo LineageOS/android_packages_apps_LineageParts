@@ -155,7 +155,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean showCameraWake = (deviceWakeKeys & KEY_MASK_CAMERA) != 0;
         final boolean showVolumeWake = (deviceWakeKeys & KEY_MASK_VOLUME) != 0;
 
-        boolean hasAnyBindableKey = false;
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
         final PreferenceCategory homeCategory =
@@ -275,8 +274,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mHomeLongPressAction.setEnabled(false);
                 mHomeDoubleTapAction.setEnabled(false);
             }
-
-            hasAnyBindableKey = true;
         } else {
             prefScreen.removePreference(homeCategory);
         }
@@ -303,8 +300,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         LineageSettings.System.KEY_MENU_LONG_PRESS_ACTION,
                         hasAssistKey ? Action.NOTHING : Action.APP_SWITCH);
             mMenuLongPressAction = initList(KEY_MENU_LONG_PRESS, longPressAction);
-
-            hasAnyBindableKey = true;
         } else {
             prefScreen.removePreference(menuCategory);
         }
@@ -321,8 +316,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Action longPressAction = Action.fromSettings(resolver,
                     LineageSettings.System.KEY_ASSIST_LONG_PRESS_ACTION, Action.VOICE_SEARCH);
             mAssistLongPressAction = initList(KEY_ASSIST_LONG_PRESS, longPressAction);
-
-            hasAnyBindableKey = true;
         } else {
             prefScreen.removePreference(assistCategory);
         }
@@ -338,8 +331,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mAppSwitchPressAction = initList(KEY_APP_SWITCH_PRESS, pressAction);
 
             mAppSwitchLongPressAction = initList(KEY_APP_SWITCH_LONG_PRESS, appSwitchLongPressAction);
-
-            hasAnyBindableKey = true;
         } else {
             prefScreen.removePreference(appSwitchCategory);
         }

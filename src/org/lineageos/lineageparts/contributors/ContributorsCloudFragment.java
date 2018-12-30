@@ -784,13 +784,13 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     public static void extractContributorsCloudDatabase(Context context) {
         final int BUFFER = 1024;
         InputStream is = null;
-        OutputStream os = null;
+        OutputStream os;
         File databasePath = context.getDatabasePath(DB_NAME);
         try {
             databasePath.getParentFile().mkdir();
             is = context.getResources().getAssets().open(DB_NAME, AssetManager.ACCESS_BUFFER);
             os = new FileOutputStream(databasePath);
-            int read = -1;
+            int read;
             byte[] data = new byte[BUFFER];
             while ((read = is.read(data, 0, BUFFER)) != -1) {
                 os.write(data, 0, read);
@@ -816,7 +816,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
                     // Index the top 100 contributors, for fun :)
                     File dbPath = context.getDatabasePath(DB_NAME);
-                    SQLiteDatabase db = null;
+                    SQLiteDatabase db;
                     try {
                         db = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                                 null, SQLiteDatabase.OPEN_READONLY);

@@ -62,8 +62,6 @@ public class LightSettingsDialog extends AlertDialog implements
     private final static long LED_UPDATE_DELAY_MS = 250;
 
     private ColorPickerView mColorPicker;
-    private LinearLayout mColorPanel;
-    private View mLightsDialogDivider;
 
     private EditText mHexColorInput;
     private ColorPanelView mNewColor;
@@ -72,8 +70,6 @@ public class LightSettingsDialog extends AlertDialog implements
     private Spinner mPulseSpeedOn;
     private Spinner mPulseSpeedOff;
     private LayoutInflater mInflater;
-
-    private OnColorChangedListener mListener;
 
     private NotificationManager mNotificationManager;
 
@@ -141,10 +137,10 @@ public class LightSettingsDialog extends AlertDialog implements
         View layout = mInflater.inflate(R.layout.dialog_light_settings, null);
 
         mColorPicker = layout.findViewById(R.id.color_picker_view);
-        mColorPanel = layout.findViewById(R.id.color_panel_view);
+        LinearLayout colorPanel = layout.findViewById(R.id.color_panel_view);
         mHexColorInput = layout.findViewById(R.id.hex_color_input);
         mNewColor = layout.findViewById(R.id.color_panel);
-        mLightsDialogDivider = layout.findViewById(R.id.lights_dialog_divider);
+        View lightsDialogDivider = layout.findViewById(R.id.lights_dialog_divider);
         mPulseSpeedOn = layout.findViewById(R.id.on_spinner);
         mPulseSpeedOff = layout.findViewById(R.id.off_spinner);
 
@@ -182,8 +178,8 @@ public class LightSettingsDialog extends AlertDialog implements
         if (!LightsCapabilities.supports(
                 mContext, LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED)) {
             mColorPicker.setVisibility(View.GONE);
-            mColorPanel.setVisibility(View.GONE);
-            mLightsDialogDivider.setVisibility(View.GONE);
+            colorPanel.setVisibility(View.GONE);
+            lightsDialogDivider.setVisibility(View.GONE);
         }
 
         mLedBrightness = brightness;
@@ -241,10 +237,6 @@ public class LightSettingsDialog extends AlertDialog implements
 
         mNewColor.setColor(color);
         mHexColorInput.setText(String.format(Locale.US, format, color & mask));
-
-        if (mListener != null) {
-            mListener.onColorChanged(color);
-        }
 
         updateLed();
     }
@@ -446,9 +438,6 @@ public class LightSettingsDialog extends AlertDialog implements
                 mColorPicker.setColor(color);
                 mNewColor.setColor(color);
                 updateLed();
-                if (mListener != null) {
-                    mListener.onColorChanged(color);
-                }
             } catch (IllegalArgumentException ex) {
                 // Number format is incorrect, ignore
             }

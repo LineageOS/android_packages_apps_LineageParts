@@ -1,6 +1,7 @@
 /*******************************************************************************
  * Copyright 2011, 2012 Chris Banes.
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,22 +53,22 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
 
     private static final String LOG_TAG = "ContributorsCloud";
 
-    public static final float DEFAULT_MAX_SCALE = 3.0f;
-    public static final float DEFAULT_MID_SCALE = 1.75f;
-    public static final float DEFAULT_MIN_SCALE = 1.0f;
-    public static final int DEFAULT_ZOOM_DURATION = 200;
+    private static final float DEFAULT_MAX_SCALE = 3.0f;
+    private static final float DEFAULT_MID_SCALE = 1.75f;
+    private static final float DEFAULT_MIN_SCALE = 1.0f;
+    private static final int DEFAULT_ZOOM_DURATION = 200;
 
     // let debug flag be dynamic, but still Proguard can be used to remove from
     // release builds
     private static final boolean DEBUG = Log.isLoggable(LOG_TAG, Log.DEBUG);
 
-    static final Interpolator sInterpolator = new AccelerateDecelerateInterpolator();
-    int ZOOM_DURATION = DEFAULT_ZOOM_DURATION;
+    private static final Interpolator sInterpolator = new AccelerateDecelerateInterpolator();
+    private int ZOOM_DURATION = DEFAULT_ZOOM_DURATION;
 
-    static final int EDGE_NONE = -1;
-    static final int EDGE_LEFT = 0;
-    static final int EDGE_RIGHT = 1;
-    static final int EDGE_BOTH = 2;
+    private static final int EDGE_NONE = -1;
+    private static final int EDGE_LEFT = 0;
+    private static final int EDGE_RIGHT = 1;
+    private static final int EDGE_BOTH = 2;
 
     private float mMinScale = DEFAULT_MIN_SCALE;
     private float mMidScale = DEFAULT_MID_SCALE;

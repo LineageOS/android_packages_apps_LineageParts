@@ -82,7 +82,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private int mDefaultLedOff;
     private PackageManager mPackageManager;
     private PreferenceGroup mApplicationPrefList;
-    private NotificationBrightnessPreference mNotificationBrightnessPref;
     private SystemSettingSwitchPreference mEnabledPref;
     private LineageSystemSettingSwitchPreference mCustomEnabledPref;
     private LineageSystemSettingSwitchPreference mScreenOnLightsPref;
@@ -90,12 +89,9 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private ApplicationLightPreference mDefaultPref;
     private ApplicationLightPreference mCallPref;
     private ApplicationLightPreference mVoicemailPref;
-    private Menu mMenu;
     private PackageListAdapter mPackageAdapter;
     private String mPackageList;
     private Map<String, Package> mPackages;
-    // liblights supports brightness control
-    private boolean mHALAdjustableBrightness;
     // Supports rgb color control
     private boolean mMultiColorLed;
     // Supports adjustable pulse
@@ -125,7 +121,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mDefaultLedOff = resources.getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
 
-        mHALAdjustableBrightness = LightsCapabilities.supports(
+        // liblights supports brightness control
+        boolean hasHALAdjustableBrightness = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS);
         mLedCanPulse = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_PULSATING_LED);
@@ -142,14 +139,12 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
 
         // Advanced light settings
-        mNotificationBrightnessPref = (NotificationBrightnessPreference)
-                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
         mScreenOnLightsPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (LineageSystemSettingSwitchPreference)
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
-        if (!mMultiColorLed && !mHALAdjustableBrightness) {
+        if (!mMultiColorLed && !hasHALAdjustableBrightness) {
             removePreference(BRIGHTNESS_SECTION);
         }
         if (!mLedCanPulse && !mMultiColorLed) {
@@ -491,8 +486,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        mMenu = menu;
-        mMenu.add(0, MENU_ADD, 0, R.string.add)
+        menu.add(0, MENU_ADD, 0, R.string.add)
                 .setIcon(R.drawable.ic_menu_add)
                 .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
     }
