@@ -49,7 +49,6 @@ public class TaperedPathStroke {
                 last = true;
             }
             pm.getPosTan(t, pos, tan);
-            // float r = len > 0 ? lerp(t/len, r1, r2) : r1;
             float r = 3f;
             c.drawCircle(pos[0], pos[1], r, pt);
             // walk forward 1/4 radius, not too small though

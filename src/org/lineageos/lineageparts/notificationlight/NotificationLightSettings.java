@@ -475,12 +475,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 .setTitle(R.string.dialog_delete_title)
                 .setMessage(R.string.dialog_delete_message)
                 .setIconAttribute(android.R.attr.alertDialogIcon)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        removeCustomApplicationPref(key);
-                    }
-                })
+                .setPositiveButton(android.R.string.ok, (dialog, which) ->
+                        removeCustomApplicationPref(key))
                 .setNegativeButton(android.R.string.cancel, null);
 
         builder.show();
@@ -541,14 +537,11 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 builder.setView(list);
                 dialog = builder.create();
 
-                list.setOnItemClickListener(new OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        // Add empty application definition, the user will be able to edit it later
-                        PackageItem info = (PackageItem) parent.getItemAtPosition(position);
-                        addCustomApplicationPref(info.packageName);
-                        dialog.cancel();
-                    }
+                list.setOnItemClickListener((parent, view, position, itemId) -> {
+                    // Add empty application definition, the user will be able to edit it later
+                    PackageItem info = (PackageItem) parent.getItemAtPosition(position);
+                    addCustomApplicationPref(info.packageName);
+                    dialog.cancel();
                 });
                 break;
             default:

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,12 +73,7 @@ public class AppGroupList extends SettingsPreferenceFragment {
         final FloatingActionButton fab = getFloatingActionButton();
         fab.setImageResource(R.drawable.ic_menu_add_white);
         fab.setContentDescription(getString(R.string.profiles_add));
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addAppGroup();
-            }
-        });
+        fab.setOnClickListener(v -> addAppGroup());
         fab.setVisibility(View.VISIBLE);
     }
 
@@ -117,19 +113,16 @@ public class AppGroupList extends SettingsPreferenceFragment {
         builder.setTitle(R.string.profile_new_appgroup);
         builder.setView(content);
 
-        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                String name = entry.getText().toString();
-                if (!mProfileManager.notificationGroupExists(name)) {
-                    NotificationGroup newGroup = new NotificationGroup(name);
-                    mProfileManager.addNotificationGroup(newGroup);
+        builder.setPositiveButton(android.R.string.ok, (dialog, which) -> {
+            String name = entry.getText().toString();
+            if (!mProfileManager.notificationGroupExists(name)) {
+                NotificationGroup newGroup = new NotificationGroup(name);
+                mProfileManager.addNotificationGroup(newGroup);
 
-                    refreshList();
-                } else {
-                    Toast.makeText(getActivity(),
-                            R.string.duplicate_appgroup_name, Toast.LENGTH_LONG).show();
-                }
+                refreshList();
+            } else {
+                Toast.makeText(getActivity(),
+                        R.string.duplicate_appgroup_name, Toast.LENGTH_LONG).show();
             }
         });
         builder.setNegativeButton(android.R.string.cancel, null);

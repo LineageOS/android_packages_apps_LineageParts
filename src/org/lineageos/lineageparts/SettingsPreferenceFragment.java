@@ -420,12 +420,8 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             mPreferenceHighlighted = true;
             mLayoutManager.scrollToPosition(position);
 
-            getView().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mAdapter.highlight(position);
-                }
-            }, DELAY_HIGHLIGHT_DURATION_MILLIS);
+            getView().postDelayed(() ->
+                    mAdapter.highlight(position), DELAY_HIGHLIGHT_DURATION_MILLIS);
         }
     }
 

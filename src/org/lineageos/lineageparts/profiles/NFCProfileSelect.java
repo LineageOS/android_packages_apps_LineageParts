@@ -58,12 +58,7 @@ public class NFCProfileSelect extends Activity {
         setContentView(R.layout.nfc_select);
         setTitle(R.string.profile_unknown_nfc_tag);
 
-        findViewById(R.id.add_tag).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showProfileSelectionDialog();
-            }
-        });
+        findViewById(R.id.add_tag).setOnClickListener(v -> showProfileSelectionDialog());
     }
 
     @Override
@@ -87,30 +82,19 @@ public class NFCProfileSelect extends Activity {
 
         Builder builder = new Builder(this);
         builder.setTitle(R.string.profile_settings_title);
-        builder.setSingleChoiceItems(profileNames, currentChoice, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                currentChoice = which;
+        builder.setSingleChoiceItems(profileNames, currentChoice, (dialog, which) ->
+                currentChoice = which);
+        builder.setPositiveButton(android.R.string.ok, (dialog, which) -> {
+            if (currentChoice != defaultChoice) {
+                Profile profile = profiles[currentChoice];
+                profile.addSecondaryUuid(mProfileUuid);
+                mProfileManager.updateProfile(profile);
+                Toast.makeText(NFCProfileSelect.this, R.string.profile_write_success,
+                        Toast.LENGTH_LONG).show();
             }
+            finish();
         });
-        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if (currentChoice != defaultChoice) {
-                    Profile profile = profiles[currentChoice];
-                    profile.addSecondaryUuid(mProfileUuid);
-                    mProfileManager.updateProfile(profile);
-                    Toast.makeText(NFCProfileSelect.this, R.string.profile_write_success, Toast.LENGTH_LONG).show();
-                }
-                finish();
-            }
-        });
-        builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-            }
-        });
+        builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> finish());
         builder.show();
     }
 }

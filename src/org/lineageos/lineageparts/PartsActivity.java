@@ -176,16 +176,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
                                      CharSequence titleText, Fragment resultTo,
                                      int resultRequestCode) {
-        String title = null;
-        if (titleRes < 0) {
-            if (titleText != null) {
-                title = titleText.toString();
-            } else {
-                // There not much we can do in that case
-                title = "";
-            }
-        }
-
         Intent intent = new Intent();
         intent.setComponent(PartsList.LINEAGEPARTS_ACTIVITY);
         intent.putExtra(EXTRA_SHOW_FRAGMENT, fragmentClass);

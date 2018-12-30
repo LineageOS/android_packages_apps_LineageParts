@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -210,7 +211,7 @@ public class AppGroupConfig extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mNamePreference) {
-            String name = mNamePreference.getName().toString();
+            String name = mNamePreference.getName();
             if (!name.equals(mNotificationGroup.getName())) {
                 if (!mProfileManager.notificationGroupExists(name)) {
                     mNotificationGroup.setName(name);
@@ -259,54 +260,31 @@ public class AppGroupConfig extends SettingsPreferenceFragment
                 builder.setTitle(R.string.profile_choose_app);
                 builder.setView(list);
                 dialog = builder.create();
-                list.setOnItemClickListener(new OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        PackageItem info = (PackageItem) parent.getItemAtPosition(position);
-                        mNotificationGroup.addPackage(info.packageName);
-                        updatePackages();
-                        dialog.cancel();
-                    }
+                list.setOnItemClickListener((parent, view, position, id1) -> {
+                    PackageItem info = (PackageItem) parent.getItemAtPosition(position);
+                    mNotificationGroup.addPackage(info.packageName);
+                    updatePackages();
+                    dialog.cancel();
                 });
                 break;
             case DELETE_CONFIRM:
                 builder.setMessage(R.string.profile_app_delete_confirm);
                 builder.setTitle(R.string.profile_menu_delete_title);
                 builder.setIconAttribute(android.R.attr.alertDialogIcon);
-                builder.setPositiveButton(android.R.string.yes,
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                doDelete();
-                            }
-                        });
-                builder.setNegativeButton(android.R.string.no,
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                            }
-                        });
+                builder.setPositiveButton(android.R.string.yes, (dialog1, which) -> doDelete());
+                builder.setNegativeButton(android.R.string.no, null);
                 dialog = builder.create();
                 break;
             case DELETE_GROUP_CONFIRM:
                 builder.setMessage(R.string.profile_delete_appgroup);
                 builder.setTitle(R.string.profile_menu_delete_title);
                 builder.setIconAttribute(android.R.attr.alertDialogIcon);
-                builder.setPositiveButton(android.R.string.yes,
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                mProfileManager.removeNotificationGroup(mNotificationGroup);
-                                mNotificationGroup = null;
-                                finish();
-                            }
-                        });
-                builder.setNegativeButton(android.R.string.no,
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                            }
-                        });
+                builder.setPositiveButton(android.R.string.yes, (dialog2, which) -> {
+                    mProfileManager.removeNotificationGroup(mNotificationGroup);
+                    mNotificationGroup = null;
+                    finish();
+                });
+                builder.setNegativeButton(android.R.string.no, null);
                 dialog = builder.create();
                 break;
             default:

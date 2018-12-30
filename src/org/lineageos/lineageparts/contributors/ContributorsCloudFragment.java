@@ -129,7 +129,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     private static class ContributorsAdapter extends ArrayAdapter<ContributorsDataHolder> {
 
         public ContributorsAdapter(Context context) {
-            super(context, R.id.contributor_name, new ArrayList<ContributorsDataHolder>());
+            super(context, R.id.contributor_name, new ArrayList<>());
         }
 
         @Override
@@ -189,7 +189,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
         @Override
         protected void onPostExecute(Boolean result) {
-            if (result == true) {
+            if (result) {
                 mImageView.setImageBitmap(mViewInfo.mBitmap);
                 mViewController.update();
                 if (mNotify) {
@@ -320,13 +320,10 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         mSearchResults = (ListView) v.findViewById(R.id.contributors_cloud_search_results);
         mSearchAdapter = new ContributorsAdapter(getActivity());
         mSearchResults.setAdapter(mSearchAdapter);
-        mSearchResults.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ContributorsDataHolder contributor =
-                        (ContributorsDataHolder) parent.getItemAtPosition(position);
-                onContributorSelected(contributor);
-            }
+        mSearchResults.setOnItemClickListener((parent, view, position, id) -> {
+            ContributorsDataHolder contributor =
+                    (ContributorsDataHolder) parent.getItemAtPosition(position);
+            onContributorSelected(contributor);
         });
 
         // Load the data from the database and fill the image
@@ -422,12 +419,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         if (focusX != -1 && focusY != -1) {
             mViewController.setZoomTransitionDuration(2500);
             mViewController.setScale(10, focusX, focusY, true);
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mViewController.setZoomTransitionDuration(-1);
-                }
-            }, 2500);
+            mHandler.postDelayed(() -> mViewController.setZoomTransitionDuration(-1), 2500);
         }
     }
 
@@ -605,10 +597,6 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             try {
                 mDatabase = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                         null, SQLiteDatabase.OPEN_READONLY);
-                if (mDatabase == null) {
-                    Log.e(TAG, "Cannot open cloud database: " + DB_NAME + ". db == null");
-                    return null;
-                }
                 return mDatabase;
 
             } catch (SQLException ex) {
@@ -822,15 +810,8 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                     try {
                         db = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                                 null, SQLiteDatabase.OPEN_READONLY);
-                        if (db == null) {
-                            Log.e(TAG, "Cannot open cloud database: " + DB_NAME + ". db == null");
-                            return null;
-                        }
                     } catch (Exception e) {
                         Log.e(TAG, e.getMessage(), e);
-                        if (db != null && db.isOpen()) {
-                            db.close();
-                        }
                         return null;
                     }
 

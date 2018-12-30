@@ -166,12 +166,14 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         mDisplayTemperature = (DisplayTemperature) findPreference(KEY_LIVE_DISPLAY_TEMPERATURE);
 
         mColorProfile = (ListPreference) findPreference(KEY_LIVE_DISPLAY_COLOR_PROFILE);
-        if (liveDisplayPrefs != null && mColorProfile != null
-                && (!mConfig.hasFeature(FEATURE_DISPLAY_MODES) || !updateDisplayModes())) {
-            liveDisplayPrefs.removePreference(mColorProfile);
-        } else {
-            mHasDisplayModes = true;
-            mColorProfile.setOnPreferenceChangeListener(this);
+        if (mColorProfile != null) {
+            if (liveDisplayPrefs != null
+                    && (!config.hasFeature(FEATURE_DISPLAY_MODES) || !updateDisplayModes())) {
+                liveDisplayPrefs.removePreference(mColorProfile);
+            } else {
+                mHasDisplayModes = true;
+                mColorProfile.setOnPreferenceChangeListener(this);
+            }
         }
 
         mOutdoorMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
@@ -182,12 +184,14 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         }
 
         mReadingMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
-        if (liveDisplayPrefs != null && mReadingMode != null
-                && !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
-            liveDisplayPrefs.removePreference(mReadingMode);
-            mReadingMode = null;
-        } else {
-            mReadingMode.setOnPreferenceChangeListener(this);
+        if (mReadingMode != null) {
+            if (liveDisplayPrefs != null
+                    && !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
+                liveDisplayPrefs.removePreference(mReadingMode);
+                mReadingMode = null;
+            } else{
+                mReadingMode.setOnPreferenceChangeListener(this);
+            }
         }
 
         SwitchPreference lowPower = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_LOW_POWER);

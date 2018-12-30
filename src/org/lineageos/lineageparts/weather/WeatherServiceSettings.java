@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -151,22 +152,12 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
     private PackageMonitor mPackageMonitor = new PackageMonitor() {
         @Override
         public void onPackageAdded(String packageName, int uid) {
-            mHandler.post(new Runnable() {
-                @Override
-                public void run() {
-                    updateAdapter();
-                }
-            });
+            mHandler.post(WeatherServiceSettings.this::updateAdapter);
         }
 
         @Override
         public void onPackageRemoved(String packageName, int uid) {
-            mHandler.post(new Runnable() {
-                @Override
-                public void run() {
-                    updateAdapter();
-                }
-            });
+            mHandler.post(WeatherServiceSettings.this::updateAdapter);
         }
     };
 
@@ -225,13 +216,9 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
             Preference addServicePreference = new Preference(mContext);
             addServicePreference.setTitle(R.string.weather_settings_add_weather_provider);
             addServicePreference.setIcon(R.drawable.ic_menu_add);
-            addServicePreference.setOnPreferenceClickListener(
-                    new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    launchGetWeatherProviders();
-                    return false;
-                }
+            addServicePreference.setOnPreferenceClickListener(preference -> {
+                launchGetWeatherProviders();
+                return false;
             });
             mProvidersCategory.addPreference(addServicePreference);
 
@@ -285,12 +272,9 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
 
             mRadioButton = (RadioButton) holder.findViewById(R.id.radio);
             mRadioButton.setChecked(mInfo.isActive);
-            mRadioButton.setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    holder.itemView.onTouchEvent(event);
-                    return false;
-                }
+            mRadioButton.setOnTouchListener((v, event) -> {
+                holder.itemView.onTouchEvent(event);
+                return false;
             });
 
             boolean showSettings = mInfo.settingsComponentName != null;
@@ -302,12 +286,7 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
             mSettingsButton.setAlpha(mInfo.isActive ? 1f : DISABLED_ALPHA);
             mSettingsButton.setEnabled(mInfo.isActive);
             mSettingsButton.setFocusable(mInfo.isActive);
-            mSettingsButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    launchSettingsActivity(mInfo);
-                }
-            });
+            mSettingsButton.setOnClickListener(v -> launchSettingsActivity(mInfo));
         }
 
         @Override
@@ -452,12 +431,7 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
         emptyTextView.setText(R.string.weather_settings_no_services_prompt);
 
         Button addProviderButton = emptyView.findViewById(R.id.add_weather_provider);
-        addProviderButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                launchGetWeatherProviders();
-            }
-        });
+        addProviderButton.setOnClickListener(v -> launchGetWeatherProviders());
 
         contentRoot.addView(emptyView);
         setEmptyView(emptyView);

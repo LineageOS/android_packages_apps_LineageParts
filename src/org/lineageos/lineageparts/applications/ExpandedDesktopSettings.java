@@ -81,10 +81,7 @@ public class ExpandedDesktopSettings extends SettingsPreferenceFragment
 
     private boolean isGloballyExpanded(ContentResolver cr) {
         final String value = Settings.Global.getString(cr, Settings.Global.POLICY_CONTROL);
-        if ("immersive.full=*".equals(value)) {
-            return true;
-        }
-        return false;
+        return "immersive.full=*".equals(value);
     }
 
     @Override

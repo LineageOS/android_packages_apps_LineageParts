@@ -132,7 +132,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
          * PhotoView sets it's own ScaleType to Matrix, then diverts all calls
          * setScaleType to this.setScaleType automatically.
          */
-        if (null != imageView /*&& !(imageView instanceof IPhotoView)*/) {
+        if (null != imageView) {
             if (!ScaleType.MATRIX.equals(imageView.getScaleType())) {
                 imageView.setScaleType(ScaleType.MATRIX);
             }
