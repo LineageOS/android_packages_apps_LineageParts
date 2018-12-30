@@ -17,10 +17,8 @@
 package org.lineageos.lineageparts.notificationlight;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.Notification;
 import android.app.NotificationManager;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -28,17 +26,12 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.UserHandle;
-import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import lineageos.providers.LineageSettings;
-
-import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.internal.notification.LineageNotification;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;

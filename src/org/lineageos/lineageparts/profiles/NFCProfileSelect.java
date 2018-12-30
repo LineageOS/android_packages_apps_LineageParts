@@ -21,10 +21,7 @@ import java.util.UUID;
 
 import android.app.Activity;
 import android.app.AlertDialog.Builder;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Toast;
 
 import lineageos.app.Profile;

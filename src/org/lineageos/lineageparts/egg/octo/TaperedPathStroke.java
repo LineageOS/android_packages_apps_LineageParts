@@ -21,9 +21,6 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
-import android.os.Debug;
-
-import java.util.Arrays;
 
 public class TaperedPathStroke {
     static float sMinStepPx = 4f;

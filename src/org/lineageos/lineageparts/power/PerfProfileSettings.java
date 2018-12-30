@@ -42,15 +42,12 @@ import org.lineageos.lineageparts.widget.SeekBarPreference;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.internal.graphics.drawable.StopMotionVectorDrawable;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 import lineageos.power.PerformanceManager;
 import lineageos.power.PerformanceProfile;
-
 import lineageos.providers.LineageSettings;
 
+import java.util.ArrayList;
+import java.util.List;
 
 import static lineageos.power.PerformanceManager.PROFILE_POWER_SAVE;
 

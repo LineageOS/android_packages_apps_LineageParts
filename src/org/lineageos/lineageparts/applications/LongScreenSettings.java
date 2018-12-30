@@ -28,7 +28,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
@@ -43,9 +42,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class LongScreenSettings extends SettingsPreferenceFragment
         implements ApplicationsState.Callbacks {

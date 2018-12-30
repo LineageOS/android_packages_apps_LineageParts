@@ -19,7 +19,6 @@ package org.lineageos.lineageparts.profiles.triggers;
 import android.app.AlertDialog;
 import android.app.ListFragment;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.wifi.WifiConfiguration;

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,10 +19,8 @@ package org.lineageos.lineageparts.notificationlight;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.NotificationManager;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -37,9 +36,6 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import org.lineageos.internal.notification.LightsCapabilities;

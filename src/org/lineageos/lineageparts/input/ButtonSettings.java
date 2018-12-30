@@ -18,12 +18,8 @@
 package org.lineageos.lineageparts.input;
 
 import android.app.ActivityManager;
-import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
@@ -35,8 +31,6 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.util.Log;
-import android.view.Display;
-import android.view.DisplayInfo;
 import android.view.IWindowManager;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
@@ -46,11 +40,8 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
 import org.lineageos.lineageparts.utils.TelephonyUtils;
-import org.lineageos.internal.util.ScreenType;
 
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
-
-import java.util.List;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;

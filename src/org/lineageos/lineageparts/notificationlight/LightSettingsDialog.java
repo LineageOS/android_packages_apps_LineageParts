@@ -49,7 +49,6 @@ import org.lineageos.internal.notification.LedValues;
 import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.internal.notification.LineageNotification;
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.notificationlight.ColorPickerView.OnColorChangedListener;
 
 import java.util.ArrayList;
 import java.util.Locale;

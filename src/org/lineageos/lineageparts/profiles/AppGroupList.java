@@ -20,7 +20,6 @@ package org.lineageos.lineageparts.profiles;
 import android.annotation.Nullable;
 import android.app.AlertDialog;
 import android.app.NotificationGroup;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
