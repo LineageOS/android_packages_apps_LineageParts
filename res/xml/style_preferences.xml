@@ -29,6 +29,11 @@
         android:key="style_accent"
         android:title="@string/style_accent_title" />
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="berry_dark_on_low_battery"
+        android:title="@string/style_dark_on_low_battery"
+        android:defaultValue="false" />
+
     <lineageos.preference.LineageSystemSettingListPreference
         android:defaultValue="org.lineageos.overlay.dark"
         android:entries="@array/dark_overlay_entries"

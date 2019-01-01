@@ -693,6 +693,7 @@
     <string name="style_automagic_dialog_content">Suggested style: <b>%1$s</b> with <b>%2$s</b> accent.\nDo you want to apply it?</string>
     <string name="style_automagic_dialog_positive">Apply</string>
     <string name="style_accent_default_name">Default</string>
+    <string name="style_dark_on_low_battery">Dark style on low battery</string>
     <string name="style_dark_overlay_title">Dark mode</string>
     <string name="style_dark_overlay_default">Default</string>
     <string name="style_dark_overlay_black">Black</string>
