@@ -233,7 +233,7 @@
     <string name="power_menu_title">Menu ligar/desligar</string>
     <string name="power_menu_screenshot_title">Capturar ecrã</string>
     <string name="power_menu_screenshot_summary">Pressão longa para captura de ecrã parcial</string>
-    <string name="power_menu_airplane_title">Modo de avião</string>
+    <string name="power_menu_airplane_title">Modo de voo</string>
     <string name="power_menu_users_title">Mudar utilizador</string>
     <string name="power_menu_bug_report_title">Relatório de erros</string>
     <string name="power_menu_bug_report_disabled">O relatório de erros está desativado nas opções de programador</string>
@@ -363,7 +363,7 @@
     <string name="profile_lockmode_policy_disabled_summary">Esta opção de perfil está desativada pela política do administrador do dispositivo</string>
     <string name="profile_lockmode_insecure_summary">Não pedir a palavra-passe nem PIN</string>
     <string name="profile_lockmode_disabled_summary">Desativar o ecrã de bloqueio</string>
-    <string name="profile_airplanemode_title">Modo de avião</string>
+    <string name="profile_airplanemode_title">Modo de voo</string>
     <string name="profile_brightness_title">Brilho do ecrã</string>
     <string name="profile_brightness_override_summary">Definido para %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Substituir brilho</string>
