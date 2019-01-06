@@ -627,6 +627,7 @@
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">terbaru</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_value_medium">kadaluwarsa selama beberapa bulan</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">kadaluarsa</string>
     <string name="trust_feature_encryption">Enkripsi</string>
