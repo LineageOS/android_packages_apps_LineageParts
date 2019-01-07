@@ -21,7 +21,6 @@
 
     <!-- ActionBar contentInsetStart -->
     <dimen name="actionbar_contentInsetStart">16dp</dimen>
-    <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
     <!-- Dashboard padding in its container -->
     <dimen name="dashboard_padding_start">0dp</dimen>
@@ -39,14 +38,10 @@
     <dimen name="pager_tabs_padding">0dp</dimen>
 
     <!-- SwitchBar margin start / end -->
-    <dimen name="switchbar_margin_start">16dp</dimen>
+    <dimen name="switchbar_margin_start">72dp</dimen>
     <dimen name="switchbar_margin_end">16dp</dimen>
 
     <dimen name="min_tap_target_size">48dp</dimen>
-
-    <!-- SwitchBar sub settings margin start / end -->
-    <dimen name="switchbar_subsettings_margin_start">72dp</dimen>
-    <dimen name="switchbar_subsettings_margin_end">16dp</dimen>
 
     <!-- FAB Dimensions -->
     <dimen name="fab_size">56dp</dimen>
