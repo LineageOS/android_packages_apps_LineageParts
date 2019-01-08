@@ -25,20 +25,21 @@ import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.PreferenceManager;
 
-import lineageos.hardware.LineageHardwareManager;
-import lineageos.hardware.TouchscreenGesture;
+import vendor.lineage.touch.V1_0.ITouchscreenGesture;
+import vendor.lineage.touch.V1_0.Gesture;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.ResourceUtils;
 
 import java.lang.System;
+import java.util.ArrayList;
 
 public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
     private static final String KEY_TOUCHSCREEN_GESTURE = "touchscreen_gesture";
     private static final String TOUCHSCREEN_GESTURE_TITLE = KEY_TOUCHSCREEN_GESTURE + "_%s_title";
 
-    private TouchscreenGesture[] mTouchscreenGestures;
+    private ArrayList<Gesture> mGestures;
 
     @Override
     public void onCreate(final Bundle savedInstanceState) {
@@ -52,10 +53,14 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
     }
 
     private void initTouchscreenGestures() {
-        final LineageHardwareManager manager = LineageHardwareManager.getInstance(getContext());
-        mTouchscreenGestures = manager.getTouchscreenGestures();
-        final int[] actions = getDefaultGestureActions(getContext(), mTouchscreenGestures);
-        for (final TouchscreenGesture gesture : mTouchscreenGestures) {
+        try {
+            ITouchscreenGesture touchscreenGesture = ITouchscreenGesture.getService(true /* retry */);
+            mGestures = touchscreenGesture.getSupportedGestures();
+        } catch (NoSuchElementException e) {
+            return;
+        }
+        final int[] actions = getDefaultGestureActions(getContext(), mGestures);
+        for (final Gesture gesture : mGestures) {
             getPreferenceScreen().addPreference(new TouchscreenGesturePreference(
                     getContext(), gesture, actions[gesture.id]));
         }
@@ -63,10 +68,10 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
 
     private class TouchscreenGesturePreference extends ListPreference {
         private final Context mContext;
-        private final TouchscreenGesture mGesture;
+        private final Gesture mGesture;
 
         public TouchscreenGesturePreference(final Context context,
-                                            final TouchscreenGesture gesture,
+                                            final Gesture gesture,
                                             final int defaultAction) {
             super(context);
             mContext = context;
@@ -87,8 +92,10 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
         @Override
         public boolean callChangeListener(final Object newValue) {
             final int action = Integer.parseInt(String.valueOf(newValue));
-            final LineageHardwareManager manager = LineageHardwareManager.getInstance(mContext);
-            if (!manager.setTouchscreenGestureEnabled(mGesture, action > 0)) {
+            try {
+                ITouchscreenGesture touchscreenGesture = ITouchscreenGesture.getService(true /* retry */);
+                mGestures = touchscreenGesture.setGestureEnabled(mGesture, action > 0);
+            } catch (NoSuchElementException e) {
                 return false;
             }
             return super.callChangeListener(newValue);
@@ -141,9 +148,14 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
             return;
         }
 
-        final LineageHardwareManager manager = LineageHardwareManager.getInstance(context);
-        final TouchscreenGesture[] gestures = manager.getTouchscreenGestures();
-        final int[] actionList = buildActionList(context, gestures);
+        ITouchscreenGesture touchscreenGesture;
+        try {
+            touchscreenGesture = ITouchscreenGesture.getService(true /* retry */);
+        } catch (NoSuchElementException e) {
+            return;
+        }
+
+        final int[] actionList = buildActionList(context, touchscreenGesture.getSupportedGestures());
         for (final TouchscreenGesture gesture : gestures) {
             manager.setTouchscreenGestureEnabled(gesture, actionList[gesture.id] > 0);
         }
@@ -152,26 +164,30 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
     }
 
     private static boolean isTouchscreenGesturesSupported(final Context context) {
-        final LineageHardwareManager manager = LineageHardwareManager.getInstance(context);
-        return manager.isSupported(LineageHardwareManager.FEATURE_TOUCHSCREEN_GESTURES);
+        try {
+            ITouchscreenGesture touchscreenGestyre = ITouchscreenGesture.getService(true /* retry */);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     private static int[] getDefaultGestureActions(final Context context,
-            final TouchscreenGesture[] gestures) {
+            final ArrayList<Gesture> gestures) {
         final int[] defaultActions = context.getResources().getIntArray(
                 R.array.config_defaultTouchscreenGestureActions);
-        if (defaultActions.length >= gestures.length) {
+        if (defaultActions.length >= gestures.size) {
             return defaultActions;
         }
 
-        final int[] filledDefaultActions = new int[gestures.length];
+        final int[] filledDefaultActions = new int[gestures.size];
         System.arraycopy(defaultActions, 0, filledDefaultActions, 0, defaultActions.length);
         return filledDefaultActions;
     }
 
     private static int[] buildActionList(final Context context,
-            final TouchscreenGesture[] gestures) {
-        final int[] result = new int[gestures.length];
+            final ArrayList<Gesture> gestures) {
+        final int[] result = new int[gestures.size];
         final int[] defaultActions = getDefaultGestureActions(context, gestures);
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         for (final TouchscreenGesture gesture : gestures) {
@@ -189,7 +205,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment {
     private static void sendUpdateBroadcast(final Context context,
             final TouchscreenGesture[] gestures) {
         final Intent intent = new Intent(TouchscreenGestureConstants.UPDATE_PREFS_ACTION);
-        final int[] keycodes = new int[gestures.length];
+        final int[] keycodes = new int[gestures.size];
         final int[] actions = buildActionList(context, gestures);
         for (final TouchscreenGesture gesture : gestures) {
             keycodes[gesture.id] = gesture.keycode;
