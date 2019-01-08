@@ -43,6 +43,8 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
+import vendor.lineage.touch.V1_0.IKeyDisabler;
+
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
@@ -635,8 +637,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private static boolean isKeyDisablerSupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
+        try {
+            IKeyDisabler keyDisabler = IKeyDisabler.getService(true /* retry */)
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     public static void restoreKeyDisabler(Context context) {
