@@ -19,6 +19,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \
     org.lineageos.platform.internal
 
+LOCAL_STATIC_JAVA_LIBRARIES += \
+    vendor.lineage.touch-V1.0-java
+
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res
 
