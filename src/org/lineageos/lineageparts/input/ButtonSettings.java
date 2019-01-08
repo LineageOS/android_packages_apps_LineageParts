@@ -43,6 +43,8 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
+import vendor.lineage.touch.V1_0.IKeyDisabler;
+
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
@@ -53,7 +55,6 @@ import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
 import java.util.List;
 
-import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements
@@ -221,8 +222,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Navigation bar app switch long press
         mNavigationAppSwitchLongPressAction = initList(KEY_NAVIGATION_APP_SWITCH_LONG_PRESS,
                 appSwitchLongPressAction);
-
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(getActivity());
 
         // Only visible on devices that does not have a navigation bar already
         boolean hasNavigationBar = true;
@@ -635,8 +634,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private static boolean isKeyDisablerSupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
+        try {
+            IKeyDisabler keyDisabler = IKeyDisabler.getService(true /* retry */);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     public static void restoreKeyDisabler(Context context) {
