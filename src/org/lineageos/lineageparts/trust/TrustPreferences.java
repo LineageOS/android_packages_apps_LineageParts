@@ -29,6 +29,7 @@ import android.util.Log;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
+import lineageos.preference.SecureSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 import lineageos.trust.TrustInterface;
 
@@ -40,6 +41,7 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private Preference mSecurityPatchesPref;
     private Preference mEncryptionPref;
     private PreferenceCategory mToolsCategory;
+    private SecureSettingSwitchPreference mUsbRestrictorPref;
     private ListPreference mSmsLimitPref;
 
     private PreferenceCategory mWarnScreen;
@@ -63,6 +65,8 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mSecurityPatchesPref = findPreference("trust_security_patch");
         mEncryptionPref = findPreference("trust_encryption");
         mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
+        mUsbRestrictorPref = (SecureSettingSwitchPreference)
+                mToolsCategory.findPreference("trust_restrict_usb");
         mSmsLimitPref = (ListPreference) mToolsCategory.findPreference("sms_security_check_limit");
 
         mWarnScreen = (PreferenceCategory) findPreference("trust_category_warnings");
@@ -108,6 +112,10 @@ public class TrustPreferences extends SettingsPreferenceFragment {
 
         if (!isTelephony()) {
             mToolsCategory.removePreference(mSmsLimitPref);
+        }
+
+        if (!mInterface.hasUsbRestrictor()) {
+            mToolsCategory.removePreference(mUsbRestrictorPref);
         }
     }
 
