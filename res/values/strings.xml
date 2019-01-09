@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	Copyright (C) 2017-2018 The LineageOS Project
+	Copyright (C) 2017-2019 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -733,6 +733,8 @@
     <string name="trust_onboarding_description">Trust helps you keep your device secure and protect your privacy.\nThe Trust icon will only show when the contents of the page have been verified.</string>
     <string name="trust_onboarding_learn_more">Learn more</string>
     <string name="trust_onboarding_done">Got it</string>
+    <string name="trust_restrict_usb_title">Restrict USB</string>
+    <string name="trust_restrict_usb_summary">Disable new USB gadgets when the device is locked</string>
 
     <!-- Sms limit -->
     <string name="sms_security_check_limit_title">SMS message limit</string>

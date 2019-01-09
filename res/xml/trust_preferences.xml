@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 The LineageOS Project
+     Copyright (C) 2018-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -45,6 +45,12 @@
 
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="privacy_guard_manager" />
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="trust_restrict_usb"
+            android:title="@string/trust_restrict_usb_title"
+            android:summary="@string/trust_restrict_usb_summary"
+            android:defaultValue="false" />
 
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="lineagestats" />
