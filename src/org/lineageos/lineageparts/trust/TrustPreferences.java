@@ -207,11 +207,11 @@ public class TrustPreferences extends SettingsPreferenceFragment {
             summary = R.string.trust_feature_encryption_value_enabled;
         } else if (level == TrustInterface.TRUST_FEATURE_LEVEL_POOR) {
             icon = R.drawable.ic_trust_encryption_poor;
-            summary = isLegacy ?
-                R.string.trust_feature_encryption_value_disabled :
-                R.string.trust_feature_encryption_value_nolock;
+            summary = R.string.trust_feature_encryption_value_nolock;
         } else {
-            icon = R.drawable.ic_trust_encryption_bad;
+            icon = isLegacy ?
+                R.drawable.ic_trust_encryption_poor :
+                R.drawable.ic_trust_encryption_bad;
             summary = R.string.trust_feature_encryption_value_disabled;
         }
         mEncryptionPref.setIcon(icon);
