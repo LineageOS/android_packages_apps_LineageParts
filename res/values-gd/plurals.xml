@@ -15,4 +15,17 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="backlight_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> diog</item>
+        <item quantity="two"><xliff:g id="seconds">%d</xliff:g> dhiog</item>
+        <item quantity="few"><xliff:g id="seconds">%d</xliff:g> diogan</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> diog</item>
+    </plurals>
+    <plurals name="app_ops_count">
+        <item quantity="one">%d turas</item>
+        <item quantity="two">%d thuras</item>
+        <item quantity="few">%d tursan</item>
+        <item quantity="other">%d turas</item>
+    </plurals>
+</resources>

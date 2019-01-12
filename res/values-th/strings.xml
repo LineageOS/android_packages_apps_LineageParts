@@ -17,65 +17,69 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Generic stuff used everywhere -->
-  <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-  <!-- Privacy Settings Header item -->
-  <!-- Privacy Guard -->
-  <!-- Notification light dialogs -->
-  <!-- Values for the notification light pulse spinners -->
-  <!-- Common light settings strings -->
-  <!-- Battery light settings -->
-  <!-- Lights settings screen, notification light settings -->
-  <!-- Lights settings, LED notification -->
-  <!-- LiveDisplay -->
-  <!-- LiveDisplay : Picture Adjustment -->
-  <!-- Button settings -->
-  <!-- Key backlight -->
-  <!-- Buttons - Enable navbar -->
-  <!-- Navigation Bar -->
-  <!-- Power menu -->
-  <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
-  <!-- Profiles -->
-  <!-- Profile triggers -->
-  <!-- Profiles settings  -->
-  <!-- Profile mode options. -->
-  <!-- Add Profile -->
-  <!-- Rename Dialog  -->
-  <!-- Reset Profiles -->
-  <!-- Delete confimation messages -->
-  <!-- Profile network mode -->
-  <!-- Profile Config screen PreferenceGroup titles -->
-  <!-- Menu item for managing profiles -->
-  <!-- Profile settings screen, section header for settings related to notification profiles -->
-  <!-- Profile Settings sound modes labels -->
-  <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-  <!-- Title for application group setting screen -->
-  <!-- Add application dialog box title -->
-  <!-- Profiles - system settings -->
-  <!-- Connection override toggles (not all are used at this time ) -->
-  <!-- Sound settings screen -->
-  <!-- Status bar -->
-  <!-- Status bar - icons -->
-  <!-- Status bar - Clock -->
-  <!-- Status bar - Battery -->
-  <!-- Status bar - Battery percentage -->
-  <!-- Status bar - Brightness -->
-  <!-- Status bar - Network Traffic -->
-  <!-- Protected apps -->
-  <!-- Contributors cloud activity -->
-  <!-- Anonymous Statistics #Lineage -->
-  <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <!-- Anonymous Statistics - Preview -->
-  <!-- Display : Rotation  -->
-  <!-- Weather -->
-  <!-- Power: Performance profiles -->
-  <!-- Applications: Expanded desktop -->
-  <!-- Applications: Long screen -->
-  <!-- Sounds: Charging sounds -->
-  <!-- Gestures: Touchscreen gestures -->
-  <!-- Gesture: Stylus gestures -->
-  <!-- Egg: Title for the easter egg activity -->
-  <!-- Berry Lite -->
-  <!-- Trust interface -->
-  <!-- Sms limit -->
+    <!-- Generic stuff used everywhere -->
+    <string name="loading">กำลังโหลด\u2026</string>
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <!-- Privacy Settings Header item -->
+    <!-- Privacy Guard -->
+    <!-- Notification light dialogs -->
+    <!-- Values for the notification light pulse spinners -->
+    <!-- Common light settings strings -->
+    <!-- Battery light settings -->
+    <!-- Lights settings screen, notification light settings -->
+    <!-- Lights settings, LED notification -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- Button settings -->
+    <!-- Key backlight -->
+    <!-- Buttons - Enable navbar -->
+    <!-- Navigation Bar -->
+    <!-- Power menu -->
+    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+    <!-- Profiles -->
+    <!-- Profile triggers -->
+    <!-- Profiles settings  -->
+    <!-- Profile mode options. -->
+    <!-- Add Profile -->
+    <!-- Rename Dialog  -->
+    <!-- Reset Profiles -->
+    <!-- Delete confimation messages -->
+    <!-- Profile network mode -->
+    <!-- Profile Config screen PreferenceGroup titles -->
+    <!-- Menu item for managing profiles -->
+    <!-- Profile settings screen, section header for settings related to notification profiles -->
+    <!-- Profile Settings sound modes labels -->
+    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
+    <!-- Title for application group setting screen -->
+    <!-- Add application dialog box title -->
+    <!-- Profiles - system settings -->
+    <!-- Connection override toggles (not all are used at this time ) -->
+    <!-- Sound settings screen -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Clock -->
+    <!-- Status bar - Battery -->
+    <!-- Status bar - Battery percentage -->
+    <!-- Status bar - Brightness -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Protected apps -->
+    <!-- Contributors cloud activity -->
+    <!-- Anonymous Statistics #Lineage -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <!-- Anonymous Statistics - Preview -->
+    <!-- Display : Rotation  -->
+    <!-- Weather -->
+    <!-- Power: Performance profiles -->
+    <!-- Applications: Expanded desktop -->
+    <!-- Applications: Long screen -->
+    <!-- Sounds: Charging sounds -->
+    <!-- Gestures: Touchscreen gestures -->
+    <!-- Gesture: Stylus gestures -->
+    <!-- Egg: Title for the easter egg activity -->
+    <!-- Berry Lite -->
+    <!-- Trust interface -->
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <!-- Sms limit -->
 </resources>
