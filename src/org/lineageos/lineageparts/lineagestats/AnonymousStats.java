@@ -49,7 +49,7 @@ public class AnonymousStats extends SettingsPreferenceFragment {
                 .commit();
     }
 
-    private static int getLastJobId(Context context) {
+    public static int getLastJobId(Context context) {
         return getPreferences(context).getInt(KEY_LAST_JOB_ID, 0);
     }
 
