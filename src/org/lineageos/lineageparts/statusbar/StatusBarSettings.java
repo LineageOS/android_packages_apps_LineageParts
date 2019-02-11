@@ -25,8 +25,10 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Toast;
 
 import lineageos.preference.LineageSystemSettingListPreference;
+import lineageos.providers.LineageSettings;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -59,25 +61,29 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
 
     private PreferenceCategory mStatusBarClockCategory;
+    private PreferenceScreen mNetworkTrafficPref;
+
+    private boolean mHasNotch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
 
-        final boolean hasNotch = getResources().getBoolean(
+        mNetworkTrafficPref = (PreferenceScreen) findPreference(NETWORK_TRAFFIC_SETTINGS);
+
+        mHasNotch = getResources().getBoolean(
                 org.lineageos.platform.internal.R.bool.config_haveNotch);
 
-        if (hasNotch) {
-            PreferenceScreen networkTrafficPreferenceScreen =
-                    (PreferenceScreen) findPreference(NETWORK_TRAFFIC_SETTINGS);
-            getPreferenceScreen().removePreference(networkTrafficPreferenceScreen);
+        if (mHasNotch) {
+            getPreferenceScreen().removePreference(mNetworkTrafficPref);
         }
 
         mStatusBarAmPm =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
         mStatusBarClock =
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
+        mStatusBarClock.setOnPreferenceChangeListener(this);
 
         mStatusBarClockCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(CATEGORY_CLOCK);
@@ -101,9 +107,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     public void onResume() {
         super.onResume();
 
-        final boolean hasNotch = getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_haveNotch);
-
         final String curIconBlacklist = Settings.Secure.getString(getContext().getContentResolver(),
                 ICON_BLACKLIST);
 
@@ -118,9 +121,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
+        final boolean hasNetworkTraffic = getNetworkTrafficStatus() != 0;
+
         // Adjust status bar preferences for RTL
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-            if (hasNotch) {
+            if (mHasNotch || hasNetworkTraffic) {
                 mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch_rtl);
             } else {
@@ -129,20 +134,30 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
-        } else if (hasNotch) {
+        } else if (mHasNotch || hasNetworkTraffic) {
             mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
             mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
         }
+
+        // Disable network traffic preferences if clock is in the center
+        updateNetworkTrafficStatus();
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         int value = Integer.parseInt((String) newValue);
-        if (preference == mQuickPulldown) {
-            updateQuickPulldownSummary(value);
+        String key = preference.getKey();
+        switch (key) {
+            case STATUS_BAR_QUICK_QS_PULLDOWN:
+                updateQuickPulldownSummary(value);
+                break;
+            case STATUS_BAR_CLOCK_STYLE:
+                updateNetworkTrafficStatus();
+                break;
 /*
-        } else if (preference == mStatusBarBattery) {
-            enableStatusBarBatteryDependents(value);
+            case STATUS_BAR_BATTERY_STYLE:
+                enableStatusBarBatteryDependents(value);
+                break;
 */
         }
         return true;
@@ -172,5 +187,31 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 break;
         }
         mQuickPulldown.setSummary(summary);
+    }
+
+    private void updateNetworkTrafficStatus() {
+        if (mHasNotch) {
+            // Unconditional no network traffic for you
+            return;
+        }
+
+        // This may not work all the times thanks to broken support libs in aosp
+        boolean isClockInTheCenter = getClockPosition() == 1;
+        mNetworkTrafficPref.setEnabled(!isClockInTheCenter);
+        mNetworkTrafficPref.setSummary(getResources().getString(
+                isClockInTheCenter ?
+                R.string.network_traffic_disabled_clock :
+                R.string.network_traffic_settings_summary
+        ));
+    }
+
+    private int getNetworkTrafficStatus() {
+        return LineageSettings.Secure.getInt(getActivity().getContentResolver(),
+                LineageSettings.Secure.NETWORK_TRAFFIC_MODE, 0);
+    }
+
+    private int getClockPosition() {
+        return LineageSettings.System.getInt(getActivity().getContentResolver(),
+                STATUS_BAR_CLOCK_STYLE, 2);
     }
 }
