@@ -25,8 +25,10 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Toast;
 
 import lineageos.preference.LineageSystemSettingListPreference;
+import lineageos.providers.LineageSettings;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -60,12 +62,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private PreferenceCategory mStatusBarClockCategory;
 
+    private boolean mHasNotch;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
 
-        final boolean hasNotch = getResources().getBoolean(
+        mHasNotch = getResources().getBoolean(
                 org.lineageos.platform.internal.R.bool.config_haveNotch);
 
         if (hasNotch) {
@@ -101,9 +105,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     public void onResume() {
         super.onResume();
 
-        final boolean hasNotch = getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_haveNotch);
-
         final String curIconBlacklist = Settings.Secure.getString(getContext().getContentResolver(),
                 ICON_BLACKLIST);
 
@@ -120,7 +121,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         // Adjust status bar preferences for RTL
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-            if (hasNotch) {
+            if (mHasNotch) {
                 mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch_rtl);
             } else {
@@ -129,7 +130,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
-        } else if (hasNotch) {
+        } else if (mHasNotch) {
             mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
             mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
         }
@@ -140,6 +141,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         int value = Integer.parseInt((String) newValue);
         if (preference == mQuickPulldown) {
             updateQuickPulldownSummary(value);
+        } else if (preference == mStatusBarClock) {
+            updateNetworkTrafficToAvoidConflicts(value);
 /*
         } else if (preference == mStatusBarBattery) {
             enableStatusBarBatteryDependents(value);
@@ -172,5 +175,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 break;
         }
         mQuickPulldown.setSummary(summary);
+    }
+
+    private void updateNetworkTrafficToAvoidConflicts(int value) {
+        if (mHasNotch || value != 1) {
+            return;
+        }
+
+        // Disable network traffic to avoid overlap
+        LineageSettings.Secure.putInt(getActivity().getContentResolver(),
+                LineageSettings.Secure.NETWORK_TRAFFIC_MODE, 0);
+
+        // Notify user
+        Toast.makeText(getActivity(),
+                R.string.network_traffic_disabled_clock_change,
+                Toast.LENGTH_LONG).show();
     }
 }

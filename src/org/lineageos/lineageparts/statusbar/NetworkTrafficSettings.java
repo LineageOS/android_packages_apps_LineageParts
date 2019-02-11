@@ -85,8 +85,21 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
     private void updateEnabledStates(int mode) {
         final boolean enabled = mode != 0;
-        mNetTrafficAutohide.setEnabled(enabled);
-        mNetTrafficUnits.setEnabled(enabled);
-        mNetTrafficShowUnits.setEnabled(enabled);
+        final boolean isClockInTheCenter = getClockPosition() == 1;
+        final boolean status = enabled & isClockInTheCenter;
+        mNetTrafficAutohide.setEnabled(status);
+        mNetTrafficUnits.setEnabled(status);
+        mNetTrafficShowUnits.setEnabled(status);
+
+        if (isClockInTheCenter) {
+            mNetTrafficMode.setValue(getResources(
+                    R.string.network_traffic_mode_disable_clock));
+        }
+    }
+
+    private int getClockPosition() {
+        return LineageSettings.System.getInt(
+                getActivity().getContentResolver(),
+                LineageSettings.System.STATUS_BAR_CLOCK_STYLE, 2);
     }
 }
