@@ -25,7 +25,7 @@
         <item quantity="other"><xliff:g id="seconds">%d</xliff:g> eiliad</item>
     </plurals>
     <plurals name="app_ops_count">
-        <item quantity="zero">%d o droeon</item>
+        <item quantity="zero">%d troeon</item>
         <item quantity="one">unwaith</item>
         <item quantity="two">dwywaith</item>
         <item quantity="few">%d gwaith</item>
