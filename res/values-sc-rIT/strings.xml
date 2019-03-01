@@ -17,7 +17,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Carrighende\u2026</string>
     <string name="dlg_ok">AB</string>
     <string name="cancel">Annulla</string>
@@ -32,17 +31,12 @@
     <string name="search">Chirca</string>
     <string name="disabled">Disativadu</string>
     <string name="enabled">Abilitadu</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Riservadesa</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_help_title">Agiudu</string>
     <string name="privacy_guard_reset_title">Reseta</string>
-    <!-- Notification light dialogs -->
     <string name="default_time">Normale</string>
     <string name="custom_time">Personalizadu</string>
     <string name="dialog_delete_title">Iscantzella</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_short">Curtzu</string>
     <string name="pulse_length_normal">Normale</string>
     <string name="pulse_length_long">Longu</string>
@@ -52,16 +46,11 @@
     <string name="pulse_speed_normal">Normale</string>
     <string name="pulse_speed_slow">Lentu</string>
     <string name="pulse_speed_very_slow">Lentu meda</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_normal">Normale</string>
-    <!-- Battery light settings -->
     <string name="battery_light_medium_color_title">Carrighende</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_general_title">Generales</string>
     <string name="notification_light_phonelist_title">Telèfonu</string>
     <string name="notification_light_default_value">Predefinidu</string>
-    <!-- Lights settings, LED notification -->
-    <!-- LiveDisplay -->
     <string name="live_display_color_temperature_summary">Die: <xliff:g id="day_temperature">%1$d</xliff:g>K Note: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_day">Die</string>
     <string name="live_display_night">Note</string>
@@ -73,114 +62,61 @@
     <string name="color_red_title">Ruju</string>
     <string name="color_green_title">Birde</string>
     <string name="color_blue_title">Biaitu</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="adj_saturation_title">Saturatzione</string>
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Cuntrastu</string>
-    <!-- Button settings -->
     <string name="volbtn_cursor_control_off">Disabilitadu</string>
     <string name="power_end_call_title">Acabba sa mutida</string>
-    <!-- Key backlight -->
     <string name="backlight_summary_disabled">Disabilitadu</string>
     <string name="backlight_summary_enabled">Abilitadu</string>
-    <!-- Buttons - Enable navbar -->
-    <!-- Navigation Bar -->
-    <!-- Power menu -->
     <string name="power_menu_screenshot_title">Ischermada</string>
     <string name="power_menu_screenshot_summary">Incarca a longu pro un\'ischermada partziale</string>
     <string name="power_menu_lockdown_title">Bloca</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="torch_long_press_power_timeout_never">Mai</string>
     <string name="torch_long_press_power_timeout_1min">1 minutu</string>
     <string name="torch_long_press_power_timeout_2min">2 minutos</string>
     <string name="torch_long_press_power_timeout_5min">5 minutos</string>
     <string name="torch_long_press_power_timeout_10min">10 minutos</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Iscantzella</string>
     <string name="profile_action_disable">Istuda</string>
     <string name="profile_action_enable">Allughe</string>
-    <!-- Profile triggers -->
-    <!-- Profiles settings  -->
     <string name="profiles_add">Agiunghe</string>
     <string name="profile_menu_delete">Iscantzella</string>
     <string name="profile_settings_title">Profilu</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">Allutu</string>
     <string name="profile_entries_off">Istudadu</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Nùmene</string>
-    <!-- Rename Dialog  -->
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Reseta</string>
-    <!-- Delete confimation messages -->
-    <!-- Profile network mode -->
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="connection_state_enabled">Abìlita</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profilos</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
-    <!-- Profile Settings sound modes labels -->
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-    <!-- Title for application group setting screen -->
     <string name="profile_applist_title">Aplicatziones</string>
     <string name="profile_appgroup_name_title">Nùmene</string>
-    <!-- Add application dialog box title -->
-    <!-- Profiles - system settings -->
-    <!-- Connection override toggles (not all are used at this time ) -->
-    <!-- Sound settings screen -->
     <string name="ring_mode_vibrate">Vibratzione</string>
     <string name="incoming_call_volume_title">Soneria</string>
     <string name="notification_volume_title">Notìfica</string>
     <string name="media_volume_title">Mèdia</string>
     <string name="alarm_volume_title">Isvèllia</string>
-    <!-- Status bar -->
     <string name="status_bar_quick_qs_pulldown_off">Istudadu</string>
-    <!-- Status bar - icons -->
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Relògiu</string>
     <string name="status_bar_clock_position_title">Positzione de su relògiu</string>
     <string name="status_bar_am_pm_normal">Normale</string>
     <string name="status_bar_am_pm_small">Minore</string>
     <string name="status_bar_am_pm_hidden">Cuada</string>
-    <!-- Status bar - Battery -->
-    <!-- Status bar - Battery percentage -->
-    <!-- Status bar - Brightness -->
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_mode_disable">Disabilitadu</string>
-    <!-- Protected apps -->
-    <!-- Contributors cloud activity -->
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_warning_title">Informatziones</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_version_title">Versione</string>
     <string name="preview_country_title">Istadu</string>
-    <!-- Display : Rotation  -->
     <string name="display_rotation_unit">grados</string>
     <string name="display_rotation_0_title">0 grados</string>
     <string name="display_rotation_90_title">90 grados</string>
     <string name="display_rotation_180_title">180 grados</string>
     <string name="display_rotation_270_title">270 grados</string>
-    <!-- Weather -->
     <string name="weather_settings_general_settings_title">Generales</string>
-    <!-- Power: Performance profiles -->
     <string name="auto_power_save_never">Mai</string>
-    <!-- Applications: Expanded desktop -->
-    <!-- Applications: Long screen -->
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_enabled_title">Abìlita</string>
     <string name="power_notifications_vibrate_title">Vibratzione</string>
-    <!-- Gestures: Touchscreen gestures -->
-    <!-- Gesture: Stylus gestures -->
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_global_entry_light">Craru</string>
     <string name="style_global_entry_dark">Iscuru</string>
     <string name="style_global_entry_app">Gestidu dae %1$s</string>
     <string name="style_accent_default_name">Predefinidu</string>
-    <!-- Trust interface -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Sms limit -->
 </resources>
