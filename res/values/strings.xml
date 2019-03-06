@@ -63,6 +63,10 @@
     <string name="privacy_guard_advanced_settings_title">Advanced</string>
     <string name="privacy_guard_notification_title">Show notification</string>
 
+    <!-- Notification channels -->
+    <string name="channel_light_settings_id" translatable="false">light_settings</string>
+    <string name="channel_light_settings_name">Light settings preview</string>
+
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
