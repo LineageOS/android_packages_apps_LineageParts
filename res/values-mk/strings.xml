@@ -17,7 +17,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Вчитување\u2026</string>
     <string name="dlg_ok">ОК</string>
     <string name="cancel">Откажи</string>
@@ -37,10 +36,7 @@
     <string name="search">Пребарај</string>
     <string name="disabled">Оневозможено</string>
     <string name="enabled">Овозможено</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Приватност</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Овозможи заштита на приватноста</string>
     <string name="privacy_guard_dlg_title">Овозможи заштита на приватност?</string>
     <string name="privacy_guard_dlg_text">Кога заштитата на приватноста е овозможена, апликацијата нема да може да пристапи до лични податоци, како што се контакти, пораки или дневници за повици.</string>
@@ -55,7 +51,6 @@
     <string name="privacy_guard_manager_show_system_apps">Прикажи вградени апликации</string>
     <string name="privacy_guard_advanced_settings_title">Напредно</string>
     <string name="privacy_guard_notification_title">Прикажи известување</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Уреди ги поставките за светло</string>
     <string name="pulse_speed_title">Должина на пулсирање и брзина</string>
     <string name="default_time">Нормално</string>
@@ -63,7 +58,6 @@
     <string name="dialog_delete_title">Избриши</string>
     <string name="dialog_delete_message">Отстрани ги избраните ставки?</string>
     <string name="brightness">Ниво на осветлување</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Секогаш уклучено</string>
     <string name="pulse_length_very_short">Многу кратко</string>
     <string name="pulse_length_short">Кратко</string>
@@ -75,15 +69,12 @@
     <string name="pulse_speed_normal">Нормално</string>
     <string name="pulse_speed_slow">Бавно</string>
     <string name="pulse_speed_very_slow">Многу бавно</string>
-    <!-- Common light settings strings -->
-    <!-- Battery light settings -->
     <string name="battery_light_title">Светло на батеријата</string>
     <string name="battery_low_pulse_title">Пулсирај ако батеријата е празна</string>
     <string name="battery_light_list_title">Бои</string>
     <string name="battery_light_low_color_title">Празна батерија</string>
     <string name="battery_light_medium_color_title">Полнење</string>
     <string name="battery_light_full_color_title">Целосно наполнета</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Светло за известување</string>
     <string name="notification_light_general_title">Општо</string>
     <string name="notification_light_advanced_title">Напредно</string>
@@ -98,11 +89,9 @@
     <string name="keywords_lights_brightness_level">затемнување на LED светлата за осветлување</string>
     <string name="notification_light_automagic">Изберете бои автоматски</string>
     <string name="notification_light_automagic_summary">Одбирање бои автоматски</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Поставки за светла</string>
     <string name="led_notification_text">LED светло овозможено од поставките</string>
     <string name="notification_light_no_apps_summary">За да додадете контрола на апликацијата, активирајте %1$s и притиснете \u002b на менито</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Оптимизирајте го вашиот екран врз основа на време од денот и амбиентални услови за да се подобри читливоста и да се намали обемот на очите</string>
     <string name="live_display_mode">Режим на екранот</string>
     <string name="live_display_color_temperature_title">Температура на бојата</string>
@@ -144,14 +133,12 @@
     <string name="color_red_title">Црвено</string>
     <string name="color_green_title">Зелено</string>
     <string name="color_blue_title">Сино</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Прилагодување на сликата</string>
     <string name="picture_adjustment_summary">Прилагодете боја, сатурација, интензитет и контраст</string>
     <string name="adj_hue_title">Нијанса</string>
     <string name="adj_saturation_title">Сатурација</string>
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Копчиња</string>
     <string name="hardware_keys_power_key_title">Копче за напојување</string>
     <string name="hardware_keys_home_key_title">Копче за почеток</string>
@@ -195,7 +182,6 @@
     <string name="volume_answer_call_summary">Одговори на дојдовните повици со притискање на копчињата за јачина на звук</string>
     <string name="home_answer_call_title">Одговори на повикот</string>
     <string name="home_answer_call_summary">Одговори на дојдовните повици со притискање на домашното копче</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Позадинско осветлување</string>
     <string name="button_backlight_enabled">Осветлете ги копчињата</string>
     <string name="keyboard_backlight_enabled">Осветлете ја тастатурата</string>
@@ -206,10 +192,8 @@
     <string name="backlight_summary_disabled">Оневозможено</string>
     <string name="backlight_summary_enabled_with_timeout">Овозможено за <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Овозможено</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Овозможи лента за навигација на екранот</string>
     <string name="disable_navkeys_summary">Овозможи лента за навигација на екранот и оневозможете ги хардверските копчиња</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Навигациска лента</string>
     <string name="navigation_bar_title">Копчиња и распоред</string>
     <string name="navigation_bar_left_summary">Ставете ја лентата за навигација на левата страна на екранот во режим на пејзаж</string>
@@ -217,7 +201,6 @@
     <string name="navigation_bar_arrow_keys_summary">Приказ на лево и десно курсорски копчиња додека пишувате. Преклопува преклопник за IME.</string>
     <string name="navigation_bar_home_long_press_title">Акција за долго притискање на домашно копче</string>
     <string name="navigation_bar_home_double_tap_title">Акција за двојно притискање на домашно копче</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Мени за напојување</string>
     <string name="power_menu_screenshot_title">Слика од екранот</string>
     <string name="power_menu_airplane_title">Авионски режим</string>
@@ -225,7 +208,6 @@
     <string name="power_menu_bug_report_title">Пријава на грешка</string>
     <string name="power_menu_bug_report_disabled">Пријавување на грешки е оневозможено во развојните поставки</string>
     <string name="camera_double_tap_power_gesture_title">Притиснете го копчето за напојување двапати за да ја уклучите камерата</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Брзо отворање на камерата без да го отклучите вашиот екран</string>
     <string name="torch_long_press_power_gesture_title">Долг притисок за светилка</string>
     <string name="torch_long_press_power_gesture_desc">Активирајте ја светилката со долго притискање на копчето за напојување додека екранот е исклучен</string>
@@ -235,7 +217,6 @@
     <string name="torch_long_press_power_timeout_2min">2 минути</string>
     <string name="torch_long_press_power_timeout_5min">5 минути</string>
     <string name="torch_long_press_power_timeout_10min">10 минути</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Избриши</string>
     <string name="profile_action_none">Остави непроменето</string>
     <string name="profile_action_system">Стандарден систем</string>
@@ -252,14 +233,12 @@
     <string name="profile_setup_actions_title">Чекор 2: Постави акции</string>
     <string name="profile_setup_actions_title_config">Реконфигурирај ги акциите</string>
     <string name="wireless_networks_settings_title">Безжична врска и мрежи</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Нема спарени уреди со Bluetooth.\nДопрете за да го спарите Bluetooth уредот пред да конфигурирате предизвикувачи.</string>
     <string name="no_wifi_triggers">Нема конфигурирани пристапни точки за Wi\u2011Fi.\nДопрете за поврзување на Wi\u2011Fi пред да ги конфигурирате предизвикувачите.</string>
     <string name="no_triggers_configured">Нема конфигурирани предизвикувачи. Допрете за да додадете повеќе.</string>
     <string name="no_triggers_configured_nfc">Допрете за да поставите нов NFC предизвикувач.</string>
     <string name="profile_setup_setup_triggers_description">Изберете предизвикувачи кои ќе го активираат овој профил</string>
     <string name="profile_setup_actions_description">Сега конфигурирај што се случува кога профилот е активиран</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Системски профили</string>
     <string name="profiles_add">Додај</string>
     <string name="profile_menu_delete">Избриши</string>
@@ -283,44 +262,34 @@
     <string name="profile_app_group_category_title">Известувањето се преклопува</string>
     <string name="profile_app_group_item_instructions">Додај или отстрани групи</string>
     <string name="profile_app_group_item_instructions_summary">Додај или отстрани апликација за превземање на известување за овој профил</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">Уклучен</string>
     <string name="profile_entries_off">Исклучен</string>
     <string name="profile_entries_no_override">Без замена</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Име</string>
     <string name="new_profile_name">&lt;нов профил&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Реименувај</string>
     <string name="rename_dialog_message">Внесете ново име</string>
     <string name="rename_dialog_hint">Внесете име на профил</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Ресетирај</string>
     <string name="profile_reset_message">Избришете ги сите кориснички профили и групи на корисници и вратете ги на стандардно?</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">Отстрани ја оваа апликација?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Јачината на гласноста се преклопува</string>
     <string name="connection_state_enabled">Овозможи</string>
     <string name="volume_override_summary">Постави на %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Замени ја јачината на звукот</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Профили</string>
     <string name="profile_profile_manage">Управувај со профилот</string>
     <string name="profile_appgroups_manage">Групи на апликации</string>
     <string name="profile_appgroup_manage">Управувајте со групата на апликации</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Прилагодувања на профилот</string>
     <string name="profile_trigger_connect">При поврзување</string>
     <string name="profile_trigger_disconnect">При исклучување</string>
     <string name="profile_trigger_notrigger">Нема окидач</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Режим на известување</string>
     <string name="ringer_mode">Режим на ѕвонење</string>
     <string name="lights_mode">Режим на осветлување</string>
@@ -328,9 +297,7 @@
     <string name="choose_soundtone">Изберете тон за известување</string>
     <string name="choose_ringtone">Изберете мелодија</string>
     <string name="ringtone_title">Телефонска мелодија</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Мелодија за известување</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Апликациски групи</string>
     <string name="profile_applist_title">Апликации</string>
     <string name="profile_new_appgroup">Нова група на апликација</string>
@@ -338,9 +305,7 @@
     <string name="profile_appgroup_name_prompt">Внесете име за новата група на апликација</string>
     <string name="profile_appgroup_name_title">Име</string>
     <string name="duplicate_appgroup_name">Дуплирај го името на групата на апликации!</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">Избери апликација</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Системски поставки</string>
     <string name="profile_lockmode_title">Режим на заклучен екран</string>
     <string name="profile_lockmode_policy_disabled_summary">Оваа опција за профилот е оневозможена од администраторската политика на уредот</string>
@@ -350,7 +315,6 @@
     <string name="profile_brightness_title">Осветленост на екранот</string>
     <string name="profile_brightness_override_summary">Постави на %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Замени ја осветленоста</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Пренослив Wi\u2011Fi hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -358,7 +322,6 @@
     <string name="toggleData">Мобилни податоци</string>
     <string name="toggleSync">Авто-синхронизација на податоци</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Режим на ѕвонење</string>
     <string name="ring_mode_normal">Нормален</string>
     <string name="ring_mode_vibrate">Вибрирај</string>
@@ -369,7 +332,6 @@
     <string name="media_volume_title">Медиа</string>
     <string name="alarm_volume_title">Аларм</string>
     <string name="doze_title">Амбиентален екран</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Статусна лента</string>
     <string name="status_bar_quick_qs_pulldown_title">Брз пристап</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s работ на статусната лента се повлекува по брзи поставувања</string>
@@ -380,13 +342,11 @@
     <string name="status_bar_quick_qs_pulldown_right">Десни</string>
     <string name="status_bar_double_tap_to_sleep_title">Двоен допир за спиење</string>
     <string name="status_bar_double_tap_to_sleep_summary">Двоен-допир на статусната лента за да го исклучите екранот</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Икони на статусната лента</string>
     <string name="status_bar_notif_count_title">Прикажи го бројот на известувања</string>
     <string name="status_bar_notif_count_summary">Прикажи го бројот на очекуваните известувања</string>
     <string name="status_bar_system_icons_title">Системски икони</string>
     <string name="status_bar_system_icons_summary">Контролирај кои икони на статусната лента се прикажани</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Часовник</string>
     <string name="status_bar_clock_position_title">Позиција на часовникот</string>
     <string name="status_bar_clock_position_right">Десно</string>
@@ -397,7 +357,6 @@
     <string name="status_bar_am_pm_normal">Нормален</string>
     <string name="status_bar_am_pm_small">Мал</string>
     <string name="status_bar_am_pm_hidden">Скриено</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Индикатор за батерија</string>
     <string name="status_bar_battery_style_title">Стил на индикатор на батеријата</string>
     <string name="status_bar_battery_style_icon_portrait">Иконски портрет</string>
@@ -405,12 +364,10 @@
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скриено</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Процент на батерија</string>
     <string name="status_bar_battery_percentage_default">Скриено</string>
     <string name="status_bar_battery_percentage_text_inside">Внатре во иконата</string>
     <string name="status_bar_battery_percentage_text_next">До иконата</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Осветленост</string>
     <string name="status_bar_brightness_slider_title">Лизгач за осветленост</string>
     <string name="status_bar_brightness_slider_summary">Прилагодете ја осветленоста од брзите поставки</string>
@@ -418,24 +375,19 @@
     <string name="status_bar_brightness_slider_auto_summary">Покажи го менувачот за адаптивна осветленост во близина на лизгачот</string>
     <string name="status_bar_toggle_brightness">Контрола на осветленост</string>
     <string name="status_bar_toggle_brightness_summary">Прилагодете ја осветленоста со лизгање низ статусната лента</string>
-    <!-- Status bar - Network Traffic -->
-    <!-- Protected apps -->
     <string name="protected_apps_manager_title">Заштитени апликации</string>
     <string name="protected_apps_manager_summary">Управувајте со апликации кои се скриени зад безбедно заклучување</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Соработници</string>
     <string name="contributors_cloud_loading_message">Вчитување на податоците за соработниците\u2026</string>
     <string name="contributors_cloud_failed_message">Не може да се вчитаат податоците за соработниците</string>
     <string name="contributor_info_menu">Информации за соработникот</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>Прекар:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Придонес:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;Име:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Прекар:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Придонес:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Информации за придонеси</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Вкупно соработници:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Вкупно придонеси:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Последно ажурирање:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Вкупно соработници:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Вкупно придонеси:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Последно ажурирање:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS статистика</string>
     <string name="anonymous_statistics_summary">Помогнете за подобрувањето на LineageOS со одбирање на анонимно известување за статистика</string>
     <string name="anonymous_statistics_warning_title">За</string>
@@ -444,7 +396,6 @@
     <string name="preview_data_title">Преглед на податоци</string>
     <string name="view_stats_title">Прикажи ги статистиките</string>
     <string name="anonymous_learn_more">Научи повеќе</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Уникатен ID</string>
     <string name="preview_device_title">Уред</string>
     <string name="preview_version_title">Верзија</string>
@@ -452,7 +403,6 @@
     <string name="preview_carrier_title">Оператор</string>
     <string name="stats_collection_title">Собирање статистика</string>
     <string name="stats_collection_summary">Дозволи да се соберат метрите за инсталација и статистика на уредот</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Автоматско ротирање на екранот</string>
     <string name="display_rotation_title">Поставувања за ротација</string>
     <string name="display_rotation_enabled">Автоматската ротација е овозможена</string>
@@ -464,7 +414,6 @@
     <string name="display_rotation_90_title">90 степени</string>
     <string name="display_rotation_180_title">180 степени</string>
     <string name="display_rotation_270_title">270 степени</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Време</string>
     <string name="weather_settings_no_services_prompt">Не се инсталирани услуги за временски прогнози</string>
     <string name="weather_settings_no_services_summary">Инсталирајте временски провајдер за да добивате ажурирања на временските прогнози</string>
@@ -479,7 +428,6 @@
     <string name="weather_settings_keyword">време</string>
     <string name="status_bar_show_weather_title">Покажи го времето</string>
     <string name="status_bar_show_weather_summary">Прикажете ја моменталната температура на статусната лента</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Заштедувач на батерија и перформанси</string>
     <string name="perf_profile_settings_summary">Прилагодете ги функциите за заштеда на енергија и ефикасноста на уредот</string>
     <string name="perf_profile_overview_summary">Тековен профил: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -493,7 +441,6 @@
     <string name="auto_power_save_summary_on">Автоматски вклучи режим за штедење на енергија на %s на батеријата</string>
     <string name="auto_power_save_summary_off">Не овозможувај автоматски режим за штедење</string>
     <string name="auto_power_save_never">Никогаш</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">Проширена работна површина</string>
     <string name="expanded_desktop_settings_summary">Проширете го вашиот достапен работен простор со криење на лентата за статус, лента за навигација или и двете</string>
     <string name="expanded_desktop_options_title">Опции за прилагодување</string>
@@ -503,15 +450,12 @@
     <string name="expanded_desktop_style_hide_navigation">Сокриј ја лентата за навигација</string>
     <string name="expanded_desktop_style_hide_both">Сокриј ги двете</string>
     <string name="expanded_desktop_nothing_to_show_text">Исклучете го прекинувачот за да ја прилагодите проширената работна површина за секоја апликација</string>
-    <!-- Applications: Long screen -->
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Звуци за полнење</string>
     <string name="charging_sounds_enabled_title">Овозможи</string>
     <string name="charging_sounds_enabled_summary">Репродуцирај звук при поврзување или исклучување на извор на енергија</string>
     <string name="power_notifications_vibrate_title">Вибрација</string>
     <string name="charging_sounds_ringtone_title">Звук за известување</string>
     <string name="charging_sounds_ringtone_silent">Тивко</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Гестови на допир</string>
     <string name="touchscreen_gesture_settings_summary">Изведување на различни гестови на допир за брзо дејство</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Допирни повратни информации</string>
@@ -533,7 +477,6 @@
     <string name="touchscreen_gesture_letter_v_title">Нацртајте ја буквата \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">Нацртајте ја буквата \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Нацртајте ја буквата \"Z\"</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">Повлечете нагоре со иглата</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Повлечете надолу со иглата</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Повлечете налево со иглата</string>
@@ -552,11 +495,4 @@
     <string name="touchscreen_gesture_action_next_track">Прескони на следната музичка песна</string>
     <string name="touchscreen_gesture_action_volume_down">Намали го гласот за музика</string>
     <string name="touchscreen_gesture_action_volume_up">Зголеми го гласот за музика</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
-    <!-- Trust interface -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Sms limit -->
 </resources>

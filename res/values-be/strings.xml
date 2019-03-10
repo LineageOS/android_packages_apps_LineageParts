@@ -17,7 +17,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Ладаваньне\u2026</string>
     <string name="dlg_ok">Добра</string>
     <string name="cancel">Скасаваць</string>
@@ -37,10 +36,7 @@
     <string name="search">Пошук</string>
     <string name="disabled">Не задзейнічана</string>
     <string name="enabled">Задзейнічана</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Прыватнасць</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Задзейнічаць рэжым абароны прыватнасці</string>
     <string name="privacy_guard_dlg_title">Задзейнічаць рэжым абароны прыватнасці?</string>
     <string name="privacy_guard_dlg_text">Калі рэжым абароны прыватнасці задзейнічаны, дадаткі не змогуць атрымліваць особістыя дадзеныя, такія як кантакты, паведамленьні ці сьпіс выклікаў.</string>
@@ -54,7 +50,6 @@
     <string name="privacy_guard_manager_show_system_apps">Сістэмныя дадаткі</string>
     <string name="privacy_guard_advanced_settings_title">Падрабязьней</string>
     <string name="privacy_guard_notification_title">Паказваць паведамленьні</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Рэдагаваць налады індыкатару</string>
     <string name="pulse_speed_title">Працягласць і хуткасць мігценьня</string>
     <string name="default_time">Нармальна</string>
@@ -62,7 +57,6 @@
     <string name="dialog_delete_title">Выдаліць</string>
     <string name="dialog_delete_message">Выдаліць абраны элемент?</string>
     <string name="brightness">Яркасць</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Уключана увесь час</string>
     <string name="pulse_length_very_short">Вельмі кароткае</string>
     <string name="pulse_length_short">Кароткі</string>
@@ -74,22 +68,17 @@
     <string name="pulse_speed_normal">Звычайны</string>
     <string name="pulse_speed_slow">Павольна</string>
     <string name="pulse_speed_very_slow">Вельмі павольна</string>
-    <!-- Common light settings strings -->
-    <!-- Battery light settings -->
     <string name="battery_light_title">Паказчык жывелькі</string>
     <string name="battery_low_pulse_title">Мігцець падчас нізкага ўзроўню зараду</string>
     <string name="battery_light_list_title">Колеры</string>
     <string name="battery_light_low_color_title">Жывелька: крытычны ўзровень</string>
     <string name="battery_light_medium_color_title">Жывелька: сілкаваньне</string>
     <string name="battery_light_full_color_title">Жывелька: поўны зарад</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Светлавыя паведамленьні</string>
     <string name="notification_light_general_title">Агульнае</string>
     <string name="notification_light_advanced_title">Падрабязьней</string>
     <string name="notification_light_applist_title">Дадаткі</string>
     <string name="notification_light_phonelist_title">Тэлефон</string>
-    <!-- Lights settings, LED notification -->
-    <!-- LiveDisplay -->
     <string name="live_display_color_profile_cinema_title">Кіно</string>
     <string name="live_display_color_profile_cinema_summary">Ідэальная колераперадача для відэа</string>
     <string name="live_display_color_profile_astronomy_title">Астраномія</string>
@@ -104,14 +93,12 @@
     <string name="color_red_title">Чырвоны</string>
     <string name="color_green_title">Зялёны</string>
     <string name="color_blue_title">Сіні</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Рэгуляваньне выявы</string>
     <string name="picture_adjustment_summary">Адрэгулюй адценьне, насычанасьць, глыбіню й кантраснасьць</string>
     <string name="adj_hue_title">Адценьне</string>
     <string name="adj_saturation_title">Насычанасць</string>
     <string name="adj_intensity_title">Насычанасьць</string>
     <string name="adj_contrast_title">Кантраснасць</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Кнопкі</string>
     <string name="hardware_keys_power_key_title">Кнопка уключэньня</string>
     <string name="hardware_keys_home_key_title">Хатоўка</string>
@@ -148,7 +135,6 @@
     <string name="volume_answer_call_title">Адказваць на выклікі</string>
     <string name="volume_answer_call_summary">Адказваць на выклік клавішамі гучнасьці</string>
     <string name="home_answer_call_title">Адказваць на выклікі</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Падсьвечваньне</string>
     <string name="button_backlight_enabled">Падсьвечваньне кнопак</string>
     <string name="keyboard_backlight_enabled">Падсьвечваньне клявіятуры</string>
@@ -159,10 +145,8 @@
     <string name="backlight_summary_disabled">Не задзейнічана</string>
     <string name="backlight_summary_enabled_with_timeout">Задзейнічана для <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Задзейнічана</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Задзейнічаць кнопкі экрану</string>
     <string name="disable_navkeys_summary">Задзейнічаць навігацыйны радок, але не задзейнічаць кнопкі прылады</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Навігацыйны радок</string>
     <string name="navigation_bar_title">Кнопкі і іх месцазнаходжаньне</string>
     <string name="navigation_bar_left_summary">Адлюстроўваць навігацыйны радок зьлева ў альбомнай арыентацыі</string>
@@ -170,14 +154,11 @@
     <string name="navigation_bar_arrow_keys_summary">Паказваць кнопки левага и правага курсору падчас друкаваньня. Кнопка варыянту друкаваньня будзе схована.</string>
     <string name="navigation_bar_home_long_press_title">Доўгае утрыманьне кнопкі \"Хатоўка\"</string>
     <string name="navigation_bar_home_double_tap_title">Падвойнае крананьне кнопкі \"Хатоўка\"</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Дзеяньні пры ўтрыманьні кнопкі выключэньня</string>
     <string name="power_menu_screenshot_title">Здымак экрану</string>
     <string name="power_menu_airplane_title">Рэжым лёту</string>
     <string name="power_menu_users_title">Зьмяніць карыстальніка</string>
     <string name="power_menu_bug_report_title">Справаздача пра памылкі</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Выдаліць</string>
     <string name="profile_action_none">Пакінуць без змяненьня</string>
     <string name="profile_action_system">Па змаўчаньні</string>
@@ -194,11 +175,9 @@
     <string name="profile_setup_actions_title">Крок 2: наладзь патрабаваныя дзеяньні</string>
     <string name="profile_setup_actions_title_config">Зьмена дзеяньняў</string>
     <string name="wireless_networks_settings_title">Бязротавае &amp; сеціва</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Няма спалучаных прыладаў Bluetooth.\nНацісьні, каб дадаць прыладу і стварыць умову пераключэньня на яго аснове.</string>
     <string name="no_wifi_triggers">Няма захаваных сетак Wi\u2011Fi.\nНацісьні, каб дадаць сетку Wi\u2011Fi і стварыць умову пераключэньня на яе аснове.</string>
     <string name="no_triggers_configured">Умовы пераключэньня не наладжаны. Націсьні, каб дадаць умову.</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Профілі сістэмы</string>
     <string name="profiles_add">Дадаць</string>
     <string name="profile_menu_delete">Выдаліць</string>
@@ -220,22 +199,8 @@
     <string name="profile_menu_fill_from_state">Выкарыстоўваць бягучыя налады</string>
     <string name="profile_remove_current_profile">Немагчыма выдаліць бягучы профіль!</string>
     <string name="profile_app_group_item_instructions">Дадаць ці выдаліць групоўкі</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">Задзейнічана</string>
     <string name="profile_entries_off">Не задзейнічана</string>
-    <!-- Add Profile -->
-    <!-- Rename Dialog  -->
-    <!-- Reset Profiles -->
-    <!-- Delete confimation messages -->
-    <!-- Profile network mode -->
-    <!-- Profile Config screen PreferenceGroup titles -->
-    <!-- Menu item for managing profiles -->
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
-    <!-- Profile Settings sound modes labels -->
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-    <!-- Title for application group setting screen -->
-    <!-- Add application dialog box title -->
-    <!-- Profiles - system settings -->
     <string name="profile_lockmode_title">Блакаваньне экрану</string>
     <string name="profile_lockmode_policy_disabled_summary">Гэты профілю адключаны адміністратарам прылады</string>
     <string name="profile_lockmode_insecure_summary">Не запытваць PIN-код ці пароль</string>
@@ -244,7 +209,6 @@
     <string name="profile_brightness_title">Яскравасць экрану</string>
     <string name="profile_brightness_override_summary">Выкарыстоўваць на ўзроўні %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Зьмяніць узровень яскравасьці</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Кропка доступу Wi\u2011Fi</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -252,7 +216,6 @@
     <string name="toggleData">Мабільныя дадзеныя</string>
     <string name="toggleSync">Аўтаматычнае сінхранізаваньне дадзеных</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Рэжым выкліку</string>
     <string name="ring_mode_normal">Нармальна</string>
     <string name="ring_mode_vibrate">Вібраваньне</string>
@@ -263,36 +226,22 @@
     <string name="media_volume_title">Медыя</string>
     <string name="alarm_volume_title">Будзільнік</string>
     <string name="doze_title">Індыкацыя падзей</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Радок стану</string>
     <string name="status_bar_quick_qs_pulldown_title">Хуткі доступ</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s рог радка стану выцягвае хуткія налады</string>
     <string name="status_bar_quick_qs_pulldown_off">Адключаны</string>
     <string name="status_bar_quick_qs_pulldown_left">Улева</string>
     <string name="status_bar_quick_qs_pulldown_right">Управа</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_notif_count_title">Лічыльнік паведамленьняў</string>
     <string name="status_bar_notif_count_summary">Паказваць колькасць новых паведамленьняў у радку стану</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_am_pm_title">Варыянт \"AM/PM\"</string>
     <string name="status_bar_am_pm_info">24-гадзінны фармат часу</string>
     <string name="status_bar_am_pm_normal">Нармальна</string>
     <string name="status_bar_am_pm_small">Маленькі</string>
     <string name="status_bar_am_pm_hidden">Схаваць</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Варыянт адлюстроўваньня жывелкі</string>
-    <!-- Status bar - Battery percentage -->
-    <!-- Status bar - Brightness -->
     <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
     <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
-    <!-- Status bar - Network Traffic -->
-    <!-- Protected apps -->
-    <!-- Contributors cloud activity -->
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <!-- Anonymous Statistics - Preview -->
-    <!-- Display : Rotation  -->
-    <!-- Weather -->
     <string name="weather_settings_general_settings_title">Агульнае</string>
     <string name="weather_settings_temp_units_title">Адзінкі тэмпературы</string>
     <string name="weather_settings_temp_celsius">Цэльсій</string>
@@ -300,25 +249,12 @@
     <string name="weather_settings_keyword">надвор\'е</string>
     <string name="status_bar_show_weather_title">Паказваць надвор\'е</string>
     <string name="status_bar_show_weather_summary">Паказваць надвор\'е ў радку стану</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_overview_summary">Бягучы профіль: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="power_save_category_title">Энергазахаваньне</string>
     <string name="power_save_summary">Абмяжоўваньне працаздольнасьці і фанавай актыўнасьці дзеля энэргазахаваньня</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_style_title">Рэжым пашыранага экрану</string>
     <string name="expanded_desktop_style_hide_nothing">Нічога не хаваць</string>
     <string name="expanded_desktop_style_hide_status">Хаваць радок стану</string>
     <string name="expanded_desktop_style_hide_navigation">Схаваць навігацыйны радок</string>
     <string name="expanded_desktop_style_hide_both">Схаваць абедзве</string>
-    <!-- Applications: Long screen -->
-    <!-- Sounds: Charging sounds -->
-    <!-- Gestures: Touchscreen gestures -->
-    <!-- Gesture: Stylus gestures -->
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
-    <!-- Trust interface -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Sms limit -->
 </resources>

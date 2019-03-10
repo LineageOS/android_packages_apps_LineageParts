@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">LineageOS Settings</string>
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Loading\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Cancel</string>
@@ -38,10 +37,7 @@
     <string name="search">Search</string>
     <string name="disabled">Disabled</string>
     <string name="enabled">Enabled</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Privacy</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
     <string name="privacy_guard_dlg_title">Enable Privacy Guard?</string>
     <string name="privacy_guard_dlg_text">When Privacy Guard is enabled, the app will not be able to access personal data such as contacts, messages or call logs.</string>
@@ -56,7 +52,6 @@
     <string name="privacy_guard_manager_show_system_apps">Show built-in apps</string>
     <string name="privacy_guard_advanced_settings_title">Advanced</string>
     <string name="privacy_guard_notification_title">Show notification</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
     <string name="default_time">Normal</string>
@@ -64,7 +59,6 @@
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
     <string name="brightness">Brightness level</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Always on</string>
     <string name="pulse_length_very_short">Very short</string>
     <string name="pulse_length_short">Short</string>
@@ -76,18 +70,15 @@
     <string name="pulse_speed_normal">Normal</string>
     <string name="pulse_speed_slow">Slow</string>
     <string name="pulse_speed_very_slow">Very slow</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_title">Brightness levels</string>
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Do Not Disturb</string>
-    <!-- Battery light settings -->
     <string name="battery_light_title">Battery light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_list_title">Colours</string>
     <string name="battery_light_low_color_title">Battery low</string>
     <string name="battery_light_medium_color_title">Charging</string>
     <string name="battery_light_full_color_title">Fully charged</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_advanced_title">Advanced</string>
@@ -102,11 +93,9 @@
     <string name="keywords_lights_brightness_level">dim leds brightness</string>
     <string name="notification_light_automagic">Choose colours automatically</string>
     <string name="notification_light_automagic_summary">Choosing colours automatically</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
     <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Optimise your screen based on time of day and ambient conditions to improve readability and reduce eyestrain</string>
     <string name="live_display_mode">Display mode</string>
     <string name="live_display_color_temperature_title">Colour temperature</string>
@@ -150,14 +139,12 @@
     <string name="color_red_title">Red</string>
     <string name="color_green_title">Green</string>
     <string name="color_blue_title">Blue</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Picture adjustment</string>
     <string name="picture_adjustment_summary">Adjust hue, saturation, intensity, and contrast</string>
     <string name="adj_hue_title">Hue</string>
     <string name="adj_saturation_title">Saturation</string>
     <string name="adj_intensity_title">Intensity</string>
     <string name="adj_contrast_title">Contrast</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Buttons</string>
     <string name="hardware_keys_power_key_title">Power button</string>
     <string name="hardware_keys_home_key_title">Home button</string>
@@ -203,7 +190,6 @@
     <string name="home_answer_call_summary">Answer incoming calls by pressing the home button</string>
     <string name="extras_title">Extras</string>
     <string name="additional_buttons_title">Additional buttons</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Backlight</string>
     <string name="button_backlight_enabled">Illuminate buttons</string>
     <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
@@ -215,10 +201,8 @@
     <string name="backlight_summary_disabled">Disabled</string>
     <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Enabled</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Enable on-screen nav bar</string>
     <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigation bar</string>
     <string name="navigation_bar_title">Buttons and layout</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
@@ -227,7 +211,6 @@
     <string name="navigation_bar_home_long_press_title">Home long press action</string>
     <string name="navigation_bar_home_double_tap_title">Home double tap action</string>
     <string name="navigation_bar_app_switch_long_press_title">Recents long press action</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Power menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
@@ -237,7 +220,6 @@
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
     <string name="power_menu_lockdown_title">Lockdown</string>
     <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
     <string name="torch_long_press_power_gesture_title">Long press for torch</string>
     <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
@@ -247,7 +229,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minutes</string>
     <string name="torch_long_press_power_timeout_5min">5 minutes</string>
     <string name="torch_long_press_power_timeout_10min">10 minutes</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Delete</string>
     <string name="profile_action_none">Leave unchanged</string>
     <string name="profile_action_system">System default</string>
@@ -264,14 +245,12 @@
     <string name="profile_setup_actions_title">Step 2: Setup actions</string>
     <string name="profile_setup_actions_title_config">Reconfigure actions</string>
     <string name="wireless_networks_settings_title">Wireless &amp; networks</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">No Bluetooth devices paired.\nTap to pair Bluetooth device before configuring triggers.</string>
     <string name="no_wifi_triggers">No Wi\u2011Fi access points configured.\nTap to connect Wi\u2011Fi before configuring triggers.</string>
     <string name="no_triggers_configured">No triggers configured. Tap to add more.</string>
     <string name="no_triggers_configured_nfc">Tap to setup a new NFC trigger.</string>
     <string name="profile_setup_setup_triggers_description">Please select triggers which will activate this profile</string>
     <string name="profile_setup_actions_description">Now configure what happens when the profile is activated</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">System profiles</string>
     <string name="profiles_add">Add</string>
     <string name="profile_menu_delete">Delete</string>
@@ -295,44 +274,34 @@
     <string name="profile_app_group_category_title">Notification overrides</string>
     <string name="profile_app_group_item_instructions">Add or remove groups</string>
     <string name="profile_app_group_item_instructions_summary">Add or remove notification override app groups to this profile</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">On</string>
     <string name="profile_entries_off">Off</string>
     <string name="profile_entries_no_override">No override</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Name</string>
     <string name="new_profile_name">&lt;new profile&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Rename</string>
     <string name="rename_dialog_message">Enter a new name</string>
     <string name="rename_dialog_hint">Enter profile name</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Reset</string>
     <string name="profile_reset_message">Delete all user created profiles and app groups and restore them to default?</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">Remove this app?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Volume overrides</string>
     <string name="connection_state_enabled">Enable</string>
     <string name="volume_override_summary">Set to %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Override volume</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profiles</string>
     <string name="profile_profile_manage">Manage profile</string>
     <string name="profile_appgroups_manage">App groups</string>
     <string name="profile_appgroup_manage">Manage app group</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Profile settings</string>
     <string name="profile_trigger_connect">On connect</string>
     <string name="profile_trigger_disconnect">On disconnect</string>
     <string name="profile_trigger_notrigger">No trigger</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Notification mode</string>
     <string name="ringer_mode">Ring mode</string>
     <string name="lights_mode">Lights mode</string>
@@ -340,9 +309,7 @@
     <string name="choose_soundtone">Choose notification tone</string>
     <string name="choose_ringtone">Choose ringtone</string>
     <string name="ringtone_title">Phone ringtone</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Notification tone</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">App groups</string>
     <string name="profile_applist_title">Apps</string>
     <string name="profile_new_appgroup">New app group</string>
@@ -350,9 +317,7 @@
     <string name="profile_appgroup_name_prompt">Enter a name for the new app group</string>
     <string name="profile_appgroup_name_title">Name</string>
     <string name="duplicate_appgroup_name">Duplicate app group name!</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">Choose app</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">System settings</string>
     <string name="profile_lockmode_title">Lock screen mode</string>
     <string name="profile_lockmode_policy_disabled_summary">This profile option is disabled by a device administrator policy</string>
@@ -362,7 +327,6 @@
     <string name="profile_brightness_title">Screen brightness</string>
     <string name="profile_brightness_override_summary">Set to %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Override brightness</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Portable Wi\u2011Fi hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -370,7 +334,6 @@
     <string name="toggleData">Data connection</string>
     <string name="toggleSync">Auto-sync data</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Ring mode</string>
     <string name="ring_mode_normal">Normal</string>
     <string name="ring_mode_vibrate">Vibrate</string>
@@ -381,7 +344,6 @@
     <string name="media_volume_title">Media</string>
     <string name="alarm_volume_title">Alarm</string>
     <string name="doze_title">Ambient display</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
@@ -392,14 +354,14 @@
     <string name="status_bar_quick_qs_pulldown_right">Right</string>
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Status bar icons</string>
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
     <string name="status_bar_system_icons_title">System icons</string>
     <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Clock</string>
+    <string name="status_bar_clock_show_seconds_title">Show seconds</string>
+    <string name="status_bar_clock_show_seconds_summary">Show hours, minutes, and seconds</string>
     <string name="status_bar_clock_position_title">Clock position</string>
     <string name="status_bar_clock_position_right">Right</string>
     <string name="status_bar_clock_position_left">Left</string>
@@ -409,7 +371,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Small</string>
     <string name="status_bar_am_pm_hidden">Hidden</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Battery indicator</string>
     <string name="status_bar_battery_style_title">Battery status style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
@@ -417,12 +378,10 @@
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Battery percentage</string>
     <string name="status_bar_battery_percentage_default">Hidden</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Brightness</string>
     <string name="status_bar_brightness_slider_title">Brightness slider</string>
     <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick Settings</string>
@@ -430,7 +389,6 @@
     <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Network traffic monitor</string>
     <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
     <string name="network_traffic_mode_title">Display mode</string>
@@ -447,23 +405,20 @@
     <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
     <string name="network_traffic_show_units">Show units</string>
     <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
-    <!-- Protected apps -->
+    <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
     <string name="protected_apps_manager_title">Protected apps</string>
     <string name="protected_apps_manager_summary">Manage which apps are hidden behind a secure lock</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Contributors</string>
     <string name="contributors_cloud_loading_message">Loading contributors data\u2026</string>
     <string name="contributors_cloud_failed_message">Cannot load contributors data</string>
     <string name="contributor_info_menu">Contributor info</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Name:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;Name:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Nick:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Contributions info</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Total contributors:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Total commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Last update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Total contributors:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Total commits:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Last update:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS statistics</string>
     <string name="anonymous_statistics_summary">Help make LineageOS better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
@@ -474,7 +429,6 @@
     <string name="preview_data_title">Preview data</string>
     <string name="view_stats_title">View stats</string>
     <string name="anonymous_learn_more">Learn more</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unique ID</string>
     <string name="preview_device_title">Device</string>
     <string name="preview_version_title">Version</string>
@@ -482,7 +436,6 @@
     <string name="preview_carrier_title">Carrier</string>
     <string name="stats_collection_title">Stats collection</string>
     <string name="stats_collection_summary">Allow installation metrics and device statistics to be collected</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Auto-rotate screen</string>
     <string name="display_rotation_title">Rotation settings</string>
     <string name="display_rotation_enabled">Auto-rotation is enabled</string>
@@ -494,7 +447,6 @@
     <string name="display_rotation_90_title">90 degrees</string>
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Weather</string>
     <string name="weather_settings_no_services_prompt">No weather provider services installed</string>
     <string name="weather_settings_no_services_summary">Install a weather provider to receive weather updates</string>
@@ -509,7 +461,6 @@
     <string name="weather_settings_keyword">weather</string>
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Display the current temperature on the status bar</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Battery saver and performance</string>
     <string name="perf_profile_settings_summary">Adjust power saving features and device performance</string>
     <string name="perf_profile_overview_summary">Current profile: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -523,7 +474,6 @@
     <string name="auto_power_save_summary_on">Automatically enable power save mode at %s battery</string>
     <string name="auto_power_save_summary_off">Do not enable power save mode automatically</string>
     <string name="auto_power_save_never">Never</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">Expanded desktop</string>
     <string name="expanded_desktop_settings_summary">Expand your available desktop space by hiding the status bar, navigation bar, or both</string>
     <string name="expanded_desktop_options_title">Customisation options</string>
@@ -533,23 +483,21 @@
     <string name="expanded_desktop_style_hide_navigation">Hide navigation bar</string>
     <string name="expanded_desktop_style_hide_both">Hide both</string>
     <string name="expanded_desktop_nothing_to_show_text">Turn the switch off to customise your expanded desktop on a per-app basis</string>
-    <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Full screen apps</string>
     <string name="long_screen_settings_summary">Force legacy apps to use full screen aspect ratio</string>
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Charging sounds</string>
     <string name="charging_sounds_enabled_title">Enable</string>
     <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
     <string name="power_notifications_vibrate_title">Vibrate</string>
     <string name="charging_sounds_ringtone_title">Notification sound</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
     <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Haptic feedback</string>
     <string name="touchscreen_gestures_haptic_feedback_summary">Vibrate when a touchscreen gesture is detected</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Swipe down with two fingers</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">Swipe up with one finger</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Swipe up from the home button</string>
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Swipe down with one finger</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Swipe left with one finger</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Swipe right with one finger</string>
@@ -565,7 +513,6 @@
     <string name="touchscreen_gesture_letter_v_title">Draw the letter \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">Draw the letter \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Draw the letter \"Z\"</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">Swipe up with the stylus</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Swipe down with the stylus</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Swipe left with the stylus</string>
@@ -573,7 +520,7 @@
     <string name="touchscreen_gesture_long_press_stylus_title">Long press with the stylus</string>
     <string name="touchscreen_gesture_action_dialog_title">Gesture action</string>
     <string name="touchscreen_gesture_action_do_nothing">Do nothing</string>
-    <string name="touchscreen_gesture_action_flashlight">Toggle the flashlight</string>
+    <string name="touchscreen_gesture_action_flashlight">Toggle the torch</string>
     <string name="touchscreen_gesture_action_camera">Open the camera</string>
     <string name="touchscreen_gesture_action_browser">Open the browser</string>
     <string name="touchscreen_gesture_action_dialer">Open the dialler</string>
@@ -584,8 +531,6 @@
     <string name="touchscreen_gesture_action_next_track">Skip to the next music track</string>
     <string name="touchscreen_gesture_action_volume_down">Lower media volume</string>
     <string name="touchscreen_gesture_action_volume_up">Raise media volume</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_title">Style</string>
     <string name="style_summary">Choose system colours</string>
     <string name="style_global_title">Style</string>
@@ -602,33 +547,42 @@
     <string name="style_automagic_dialog_content">Suggested style: <b>%1$s</b> with <b>%2$s</b> accent.\nDo you want to apply it?</string>
     <string name="style_automagic_dialog_positive">Apply</string>
     <string name="style_accent_default_name">Default</string>
+    <string name="style_dark_overlay_title">Dark mode</string>
+    <string name="style_dark_overlay_default">Default</string>
+    <string name="style_dark_overlay_black">Black</string>
     <string name="style_permission_error">Storage access permission is needed to analyse your wallpaper, please grant it to use this feature</string>
-    <!-- Trust interface -->
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
     <string name="trust_feature_selinux_value_disabled">Disabled</string>
+    <string name="trust_feature_selinux_explain">SELinux dictates what processes have access to which files/paths on your device.\nThis prevents apps and services from accessing files that they are not supposed to: this way a potential malicious process is limited, and your security preserved.</string>
     <string name="trust_feature_root">Root access</string>
     <string name="trust_feature_root_value_disabled">Disabled</string>
     <string name="trust_feature_root_value_adb">ADB only</string>
     <string name="trust_feature_root_value_apps">Apps and ADB</string>
+    <string name="trust_feature_root_explain">Root access allows apps and services you choose to bypass security restrictions, allowing them to make modifications to the system, which can cause damage to your device or OS.</string>
     <string name="trust_feature_security_patches">Android security patches</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">up to date</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_value_medium">a few months out of date</string>
     <string name="trust_feature_security_patches_value_old">out of date</string>
+    <string name="trust_feature_security_patches_explain">Security patches are released monthly by Google in cooperation with SoC vendors to address flaws which could be exploited by malicious apps to bypass security restrictions and cause permanent damage to your device. Patches made available by Google are applied every month on all supported devices, but patches to proprietary code can only be applied by your device\'s manufacturer. To keep your device safe make sure your LineageOS build is always up-to-date, and (if applicable) ensure your vendor image is updated to the latest one recommended by LineageOS.</string>
     <string name="trust_feature_encryption">Encryption</string>
     <string name="trust_feature_encryption_value_enabled">Enabled</string>
     <string name="trust_feature_encryption_value_nolock">Needs a secure lock screen</string>
     <string name="trust_feature_encryption_value_disabled">Disabled</string>
+    <string name="trust_feature_encryption_explain">Encrypting your device prevents access to your data when your phone is not booted into Android. This is particularly important if your phone is stolen, as it prevents people from reading your messages, contacts, and other private information without your password.\nTo make the encryption more effective you need to set a secure lock screen password.</string>
     <string name="trust_category_tools">Privacy</string>
     <string name="trust_notification_alerts_title">Security alerts</string>
+    <string name="trust_warnings_alerts_intro">You can select the security issues you want to be warned about. For your safety, it is recommended to enable all alerts.</string>
+    <string name="trust_warnings_selinux">SELinux status</string>
+    <string name="trust_warnings_keys">Build signature</string>
     <string name="trust_onboarding_title">Say hello to Trust</string>
+    <string name="trust_onboarding_description">Trust helps you keep your device secure and protect your privacy.\nThe Trust icon will only show when the contents of the page have been verified.</string>
     <string name="trust_onboarding_learn_more">Learn more</string>
     <string name="trust_onboarding_done">Got it</string>
-    <!-- Sms limit -->
+    <string name="trust_restrict_usb_title">Restrict USB</string>
+    <string name="trust_restrict_usb_summary">Disable new USB gadgets when the device is locked</string>
     <string name="sms_security_check_limit_title">SMS message limit</string>
     <string name="sms_security_check_limit_summary">Apps can send %s messages in 1 minute before requiring confirmation</string>
     <string name="sms_security_check_limit_summary_none">Apps are not allowed to send any messages without confirmation</string>

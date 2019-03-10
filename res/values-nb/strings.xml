@@ -17,7 +17,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Laster inn\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Avbryt</string>
@@ -37,10 +36,7 @@
     <string name="search">Søk</string>
     <string name="disabled">Deaktivert</string>
     <string name="enabled">Aktivert</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Personvern</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Aktiver personvernsvakt</string>
     <string name="privacy_guard_dlg_title">Aktivere Personvernvakt?</string>
     <string name="privacy_guard_dlg_text">Når Personvernvakt er aktivert, vil ikke programmet kunne få tilgang til personlig informasjon som kontakter, meldinger eller ringehistorikk.</string>
@@ -55,7 +51,6 @@
     <string name="privacy_guard_manager_show_system_apps">Vis systemapper</string>
     <string name="privacy_guard_advanced_settings_title">Avansert</string>
     <string name="privacy_guard_notification_title">Vis varsel</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Rediger lysinnstillinger</string>
     <string name="pulse_speed_title">Pulseringshastighet og lengde</string>
     <string name="default_time">Normal</string>
@@ -63,7 +58,6 @@
     <string name="dialog_delete_title">Slett</string>
     <string name="dialog_delete_message">Fjerne merkede elementer?</string>
     <string name="brightness">Lysstyrkenivå</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Alltid på</string>
     <string name="pulse_length_very_short">Veldig kort</string>
     <string name="pulse_length_short">Kort</string>
@@ -75,15 +69,12 @@
     <string name="pulse_speed_normal">Normal</string>
     <string name="pulse_speed_slow">Langsom</string>
     <string name="pulse_speed_very_slow">Veldig langsom</string>
-    <!-- Common light settings strings -->
-    <!-- Battery light settings -->
     <string name="battery_light_title">Batterilys</string>
     <string name="battery_low_pulse_title">Pulsér ved lavt batterinivå</string>
     <string name="battery_light_list_title">Farger</string>
     <string name="battery_light_low_color_title">Batteri lavt</string>
     <string name="battery_light_medium_color_title">Lader</string>
     <string name="battery_light_full_color_title">Fulladet</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Varslingslys</string>
     <string name="notification_light_general_title">Generelt</string>
     <string name="notification_light_advanced_title">Avansert</string>
@@ -98,11 +89,9 @@
     <string name="keywords_lights_brightness_level">dim lysdioder lysstyrke</string>
     <string name="notification_light_automagic">Velg farger automatisk</string>
     <string name="notification_light_automagic_summary">Velger farger automatisk</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Lysinnstillinger</string>
     <string name="led_notification_text">LED-lys aktivert av innstillingene</string>
     <string name="notification_light_no_apps_summary">For å legge til per-app kontroll, må du aktivere \'%1$s\' og trykke \'\u002b\' på meny-linjen</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalisere skjermen basert på tidspunkt av dagen og omgivelsesforhold for å forbedre lesbarhet og redusere belastningen på øynene</string>
     <string name="live_display_mode">Visningsmodus</string>
     <string name="live_display_color_temperature_title">Fargetemperatur</string>
@@ -144,14 +133,12 @@
     <string name="color_red_title">Rød</string>
     <string name="color_green_title">Grønn</string>
     <string name="color_blue_title">Blå</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Bildejustering</string>
     <string name="picture_adjustment_summary">Juster fargetone, metning, intensitet og kontrast</string>
     <string name="adj_hue_title">Fargetone</string>
     <string name="adj_saturation_title">Metning</string>
     <string name="adj_intensity_title">Intensitet</string>
     <string name="adj_contrast_title">Kontrast</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Knapper</string>
     <string name="hardware_keys_power_key_title">Strøm-knappen</string>
     <string name="hardware_keys_home_key_title">Hjem-knappen</string>
@@ -195,7 +182,6 @@
     <string name="volume_answer_call_summary">Besvar innkommende anrop ved å trykke på volumknappene</string>
     <string name="home_answer_call_title">Besvar anrop</string>
     <string name="home_answer_call_summary">Besvar innkommende anrop ved å trykke på hjem-knappen</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Bakgrunnsbelysning</string>
     <string name="button_backlight_enabled">Belyste knapper</string>
     <string name="keyboard_backlight_enabled">Belyst tastatur</string>
@@ -206,10 +192,8 @@
     <string name="backlight_summary_disabled">Deaktivert</string>
     <string name="backlight_summary_enabled_with_timeout">Aktivert for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Aktivert</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktiver navigasjonsfelt på skjermen</string>
     <string name="disable_navkeys_summary">Aktiverer navigasjonsfelt på skjermen og deaktiverer de fysiske knappene</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigasjonsfelt</string>
     <string name="navigation_bar_title">Knapper og oppsett</string>
     <string name="navigation_bar_left_summary">Plasser navigasjonsfeltet til venstre på skjermen i liggende modus</string>
@@ -217,7 +201,6 @@
     <string name="navigation_bar_arrow_keys_summary">Vise venstre og høyre markørknapper mens du skriver. Overstyrer IME skifter.</string>
     <string name="navigation_bar_home_long_press_title">Hjem langt trykk handling</string>
     <string name="navigation_bar_home_double_tap_title">Hjem dobbelttrykk handling</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Av/På meny</string>
     <string name="power_menu_screenshot_title">Skjermbilde</string>
     <string name="power_menu_airplane_title">Flymodus</string>
@@ -225,7 +208,6 @@
     <string name="power_menu_bug_report_title">Feilrapport</string>
     <string name="power_menu_bug_report_disabled">Feilrapportering er deaktivert i innstillingene for utvikling</string>
     <string name="camera_double_tap_power_gesture_title">Dobbeltrykk strøm-knappen for å åpne kamera</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Åpne kameraet raskt uten å låse opp skjermen</string>
     <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
     <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
@@ -235,7 +217,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minutter</string>
     <string name="torch_long_press_power_timeout_5min">5 minutter</string>
     <string name="torch_long_press_power_timeout_10min">10 minutter</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Slett</string>
     <string name="profile_action_none">La stå uendret</string>
     <string name="profile_action_system">Systemstandard</string>
@@ -252,14 +233,12 @@
     <string name="profile_setup_actions_title">Trinn 2: Sett opp handlinger</string>
     <string name="profile_setup_actions_title_config">Rekonfigurere handlinger</string>
     <string name="wireless_networks_settings_title">Trådløst &amp; nettverk</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Ingen Bluetooth-enheter parret. \nTrykk for å parre Bluetooth-enhet før du konfigurerer utløsere.</string>
     <string name="no_wifi_triggers">Ingen Wi\u2011Fi tilgangspunkter konfigurert. \nTrykk for å koble til Wi\u2011Fi før du konfigurerer utløsere.</string>
     <string name="no_triggers_configured">Ingen utløsere konfigurert. Trykk for å legge til flere.</string>
     <string name="no_triggers_configured_nfc">Trykk for å konfigurere en ny NFC utløser.</string>
     <string name="profile_setup_setup_triggers_description">Velg utløsere som vil aktivere denne profilen</string>
     <string name="profile_setup_actions_description">Nå konfigurer hva som skjer når profilen er aktivert</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Systemprofiler</string>
     <string name="profiles_add">Legg til</string>
     <string name="profile_menu_delete">Slett</string>
@@ -283,44 +262,34 @@
     <string name="profile_app_group_category_title">Overstyring av varsler</string>
     <string name="profile_app_group_item_instructions">Legg til eller fjern grupper</string>
     <string name="profile_app_group_item_instructions_summary">Legg til eller fjern apper som overstyrer varsler på denne profilen</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">På</string>
     <string name="profile_entries_off">Av</string>
     <string name="profile_entries_no_override">Ingen overstyring</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Navn</string>
     <string name="new_profile_name">&lt;ny profil&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Gi nytt navn</string>
     <string name="rename_dialog_message">Angi et nytt navn</string>
     <string name="rename_dialog_hint">Angi profilnavn</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Tilbakestill</string>
     <string name="profile_reset_message">Slette alle brukeropprettede profiler og appgrupper og gjenopprette dem til standard?</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">Fjern denne appen?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Overstyring av volum</string>
     <string name="connection_state_enabled">Aktiver</string>
     <string name="volume_override_summary">Satt til %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Overstyr volum</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profiler</string>
     <string name="profile_profile_manage">Behandle profil</string>
     <string name="profile_appgroups_manage">Appgrupper</string>
     <string name="profile_appgroup_manage">Behandle appgrupper</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Profilinnstillinger</string>
     <string name="profile_trigger_connect">Ved tilkobling</string>
     <string name="profile_trigger_disconnect">Ved frakobling</string>
     <string name="profile_trigger_notrigger">Ingen utløser</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Varslingsmodus</string>
     <string name="ringer_mode">Ringemodus</string>
     <string name="lights_mode">Lys-modus</string>
@@ -328,9 +297,7 @@
     <string name="choose_soundtone">Velg varslingstone</string>
     <string name="choose_ringtone">Velg ringetone</string>
     <string name="ringtone_title">Telefonringetone</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Varslingstone</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Appgrupper</string>
     <string name="profile_applist_title">Apper</string>
     <string name="profile_new_appgroup">Ny appgruppe</string>
@@ -338,9 +305,7 @@
     <string name="profile_appgroup_name_prompt">Angi et navn for den nye app gruppen</string>
     <string name="profile_appgroup_name_title">Navn</string>
     <string name="duplicate_appgroup_name">Navnet på appgruppen eksisterer allerede!</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">Velg app</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Systeminnstillinger</string>
     <string name="profile_lockmode_title">Låseskjermmodus</string>
     <string name="profile_lockmode_policy_disabled_summary">Dette profilalternativet er deaktivert av en enhetsadministrator-regel</string>
@@ -350,7 +315,6 @@
     <string name="profile_brightness_title">Lysstyrke</string>
     <string name="profile_brightness_override_summary">Sett til %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Overstyr lysstyrke</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Portabelt Wi\u2011Fi tilgangspunkt</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -358,7 +322,6 @@
     <string name="toggleData">Datatilkobling</string>
     <string name="toggleSync">Auto-synk data</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Ringemodus</string>
     <string name="ring_mode_normal">Normal</string>
     <string name="ring_mode_vibrate">Vibrer</string>
@@ -369,7 +332,6 @@
     <string name="media_volume_title">Media</string>
     <string name="alarm_volume_title">Alarm</string>
     <string name="doze_title">Omgivelsesskjerm</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Statuslinje</string>
     <string name="status_bar_quick_qs_pulldown_title">Rask rullegardinmeny</string>
     <string name="status_bar_quick_qs_pulldown_summary">Ved å dra ned fra %1$s side av statuslinjen, kommer du rett til hurtiginnstillingene</string>
@@ -380,13 +342,11 @@
     <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
     <string name="status_bar_double_tap_to_sleep_title">Dobbelttrykk for å slukke skjermen</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dobbelttrykk på statuslinjen for å slå av skjermen</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Statuslinjeikoner</string>
     <string name="status_bar_notif_count_title">Vis antall varsler</string>
     <string name="status_bar_notif_count_summary">Vis antall ventende varsler</string>
     <string name="status_bar_system_icons_title">Systemikoner</string>
     <string name="status_bar_system_icons_summary">Velg hvilke av statusikonene som skal vises</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Klokke</string>
     <string name="status_bar_clock_position_title">Klokkeposisjon</string>
     <string name="status_bar_clock_position_right">Høyre</string>
@@ -397,7 +357,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Liten</string>
     <string name="status_bar_am_pm_hidden">Skjult</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Batteriindikator</string>
     <string name="status_bar_battery_style_title">Stil på batteriikon</string>
     <string name="status_bar_battery_style_icon_portrait">Stående batteriikon</string>
@@ -405,12 +364,10 @@
     <string name="status_bar_battery_style_circle">Sirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Skjult</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Batteriprosent</string>
     <string name="status_bar_battery_percentage_default">Skjult</string>
     <string name="status_bar_battery_percentage_text_inside">Inne i ikonet</string>
     <string name="status_bar_battery_percentage_text_next">Ved siden av ikonet</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Lysstyrke</string>
     <string name="status_bar_brightness_slider_title">Lysstyrke-dimmer</string>
     <string name="status_bar_brightness_slider_summary">Juster lysstyrken i fra Hurtiginnstillingene</string>
@@ -418,24 +375,19 @@
     <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke ved siden av dimmeren</string>
     <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
     <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
-    <!-- Status bar - Network Traffic -->
-    <!-- Protected apps -->
     <string name="protected_apps_manager_title">Beskyttede apper</string>
     <string name="protected_apps_manager_summary">Administrer hvilke apper som er skjult bak en sikkerhetslås</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Bidragsytere</string>
     <string name="contributors_cloud_loading_message">Laster inn data over bidragsytere\u2026</string>
     <string name="contributors_cloud_failed_message">Kunne ikke laste inn data over bidragsytere</string>
     <string name="contributor_info_menu">Bidragsytersinformasjon</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Navn:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>Kallenavn:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Utfører:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;Navn:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Kallenavn:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Utfører:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Bidragsinfo</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Totalt antall bidragsytere:</b><xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Totalt antall utførelser:</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Siste oppdatering:</b><xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Totalt antall bidragsytere:&lt;/b&gt;&lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Totalt antall utførelser:&lt;/b&gt;&lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Siste oppdatering:&lt;/b&gt;&lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS-statistikk</string>
     <string name="anonymous_statistics_summary">Hjelp oss med å gjøre LineageOS bedre ved å velge å sende inn anonym statistikkrapportering</string>
     <string name="anonymous_statistics_warning_title">Om</string>
@@ -444,7 +396,6 @@
     <string name="preview_data_title">Forhåndsvis data</string>
     <string name="view_stats_title">Vis statistikk</string>
     <string name="anonymous_learn_more">Lær mer</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unik ID</string>
     <string name="preview_device_title">Enhet</string>
     <string name="preview_version_title">Versjon</string>
@@ -452,7 +403,6 @@
     <string name="preview_carrier_title">Operatør</string>
     <string name="stats_collection_title">Statistikkinnsamling</string>
     <string name="stats_collection_summary">Tillat samling av installasjonsberegninger og enhetetsstatistikk</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Auto-rotasjon skjerm</string>
     <string name="display_rotation_title">Rotasjonsinnstillinger</string>
     <string name="display_rotation_enabled">Auto-rotasjon er aktivert</string>
@@ -464,7 +414,6 @@
     <string name="display_rotation_90_title">90 grader</string>
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Vær</string>
     <string name="weather_settings_no_services_prompt">Ingen værleverandør tjeneste installert</string>
     <string name="weather_settings_no_services_summary">Installer en værleverandør for å motta væroppdateringer</string>
@@ -479,7 +428,6 @@
     <string name="weather_settings_keyword">vær</string>
     <string name="status_bar_show_weather_title">Vis været</string>
     <string name="status_bar_show_weather_summary">Vise gjeldende temperatur på statuslinjen</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Batterisparing og ytelse</string>
     <string name="perf_profile_settings_summary">Juster strømsparingsfunksjoner og enhetens ytelse</string>
     <string name="perf_profile_overview_summary">Gjeldende profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -493,7 +441,6 @@
     <string name="auto_power_save_summary_on">Aktiver strømsparing automatisk på %s batteriprosent</string>
     <string name="auto_power_save_summary_off">Ikke slå på strømsparingsmodus automatisk</string>
     <string name="auto_power_save_never">Aldri</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">Utvidet skrivebord</string>
     <string name="expanded_desktop_settings_summary">Utvide tilgjengelig plass på skrivebordet ved å skjule statuslinjen, navigasjonslinjen eller begge</string>
     <string name="expanded_desktop_options_title">Tilpasningsalternativer</string>
@@ -503,15 +450,12 @@
     <string name="expanded_desktop_style_hide_navigation">Skjul navigasjonslinjen</string>
     <string name="expanded_desktop_style_hide_both">Skjul begge</string>
     <string name="expanded_desktop_nothing_to_show_text">Slå av for å tilpasse utvidet skrivebord på per-app basis</string>
-    <!-- Applications: Long screen -->
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Lade-lyder</string>
     <string name="charging_sounds_enabled_title">Aktiver</string>
     <string name="charging_sounds_enabled_summary">Spill av en lyd når du kobler til eller fra en strømkilde</string>
     <string name="power_notifications_vibrate_title">Vibrer</string>
     <string name="charging_sounds_ringtone_title">Varslingslyd</string>
     <string name="charging_sounds_ringtone_silent">Lydløs</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Berøringsskjerm bevegelser</string>
     <string name="touchscreen_gesture_settings_summary">Utfør forskjellige berøringsskjerm bevegelser for raske handlinger</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Haptisk tilbakemelding</string>
@@ -533,7 +477,6 @@
     <string name="touchscreen_gesture_letter_v_title">Tegn bokstaven \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">Tegn bokstaven \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Tegn bokstaven \"Z\"</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_action_dialog_title">Bevegelses-handling</string>
     <string name="touchscreen_gesture_action_do_nothing">Ikke gjør noe</string>
     <string name="touchscreen_gesture_action_flashlight">Slå av/på lommelykten</string>
@@ -545,11 +488,4 @@
     <string name="touchscreen_gesture_action_play_pause_music">Spill av/pause musikkavspilling</string>
     <string name="touchscreen_gesture_action_previous_track">Gå til forrige musikkspor</string>
     <string name="touchscreen_gesture_action_next_track">Hopp til neste musikkspor</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
-    <!-- Trust interface -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Sms limit -->
 </resources>

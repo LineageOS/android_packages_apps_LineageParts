@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">Gosodiadau LineageOS</string>
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Yn llwytho\u2026</string>
     <string name="dlg_ok">Iawn</string>
     <string name="cancel">Canslo</string>
@@ -38,10 +37,7 @@
     <string name="search">Chwilio</string>
     <string name="disabled">Wedi\'i analluogi</string>
     <string name="enabled">Wedi\'i alluogi</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Preifatrwydd</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Galluogi Gwarchodydd Preifatrwydd</string>
     <string name="privacy_guard_dlg_title">Galluogi Gwarchodydd Preifatrwydd?</string>
     <string name="privacy_guard_dlg_text">Tra bod Gwarchodydd Preifatrwydd wedi\'i alluogi, ni chaiff yr ap fynediad at ddata personol megis cysylltiadau, negeseuon a hanes galwadau.</string>
@@ -52,18 +48,17 @@
     <string name="privacy_guard_help_title">Cymorth</string>
     <string name="privacy_guard_reset_title">Ailosod</string>
     <string name="privacy_guard_reset_text">Ailosod caniatâd?</string>
-    <string name="privacy_guard_help_text">Yn y sgrin hon gellir dewis pa apiau i Privacy Guard eu monitro wrth eu taro. Bydd yr apiau a ddewisir ddim yn cael mynediad at dy ddata personol megis cysylltiadau, negeseuon a hanes galwadau. Mae dal dy gyffwrdd ar gofnod ap yn agor ei sgrin manylion.\n\nNi ddangosir apiau\'r system fel rheol ond mae\'n bosib eu datgelu gydag un o\'r opsiynau yn y ddewislen.</string>
+    <string name="privacy_guard_help_text">Yn y sgrin hon gellir dewis pa apiau i Privacy Guard eu monitro wrth eu tapio. Bydd yr apiau a ddewisir ddim yn cael mynediad at dy ddata personol megis cysylltiadau, negeseuon a hanes galwadau. Mae dal dy gyffwrdd ar gofnod ap yn agor ei sgrin manylion.\n\nNi ddangosir apiau\'r system fel rheol ond mae\'n bosib eu datgelu gydag un o\'r opsiynau yn y ddewislen.</string>
     <string name="privacy_guard_manager_show_system_apps">Dangos apiau craidd</string>
     <string name="privacy_guard_advanced_settings_title">Uwch</string>
     <string name="privacy_guard_notification_title">Dangos hysbysiad</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Addasu gosodiadau golau</string>
+    <string name="pulse_speed_title">Hyd a chyflymder curiad</string>
     <string name="default_time">Arferol</string>
     <string name="custom_time">Addasedig</string>
     <string name="dialog_delete_title">Dileu</string>
     <string name="dialog_delete_message">Tynnu\'r eitem dan sylw?</string>
     <string name="brightness">Lefel disgleirdeb</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Ymlaen o hyd</string>
     <string name="pulse_length_very_short">Byr iawn</string>
     <string name="pulse_length_short">Byr</string>
@@ -75,17 +70,15 @@
     <string name="pulse_speed_normal">Arferol</string>
     <string name="pulse_speed_slow">Araf</string>
     <string name="pulse_speed_very_slow">Araf iawn</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_title">Lefelau disgleirdeb</string>
     <string name="light_brightness_normal">Arferol</string>
     <string name="light_brightness_zen">Dim Tarfu</string>
-    <!-- Battery light settings -->
     <string name="battery_light_title">Golau batri</string>
+    <string name="battery_low_pulse_title">Curiad os yw\'r batri\'n isel</string>
     <string name="battery_light_list_title">Lliwiau</string>
     <string name="battery_light_low_color_title">Batri\'n isel</string>
     <string name="battery_light_medium_color_title">Yn gwefru</string>
     <string name="battery_light_full_color_title">Wedi gwefru\'n llawn</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Golau hysbysiadau</string>
     <string name="notification_light_general_title">Cyffredinol</string>
     <string name="notification_light_advanced_title">Uwch</string>
@@ -100,10 +93,9 @@
     <string name="keywords_lights_brightness_level">lleihau disgleirdeb LEDs</string>
     <string name="notification_light_automagic">Dewis lliwiau\'n awtomatig</string>
     <string name="notification_light_automagic_summary">Yn dewis lliwiau\'n awtomatig</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Gosodiadau goleuadau</string>
     <string name="led_notification_text">Golau LED wedi\'i alluogi gan osodiadau</string>
-    <!-- LiveDisplay -->
+    <string name="notification_light_no_apps_summary">I ychwanegu rheolaeth ap, rho \'%1$s\' ar waith a gwasgu \'\u002b\' o\'r bar dewislen</string>
     <string name="live_display_summary">Addasa dy sgrin i\'r gorau yn dibynnu ar yr amser o\'r dydd ac amgylchiadau amgylchynol fel ei bod yn haws darllen a bod llai o straen ar y llygaid.</string>
     <string name="live_display_mode">Modd dangosydd</string>
     <string name="live_display_color_temperature_title">Tymheredd lliwiau</string>
@@ -112,7 +104,7 @@
     <string name="live_display_day">Dydd</string>
     <string name="live_display_night">Nos</string>
     <string name="live_display_outdoor_mode_title">Modd awyr agored awtomatig</string>
-    <string name="live_display_outdoor_mode_summary">Cynyddu\'r disgleirdeb yn awtomatig dan olau heulwen llachar</string>
+    <string name="live_display_outdoor_mode_summary">Cynyddu\'r disgleirdeb a dyfnder lliw yn awtomatig dan olau heulwen llachar</string>
     <string name="live_display_low_power_title">Lleihau defnydd pŵer</string>
     <string name="live_display_low_power_summary">Addasu\'r dangosydd i ddefnyddio\'r maint isaf o bŵer heb ddirywiad</string>
     <string name="live_display_enhance_color_title">Gwella lliwiau</string>
@@ -125,16 +117,21 @@
     <string name="live_display_color_profile_dynamic_title">Deinamig</string>
     <string name="live_display_color_profile_dynamic_summary">Lliwiau cryfach a gwyn llachar</string>
     <string name="live_display_color_profile_cinema_title">Sinema</string>
+    <string name="live_display_color_profile_cinema_summary">Ail-greu lliwiau yn berffaith mewn fideo</string>
     <string name="live_display_color_profile_astronomy_title">Seryddiaeth</string>
     <string name="live_display_color_profile_astronomy_summary">Coch dwfn er mwyn cadw golwg nos</string>
     <string name="live_display_color_profile_photography_title">Ffotograffiaeth</string>
+    <string name="live_display_color_profile_photography_summary">Ail-greu lliwiau yn berffaith mewn lluniau</string>
     <string name="live_display_color_profile_basic_title">Sylfaenol</string>
+    <string name="live_display_color_profile_basic_summary">Defnyddio\'r dangosydd heb ei raddnodi</string>
     <string name="live_display_color_profile_adaptive_title">Addasol</string>
     <string name="live_display_color_profile_adaptive_summary">Lliwiau\'n addasu i amgylchiadau amylchynol</string>
     <string name="live_display_color_profile_reading_title">Darllen</string>
     <string name="live_display_color_profile_reading_summary">Lliwiau cynhesach fel bod llai o straen ar y llygaid</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Lliwiau yn gywir i\'r gofod lliw sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Lliwiau yn gywir i\'r gofod lliw DCI-P3</string>
     <string name="live_display_reading_mode_title">Modd darllen</string>
     <string name="live_display_reading_mode_summary">Modd graddfa lwyd ar gyfer darllen am gyfnodau hir</string>
     <string name="color_calibration_title">Graddnodiad lliw</string>
@@ -142,14 +139,12 @@
     <string name="color_red_title">Coch</string>
     <string name="color_green_title">Gwyrdd</string>
     <string name="color_blue_title">Glas</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Addasiad llun</string>
-    <string name="picture_adjustment_summary">Addasu arlliw, dinoethiad, tanbeidrwydd a chyferbyniad</string>
+    <string name="picture_adjustment_summary">Addasu arlliw, dyfnder lliw, tanbeidrwydd a chyferbyniad</string>
     <string name="adj_hue_title">Arlliw</string>
-    <string name="adj_saturation_title">Dinoethiad</string>
+    <string name="adj_saturation_title">Dyfnder Lliw</string>
     <string name="adj_intensity_title">Tanbeidrwydd</string>
     <string name="adj_contrast_title">Cyferbyniaeth</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Botymau</string>
     <string name="hardware_keys_power_key_title">Botwm pŵer</string>
     <string name="hardware_keys_home_key_title">Botwm cartref</string>
@@ -165,17 +160,22 @@
     <string name="hardware_keys_action_nothing">Dim gweithred</string>
     <string name="hardware_keys_action_menu">Agor/cau dewislen</string>
     <string name="hardware_keys_action_app_switch">Newidydd apiau diweddar</string>
+    <string name="hardware_keys_action_search">Cynorthwyydd chwilio</string>
     <string name="hardware_keys_action_voice_search">Chwilio â llais</string>
     <string name="hardware_keys_action_in_app_search">Chwilio o fewn ap</string>
     <string name="hardware_keys_action_launch_camera">Agor camera</string>
     <string name="hardware_keys_action_sleep">Troi\'r sgrin i ffwrdd</string>
     <string name="hardware_keys_action_last_app">Ap diwethaf</string>
+    <string name="hardware_keys_action_split_screen">Sgrin hollt</string>
     <string name="hardware_keys_action_single_handed_left">Modd un llaw (llaw chwith)</string>
     <string name="hardware_keys_action_single_handed_right">Modd un llaw (llaw dde)</string>
+    <string name="camera_sleep_on_release_title">Cipolwg sgrin</string>
     <string name="camera_sleep_on_release_summary">Bydd hanner gwasgu yn cadw\'r sgrin ymlaen dim ond tra bod y botwm yn cael ei dal i lawr</string>
     <string name="camera_launch_title">Agor camera</string>
     <string name="camera_launch_summary">Bydd dal yn hir a rhyddhau yn lansio\'r camera</string>
     <string name="volbtn_music_controls_title">Rheoli chwarae</string>
+    <string name="volbtn_music_controls_summary">Chwilio traciau sain tra bod y sgrin i ffwrdd wrth wasgu\'r botymau sain</string>
+    <string name="volbtn_cursor_control_title">Rheolaeth pwyntydd bysellfwrdd</string>
     <string name="volbtn_cursor_control_off">Wedi\'i analluogi</string>
     <string name="volbtn_cursor_control_on">Sain fyny/lawr yn symud y pwyntydd i\'r chwith/de</string>
     <string name="volbtn_cursor_control_on_reverse">Sain fyny/lawr yn symud y pwyntydd i\'r dde/chwith</string>
@@ -190,39 +190,47 @@
     <string name="home_answer_call_summary">Ateb galwadau gan wasgu\'r botwm cartref</string>
     <string name="extras_title">Ychwanegion</string>
     <string name="additional_buttons_title">Botymau ychwanegol</string>
-    <!-- Key backlight -->
+    <string name="button_backlight_title">Golau\'r sgrin</string>
     <string name="button_backlight_enabled">Goleuo botymau</string>
     <string name="button_backlight_only_when_pressed_title">Goleuo botymau dim ond wrth eu gwasgu</string>
     <string name="keyboard_backlight_enabled">Goleuo\'r bysellfwrdd</string>
     <string name="button_backlight_seekbar_title">Disgleirdeb botymau</string>
     <string name="keyboard_backlight_seekbar_title">Disgleirdeb bysellfwrdd</string>
+    <string name="backlight_timeout_title">Amser diffodd golau\'r sgrin</string>
     <string name="backlight_timeout_unlimited">Peidio â throi i ffwrdd</string>
     <string name="backlight_summary_disabled">Analluogwyd</string>
     <string name="backlight_summary_enabled_with_timeout">Galluogwyd am <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Galluogwyd</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Galluogi bar llywio ar y sgrin</string>
     <string name="disable_navkeys_summary">Galluogi\'r bar llywio ar y sgrin ac analluogi\'r botymau caledwedd</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Bar llywio</string>
     <string name="navigation_bar_title">Botymau a chynllun</string>
+    <string name="navigation_bar_left_summary">Gosod y bar llywio ar ochr chwith y sgrin yng ngorweddiad tirlun</string>
+    <string name="navigation_bar_arrow_keys_title">Dangos bysellau saethau wrth deipio</string>
     <string name="navigation_bar_arrow_keys_summary">Dangos y botymau pwyntydd de a chwith wrth deipio. Bydd yn diystyru newidydd IME.</string>
-    <!-- Power menu -->
+    <string name="navigation_bar_home_long_press_title">Gweithred gwasgiad hir o\'r botwm cartref</string>
+    <string name="navigation_bar_home_double_tap_title">Gweithred tap dwbl o\'r botwm cartref</string>
+    <string name="navigation_bar_app_switch_long_press_title">Gweithred gwasgiad hir o\'r botwm eitemau diweddar</string>
     <string name="power_menu_title">Dewislen pŵer</string>
     <string name="power_menu_screenshot_title">Sgrinlun</string>
     <string name="power_menu_screenshot_summary">Gwasgiad hir am sgrinlun rhannol</string>
     <string name="power_menu_airplane_title">Modd awyren</string>
     <string name="power_menu_users_title">Newidydd defnyddiwr</string>
     <string name="power_menu_bug_report_title">Adroddiad Gwall</string>
+    <string name="power_menu_bug_report_disabled">Mae adrodd gwallau wedi\'i analluogi yng ngosodiadau datblygu</string>
+    <string name="power_menu_lockdown_title">Cloi lawr</string>
     <string name="camera_double_tap_power_gesture_title">Gwasgu\'r botwm pŵer dwywaith am y camera</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+    <string name="camera_double_tap_power_gesture_desc">Agor y camera yn gyflym heb orfod datgloi dy sgrin</string>
+    <string name="torch_long_press_power_gesture_title">Dal yn hir i lansio\'r fflacholau</string>
+    <string name="torch_long_press_power_gesture_desc">Troi\'r fflacholau ymlaen wrth wasgu\'r botwm pŵer yn hir tra bod y sgrin i ffwrdd</string>
+    <string name="torch_long_press_power_timeout_title">Troi\'r fflacholau i ffwrdd yn awtomatig</string>
     <string name="torch_long_press_power_timeout_never">Byth</string>
     <string name="torch_long_press_power_timeout_1min">1 munud</string>
     <string name="torch_long_press_power_timeout_2min">2 funud</string>
     <string name="torch_long_press_power_timeout_5min">5 munud</string>
     <string name="torch_long_press_power_timeout_10min">10 munud</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Dileu</string>
+    <string name="profile_action_none">Gadael heb ei newid</string>
     <string name="profile_action_system">Rhagosodiad y system</string>
     <string name="profile_action_disable">Troi i ffwrdd</string>
     <string name="profile_action_enable">Troi ymlaen</string>
@@ -233,11 +241,16 @@
     <string name="profile_tabs_nfc">Cyfathrebiad Maes Cyfagos (NFC)</string>
     <string name="profile_triggers_header">Sbardunau fydd yn rhoi\'r proffil hwn ar waith</string>
     <string name="profile_setup_setup_triggers_title">Cam 1: Ychwanegu sbardunau</string>
+    <string name="profile_setup_setup_triggers_title_config">Addasu sbardunau: <xliff:g id="profile_name">%1$s</xliff:g></string>
     <string name="profile_setup_actions_title">Cam 2: Gweithredoedd gosod</string>
+    <string name="profile_setup_actions_title_config">Ail-ffurfweddu gweithredoedd</string>
     <string name="wireless_networks_settings_title">Di-wifr a rhwydweithiau</string>
-    <!-- Profile triggers -->
+    <string name="no_bluetooth_triggers">Does dim dyfeisiau Bluetooth wedi eu paru.\nTapia i baru dyfais Bluetooth cyn ffurfweddu sbardunau.</string>
+    <string name="no_wifi_triggers">Does dim pwyntiau mynediad at Wi\u2011Fi wedi eu ffurfweddu.\nTapia i gysylltu â Wi\u2011Fi cyn ffurfweddu sbardunau.</string>
+    <string name="no_triggers_configured">Dim sbardunau wedi\'u ffurfweddu. Tapia i ychwanegu rhagor.</string>
+    <string name="no_triggers_configured_nfc">Tapia i osod sbardun NFC newydd.</string>
     <string name="profile_setup_setup_triggers_description">Dewisa sbarduna fydd yn rhoi\'r proffil hwn ar waith</string>
-    <!-- Profiles settings  -->
+    <string name="profile_setup_actions_description">Nawr ffurfwedda beth sy\'n digwydd pan mae\'r proffil yn cael ei actifadu</string>
     <string name="profiles_settings_title">Proffiliau system</string>
     <string name="profiles_add">Ychwanegu</string>
     <string name="profile_menu_delete">Dileu</string>
@@ -245,59 +258,58 @@
     <string name="profile_empty_list_profiles_off">I ffurfweddu a defnyddio proffiliau system, tro proffiliau ymlaen.</string>
     <string name="profile_settings_summary_off">Mae proffiliau wedi\'u hanalluogi</string>
     <string name="profile_trigger_configure">Ffurfweddu sbardun</string>
+    <string name="profile_write_nfc_tag">Ysgrifennu i dag NFC</string>
+    <string name="profile_write_touch_tag">Cyffyrdda dag i ysgrifennu</string>
     <string name="profile_write_success">Ysgrifennwyd y tag yn llwyddiannus</string>
     <string name="profile_write_failed">Methwyd ag ysgrifennu tag!</string>
+    <string name="profile_selected">Proffil wedi\'i ddewis: %1$s</string>
+    <string name="profile_nfc_text">Mae ysgrifennu proffil i dag NFC yn caniatáu tapio\'r tag i ddewis y proffil. Bydd ei dapio eildro yn dewis y proffil a ddewiswyd yn flaenorol.</string>
     <string name="profile_unknown_nfc_tag">Proffil anhysbys</string>
+    <string name="profile_add_nfc_text">Mae\'r tag NFC hwn yn cyfeirio at broffil anhysbys. Bydd atodi\'r tag NFC hwn at broffil sy\'n bodoli yn caniatáu dewis y proffil yn y dyfodol.</string>
     <string name="profile_select">Dewisa broffil</string>
     <string name="profile_remove_dialog_message">Tynnu proffil %1$s?</string>
     <string name="profile_populate_profile_from_state">Ail-ffurfweddu\'r proffil gan ddefnyddio gosodiadau\'r ddyfais hon?</string>
     <string name="profile_menu_fill_from_state">Mewnforio gosodiadau\'r ddyfais hon</string>
     <string name="profile_remove_current_profile">Methu â dileu\'r proffil sy\'n cael ei ddefnyddio nawr!</string>
+    <string name="profile_app_group_category_title">Hysbysiadau damsang</string>
     <string name="profile_app_group_item_instructions">Ychwanegu neu dynnu grwpiau</string>
-    <!-- Profile mode options. -->
+    <string name="profile_app_group_item_instructions_summary">Ychwanegu neu dynnu grwpiau apiau damsang hysbysiadau i/o\'r proffil hwn</string>
     <string name="profile_entries_on">Ymlaen</string>
     <string name="profile_entries_off">I ffwrdd</string>
-    <!-- Add Profile -->
+    <string name="profile_entries_no_override">Dim damsang</string>
     <string name="profile_name_title">Enw</string>
     <string name="new_profile_name">&lt;proffil newydd&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Ailenwi</string>
     <string name="rename_dialog_message">Rho enw newydd</string>
     <string name="rename_dialog_hint">Rho enw proffil</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Ailosod</string>
-    <!-- Delete confimation messages -->
+    <string name="profile_reset_message">Dileu pob proffil a grŵp apiau wedi\'u creu gan ddefnyddwyr a\'u hailosod i\'r rhagosodedig?</string>
     <string name="profile_app_delete_confirm">Tynnu\'r ap hwn?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
-    <string name="profile_networkmode_4g">4G</string>
+    <string name="profile_networkmode_4g">4G (LTE)</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
-    <string name="profile_networkmode_2g3g4g">2G/3G/4G</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
+    <string name="profile_networkmode_2g3g4g">2G/3G/4G(LTE)</string>
+    <string name="profile_volumeoverrides_title">Sain yn damsang</string>
     <string name="connection_state_enabled">Galluogi</string>
     <string name="volume_override_summary">Gosod i %1$s/%2$s</string>
-    <!-- Menu item for managing profiles -->
+    <string name="profile_volume_override_checkbox_label">Damsang sain</string>
     <string name="profile_profiles_manage">Proffiliau</string>
     <string name="profile_profile_manage">Rheoli proffil</string>
     <string name="profile_appgroups_manage">Grwpiau apiau</string>
     <string name="profile_appgroup_manage">Rheoli grŵp apiau</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Gosodiadau proffil</string>
     <string name="profile_trigger_connect">Wrth gysylltu</string>
     <string name="profile_trigger_disconnect">Wrth datgysylltu</string>
     <string name="profile_trigger_notrigger">Dim sbardun</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Modd hysbysiadau</string>
     <string name="ringer_mode">Modd canu</string>
     <string name="lights_mode">Modd goleuadau</string>
     <string name="vibrate_mode">Modd dirgrynu</string>
-    <string name="choose_soundtone">Dewisa tôn hysbysiadau</string>
-    <string name="choose_ringtone">Dewisa tôn caniad</string>
+    <string name="choose_soundtone">Dewisa dôn hysbysiadau</string>
+    <string name="choose_ringtone">Dewisa dôn caniad</string>
     <string name="ringtone_title">Tôn caniad y ffôn</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Tôn hysbysiadau</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Grwpiau apiau</string>
     <string name="profile_applist_title">Apiau</string>
     <string name="profile_new_appgroup">Ychwanegu grŵp apiau newydd</string>
@@ -305,17 +317,16 @@
     <string name="profile_appgroup_name_prompt">Rho enw ar gyfer y grŵp apiau newydd</string>
     <string name="profile_appgroup_name_title">Enw</string>
     <string name="duplicate_appgroup_name">Mae\'r enw\'n bodoli eisoes!</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">Dewisa ap</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Gosodiadau system</string>
+    <string name="profile_lockmode_title">Modd sgrin cloi</string>
+    <string name="profile_lockmode_policy_disabled_summary">Mae\'r opsiwn proffil hwn wedi\'i analluogi gan bolisi gweinyddwr dyfais</string>
     <string name="profile_lockmode_insecure_summary">Peidio â gofyn am PIN na chyfrinair</string>
     <string name="profile_lockmode_disabled_summary">Analluogi\'r sgrin cloi</string>
     <string name="profile_airplanemode_title">Modd awyren</string>
     <string name="profile_brightness_title">Disgleirdeb sgrin</string>
     <string name="profile_brightness_override_summary">Gosod i %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Diystyru disgleirdeb</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Llecyn Wi\u2011Fi cludadwy</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -323,7 +334,6 @@
     <string name="toggleData">Cysylltiad data</string>
     <string name="toggleSync">Cysoni data yn awtomatig</string>
     <string name="toggleNfc">Cyfathrebiad Maes Cyfagos (NFC)</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Modd canu</string>
     <string name="ring_mode_normal">Arferol</string>
     <string name="ring_mode_vibrate">Dirgrynu</string>
@@ -334,7 +344,6 @@
     <string name="media_volume_title">Cyfryngau</string>
     <string name="alarm_volume_title">Larwm</string>
     <string name="doze_title">Dangosydd amgylchynol</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Bar statws</string>
     <string name="status_bar_quick_qs_pulldown_title">Tynnu i lawr yn gyflym</string>
     <string name="status_bar_quick_qs_pulldown_summary">Mae pen %1$s y bar statws yn tynnu i lawr Gosodiadau Cyflym</string>
@@ -344,14 +353,12 @@
     <string name="status_bar_quick_qs_pulldown_left">Chwith</string>
     <string name="status_bar_quick_qs_pulldown_right">De</string>
     <string name="status_bar_double_tap_to_sleep_title">Tariad dwbl i gysgu</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Taro dwywaith ar y bar statws i droi\'r sgrin i ffwrdd</string>
-    <!-- Status bar - icons -->
+    <string name="status_bar_double_tap_to_sleep_summary">Tapio dwywaith ar y bar statws i droi\'r sgrin i ffwrdd</string>
     <string name="status_bar_icons_title">Eiconau\'r bar statws</string>
     <string name="status_bar_notif_count_title">Dangos nifer hysbysiadau</string>
     <string name="status_bar_notif_count_summary">Dangos nifer yr hysbysiadau cyfredol</string>
     <string name="status_bar_system_icons_title">Eiconau system</string>
     <string name="status_bar_system_icons_summary">Rheoli pa eiconau bar statws sy\'n cael eu dangos</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Cloc</string>
     <string name="status_bar_clock_show_seconds_title">Dangos eiliadau</string>
     <string name="status_bar_clock_show_seconds_summary">Dangos oriau, munudau ac eiliadau</string>
@@ -364,7 +371,6 @@
     <string name="status_bar_am_pm_normal">Arferol</string>
     <string name="status_bar_am_pm_small">Bach</string>
     <string name="status_bar_am_pm_hidden">Cudd</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Dangosydd batri</string>
     <string name="status_bar_battery_style_title">Arddull statws batri</string>
     <string name="status_bar_battery_style_icon_portrait">Eicon darlun</string>
@@ -372,12 +378,10 @@
     <string name="status_bar_battery_style_circle">Cylch</string>
     <string name="status_bar_battery_style_text">Testun</string>
     <string name="status_bar_battery_style_hidden">Cudd</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Canran batri</string>
     <string name="status_bar_battery_percentage_default">Cudd</string>
     <string name="status_bar_battery_percentage_text_inside">O fewn yr eicon</string>
-    <string name="status_bar_battery_percentage_text_next">Wrth ymyl yr eicon</string>
-    <!-- Status bar - Brightness -->
+    <string name="status_bar_battery_percentage_text_next">Wrth ochr yr eicon</string>
     <string name="status_bar_brightness_category">Disgleirdeb</string>
     <string name="status_bar_brightness_slider_title">Llithrydd disgleirdeb</string>
     <string name="status_bar_brightness_slider_summary">Addasu\'r disgleirdeb o\'r Gosodiadau Cyflym</string>
@@ -385,7 +389,6 @@
     <string name="status_bar_brightness_slider_auto_summary">Dangos botwm toglo disgleirdeb addasedig wrth ymyl y llithrydd</string>
     <string name="status_bar_toggle_brightness">Rheolaeth disgleirdeb</string>
     <string name="status_bar_toggle_brightness_summary">Addasu\'r disgleirdeb wrth lithro ar draws y bar statws</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Monitro traffig rhwydwaith</string>
     <string name="network_traffic_settings_summary">Dangos lefel traffig rhwydwaith cyfredol yn y bar statws</string>
     <string name="network_traffic_mode_title">Modd dangosydd</string>
@@ -402,32 +405,28 @@
     <string name="network_traffic_units_megabytes">Megabeitiau\'r eiliad (MB/e)</string>
     <string name="network_traffic_show_units">Dangos unedau</string>
     <string name="network_traffic_show_units_summary">Dangos unedau mesur traffig yn y bar statws</string>
-    <!-- Protected apps -->
-    <string name="protected_apps_manager_title">Apiau wedi eu diogelu</string>
+    <string name="network_traffic_disabled_clock">Mae traffig rhwydwaith wedi\'i analluogi oherwydd lleoliad y cloc</string>
+    <string name="protected_apps_manager_title">Apiau wedi\'u gwarchod</string>
     <string name="protected_apps_manager_summary">Rheoli pa apiau sydd wedi eu cuddio tu gefn clo diogel</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Cyfranwyr</string>
     <string name="contributors_cloud_loading_message">Yn llwytho data cyfranwyr\u2026</string>
     <string name="contributors_cloud_failed_message">Methu â llwytho data cyfranwyr</string>
     <string name="contributor_info_menu">Manylion cyfrannwr</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Enw:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>Llysenw:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Cyfraniadau:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;Enw:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Llysenw:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Cyfraniadau:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Manylion cyfranwyr</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Nifer cyfranwyr:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Nifer o gyfraniadau (commits):</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Diweddariad diwethaf:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Nifer cyfranwyr:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Nifer o gyfraniadau (commits):&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Diweddariad diwethaf:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Ystadegau LineageOS</string>
     <string name="anonymous_statistics_summary">Helpu i wella LineageOS gan ganiatáu casglu adroddiadau ystadegau anhysbys</string>
     <string name="anonymous_statistics_warning_title">Ynghylch</string>
-    <string name="anonymous_statistics_warning">Bydd cytuno i rannu Ystadegau LineageOS yn caniatáu data na sydd yn bersonol i gael ei rannu gyda datblygwyr LineageOS er mwyn tracio gosodiadau unigryw ar draws dyfeisiau. Bydd y wybodaeth a rennir yn cynnwys dynodwr unigryw i\'w adnabod heb gyfaddawdu dy breifatrwydd na dy ddata personol. Caiff y data ei rannu pob tro mae\'r system yn dechrau.\n\nI weld enghraifft o\'r data sy\'n cael ei rannu, tara Rhagolwg Data.</string>
+    <string name="anonymous_statistics_warning">Bydd cytuno i rannu Ystadegau LineageOS yn caniatáu data na sydd yn bersonol i gael ei rannu gyda datblygwyr LineageOS er mwyn tracio gosodiadau unigryw ar draws dyfeisiau. Bydd y wybodaeth a rennir yn cynnwys dynodwr unigryw i\'w adnabod heb gyfaddawdu dy breifatrwydd na dy ddata personol. Caiff y data ei rannu pob tro mae\'r system yn dechrau.\n\nI weld enghraifft o\'r data sy\'n cael ei rannu, tapia Rhagolwg Data.</string>
     <string name="enable_reporting_title">Caniatáu adroddiadau</string>
     <string name="preview_data_title">Rhagolwg o\'r data</string>
     <string name="view_stats_title">Gweld ystadegau</string>
     <string name="anonymous_learn_more">Dysgu rhagor</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID unigryw</string>
     <string name="preview_device_title">Dyfais</string>
     <string name="preview_version_title">Fersiwn</string>
@@ -435,7 +434,6 @@
     <string name="preview_carrier_title">Darparwr gwasanaeth</string>
     <string name="stats_collection_title">Casglu ystadegau</string>
     <string name="stats_collection_summary">Caniatáu casglu mesuryddion gosodiadau ac ystadegau\'r ddyfais</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Troi\'r sgrin yn awtomatig</string>
     <string name="display_rotation_title">Gosodiadau cylchdroi</string>
     <string name="display_rotation_enabled">Mae cylchdroi yn awtomatig wedi\'i alluogi</string>
@@ -447,7 +445,6 @@
     <string name="display_rotation_90_title">90 gradd</string>
     <string name="display_rotation_180_title">180 gradd</string>
     <string name="display_rotation_270_title">270 gradd</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Tywydd</string>
     <string name="weather_settings_no_services_prompt">Does dim darparydd gwasanaethau tywydd wedi\'i osod</string>
     <string name="weather_settings_no_services_summary">Gosoda ddarparydd tywydd er mwyn cael diweddariadau tywydd</string>
@@ -462,7 +459,6 @@
     <string name="weather_settings_keyword">tywydd</string>
     <string name="status_bar_show_weather_title">Dangos y tywydd</string>
     <string name="status_bar_show_weather_summary">Dangos y tymheredd cyfredol ar y bar statws</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Perfformiad ac arbedwr batri</string>
     <string name="perf_profile_settings_summary">Addasu perfformiad y ddyfais a nodweddion arbed pŵer</string>
     <string name="perf_profile_overview_summary">Proffil cyfredol: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -476,23 +472,27 @@
     <string name="auto_power_save_summary_on">Galluogi modd arbed pŵer yn awtomatig pan fydd y batri\'n disgyn i %s</string>
     <string name="auto_power_save_summary_off">Peidio â galluogi modd arbed pŵer yn awtomatig</string>
     <string name="auto_power_save_never">Byth</string>
-    <!-- Applications: Expanded desktop -->
+    <string name="expanded_desktop_settings_title">Bwrdd gwaith estynedig</string>
     <string name="expanded_desktop_settings_summary">Ehanga\'r lle ar gael ar fwrdd gwaith dy ddyfais gan guddio\'r bar statws, y bar llywio, neu\'r ddau</string>
+    <string name="expanded_desktop_options_title">Dewisiadau addasu</string>
+    <string name="expanded_desktop_style_title">Arddull bwrdd gwaith estynedig</string>
     <string name="expanded_desktop_style_hide_nothing">Cuddio dim byd</string>
     <string name="expanded_desktop_style_hide_status">Cuddio\'r bar statws</string>
     <string name="expanded_desktop_style_hide_navigation">Cuddio\'r bar llywio</string>
     <string name="expanded_desktop_style_hide_both">Cuddio\'r ddau far</string>
     <string name="expanded_desktop_nothing_to_show_text">Tro hwn i ffwrdd os yw\'n well gennyt ffurfweddu dy fwrdd gwaith estynedig fesul ap.</string>
-    <!-- Applications: Long screen -->
-    <string name="long_screen_settings_title">Apiau sgrin llawn</string>
-    <!-- Sounds: Charging sounds -->
+    <string name="long_screen_settings_title">Apiau sgrin lawn</string>
+    <string name="long_screen_settings_summary">Gorfodi apiau cymyd i ddefnyddio cymhareb agwedd sgrin lawn</string>
     <string name="charging_sounds_settings_title">Seiniau gwefru</string>
     <string name="charging_sounds_enabled_title">Galluogi</string>
     <string name="charging_sounds_enabled_summary">Chwarae sain wrth gysylltu neu ddatgysylltu ffynhonnell pŵer</string>
     <string name="power_notifications_vibrate_title">Dirgrynu</string>
     <string name="charging_sounds_ringtone_title">Hysbysiad sain</string>
     <string name="charging_sounds_ringtone_silent">Distaw</string>
-    <!-- Gestures: Touchscreen gestures -->
+    <string name="touchscreen_gesture_settings_title">Ystumiau sgrin gyffwrdd</string>
+    <string name="touchscreen_gesture_settings_summary">Perfformio ystumiau amrywiol ar y sgrin gyffwrdd am weithredoedd cyflym</string>
+    <string name="touchscreen_gestures_haptic_feedback_title">Adborth habtig</string>
+    <string name="touchscreen_gestures_haptic_feedback_summary">Dirgrynu pan fo ystumiad sgrin gyffwrdd yn cael ei synhwyro</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Llusgo i lawr gyda dau fys</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">Llusgo i fyny gydag un bys</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Llusgo i fyny o\'r botwm cartref</string>
@@ -511,11 +511,12 @@
     <string name="touchscreen_gesture_letter_v_title">Llunia\'r llythyren \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">Llunia\'r llythyren \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Llunia\'r llythyren \"Z\"</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">Llusgo i fyny gyda\'r ysgrifbin</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Llusgo i lawr gyda\'r ysgrifbin</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Llusgo i\'r chwith gyda\'r ysgrifbin</string>
     <string name="touchscreen_gesture_swipe_right_stylus_title">Llusgo i\'r dde gyda\'r ysgrifbin</string>
+    <string name="touchscreen_gesture_long_press_stylus_title">Gwasgu\'n hir gyda\'r ysgrifbin</string>
+    <string name="touchscreen_gesture_action_dialog_title">Gweithred ystumiad</string>
     <string name="touchscreen_gesture_action_do_nothing">Gwneud dim</string>
     <string name="touchscreen_gesture_action_flashlight">Toglo\'r fflacholau</string>
     <string name="touchscreen_gesture_action_camera">Agor y camera</string>
@@ -524,11 +525,10 @@
     <string name="touchscreen_gesture_action_email">Edrych ar dy ebost</string>
     <string name="touchscreen_gesture_action_messages">Edrych ar dy negeseuon</string>
     <string name="touchscreen_gesture_action_play_pause_music">Chwarae/seibio cerddoriaeth</string>
+    <string name="touchscreen_gesture_action_previous_track">Llywio i\'r trac sain flaenorol</string>
     <string name="touchscreen_gesture_action_next_track">Neidio i\'r trac sain nesaf</string>
     <string name="touchscreen_gesture_action_volume_down">Gostwng lefel sain cyfryngau</string>
     <string name="touchscreen_gesture_action_volume_up">Cynyddu lefel sain cyfryngau</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_title">Arddull</string>
     <string name="style_summary">Dewis lliwiau’r system</string>
     <string name="style_global_title">Arddull</string>
@@ -541,13 +541,14 @@
     <string name="style_accent_configuration_not_supported">Dyw\'r acen bresennol ddim yn gydnaws â\'r arddull dewiswyd. Er mwyn parhau bydd rhaid dewis acen arall. Wyt ti am barhau?</string>
     <string name="style_accent_configuration_positive">Parhau</string>
     <string name="style_automagic_title">Automagic</string>
+    <string name="style_automagic_description">Tiwnio\'r arddull i gyd-fynd gyda dy bapur wal</string>
+    <string name="style_automagic_dialog_content">Arddull a argymhellir: <b>%1$s</b> gydag acen <b>%2$s</b>.\nWyt ti am ei roi ar waith?</string>
     <string name="style_automagic_dialog_positive">Gosod</string>
     <string name="style_accent_default_name">Rhagosodiad</string>
     <string name="style_dark_overlay_title">Modd tywyll</string>
     <string name="style_dark_overlay_default">Rhagosodiad</string>
     <string name="style_dark_overlay_black">Du</string>
     <string name="style_permission_error">Rhaid caniatáu mynediad i\'r storfa er mwyn dadansoddi dy bapur wal.</string>
-    <!-- Trust interface -->
     <string name="trust_category_features">Statws</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Yn gorfodi</string>
@@ -560,10 +561,8 @@
     <string name="trust_feature_root_explain">Mae mynediad craidd yn galluogi\'r apiau a gwasanaethau rwyt yn eu dewis i osgoi cyfyngiadau diogelwch, gan eu caniatáu i wneud newidiadau i\'r system a all achosi difrod i dy ddyfais neu system.</string>
     <string name="trust_feature_security_patches">Patshiau diogelwch Android</string>
     <string name="trust_feature_security_patches_value_base">Platfform: %1$s\nGwneuthurwr: %2$s</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_value_new">yn gyfredol</string>
     <string name="trust_feature_security_patches_value_medium">rhai misoedd yn hen</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">yn hen</string>
     <string name="trust_feature_security_patches_explain">Mae Google yn rhyddhau cyweiriadau diogelwch (security patches) yn fisol ar y cyd â darparwyr i fynd i\'r afael â namau y gellir cael eu hecsbloetio gan apiau maleisus er mwyn osgoi cyfyngiadau diogelwch ac achosi niwed parhaol i dy ddyfais. Mae cyweiriadau gan Google yn cael eu rhyddhau pob mis ond gall cyweiriadau i god dy ddyfais fel arfer ond cael eu gosod gan y gwneuthurwr. Wrth dy fod wedi gosod LineageOS i gymryd lle\'r fersiwn Android gwreiddiol ar dy ddyfais, mae\'r materion hyn yn dy ddwylo dy hun. I gadw dy ddyfais yn ddiogel, sicrha dy fod yn diweddaru dy adeiledd LineageOS i\'w gadw yn gyfredol ac, os yn berthnasol, sicrha bod y ddelwedd darparwr (vendor image) yn cael ei ddiweddaru i\'r un mwyaf diweddar a argymhellir gan LineageOS.</string>
     <string name="trust_feature_encryption">Amgryptiad</string>
@@ -578,8 +577,12 @@
     <string name="trust_warnings_keys">Llofnod adeiledd</string>
     <string name="trust_onboarding_title">Croeso i Trust</string>
     <string name="trust_onboarding_description">Mae Trust yn dy helpu i gadw dy ddyfais yn ddiogel a gwarchod dy breifatrwydd.\nBydd eicon Trust ond yn ymddangos pan mae cynnwys y dudalen wedi\'i wirio.</string>
-    <!-- Sms limit -->
+    <string name="trust_onboarding_learn_more">Dysgu mwy</string>
+    <string name="trust_onboarding_done">Deall yn iawn</string>
+    <string name="trust_restrict_usb_title">Cyfyngu USB</string>
+    <string name="trust_restrict_usb_summary">Analluogi teclynnau USB newydd pan fo\'r ddyfais wedi\'i chloi</string>
     <string name="sms_security_check_limit_title">Cyfyngiad negeseuon SMS</string>
     <string name="sms_security_check_limit_summary">Gall apiau anfon hyd at %s neges o fewn 1 munud cyn bod angen cadarnhad.</string>
+    <string name="sms_security_check_limit_summary_none">Ni chaiff apiau anfon unrhyw negeseuon heb gael cadarnhad</string>
     <string name="sms_security_check_limit_always_confirm">Cadarnhau bob tro</string>
 </resources>

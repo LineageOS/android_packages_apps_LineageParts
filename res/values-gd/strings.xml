@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">Roghainnean LineageOS</string>
-    <!-- Generic stuff used everywhere -->
     <string name="loading">’Ga luchdadh\u2026</string>
     <string name="dlg_ok">Ceart ma-thà</string>
     <string name="cancel">Sguir dheth</string>
@@ -38,10 +37,7 @@
     <string name="search">Lorg</string>
     <string name="disabled">À comas</string>
     <string name="enabled">An comas</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Prìobhaideachd</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Cuir an comas freiceadan na prìobhaideachd</string>
     <string name="privacy_guard_dlg_title">A bheil thu airson freiceadan na prìobhaideachd a chur an comas?</string>
     <string name="privacy_guard_dlg_text">Nuair a bhios freiceadan na prìobhaideachd an comas, cha bhi cothrom aig an aplacaid air an dàta phearsanta, can luchd-aithne, teachdaireachdan no logaichean nan gairm.</string>
@@ -56,7 +52,6 @@
     <string name="privacy_guard_manager_show_system_apps">Seall na h-aplacaidean tùsail</string>
     <string name="privacy_guard_advanced_settings_title">Adhartach</string>
     <string name="privacy_guard_notification_title">Seall brath</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Deasaich roghainnean an t-solais</string>
     <string name="pulse_speed_title">Faide is luaths an fhrith-bhualaidh</string>
     <string name="default_time">Àbhaisteach</string>
@@ -64,7 +59,6 @@
     <string name="dialog_delete_title">Sguab às</string>
     <string name="dialog_delete_message">A bheil thu airson an nì a thagh thu a sguabadh às?</string>
     <string name="brightness">Ìre na soilleireachd</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Air an-còmhnaidh</string>
     <string name="pulse_length_very_short">Glè ghoirid</string>
     <string name="pulse_length_short">Goirid</string>
@@ -76,18 +70,15 @@
     <string name="pulse_speed_normal">Àbhaisteach</string>
     <string name="pulse_speed_slow">Slaodach</string>
     <string name="pulse_speed_very_slow">Glè shlaodach</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_title">Ìrean na soilleireachd</string>
     <string name="light_brightness_normal">Àbhaisteach</string>
     <string name="light_brightness_zen">Na cuir dragh orm</string>
-    <!-- Battery light settings -->
     <string name="battery_light_title">Solas a’ bhataraidh</string>
     <string name="battery_low_pulse_title">Dèan frith-bhualadh nuair a bhios am bataraidh fann</string>
     <string name="battery_light_list_title">Dathan</string>
     <string name="battery_light_low_color_title">Tha am bataraidh fann</string>
     <string name="battery_light_medium_color_title">’Ga theairrdseadh</string>
     <string name="battery_light_full_color_title">Air a làn-teairrdseadh</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Solas bratha</string>
     <string name="notification_light_general_title">Coitcheann</string>
     <string name="notification_light_advanced_title">Adhartach</string>
@@ -102,11 +93,9 @@
     <string name="keywords_lights_brightness_level">ìslich soillearachd nan LED</string>
     <string name="notification_light_automagic">Tagh na dathan gu fèin-obrachail</string>
     <string name="notification_light_automagic_summary">A’ taghadh nan dathan gu fèin-obrachail</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Roghainnean an t-solais</string>
     <string name="led_notification_text">Solas LED an comas a-rèir nan roghainnean</string>
     <string name="notification_light_no_apps_summary">Airson stiùireadh fa leth gach aplacaid a chur ris, cuir an comas “%1$s” is brùth air “\u002b” air a bhàr-inneal</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Pisich an sgrìn agad a-rèir àm dhen latha is na h-àrainneachd ach am bi cùisean nas fhasa leughadh is nas lugha a sgithear sùla ort</string>
     <string name="live_display_mode">Modh an taisbeanaidh</string>
     <string name="live_display_color_temperature_title">Teothachd an datha</string>
@@ -150,14 +139,12 @@
     <string name="color_red_title">Dearg</string>
     <string name="color_green_title">Uaine</string>
     <string name="color_blue_title">Gorm</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Gleusadh an deilbh</string>
     <string name="picture_adjustment_summary">Cuir gleus air an tuar, an t-sàthachd, an dèine agus an t-iomsgaradh</string>
     <string name="adj_hue_title">Tuar</string>
     <string name="adj_saturation_title">Sàthachd</string>
     <string name="adj_intensity_title">Dèine</string>
     <string name="adj_contrast_title">Iomsgaradh</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Putain</string>
     <string name="hardware_keys_power_key_title">Putan na cumhachd</string>
     <string name="hardware_keys_home_key_title">Putan na dachaigh</string>
@@ -203,7 +190,6 @@
     <string name="home_answer_call_summary">Freagair gairmean a thig a-steach le brùthadh air putan na dachaigh</string>
     <string name="extras_title">Nithean a bharrachd</string>
     <string name="additional_buttons_title">Barrachd phutan</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Solas-cùil</string>
     <string name="button_backlight_enabled">Soillsich na putain</string>
     <string name="button_backlight_only_when_pressed_title">Na soillsich na putain ach nuair a thèid am brùthadh</string>
@@ -215,10 +201,8 @@
     <string name="backlight_summary_disabled">À comas</string>
     <string name="backlight_summary_enabled_with_timeout">An comas fad <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">An comas</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Cuir an comas bàr seòladaireachd air an sgrìn</string>
     <string name="disable_navkeys_summary">Cuir an comas bàr seòladaireachd air an sgrìn is cuir à comas putanan bathair-chruaidh</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Bàr na seòladaireachd</string>
     <string name="navigation_bar_title">Putain is co-dhealbhachd</string>
     <string name="navigation_bar_left_summary">Cur bàr na seòladaireachd ri taobh clì na sgrìn sa mhodh dreach-tìre.</string>
@@ -227,7 +211,6 @@
     <string name="navigation_bar_home_long_press_title">Gnìomh brùthaidh fhada air “Dachaigh”</string>
     <string name="navigation_bar_home_double_tap_title">Gnìomh gnogaige dùbailte air “Dachaigh”</string>
     <string name="navigation_bar_app_switch_long_press_title">Gnìomh brùthaidh fhada air “O cionn ghoirid”</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Clàr-taice na cumhachd</string>
     <string name="power_menu_screenshot_title">Glacadh-sgrìn</string>
     <string name="power_menu_screenshot_summary">Dèan brùthadh fada airson glacadh-sgrìn bearrte</string>
@@ -237,7 +220,6 @@
     <string name="power_menu_bug_report_disabled">Chaidh aithrisean air bugaichean a chur à comas ann an roghainnean luchd-leasachaidh</string>
     <string name="power_menu_lockdown_title">Glasadh</string>
     <string name="camera_double_tap_power_gesture_title">Brùth dà thuras air putan na cumhachd airson camara fhaighinn</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Fosgail an camara gu luath gun neo-ghlasadh na sgrìn</string>
     <string name="torch_long_press_power_gesture_title">Lòchran le brùthadh fada</string>
     <string name="torch_long_press_power_gesture_desc">Cuir air an lòchran le brùthadh fada air putan na cumhachd fhad ’s a tha an sgrìn dheth</string>
@@ -247,7 +229,6 @@
     <string name="torch_long_press_power_timeout_2min">Às dèidh 2 mhionaid</string>
     <string name="torch_long_press_power_timeout_5min">Às dèidh 5 mionaidean</string>
     <string name="torch_long_press_power_timeout_10min">Às dèidh 10 mionaidean</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Sguab às</string>
     <string name="profile_action_none">Cum gun atharrachadh</string>
     <string name="profile_action_system">Bun-roghainn an t-siostaim</string>
@@ -264,14 +245,12 @@
     <string name="profile_setup_actions_title">Ceum 2: Gnìomhan suidheachaidh</string>
     <string name="profile_setup_actions_title_config">Ath-rèitich na gnìomhan</string>
     <string name="wireless_networks_settings_title">Uèirleas ⁊ lìonra</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Cha deach uidheam Bluetooth a phaidhreachadh.\nThoir gnogag a phaidhreachadh uidheam Bluetooth mus rèitich thu trigear.</string>
     <string name="no_wifi_triggers">Cha deach puing inntrigidh WiFi a rèiteachadh.\nThoir gnogag a cheangal WiFi mus rèitich thu trigear.</string>
     <string name="no_triggers_configured">Cha deach trigear a rèiteachadh. Thoir gnogag airson barrachd a chur ris.</string>
     <string name="no_triggers_configured_nfc">Thoir gnogag airson trigear NFC ùr a shuidheachadh.</string>
     <string name="profile_setup_setup_triggers_description">Tagh na trigearan a ghnìomhaicheas a’ phròifil seo </string>
     <string name="profile_setup_actions_description">Nise, rèitich na thachras nuair a thèid a’ phròifil a ghnìomhachadh</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Pròifilean an t-siostaim</string>
     <string name="profiles_add">Cuir ris</string>
     <string name="profile_menu_delete">Sguab às</string>
@@ -295,44 +274,34 @@
     <string name="profile_app_group_category_title">Tar-àitheantan bhrathan </string>
     <string name="profile_app_group_item_instructions">Cuir ris no thoir air falbh buidhnean</string>
     <string name="profile_app_group_item_instructions_summary">Cuir buidhnean aplacaidean a thaobh tar-àitheantan bhrathan ris a’ phròifil seo no thoir air falbh iad</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">Air</string>
     <string name="profile_entries_off">Dheth</string>
     <string name="profile_entries_no_override">Gun tar-àithneadh</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Ainm</string>
     <string name="new_profile_name">&lt;pròifil ùr&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Thoir ainm ùr air</string>
     <string name="rename_dialog_message">Cuir a-steach ainm ùr</string>
     <string name="rename_dialog_hint">Cuir a-steach ainm na pròifil</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Ath-shuidhich</string>
     <string name="profile_reset_message">A bheil thu airson gach pròifil is gach buidheann aplacaidean a chaidh a chruthachadh le cleachdaiche a sguabadh às is an ath-shuidheachadh air a’ bhun-roghainn?</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">A bheil thu airson an aplacaid seo a thoirt air falbh?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Tar-àitheantan air àirde na fuaime</string>
     <string name="connection_state_enabled">Cuir an comas</string>
     <string name="volume_override_summary">Chaidh a shuidheachadh air %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Tar-àithn àirde na fuaime</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Pròifilean</string>
     <string name="profile_profile_manage">Stiùirich a’ phròifil</string>
     <string name="profile_appgroups_manage">Buidhnean aplacaidean</string>
     <string name="profile_appgroup_manage">Stiùirich am buidheann aplacaidean</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Roghainnean na pròifil</string>
     <string name="profile_trigger_connect">Nuair a thèid ceangal a dhèanamh</string>
     <string name="profile_trigger_disconnect">Nuair a thèid ceangal a briseadh</string>
     <string name="profile_trigger_notrigger">Gun trigear</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Modh a’ bhratha</string>
     <string name="ringer_mode">Modh seirme</string>
     <string name="lights_mode">Modh solais</string>
@@ -340,9 +309,7 @@
     <string name="choose_soundtone">Tagh seirm a’ bhratha</string>
     <string name="choose_ringtone">Tagh an t-seirm</string>
     <string name="ringtone_title">Seirm an fhòn</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Seirm a’ bhratha</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Buidhnean aplacaidean</string>
     <string name="profile_applist_title">Aplacaidean</string>
     <string name="profile_new_appgroup">Buidheann aplacaidean ùr</string>
@@ -350,9 +317,7 @@
     <string name="profile_appgroup_name_prompt">Cuir a-steach ainm airson a’ bhuidhinn aplacaidean ùr</string>
     <string name="profile_appgroup_name_title">Ainm</string>
     <string name="duplicate_appgroup_name">Ainm buidhinn aplacaidean dùblaichte!</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">Tagh aplacaid</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Roghainnean an t-siostaim</string>
     <string name="profile_lockmode_title">Modh na sgrìn-ghlasaidh</string>
     <string name="profile_lockmode_policy_disabled_summary">Chaidh an roghainn pròifil seo a chur à comas le poileasaidh rianaire uidheim</string>
@@ -362,7 +327,6 @@
     <string name="profile_brightness_title">Soilleireachd na sgrìn</string>
     <string name="profile_brightness_override_summary">Chaidh a shuidheachadh air %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Tar-àithn an t-soilleireachd</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">WiFi</string>
     <string name="toggleWifiAp">WiFi hotspot so-ghiùlan</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -370,7 +334,6 @@
     <string name="toggleData">Ceangal dàta</string>
     <string name="toggleSync">Sioncronaich an dàta gu fèin-obrachail</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Modh seirme</string>
     <string name="ring_mode_normal">Àbhaisteach</string>
     <string name="ring_mode_vibrate">Dèan crith</string>
@@ -381,7 +344,6 @@
     <string name="media_volume_title">Meadhanan</string>
     <string name="alarm_volume_title">Caismeachd</string>
     <string name="doze_title">Taisbeanadh cuairteach</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Bàr na staid</string>
     <string name="status_bar_quick_qs_pulldown_title">Grad-teàrnadh</string>
     <string name="status_bar_quick_qs_pulldown_summary">Tàirngidh an oir %1$s air bàr na staid sìos na grad-roghainnean</string>
@@ -392,13 +354,11 @@
     <string name="status_bar_quick_qs_pulldown_right">Dheas</string>
     <string name="status_bar_double_tap_to_sleep_title">Thoir gnogag dhùbailte airson cadal</string>
     <string name="status_bar_double_tap_to_sleep_summary">Thoir gnogag dhùbailte air bàr na staid gus an sgrìn a chur dheth</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Ìomhaigheagan air bàr na staid</string>
     <string name="status_bar_notif_count_title">Seall àireamh nam brathan</string>
     <string name="status_bar_notif_count_summary">Seall àireamh nam brathan ri an dèiligeadh</string>
     <string name="status_bar_system_icons_title">ìomhaigheagan an t-siostaim</string>
     <string name="status_bar_system_icons_summary">Stiùirich dè na h-ìomhaigheagan a thèid a shealltainn air bàr na staid</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Cleoc</string>
     <string name="status_bar_clock_show_seconds_title">Seall na diogan</string>
     <string name="status_bar_clock_show_seconds_summary">Seall na h-uairean, mionaidean is diogan</string>
@@ -411,7 +371,6 @@
     <string name="status_bar_am_pm_normal">Àbhaisteach</string>
     <string name="status_bar_am_pm_small">Beag</string>
     <string name="status_bar_am_pm_hidden">Falaichte</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Taisbeanair a’ bhataraidh</string>
     <string name="status_bar_battery_style_title">An stoidhle air staid a’ bhataraidh</string>
     <string name="status_bar_battery_style_icon_portrait">Ìomhaigheag portraide</string>
@@ -419,12 +378,10 @@
     <string name="status_bar_battery_style_circle">Cearcall</string>
     <string name="status_bar_battery_style_text">Teacsa</string>
     <string name="status_bar_battery_style_hidden">Falaichte</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Ceudad a’ bhataraidh</string>
     <string name="status_bar_battery_percentage_default">Falaichte</string>
     <string name="status_bar_battery_percentage_text_inside">Taobh a-staigh na h-ìomhaigheige</string>
     <string name="status_bar_battery_percentage_text_next">Ri taobh na h-ìomhaigheige</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Soilleireachd</string>
     <string name="status_bar_brightness_slider_title">Sleamhnachan na soilleireachd</string>
     <string name="status_bar_brightness_slider_summary">Cuir gleus air an t-soilleireachd o na grad-roghainnean</string>
@@ -432,7 +389,6 @@
     <string name="status_bar_brightness_slider_auto_summary">Seall toglachadh airson soilleireachd cho-fhreagrach faisg air an t-sleamhnachan</string>
     <string name="status_bar_toggle_brightness">Stiùireadh na soilleireachd</string>
     <string name="status_bar_toggle_brightness_summary">Cuir gleus air an t-soilleireachd le slaighdeadh thar bàr na staid</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Monatair trafaig an lìonraidh</string>
     <string name="network_traffic_settings_summary">Seall na leibheilean trafaige làithreach air bàr na staid</string>
     <string name="network_traffic_mode_title">Modh an taisbeanaidh</string>
@@ -449,23 +405,19 @@
     <string name="network_traffic_units_megabytes">Meaga-baidht gach diog (MB/s)</string>
     <string name="network_traffic_show_units">Seall na h-aonadan</string>
     <string name="network_traffic_show_units_summary">Co-dhiù an dèid aonadan tomhais air trafaig a shealltainn air bàr na staid gus nach dèid</string>
-    <!-- Protected apps -->
     <string name="protected_apps_manager_title">Aplacaidean dìonta</string>
     <string name="protected_apps_manager_summary">Stiùirich dè na h-aplacaidean a thèid fhalach air cùlaibh glaise tèarainte</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Luchd-cuideachaidh</string>
     <string name="contributors_cloud_loading_message">A’ luchdadh dàta an luchd-cuideachaidh\u2026</string>
     <string name="contributors_cloud_failed_message">Cha b’ urrainn dhuinn dàta an luchd-cuideachaidh a luchdadh</string>
     <string name="contributor_info_menu">Fiosrachadh an neach-cuideachaidh</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Ainm:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>Far-ainm:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;Ainm:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Far-ainm:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Fiosrachadh nan tabhartasan</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Luchd-cuideachaidh iomlan:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Commits iomlan:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>An t-ùrachadh mu dheireadh:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Luchd-cuideachaidh iomlan:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Commits iomlan:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;An t-ùrachadh mu dheireadh:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Stadastaireachd air LineageOS</string>
     <string name="anonymous_statistics_summary">Cuidich leinn a thoirt piseach air LineageOS is tu a’ cur aithrisean stadastaireachd gun urra an comas</string>
     <string name="anonymous_statistics_warning_title">Mu dhèidhinn</string>
@@ -476,7 +428,6 @@
     <string name="preview_data_title">Ro-sheall an dàta</string>
     <string name="view_stats_title">Seall an stadastaireachd</string>
     <string name="anonymous_learn_more">Barrachd fiosrachaidh</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Aithnichear àraidh</string>
     <string name="preview_device_title">Uidheam</string>
     <string name="preview_version_title">Tionndadh</string>
@@ -484,7 +435,6 @@
     <string name="preview_carrier_title">Giùlanair</string>
     <string name="stats_collection_title">Cruinneachadh na stadastaireachd</string>
     <string name="stats_collection_summary">Ceadaich gun dèid meatraigeachd is stadastaireachd an uidheim a chruinneachadh</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Cuairtich an sgrìn gu fèin-obrachail</string>
     <string name="display_rotation_title">Roghainnean a’ chuairteachaidh</string>
     <string name="display_rotation_enabled">Tha an cuairteachadh fèin-obrachail an comas</string>
@@ -496,7 +446,6 @@
     <string name="display_rotation_90_title">90 ceum</string>
     <string name="display_rotation_180_title">180 ceum</string>
     <string name="display_rotation_270_title">270 ceum</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Aimsir</string>
     <string name="weather_settings_no_services_prompt">Cha deach seirbheis solaraiche aimsire a stàladh</string>
     <string name="weather_settings_no_services_summary">Stàlaich seirbheis solaraiche aimsire airson naidheachd na h-aimsire fhaighinn</string>
@@ -511,7 +460,6 @@
     <string name="weather_settings_keyword">aimsir</string>
     <string name="status_bar_show_weather_title">Seall an aimsir</string>
     <string name="status_bar_show_weather_summary">Seall an teothachd làithreach air bàr na staid</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Caomhnaiche a’ bhataraidh is an dèanadas</string>
     <string name="perf_profile_settings_summary">Cuir gleus air caomhnadh na cumhachd is dèanadas an uidheim</string>
     <string name="perf_profile_overview_summary">A’ phròifil làithreach: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -525,7 +473,6 @@
     <string name="auto_power_save_summary_on">Cuir an comas modh sàbhaladh na cumhachd ar %s dhen bhataraidh</string>
     <string name="auto_power_save_summary_off">Na cuir modh sàbhaladh na cumhachd an comas gu fèin-obrachail</string>
     <string name="auto_power_save_never">Chan ann idir</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">Deasg leudaichte</string>
     <string name="expanded_desktop_settings_summary">Leudaich an rum air an deasg agad is tu a’ cur bàr na staid, bàr na seòladaireachd no an dà chuid dhiubh am falach</string>
     <string name="expanded_desktop_options_title">Roghainnean gnàthachaidh</string>
@@ -535,17 +482,14 @@
     <string name="expanded_desktop_style_hide_navigation">Falaich bàr na seòladaireachd</string>
     <string name="expanded_desktop_style_hide_both">Falaich an dà chuid dhiubh</string>
     <string name="expanded_desktop_nothing_to_show_text">Cuir an t-suidse dheth airson an deas leudaichte agad a ghnàthachadh a-rèir aplacaide </string>
-    <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Aplacaidean làn-sgrìn</string>
     <string name="long_screen_settings_summary">Sparr air aplacaidean dìleabach gun cleachd iad co-mheas deilbh na làn-sgrìn</string>
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Fuaimean an teairrdsidh</string>
     <string name="charging_sounds_enabled_title">Cuir an comas</string>
     <string name="charging_sounds_enabled_summary">Cluich fuaim nuair a thèid tùs cumhachd a cheangal ris no a dhì-cheangal</string>
     <string name="power_notifications_vibrate_title">Dèan crith</string>
     <string name="charging_sounds_ringtone_title">Fuaim a’ bhratha</string>
     <string name="charging_sounds_ringtone_silent">Sàmhach</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Gluasadan na sgrìn-suathaidh</string>
     <string name="touchscreen_gesture_settings_summary">Cleachd gluasadan sgrìn-glasaidh airson gnìomhan luatha</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Freagairt suathaidh</string>
@@ -567,7 +511,6 @@
     <string name="touchscreen_gesture_letter_v_title">Tarraing an litir “V”</string>
     <string name="touchscreen_gesture_letter_w_title">Tarraing an litir “W”</string>
     <string name="touchscreen_gesture_letter_z_title">Tarraing an litir “Z”</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">Dèan grad-shlaighdeadh suas leis an staidhleas</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Dèan grad-shlaighdeadh sìos leis an staidhleas</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Dèan grad-shlaighdeadh gu clì leis an staidhleas</string>
@@ -586,8 +529,6 @@
     <string name="touchscreen_gesture_action_next_track">Gearr leum dhan ath-thraca ciùil</string>
     <string name="touchscreen_gesture_action_volume_down">Ìslich àirde fuaime nam meadhanan</string>
     <string name="touchscreen_gesture_action_volume_up">Meudaich àirde fuaime nam meadhanan</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_title">Stoidhle</string>
     <string name="style_summary">Tagh dathan an t-siostaim</string>
     <string name="style_global_title">Stoidhle</string>
@@ -608,7 +549,6 @@
     <string name="style_dark_overlay_default">Bun-roghainn</string>
     <string name="style_dark_overlay_black">Dubh</string>
     <string name="style_permission_error">Feumaidh e cead inntrigeadh stòrais airson am pàipear-balla agad a sgrùdadh, bheir cead dha ach an cleachd thu an gleus seo</string>
-    <!-- Trust interface -->
     <string name="trust_category_features">Staid</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Teann</string>
@@ -619,10 +559,7 @@
     <string name="trust_feature_root_value_apps">Aplacaidean is ADB</string>
     <string name="trust_feature_security_patches">Brèidean tèarainteachd Android</string>
     <string name="trust_feature_security_patches_value_base">Ùrlar: %1$s\nReiceadair: %2$s</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">cho ùr ’s a ghabhas</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">ro shean</string>
     <string name="trust_feature_encryption">Crioptachadh</string>
     <string name="trust_feature_encryption_value_enabled">An comas</string>
@@ -636,7 +573,6 @@
     <string name="trust_onboarding_title">Faigh earbsa</string>
     <string name="trust_onboarding_learn_more">Barrachd fiosrachaidh</string>
     <string name="trust_onboarding_done">Tha mi agaibh</string>
-    <!-- Sms limit -->
     <string name="sms_security_check_limit_title">Crìoch nan teachdaireachdan SMS</string>
     <string name="sms_security_check_limit_summary">Faodaidh aplacaidean %s teachdaireachd(an) a chur am broinn mionaid mus dèid dearbhadh iarraidh orra</string>
     <string name="sms_security_check_limit_summary_none">Chan fhaod aplacaidean teachdaireachd sam bith a chur gun dearbhadh</string>

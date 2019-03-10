@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">LineageOS 设置</string>
-    <!-- Generic stuff used everywhere -->
     <string name="loading">正在加载\u2026</string>
     <string name="dlg_ok">确定</string>
     <string name="cancel">取消</string>
@@ -38,10 +37,7 @@
     <string name="search">搜索</string>
     <string name="disabled">已禁用</string>
     <string name="enabled">已启用</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">隐私</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">启用隐私防护</string>
     <string name="privacy_guard_dlg_title">是否启用隐私防护？</string>
     <string name="privacy_guard_dlg_text">启用隐私防护后，该应用将无法访问联系人、短信或通话记录等个人数据。</string>
@@ -56,7 +52,6 @@
     <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
     <string name="privacy_guard_advanced_settings_title">高级</string>
     <string name="privacy_guard_notification_title">显示通知</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">编辑指示灯设置</string>
     <string name="pulse_speed_title">呼吸长度与速度</string>
     <string name="default_time">正常</string>
@@ -64,7 +59,6 @@
     <string name="dialog_delete_title">删除</string>
     <string name="dialog_delete_message">移除选中的项目？</string>
     <string name="brightness">亮度级别</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">始终开启</string>
     <string name="pulse_length_very_short">很短</string>
     <string name="pulse_length_short">短促</string>
@@ -76,18 +70,15 @@
     <string name="pulse_speed_normal">正常</string>
     <string name="pulse_speed_slow">较慢</string>
     <string name="pulse_speed_very_slow">非常慢</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_title">亮度级别</string>
     <string name="light_brightness_normal">正常</string>
     <string name="light_brightness_zen">勿扰</string>
-    <!-- Battery light settings -->
     <string name="battery_light_title">电量指示灯</string>
     <string name="battery_low_pulse_title">电量低时开启呼吸灯</string>
     <string name="battery_light_list_title">颜色</string>
     <string name="battery_light_low_color_title">电量低</string>
     <string name="battery_light_medium_color_title">正在充电</string>
     <string name="battery_light_full_color_title">已充满</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">通知指示灯</string>
     <string name="notification_light_general_title">常规</string>
     <string name="notification_light_advanced_title">高级</string>
@@ -102,11 +93,9 @@
     <string name="keywords_lights_brightness_level">降低 LED 亮度</string>
     <string name="notification_light_automagic">自动选择颜色</string>
     <string name="notification_light_automagic_summary">自动选择颜色</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">指示灯设置</string>
     <string name="led_notification_text">LED 灯被“设置”启用</string>
     <string name="notification_light_no_apps_summary">若要添加单个应用控制，请激活“%1$s”并按下菜单栏上的“\u002b”</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">基于当前时间和环境条件来优化您的屏幕以改善可读性和减少视疲劳</string>
     <string name="live_display_mode">显示模式</string>
     <string name="live_display_color_temperature_title">色温</string>
@@ -150,14 +139,12 @@
     <string name="color_red_title">红</string>
     <string name="color_green_title">绿</string>
     <string name="color_blue_title">蓝</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">图片调整</string>
     <string name="picture_adjustment_summary">调整色相、饱和度、亮度和对比度</string>
     <string name="adj_hue_title">色相</string>
     <string name="adj_saturation_title">饱和度</string>
     <string name="adj_intensity_title">亮度</string>
     <string name="adj_contrast_title">对比度</string>
-    <!-- Button settings -->
     <string name="button_pref_title">按键</string>
     <string name="hardware_keys_power_key_title">电源键</string>
     <string name="hardware_keys_home_key_title">Home 键</string>
@@ -203,7 +190,6 @@
     <string name="home_answer_call_summary">按 Home 键接听来电</string>
     <string name="extras_title">附加功能</string>
     <string name="additional_buttons_title">附加按钮</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">背光</string>
     <string name="button_backlight_enabled">点亮按键</string>
     <string name="button_backlight_only_when_pressed_title">仅在按下时照亮按钮</string>
@@ -215,10 +201,8 @@
     <string name="backlight_summary_disabled">已禁用</string>
     <string name="backlight_summary_enabled_with_timeout">保持背光灯 <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">已启用</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">启用屏幕上的导航栏</string>
     <string name="disable_navkeys_summary">启用屏幕上导航栏并禁用硬件按钮</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">导航栏</string>
     <string name="navigation_bar_title">按键与布局</string>
     <string name="navigation_bar_left_summary">横屏时在屏幕左侧显示导航栏</string>
@@ -227,7 +211,6 @@
     <string name="navigation_bar_home_long_press_title">Home 键的长按操作</string>
     <string name="navigation_bar_home_double_tap_title">Home 键双击行为</string>
     <string name="navigation_bar_app_switch_long_press_title">最近应用键的长按操作</string>
-    <!-- Power menu -->
     <string name="power_menu_title">电源菜单</string>
     <string name="power_menu_screenshot_title">屏幕截图</string>
     <string name="power_menu_screenshot_summary">长按以进行局部截图</string>
@@ -237,7 +220,6 @@
     <string name="power_menu_bug_report_disabled">开发者选项中已禁用错误报告</string>
     <string name="power_menu_lockdown_title">锁定</string>
     <string name="camera_double_tap_power_gesture_title">按两下电源键启动相机</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">在不解锁屏幕的情况下快速开启相机</string>
     <string name="torch_long_press_power_gesture_title">长按打开手电筒</string>
     <string name="torch_long_press_power_gesture_desc">屏幕关闭时，长按电源键开启手电筒</string>
@@ -247,7 +229,6 @@
     <string name="torch_long_press_power_timeout_2min">2 分钟</string>
     <string name="torch_long_press_power_timeout_5min">5 分钟</string>
     <string name="torch_long_press_power_timeout_10min">10 分钟</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">删除</string>
     <string name="profile_action_none">保持不变</string>
     <string name="profile_action_system">系统默认</string>
@@ -264,14 +245,12 @@
     <string name="profile_setup_actions_title">步骤 2：设置操作</string>
     <string name="profile_setup_actions_title_config">重新配置操作</string>
     <string name="wireless_networks_settings_title">无线和网络</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">没有已配对的蓝牙设备。\n配置触发器前轻按以配对蓝牙设备。</string>
     <string name="no_wifi_triggers">没有已配置的 Wi\u2011Fi 接入点。\n配置触发器前轻按以连接 Wi\u2011Fi。</string>
     <string name="no_triggers_configured">没有配置触发器。轻按以添加更多。</string>
     <string name="no_triggers_configured_nfc">轻按以设置一个新的 NFC 触发器。</string>
     <string name="profile_setup_setup_triggers_description">请选择将激活此情景的触发器</string>
     <string name="profile_setup_actions_description">现在配置当情景激活时，将发生的操作</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">系统情景</string>
     <string name="profiles_add">添加</string>
     <string name="profile_menu_delete">删除</string>
@@ -295,44 +274,34 @@
     <string name="profile_app_group_category_title">通知覆盖</string>
     <string name="profile_app_group_item_instructions">添加或移除组</string>
     <string name="profile_app_group_item_instructions_summary">添加或移除通知覆盖应用组到此情景</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">开</string>
     <string name="profile_entries_off">关</string>
     <string name="profile_entries_no_override">不覆盖</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">名称</string>
     <string name="new_profile_name">&lt;新情景模式&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">重命名</string>
     <string name="rename_dialog_message">输入一个新名称</string>
     <string name="rename_dialog_hint">输入情景模式名称</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">重置</string>
     <string name="profile_reset_message">删除所有用户创建的情景模式和应用分组，并将它们恢复为默认值吗？</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">移除此应用？</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">音量覆盖</string>
     <string name="connection_state_enabled">启用</string>
     <string name="volume_override_summary">设置为 %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">覆盖音量</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">情景模式</string>
     <string name="profile_profile_manage">管理情景</string>
     <string name="profile_appgroups_manage">应用组</string>
     <string name="profile_appgroup_manage">管理应用组</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">情景设置</string>
     <string name="profile_trigger_connect">连接时触发</string>
     <string name="profile_trigger_disconnect">断开时触发</string>
     <string name="profile_trigger_notrigger">无触发</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">通知模式</string>
     <string name="ringer_mode">响铃模式</string>
     <string name="lights_mode">灯光模式</string>
@@ -340,9 +309,7 @@
     <string name="choose_soundtone">选择通知铃声</string>
     <string name="choose_ringtone">选择铃声</string>
     <string name="ringtone_title">来电铃声</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">通知铃声</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">应用组</string>
     <string name="profile_applist_title">应用</string>
     <string name="profile_new_appgroup">新应用组</string>
@@ -350,9 +317,7 @@
     <string name="profile_appgroup_name_prompt">为新的应用组输入名称</string>
     <string name="profile_appgroup_name_title">名称</string>
     <string name="duplicate_appgroup_name">此应用组名称已被使用！</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">选择应用</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">系统设置</string>
     <string name="profile_lockmode_title">锁屏模式</string>
     <string name="profile_lockmode_policy_disabled_summary">此情景选项已由设备管理员策略禁用</string>
@@ -362,7 +327,6 @@
     <string name="profile_brightness_title">屏幕亮度</string>
     <string name="profile_brightness_override_summary">设置到 %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">覆盖亮度</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">便携式 Wi\u2011Fi 热点</string>
     <string name="toggleBluetooth">蓝牙</string>
@@ -370,7 +334,6 @@
     <string name="toggleData">数据连接</string>
     <string name="toggleSync">自动同步数据</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">响铃模式</string>
     <string name="ring_mode_normal">正常</string>
     <string name="ring_mode_vibrate">振动</string>
@@ -381,7 +344,6 @@
     <string name="media_volume_title">媒体</string>
     <string name="alarm_volume_title">闹钟</string>
     <string name="doze_title">环境显示</string>
-    <!-- Status bar -->
     <string name="status_bar_title">状态栏</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
     <string name="status_bar_quick_qs_pulldown_summary">从状态栏的%1$s边缘下拉开启快速设置面板</string>
@@ -392,13 +354,11 @@
     <string name="status_bar_quick_qs_pulldown_right">右侧</string>
     <string name="status_bar_double_tap_to_sleep_title">双击以睡眠</string>
     <string name="status_bar_double_tap_to_sleep_summary">双击状态栏关闭显示屏</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">状态栏图标</string>
     <string name="status_bar_notif_count_title">显示通知数量</string>
     <string name="status_bar_notif_count_summary">显示未读通知的数量</string>
     <string name="status_bar_system_icons_title">系统图标</string>
     <string name="status_bar_system_icons_summary">控制在状态栏显示的图标</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">时钟</string>
     <string name="status_bar_clock_show_seconds_title">显示秒</string>
     <string name="status_bar_clock_show_seconds_summary">显示小时、分钟和秒</string>
@@ -411,7 +371,6 @@
     <string name="status_bar_am_pm_normal">正常</string>
     <string name="status_bar_am_pm_small">较小</string>
     <string name="status_bar_am_pm_hidden">隐藏</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">电量指示器</string>
     <string name="status_bar_battery_style_title">电池状态样式</string>
     <string name="status_bar_battery_style_icon_portrait">纵向图标</string>
@@ -419,12 +378,10 @@
     <string name="status_bar_battery_style_circle">环形</string>
     <string name="status_bar_battery_style_text">文本</string>
     <string name="status_bar_battery_style_hidden">隐藏</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">电量百分比</string>
     <string name="status_bar_battery_percentage_default">隐藏</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">亮度</string>
     <string name="status_bar_brightness_slider_title">亮度滑块</string>
     <string name="status_bar_brightness_slider_summary">在快速设置中调节亮度</string>
@@ -432,7 +389,6 @@
     <string name="status_bar_brightness_slider_auto_summary">在亮度滑块附近显示自动调节亮度开关</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">通过在状态栏上滑动调整亮度</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">网络流量监视</string>
     <string name="network_traffic_settings_summary">在状态栏中显示当前的网络流量级别</string>
     <string name="network_traffic_mode_title">显示模式</string>
@@ -449,23 +405,20 @@
     <string name="network_traffic_units_megabytes">兆字节每秒 (MB/s)</string>
     <string name="network_traffic_show_units">显示单位</string>
     <string name="network_traffic_show_units_summary">是否在状态栏中显示流量测量单位</string>
-    <!-- Protected apps -->
+    <string name="network_traffic_disabled_clock">由于时钟位置，网络流量被禁用</string>
     <string name="protected_apps_manager_title">受保护的应用</string>
     <string name="protected_apps_manager_summary">管理安全锁隐藏的应用</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">贡献者</string>
     <string name="contributors_cloud_loading_message">正在载入贡献者数据\u2026</string>
     <string name="contributors_cloud_failed_message">无法读取贡献者数据</string>
     <string name="contributor_info_menu">贡献者信息</string>
-    <string name="contributor_info_msg"><![CDATA[<b>姓名：</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>昵称：</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>提交数：</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;姓名：&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;昵称：&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;提交数：&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">贡献信息</string>
-    <string name="contributions_info_msg"><![CDATA[<b>贡献者总数：</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>提交总数：</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>最后更新：</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;贡献者总数：&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;提交总数：&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;最后更新：&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS 统计</string>
     <string name="anonymous_statistics_summary">开启匿名统计报告以便帮助 LineageOS 未来向更好的方向发展</string>
     <string name="anonymous_statistics_warning_title">关于</string>
@@ -474,7 +427,6 @@
     <string name="preview_data_title">预览数据</string>
     <string name="view_stats_title">查看统计</string>
     <string name="anonymous_learn_more">了解更多</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">唯一 ID</string>
     <string name="preview_device_title">设备</string>
     <string name="preview_version_title">版本</string>
@@ -482,7 +434,6 @@
     <string name="preview_carrier_title">运营商</string>
     <string name="stats_collection_title">统计数据收集</string>
     <string name="stats_collection_summary">允许收集安装指标和设备统计信息</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">自动旋转屏幕</string>
     <string name="display_rotation_title">旋转设置</string>
     <string name="display_rotation_enabled">启用自动旋转</string>
@@ -494,7 +445,6 @@
     <string name="display_rotation_90_title">90 度</string>
     <string name="display_rotation_180_title">180 度</string>
     <string name="display_rotation_270_title">270 度</string>
-    <!-- Weather -->
     <string name="weather_settings_title">天气</string>
     <string name="weather_settings_no_services_prompt">没有安装天气提供商服务</string>
     <string name="weather_settings_no_services_summary">安装天气提供商以接收天气更新</string>
@@ -509,7 +459,6 @@
     <string name="weather_settings_keyword">天气</string>
     <string name="status_bar_show_weather_title">显示天气</string>
     <string name="status_bar_show_weather_summary">在状态栏上显示当前气温</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">省电与性能</string>
     <string name="perf_profile_settings_summary">调整省电功能与设备性能</string>
     <string name="perf_profile_overview_summary">当前性能配置︰<xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -523,7 +472,6 @@
     <string name="auto_power_save_summary_on">电量 %s 时自动启用省电</string>
     <string name="auto_power_save_summary_off">不要自动启用省电</string>
     <string name="auto_power_save_never">永不</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">扩展桌面</string>
     <string name="expanded_desktop_settings_summary">隐藏状态栏或导航栏或两者以扩大您的可用桌面空间</string>
     <string name="expanded_desktop_options_title">自定义选项</string>
@@ -533,17 +481,14 @@
     <string name="expanded_desktop_style_hide_navigation">隐藏导航栏</string>
     <string name="expanded_desktop_style_hide_both">同时隐藏</string>
     <string name="expanded_desktop_nothing_to_show_text">关闭开关以自定义您每个应用的扩展桌面</string>
-    <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">全屏应用</string>
     <string name="long_screen_settings_summary">强制旧式应用程序使用全屏长宽比</string>
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">充电提示音</string>
     <string name="charging_sounds_enabled_title">启用</string>
     <string name="charging_sounds_enabled_summary">连接或断开电源时发出声音</string>
     <string name="power_notifications_vibrate_title">振动</string>
     <string name="charging_sounds_ringtone_title">提示音</string>
     <string name="charging_sounds_ringtone_silent">静音</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">触摸屏手势</string>
     <string name="touchscreen_gesture_settings_summary">为快捷操作采用各种触摸屏手势</string>
     <string name="touchscreen_gestures_haptic_feedback_title">触觉反馈</string>
@@ -566,7 +511,6 @@
     <string name="touchscreen_gesture_letter_v_title">绘制字母\"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">绘制字母\"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">绘制字母\"Z\"</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">用手写笔向上滑动</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">用手写笔向下滑动</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">用手写笔向左滑动</string>
@@ -585,8 +529,6 @@
     <string name="touchscreen_gesture_action_next_track">转到下一曲目</string>
     <string name="touchscreen_gesture_action_volume_down">降低媒体音量</string>
     <string name="touchscreen_gesture_action_volume_up">提高媒体音量</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_title">样式</string>
     <string name="style_summary">选择系统配色方案</string>
     <string name="style_global_title">样式</string>
@@ -607,7 +549,6 @@
     <string name="style_dark_overlay_default">默认</string>
     <string name="style_dark_overlay_black">黑色</string>
     <string name="style_permission_error">为了分析您的壁纸，需要存储权限，请授予此功能权限</string>
-    <!-- Trust interface -->
     <string name="trust_category_features">状态</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">强制执行</string>
@@ -620,11 +561,8 @@
     <string name="trust_feature_root_explain">Root 访问让您可以选择让某些应用和服务绕过安全限制，允许他们修改系统。这可能会对您的设备或操作系统造成损坏。</string>
     <string name="trust_feature_security_patches">Android 安全补丁</string>
     <string name="trust_feature_security_patches_value_base">平台：%1$s\n厂商：%2$s</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">已是最新</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_medium">数月未更新</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">已过时</string>
     <string name="trust_feature_security_patches_explain">安全补丁由 Google 和 SoC 厂商每月发布，用以修复可能会被恶意应用利用、绕过安全限制对你的设备造成暂时或永久损坏的缺陷。\n平台补丁每个月都会统一更新，但厂商补丁只能每次从 OEM 取得。\n要保证您的设备安全，请使用最新版本的 LineageOS。</string>
     <string name="trust_feature_encryption">加密</string>
@@ -641,7 +579,8 @@
     <string name="trust_onboarding_description">安全中心能保障您的设备安全并保护您的隐私。\n您可以通过显示的安全图标检查内容的安全性。</string>
     <string name="trust_onboarding_learn_more">了解更多</string>
     <string name="trust_onboarding_done">我知道了</string>
-    <!-- Sms limit -->
+    <string name="trust_restrict_usb_title">限制 USB</string>
+    <string name="trust_restrict_usb_summary">当设备锁定时禁用新的 USB 配件</string>
     <string name="sms_security_check_limit_title">短信限制</string>
     <string name="sms_security_check_limit_summary">应用在 1 分钟内发送不超过 %s 条短信无需确认</string>
     <string name="sms_security_check_limit_summary_none">应用在发送任何短信前必须获得您的确认</string>

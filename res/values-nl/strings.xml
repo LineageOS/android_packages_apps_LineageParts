@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">LineageOS-instellingen</string>
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Laden\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Annuleren</string>
@@ -38,10 +37,7 @@
     <string name="search">Zoeken</string>
     <string name="disabled">Uitgeschakeld</string>
     <string name="enabled">Ingeschakeld</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Privacy</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Privacybescherming</string>
     <string name="privacy_guard_dlg_title">Privacybescherming inschakelen?</string>
     <string name="privacy_guard_dlg_text">Als Privacybescherming is ingeschakeld, zal de app geen toegang hebben tot persoonsgegevens zoals contacten, berichten of gespreksstatistieken.</string>
@@ -56,7 +52,6 @@
     <string name="privacy_guard_manager_show_system_apps">Ingebouwde apps tonen</string>
     <string name="privacy_guard_advanced_settings_title">Geavanceerd</string>
     <string name="privacy_guard_notification_title">Melding weergeven</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Meldingsledinstellingen</string>
     <string name="pulse_speed_title">Duur en snelheid van knipperen</string>
     <string name="default_time">Normaal</string>
@@ -64,7 +59,6 @@
     <string name="dialog_delete_title">Verwijderen</string>
     <string name="dialog_delete_message">Geselecteerd item verwijderen?</string>
     <string name="brightness">Helderheidsniveau</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Altijd aan</string>
     <string name="pulse_length_very_short">Zeer kort</string>
     <string name="pulse_length_short">Kort</string>
@@ -76,18 +70,15 @@
     <string name="pulse_speed_normal">Normaal</string>
     <string name="pulse_speed_slow">Langzaam</string>
     <string name="pulse_speed_very_slow">Heel langzaam</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_title">Helderheidsniveau</string>
     <string name="light_brightness_normal">Normaal</string>
     <string name="light_brightness_zen">Niet storen</string>
-    <!-- Battery light settings -->
     <string name="battery_light_title">Acculed</string>
     <string name="battery_low_pulse_title">Knipperen bij lage accuspanning</string>
     <string name="battery_light_list_title">Kleuren</string>
     <string name="battery_light_low_color_title">Lage accuspanning</string>
     <string name="battery_light_medium_color_title">Bezig met opladen</string>
     <string name="battery_light_full_color_title">Volledig opgeladen</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Meldingsled</string>
     <string name="notification_light_general_title">Algemeen</string>
     <string name="notification_light_advanced_title">Geavanceerd</string>
@@ -102,11 +93,9 @@
     <string name="keywords_lights_brightness_level">dimmen led LED helderheid</string>
     <string name="notification_light_automagic">Automatisch kleuren kiezen</string>
     <string name="notification_light_automagic_summary">Kleuren worden automatisch gekozen</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Verlichtingsinstellingen</string>
     <string name="led_notification_text">LED-verlichting ingeschakeld door instellingen</string>
     <string name="notification_light_no_apps_summary">Om controle per app toe te voegen, activeer %1$s en tik \'\u002b\' op de menubalk</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
     <string name="live_display_mode">Weergavemodus</string>
     <string name="live_display_color_temperature_title">Kleurtemperatuur</string>
@@ -149,14 +138,12 @@
     <string name="color_red_title">Rood</string>
     <string name="color_green_title">Groen</string>
     <string name="color_blue_title">Blauw</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Beeldaanpassingen</string>
     <string name="picture_adjustment_summary">Tint, verzadiging, intensiteit en contrast aanpassen</string>
     <string name="adj_hue_title">Tint</string>
     <string name="adj_saturation_title">Verzadiging</string>
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Contrast</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Knoppen</string>
     <string name="hardware_keys_power_key_title">Aan/uit-knop</string>
     <string name="hardware_keys_home_key_title">Thuisknop</string>
@@ -202,7 +189,6 @@
     <string name="home_answer_call_summary">Inkomende oproepen beantwoorden door op de thuisknop te drukken</string>
     <string name="extras_title">Extra\'s</string>
     <string name="additional_buttons_title">Extra knoppen</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Verlichting</string>
     <string name="button_backlight_enabled">Knoppen verlichten</string>
     <string name="keyboard_backlight_enabled">Toetsenbord verlichten</string>
@@ -213,10 +199,8 @@
     <string name="backlight_summary_disabled">Uitgeschakeld</string>
     <string name="backlight_summary_enabled_with_timeout">Ingeschakeld voor <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Ingeschakeld</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">On-screen navigatiebalk inschakelen</string>
     <string name="disable_navkeys_summary">On-screen navigatiebalk inschakelen en hardware-knoppen uitschakelen</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigatiebalk</string>
     <string name="navigation_bar_title">Knoppen en indeling</string>
     <string name="navigation_bar_left_summary">Navigatiebalk aan de linkerkant van het scherm weergeven in liggende stand</string>
@@ -224,7 +208,6 @@
     <string name="navigation_bar_arrow_keys_summary">Cursor links en rechts weergeven tijdens typen. Verbergt invoermethodepictogram.</string>
     <string name="navigation_bar_home_long_press_title">Thuisknop lang indrukken</string>
     <string name="navigation_bar_home_double_tap_title">Thuisknop twee keer indrukken</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Opties in afsluitmenu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_airplane_title">Vliegtuigmodus</string>
@@ -232,7 +215,6 @@
     <string name="power_menu_bug_report_title">Foutenrapport</string>
     <string name="power_menu_bug_report_disabled">Foutrapportage is uitgeschakeld in de opties voor ontwikkelaars</string>
     <string name="camera_double_tap_power_gesture_title">Twee keer op aan/uit-knop drukken voor camera</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
     <string name="torch_long_press_power_gesture_title">Lang drukken voor zaklamp</string>
     <string name="torch_long_press_power_gesture_desc">Zaklamp inschakelen door lang op de aan/uit-knop te drukken als het scherm uit is</string>
@@ -242,7 +224,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minuten</string>
     <string name="torch_long_press_power_timeout_5min">5 minuten</string>
     <string name="torch_long_press_power_timeout_10min">10 minuten</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Verwijderen</string>
     <string name="profile_action_none">Niet wijzigen</string>
     <string name="profile_action_system">Systeemstandaard</string>
@@ -259,14 +240,12 @@
     <string name="profile_setup_actions_title">Stap 2: acties instellen</string>
     <string name="profile_setup_actions_title_config">Acties aanpassen</string>
     <string name="wireless_networks_settings_title">Draadloos &amp; netwerken</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Geen Bluetooth-apparaten gekoppeld.\nTik om Bluetooth-apparaat te koppelen alvorens triggers in te stellen.</string>
     <string name="no_wifi_triggers">Geen draadloze toegangspunten ingesteld.\nTik om met wifi te verbinden alvorens triggers in te stellen.</string>
     <string name="no_triggers_configured">Geen triggers ingesteld. Tik om toe te voegen.</string>
     <string name="no_triggers_configured_nfc">Tik om nieuwe NFC-trigger in te stellen.</string>
     <string name="profile_setup_setup_triggers_description">Selecteer de triggers die dit profiel activeren</string>
     <string name="profile_setup_actions_description">Selecteer nu wat er moet gebeuren wanneer dit profiel wordt geactiveerd</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Systeemprofielen</string>
     <string name="profiles_add">Toevoegen</string>
     <string name="profile_menu_delete">Verwijderen</string>
@@ -290,44 +269,34 @@
     <string name="profile_app_group_category_title">Meldingen aanpassen</string>
     <string name="profile_app_group_item_instructions">Groepen toevoegen of verwijderen</string>
     <string name="profile_app_group_item_instructions_summary">App-groepen toevoegen of verwijderen om meldingsgedrag te manipuleren</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">Aan</string>
     <string name="profile_entries_off">Off</string>
     <string name="profile_entries_no_override">Niet wijzigen</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Naam</string>
     <string name="new_profile_name">&lt;nieuw profiel&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Naam wijzigen</string>
     <string name="rename_dialog_message">Nieuwe naam invoeren</string>
     <string name="rename_dialog_hint">Profielnaam invoeren</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Opnieuw instellen</string>
     <string name="profile_reset_message">Alle gemaakte gebruikersprofielen en app-groepen verwijderen en naar standaardwaarden herstellen?</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">Deze app verwijderen?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Volume geforceerd wijzigen</string>
     <string name="connection_state_enabled">Inschakelen</string>
     <string name="volume_override_summary">Ingesteld op %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Volume geforceerd wijzigen</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profielen</string>
     <string name="profile_profile_manage">Profiel beheren</string>
     <string name="profile_appgroups_manage">App-groepen</string>
     <string name="profile_appgroup_manage">App-groep beheren</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Profielinstellingen</string>
     <string name="profile_trigger_connect">Bij verbinden</string>
     <string name="profile_trigger_disconnect">Bij verbroken verbinding</string>
     <string name="profile_trigger_notrigger">Geen trigger</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Meldingsstand</string>
     <string name="ringer_mode">Belstand</string>
     <string name="lights_mode">Lichtstand</string>
@@ -335,9 +304,7 @@
     <string name="choose_soundtone">Meldingsgeluid kiezen</string>
     <string name="choose_ringtone">Beltoon kiezen</string>
     <string name="ringtone_title">Beltoon</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Meldingsgeluid</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">App-groepen</string>
     <string name="profile_applist_title">Apps</string>
     <string name="profile_new_appgroup">Nieuwe app-groep</string>
@@ -345,9 +312,7 @@
     <string name="profile_appgroup_name_prompt">Naam invoeren voor nieuwe app-groep</string>
     <string name="profile_appgroup_name_title">Naam</string>
     <string name="duplicate_appgroup_name">Naam bestaat al</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">App selecteren</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Systeeminstellingen</string>
     <string name="profile_lockmode_title">Type schermvergrendeling</string>
     <string name="profile_lockmode_policy_disabled_summary">Deze profieloptie is uitgeschakeld door het beleid van de apparaatbeheerder</string>
@@ -357,7 +322,6 @@
     <string name="profile_brightness_title">Schermhelderheid</string>
     <string name="profile_brightness_override_summary">Ingesteld op %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Helderheid aanpassen</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wifi</string>
     <string name="toggleWifiAp">Draagbare wifi-hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -365,7 +329,6 @@
     <string name="toggleData">Gegevensverbinding</string>
     <string name="toggleSync">Gegevenssynchronisatie</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Belstand</string>
     <string name="ring_mode_normal">Normaal</string>
     <string name="ring_mode_vibrate">Trillen</string>
@@ -376,7 +339,6 @@
     <string name="media_volume_title">Media</string>
     <string name="alarm_volume_title">Alarm</string>
     <string name="doze_title">Omgevingsdisplay</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Statusbalk</string>
     <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s van statusbalk opent Snelle Instellingen</string>
@@ -387,13 +349,11 @@
     <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>
     <string name="status_bar_double_tap_to_sleep_title">Dubbeltikken voor slaapstand</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dubbeltikken op de statusbalk voor slaapstand</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Statusbalkpictogrammen</string>
     <string name="status_bar_notif_count_title">Aantal meldingen tonen</string>
     <string name="status_bar_notif_count_summary">Aantal nieuwe meldingen tonen</string>
     <string name="status_bar_system_icons_title">Systeempictogrammen</string>
     <string name="status_bar_system_icons_summary">Instellen welke statusbalkpictogrammen worden weergegeven</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Klok</string>
     <string name="status_bar_clock_position_title">Indeling klok</string>
     <string name="status_bar_clock_position_right">Rechts</string>
@@ -404,7 +364,6 @@
     <string name="status_bar_am_pm_normal">Normaal</string>
     <string name="status_bar_am_pm_small">Klein</string>
     <string name="status_bar_am_pm_hidden">Verborgen</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Accupictogram</string>
     <string name="status_bar_battery_style_title">Opmaak accustatus</string>
     <string name="status_bar_battery_style_icon_portrait">Pictogram (staand)</string>
@@ -412,12 +371,10 @@
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Verborgen</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Accupercentage</string>
     <string name="status_bar_battery_percentage_default">Verborgen</string>
     <string name="status_bar_battery_percentage_text_inside">In het pictogram</string>
     <string name="status_bar_battery_percentage_text_next">Naast het pictogram</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Helderheid</string>
     <string name="status_bar_brightness_slider_title">Schuifregelaar helderheid</string>
     <string name="status_bar_brightness_slider_summary">Helderheid aanpassen vanuit snelle instellingen</string>
@@ -425,7 +382,6 @@
     <string name="status_bar_brightness_slider_auto_summary">Schakelaar voor aanpassende helderheid naast de schuifregelaar</string>
     <string name="status_bar_toggle_brightness">Helderheid beheren</string>
     <string name="status_bar_toggle_brightness_summary">Helderheid aanpassen door over de statusbalk te slepen</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_mode_disable">Uitgeschakeld</string>
     <string name="network_traffic_autohide">Automatisch verbergen</string>
     <string name="network_traffic_units_kilobits">Kilobit per seconde (kb/s)</string>
@@ -433,23 +389,19 @@
     <string name="network_traffic_units_kilobytes">Kilobyte per seconde (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabyte per seconde (MB/s)</string>
     <string name="network_traffic_show_units">Eenheden weergeven</string>
-    <!-- Protected apps -->
     <string name="protected_apps_manager_title">Beschermde apps</string>
     <string name="protected_apps_manager_summary">Beheren welke apps beschermd zijn</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Bijdragers</string>
     <string name="contributors_cloud_loading_message">Informatie over bijdragers laden\u2026</string>
     <string name="contributors_cloud_failed_message">Kan informatie over bijdragers niet laden</string>
     <string name="contributor_info_menu">Informatie over bijdragers</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Naam:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>Alias:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;Naam:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Alias:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Informatie over bijdragers</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Aantal bijdragers:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Aantal commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Laatste update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Aantal bijdragers:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Aantal commits:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Laatste update:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS-statistieken</string>
     <string name="anonymous_statistics_summary">Help LineageOS te verbeteren door anonieme statistieken te verzenden</string>
     <string name="anonymous_statistics_warning_title">Over</string>
@@ -458,7 +410,6 @@
     <string name="preview_data_title">Voorbeeld van gegevens</string>
     <string name="view_stats_title">Statistieken tonen</string>
     <string name="anonymous_learn_more">Meer informatie</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Uniek ID</string>
     <string name="preview_device_title">Apparaat</string>
     <string name="preview_version_title">Versie</string>
@@ -466,7 +417,6 @@
     <string name="preview_carrier_title">Provider</string>
     <string name="stats_collection_title">Verzamelen van statistieken</string>
     <string name="stats_collection_summary">Toestaan dat installatie- en apparaatstatistieken worden verzameld</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Scherm automatisch draaien</string>
     <string name="display_rotation_title">Rotatie-instellingen</string>
     <string name="display_rotation_enabled">Auto-rotatie is ingeschakeld</string>
@@ -478,7 +428,6 @@
     <string name="display_rotation_90_title">90 graden</string>
     <string name="display_rotation_180_title">180 graden</string>
     <string name="display_rotation_270_title">270 graden</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Weer</string>
     <string name="weather_settings_no_services_prompt">Geen weeraanbiederservices geïnstalleerd</string>
     <string name="weather_settings_no_services_summary">Installeer een weeraanbieder om weer-updates te ontvangen</string>
@@ -493,7 +442,6 @@
     <string name="weather_settings_keyword">weer</string>
     <string name="status_bar_show_weather_title">Weer weergeven</string>
     <string name="status_bar_show_weather_summary">Huidige temperatuur op de statusbalk weergeven</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Energiebesparing en prestaties</string>
     <string name="perf_profile_settings_summary">Instellingen energiebesparing en apparaatprestaties aanpassen</string>
     <string name="perf_profile_overview_summary">Huidige profiel: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -507,7 +455,6 @@
     <string name="auto_power_save_summary_on">Energiebesparende modus automatisch inschakelen op %s accu</string>
     <string name="auto_power_save_summary_off">Energiebesparende modus niet automatisch inschakelen</string>
     <string name="auto_power_save_never">Nooit</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">Uitgebreid bureaublad</string>
     <string name="expanded_desktop_settings_summary">Uw beschikbare desktopruimte uitbreiden door de statusbalk, navigatiebalk of beide te verbergen</string>
     <string name="expanded_desktop_options_title">Aanpassingsopties</string>
@@ -517,15 +464,12 @@
     <string name="expanded_desktop_style_hide_navigation">Navigatiebalk verbergen</string>
     <string name="expanded_desktop_style_hide_both">Beide verbergen</string>
     <string name="expanded_desktop_nothing_to_show_text">Uitschakelen om het uitgebreide bureaublad per app te kunnen aanpassen</string>
-    <!-- Applications: Long screen -->
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Opladergeluid</string>
     <string name="charging_sounds_enabled_title">Inschakelen</string>
     <string name="charging_sounds_enabled_summary">Geluid afspelen bij het aansluiten of loskoppelen van een lader</string>
     <string name="power_notifications_vibrate_title">Trillen</string>
     <string name="charging_sounds_ringtone_title">Meldingsgeluid</string>
     <string name="charging_sounds_ringtone_silent">Stil</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Schermgebaren</string>
     <string name="touchscreen_gesture_settings_summary">Schermgebaren gebruiken voor snelle acties</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Trillen</string>
@@ -547,7 +491,6 @@
     <string name="touchscreen_gesture_letter_v_title">Teken een \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">Teken een \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Teken een \"Z\"</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">Omhoog vegen met de stylus</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Omlaag vegen met de stylus</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Naar links vegen met de stylus</string>
@@ -564,8 +507,6 @@
     <string name="touchscreen_gesture_action_play_pause_music">Muziek afspelen/pauzeren</string>
     <string name="touchscreen_gesture_action_previous_track">Ga terug naar vorige nummer</string>
     <string name="touchscreen_gesture_action_next_track">Spring naar volgende nummer</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_title">Stijl</string>
     <string name="style_global_title">Stijl</string>
     <string name="style_global_entry_automatic">Automatisch (achtergrond)</string>
@@ -580,14 +521,9 @@
     <string name="style_accent_default_name">Standaard</string>
     <string name="style_dark_overlay_default">Standaard</string>
     <string name="style_dark_overlay_black">Zwart</string>
-    <!-- Trust interface -->
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_encryption">Encryptie</string>
     <string name="trust_feature_encryption_value_enabled">Ingeschakeld</string>
     <string name="trust_feature_encryption_value_disabled">Uitgeschakeld</string>
-    <!-- Sms limit -->
 </resources>

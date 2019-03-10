@@ -17,7 +17,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Duke u ngarkuar\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Anullo</string>
@@ -37,10 +36,7 @@
     <string name="search">Kërko</string>
     <string name="disabled">E çaktivizuar</string>
     <string name="enabled">E aktivizuar</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Privatësia</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Aktivizo Mbrojtësin e të Dhënave</string>
     <string name="privacy_guard_dlg_title">Do të aktivizosh Mbrojtësin e të Dhënave?</string>
     <string name="privacy_guard_dlg_text">Kur Mrojtësi i të Dhënave është i aktivizuar, aplikacioni nuk mund të aksesojë dot të dhëna personale si kontaktet, mesazhet apo listën e thirrjeve.</string>
@@ -55,7 +51,6 @@
     <string name="privacy_guard_manager_show_system_apps">Trego aplikacionet e integruara</string>
     <string name="privacy_guard_advanced_settings_title">Të përparuara</string>
     <string name="privacy_guard_notification_title">Trego njoftimin</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Redakto parametrat e dritës</string>
     <string name="pulse_speed_title">Gjatësia dhe shpejtësia e pulsimit</string>
     <string name="default_time">Normale</string>
@@ -63,7 +58,6 @@
     <string name="dialog_delete_title">Fshi</string>
     <string name="dialog_delete_message">Dëshiron ta heqësh elementin e zgjedhur?</string>
     <string name="brightness">Niveli i ndriçimit</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Gjithmonë e ndezur</string>
     <string name="pulse_length_very_short">Shumë e shkurtër</string>
     <string name="pulse_length_short">E shkurtër</string>
@@ -75,15 +69,12 @@
     <string name="pulse_speed_normal">Normale</string>
     <string name="pulse_speed_slow">E ngadaltë</string>
     <string name="pulse_speed_very_slow">Shumë e ngadaltë</string>
-    <!-- Common light settings strings -->
-    <!-- Battery light settings -->
     <string name="battery_light_title">Drita e baterisë</string>
     <string name="battery_low_pulse_title">Pulso nëse bateria është e ulët</string>
     <string name="battery_light_list_title">Ngjyrat</string>
     <string name="battery_light_low_color_title">Bateria e ulët</string>
     <string name="battery_light_medium_color_title">Duke u karikuar</string>
     <string name="battery_light_full_color_title">Plotësisht e karikuar</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Drita e njoftimeve</string>
     <string name="notification_light_general_title">Të përgjithshme</string>
     <string name="notification_light_advanced_title">Të përparuara</string>
@@ -98,11 +89,9 @@
     <string name="keywords_lights_brightness_level">zbut ndriçimin e dritave LED</string>
     <string name="notification_light_automagic">Zgjidhi ngjyrat automatikisht</string>
     <string name="notification_light_automagic_summary">Zgjedhja e ngjyrave bëhet automatikisht</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Parametrat e dritës</string>
     <string name="led_notification_text">Drita LED e aktivizuar nga parametrat</string>
     <string name="notification_light_no_apps_summary">Për të modifikuar individualisht parametrat e çdo aplikacioni, aktivizoni \'%1$s\' dhe shtypni \'\u002b\' në shiritin e menusë</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizo ekranin në bazë të orës së ditës dhe konditave të mjedisit për të përmirësuar lexueshmërinë dhe për të reduktuar lodhjen e syve</string>
     <string name="live_display_mode">Profili i ekranit</string>
     <string name="live_display_color_temperature_title">Temperatura e ngjyrave</string>
@@ -142,14 +131,12 @@
     <string name="color_red_title">E kuqe</string>
     <string name="color_green_title">E gjelbër</string>
     <string name="color_blue_title">Blu</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Rregullimi i imazhit</string>
     <string name="picture_adjustment_summary">Ndrysho nuancat, saturimin, intensitetin, dhe kontrastin</string>
     <string name="adj_hue_title">Nuanca e ngjyrave</string>
     <string name="adj_saturation_title">Saturimi</string>
     <string name="adj_intensity_title">Intensiteti</string>
     <string name="adj_contrast_title">Kontrasti</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Butonat</string>
     <string name="hardware_keys_power_key_title">Butoni i energjisë</string>
     <string name="hardware_keys_home_key_title">Butoni Home</string>
@@ -193,7 +180,6 @@
     <string name="volume_answer_call_summary">Përgjigjiu thirrjeve hyrëse duke shtypur butonat e volumit</string>
     <string name="home_answer_call_title">Pergjigjiu thirrjes</string>
     <string name="home_answer_call_summary">Përgjigjiu thirrjeve hyrëse duke shtypur butonin Home</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Ndriçimi në sfond</string>
     <string name="button_backlight_enabled">Ndriço butonat</string>
     <string name="keyboard_backlight_enabled">Ndriço tastierën</string>
@@ -204,10 +190,8 @@
     <string name="backlight_summary_disabled">I çaktivizuar</string>
     <string name="backlight_summary_enabled_with_timeout">I aktivizuar për <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">I aktivizuar</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktivizo shiritin e lundrimit në ekran</string>
     <string name="disable_navkeys_summary">Aktivizo shiritin e lundrimit në ekran dhe çaktivizo butonat fizikë</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Shiriti i lundrimit</string>
     <string name="navigation_bar_title">Butonat dhe pozicionimi</string>
     <string name="navigation_bar_left_summary">Vendos shiritin e lundrimit në anën e majtë të ekranit kur ai është i kthyer horizontalisht</string>
@@ -215,7 +199,6 @@
     <string name="navigation_bar_arrow_keys_summary">Shfaq butonat e kursorit të majtë dhe të djathtë gjatë kohës që shkruan. Ky opsion shpërfill çelësin IME.</string>
     <string name="navigation_bar_home_long_press_title">Veprimi kur mban shtypur butonin Home</string>
     <string name="navigation_bar_home_double_tap_title">Shtypja dy herë e butonit Home</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Menuja e energjisë</string>
     <string name="power_menu_screenshot_title">Foto e ekranit</string>
     <string name="power_menu_airplane_title">Profili Avion</string>
@@ -223,11 +206,9 @@
     <string name="power_menu_bug_report_title">Raportimi i problemeve</string>
     <string name="power_menu_bug_report_disabled">Raportimi i problemeve është çaktivizuar në parametrat e zhvillimit</string>
     <string name="camera_double_tap_power_gesture_title">Shtyp dy herë butonin e energjisë për kamerën</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Hap menjëherë kamerën pa zhbllokuar ekranin</string>
     <string name="torch_long_press_power_gesture_title">Mbaj shtypur për të ndezur elektrikun e dorës</string>
     <string name="torch_long_press_power_gesture_desc">Ndiz elektrikun e dorës duke mbajtur shtypur butonin e energjisë kur ekrani është i fikur</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Fshi</string>
     <string name="profile_action_none">Lëre të pandryshuar</string>
     <string name="profile_action_system">Paracaktimet e sistemit</string>
@@ -244,14 +225,12 @@
     <string name="profile_setup_actions_title">Hapi 2: Konfiguro veprimet</string>
     <string name="profile_setup_actions_title_config">Rikonfiguro veprimet</string>
     <string name="wireless_networks_settings_title">Wireless &amp; rrjete</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Asnjë pajisje Bluetooth e çiftëzuar.\nShtyp për të çiftëzuar pajisjen Bluetooth përpara se të konfigurosh aktivizuesit.</string>
     <string name="no_wifi_triggers">Asnjë pikë aksesi Wi\u2011Fi e konfiguruar.\nShtyp për t\'u lidhur me Wi\u2011Fi përpara se të konfigurosh aktivizuesit.</string>
     <string name="no_triggers_configured">Asnjë aktivizues i konfiguruar. Shtyp për të shtuar ndonjë.</string>
     <string name="no_triggers_configured_nfc">Shtyp për të konfiguruar një aktivizues NFC të ri.</string>
     <string name="profile_setup_setup_triggers_description">Zgjidhni aktivizuesit që do të aktivizojnë këtë profil</string>
     <string name="profile_setup_actions_description">Tani konfiguro atë që ndodh kur profili aktivizohet</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Profilet e sistemit</string>
     <string name="profiles_add">Shto</string>
     <string name="profile_menu_delete">Fshi</string>
@@ -275,44 +254,34 @@
     <string name="profile_app_group_category_title">Shpërfillja e njoftimeve</string>
     <string name="profile_app_group_item_instructions">Shto ose hiq grupe</string>
     <string name="profile_app_group_item_instructions_summary">Shto ose hiq nga ky profil ato grupe aplikacionesh që mund të shpërfillin njoftimet</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">Aktiv</string>
     <string name="profile_entries_off">Inaktiv</string>
     <string name="profile_entries_no_override">Mos shpërfill</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Emri</string>
     <string name="new_profile_name">&lt;profil i ri&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Riemërto</string>
     <string name="rename_dialog_message">Vendos një emër të ri</string>
     <string name="rename_dialog_hint">Vendos emrin e profilit</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Ricakto</string>
     <string name="profile_reset_message">Dëshiron të fshish të gjitha profilet dhe grupet e aplikacioneve të krijuar nga përdoruesi dhe t\'i kthesh në gjendjen fillestare?</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">Dëshiron ta heqësh këtë aplikacion?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Shpërfillja e volumit</string>
     <string name="connection_state_enabled">Aktivizo</string>
     <string name="volume_override_summary">Vendose në %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Shpërfill volumin</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profilet</string>
     <string name="profile_profile_manage">Menaxho profilet</string>
     <string name="profile_appgroups_manage">Grupe aplikacionesh</string>
     <string name="profile_appgroup_manage">Menaxho grupet e aplikacioneve</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Konfigurimet e profilit</string>
     <string name="profile_trigger_connect">Kur lidhet</string>
     <string name="profile_trigger_disconnect">Kur shkëputet</string>
     <string name="profile_trigger_notrigger">Asnjë aktivizues</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Mënyra e njoftimit</string>
     <string name="ringer_mode">Me zile</string>
     <string name="lights_mode">Me dritë LED</string>
@@ -320,9 +289,7 @@
     <string name="choose_soundtone">Zgjidh zilen e njoftimeve</string>
     <string name="choose_ringtone">Zgjidh zilen</string>
     <string name="ringtone_title">Zilja e telefonit</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Zilja e njoftimeve</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Grupe aplikacionesh</string>
     <string name="profile_applist_title">Aplikacionet</string>
     <string name="profile_new_appgroup">Grup i ri aplikacionesh</string>
@@ -330,9 +297,7 @@
     <string name="profile_appgroup_name_prompt">Vendos një emër për grupin e ri të aplikacioneve</string>
     <string name="profile_appgroup_name_title">Emri</string>
     <string name="duplicate_appgroup_name">Ky emër grupi aplikacionesh tashmë ekziston!</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">Zgjidh aplikacionin</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Parametrat e sistemit</string>
     <string name="profile_lockmode_title">Profili i ekranit bllokues</string>
     <string name="profile_lockmode_policy_disabled_summary">Ky opsion profili është çaktivizuar nga administratori i pajisjes</string>
@@ -342,7 +307,6 @@
     <string name="profile_brightness_title">Ndriçimi i ekranit</string>
     <string name="profile_brightness_override_summary">Vendose në %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Shpërfill ndriçimin</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Hotspot Wi\u2011Fi Portabël</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -350,7 +314,6 @@
     <string name="toggleData">Lidhja me internetin</string>
     <string name="toggleSync">Sinkronizim automatik i të dhënave</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Profili i ziles</string>
     <string name="ring_mode_normal">Normal</string>
     <string name="ring_mode_vibrate">Me dridhje</string>
@@ -361,7 +324,6 @@
     <string name="media_volume_title">Media</string>
     <string name="alarm_volume_title">Alarmi</string>
     <string name="doze_title">Drita e ekranit sipas ambientit</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Shiriti i statusit</string>
     <string name="status_bar_quick_qs_pulldown_title">Menuja e shpejtë</string>
     <string name="status_bar_quick_qs_pulldown_summary">Duke rrëshqitur nga skaji i %1$s i shiritit të statusit, do të hapen Parametrat e Shpejtë</string>
@@ -370,13 +332,11 @@
     <string name="status_bar_quick_qs_pulldown_right">I djathtë</string>
     <string name="status_bar_double_tap_to_sleep_title">Shtyp dy herë për të fikur ekranin</string>
     <string name="status_bar_double_tap_to_sleep_summary">Shtyp dy herë shiritin e ekranit për të fikur ekranin</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Ikonat e shiritit të statusit</string>
     <string name="status_bar_notif_count_title">Trego numrin e njoftimeve</string>
     <string name="status_bar_notif_count_summary">Trego numrin e njoftimeve në pritje</string>
     <string name="status_bar_system_icons_title">Ikonat e sistemit</string>
     <string name="status_bar_system_icons_summary">Zgjidh cilat ikona do të shfaqen në shiritin e statusit</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Ora</string>
     <string name="status_bar_clock_position_title">Pozicionimi i orës</string>
     <string name="status_bar_clock_position_right">Në të djathtë</string>
@@ -387,7 +347,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">I vogël</string>
     <string name="status_bar_am_pm_hidden">I fshehur</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Treguesi i baterisë</string>
     <string name="status_bar_battery_style_title">Stili i treguesit të baterisë</string>
     <string name="status_bar_battery_style_icon_portrait">Ikonë vertikalisht</string>
@@ -395,28 +354,21 @@
     <string name="status_bar_battery_style_circle">Rreth</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">E fshehur</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Përqindja e baterisë</string>
     <string name="status_bar_battery_percentage_default">E fshehur</string>
     <string name="status_bar_battery_percentage_text_inside">Brenda ikonës</string>
     <string name="status_bar_battery_percentage_text_next">Në anë të ikonës</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_toggle_brightness">Kontrolli i ndriçimit</string>
     <string name="status_bar_toggle_brightness_summary">Ndrysho ndriçimin duke rrëshqitur gishtin përgjatë shiritit të statusit</string>
-    <!-- Status bar - Network Traffic -->
-    <!-- Protected apps -->
     <string name="protected_apps_manager_title">Aplikacionet e mbrojtura</string>
     <string name="protected_apps_manager_summary">Cakto cilat aplikacione qëndrojnë të fshehura mbrapa një bllokimi të sigurtë</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Kontribuesit</string>
     <string name="contributors_cloud_loading_message">Duke ngarkuar të dhënat e kontribuesve\u2026</string>
     <string name="contributors_cloud_failed_message">Të dhënat e kontribuesve nuk mund të ngarkohen</string>
     <string name="contributor_info_menu">Informacion rreth kontribuesit</string>
     <string name="contributor_info_msg"><b>Emri:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>                 <b>Pseudonimi:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>                 <b>Kontributet:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Informacion rreth kontribimeve</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Kontribuesit në total:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>Kontribimet në total:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>                 <b>Përditësimi i fundit:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Kontribuesit në total:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;Kontribimet në total:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;Përditësimi i fundit:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Statistikat e LineageOS</string>
     <string name="anonymous_statistics_summary">Ndihmo në përmirësimin e LineageOS duke lejuar raportimin anonim të statistikave</string>
     <string name="anonymous_statistics_warning_title">Rreth nesh</string>
@@ -425,7 +377,6 @@
     <string name="preview_data_title">Inspekto të dhënat</string>
     <string name="view_stats_title">Shiko statistikat</string>
     <string name="anonymous_learn_more">Mëso më shumë</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID Unik</string>
     <string name="preview_device_title">Pajisja</string>
     <string name="preview_version_title">Versioni</string>
@@ -433,7 +384,6 @@
     <string name="preview_carrier_title">Operatori</string>
     <string name="stats_collection_title">Mbledhja e statistikave</string>
     <string name="stats_collection_summary">Lejo mbledhjen e metrikave të instalimit dhe statistikave të pajisjes</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Rrotullo automatikisht ekranin</string>
     <string name="display_rotation_title">Parametrat e rrotullimit</string>
     <string name="display_rotation_enabled">Rrotullimi automatik është i aktivizuar</string>
@@ -445,7 +395,6 @@
     <string name="display_rotation_90_title">90 gradë</string>
     <string name="display_rotation_180_title">180 gradë</string>
     <string name="display_rotation_270_title">270 gradë</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Moti</string>
     <string name="weather_settings_no_services_prompt">Nuk është instaluar asnjë ofrues i shërbimit meteorologjik</string>
     <string name="weather_settings_no_services_summary">Instalo një ofrues të shërbimit meteorologjik për të marrë përditësime të motit</string>
@@ -460,7 +409,6 @@
     <string name="weather_settings_keyword">moti</string>
     <string name="status_bar_show_weather_title">Shfaq motin</string>
     <string name="status_bar_show_weather_summary">Trego temperaturën aktuale në shiritin e statusit</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Kursimi i baterisë dhe përformanca</string>
     <string name="perf_profile_settings_summary">Rregullo funksionet e kursimit të energjisë dhe të përformancës së pajisjes</string>
     <string name="perf_profile_overview_summary">Profili aktual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -474,7 +422,6 @@
     <string name="auto_power_save_summary_on">Aktivizo në mënyrë automatike profilin e kursimit të energjisë kur bateria arrin %s</string>
     <string name="auto_power_save_summary_off">Mos e aktivizo në mënyrë automatike profilin e kursimit të energjisë</string>
     <string name="auto_power_save_never">Kurrë</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">Zgjerimi i ekranit</string>
     <string name="expanded_desktop_settings_summary">Zgjero hapësirën e ekranit tuaj duke fshehur shiritin e statusit, shiritin e lundrimit, ose të dyja</string>
     <string name="expanded_desktop_options_title">Opsionet e personalizimit</string>
@@ -484,15 +431,12 @@
     <string name="expanded_desktop_style_hide_navigation">Fshih shiritin e lundrimit</string>
     <string name="expanded_desktop_style_hide_both">Fshihi të dyja</string>
     <string name="expanded_desktop_nothing_to_show_text">Fik këtë çelës për të personalizuar individualisht zgjerimin e ekranit për çdo aplikacion</string>
-    <!-- Applications: Long screen -->
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Tingujt e karikimit</string>
     <string name="charging_sounds_enabled_title">Aktivizo</string>
     <string name="charging_sounds_enabled_summary">Luaj një tingull gjatë lidhjes apo shpëputjes me një burim energjie</string>
     <string name="power_notifications_vibrate_title">Dridhja</string>
     <string name="charging_sounds_ringtone_title">Zilja e njoftimeve</string>
     <string name="charging_sounds_ringtone_silent">Pa zë</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Gjestet me prekje ekrani</string>
     <string name="touchscreen_gesture_settings_summary">Kryej gjeste të ndryshme duke prekur ekranin për veprime të shpejta</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Reagimi haptik</string>
@@ -514,7 +458,6 @@
     <string name="touchscreen_gesture_letter_v_title">Vizato shkronjën \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">Vizato shkronjën \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Vizato shkronjën \"Z\"</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_action_dialog_title">Veprimi e gjestit</string>
     <string name="touchscreen_gesture_action_do_nothing">Mos bëj asgjë</string>
     <string name="touchscreen_gesture_action_flashlight">Ndiz/fik elektrikun e dorës</string>
@@ -526,11 +469,4 @@
     <string name="touchscreen_gesture_action_play_pause_music">Nis/ndalo muzikën</string>
     <string name="touchscreen_gesture_action_previous_track">Shko tek kënga e shkuar</string>
     <string name="touchscreen_gesture_action_next_track">Shko te kenga e radhës</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
-    <!-- Trust interface -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <!-- Sms limit -->
 </resources>

@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">Nastavení LineageOS</string>
-    <!-- Generic stuff used everywhere -->
     <string name="loading">Načítání\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Zrušit</string>
@@ -38,10 +37,7 @@
     <string name="search">Vyhledat</string>
     <string name="disabled">Zakázáno</string>
     <string name="enabled">Povoleno</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Soukromí</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Povolit Ochranu soukromí</string>
     <string name="privacy_guard_dlg_title">Povolit Ochranu soukromí?</string>
     <string name="privacy_guard_dlg_text">Pokud je Ochrana soukromí povolena, aplikaci je znemožněn přístup k osobním datům jako jsou kontakty, zprávy nebo historie volání.</string>
@@ -56,7 +52,6 @@
     <string name="privacy_guard_manager_show_system_apps">Zobrazit systémové aplikace</string>
     <string name="privacy_guard_advanced_settings_title">Pokročilé</string>
     <string name="privacy_guard_notification_title">Zobrazit upozornění</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Upravit světelnou signalizaci</string>
     <string name="pulse_speed_title">Délka a rychlost pulsu</string>
     <string name="default_time">Normální</string>
@@ -64,7 +59,6 @@
     <string name="dialog_delete_title">Smazat</string>
     <string name="dialog_delete_message">Odstranit vybranou položku?</string>
     <string name="brightness">Úroveň jasu</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Vždy zapnuto</string>
     <string name="pulse_length_very_short">Velmi krátká</string>
     <string name="pulse_length_short">Krátká</string>
@@ -76,18 +70,15 @@
     <string name="pulse_speed_normal">Normálně</string>
     <string name="pulse_speed_slow">Pomalu</string>
     <string name="pulse_speed_very_slow">Velmi pomalu</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_title">Úrovně jasu</string>
     <string name="light_brightness_normal">Normální</string>
     <string name="light_brightness_zen">Nerušit</string>
-    <!-- Battery light settings -->
     <string name="battery_light_title">Ukazatel baterie</string>
     <string name="battery_low_pulse_title">Blikat, když je baterie vybitá</string>
     <string name="battery_light_list_title">Barvy</string>
     <string name="battery_light_low_color_title">Vybitá baterie</string>
     <string name="battery_light_medium_color_title">Nabíjení</string>
     <string name="battery_light_full_color_title">Plně nabito</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Světelná signalizace</string>
     <string name="notification_light_general_title">Obecné</string>
     <string name="notification_light_advanced_title">Pokročilé</string>
@@ -102,11 +93,9 @@
     <string name="keywords_lights_brightness_level">ztlumit jas LED diod</string>
     <string name="notification_light_automagic">Automaticky zvolit barvy</string>
     <string name="notification_light_automagic_summary">Automaticky zvolit barvy</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Nastavení světelné signalizace</string>
     <string name="led_notification_text">LED světlo povoleno v nastavení</string>
     <string name="notification_light_no_apps_summary">Chcete-li přidat řízení jednotlivých aplikací, aktivujte „%1$s“ a použijte tlačítko „\u002b“ v panelu nabídky</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
     <string name="live_display_mode">Režim zobrazení</string>
     <string name="live_display_color_temperature_title">Teplota barev</string>
@@ -150,14 +139,12 @@
     <string name="color_red_title">Červená</string>
     <string name="color_green_title">Zelená</string>
     <string name="color_blue_title">Modrá</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Přizpůsobení obrazu</string>
     <string name="picture_adjustment_summary">Přizpůsobit odstín, sytost, intenzitu a kontrast</string>
     <string name="adj_hue_title">Odstín</string>
     <string name="adj_saturation_title">Sytost</string>
     <string name="adj_intensity_title">Intenzita</string>
     <string name="adj_contrast_title">Kontrast</string>
-    <!-- Button settings -->
     <string name="button_pref_title">Tlačítka</string>
     <string name="hardware_keys_power_key_title">Tlačítko Napájení</string>
     <string name="hardware_keys_home_key_title">Tlačítko Domů</string>
@@ -203,7 +190,6 @@
     <string name="home_answer_call_summary">Přijmout příchozí hovor stisknutím tlačítka „Domů“</string>
     <string name="extras_title">Doplňky</string>
     <string name="additional_buttons_title">Další tlačítka</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Podsvícení</string>
     <string name="button_backlight_enabled">Podsvícení tlačítek</string>
     <string name="button_backlight_only_when_pressed_title">Podsvícení tlačítek pouze při stisknutí</string>
@@ -215,10 +201,8 @@
     <string name="backlight_summary_disabled">Vypnuto</string>
     <string name="backlight_summary_enabled_with_timeout">Zapnuto na <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Povoleno</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Povolit navigační lištu na obrazovce</string>
     <string name="disable_navkeys_summary">Povolit navigační lištu na obrazovce a zakázat hardwarová tlačítka</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigační lišta</string>
     <string name="navigation_bar_title">Tlačítka a rozmístění</string>
     <string name="navigation_bar_left_summary">Při natočení na šířku umístit navigační lištu na levé straně obrazovky</string>
@@ -227,7 +211,6 @@
     <string name="navigation_bar_home_long_press_title">Akce dlouhého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_home_double_tap_title">Akce dvojitého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_app_switch_long_press_title">Akce dlouhého stisku tlačítka „Nedávné“</string>
-    <!-- Power menu -->
     <string name="power_menu_title">Nabídka tlačítka Vypnout</string>
     <string name="power_menu_screenshot_title">Snímek obrazovky</string>
     <string name="power_menu_screenshot_summary">Dlouhým dotykem pro získání částečného snímku obrazovky</string>
@@ -237,7 +220,6 @@
     <string name="power_menu_bug_report_disabled">Hlášení chyb je zakázáno ve vývojářských nastaveních</string>
     <string name="power_menu_lockdown_title">Uzamčení</string>
     <string name="camera_double_tap_power_gesture_title">Fotoaparát dvojitým stisknutím vypínače</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Rychle otevře fotoaparát bez odemknutí obrazovky</string>
     <string name="torch_long_press_power_gesture_title">Dlouhým stiskem zapnout svítilnu</string>
     <string name="torch_long_press_power_gesture_desc">Dlouhým stiskem tlačítka napájení při vypnuté obrazovce zapnout svítilnu</string>
@@ -247,7 +229,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minuty</string>
     <string name="torch_long_press_power_timeout_5min">5 minut</string>
     <string name="torch_long_press_power_timeout_10min">10 minut</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">Smazat</string>
     <string name="profile_action_none">Ponechat nezměněné</string>
     <string name="profile_action_system">Systémové výchozí</string>
@@ -264,14 +245,12 @@
     <string name="profile_setup_actions_title">Krok 2: nastavit akce</string>
     <string name="profile_setup_actions_title_config">Přenastavit akce</string>
     <string name="wireless_networks_settings_title">Bezdrátová připojení a sítě</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Nejsou spárovaná žádná Bluetooth zařízení.\nPřed nastavením spouštěčů nejprve dotykem spárujte Bluetooth zařízení.</string>
     <string name="no_wifi_triggers">Nejsou nastavený žádné přístupové body Wi\u2011Fi.\nPřed nastaveném spouštěčů se nejprve dotykem připojte k Wi\u2011Fi.</string>
     <string name="no_triggers_configured">Žádné aktivační události nenastaveny. Dotykem přidejte nové.</string>
     <string name="no_triggers_configured_nfc">Dotykem nastavte spouštěč NFC.</string>
     <string name="profile_setup_setup_triggers_description">Vyberte události, které aktivují tento profil</string>
     <string name="profile_setup_actions_description">Nyní proveďte nastavení toho, co se má stát, při aktivaci profilu</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Systémové profily</string>
     <string name="profiles_add">Přidat</string>
     <string name="profile_menu_delete">Odstranit</string>
@@ -295,44 +274,34 @@
     <string name="profile_app_group_category_title">Potlačení upozornění</string>
     <string name="profile_app_group_item_instructions">Přidat nebo odstranit skupiny</string>
     <string name="profile_app_group_item_instructions_summary">Přidat nebo odstranit skupinu aplikací pro potlačení notifikací do tohoto profilu</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">Zapnuto</string>
     <string name="profile_entries_off">Vypnuto</string>
     <string name="profile_entries_no_override">Neměnit</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">Název</string>
     <string name="new_profile_name">&lt;nový profil&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Přejmenovat</string>
     <string name="rename_dialog_message">Vložte nový název</string>
     <string name="rename_dialog_hint">Zadejte název profilu</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">Obnovit</string>
     <string name="profile_reset_message">Odstranit všechny uživatelem vytvořené profily a obnovit výchozí nastavení?</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">Odebrat tuto aplikaci?</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Jiná hlasitost</string>
     <string name="connection_state_enabled">Povolit</string>
     <string name="volume_override_summary">Nastavit na %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Měnit hlasitost</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profily</string>
     <string name="profile_profile_manage">Upravit profil</string>
     <string name="profile_appgroups_manage">Skupiny aplikací</string>
     <string name="profile_appgroup_manage">Spravovat skupinu aplikací</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Nastavení profilu</string>
     <string name="profile_trigger_connect">Při připojení</string>
     <string name="profile_trigger_disconnect">Při odpojení</string>
     <string name="profile_trigger_notrigger">Bez podmínky</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Režim upozornění</string>
     <string name="ringer_mode">Režim vyzvánění</string>
     <string name="lights_mode">Režim světelné signalizace</string>
@@ -340,9 +309,7 @@
     <string name="choose_soundtone">Zvolte tón upozornění</string>
     <string name="choose_ringtone">Zvolte vyzváněcí melodii</string>
     <string name="ringtone_title">Vyzvánění telefonu</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Zvuk upozornění</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Skupiny aplikací</string>
     <string name="profile_applist_title">Aplikace</string>
     <string name="profile_new_appgroup">Nová skupina aplikací</string>
@@ -350,9 +317,7 @@
     <string name="profile_appgroup_name_prompt">Zadejte název nové skupiny aplikací</string>
     <string name="profile_appgroup_name_title">Název</string>
     <string name="duplicate_appgroup_name">Duplicitní název skupiny!</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">Zvolte aplikaci</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Systémové nastavení</string>
     <string name="profile_lockmode_title">Režim zámku obrazovky</string>
     <string name="profile_lockmode_policy_disabled_summary">Tato volba profilu je zakázána ve Správci zařízení</string>
@@ -362,7 +327,6 @@
     <string name="profile_brightness_title">Jas obrazovky</string>
     <string name="profile_brightness_override_summary">Nastavit na %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Přepsat hodnotu jasu</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Přenosný Wi\u2011Fi hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -370,7 +334,6 @@
     <string name="toggleData">Datové připojení</string>
     <string name="toggleSync">Automatická synchronizace dat</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">Režim vyzvánění</string>
     <string name="ring_mode_normal">Normální</string>
     <string name="ring_mode_vibrate">Vibrovat</string>
@@ -381,7 +344,6 @@
     <string name="media_volume_title">Média</string>
     <string name="alarm_volume_title">Budík</string>
     <string name="doze_title">Ambientní displej</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Stavová lišta</string>
     <string name="status_bar_quick_qs_pulldown_title">Rychlé stažení nabídky</string>
     <string name="status_bar_quick_qs_pulldown_summary">Tažením dolů z %1$s strany stavové lišty se vysune rychlé nastavení</string>
@@ -392,13 +354,11 @@
     <string name="status_bar_quick_qs_pulldown_right">pravé</string>
     <string name="status_bar_double_tap_to_sleep_title">Dvojitým poklepáním uspat</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dvojitým poklepáním na stavový řádek vypnout obrazovku</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Ikony stavové lišty</string>
     <string name="status_bar_notif_count_title">Zobrazit počet upozornění</string>
     <string name="status_bar_notif_count_summary">Zobrazí počet nezobrazených upozornění v oznamovací oblasti</string>
     <string name="status_bar_system_icons_title">Systémové ikony</string>
     <string name="status_bar_system_icons_summary">Upravit zobrazení ikon na stavové liště</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Hodiny</string>
     <string name="status_bar_clock_show_seconds_title">Zobrazit sekundy</string>
     <string name="status_bar_clock_show_seconds_summary">Zobrazit hodiny, minuty a sekundy</string>
@@ -411,7 +371,6 @@
     <string name="status_bar_am_pm_normal">Normálně</string>
     <string name="status_bar_am_pm_small">Malý</string>
     <string name="status_bar_am_pm_hidden">Skrytý</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Indikátor baterie</string>
     <string name="status_bar_battery_style_title">Indikátor stavu baterie</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
@@ -419,12 +378,10 @@
     <string name="status_bar_battery_style_circle">Kruh</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Skrytá</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Procenta baterie</string>
     <string name="status_bar_battery_percentage_default">Skryté</string>
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Jas</string>
     <string name="status_bar_brightness_slider_title">Posuvník jasu</string>
     <string name="status_bar_brightness_slider_summary">Upravte jas z rychlého nastavení</string>
@@ -432,7 +389,6 @@
     <string name="status_bar_brightness_slider_auto_summary">Zobrazit přepínač pro automatický jas poblíž posuvníku</string>
     <string name="status_bar_toggle_brightness">Ovládání jasu</string>
     <string name="status_bar_toggle_brightness_summary">Umožňuje nastavit jas tažením prstu na stavové liště</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Sledování síťového provozu</string>
     <string name="network_traffic_settings_summary">Zobrazit rychlost přenosu dat ve stavové liště</string>
     <string name="network_traffic_mode_title">Režim zobrazení</string>
@@ -449,23 +405,19 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazit jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazení jednotek měření síť. provozu ve stavové liště</string>
-    <!-- Protected apps -->
     <string name="protected_apps_manager_title">Chráněné aplikace</string>
     <string name="protected_apps_manager_summary">Spravovat, které aplikace jsou skryté za bezpečnostním zámkem</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Přispěvatelé</string>
     <string name="contributors_cloud_loading_message">Načítání přispěvatelů\u2026</string>
     <string name="contributors_cloud_failed_message">Nelze načíst data přispěvatelů</string>
     <string name="contributor_info_menu">Informace přispěvatele</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Jméno:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-<b>Přezdívka:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-<b>Potvrzení:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;Jméno:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;Přezdívka:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;Potvrzení:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Informace o přispěvatelích</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Celkem přispěvatelů:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-<b>Celkem příspěvků:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-<b>Poslední aktualizace:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;Celkem přispěvatelů:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;Celkem příspěvků:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;Poslední aktualizace:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS statistika</string>
     <string name="anonymous_statistics_summary">Pomozte nám zdokonalit LineageOS zasíláním anonymní statistiky</string>
     <string name="anonymous_statistics_warning_title">O této aplikaci</string>
@@ -474,7 +426,6 @@
     <string name="preview_data_title">Náhled dat</string>
     <string name="view_stats_title">Zobrazit statistiky</string>
     <string name="anonymous_learn_more">Dozvědět se více</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unikátní ID</string>
     <string name="preview_device_title">Zařízení</string>
     <string name="preview_version_title">Verze</string>
@@ -482,7 +433,6 @@
     <string name="preview_carrier_title">Operátor</string>
     <string name="stats_collection_title">Sbírka statistik</string>
     <string name="stats_collection_summary">Povolit shromažďování metriky a statistiky zařízení</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Automatické otočení obrazovky</string>
     <string name="display_rotation_title">Nastavení otáčení</string>
     <string name="display_rotation_enabled">Automatické otáčení povoleno</string>
@@ -494,7 +444,6 @@
     <string name="display_rotation_90_title">90°</string>
     <string name="display_rotation_180_title">180°</string>
     <string name="display_rotation_270_title">270°</string>
-    <!-- Weather -->
     <string name="weather_settings_title">Počasí</string>
     <string name="weather_settings_no_services_prompt">Nejsou nainstalovány žádné služby poskytovatele počasí</string>
     <string name="weather_settings_no_services_summary">Pro získávání informací o počasí nainstalujte poskytovatele počasí</string>
@@ -509,7 +458,6 @@
     <string name="weather_settings_keyword">počasí</string>
     <string name="status_bar_show_weather_title">Zobrazit počasí</string>
     <string name="status_bar_show_weather_summary">Zobrazení aktuální teploty na stavovém řádku</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Spořič baterie a výkonu</string>
     <string name="perf_profile_settings_summary">Nastavení jednotlivých funkcí pro úsporu energie a výkon zařízení</string>
     <string name="perf_profile_overview_summary">Aktuální profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -523,7 +471,6 @@
     <string name="auto_power_save_summary_on">Automaticky zapnout úsporný režim při %s baterie</string>
     <string name="auto_power_save_summary_off">Nezapínat automaticky režim snížené spotřeby</string>
     <string name="auto_power_save_never">Nikdy</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">Rozšířená plocha</string>
     <string name="expanded_desktop_settings_summary">Rozšířit prostor na ploše skrytím stavového řádku, navigační lišty nebo obojí</string>
     <string name="expanded_desktop_options_title">Možnost vlastního nastavení</string>
@@ -533,17 +480,14 @@
     <string name="expanded_desktop_style_hide_navigation">Skrýt navigační panel</string>
     <string name="expanded_desktop_style_hide_both">Skrýt oboji</string>
     <string name="expanded_desktop_nothing_to_show_text">Vypněte upravení rozšířené plochy na základě aplikací</string>
-    <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Aplikace na celou obrazovku</string>
     <string name="long_screen_settings_summary">Přimět starší aplikace na použití poměrů na celou obrazovku</string>
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Zvuk nabíječky</string>
     <string name="charging_sounds_enabled_title">Povolit</string>
     <string name="charging_sounds_enabled_summary">Přehrát zvuk při připojení nebo odpojení nabíječky</string>
     <string name="power_notifications_vibrate_title">Vibrovat</string>
     <string name="charging_sounds_ringtone_title">Zvuk upozornění</string>
     <string name="charging_sounds_ringtone_silent">Tichý</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
     <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Hmatová odezva</string>
@@ -566,7 +510,6 @@
     <string name="touchscreen_gesture_letter_v_title">Nakreslit písmeno „V“</string>
     <string name="touchscreen_gesture_letter_w_title">Nakreslit písmeno „W“</string>
     <string name="touchscreen_gesture_letter_z_title">Nakreslit písmeno „Z“</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">Potáhnutí nahoru dotykovým perem</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Potáhnutí dolů dotykovým perem</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Potáhnutí doleva dotykovým perem</string>
@@ -585,8 +528,6 @@
     <string name="touchscreen_gesture_action_next_track">Přejít na další skladbu</string>
     <string name="touchscreen_gesture_action_volume_down">Snížení hlasitosti médií</string>
     <string name="touchscreen_gesture_action_volume_up">Zvýšení hlasitosti médií</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_title">Vzhled</string>
     <string name="style_summary">Zvolte barvy systému</string>
     <string name="style_global_title">Vzhled</string>
@@ -607,7 +548,6 @@
     <string name="style_dark_overlay_default">Výchozí</string>
     <string name="style_dark_overlay_black">Černý</string>
     <string name="style_permission_error">Oprávnění přístupu k úložišti je potřeba k analýze tapety, udělte prosím přístup pro použití této funkce</string>
-    <!-- Trust interface -->
     <string name="trust_category_features">Stav</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Vynucené</string>
@@ -620,11 +560,8 @@
     <string name="trust_feature_root_explain">Root přístup povoluje zvoleným aplikacím a službám obejít bezpečnostní omezení, což jim umožní provést změny v systému, které mohou poškodit vaše zařízení či operační systém.</string>
     <string name="trust_feature_security_patches">Bezpečnostní záplaty Android</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDodavatel: %2$s</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">aktuální</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_medium">staré několik měsíců</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">zastaralé</string>
     <string name="trust_feature_security_patches_explain">Bezpečnostní záplaty jsou vydávány měsíčně společností Google ve spolupráci s dodavateli čipů, aby odstranili nedostatky, kterých by mohly zneužít škodlivé aplikace tím, že obejdou bezpečnostní omezení a způsobí trvalé poškození vašemu zařízení. Záplaty, které společnost Google poskytuje, jsou aplikovány každý měsíc na všech podporovaných zařízeních, ale záplaty mohou být do kódu aplikovány pouze výrobcem zařízení. Chcete-li zařízení udržet v bezpečí, ujistěte se, že je vaše sestavení LineageOS vždy aktuální, a (pokud možno) ujistěte se, že je obraz systému dodavatele aktualizován na poslední verzi doporučenou LineageOS.</string>
     <string name="trust_feature_encryption">Šifrování</string>
@@ -641,7 +578,6 @@
     <string name="trust_onboarding_description">Trust pomáhá udržovat vaše zařízení bezpečné a chrání vaše soukromí.\nIkona Trust se zobrazí pouze tehdy, když byl obsah stránky ověřen.</string>
     <string name="trust_onboarding_learn_more">Dozvědět se více</string>
     <string name="trust_onboarding_done">Chápu</string>
-    <!-- Sms limit -->
     <string name="sms_security_check_limit_title">Limit SMS zpráv</string>
     <string name="sms_security_check_limit_summary">Aplikace může poslat %s zpráv za 1 minutu před tím, než bude vyžádáno potvrzení</string>
     <string name="sms_security_check_limit_summary_none">Aplikacím není umožněno bez předchozího potvrzení zasílat jakékoliv zprávy</string>

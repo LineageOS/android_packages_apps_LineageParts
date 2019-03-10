@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">LineageOS の設定</string>
-    <!-- Generic stuff used everywhere -->
     <string name="loading">読み込み中\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">キャンセル</string>
@@ -38,10 +37,7 @@
     <string name="search">検索</string>
     <string name="disabled">無効</string>
     <string name="enabled">有効</string>
-    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">プライバシー</string>
-    <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">プライバシーガードを有効化</string>
     <string name="privacy_guard_dlg_title">プライバシーガードを有効にしますか？</string>
     <string name="privacy_guard_dlg_text">プライバシーガードを有効にすると、アプリは連絡先、メッセージ、通話履歴のような個人データにアクセスできなくなります。</string>
@@ -56,7 +52,6 @@
     <string name="privacy_guard_manager_show_system_apps">内蔵アプリを表示</string>
     <string name="privacy_guard_advanced_settings_title">詳細設定</string>
     <string name="privacy_guard_notification_title">通知を表示</string>
-    <!-- Notification light dialogs -->
     <string name="edit_light_settings">ライトの設定を編集</string>
     <string name="pulse_speed_title">点滅時間と点滅速度</string>
     <string name="default_time">標準</string>
@@ -64,7 +59,6 @@
     <string name="dialog_delete_title">削除</string>
     <string name="dialog_delete_message">選択したアイテムを削除しますか？</string>
     <string name="brightness">明るさレベル</string>
-    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">常にON</string>
     <string name="pulse_length_very_short">非常に短い</string>
     <string name="pulse_length_short">短い</string>
@@ -76,18 +70,15 @@
     <string name="pulse_speed_normal">標準</string>
     <string name="pulse_speed_slow">遅い</string>
     <string name="pulse_speed_very_slow">非常に遅い</string>
-    <!-- Common light settings strings -->
     <string name="light_brightness_title">明るさのレベル</string>
     <string name="light_brightness_normal">標準</string>
     <string name="light_brightness_zen">おやすみモード</string>
-    <!-- Battery light settings -->
     <string name="battery_light_title">電池のライト</string>
     <string name="battery_low_pulse_title">残量低下時に点滅</string>
     <string name="battery_light_list_title">色</string>
     <string name="battery_light_low_color_title">残量低下</string>
     <string name="battery_light_medium_color_title">充電中</string>
     <string name="battery_light_full_color_title">充電完了</string>
-    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">通知のライト</string>
     <string name="notification_light_general_title">全般</string>
     <string name="notification_light_advanced_title">詳細設定</string>
@@ -102,11 +93,9 @@
     <string name="keywords_lights_brightness_level">暗く led 明るさ</string>
     <string name="notification_light_automagic">色を自動的に選択</string>
     <string name="notification_light_automagic_summary">色を自動的に選択しています</string>
-    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">ライトの設定</string>
     <string name="led_notification_text">設定によってLEDライトが有効になっています</string>
     <string name="notification_light_no_apps_summary">アプリごとのコントロールを追加するには、[%1$s]を有効にしてメニューバーの[\u002b]を押す</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">画面を見やすく、目の疲れを軽減するために、時間と周囲の環境に合わせて画面を最適化する</string>
     <string name="live_display_mode">ディスプレイのモード</string>
     <string name="live_display_color_temperature_title">色温度</string>
@@ -150,14 +139,12 @@
     <string name="color_red_title">赤</string>
     <string name="color_green_title">緑</string>
     <string name="color_blue_title">青</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">画像調整</string>
     <string name="picture_adjustment_summary">色彩、彩度、輝度、コントラストを調整する</string>
     <string name="adj_hue_title">色彩</string>
     <string name="adj_saturation_title">彩度</string>
     <string name="adj_intensity_title">輝度</string>
     <string name="adj_contrast_title">コントラスト</string>
-    <!-- Button settings -->
     <string name="button_pref_title">ボタン</string>
     <string name="hardware_keys_power_key_title">電源ボタン</string>
     <string name="hardware_keys_home_key_title">ホームボタン</string>
@@ -203,7 +190,6 @@
     <string name="home_answer_call_summary">ホームボタンを押して着信に応答する</string>
     <string name="extras_title">追加機能</string>
     <string name="additional_buttons_title">追加のボタン</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">バックライト</string>
     <string name="button_backlight_enabled">ボタンを点灯</string>
     <string name="button_backlight_only_when_pressed_title">ボタンを押したときだけ光らせる</string>
@@ -215,10 +201,8 @@
     <string name="backlight_summary_disabled">無効</string>
     <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g>間有効です</string>
     <string name="backlight_summary_enabled">有効</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">スクリーンナビゲーションバーを有効化</string>
     <string name="disable_navkeys_summary">スクリーンナビゲーションバーを有効にしてハードウェアボタンを無効にする</string>
-    <!-- Navigation Bar -->
     <string name="navigation_bar_category">ナビゲーションバー</string>
     <string name="navigation_bar_title">ボタンとレイアウト</string>
     <string name="navigation_bar_left_summary">横画面モードでナビゲーションバーを画面の左側に配置する</string>
@@ -227,7 +211,6 @@
     <string name="navigation_bar_home_long_press_title">ホームボタン長押しの動作</string>
     <string name="navigation_bar_home_double_tap_title">ホームボタンのダブルタップの動作</string>
     <string name="navigation_bar_app_switch_long_press_title">履歴ボタンを長押ししたときの動作</string>
-    <!-- Power menu -->
     <string name="power_menu_title">電源メニュー</string>
     <string name="power_menu_screenshot_title">スクリーンショット</string>
     <string name="power_menu_screenshot_summary">長押しして指定した範囲を撮影します</string>
@@ -237,7 +220,6 @@
     <string name="power_menu_bug_report_disabled">バグレポートは開発者向けオプションで無効になっています</string>
     <string name="power_menu_lockdown_title">ロックダウン</string>
     <string name="camera_double_tap_power_gesture_title">ホームボタンを2回押してカメラを起動</string>
-    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">画面のロックを解除せずにカメラをすばやく起動する</string>
     <string name="torch_long_press_power_gesture_title">長押しでライト点灯</string>
     <string name="torch_long_press_power_gesture_desc">画面消灯時に電源ボタンを長押ししてライトを点灯します</string>
@@ -247,7 +229,6 @@
     <string name="torch_long_press_power_timeout_2min">2分</string>
     <string name="torch_long_press_power_timeout_5min">5分</string>
     <string name="torch_long_press_power_timeout_10min">10分</string>
-    <!-- Profiles -->
     <string name="profile_menu_delete_title">削除</string>
     <string name="profile_action_none">変更しない</string>
     <string name="profile_action_system">システムのデフォルト</string>
@@ -264,14 +245,12 @@
     <string name="profile_setup_actions_title">ステップ2: 動作をセットアップ</string>
     <string name="profile_setup_actions_title_config">動作を再設定</string>
     <string name="wireless_networks_settings_title">無線とネットワーク</string>
-    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">ペアリングしている Bluetooth デバイスがありません。\nタップするとトリガーを設定する前に Bluetooth デバイスとペアリングします。</string>
     <string name="no_wifi_triggers">設定されているWi\u2011Fiアクセスポイントがありません。\nタップするとトリガーを設定する前にWi\u2011Fiに接続します。</string>
     <string name="no_triggers_configured">設定されているトリガーがありません。タップして追加します。</string>
     <string name="no_triggers_configured_nfc">タップして新しいNFCトリガーをセットアップします。</string>
     <string name="profile_setup_setup_triggers_description">このプロファイルを有効にするトリガーを選択してください</string>
     <string name="profile_setup_actions_description">このプロファイルが有効になったときの動作を設定してください</string>
-    <!-- Profiles settings  -->
     <string name="profiles_settings_title">システムプロファイル</string>
     <string name="profiles_add">追加</string>
     <string name="profile_menu_delete">削除</string>
@@ -295,44 +274,34 @@
     <string name="profile_app_group_category_title">通知の変更</string>
     <string name="profile_app_group_item_instructions">グループを追加または削除</string>
     <string name="profile_app_group_item_instructions_summary">このプロファイルに通知を変更するアプリグループを追加または削除する</string>
-    <!-- Profile mode options. -->
     <string name="profile_entries_on">ON</string>
     <string name="profile_entries_off">OFF</string>
     <string name="profile_entries_no_override">変更しない</string>
-    <!-- Add Profile -->
     <string name="profile_name_title">名前</string>
     <string name="new_profile_name">&lt;新しいプロファイル&gt;</string>
-    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">名前の変更</string>
     <string name="rename_dialog_message">新しい名前を入力してください</string>
     <string name="rename_dialog_hint">プロファイル名を入力してください。</string>
-    <!-- Reset Profiles -->
     <string name="profile_reset_title">リセット</string>
     <string name="profile_reset_message">ユーザーが作成したすべてのプロファイルとアプリグループを削除してデフォルトに戻しますか？</string>
-    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">このアプリを削除しますか？</string>
-    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
-    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">音量の変更</string>
     <string name="connection_state_enabled">有効化</string>
     <string name="volume_override_summary">%1$s/%2$sに設定する</string>
     <string name="profile_volume_override_checkbox_label">音量を変更</string>
-    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">プロファイル</string>
     <string name="profile_profile_manage">プロファイルを管理</string>
     <string name="profile_appgroups_manage">アプリグループ</string>
     <string name="profile_appgroup_manage">アプリグループを管理</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">プロファイルの設定</string>
     <string name="profile_trigger_connect">接続時</string>
     <string name="profile_trigger_disconnect">切断時</string>
     <string name="profile_trigger_notrigger">トリガーとして使用しない</string>
-    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">通知モード</string>
     <string name="ringer_mode">着信モード</string>
     <string name="lights_mode">ライトモード</string>
@@ -340,9 +309,7 @@
     <string name="choose_soundtone">通知音を選択</string>
     <string name="choose_ringtone">着信音を選択</string>
     <string name="ringtone_title">着信音</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">通知音</string>
-    <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">アプリグループ</string>
     <string name="profile_applist_title">アプリ</string>
     <string name="profile_new_appgroup">新しいアプリグループ</string>
@@ -350,9 +317,7 @@
     <string name="profile_appgroup_name_prompt">新しいアプリグループの名前を入力してください</string>
     <string name="profile_appgroup_name_title">名前</string>
     <string name="duplicate_appgroup_name">アプリグループの名前が重複しています</string>
-    <!-- Add application dialog box title -->
     <string name="profile_choose_app">アプリを選択</string>
-    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">システムの設定</string>
     <string name="profile_lockmode_title">ロック画面モード</string>
     <string name="profile_lockmode_policy_disabled_summary">このプロファイルオプションは端末管理者の方針によって無効にされています</string>
@@ -362,7 +327,6 @@
     <string name="profile_brightness_title">画面の明るさ</string>
     <string name="profile_brightness_override_summary">%1$d%%に設定</string>
     <string name="profile_brightness_override_checkbox_label">明るさを変更</string>
-    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Wi\u2011Fiテザリング</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -370,7 +334,6 @@
     <string name="toggleData">データ接続</string>
     <string name="toggleSync">データの自動同期</string>
     <string name="toggleNfc">NFC</string>
-    <!-- Sound settings screen -->
     <string name="ring_mode_title">着信モード</string>
     <string name="ring_mode_normal">標準</string>
     <string name="ring_mode_vibrate">バイブレーション</string>
@@ -381,7 +344,6 @@
     <string name="media_volume_title">メディア</string>
     <string name="alarm_volume_title">アラーム</string>
     <string name="doze_title">アンビエント表示</string>
-    <!-- Status bar -->
     <string name="status_bar_title">ステータスバー</string>
     <string name="status_bar_quick_qs_pulldown_title">クイックプルダウン</string>
     <string name="status_bar_quick_qs_pulldown_summary">ステータスバーの%1$s端をプルダウンしてクイック設定を開く</string>
@@ -392,13 +354,11 @@
     <string name="status_bar_quick_qs_pulldown_right">右</string>
     <string name="status_bar_double_tap_to_sleep_title">ダブルタップしてスリープ</string>
     <string name="status_bar_double_tap_to_sleep_summary">ステータスバーをダブルタップしてディスプレイを消灯します</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">ステータスバーのアイコン</string>
     <string name="status_bar_notif_count_title">通知の数を表示</string>
     <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
     <string name="status_bar_system_icons_title">システムアイコン</string>
     <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを設定します</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">時計</string>
     <string name="status_bar_clock_show_seconds_title">秒を表示</string>
     <string name="status_bar_clock_show_seconds_summary">時間、分、秒を表示します</string>
@@ -411,7 +371,6 @@
     <string name="status_bar_am_pm_normal">標準</string>
     <string name="status_bar_am_pm_small">小さい</string>
     <string name="status_bar_am_pm_hidden">表示しない</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">バッテリー残量表示</string>
     <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
     <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
@@ -419,12 +378,10 @@
     <string name="status_bar_battery_style_circle">サークル</string>
     <string name="status_bar_battery_style_text">テキスト</string>
     <string name="status_bar_battery_style_hidden">表示しない</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">電池のパーセント表示</string>
     <string name="status_bar_battery_percentage_default">表示しない</string>
     <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの隣</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">画面の明るさ</string>
     <string name="status_bar_brightness_slider_title">画面の明るさスライダー</string>
     <string name="status_bar_brightness_slider_summary">クイック設定で明るさを調節します</string>
@@ -432,7 +389,6 @@
     <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
     <string name="status_bar_toggle_brightness">明るさコントロール</string>
     <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
     <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
     <string name="network_traffic_mode_title">表示モード</string>
@@ -449,23 +405,19 @@
     <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
     <string name="network_traffic_show_units">単位を表示</string>
     <string name="network_traffic_show_units_summary">ステータスバーにネットワークトラフィックの単位を表示</string>
-    <!-- Protected apps -->
     <string name="protected_apps_manager_title">アプリの保護</string>
     <string name="protected_apps_manager_summary">パスワードでロックしている場合に非表示にするアプリを管理する</string>
-    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">貢献者</string>
     <string name="contributors_cloud_loading_message">貢献者のデータを読み込み中...</string>
     <string name="contributors_cloud_failed_message">貢献者の情報を読み込めません</string>
     <string name="contributor_info_menu">貢献者の情報</string>
-    <string name="contributor_info_msg"><![CDATA[<b>名前:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
-                 <b>ニックネーム:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>コミット:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg">&lt;b&gt;名前:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;ニックネーム:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;コミット:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">貢献者の情報</string>
-    <string name="contributions_info_msg"><![CDATA[<b>貢献者の合計:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>コミットの合計:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>最終更新:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <!-- Anonymous Statistics #Lineage -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="contributions_info_msg">&lt;b&gt;貢献者の合計:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;コミットの合計:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;最終更新:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS の統計</string>
     <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してLineageOSの改善に協力する</string>
     <string name="anonymous_statistics_warning_title">情報</string>
@@ -474,7 +426,6 @@
     <string name="preview_data_title">データをプレビュー</string>
     <string name="view_stats_title">統計を表示</string>
     <string name="anonymous_learn_more">もっと詳しく</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ユニークID</string>
     <string name="preview_device_title">端末</string>
     <string name="preview_version_title">バージョン</string>
@@ -482,7 +433,6 @@
     <string name="preview_carrier_title">キャリア</string>
     <string name="stats_collection_title">統計の収集</string>
     <string name="stats_collection_summary">インストール状況や端末の統計情報の収集を許可します</string>
-    <!-- Display : Rotation  -->
     <string name="accelerometer_title">画面の自動回転</string>
     <string name="display_rotation_title">回転</string>
     <string name="display_rotation_enabled">画面の自動回転は有効になっています</string>
@@ -494,7 +444,6 @@
     <string name="display_rotation_90_title">90度</string>
     <string name="display_rotation_180_title">180度</string>
     <string name="display_rotation_270_title">270度</string>
-    <!-- Weather -->
     <string name="weather_settings_title">天気</string>
     <string name="weather_settings_no_services_prompt">天気プロバイダサービスがインストールされていません</string>
     <string name="weather_settings_no_services_summary">天気の更新を受け取るには天気プロバイダをインストールしてください</string>
@@ -509,7 +458,6 @@
     <string name="weather_settings_keyword">天気</string>
     <string name="status_bar_show_weather_title">気温を表示</string>
     <string name="status_bar_show_weather_summary">ステータスバーに現在の気温を表示する</string>
-    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">バッテリーセーバーとパフォーマンス</string>
     <string name="perf_profile_settings_summary">省電力機能と端末のパフォーマンスを調整する</string>
     <string name="perf_profile_overview_summary">現在のプロファイル: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -523,7 +471,6 @@
     <string name="auto_power_save_summary_on">バッテリー残量%sで省電力モードを自動的に有効にする</string>
     <string name="auto_power_save_summary_off">省電力モードを自動的に有効にしない</string>
     <string name="auto_power_save_never">使用しない</string>
-    <!-- Applications: Expanded desktop -->
     <string name="expanded_desktop_settings_title">拡張デスクトップ</string>
     <string name="expanded_desktop_settings_summary">ステータスバーまたはナビゲーションバー、もしくは両方を非表示にして利用できるデスクトップスペースを拡張する</string>
     <string name="expanded_desktop_options_title">カスタマイズのオプション</string>
@@ -533,17 +480,14 @@
     <string name="expanded_desktop_style_hide_navigation">ナビゲーションバーを非表示</string>
     <string name="expanded_desktop_style_hide_both">両方を非表示</string>
     <string name="expanded_desktop_nothing_to_show_text">拡張デスクトップをアプリごとにカスタマイズするにはスイッチをOFFにしてください</string>
-    <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">全画面表示のアプリ</string>
     <string name="long_screen_settings_summary">従来のアプリに全画面表示のアスペクト比を使用させる</string>
-    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">充電時の音</string>
     <string name="charging_sounds_enabled_title">有効</string>
     <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らします</string>
     <string name="power_notifications_vibrate_title">バイブレーション</string>
     <string name="charging_sounds_ringtone_title">通知音</string>
     <string name="charging_sounds_ringtone_silent">サイレント</string>
-    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">タッチスクリーンジェスチャー</string>
     <string name="touchscreen_gesture_settings_summary">様々なタッチスクリーンジェスチャーですばやくアクションを実行します</string>
     <string name="touchscreen_gestures_haptic_feedback_title">タッチ操作バイブ</string>
@@ -566,7 +510,6 @@
     <string name="touchscreen_gesture_letter_v_title">「V」を描く</string>
     <string name="touchscreen_gesture_letter_w_title">「W」を描く</string>
     <string name="touchscreen_gesture_letter_z_title">「Z」を描く</string>
-    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">スタイラスで上にスワイプ</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">スタイラスで下にスワイプ</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">スタイラスで左にスワイプ</string>
@@ -585,8 +528,6 @@
     <string name="touchscreen_gesture_action_next_track">次の楽曲にスキップ</string>
     <string name="touchscreen_gesture_action_volume_down">メディア音量を下げる</string>
     <string name="touchscreen_gesture_action_volume_up">メディア音量を上げる</string>
-    <!-- Egg: Title for the easter egg activity -->
-    <!-- Berry Lite -->
     <string name="style_title">スタイル</string>
     <string name="style_summary">システムの色を選択</string>
     <string name="style_global_title">スタイル</string>
@@ -607,7 +548,6 @@
     <string name="style_dark_overlay_default">デフォルト</string>
     <string name="style_dark_overlay_black">ブラック</string>
     <string name="style_permission_error">壁紙を分析するにはストレージアクセスの権限を許可する必要があります。この機能を使用するには権限を許可してください。</string>
-    <!-- Trust interface -->
     <string name="trust_category_features">状態</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
@@ -620,11 +560,8 @@
     <string name="trust_feature_root_explain">ルートアクセスを使用すると、選択したアプリやサービスによるセキュリティ制限が回避され、システムやデバイスに損害を与える可能性のあるシステムの変更が可能になります。</string>
     <string name="trust_feature_security_patches">Android セキュリティパッチ</string>
     <string name="trust_feature_security_patches_value_base">プラットフォーム: %1$s\nベンダー: %2$s</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">最新です</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_medium">数カ月間の月例パッチが未適用</string>
-    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">最新ではありません</string>
     <string name="trust_feature_security_patches_explain">セキュリティパッチは、悪意のあるアプリが悪用してセキュリティ制限を回避し、端末に永続的な損害を与える可能性のある欠陥に対処するために Google が毎月 SoC ベンダーと協力してリリースしています。 Google が提供するパッチは、サポートされている全ての端末で毎月適用されますが、独自のコードへのパッチは端末の製造元のみが適用できます。機器を安全に保つためには、LineageOS ビルドが常に最新であること、および（該当する場合）ベンダーイメージが LineageOS が推奨する最新のものに更新されていることを確認してください。</string>
     <string name="trust_feature_encryption">暗号化</string>
@@ -641,7 +578,6 @@
     <string name="trust_onboarding_description">Trust は端末を安全に保ち、プライバシーを保護するのに役立ちます。\nTrust アイコンはページの内容が確認された場合にのみ表示されます。</string>
     <string name="trust_onboarding_learn_more">詳細</string>
     <string name="trust_onboarding_done">わかりました</string>
-    <!-- Sms limit -->
     <string name="sms_security_check_limit_title">SMS メッセージの制限</string>
     <string name="sms_security_check_limit_summary">アプリは確認をする前に1分間に%s通のメッセージを送信できます</string>
     <string name="sms_security_check_limit_summary_none">アプリは許可無くメッセージを送信することはできません</string>
