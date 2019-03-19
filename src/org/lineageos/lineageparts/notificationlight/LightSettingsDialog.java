@@ -49,7 +49,6 @@ import org.lineageos.internal.notification.LedValues;
 import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.internal.notification.LineageNotification;
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.notificationlight.ColorPickerView.OnColorChangedListener;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -72,8 +71,6 @@ public class LightSettingsDialog extends AlertDialog implements
     private Spinner mPulseSpeedOn;
     private Spinner mPulseSpeedOff;
     private LayoutInflater mInflater;
-
-    private OnColorChangedListener mListener;
 
     private NotificationManager mNotificationManager;
 
@@ -242,10 +239,6 @@ public class LightSettingsDialog extends AlertDialog implements
 
         mNewColor.setColor(color);
         mHexColorInput.setText(String.format(Locale.US, format, color & mask));
-
-        if (mListener != null) {
-            mListener.onColorChanged(color);
-        }
 
         updateLed();
     }
@@ -447,9 +440,6 @@ public class LightSettingsDialog extends AlertDialog implements
                 mColorPicker.setColor(color);
                 mNewColor.setColor(color);
                 updateLed();
-                if (mListener != null) {
-                    mListener.onColorChanged(color);
-                }
             } catch (IllegalArgumentException ex) {
                 // Number format is incorrect, ignore
             }
