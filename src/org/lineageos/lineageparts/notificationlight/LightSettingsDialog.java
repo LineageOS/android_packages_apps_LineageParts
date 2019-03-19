@@ -318,6 +318,9 @@ public class LightSettingsDialog extends AlertDialog implements
         if  (mLedBrightness > 0 && mLedBrightness < LedValues.LIGHT_BRIGHTNESS_MAXIMUM) {
             b.putInt(LineageNotification.EXTRA_FORCE_LIGHT_BRIGHTNESS, mLedBrightness);
         }
+        b.putInt(LineageNotification.EXTRA_FORCE_COLOR, color);
+        b.putInt(LineageNotification.EXTRA_FORCE_LIGHT_ON_MS, speedOn);
+        b.putInt(LineageNotification.EXTRA_FORCE_LIGHT_OFF_MS, speedOff);
 
         createNotificationChannel();
 
