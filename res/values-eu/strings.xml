@@ -405,6 +405,7 @@
     <string name="network_traffic_units_megabytes">Megabyte-ak segundoko (MB/s)</string>
     <string name="network_traffic_show_units">Erakutsi unitateak</string>
     <string name="network_traffic_show_units_summary">Trafikoa neurtzeko unitateak egoera-barran erakutsi ala ez</string>
+    <string name="network_traffic_disabled_clock">Sare-trafikoaren ikonoa desgaituta erlojuaren posizioa dela eta</string>
     <string name="protected_apps_manager_title">Babesturiko aplikazioak</string>
     <string name="protected_apps_manager_summary">Kudeatu blokeo ziurrarekin ezkutatuko diren aplikazioak</string>
     <string name="contributors_cloud_fragment_title">Parte-hartzaileak</string>
@@ -579,6 +580,8 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="trust_onboarding_description">Trust-ek zure gailua seguru mantentzen eta zure pribatutasuna babesten laguntzen dizu.\nTrust ikonoa orriaren edukian egiaztatu direnean agertuko da besterik ez.</string>
     <string name="trust_onboarding_learn_more">Ikasi gehiago</string>
     <string name="trust_onboarding_done">Ulertu dut</string>
+    <string name="trust_restrict_usb_title">Babestu USB-a</string>
+    <string name="trust_restrict_usb_summary">Desgaitu USB gailu berriak gailua blokeatuta dagoenean</string>
     <string name="sms_security_check_limit_title">SMS mezuen muga</string>
     <string name="sms_security_check_limit_summary">Aplikazioek %s mezu bidali ditzakete minutu batean berrespena eskatu aurretik</string>
     <string name="sms_security_check_limit_summary_none">Aplikazioek ezin dute mezurik bidali berrespenik gabe</string>

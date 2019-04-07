@@ -405,6 +405,7 @@
     <string name="network_traffic_units_megabytes">Megabajty na sekundę (MB/s)</string>
     <string name="network_traffic_show_units">Pokaż jednostki</string>
     <string name="network_traffic_show_units_summary">Określa, czy pokazywać jednostki pomiaru ruchu sieciowego na pasku stanu</string>
+    <string name="network_traffic_disabled_clock">Wskaźnik ruchu sieciowego jest wyłączony ze względu na położenie zegara</string>
     <string name="protected_apps_manager_title">Chronione aplikacje</string>
     <string name="protected_apps_manager_summary">Zarządzaj, które aplikacje mają być ukryte za bezpieczną blokadą</string>
     <string name="contributors_cloud_fragment_title">Twórcy</string>
@@ -560,6 +561,7 @@
     <string name="trust_feature_root_value_adb">Tylko ADB</string>
     <string name="trust_feature_root_value_apps">Aplikacje i ADB</string>
     <string name="trust_feature_root_explain">Dostęp do Root\'a pozwala na omijanie ograniczeń bezpieczeństwa przez aplikacje i usługi które wybierzesz, zezwalając im na wykonywanie modyfikacji w systemie, co może wyrządzić szkody twojemu urządzeniu lub systemowi.</string>
+    <string name="trust_feature_security_patches">Poprawki zabezpieczeń Androida</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
     <string name="trust_feature_security_patches_value_new">aktualne</string>
     <string name="trust_feature_security_patches_value_medium">kilkumiesięczne</string>
@@ -579,6 +581,7 @@
     <string name="trust_onboarding_description">Trust pomaga utrzymać twoje urządzenie bezpiecznym oraz chronić twoją prywatność.\nIkona Trust wyświetla się by pomóc ci poprzez sprawdzanie bezpieczeństwa zawartości.</string>
     <string name="trust_onboarding_learn_more">Dowiedz się więcej</string>
     <string name="trust_onboarding_done">Rozumiem</string>
+    <string name="trust_restrict_usb_title">Ogranicz połączenie USB</string>
     <string name="sms_security_check_limit_title">Limit wiadomości SMS</string>
     <string name="sms_security_check_limit_summary">Aplikacje mogą wysłać %s wiadomości przez 1 minutę, nim konieczne będzie potwierdzenie</string>
     <string name="sms_security_check_limit_summary_none">Aplikacje nie mogą wysyłać żadnych wiadomości bez potwierdzenia</string>

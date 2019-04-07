@@ -405,6 +405,7 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
     <string name="network_traffic_show_units">Mostrar unidades</string>
     <string name="network_traffic_show_units_summary">Mostrar/ocultar unidades de medida de tráfico en la barra de estado</string>
+    <string name="network_traffic_disabled_clock">Tráfico de red desactivado debido a la ubicación del reloj</string>
     <string name="protected_apps_manager_title">Aplicaciones protegidas</string>
     <string name="protected_apps_manager_summary">Gestionar que aplicaciones se ocultarán detrás de un bloqueo seguro</string>
     <string name="contributors_cloud_fragment_title">Colaboradores</string>
@@ -578,6 +579,8 @@
     <string name="trust_onboarding_description">Trust ayuda a mantener el dispositivo seguro y proteger su privacidad.\nEl icono de Trust sólo se mostrará cuando se haya verificado el contenido de la página.</string>
     <string name="trust_onboarding_learn_more">Saber más</string>
     <string name="trust_onboarding_done">Entiendo</string>
+    <string name="trust_restrict_usb_title">Restringir USB</string>
+    <string name="trust_restrict_usb_summary">Desactivar nuevos dispositivos USB al bloquear el dispositivo</string>
     <string name="sms_security_check_limit_title">Límite de mensajes SMS</string>
     <string name="sms_security_check_limit_summary">Las aplicaciones pueden enviar %s mensajes en 1 minuto antes de solicitar confirmación</string>
     <string name="sms_security_check_limit_summary_none">Las aplicaciones no pueden enviar mensajes sin confirmación</string>

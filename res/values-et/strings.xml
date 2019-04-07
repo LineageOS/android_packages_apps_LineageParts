@@ -93,11 +93,17 @@
     <string name="led_notification_title">Märgutule seaded</string>
     <string name="led_notification_text">LED-tuli on seadetes lubatud</string>
     <string name="notification_light_no_apps_summary">Rakendusepõhise juhtimise lisamiseks aktiveeri \"%1$s\" ning vajuta menüüribal \"\u002b\"</string>
+    <string name="live_display_mode">Ekraani režiim</string>
     <string name="live_display_color_temperature_title">Värvitemperatuur</string>
     <string name="live_display_color_temperature_summary">Päev: <xliff:g id="day_temperature">%1$d</xliff:g>K Öö: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
     <string name="live_display_day">Päev</string>
     <string name="live_display_night">Öö</string>
+    <string name="live_display_outdoor_mode_title">Automaatne õuerežiim</string>
+    <string name="live_display_outdoor_mode_summary">Suurenda ereda päikesevalgusega automaatselt heledust ja küllastust</string>
+    <string name="live_display_low_power_title">Vähenda energiatarbimist</string>
+    <string name="live_display_low_power_summary">Kohanda ekraani madalaimale energiatarbimisele ilma, et see ekraani kahjustaks</string>
+    <string name="live_display_enhance_color_title">Parenda värve</string>
     <string name="live_display_color_profile_title">Värviprofiil</string>
     <string name="live_display_color_profile_standard_title">Klassikaline</string>
     <string name="live_display_color_profile_standard_summary">Täpsed värvid ja eredad valged</string>
@@ -150,6 +156,7 @@
     <string name="hardware_keys_action_menu">Ava/sulge menüü</string>
     <string name="hardware_keys_action_app_switch">Hiljutiste rakenduste vahetaja</string>
     <string name="hardware_keys_action_search">Otsinguabiline</string>
+    <string name="hardware_keys_action_voice_search">Häälotsing</string>
     <string name="hardware_keys_action_in_app_search">Rakendusesisene otsing</string>
     <string name="hardware_keys_action_launch_camera">Käivita kaamera</string>
     <string name="hardware_keys_action_sleep">Lülita ekraan välja</string>
@@ -163,10 +170,19 @@
     <string name="camera_launch_summary">Pikk vajutus ja vabastamine käivitab kaamera</string>
     <string name="volbtn_music_controls_title">Taasesituse juhtimine</string>
     <string name="volbtn_music_controls_summary">Liigu lugude vahel, vajutades helitugevusklahve pikalt, kui ekraan on väljas</string>
+    <string name="volbtn_cursor_control_title">Klaviatuuri kursori juhtimine</string>
     <string name="volbtn_cursor_control_off">Keelatud</string>
+    <string name="volbtn_cursor_control_on">Helitugevuse üles/alla liigutab kursorit vasakule/paremale</string>
+    <string name="volbtn_cursor_control_on_reverse">Helitugevuse üles/alla liigutab kursorit paremale/vasakule</string>
     <string name="power_end_call_title">Lõpeta kõne</string>
     <string name="power_end_call_summary">Lõpeta käesolev kõne toitenupu vajutusega</string>
+    <string name="swap_volume_buttons_title">Orienteeri ümber</string>
+    <string name="swap_volume_buttons_summary">Vaheta helitugevusklahvid ekraani pööramisel</string>
+    <string name="button_wake_title">Ärata seade</string>
     <string name="volume_answer_call_title">Vasta kõnele</string>
+    <string name="volume_answer_call_summary">Vasta sissetulevatele kõnedele helitugevuse nuppude vajutusega</string>
+    <string name="home_answer_call_title">Vasta kõnele</string>
+    <string name="home_answer_call_summary">Vasta sissetulevatele kõnedele kodunupu vajutusega</string>
     <string name="extras_title">Lisad</string>
     <string name="additional_buttons_title">Täiendavad nupud</string>
     <string name="button_backlight_title">Taustvalgus</string>
@@ -196,6 +212,7 @@
     <string name="power_menu_airplane_title">Lennurežiim</string>
     <string name="power_menu_users_title">Kasutaja vahetaja</string>
     <string name="power_menu_bug_report_title">Veaaruanne</string>
+    <string name="power_menu_bug_report_disabled">Veaaruanne on arendaja valikutes keelatud</string>
     <string name="power_menu_lockdown_title">Lukustamine</string>
     <string name="camera_double_tap_power_gesture_title">Kaamera avamiseks vajuta 2 korda toitenuppu</string>
     <string name="camera_double_tap_power_gesture_desc">Ava kaamera kiirelt, ekraanilukku avamata</string>
@@ -222,6 +239,7 @@
     <string name="profile_setup_actions_title">Samm 2: Seadista toimingud</string>
     <string name="profile_setup_actions_title_config">Seadista tegevused uuesti</string>
     <string name="wireless_networks_settings_title">Traadita ühendus ja võrgud</string>
+    <string name="no_triggers_configured_nfc">Koputa uue NFC-päästiku seadistamiseks.</string>
     <string name="profiles_settings_title">Süsteemiprofiilid</string>
     <string name="profiles_add">Lisa</string>
     <string name="profile_menu_delete">Kustuta</string>
@@ -372,8 +390,14 @@ andmete eelvaade.</string>
     <string name="preview_id_title">Kordumatu ID</string>
     <string name="preview_device_title">Seade</string>
     <string name="preview_version_title">Versioon</string>
+    <string name="preview_country_title">Riik</string>
+    <string name="preview_carrier_title">Operaator</string>
+    <string name="stats_collection_title">Andmete kogumine</string>
     <string name="stats_collection_summary">Luba installimõõdikute ja seadme statistika kogumist</string>
+    <string name="display_rotation_unit">kraadi</string>
     <string name="display_lockscreen_rotation_title">Pööra lukustuskuva</string>
+    <string name="display_rotation_0_title">0 kraadi</string>
+    <string name="display_rotation_90_title">90 kraadi</string>
     <string name="display_rotation_180_title">180 kraadi</string>
     <string name="display_rotation_270_title">270 kraadi</string>
     <string name="weather_settings_title">Ilm</string>
@@ -507,6 +531,8 @@ andmete eelvaade.</string>
     <string name="trust_onboarding_description">Trust aitab sul hoida oma seadet turvalisena ning kaitsta oma privaatsust.\nTrust-ikooni kuvatakse vaid siis, kui lehe sisu on kinnitatud.</string>
     <string name="trust_onboarding_learn_more">Lisateave</string>
     <string name="trust_onboarding_done">Sain aru</string>
+    <string name="trust_restrict_usb_title">Piira USB-d</string>
+    <string name="trust_restrict_usb_summary">Keela uued USB-seadmed, kui seade on lukus</string>
     <string name="sms_security_check_limit_title">SMS-sõnumite limiit</string>
     <string name="sms_security_check_limit_summary">Rakendused saavad 1 minuti jooksul saata %s sõnumit, enne kui vajavad kinnitust</string>
     <string name="sms_security_check_limit_summary_none">Rakendused ei tohi saata ühtegi sõnumit ilma kinnituseta</string>

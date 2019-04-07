@@ -347,9 +347,9 @@
     <string name="status_bar_title">شريط الحالة</string>
     <string name="status_bar_quick_qs_pulldown_title">السحب السريع لأسفل</string>
     <string name="status_bar_quick_qs_pulldown_summary">سحب الحافّة %1$s لشريط الحالة إلى أسفل يُظهر لوحة الإعدادات السّريعة</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">اليمين</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">اليسار</string>
-    <string name="status_bar_quick_qs_pulldown_off">اليمين</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">اليسار</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">اليمين</string>
+    <string name="status_bar_quick_qs_pulldown_off">إيقاف</string>
     <string name="status_bar_quick_qs_pulldown_left">اليسار</string>
     <string name="status_bar_quick_qs_pulldown_right">إيقاف</string>
     <string name="status_bar_double_tap_to_sleep_title">الضغط مرتين لإطفاء الشاشة</string>
@@ -363,8 +363,8 @@
     <string name="status_bar_clock_show_seconds_title">إظهار الثواني</string>
     <string name="status_bar_clock_show_seconds_summary">إظهار الساعات والدقائق والثواني</string>
     <string name="status_bar_clock_position_title">موقع الساعة</string>
-    <string name="status_bar_clock_position_right">اليسار</string>
-    <string name="status_bar_clock_position_left">اليمين</string>
+    <string name="status_bar_clock_position_right">اليمين</string>
+    <string name="status_bar_clock_position_left">اليسار</string>
     <string name="status_bar_clock_position_center">توسيط</string>
     <string name="status_bar_am_pm_title">نمط صباحاً/مساءاً</string>
     <string name="status_bar_am_pm_info">تنسيق 24 ساعة مفعّل</string>

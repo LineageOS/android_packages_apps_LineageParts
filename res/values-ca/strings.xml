@@ -405,6 +405,7 @@
     <string name="network_traffic_units_megabytes">Megabytes per segon (MB/s)</string>
     <string name="network_traffic_show_units">Mostra les unitats</string>
     <string name="network_traffic_show_units_summary">Si vols mostrar les unitats de mesura del trànsit a la barra d\'estat</string>
+    <string name="network_traffic_disabled_clock">Tràfic de la xarxa deshabilitat a causa de la posició de rellotge</string>
     <string name="protected_apps_manager_title">Aplicacions protegides</string>
     <string name="protected_apps_manager_summary">Gestiona quines aplicacions s\'amaguen darrere el bloqueig segur</string>
     <string name="contributors_cloud_fragment_title">Contribuïdors</string>
@@ -578,6 +579,8 @@
     <string name="trust_onboarding_description">Trust us ajuda a mantenir el dispositiu segur i protegir la privadesa.\nLa icona Trust només es mostrarà quan els continguts de la pàgina s\'hagin verificat.</string>
     <string name="trust_onboarding_learn_more">Aprèn més</string>
     <string name="trust_onboarding_done">D\'acord</string>
+    <string name="trust_restrict_usb_title">Restringeix USB</string>
+    <string name="trust_restrict_usb_summary">Deshabilita nous aparells USB quan el dispositiu està bloquejat</string>
     <string name="sms_security_check_limit_title">Límit de missatges SMS</string>
     <string name="sms_security_check_limit_summary">Les aplicacions poden enviar %s missatges en 1 minut abans de necessitar una confirmació</string>
     <string name="sms_security_check_limit_summary_none">Les aplicacions no tenen permès enviar cap missatge sense confirmar-ho</string>
