@@ -23,9 +23,10 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
-import android.support.v4.graphics.ColorUtils;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
+
+import androidx.annotation.NonNull;
+import androidx.core.graphics.ColorUtils;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 public final class UIUtils {
 

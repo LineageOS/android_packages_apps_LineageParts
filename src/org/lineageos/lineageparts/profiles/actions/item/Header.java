@@ -20,7 +20,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import android.support.v14.preference.R;
+import androidx.preference.R;
+
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 public class Header implements Item {

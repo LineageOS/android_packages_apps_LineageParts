@@ -29,12 +29,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.provider.Settings.Global;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.Preference;
 import android.util.TypedValue;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Toast;
+
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
 
 import org.lineageos.lineageparts.PartsUpdater;
 import org.lineageos.lineageparts.R;

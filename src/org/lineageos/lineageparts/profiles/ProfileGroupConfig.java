@@ -20,9 +20,9 @@ import java.util.UUID;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileGroup;
@@ -33,7 +33,7 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class ProfileGroupConfig extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener {
 
     private static final CharSequence KEY_SOUNDMODE = "sound_mode";
     private static final CharSequence KEY_VIBRATEMODE = "vibrate_mode";
