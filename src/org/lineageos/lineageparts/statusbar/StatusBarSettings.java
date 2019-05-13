@@ -19,14 +19,14 @@ package org.lineageos.lineageparts.statusbar;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.format.DateFormat;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.view.View;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
 
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
@@ -39,7 +39,7 @@ import org.lineageos.lineageparts.search.Searchable;
 import java.util.Set;
 
 public class StatusBarSettings extends SettingsPreferenceFragment
-        implements OnPreferenceChangeListener, Searchable {
+        implements Preference.OnPreferenceChangeListener, Searchable {
 
     private static final String CATEGORY_BATTERY = "status_bar_battery_key";
     private static final String CATEGORY_CLOCK = "status_bar_clock_key";

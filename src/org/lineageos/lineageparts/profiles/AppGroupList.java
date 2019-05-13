@@ -21,13 +21,14 @@ import android.app.AlertDialog;
 import android.app.NotificationGroup;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceScreen;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import org.lineageos.lineageparts.widget.FloatingActionButton;
 import org.lineageos.lineageparts.R;

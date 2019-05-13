@@ -19,9 +19,10 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v13.app.FragmentPagerAdapter;
 import android.util.SparseArray;
 import android.view.ViewGroup;
+
+import androidx.legacy.app.FragmentPagerAdapter;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.profiles.triggers.BluetoothTriggerFragment;
@@ -33,8 +34,8 @@ import java.lang.ref.WeakReference;
 import java.util.List;
 
 /**
- * A {@link android.support.v4.app.FragmentPagerAdapter} class for swiping between playlists, recent,
- * artists, albums, songs, and genre {@link android.support.v4.app.Fragment}s on phones.<br/>
+ * A {@link androidx.fragment.app.FragmentPagerAdapter} class for swiping between playlists, recent,
+ * artists, albums, songs, and genre {@link androidx.fragment.app.Fragment}s on phones.<br/>
  */
 public class TriggerPagerAdapter extends FragmentPagerAdapter {
 
@@ -50,8 +51,8 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
     /**
      * Constructor of <code>PagerAdatper<code>
      *
-     * @param activity The {@link android.support.v4.app.FragmentActivity} of the
-     *            {@link android.support.v4.app.Fragment}.
+     * @param activity The {@link androidx.fragment.app.FragmentActivity} of the
+     *            {@link androidx.fragment.app.Fragment}.
      * @param fm the FragmentManager to use.
      */
     public TriggerPagerAdapter(Activity activity, FragmentManager fm) {
@@ -80,11 +81,11 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
     }
 
     /**
-     * Method that returns the {@link android.support.v4.app.Fragment} in the argument
+     * Method that returns the {@link androidx.fragment.app.Fragment} in the argument
      * position.
      *
      * @param position The position of the fragment to return.
-     * @return Fragment The {@link android.support.v4.app.Fragment} in the argument position.
+     * @return Fragment The {@link androidx.fragment.app.Fragment} in the argument position.
      */
     public Fragment getFragment(final int position) {
         final WeakReference<Fragment> mWeakFragment = mFragmentArray.get(position);

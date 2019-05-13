@@ -18,9 +18,10 @@
 package org.lineageos.lineageparts.widget;
 
 import android.content.Context;
-import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
+import androidx.preference.PreferenceViewHolder;
 
 public class WallOfTextPreference extends DividerPreference {
 

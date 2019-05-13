@@ -19,7 +19,7 @@
   *** onClick*(...);
 }
 
--keep public class * extends android.support.v7.preference.* {
+-keep public class * extends androidx.preference.* {
     public <init>(android.content.Context, android.util.AttributeSet);
 }
 

@@ -20,7 +20,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import android.support.v14.preference.R;
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 public class Header implements Item {
@@ -39,7 +38,8 @@ public class Header implements Item {
     public View getView(LayoutInflater inflater, View convertView, ViewGroup parent) {
         View view;
         if (convertView == null) {
-            view = inflater.inflate(R.layout.preference_category_material, parent, false);
+            view = inflater.inflate(androidx.preference.R.layout.preference_category_material,
+                    parent, false);
             // Do some initialization
         } else {
             view = convertView;
