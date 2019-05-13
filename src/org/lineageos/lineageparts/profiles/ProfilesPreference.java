@@ -18,8 +18,8 @@ package org.lineageos.lineageparts.profiles;
 
 import android.content.ActivityNotFoundException;
 import android.os.Bundle;
-import android.support.v7.preference.CheckBoxPreference;
-import android.support.v7.preference.PreferenceViewHolder;
+import androidx.preference.CheckBoxPreference;
+import androidx.preference.PreferenceViewHolder;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
