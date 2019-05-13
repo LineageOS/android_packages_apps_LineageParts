@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import android.support.v7.preference.R;
+import androidx.preference.R;
 
 /**
  * Created by shade on 9/12/16.
