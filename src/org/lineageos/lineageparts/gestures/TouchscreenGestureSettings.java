@@ -22,8 +22,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.PreferenceManager;
+
+import androidx.preference.ListPreference;
+import androidx.preference.PreferenceManager;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.hardware.TouchscreenGesture;

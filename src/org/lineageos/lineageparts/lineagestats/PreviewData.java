@@ -19,7 +19,8 @@ package org.lineageos.lineageparts.lineagestats;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.preference.PreferenceScreen;
+
+import androidx.preference.PreferenceScreen;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
