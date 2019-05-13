@@ -16,9 +16,10 @@ package org.lineageos.lineageparts.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceViewHolder;
 
 import org.lineageos.lineageparts.R;
 
