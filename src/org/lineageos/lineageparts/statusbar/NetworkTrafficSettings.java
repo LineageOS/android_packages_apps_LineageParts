@@ -18,9 +18,10 @@ package org.lineageos.lineageparts.statusbar;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
-import android.support.v7.preference.DropDownPreference;
-import android.support.v7.preference.Preference;
 import android.widget.Toast;
+
+import androidx.preference.DropDownPreference;
+import androidx.preference.Preference;
 
 import lineageos.preference.LineageSecureSettingSwitchPreference;
 import lineageos.providers.LineageSettings;

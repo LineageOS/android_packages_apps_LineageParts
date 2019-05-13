@@ -21,7 +21,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import lineageos.providers.LineageSettings;
 import lineageos.trust.TrustInterface;
