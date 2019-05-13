@@ -24,7 +24,7 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v7.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
