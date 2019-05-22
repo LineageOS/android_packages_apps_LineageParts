@@ -28,6 +28,7 @@ import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.Log;
 
+import com.android.internal.app.ColorDisplayController;
 import com.android.internal.util.ArrayUtils;
 
 import org.lineageos.lineageparts.R;
@@ -170,6 +171,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         mLiveDisplay.setOnPreferenceChangeListener(this);
 
         mDisplayTemperature = (DisplayTemperature) findPreference(KEY_LIVE_DISPLAY_TEMPERATURE);
+        if (ColorDisplayController.isAvailable(getContext())) {
+            liveDisplayPrefs.removePreference(mLiveDisplay);
+            liveDisplayPrefs.removePreference(mDisplayTemperature);
+        }
 
         mColorProfile = (ListPreference) findPreference(KEY_LIVE_DISPLAY_COLOR_PROFILE);
         if (liveDisplayPrefs != null && mColorProfile != null
