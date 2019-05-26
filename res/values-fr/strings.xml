@@ -132,6 +132,7 @@
     <string name="live_display_color_profile_srgb_summary">Couleurs correspondant exactement à l’espace colorimétrique sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Couleurs correspondant exactement à l’espace colorimétrique DCI-P3</string>
+    <string name="live_display_color_profile_adobe_title">Adobe RGB</string>
     <string name="live_display_reading_mode_title">Mode Lecture</string>
     <string name="live_display_reading_mode_summary">Affichage en niveaux de gris pour les périodes de lecture prolongées</string>
     <string name="color_calibration_title">Calibrage des couleurs</string>
