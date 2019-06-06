@@ -71,6 +71,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String KEY_VOLUME_PANEL_ON_LEFT = "volume_panel_on_left";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
@@ -110,6 +111,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeWakeScreen;
     private SwitchPreference mVolumeMusicControls;
     private SwitchPreference mSwapVolumeButtons;
+    private SwitchPreference mVolumePanelOnLeft;
     private SwitchPreference mDisableNavigationKeys;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
@@ -378,6 +380,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     prefScreen.findPreference(KEY_SWAP_VOLUME_BUTTONS);
             if (mSwapVolumeButtons != null) {
                 mSwapVolumeButtons.setChecked(swapVolumeKeys > 0);
+            }
+
+            final boolean volumePanelOnLeft = LineageSettings.Secure.getIntForUser(
+                    getContentResolver(), LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, 0,
+                    UserHandle.USER_CURRENT) != 0;
+            mVolumePanelOnLeft = (SwitchPreference)
+                    prefScreen.findPreference(KEY_VOLUME_PANEL_ON_LEFT);
+            if (mVolumePanelOnLeft != null) {
+                mVolumePanelOnLeft.setChecked(volumePanelOnLeft);
             }
         } else {
             prefScreen.removePreference(volumeCategory);
@@ -671,6 +682,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
             LineageSettings.System.putInt(getActivity().getContentResolver(),
                     LineageSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION, value);
+        } else if (preference == mVolumePanelOnLeft) {
+            LineageSettings.Secure.putIntForUser(getActivity().getContentResolver(),
+                    LineageSettings.Secure.VOLUME_PANEL_ON_LEFT,
+                    mVolumePanelOnLeft.isChecked() ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
         } else if (preference == mDisableNavigationKeys) {
             mDisableNavigationKeys.setEnabled(false);
             mNavigationPreferencesCat.setEnabled(false);
