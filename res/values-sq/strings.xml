@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Treguesi i baterisë</string>
     <string name="status_bar_battery_style_title">Stili i treguesit të baterisë</string>
     <string name="status_bar_battery_style_icon_portrait">Ikonë vertikalisht</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikonë horizontalisht</string>
     <string name="status_bar_battery_style_circle">Rreth</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <string name="status_bar_battery_style_hidden">E fshehur</string>
     <string name="status_bar_battery_percentage_title">Përqindja e baterisë</string>
     <string name="status_bar_battery_percentage_default">E fshehur</string>
     <string name="status_bar_battery_percentage_text_inside">Brenda ikonës</string>

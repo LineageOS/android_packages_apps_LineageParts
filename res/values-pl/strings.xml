@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Wskaźnik baterii</string>
     <string name="status_bar_battery_style_title">Styl wskaźnika baterii</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona pionowo</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikona poziomo</string>
     <string name="status_bar_battery_style_circle">Okrąg</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <string name="status_bar_battery_style_hidden">Ukryty</string>
     <string name="status_bar_battery_percentage_title">Procent baterii</string>
     <string name="status_bar_battery_percentage_default">Ukryty</string>
     <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
@@ -582,6 +580,7 @@
     <string name="trust_onboarding_learn_more">Dowiedz się więcej</string>
     <string name="trust_onboarding_done">Rozumiem</string>
     <string name="trust_restrict_usb_title">Ogranicz połączenie USB</string>
+    <string name="trust_restrict_usb_summary">Wyłącz nowe gadżety USB, gdy urządzenie jest zablokowane</string>
     <string name="sms_security_check_limit_title">Limit wiadomości SMS</string>
     <string name="sms_security_check_limit_summary">Aplikacje mogą wysłać %s wiadomości przez 1 minutę, nim konieczne będzie potwierdzenie</string>
     <string name="sms_security_check_limit_summary_none">Aplikacje nie mogą wysyłać żadnych wiadomości bez potwierdzenia</string>

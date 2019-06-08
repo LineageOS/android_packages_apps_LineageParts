@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
     <string name="privacy_guard_advanced_settings_title">高级</string>
     <string name="privacy_guard_notification_title">显示通知</string>
+    <string name="channel_light_settings_name">浅色设置预览</string>
     <string name="edit_light_settings">编辑指示灯设置</string>
     <string name="pulse_speed_title">呼吸长度与速度</string>
     <string name="default_time">正常</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">电量指示器</string>
     <string name="status_bar_battery_style_title">电池状态样式</string>
     <string name="status_bar_battery_style_icon_portrait">纵向图标</string>
-    <string name="status_bar_battery_style_icon_landscape">横向图标</string>
     <string name="status_bar_battery_style_circle">环形</string>
     <string name="status_bar_battery_style_text">文本</string>
-    <string name="status_bar_battery_style_hidden">隐藏</string>
     <string name="status_bar_battery_percentage_title">电量百分比</string>
     <string name="status_bar_battery_percentage_default">隐藏</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>

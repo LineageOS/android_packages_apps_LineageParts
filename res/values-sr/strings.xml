@@ -370,10 +370,8 @@
     <string name="status_bar_battery_title">Индикатор батерије</string>
     <string name="status_bar_battery_style_title">Стил индикатора батерије</string>
     <string name="status_bar_battery_style_icon_portrait">Усправна икона</string>
-    <string name="status_bar_battery_style_icon_landscape">Положена икона</string>
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
-    <string name="status_bar_battery_style_hidden">Скривено</string>
     <string name="status_bar_battery_percentage_title">Проценат батерије</string>
     <string name="status_bar_battery_percentage_default">Скривено</string>
     <string name="status_bar_battery_percentage_text_inside">Унутар иконе</string>

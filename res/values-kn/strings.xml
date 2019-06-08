@@ -93,7 +93,7 @@
     <string name="keywords_lights_brightness_level">LEDಗಳ ಪ್ರಖರತೆಯನ್ನು ಕ್ಷೀಣಿಸು</string>
     <string name="notification_light_automagic">ಸ್ವಯಂ ಬಣ್ಣಗಳನ್ನು ಆರಿಸು</string>
     <string name="notification_light_automagic_summary">ಸ್ವಯಂ ಬಣ್ಣಗಳನ್ನು ಆರಿಸುತ್ತಿದೆ</string>
-    <string name="led_notification_title">ಬೆಳಕಿನ ಅಳವಡಿಕೆಗಳು</string>
+    <string name="led_notification_title">ಬೆಳಕಿನ ಆಯ್ಕೆಗಳು</string>
     <string name="led_notification_text">ಅಳವಡಿಕೆಯಿಂದ LED ಮಿಣುಕು ಸಶಕ್ತ</string>
     <string name="notification_light_no_apps_summary">ಪ್ರತಿ ಅಪ್ ನಿಯಂತ್ರಣ ಸೇರಿಸಲು, \'%1$s\' ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಪಟ್ಟಿಯಲ್ಲಿ \'\ u002b\' ಒತ್ತಿರಿ</string>
     <string name="live_display_summary">ದಿನದ ಸಮಯ ಮತ್ತು ಪರಿಸರದ ಪರಿಸ್ಥಿತಿ ಆಧಾರಿಸಿ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಉತ್ತಮವಾಗಿಸಿ ವಾಚನೀಯತೆ ಉತ್ತಮಗೊಳಿಸಿ ಕಣ್ಣಿನ ಆಯಾಸ ಕಡಿಮೆ ಮಾಡು</string>
@@ -371,10 +371,8 @@
     <string name="status_bar_battery_title">ಮಿಂತಿಣಿ ಸೂಚಕ</string>
     <string name="status_bar_battery_style_title">ಮಿಂತಿಣಿ ಸ್ಥಿತಿ ಶೈಲಿ</string>
     <string name="status_bar_battery_style_icon_portrait">ಚಿಹ್ನೆ ಕಯ್ತಿಟ್ಟ</string>
-    <string name="status_bar_battery_style_icon_landscape">ಚಿಹ್ನೆ ನೆಲಗಾಣ್ಕೆ</string>
     <string name="status_bar_battery_style_circle">ವೃತ್ತ</string>
     <string name="status_bar_battery_style_text">ಪಠ್ಯ</string>
-    <string name="status_bar_battery_style_hidden">ಅಡಗಿದೆ</string>
     <string name="status_bar_battery_percentage_title">ಮಿಂತಿಣಿ ಶೇಕಡಾ</string>
     <string name="status_bar_battery_percentage_default">ಅಡಗಿದೆ</string>
     <string name="status_bar_battery_percentage_text_inside">ಚಿಹ್ನೆಯ ಒಳಗೆ</string>

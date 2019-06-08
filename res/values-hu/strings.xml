@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Rendszeralkalmazások megjelenítése</string>
     <string name="privacy_guard_advanced_settings_title">Haladó</string>
     <string name="privacy_guard_notification_title">Értesítés megjelenítése</string>
+    <string name="channel_light_settings_name">Fénybeállítási előnézet</string>
     <string name="edit_light_settings">Értesítési fény beállítások</string>
     <string name="pulse_speed_title">Villogás hossza és sebessége</string>
     <string name="default_time">Normál</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Akkumulátor indikátor</string>
     <string name="status_bar_battery_style_title">Akkumulátor állapotjelző stílusa</string>
     <string name="status_bar_battery_style_icon_portrait">Álló ikon</string>
-    <string name="status_bar_battery_style_icon_landscape">Fekvő ikon</string>
     <string name="status_bar_battery_style_circle">Kör</string>
     <string name="status_bar_battery_style_text">Szöveg</string>
-    <string name="status_bar_battery_style_hidden">Rejtett</string>
     <string name="status_bar_battery_percentage_title">Akkumulátor százalék</string>
     <string name="status_bar_battery_percentage_default">Rejtett</string>
     <string name="status_bar_battery_percentage_text_inside">Ikon belsejében</string>
@@ -576,7 +575,7 @@
     <string name="trust_warnings_selinux">SELinux állapota</string>
     <string name="trust_warnings_keys">A kiadás aláírása</string>
     <string name="trust_onboarding_title">Üdvözölje a Trust-ot</string>
-    <string name="trust_onboarding_description">A Trust segít, hogy készüléke biztonságos legyen, és védi személyes adatait.\nAmikor Trust ikon jelenik meg, akkor segítséget kap ellenőrizni a tartalmak biztonságosságát.</string>
+    <string name="trust_onboarding_description">A Trust segít, hogy készüléke biztonságos legyen, és védi személyes adatait.\nA Trust ikon csak akkor jelenik meg, amikor az oldal tartalma ellenőrzött.</string>
     <string name="trust_onboarding_learn_more">Tudjon meg többet</string>
     <string name="trust_onboarding_done">Rendben</string>
     <string name="trust_restrict_usb_title">Az USB korlátozása</string>

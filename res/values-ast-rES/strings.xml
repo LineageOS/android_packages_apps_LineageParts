@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Indicador de batería</string>
     <string name="status_bar_battery_style_title">Estilu d\'estáu de la batería</string>
     <string name="status_bar_battery_style_icon_portrait">Iconu vertical</string>
-    <string name="status_bar_battery_style_icon_landscape">Iconu horizontal</string>
     <string name="status_bar_battery_style_circle">Círculu</string>
     <string name="status_bar_battery_style_text">Testu</string>
-    <string name="status_bar_battery_style_hidden">Anubríu</string>
     <string name="status_bar_battery_percentage_title">Porcentaxe de batería</string>
     <string name="status_bar_battery_percentage_default">Anubríu</string>
     <string name="status_bar_battery_percentage_text_inside">Dientro l\'iconu</string>

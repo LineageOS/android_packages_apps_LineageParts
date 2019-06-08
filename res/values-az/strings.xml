@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Batereya göstəricisi</string>
     <string name="status_bar_battery_style_title">Batereya vəziyyət stili</string>
     <string name="status_bar_battery_style_icon_portrait">Şaquli nişan</string>
-    <string name="status_bar_battery_style_icon_landscape">Üfüqi nişan</string>
     <string name="status_bar_battery_style_circle">Dairə</string>
     <string name="status_bar_battery_style_text">Mətn</string>
-    <string name="status_bar_battery_style_hidden">Gizli</string>
     <string name="status_bar_battery_percentage_title">Batereya faizi</string>
     <string name="status_bar_battery_percentage_default">Gizli</string>
     <string name="status_bar_battery_percentage_text_inside">Nişan içində</string>

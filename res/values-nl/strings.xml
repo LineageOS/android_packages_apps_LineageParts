@@ -367,10 +367,8 @@
     <string name="status_bar_battery_title">Accupictogram</string>
     <string name="status_bar_battery_style_title">Opmaak accustatus</string>
     <string name="status_bar_battery_style_icon_portrait">Pictogram (staand)</string>
-    <string name="status_bar_battery_style_icon_landscape">Pictogram (liggend)</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <string name="status_bar_battery_style_hidden">Verborgen</string>
     <string name="status_bar_battery_percentage_title">Accupercentage</string>
     <string name="status_bar_battery_percentage_default">Verborgen</string>
     <string name="status_bar_battery_percentage_text_inside">In het pictogram</string>
@@ -382,8 +380,10 @@
     <string name="status_bar_brightness_slider_auto_summary">Schakelaar voor aanpassende helderheid naast de schuifregelaar</string>
     <string name="status_bar_toggle_brightness">Helderheid beheren</string>
     <string name="status_bar_toggle_brightness_summary">Helderheid aanpassen door over de statusbalk te slepen</string>
+    <string name="network_traffic_settings_title">Netwerkverkeerindicator</string>
     <string name="network_traffic_mode_disable">Uitgeschakeld</string>
     <string name="network_traffic_autohide">Automatisch verbergen</string>
+    <string name="network_traffic_autohide_summary">Netwerkverkeerindicator verbergen wanneer er geen activiteit is</string>
     <string name="network_traffic_units_kilobits">Kilobit per seconde (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabit per seconde (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobyte per seconde (kB/s)</string>

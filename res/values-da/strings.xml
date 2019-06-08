@@ -353,10 +353,8 @@
     <string name="status_bar_battery_title">Batteriindikator</string>
     <string name="status_bar_battery_style_title">Batteristatustema</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon portræt</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikon landskab</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <string name="status_bar_battery_style_hidden">Skjult</string>
     <string name="status_bar_battery_percentage_title">Batteriprocent</string>
     <string name="status_bar_battery_percentage_default">Skjult</string>
     <string name="status_bar_battery_percentage_text_inside">Inde i ikonet</string>

@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">חיווי סוללה</string>
     <string name="status_bar_battery_style_title">סגנון הצגת סוללה</string>
     <string name="status_bar_battery_style_icon_portrait">סמל עומד</string>
-    <string name="status_bar_battery_style_icon_landscape">סמל שוכב</string>
     <string name="status_bar_battery_style_circle">עיגול</string>
     <string name="status_bar_battery_style_text">טקסט</string>
-    <string name="status_bar_battery_style_hidden">מוסתר</string>
     <string name="status_bar_battery_percentage_title">אחוזי סוללה</string>
     <string name="status_bar_battery_percentage_default">מוסתר</string>
     <string name="status_bar_battery_percentage_text_inside">בתוך הסמל</string>
@@ -494,6 +492,7 @@
     <string name="touchscreen_gestures_haptic_feedback_summary">רטוט כאשר מזוהה מחווה</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">החלקת שתי אצבעות למטה</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">החלקת אצבע אחת למעלה</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">החלק למעלה מלחצן הבית</string>
     <string name="touchscreen_gesture_one_finger_down_swipe_title">החלקת אצבע אחת למטה</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">החלקת אצבע אחת שמאלה</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">החלקת אצבע אחת ימינה</string>
@@ -555,9 +554,11 @@
     <string name="trust_feature_root_value_disabled">כבוי</string>
     <string name="trust_feature_root_value_adb">ADB בלבד</string>
     <string name="trust_feature_root_value_apps">יישומים ו־ADB</string>
+    <string name="trust_feature_root_explain">הרשאות מנהל (Root) מאפשרות ליישומים ושירותים שתבחר לעקוף הגבלות אבטחה ולבצע שינויים במערכת שיכולים לגרום נזק למכשירך או למערכת ההפעלה.</string>
     <string name="trust_feature_security_patches">‏רמה עדכון תיקוני אבטחה של המערכת</string>
     <string name="trust_feature_security_patches_value_base">פלטפורמה: %1$s\nיצרן: %2$s</string>
     <string name="trust_feature_security_patches_value_new">עדכני</string>
+    <string name="trust_feature_security_patches_value_medium">לא מעודכן כבר כמה חודשים</string>
     <string name="trust_feature_security_patches_value_old">לא תקף</string>
     <string name="trust_feature_encryption">הצפנה</string>
     <string name="trust_feature_encryption_value_enabled">מופעלת</string>
@@ -568,6 +569,7 @@
     <string name="trust_warnings_alerts_intro">באפשרותך לבחור מקרי האבטחה שיקפיצו התראות. למען בטיחותך, מומלץ להפעיל את כל המקרים</string>
     <string name="trust_warnings_selinux">מצב SELinux</string>
     <string name="trust_warnings_keys">חתימת בניה</string>
+    <string name="trust_onboarding_title">תגיד שלום ל־Trust (מערך האבטחה)</string>
     <string name="trust_onboarding_learn_more">מידע נוסף</string>
     <string name="trust_onboarding_done">הבנתי</string>
     <string name="sms_security_check_limit_title">מגבלת הודעות SMS</string>

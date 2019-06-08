@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Indikator Baterai</string>
     <string name="status_bar_battery_style_title">Gaya status baterai</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon potret</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikon lanskap</string>
     <string name="status_bar_battery_style_circle">Lingkaran</string>
     <string name="status_bar_battery_style_text">Teks</string>
-    <string name="status_bar_battery_style_hidden">Tersembunyi</string>
     <string name="status_bar_battery_percentage_title">Persentase baterai</string>
     <string name="status_bar_battery_percentage_default">Tersembunyi</string>
     <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
@@ -405,6 +403,7 @@
     <string name="network_traffic_units_megabytes">Megabyte per detik (MB/d)</string>
     <string name="network_traffic_show_units">Tampilkan satuan</string>
     <string name="network_traffic_show_units_summary">Pilihan tampilan satuan pengukuran lalu lintas di bilah status</string>
+    <string name="network_traffic_disabled_clock">Lalu lintas jaringan dimatikan karena posisi jam</string>
     <string name="protected_apps_manager_title">Aplikasi dilindungi</string>
     <string name="protected_apps_manager_summary">Kelola aplikasi yang tersembunyi dengan kunci aman</string>
     <string name="contributors_cloud_fragment_title">Kontributor</string>
@@ -575,6 +574,8 @@
     <string name="trust_onboarding_description">Trust membantu Anda menjaga perangkat Anda tetap aman dan melindungi privasi Anda.\nIkon Trust hanya akan muncul ketika isi halaman telah diverifikasi.</string>
     <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
     <string name="trust_onboarding_done">Mengerti</string>
+    <string name="trust_restrict_usb_title">Batasi USB</string>
+    <string name="trust_restrict_usb_summary">Nonaktifkan gadget USB baru saat perangkat terkunci</string>
     <string name="sms_security_check_limit_title">Batas pesan SMS</string>
     <string name="sms_security_check_limit_summary">Aplikasi dapat mengirim %s pesan dalam 1 menit sebelum konfirmasi</string>
     <string name="sms_security_check_limit_summary_none">Aplikasi tidak diizinkan untuk mengirim pesan tanpa konfirmasi</string>

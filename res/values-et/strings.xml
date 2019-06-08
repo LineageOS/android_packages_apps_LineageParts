@@ -333,10 +333,8 @@
     <string name="status_bar_battery_title">Akuindikaator</string>
     <string name="status_bar_battery_style_title">Aku oleku stiil</string>
     <string name="status_bar_battery_style_icon_portrait">Ikooni püstasend</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikooni rõhtasend</string>
     <string name="status_bar_battery_style_circle">Ring</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <string name="status_bar_battery_style_hidden">Peidetud</string>
     <string name="status_bar_battery_percentage_title">Aku protsent</string>
     <string name="status_bar_battery_percentage_default">Peidetud</string>
     <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>

@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Indicador de bateria</string>
     <string name="status_bar_battery_style_title">Estilo do status da bateria</string>
     <string name="status_bar_battery_style_icon_portrait">Ícone retrato</string>
-    <string name="status_bar_battery_style_icon_landscape">Ícone paisagem</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
     <string name="status_bar_battery_style_text">Texto</string>
-    <string name="status_bar_battery_style_hidden">Oculto</string>
     <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
     <string name="status_bar_battery_percentage_default">Oculto</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
@@ -405,6 +403,7 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
     <string name="network_traffic_show_units">Mostrar unidades</string>
     <string name="network_traffic_show_units_summary">Mostrar as unidades de medida do tráfego na barra de status</string>
+    <string name="network_traffic_disabled_clock">Tráfego de rede desativado devido à posição do relógio na barra de status</string>
     <string name="protected_apps_manager_title">Apps protegidos</string>
     <string name="protected_apps_manager_summary">Gerencie quais aplicativos ficam escondidos atrás da trava de segurança</string>
     <string name="contributors_cloud_fragment_title">Colaboradores</string>
@@ -578,6 +577,8 @@
     <string name="trust_onboarding_description">O Agente de Confiança ajuda-lhe a manter o seu dispositivo seguro e a proteger sua privacidade.\nO ícone do Agente de Confiança somente será exibido quando o conteúdo da página tiver sido verificado.</string>
     <string name="trust_onboarding_learn_more">Saiba mais</string>
     <string name="trust_onboarding_done">Entendi</string>
+    <string name="trust_restrict_usb_title">Restringir USB</string>
+    <string name="trust_restrict_usb_summary">Desativar novos dispositivos USB quando o dispositivo estiver bloqueado</string>
     <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
     <string name="sms_security_check_limit_summary">Os aplicativos podem enviar %s mensagens durante 1 minuto antes de exigirem confirmação</string>
     <string name="sms_security_check_limit_summary_none">Os aplicativos não podem enviar qualquer mensagem sem confirmação</string>

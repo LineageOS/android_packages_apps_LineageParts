@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Dangos apiau craidd</string>
     <string name="privacy_guard_advanced_settings_title">Uwch</string>
     <string name="privacy_guard_notification_title">Dangos hysbysiad</string>
+    <string name="channel_light_settings_name">Rhagolwg gosodiadau goleuadau</string>
     <string name="edit_light_settings">Addasu gosodiadau golau</string>
     <string name="pulse_speed_title">Hyd a chyflymder curiad</string>
     <string name="default_time">Arferol</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Dangosydd batri</string>
     <string name="status_bar_battery_style_title">Arddull statws batri</string>
     <string name="status_bar_battery_style_icon_portrait">Eicon darlun</string>
-    <string name="status_bar_battery_style_icon_landscape">Eicon tirlun</string>
     <string name="status_bar_battery_style_circle">Cylch</string>
     <string name="status_bar_battery_style_text">Testun</string>
-    <string name="status_bar_battery_style_hidden">Cudd</string>
     <string name="status_bar_battery_percentage_title">Canran batri</string>
     <string name="status_bar_battery_percentage_default">Cudd</string>
     <string name="status_bar_battery_percentage_text_inside">O fewn yr eicon</string>

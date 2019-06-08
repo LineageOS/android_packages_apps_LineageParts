@@ -52,7 +52,8 @@
     <string name="privacy_guard_manager_show_system_apps">Erakutsi sistemaren aplikazioak</string>
     <string name="privacy_guard_advanced_settings_title">Aurreratua</string>
     <string name="privacy_guard_notification_title">Erakutsi jakinarazpena</string>
-    <string name="edit_light_settings">Editatu argiaren ezarpenak</string>
+    <string name="channel_light_settings_name">Argien ezarpenen aurreikuspena</string>
+    <string name="edit_light_settings">Editatu argien ezarpenak</string>
     <string name="pulse_speed_title">Ledaren iraupena eta abiadura</string>
     <string name="default_time">Arrunta</string>
     <string name="custom_time">Pertsonalizatua</string>
@@ -94,7 +95,7 @@
     <string name="notification_light_automagic">Hautatu koloreak automatikoki</string>
     <string name="notification_light_automagic_summary">Koloreak automatikoki hautatzen</string>
     <string name="led_notification_title">Argien ezarpenak</string>
-    <string name="led_notification_text">LED argia ezarpenek gaituta</string>
+    <string name="led_notification_text">LED argia ezarpenetan aktibatuta</string>
     <string name="notification_light_no_apps_summary">Aplikazioz aplikazioko kontrola gehitzeko, aktibatu \'%1$s\' eta sakatu\'\u002b\' menu-barran</string>
     <string name="live_display_summary">Optimizatu zure pantaila eguneko orduaren eta inguruneko baldintzen arabera irakurgarritasuna hobetzeko eta begien nekea gutxiagotzeko</string>
     <string name="live_display_mode">Pantaila modua</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Bateriaren adierazlea</string>
     <string name="status_bar_battery_style_title">Bateria-egoeraren estiloa</string>
     <string name="status_bar_battery_style_icon_portrait">Ikono bertikala</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikono horizontala</string>
     <string name="status_bar_battery_style_circle">Zirkularra</string>
     <string name="status_bar_battery_style_text">Testua</string>
-    <string name="status_bar_battery_style_hidden">Ezkutatua</string>
     <string name="status_bar_battery_percentage_title">Bateriaren ehunekoa</string>
     <string name="status_bar_battery_percentage_default">Ezkutatua</string>
     <string name="status_bar_battery_percentage_text_inside">Ikonoaren barruan</string>

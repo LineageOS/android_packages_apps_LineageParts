@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Arată aplicațiile de sistem</string>
     <string name="privacy_guard_advanced_settings_title">Avansat</string>
     <string name="privacy_guard_notification_title">Afișează notificarea</string>
+    <string name="channel_light_settings_name">Previzualizare setări lumină</string>
     <string name="edit_light_settings">Editare setări lumină</string>
     <string name="pulse_speed_title">Durată și viteză puls</string>
     <string name="default_time">Normal</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Indicator baterie</string>
     <string name="status_bar_battery_style_title">Stilul stării bateriei</string>
     <string name="status_bar_battery_style_icon_portrait">Iconiță portret</string>
-    <string name="status_bar_battery_style_icon_landscape">Iconiță peisaj</string>
     <string name="status_bar_battery_style_circle">Cerc</string>
     <string name="status_bar_battery_style_text">Text</string>
-    <string name="status_bar_battery_style_hidden">Ascunsă</string>
     <string name="status_bar_battery_percentage_title">Procentaj baterie</string>
     <string name="status_bar_battery_percentage_default">Ascuns</string>
     <string name="status_bar_battery_percentage_text_inside">În interiorul pictogramei</string>

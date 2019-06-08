@@ -360,10 +360,8 @@
     <string name="status_bar_battery_title">Індикатор акумулятора</string>
     <string name="status_bar_battery_style_title">Стиль індикатора батареї</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальний значок</string>
-    <string name="status_bar_battery_style_icon_landscape">Горизонтальний значок</string>
     <string name="status_bar_battery_style_circle">Кільце</string>
     <string name="status_bar_battery_style_text">Текст</string>
-    <string name="status_bar_battery_style_hidden">Прихований</string>
     <string name="status_bar_battery_percentage_title">Відсоток заряду батареї</string>
     <string name="status_bar_battery_percentage_default">Приховати</string>
     <string name="status_bar_battery_percentage_text_inside">Всередині значка</string>

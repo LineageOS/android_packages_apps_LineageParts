@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Niveau de la batterie</string>
     <string name="status_bar_battery_style_title">Style du niveau de batterie</string>
     <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
-    <string name="status_bar_battery_style_icon_landscape">Icône paysage</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
     <string name="status_bar_battery_style_text">Texte</string>
-    <string name="status_bar_battery_style_hidden">Masquée</string>
     <string name="status_bar_battery_percentage_title">Pourcentage de la batterie</string>
     <string name="status_bar_battery_percentage_default">Masqué</string>
     <string name="status_bar_battery_percentage_text_inside">Dans l\'icône</string>
@@ -578,6 +576,8 @@
     <string name="trust_onboarding_description">Trust permet d\'assurer la sécurité de votre appareil et de protéger votre vie privée.\nL\'icône Trust ne s\'affiche que lorsque le contenu de la page a été vérifié.</string>
     <string name="trust_onboarding_learn_more">En savoir plus</string>
     <string name="trust_onboarding_done">OK</string>
+    <string name="trust_restrict_usb_title">Restreindre l’USB</string>
+    <string name="trust_restrict_usb_summary">Désactiver les nouveaux périphériques USB lorsque l\'appareil est verrouillé</string>
     <string name="sms_security_check_limit_title">Limiter l\'émission de SMS</string>
     <string name="sms_security_check_limit_summary">Les applications peuvent envoyer %s messages en une minute avant qu\'une confirmation ne soit requise</string>
     <string name="sms_security_check_limit_summary_none">Les applications ne sont pas autorisées à envoyer de messages sans confirmation</string>

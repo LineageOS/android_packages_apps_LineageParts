@@ -370,10 +370,8 @@
     <string name="status_bar_battery_title">Pokazivač baterije</string>
     <string name="status_bar_battery_style_title">Stil baterije</string>
     <string name="status_bar_battery_style_icon_portrait">Okomita ikona</string>
-    <string name="status_bar_battery_style_icon_landscape">Položena ikona</string>
     <string name="status_bar_battery_style_circle">Krug</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <string name="status_bar_battery_style_hidden">Skriveno</string>
     <string name="status_bar_battery_percentage_title">Postotak baterije</string>
     <string name="status_bar_battery_percentage_default">Skriveno</string>
     <string name="status_bar_battery_percentage_text_inside">Unutar ikone</string>

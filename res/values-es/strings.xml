@@ -369,10 +369,8 @@
     <string name="status_bar_battery_title">Indicador de batería</string>
     <string name="status_bar_battery_style_title">Estilo del icono de batería</string>
     <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
-    <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>
     <string name="status_bar_battery_style_circle">Circular</string>
     <string name="status_bar_battery_style_text">Texto</string>
-    <string name="status_bar_battery_style_hidden">Oculto</string>
     <string name="status_bar_battery_percentage_title">Porcentaje de batería</string>
     <string name="status_bar_battery_percentage_default">Oculto</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>

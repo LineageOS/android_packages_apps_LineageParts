@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Mostra app integrate</string>
     <string name="privacy_guard_advanced_settings_title">Avanzate</string>
     <string name="privacy_guard_notification_title">Mostra notifica</string>
+    <string name="channel_light_settings_name">Anteprime configurazione luci</string>
     <string name="edit_light_settings">Modifica impostazioni luci</string>
     <string name="pulse_speed_title">Durata e velocità del lampeggio</string>
     <string name="default_time">Normale</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Indicatore batteria</string>
     <string name="status_bar_battery_style_title">Stile indicatore batteria</string>
     <string name="status_bar_battery_style_icon_portrait">Icona verticale</string>
-    <string name="status_bar_battery_style_icon_landscape">Icona orizzontale</string>
     <string name="status_bar_battery_style_circle">Cerchio</string>
     <string name="status_bar_battery_style_text">Testo</string>
-    <string name="status_bar_battery_style_hidden">Nascosta</string>
     <string name="status_bar_battery_percentage_title">Percentuale batteria</string>
     <string name="status_bar_battery_percentage_default">Nascosta</string>
     <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>

@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Dahili uygulamaları göster</string>
     <string name="privacy_guard_advanced_settings_title">Gelişmiş</string>
     <string name="privacy_guard_notification_title">Bildirim göster</string>
+    <string name="channel_light_settings_name">Işık ayarları ön izlemesi</string>
     <string name="edit_light_settings">Işık ayarlarını düzenle</string>
     <string name="pulse_speed_title">Yanma süresi ve hızı</string>
     <string name="default_time">Normal</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Pil göstergesi</string>
     <string name="status_bar_battery_style_title">Pil durumu stili</string>
     <string name="status_bar_battery_style_icon_portrait">Dikey simge</string>
-    <string name="status_bar_battery_style_icon_landscape">Yatay simge</string>
     <string name="status_bar_battery_style_circle">Daire</string>
     <string name="status_bar_battery_style_text">Metin</string>
-    <string name="status_bar_battery_style_hidden">Gizli</string>
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
     <string name="status_bar_battery_percentage_default">Gizli</string>
     <string name="status_bar_battery_percentage_text_inside">Simgenin içinde</string>

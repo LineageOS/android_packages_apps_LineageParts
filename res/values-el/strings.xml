@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Εμφάνιση ενσωματωμένων εφαρμογών</string>
     <string name="privacy_guard_advanced_settings_title">Προηγμένες</string>
     <string name="privacy_guard_notification_title">Εμφάνιση ειδοποίησης</string>
+    <string name="channel_light_settings_name">Προεπισκόπιση ρυθμίσεων LED</string>
     <string name="edit_light_settings">Επεξεργασία ρυθμίσεων LED</string>
     <string name="pulse_speed_title">Ταχύτητα και διάρκεια παλμού</string>
     <string name="default_time">Κανονική</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Ένδειξη μπαταρίας</string>
     <string name="status_bar_battery_style_title">Στυλ επιπέδου μπαταρίας</string>
     <string name="status_bar_battery_style_icon_portrait">Κάθετο εικονίδιο</string>
-    <string name="status_bar_battery_style_icon_landscape">Οριζόντιο εικονίδιο</string>
     <string name="status_bar_battery_style_circle">Κύκλος</string>
     <string name="status_bar_battery_style_text">Κείμενο</string>
-    <string name="status_bar_battery_style_hidden">Κρυφό</string>
     <string name="status_bar_battery_percentage_title">Ποσοστό μπαταρίας</string>
     <string name="status_bar_battery_percentage_default">Κρυφό</string>
     <string name="status_bar_battery_percentage_text_inside">Μέσα στο εικονίδιο</string>

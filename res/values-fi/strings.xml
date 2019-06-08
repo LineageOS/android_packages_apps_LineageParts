@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Akun varaus</string>
     <string name="status_bar_battery_style_title">Akkunäytön ulkoasu</string>
     <string name="status_bar_battery_style_icon_portrait">Kuvake (pysty)</string>
-    <string name="status_bar_battery_style_icon_landscape">Kuvake (vaaka)</string>
     <string name="status_bar_battery_style_circle">Ympyrä</string>
     <string name="status_bar_battery_style_text">Teksti</string>
-    <string name="status_bar_battery_style_hidden">Piilotettu</string>
     <string name="status_bar_battery_percentage_title">Akun prosentti</string>
     <string name="status_bar_battery_percentage_default">Piilotettu</string>
     <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
@@ -405,6 +403,7 @@
     <string name="network_traffic_units_megabytes">Megatavua sekunnissa (MB/s)</string>
     <string name="network_traffic_show_units">Näytä yksiköt</string>
     <string name="network_traffic_show_units_summary">Näytä verkkoliikenteen yksiköt tilapalkissa</string>
+    <string name="network_traffic_disabled_clock">Verkkoliikenne poistettu käytöstä kellon sijainnin vuoksi</string>
     <string name="protected_apps_manager_title">Suojatut sovellukset</string>
     <string name="protected_apps_manager_summary">Hallitse mitkä sovellukset ovat turvallisen lukituksen takana</string>
     <string name="contributors_cloud_fragment_title">Kehittäjät</string>
@@ -579,6 +578,8 @@ aksentti \nOtetaanko käyttöön?</string>
     <string name="trust_onboarding_description">Trust auttaa sinua pitämään laitteesi turvassa ja suojaa yksityisyyttäsi.\nTrust-kuvake näkyy vain kun sivun sisältö on varmistettu.</string>
     <string name="trust_onboarding_learn_more">Lue lisää</string>
     <string name="trust_onboarding_done">Selvä</string>
+    <string name="trust_restrict_usb_title">Rajoita USB</string>
+    <string name="trust_restrict_usb_summary">Poista uudet USB-laitteet käytöstä kun laite on lukittu</string>
     <string name="sms_security_check_limit_title">Tekstiviestiraja</string>
     <string name="sms_security_check_limit_summary">Sovellukset voivat lähettää %s viestiä 1 minuutissa ennenkuin vahvistus vaaditaan</string>
     <string name="sms_security_check_limit_summary_none">Sovellukset eivät saa lähettää tekstiviestiä ilman vahvistusta</string>

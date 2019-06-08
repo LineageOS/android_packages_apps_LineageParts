@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Indicador da batería</string>
     <string name="status_bar_battery_style_title">Estilo do estado da batería</string>
     <string name="status_bar_battery_style_icon_portrait">Icona vertical</string>
-    <string name="status_bar_battery_style_icon_landscape">Icona horizontal</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
     <string name="status_bar_battery_style_text">Texto</string>
-    <string name="status_bar_battery_style_hidden">Agochado</string>
     <string name="status_bar_battery_percentage_title">Porcentaxe de batería</string>
     <string name="status_bar_battery_percentage_default">Agochado</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro da icona</string>
@@ -405,6 +403,7 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (kb/s)</string>
     <string name="network_traffic_show_units">Amosa unidades</string>
     <string name="network_traffic_show_units_summary">Se queres amosar as unidades de medición do tráfico na barra de estado</string>
+    <string name="network_traffic_disabled_clock">Tráfico de rede desactivado devido á posición do reloxo</string>
     <string name="protected_apps_manager_title">Aplicacións protexidas</string>
     <string name="protected_apps_manager_summary">Xestiona que aplicacións están protexidas por un bloqueo de seguridade</string>
     <string name="contributors_cloud_fragment_title">Colaboradores</string>
@@ -578,6 +577,8 @@
     <string name="trust_onboarding_description">O Trust axúdate a manter o teu dispositivo seguro e protexe a túa privacidade.\nA icona do Trust amosarase só cando o contido da páxina estea verificado.</string>
     <string name="trust_onboarding_learn_more">Saber máis</string>
     <string name="trust_onboarding_done">Entendo</string>
+    <string name="trust_restrict_usb_title">Restrinxir o USB</string>
+    <string name="trust_restrict_usb_summary">Desactivar novos trebellos USB cando o dispositivo está bloqueado</string>
     <string name="sms_security_check_limit_title">Límite de mensaxes SMS</string>
     <string name="sms_security_check_limit_summary">As aplicacións poden enviar %s mensaxes durante 1 minuto antes de pedir confirmación</string>
     <string name="sms_security_check_limit_summary_none">As aplicacións non teñen permiso para enviar ningunha mensaxe sen confirmación</string>

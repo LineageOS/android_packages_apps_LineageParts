@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">Taisbeanair a’ bhataraidh</string>
     <string name="status_bar_battery_style_title">An stoidhle air staid a’ bhataraidh</string>
     <string name="status_bar_battery_style_icon_portrait">Ìomhaigheag portraide</string>
-    <string name="status_bar_battery_style_icon_landscape">Ìomhaigheag dreacha-tìre</string>
     <string name="status_bar_battery_style_circle">Cearcall</string>
     <string name="status_bar_battery_style_text">Teacsa</string>
-    <string name="status_bar_battery_style_hidden">Falaichte</string>
     <string name="status_bar_battery_percentage_title">Ceudad a’ bhataraidh</string>
     <string name="status_bar_battery_percentage_default">Falaichte</string>
     <string name="status_bar_battery_percentage_text_inside">Taobh a-staigh na h-ìomhaigheige</string>

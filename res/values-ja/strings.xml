@@ -374,10 +374,8 @@
     <string name="status_bar_battery_title">バッテリー残量表示</string>
     <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
     <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
-    <string name="status_bar_battery_style_icon_landscape">横向きのアイコン</string>
     <string name="status_bar_battery_style_circle">サークル</string>
     <string name="status_bar_battery_style_text">テキスト</string>
-    <string name="status_bar_battery_style_hidden">表示しない</string>
     <string name="status_bar_battery_percentage_title">電池のパーセント表示</string>
     <string name="status_bar_battery_percentage_default">表示しない</string>
     <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
@@ -472,7 +470,7 @@
     <string name="auto_power_save_summary_off">省電力モードを自動的に有効にしない</string>
     <string name="auto_power_save_never">使用しない</string>
     <string name="expanded_desktop_settings_title">拡張デスクトップ</string>
-    <string name="expanded_desktop_settings_summary">ステータスバーまたはナビゲーションバー、もしくは両方を非表示にして利用できるデスクトップスペースを拡張する</string>
+    <string name="expanded_desktop_settings_summary">ステータスバーまたはナビゲーションバー、もしくは両方を非表示にして利用できるスペースを拡張します</string>
     <string name="expanded_desktop_options_title">カスタマイズのオプション</string>
     <string name="expanded_desktop_style_title">拡張デスクトップのスタイル</string>
     <string name="expanded_desktop_style_hide_nothing">非表示にしない</string>
@@ -563,7 +561,7 @@
     <string name="trust_feature_security_patches_value_new">最新です</string>
     <string name="trust_feature_security_patches_value_medium">数カ月間の月例パッチが未適用</string>
     <string name="trust_feature_security_patches_value_old">最新ではありません</string>
-    <string name="trust_feature_security_patches_explain">セキュリティパッチは、悪意のあるアプリが悪用してセキュリティ制限を回避し、端末に永続的な損害を与える可能性のある欠陥に対処するために Google が毎月 SoC ベンダーと協力してリリースしています。 Google が提供するパッチは、サポートされている全ての端末で毎月適用されますが、独自のコードへのパッチは端末の製造元のみが適用できます。機器を安全に保つためには、LineageOS ビルドが常に最新であること、および（該当する場合）ベンダーイメージが LineageOS が推奨する最新のものに更新されていることを確認してください。</string>
+    <string name="trust_feature_security_patches_explain">セキュリティパッチは、悪意のあるアプリが悪用してセキュリティ制限を回避し、端末に永続的な損害を与える可能性のある欠陥に対処するために Google が毎月 SoC ベンダーと協力してリリースしています。 Google が提供するパッチは、サポートされている全ての端末で毎月適用されますが、独自のコードへのパッチは端末の製造元のみが適用できます。機器を安全に保つためには、ビルドが常に最新であること、および（該当する場合）ベンダーイメージが推奨されている最新のものに更新されていることを確認してください。</string>
     <string name="trust_feature_encryption">暗号化</string>
     <string name="trust_feature_encryption_value_enabled">有効</string>
     <string name="trust_feature_encryption_value_nolock">保護されたロック画面が必要です</string>

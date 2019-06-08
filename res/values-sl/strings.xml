@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Prikaži vgrajene aplikacije</string>
     <string name="privacy_guard_advanced_settings_title">Napredno</string>
     <string name="privacy_guard_notification_title">Prikaži obvestilo</string>
+    <string name="channel_light_settings_name">Predogled nastavitev lučke</string>
     <string name="edit_light_settings">Uredite nastavitve lučke</string>
     <string name="pulse_speed_title">Dolžina in hitrost utripanja</string>
     <string name="default_time">Običajna</string>
@@ -374,10 +375,8 @@
     <string name="status_bar_battery_title">Stanje akumulatorja</string>
     <string name="status_bar_battery_style_title">Slog stanja akumulatorja</string>
     <string name="status_bar_battery_style_icon_portrait">Pokončna ikona</string>
-    <string name="status_bar_battery_style_icon_landscape">Ležeča ikona</string>
     <string name="status_bar_battery_style_circle">Krog</string>
     <string name="status_bar_battery_style_text">Besedilo</string>
-    <string name="status_bar_battery_style_hidden">Skrito</string>
     <string name="status_bar_battery_percentage_title">Odstotek napolnjenosti akumulatorja</string>
     <string name="status_bar_battery_percentage_default">Skrito</string>
     <string name="status_bar_battery_percentage_text_inside">V ikoni</string>
