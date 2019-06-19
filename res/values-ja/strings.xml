@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">内蔵アプリを表示</string>
     <string name="privacy_guard_advanced_settings_title">詳細設定</string>
     <string name="privacy_guard_notification_title">通知を表示</string>
+    <string name="channel_light_settings_name">ライト設定のプレビュー</string>
     <string name="edit_light_settings">ライトの設定を編集</string>
     <string name="pulse_speed_title">点滅時間と点滅速度</string>
     <string name="default_time">標準</string>
@@ -403,6 +404,7 @@
     <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
     <string name="network_traffic_show_units">単位を表示</string>
     <string name="network_traffic_show_units_summary">ステータスバーにネットワークトラフィックの単位を表示</string>
+    <string name="network_traffic_disabled_clock">時計の位置が原因でネットワーク通信量表示が無効です</string>
     <string name="protected_apps_manager_title">アプリの保護</string>
     <string name="protected_apps_manager_summary">パスワードでロックしている場合に非表示にするアプリを管理する</string>
     <string name="contributors_cloud_fragment_title">貢献者</string>
@@ -576,6 +578,8 @@
     <string name="trust_onboarding_description">Trust は端末を安全に保ち、プライバシーを保護するのに役立ちます。\nTrust アイコンはページの内容が確認された場合にのみ表示されます。</string>
     <string name="trust_onboarding_learn_more">詳細</string>
     <string name="trust_onboarding_done">わかりました</string>
+    <string name="trust_restrict_usb_title">USB の制限</string>
+    <string name="trust_restrict_usb_summary">端末ロック時は新しい USB 周辺機器を無効にします</string>
     <string name="sms_security_check_limit_title">SMS メッセージの制限</string>
     <string name="sms_security_check_limit_summary">アプリは確認をする前に1分間に%s通のメッセージを送信できます</string>
     <string name="sms_security_check_limit_summary_none">アプリは許可無くメッセージを送信することはできません</string>

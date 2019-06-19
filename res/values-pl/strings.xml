@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Pokaż wbudowane aplikacje</string>
     <string name="privacy_guard_advanced_settings_title">Zaawansowane</string>
     <string name="privacy_guard_notification_title">Pokaż powiadomienie</string>
+    <string name="channel_light_settings_name">Podgląd ustawień światła</string>
     <string name="edit_light_settings">Edytuj ustawienia diody</string>
     <string name="pulse_speed_title">Długość i szybkość migania</string>
     <string name="default_time">Standardowy</string>
