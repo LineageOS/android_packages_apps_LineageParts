@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Prikaži vgrajene aplikacije</string>
     <string name="privacy_guard_advanced_settings_title">Napredno</string>
     <string name="privacy_guard_notification_title">Prikaži obvestilo</string>
+    <string name="channel_light_settings_name">Predogled nastavitev lučke</string>
     <string name="edit_light_settings">Uredite nastavitve lučke</string>
     <string name="pulse_speed_title">Dolžina in hitrost utripanja</string>
     <string name="default_time">Običajna</string>

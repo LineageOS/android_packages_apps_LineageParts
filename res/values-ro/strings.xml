@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Arată aplicațiile de sistem</string>
     <string name="privacy_guard_advanced_settings_title">Avansat</string>
     <string name="privacy_guard_notification_title">Afișează notificarea</string>
+    <string name="channel_light_settings_name">Previzualizare setări lumină</string>
     <string name="edit_light_settings">Editare setări lumină</string>
     <string name="pulse_speed_title">Durată și viteză puls</string>
     <string name="default_time">Normal</string>

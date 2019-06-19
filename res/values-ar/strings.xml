@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">عرض تطبيقات النظام</string>
     <string name="privacy_guard_advanced_settings_title">خيارات متقدمة</string>
     <string name="privacy_guard_notification_title">عرض الإشعارات</string>
+    <string name="channel_light_settings_name">معاينة إعدادات الضوء</string>
     <string name="edit_light_settings">تعديل إعدادات الإضاءة</string>
     <string name="pulse_speed_title">طول و سرعة النبض</string>
     <string name="default_time">عادي</string>

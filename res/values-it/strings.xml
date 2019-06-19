@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Mostra app integrate</string>
     <string name="privacy_guard_advanced_settings_title">Avanzate</string>
     <string name="privacy_guard_notification_title">Mostra notifica</string>
+    <string name="channel_light_settings_name">Anteprime configurazione luci</string>
     <string name="edit_light_settings">Modifica impostazioni luci</string>
     <string name="pulse_speed_title">Durata e velocità del lampeggio</string>
     <string name="default_time">Normale</string>
@@ -419,9 +420,10 @@
     <string name="contributor_info_msg"><b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
 <b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g></string>
-    <string name="contributions_info_menu">Informazioni contributi</string>
-    <string name="contributions_info_msg"><b>Contributori totali:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>Commit totali:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-<b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g></string>
+    <string name="contributions_info_menu">Info contributi</string>
+    <string name="contributions_info_msg">&lt;b&gt;Numero contributori:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Numero commit:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Ultimo aggiornamento:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Statistiche LineageOS</string>
     <string name="anonymous_statistics_summary">Aiuta a migliorare LineageOS consentendo l\'invio di statistiche anonime</string>
     <string name="anonymous_statistics_warning_title">Info</string>

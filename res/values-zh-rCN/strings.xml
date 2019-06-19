@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
     <string name="privacy_guard_advanced_settings_title">高级</string>
     <string name="privacy_guard_notification_title">显示通知</string>
+    <string name="channel_light_settings_name">浅色设置预览</string>
     <string name="edit_light_settings">编辑指示灯设置</string>
     <string name="pulse_speed_title">呼吸长度与速度</string>
     <string name="default_time">正常</string>
