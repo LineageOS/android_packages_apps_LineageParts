@@ -310,6 +310,9 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
     }
 
     private void updateModeSummary() {
+        if (ColorDisplayController.isAvailable(getContext())) {
+            return; // Do nothing if device has hwc2 support
+        }
         int mode = mLiveDisplayManager.getMode();
 
         int index = ArrayUtils.indexOf(mModeValues, String.valueOf(mode));
