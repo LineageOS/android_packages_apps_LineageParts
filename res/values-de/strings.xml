@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Aktuellen Anruf durch Drücken der Ein-/Aus-Taste beenden</string>
     <string name="swap_volume_buttons_title">Umkehren</string>
     <string name="swap_volume_buttons_summary">Belegung der Lautstärketasten umkehren, wenn das Gerät gedreht wird</string>
+    <string name="volume_panel_on_left_title">Regler auf der linken Seite anzeigen</string>
+    <string name="volume_panel_on_left_summary">Lautstärkeregler auf der linken Seite des Bildschirms anzeigen</string>
     <string name="button_wake_title">Gerät aufwecken</string>
     <string name="volume_answer_call_title">Anruf annehmen</string>
     <string name="volume_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>

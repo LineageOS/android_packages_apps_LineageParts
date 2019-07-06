@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Terminați apelul curent prin apăsarea butonului pornire</string>
     <string name="swap_volume_buttons_title">Reorientare</string>
     <string name="swap_volume_buttons_summary">Schimbă între ele butoanele de volum atunci când ecranul este rotit</string>
+    <string name="volume_panel_on_left_title">Afișează panoul pe stânga</string>
+    <string name="volume_panel_on_left_summary">Afișează panoul de volum pe stânga ecranului</string>
     <string name="button_wake_title">Trezește dispozitivul</string>
     <string name="volume_answer_call_title">Răspundere apel</string>
     <string name="volume_answer_call_summary">Răspundeți la apelurile de intrare apăsând butoanele de volum</string>

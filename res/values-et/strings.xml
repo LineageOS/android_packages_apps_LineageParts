@@ -178,6 +178,8 @@
     <string name="power_end_call_summary">Lõpeta käesolev kõne toitenupu vajutusega</string>
     <string name="swap_volume_buttons_title">Orienteeri ümber</string>
     <string name="swap_volume_buttons_summary">Vaheta helitugevusklahvid ekraani pööramisel</string>
+    <string name="volume_panel_on_left_title">Kuva paneel vasakul</string>
+    <string name="volume_panel_on_left_summary">Kuvage helitugevuse paneel ekraani vasakul küljel</string>
     <string name="button_wake_title">Ärata seade</string>
     <string name="volume_answer_call_title">Vasta kõnele</string>
     <string name="volume_answer_call_summary">Vasta sissetulevatele kõnedele helitugevuse nuppude vajutusega</string>
@@ -362,6 +364,7 @@
     <string name="network_traffic_units_megabytes">Megabaite sekundis (MB/s)</string>
     <string name="network_traffic_show_units">Kuva ühikud</string>
     <string name="network_traffic_show_units_summary">Määrab olekuribal võrguliikluse ühikute kuvamist</string>
+    <string name="network_traffic_disabled_clock">Võrguliikluse jälgija keelatud kella asukoha tõttu</string>
     <string name="protected_apps_manager_title">Kaitstud rakendused</string>
     <string name="protected_apps_manager_summary">Määra, millised rakendused on peidetud turvalise luku taha</string>
     <string name="contributors_cloud_fragment_title">Toetajad</string>

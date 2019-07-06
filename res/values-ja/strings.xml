@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">電源ボタンを押して現在の通話を終了する</string>
     <string name="swap_volume_buttons_title">再配置</string>
     <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替えます</string>
+    <string name="volume_panel_on_left_title">パネルを左側に表示</string>
+    <string name="volume_panel_on_left_summary">画面の左側に音量パネルを表示する</string>
     <string name="button_wake_title">端末をスリープ解除</string>
     <string name="volume_answer_call_title">着信に応答</string>
     <string name="volume_answer_call_summary">音量ボタンを押して着信に応答する</string>

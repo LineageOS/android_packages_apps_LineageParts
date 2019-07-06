@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Gorffen yr alwad bresennol gan wasgu\'r botwm pŵer</string>
     <string name="swap_volume_buttons_title">Ailgyfeirio</string>
     <string name="swap_volume_buttons_summary">Cyfnewid y botymau uchder sain pan fo\'r sgrin wedi troi</string>
+    <string name="volume_panel_on_left_title">Dangos y panel ar y chwith</string>
+    <string name="volume_panel_on_left_summary">Dangos panel lefel sain ar ochr chwith y sgrin</string>
     <string name="button_wake_title">Deffro\'r ddyfais</string>
     <string name="volume_answer_call_title">Ateb galwad</string>
     <string name="volume_answer_call_summary">Ateb galwadau gan wasgu\'r botymau sain</string>

@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Amaitu uneko deia pizte botoia sakatuta</string>
     <string name="swap_volume_buttons_title">Berrorientatu</string>
     <string name="swap_volume_buttons_summary">Trukatu bolumen botoiak pantaila biratzean</string>
+    <string name="volume_panel_on_left_title">Erakutsi panela ezkerrean</string>
+    <string name="volume_panel_on_left_summary">Erakutsi bolumenaren panela pantailaren ezkerraldean</string>
     <string name="button_wake_title">Esnatu gailua</string>
     <string name="volume_answer_call_title">Erantzun deia</string>
     <string name="volume_answer_call_summary">Erantzun jasotako deiak bolumen botoiak zapalduz</string>

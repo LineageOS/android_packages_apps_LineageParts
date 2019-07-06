@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">按电源键结束当前通话</string>
     <string name="swap_volume_buttons_title">重新调整</string>
     <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
+    <string name="volume_panel_on_left_title">在左侧显示面板</string>
+    <string name="volume_panel_on_left_summary">在屏幕左侧显示音量面板</string>
     <string name="button_wake_title">唤醒设备</string>
     <string name="volume_answer_call_title">接听电话</string>
     <string name="volume_answer_call_summary">按音量键接听来电</string>

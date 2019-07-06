@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Termina la chiamata in corso premendo il tasto di accensione</string>
     <string name="swap_volume_buttons_title">Riorienta</string>
     <string name="swap_volume_buttons_summary">Inverti i tasti del volume quando lo schermo è ruotato</string>
+    <string name="volume_panel_on_left_title">Mostra il pannello a sinistra</string>
+    <string name="volume_panel_on_left_summary">Visualizza il pannello volume sul lato sinistro dello schermo</string>
     <string name="button_wake_title">Risveglia dispositivo</string>
     <string name="volume_answer_call_title">Rispondi alla chiamata</string>
     <string name="volume_answer_call_summary">Rispondi alla chiamata in arrivo premendo i pulsanti del volume</string>

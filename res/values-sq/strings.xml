@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Trego aplikacionet e integruara</string>
     <string name="privacy_guard_advanced_settings_title">Të përparuara</string>
     <string name="privacy_guard_notification_title">Trego njoftimin</string>
+    <string name="channel_light_settings_name">Paraqitje të cilësimeve të dritës</string>
     <string name="edit_light_settings">Redakto parametrat e dritës</string>
     <string name="pulse_speed_title">Gjatësia dhe shpejtësia e pulsimit</string>
     <string name="default_time">Normale</string>
@@ -183,6 +184,8 @@
     <string name="power_end_call_summary">Mbaro telefonatën aktuale duke shtypur butonin e energjisë</string>
     <string name="swap_volume_buttons_title">Rioriento</string>
     <string name="swap_volume_buttons_summary">Shkëmbe butonat e volumit kur ekrani është i kthyer</string>
+    <string name="volume_panel_on_left_title">Shfaq panelin në të majtë</string>
+    <string name="volume_panel_on_left_summary">Shfaq panelin e volumit në të djathtën e ekranit</string>
     <string name="button_wake_title">Zgjo pajisjen</string>
     <string name="volume_answer_call_title">Pergjigjiu thirrjes</string>
     <string name="volume_answer_call_summary">Përgjigjiu thirrjeve hyrëse duke shtypur butonat e volumit</string>

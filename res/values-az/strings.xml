@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Güc düyməsinə basaraq mövcud zəngi bitir</string>
     <string name="swap_volume_buttons_title">Yenidən yönləndir</string>
     <string name="swap_volume_buttons_summary">Ekran döndəriləndə səs düymələrinin yerini dəyişdir</string>
+    <string name="volume_panel_on_left_title">Paneli solda göstər</string>
+    <string name="volume_panel_on_left_summary">Səs panelini ekranın sol hissəsində göstər</string>
     <string name="button_wake_title">Cihazı oyandır</string>
     <string name="volume_answer_call_title">Zəngə cavab ver</string>
     <string name="volume_answer_call_summary">Gələn zəngləri səs düymələrini basaraq cavabla</string>

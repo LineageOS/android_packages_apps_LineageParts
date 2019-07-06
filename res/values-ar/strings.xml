@@ -171,6 +171,8 @@
     <string name="power_end_call_summary">إنهاء المكالمة الحالية عن طريق الضغط على زر الطاقة</string>
     <string name="swap_volume_buttons_title">التبديل</string>
     <string name="swap_volume_buttons_summary">تبديل ازرار الصوت عند استدارة الشاشة</string>
+    <string name="volume_panel_on_left_title">عرض اللوحة على اليسار</string>
+    <string name="volume_panel_on_left_summary">اظهار لوحة الصوت على الجانب الأيسر من الشاشة</string>
     <string name="button_wake_title">إيقاظ الجهاز</string>
     <string name="volume_answer_call_title">الرد على المكالمة</string>
     <string name="volume_answer_call_summary">الرد على المكالمات الواردة بالضغط على أزرار الصوت</string>

@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Finalitza la trucada actual prement el botó d\'apagat</string>
     <string name="swap_volume_buttons_title">Reorienta</string>
     <string name="swap_volume_buttons_summary">Intercanvia els botons de volum quan la pantalla estigui rotada</string>
+    <string name="volume_panel_on_left_title">Mostra el panell a l\'esquerra</string>
+    <string name="volume_panel_on_left_summary">Mostra el panell de volum a la part esquerra de la pantalla</string>
     <string name="button_wake_title">Encén el dispositiu</string>
     <string name="volume_answer_call_title">Contesta la trucada</string>
     <string name="volume_answer_call_summary">Contesta les trucades entrants prement els botons de volum</string>

@@ -184,6 +184,8 @@
     <string name="power_end_call_summary">Завершение текущего вызова нажатием кнопки питания</string>
     <string name="swap_volume_buttons_title">Автоповорот</string>
     <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
+    <string name="volume_panel_on_left_title">Панель громкости слева</string>
+    <string name="volume_panel_on_left_summary">Отображать панель громкости с левой стороны экрана</string>
     <string name="button_wake_title">Выход из режима сна</string>
     <string name="volume_answer_call_title">Ответ на вызов</string>
     <string name="volume_answer_call_summary">Отвечать на входящие вызовы нажатием кнопок громкости</string>
