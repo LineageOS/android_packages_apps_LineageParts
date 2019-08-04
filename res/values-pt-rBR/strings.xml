@@ -183,6 +183,7 @@
     <string name="power_end_call_summary">Encerrar a chamada atual pressionando o botão liga/desliga</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Inverter botões de volume quando a tela estiver invertida</string>
+    <string name="volume_panel_on_left_title">Mostrar painel à esquerda</string>
     <string name="button_wake_title">Acordar o dispositivo</string>
     <string name="volume_answer_call_title">Atender chamada</string>
     <string name="volume_answer_call_summary">Atender as chamadas pressionando os botões de volume</string>
