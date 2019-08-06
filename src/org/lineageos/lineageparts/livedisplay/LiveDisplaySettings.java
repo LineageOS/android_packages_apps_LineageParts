@@ -55,6 +55,7 @@ import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
+import static lineageos.hardware.LiveDisplayManager.MODE_AUTO;
 import static lineageos.hardware.LiveDisplayManager.MODE_DAY;
 import static lineageos.hardware.LiveDisplayManager.MODE_NIGHT;
 import static lineageos.hardware.LiveDisplayManager.MODE_OFF;
@@ -153,6 +154,9 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         if (!mConfig.hasFeature(MODE_OUTDOOR)) {
             removeIdx = ArrayUtils.appendInt(removeIdx,
                     ArrayUtils.indexOf(mModeValues, String.valueOf(MODE_OUTDOOR)));
+        } else if (isNightDisplayAvailable) {
+            final int autoIdx = ArrayUtils.indexOf(mModeValues, String.valueOf(MODE_AUTO));
+            mModeSummaries[autoIdx] = res.getString(R.string.live_display_outdoor_mode_summary);
         }
 
         // Remove night display on HWC2
@@ -205,7 +209,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
 
         mOutdoorMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
         if (liveDisplayPrefs != null && mOutdoorMode != null
-                && !mConfig.hasFeature(MODE_OUTDOOR)) {
+                // MODE_AUTO implies automatic outdoor mode on HWC2
+                && (isNightDisplayAvailable || !mConfig.hasFeature(MODE_OUTDOOR))) {
             liveDisplayPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
         }
