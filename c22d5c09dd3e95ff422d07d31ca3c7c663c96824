@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84aafcce_b182816b",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-06T20:53:17Z",
+      "side": 1,
+      "message": "This can\u0027t be a final variable.\n\npackages/apps/LineageParts/src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettings.java:131: error: cannot assign a value to final variable mNightDisplayAvailable\n        mNightDisplayAvailable \u003d ColorDisplayController.isAvailable(getContext());",
+      "revId": "c22d5c09dd3e95ff422d07d31ca3c7c663c96824",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
