@@ -205,7 +205,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
 
         mOutdoorMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
         if (liveDisplayPrefs != null && mOutdoorMode != null
-                && !mConfig.hasFeature(MODE_OUTDOOR)) {
+                // MODE_AUTO implies automatic outdoor mode on HWC2
+                && (isNightDisplayAvailable || !mConfig.hasFeature(MODE_OUTDOOR))) {
             liveDisplayPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
         }
