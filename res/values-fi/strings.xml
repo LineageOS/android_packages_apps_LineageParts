@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Näytä järjestelmäsovellukset</string>
     <string name="privacy_guard_advanced_settings_title">Lisäasetukset</string>
     <string name="privacy_guard_notification_title">Näytä ilmoitus</string>
+    <string name="channel_light_settings_name">Valoasetusten esikatselu</string>
     <string name="edit_light_settings">Säädä valon asetuksia</string>
     <string name="pulse_speed_title">Vilkunnan kesto ja nopeus</string>
     <string name="default_time">Normaali</string>
@@ -406,8 +407,8 @@
     <string name="network_traffic_units_title">Verkkoliikenteen yksiköt</string>
     <string name="network_traffic_units_kilobits">Kilobittiä sekunnissa (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabittiä sekunnissa (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilotavu sekunnissa (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megatavua sekunnissa (MB/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilotavua sekunnissa (kt/s)</string>
+    <string name="network_traffic_units_megabytes">Megatavua sekunnissa (Mt/s)</string>
     <string name="network_traffic_show_units">Näytä yksiköt</string>
     <string name="network_traffic_show_units_summary">Näytä verkkoliikenteen yksiköt tilapalkissa</string>
     <string name="protected_apps_manager_title">Suojatut sovellukset</string>
