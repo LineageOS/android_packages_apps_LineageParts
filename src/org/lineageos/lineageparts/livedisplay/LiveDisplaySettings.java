@@ -346,7 +346,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             mDisplayTemperature.setEnabled(mode != MODE_OFF);
         }
         if (mOutdoorMode != null) {
-            mOutdoorMode.setEnabled(mode != MODE_OFF);
+            // MODE_AUTO on HWC2 implies auto mode
+            mOutdoorMode.setEnabled(!mNightDisplayAvailable && mode != MODE_OFF);
         }
     }
 
