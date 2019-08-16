@@ -587,8 +587,7 @@
     <string name="weather_settings_button">Provider settings</string>
     <string name="weather_settings_activity_not_found">Unable to launch the settings menu of this provider</string>
     <string name="weather_settings_add_weather_provider">Add weather provider</string>
-    <string name="weather_settings_play_store_market_url" translatable="false">market://search?q=lineageosweatherprovider&amp;c=apps</string>
-    <string name="weather_settings_play_store_http_url" translatable="false">http://play.google.com/store/search?q=lineageosweatherprovider&amp;c=apps</string>
+    <string name="weather_settings_provider_url" translatable="false">https://download.lineageos.org/extras</string>
     <string name="weather_settings_general_settings_title">General</string>
     <string name="weather_settings_providers_title">Providers</string>
     <string name="weather_settings_temp_units_title">Temperature unit</string>

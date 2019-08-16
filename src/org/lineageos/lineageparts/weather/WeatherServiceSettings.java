@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -133,15 +134,9 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
     }
 
     private void launchGetWeatherProviders() {
-        try {
-            startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse(getString(R.string.weather_settings_play_store_market_url)))
+        startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(getString(R.string.weather_settings_provider_url)))
                             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-        } catch (ActivityNotFoundException e) {
-            startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse(getString(R.string.weather_settings_play_store_http_url)))
-                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-        }
     }
 
     private void unregisterPackageMonitor() {
