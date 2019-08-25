@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Zobrazit systémové aplikace</string>
     <string name="privacy_guard_advanced_settings_title">Pokročilé</string>
     <string name="privacy_guard_notification_title">Zobrazit upozornění</string>
+    <string name="channel_light_settings_name">Náhled nastavení světelné signalizace</string>
     <string name="edit_light_settings">Upravit světelnou signalizaci</string>
     <string name="pulse_speed_title">Délka a rychlost pulsu</string>
     <string name="default_time">Normální</string>
@@ -183,6 +184,8 @@
     <string name="power_end_call_summary">Ukončit aktuální hovor stisknutím tlačítka napájení</string>
     <string name="swap_volume_buttons_title">Změnit orientaci</string>
     <string name="swap_volume_buttons_summary">Výměna tlačítek hlasitosti při otočení obrazovky</string>
+    <string name="volume_panel_on_left_title">Panel hlasitosti vlevo</string>
+    <string name="volume_panel_on_left_summary">Zobrazit panel hlasitosti na levé straně obrazovky</string>
     <string name="button_wake_title">Probudit zařízení</string>
     <string name="volume_answer_call_title">Přijmout hovor</string>
     <string name="volume_answer_call_summary">Přijmout příchozí hovor stisknutím tlačítka hlasitosti</string>
@@ -403,6 +406,7 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazit jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazení jednotek měření síť. provozu ve stavové liště</string>
+    <string name="network_traffic_disabled_clock">Síťový provoz se nezobrazí kvůli umístění hodin</string>
     <string name="protected_apps_manager_title">Chráněné aplikace</string>
     <string name="protected_apps_manager_summary">Spravovat, které aplikace jsou skryté za bezpečnostním zámkem</string>
     <string name="contributors_cloud_fragment_title">Přispěvatelé</string>
@@ -576,6 +580,8 @@
     <string name="trust_onboarding_description">Trust pomáhá udržovat vaše zařízení bezpečné a chrání vaše soukromí.\nIkona Trust se zobrazí pouze tehdy, když byl obsah stránky ověřen.</string>
     <string name="trust_onboarding_learn_more">Dozvědět se více</string>
     <string name="trust_onboarding_done">Chápu</string>
+    <string name="trust_restrict_usb_title">Omezit USB</string>
+    <string name="trust_restrict_usb_summary">V případě zamčeného přístroje zakázat nové USB zařízení</string>
     <string name="sms_security_check_limit_title">Limit SMS zpráv</string>
     <string name="sms_security_check_limit_summary">Aplikace může poslat %s zpráv za 1 minutu před tím, než bude vyžádáno potvrzení</string>
     <string name="sms_security_check_limit_summary_none">Aplikacím není umožněno bez předchozího potvrzení zasílat jakékoliv zprávy</string>

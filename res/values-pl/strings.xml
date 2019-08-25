@@ -184,6 +184,7 @@
     <string name="power_end_call_summary">Zakończ bieżące połączenie, naciskając przycisk zasilania</string>
     <string name="swap_volume_buttons_title">Zmiana orientacji</string>
     <string name="swap_volume_buttons_summary">Zamieniaj przyciski głośności po obróceniu ekranu</string>
+    <string name="volume_panel_on_left_title">Pokaż panel głośności po lewej</string>
     <string name="volume_panel_on_left_summary">Pokaż panel głośności po lewej stronie ekranu</string>
     <string name="button_wake_title">Wybudź urządzenie</string>
     <string name="volume_answer_call_title">Odbierz połączenie</string>

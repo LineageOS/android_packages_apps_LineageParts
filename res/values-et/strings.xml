@@ -43,18 +43,22 @@
     <string name="privacy_guard_dlg_text">Kui Privaatsuskaitse on sisselülitatud, ei saa rakendus juurdepääsu sinu isikuandmetele, sealhulgas kontaktid, sõnumid või kõnelogid.</string>
     <string name="privacy_guard_dlg_system_app_text">Kui Privaatsuskaitse on lubatud sisseehitatud rakendusele, ei saa see rakendus isikuandmetele ligi pääseda ega neid väljastada. See võib tekitada probleeme teiste rakenduste töös.</string>
     <string name="privacy_guard_default_title">Vaikimisi lubatud</string>
+    <string name="privacy_guard_manager_summary">Vali, millised rakendused pääsevad ligi teie isikuandmetele</string>
     <string name="privacy_guard_no_user_apps">Ühtki rakendust pole installitud</string>
     <string name="privacy_guard_help_title">Abi</string>
     <string name="privacy_guard_reset_title">Lähtesta</string>
+    <string name="privacy_guard_reset_text">Kas lähtestada õigused?</string>
     <string name="privacy_guard_help_text">Sellel lehel saad valida, milliste rakenduste puhul on Privaatsuskaitse aktiivne, vajutades nende peal. Valitud rakendused ei saa juurdepääsu sinu isikuandmetele, sealhulgas kontaktid, sõnumid või kõnelogid. Pikk vajutus rakenduse ikoonil avab selle rakenduse teabelehe.\n\nSisseehitatud rakendused ei ole vaikimisi nähtavad, kuid neid saab kuvada, vajutades vastavale menüüvalikule.</string>
     <string name="privacy_guard_manager_show_system_apps">Kuva sisseehitatud rakendused</string>
     <string name="privacy_guard_advanced_settings_title">Täpsemad</string>
     <string name="privacy_guard_notification_title">Kuva teavitus</string>
+    <string name="channel_light_settings_name">Märgutule seadete eelvaade</string>
     <string name="edit_light_settings">Muuda märgutule seadeid</string>
     <string name="pulse_speed_title">Vilkumise pikkus ja kiirus</string>
     <string name="default_time">Tavaline</string>
     <string name="custom_time">Kohandatud</string>
     <string name="dialog_delete_title">Kustuta</string>
+    <string name="dialog_delete_message">Eemaldada valitud üksus?</string>
     <string name="brightness">Heleduse tase</string>
     <string name="pulse_length_always_on">Alati sees</string>
     <string name="pulse_length_very_short">Väga lühike</string>
@@ -93,6 +97,7 @@
     <string name="led_notification_title">Märgutule seaded</string>
     <string name="led_notification_text">LED-tuli on seadetes lubatud</string>
     <string name="notification_light_no_apps_summary">Rakendusepõhise juhtimise lisamiseks aktiveeri \"%1$s\" ning vajuta menüüribal \"\u002b\"</string>
+    <string name="live_display_summary">Optimeeri oma ekraani vastavalt kellaajale ja keskkonnavalgusele, parandamaks loetavust ja vähendamaks silmade pinget</string>
     <string name="live_display_mode">Ekraani režiim</string>
     <string name="live_display_color_temperature_title">Värvitemperatuur</string>
     <string name="live_display_color_temperature_summary">Päev: <xliff:g id="day_temperature">%1$d</xliff:g>K Öö: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
@@ -104,6 +109,7 @@
     <string name="live_display_low_power_title">Vähenda energiatarbimist</string>
     <string name="live_display_low_power_summary">Kohanda ekraani madalaimale energiatarbimisele ilma, et see ekraani kahjustaks</string>
     <string name="live_display_enhance_color_title">Parenda värve</string>
+    <string name="live_display_enhance_color_summary">Parandage värvide erksust keha toonidel, maastikuvaadetel ja muudel piltidel</string>
     <string name="live_display_color_profile_title">Värviprofiil</string>
     <string name="live_display_color_profile_standard_title">Klassikaline</string>
     <string name="live_display_color_profile_standard_summary">Täpsed värvid ja eredad valged</string>
@@ -236,16 +242,23 @@
     <string name="profile_tabs_wifi">Wi\u2011Fi</string>
     <string name="profile_tabs_bluetooth">Bluetooth</string>
     <string name="profile_tabs_nfc">NFC</string>
+    <string name="profile_triggers_header">Päästikud, mis aktiveerivad selle profiili</string>
     <string name="profile_setup_setup_triggers_title">Samm 1: Lisa päästikud</string>
     <string name="profile_setup_setup_triggers_title_config">Muuda päästikuid: <xliff:g id="profile_name">%1$s</xliff:g></string>
     <string name="profile_setup_actions_title">Samm 2: Seadista toimingud</string>
     <string name="profile_setup_actions_title_config">Seadista tegevused uuesti</string>
     <string name="wireless_networks_settings_title">Traadita ühendus ja võrgud</string>
+    <string name="no_bluetooth_triggers">Ükski Bluetooth seade pole paaritatud.\nKoputage, et paaritada Bluetooth seade enne päästikute seadistamist.</string>
+    <string name="no_wifi_triggers">Ühtegi Wi\u2011Fi pöörduspunkti ei ole seadistatud.\nKoputage Wi\u2011Fi ühendamiseks enne päästikute seadistamist.</string>
+    <string name="no_triggers_configured">Ühtegi päästikut pole seadistatud. Koputage lisamiseks.</string>
     <string name="no_triggers_configured_nfc">Koputa uue NFC-päästiku seadistamiseks.</string>
+    <string name="profile_setup_setup_triggers_description">Palun valige päästikud, mis aktiveerivad selle profiili</string>
+    <string name="profile_setup_actions_description">Nüüd seadistage, mis juhtub, kui profiil aktiveeritakse</string>
     <string name="profiles_settings_title">Süsteemiprofiilid</string>
     <string name="profiles_add">Lisa</string>
     <string name="profile_menu_delete">Kustuta</string>
     <string name="profile_settings_title">Profiil</string>
+    <string name="profile_empty_list_profiles_off">Süsteemiprofiilide seadistamiseks lülitage profiilid sisse.</string>
     <string name="profile_settings_summary_off">Profiilid on keelatud</string>
     <string name="profile_trigger_configure">Seadista päästikut</string>
     <string name="profile_write_nfc_tag">Kirjuta NFC-märgisele</string>
@@ -253,11 +266,17 @@
     <string name="profile_write_success">Märgis edukalt kirjutatud</string>
     <string name="profile_write_failed">Märgise kirjutamine ebaõnnestus!</string>
     <string name="profile_selected">Profiil valitud: %1$s</string>
+    <string name="profile_nfc_text">Profiili kirjutamine NFC-märgisele võimaldab märgise puudutamisega profiili aktiveerida. Teist korda puudutades aktiveeritakse eelnevalt valitud profiil.</string>
     <string name="profile_unknown_nfc_tag">Tundmatu profiil</string>
+    <string name="profile_add_nfc_text">See NFC-märgis viitab tundmatule profiilile. Sidudes selle NFC-märgise olemasoleva profiiliga, võimaldab see seda kasutada profiili aktiveerimiseks tulevikus.</string>
     <string name="profile_select">Vali profiil</string>
     <string name="profile_remove_dialog_message">Eemalda profiil %1$s?</string>
+    <string name="profile_populate_profile_from_state">Seadistad profiili, kasutades hetkel valitud seadme sätteid?</string>
+    <string name="profile_menu_fill_from_state">Impordi käesoleva seadme sätted</string>
+    <string name="profile_remove_current_profile">Aktiivset profiili ei saa kustutada!</string>
     <string name="profile_app_group_category_title">Teadete sundimised</string>
     <string name="profile_app_group_item_instructions">Lisa või eemalda gruppe</string>
+    <string name="profile_app_group_item_instructions_summary">Lisa või eemalda teadete sundimise rakendustegrupid sellele profiilile</string>
     <string name="profile_entries_on">Sees</string>
     <string name="profile_entries_off">Väljas</string>
     <string name="profile_entries_no_override">Ära sunni</string>
@@ -267,6 +286,7 @@
     <string name="rename_dialog_message">Sisesta uus nimi</string>
     <string name="rename_dialog_hint">Sisesta profiili nimi</string>
     <string name="profile_reset_title">Lähtesta</string>
+    <string name="profile_reset_message">Kustutad kõik kasutaja loodud profiilid ja rakendustegrupid ning lähtestad need vaikeväärtustele?</string>
     <string name="profile_app_delete_confirm">Eemaldad selle rakenduse?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
@@ -285,6 +305,14 @@
     <string name="profile_trigger_connect">Ühendamisel</string>
     <string name="profile_trigger_disconnect">Ühenduse katkemisel</string>
     <string name="profile_trigger_notrigger">Päästikuta</string>
+    <string name="sound_mode">Teavituste režiim</string>
+    <string name="ringer_mode">Helinarežiim</string>
+    <string name="lights_mode">Valgustusrežiim</string>
+    <string name="vibrate_mode">Vibreerimisrežiim</string>
+    <string name="choose_soundtone">Valige teavituse toon</string>
+    <string name="choose_ringtone">Vali helin</string>
+    <string name="ringtone_title">Telefoni helin</string>
+    <string name="soundtone_title">Teavituse toon</string>
     <string name="profile_appgroups_title">Rakenduste grupid</string>
     <string name="profile_applist_title">Rakendused</string>
     <string name="profile_new_appgroup">Uus rakenduste grupp</string>
@@ -295,6 +323,7 @@
     <string name="profile_choose_app">Vali rakendus</string>
     <string name="profile_system_settings_title">Süsteemiseaded</string>
     <string name="profile_lockmode_title">Lukustuskuva valik</string>
+    <string name="profile_lockmode_policy_disabled_summary">See profiilivalik on seadme administraatori poliitikaga keelatud</string>
     <string name="profile_lockmode_insecure_summary">Ära küsi PIN-koodi ega parooli</string>
     <string name="profile_lockmode_disabled_summary">Keela lukustuskuva</string>
     <string name="profile_airplanemode_title">Lennurežiim</string>
@@ -302,17 +331,30 @@
     <string name="profile_brightness_override_summary">Määra tugevuseks %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Sunni antud heledust</string>
     <string name="toggleWifi">Wi\u2011Fi</string>
+    <string name="toggleWifiAp">Kaasaskantav Wi\u2011Fi kuumkoht</string>
     <string name="toggleBluetooth">Bluetooth</string>
     <string name="toggleGPS">GPS</string>
     <string name="toggleData">Andmeside</string>
     <string name="toggleSync">Andmete autom. sünk</string>
     <string name="toggleNfc">NFC</string>
+    <string name="ring_mode_title">Helinarežiim</string>
+    <string name="ring_mode_normal">Tavaline</string>
+    <string name="ring_mode_vibrate">Vibreeri</string>
+    <string name="ring_mode_mute">Hääletu</string>
     <string name="ring_volume_title">Helina helitugevus</string>
     <string name="incoming_call_volume_title">Helin</string>
+    <string name="notification_volume_title">Teade</string>
     <string name="media_volume_title">Meedia</string>
     <string name="alarm_volume_title">Äratus</string>
     <string name="doze_title">Säästlik ekraan</string>
     <string name="status_bar_title">Olekuriba</string>
+    <string name="status_bar_quick_qs_pulldown_title">Kiire rippmenüü</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s olekuriba äär tõmbab alla kiirseaded</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Vasak</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Parem</string>
+    <string name="status_bar_quick_qs_pulldown_off">Väljas</string>
+    <string name="status_bar_quick_qs_pulldown_left">Vasak</string>
+    <string name="status_bar_quick_qs_pulldown_right">Parem</string>
     <string name="status_bar_double_tap_to_sleep_title">Topeltkoputa unerežiimiks</string>
     <string name="status_bar_double_tap_to_sleep_summary">Topeltkoputa olekuriba ekraani väljalülitamiseks</string>
     <string name="status_bar_icons_title">Olekuriba ikoonid</string>
@@ -374,6 +416,7 @@
     <string name="contributor_info_msg">&lt;b&gt;Nimi:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Hüüdnimi:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Muudatused:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_menu">Toetuste info</string>
     <string name="contributions_info_msg">&lt;b&gt;Toetajaid kokku:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Muudatusi kokku:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Viimane uuendus:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
@@ -395,8 +438,13 @@ andmete eelvaade.</string>
     <string name="preview_carrier_title">Operaator</string>
     <string name="stats_collection_title">Andmete kogumine</string>
     <string name="stats_collection_summary">Luba installimõõdikute ja seadme statistika kogumist</string>
+    <string name="accelerometer_title">Pööra ekraani automaatselt</string>
+    <string name="display_rotation_title">Pööramise seaded</string>
+    <string name="display_rotation_enabled">Automaatne pööramine lubatud</string>
+    <string name="display_rotation_disabled">Automaatne pööramine keelatud</string>
     <string name="display_rotation_unit">kraadi</string>
     <string name="display_lockscreen_rotation_title">Pööra lukustuskuva</string>
+    <string name="display_rotation_category_title">Pööramisrežiimid</string>
     <string name="display_rotation_0_title">0 kraadi</string>
     <string name="display_rotation_90_title">90 kraadi</string>
     <string name="display_rotation_180_title">180 kraadi</string>
@@ -420,9 +468,12 @@ andmete eelvaade.</string>
     <string name="perf_profile_overview_summary">Hetkeprofiil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_category_title">Seadme jõudlus</string>
     <string name="perf_profile_title">Jõudlusprofiil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+    <string name="perf_profile_fail_toast">Jõudlusprofiil pole hetkel saadaval</string>
     <string name="power_save_category_title">Akut säästev</string>
     <string name="power_save_title">Ekstreemne akusäästja</string>
+    <string name="power_save_summary">Piira aku säästmiseks seadme jõudlust ja taustategevusi</string>
     <string name="auto_power_save_title">Automaatne akusäästja</string>
+    <string name="auto_power_save_summary_on">Luba akusäästja režiim automaatselt %s aku juures</string>
     <string name="auto_power_save_summary_off">Ära luba automaatset akusäästja lubamist</string>
     <string name="auto_power_save_never">Mitte kunagi</string>
     <string name="expanded_desktop_settings_title">Laiendatud töölaud</string>

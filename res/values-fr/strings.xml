@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Afficher les applications système</string>
     <string name="privacy_guard_advanced_settings_title">Options avancées</string>
     <string name="privacy_guard_notification_title">Afficher la notification</string>
+    <string name="channel_light_settings_name">Aperçu des paramètres d\'éclairage</string>
     <string name="edit_light_settings">Modifier les paramètres du voyant</string>
     <string name="pulse_speed_title">Durée et vitesse du clignotement</string>
     <string name="default_time">Normal</string>
@@ -183,6 +184,8 @@
     <string name="power_end_call_summary">Mettre fin à l’appel en cours en appuyant sur le bouton marche/arrêt</string>
     <string name="swap_volume_buttons_title">Réorienter</string>
     <string name="swap_volume_buttons_summary">Inverser les boutons de volume lorsque l\'écran pivote</string>
+    <string name="volume_panel_on_left_title">Afficher le panneau à gauche</string>
+    <string name="volume_panel_on_left_summary">Afficher le panneau de volume sur le côté gauche de l\'écran</string>
     <string name="button_wake_title">Réveiller l\'appareil</string>
     <string name="volume_answer_call_title">Répondre à l\'appel</string>
     <string name="volume_answer_call_summary">Accepter les appels entrants en appuyant sur les boutons de volume</string>
@@ -403,6 +406,7 @@
     <string name="network_traffic_units_megabytes">Mégaoctets par seconde (Mo/s)</string>
     <string name="network_traffic_show_units">Afficher les unités</string>
     <string name="network_traffic_show_units_summary">Afficher ou non les unités de mesure du débit dans la barre d’état</string>
+    <string name="network_traffic_disabled_clock">Trafic réseau désactivé à cause de la position de l\'horloge</string>
     <string name="protected_apps_manager_title">Applications protégées</string>
     <string name="protected_apps_manager_summary">Gérer les applications protégées par un verrou de sécurité</string>
     <string name="contributors_cloud_fragment_title">Contributeurs</string>

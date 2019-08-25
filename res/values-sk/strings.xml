@@ -403,7 +403,6 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazovať jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazenie jednotiek merania sieť. prevádzky v stavovom riadku</string>
-    <string name="network_traffic_disabled_clock">Sieťová prevádzka sa nezobrazí kôli umiestneniu hodín</string>
     <string name="protected_apps_manager_title">Chránené aplikácie</string>
     <string name="protected_apps_manager_summary">Spravovať aplikácie, ktoré sú skryté za bezpečným zámkom</string>
     <string name="contributors_cloud_fragment_title">Prispievatelia</string>

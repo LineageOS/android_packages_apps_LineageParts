@@ -52,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Mostrar aplicativos do sistema</string>
     <string name="privacy_guard_advanced_settings_title">Avançado</string>
     <string name="privacy_guard_notification_title">Mostrar notificação</string>
+    <string name="channel_light_settings_name">Pré-visualização das configs. de luz</string>
     <string name="edit_light_settings">Editar configurações de luz</string>
     <string name="pulse_speed_title">Duração e velocidade do pulso</string>
     <string name="default_time">Normal</string>
@@ -184,6 +185,7 @@
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Inverter botões de volume quando a tela estiver invertida</string>
     <string name="volume_panel_on_left_title">Mostrar painel à esquerda</string>
+    <string name="volume_panel_on_left_summary">Mostrar o painel de volume no lado esquerdo da tela</string>
     <string name="button_wake_title">Acordar o dispositivo</string>
     <string name="volume_answer_call_title">Atender chamada</string>
     <string name="volume_answer_call_summary">Atender as chamadas pressionando os botões de volume</string>
