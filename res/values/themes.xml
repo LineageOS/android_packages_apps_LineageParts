@@ -31,10 +31,6 @@
         <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
         <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
         <item name="preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
-        <item name="preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
-        <item name="preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
-        <item name="preferencePanelStyle">@style/PreferencePanelSinglePane</item>
-        <item name="preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
         <item name="preferenceScreenStyle">@style/PreferenceStyle</item>
         <item name="preferenceStyle">@style/PreferenceStyle</item>
         <item name="preferenceTheme">@style/PreferenceTheme</item>
