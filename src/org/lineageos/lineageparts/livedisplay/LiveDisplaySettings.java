@@ -18,6 +18,7 @@ package org.lineageos.lineageparts.livedisplay;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.hardware.display.ColorDisplayManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v14.preference.SwitchPreference;
@@ -28,7 +29,6 @@ import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.Log;
 
-import com.android.internal.app.ColorDisplayController;
 import com.android.internal.util.ArrayUtils;
 
 import org.lineageos.lineageparts.R;
@@ -124,7 +124,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final Resources res = getResources();
-        final boolean isNightDisplayAvailable = ColorDisplayController.isAvailable(getContext());
+        final boolean isNightDisplayAvailable =
+                ColorDisplayManager.isNightDisplayAvailable(getContext());
 
         mHardware = LineageHardwareManager.getInstance(getActivity());
         mLiveDisplayManager = LiveDisplayManager.getInstance(getActivity());
@@ -425,7 +426,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             if (!config.hasFeature(FEATURE_READING_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
             }
-            if (ColorDisplayController.isAvailable(context)) {
+            if (ColorDisplayManager.isNightDisplayAvailable(context)) {
                 if (!config.hasFeature(MODE_OUTDOOR)) {
                     result.add(KEY_LIVE_DISPLAY);
                 }
