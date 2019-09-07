@@ -106,14 +106,17 @@
             android:name=".livedisplay.LiveDisplaySettings"
             android:label="@*lineageos.platform:string/live_display_title"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="-2">
-                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.LIVEDISPLAY_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="2" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/live_display_summary" />
@@ -125,14 +128,17 @@
             android:label="@string/button_pref_title"
             android:icon="@drawable/ic_settings_buttons"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="256">
-                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.BUTTON_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-256" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:value="@string/summary_empty" />
@@ -146,14 +152,17 @@
             android:label="@string/profiles_settings_title"
             android:icon="@drawable/ic_settings_profiles"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="255">
-                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.PROFILES_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-255" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
@@ -165,14 +174,19 @@
             android:label="@string/status_bar_title"
             android:icon="@drawable/ic_settings_statusbar"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="254">
-                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-254" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
@@ -183,14 +197,17 @@
             android:name=".style.StylePreferences"
             android:label="@string/style_title"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="-3">
-                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.STYLE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="3" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/style_summary" />
@@ -213,14 +230,17 @@
             android:name=".applications.ExpandedDesktopSettings"
             android:label="@string/expanded_desktop_settings_title"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="-9">
-                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.EXPANDED_DESKTOP_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="13" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/expanded_desktop_settings_summary" />
