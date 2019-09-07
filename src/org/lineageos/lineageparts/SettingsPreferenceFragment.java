@@ -16,6 +16,7 @@
 
 package org.lineageos.lineageparts;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -40,6 +41,7 @@ import android.util.ArrayMap;
 import android.util.ArraySet;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -132,6 +134,8 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     public FloatingActionButton getFloatingActionButton() {
@@ -607,6 +611,15 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
         f.setTargetFragment(this, 0);
         f.show(getFragmentManager(), "dialog_preference");
         onDialogShowing();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            getActivity().onBackPressed();
+            return true;
+        }
+        return false;
     }
 
     public static class SettingsDialogFragment extends DialogFragment {

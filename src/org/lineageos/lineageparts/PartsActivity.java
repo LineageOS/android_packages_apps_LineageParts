@@ -17,6 +17,7 @@
 
 package org.lineageos.lineageparts;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.ComponentName;
@@ -28,18 +29,15 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
-import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
 import org.lineageos.lineageparts.widget.SwitchBar;
 import org.lineageos.internal.lineageparts.PartInfo;
 import org.lineageos.internal.lineageparts.PartsList;
 
-public class PartsActivity extends SettingsDrawerActivity implements
+public class PartsActivity extends Activity implements
         PreferenceFragment.OnPreferenceStartFragmentCallback,
         PreferenceFragment.OnPreferenceStartScreenCallback {
 
@@ -162,15 +160,6 @@ public class PartsActivity extends SettingsDrawerActivity implements
         if (!getFragmentManager().popBackStackImmediate()) {
             super.onBackPressed();
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     public void startPreferencePanel(String fragmentClass, Bundle args, int titleRes,
