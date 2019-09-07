@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6c290c93_b80bc797",
+        "filename": "src/org/lineageos/lineageparts/PartsActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-07T10:05:24Z",
+      "side": 1,
+      "message": "I found that only this is needed. Tested on 16.0.",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 54
+      },
+      "revId": "8778a375fa0d7556a07e9f9051dac325e3e42eff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
