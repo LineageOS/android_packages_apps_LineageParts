@@ -24,6 +24,7 @@ import android.content.Intent;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -130,7 +131,7 @@ public class PartsActivity extends FragmentActivity implements
         searchItem.setIcon(R.drawable.ic_search_24dp);
         searchItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         searchItem.setOnMenuItemClickListener(item -> {
-                Intent intent = new Intent("com.android.settings.action.SETTINGS_SEARCH");
+                Intent intent = new Intent(Settings.ACTION_APP_SEARCH_SETTINGS);
                 intent.setPackage("com.android.settings.intelligence");
                 startActivity(intent);
                 return true;
