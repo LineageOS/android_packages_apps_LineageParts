@@ -29,18 +29,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import androidx.fragment.app.FragmentActivity;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
-
-import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
 import org.lineageos.lineageparts.widget.SwitchBar;
 import org.lineageos.internal.lineageparts.PartInfo;
 import org.lineageos.internal.lineageparts.PartsList;
 
-public class PartsActivity extends SettingsDrawerActivity implements
+public class PartsActivity extends FragmentActivity implements
         PreferenceFragment.OnPreferenceStartFragmentCallback,
         PreferenceFragment.OnPreferenceStartScreenCallback {
 
