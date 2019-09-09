@@ -232,7 +232,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
                 return false;
             }
         } else if (preference == mPowerSavePref) {
-            if (!mPowerManager.setPowerSaveMode((boolean) newValue)) {
+            if (!mPowerManager.setPowerSaveModeEnabled((boolean) newValue)) {
                 // Don't just fail silently, inform the user as well
                 Toast.makeText(getActivity(),
                         R.string.perf_profile_fail_toast, Toast.LENGTH_SHORT).show();
