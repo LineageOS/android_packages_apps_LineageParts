@@ -211,16 +211,25 @@
                 android:resource="@string/style_summary" />
         </activity-alias>
 
-        <!-- Trust interface (Security category) -->
+        <!-- Trust interface (Privacy category) -->
         <activity-alias
             android:name=".trust.TrustPreferences"
             android:label="@string/trust_title"
             android:targetActivity="PartsActivity">
-            <intent-filter android:priority="-4">
-                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.TRUST_INTERFACE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.privacy" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="0" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/summary_empty" />
         </activity-alias>
 
         <!-- Expanded Desktop settings (Display category) -->
