@@ -28,7 +28,6 @@
         <item name="dialogPreferenceStyle">@style/DialogPreferenceStyle</item>
         <item name="dropdownPreferenceStyle">@style/DropdownPreferenceStyle</item>
         <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
-        <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
         <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
         <item name="preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
         <item name="preferenceScreenStyle">@style/PreferenceStyle</item>
