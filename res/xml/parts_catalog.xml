@@ -41,7 +41,8 @@
 
     <part android:key="contributors"
           android:title="@string/contributors_cloud_fragment_title"
-          android:fragment="org.lineageos.lineageparts.contributors.ContributorsCloudFragment" />
+          android:fragment="org.lineageos.lineageparts.contributors.ContributorsCloudFragment"
+          lineage:xmlRes="@xml/contributors_cloud" />
 
     <part android:key="livedisplay"
           android:title="@*lineageos.platform:string/live_display_title"
