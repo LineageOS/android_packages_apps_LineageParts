@@ -117,6 +117,7 @@
           android:title="@string/touchscreen_gesture_settings_title"
           android:summary="@string/touchscreen_gesture_settings_summary"
           android:fragment="org.lineageos.lineageparts.gestures.TouchscreenGestureSettings"
+          lineage:requiresFeature="lineagehardware:FEATURE_TOUCHSCREEN_GESTURES"
           lineage:xmlRes="@xml/touchscreen_gesture_settings" />
 
     <part android:key="style"
