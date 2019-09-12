@@ -49,11 +49,6 @@
         <item name="android:dialogLayout">@layout/preference_dialog_edittext</item>
     </style>
 
-    <style name="PreferenceCategoryStyle" parent="@*android:style/Preference.DeviceDefault.Category">
-        <item name="allowDividerAbove">true</item>
-        <item name="android:layout">@layout/preference_category_material_settings</item>
-    </style>
-
     <style name="PreferenceFragmentStyle" parent="@*android:style/PreferenceFragment.Material">
         <item name="allowDividerAfterLastItem">false</item>
         <item name="android:layout">@layout/preference_list_fragment</item>
@@ -66,7 +61,9 @@
         <item name="android:layout">@layout/preference_material_settings</item>
     </style>
 
-    <style name="PreferenceTheme">
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
+        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle
+        </item>
     </style>
 
     <style name="PreferenceHeaderPanelSinglePane">
@@ -117,6 +114,14 @@
     <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
     <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small" />
     <style name="TextAppearance.Switch" parent="@android:style/TextAppearance.Material.Title" />
+
+    <style name="TextAppearance.CategoryTitle"
+           parent="@*android:style/TextAppearance.DeviceDefault.Body2">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">11sp</item>
+        <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->
+        <item name="android:letterSpacing">0.072727273</item>
+    </style>
 
     <style name="TextAppearance.Small.SwitchBar">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
