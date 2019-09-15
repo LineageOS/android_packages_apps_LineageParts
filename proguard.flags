@@ -3,16 +3,22 @@
 -keep class org.lineageos.lineageparts.*Picker
 -keep class org.lineageos.lineageparts.*Settings
 
--keep class org.lineageos.lineageparts.lineagestats.*
 -keep class org.lineageos.lineageparts.contributors.*
+-keep class org.lineageos.lineageparts.gestures.*
 -keep class org.lineageos.lineageparts.hardware.*
 -keep class org.lineageos.lineageparts.input.*
+-keep class org.lineageos.lineageparts.lineagestats.*
 -keep class org.lineageos.lineageparts.livedisplay.*
 -keep class org.lineageos.lineageparts.notificationlight.*
 -keep class org.lineageos.lineageparts.power.*
 -keep class org.lineageos.lineageparts.privacyguard.*
 -keep class org.lineageos.lineageparts.profiles.*
 -keep class org.lineageos.lineageparts.sounds.*
+
+# Keep keyhandler constructor
+-keep public class * implements com.android.internal.os.DeviceKeyHandler {
+   public <init>(android.content.Context);
+}
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
