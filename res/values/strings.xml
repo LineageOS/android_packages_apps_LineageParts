@@ -249,7 +249,7 @@
 
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigation bar</string>
-    <string name="navigation_bar_title">Buttons and layout</string>
+    <string name="navigation_bar_invert_layout_title">Invert layout</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
     <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
