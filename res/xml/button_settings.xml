@@ -41,11 +41,10 @@
                 android:summary="@string/navigation_bar_arrow_keys_summary"
                 android:defaultValue="false" />
 
-        <PreferenceScreen
-            android:key="navigation_bar"
-            android:title="@string/navigation_bar_title">
-            <intent android:action="com.android.settings.action.NAV_BAR_TUNER" />
-        </PreferenceScreen>
+        <lineageos.preference.SecureSettingSwitchPreference
+                android:key="sysui_nav_bar_inverse"
+                android:title="@string/navigation_bar_invert_layout_title"
+                android:defaultValue="false" />
 
         <ListPreference
             android:key="navigation_home_long_press"
