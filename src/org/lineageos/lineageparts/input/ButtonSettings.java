@@ -230,14 +230,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Only visible on devices that does not have a navigation bar already
         boolean hasNavigationBar = true;
         boolean supportsKeyDisabler = isKeyDisablerSupported(getActivity());
-        /* wm.needsNavigationBar();
         try {
             IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
-            hasNavigationBar = windowManager.hasNavigationBar();
+            hasNavigationBar = windowManager.hasNavigationBar(Display.DEFAULT_DISPLAY);
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
         }
-        */
         if (supportsKeyDisabler) {
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
@@ -372,12 +370,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                         findPreference(LineageSettings.System.VOLUME_ANSWER_CALL));
             }
 
-/*
             int cursorControlAction = Settings.System.getInt(resolver,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
             mVolumeKeyCursorControl = initList(KEY_VOLUME_KEY_CURSOR_CONTROL,
                     cursorControlAction);
-*/
 
             int swapVolumeKeys = LineageSettings.System.getInt(getContentResolver(),
                     LineageSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0);
@@ -565,12 +561,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
             return true;
-/*
         } else if (preference == mVolumeKeyCursorControl) {
             handleSystemListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
             return true;
-*/
         } else if (preference == mTorchLongPressPowerTimeout) {
             handleListChange(mTorchLongPressPowerTimeout, newValue,
                     LineageSettings.System.TORCH_LONG_PRESS_POWER_TIMEOUT);
