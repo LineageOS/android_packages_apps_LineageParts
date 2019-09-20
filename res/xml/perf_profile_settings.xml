@@ -16,6 +16,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="perf_profile_settings"
     android:title="@string/perf_profile_settings_title" >
 
@@ -46,7 +47,8 @@
             android:max="4"
             android:defaultValue="1"
             android:persistent="false"
-            android:layout="@layout/preference_slider" />
+            android:layout="@layout/preference_slider"
+            settings:allowDividerAbove="false" />
 
     </PreferenceCategory>
 </PreferenceScreen>
