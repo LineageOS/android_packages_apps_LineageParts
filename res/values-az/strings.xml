@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Dairə</string>
     <string name="status_bar_battery_style_text">Mətn</string>
     <string name="status_bar_battery_percentage_title">Batereya faizi</string>
-    <string name="status_bar_battery_percentage_default">Gizli</string>
-    <string name="status_bar_battery_percentage_text_inside">Nişan içində</string>
-    <string name="status_bar_battery_percentage_text_next">Nişanın yanında</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Parlaqlıq</string>
     <string name="status_bar_brightness_slider_title">Parlaqlıq diyircəyini göstər</string>
     <string name="status_bar_brightness_slider_summary">Cəld Tənzimləmələrdən parlaqlığı nizamla</string>

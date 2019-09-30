@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Kör</string>
     <string name="status_bar_battery_style_text">Szöveg</string>
     <string name="status_bar_battery_percentage_title">Akkumulátor százalék</string>
-    <string name="status_bar_battery_percentage_default">Rejtett</string>
-    <string name="status_bar_battery_percentage_text_inside">Ikon belsejében</string>
-    <string name="status_bar_battery_percentage_text_next">Az ikon mellett</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Fényerő</string>
     <string name="status_bar_brightness_slider_title">Fényerő csúszka</string>
     <string name="status_bar_brightness_slider_summary">Fényerő állítása a Gyors Beállításokról</string>

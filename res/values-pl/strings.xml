@@ -356,9 +356,9 @@
     <string name="status_bar_battery_style_circle">Okrąg</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Procent baterii</string>
-    <string name="status_bar_battery_percentage_default">Ukryty</string>
-    <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
-    <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Jasność</string>
     <string name="status_bar_brightness_slider_title">Suwak jasności</string>
     <string name="status_bar_brightness_slider_summary">Dostosuj jasność z Szybkich Ustawień</string>

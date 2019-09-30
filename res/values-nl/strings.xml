@@ -344,9 +344,9 @@
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Accupercentage</string>
-    <string name="status_bar_battery_percentage_default">Verborgen</string>
-    <string name="status_bar_battery_percentage_text_inside">In het pictogram</string>
-    <string name="status_bar_battery_percentage_text_next">Naast het pictogram</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Helderheid</string>
     <string name="status_bar_brightness_slider_title">Schuifregelaar helderheid</string>
     <string name="status_bar_brightness_slider_summary">Helderheid aanpassen vanuit snelle instellingen</string>

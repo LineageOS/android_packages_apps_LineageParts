@@ -353,9 +353,9 @@
     <string name="status_bar_battery_style_circle">環狀圖示</string>
     <string name="status_bar_battery_style_text">純文字</string>
     <string name="status_bar_battery_percentage_title">電量百分比</string>
-    <string name="status_bar_battery_percentage_default">隱藏</string>
-    <string name="status_bar_battery_percentage_text_inside">圖示內</string>
-    <string name="status_bar_battery_percentage_text_next">圖示旁</string>
+    
+    
+    
     <string name="status_bar_brightness_category">亮度</string>
     <string name="status_bar_brightness_slider_title">亮度滑動條</string>
     <string name="status_bar_brightness_slider_summary">在快速設定中調整亮度</string>

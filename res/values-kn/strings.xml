@@ -349,9 +349,9 @@
     <string name="status_bar_battery_style_circle">ವೃತ್ತ</string>
     <string name="status_bar_battery_style_text">ಪಠ್ಯ</string>
     <string name="status_bar_battery_percentage_title">ಮಿಂತಿಣಿ ಶೇಕಡಾ</string>
-    <string name="status_bar_battery_percentage_default">ಅಡಗಿದೆ</string>
-    <string name="status_bar_battery_percentage_text_inside">ಚಿಹ್ನೆಯ ಒಳಗೆ</string>
-    <string name="status_bar_battery_percentage_text_next">ಚಿಹ್ನೆಯ ಮುಂದೆ</string>
+    
+    
+    
     <string name="status_bar_brightness_category">ಪ್ರಖರತೆ</string>
     <string name="status_bar_brightness_slider_title">ಪ್ರಖರತೆ ಜಾರುಫಲಕ</string>
     <string name="status_bar_brightness_slider_summary">ತ್ವರಿತ ಆಯ್ಕೆಗಳಿಂದ ಪ್ರಖರತೆ ಸರಿಪಡಿಸು</string>

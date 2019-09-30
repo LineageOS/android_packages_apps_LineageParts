@@ -351,9 +351,9 @@
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_percentage_title">Проценат батерије</string>
-    <string name="status_bar_battery_percentage_default">Скривено</string>
-    <string name="status_bar_battery_percentage_text_inside">Унутар иконе</string>
-    <string name="status_bar_battery_percentage_text_next">Поред иконе</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Осветљеност</string>
     <string name="status_bar_brightness_slider_title">Клизач за осветљеност</string>
     <string name="status_bar_brightness_slider_summary">Прилагодите осветљеност из брзих подешавања.</string>

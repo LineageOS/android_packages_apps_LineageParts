@@ -349,9 +349,9 @@
     <string name="status_bar_battery_style_circle">Vòng tròn</string>
     <string name="status_bar_battery_style_text">Văn bản</string>
     <string name="status_bar_battery_percentage_title">Tỷ lệ phần trăm pin</string>
-    <string name="status_bar_battery_percentage_default">Ẩn</string>
-    <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng pin</string>
-    <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng pin</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Độ sáng</string>
     <string name="status_bar_brightness_slider_title">Thanh trượt độ sáng</string>
     <string name="status_bar_brightness_slider_summary">Điều chỉnh độ sáng từ Cài đặt nhanh</string>

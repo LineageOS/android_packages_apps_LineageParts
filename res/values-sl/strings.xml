@@ -358,10 +358,17 @@
     <string name="status_bar_battery_style_icon_portrait">Pokončna ikona</string>
     <string name="status_bar_battery_style_circle">Krog</string>
     <string name="status_bar_battery_style_text">Besedilo</string>
+<<<<<<< HEAD
     <string name="status_bar_battery_percentage_title">Odstotek napolnjenosti baterije</string>
     <string name="status_bar_battery_percentage_default">Skrito</string>
     <string name="status_bar_battery_percentage_text_inside">V ikoni</string>
     <string name="status_bar_battery_percentage_text_next">Poleg ikone</string>
+=======
+    <string name="status_bar_battery_percentage_title">Odstotek napolnjenosti akumulatorja</string>
+    
+    
+    
+>>>>>>> 5593ac5... LineageParts: Simplifying the show battery percentage function [2/3].
     <string name="status_bar_brightness_category">Svetlost</string>
     <string name="status_bar_brightness_slider_title">Drsnik za svetlost</string>
     <string name="status_bar_brightness_slider_summary">Prilagajanje svetlosti iz Hitrih nastavitev</string>

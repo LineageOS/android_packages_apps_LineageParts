@@ -353,9 +353,9 @@
     <string name="status_bar_battery_style_circle">دائرة</string>
     <string name="status_bar_battery_style_text">نص</string>
     <string name="status_bar_battery_percentage_title">نسبة البطارية</string>
-    <string name="status_bar_battery_percentage_default">مخفية</string>
-    <string name="status_bar_battery_percentage_text_inside">داخل الرمز</string>
-    <string name="status_bar_battery_percentage_text_next">بجانب الرمز</string>
+    
+    
+    
     <string name="status_bar_brightness_category">السطوع</string>
     <string name="status_bar_brightness_slider_title">مزلاق السطوع</string>
     <string name="status_bar_brightness_slider_summary">ضبط السطوع من الإعدادات السريعة</string>

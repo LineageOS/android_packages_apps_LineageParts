@@ -355,9 +355,9 @@
     <string name="status_bar_battery_style_circle">วงกลม</string>
     <string name="status_bar_battery_style_text">ข้อความ</string>
     <string name="status_bar_battery_percentage_title">เปอร์เซ็นต์แบตเตอรี่</string>
-    <string name="status_bar_battery_percentage_default">ซ่อน</string>
-    <string name="status_bar_battery_percentage_text_inside">ภายในไอคอน</string>
-    <string name="status_bar_battery_percentage_text_next">ถัดจากไอคอน</string>
+    
+    
+    
     <string name="status_bar_brightness_category">ความสว่าง</string>
     <string name="status_bar_brightness_slider_title">แถบเลื่อนความสว่าง</string>
     <string name="status_bar_brightness_slider_summary">ปรับความสว่างจากการตั้งค่าด่วน</string>

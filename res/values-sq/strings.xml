@@ -358,9 +358,9 @@
     <string name="status_bar_battery_style_circle">Rreth</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Përqindja e baterisë</string>
-    <string name="status_bar_battery_percentage_default">E fshehur</string>
-    <string name="status_bar_battery_percentage_text_inside">Brenda ikonës</string>
-    <string name="status_bar_battery_percentage_text_next">Në anë të ikonës</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Ndriçimi</string>
     <string name="status_bar_brightness_slider_title">Niveli i ndriçimit</string>
     <string name="status_bar_brightness_slider_summary">Ndrysho ndriçimin tek Cilësime e Shpejta</string>

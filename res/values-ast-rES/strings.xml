@@ -349,9 +349,9 @@
     <string name="status_bar_battery_style_circle">Círculu</string>
     <string name="status_bar_battery_style_text">Testu</string>
     <string name="status_bar_battery_percentage_title">Porcentaxe de batería</string>
-    <string name="status_bar_battery_percentage_default">Anubríu</string>
-    <string name="status_bar_battery_percentage_text_inside">Dientro l\'iconu</string>
-    <string name="status_bar_battery_percentage_text_next">Al llau l\'iconu</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Brilléu</string>
     <string name="status_bar_brightness_slider_title">Eslizador de brilléu</string>
     <string name="status_bar_brightness_slider_summary">Axusta\'l brilléu dende los axustes rápidos</string>

@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Cerc</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_percentage_title">Procentaj baterie</string>
-    <string name="status_bar_battery_percentage_default">Ascuns</string>
-    <string name="status_bar_battery_percentage_text_inside">În interiorul pictogramei</string>
-    <string name="status_bar_battery_percentage_text_next">Lângă pictogramă</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Luminozitate</string>
     <string name="status_bar_brightness_slider_title">Cursor luminozitate</string>
     <string name="status_bar_brightness_slider_summary">Reglați luminozitatea din Setările Rapide</string>

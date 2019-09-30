@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Kreis</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_percentage_title">Akkustand in Prozent</string>
-    <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
-    <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
-    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Helligkeit</string>
     <string name="status_bar_brightness_slider_title">Helligkeitsregler</string>
     <string name="status_bar_brightness_slider_summary">Helligkeit in den Schnelleinstellungen anpassen</string>
