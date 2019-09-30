@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Ring</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Aku protsent</string>
-    <string name="status_bar_battery_percentage_default">Peidetud</string>
-    <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>
-    <string name="status_bar_battery_percentage_text_next">Ikooni kõrval</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Heledus</string>
     <string name="status_bar_brightness_slider_title">Heleduse liugur</string>
     <string name="status_bar_brightness_slider_summary">Määra heledust kiirseadetest</string>

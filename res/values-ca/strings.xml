@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Cercle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_percentage_title">Percentatge de bateria</string>
-    <string name="status_bar_battery_percentage_default">Amagat</string>
-    <string name="status_bar_battery_percentage_text_inside">Dins la icona</string>
-    <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Lluminositat</string>
     <string name="status_bar_brightness_slider_title">Barra de lluminositat</string>
     <string name="status_bar_brightness_slider_summary">Ajusta la lluminositat des de la configuració ràpida</string>

@@ -353,9 +353,9 @@
     <string name="status_bar_battery_style_circle">Cearcall</string>
     <string name="status_bar_battery_style_text">Teacsa</string>
     <string name="status_bar_battery_percentage_title">Ceudad a’ bhataraidh</string>
-    <string name="status_bar_battery_percentage_default">Falaichte</string>
-    <string name="status_bar_battery_percentage_text_inside">Taobh a-staigh na h-ìomhaigheige</string>
-    <string name="status_bar_battery_percentage_text_next">Ri taobh na h-ìomhaigheige</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Soilleireachd</string>
     <string name="status_bar_brightness_slider_title">Sleamhnachan na soilleireachd</string>
     <string name="status_bar_brightness_slider_summary">Cuir gleus air an t-soilleireachd o na grad-roghainnean</string>

@@ -45,6 +45,7 @@
     <string name="status_bar_battery_style_circle">წრიული</string>
     <string name="status_bar_battery_style_text">ტექსტი</string>
     <string name="status_bar_battery_percentage_title">ბატარეის პროცენტი</string>
+<<<<<<< HEAD
     <string name="status_bar_battery_percentage_default">დამალული</string>
     <string name="status_bar_battery_percentage_text_inside">ხატულას შიგნით</string>
     <string name="status_bar_battery_percentage_text_next">ხატულას გვერდით</string>
@@ -59,6 +60,11 @@
     <string name="display_rotation_90_title">90 გრადუსი</string>
     <string name="display_rotation_180_title">180 გრადუსი</string>
     <string name="display_rotation_270_title">270 გრადუსი</string>
+=======
+    
+    
+    
+>>>>>>> 5593ac5... LineageParts: Simplifying the show battery percentage function [2/3].
     <string name="perf_profile_settings_title">ბატარეის დამზოგი და წარმადობა</string>
     <string name="power_save_category_title">ბატარეის დაზოგვა</string>
     <string name="auto_power_save_summary_on">ბატარეის დამზოგის ჩართვა, მუხტის %s დონეზე ჩამოსვლისას</string>

@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Ympyrä</string>
     <string name="status_bar_battery_style_text">Teksti</string>
     <string name="status_bar_battery_percentage_title">Akun prosentti</string>
-    <string name="status_bar_battery_percentage_default">Piilotettu</string>
-    <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
-    <string name="status_bar_battery_percentage_text_next">Kuvakkeen vieressä</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Kirkkaus</string>
     <string name="status_bar_brightness_slider_title">Kirkkauden säädin</string>
     <string name="status_bar_brightness_slider_summary">Säädä kirkkautta Pika-asetuksista</string>

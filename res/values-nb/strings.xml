@@ -335,9 +335,9 @@
     <string name="status_bar_battery_style_circle">Sirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Batteriprosent</string>
-    <string name="status_bar_battery_percentage_default">Skjult</string>
-    <string name="status_bar_battery_percentage_text_inside">Inne i ikonet</string>
-    <string name="status_bar_battery_percentage_text_next">Ved siden av ikonet</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Lysstyrke</string>
     <string name="status_bar_brightness_slider_title">Lysstyrke-dimmer</string>
     <string name="status_bar_brightness_slider_summary">Juster lysstyrken i fra Hurtiginnstillingene</string>

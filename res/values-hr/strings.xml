@@ -345,9 +345,9 @@
     <string name="status_bar_battery_style_circle">Krug</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Postotak baterije</string>
-    <string name="status_bar_battery_percentage_default">Skriveno</string>
-    <string name="status_bar_battery_percentage_text_inside">Unutar ikone</string>
-    <string name="status_bar_battery_percentage_text_next">Pokraj ikone</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Svjetlina</string>
     <string name="status_bar_brightness_slider_title">Klizač svjetline</string>
     <string name="status_bar_brightness_slider_summary">Podesite svjetlinu u Brzim postavkama</string>

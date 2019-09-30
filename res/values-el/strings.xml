@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Κύκλος</string>
     <string name="status_bar_battery_style_text">Κείμενο</string>
     <string name="status_bar_battery_percentage_title">Ποσοστό μπαταρίας</string>
-    <string name="status_bar_battery_percentage_default">Κρυφό</string>
-    <string name="status_bar_battery_percentage_text_inside">Μέσα στο εικονίδιο</string>
-    <string name="status_bar_battery_percentage_text_next">Δίπλα στο εικονίδιο</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Φωτεινότητα</string>
     <string name="status_bar_brightness_slider_title">Ρυθμιστικό φωτεινότητας</string>
     <string name="status_bar_brightness_slider_summary">Ρύθμιση φωτεινότητας από τις Γρήγορες ρυθμίσεις</string>

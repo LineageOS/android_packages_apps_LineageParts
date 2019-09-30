@@ -19,6 +19,15 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="perf_profile_settings"
     android:title="@string/perf_profile_settings_title" >
+    <PreferenceCategory
+        android:key="status_bar_battery_category"
+        android:title="@string/status_bar_battery_title">
+
+        <lineageos.preference.SystemSettingSwitchPreference
+            android:key="status_bar_show_battery_percent"
+            android:title="@string/status_bar_battery_percentage_title"/>
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="power_save_category"

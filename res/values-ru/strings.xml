@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
-    <string name="status_bar_battery_percentage_default">Не показывать</string>
-    <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
-    <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Яркость</string>
     <string name="status_bar_brightness_slider_title">Регулятор яркости</string>
     <string name="status_bar_brightness_slider_summary">Регулировка яркости в быстрых настройках</string>

@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">Cerchio</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_percentage_title">Percentuale batteria</string>
-    <string name="status_bar_battery_percentage_default">Nascosta</string>
-    <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
-    <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Luminosità</string>
     <string name="status_bar_brightness_slider_title">Slider della luminosità</string>
     <string name="status_bar_brightness_slider_summary">Regola la luminostà dalle impostazioni rapide</string>

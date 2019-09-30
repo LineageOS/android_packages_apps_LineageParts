@@ -356,9 +356,9 @@
     <string name="status_bar_battery_style_circle">Círculo</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
-    <string name="status_bar_battery_percentage_default">Oculto</string>
-    <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
-    <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Brilho</string>
     <string name="status_bar_brightness_slider_title">Controle deslizante de brilho</string>
     <string name="status_bar_brightness_slider_summary">Ajustar brilho da tela nas configurações rápidas</string>

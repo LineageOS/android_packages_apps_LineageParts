@@ -357,9 +357,9 @@
     <string name="status_bar_battery_style_circle">Cylch</string>
     <string name="status_bar_battery_style_text">Testun</string>
     <string name="status_bar_battery_percentage_title">Canran batri</string>
-    <string name="status_bar_battery_percentage_default">Cudd</string>
-    <string name="status_bar_battery_percentage_text_inside">O fewn yr eicon</string>
-    <string name="status_bar_battery_percentage_text_next">Wrth ochr yr eicon</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Disgleirdeb</string>
     <string name="status_bar_brightness_slider_title">Llithrydd disgleirdeb</string>
     <string name="status_bar_brightness_slider_summary">Addasu\'r disgleirdeb o\'r Gosodiadau Cyflym</string>

@@ -335,9 +335,9 @@
     <string name="status_bar_battery_style_circle">Кільце</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_percentage_title">Відсоток заряду батареї</string>
-    <string name="status_bar_battery_percentage_default">Приховати</string>
-    <string name="status_bar_battery_percentage_text_inside">Всередині значка</string>
-    <string name="status_bar_battery_percentage_text_next">Поруч зі значком</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Яскравість</string>
     <string name="status_bar_brightness_slider_title">Повзунок яскравості</string>
     <string name="status_bar_brightness_slider_summary">Регулювання яскравості з швидких налаштувань</string>

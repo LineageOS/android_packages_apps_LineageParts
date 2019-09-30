@@ -359,9 +359,9 @@
     <string name="status_bar_battery_style_circle">원형 아이콘</string>
     <string name="status_bar_battery_style_text">수치</string>
     <string name="status_bar_battery_percentage_title">배터리 잔량 표시</string>
-    <string name="status_bar_battery_percentage_default">숨김</string>
-    <string name="status_bar_battery_percentage_text_inside">아이콘 안에 표시</string>
-    <string name="status_bar_battery_percentage_text_next">아이콘 바깥에 표시</string>
+    
+    
+    
     <string name="status_bar_brightness_category">밝기</string>
     <string name="status_bar_brightness_slider_title">밝기 조절 슬라이더</string>
     <string name="status_bar_brightness_slider_summary">빠른 설정에서 밝기 조절</string>

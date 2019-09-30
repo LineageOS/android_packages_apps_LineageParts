@@ -355,9 +355,9 @@
     <string name="status_bar_battery_style_circle">Lingkaran</string>
     <string name="status_bar_battery_style_text">Teks</string>
     <string name="status_bar_battery_percentage_title">Persentase baterai</string>
-    <string name="status_bar_battery_percentage_default">Tersembunyi</string>
-    <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
-    <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
+    
+    
+    
     <string name="status_bar_brightness_category">Kecerahan</string>
     <string name="status_bar_brightness_slider_title">Slider kecerahan</string>
     <string name="status_bar_brightness_slider_summary">Sesuaikan kecerahan dari setelan cepat</string>
