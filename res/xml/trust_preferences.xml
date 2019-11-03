@@ -43,9 +43,6 @@
         android:key="trust_category_tools"
         android:title="@string/trust_category_tools">
 
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
-            android:key="privacy_guard_manager" />
-
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="trust_restrict_usb"
             android:title="@string/trust_restrict_usb_title"

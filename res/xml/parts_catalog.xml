@@ -80,11 +80,6 @@
           android:fragment="org.lineageos.lineageparts.input.PowerMenuActions"
           lineage:xmlRes="@xml/power_menu_settings" />
 
-    <part android:key="privacy_guard_manager"
-          android:title="@*lineageos.platform:string/privacy_guard_manager_title"
-          android:fragment="org.lineageos.lineageparts.privacyguard.PrivacyGuardManager"
-          lineage:xmlRes="@xml/privacy_guard_prefs" />
-
     <part android:key="weather_settings"
           android:title="@string/weather_settings_title"
           android:fragment="org.lineageos.lineageparts.weather.WeatherServiceSettings"
