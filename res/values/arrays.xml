@@ -315,6 +315,21 @@
         <item>0</item>
     </string-array>
 
+    <!-- Quick settings tile columns -->
+    <string-array name="status_bar_qs_tile_columns_entries" translatable="false">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="status_bar_qs_tile_columns_values" translatable="false">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
     <!-- Weather temperature -->
     <string-array name="weather_temp_unit_entries" translatable="false">
         <item>@string/weather_settings_temp_celsius</item>

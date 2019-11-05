@@ -457,6 +457,8 @@
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
 
+    <string name="status_bar_qs_tile_columns_title">Quick settings tile columns</string>
+
     <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Status bar icons</string>
     <string name="status_bar_notif_count_title">Show notification count</string>

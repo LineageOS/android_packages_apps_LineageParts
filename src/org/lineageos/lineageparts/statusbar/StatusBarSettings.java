@@ -51,6 +51,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+    private static final String STATUS_BAR_QS_TILE_COLUMNS = "status_bar_qs_tile_columns";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
 
@@ -61,6 +62,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String NETWORK_TRAFFIC_SETTINGS = "network_traffic_settings";
 
     private LineageSystemSettingListPreference mQuickPulldown;
+    private LineageSystemSettingListPreference mQSTileColumns;
     private LineageSystemSettingListPreference mStatusBarClock;
     private LineageSystemSettingListPreference mStatusBarAmPm;
     private LineageSystemSettingListPreference mStatusBarBattery;
@@ -109,6 +111,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+
+        mQSTileColumns =
+                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QS_TILE_COLUMNS);
+        mQSTileColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
