@@ -17,7 +17,9 @@
 package org.lineageos.lineageparts.statusbar;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.text.TextUtils;
@@ -51,6 +53,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+    private static final String STATUS_BAR_QS_TILE_COLUMNS = "status_bar_qs_tile_columns";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
 
@@ -61,6 +64,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String NETWORK_TRAFFIC_SETTINGS = "network_traffic_settings";
 
     private LineageSystemSettingListPreference mQuickPulldown;
+    private LineageSystemSettingListPreference mQSTileColumns;
     private LineageSystemSettingListPreference mStatusBarClock;
     private LineageSystemSettingListPreference mStatusBarAmPm;
     private LineageSystemSettingListPreference mStatusBarBattery;
@@ -109,6 +113,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+
+        mQSTileColumns =
+                (LineageSystemSettingListPreference) findPreference(STATUS_BAR_QS_TILE_COLUMNS);
+        mQSTileColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -174,6 +182,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             case STATUS_BAR_BATTERY_STYLE:
                 enableStatusBarBatteryDependents(value);
                 break;
+            case STATUS_BAR_QS_TILE_COLUMNS:
+                updateQuickSettings();
+                break;
         }
         return true;
     }
@@ -200,6 +211,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 break;
         }
         mQuickPulldown.setSummary(summary);
+    }
+
+    private void updateQuickSettings() {
+        Intent u = new Intent();
+        u.setAction(lineageos.content.Intent.ACTION_UPDATE_QUICKSETTINGS);
+        getContext().sendBroadcastAsUser(u, UserHandle.ALL);
     }
 
     private void updateNetworkTrafficStatus(int clockPosition) {
