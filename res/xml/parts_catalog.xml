@@ -114,12 +114,6 @@
           android:fragment="org.lineageos.lineageparts.gestures.TouchscreenGestureSettings"
           lineage:xmlRes="@xml/touchscreen_gesture_settings" />
 
-    <part android:key="style"
-          android:title="@string/style_title"
-          android:summary="@string/style_summary"
-          android:fragment="org.lineageos.lineageparts.style.StylePreferences"
-          lineage:xmlRes="@xml/style_preferences" />
-
     <part android:key="trust_interface"
           android:title="@string/trust_title"
           android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"
