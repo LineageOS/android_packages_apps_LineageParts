@@ -91,12 +91,6 @@
           android:fragment="org.lineageos.lineageparts.power.PerfProfileSettings"
           lineage:xmlRes="@xml/perf_profile_settings" />
 
-    <part android:key="expanded_desktop_settings"
-          android:title="@string/expanded_desktop_settings_title"
-          android:summary="@string/expanded_desktop_settings_summary"
-          android:fragment="org.lineageos.lineageparts.applications.ExpandedDesktopSettings"
-          lineage:xmlRes="@xml/expanded_desktop_prefs" />
-
     <part android:key="long_screen_settings"
           android:title="@string/long_screen_settings_title"
           android:summary="@string/long_screen_settings_summary"
