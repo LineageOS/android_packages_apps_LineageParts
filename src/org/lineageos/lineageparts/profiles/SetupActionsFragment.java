@@ -138,11 +138,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     private static final int[] LOCKMODE_MAPPING = new int[] {
             Profile.LockMode.DEFAULT, Profile.LockMode.INSECURE, Profile.LockMode.DISABLE
     };
-    private static final int[] EXPANDED_DESKTOP_MAPPING = new int[] {
-            Profile.ExpandedDesktopMode.DEFAULT,
-            Profile.ExpandedDesktopMode.ENABLE,
-            Profile.ExpandedDesktopMode.DISABLE
-    };
     private static final int[] DOZE_MAPPING = new int[] {
             Profile.DozeMode.DEFAULT,
             Profile.DozeMode.ENABLE,

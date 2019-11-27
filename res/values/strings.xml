@@ -577,17 +577,6 @@
     <string name="auto_power_save_summary_off">Do not enable power save mode automatically</string>
     <string name="auto_power_save_never">Never</string>
 
-    <!-- Applications: Expanded desktop -->
-    <string name="expanded_desktop_settings_title">Expanded desktop</string>
-    <string name="expanded_desktop_settings_summary">Expand your available desktop space by hiding the status bar, navigation bar, or both</string>
-    <string name="expanded_desktop_options_title">Customization options</string>
-    <string name="expanded_desktop_style_title">Expanded desktop style</string>
-    <string name="expanded_desktop_style_hide_nothing">Hide nothing</string>
-    <string name="expanded_desktop_style_hide_status">Hide status bar</string>
-    <string name="expanded_desktop_style_hide_navigation">Hide navigation bar</string>
-    <string name="expanded_desktop_style_hide_both">Hide both</string>
-    <string name="expanded_desktop_nothing_to_show_text">Turn the switch off to customize your expanded desktop on a per-app basis</string>
-
     <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Full screen apps</string>
     <string name="long_screen_settings_summary">Force legacy apps to use full screen aspect ratio</string>
