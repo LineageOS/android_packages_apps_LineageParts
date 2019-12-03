@@ -62,5 +62,10 @@
     <dimen name="package_list_padding_top">16dp</dimen>
 
     <dimen name="color_mode_preview_height">320dp</dimen>
-</resources>
 
+    <!-- Network Restriction Manager -->
+    <dimen name="network_restriction_manager_row_height">60dp</dimen>
+    <dimen name="network_restriction_manager_image_column_width">72dp</dimen>
+    <dimen name="network_restriction_manager_check_box_width">42dp</dimen>
+    <dimen name="network_restriction_manager_scrollbar_width">6dp</dimen>
+</resources>
