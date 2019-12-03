@@ -685,4 +685,15 @@
     <string name="sms_security_check_limit_summary">Apps can send %s messages in 1 minute before requiring confirmation</string>
     <string name="sms_security_check_limit_summary_none">Apps are not allowed to send any messages without confirmation</string>
     <string name="sms_security_check_limit_always_confirm">Always confirm</string>
+
+    <!-- Firewall -->
+    <string name="firewall_title">Firewall</string>
+    <string name="firewall_description" >This firewall uses the app permission settings for blocking and unblocking apps.</string>
+    <string name="firewall_enable_title" >Enable firewall</string>
+    <string name="firewall_block_new_apps_title" >Block new apps</string>
+    <string name="firewall_show_system_apps_title" >Show system apps</string>
+    <string name="firewall_block_all_apps_title" >Block all apps</string>
+    <string name="firewall_unblock_all_apps_title" >Unblock all apps</string>
+    <string name="firewall_apps">Apps</string>
+    <string name="firewall_no_apps_to_show">No apps to show</string>
 </resources>
