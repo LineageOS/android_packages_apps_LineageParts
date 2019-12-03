@@ -678,4 +678,17 @@
     <string name="sms_security_check_limit_summary">Apps can send %s messages in 1 minute before requiring confirmation</string>
     <string name="sms_security_check_limit_summary_none">Apps are not allowed to send any messages without confirmation</string>
     <string name="sms_security_check_limit_always_confirm">Always confirm</string>
+
+    <!-- Network Restriction Manager -->
+    <string name="network_restriction_manager_settings_title">Manage data restrictions</string>
+    <string name="network_restriction_manager_title">Data restrictions</string>
+    <string name="network_restriction_manager_block_new_apps" >Block new apps</string>
+    <string name="network_restriction_manager_show_system_apps" >Show system apps</string>
+    <string name="network_restriction_manager_show_vpn" >Show VPN</string>
+    <string name="network_restriction_manager_show_background_data" >Show background data</string>
+    <string name="network_restriction_manager_show_data_saver" >Show data saver</string>
+    <string name="network_restriction_manager_block_all_apps" >Block all apps</string>
+    <string name="network_restriction_manager_unblock_all_apps" >Unblock all apps</string>
+    <string name="network_restriction_manager_apps">Apps</string>
+    <string name="network_restriction_manager_no_apps_to_show">No apps to show</string>
 </resources>

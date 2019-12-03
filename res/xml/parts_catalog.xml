@@ -107,4 +107,9 @@
           android:title="@string/trust_title"
           android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"
           lineage:xmlRes="@xml/trust_preferences" />
+
+    <part android:key="network_restriction_manager"
+          android:title="@string/network_restriction_manager_settings_title"
+          android:fragment="org.lineageos.lineageparts.networkrestriction.NetworkRestrictionPreferences"
+          lineage:xmlRes="@xml/network_restriction_manager_preferences" />
 </parts-catalog>
