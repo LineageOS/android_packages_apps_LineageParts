@@ -528,4 +528,16 @@
     <string name="sms_security_check_limit_summary">Apps können %s Nachrichten in 1 Minute ohne Bestätigung versenden</string>
     <string name="sms_security_check_limit_summary_none">Apps dürfen keine Nachrichten ohne Bestätigung versenden</string>
     <string name="sms_security_check_limit_always_confirm">Immer bestätigen</string>
+
+    <!-- Network Restriction Manager -->
+    <string name="network_restriction_manager_settings_title">Datennutzungen verwalten</string>
+    <string name="network_restriction_manager_title">Datennutzungen</string>
+    <string name="network_restriction_manager_block_new_apps" >Blockiere neue Apps</string>
+    <string name="network_restriction_manager_show_system_apps" >System-Apps anzeigen</string>
+    <string name="network_restriction_manager_show_background_data" >Hintergrunddaten anzeigen</string>
+    <string name="network_restriction_manager_show_data_saver" >Uneingeschränkte Datennutzung anzeigen</string>
+    <string name="network_restriction_manager_block_all_apps" >Alle Apps blockieren</string>
+    <string name="network_restriction_manager_unblock_all_apps" >Alle Apps freigeben</string>
+    <string name="network_restriction_manager_apps">Apps</string>
+    <string name="network_restriction_manager_no_apps_to_show">Keine Apps zum Anzeigen</string>
 </resources>
