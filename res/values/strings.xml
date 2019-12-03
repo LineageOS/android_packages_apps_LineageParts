@@ -672,11 +672,6 @@
     <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
     <string name="trust_feature_selinux_value_disabled">Disabled</string>
     <string name="trust_feature_selinux_explain">SELinux dictates what processes have access to which files/paths on your device.\nThis prevents apps and services from accessing files that they are not supposed to: this way a potential malicious process is limited, and your security preserved.</string>
-    <string name="trust_feature_root">Root access</string>
-    <string name="trust_feature_root_value_disabled">Disabled</string>
-    <string name="trust_feature_root_value_adb">ADB only</string>
-    <string name="trust_feature_root_value_apps">Apps and ADB</string>
-    <string name="trust_feature_root_explain">Root access allows apps and services you choose to bypass security restrictions, allowing them to make modifications to the system, which can cause damage to your device or OS.</string>
     <string name="trust_feature_security_patches">Android security patches</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->

@@ -27,10 +27,6 @@
             android:title="@string/trust_feature_selinux" />
 
         <Preference
-            android:key="trust_root"
-            android:title="@string/trust_feature_root" />
-
-        <Preference
             android:key="trust_security_patch"
             android:title="@string/trust_feature_security_patches" />
 
