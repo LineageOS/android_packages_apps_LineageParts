@@ -128,4 +128,9 @@
           android:title="@string/trust_title"
           android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"
           lineage:xmlRes="@xml/trust_preferences" />
+
+    <part android:key="firewall"
+          android:title="@string/firewall_title"
+          android:fragment="org.lineageos.lineageparts.firewall.FirewallPreferences"
+          lineage:xmlRes="@xml/firewall_preferences" />
 </parts-catalog>
