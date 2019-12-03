@@ -37,6 +37,8 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS" />
 
     <uses-permission android:name="lineageos.permission.MANAGE_REMOTE_PREFERENCES" />
 
@@ -204,6 +206,34 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity-alias>
+
+        <!-- Network Restriction Manager (Wireless category) -->
+        <activity-alias
+            android:name=".networkrestriction.NetworkRestrictionPreferences"
+            android:label="@string/network_restriction_manager_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.NETWORK_RESTRICTION_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.wireless" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/summary_empty" />
+        </activity-alias>
+
+        <receiver android:name=".networkrestriction.AppInstalledReceiver" android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
 
         <!-- Contributors Cloud (MyDeviceInfo category) -->
         <activity-alias
