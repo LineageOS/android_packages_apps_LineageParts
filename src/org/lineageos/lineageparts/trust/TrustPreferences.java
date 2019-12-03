@@ -38,7 +38,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private static final String TAG = "TrustPreferences";
 
     private Preference mSELinuxPref;
-    private Preference mRootPref;
     private Preference mSecurityPatchesPref;
     private Preference mEncryptionPref;
     private PreferenceCategory mToolsCategory;
@@ -62,7 +61,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.trust_preferences);
 
         mSELinuxPref = findPreference("trust_selinux");
-        mRootPref = findPreference("trust_root");
         mSecurityPatchesPref = findPreference("trust_security_patch");
         mEncryptionPref = findPreference("trust_encryption");
         mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
@@ -76,8 +74,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
 
         mSELinuxPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_selinux_explain));
-        mRootPref.setOnPreferenceClickListener(p ->
-                 showInfo(R.string.trust_feature_root_explain));
         mSecurityPatchesPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_security_patches_explain));
         mEncryptionPref.setOnPreferenceClickListener(p ->
@@ -94,7 +90,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
 
     private void setup() {
         int seLinuxLevel = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_SELINUX);
-        int rootLevel = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_ROOT);
         int secPLevel =
                 mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_PLATFORM_SECURITY_PATCH);
         int secVLevel =
@@ -102,7 +97,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         int encryptLevel = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_ENCRYPTION);
 
         setupSELinux(seLinuxLevel);
-        setupRoot(rootLevel);
         setupSecurityPatches(secPLevel, secVLevel);
         setupEncryption(encryptLevel);
 
@@ -132,23 +126,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         }
         mSELinuxPref.setIcon(icon);
         mSELinuxPref.setSummary(getContext().getString(summary));
-    }
-
-    private void setupRoot(int level) {
-        int icon;
-        int summary;
-        if (level == TrustInterface.TRUST_FEATURE_LEVEL_GOOD) {
-            icon = R.drawable.ic_trust_root_good;
-            summary = R.string.trust_feature_root_value_disabled;
-        } else if (level == TrustInterface.TRUST_FEATURE_LEVEL_POOR) {
-            icon = R.drawable.ic_trust_root_poor;
-            summary = R.string.trust_feature_root_value_adb;
-        } else {
-            icon = R.drawable.ic_trust_root_bad;
-            summary = R.string.trust_feature_root_value_apps;
-        }
-        mRootPref.setIcon(icon);
-        mRootPref.setSummary(getContext().getString(summary));
     }
 
     private void setupSecurityPatches(int platform, int vendor) {
