@@ -210,6 +210,27 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
+        <!-- Firewall (Privacy category) -->
+        <activity-alias
+            android:name=".firewall.FirewallPreferences"
+            android:label="@string/firewall_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.FIREWALL_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.privacy" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/summary_empty" />
+        </activity-alias>
+
         <!-- Contributors Cloud (MyDeviceInfo category) -->
         <activity-alias
             android:name=".contributors.ContributorsCloudFragment"
