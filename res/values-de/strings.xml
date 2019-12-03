@@ -531,4 +531,13 @@
     <string name="sms_security_check_limit_summary">Apps können %s Nachrichten in 1 Minute ohne Bestätigung versenden</string>
     <string name="sms_security_check_limit_summary_none">Apps dürfen keine Nachrichten ohne Bestätigung versenden</string>
     <string name="sms_security_check_limit_always_confirm">Immer bestätigen</string>
+
+    <!-- Firewall -->
+    <string name="firewall_description" >Diese Firewall nutzt die App-Zugriffsrechte, um eine App zu blockieren.</string>
+    <string name="firewall_enable_title" >Firewall aktivieren</string>
+    <string name="firewall_block_new_apps_title" >Blockiere neue Apps</string>
+    <string name="firewall_show_system_apps_title" >System-Apps anzeigen</string>
+    <string name="firewall_block_all_apps_title" >Alle Apps sperren</string>
+    <string name="firewall_unblock_all_apps_title" >Alle Apps freigeben</string>
+    <string name="firewall_no_apps_to_show">Keine Apps zum anzeigen</string>
 </resources>
