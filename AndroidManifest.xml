@@ -190,6 +190,27 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
+        <!-- Network Restriction Manager (Privacy category) -->
+        <activity-alias
+            android:name=".networkrestriction.NetworkRestrictionPreferences"
+            android:label="@string/network_restriction_manager_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.NETWORK_RESTRICTION_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.privacy" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/summary_empty" />
+        </activity-alias>
+
         <!-- Contributors Cloud (MyDeviceInfo category) -->
         <activity-alias
             android:name=".contributors.ContributorsCloudFragment"
