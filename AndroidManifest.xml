@@ -190,6 +190,18 @@
             </intent-filter>
         </activity-alias>
 
+        <!-- Data Restriction Manager (Network & Internet category) -->
+        <activity-alias
+            android:name=".datarestriction.DataRestrictionSettings"
+            android:label="@string/data_restriction_manager_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="-7">
+                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.FIREWALL_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
         <!-- Expanded Desktop settings (Display category) -->
         <activity-alias
             android:name=".applications.ExpandedDesktopSettings"

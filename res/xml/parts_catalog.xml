@@ -128,4 +128,9 @@
           android:title="@string/trust_title"
           android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"
           lineage:xmlRes="@xml/trust_preferences" />
+
+    <part android:key="data_restriction_manager"
+          android:title="@string/data_restriction_manager_settings_title"
+          android:fragment="org.lineageos.lineageparts.datarestriction.DataRestrictionSettings"
+          lineage:xmlRes="@xml/data_restriction_manager_preferences" />
 </parts-catalog>
