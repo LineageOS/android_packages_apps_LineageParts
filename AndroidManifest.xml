@@ -210,6 +210,18 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
+        <!-- Firewall (Security category) -->
+        <activity-alias
+            android:name=".firewall.FirewallPreferences"
+            android:label="@string/firewall_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter android:priority="-7">
+                <action android:name="org.lineageos.lineageparts.action.SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.FIREWALL_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
         <!-- Contributors Cloud (MyDeviceInfo category) -->
         <activity-alias
             android:name=".contributors.ContributorsCloudFragment"
