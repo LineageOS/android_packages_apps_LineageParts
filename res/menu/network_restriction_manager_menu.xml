@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * Copyright (C) 2018-2020 The LineageOS Project
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *      http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/network_restriction_block_new_apps"
+        android:title="@string/network_restriction_manager_block_new_apps"
+        android:checkable="true" />
+        
+    <item android:id="@+id/network_restriction_show_system_apps"
+        android:title="@string/network_restriction_manager_show_system_apps"
+        android:checkable="true" />
+        
+    <item android:id="@+id/network_restriction_show_vpn"
+        android:title="@string/network_restriction_manager_show_vpn"
+        android:checkable="true" />
+        
+    <item android:id="@+id/network_restriction_show_background_data"
+        android:title="@string/network_restriction_manager_show_background_data"
+        android:checkable="true" />
+        
+    <item android:id="@+id/network_restriction_show_data_saver"
+        android:title="@string/network_restriction_manager_show_data_saver"
+        android:checkable="true" />
+        
+    <item android:id="@+id/network_restriction_block_all_apps"
+        android:title="@string/network_restriction_manager_block_all_apps" />
+        
+    <item android:id="@+id/network_restriction_unblock_all_apps"
+        android:title="@string/network_restriction_manager_unblock_all_apps" />
+</menu>
