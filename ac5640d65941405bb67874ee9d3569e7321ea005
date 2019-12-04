@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1f76707c_ef7e0a5c",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 752,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3d8c060_edb3c14f",
+      "range": {
+        "startLine": 752,
+        "startChar": 46,
+        "endLine": 752,
+        "endChar": 54
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f35cf111_514f2760",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e29c405_972af494",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 753,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f35cf111_514f2760",
+      "range": {
+        "startLine": 753,
+        "startChar": 49,
+        "endLine": 753,
+        "endChar": 57
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "7a05eef4_f46211c8",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 759,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee6f29e0_9d193240",
+      "range": {
+        "startLine": 759,
+        "startChar": 47,
+        "endLine": 759,
+        "endChar": 51
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d222dcb0_fb6100cc",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
         "patchSetId": 1
@@ -91,6 +163,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9eaa1779_a8233042",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d222dcb0_fb6100cc",
+      "range": {
+        "startLine": 38,
+        "startChar": 34,
+        "endLine": 38,
+        "endChar": 43
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "e5f0a37c_f8f000c9",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d752c4ea_84f47fb5",
+      "range": {
+        "startLine": 43,
+        "startChar": 49,
+        "endLine": 43,
+        "endChar": 64
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cf3f6eb1_a5981d7d",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
         "patchSetId": 1
@@ -137,6 +257,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f437a85c_1bab5921",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cf3f6eb1_a5981d7d",
+      "range": {
+        "startLine": 44,
+        "startChar": 47,
+        "endLine": 44,
+        "endChar": 62
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "114d41cb_db877e83",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3add063b_f55162f6",
+      "range": {
+        "startLine": 47,
+        "startChar": 7,
+        "endLine": 47,
+        "endChar": 25
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "97db8160_5db909c6",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
         "patchSetId": 1
@@ -183,6 +351,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40b6e4bc_60e3bf6d",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "97db8160_5db909c6",
+      "range": {
+        "startLine": 109,
+        "startChar": 0,
+        "endLine": 109,
+        "endChar": 113
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -209,6 +401,30 @@
     },
     {
       "key": {
+        "uuid": "e410734c_2bf12f68",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "175c49e5_3b1aa9c4",
+      "range": {
+        "startLine": 110,
+        "startChar": 8,
+        "endLine": 110,
+        "endChar": 36
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8518c93a_76293fd7",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
         "patchSetId": 1
@@ -229,6 +445,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f1c0f349_d2f70dee",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8518c93a_76293fd7",
+      "range": {
+        "startLine": 120,
+        "startChar": 8,
+        "endLine": 120,
+        "endChar": 36
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -255,6 +495,30 @@
     },
     {
       "key": {
+        "uuid": "f3b74eb8_d40c7595",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fbfb570b_63a55397",
+      "range": {
+        "startLine": 53,
+        "startChar": 49,
+        "endLine": 53,
+        "endChar": 64
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ae1c6a33_784df392",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
         "patchSetId": 1
@@ -275,6 +539,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ababbb7_9794faf6",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae1c6a33_784df392",
+      "range": {
+        "startLine": 58,
+        "startChar": 47,
+        "endLine": 58,
+        "endChar": 64
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -301,6 +589,30 @@
     },
     {
       "key": {
+        "uuid": "b45dfe75_814e82b4",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "53e57f18_a26e6a04",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 103,
+        "endChar": 31
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca356a98_28a8bb92",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
         "patchSetId": 1
@@ -321,6 +633,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9120cfbe_c1271353",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca356a98_28a8bb92",
+      "range": {
+        "startLine": 132,
+        "startChar": 0,
+        "endLine": 132,
+        "endChar": 108
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -347,6 +683,30 @@
     },
     {
       "key": {
+        "uuid": "ab660e82_15aac428",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "467b9803_eebc26d6",
+      "range": {
+        "startLine": 135,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 108
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "09362f10_789564f4",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
         "patchSetId": 1
@@ -367,6 +727,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a3d88729_05ea48ea",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppListViewHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "09362f10_789564f4",
+      "range": {
+        "startLine": 138,
+        "startChar": 0,
+        "endLine": 138,
+        "endChar": 107
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -393,6 +777,30 @@
     },
     {
       "key": {
+        "uuid": "cd3a27f0_53ab7561",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bcf797c0_905cfb3e",
+      "range": {
+        "startLine": 60,
+        "startChar": 33,
+        "endLine": 60,
+        "endChar": 55
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e159c6ee_a17b7e67",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -413,6 +821,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2f64f237_fea25e55",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e159c6ee_a17b7e67",
+      "range": {
+        "startLine": 65,
+        "startChar": 30,
+        "endLine": 65,
+        "endChar": 49
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -439,6 +871,30 @@
     },
     {
       "key": {
+        "uuid": "46cb5058_b913675a",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ab57975_ca9fdabf",
+      "range": {
+        "startLine": 70,
+        "startChar": 28,
+        "endLine": 70,
+        "endChar": 37
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "103c7a74_84f590ed",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -459,6 +915,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b7dd8e4f_9a64a475",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "103c7a74_84f590ed",
+      "range": {
+        "startLine": 75,
+        "startChar": 21,
+        "endLine": 75,
+        "endChar": 36
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -485,6 +965,30 @@
     },
     {
       "key": {
+        "uuid": "c220036a_148208db",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "906ba452_6bba8188",
+      "range": {
+        "startLine": 80,
+        "startChar": 25,
+        "endLine": 80,
+        "endChar": 43
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "48689fc3_943bc3ee",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -505,6 +1009,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c90e8212_b9b24ebd",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "48689fc3_943bc3ee",
+      "range": {
+        "startLine": 85,
+        "startChar": 20,
+        "endLine": 85,
+        "endChar": 36
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -531,6 +1059,30 @@
     },
     {
       "key": {
+        "uuid": "0a807095_a81697ce",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "20597bcd_f0a5b4d7",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 103,
+        "endChar": 0
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6cb75816_2264dfa3",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -542,6 +1094,30 @@
       "writtenOn": "2019-12-03T23:05:47Z",
       "side": 1,
       "message": "can\u0027t we somehow make it true without calling setHasOptionsMenu()?",
+      "range": {
+        "startLine": 115,
+        "startChar": 8,
+        "endLine": 115,
+        "endChar": 25
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2717f307_50991044",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "This is also used in the PrivacyGuard and recommended on the android developer website.",
+      "parentUuid": "6cb75816_2264dfa3",
       "range": {
         "startLine": 115,
         "startChar": 8,
@@ -571,6 +1147,24 @@
     },
     {
       "key": {
+        "uuid": "15c5f327_9423dbab",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3936739e_36653883",
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cf59bb6c_23581e51",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -585,6 +1179,24 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0129c5ca_59448c13",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cf59bb6c_23581e51",
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -611,6 +1223,30 @@
     },
     {
       "key": {
+        "uuid": "c2b66221_3b4d4b58",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c8b0203_775073f6",
+      "range": {
+        "startLine": 241,
+        "startChar": 8,
+        "endLine": 242,
+        "endChar": 14
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e29f303d_6dc02e76",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -631,6 +1267,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8b4a7eeb_487e3511",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e29f303d_6dc02e76",
+      "range": {
+        "startLine": 299,
+        "startChar": 8,
+        "endLine": 300,
+        "endChar": 14
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -657,6 +1317,30 @@
     },
     {
       "key": {
+        "uuid": "5ddeb7fe_27a3a654",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e9bf13f_2dd562fb",
+      "range": {
+        "startLine": 306,
+        "startChar": 8,
+        "endLine": 307,
+        "endChar": 14
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fc5b869b_ba577095",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -680,6 +1364,30 @@
     },
     {
       "key": {
+        "uuid": "1dd297a1_ed522505",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc5b869b_ba577095",
+      "range": {
+        "startLine": 313,
+        "startChar": 8,
+        "endLine": 314,
+        "endChar": 14
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "218f1dd6_74544322",
         "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
         "patchSetId": 1
@@ -700,6 +1408,30 @@
       "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54b78e32_e62ae92e",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 321,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2019-12-04T23:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "218f1dd6_74544322",
+      "range": {
+        "startLine": 321,
+        "startChar": 12,
+        "endLine": 321,
+        "endChar": 32
+      },
+      "revId": "ac5640d65941405bb67874ee9d3569e7321ea005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
