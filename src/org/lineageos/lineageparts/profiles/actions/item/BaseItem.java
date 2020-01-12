@@ -22,7 +22,7 @@ public abstract class BaseItem implements Item {
     public View getView(LayoutInflater inflater, View convertView, ViewGroup parent) {
         View view;
         if (convertView == null) {
-            view = inflater.inflate(androidx.preference.R.layout.profile_action_item,
+            view = inflater.inflate(androidx.preference.R.layout.preference_material,
                     parent, false);
             // Do some initialization
         } else {
