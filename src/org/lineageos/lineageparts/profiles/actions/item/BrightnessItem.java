@@ -15,12 +15,13 @@
  */
 package org.lineageos.lineageparts.profiles.actions.item;
 
+import android.content.Context;
+
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import lineageos.profiles.BrightnessSettings;
 
-public class BrightnessItem extends BaseItem {
+public class BrightnessItem extends Item {
     BrightnessSettings mSettings;
 
     public BrightnessItem(BrightnessSettings brightnessSettings) {
@@ -31,28 +32,18 @@ public class BrightnessItem extends BaseItem {
     }
 
     @Override
-    public ItemListAdapter.RowType getRowType() {
-        return ItemListAdapter.RowType.BRIGHTNESS_ITEM;
+    public String getTitle(Context context) {
+        return context.getString(R.string.profile_brightness_title);
     }
 
     @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
-    @Override
-    public String getTitle() {
-        return getString(R.string.profile_brightness_title);
-    }
-
-    @Override
-    public String getSummary() {
+    public String getSummary(Context context) {
         if (mSettings.isOverride()) {
-            return getContext().getResources().getString(
+            return context.getResources().getString(
                     R.string.profile_brightness_override_summary,
                     (int)((mSettings.getValue() * 100f)/255));
         }
-        return getString(R.string.profile_action_none);
+        return context.getString(R.string.profile_action_none);
     }
 
     public BrightnessSettings getSettings() {
