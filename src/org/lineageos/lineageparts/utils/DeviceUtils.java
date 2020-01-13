@@ -104,7 +104,7 @@ public class DeviceUtils {
     }
 
     public static boolean deviceSupportsMobileData(Context ctx) {
-        ConnectivityManager cm = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm = ctx.getSystemService(ConnectivityManager.class);
         return cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE);
     }
 
