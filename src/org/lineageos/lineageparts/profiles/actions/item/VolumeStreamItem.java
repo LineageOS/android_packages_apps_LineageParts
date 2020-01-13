@@ -41,8 +41,7 @@ public class VolumeStreamItem extends Item {
     @Override
     public String getSummary(Context context) {
         if (mStreamSettings.isOverride()) {
-            final AudioManager am =
-                    (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+            final AudioManager am = context.getSystemService(AudioManager.class);
 
             int denominator = mStreamSettings.getValue();
             int numerator = am.getStreamMaxVolume(mStreamId);

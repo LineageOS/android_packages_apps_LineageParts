@@ -76,7 +76,7 @@ public class WifiTriggerFragment extends ListFragment {
             throw new UnsupportedOperationException("no profile!");
         }
         mProfileManager = ProfileManager.getInstance(getActivity());
-        mWifiManager = (WifiManager) getActivity().getSystemService(Context.WIFI_SERVICE);
+        mWifiManager = getActivity().getSystemService(WifiManager.class);
     }
 
 
