@@ -36,7 +36,7 @@ public class Utilities {
     }
 
     public static String getCarrier(Context context) {
-        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm = context.getSystemService(TelephonyManager.class);
         String carrier = tm.getNetworkOperatorName();
         if (TextUtils.isEmpty(carrier)) {
             carrier = "Unknown";
@@ -45,7 +45,7 @@ public class Utilities {
     }
 
     public static String getCarrierId(Context context) {
-        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm = context.getSystemService(TelephonyManager.class);
         String carrierId = tm.getNetworkOperator();
         if (TextUtils.isEmpty(carrierId)) {
             carrierId = "0";
@@ -54,7 +54,7 @@ public class Utilities {
     }
 
     public static String getCountryCode(Context context) {
-        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        TelephonyManager tm = context.getSystemService(TelephonyManager.class);
         String countryCode = tm.getNetworkCountryIso();
         if (TextUtils.isEmpty(countryCode)) {
             countryCode = "Unknown";

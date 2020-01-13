@@ -53,7 +53,7 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.charging_sounds_settings);
 
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        Vibrator vibrator = getActivity().getSystemService(Vibrator.class);
         if (vibrator == null || !vibrator.hasVibrator()) {
             removePreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
         }

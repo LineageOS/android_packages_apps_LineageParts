@@ -249,8 +249,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mItems.add(new Header(R.string.profile_system_settings_title));
         mItems.add(new RingModeItem(mProfile.getRingMode()));
         mItems.add(new AirplaneModeItem(mProfile.getAirplaneMode()));
-        DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(
-                Context.DEVICE_POLICY_SERVICE);
+        DevicePolicyManager dpm = context.getSystemService(DevicePolicyManager.class);
         if (!dpm.requireSecureKeyguard()) {
             mItems.add(new LockModeItem(mProfile));
         } else {
@@ -433,8 +432,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         // gps
-        LocationManager locationManager = (LocationManager)
-                context.getSystemService(Context.LOCATION_SERVICE);
+        LocationManager locationManager = context.getSystemService(LocationManager.class);
         boolean gpsEnabled = locationManager.
                 isProviderEnabled(LocationManager.GPS_PROVIDER);
         profile.setConnectionSettings(
@@ -442,7 +440,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                         gpsEnabled ? 1 : 0, true));
 
         // wifi
-        WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+        WifiManager wifiManager = context.getSystemService(WifiManager.class);
         profile.setConnectionSettings(
                 new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_WIFI,
                         wifiManager.isWifiEnabled() ? 1 : 0, true));
@@ -454,8 +452,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         // mobile data
         if (DeviceUtils.deviceSupportsMobileData(context)) {
-            ConnectivityManager cm = (ConnectivityManager)
-                    context.getSystemService(Context.CONNECTIVITY_SERVICE);
+            ConnectivityManager cm = context.getSystemService(ConnectivityManager.class);
             profile.setConnectionSettings(
                     new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA,
                             cm.getMobileDataEnabled() ? 1 : 0, true));
@@ -471,15 +468,14 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         // nfc
         if (DeviceUtils.deviceSupportsNfc(context)) {
-            NfcManager nfcManager = (NfcManager) context.getSystemService(Context.NFC_SERVICE);
+            NfcManager nfcManager = context.getSystemService(NfcManager.class);
             profile.setConnectionSettings(
                     new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_NFC,
                             nfcManager.getDefaultAdapter().isEnabled() ? 1 : 0, true));
         }
 
         // alarm volume
-        final AudioManager am = (AudioManager) context
-                .getSystemService(Context.AUDIO_SERVICE);
+        final AudioManager am = context.getSystemService(AudioManager.class);
         profile.setStreamSettings(new StreamSettings(AudioManager.STREAM_ALARM,
                 am.getStreamVolume(AudioManager.STREAM_ALARM), true));
 
@@ -849,7 +845,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(VolumeStreamItem.getNameForStream(streamId));
 
-        final AudioManager am = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
+        final AudioManager am = getActivity().getSystemService(AudioManager.class);
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         final View view = inflater.inflate(R.layout.dialog_profiles_volume_override, null);
         final SeekBar seekBar = (SeekBar) view.findViewById(R.id.seekbar);
@@ -977,8 +973,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
             @Override
             public void onShow(DialogInterface dialog) {
-                InputMethodManager imm = (InputMethodManager)
-                        getSystemService(Context.INPUT_METHOD_SERVICE);
+                InputMethodManager imm = getActivity().getSystemService(InputMethodManager.class);
                 imm.showSoftInput(entry, InputMethodManager.SHOW_IMPLICIT);
             }
         });
