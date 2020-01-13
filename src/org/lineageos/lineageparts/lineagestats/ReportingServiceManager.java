@@ -64,7 +64,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
         Intent intent = new Intent(ACTION_LAUNCH_SERVICE);
         intent.setClass(context, ReportingServiceManager.class);
 
-        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        AlarmManager alarmManager = context.getSystemService(AlarmManager.class);
         alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + millisFromNow,
                 PendingIntent.getBroadcast(context, 0, intent, 0));
         Log.d(TAG, "Next sync attempt in : "

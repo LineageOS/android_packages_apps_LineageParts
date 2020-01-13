@@ -94,7 +94,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         mAutoPowerSavePref = (ListPreference) findPreference(KEY_AUTO_POWER_SAVE);
         mPowerSavePref = (SwitchPreference) findPreference(KEY_POWER_SAVE);
 
-        mPowerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
+        mPowerManager = getActivity().getSystemService(PowerManager.class);
         mPerf = PerformanceManager.getInstance(getActivity());
 
         mProfiles = new ArrayList<>(mPerf.getPowerProfiles());
@@ -276,8 +276,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
         @Override
         public String getSummary(Context context, String key) {
-            final PowerManager powerManager =
-                    (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+            final PowerManager powerManager = context.getSystemService(PowerManager.class);
             final PerformanceManager perfManager = PerformanceManager.getInstance(context);
             final PerformanceProfile profile = powerManager.isPowerSaveMode() ?
                     perfManager.getPowerProfile(PROFILE_POWER_SAVE) :
