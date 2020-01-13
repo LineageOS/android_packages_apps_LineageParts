@@ -55,25 +55,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
-                android:singleLine="true"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@android:id/summary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:singleLine="true" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-    <View
-        android:layout_width="2dip"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="5dip"
-        android:layout_marginTop="5dip"
-        android:background="@android:drawable/divider_horizontal_dark" />
 
     <ImageView
         android:id="@+id/profiles_settings"
