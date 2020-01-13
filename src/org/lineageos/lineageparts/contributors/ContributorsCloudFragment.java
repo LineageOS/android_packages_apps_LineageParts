@@ -772,7 +772,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     }
 
     private boolean hasLargeHeap() {
-        ActivityManager am = (ActivityManager) getActivity().getSystemService(Context.ACTIVITY_SERVICE);
+        ActivityManager am = getActivity().getSystemService(ActivityManager.class);
         return am.getMemoryClass() >= 96;
     }
 
