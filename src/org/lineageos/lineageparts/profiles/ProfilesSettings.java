@@ -93,6 +93,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.profiles_settings);
+        final PartsActivity activity = (PartsActivity) getActivity();
+        activity.setTheme(R.style.Theme_AppCompat_Light_NoActionBar);
     }
 
     @Override
