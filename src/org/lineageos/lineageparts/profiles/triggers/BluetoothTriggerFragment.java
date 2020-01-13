@@ -159,6 +159,7 @@ public class BluetoothTriggerFragment extends ListFragment {
     public void onStart() {
         super.onStart();
         getListView().setEmptyView(mEmptyView);
+        getListView().setDivider(null);
     }
 
     @Override
