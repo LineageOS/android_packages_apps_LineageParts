@@ -133,7 +133,10 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
         TypedValue colorAccent = new TypedValue();
         getContext().getTheme().resolveAttribute(com.android.internal.R.attr.colorAccent,
                 colorAccent, true);
-        tabs.setTabIndicatorColorResource(colorAccent.resourceId);
+
+        int color = getResources().getColor(colorAccent.resourceId);
+        tabs.setBackgroundColor(color);
+        tabs.setTabIndicatorColor(color);
 
         if (mNewProfileMode) {
             showButtonBar(true);
