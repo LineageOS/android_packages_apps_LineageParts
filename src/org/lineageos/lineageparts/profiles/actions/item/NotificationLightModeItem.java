@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,36 +16,27 @@
  */
 package org.lineageos.lineageparts.profiles.actions.item;
 
+import android.content.Context;
+
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import lineageos.app.Profile;
 
-public class NotificationLightModeItem extends BaseItem {
+public class NotificationLightModeItem extends Item {
     Profile mProfile;
 
     public NotificationLightModeItem(Profile profile) {
-       mProfile = profile;
+        mProfile = profile;
     }
 
     @Override
-    public ItemListAdapter.RowType getRowType() {
-        return ItemListAdapter.RowType.NOTIFICATIONLIGHTMODE_ITEM;
+    public String getTitle(Context context) {
+        return context.getString(R.string.notification_light_title);
     }
 
     @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
-    @Override
-    public String getTitle() {
-        return getString(R.string.notification_light_title);
-    }
-
-    @Override
-    public String getSummary() {
-        return getString(getSummaryString(mProfile));
+    public String getSummary(Context context) {
+        return context.getString(getSummaryString(mProfile));
     }
 
     public static int getSummaryString(Profile profile) {

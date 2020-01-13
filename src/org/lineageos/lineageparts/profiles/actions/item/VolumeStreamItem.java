@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,19 +19,14 @@ package org.lineageos.lineageparts.profiles.actions.item;
 import android.content.Context;
 import android.media.AudioManager;
 import android.provider.Settings;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import lineageos.profiles.StreamSettings;
 
-public class VolumeStreamItem extends BaseItem {
+public class VolumeStreamItem extends Item {
     private int mStreamId;
     private StreamSettings mStreamSettings;
-    private boolean mEnabled = true;
 
     public VolumeStreamItem(int streamId, StreamSettings streamSettings) {
         mStreamId = streamId;
@@ -38,49 +34,34 @@ public class VolumeStreamItem extends BaseItem {
     }
 
     @Override
-    public ItemListAdapter.RowType getRowType() {
-        return ItemListAdapter.RowType.VOLUME_STREAM_ITEM;
+    public String getTitle(Context context) {
+        return context.getString(getNameForStream(mStreamId));
     }
 
     @Override
-    public boolean isEnabled() {
-        return mEnabled;
-    }
-
-    @Override
-    public String getTitle() {
-        return getString(getNameForStream(mStreamId));
-    }
-
-    @Override
-    public String getSummary() {
+    public String getSummary(Context context) {
         if (mStreamSettings.isOverride()) {
             final AudioManager am =
-                    (AudioManager) getContext().getSystemService(Context.AUDIO_SERVICE);
+                    (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 
             int denominator = mStreamSettings.getValue();
             int numerator = am.getStreamMaxVolume(mStreamId);
-            return getContext().getResources().getString(
+            return context.getResources().getString(
                     R.string.volume_override_summary,
                     denominator, numerator);
         }
-        return getString(R.string.profile_action_none);
+        return context.getString(R.string.profile_action_none);
     }
 
     @Override
-    public View getView(LayoutInflater inflater, View convertView, ViewGroup parent) {
-        View view = super.getView(inflater, convertView, parent);
-        /*
-        final boolean volumeLinkNotification = Settings.Secure.getInt(inflater.getContext()
-                .getContentResolver(), Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
-        */
-        final boolean volumeLinkNotification = false;
-        if (mStreamId == AudioManager.STREAM_NOTIFICATION && volumeLinkNotification) {
-            view.findViewById(android.R.id.title).setEnabled(false);
-            view.findViewById(android.R.id.summary).setEnabled(false);
-            mEnabled = false;
+    public boolean isEnabled(Context context) {
+        // all streams are enabled, except notification stream if linking to ring volume is enabled
+        if (mStreamId != AudioManager.STREAM_NOTIFICATION) {
+            return true;
         }
-        return view;
+        final boolean volumeLinkNotification = Settings.Secure.getInt(
+                context.getContentResolver(), Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
+        return !volumeLinkNotification;
     }
 
     public static int getNameForStream(int stream) {

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,16 +17,16 @@
 package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.app.NotificationGroup;
+import android.content.Context;
 
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import java.util.UUID;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileGroup;
 
-public class AppGroupItem extends BaseItem {
+public class AppGroupItem extends Item {
     Profile mProfile;
     ProfileGroup mGroup;
     NotificationGroup mNotifGroup;
@@ -43,16 +44,6 @@ public class AppGroupItem extends BaseItem {
         mNotifGroup = nGroup;
     }
 
-    @Override
-    public ItemListAdapter.RowType getRowType() {
-        return ItemListAdapter.RowType.APP_GROUP_ITEM;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
     public UUID getGroupUuid() {
         if (mGroup != null) {
             return mGroup.getUuid();
@@ -61,9 +52,9 @@ public class AppGroupItem extends BaseItem {
     }
 
     @Override
-    public String getTitle() {
+    public String getTitle(Context context) {
         if (mGroup == null) {
-            return getString(R.string.profile_app_group_item_instructions);
+            return context.getString(R.string.profile_app_group_item_instructions);
         }
         if (mNotifGroup != null) {
             return mNotifGroup.getName();
@@ -72,9 +63,9 @@ public class AppGroupItem extends BaseItem {
     }
 
     @Override
-    public String getSummary() {
+    public String getSummary(Context context) {
         if (mGroup == null) {
-            return getString(R.string.profile_app_group_item_instructions_summary);
+            return context.getString(R.string.profile_app_group_item_instructions_summary);
         }
         return null;
     }

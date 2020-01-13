@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,11 +20,10 @@ import android.content.Context;
 import android.telephony.SubscriptionManager;
 
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import lineageos.profiles.ConnectionSettings;
 
-public class ConnectionOverrideItem extends BaseItem {
+public class ConnectionOverrideItem extends Item {
     int mConnectionId;
     ConnectionSettings mConnectionSettings;
 
@@ -34,73 +34,45 @@ public class ConnectionOverrideItem extends BaseItem {
         if (settings == null) {
             settings = new ConnectionSettings(connectionId);
         }
-        this.mConnectionSettings = settings;
+        mConnectionSettings = settings;
     }
 
     @Override
-    public ItemListAdapter.RowType getRowType() {
-        return ItemListAdapter.RowType.CONNECTION_ITEM;
+    public String getTitle(Context context) {
+        return context.getString(getConnectionTitleResId(mConnectionSettings));
     }
 
     @Override
-    public String getTitle() {
-        return getConnectionTitle(getContext(), mConnectionSettings);
-    }
-
-    @Override
-    public String getSummary() {
-        return String.valueOf(getSummary(getContext()));
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
-    public static String getConnectionTitle(Context context, ConnectionSettings settings) {
-        int r = 0;
-        switch (settings.getConnectionId()) {
-            case ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH:
-                r = R.string.toggleBluetooth;
-                break;
-            case ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA:
-                r =R.string.toggleData;
-                break;
-            case ConnectionSettings.PROFILE_CONNECTION_GPS:
-                r = R.string.toggleGPS;
-                break;
-            case ConnectionSettings.PROFILE_CONNECTION_NFC:
-                r = R.string.toggleNfc;
-                break;
-            case ConnectionSettings.PROFILE_CONNECTION_SYNC:
-                r = R.string.toggleSync;
-                break;
-            case ConnectionSettings.PROFILE_CONNECTION_WIFI:
-                r = R.string.toggleWifi;
-                break;
-            case ConnectionSettings.PROFILE_CONNECTION_WIFIAP:
-                r = R.string.toggleWifiAp;
-                break;
-        }
-        return context.getString(r);
-    }
-
-    public CharSequence getSummary(Context context) {
-        int resId = -1;
-        if (mConnectionSettings != null) {
-            if (mConnectionSettings.isOverride()) { // enabled, disabled, or none
-                if (mConnectionSettings.getValue() == 1) {
-                    resId = R.string.profile_action_enable;
-                } else {
-                    resId = R.string.profile_action_disable;
-                }
+    public String getSummary(Context context) {
+        int resId = R.string.profile_action_none;
+        if (mConnectionSettings != null && mConnectionSettings.isOverride()) {
+            if (mConnectionSettings.getValue() == 1) {
+                resId = R.string.profile_action_enable;
             } else {
-                resId = R.string.profile_action_none;
+                resId = R.string.profile_action_disable;
             }
-        } else {
-            resId = R.string.profile_action_none;
         }
         return context.getString(resId);
+    }
+
+    public static int getConnectionTitleResId(ConnectionSettings settings) {
+        switch (settings.getConnectionId()) {
+            case ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH:
+                return R.string.toggleBluetooth;
+            case ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA:
+                return R.string.toggleData;
+            case ConnectionSettings.PROFILE_CONNECTION_GPS:
+                return R.string.toggleGPS;
+            case ConnectionSettings.PROFILE_CONNECTION_NFC:
+                return R.string.toggleNfc;
+            case ConnectionSettings.PROFILE_CONNECTION_SYNC:
+                return R.string.toggleSync;
+            case ConnectionSettings.PROFILE_CONNECTION_WIFI:
+                return R.string.toggleWifi;
+            case ConnectionSettings.PROFILE_CONNECTION_WIFIAP:
+                return R.string.toggleWifiAp;
+        }
+        return 0;
     }
 
     public ConnectionSettings getSettings() {

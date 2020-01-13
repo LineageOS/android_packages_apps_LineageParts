@@ -41,6 +41,4 @@
                 android:paddingEnd="@dimen/pager_tabs_padding"/>
     </androidx.viewpager.widget.ViewPager>
 
-    <View style="@style/settingSeparator" />
-
 </LinearLayout>

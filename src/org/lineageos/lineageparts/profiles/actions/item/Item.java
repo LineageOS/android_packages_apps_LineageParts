@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,14 +16,17 @@
  */
 package org.lineageos.lineageparts.profiles.actions.item;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.content.Context;
 
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
+public abstract class Item {
+    public abstract String getTitle(Context context);
+    public abstract String getSummary(Context context);
 
-public interface Item {
-    public ItemListAdapter.RowType getRowType();
-    public View getView(LayoutInflater inflater, View convertView, ViewGroup parent);
-    public boolean isEnabled();
+    public boolean isHeader() {
+        return false;
+    }
+
+    public boolean isEnabled(Context context) {
+        return true;
+    }
 }

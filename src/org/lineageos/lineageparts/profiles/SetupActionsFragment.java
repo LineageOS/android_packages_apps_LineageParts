@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.SeekBarVolumizer;
 import android.provider.Settings;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
@@ -50,11 +52,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -100,7 +100,7 @@ import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
 
 public class SetupActionsFragment extends SettingsPreferenceFragment
-        implements AdapterView.OnItemClickListener {
+        implements ItemListAdapter.OnItemClickListener {
 
     private static final int RINGTONE_REQUEST_CODE = 1000;
     private static final int NEW_TRIGGER_REQUEST_CODE = 1001;
@@ -132,7 +132,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     Profile mProfile;
     ItemListAdapter mAdapter;
     ProfileManager mProfileManager;
-    ListView mListView;
+    RecyclerView mRecyclerView;
 
     boolean mNewProfileMode;
 
@@ -179,7 +179,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         mProfileManager = ProfileManager.getInstance(getActivity());
-        mAdapter = new ItemListAdapter(getActivity(), mItems);
+        mAdapter = new ItemListAdapter(getActivity(), mItems, this);
         rebuildItemList();
 
         setHasOptionsMenu(true);
@@ -189,31 +189,37 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         } else if (savedInstanceState != null) {
             mLastSelectedPosition = savedInstanceState.getInt("last_selected_position", -1);
             if (mLastSelectedPosition != -1) {
-                mSelectedItem = mAdapter.getItem(mLastSelectedPosition);
+                mSelectedItem = mItems.get(mLastSelectedPosition);
             }
         }
     }
 
     private void rebuildItemList() {
+        final Context context = getActivity();
+        if (context == null) {
+            return;
+        }
+
         mItems.clear();
+
         // general prefs
-        mItems.add(new Header(getString(R.string.profile_name_title)));
+        mItems.add(new Header(R.string.profile_name_title));
         mItems.add(new ProfileNameItem(mProfile));
 
         if (!mNewProfileMode) {
             // triggers
-            mItems.add(new Header(getString(R.string.profile_triggers_header)));
+            mItems.add(new Header(R.string.profile_triggers_header));
             mItems.add(generateTriggerItem(TriggerItem.WIFI));
             if (DeviceUtils.deviceSupportsBluetooth()) {
                 mItems.add(generateTriggerItem(TriggerItem.BLUETOOTH));
             }
-            if (DeviceUtils.deviceSupportsNfc(getActivity())) {
+            if (DeviceUtils.deviceSupportsNfc(context)) {
                 mItems.add(generateTriggerItem(TriggerItem.NFC));
             }
         }
 
         // connection overrides
-        mItems.add(new Header(getString(R.string.wireless_networks_settings_title)));
+        mItems.add(new Header(R.string.wireless_networks_settings_title));
         if (DeviceUtils.deviceSupportsBluetooth()) {
             mItems.add(new ConnectionOverrideItem(PROFILE_CONNECTION_BLUETOOTH,
                     mProfile.getSettingsForConnection(PROFILE_CONNECTION_BLUETOOTH)));
@@ -233,14 +239,14 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         // add volume streams
-        mItems.add(new Header(getString(R.string.profile_volumeoverrides_title)));
+        mItems.add(new Header(R.string.profile_volumeoverrides_title));
         mItems.add(generateVolumeStreamItem(AudioManager.STREAM_ALARM));
         mItems.add(generateVolumeStreamItem(AudioManager.STREAM_MUSIC));
         mItems.add(generateVolumeStreamItem(AudioManager.STREAM_RING));
         mItems.add(generateVolumeStreamItem(AudioManager.STREAM_NOTIFICATION));
 
         // system settings
-        mItems.add(new Header(getString(R.string.profile_system_settings_title)));
+        mItems.add(new Header(R.string.profile_system_settings_title));
         mItems.add(new RingModeItem(mProfile.getRingMode()));
         mItems.add(new AirplaneModeItem(mProfile.getAirplaneMode()));
         DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(
@@ -253,8 +259,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
         mItems.add(new BrightnessItem(mProfile.getBrightness()));
 
-        final Activity activity = getActivity();
-        if (DeviceUtils.isDozeAvailable(activity)) {
+        if (DeviceUtils.isDozeAvailable(context)) {
             mItems.add(new DozeModeItem(mProfile));
         }
 
@@ -264,7 +269,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         }
 
         // app groups
-        mItems.add(new Header(getString(R.string.profile_app_group_category_title)));
+        mItems.add(new Header(R.string.profile_app_group_category_title));
 
         int groupsAdded = 0;
         ProfileGroup[] profileGroups = mProfile.getProfileGroups();
@@ -276,8 +281,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                         && !mProfile.getDefaultGroup().getUuid().equals(
                         profileGroup.getUuid())) {
                     mItems.add(new AppGroupItem(mProfile, profileGroup,
-                            mProfileManager.getNotificationGroup(
-                                    profileGroup.getUuid())));
+                            mProfileManager.getNotificationGroup(profileGroup.getUuid())));
                     groupsAdded++;
                 }
             }
@@ -357,6 +361,10 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        mRecyclerView = view.findViewById(android.R.id.list);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mRecyclerView.setAdapter(mAdapter);
+
         if (mNewProfileMode) {
             TextView desc = new TextView(getActivity());
             int descPadding = getResources().getDimensionPixelSize(
@@ -374,7 +382,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mListView.setAdapter(mAdapter);
         final ActionBar actionBar = getActivity().getActionBar();
         if (actionBar != null) {
             if (mNewProfileMode) {
@@ -808,7 +815,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             }
         }
 
-        builder.setTitle(ConnectionOverrideItem.getConnectionTitle(getContext(), setting));
+        builder.setTitle(ConnectionOverrideItem.getConnectionTitleResId(setting));
         builder.setSingleChoiceItems(connectionNames, defaultIndex,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -1014,8 +1021,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_setup_actions, container, false);
 
-        mListView = (ListView) view.findViewById(android.R.id.list);
-        mListView.setOnItemClickListener(this);
         if (mNewProfileMode) {
             showButtonBar(true);
 
@@ -1039,38 +1044,36 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        final Item itemAtPosition = (Item) parent.getItemAtPosition(position);
-        mSelectedItem = itemAtPosition;
-        mLastSelectedPosition = mAdapter.getPosition(itemAtPosition);
+    public void onItemClick(Item item, int position) {
+        mSelectedItem = item;
+        mLastSelectedPosition = position;
 
-        if (itemAtPosition instanceof AirplaneModeItem) {
+        if (item instanceof AirplaneModeItem) {
             showDialog(DIALOG_AIRPLANE_MODE);
-        } else if (itemAtPosition instanceof BrightnessItem) {
+        } else if (item instanceof BrightnessItem) {
             showDialog(DIALOG_BRIGHTNESS);
-        } else if (itemAtPosition instanceof LockModeItem) {
+        } else if (item instanceof LockModeItem) {
             showDialog(DIALOG_LOCK_MODE);
-        } else if (itemAtPosition instanceof DozeModeItem) {
+        } else if (item instanceof DozeModeItem) {
             showDialog(DIALOG_DOZE_MODE);
-        } else if (itemAtPosition instanceof NotificationLightModeItem) {
+        } else if (item instanceof NotificationLightModeItem) {
             showDialog(DIALOG_NOTIFICATION_LIGHT_MODE);
-        } else if (itemAtPosition instanceof RingModeItem) {
+        } else if (item instanceof RingModeItem) {
             showDialog(DIALOG_RING_MODE);
-        } else if (itemAtPosition instanceof ConnectionOverrideItem) {
+        } else if (item instanceof ConnectionOverrideItem) {
             showDialog(DIALOG_CONNECTION_OVERRIDE);
-        } else if (itemAtPosition instanceof VolumeStreamItem) {
+        } else if (item instanceof VolumeStreamItem) {
             showDialog(DIALOG_VOLUME_STREAM);
-        } else if (itemAtPosition instanceof ProfileNameItem) {
+        } else if (item instanceof ProfileNameItem) {
             showDialog(DIALOG_PROFILE_NAME);
-        } else if (itemAtPosition instanceof TriggerItem) {
-            TriggerItem item = (TriggerItem) itemAtPosition;
-            openTriggersFragment(item.getTriggerType());
-        } else if (itemAtPosition instanceof AppGroupItem) {
-            AppGroupItem item = (AppGroupItem) itemAtPosition;
-            if (item.getGroupUuid() == null) {
+        } else if (item instanceof TriggerItem) {
+            openTriggersFragment(((TriggerItem) item).getTriggerType());
+        } else if (item instanceof AppGroupItem) {
+            AppGroupItem agi = (AppGroupItem) item;
+            if (agi.getGroupUuid() == null) {
                 requestActiveAppGroupsDialog();
             } else {
-                startProfileGroupActivity(item);
+                startProfileGroupActivity(agi);
             }
         }
     }

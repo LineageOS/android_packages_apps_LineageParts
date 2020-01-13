@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,15 +16,15 @@
  */
 package org.lineageos.lineageparts.profiles.actions.item;
 
+import android.content.Context;
+
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import java.util.ArrayList;
 
 import lineageos.app.Profile;
 
-public class TriggerItem extends BaseItem {
-
+public class TriggerItem extends Item {
     // from Profile.TriggerType
     public static final int WIFI = 0;
     public static final int BLUETOOTH = 1;
@@ -38,27 +39,17 @@ public class TriggerItem extends BaseItem {
         mTriggerType = whichTrigger;
     }
 
-    @Override
-    public ItemListAdapter.RowType getRowType() {
-        return ItemListAdapter.RowType.TRIGGER_ITEM;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
     public int getTriggerType() {
         return mTriggerType;
     }
 
     @Override
-    public String getTitle() {
-        return getString(getTitleString(mTriggerType));
+    public String getTitle(Context context) {
+        return context.getString(getTitleString(mTriggerType));
     }
 
     @Override
-    public String getSummary() {
+    public String getSummary(Context context) {
         StringBuilder sb = new StringBuilder();
         ArrayList<Profile.ProfileTrigger> triggers = mProfile.getTriggersFromType(mTriggerType);
 
@@ -71,9 +62,9 @@ public class TriggerItem extends BaseItem {
 
         if (sb.length() == 0) {
             if (mTriggerType == NFC) {
-                return getString(R.string.no_triggers_configured_nfc);
+                return context.getString(R.string.no_triggers_configured_nfc);
             } else {
-                return getString(R.string.no_triggers_configured);
+                return context.getString(R.string.no_triggers_configured);
             }
         }
 

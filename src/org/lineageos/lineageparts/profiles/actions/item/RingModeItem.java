@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +16,13 @@
  */
 package org.lineageos.lineageparts.profiles.actions.item;
 
+import android.content.Context;
+
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 
 import lineageos.profiles.RingModeSettings;
 
-public class RingModeItem extends BaseItem {
+public class RingModeItem extends Item {
     RingModeSettings mSettings;
 
     public RingModeItem(RingModeSettings ringModeSettings) {
@@ -31,23 +33,13 @@ public class RingModeItem extends BaseItem {
     }
 
     @Override
-    public ItemListAdapter.RowType getRowType() {
-        return ItemListAdapter.RowType.RINGMODE_ITEM;
+    public String getTitle(Context context) {
+        return context.getString(R.string.ring_mode_title);
     }
 
     @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
-    @Override
-    public String getTitle() {
-        return getString(R.string.ring_mode_title);
-    }
-
-    @Override
-    public String getSummary() {
-        return getString(getModeString(mSettings));
+    public String getSummary(Context context) {
+        return context.getString(getModeString(mSettings));
     }
 
     public static int getModeString(RingModeSettings settings) {
