@@ -576,7 +576,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         if (mProfile.getUuid().equals(current.getUuid())) {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setMessage(getString(R.string.profile_remove_current_profile));
-            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+            builder.setNegativeButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
