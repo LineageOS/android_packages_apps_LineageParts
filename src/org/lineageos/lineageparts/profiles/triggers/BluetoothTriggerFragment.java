@@ -16,243 +16,94 @@
  */
 package org.lineageos.lineageparts.profiles.triggers;
 
-import android.app.AlertDialog;
-import android.app.ListFragment;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import lineageos.app.Profile;
-import lineageos.app.ProfileManager;
 
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.ProfilesSettings;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class BluetoothTriggerFragment extends ListFragment {
-
+public class BluetoothTriggerFragment extends AbstractTriggerListFragment {
     private BluetoothAdapter mBluetoothAdapter;
-
-    Profile mProfile;
-    ProfileManager mProfileManager;
-
-    private View mEmptyView;
-
-    private List<BluetoothTrigger> mTriggers = new ArrayList<BluetoothTrigger>();
-    private BluetoothTriggerAdapter mListAdapter;
 
     public static BluetoothTriggerFragment newInstance(Profile profile) {
         BluetoothTriggerFragment fragment = new BluetoothTriggerFragment();
-
-        Bundle extras = new Bundle();
-        extras.putParcelable(ProfilesSettings.EXTRA_PROFILE, profile);
-
-        fragment.setArguments(extras);
+        fragment.setArguments(initArgs(profile));
         return fragment;
-    }
-
-    public BluetoothTriggerFragment() {
-        // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mProfileManager = ProfileManager.getInstance(getActivity());
-        if (getArguments() != null) {
-            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE);
-        }
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        reloadTriggerListItems();
-    }
-
-    private void initPreference(AbstractTriggerItem pref, int state, Resources res, int icon) {
-        String[] values = res.getStringArray(R.array.profile_trigger_wifi_options_values);
-        for (int i = 0; i < values.length; i++) {
-            if (Integer.parseInt(values[i]) == state) {
-                pref.setSummary(res.getStringArray(R.array.profile_trigger_wifi_options)[i]);
-                break;
-            }
-        }
-        pref.setTriggerState(state);
-        pref.setIcon(icon);
-    }
-
-    @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
-
-        final String triggerId;
-        final String triggerName;
-        final int triggerType;
-
-        String[] entries = getResources().getStringArray(R.array.profile_trigger_wifi_options);
-        String[] values =
-                getResources().getStringArray(R.array.profile_trigger_wifi_options_values);
-
-        List<Trigger> triggers = new ArrayList<Trigger>(entries.length);
-        for (int i = 0; i < entries.length; i++) {
-            Trigger toAdd = new Trigger();
-            toAdd.value = Integer.parseInt(values[i]);
-            toAdd.name = entries[i];
-            triggers.add(toAdd);
-        }
-
-        BluetoothTrigger btpref = mListAdapter.getItem(position);
-        triggerName = btpref.getTitle();
-        triggerId = btpref.getAddress();
-        triggerType = Profile.TriggerType.BLUETOOTH;
-        BluetoothDevice dev = mBluetoothAdapter.getRemoteDevice(triggerId);
-        if (!dev.getBluetoothClass().doesClassMatch(BluetoothClass.PROFILE_A2DP)) {
-            removeTrigger(triggers, Profile.TriggerState.ON_A2DP_CONNECT);
-            removeTrigger(triggers, Profile.TriggerState.ON_A2DP_DISCONNECT);
-        }
-
-        entries = new String[triggers.size()];
-        final int[] valueInts = new int[triggers.size()];
-        int currentTriggerState = mProfile.getTriggerState(triggerType, triggerId);
-        int currentItem = -1;
-        for (int i = 0; i < triggers.size(); i++) {
-            Trigger t = triggers.get(i);
-            entries[i] = t.name;
-            valueInts[i] = t.value;
-            if (valueInts[i] == currentTriggerState) {
-                currentItem = i;
-            }
-        }
-
-        new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.profile_trigger_configure)
-                .setSingleChoiceItems(entries, currentItem, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mProfile.setTrigger(triggerType, triggerId, valueInts[which], triggerName);
-                        mProfileManager.updateProfile(mProfile);
-                        reloadTriggerListItems();
-                        dialog.dismiss();
-                    }
-                })
-                .show();
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        getListView().setEmptyView(mEmptyView);
-        getListView().setDivider(null);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mEmptyView = inflater.inflate(R.layout.profile_bluetooth_empty_view, container, false);
-        mEmptyView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent bluetoothSettings = new Intent();
-                bluetoothSettings.setAction(
-                        Settings.ACTION_BLUETOOTH_SETTINGS);
-                startActivity(bluetoothSettings);
-            }
-        });
-
-        ViewGroup view = (ViewGroup) super.onCreateView(inflater, container, savedInstanceState);
-        view.addView(mEmptyView);
-        return view;
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        reloadTriggerListItems();
-        mListAdapter = new BluetoothTriggerAdapter(getActivity());
-        setListAdapter(mListAdapter);
-    }
-
-    private void removeTrigger(List<Trigger> triggers, int value) {
-        for (Trigger t : triggers) {
-            if (t.value == value) {
-                triggers.remove(t);
-                return;
-            }
-        }
-    }
-
-    private void reloadTriggerListItems() {
-        mTriggers.clear();
+    protected void onLoadTriggers(Profile profile, List<AbstractTriggerItem> triggers) {
         final Resources res = getResources();
+        final Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
 
-        Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
         if (!pairedDevices.isEmpty()) {
             for (BluetoothDevice device : pairedDevices) {
-                BluetoothTrigger bt =
-                        new BluetoothTrigger(device);
-                int state = mProfile.getTriggerState(
+                BluetoothTrigger bt = new BluetoothTrigger(device);
+                int state = profile.getTriggerState(
                         Profile.TriggerType.BLUETOOTH, bt.getAddress());
-                initPreference(bt, state, res, R.drawable.ic_settings_bluetooth);
-                mTriggers.add(bt);
+                initTriggerItemFromState(bt, state, R.drawable.ic_settings_bluetooth);
+                triggers.add(bt);
             }
         } else {
-            final List<Profile.ProfileTrigger> triggers =
-                    mProfile.getTriggersFromType(Profile.TriggerType.BLUETOOTH);
-            for (Profile.ProfileTrigger trigger : triggers) {
+            final List<Profile.ProfileTrigger> origTriggers =
+                    profile.getTriggersFromType(Profile.TriggerType.BLUETOOTH);
+            for (Profile.ProfileTrigger trigger : origTriggers) {
                 BluetoothTrigger bt = new BluetoothTrigger(trigger.getName(), trigger.getId());
-                initPreference(bt, trigger.getState(), res, R.drawable.ic_settings_bluetooth);
-                mTriggers.add(bt);
+                initTriggerItemFromState(bt, trigger.getState(), R.drawable.ic_settings_bluetooth);
+                triggers.add(bt);
             }
         }
-
-        if (mListAdapter != null) {
-            mListAdapter.notifyDataSetChanged();
-        }
     }
 
-    private class Trigger {
-        int value;
-        String name;
+    @Override
+    protected TriggerInfo onConvertToTriggerInfo(AbstractTriggerItem trigger) {
+        BluetoothTrigger bt = (BluetoothTrigger) trigger;
+        return new TriggerInfo(Profile.TriggerType.BLUETOOTH, bt.getAddress(), bt.getTitle());
     }
 
-    private class BluetoothTriggerAdapter extends ArrayAdapter<BluetoothTrigger> {
-        public BluetoothTriggerAdapter(Context context) {
-            super(context, R.layout.abstract_trigger_row, R.id.title, mTriggers);
+    @Override
+    protected boolean isTriggerStateSupported(TriggerInfo info, int triggerState) {
+        if (triggerState != Profile.TriggerState.ON_A2DP_CONNECT
+                && triggerState != Profile.TriggerState.ON_A2DP_DISCONNECT) {
+            return true;
         }
+        BluetoothDevice dev = mBluetoothAdapter.getRemoteDevice(info.id);
+        return dev.getBluetoothClass().doesClassMatch(BluetoothClass.PROFILE_A2DP);
+    }
 
-        @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            LayoutInflater inflater = LayoutInflater.from(getContext());
-            View rowView = inflater.inflate(R.layout.abstract_trigger_row, viewGroup, false);
-            TextView title = (TextView) rowView.findViewById(R.id.title);
-            TextView desc = (TextView) rowView.findViewById(R.id.desc);
-            ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
+    @Override
+    protected int getEmptyViewLayoutResId() {
+        return R.layout.profile_bluetooth_empty_view;
+    }
 
-            BluetoothTrigger trigger = getItem(i);
+    @Override
+    protected Intent getEmptyViewClickIntent() {
+        return new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
+    }
 
-            title.setText(trigger.getTitle());
-            desc.setText(trigger.getSummary());
-            imageView.setImageResource(trigger.getIcon());
+    @Override
+    protected int getOptionArrayResId() {
+        return R.array.profile_trigger_bt_options;
+    }
 
-            return rowView;
-        }
+    @Override
+    protected int getOptionValuesArrayResId() {
+        return R.array.profile_trigger_bt_options_values;
     }
 
     public static class BluetoothTrigger extends AbstractTriggerItem {

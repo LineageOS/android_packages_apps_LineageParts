@@ -16,241 +16,91 @@
  */
 package org.lineageos.lineageparts.profiles.triggers;
 
-import android.app.AlertDialog;
-import android.app.ListFragment;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import lineageos.app.Profile;
-import lineageos.app.ProfileManager;
 
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.profiles.ProfilesSettings;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class WifiTriggerFragment extends ListFragment {
-    WifiManager mWifiManager;
-    Profile mProfile;
-    private ProfileManager mProfileManager;
-
-    private View mEmptyView;
-
-    private List<WifiTrigger> mTriggers = new ArrayList<WifiTrigger>();
-    private WifiTriggerAdapter mListAdapter;
+public class WifiTriggerFragment extends AbstractTriggerListFragment {
+    private WifiManager mWifiManager;
 
     public static WifiTriggerFragment newInstance(Profile profile) {
         WifiTriggerFragment fragment = new WifiTriggerFragment();
-
-        Bundle extras = new Bundle();
-        extras.putParcelable(ProfilesSettings.EXTRA_PROFILE, profile);
-
-        fragment.setArguments(extras);
+        fragment.setArguments(initArgs(profile));
         return fragment;
-    }
-
-    public WifiTriggerFragment() {
-        // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE);
-        } else {
-            throw new UnsupportedOperationException("no profile!");
-        }
-        mProfileManager = ProfileManager.getInstance(getActivity());
         mWifiManager = getActivity().getSystemService(WifiManager.class);
     }
 
-
     @Override
-    public void onStart() {
-        super.onStart();
-        getListView().setEmptyView(mEmptyView);
-        getListView().setDivider(null);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mEmptyView = inflater.inflate(R.layout.profile_wifi_empty_view, container, false);
-        mEmptyView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent wifiSettings = new Intent();
-                wifiSettings.setAction(
-                        Settings.ACTION_WIFI_SETTINGS);
-                startActivity(wifiSettings);
-            }
-        });
-
-        ViewGroup view = (ViewGroup) super.onCreateView(inflater, container, savedInstanceState);
-        view.addView(mEmptyView);
-        return view;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        reloadTriggerListItems();
-    }
-
-    private void initPreference(AbstractTriggerItem pref, int state, Resources res, int icon) {
-        String[] values = res.getStringArray(R.array.profile_trigger_wifi_options_values);
-        for (int i = 0; i < values.length; i++) {
-            if (Integer.parseInt(values[i]) == state) {
-                pref.setSummary(res.getStringArray(R.array.profile_trigger_wifi_options)[i]);
-                break;
-            }
-        }
-        pref.setTriggerState(state);
-        pref.setIcon(icon);
-    }
-
-    @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
-
-        final String triggerId;
-        final String triggerName;
-        final int triggerType;
-
-        String[] entries = getResources().getStringArray(R.array.profile_trigger_wifi_options);
-        String[] values =
-                getResources().getStringArray(R.array.profile_trigger_wifi_options_values);
-
-        List<Trigger> triggers = new ArrayList<Trigger>(entries.length);
-        for (int i = 0; i < entries.length; i++) {
-            Trigger toAdd = new Trigger();
-            toAdd.value = Integer.parseInt(values[i]);
-            toAdd.name = entries[i];
-            triggers.add(toAdd);
-        }
-
-        WifiTrigger pref = (WifiTrigger) l.getAdapter().getItem(position);
-        triggerName = pref.getTitle();
-        triggerId = pref.getSSID();
-        triggerType = Profile.TriggerType.WIFI;
-        removeTrigger(triggers, Profile.TriggerState.ON_A2DP_CONNECT);
-        removeTrigger(triggers, Profile.TriggerState.ON_A2DP_DISCONNECT);
-
-        entries = new String[triggers.size()];
-        final int[] valueInts = new int[triggers.size()];
-        int currentTriggerState = mProfile.getTriggerState(triggerType, triggerId);
-        int currentItem = -1;
-        for (int i = 0; i < triggers.size(); i++) {
-            Trigger t = triggers.get(i);
-            entries[i] = t.name;
-            valueInts[i] = t.value;
-            if (valueInts[i] == currentTriggerState) {
-                currentItem = i;
-            }
-        }
-
-        new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.profile_trigger_configure)
-                .setSingleChoiceItems(entries, currentItem, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mProfile.setTrigger(triggerType, triggerId, valueInts[which], triggerName);
-                        mProfileManager.updateProfile(mProfile);
-                        reloadTriggerListItems();
-                        dialog.dismiss();
-                    }
-                })
-                .show();
-    }
-
-    private void removeTrigger(List<Trigger> triggers, int value) {
-        for (Trigger t : triggers) {
-            if (t.value == value) {
-                triggers.remove(t);
-                return;
-            }
-        }
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        reloadTriggerListItems();
-        mListAdapter = new WifiTriggerAdapter(getActivity());
-        setListAdapter(mListAdapter);
-    }
-
-    private void reloadTriggerListItems() {
-        mTriggers.clear();
+    protected void onLoadTriggers(Profile profile, List<AbstractTriggerItem> triggers) {
         final Resources res = getResources();
         final List<WifiConfiguration> configs = mWifiManager.getConfiguredNetworks();
 
         if (configs != null) {
             for (WifiConfiguration config : configs) {
                 WifiTrigger accessPoint = new WifiTrigger(config);
-                int state = mProfile.getTriggerState(
+                int state = profile.getTriggerState(
                         Profile.TriggerType.WIFI, accessPoint.getSSID());
-                initPreference(accessPoint, state, res, R.drawable.ic_wifi_signal_4);
-                mTriggers.add(accessPoint);
+                initTriggerItemFromState(accessPoint, state, R.drawable.ic_wifi_signal_4);
+                triggers.add(accessPoint);
             }
         } else {
-            final List<Profile.ProfileTrigger> triggers =
-                    mProfile.getTriggersFromType(Profile.TriggerType.WIFI);
-            for (Profile.ProfileTrigger trigger : triggers) {
+            final List<Profile.ProfileTrigger> origTriggers =
+                    profile.getTriggersFromType(Profile.TriggerType.WIFI);
+            for (Profile.ProfileTrigger trigger : origTriggers) {
                 WifiTrigger accessPoint = new WifiTrigger(trigger.getName());
-                initPreference(accessPoint, trigger.getState(), res,
-                        R.drawable.ic_wifi_signal_4);
-                mTriggers.add(accessPoint);
+                initTriggerItemFromState(accessPoint,
+                        trigger.getState(), R.drawable.ic_wifi_signal_4);
+                triggers.add(accessPoint);
             }
         }
-        if (mListAdapter != null) {
-            mListAdapter.notifyDataSetChanged();
-        }
     }
 
-    private class Trigger {
-        int value;
-        String name;
+    @Override
+    protected TriggerInfo onConvertToTriggerInfo(AbstractTriggerItem trigger) {
+        WifiTrigger wifi = (WifiTrigger) trigger;
+        return new TriggerInfo(Profile.TriggerType.WIFI, wifi.getSSID(), wifi.getTitle());
     }
 
-    private class WifiTriggerAdapter extends ArrayAdapter<WifiTrigger> {
-        public WifiTriggerAdapter(Context context) {
-            super(context, R.layout.abstract_trigger_row, R.id.title, mTriggers);
-        }
-
-        @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            LayoutInflater inflater = LayoutInflater.from(getContext());
-            View rowView = inflater.inflate(R.layout.abstract_trigger_row, viewGroup, false);
-            TextView title = (TextView) rowView.findViewById(R.id.title);
-            TextView desc = (TextView) rowView.findViewById(R.id.desc);
-            ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-
-            WifiTrigger trigger = getItem(i);
-
-            title.setText(trigger.getTitle());
-            desc.setText(trigger.getSummary());
-            imageView.setImageResource(trigger.getIcon());
-
-            return rowView;
-        }
+    @Override
+    protected boolean isTriggerStateSupported(TriggerInfo info, int triggerState) {
+        return true;
     }
 
-    public static class WifiTrigger extends AbstractTriggerItem {
+    @Override
+    protected int getEmptyViewLayoutResId() {
+        return R.layout.profile_wifi_empty_view;
+    }
+
+    @Override
+    protected Intent getEmptyViewClickIntent() {
+        return new Intent(Settings.ACTION_WIFI_SETTINGS);
+    }
+
+    @Override
+    protected int getOptionArrayResId() {
+        return R.array.profile_trigger_wifi_options;
+    }
+
+    @Override
+    protected int getOptionValuesArrayResId() {
+        return R.array.profile_trigger_wifi_options_values;
+    }
+
+    private static class WifiTrigger extends AbstractTriggerItem {
         public String mSSID;
         public WifiConfiguration mConfig;
 
