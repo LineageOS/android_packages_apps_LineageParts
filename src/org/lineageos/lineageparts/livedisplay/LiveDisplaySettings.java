@@ -397,6 +397,12 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             if (!config.hasFeature(FEATURE_READING_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
             }
+            if (!context.getResources().getBoolean(
+                    org.lineageos.platform.internal.R.bool.config_enableLiveDisplay)) {
+                result.add(KEY_LIVE_DISPLAY_TEMPERATURE);
+                result.add(KEY_LIVE_DISPLAY);
+            }
+
             return result;
         }
 
