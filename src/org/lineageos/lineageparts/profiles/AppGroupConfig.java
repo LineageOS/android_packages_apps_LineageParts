@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +24,7 @@ import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -252,8 +254,13 @@ public class AppGroupConfig extends SettingsPreferenceFragment
         final Dialog dialog;
         switch (id) {
             case DIALOG_APPS:
+                Resources res = getResources();
+                int paddingTop = res.getDimensionPixelOffset(R.dimen.package_list_padding_top);
+
                 final ListView list = new ListView(getActivity());
                 list.setAdapter(mAppAdapter);
+                list.setDivider(null);
+                list.setPadding(0, paddingTop, 0, 0);
                 builder.setTitle(R.string.profile_choose_app);
                 builder.setView(list);
                 dialog = builder.create();
