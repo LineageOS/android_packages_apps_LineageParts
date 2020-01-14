@@ -523,8 +523,13 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         final Dialog dialog;
         switch (id) {
             case DIALOG_APPS:
+                Resources res = getResources();
+                int paddingStart = res.getDimensionPixelOffset(R.dimen.package_list_padding_start);
+
                 final ListView list = new ListView(getActivity());
                 list.setAdapter(mPackageAdapter);
+                list.setDivider(null);
+                list.setPadding(0, paddingStart, 0, 0);
 
                 builder.setTitle(R.string.choose_app);
                 builder.setView(list);

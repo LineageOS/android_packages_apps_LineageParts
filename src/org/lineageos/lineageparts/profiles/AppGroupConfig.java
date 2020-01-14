@@ -23,6 +23,7 @@ import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -252,8 +253,13 @@ public class AppGroupConfig extends SettingsPreferenceFragment
         final Dialog dialog;
         switch (id) {
             case DIALOG_APPS:
+                Resources res = getResources();
+                int paddingStart = res.getDimensionPixelOffset(R.dimen.package_list_padding_start);
+
                 final ListView list = new ListView(getActivity());
                 list.setAdapter(mAppAdapter);
+                list.setDivider(null);
+                list.setPadding(0, paddingStart, 0, 0);
                 builder.setTitle(R.string.profile_choose_app);
                 builder.setView(list);
                 dialog = builder.create();
