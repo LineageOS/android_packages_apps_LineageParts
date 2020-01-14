@@ -73,7 +73,6 @@ import org.lineageos.lineageparts.PartsActivity;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 import org.lineageos.lineageparts.profiles.actions.item.AirplaneModeItem;
-import org.lineageos.lineageparts.profiles.actions.item.AppGroupItem;
 import org.lineageos.lineageparts.profiles.actions.item.BrightnessItem;
 import org.lineageos.lineageparts.profiles.actions.item.ConnectionOverrideItem;
 import org.lineageos.lineageparts.profiles.actions.item.DisabledItem;
@@ -265,38 +264,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         if (getResources().getBoolean(
                 com.android.internal.R.bool.config_intrusiveNotificationLed)) {
             mItems.add(new NotificationLightModeItem(mProfile));
-        }
-
-        // app groups
-        mItems.add(new Header(R.string.profile_app_group_category_title));
-
-        int groupsAdded = 0;
-        ProfileGroup[] profileGroups = mProfile.getProfileGroups();
-        if (profileGroups != null && profileGroups.length > 1) { // it will always have "other"
-            for (ProfileGroup profileGroup : profileGroups) {
-                // only display profile group if there's a matching notification group
-                // and don't' show the wildcard group
-                if (mProfileManager.getNotificationGroup(profileGroup.getUuid()) != null
-                        && !mProfile.getDefaultGroup().getUuid().equals(
-                        profileGroup.getUuid())) {
-                    mItems.add(new AppGroupItem(mProfile, profileGroup,
-                            mProfileManager.getNotificationGroup(profileGroup.getUuid())));
-                    groupsAdded++;
-                }
-            }
-            if (groupsAdded > 0) {
-                // add "Other" at the end
-                mItems.add(new AppGroupItem(mProfile, mProfile.getDefaultGroup(),
-                        mProfileManager.getNotificationGroup(
-                                mProfile.getDefaultGroup().getUuid())));
-            }
-        }
-        if (mProfileManager.getNotificationGroups().length > 0) {
-            // if there are notification groups available, allow them to be configured
-            mItems.add(new AppGroupItem());
-        } else if (groupsAdded == 0) {
-            // no notification groups available at all, nothing to add/remove
-            mItems.remove(mItems.get(mItems.size() - 1));
         }
 
         mAdapter.notifyDataSetChanged();
@@ -980,37 +947,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         return alertDialog;
     }
 
-    private void requestActiveAppGroupsDialog() {
-        final NotificationGroup[] notificationGroups = mProfileManager.getNotificationGroups();
-
-        CharSequence[] items = new CharSequence[notificationGroups.length];
-        boolean[] checked = new boolean[notificationGroups.length];
-
-        for (int i = 0; i < notificationGroups.length; i++) {
-            items[i] = notificationGroups[i].getName();
-            checked[i] = mProfile.getProfileGroup(notificationGroups[i].getUuid()) != null;
-        }
-        DialogInterface.OnMultiChoiceClickListener listener =
-                new DialogInterface.OnMultiChoiceClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                        if (isChecked) {
-                            mProfile.addProfileGroup(new ProfileGroup(notificationGroups[which].getUuid(), false));
-                        } else {
-                            mProfile.removeProfileGroup(notificationGroups[which].getUuid());
-                        }
-                        updateProfile();
-                        rebuildItemList();
-                    }
-                };
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-                .setMultiChoiceItems(items, checked, listener)
-                .setTitle(R.string.profile_appgroups_title)
-                .setPositiveButton(android.R.string.ok, null);
-        builder.show();
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -1063,22 +999,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             showDialog(DIALOG_PROFILE_NAME);
         } else if (item instanceof TriggerItem) {
             openTriggersFragment(((TriggerItem) item).getTriggerType());
-        } else if (item instanceof AppGroupItem) {
-            AppGroupItem agi = (AppGroupItem) item;
-            if (agi.getGroupUuid() == null) {
-                requestActiveAppGroupsDialog();
-            } else {
-                startProfileGroupActivity(agi);
-            }
         }
-    }
-
-    private void startProfileGroupActivity(AppGroupItem item) {
-        Bundle args = new Bundle();
-        args.putString("ProfileGroup", item.getGroupUuid().toString());
-        args.putParcelable("Profile", mProfile);
-
-        startFragment(this, ProfileGroupConfig.class.getName(), 0, 0, args);
     }
 
     private void openTriggersFragment(int openTo) {

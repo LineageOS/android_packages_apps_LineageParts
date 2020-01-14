@@ -359,8 +359,6 @@
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profiles</string>
     <string name="profile_profile_manage">Manage profile</string>
-    <string name="profile_appgroups_manage">App groups</string>
-    <string name="profile_appgroup_manage">Manage app group</string>
 
     <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Profile settings</string>
@@ -381,18 +379,6 @@
     <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Notification tone</string>
     <string name="soundtone_summary" translatable="false">""</string>
-
-    <!-- Title for application group setting screen -->
-    <string name="profile_appgroups_title">App groups</string>
-    <string name="profile_applist_title">Apps</string>
-    <string name="profile_new_appgroup">New app group</string>
-    <string name="profile_delete_appgroup">Delete this app group?</string>
-    <string name="profile_appgroup_name_prompt">Enter a name for the new app group</string>
-    <string name="profile_appgroup_name_title">Name</string>
-    <string name="duplicate_appgroup_name">Duplicate app group name!</string>
-
-    <!-- Add application dialog box title -->
-    <string name="profile_choose_app">Choose app</string>
 
     <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">System settings</string>
