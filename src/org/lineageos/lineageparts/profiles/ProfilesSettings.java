@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,7 +59,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public static final String EXTRA_NEW_PROFILE = "new_profile_mode";
 
     private static final int MENU_RESET = Menu.FIRST;
-    private static final int MENU_APP_GROUPS = Menu.FIRST + 1;
 
     private final IntentFilter mFilter;
     private final BroadcastReceiver mReceiver;
@@ -183,8 +183,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                 .setAlphabeticShortcut('r')
                 .setEnabled(mEnabled)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-        menu.add(0, MENU_APP_GROUPS, 0, R.string.profile_appgroups_title)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
     }
 
     @Override
@@ -192,10 +190,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         switch (item.getItemId()) {
             case MENU_RESET:
                 resetAll();
-                return true;
-            case MENU_APP_GROUPS:
-                startFragment(this, AppGroupList.class.getName(),
-                        R.string.profile_appgroups_title, 0, null);
                 return true;
         }
         return super.onOptionsItemSelected(item);
