@@ -79,7 +79,7 @@ public class LineagePartsSearchIndexablesProvider extends SearchIndexablesProvid
         // from parts_catalog.xml for indexing
         for (String key : keys) {
             PartInfo i = PartsList.get(getContext()).getPartInfo(key);
-            if (i == null || i.getXmlRes() <= 0) {
+            if (i == null || i.getXmlRes() <= 0 || !i.isAvailable()) {
                 continue;
             }
 
@@ -106,7 +106,7 @@ public class LineagePartsSearchIndexablesProvider extends SearchIndexablesProvid
         // which don't have an associated XML resource
         for (String key : keys) {
             PartInfo i = PartsList.get(getContext()).getPartInfo(key);
-            if (i == null) {
+            if (i == null || !i.isAvailable()) {
                 continue;
             }
 
@@ -167,7 +167,7 @@ public class LineagePartsSearchIndexablesProvider extends SearchIndexablesProvid
 
         for (String key : keys) {
             PartInfo i = PartsList.get(getContext()).getPartInfo(key);
-            if (i == null) {
+            if (i == null || !i.isAvailable()) {
                 continue;
             }
 
