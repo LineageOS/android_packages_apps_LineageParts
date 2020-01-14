@@ -35,6 +35,7 @@
     <string name="yes">ใช่</string>
     <string name="no">ไม่</string>
     <string name="search">ค้นหา</string>
+    <string name="search_menu">ตั้งค่าการค้นหา</string>
     <string name="disabled">ปิดการใช้งาน</string>
     <string name="enabled">เปิดใช้งาน</string>
     <string name="privacy_settings_title">ความเป็นส่วนตัว</string>
@@ -52,6 +53,7 @@
     <string name="privacy_guard_manager_show_system_apps">แสดงแอปที่ติดตั้งในระบบ</string>
     <string name="privacy_guard_advanced_settings_title">ขั้นสูง</string>
     <string name="privacy_guard_notification_title">แสดงการแจ้งเตือน</string>
+    <string name="channel_light_settings_name">ตัวอย่างการตั้งค่าแสง</string>
     <string name="edit_light_settings">แก้ไขการตั้งค่าแสง</string>
     <string name="pulse_speed_title">ความเร็วและระยะเวลาการกระพริบ</string>
     <string name="default_time">ปกติ</string>
@@ -183,6 +185,8 @@
     <string name="power_end_call_summary">วางสายปัจจุบันโดยกดปุ่มเพาเวอร์</string>
     <string name="swap_volume_buttons_title">ปรับทิศทางใหม่</string>
     <string name="swap_volume_buttons_summary">สลับปุ่มปรับเสียงเมื่อหมุนจอ</string>
+    <string name="volume_panel_on_left_title">แสดงแผงด้านซ้าย</string>
+    <string name="volume_panel_on_left_summary">แสดงแผงควบคุมระดับเสียงด้านซ้ายของจอ</string>
     <string name="button_wake_title">ปลุกอุปกรณ์</string>
     <string name="volume_answer_call_title">รับสาย</string>
     <string name="volume_answer_call_summary">รับสายเรียกเข้าโดยกดปุ่มปรับระดับเสียง</string>
@@ -384,9 +388,11 @@
     <string name="status_bar_brightness_slider_title">แถบเลื่อนความสว่าง</string>
     <string name="status_bar_brightness_slider_summary">ปรับความสว่างจากการตั้งค่าด่วน</string>
     <string name="status_bar_brightness_slider_auto_title">ความสว่างอัตโนมัติ</string>
+    <string name="status_bar_brightness_slider_auto_summary">แสดงเพื่อปรับความสว่างใกล้กับแถบเลื่อน</string>
     <string name="status_bar_toggle_brightness">ควบคุมความสว่าง</string>
     <string name="status_bar_toggle_brightness_summary">ปรับความสว่างหน้าจอโดยการเลื่อนแถบสถานะ</string>
     <string name="network_traffic_settings_title">ตรวจสอบการรับส่งข้อมูลเครือข่าย</string>
+    <string name="network_traffic_settings_summary">แสดงสถานะการรับส่งข้อมูลเครือข่ายปัจจุบันในแถบสถานะ</string>
     <string name="network_traffic_mode_title">โหมดการแสดงผล</string>
     <string name="network_traffic_mode_disable">ปิด</string>
     <string name="network_traffic_mode_up">อัพโหลดเท่านั้น</string>
@@ -400,6 +406,7 @@
     <string name="network_traffic_units_kilobytes">กิโลไบต์ต่อวินาที (kB/s)</string>
     <string name="network_traffic_units_megabytes">เมกะไบต์ต่อวินาที (MB/s)</string>
     <string name="network_traffic_show_units">แสดงหน่วย</string>
+    <string name="network_traffic_show_units_summary">จะแสดงหน่วยการวัดการรับส่งข้อมูลในแถบสถานะหรือไม่</string>
     <string name="network_traffic_disabled_clock">การรับส่งข้อมูลเครือข่ายถูกปิดใช้งานเนื่องจากตำแหน่งของนาฬิกา</string>
     <string name="protected_apps_manager_title">แอปที่ได้รับการปกป้อง</string>
     <string name="protected_apps_manager_summary">จัดการว่าแอปใดที่จะซ่อนไว้ในใหมดปลอดภัย</string>
@@ -475,7 +482,9 @@
     <string name="expanded_desktop_style_hide_status">ซ่อนแถบสถานะ</string>
     <string name="expanded_desktop_style_hide_navigation">ซ่อนแถบนำทาง</string>
     <string name="expanded_desktop_style_hide_both">ซ่อนทั้งคู่</string>
+    <string name="expanded_desktop_nothing_to_show_text">ปิดสวิตช์เพื่อปรับแต่งเดสก์ท็อปที่ขยายเพิ่มของคุณบนพื้นฐานสำหรับแต่ละแอพ</string>
     <string name="long_screen_settings_title">แอปพลิเคชันเต็มหน้าจอ</string>
+    <string name="long_screen_settings_summary">บังคับให้แอพเก่าใช้อัตราส่วนจอแบบเต็ม</string>
     <string name="charging_sounds_settings_title">เสียงขณะชาร์จไฟ</string>
     <string name="charging_sounds_enabled_title">เปิดใช้งาน</string>
     <string name="charging_sounds_enabled_summary">เล่นเสียงเมื่อมีการชาร์จหรือถอดสายชาร์จ</string>
@@ -531,6 +540,7 @@
     <string name="style_global_entry_time">อัตโนมัติ (ตามเวลาของวัน)</string>
     <string name="style_global_entry_app">จัดการโดย %1$s</string>
     <string name="style_accent_title">สีหลัก</string>
+    <string name="style_accent_configuration_not_supported">โทนสีปัจจุบันไม่เข้ากันกับสไตล์ที่เลือก เพื่อที่จะดำเนินต่อโทนสีอื่นจะต้องถูกเลือกคุณต้องการดำเนินการต่อหรือไม่?</string>
     <string name="style_accent_configuration_positive">ดำเนินการต่อไป</string>
     <string name="style_automagic_title">Automagic</string>
     <string name="style_automagic_description">ปรับแต่งรูปแบบเพื่อเข้ากับวอลเปเปอร์</string>
@@ -540,6 +550,7 @@
     <string name="style_dark_overlay_title">โหมดกลางคืน</string>
     <string name="style_dark_overlay_default">ค่าเริ่มต้น</string>
     <string name="style_dark_overlay_black">ดำ</string>
+    <string name="style_permission_error">การอนุญาต การเข้าถึงพื้นที่เก็บข้อมูล เป็นสิ่งจำเป็นในการใช้งาน เพื่อวิเคราะห์วอลล์เปเปอร์ของคุณโปรดอนุญาตให้ใช้คุณลักษณะนี้</string>
     <string name="trust_category_features">สถานะ</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">การบังคับใช้</string>
@@ -549,17 +560,21 @@
     <string name="trust_feature_root_value_disabled">ปิดใช้งาน</string>
     <string name="trust_feature_root_value_adb">ADB เท่านั้น</string>
     <string name="trust_feature_root_value_apps">แอปและ ADB</string>
+    <string name="trust_feature_root_explain">การเข้าถึงรูทอนุญาตให้แอพและบริการที่คุณเลือกเลี่ยงข้อจำกัดในด้านความปลอดภัย อนุญาตให้แอพและบริการนั้นทำการแก้ไขระบบซึ่งอาจทำให้อุปกรณ์หรือระบบปฏิบัติการของคุณเสียหาย</string>
     <string name="trust_feature_security_patches">แพตช์ความปลอดภัยแอนดรอยด์</string>
     <string name="trust_feature_security_patches_value_base">แพลตฟอร์ม: %1$s\nVendor: %2$s</string>
     <string name="trust_feature_security_patches_value_new">รุ่นล่าสุด</string>
     <string name="trust_feature_security_patches_value_medium">ล้าหลังไม่กี่เดือน</string>
     <string name="trust_feature_security_patches_value_old">ล้าหลัง</string>
+    <string name="trust_feature_security_patches_explain">Google ออกแพตช์รักษาความปลอดภัยเป็นประจำทุกเดือนโดยร่วมมือกับผู้ขาย SoC เพื่อแก้ไขข้อบกพร่องซึ่งอาจถูกใช้โดยแอพที่เป็นอันตรายเพื่อข้ามข้อจำกัดในด้านความปลอดภัยและทำให้อุปกรณ์ของคุณเสียหายอย่างถาวร Google มีการติดตั้งแพตช์แก้ไขทุกเดือนในอุปกรณ์ที่รองรับทั้งหมด แต่ผู้ผลิตอุปกรณ์ของคุณสามารถแก้ไขข้อบกพร่องสำหรับโค้ดที่เป็นกรรมสิทธิ์ได้เท่านั้น เพื่อให้อุปกรณ์ของคุณปลอดภัยตรวจสอบให้แน่ใจว่ารุ่น LineageOS ที่คุณใช้งานอยู่เป็นรุ่นล่าสุดอยู่เสมอและ (ถ้ามี) ให้แน่ใจว่าไฟล์ภาพผู้ขายของคุณได้รับการอัปเดตเป็นรุ่นล่าสุดที่ถูกแนะนำโดย LineageOS</string>
     <string name="trust_feature_encryption">การเข้ารหัส</string>
     <string name="trust_feature_encryption_value_enabled">เปิดใช้งาน</string>
     <string name="trust_feature_encryption_value_nolock">ต้องการหน้าจอล็อกที่ปลอดภัย</string>
     <string name="trust_feature_encryption_value_disabled">ปิดใช้งาน</string>
+    <string name="trust_feature_encryption_explain">การเข้ารหัสอุปกรณ์ของคุณจะป้องกันการเข้าถึงข้อมูลของคุณเมื่อโทรศัพท์ของคุณไม่ได้ถูกบูทเข้าสู่ Android นี่เป็นสิ่งสำคัญอย่างยิ่งหากโทรศัพท์ของคุณถูกขโมยเนื่องจากป้องกันผู้คนจากการอ่านข้อความ, ผู้ติดต่อ, และข้อมูลส่วนตัวอื่น ๆ ของคุณโดยไม่ต้องใช้รหัสผ่าน \n เพื่อให้การเข้ารหัสมีประสิทธิภาพมากขึ้นคุณจะต้องตั้งรหัสผ่านล็อคหน้าจอที่ปลอดภัย</string>
     <string name="trust_category_tools">ความเป็นส่วนตัว</string>
     <string name="trust_notification_alerts_title">แจ้งเตือนความปลอดภัย</string>
+    <string name="trust_warnings_alerts_intro">คุณสามารถเลือกปัญหาด้านความปลอดภัยที่คุณต้องการได้รับการเตือน เพื่อความปลอดภัยของคุณขอแนะนำให้เปิดใช้งานการแจ้งเตือนทั้งหมด</string>
     <string name="trust_warnings_selinux">สถานะ SELinux</string>
     <string name="trust_warnings_keys">ลายเซ็นบิลด์</string>
     <string name="trust_onboarding_title">ทักทายกับเชื่อถือ</string>

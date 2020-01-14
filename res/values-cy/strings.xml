@@ -35,6 +35,7 @@
     <string name="yes">Iawn</string>
     <string name="no">Na</string>
     <string name="search">Chwilio</string>
+    <string name="search_menu">Chwilio\'r gosodiadau</string>
     <string name="disabled">Wedi\'i analluogi</string>
     <string name="enabled">Wedi\'i alluogi</string>
     <string name="privacy_settings_title">Preifatrwydd</string>

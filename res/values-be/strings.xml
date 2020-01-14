@@ -68,12 +68,12 @@
     <string name="pulse_speed_normal">Звычайны</string>
     <string name="pulse_speed_slow">Павольна</string>
     <string name="pulse_speed_very_slow">Вельмі павольна</string>
-    <string name="battery_light_title">Паказчык жывелькі</string>
+    <string name="battery_light_title">Індыкатар батарэі</string>
     <string name="battery_low_pulse_title">Мігцець падчас нізкага ўзроўню зараду</string>
     <string name="battery_light_list_title">Колеры</string>
-    <string name="battery_light_low_color_title">Жывелька: крытычны ўзровень</string>
-    <string name="battery_light_medium_color_title">Жывелька: сілкаваньне</string>
-    <string name="battery_light_full_color_title">Жывелька: поўны зарад</string>
+    <string name="battery_light_low_color_title">Батарэя разраджана</string>
+    <string name="battery_light_medium_color_title">Зараджаецца</string>
+    <string name="battery_light_full_color_title">Цалкам зараджана</string>
     <string name="notification_light_title">Светлавыя паведамленьні</string>
     <string name="notification_light_general_title">Агульнае</string>
     <string name="notification_light_advanced_title">Падрабязьней</string>
@@ -239,7 +239,7 @@
     <string name="status_bar_am_pm_normal">Нармальна</string>
     <string name="status_bar_am_pm_small">Маленькі</string>
     <string name="status_bar_am_pm_hidden">Схаваць</string>
-    <string name="status_bar_battery_style_title">Варыянт адлюстроўваньня жывелкі</string>
+    <string name="status_bar_battery_style_title">Варыянт адлюстроўвання батарэі</string>
     <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
     <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
     <string name="weather_settings_general_settings_title">Агульнае</string>

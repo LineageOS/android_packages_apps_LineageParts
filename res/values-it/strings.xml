@@ -35,6 +35,7 @@
     <string name="yes">Si</string>
     <string name="no">No</string>
     <string name="search">Cerca</string>
+    <string name="search_menu">Cerca nelle impostazioni</string>
     <string name="disabled">Disattivato</string>
     <string name="enabled">Attivato</string>
     <string name="privacy_settings_title">Privacy</string>

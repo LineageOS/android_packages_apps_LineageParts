@@ -35,6 +35,7 @@
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="search">Поиск</string>
+    <string name="search_menu">Настройки поиска</string>
     <string name="disabled">Выключен</string>
     <string name="enabled">Включен</string>
     <string name="privacy_settings_title">Конфиденциальность</string>
@@ -286,7 +287,7 @@
     <string name="rename_dialog_message">Введите новое название</string>
     <string name="rename_dialog_hint">Введите название профиля</string>
     <string name="profile_reset_title">Сбросить</string>
-    <string name="profile_reset_message">Удалить все пользовательские профили и установить значения по умолчанию?</string>
+    <string name="profile_reset_message">Удалить все созданные пользователем профили и группы приложений и восстановить их по умолчанию?</string>
     <string name="profile_app_delete_confirm">Удалить это приложение?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
@@ -523,8 +524,8 @@
     <string name="touchscreen_gesture_action_camera">Включить камеру</string>
     <string name="touchscreen_gesture_action_browser">Запустить браузер</string>
     <string name="touchscreen_gesture_action_dialer">Открыть «Телефон»</string>
-    <string name="touchscreen_gesture_action_email">Просмотреть эл. почту</string>
-    <string name="touchscreen_gesture_action_messages">Просмотреть сообщения</string>
+    <string name="touchscreen_gesture_action_email">Просмотр ваших писем</string>
+    <string name="touchscreen_gesture_action_messages">Просмотр ваших сообщений</string>
     <string name="touchscreen_gesture_action_play_pause_music">Воспр. или остановить музыку</string>
     <string name="touchscreen_gesture_action_previous_track">Перейти к предыдущему треку</string>
     <string name="touchscreen_gesture_action_next_track">Перейти к следующему треку</string>
@@ -580,7 +581,7 @@
     <string name="trust_onboarding_description">Trust помогает поддерживать безопасность устройства и защищать вашу конфиденциальность.\nЗначок Trust будет отображаться при проверке отображаемого контента.</string>
     <string name="trust_onboarding_learn_more">Подробнее</string>
     <string name="trust_onboarding_done">Понятно</string>
-    <string name="trust_restrict_usb_title">Ограничить USB</string>
+    <string name="trust_restrict_usb_title">Ограничение USB</string>
     <string name="trust_restrict_usb_summary">Отключить определение новых USB-гаджетов, когда устройство заблокировано</string>
     <string name="sms_security_check_limit_title">Ограничение SMS-сообщений</string>
     <string name="sms_security_check_limit_summary">Запрашивать подтверждение при отправке более %s сообщений в минуту</string>

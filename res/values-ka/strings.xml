@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="search_menu">ძიების პარამეტრები</string>
     <string name="edit_light_settings">განათების პარამეტრების ჩასწორება</string>
     <string name="default_time">ჩვეულებრივი</string>
     <string name="battery_light_title">ბატარეის განათება</string>

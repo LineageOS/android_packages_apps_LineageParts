@@ -35,6 +35,7 @@
     <string name="yes">예</string>
     <string name="no">아니오</string>
     <string name="search">검색</string>
+    <string name="search_menu">설정 검색</string>
     <string name="disabled">사용 안 함</string>
     <string name="enabled">사용</string>
     <string name="privacy_settings_title">프라이버시</string>
@@ -184,6 +185,7 @@
     <string name="power_end_call_summary">전원 버튼을 눌러 현재 진행 중인 통화 종료</string>
     <string name="swap_volume_buttons_title">버튼 재정렬</string>
     <string name="swap_volume_buttons_summary">화면이 회전되어 있을 때 볼륨 위/아래 버튼 전환</string>
+    <string name="volume_panel_on_left_title">패널을 좌측에 표시</string>
     <string name="volume_panel_on_left_summary">화면 좌측에 볼륨 패널 표시</string>
     <string name="button_wake_title">기기 깨우기</string>
     <string name="volume_answer_call_title">전화 수신</string>
@@ -564,6 +566,7 @@
     <string name="trust_feature_security_patches_value_new">최신</string>
     <string name="trust_feature_security_patches_value_medium">수 개월 지남</string>
     <string name="trust_feature_security_patches_value_old">오래됨</string>
+    <string name="trust_feature_security_patches_explain">보안 패치는 Google이 SoC 공급업체와의 협력으로 매월 발표됩니다. 이 보안 패치는 유해한 앱을 통해 보안을 우회하여 기기를 영구적으로 손상시킬 수 있는 취약점을 막아냅니다. Google에서 제공하는 패치는 지원하는 모든 기기에 적용할 수 있으나, 비공개 코드에 대한 패치는 기기의 공급업체에서 패치를 제공해야만 적용할 수 있습니다. 기기를 보호하려면 LineageOS를 항상 최신 버전으로 업데이트하고, 가능하면 기기의 공급업체 이미지가 LineageOS에서 권장하는 최신 이미지인지 확인하세요.</string>
     <string name="trust_feature_encryption">암호화</string>
     <string name="trust_feature_encryption_value_enabled">활성화됨</string>
     <string name="trust_feature_encryption_value_nolock">보안성 높은 잠금 화면 필요</string>
@@ -575,6 +578,7 @@
     <string name="trust_warnings_selinux">SELinux 상태</string>
     <string name="trust_warnings_keys">빌드 서명</string>
     <string name="trust_onboarding_title">Trust를 만나보세요</string>
+    <string name="trust_onboarding_description">Trust는 기기를 안전하게 보호하고 사용자의 개인 정보를 보호합니다.\nTrust 아이콘은 페이지의 내용이 검증되었을 때만 나타납니다.</string>
     <string name="trust_onboarding_learn_more">더 알아보기</string>
     <string name="trust_onboarding_done">확인</string>
     <string name="trust_restrict_usb_title">USB 제한</string>

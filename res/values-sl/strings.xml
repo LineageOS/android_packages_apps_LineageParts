@@ -35,6 +35,7 @@
     <string name="yes">Da</string>
     <string name="no">Ne</string>
     <string name="search">Išči</string>
+    <string name="search_menu">Nastavitve iskanja</string>
     <string name="disabled">Onemogočeno</string>
     <string name="enabled">Omogočeno</string>
     <string name="privacy_settings_title">Zasebnost</string>

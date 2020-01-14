@@ -34,6 +34,7 @@
     <string name="yes">نعم</string>
     <string name="no">لا</string>
     <string name="search">بحث</string>
+    <string name="search_menu">إعدادات البحث</string>
     <string name="disabled">معطّل</string>
     <string name="enabled">مفعل</string>
     <string name="privacy_settings_title">الخصوصية</string>

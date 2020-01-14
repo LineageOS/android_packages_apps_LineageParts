@@ -35,6 +35,7 @@
     <string name="yes">Да</string>
     <string name="no">Не</string>
     <string name="search">Търсене</string>
+    <string name="search_menu">Настройки на търсенето</string>
     <string name="disabled">Деактивирано</string>
     <string name="enabled">Активирано</string>
     <string name="privacy_settings_title">Поверителност</string>

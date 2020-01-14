@@ -35,6 +35,7 @@
     <string name="yes">是</string>
     <string name="no">否</string>
     <string name="search">搜尋</string>
+    <string name="search_menu">搜尋設定</string>
     <string name="disabled">已停用</string>
     <string name="enabled">已啟用</string>
     <string name="privacy_settings_title">隱私權</string>

@@ -35,6 +35,7 @@
     <string name="yes">Po</string>
     <string name="no">Jo</string>
     <string name="search">Kërko</string>
+    <string name="search_menu">Cilësimet e Kërkimit</string>
     <string name="disabled">E çaktivizuar</string>
     <string name="enabled">E aktivizuar</string>
     <string name="privacy_settings_title">Privatësia</string>

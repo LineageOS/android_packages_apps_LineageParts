@@ -35,6 +35,7 @@
     <string name="yes">Da</string>
     <string name="no">Nu</string>
     <string name="search">Căutați</string>
+    <string name="search_menu">Setări de căutare</string>
     <string name="disabled">Dezactivat</string>
     <string name="enabled">Activat</string>
     <string name="privacy_settings_title">Intimitate</string>

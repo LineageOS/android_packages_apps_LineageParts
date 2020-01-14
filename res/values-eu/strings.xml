@@ -434,7 +434,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="preview_version_title">Bertsioa</string>
     <string name="preview_country_title">Herrialdea</string>
     <string name="preview_carrier_title">Operadorea</string>
-    <string name="stats_collection_title">Estatistikak biltzea</string>
+    <string name="stats_collection_title">Estatistiken bilketa</string>
     <string name="stats_collection_summary">Baimendu instalazioen ezarpenak eta gailuen estatistikak jasotzea</string>
     <string name="accelerometer_title">Auto-biratu pantaila</string>
     <string name="display_rotation_title">Biratzearen ezarpenak</string>
@@ -562,11 +562,11 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="trust_feature_root_value_apps">Aplikazioak eta ADB</string>
     <string name="trust_feature_root_explain">Root sarbideak zuk aukeratutako aplikazio eta zerbitzuei segurtasun mugak inguratzea baimentzen die, sisteman aldaketak egitea ahalbidetuz, honek sistema eragilean kalteak eragin litzake.</string>
     <string name="trust_feature_security_patches">Android segurtasun partxeak</string>
-    <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nSaltzailea: %2$s</string>
+    <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nEkoizlea: %2$s</string>
     <string name="trust_feature_security_patches_value_new">egunean</string>
     <string name="trust_feature_security_patches_value_medium">hilabete batzuk zaharkitua</string>
     <string name="trust_feature_security_patches_value_old">zaharkitua</string>
-    <string name="trust_feature_security_patches_explain">Segurtasun partxeak hilabetero kaleratzen ditu Googlek ekoizleekin elkarlanean, aplikazio gaizkileek segurtasun mugak inguratzeko eta gailuan kalte iraunkorra sortzeko erabili du¡itzaketen ahuleziak konpontzeko. Googlek argitaratutako partxeak onartutako gailu guztietan aplikatzen dira hilabetero, baina jabeduna den kodean ekoizleak besterik ezin du aplikatu partxea. Gailua seguru mantentzeko egiaztatu LineageOS beti egunean dagoela eta (baldin eta badagokio) egiaztatu zure ekoizlearen irudia LineageOS-ek aholkatutako azkenera eguneratu dela.</string>
+    <string name="trust_feature_security_patches_explain">Segurtasun partxeak hilabetero kaleratzen ditu Googlek ekoizleekin elkarlanean, aplikazio gaizkileek segurtasun mugak inguratzeko eta gailuan kalte iraunkorra sortzeko erabili ditzaketen ahuleziak konpontzeko. Googlek argitaratutako partxeak onartutako gailu guztietan aplikatzen dira hilabetero, baina jabeduna den kodean ekoizleak besterik ezin du aplikatu partxea. Gailua seguru mantentzeko egiaztatu LineageOS beti egunean dagoela eta (baldin eta badagokio) egiaztatu zure ekoizlearen irudia LineageOS-ek aholkatutako azkenera eguneratu dela.</string>
     <string name="trust_feature_encryption">Zifratzea</string>
     <string name="trust_feature_encryption_value_enabled">Gaituta</string>
     <string name="trust_feature_encryption_value_nolock">Blokeo-pantaila seguru bat behar du</string>

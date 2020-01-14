@@ -35,6 +35,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="search">Search</string>
+    <string name="search_menu">Search settings</string>
     <string name="disabled">Disabled</string>
     <string name="enabled">Enabled</string>
     <string name="privacy_settings_title">Privacy</string>

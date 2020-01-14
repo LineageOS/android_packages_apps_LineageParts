@@ -35,6 +35,7 @@
     <string name="yes">Igen</string>
     <string name="no">Nem</string>
     <string name="search">Keresés</string>
+    <string name="search_menu">Keresési beállítások</string>
     <string name="disabled">Letiltva</string>
     <string name="enabled">Engedélyezve</string>
     <string name="privacy_settings_title">Adatvédelem</string>

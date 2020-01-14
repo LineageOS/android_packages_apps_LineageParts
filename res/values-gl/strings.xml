@@ -35,6 +35,7 @@
     <string name="yes">Si</string>
     <string name="no">Non</string>
     <string name="search">Procurar</string>
+    <string name="search_menu">Axustes de busca</string>
     <string name="disabled">Desactivado</string>
     <string name="enabled">Habilitar</string>
     <string name="privacy_settings_title">Privacidade</string>
@@ -52,6 +53,7 @@
     <string name="privacy_guard_manager_show_system_apps">Amosar aplicacións do sistema</string>
     <string name="privacy_guard_advanced_settings_title">Avanzado</string>
     <string name="privacy_guard_notification_title">Amosar notificacións</string>
+    <string name="channel_light_settings_name">Vista previa da configuración de luz</string>
     <string name="edit_light_settings">Editar a configuración da luz</string>
     <string name="pulse_speed_title">Duración e velocidade ao pestanexar</string>
     <string name="default_time">Normal</string>
@@ -183,6 +185,8 @@
     <string name="power_end_call_summary">Finalizar a chamada actual pulsando o botón de encendido</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Intercambiar os botóns de volume cando se xira a pantalla</string>
+    <string name="volume_panel_on_left_title">Amosar o panel á esquerda</string>
+    <string name="volume_panel_on_left_summary">Amosar o panel de volume no lado esquerdo da pantalla</string>
     <string name="button_wake_title">Despertar dispositivo</string>
     <string name="volume_answer_call_title">Coller chamada</string>
     <string name="volume_answer_call_summary">Contestar chamadas entrantes presionando os botones do volumen</string>

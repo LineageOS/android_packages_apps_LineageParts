@@ -35,6 +35,7 @@
     <string name="yes">Evet</string>
     <string name="no">Hayır</string>
     <string name="search">Ara</string>
+    <string name="search_menu">Arama ayarları</string>
     <string name="disabled">Devre dışı</string>
     <string name="enabled">Etkin</string>
     <string name="privacy_settings_title">Gizlilik</string>
