@@ -21,9 +21,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:paddingStart="?android:attr/listPreferredItemPaddingStart" >
+    android:paddingStart="56dp" >
 
     <LinearLayout
         android:id="@+id/icon_container"
@@ -43,11 +41,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="56dp"
         android:orientation="vertical">
         <TextView
             android:id="@android:id/title"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@android:style/TextAppearance.Material.Body2"
