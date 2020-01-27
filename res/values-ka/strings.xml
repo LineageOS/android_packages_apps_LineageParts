@@ -17,6 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="search_menu">ძიების პარამეტრები</string>
     <string name="edit_light_settings">განათების პარამეტრების ჩასწორება</string>
     <string name="default_time">ჩვეულებრივი</string>
     <string name="battery_light_title">ბატარეის განათება</string>
@@ -39,6 +40,4 @@
     <string name="perf_profile_settings_title">ბატარეის დამზოგი და წარმადობა</string>
     <string name="power_save_category_title">ბატარეის დაზოგვა</string>
     <string name="auto_power_save_summary_on">ბატარეის დამზოგის ჩართვა, მუხტის %s დონეზე ჩამოსვლისას</string>
-    <string name="style_accent_default_name">ნაგულისხმევი</string>
-    <string name="style_dark_overlay_default">ნაგულისხმევი</string>
 </resources>

@@ -17,7 +17,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="privacy_guard_manager_summary">Stýrðu hvaða forrit hafi aðgang að persónulegum gögnum</string>
     <string name="hardware_keys_double_tap_title">Aðgerð við tvíbank</string>
     <string name="navigation_bar_home_double_tap_title">Aðgerð við tvíbank á heimaskjá</string>
     <string name="profile_triggers_header">Vekjarar sem munu virkja þetta snið</string>

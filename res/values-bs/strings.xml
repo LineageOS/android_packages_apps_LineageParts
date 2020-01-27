@@ -17,9 +17,5 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="volume_panel_on_left_title">Toan paniel oan de linkerkant</string>
-    <string name="volume_panel_on_left_summary">Jou it folumepaniel wer oan de linkerkant fan it skerm</string>
-    <string name="network_traffic_disabled_clock">Netwurkferkearsyndikator útskeakele fanwegen klokposysje</string>
-    <string name="trust_restrict_usb_title">USB beheine</string>
-    <string name="trust_restrict_usb_summary">Skeakelje nije USB-gadgets út wannear it apparaat beskoattele is</string>
+    <string name="trust_restrict_usb_title">Ograniči USB</string>
 </resources>

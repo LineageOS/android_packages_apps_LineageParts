@@ -37,12 +37,6 @@
     <string name="disabled">Avaktiverad</string>
     <string name="enabled">Aktiverad</string>
     <string name="privacy_settings_title">Sekretess</string>
-    <string name="privacy_guard_no_user_apps">Inga appar är installerade</string>
-    <string name="privacy_guard_help_title">Hjälp</string>
-    <string name="privacy_guard_reset_title">Återställ</string>
-    <string name="privacy_guard_manager_show_system_apps">Visa inbyggda appar</string>
-    <string name="privacy_guard_advanced_settings_title">Avancerade</string>
-    <string name="privacy_guard_notification_title">Visa avisering</string>
     <string name="default_time">Normal</string>
     <string name="custom_time">Anpassad</string>
     <string name="dialog_delete_title">Ta bort</string>
@@ -297,8 +291,4 @@
     <string name="touchscreen_gesture_action_browser">Öppna webbläsaren</string>
     <string name="touchscreen_gesture_action_email">Visa dina e-postmeddelanden</string>
     <string name="touchscreen_gesture_action_messages">Visa dina meddelanden</string>
-    <string name="style_accent_title">Accentfärg</string>
-    <string name="style_accent_configuration_positive">Fortsätt</string>
-    <string name="style_automagic_dialog_positive">Verkställ</string>
-    <string name="style_accent_default_name">Standard</string>
 </resources>

@@ -32,8 +32,6 @@
     <string name="disabled">Disativadu</string>
     <string name="enabled">Abilitadu</string>
     <string name="privacy_settings_title">Riservadesa</string>
-    <string name="privacy_guard_help_title">Agiudu</string>
-    <string name="privacy_guard_reset_title">Reseta</string>
     <string name="default_time">Normale</string>
     <string name="custom_time">Personalizadu</string>
     <string name="dialog_delete_title">Iscantzella</string>
@@ -115,8 +113,4 @@
     <string name="auto_power_save_never">Mai</string>
     <string name="charging_sounds_enabled_title">Abìlita</string>
     <string name="power_notifications_vibrate_title">Vibratzione</string>
-    <string name="style_global_entry_light">Craru</string>
-    <string name="style_global_entry_dark">Iscuru</string>
-    <string name="style_global_entry_app">Gestidu dae %1$s</string>
-    <string name="style_accent_default_name">Predefinidu</string>
 </resources>
