@@ -285,14 +285,10 @@ public class KeyHandler implements DeviceKeyHandler {
     private void launchMessages() {
         mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
         mPowerManager.wakeUp(SystemClock.uptimeMillis(), GESTURE_WAKEUP_REASON);
-        final String defaultApplication = Settings.Secure.getString(
-                mContext.getContentResolver(), "sms_default_application");
-        final PackageManager pm = mContext.getPackageManager();
-        final Intent intent = pm.getLaunchIntentForPackage(defaultApplication);
-        if (intent != null) {
-            startActivitySafely(intent);
-            doHapticFeedback();
-        }
+        final Intent intent = getLaunchableIntent(
+                new Intent(Intent.ACTION_VIEW, Uri.parse("sms:")));
+        startActivitySafely(intent);
+        doHapticFeedback();
     }
 
     private void toggleFlashlight() {
