@@ -59,6 +59,7 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final String TAG = KeyHandler.class.getSimpleName();
 
     private static final String GESTURE_WAKEUP_REASON = "lineageparts-gesture-wakeup";
+    private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
     private static final int GESTURE_REQUEST = 0;
     private static final int GESTURE_WAKELOCK_DURATION = 3000;
     private static final int EVENT_PROCESS_WAKELOCK_DURATION = 500;
@@ -244,6 +245,9 @@ public class KeyHandler implements DeviceKeyHandler {
                 case TouchscreenGestureConstants.ACTION_VOLUME_UP:
                     volumeUp();
                     break;
+                case TouchscreenGestureConstants.ACTION_AMBIENT_DISPLAY:
+                    launchDozePulse();
+                    break;
             }
         }
     }
@@ -329,6 +333,12 @@ public class KeyHandler implements DeviceKeyHandler {
     private void volumeUp() {
         mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
         mAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_RAISE, 0);
+        doHapticFeedback();
+    }
+
+    private void launchDozePulse() {
+        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
+        mContext.sendBroadcastAsUser(new Intent(DOZE_INTENT), new UserHandle(UserHandle.USER_CURRENT));
         doHapticFeedback();
     }
 
