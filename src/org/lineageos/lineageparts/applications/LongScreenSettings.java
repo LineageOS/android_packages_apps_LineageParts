@@ -90,6 +90,7 @@ public class LongScreenSettings extends SettingsPreferenceFragment
 
         mUserListView = (ListView) view.findViewById(R.id.user_list_view);
         mUserListView.setAdapter(mAllPackagesAdapter);
+        mUserListView.setEmptyView(view.findViewById(R.id.user_list_empty_view));
     }
 
     @Override
