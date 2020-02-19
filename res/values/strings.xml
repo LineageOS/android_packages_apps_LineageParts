@@ -591,6 +591,7 @@
     <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Full screen apps</string>
     <string name="long_screen_settings_summary">Force legacy apps to use full screen aspect ratio</string>
+    <string name="long_screen_settings_no_apps">No apps</string>
 
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Charging sounds</string>
