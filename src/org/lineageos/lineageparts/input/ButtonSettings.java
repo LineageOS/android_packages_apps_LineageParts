@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod project
- * Copyright (C) 2017-2018 The LineageOS project
+ *               2017-2020 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -78,6 +78,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
     private static final String KEY_NAVIGATION_APP_SWITCH_LONG_PRESS =
             "navigation_app_switch_long_press";
+    private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
@@ -117,6 +118,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
+    private ListPreference mEdgeLongSwipeAction;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mTorchLongPressPowerGesture;
@@ -212,6 +214,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Action appSwitchLongPressAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION,
                 defaultAppSwitchLongPressAction);
+        Action edgeLongSwipeAction = Action.fromSettings(resolver,
+                LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION,
+                Action.NOTHING);
 
         // Navigation bar home long press
         mNavigationHomeLongPressAction = initList(KEY_NAVIGATION_HOME_LONG_PRESS,
@@ -224,6 +229,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Navigation bar app switch long press
         mNavigationAppSwitchLongPressAction = initList(KEY_NAVIGATION_APP_SWITCH_LONG_PRESS,
                 appSwitchLongPressAction);
+
+        // Edge long swipe gesture
+        mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
 
         final LineageHardwareManager hardware = LineageHardwareManager.getInstance(getActivity());
 
@@ -469,6 +477,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
             mNavigationAppSwitchLongPressAction.setEntries(actionEntriesGo);
             mNavigationAppSwitchLongPressAction.setEntryValues(actionValuesGo);
+
+            mEdgeLongSwipeAction.setEntries(actionEntriesGo);
+            mEdgeLongSwipeAction.setEntryValues(actionValuesGo);
         }
     }
 
@@ -569,6 +580,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleListChange(mTorchLongPressPowerTimeout, newValue,
                     LineageSettings.System.TORCH_LONG_PRESS_POWER_TIMEOUT);
             return true;
+        } else if (preference == mEdgeLongSwipeAction) {
+            handleListChange(mEdgeLongSwipeAction, newValue,
+                    LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
+            return true;
         }
         return false;
     }
@@ -615,10 +630,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mNavigationPreferencesCat.addPreference(mNavigationHomeLongPressAction);
                 mNavigationPreferencesCat.addPreference(mNavigationHomeDoubleTapAction);
                 mNavigationPreferencesCat.addPreference(mNavigationAppSwitchLongPressAction);
+                mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
             } else {
                 mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                 mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
                 mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
+                mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
             }
         }
         if (homeCategory != null) {
