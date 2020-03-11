@@ -248,10 +248,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
-            updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
         }
+        updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked(), /* force */ true);
 
         if (hasPowerKey) {
             if (!TelephonyUtils.isVoiceCapable(getActivity())) {
@@ -600,7 +600,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mDisableNavigationKeys.setChecked(enabled);
     }
 
-    private void updateDisableNavkeysCategories(boolean navbarEnabled) {
+    private void updateDisableNavkeysCategories(boolean navbarEnabled, boolean force) {
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         /* Disable hw-key options if they're disabled */
@@ -626,11 +626,26 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         /* Toggle hardkey control availability depending on navbar state */
         if (mNavigationPreferencesCat != null) {
-            if (navbarEnabled) {
-                mNavigationPreferencesCat.addPreference(mNavigationHomeLongPressAction);
-                mNavigationPreferencesCat.addPreference(mNavigationHomeDoubleTapAction);
-                mNavigationPreferencesCat.addPreference(mNavigationAppSwitchLongPressAction);
-                mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
+            if (force || navbarEnabled) {
+                if (DeviceUtils.isEdgeToEdgeEnabled(getContext())) {
+                    mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
+
+                    mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
+                    mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
+                    mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
+                } else if (DeviceUtils.isSwipeUpEnabled(getContext())) {
+                    mNavigationPreferencesCat.addPreference(mNavigationHomeLongPressAction);
+                    mNavigationPreferencesCat.addPreference(mNavigationHomeDoubleTapAction);
+
+                    mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
+                    mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
+                } else {
+                    mNavigationPreferencesCat.addPreference(mNavigationHomeLongPressAction);
+                    mNavigationPreferencesCat.addPreference(mNavigationHomeDoubleTapAction);
+                    mNavigationPreferencesCat.addPreference(mNavigationAppSwitchLongPressAction);
+
+                    mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
+                }
             } else {
                 mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                 mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
@@ -710,13 +725,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mNavigationPreferencesCat.setEnabled(false);
             writeDisableNavkeysOption(getActivity(), mDisableNavigationKeys.isChecked());
             updateDisableNavkeysOption();
-            updateDisableNavkeysCategories(true);
+            updateDisableNavkeysCategories(true, false);
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     mDisableNavigationKeys.setEnabled(true);
                     mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
-                    updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
+                    updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked(), false);
                 }
             }, 1000);
         } else if (preference == mPowerEndCall) {

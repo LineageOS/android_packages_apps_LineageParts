@@ -16,6 +16,9 @@
  */
 package org.lineageos.lineageparts.utils;
 
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
+
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
@@ -136,5 +139,18 @@ public class DeviceUtils {
             // Ignore
         }
         return false;
+    }
+
+    public static boolean isSwipeUpEnabled(Context context) {
+        if (isEdgeToEdgeEnabled(context)) {
+            return false;
+        }
+        return NAV_BAR_MODE_2BUTTON == context.getResources().getInteger(
+                com.android.internal.R.integer.config_navBarInteractionMode);
+    }
+
+    public static boolean isEdgeToEdgeEnabled(Context context) {
+        return NAV_BAR_MODE_GESTURAL == context.getResources().getInteger(
+                com.android.internal.R.integer.config_navBarInteractionMode);
     }
 }
