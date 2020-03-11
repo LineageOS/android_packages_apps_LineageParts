@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod project
- * Copyright (C) 2017 The LineageOS project
+ *               2017-2020 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.lineageos.lineageparts.utils;
+
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -136,5 +139,18 @@ public class DeviceUtils {
             // Ignore
         }
         return false;
+    }
+
+    public static boolean isSwipeUpEnabled(Context context) {
+        if (isEdgeToEdgeEnabled(context)) {
+            return false;
+        }
+        return NAV_BAR_MODE_2BUTTON == context.getResources().getInteger(
+                com.android.internal.R.integer.config_navBarInteractionMode);
+    }
+
+    public static boolean isEdgeToEdgeEnabled(Context context) {
+        return NAV_BAR_MODE_GESTURAL == context.getResources().getInteger(
+                com.android.internal.R.integer.config_navBarInteractionMode);
     }
 }
