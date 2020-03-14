@@ -22,6 +22,30 @@
       "revId": "163dc4809d29be25e709cc79cf0260970083934a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "699a5277_b9eaf963",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 603,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-03-14T17:25:04Z",
+      "side": 1,
+      "message": "Given update is already in the function name force would be self explaining",
+      "parentUuid": "b8eb0e95_75a4ed88",
+      "range": {
+        "startLine": 603,
+        "startChar": 79,
+        "endLine": 603,
+        "endChar": 84
+      },
+      "revId": "163dc4809d29be25e709cc79cf0260970083934a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
