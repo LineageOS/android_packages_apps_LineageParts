@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b8eb0e95_75a4ed88",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 603,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-03-14T16:28:56Z",
+      "side": 1,
+      "message": "forcedUpdate might be better, no?",
+      "range": {
+        "startLine": 603,
+        "startChar": 79,
+        "endLine": 603,
+        "endChar": 84
+      },
+      "revId": "163dc4809d29be25e709cc79cf0260970083934a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
