@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "eded2286_c64cee9d",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-04-10T23:26:54Z",
+      "side": 1,
+      "message": "Yes, as per the Lineage SDK change.",
+      "parentUuid": "8170352c_84363eeb",
+      "revId": "4ecebfcd0e3e2bd2bfa07762f8500bed82dfbe37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3df47905_0e098dd3",
         "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
         "patchSetId": 6
