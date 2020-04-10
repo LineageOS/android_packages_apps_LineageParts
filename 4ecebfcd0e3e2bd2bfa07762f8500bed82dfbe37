@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8170352c_84363eeb",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-04-10T01:35:58Z",
+      "side": 1,
+      "message": "/system/product/media/audio/ui/WirelessChargingStarted.ogg",
+      "revId": "4ecebfcd0e3e2bd2bfa07762f8500bed82dfbe37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3df47905_0e098dd3",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-04-10T01:35:58Z",
+      "side": 1,
+      "message": "should maybe call  cursor.close() in second condition.",
+      "revId": "4ecebfcd0e3e2bd2bfa07762f8500bed82dfbe37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
