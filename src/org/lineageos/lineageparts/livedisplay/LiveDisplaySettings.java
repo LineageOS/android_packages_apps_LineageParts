@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017-2019 The LineageOS Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ import androidx.preference.SwitchPreference;
 
 import com.android.internal.util.ArrayUtils;
 
+import org.lineageos.internal.util.PackageManagerUtils;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
@@ -218,8 +219,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         }
 
         mReadingMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
-        if (liveDisplayPrefs != null && mReadingMode != null
-                && !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
+        if (liveDisplayPrefs != null && mReadingMode != null &&
+                (!mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT) ||
+                PackageManagerUtils.isAppEnabled(getContext(), getContext().getString(
+                        com.android.internal.R.string.config_defaultWellbeingPackage)))) {
             liveDisplayPrefs.removePreference(mReadingMode);
             mReadingMode = null;
         } else {
@@ -424,7 +427,9 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             if (!config.hasFeature(FEATURE_PICTURE_ADJUSTMENT)) {
                 result.add(KEY_PICTURE_ADJUSTMENT);
             }
-            if (!config.hasFeature(FEATURE_READING_ENHANCEMENT)) {
+            if (!config.hasFeature(FEATURE_READING_ENHANCEMENT) ||
+                    PackageManagerUtils.isAppEnabled(context, context.getString(
+                            com.android.internal.R.string.config_defaultWellbeingPackage))) {
                 result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
             }
             if (ColorDisplayManager.isNightDisplayAvailable(context)) {
