@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "b692d37f_eff847d3",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-04-13T23:46:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eded2286_c64cee9d",
+      "revId": "4ecebfcd0e3e2bd2bfa07762f8500bed82dfbe37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3df47905_0e098dd3",
         "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
         "patchSetId": 6
@@ -51,6 +69,24 @@
       "revId": "4ecebfcd0e3e2bd2bfa07762f8500bed82dfbe37",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4748fa6_07ec33cc",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-04-13T23:46:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3df47905_0e098dd3",
+      "revId": "4ecebfcd0e3e2bd2bfa07762f8500bed82dfbe37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
