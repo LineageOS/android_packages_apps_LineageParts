@@ -22,6 +22,30 @@
       "revId": "9ebe6a3765cdac48bd29052f8dde73bc8566ccff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4862ed79_f6279b42",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-04-13T23:59:46Z",
+      "side": 1,
+      "message": "Yes and no (see my PS4 change comment) - the media database has a path with a leading /system so if we stripped it here we\u0027d need to prepend it before calling audioFileToUri().",
+      "parentUuid": "56e5c085_74383b91",
+      "range": {
+        "startLine": 49,
+        "startChar": 13,
+        "endLine": 49,
+        "endChar": 20
+      },
+      "revId": "9ebe6a3765cdac48bd29052f8dde73bc8566ccff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
