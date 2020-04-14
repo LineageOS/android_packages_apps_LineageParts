@@ -46,6 +46,30 @@
       "revId": "9ebe6a3765cdac48bd29052f8dde73bc8566ccff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af8415a7_3945759e",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-04-14T09:21:18Z",
+      "side": 1,
+      "message": "Perhaps we should edit SDK change then?",
+      "parentUuid": "4862ed79_f6279b42",
+      "range": {
+        "startLine": 49,
+        "startChar": 13,
+        "endLine": 49,
+        "endChar": 20
+      },
+      "revId": "9ebe6a3765cdac48bd29052f8dde73bc8566ccff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
