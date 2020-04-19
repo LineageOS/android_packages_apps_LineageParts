@@ -17,6 +17,9 @@
 
 package org.lineageos.lineageparts.input;
 
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
+
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -74,6 +77,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String KEY_VOLUME_PANEL_ON_LEFT = "volume_panel_on_left";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
+    private static final String KEY_NAVIGATION_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
     private static final String KEY_NAVIGATION_APP_SWITCH_LONG_PRESS =
@@ -115,6 +119,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mSwapVolumeButtons;
     private SwitchPreference mVolumePanelOnLeft;
     private SwitchPreference mDisableNavigationKeys;
+    private SwitchPreference mNavigationArrowKeys;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
@@ -217,6 +222,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Action edgeLongSwipeAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION,
                 Action.NOTHING);
+
+        // Navigation bar arrow keys while typing
+        final int currentNavBarMode = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.NAVIGATION_MODE, NAV_BAR_MODE_3BUTTON, UserHandle.USER_CURRENT);
+        mNavigationArrowKeys = (SwitchPreference) findPreference(KEY_NAVIGATION_ARROW_KEYS);
+        if (currentNavBarMode == NAV_BAR_MODE_GESTURAL) {
+            mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
+        }
 
         // Navigation bar home long press
         mNavigationHomeLongPressAction = initList(KEY_NAVIGATION_HOME_LONG_PRESS,
