@@ -659,11 +659,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
                     mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
                 }
-            } else {
-                mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
-                mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
-                mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
-                mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
             }
         }
         if (homeCategory != null) {
