@@ -91,7 +91,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
-import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
+import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_LOCATION;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
@@ -218,7 +218,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             mItems.add(new ConnectionOverrideItem(PROFILE_CONNECTION_BLUETOOTH,
                     mProfile.getSettingsForConnection(PROFILE_CONNECTION_BLUETOOTH)));
         }
-        mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_GPS));
+        mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_LOCATION));
         mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_WIFI));
         mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_SYNC));
         if (DeviceUtils.deviceSupportsMobileData(getActivity())) {
@@ -393,13 +393,11 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                             true));
         }
 
-        // gps
+        // location
         LocationManager locationManager = context.getSystemService(LocationManager.class);
-        boolean gpsEnabled = locationManager.
-                isProviderEnabled(LocationManager.GPS_PROVIDER);
         profile.setConnectionSettings(
-                new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_GPS,
-                        gpsEnabled ? 1 : 0, true));
+                new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_LOCATION,
+                        locationManager.isLocationEnabled() ? 1 : 0, true));
 
         // wifi
         WifiManager wifiManager = context.getSystemService(WifiManager.class);
