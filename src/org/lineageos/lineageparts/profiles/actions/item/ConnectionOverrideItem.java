@@ -61,8 +61,8 @@ public class ConnectionOverrideItem extends Item {
                 return R.string.toggleBluetooth;
             case ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA:
                 return R.string.toggleData;
-            case ConnectionSettings.PROFILE_CONNECTION_GPS:
-                return R.string.toggleGPS;
+            case ConnectionSettings.PROFILE_CONNECTION_LOCATION:
+                return R.string.toggleLocation;
             case ConnectionSettings.PROFILE_CONNECTION_NFC:
                 return R.string.toggleNfc;
             case ConnectionSettings.PROFILE_CONNECTION_SYNC:
