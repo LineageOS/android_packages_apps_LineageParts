@@ -17,9 +17,6 @@
 
 package org.lineageos.lineageparts.input;
 
-import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON;
-import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
-
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -224,12 +221,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 Action.NOTHING);
 
         // Navigation bar arrow keys while typing
-        final int currentNavBarMode = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.NAVIGATION_MODE, NAV_BAR_MODE_3BUTTON, UserHandle.USER_CURRENT);
         mNavigationArrowKeys = (SwitchPreference) findPreference(KEY_NAVIGATION_ARROW_KEYS);
-        if (currentNavBarMode == NAV_BAR_MODE_GESTURAL) {
-            mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
-        }
 
         // Navigation bar home long press
         mNavigationHomeLongPressAction = initList(KEY_NAVIGATION_HOME_LONG_PRESS,
@@ -643,6 +635,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 if (DeviceUtils.isEdgeToEdgeEnabled(getContext())) {
                     mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
 
+                    mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
                     mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
