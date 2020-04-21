@@ -75,7 +75,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_PANEL_ON_LEFT = "volume_panel_on_left";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAVIGATION_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
-    private static final String KEY_NAVIGATION_INVERTED_LAYOUT = "sysui_nav_bar_inverse";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
     private static final String KEY_NAVIGATION_APP_SWITCH_LONG_PRESS =
@@ -118,7 +117,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumePanelOnLeft;
     private SwitchPreference mDisableNavigationKeys;
     private SwitchPreference mNavigationArrowKeys;
-    private SwitchPreference mNavigationInvertedLayout;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
@@ -224,10 +222,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Navigation bar arrow keys while typing
         mNavigationArrowKeys = (SwitchPreference) findPreference(KEY_NAVIGATION_ARROW_KEYS);
-
-        // Navigation bar inverted layout
-        mNavigationInvertedLayout =
-                (SwitchPreference) findPreference(KEY_NAVIGATION_INVERTED_LAYOUT);
 
         // Navigation bar home long press
         mNavigationHomeLongPressAction = initList(KEY_NAVIGATION_HOME_LONG_PRESS,
@@ -642,7 +636,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
 
                     mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
-                    mNavigationPreferencesCat.removePreference(mNavigationInvertedLayout);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
                     mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
