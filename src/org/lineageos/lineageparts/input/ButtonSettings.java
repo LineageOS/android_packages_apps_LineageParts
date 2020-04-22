@@ -222,18 +222,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Edge long swipe gesture
         mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
 
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(getActivity());
-
-        // Only visible on devices that does not have a navigation bar already
-        boolean hasNavigationBar = true;
-        boolean supportsKeyDisabler = isKeyDisablerSupported(getActivity());
-        try {
-            IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
-            hasNavigationBar = windowManager.hasNavigationBar(Display.DEFAULT_DISPLAY);
-        } catch (RemoteException e) {
-            Log.e(TAG, "Error getting navigation bar status");
-        }
-        if (supportsKeyDisabler) {
+        // Hardware key disabler
+        if (isKeyDisablerSupported(getActivity())) {
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
@@ -391,7 +381,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Only show the navigation bar category on devices that have a navigation bar
         // or support disabling the hardware keys
-        if (!hasNavigationBar && !supportsKeyDisabler) {
+        if (!hasNavigationBar() && !isKeyDisablerSupported(getActivity())) {
             prefScreen.removePreference(mNavigationPreferencesCat);
         }
 
@@ -657,6 +647,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         if (appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!navbarEnabled);
         }
+    }
+
+    private static boolean hasNavigationBar() {
+        boolean hasNavigationBar = false;
+        try {
+            IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
+            hasNavigationBar = windowManager.hasNavigationBar(Display.DEFAULT_DISPLAY);
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
+        }
+        return hasNavigationBar;
     }
 
     private static boolean isKeyDisablerSupported(Context context) {
