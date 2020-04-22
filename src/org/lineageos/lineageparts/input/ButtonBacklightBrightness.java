@@ -68,13 +68,13 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         setDialogLayoutResource(R.layout.button_backlight);
 
         /*
-        if (isKeyboardSupported()) {
+        if (isKeyboardSupported(context)) {
             mKeyboardBrightness = new BrightnessControl(
                     LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
         */
-        if (isButtonSupported()) {
+        if (isButtonSupported(context)) {
             boolean isSingleValue = !context.getResources().getBoolean(
                     com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
 
@@ -225,8 +225,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
     }
 
-    public boolean isButtonSupported() {
-        final Context context = getContext();
+    public static boolean isButtonSupported(Context context) {
         final Resources res = context.getResources();
         // All hardware keys besides volume and camera can possibly have a backlight
         boolean hasBacklightKey = DeviceUtils.hasHomeKey(context)
@@ -241,8 +240,8 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     }
 
     /*
-    public boolean isKeyboardSupported() {
-        return getContext().getResources().getInteger(
+    public static boolean isKeyboardSupported(Context context) {
+        return context.getResources().getInteger(
                 com.android.internal.R.integer.config_keyboardBrightnessSettingDefault) > 0;
     }
     */
