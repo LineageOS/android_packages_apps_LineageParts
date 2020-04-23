@@ -137,6 +137,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         mProfileManager = ProfileManager.getInstance(getActivity());
         // After confirming PreferenceScreen is available, we call super.
         super.onActivityCreated(savedInstanceState);
+
+        setDivider(null);
     }
 
     @Override
