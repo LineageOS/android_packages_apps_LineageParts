@@ -307,7 +307,6 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Hotspot Wi\u2011Fi portabel</string>
     <string name="toggleBluetooth">Bluetooth</string>
-    <string name="toggleGPS">GPS</string>
     <string name="toggleData">Koneksi data</string>
     <string name="toggleSync">Otomatis sinkronkan data</string>
     <string name="toggleNfc">NFC</string>

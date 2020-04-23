@@ -34,6 +34,7 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="search">Rechercher</string>
+    <string name="search_menu">Paramètres de recherche</string>
     <string name="disabled">Désactivé</string>
     <string name="enabled">Activé</string>
     <string name="privacy_settings_title">Confidentialité</string>
@@ -192,6 +193,7 @@
     <string name="disable_navkeys_title">Activer la barre de navigation à l\'écran</string>
     <string name="disable_navkeys_summary">Activer la barre de navigation à l\'écran et désactiver les touches physiques</string>
     <string name="navigation_bar_category">Barre de navigation</string>
+    <string name="navigation_bar_invert_layout_title">Inverser la disposition</string>
     <string name="navigation_bar_left_summary">Placer la barre de navigation du côté gauche de l\'écran en mode paysage</string>
     <string name="navigation_bar_arrow_keys_title">Afficher les flèches lors de la frappe</string>
     <string name="navigation_bar_arrow_keys_summary">Afficher les touches de curseur gauche et droite lors de la saisie. Remplace le changeur de mode de saisie.</string>
@@ -306,7 +308,6 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Point d\'accès Wi\u2011Fi</string>
     <string name="toggleBluetooth">Bluetooth</string>
-    <string name="toggleGPS">GPS</string>
     <string name="toggleData">Connexion aux données mobiles</string>
     <string name="toggleSync">Synchro automatique des données</string>
     <string name="toggleNfc">NFC</string>
