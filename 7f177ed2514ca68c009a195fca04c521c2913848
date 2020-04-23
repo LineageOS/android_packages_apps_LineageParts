@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6354a167_9276a50a",
+        "filename": "src/org/lineageos/lineageparts/utils/DeviceUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-04-23T07:11:42Z",
+      "side": 1,
+      "message": "make this a \"public static int getDeviceKeys(Context ctx)\",\nso all functions will collapse to\nreurn (getDeviceKeys(context) \u0026 MASK) !\u003d 0;",
+      "range": {
+        "startLine": 54,
+        "startChar": 8,
+        "endLine": 55,
+        "endChar": 85
+      },
+      "revId": "7f177ed2514ca68c009a195fca04c521c2913848",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
