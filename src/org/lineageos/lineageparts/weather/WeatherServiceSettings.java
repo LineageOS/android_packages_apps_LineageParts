@@ -96,9 +96,9 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.weather_settings);
 
         final PreferenceScreen ps = getPreferenceScreen();
-        mGeneralSettingsCategory = (PreferenceCategory) ps.findPreference(PREFERENCE_GENERAL);
-        mProvidersCategory = (PreferenceCategory) ps.findPreference(PREFERENCE_PROVIDERS);
-        mTemperatureUnit = (ListPreference) ps.findPreference(PREFERENCE_TEMP_UNIT);
+        mGeneralSettingsCategory = ps.findPreference(PREFERENCE_GENERAL);
+        mProvidersCategory = ps.findPreference(PREFERENCE_PROVIDERS);
+        mTemperatureUnit = ps.findPreference(PREFERENCE_TEMP_UNIT);
         mTemperatureUnit.setOnPreferenceChangeListener(this);
 
         watch(LineageSettings.Secure.getUriFor(LineageSettings.Secure.WEATHER_PROVIDER_SERVICE));
@@ -357,7 +357,7 @@ public class WeatherServiceSettings extends SettingsPreferenceFragment
 
         private void markAsActiveProvider() {
             // Check for current active provider
-            PreferenceCategory providersCategory = (PreferenceCategory) findPreferenceInHierarchy(
+            PreferenceCategory providersCategory = findPreferenceInHierarchy(
                     WeatherServiceSettings.PREFERENCE_PROVIDERS);
             if (providersCategory != null) {
                 final int count = providersCategory.getPreferenceCount();

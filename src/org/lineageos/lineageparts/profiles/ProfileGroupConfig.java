@@ -67,12 +67,12 @@ public class ProfileGroupConfig extends SettingsPreferenceFragment implements
             mProfileManager = ProfileManager.getInstance(getActivity());
             mProfileGroup = mProfile.getProfileGroup(uuid);
 
-            mRingerMode = (ListPreference) findPreference(KEY_RINGERMODE);
-            mSoundMode = (ListPreference) findPreference(KEY_SOUNDMODE);
-            mVibrateMode = (ListPreference) findPreference(KEY_VIBRATEMODE);
-            mLightsMode = (ListPreference) findPreference(KEY_LIGHTSMODE);
-            mRingTone = (ProfileRingtonePreference) findPreference(KEY_RINGTONE);
-            mSoundTone = (ProfileRingtonePreference) findPreference(KEY_SOUNDTONE);
+            mRingerMode = findPreference(KEY_RINGERMODE);
+            mSoundMode = findPreference(KEY_SOUNDMODE);
+            mVibrateMode = findPreference(KEY_VIBRATEMODE);
+            mLightsMode = findPreference(KEY_LIGHTSMODE);
+            mRingTone = findPreference(KEY_RINGTONE);
+            mSoundTone = findPreference(KEY_SOUNDTONE);
 
             mRingTone.setShowSilent(false);
             mSoundTone.setShowSilent(false);

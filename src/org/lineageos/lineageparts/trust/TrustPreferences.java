@@ -63,14 +63,13 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mSELinuxPref = findPreference("trust_selinux");
         mSecurityPatchesPref = findPreference("trust_security_patch");
         mEncryptionPref = findPreference("trust_encryption");
-        mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
-        mUsbRestrictorPref = (LineageSecureSettingSwitchPreference)
-                mToolsCategory.findPreference("trust_restrict_usb");
-        mSmsLimitPref = (ListPreference) mToolsCategory.findPreference("sms_security_check_limit");
+        mToolsCategory = findPreference("trust_category_tools");
+        mUsbRestrictorPref = mToolsCategory.findPreference("trust_restrict_usb");
+        mSmsLimitPref = mToolsCategory.findPreference("sms_security_check_limit");
 
-        mWarnScreen = (PreferenceCategory) findPreference("trust_category_warnings");
-        mWarnSELinuxPref = (SwitchPreference) mWarnScreen.findPreference("trust_warning_selinux");
-        mWarnKeysPref = (SwitchPreference) mWarnScreen.findPreference("trust_warning_keys");
+        mWarnScreen = findPreference("trust_category_warnings");
+        mWarnSELinuxPref = mWarnScreen.findPreference("trust_warning_selinux");
+        mWarnKeysPref = mWarnScreen.findPreference("trust_warning_keys");
 
         mSELinuxPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_selinux_explain));

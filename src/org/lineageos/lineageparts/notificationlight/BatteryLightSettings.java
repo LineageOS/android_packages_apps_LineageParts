@@ -91,16 +91,12 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        PreferenceGroup generalPrefs = (PreferenceGroup) prefSet.findPreference(GENERAL_SECTION);
+        PreferenceGroup generalPrefs = prefSet.findPreference(GENERAL_SECTION);
 
-        mLightEnabledPref =
-                (LineageSystemSettingSwitchPreference) prefSet.findPreference(LIGHT_ENABLED_PREF);
-        mPulseEnabledPref =
-                (LineageSystemSettingSwitchPreference) prefSet.findPreference(PULSE_ENABLED_PREF);
-        mBatteryBrightnessPref =
-                (BatteryBrightnessPreference) prefSet.findPreference(BRIGHTNESS_PREFERENCE);
-        mBatteryBrightnessZenPref =
-                (BatteryBrightnessZenPreference) prefSet.findPreference(BRIGHTNESS_ZEN_PREFERENCE);
+        mLightEnabledPref = prefSet.findPreference(LIGHT_ENABLED_PREF);
+        mPulseEnabledPref = prefSet.findPreference(PULSE_ENABLED_PREF);
+        mBatteryBrightnessPref = prefSet.findPreference(BRIGHTNESS_PREFERENCE);
+        mBatteryBrightnessZenPref = prefSet.findPreference(BRIGHTNESS_ZEN_PREFERENCE);
 
         mDefaultLowColor = res.getInteger(
                 com.android.internal.R.integer.config_notificationsBatteryLowARGB);
@@ -119,17 +115,17 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             setHasOptionsMenu(true);
 
             // Low, Medium and full color preferences
-            mLowColorPref = (ApplicationLightPreference) prefSet.findPreference(LOW_COLOR_PREF);
+            mLowColorPref = prefSet.findPreference(LOW_COLOR_PREF);
             mLowColorPref.setOnPreferenceChangeListener(this);
             mLowColorPref.setDefaultValues(mDefaultLowColor, 0, 0);
             mLowColorPref.setBrightness(mBatteryBrightness);
 
-            mMediumColorPref = (ApplicationLightPreference) prefSet.findPreference(MEDIUM_COLOR_PREF);
+            mMediumColorPref = prefSet.findPreference(MEDIUM_COLOR_PREF);
             mMediumColorPref.setOnPreferenceChangeListener(this);
             mMediumColorPref.setDefaultValues(mDefaultMediumColor, 0, 0);
             mMediumColorPref.setBrightness(mBatteryBrightness);
 
-            mFullColorPref = (ApplicationLightPreference) prefSet.findPreference(FULL_COLOR_PREF);
+            mFullColorPref = prefSet.findPreference(FULL_COLOR_PREF);
             mFullColorPref.setOnPreferenceChangeListener(this);
             mFullColorPref.setDefaultValues(mDefaultFullColor, 0, 0);
             mFullColorPref.setBrightness(mBatteryBrightness);
