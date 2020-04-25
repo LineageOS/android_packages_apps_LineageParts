@@ -60,13 +60,13 @@ public class DisplayRotation extends SettingsPreferenceFragment {
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        mAccelerometer = (SwitchPreference) findPreference(KEY_ACCELEROMETER);
+        mAccelerometer = findPreference(KEY_ACCELEROMETER);
         mAccelerometer.setPersistent(false);
 
-        mRotation0Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_0_PREF);
-        mRotation90Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_90_PREF);
-        mRotation180Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_180_PREF);
-        mRotation270Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_270_PREF);
+        mRotation0Pref = prefSet.findPreference(ROTATION_0_PREF);
+        mRotation90Pref = prefSet.findPreference(ROTATION_90_PREF);
+        mRotation180Pref = prefSet.findPreference(ROTATION_180_PREF);
+        mRotation270Pref = prefSet.findPreference(ROTATION_270_PREF);
 
         int mode = Settings.System.getInt(getContentResolver(),
                 Settings.System.ACCELEROMETER_ROTATION_ANGLES,

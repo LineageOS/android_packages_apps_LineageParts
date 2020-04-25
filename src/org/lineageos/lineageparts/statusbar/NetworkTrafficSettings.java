@@ -46,26 +46,22 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.network_traffic_settings);
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mNetTrafficMode = (DropDownPreference)
-                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_MODE);
+        mNetTrafficMode = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_MODE);
         mNetTrafficMode.setOnPreferenceChangeListener(this);
         int mode = LineageSettings.Secure.getInt(resolver,
                 LineageSettings.Secure.NETWORK_TRAFFIC_MODE, 0);
         mNetTrafficMode.setValue(String.valueOf(mode));
 
-        mNetTrafficAutohide = (LineageSecureSettingSwitchPreference)
-                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
+        mNetTrafficAutohide = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
-        mNetTrafficUnits = (DropDownPreference)
-                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_UNITS);
+        mNetTrafficUnits = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_UNITS);
         mNetTrafficUnits.setOnPreferenceChangeListener(this);
         int units = LineageSettings.Secure.getInt(resolver,
                 LineageSettings.Secure.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1);
         mNetTrafficUnits.setValue(String.valueOf(units));
 
-        mNetTrafficShowUnits = (LineageSecureSettingSwitchPreference)
-                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_SHOW_UNITS);
+        mNetTrafficShowUnits = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_SHOW_UNITS);
         mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
 
         updateEnabledStates(mode);

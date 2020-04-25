@@ -115,8 +115,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         PreferenceScreen prefSet = getPreferenceScreen();
         Resources resources = getResources();
 
-        PreferenceGroup mAdvancedPrefs = (PreferenceGroup) prefSet.findPreference(ADVANCED_SECTION);
-        PreferenceGroup mGeneralPrefs = (PreferenceGroup) prefSet.findPreference(GENERAL_SECTION);
+        PreferenceGroup mAdvancedPrefs = prefSet.findPreference(ADVANCED_SECTION);
+        PreferenceGroup mGeneralPrefs = prefSet.findPreference(GENERAL_SECTION);
 
         // Get the system defined default notification color
         mDefaultColor =
@@ -134,22 +134,20 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mMultiColorLed = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED);
 
-        mEnabledPref = (SystemSettingSwitchPreference)
-                findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE);
+        mEnabledPref = findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE);
         mEnabledPref.setOnPreferenceChangeListener(this);
 
-        mDefaultPref = (ApplicationLightPreference) findPreference(DEFAULT_PREF);
+        mDefaultPref = findPreference(DEFAULT_PREF);
 
-        mAutoGenerateColors = (LineageSystemSettingSwitchPreference)
-                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
+        mAutoGenerateColors = findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
 
         // Advanced light settings
-        mNotificationBrightnessPref = (NotificationBrightnessPreference)
+        mNotificationBrightnessPref =
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
-        mScreenOnLightsPref = (LineageSystemSettingSwitchPreference)
+        mScreenOnLightsPref =
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
-        mCustomEnabledPref = (LineageSystemSettingSwitchPreference)
+        mCustomEnabledPref =
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
         if (!mMultiColorLed && !mHALAdjustableBrightness) {
             removePreference(BRIGHTNESS_SECTION);
@@ -169,11 +167,11 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 || (!mLedCanPulse && !mMultiColorLed)) {
             removePreference(PHONE_SECTION);
         } else {
-            mCallPref = (ApplicationLightPreference) findPreference(MISSED_CALL_PREF);
+            mCallPref = findPreference(MISSED_CALL_PREF);
             mCallPref.setOnPreferenceChangeListener(this);
             mCallPref.setDefaultValues(mDefaultColor, mDefaultLedOn, mDefaultLedOff);
 
-            mVoicemailPref = (ApplicationLightPreference) findPreference(VOICEMAIL_PREF);
+            mVoicemailPref = findPreference(VOICEMAIL_PREF);
             mVoicemailPref.setOnPreferenceChangeListener(this);
             mVoicemailPref.setDefaultValues(mDefaultColor, mDefaultLedOn, mDefaultLedOff);
         }
@@ -181,7 +179,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         if (!mLedCanPulse && !mMultiColorLed) {
             removePreference(APPLICATION_SECTION);
         } else {
-            mApplicationPrefList = (PreferenceGroup) findPreference(APPLICATION_SECTION);
+            mApplicationPrefList = findPreference(APPLICATION_SECTION);
             mApplicationPrefList.setOrderingAsAdded(false);
         }
 
@@ -246,7 +244,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         }
 
         if (mLedCanPulse || mMultiColorLed) {
-            mApplicationPrefList = (PreferenceGroup) findPreference(APPLICATION_SECTION);
+            mApplicationPrefList = findPreference(APPLICATION_SECTION);
             mApplicationPrefList.setOrderingAsAdded(false);
         }
     }

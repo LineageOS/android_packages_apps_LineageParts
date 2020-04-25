@@ -90,9 +90,9 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.perf_profile_settings);
 
-        mPerfSeekBar = (SeekBarPreference) findPreference(KEY_PERF_SEEKBAR);
-        mAutoPowerSavePref = (ListPreference) findPreference(KEY_AUTO_POWER_SAVE);
-        mPowerSavePref = (SwitchPreference) findPreference(KEY_POWER_SAVE);
+        mPerfSeekBar = findPreference(KEY_PERF_SEEKBAR);
+        mAutoPowerSavePref = findPreference(KEY_AUTO_POWER_SAVE);
+        mPowerSavePref = findPreference(KEY_POWER_SAVE);
 
         mPowerManager = getActivity().getSystemService(PowerManager.class);
         mPerf = PerformanceManager.getInstance(getActivity());
