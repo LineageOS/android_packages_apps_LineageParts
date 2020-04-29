@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,6 +29,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.provider.Settings.Global;
+import android.util.ArraySet;
 import android.util.TypedValue;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Toast;
@@ -39,13 +40,15 @@ import androidx.preference.SwitchPreference;
 
 import org.lineageos.lineageparts.PartsUpdater;
 import org.lineageos.lineageparts.R;
-import org.lineageos.lineageparts.widget.SeekBarPreference;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.Searchable;
+import org.lineageos.lineageparts.widget.SeekBarPreference;
 import org.lineageos.internal.graphics.drawable.StopMotionVectorDrawable;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Set;
 
 import lineageos.power.PerformanceManager;
 import lineageos.power.PerformanceProfile;
@@ -56,7 +59,7 @@ import lineageos.providers.LineageSettings;
 import static lineageos.power.PerformanceManager.PROFILE_POWER_SAVE;
 
 public class PerfProfileSettings extends SettingsPreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener, Searchable {
 
     private static final String KEY_PERF_PROFILE_CATEGORY = "perf_profile_category";
     private static final String KEY_AUTO_POWER_SAVE  = "auto_power_save";
@@ -288,6 +291,25 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
                         profile.getName());
             }
             return summary.replace("\\n", System.getProperty("line.separator"));
+        }
+    };
+
+    public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+
+        @Override
+        public Set<String> getNonIndexableKeys(Context context) {
+            final Set<String> result = new ArraySet<String>();
+
+            final PerformanceManager perfManager = PerformanceManager.getInstance(context);
+            final List<PerformanceProfile> profiles =
+                    new ArrayList<>(perfManager.getPowerProfiles());
+
+            if (profiles.size() == 0) {
+                result.add(KEY_PERF_PROFILE_CATEGORY);
+                result.add(KEY_PERF_SEEKBAR);
+            }
+            return result;
         }
     };
 }
