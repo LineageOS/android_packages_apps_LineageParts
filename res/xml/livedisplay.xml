@@ -19,43 +19,38 @@
         android:key="livedisplay"
         android:title="@*lineageos.platform:string/live_display_title">
 
-    <PreferenceCategory
-        android:key="live_display_options">
+    <!-- Color profile -->
+    <ListPreference
+            android:key="live_display_color_profile"
+            android:title="@string/live_display_color_profile_title"
+            android:persistent="false" />
 
-        <!-- Color profile -->
-        <ListPreference
-                android:key="live_display_color_profile"
-                android:title="@string/live_display_color_profile_title"
-                android:persistent="false" />
+    <ListPreference
+            android:key="live_display"
+            android:title="@string/live_display_mode"
+            android:persistent="false" />
 
-        <ListPreference
-                android:key="live_display"
-                android:title="@string/live_display_mode"
-                android:persistent="false" />
+    <!-- Manual temperature selection -->
+    <org.lineageos.lineageparts.livedisplay.DisplayTemperature
+            android:key="live_display_color_temperature"
+            android:title="@string/live_display_color_temperature_title"
+            android:dialogTitle="@*lineageos.platform:string/live_display_title"
+            android:persistent="false" />
 
-        <!-- Manual temperature selection -->
-        <org.lineageos.lineageparts.livedisplay.DisplayTemperature
-                android:key="live_display_color_temperature"
-                android:title="@string/live_display_color_temperature_title"
-                android:dialogTitle="@*lineageos.platform:string/live_display_title"
-                android:persistent="false" />
+    <!-- Outdoor mode / SRE -->
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="display_auto_outdoor_mode"
+            android:title="@string/live_display_outdoor_mode_title"
+            android:summary="@string/live_display_outdoor_mode_summary"
+            android:defaultValue="@*lineageos.platform:bool/config_defaultAutoOutdoorMode" />
 
-        <!-- Outdoor mode / SRE -->
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-                android:key="display_auto_outdoor_mode"
-                android:title="@string/live_display_outdoor_mode_title"
-                android:summary="@string/live_display_outdoor_mode_summary"
-                android:defaultValue="@*lineageos.platform:bool/config_defaultAutoOutdoorMode" />
-
-        <!-- Reading mode -->
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-                android:key="display_reading_mode"
-                android:title="@string/live_display_reading_mode_title"
-                android:summary="@string/live_display_reading_mode_summary"
-                android:defaultValue="false"
-                android:persistent="false" />
-
-    </PreferenceCategory>
+    <!-- Reading mode -->
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="display_reading_mode"
+            android:title="@string/live_display_reading_mode_title"
+            android:summary="@string/live_display_reading_mode_summary"
+            android:defaultValue="false"
+            android:persistent="false" />
 
     <PreferenceCategory
             android:key="advanced"
