@@ -28,6 +28,7 @@ import android.util.Log;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.util.ArrayUtils;
@@ -67,6 +68,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
 
     private static final String TAG = "LiveDisplay";
+
+    private static final String KEY_SCREEN_LIVE_DISPLAY = "livedisplay";
 
     private static final String KEY_CATEGORY_LIVE_DISPLAY = "live_display_options";
     private static final String KEY_CATEGORY_ADVANCED = "advanced";
@@ -134,6 +137,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         mConfig = mLiveDisplayManager.getConfig();
 
         addPreferencesFromResource(R.xml.livedisplay);
+
+        PreferenceScreen liveDisplayPrefsScreen = findPreference(KEY_SCREEN_LIVE_DISPLAY);
 
         PreferenceCategory liveDisplayPrefs = findPreference(KEY_CATEGORY_LIVE_DISPLAY);
         PreferenceCategory advancedPrefs = findPreference(KEY_CATEGORY_ADVANCED);
@@ -225,6 +230,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             mReadingMode = null;
         } else {
             mReadingMode.setOnPreferenceChangeListener(this);
+        }
+
+        if (liveDisplayPrefs.getPreferenceCount() == 0) {
+            liveDisplayPrefsScreen.removePreference(liveDisplayPrefs);
         }
 
         mLowPower = findPreference(KEY_LIVE_DISPLAY_LOW_POWER);
