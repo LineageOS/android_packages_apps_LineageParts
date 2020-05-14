@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,6 +50,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.widget.DialogCreatable;
 import org.lineageos.lineageparts.widget.FloatingActionButton;
+import org.lineageos.lineageparts.widget.HighlightablePreferenceGroupAdapter;
 import org.lineageos.lineageparts.widget.LayoutPreference;
 
 import java.util.Arrays;
@@ -263,8 +265,11 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     }
 
     public void highlightPreferenceIfNeeded() {
-        if (isAdded() && !mPreferenceHighlighted &&!TextUtils.isEmpty(mPreferenceKey)) {
-            highlightPreference(mPreferenceKey);
+        if (!isAdded()) {
+            return;
+        }
+        if (mAdapter != null) {
+            mAdapter.requestHighlight(getView(), getListView());
         }
     }
 
@@ -362,24 +367,6 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
         return mEmptyView;
     }
 
-    /**
-     * Return a valid ListView position or -1 if none is found
-     */
-    private int canUseListViewForHighLighting(String key) {
-        if (getListView() == null) {
-            return -1;
-        }
-
-        RecyclerView listView = getListView();
-        RecyclerView.Adapter adapter = listView.getAdapter();
-
-        if (adapter != null && adapter instanceof PreferenceGroupAdapter) {
-            return findListPositionFromKey((PreferenceGroupAdapter) adapter, key);
-        }
-
-        return -1;
-    }
-
     @Override
     public RecyclerView.LayoutManager onCreateLayoutManager() {
         mLayoutManager = new LinearLayoutManager(getContext());
@@ -388,7 +375,12 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
 
     @Override
     protected RecyclerView.Adapter onCreateAdapter(PreferenceScreen preferenceScreen) {
-        mAdapter = new HighlightablePreferenceGroupAdapter(preferenceScreen);
+        final Bundle arguments = getArguments();
+        mAdapter = new HighlightablePreferenceGroupAdapter(preferenceScreen,
+                arguments == null
+                        ? null
+                        : arguments.getString(PartsActivity.EXTRA_FRAGMENT_ARG_KEY),
+                mPreferenceHighlighted);
         return mAdapter;
     }
 
@@ -420,21 +412,6 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
 
     protected int getCachedCount() {
         return mPreferenceCache.size();
-    }
-
-    private void highlightPreference(String key) {
-        final int position = canUseListViewForHighLighting(key);
-        if (position >= 0) {
-            mPreferenceHighlighted = true;
-            mLayoutManager.scrollToPosition(position);
-
-            getView().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mAdapter.highlight(position);
-                }
-            }, DELAY_HIGHLIGHT_DURATION_MILLIS);
-        }
     }
 
     private int findListPositionFromKey(PreferenceGroupAdapter adapter, String key) {
@@ -774,36 +751,6 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             Log.w(TAG,
                     "Parent isn't PartsActivity! (name: " + fragmentClass + ")");
             return false;
-        }
-    }
-
-    public static class HighlightablePreferenceGroupAdapter extends PreferenceGroupAdapter {
-
-        private int mHighlightPosition = -1;
-
-        public HighlightablePreferenceGroupAdapter(PreferenceGroup preferenceGroup) {
-            super(preferenceGroup);
-        }
-
-        public void highlight(int position) {
-            mHighlightPosition = position;
-            notifyDataSetChanged();
-        }
-
-        @Override
-        public void onBindViewHolder(PreferenceViewHolder holder, int position) {
-            super.onBindViewHolder(holder, position);
-            if (position == mHighlightPosition) {
-                View v = holder.itemView;
-                if (v.getBackground() != null) {
-                    final int centerX = v.getWidth() / 2;
-                    final int centerY = v.getHeight() / 2;
-                    v.getBackground().setHotspot(centerX, centerY);
-                }
-                v.setPressed(true);
-                v.setPressed(false);
-                mHighlightPosition = -1;
-            }
         }
     }
 }
