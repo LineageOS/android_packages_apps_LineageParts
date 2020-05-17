@@ -99,6 +99,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             "torch_long_press_power_gesture";
     private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT =
             "torch_long_press_power_timeout";
+    private static final String KEY_CLICK_PARTIAL_SCREENSHOT =
+            "click_partial_screenshot";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -110,6 +112,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
     private static final String CATEGORY_NAVBAR = "navigation_bar_category";
+    private static final String CATEGORY_EXTRAS = "extras_category";
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -178,6 +181,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         final PreferenceCategory appSwitchCategory = prefScreen.findPreference(CATEGORY_APPSWITCH);
         final PreferenceCategory volumeCategory = prefScreen.findPreference(CATEGORY_VOLUME);
         final PreferenceCategory cameraCategory = prefScreen.findPreference(CATEGORY_CAMERA);
+        final PreferenceCategory extrasCategory = prefScreen.findPreference(CATEGORY_EXTRAS);
 
         // Power button ends calls.
         mPowerEndCall = findPreference(KEY_POWER_END_CALL);
@@ -389,6 +393,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             }
         } else {
             prefScreen.removePreference(volumeCategory);
+            extrasCategory.removePreference(findPreference(KEY_CLICK_PARTIAL_SCREENSHOT));
         }
 
         // Only show the navigation bar category on devices that have a navigation bar
@@ -828,6 +833,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 result.add(KEY_VOLUME_MUSIC_CONTROLS);
                 result.add(KEY_VOLUME_PANEL_ON_LEFT);
                 result.add(KEY_VOLUME_WAKE_SCREEN);
+                result.add(KEY_CLICK_PARTIAL_SCREENSHOT);
             } else if (!DeviceUtils.canWakeUsingVolumeKeys(context)) {
                 result.add(KEY_VOLUME_WAKE_SCREEN);
             }
