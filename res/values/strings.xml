@@ -213,6 +213,8 @@
     <string name="home_answer_call_summary">Answer incoming calls by pressing the home button</string>
     <string name="extras_title">Extras</string>
     <string name="additional_buttons_title">Additional buttons</string>
+    <string name="click_partial_screenshot_title">Click to partial screenshot</string>
+    <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
 
     <!-- Key backlight -->
     <string name="button_backlight_title">Backlight</string>
