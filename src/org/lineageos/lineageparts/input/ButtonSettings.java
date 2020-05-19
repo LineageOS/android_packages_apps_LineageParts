@@ -87,6 +87,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_VOLUME_ANSWER_CALL = "volume_answer_call";
     private static final String KEY_DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAVIGATION_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
+    private static final String KEY_NAVIGATION_HIDE_HINT = "navigation_bar_hide_hint";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
     private static final String KEY_NAVIGATION_APP_SWITCH_LONG_PRESS =
@@ -129,6 +130,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mVolumePanelOnLeft;
     private SwitchPreference mDisableNavigationKeys;
     private SwitchPreference mNavigationArrowKeys;
+    private SwitchPreference mNavigationHideHint;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
@@ -220,6 +222,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
         // Navigation bar arrow keys while typing
         mNavigationArrowKeys = findPreference(KEY_NAVIGATION_ARROW_KEYS);
+
+        // Navigation bar hide hint bar in full gestural mode
+        mNavigationHideHint = findPreference(KEY_NAVIGATION_HIDE_HINT);
 
         // Navigation bar home long press
         mNavigationHomeLongPressAction = initList(KEY_NAVIGATION_HOME_LONG_PRESS,
@@ -617,6 +622,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             if (force || navbarEnabled) {
                 if (DeviceUtils.isEdgeToEdgeEnabled(getContext())) {
                     mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
+                    mNavigationPreferencesCat.addPreference(mNavigationHideHint);
 
                     mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
@@ -628,12 +634,14 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
                     mNavigationPreferencesCat.removePreference(mNavigationAppSwitchLongPressAction);
                     mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
+                    mNavigationPreferencesCat.removePreference(mNavigationHideHint);
                 } else {
                     mNavigationPreferencesCat.addPreference(mNavigationHomeLongPressAction);
                     mNavigationPreferencesCat.addPreference(mNavigationHomeDoubleTapAction);
                     mNavigationPreferencesCat.addPreference(mNavigationAppSwitchLongPressAction);
 
                     mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
+                    mNavigationPreferencesCat.removePreference(mNavigationHideHint);
                 }
             }
         }
