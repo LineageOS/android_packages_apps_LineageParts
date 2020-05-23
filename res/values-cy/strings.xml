@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Llecyn Wi\u2011Fi cludadwy</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Lleoliad</string>
     <string name="toggleData">Cysylltiad data</string>
     <string name="toggleSync">Cysoni data yn awtomatig</string>
     <string name="toggleNfc">Cyfathrebiad Maes Cyfagos (NFC)</string>

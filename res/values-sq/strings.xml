@@ -200,6 +200,7 @@
     <string name="navigation_bar_home_long_press_title">Veprimi kur mban shtypur butonin Home</string>
     <string name="navigation_bar_home_double_tap_title">Shtypja dy herë e butonit Home</string>
     <string name="navigation_bar_app_switch_long_press_title">Veprimi kur shtyp gjatë butonin Të Fundit</string>
+    <string name="navigation_bar_edge_long_swipe_title">Veprimi i rrëshqitjes nga anët e ekranit</string>
     <string name="power_menu_title">Menuja e energjisë</string>
     <string name="power_menu_screenshot_title">Foto e ekranit</string>
     <string name="power_menu_screenshot_summary">Mbaje shtypur për foto të pjesshme të ekranit</string>
@@ -308,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Hotspot Wi\u2011Fi Portabël</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Vendndodhja</string>
     <string name="toggleData">Lidhja me internetin</string>
     <string name="toggleSync">Sinkronizim automatik i të dhënave</string>
     <string name="toggleNfc">NFC</string>
@@ -445,6 +447,7 @@
     <string name="auto_power_save_never">Kurrë</string>
     <string name="long_screen_settings_title">Aplikacione që shfaqen në gjithë ekranin</string>
     <string name="long_screen_settings_summary">Detyro aplikacionet e vjetra të përdorin dimension me ekran të plotë</string>
+    <string name="long_screen_settings_no_apps">Nuk ka aplikacione</string>
     <string name="charging_sounds_settings_title">Tingujt e karikimit</string>
     <string name="charging_sounds_enabled_title">Aktivizo</string>
     <string name="charging_sounds_enabled_summary">Luaj një tingull gjatë lidhjes apo shpëputjes me një burim energjie</string>
@@ -461,6 +464,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Rrëshqit një gisht poshtë</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Rrëshqit një gisht majtas</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Rrëshqit një gisht djathtas</string>
+    <string name="touchscreen_gesture_single_tap_title">Një prekje</string>
     <string name="touchscreen_gesture_up_arrow_title">Vizato një \"Λ\"</string>
     <string name="touchscreen_gesture_down_arrow_title">Vizato një \"V\"</string>
     <string name="touchscreen_gesture_left_arrow_title">Vizato një \"&lt;\"</string>

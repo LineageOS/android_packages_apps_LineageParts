@@ -200,6 +200,7 @@
     <string name="navigation_bar_home_long_press_title">เมื่อกดปุ่มโฮมค้าง</string>
     <string name="navigation_bar_home_double_tap_title">เมื่อกดปุ่มโฮม2ครั้ง</string>
     <string name="navigation_bar_app_switch_long_press_title">เมื่อกดปุ่มแอปล่าสุดค้าง</string>
+    <string name="navigation_bar_edge_long_swipe_title">ท่าทางการปัดยาวจากขอบ</string>
     <string name="power_menu_title">ปุ่มเปิด/ปิดเครื่อง</string>
     <string name="power_menu_screenshot_title">ถ่ายภาพหน้าจอ</string>
     <string name="power_menu_screenshot_summary">กดค้างเพื่อถ่ายรูปหน้าจอบางส่วน</string>
@@ -307,6 +308,7 @@
     <string name="profile_brightness_override_checkbox_label">แทนที่ความสว่าง</string>
     <string name="toggleWifiAp">ฮอตสปอต \u2011 แบบพกพา</string>
     <string name="toggleBluetooth">บลู​ทู​ธ</string>
+    <string name="toggleLocation">ตำแหน่ง</string>
     <string name="toggleData">การเชื่อมต่อข้อมูล</string>
     <string name="toggleSync">ซิงค์ข้อมูลอัตโนมัติ</string>
     <string name="toggleNfc">NFC</string>

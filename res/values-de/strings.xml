@@ -309,6 +309,7 @@
     <string name="toggleWifi">WLAN</string>
     <string name="toggleWifiAp">Mobiler WLAN-Hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Standort</string>
     <string name="toggleData">Datenverbindung</string>
     <string name="toggleSync">Daten automatisch synchronisieren</string>
     <string name="toggleNfc">NFC</string>

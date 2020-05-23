@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Portable Wi\u2011Fi hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Location</string>
     <string name="toggleData">Data connection</string>
     <string name="toggleSync">Auto-sync data</string>
     <string name="toggleNfc">NFC</string>

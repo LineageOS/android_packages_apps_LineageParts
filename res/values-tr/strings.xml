@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Taşınabilir Wi\u2011Fi bağlantı noktası</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Konum</string>
     <string name="toggleData">Veri bağlantısı</string>
     <string name="toggleSync">Verileri otomatik senk. et</string>
     <string name="toggleNfc">NFC</string>

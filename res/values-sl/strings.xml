@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Prenosna dostopna točka Wi\u2011Fi</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Lokacija</string>
     <string name="toggleData">Podatkovna povezava</string>
     <string name="toggleSync">Sam. sinhroniziraj podatke</string>
     <string name="toggleNfc">NFC</string>

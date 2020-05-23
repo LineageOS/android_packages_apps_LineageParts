@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">便携式 Wi\u2011Fi 热点</string>
     <string name="toggleBluetooth">蓝牙</string>
+    <string name="toggleLocation">位置</string>
     <string name="toggleData">数据连接</string>
     <string name="toggleSync">自动同步数据</string>
     <string name="toggleNfc">NFC</string>

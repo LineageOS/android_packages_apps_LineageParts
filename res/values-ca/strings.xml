@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Punt d\'accés Wi\u2011Fi portàtil</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Ubicació</string>
     <string name="toggleData">Connexió de dades</string>
     <string name="toggleSync">Sincronització automàtica de dades</string>
     <string name="toggleNfc">NFC</string>
