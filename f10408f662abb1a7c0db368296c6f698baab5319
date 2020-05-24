@@ -45,6 +45,30 @@
       "revId": "f10408f662abb1a7c0db368296c6f698baab5319",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df3635a5_94aed4cb",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-05-24T20:04:38Z",
+      "side": 1,
+      "message": "Move mClickPartialScreenshot \u003d prefScreen.findPreference(KEY_CLICK_PARTIAL_SCREENSHOT); outside of the \"if (hasVolumeKeys)\" and then do\n\nif (extrasCategory.getPreferenceCount() \u003d\u003d 0) {\n    extrasCategory.removePreference(mClickPartialScreenshot);\n}",
+      "parentUuid": "49135c87_bfbeb907",
+      "range": {
+        "startLine": 404,
+        "startChar": 12,
+        "endLine": 404,
+        "endChar": 101
+      },
+      "revId": "f10408f662abb1a7c0db368296c6f698baab5319",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
