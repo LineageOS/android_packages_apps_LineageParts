@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9475183f_ddd6b914",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-05-24T19:57:03Z",
+      "side": 1,
+      "message": "Default to 1 also here?",
+      "range": {
+        "startLine": 397,
+        "startChar": 91,
+        "endLine": 397,
+        "endChar": 92
+      },
+      "revId": "f10408f662abb1a7c0db368296c6f698baab5319",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49135c87_bfbeb907",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-05-24T19:57:03Z",
+      "side": 1,
+      "message": "You can\u0027t really remove extras category just based on the volume keys existence. \"Additional buttons\" is a preference added by some devices and is part of that preference category too.",
+      "range": {
+        "startLine": 404,
+        "startChar": 12,
+        "endLine": 404,
+        "endChar": 101
+      },
+      "revId": "f10408f662abb1a7c0db368296c6f698baab5319",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
