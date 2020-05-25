@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "dc94f4dd_6b7f00ee",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 14934
+      },
+      "writtenOn": "2020-05-25T09:22:11Z",
+      "side": 1,
+      "message": "ack.",
+      "parentUuid": "9475183f_ddd6b914",
+      "range": {
+        "startLine": 397,
+        "startChar": 91,
+        "endLine": 397,
+        "endChar": 92
+      },
+      "revId": "f10408f662abb1a7c0db368296c6f698baab5319",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "49135c87_bfbeb907",
         "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
         "patchSetId": 1
@@ -60,6 +84,30 @@
       "side": 1,
       "message": "Move mClickPartialScreenshot \u003d prefScreen.findPreference(KEY_CLICK_PARTIAL_SCREENSHOT); outside of the \"if (hasVolumeKeys)\" and then do\n\nif (extrasCategory.getPreferenceCount() \u003d\u003d 0) {\n    extrasCategory.removePreference(mClickPartialScreenshot);\n}",
       "parentUuid": "49135c87_bfbeb907",
+      "range": {
+        "startLine": 404,
+        "startChar": 12,
+        "endLine": 404,
+        "endChar": 101
+      },
+      "revId": "f10408f662abb1a7c0db368296c6f698baab5319",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e64c1dd5_fea65c0c",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 14934
+      },
+      "writtenOn": "2020-05-25T09:22:11Z",
+      "side": 1,
+      "message": "No, this doesn\u0027t remove the extras category. To do that: \nprefScreen.removePreference(extrasCategory);\nThis one (extrasCategory.removePreference) only removes a option from the category and I think it makes sense to make it disappear when the volume keys are not present.",
+      "parentUuid": "df3635a5_94aed4cb",
       "range": {
         "startLine": 404,
         "startChar": 12,
