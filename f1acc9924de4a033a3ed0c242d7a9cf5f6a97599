@@ -22,6 +22,30 @@
       "revId": "f1acc9924de4a033a3ed0c242d7a9cf5f6a97599",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "82cf901c_36b0a45a",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallAppInfoLoader.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-06-04T22:00:24Z",
+      "side": 1,
+      "message": "Agree.  I also have a local change to hide system components (ie show apps only).  Will add both changes.",
+      "parentUuid": "6a034419_3cc0ab9f",
+      "range": {
+        "startLine": 100,
+        "startChar": 0,
+        "endLine": 104,
+        "endChar": 47
+      },
+      "revId": "f1acc9924de4a033a3ed0c242d7a9cf5f6a97599",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
