@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8369570_9eeb51ac",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2020-06-05T18:43:58Z",
+      "side": 1,
+      "message": "final Intent i \u003d new Intent(Settings.ACTION_IGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS,\n                Uri.fromParts(\"package\", appInfo.getPackageName(), null));",
+      "revId": "892a68e26b04c311fa4a42487e7649a76bdc7bf7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
