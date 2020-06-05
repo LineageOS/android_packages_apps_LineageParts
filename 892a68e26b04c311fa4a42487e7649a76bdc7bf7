@@ -16,6 +16,24 @@
       "revId": "892a68e26b04c311fa4a42487e7649a76bdc7bf7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2f284e75_14d9f1a7",
+        "filename": "src/org/lineageos/lineageparts/firewall/FirewallPreferences.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-06-05T21:36:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c8369570_9eeb51ac",
+      "revId": "892a68e26b04c311fa4a42487e7649a76bdc7bf7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
