@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f2f5668a_d2ff0699",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 535,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-06-06T07:46:13Z",
+      "side": 1,
+      "message": "I think translations should be done via crowding.",
+      "revId": "88c0a9925414309a80464293c3f546cafac84c99",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
