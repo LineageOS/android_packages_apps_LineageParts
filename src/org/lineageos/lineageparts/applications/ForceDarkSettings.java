@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2018-2020 The LineageOS Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,41 +15,40 @@
  */
 package org.lineageos.lineageparts.applications;
 
-import android.os.Build;
 import android.os.Bundle;
 
 import com.android.settingslib.applications.ApplicationsState;
 
-import org.lineageos.internal.applications.LongScreen;
+import org.lineageos.internal.applications.ForceDark;
 
-public class LongScreenSettings extends ApplicationToggleSettings {
-
-    private LongScreen mLongScreen;
+public class ForceDarkSettings extends ApplicationToggleSettings {
+    private ForceDark mForceDark;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mLongScreen = new LongScreen(getContext());
+        mForceDark = new ForceDark(getContext());
     }
 
     @Override
     boolean shouldShowApplication(ApplicationsState.AppEntry entry) {
-        return entry.info.targetSdkVersion < Build.VERSION_CODES.O;
+        // Show all apps
+        return true;
     }
 
     @Override
     void applicationSelectionChanged(ApplicationsState.AppEntry entry, boolean selected) {
         if (selected) {
-            mLongScreen.addApp(entry.info.packageName);
+            mForceDark.addApp(entry.info.packageName);
         } else {
-            mLongScreen.removeApp(entry.info.packageName);
+            mForceDark.removeApp(entry.info.packageName);
         }
     }
 
     @Override
     boolean isApplicationSelected(ApplicationsState.AppEntry entry) {
-        return mLongScreen.shouldForceLongScreen(entry.info.packageName);
+        return mForceDark.shouldForceDarkTheme(entry.info.packageName);
     }
 
 }
