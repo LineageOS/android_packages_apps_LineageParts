@@ -44,6 +44,12 @@
           android:fragment="org.lineageos.lineageparts.contributors.ContributorsCloudFragment"
           lineage:xmlRes="@xml/contributors_cloud" />
 
+    <part android:key="force_dark_settings"
+          android:title="@string/force_dark_settings_title"
+          android:summary="@string/force_dark_settings_summary"
+          android:fragment="org.lineageos.lineageparts.applications.ForceDarkSettings"
+          lineage:xmlRes="@xml/force_dark_prefs" />
+
     <part android:key="livedisplay"
           android:title="@*lineageos.platform:string/live_display_title"
           android:summary="@string/live_display_summary"
