@@ -57,7 +57,7 @@
     <string name="pulse_speed_normal">Обычный</string>
     <string name="pulse_speed_slow">Медленно</string>
     <string name="pulse_speed_very_slow">Очень медленно</string>
-    <string name="light_brightness_title">Уровни яркости</string>
+    <string name="light_brightness_title">Уровень яркости</string>
     <string name="light_brightness_normal">Стандартный</string>
     <string name="light_brightness_zen">Не беспокоить</string>
     <string name="battery_light_title">Индикация батареи</string>

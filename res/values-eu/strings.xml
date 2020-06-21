@@ -441,7 +441,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="perf_profile_fail_toast">Errendimendu profila ez dago eskuragarri une honetan</string>
     <string name="power_save_category_title">Bateria aurreztea</string>
     <string name="power_save_title">Muturreko energia aurreztea</string>
-    <string name="power_save_summary">Mugatu gailuaren errendimendua eta bigarren planoko jarduera energia aurrezteko</string>
+    <string name="power_save_summary">Murriztu gailuaren errendimendua eta bigarren planoko jarduera energia aurrezteko</string>
     <string name="auto_power_save_title">Energia aurrezle automatikoa</string>
     <string name="auto_power_save_summary_on">Gaitu energia aurrezteko modua automatikoki bateriak %s duenean</string>
     <string name="auto_power_save_summary_off">Ez gaitu energia aurrezteko modua automatikoki</string>
@@ -519,7 +519,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="trust_onboarding_description">Trust-ek zure gailua seguru mantentzen eta zure pribatutasuna babesten laguntzen dizu.\nTrust ikonoa orriaren edukian egiaztatu direnean agertuko da besterik ez.</string>
     <string name="trust_onboarding_learn_more">Ikasi gehiago</string>
     <string name="trust_onboarding_done">Ulertu dut</string>
-    <string name="trust_restrict_usb_title">Babestu USB-a</string>
+    <string name="trust_restrict_usb_title">Murriztu USB</string>
     <string name="trust_restrict_usb_summary">Desgaitu USB gailu berriak gailua blokeatuta dagoenean</string>
     <string name="sms_security_check_limit_title">SMS mezuen muga</string>
     <string name="sms_security_check_limit_summary">Aplikazioek %s mezu bidali ditzakete minutu batean berrespena eskatu aurretik</string>

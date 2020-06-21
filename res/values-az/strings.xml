@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Daşına bilən Wi\u2011Fi giriş nöqtəsi</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Yerləşmə</string>
     <string name="toggleData">Verilənlər bağlantısı</string>
     <string name="toggleSync">Verilənləri avto-eyniləşdirmə</string>
     <string name="toggleNfc">NFC</string>

@@ -307,6 +307,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Hotspot Wi\u2011Fi portabel</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Lokasi</string>
     <string name="toggleData">Koneksi data</string>
     <string name="toggleSync">Otomatis sinkronkan data</string>
     <string name="toggleNfc">NFC</string>
@@ -448,6 +449,7 @@
     <string name="auto_power_save_never">Jangan pernah</string>
     <string name="long_screen_settings_title">Aplikasi layar penuh</string>
     <string name="long_screen_settings_summary">Paksa aplikasi lawas untuk menggunakan rasio aspek layar penuh</string>
+    <string name="long_screen_settings_no_apps">Tidak ada aplikasi</string>
     <string name="charging_sounds_settings_title">Suara pengisian daya</string>
     <string name="charging_sounds_enabled_title">Hidupkan</string>
     <string name="charging_sounds_enabled_summary">Putar suara peringatan saat menghubungkan atau melepaskan sumber daya</string>

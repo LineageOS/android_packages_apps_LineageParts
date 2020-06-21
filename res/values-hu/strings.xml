@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Hordozható Wi\u2011Fi hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Helymeghatározás</string>
     <string name="toggleData">Adatkapcsolat</string>
     <string name="toggleSync">Szinkronizálás</string>
     <string name="toggleNfc">NFC</string>
