@@ -496,6 +496,10 @@
     <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
     <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
 
+    <!-- Status bar privacy indicators -->
+    <string name="status_bar_show_privacy_indicators_title">Statusbar privacy indicators</string>
+    <string name="status_bar_show_privacy_indicators_summary">Show privacy indicators on statusbar</string>
+
     <!-- Protected apps -->
     <string name="protected_apps_manager_title">Protected apps</string>
     <string name="protected_apps_manager_summary">Manage which apps are hidden behind a secure lock</string>

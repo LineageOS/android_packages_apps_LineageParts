@@ -18,6 +18,7 @@ package org.lineageos.lineageparts.statusbar;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.text.TextUtils;
@@ -27,6 +28,7 @@ import android.view.View;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
@@ -52,6 +54,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+    private static final String STATUS_BAR_SHOW_PRIVACY_INDICATORS = "status_bar_show_privacy_indicators";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
 
@@ -70,6 +73,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private PreferenceCategory mStatusBarBatteryCategory;
     private PreferenceCategory mStatusBarClockCategory;
     private PreferenceScreen mNetworkTrafficPref;
+
+    private SwitchPreference mShowStatusBarPrivacyIndicators;
 
     private boolean mHasNotch;
 
@@ -95,6 +100,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBattery = findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBattery.setOnPreferenceChangeListener(this);
         enableStatusBarBatteryDependents(mStatusBarBattery.getIntValue(2));
+        mShowStatusBarPrivacyIndicators = findPreference(STATUS_BAR_SHOW_PRIVACY_INDICATORS);
 
         mStatusBarBatteryCategory = getPreferenceScreen().findPreference(CATEGORY_BATTERY);
 
@@ -166,12 +172,21 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             case STATUS_BAR_BATTERY_STYLE:
                 enableStatusBarBatteryDependents(value);
                 break;
+            case STATUS_BAR_SHOW_PRIVACY_INDICATORS:
+                updateStatusbarPrivacyIndicators(value);
+                break;
         }
         return true;
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
         mStatusBarBatteryShowPercent.setEnabled(batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
+    }
+
+    private void updateStatusbarPrivacyIndicators(int value) {
+        LineageSettings.Secure.putIntForUser(getActivity().getContentResolver(),
+                LineageSettings.System.STATUS_BAR_SHOW_PRIVACY_INDICATORS,
+                mShowStatusBarPrivacyIndicators.isChecked() ? 1 : 0, UserHandle.USER_CURRENT);
     }
 
     private void updateQuickPulldownSummary(int value) {
