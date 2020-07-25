@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a1aeda0_d9d64f04",
+        "filename": "res/xml/status_bar_settings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 19936
+      },
+      "writtenOn": "2020-07-25T09:52:19Z",
+      "side": 1,
+      "message": "Why not LineageSystemSettingSwitchPreference?",
+      "range": {
+        "startLine": 55,
+        "startChar": 9,
+        "endLine": 55,
+        "endChar": 25
+      },
+      "revId": "33e3099f7b6073674c25cee3ffe64ba2a805ad9a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
