@@ -22,6 +22,47 @@
       "revId": "33e3099f7b6073674c25cee3ffe64ba2a805ad9a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80fd88e0_d72f2d94",
+        "filename": "res/xml/status_bar_settings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-07-25T09:56:58Z",
+      "side": 1,
+      "message": "+1 and thus you can drop java part",
+      "parentUuid": "5a1aeda0_d9d64f04",
+      "range": {
+        "startLine": 55,
+        "startChar": 9,
+        "endLine": 55,
+        "endChar": 25
+      },
+      "revId": "33e3099f7b6073674c25cee3ffe64ba2a805ad9a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "878d9dcf_9f9414c8",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-07-25T09:56:58Z",
+      "side": 1,
+      "message": "this is secure or system?",
+      "revId": "33e3099f7b6073674c25cee3ffe64ba2a805ad9a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
