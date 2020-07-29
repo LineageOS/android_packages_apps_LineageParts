@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce63bfc5_0598b3d2",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 421,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-07-29T14:38:16Z",
+      "side": 1,
+      "message": "Maybe add it here too?",
+      "revId": "c144d91866de1a0cb6ae6dcd95e1bd5352823844",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
