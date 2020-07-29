@@ -52,6 +52,7 @@ import lineageos.hardware.LiveDisplayManager;
 import lineageos.preference.SettingsHelper;
 import lineageos.providers.LineageSettings;
 
+import static lineageos.hardware.LiveDisplayManager.FEATURE_ANTI_FLICKER;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_CABC;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
@@ -74,6 +75,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
     private static final String KEY_CATEGORY_ADVANCED = "advanced";
 
     private static final String KEY_LIVE_DISPLAY = "live_display";
+    private static final String KEY_LIVE_DISPLAY_ANTI_FLICKER = "display_anti_flicker";
     private static final String KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE =
             "display_auto_outdoor_mode";
     private static final String KEY_LIVE_DISPLAY_READING_ENHANCEMENT = "display_reading_mode";
@@ -101,6 +103,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
 
     private ListPreference mLiveDisplay;
 
+    private SwitchPreference mAntiFlicker;
     private SwitchPreference mColorEnhancement;
     private SwitchPreference mLowPower;
     private SwitchPreference mOutdoorMode;
@@ -217,6 +220,15 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                 && (isNightDisplayAvailable || !mConfig.hasFeature(MODE_OUTDOOR))) {
             liveDisplayPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
+        }
+
+        mAntiFlicker = findPreference(KEY_LIVE_DISPLAY_ANTI_FLICKER);
+        if (liveDisplayPrefs != null && mAntiFlicker != null &&
+                (!mHardware.isSupported(LineageHardwareManager.FEATURE_ANTI_FLICKER))) {
+            liveDisplayPrefs.removePreference(mAntiFlicker);
+            mAntiFlicker = null;
+        } else {
+            mAntiFlicker.setOnPreferenceChangeListener(this);
         }
 
         mReadingMode = findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
@@ -390,6 +402,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             }
         } else if (preference == mReadingMode) {
             mHardware.set(LineageHardwareManager.FEATURE_READING_ENHANCEMENT, (Boolean) objValue);
+        } else if (preference == mAntiFlicker) {
+            mHardware.set(LineageHardwareManager.FEATURE_ANTI_FLICKER, (Boolean) objValue);
         }
         return true;
     }
@@ -438,6 +452,9 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                     result.add(KEY_LIVE_DISPLAY);
                 }
                 result.add(KEY_LIVE_DISPLAY_TEMPERATURE);
+            }
+            if (!config.hasFeature(FEATURE_ANTI_FLICKER)) {
+                result.add(KEY_LIVE_DISPLAY_ANTI_FLICKER);
             }
             return result;
         }
