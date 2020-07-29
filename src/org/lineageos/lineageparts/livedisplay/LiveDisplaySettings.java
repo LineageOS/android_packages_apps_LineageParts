@@ -16,7 +16,12 @@
  */
 package org.lineageos.lineageparts.livedisplay;
 
+import android.app.AlertDialog;
+import android.app.Activity;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.hardware.display.ColorDisplayManager;
 import android.net.Uri;
@@ -24,6 +29,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.Log;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.CheckBox;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -52,6 +60,7 @@ import lineageos.hardware.LiveDisplayManager;
 import lineageos.preference.SettingsHelper;
 import lineageos.providers.LineageSettings;
 
+import static lineageos.hardware.LiveDisplayManager.FEATURE_ANTI_FLICKER;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_CABC;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
@@ -74,6 +83,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
     private static final String KEY_CATEGORY_ADVANCED = "advanced";
 
     private static final String KEY_LIVE_DISPLAY = "live_display";
+    private static final String KEY_LIVE_DISPLAY_ANTI_FLICKER = "display_anti_flicker";
     private static final String KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE =
             "display_auto_outdoor_mode";
     private static final String KEY_LIVE_DISPLAY_READING_ENHANCEMENT = "display_reading_mode";
@@ -101,6 +111,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
 
     private ListPreference mLiveDisplay;
 
+    private SwitchPreference mAntiFlicker;
     private SwitchPreference mColorEnhancement;
     private SwitchPreference mLowPower;
     private SwitchPreference mOutdoorMode;
@@ -219,6 +230,15 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             mOutdoorMode = null;
         }
 
+        mAntiFlicker = findPreference(KEY_LIVE_DISPLAY_ANTI_FLICKER);
+        if (liveDisplayPrefs != null && mAntiFlicker != null &&
+                !mHardware.isSupported(LineageHardwareManager.FEATURE_ANTI_FLICKER)) {
+            liveDisplayPrefs.removePreference(mAntiFlicker);
+            mAntiFlicker = null;
+        } else {
+            mAntiFlicker.setOnPreferenceChangeListener(this);
+        }
+
         mReadingMode = findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
         if (liveDisplayPrefs != null && mReadingMode != null &&
                 (!mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT) ||
@@ -266,6 +286,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         updateTemperatureSummary();
         updateColorProfileSummary(null);
         updateReadingModeStatus();
+        updateAntiFlickerStatus();
         SettingsHelper.get(getActivity()).startWatching(this, DISPLAY_TEMPERATURE_DAY_URI,
                 DISPLAY_TEMPERATURE_MODE_URI, DISPLAY_TEMPERATURE_NIGHT_URI);
     }
@@ -374,6 +395,15 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         }
     }
 
+    private void updateAntiFlickerStatus() {
+        if (mAntiFlicker != null) {
+            SharedPreferences prefs = getActivity().getSharedPreferences(
+                    KEY_LIVE_DISPLAY_ANTI_FLICKER, Activity.MODE_PRIVATE);
+            boolean enabled = prefs.getBoolean("live_display_anti_flicker_enabled", false);
+            mHardware.set(LineageHardwareManager.FEATURE_ANTI_FLICKER, enabled);
+        }
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mLiveDisplay) {
@@ -390,6 +420,19 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             }
         } else if (preference == mReadingMode) {
             mHardware.set(LineageHardwareManager.FEATURE_READING_ENHANCEMENT, (Boolean) objValue);
+        } else if (preference == mAntiFlicker) {
+            SharedPreferences prefs = getActivity().getSharedPreferences(
+                    KEY_LIVE_DISPLAY_ANTI_FLICKER, Activity.MODE_PRIVATE);
+            if (!prefs.getBoolean("live_display_anti_flicker_warning_hidden", false) &&
+                    (Boolean) objValue && mHardware.showAntiFlickerWarning()) {
+                showAntiFlickerWarningDialog();
+            }
+            mHardware.set(LineageHardwareManager.FEATURE_ANTI_FLICKER, (Boolean) objValue);
+            getActivity().getSharedPreferences(
+                    KEY_LIVE_DISPLAY_ANTI_FLICKER, Activity.MODE_PRIVATE)
+                    .edit()
+                    .putBoolean("live_display_anti_flicker_enabled", (Boolean) objValue)
+                    .commit();
         }
         return true;
     }
@@ -439,6 +482,9 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                 }
                 result.add(KEY_LIVE_DISPLAY_TEMPERATURE);
             }
+            if (!config.hasFeature(FEATURE_ANTI_FLICKER)) {
+                result.add(KEY_LIVE_DISPLAY_ANTI_FLICKER);
+            }
             return result;
         }
 
@@ -465,4 +511,36 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             return Collections.singletonList(raw);
         }
     };
+
+    private static class AntiFlickerWarningDialog extends DialogFragment {
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            View view = getActivity().getLayoutInflater().inflate(
+                    R.layout.live_display_anti_flicker_warning, null);
+            CheckBox hideDialog = (CheckBox) view.findViewById(
+                    R.id.live_display_anti_flicker_warning_hide);
+
+            hideDialog.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                    getActivity().getSharedPreferences(
+                            KEY_LIVE_DISPLAY_ANTI_FLICKER, Activity.MODE_PRIVATE)
+                            .edit()
+                            .putBoolean("live_display_anti_flicker_warning_hidden", isChecked)
+                            .commit();
+                }
+            });
+
+            return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.live_display_anti_flicker_warning_title)
+                    .setMessage(R.string.live_display_anti_flicker_warning_text)
+                    .setView(view)
+                    .setPositiveButton(R.string.dlg_ok, (dialog, which) -> dialog.cancel())
+                    .create();
+        }
+    }
+    private void showAntiFlickerWarningDialog() {
+        AntiFlickerWarningDialog fragment = new AntiFlickerWarningDialog();
+        fragment.show(getFragmentManager(), "anti_flicker_warning_dialog");
+    }
 }
