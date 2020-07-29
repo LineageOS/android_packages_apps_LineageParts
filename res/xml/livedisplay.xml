@@ -44,6 +44,13 @@
             android:summary="@string/live_display_outdoor_mode_summary"
             android:defaultValue="@*lineageos.platform:bool/config_defaultAutoOutdoorMode" />
 
+    <!-- Anti flicker mode / DC dimming -->
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="display_anti_flicker"
+            android:title="@string/live_display_anti_flicker_title"
+            android:summary="@string/live_display_anti_flicker_summary"
+            android:defaultValue="false" />
+
     <!-- Reading mode -->
     <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="display_reading_mode"
