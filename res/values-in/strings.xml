@@ -362,6 +362,7 @@
     <string name="status_bar_brightness_slider_summary">Sesuaikan kecerahan dari setelan cepat</string>
     <string name="status_bar_brightness_slider_auto_title">Kecerahan otomatis</string>
     <string name="status_bar_brightness_slider_auto_summary">Tampilkan tombol hidup/matikan kecerahan adaptif di dekat slider</string>
+    <string name="status_bar_brightness_slider_show_never">Jangan pernah tampilkan</string>
     <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
     <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
     <string name="network_traffic_settings_title">Monitor lalu lintas jaringan</string>
