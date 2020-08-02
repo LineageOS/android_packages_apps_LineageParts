@@ -364,6 +364,9 @@
     <string name="status_bar_brightness_slider_summary">Addasu\'r disgleirdeb o\'r Gosodiadau Cyflym</string>
     <string name="status_bar_brightness_slider_auto_title">Disgleirdeb awtomatig</string>
     <string name="status_bar_brightness_slider_auto_summary">Dangos botwm toglo disgleirdeb addasedig wrth ymyl y llithrydd</string>
+    <string name="status_bar_brightness_slider_show_never">Byth dangos</string>
+    <string name="status_bar_brightness_slider_show_expanded">Dangos pan wedi\'i ehangu</string>
+    <string name="status_bar_brightness_slider_show_always">Dangos o hyd</string>
     <string name="status_bar_toggle_brightness">Rheolaeth disgleirdeb</string>
     <string name="status_bar_toggle_brightness_summary">Addasu\'r disgleirdeb wrth lithro ar draws y bar statws</string>
     <string name="network_traffic_settings_title">Monitro traffig rhwydwaith</string>

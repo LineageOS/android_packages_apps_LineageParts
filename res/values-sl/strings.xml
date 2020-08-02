@@ -133,7 +133,7 @@
     <string name="adj_intensity_title">Jakost</string>
     <string name="adj_contrast_title">Kontrast</string>
     <string name="button_pref_title">Gumbi</string>
-    <string name="hardware_keys_power_key_title">Gumb za vklop/izklop</string>
+    <string name="hardware_keys_power_key_title">Gumb za vklop</string>
     <string name="hardware_keys_home_key_title">Gumb Domov</string>
     <string name="hardware_keys_back_key_title">Gumb Nazaj</string>
     <string name="hardware_keys_menu_key_title">Menijski gumb</string>
@@ -167,7 +167,7 @@
     <string name="volbtn_cursor_control_on">Glasnost gor/dol premakne kazalec levo/desno</string>
     <string name="volbtn_cursor_control_on_reverse">Glasnost gor/dol premakne kazalec desno/levo</string>
     <string name="power_end_call_title">Končaj klic</string>
-    <string name="power_end_call_summary">Končaj trenutni klic s pritiskom na gumb za vklop/izklop</string>
+    <string name="power_end_call_summary">Končaj trenutni klic s pritiskom na gumb za vklop</string>
     <string name="swap_volume_buttons_title">Preusmeri</string>
     <string name="swap_volume_buttons_summary">Zamenjaj gumba za glasnost, kadar je zaslon zasukan</string>
     <string name="volume_panel_on_left_title">Prikaži ploščo na levi</string>
@@ -194,6 +194,7 @@
     <string name="disable_navkeys_summary">Omogoči vrstico za krmarjenje na zaslonu in onemogoči fizične gumbe</string>
     <string name="navigation_bar_category">Vrstica za krmarjenje</string>
     <string name="navigation_bar_invert_layout_title">Obrni razporeditev</string>
+    <string name="navigation_bar_invert_layout_summary">Obrne razporeditev vrstice za krmarjenje in drugih predmetov, kot je preklopnik IME</string>
     <string name="navigation_bar_left_summary">Umesti vrstico za krmarjenje ne levo stran zaslona v ležečem načinu</string>
     <string name="navigation_bar_arrow_keys_title">Prikaži smerne tipke med tipkanjem</string>
     <string name="navigation_bar_arrow_keys_summary">Prikaži gumba levega in desnega kazalca med tipkanjem. Preglasi preklopnik IME.</string>
@@ -201,7 +202,7 @@
     <string name="navigation_bar_home_double_tap_title">Dejanje dvojnega tapa Domov</string>
     <string name="navigation_bar_app_switch_long_press_title">Dejanje dolgega pritiska Nedavno</string>
     <string name="navigation_bar_edge_long_swipe_title">Dejanje dolgega potega z roba</string>
-    <string name="power_menu_title">Meni gumba za vklop/izklop</string>
+    <string name="power_menu_title">Meni izklopa</string>
     <string name="power_menu_screenshot_title">Zaslonska slika</string>
     <string name="power_menu_screenshot_summary">Dolg pritisk za delno zaslonsko sliko</string>
     <string name="power_menu_airplane_title">Način za letalo</string>
@@ -209,10 +210,10 @@
     <string name="power_menu_bug_report_title">Poročilo o hrošču</string>
     <string name="power_menu_bug_report_disabled">V nastavitvah za razvijalce je poročanje o hrošču onemogočeno</string>
     <string name="power_menu_lockdown_title">Zaklep</string>
-    <string name="camera_double_tap_power_gesture_title">Dvakrat pritisnite gumb za vklop/izklop za fotoaparat</string>
+    <string name="camera_double_tap_power_gesture_title">Dvakrat pritisnite gumb za vklop za fotoaparat</string>
     <string name="camera_double_tap_power_gesture_desc">Hitro odprite fotoaparat brez odklepanja zaslona</string>
     <string name="torch_long_press_power_gesture_title">Dolg pritisk za svetilko</string>
-    <string name="torch_long_press_power_gesture_desc">Aktivirajte svetilko z dolgim pritiskom na gumb za vklop/izklop med izključenim zaslonom</string>
+    <string name="torch_long_press_power_gesture_desc">Aktivirajte svetilko z dolgim pritiskom na gumb za vklop med izključenim zaslonom</string>
     <string name="torch_long_press_power_timeout_title">Samodejno izključi svetilko</string>
     <string name="torch_long_press_power_timeout_never">Nikoli</string>
     <string name="torch_long_press_power_timeout_1min">1 minuta</string>
@@ -364,6 +365,9 @@
     <string name="status_bar_brightness_slider_summary">Prilagajanje svetlosti iz Hitrih nastavitev</string>
     <string name="status_bar_brightness_slider_auto_title">Samodejna svetlost</string>
     <string name="status_bar_brightness_slider_auto_summary">Prikaži preklopnik za prilagodljivo svetlost blizu drsnika</string>
+    <string name="status_bar_brightness_slider_show_never">Nikoli ne pokaži</string>
+    <string name="status_bar_brightness_slider_show_expanded">Pokaži ob razširitvi</string>
+    <string name="status_bar_brightness_slider_show_always">Vedno pokaži</string>
     <string name="status_bar_toggle_brightness">Nadzor svetlosti</string>
     <string name="status_bar_toggle_brightness_summary">Prilagodite svetlost tako, da povlečete preko vrstice stanja</string>
     <string name="network_traffic_settings_title">Nadzornik omrežnega prometa</string>
@@ -448,7 +452,7 @@
     <string name="power_save_title">Strogo varčevanje z energijo</string>
     <string name="power_save_summary">Omeji zmogljivost naprave in dejavnosti v ozadju za prihranek energije</string>
     <string name="auto_power_save_title">Samodejno varčevanje z energijo</string>
-    <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo akumulatorja, ko je stanje baterije %s</string>
+    <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo akumulatorja, ko je stanje akumulatorja %s</string>
     <string name="auto_power_save_summary_off">Ne omogočaj načina varčevanja z energijo samodejno</string>
     <string name="auto_power_save_never">Nikoli</string>
     <string name="long_screen_settings_title">Celozaslonske aplikacije</string>
@@ -520,7 +524,7 @@
     <string name="trust_feature_encryption_explain">Šifriranje vaše naprave prepreči dostop do vaših podatkov, ko vaš telefon ni zagnan v Android. To je še posebej pomembno, če vam ukradejo telefon, saj prepreči osebam brez gesla branje vaših sporočil, stikov ali drugih zasebnih podatkov.\nZa učinkovitejše šifriranje, nastavite varno geslo za zaklep zaslona.</string>
     <string name="trust_category_tools">Zasebnost</string>
     <string name="trust_notification_alerts_title">Varnostna opozorila</string>
-    <string name="trust_warnings_alerts_intro">Izberete lahko varnostne težave na katere bi želeli biti opozorjeni. Za vašo varnost je priporočljivo, da omogočite vsa opozorila</string>
+    <string name="trust_warnings_alerts_intro">Izberete lahko varnostne težave, na katere bi želeli biti opozorjeni. Za vašo varnost je priporočljivo, da omogočite vsa opozorila</string>
     <string name="trust_warnings_selinux">SELinux stanje</string>
     <string name="trust_warnings_keys">Podpis izgradnje</string>
     <string name="trust_onboarding_title">Pozdravite Trust</string>

@@ -364,6 +364,8 @@
     <string name="status_bar_brightness_slider_summary">Helligkeit in den Schnelleinstellungen anpassen</string>
     <string name="status_bar_brightness_slider_auto_title">Automatische Helligkeit</string>
     <string name="status_bar_brightness_slider_auto_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
+    <string name="status_bar_brightness_slider_show_never">Niemals anzeigen</string>
+    <string name="status_bar_brightness_slider_show_always">Immer anzeigen</string>
     <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
     <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
     <string name="network_traffic_settings_title">Datenverkehr-Anzeige</string>

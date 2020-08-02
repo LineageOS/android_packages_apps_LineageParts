@@ -363,6 +363,9 @@
     <string name="status_bar_brightness_slider_summary">ปรับความสว่างจากการตั้งค่าด่วน</string>
     <string name="status_bar_brightness_slider_auto_title">ความสว่างอัตโนมัติ</string>
     <string name="status_bar_brightness_slider_auto_summary">แสดงเพื่อปรับความสว่างใกล้กับแถบเลื่อน</string>
+    <string name="status_bar_brightness_slider_show_never">ไม่แสดง</string>
+    <string name="status_bar_brightness_slider_show_expanded">แสดงเมื่อขยาย</string>
+    <string name="status_bar_brightness_slider_show_always">แสดงเสมอ</string>
     <string name="status_bar_toggle_brightness">ควบคุมความสว่าง</string>
     <string name="status_bar_toggle_brightness_summary">ปรับความสว่างหน้าจอโดยการเลื่อนแถบสถานะ</string>
     <string name="network_traffic_settings_title">ตรวจสอบการรับส่งข้อมูลเครือข่าย</string>

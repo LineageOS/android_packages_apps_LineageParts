@@ -201,6 +201,7 @@
     <string name="navigation_bar_home_long_press_title">Ενέργεια παρατεταμένης πίεσης αρχικής οθόνης</string>
     <string name="navigation_bar_home_double_tap_title">Ενέργεια διπλού χτυπήματος αρχικής οθόνης</string>
     <string name="navigation_bar_app_switch_long_press_title">Ενέργεια παρατεταμένης πίεσης προσφάτων</string>
+    <string name="navigation_bar_edge_long_swipe_title">Ενέργεια μακράς κίνησης από την άκρη της οθόνης</string>
     <string name="power_menu_title">Μενού πλήκτρου απενεργοποίησης</string>
     <string name="power_menu_screenshot_title">Στιγμιότυπο οθόνης</string>
     <string name="power_menu_screenshot_summary">Πιέστε παρατεταμένα για μερικό στιγμιότυπο οθόνης</string>
