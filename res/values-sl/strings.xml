@@ -330,8 +330,8 @@
     <string name="status_bar_quick_qs_pulldown_summary_left">Levo</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Desno</string>
     <string name="status_bar_quick_qs_pulldown_off">Izklopljeno</string>
-    <string name="status_bar_quick_qs_pulldown_left">Levi</string>
-    <string name="status_bar_quick_qs_pulldown_right">Desni</string>
+    <string name="status_bar_quick_qs_pulldown_left">Levo</string>
+    <string name="status_bar_quick_qs_pulldown_right">Desno</string>
     <string name="status_bar_double_tap_to_sleep_title">Dvojni tap za spanje</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dvakrat tapnite na vrstico stanja, da izklopite zaslon</string>
     <string name="status_bar_icons_title">Ikone vrstice stanja</string>
@@ -508,7 +508,7 @@
     <string name="touchscreen_gesture_action_ambient_display">Prikaži okoliški zaslon</string>
     <string name="trust_category_features">Stanje</string>
     <string name="trust_feature_selinux">SELinux</string>
-    <string name="trust_feature_selinux_value_enforcing">Se uveljavla</string>
+    <string name="trust_feature_selinux_value_enforcing">Uveljavljeno</string>
     <string name="trust_feature_selinux_value_disabled">Onemogočen</string>
     <string name="trust_feature_selinux_explain">SELinux narekuje, kateri procesi imajo dostop do katerih datotek/poti na vaši napravi.\nTo preprečuje aplikacijam in storitvam dostop do datotek s katerimi ne bi smele upravljati: tako je potencialni zlonamerni proces omejen in vaša varnost je ohranjena.</string>
     <string name="trust_feature_security_patches">Varnostni popravki Androida</string>
