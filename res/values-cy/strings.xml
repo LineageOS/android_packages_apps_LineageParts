@@ -194,6 +194,7 @@
     <string name="disable_navkeys_summary">Galluogi\'r bar llywio ar y sgrin ac analluogi\'r botymau caledwedd</string>
     <string name="navigation_bar_category">Bar llywio</string>
     <string name="navigation_bar_invert_layout_title">Gwrthdroi\'r cynllun</string>
+    <string name="navigation_bar_invert_layout_summary">Mae\'n gwrthdroi gosodiad y bar llywio ac eitemau eraill, fel y newidydd IME</string>
     <string name="navigation_bar_left_summary">Gosod y bar llywio ar ochr chwith y sgrin yng ngorweddiad tirlun</string>
     <string name="navigation_bar_arrow_keys_title">Dangos bysellau saethau wrth deipio</string>
     <string name="navigation_bar_arrow_keys_summary">Dangos y botymau pwyntydd de a chwith wrth deipio. Bydd yn diystyru newidydd IME.</string>

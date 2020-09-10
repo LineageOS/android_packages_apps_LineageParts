@@ -194,6 +194,7 @@
     <string name="disable_navkeys_summary">Habilitar a barra de navegación na pantalla e deshabilitar os botóns físicos</string>
     <string name="navigation_bar_category">Barra de navegación</string>
     <string name="navigation_bar_invert_layout_title">Inverter disposición</string>
+    <string name="navigation_bar_invert_layout_summary">Inverter a disposición da barra de navegación e outro elementos, como o selector IME</string>
     <string name="navigation_bar_left_summary">Colocar a barra de navegación no lado esquerdo da pantalla cando estea en modo horizontal</string>
     <string name="navigation_bar_arrow_keys_title">Amosar as frechas ao escribir</string>
     <string name="navigation_bar_arrow_keys_summary">Amosar os cursores esquerda e dereita ao escribir. Substitúe ao selector IME.</string>
@@ -364,6 +365,9 @@
     <string name="status_bar_brightness_slider_summary">Axustar o brillo dende os axustes rápidos</string>
     <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
     <string name="status_bar_brightness_slider_auto_summary">Amosar a caixa de brillo automático ao carón da barra de brillo</string>
+    <string name="status_bar_brightness_slider_show_never">Non amosar nunca</string>
+    <string name="status_bar_brightness_slider_show_expanded">Amosar ao expandir</string>
+    <string name="status_bar_brightness_slider_show_always">Amosar sempre</string>
     <string name="status_bar_toggle_brightness">Control de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Axustar o brillo arrastrando pola barra de estado</string>
     <string name="network_traffic_settings_title">Monitor de tráfico de rede</string>
