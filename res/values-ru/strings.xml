@@ -194,7 +194,7 @@
     <string name="disable_navkeys_summary">Включить экранную панель навигации и отключить аппаратные кнопки</string>
     <string name="navigation_bar_category">Панель навигации</string>
     <string name="navigation_bar_invert_layout_title">Инвертировать порядок кнопок</string>
-    <string name="navigation_bar_invert_layout_summary">Инвертировать расположение панели навигации и других элементов, такие как кнопка смены метода ввода</string>
+    <string name="navigation_bar_invert_layout_summary">Инвертировать расположение панели навигации и других элементов, таких как кнопка переключения метода ввода</string>
     <string name="navigation_bar_left_summary">Отображать панель навигации слева в альбомной ориентации экрана</string>
     <string name="navigation_bar_arrow_keys_title">Показать стрелки при вводе текста</string>
     <string name="navigation_bar_arrow_keys_summary">Отображать кнопки перемещения курсора влево или вправо при вводе текста. Кнопка выбора метода ввода отображаться не будет.</string>
@@ -257,7 +257,7 @@
     <string name="profile_unknown_nfc_tag">Неизвестный профиль</string>
     <string name="profile_add_nfc_text">Эта NFC-метка присвоена неизвестному профилю. Привязка NFC-метки к существующему профилю позволит использовать метку для его выбора.</string>
     <string name="profile_select">Выбор профиля</string>
-    <string name="profile_remove_dialog_message">Удалить профиль «%1$s»?</string>
+    <string name="profile_remove_dialog_message">Удалить профиль %1$s?</string>
     <string name="profile_populate_profile_from_state">Создать профиль, используя текущие настройки устройства?</string>
     <string name="profile_menu_fill_from_state">Импорт текущих настроек устройства</string>
     <string name="profile_remove_current_profile">Невозможно удалить текущий профиль!</string>
@@ -273,7 +273,7 @@
     <string name="rename_dialog_message">Введите новое название</string>
     <string name="rename_dialog_hint">Введите название профиля</string>
     <string name="profile_reset_title">Сбросить</string>
-    <string name="profile_reset_message">Удалить все созданные пользователем профили и группы приложений и восстановить их по умолчанию?</string>
+    <string name="profile_reset_message">Удалить все пользовательские профили и группы приложений и восстановить их по умолчанию?</string>
     <string name="profile_app_delete_confirm">Удалить это приложение?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
