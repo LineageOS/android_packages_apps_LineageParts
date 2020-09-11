@@ -194,6 +194,7 @@
     <string name="disable_navkeys_summary">Navigationstasten deaktivieren und stattdessen eine Navigationsleiste auf dem Bildschirm anzeigen</string>
     <string name="navigation_bar_category">Navigationsleiste</string>
     <string name="navigation_bar_invert_layout_title">Layout umkehren</string>
+    <string name="navigation_bar_invert_layout_summary">Kehrt das Layout der Navigationsleiste und anderer Elemente, wie dem IME-Switcher um</string>
     <string name="navigation_bar_left_summary">Navigationsleiste im Querformat auf der linken Seite anzeigen</string>
     <string name="navigation_bar_arrow_keys_title">Pfeiltasten beim Tippen anzeigen</string>
     <string name="navigation_bar_arrow_keys_summary">Beim Tippen Links/Rechts-Cursortasten anzeigen (deaktiviert die Eingabemethodenauswahl).</string>
@@ -365,6 +366,7 @@
     <string name="status_bar_brightness_slider_auto_title">Automatische Helligkeit</string>
     <string name="status_bar_brightness_slider_auto_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
     <string name="status_bar_brightness_slider_show_never">Niemals anzeigen</string>
+    <string name="status_bar_brightness_slider_show_expanded">Anzeigen wenn erweitert</string>
     <string name="status_bar_brightness_slider_show_always">Immer anzeigen</string>
     <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
     <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
