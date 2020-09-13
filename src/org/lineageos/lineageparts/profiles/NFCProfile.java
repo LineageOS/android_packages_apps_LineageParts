@@ -27,6 +27,7 @@ import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.os.Handler;
 import android.widget.Toast;
 
 import lineageos.app.Profile;
@@ -119,13 +120,18 @@ public class NFCProfile extends Activity {
     private void switchTo(UUID uuid) {
         Profile p = mProfileManager.getProfile(uuid);
         if (p != null) {
-            mProfileManager.setActiveProfile(uuid);
-
             Toast.makeText(
                     this,
                     getString(R.string.profile_selected, p.getName()),
                     Toast.LENGTH_LONG).show();
-            NFCProfileUtils.vibrate(this);
+            Handler handler = new Handler();
+            NFCProfileUtils.vibrate(this);      
+            handler.postDelayed(new Runnable(){
+                @Override
+                public void run(){
+                    mProfileManager.setActiveProfile(uuid);          
+                }
+            },1000);
         }
     }
 
