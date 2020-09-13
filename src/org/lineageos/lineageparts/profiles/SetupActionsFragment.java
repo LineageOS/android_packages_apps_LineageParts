@@ -62,6 +62,7 @@ import lineageos.app.Profile;
 import lineageos.app.ProfileGroup;
 import lineageos.app.ProfileManager;
 import lineageos.profiles.AirplaneModeSettings;
+import lineageos.profiles.RotationSettings;
 import lineageos.profiles.BrightnessSettings;
 import lineageos.profiles.ConnectionSettings;
 import lineageos.profiles.LockSettings;
@@ -73,6 +74,7 @@ import org.lineageos.lineageparts.PartsActivity;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 import org.lineageos.lineageparts.profiles.actions.item.AirplaneModeItem;
+import org.lineageos.lineageparts.profiles.actions.item.RotationModeItem;
 import org.lineageos.lineageparts.profiles.actions.item.BrightnessItem;
 import org.lineageos.lineageparts.profiles.actions.item.ConnectionOverrideItem;
 import org.lineageos.lineageparts.profiles.actions.item.DisabledItem;
@@ -124,7 +126,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     private static final int DIALOG_REMOVE_PROFILE = 10;
 
     private static final int DIALOG_NOTIFICATION_LIGHT_MODE = 11;
-
+    private static final int DIALOG_ROTATION_MODE = 12;
     private int mLastSelectedPosition = -1;
     private Item mSelectedItem;
 
@@ -243,6 +245,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mItems.add(new Header(R.string.profile_system_settings_title));
         mItems.add(new RingModeItem(mProfile.getRingMode()));
         mItems.add(new AirplaneModeItem(mProfile.getAirplaneMode()));
+        mItems.add(new RotationModeItem(mProfile.getRotationMode()));
         DevicePolicyManager dpm = context.getSystemService(DevicePolicyManager.class);
         if (!dpm.requireSecureKeyguard()) {
             mItems.add(new LockModeItem(mProfile));
@@ -471,7 +474,10 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         boolean airplaneMode = Settings.Global.getInt(context.getContentResolver(),
                 Settings.Global.AIRPLANE_MODE_ON, 0) != 0;
         profile.setAirplaneMode(new AirplaneModeSettings(airplaneMode ? 1 : 0, true));
-
+        // rotation mode
+        boolean rotationMode = Settings.System.getInt(context.getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION, 0) != 0;      
+        profile.setRotationMode(new RotationSettings(rotationMode ? 1 : 0, true));
         // lock screen mode
         // populated only from profiles, so we can read the current profile,
         // but let's skip this one
@@ -485,6 +491,9 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
             case DIALOG_AIRPLANE_MODE:
                 return requestAirplaneModeDialog(((AirplaneModeItem) mSelectedItem).getSettings());
+
+            case DIALOG_ROTATION_MODE:
+                return requestRotationModeDialog(((RotationModeItem) mSelectedItem).getSettings());
 
             case DIALOG_BRIGHTNESS:
                 return requestBrightnessDialog(((BrightnessItem) mSelectedItem).getSettings());
@@ -684,6 +693,50 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         builder.setNegativeButton(android.R.string.cancel, null);
         return builder.create();
     }
+
+    private AlertDialog requestRotationModeDialog(final RotationSettings setting) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final String[] connectionNames =
+                getResources().getStringArray(R.array.profile_action_generic_connection_entries);
+    
+        int defaultIndex = 0; // no action
+        if (setting.isOverride()) {
+            if (setting.getValue() == 1) {
+                defaultIndex = 2; // enabled
+            } else {
+                defaultIndex = 1; // disabled
+            }
+        }
+    
+        builder.setTitle(R.string.profile_rotationmode_title);
+        builder.setSingleChoiceItems(connectionNames, defaultIndex,
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int item) {
+                        switch (item) {
+                            case 0: // disable override
+                                setting.setOverride(false);
+                                break;
+                            case 1: // enable override, disable
+                                setting.setOverride(true);
+                                setting.setValue(0);
+                                break;
+                            case 2: // enable override, enable
+                                setting.setOverride(true);
+                                setting.setValue(1);
+                                break;
+                        }
+                        mProfile.setRotationMode(setting);
+                        mAdapter.notifyDataSetChanged();
+                        updateProfile();
+                        dialog.dismiss();
+                    }
+                });
+    
+        builder.setNegativeButton(android.R.string.cancel, null);
+        return builder.create();
+    }
+
 
     private void requestProfileRingMode() {
         // Launch the ringtone picker
@@ -992,6 +1045,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             showDialog(DIALOG_PROFILE_NAME);
         } else if (item instanceof TriggerItem) {
             openTriggersFragment(((TriggerItem) item).getTriggerType());
+        } else if (item instanceof RotationModeItem){
+            showDialog(DIALOG_ROTATION_MODE);
         }
     }
 
