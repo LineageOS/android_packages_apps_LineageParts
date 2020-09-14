@@ -368,8 +368,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 volumeCategory.removePreference(findPreference(KEY_VOLUME_ANSWER_CALL));
             }
 
-            int cursorControlAction = Settings.System.getInt(resolver,
-                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
+            int cursorControlAction = 0; /*Settings.System.getInt(resolver,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);*/
             mVolumeKeyCursorControl = initList(KEY_VOLUME_KEY_CURSOR_CONTROL,
                     cursorControlAction);
 
@@ -561,8 +561,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
                     LineageSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
             return true;
         } else if (preference == mVolumeKeyCursorControl) {
-            handleSystemListChange(mVolumeKeyCursorControl, newValue,
-                    Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+            /*handleSystemListChange(mVolumeKeyCursorControl, newValue,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL);*/
             return true;
         } else if (preference == mTorchLongPressPowerTimeout) {
             handleListChange(mTorchLongPressPowerTimeout, newValue,
