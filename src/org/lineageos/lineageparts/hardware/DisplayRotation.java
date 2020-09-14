@@ -68,14 +68,14 @@ public class DisplayRotation extends SettingsPreferenceFragment {
         mRotation180Pref = prefSet.findPreference(ROTATION_180_PREF);
         mRotation270Pref = prefSet.findPreference(ROTATION_270_PREF);
 
-        /*int mode = Settings.System.getInt(getContentResolver(),
+        int mode = Settings.System.getInt(getContentResolver(),
                 Settings.System.ACCELEROMETER_ROTATION_ANGLES,
                 ROTATION_0_MODE | ROTATION_90_MODE | ROTATION_270_MODE);
 
         mRotation0Pref.setChecked((mode & ROTATION_0_MODE) != 0);
         mRotation90Pref.setChecked((mode & ROTATION_90_MODE) != 0);
         mRotation180Pref.setChecked((mode & ROTATION_180_MODE) != 0);
-        mRotation270Pref.setChecked((mode & ROTATION_270_MODE) != 0);*/
+        mRotation270Pref.setChecked((mode & ROTATION_270_MODE) != 0);
 
         watch(Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION));
     }
@@ -131,8 +131,8 @@ public class DisplayRotation extends SettingsPreferenceFragment {
                 mode |= ROTATION_0_MODE;
                 mRotation0Pref.setChecked(true);
             }
-            /*Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.ACCELEROMETER_ROTATION_ANGLES, mode);*/
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ACCELEROMETER_ROTATION_ANGLES, mode);
             return true;
         }
 
