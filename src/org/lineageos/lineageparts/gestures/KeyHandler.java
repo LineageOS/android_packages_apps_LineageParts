@@ -17,7 +17,6 @@
 
 package org.lineageos.lineageparts.gestures;
 
-/*
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -421,4 +420,3 @@ public class KeyHandler implements DeviceKeyHandler {
         return pm.getLaunchIntentForPackage(resInfo.get(0).activityInfo.packageName);
     }
 }
-*/
