@@ -73,7 +73,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
                     LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
-        */
         if (isButtonSupported(context)) {
             boolean isSingleValue = !context.getResources().getBoolean(
                     org.lineageos.platform.internal.R.bool
@@ -89,6 +88,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
                     isSingleValue, defaultBrightness);
             mActiveControl = mButtonBrightness;
         }
+        */
 
         updateSummary();
     }
@@ -235,8 +235,8 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
                 || DeviceUtils.hasMenuKey(context)
                 || DeviceUtils.hasAssistKey(context)
                 || DeviceUtils.hasAppSwitchKey(context);
-        boolean hasBacklight = res.getFloat(org.lineageos.platform.internal.R.dimen
-                .config_buttonBrightnessSettingDefaultFloat) > 0.0f;
+        boolean hasBacklight = false; /*res.getInteger(
+                com.android.internal.R.integer.config_buttonBrightnessSettingDefault) > 0;*/
 
         return hasBacklightKey && hasBacklight;
     }
