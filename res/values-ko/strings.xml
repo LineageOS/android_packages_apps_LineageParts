@@ -201,6 +201,7 @@
     <string name="navigation_bar_home_long_press_title">홈 버튼을 길게 누를 시 동작 설정</string>
     <string name="navigation_bar_home_double_tap_title">홈 버튼을 두 번 누를 시 동작 설정</string>
     <string name="navigation_bar_app_switch_long_press_title">최근 앱 버튼을 길게 누를 때 동작</string>
+    <string name="navigation_bar_edge_long_swipe_title">가장자리 길게 밀 때 동작</string>
     <string name="power_menu_title">전원 메뉴</string>
     <string name="power_menu_screenshot_title">스크린샷</string>
     <string name="power_menu_screenshot_summary">길게 눌러 부분 스크린샷 촬영</string>

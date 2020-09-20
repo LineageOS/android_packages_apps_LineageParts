@@ -34,6 +34,7 @@
     <string name="yes">Tha</string>
     <string name="no">Chan eil</string>
     <string name="search">Lorg</string>
+    <string name="search_menu">Lorg sna roghainnean</string>
     <string name="disabled">À comas</string>
     <string name="enabled">An comas</string>
     <string name="privacy_settings_title">Prìobhaideachd</string>
@@ -169,6 +170,8 @@
     <string name="power_end_call_summary">Cuir crìoch air a’ ghairm làithreach le brùthadh air putan na cumhachd</string>
     <string name="swap_volume_buttons_title">Comhair fèin-obrachail</string>
     <string name="swap_volume_buttons_summary">Suaip putain àirde na fuaime nuair a bhios an sgrìn air a chuairteachadh</string>
+    <string name="volume_panel_on_left_title">Seall a’ phanail air an taobh chlì</string>
+    <string name="volume_panel_on_left_summary">Seall panail àirde na fuaime air taobh clì na sgrìn</string>
     <string name="button_wake_title">Dùisg an t-uidheam</string>
     <string name="volume_answer_call_title">Freagair gairm</string>
     <string name="volume_answer_call_summary">Freagair gairmean a thig a-steach le brùthadh air putain àirde na fuaime</string>
@@ -376,6 +379,7 @@
     <string name="network_traffic_units_megabytes">Meaga-baidht gach diog (MB/s)</string>
     <string name="network_traffic_show_units">Seall na h-aonadan</string>
     <string name="network_traffic_show_units_summary">Co-dhiù an dèid aonadan tomhais air trafaig a shealltainn air bàr na staid gus nach dèid</string>
+    <string name="network_traffic_disabled_clock">Chaidh trafaig an lìonraidh a chur à comas ri linn ionad a’ chleoc</string>
     <string name="protected_apps_manager_title">Aplacaidean dìonta</string>
     <string name="protected_apps_manager_summary">Stiùirich dè na h-aplacaidean a thèid fhalach air cùlaibh glaise tèarainte</string>
     <string name="contributors_cloud_fragment_title">Luchd-cuideachaidh</string>
@@ -517,6 +521,8 @@
     <string name="trust_onboarding_description">Cuidichidh an earbsa dhut ach an cùm thu an t-uidheam agad tèarainte is ach an dìon thu do phrìobhaideachd.\nCha nochd ìomhaigheag na h-earbsa mura deach susbaint na duilleige a dhearbhadh.</string>
     <string name="trust_onboarding_learn_more">Barrachd fiosrachaidh</string>
     <string name="trust_onboarding_done">Tha mi agaibh</string>
+    <string name="trust_restrict_usb_title">Cuingich USB</string>
+    <string name="trust_restrict_usb_summary">Cuir uidheaman USB ùra à comas nuair a bhios an t-uidheam glaiste</string>
     <string name="sms_security_check_limit_title">Crìoch nan teachdaireachdan SMS</string>
     <string name="sms_security_check_limit_summary">Faodaidh aplacaidean %s teachdaireachd(an) a chur am broinn mionaid mus dèid dearbhadh iarraidh orra</string>
     <string name="sms_security_check_limit_summary_none">Chan fhaod aplacaidean teachdaireachd sam bith a chur gun dearbhadh</string>
