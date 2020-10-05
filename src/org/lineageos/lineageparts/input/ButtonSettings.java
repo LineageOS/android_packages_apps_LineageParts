@@ -399,7 +399,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
         final ButtonBacklightBrightness backlight = findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported(getActivity())
-                /*&& !backlight.isKeyboardSupported(getActivity())*/) {
+                && !backlight.isKeyboardSupported(getActivity())) {
             prefScreen.removePreference(backlight);
         }
 
@@ -842,7 +842,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             }
 
             if (!ButtonBacklightBrightness.isButtonSupported(context)
-                    /*&& !backlight.isKeyboardSupported(getActivity())*/) {
+                    && !ButtonBacklightBrightness.isKeyboardSupported(context)) {
                 result.add(KEY_BUTTON_BACKLIGHT);
             }
 
