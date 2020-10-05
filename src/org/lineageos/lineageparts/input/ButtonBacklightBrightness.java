@@ -76,10 +76,12 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         */
         if (isButtonSupported(context)) {
             boolean isSingleValue = !context.getResources().getBoolean(
-                    com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
+                    org.lineageos.platform.internal.R.bool
+                            .config_deviceHasVariableButtonBrightness);
 
             int defaultBrightness = context.getResources().getInteger(
-                    com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
+                    org.lineageos.platform.internal.R.integer
+                            .config_buttonBrightnessSettingDefault);
 
             mButtonBrightness = new ButtonBrightnessControl(
                     LineageSettings.Secure.BUTTON_BRIGHTNESS,
@@ -233,8 +235,8 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
                 || DeviceUtils.hasMenuKey(context)
                 || DeviceUtils.hasAssistKey(context)
                 || DeviceUtils.hasAppSwitchKey(context);
-        boolean hasBacklight = res.getInteger(
-                com.android.internal.R.integer.config_buttonBrightnessSettingDefault) > 0;
+        boolean hasBacklight = res.getInteger(org.lineageos.platform.internal.R.integer
+                .config_buttonBrightnessSettingDefault) > 0;
 
         return hasBacklightKey && hasBacklight;
     }
