@@ -67,13 +67,11 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
         setDialogLayoutResource(R.layout.button_backlight);
 
-        /*
         if (isKeyboardSupported(context)) {
             mKeyboardBrightness = new BrightnessControl(
                     LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
-        */
         if (isButtonSupported(context)) {
             boolean isSingleValue = !context.getResources().getBoolean(
                     org.lineageos.platform.internal.R.bool
@@ -241,12 +239,10 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         return hasBacklightKey && hasBacklight;
     }
 
-    /*
     public static boolean isKeyboardSupported(Context context) {
         return context.getResources().getFloat(org.lineageos.platform.internal.R.dimen
                 .config_keyboardBrightnessSettingDefaultFloat) > 0.0f;
     }
-    */
 
     public void updateSummary() {
         if (mButtonBrightness != null) {
