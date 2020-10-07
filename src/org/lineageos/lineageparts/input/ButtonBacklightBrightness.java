@@ -67,12 +67,12 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
         setDialogLayoutResource(R.layout.button_backlight);
 
-        if (isKeyboardSupported(context)) {
+        if (DeviceUtils.hasKeyboardBacklightSupport(context)) {
             mKeyboardBrightness = new BrightnessControl(
                     LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
-        if (isButtonSupported(context)) {
+        if (DeviceUtils.hasButtonBacklightSupport(context)) {
             boolean isSingleValue = !context.getResources().getBoolean(
                     org.lineageos.platform.internal.R.bool
                             .config_deviceHasVariableButtonBrightness);
@@ -223,25 +223,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         if (mKeyboardBrightness != null) {
             mKeyboardBrightness.setBrightness(myState.keyboard);
         }
-    }
-
-    public static boolean isButtonSupported(Context context) {
-        final Resources res = context.getResources();
-        // All hardware keys besides volume and camera can possibly have a backlight
-        boolean hasBacklightKey = DeviceUtils.hasHomeKey(context)
-                || DeviceUtils.hasBackKey(context)
-                || DeviceUtils.hasMenuKey(context)
-                || DeviceUtils.hasAssistKey(context)
-                || DeviceUtils.hasAppSwitchKey(context);
-        boolean hasBacklight = res.getFloat(org.lineageos.platform.internal.R.dimen
-                .config_buttonBrightnessSettingDefaultFloat) > 0.0f;
-
-        return hasBacklightKey && hasBacklight;
-    }
-
-    public static boolean isKeyboardSupported(Context context) {
-        return context.getResources().getFloat(org.lineageos.platform.internal.R.dimen
-                .config_keyboardBrightnessSettingDefaultFloat) > 0.0f;
     }
 
     public void updateSummary() {
