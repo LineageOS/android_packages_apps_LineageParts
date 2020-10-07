@@ -44,6 +44,7 @@ import lineageos.providers.LineageSettings;
 
 public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialog> implements
         SeekBar.OnSeekBarChangeListener {
+    private static final int BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY = 1;
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
 
     public static final String KEY_BUTTON_BACKLIGHT = "pre_navbar_button_backlight";
@@ -67,16 +68,27 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
         setDialogLayoutResource(R.layout.button_backlight);
 
+<<<<<<< HEAD   (70bba8 LineageParts: Allow removing livedisplay pref screen with co)
         /*
         if (isKeyboardSupported(context)) {
+=======
+        if (DeviceUtils.hasKeyboardBacklightSupport(context)) {
+>>>>>>> CHANGE (92e3fd ButtonSettings: Rework buttons/keyboard backlight control en)
             mKeyboardBrightness = new BrightnessControl(
                     LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
+<<<<<<< HEAD   (70bba8 LineageParts: Allow removing livedisplay pref screen with co)
         */
         if (isButtonSupported(context)) {
             boolean isSingleValue = !context.getResources().getBoolean(
                     com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
+=======
+        if (DeviceUtils.hasButtonBacklightSupport(context)) {
+            final boolean isSingleValue = BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY ==
+                    context.getResources().getInteger(org.lineageos.platform.internal.R.integer
+                            .config_deviceSupportsButtonBrightnessControl);
+>>>>>>> CHANGE (92e3fd ButtonSettings: Rework buttons/keyboard backlight control en)
 
             int defaultBrightness = context.getResources().getInteger(
                     com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
@@ -225,6 +237,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         }
     }
 
+<<<<<<< HEAD   (70bba8 LineageParts: Allow removing livedisplay pref screen with co)
     public static boolean isButtonSupported(Context context) {
         final Resources res = context.getResources();
         // All hardware keys besides volume and camera can possibly have a backlight
@@ -246,6 +259,8 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     }
     */
 
+=======
+>>>>>>> CHANGE (92e3fd ButtonSettings: Rework buttons/keyboard backlight control en)
     public void updateSummary() {
         if (mButtonBrightness != null) {
             int buttonBrightness = mButtonBrightness.getBrightness(true);

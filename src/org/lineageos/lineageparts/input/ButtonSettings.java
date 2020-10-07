@@ -398,8 +398,13 @@ public class ButtonSettings extends SettingsPreferenceFragment
         }
 
         final ButtonBacklightBrightness backlight = findPreference(KEY_BUTTON_BACKLIGHT);
+<<<<<<< HEAD   (70bba8 LineageParts: Allow removing livedisplay pref screen with co)
         if (!backlight.isButtonSupported(getActivity())
                 /*&& !backlight.isKeyboardSupported(getActivity())*/) {
+=======
+        if (!DeviceUtils.hasButtonBacklightSupport(getActivity())
+                && !DeviceUtils.hasKeyboardBacklightSupport(getActivity())) {
+>>>>>>> CHANGE (92e3fd ButtonSettings: Rework buttons/keyboard backlight control en)
             prefScreen.removePreference(backlight);
         }
 
@@ -841,8 +846,13 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 result.add(KEY_DISABLE_NAV_KEYS);
             }
 
+<<<<<<< HEAD   (70bba8 LineageParts: Allow removing livedisplay pref screen with co)
             if (!ButtonBacklightBrightness.isButtonSupported(context)
                     /*&& !backlight.isKeyboardSupported(getActivity())*/) {
+=======
+            if (!DeviceUtils.hasButtonBacklightSupport(context)
+                    && !DeviceUtils.hasKeyboardBacklightSupport(context)) {
+>>>>>>> CHANGE (92e3fd ButtonSettings: Rework buttons/keyboard backlight control en)
                 result.add(KEY_BUTTON_BACKLIGHT);
             }
 
