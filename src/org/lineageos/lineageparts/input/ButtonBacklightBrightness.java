@@ -44,6 +44,7 @@ import lineageos.providers.LineageSettings;
 
 public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialog> implements
         SeekBar.OnSeekBarChangeListener {
+    private static final int BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY = 1;
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
 
     public static final String KEY_BUTTON_BACKLIGHT = "pre_navbar_button_backlight";
@@ -67,14 +68,15 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
         setDialogLayoutResource(R.layout.button_backlight);
 
-        if (isKeyboardSupported(context)) {
+        if (DeviceUtils.hasKeyboardBacklightSupport(context)) {
             mKeyboardBrightness = new BrightnessControl(
                     LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
-        if (isButtonSupported(context)) {
-            boolean isSingleValue = !context.getResources().getBoolean(
-                    com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
+        if (DeviceUtils.hasButtonBacklightSupport(context)) {
+            final boolean isSingleValue = BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY ==
+                    context.getResources().getInteger(com.android.internal.R.integer
+                            .config_deviceSupportsButtonBrightnessControl);
 
             int defaultBrightness = context.getResources().getInteger(
                     com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
@@ -221,25 +223,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         if (mKeyboardBrightness != null) {
             mKeyboardBrightness.setBrightness(myState.keyboard);
         }
-    }
-
-    public static boolean isButtonSupported(Context context) {
-        final Resources res = context.getResources();
-        // All hardware keys besides volume and camera can possibly have a backlight
-        boolean hasBacklightKey = DeviceUtils.hasHomeKey(context)
-                || DeviceUtils.hasBackKey(context)
-                || DeviceUtils.hasMenuKey(context)
-                || DeviceUtils.hasAssistKey(context)
-                || DeviceUtils.hasAppSwitchKey(context);
-        boolean hasBacklight = res.getInteger(
-                com.android.internal.R.integer.config_buttonBrightnessSettingDefault) > 0;
-
-        return hasBacklightKey && hasBacklight;
-    }
-
-    public static boolean isKeyboardSupported(Context context) {
-        return context.getResources().getInteger(
-                com.android.internal.R.integer.config_keyboardBrightnessSettingDefault) > 0;
     }
 
     public void updateSummary() {
