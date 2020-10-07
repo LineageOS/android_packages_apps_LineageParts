@@ -135,6 +135,23 @@ public class DeviceUtils {
         return (getDeviceWakeKeys(context) & KEY_MASK_VOLUME) != 0;
     }
 
+    /* returns whether the device supports button backlight adjusment or not. */
+    public static boolean hasButtonBacklightSupport(Context context) {
+        final boolean variableButtonBrightnessSupported = context.getResources().getBoolean(
+                org.lineageos.platform.internal.R.bool.config_deviceHasVariableButtonBrightness);
+
+        // All hardware keys besides volume and camera can possibly have a backlight
+        return variableButtonBrightnessSupported
+                && (hasHomeKey(context) || hasBackKey(context) || hasMenuKey(context)
+                || hasAssistKey(context) || hasAppSwitchKey(context));
+    }
+
+    /* returns whether the device supports keyboard backlight adjusment or not. */
+    public static boolean hasKeyboardBacklightSupport(Context context) {
+        return context.getResources().getBoolean(org.lineageos.platform.internal.R.bool
+                .config_deviceHasVariableKeyboardBrightness);
+    }
+
     public static boolean isPackageInstalled(Context context, String pkg, boolean ignoreState) {
         if (pkg != null) {
             try {
