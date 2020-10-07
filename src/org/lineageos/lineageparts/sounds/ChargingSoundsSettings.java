@@ -46,7 +46,7 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
     private static final String RINGTONE_SILENT_URI_STRING = "silent";
 
     private static final String DEFAULT_POWER_SOUND =
-            "/system/product/media/audio/ui/WirelessChargingStarted.ogg";
+            "/system/product/media/audio/ui/ChargingStarted.ogg";
 
     // Request code for charging notification ringtone picker
     private static final int REQUEST_CODE_CHARGING_NOTIFICATIONS_RINGTONE = 1;
