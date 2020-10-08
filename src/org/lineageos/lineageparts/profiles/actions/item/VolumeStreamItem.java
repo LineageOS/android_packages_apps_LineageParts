@@ -23,6 +23,7 @@ import android.provider.Settings;
 import org.lineageos.lineageparts.R;
 
 import lineageos.profiles.StreamSettings;
+import lineageos.providers.LineageSettings;
 
 public class VolumeStreamItem extends Item {
     private int mStreamId;
@@ -58,8 +59,9 @@ public class VolumeStreamItem extends Item {
         if (mStreamId != AudioManager.STREAM_NOTIFICATION) {
             return true;
         }
-        final boolean volumeLinkNotification = Settings.Secure.getInt(
-                context.getContentResolver(), Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
+        final boolean volumeLinkNotification = LineageSettings.Secure.getInt(
+                context.getContentResolver(),
+                LineageSettings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
         return !volumeLinkNotification;
     }
 
