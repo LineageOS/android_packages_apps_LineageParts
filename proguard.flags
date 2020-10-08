@@ -29,3 +29,7 @@
     public <init>(android.content.Context, android.util.AttributeSet);
 }
 
+# Keep specific fields used via reflection.
+-keepclassmembers class * {
+    public static ** SEARCH_INDEX_DATA_PROVIDER;
+}
