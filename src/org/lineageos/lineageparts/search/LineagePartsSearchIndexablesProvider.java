@@ -215,8 +215,16 @@ public class LineagePartsSearchIndexablesProvider extends SearchIndexablesProvid
         try {
             final Field f = clazz.getField(FIELD_NAME_SEARCH_INDEX_DATA_PROVIDER);
             return (SearchIndexProvider) f.get(null);
-        } catch (Exception e) {
-            Log.e(TAG, e.getMessage(), e);
+        } catch (NoSuchFieldException e) {
+            Log.e(TAG, "Cannot find field '" + FIELD_NAME_SEARCH_INDEX_DATA_PROVIDER + "'");
+        } catch (SecurityException se) {
+            Log.e(TAG,
+                    "Security exception for field '" + FIELD_NAME_SEARCH_INDEX_DATA_PROVIDER + "'");
+        } catch (IllegalAccessException e) {
+            Log.e(TAG, "Illegal access to field '" + FIELD_NAME_SEARCH_INDEX_DATA_PROVIDER + "'");
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Illegal argument when accessing field '"
+                    + FIELD_NAME_SEARCH_INDEX_DATA_PROVIDER + "'");
         }
         return null;
     }
