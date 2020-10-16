@@ -438,7 +438,7 @@
     <string name="power_save_title">Ekstrem strømbesparelse</string>
     <string name="power_save_summary">Begræns enhed ydeevne og baggrundsaktivitet for at spare strøm</string>
     <string name="auto_power_save_title">Automatisk strømbesparelse</string>
-    <string name="auto_power_save_summary_on">Aktivér automatisk strømsparende tilstand ved %s% batteri</string>
+    <string name="auto_power_save_summary_on">Aktivér automatisk strømsparende tilstand ved %s batteri</string>
     <string name="auto_power_save_summary_off">Aktivér ikke strømsparende tilstand automatisk</string>
     <string name="auto_power_save_never">Aldrig</string>
     <string name="expanded_desktop_settings_title">Udvidet skrivebord</string>
