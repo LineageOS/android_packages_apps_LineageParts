@@ -46,6 +46,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         SeekBar.OnSeekBarChangeListener {
     private static final int BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY = 1;
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
+    private static final int KEYBOARD_BRIGHTNESS_TOGGLE_MODE_ONLY = 1;
 
     public static final String KEY_BUTTON_BACKLIGHT = "pre_navbar_button_backlight";
 
@@ -69,8 +70,11 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
         setDialogLayoutResource(R.layout.button_backlight);
 
         if (DeviceUtils.hasKeyboardBacklightSupport(context)) {
+            final boolean isSingleValue = KEYBOARD_BRIGHTNESS_TOGGLE_MODE_ONLY ==
+                    context.getResources().getInteger(org.lineageos.platform.internal.R.integer
+                            .config_deviceSupportsKeyboardBrightnessControl);
             mKeyboardBrightness = new BrightnessControl(
-                    LineageSettings.Secure.KEYBOARD_BRIGHTNESS, false);
+                    LineageSettings.Secure.KEYBOARD_BRIGHTNESS, isSingleValue);
             mActiveControl = mKeyboardBrightness;
         }
         if (DeviceUtils.hasButtonBacklightSupport(context)) {
