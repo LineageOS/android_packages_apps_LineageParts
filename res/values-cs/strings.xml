@@ -194,6 +194,7 @@
     <string name="disable_navkeys_summary">Povolit navigační lištu na obrazovce a zakázat hardwarová tlačítka</string>
     <string name="navigation_bar_category">Navigační lišta</string>
     <string name="navigation_bar_invert_layout_title">Převrátit rozložení</string>
+    <string name="navigation_bar_invert_layout_summary">Převrátí rozložení navigačního panelu a\u00a0dalších položek, jako např.\u00a0přepínače metody vstupu (IME)</string>
     <string name="navigation_bar_left_summary">Při natočení na šířku umístit navigační lištu na levé straně obrazovky</string>
     <string name="navigation_bar_arrow_keys_title">Zobrazit navigační šipky při psaní</string>
     <string name="navigation_bar_arrow_keys_summary">Zobrazit levý a pravý kurzor při psaní. Potlačí IME přepínač.</string>
@@ -364,6 +365,9 @@
     <string name="status_bar_brightness_slider_summary">Upravte jas z rychlého nastavení</string>
     <string name="status_bar_brightness_slider_auto_title">Automatický jas</string>
     <string name="status_bar_brightness_slider_auto_summary">Zobrazit přepínač pro automatický jas poblíž posuvníku</string>
+    <string name="status_bar_brightness_slider_show_never">Nikdy nezobrazovat</string>
+    <string name="status_bar_brightness_slider_show_expanded">Zobrazit po rozbalení</string>
+    <string name="status_bar_brightness_slider_show_always">Zobrazovat vždy</string>
     <string name="status_bar_toggle_brightness">Ovládání jasu</string>
     <string name="status_bar_toggle_brightness_summary">Umožňuje nastavit jas tažením prstu na stavové liště</string>
     <string name="network_traffic_settings_title">Sledování síťového provozu</string>

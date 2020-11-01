@@ -309,6 +309,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Преносима точка за достъп до Wi\u2011Fi</string>
     <string name="toggleBluetooth">Блутуут</string>
+    <string name="toggleLocation">Местоположение</string>
     <string name="toggleData">Мобилни данни</string>
     <string name="toggleSync">Авто-синхронизиране на данни</string>
     <string name="toggleNfc">NFC</string>
