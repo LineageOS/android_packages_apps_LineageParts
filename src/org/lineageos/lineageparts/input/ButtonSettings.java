@@ -255,6 +255,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 powerCategory.removePreference(mTorchLongPressPowerGesture);
                 powerCategory.removePreference(mTorchLongPressPowerTimeout);
             }
+            if (!TelephonyUtils.isVoiceCapable(getActivity()) &&
+                    !DeviceUtils.deviceSupportsFlashLight(getActivity())) {
+                prefScreen.removePreference(powerCategory);
+            }
         } else {
             prefScreen.removePreference(powerCategory);
         }
