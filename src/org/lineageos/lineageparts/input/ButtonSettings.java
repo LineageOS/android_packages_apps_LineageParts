@@ -255,11 +255,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 powerCategory.removePreference(mTorchLongPressPowerGesture);
                 powerCategory.removePreference(mTorchLongPressPowerTimeout);
             }
-            if (!TelephonyUtils.isVoiceCapable(getActivity()) &&
-                    !DeviceUtils.deviceSupportsFlashLight(getActivity())) {
-                prefScreen.removePreference(powerCategory);
-            }
-        } else {
+        }
+        if (!hasPowerKey || powerCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(powerCategory);
         }
 
@@ -281,7 +278,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             }
 
             hasAnyBindableKey = true;
-        } else {
+        }
+        if (!hasHomeKey || homeCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(homeCategory);
         }
 
@@ -290,7 +288,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 backCategory.removePreference(findPreference(KEY_BACK_WAKE_SCREEN));
                 prefScreen.removePreference(backCategory);
             }
-        } else {
+        }
+        if (!hasBackKey || backCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(backCategory);
         }
 
@@ -309,7 +308,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mMenuLongPressAction = initList(KEY_MENU_LONG_PRESS, longPressAction);
 
             hasAnyBindableKey = true;
-        } else {
+        }
+        if (!hasMenuKey || menuCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(menuCategory);
         }
 
@@ -327,7 +327,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mAssistLongPressAction = initList(KEY_ASSIST_LONG_PRESS, longPressAction);
 
             hasAnyBindableKey = true;
-        } else {
+        }
+        if (!hasAssistKey || assistCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(assistCategory);
         }
 
@@ -343,7 +344,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mAppSwitchLongPressAction = initList(KEY_APP_SWITCH_LONG_PRESS, appSwitchLongPressAction);
 
             hasAnyBindableKey = true;
-        } else {
+        }
+        if (!hasAppSwitchKey || appSwitchCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(appSwitchCategory);
         }
 
@@ -359,7 +361,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             if (res.getBoolean(org.lineageos.platform.internal.R.bool.config_singleStageCameraKey)) {
                 prefScreen.removePreference(mCameraSleepOnRelease);
             }
-        } else {
+        }
+        if (!hasCameraKey || cameraCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(cameraCategory);
         }
 
@@ -391,7 +394,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             if (mVolumePanelOnLeft != null) {
                 mVolumePanelOnLeft.setChecked(volumePanelOnLeft);
             }
-        } else {
+        }
+        if (!hasVolumeKeys || volumeCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(volumeCategory);
         }
 
