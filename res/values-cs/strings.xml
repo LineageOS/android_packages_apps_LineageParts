@@ -201,7 +201,7 @@
     <string name="navigation_bar_home_long_press_title">Akce dlouhého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_home_double_tap_title">Akce dvojitého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_app_switch_long_press_title">Akce dlouhého stisku tlačítka „Nedávné“</string>
-    <string name="navigation_bar_edge_long_swipe_title">Akce dlouhým přejetím po okraji</string>
+    <string name="navigation_bar_edge_long_swipe_title">Akce dlouhým potáhnutím od okraje</string>
     <string name="power_menu_title">Nabídka tlačítka Vypnout</string>
     <string name="power_menu_screenshot_title">Snímek obrazovky</string>
     <string name="power_menu_screenshot_summary">Dlouhým dotykem pro získání částečného snímku obrazovky</string>

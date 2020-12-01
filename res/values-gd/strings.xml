@@ -160,7 +160,7 @@
     <string name="camera_sleep_on_release_summary">Cùm an sgrìn air le leth-bhrùthadh fhad ’s a tha am putan ’ga chumail sìos</string>
     <string name="camera_launch_title">Tòisich an camara</string>
     <string name="camera_launch_summary">Cuiridh brùthadh fada is leigeil às an camara gu dol</string>
-    <string name="volbtn_music_controls_title">Stiùirich a’ chluiche</string>
+    <string name="volbtn_music_controls_title">Stiùir a’ chluiche</string>
     <string name="volbtn_music_controls_summary">Sir tracaichean ciùil le brùthadh fada air iuchraichean àirde na fuaime fhad ’s a tha an sgrìn dheth</string>
     <string name="volbtn_cursor_control_title">Stiùireadh cùrsair a’ mheur-chlàir</string>
     <string name="volbtn_cursor_control_off">À comas</string>
@@ -282,7 +282,7 @@
     <string name="volume_override_summary">Chaidh a shuidheachadh air %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Tar-àithn àirde na fuaime</string>
     <string name="profile_profiles_manage">Pròifilean</string>
-    <string name="profile_profile_manage">Stiùirich a’ phròifil</string>
+    <string name="profile_profile_manage">Stiùir a’ phròifil</string>
     <string name="profile_settings">Roghainnean na pròifil</string>
     <string name="profile_trigger_connect">Nuair a thèid ceangal a dhèanamh</string>
     <string name="profile_trigger_disconnect">Nuair a thèid ceangal a briseadh</string>
@@ -334,7 +334,7 @@
     <string name="status_bar_notif_count_title">Seall àireamh nam brathan</string>
     <string name="status_bar_notif_count_summary">Seall àireamh nam brathan ri an dèiligeadh</string>
     <string name="status_bar_system_icons_title">Ìomhaigheagan an t-siostaim</string>
-    <string name="status_bar_system_icons_summary">Stiùirich dè na h-ìomhaigheagan a thèid a shealltainn air bàr na staid</string>
+    <string name="status_bar_system_icons_summary">Stiùir dè na h-ìomhaigheagan a thèid a shealltainn air bàr na staid</string>
     <string name="status_bar_clock_title">Cleoc</string>
     <string name="status_bar_clock_show_seconds_title">Seall na diogan</string>
     <string name="status_bar_clock_show_seconds_summary">Seall na h-uairean, mionaidean is diogan</string>
@@ -381,7 +381,7 @@
     <string name="network_traffic_show_units_summary">Co-dhiù an dèid aonadan tomhais air trafaig a shealltainn air bàr na staid gus nach dèid</string>
     <string name="network_traffic_disabled_clock">Chaidh trafaig an lìonraidh a chur à comas ri linn ionad a’ chleoc</string>
     <string name="protected_apps_manager_title">Aplacaidean dìonta</string>
-    <string name="protected_apps_manager_summary">Stiùirich dè na h-aplacaidean a thèid fhalach air cùlaibh glaise tèarainte</string>
+    <string name="protected_apps_manager_summary">Stiùir dè na h-aplacaidean a thèid fhalach air cùlaibh glaise tèarainte</string>
     <string name="contributors_cloud_fragment_title">Luchd-cuideachaidh</string>
     <string name="contributors_cloud_loading_message">A’ luchdadh dàta an luchd-cuideachaidh\u2026</string>
     <string name="contributors_cloud_failed_message">Cha b’ urrainn dhuinn dàta an luchd-cuideachaidh a luchdadh</string>
