@@ -193,6 +193,7 @@
     <string name="disable_navkeys_title">Luba navigeerimisriba ekraanil</string>
     <string name="disable_navkeys_summary">Luba navigeerimisriba ekraanil ning keela riistvaralised nupud</string>
     <string name="navigation_bar_category">Navigeerimisriba</string>
+    <string name="navigation_bar_invert_layout_title">Pööra paigutus</string>
     <string name="navigation_bar_invert_layout_summary">Pöörab navigeerimisriba ja muid üksusi, näiteks IME-lülitit</string>
     <string name="navigation_bar_left_summary">Aseta navigeerimisriba vasakule, kui ekraan on rõhtasendis</string>
     <string name="navigation_bar_arrow_keys_title">Näita tippimise ajal nooleklahve</string>

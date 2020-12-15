@@ -38,6 +38,7 @@
     <string name="disabled">Dimatikan</string>
     <string name="enabled">Dihidupkan</string>
     <string name="privacy_settings_title">Privasi</string>
+    <string name="channel_light_settings_name">Pratinjau setelan lampu</string>
     <string name="edit_light_settings">Sunting pengaturan lampu</string>
     <string name="pulse_speed_title">Panjang dan kecepatan kedipan</string>
     <string name="default_time">Normal</string>
@@ -363,6 +364,8 @@
     <string name="status_bar_brightness_slider_auto_title">Kecerahan otomatis</string>
     <string name="status_bar_brightness_slider_auto_summary">Tampilkan tombol hidup/matikan kecerahan adaptif di dekat slider</string>
     <string name="status_bar_brightness_slider_show_never">Jangan pernah tampilkan</string>
+    <string name="status_bar_brightness_slider_show_expanded">Tampilkan ketika diperluas</string>
+    <string name="status_bar_brightness_slider_show_always">Selalu tampilkan</string>
     <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
     <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
     <string name="network_traffic_settings_title">Monitor lalu lintas jaringan</string>
@@ -467,6 +470,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Usap ke bawah dengan satu jari</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Usap ke kiri dengan satu jari</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Usap ke kanan dengan satu jari</string>
+    <string name="touchscreen_gesture_single_tap_title">Ketuk sekali</string>
     <string name="touchscreen_gesture_up_arrow_title">Gambar \"Λ\"</string>
     <string name="touchscreen_gesture_down_arrow_title">Gambar \"V\"</string>
     <string name="touchscreen_gesture_left_arrow_title">Gambar \"&lt;\"</string>
