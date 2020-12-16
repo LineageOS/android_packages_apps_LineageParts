@@ -539,7 +539,7 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="style_global_entry_time">Automatikoa (eguneko ordua)</string>
     <string name="style_global_entry_app">%1$s-(e)k kudeatuta</string>
     <string name="style_accent_title">Azentuatzeko kolorea</string>
-    <string name="style_accent_configuration_not_supported">Uneko azentzuatzeko kolorea ez da aukeratutako estiloarekin bateragarria. Jarraitzeko beste nabarmentzeko kolore bat aukeratu behar da, jarraitu nahi duzu? duzu?</string>
+    <string name="style_accent_configuration_not_supported">Uneko azentuatzeko kolorea ez da aukeratutako estiloarekin bateragarria. Jarraitzeko beste nabarmentzeko kolore bat aukeratu behar da, jarraitu nahi duzu? duzu?</string>
     <string name="style_accent_configuration_positive">Jarraitu</string>
     <string name="style_automagic_title">Automagic</string>
     <string name="style_automagic_description">Doitu estiloa zure horma-paperarekin bat etor dadin</string>

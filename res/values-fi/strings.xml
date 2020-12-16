@@ -34,6 +34,7 @@
     <string name="yes">Kyllä</string>
     <string name="no">Ei</string>
     <string name="search">Etsi</string>
+    <string name="search_menu">Hakuasetukset</string>
     <string name="disabled">Pois käytöstä</string>
     <string name="enabled">Käytössä</string>
     <string name="privacy_settings_title">Tietosuoja</string>
