@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The Android Open Source Project
+ *               2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -96,6 +97,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
     @UnsupportedAppUsage
     private final int mStreamType;
     private final int mMaxStreamVolume;
+    private final int mMinStreamVolume;
     private final boolean mVoiceCapable;
     private boolean mAffectedByRingerMode;
     private boolean mNotificationOrRing;
@@ -169,6 +171,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
         }
 
         mMaxStreamVolume = mAudioManager.getStreamMaxVolume(mStreamType);
+        mMinStreamVolume = mAudioManager.getStreamMinVolume(mStreamType);
         mCallback = callback;
         mOriginalStreamVolume = mAudioManager.getStreamVolume(mStreamType);
         mLastAudibleStreamVolume = mAudioManager.getLastAudibleStreamVolume(mStreamType);
@@ -249,6 +252,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
         mSeekBar = seekBar;
         mSeekBar.setOnSeekBarChangeListener(null);
         mSeekBar.setMax(mMaxStreamVolume);
+        mSeekBar.setMin(mMinStreamVolume);
         updateSeekBar();
         mSeekBar.setOnSeekBarChangeListener(this);
     }
