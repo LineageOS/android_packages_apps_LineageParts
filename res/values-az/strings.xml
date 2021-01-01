@@ -64,7 +64,7 @@
     <string name="battery_low_pulse_title">Batareya zəifdirsə yanıb sön</string>
     <string name="battery_light_list_title">Rənglər</string>
     <string name="battery_light_low_color_title">Zəif batereya</string>
-    <string name="battery_light_medium_color_title">Dolur</string>
+    <string name="battery_light_medium_color_title">Enerji yığır</string>
     <string name="battery_light_full_color_title">Tam doldu</string>
     <string name="notification_light_title">Bildiriş işığı</string>
     <string name="notification_light_general_title">Ümumi</string>
@@ -458,9 +458,9 @@
     <string name="long_screen_settings_title">Tam ekran tətbiqləri</string>
     <string name="long_screen_settings_summary">Köhnəlmiş tətbiqləri tam ekran rejimini istifadə etməyə məcbur edər</string>
     <string name="long_screen_settings_no_apps">Tətbiq yoxdur</string>
-    <string name="charging_sounds_settings_title">Enerji doldurma səsləri</string>
+    <string name="charging_sounds_settings_title">Enerji yığma səsləri</string>
     <string name="charging_sounds_enabled_title">Fəallaşdır</string>
-    <string name="charging_sounds_enabled_summary">Cərəyan mənbəyinə taxarkən və ya çıxararkən bir səs oynat</string>
+    <string name="charging_sounds_enabled_summary">Cərəyan mənbəyinə taxarkən və ya çıxararkən bir səs oxut</string>
     <string name="power_notifications_vibrate_title">Titrət</string>
     <string name="charging_sounds_ringtone_title">Bildiriş səsi</string>
     <string name="charging_sounds_ringtone_silent">Səssiz</string>

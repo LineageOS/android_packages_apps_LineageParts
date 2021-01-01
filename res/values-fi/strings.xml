@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Vastaa puheluun painamalla kotinäppäintä</string>
     <string name="extras_title">Ekstrat</string>
     <string name="additional_buttons_title">Lisänäppäimet</string>
+    <string name="click_partial_screenshot_title">Osittainen kuvakaappaus</string>
+    <string name="click_partial_screenshot_summary">Napauta Vol - ja virtanäppäintä nopeasti ottaaksesi osittaisen kuvakaappauksen</string>
     <string name="button_backlight_title">Taustavalo</string>
     <string name="button_backlight_enabled">Valaise painikkeet</string>
     <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettuna</string>

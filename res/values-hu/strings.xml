@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Bejövő hívások fogadása a kezdőlap gomb megnyomásával</string>
     <string name="extras_title">Extrák</string>
     <string name="additional_buttons_title">További gombok</string>
+    <string name="click_partial_screenshot_title">Részleges képernyőmentés gombnyomással</string>
+    <string name="click_partial_screenshot_summary">Röviden nyomja meg a Hangerő le és a Bekapcsológombot</string>
     <string name="button_backlight_title">Háttérvilágítás</string>
     <string name="button_backlight_enabled">Gombok megvilágítása</string>
     <string name="button_backlight_only_when_pressed_title">Megvilágítás kizárólag megérintéskor</string>

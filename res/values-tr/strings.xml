@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Gelen aramaları ana ekran tuşuna basarak cevaplayın</string>
     <string name="extras_title">Ekstralar</string>
     <string name="additional_buttons_title">Ek tuşlar</string>
+    <string name="click_partial_screenshot_title">Kısmi ekran görüntüsü için dokunun</string>
+    <string name="click_partial_screenshot_summary">Kısmi ekran görüntüsü almak için Sesi Kısma ve Güç tuşuna kısa basın</string>
     <string name="button_backlight_title">Aydınlatma ışığı</string>
     <string name="button_backlight_enabled">Tuşları aydınlat</string>
     <string name="button_backlight_only_when_pressed_title">Tuşları, sadece basıldığında aydınlat</string>

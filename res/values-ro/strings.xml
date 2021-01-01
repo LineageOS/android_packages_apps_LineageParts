@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Răspundeți la apelurile de intrare apăsând butonul acasă</string>
     <string name="extras_title">Mai multe</string>
     <string name="additional_buttons_title">Butoane suplimentare</string>
+    <string name="click_partial_screenshot_title">Click pentru captură parţială de ecran</string>
+    <string name="click_partial_screenshot_summary">Click scurt pe Volum Jos și butonul Pornire pentru screenshot parțial</string>
     <string name="button_backlight_title">Iluminare butoane</string>
     <string name="button_backlight_enabled">Iluminare butoane</string>
     <string name="button_backlight_only_when_pressed_title">Iluminare butoane numai când au fost apăsate</string>

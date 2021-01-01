@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Отговаряне на входящите повиквания чрез натискане на бутона за Начало</string>
     <string name="extras_title">Екстри</string>
     <string name="additional_buttons_title">Допълнителни бутони</string>
+    <string name="click_partial_screenshot_title">Скриншот на част от екрана</string>
+    <string name="click_partial_screenshot_summary">Кратко натискане на бутоните за намаляване на звука и включване, за да направите частична екранна снимка</string>
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Осветяване на бутоните</string>
     <string name="button_backlight_only_when_pressed_title">Осветяване на бутоните само при натискане</string>

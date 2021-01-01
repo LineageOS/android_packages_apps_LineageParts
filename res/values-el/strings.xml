@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Απάντηση σε εισερχόμενες κλήσεις πατώντας το πλήκτρο αρχικής οθόνης</string>
     <string name="extras_title">Επιπλέον ρυθμίσεις</string>
     <string name="additional_buttons_title">Πρόσθετα πλήκτρα</string>
+    <string name="click_partial_screenshot_title">Πιέστε για λήψη μερικού στιγμιότυπου οθόνης</string>
+    <string name="click_partial_screenshot_summary">Πιέστε το πλήκτρο μείωσης του ήχου και το πλήκτρο εκκίνησης για να ληφθεί μερικό στιγμιότυπο οθόνης</string>
     <string name="button_backlight_title">Οπίσθιος φωτισμός</string>
     <string name="button_backlight_enabled">Φωτισμός πλήκτρων</string>
     <string name="button_backlight_only_when_pressed_title">Φωτισμός πλήκτρων μόνο όταν πιέζονται</string>

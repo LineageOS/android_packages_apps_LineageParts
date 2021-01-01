@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Odgovori na dohodne klice s pritiskom na gumb Domov</string>
     <string name="extras_title">Dodatki</string>
     <string name="additional_buttons_title">Dodatni gumbi</string>
+    <string name="click_partial_screenshot_title">Klik za delno zaslonsko sliko</string>
+    <string name="click_partial_screenshot_summary">Na kratko kliknite gumb za povečanje glasnosti in gumb za vklop, da zajamete delno zaslonsko sliko</string>
     <string name="button_backlight_title">Osvetlitev ozadja</string>
     <string name="button_backlight_enabled">Osvetli gumbe</string>
     <string name="button_backlight_only_when_pressed_title">Osvetli gumbe samo ob pritisku</string>
