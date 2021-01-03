@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
@@ -34,11 +35,13 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        if (!hasRestoredTunable(ctx)) {
+        Log.e(TAG, "ButtonSettings: in onReceive, hasRestoredTunable is " + hasRestoredTunable(ctx));
+        //if (!hasRestoredTunable(ctx)) {
             /* Restore the hardware tunable values */
-            ButtonSettings.restoreKeyDisabler(ctx);
-            setRestoredTunable(ctx);
-        }
+            Log.e(TAG, "ButtonSettings: restoring hardware tunables");
+            ButtonSettings.restoreKeyStates(ctx);
+            //setRestoredTunable(ctx);
+        //}
 
         TouchscreenGestureSettings.restoreTouchscreenGestureStates(ctx);
 
