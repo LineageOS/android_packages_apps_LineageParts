@@ -44,6 +44,9 @@ public class BootReceiver extends BroadcastReceiver {
 
         // Extract the contributors database
         ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
+
+        // Apply the hardware key swapper state
+        ButtonSettings.restoreKeySwapper(ctx);
     }
 
     private boolean hasRestoredTunable(Context context) {

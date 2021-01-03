@@ -25,6 +25,12 @@
         android:summary="@string/disable_navkeys_summary"
         android:defaultValue="false" />
 
+    <SwitchPreference
+        android:key="swap_capacitive_keys"
+        android:title="@string/swap_capacitive_keys_title"
+        android:summary="@string/swap_capacitive_keys_summary"
+        android:defaultValue="false" />
+
     <org.lineageos.lineageparts.input.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
