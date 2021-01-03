@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod project
- *               2017-2020 The LineageOS project
+ *               2017-2021 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,6 +25,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
@@ -40,6 +41,7 @@ import android.view.WindowManagerGlobal;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
@@ -101,6 +103,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             "torch_long_press_power_timeout";
     private static final String KEY_CLICK_PARTIAL_SCREENSHOT =
             "click_partial_screenshot";
+    private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -140,14 +143,19 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mHomeAnswerCall;
     private SwitchPreference mTorchLongPressPowerGesture;
     private ListPreference mTorchLongPressPowerTimeout;
+    private SwitchPreference mSwapCapacitiveKeys;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
     private Handler mHandler;
 
+    private LineageHardwareManager mHardware;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mHardware = LineageHardwareManager.getInstance(getActivity());
 
         addPreferencesFromResource(R.xml.button_settings);
 
@@ -245,6 +253,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             mNavigationPreferencesCat.setEnabled(mDisableNavigationKeys.isChecked());
+            mDisableNavigationKeys.setDisableDependentsState(true);
         } else {
             prefScreen.removePreference(mDisableNavigationKeys);
         }
@@ -434,6 +443,14 @@ public class ButtonSettings extends SettingsPreferenceFragment
             }
         }
 
+        mSwapCapacitiveKeys = findPreference(KEY_SWAP_CAPACITIVE_KEYS);
+        if (mSwapCapacitiveKeys != null && !isKeySwapperSupported(getActivity())) {
+            prefScreen.removePreference(mSwapCapacitiveKeys);
+        } else {
+            mSwapCapacitiveKeys.setOnPreferenceChangeListener(this);
+            mSwapCapacitiveKeys.setDependency(KEY_DISABLE_NAV_KEYS);
+        }
+
         // Override key actions on Go devices in order to hide any unsupported features
         if (ActivityManager.isLowRamDeviceStatic()) {
             String[] actionEntriesGo = res.getStringArray(R.array.hardware_keys_action_entries_go);
@@ -586,6 +603,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
             handleListChange(mEdgeLongSwipeAction, newValue,
                     LineageSettings.System.KEY_EDGE_LONG_SWIPE_ACTION);
             return true;
+        } else if (preference == mSwapCapacitiveKeys) {
+            mHardware.set(LineageHardwareManager.FEATURE_KEY_SWAP, (Boolean) newValue);
+            return true;
         }
         return false;
     }
@@ -692,6 +712,11 @@ public class ButtonSettings extends SettingsPreferenceFragment
         return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
     }
 
+    private static boolean isKeySwapperSupported(Context context) {
+        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_SWAP);
+    }
+
     public static void restoreKeyDisabler(Context context) {
         if (!isKeyDisablerSupported(context)) {
             return;
@@ -703,6 +728,17 @@ public class ButtonSettings extends SettingsPreferenceFragment
         writeDisableNavkeysOption(context, enabled);
     }
 
+    public static void restoreKeySwapper(Context context) {
+        if (!isKeySwapperSupported(context)) {
+            return;
+        }
+
+        final SharedPreferences preferences =
+                PreferenceManager.getDefaultSharedPreferences(context);
+        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        hardware.set(LineageHardwareManager.FEATURE_KEY_SWAP,
+                preferences.getBoolean(KEY_SWAP_CAPACITIVE_KEYS, false));
+    }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
@@ -854,6 +890,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
             if (!isKeyDisablerSupported(context)) {
                 result.add(KEY_DISABLE_NAV_KEYS);
+            }
+
+            if (!isKeySwapperSupported(context)) {
+                result.add(KEY_SWAP_CAPACITIVE_KEYS);
             }
 
             if (!DeviceUtils.hasButtonBacklightSupport(context)
