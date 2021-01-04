@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f6a253f_7bb5185c",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-01-04T19:09:46Z",
+      "side": 1,
+      "message": "English goes \"to invert\": \"the inverse\" is the noun/adj",
+      "range": {
+        "startLine": 238,
+        "startChar": 51,
+        "endLine": 238,
+        "endChar": 58
+      },
+      "revId": "0c654b13d1ad776824445878c79227a2a3179c67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
