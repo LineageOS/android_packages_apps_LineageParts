@@ -64,6 +64,7 @@
     <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
         <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle
         </item>
+        <item name="preferenceCategoryTitleTextColor">?android:attr/textColorSecondary</item>
     </style>
 
     <style name="PreferenceHeaderPanelSinglePane">
