@@ -28,6 +28,7 @@ import lineageos.providers.LineageSettings;
 import java.math.BigInteger;
 import java.net.NetworkInterface;
 import java.security.MessageDigest;
+import java.util.Locale;
 
 public class Utilities {
     public static String getUniqueID(Context context) {
@@ -55,9 +56,14 @@ public class Utilities {
 
     public static String getCountryCode(Context context) {
         TelephonyManager tm = context.getSystemService(TelephonyManager.class);
-        String countryCode = tm.getNetworkCountryIso();
-        if (TextUtils.isEmpty(countryCode)) {
-            countryCode = "Unknown";
+        String countryCode = tm.getNetworkCountryIso().toUpperCase();
+        if (TextUtils.isEmpty(countryCode) || isCdmaPhone(tm)) {
+            String localeCountryCode = Locale.getDefault().getCountry();
+            if (localeCountryCode.length() == 2) {
+                countryCode = localeCountryCode;
+            } else {
+                countryCode = "Unknown";
+            }
         }
         return countryCode;
     }
@@ -98,5 +104,9 @@ public class Utilities {
         int enable = (enabled) ? 1 : 0;
         LineageSettings.Secure.putInt(context.getContentResolver(),
                 LineageSettings.Secure.STATS_COLLECTION, enable);
+    }
+
+    private static boolean isCdmaPhone(TelephonyManager tm) {
+        return tm != null && tm.getPhoneType() == TelephonyManager.PHONE_TYPE_CDMA;
     }
 }
