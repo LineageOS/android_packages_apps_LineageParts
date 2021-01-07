@@ -56,8 +56,10 @@ public class Utilities {
     public static String getCountryCode(Context context) {
         TelephonyManager tm = context.getSystemService(TelephonyManager.class);
         String countryCode = tm.getNetworkCountryIso();
-        if (TextUtils.isEmpty(countryCode)) {
+        if (TextUtils.isEmpty(countryCode) || countryCode.length() > 2) {
             countryCode = "Unknown";
+        } else {
+            countryCode = countryCode.toLowerCase();
         }
         return countryCode;
     }
