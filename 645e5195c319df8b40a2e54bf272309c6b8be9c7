@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d5baa55c_0bf8f576",
+        "filename": "src/org/lineageos/lineageparts/lineagestats/Utilities.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2021-01-07T19:06:50Z",
+      "side": 1,
+      "message": "!\u003d?",
+      "range": {
+        "startLine": 59,
+        "startChar": 67,
+        "endLine": 59,
+        "endChar": 68
+      },
+      "revId": "645e5195c319df8b40a2e54bf272309c6b8be9c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
