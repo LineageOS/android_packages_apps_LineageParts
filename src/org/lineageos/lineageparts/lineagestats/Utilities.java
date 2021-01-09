@@ -38,9 +38,14 @@ public class Utilities {
 
     public static String getCarrier(Context context) {
         TelephonyManager tm = context.getSystemService(TelephonyManager.class);
-        String carrier = tm.getNetworkOperatorName();
+        String carrier = tm.getNetworkOperator();
         if (TextUtils.isEmpty(carrier)) {
-            carrier = "Unknown";
+            String simOperator = tm.getSimOperatorName();
+            if (!TextUtils.isEmpty(simOperator)) {
+                carrier = simOperator;
+            } else {
+                carrier = "Unknown";
+            }
         }
         return carrier;
     }
