@@ -39,7 +39,8 @@ public class Utilities {
     public static String getCarrier(Context context) {
         TelephonyManager tm = context.getSystemService(TelephonyManager.class);
         String carrier = tm.getNetworkOperatorName();
-        if (TextUtils.isEmpty(carrier)) {
+        String carrierId = tm.getNetworkOperator();
+        if (TextUtils.isEmpty(carrier) || TextUtils.isEmpty(carrierId) || isCdmaPhone(tm)) {
             carrier = "Unknown";
         }
         return carrier;
