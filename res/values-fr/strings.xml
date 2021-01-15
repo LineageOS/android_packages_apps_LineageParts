@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Répondre aux appels entrants en appuyant sur le bouton d\'accueil</string>
     <string name="extras_title">Autres options</string>
     <string name="additional_buttons_title">Boutons supplémentaires</string>
+    <string name="click_partial_screenshot_title">Cliquer pour une capture d\'écran partielle</string>
+    <string name="click_partial_screenshot_summary">Presser brièvement Volume Bas et Marche/Arrêt pour une capture d\'écran partielle</string>
     <string name="button_backlight_title">Rétroéclairage</string>
     <string name="button_backlight_enabled">Rétroéclairage des boutons</string>
     <string name="button_backlight_only_when_pressed_title">Éclairer les boutons seulement lors de l\'appui</string>

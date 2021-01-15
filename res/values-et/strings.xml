@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Vasta sissetulevatele kõnedele kodunupu vajutusega</string>
     <string name="extras_title">Lisad</string>
     <string name="additional_buttons_title">Täiendavad nupud</string>
+    <string name="click_partial_screenshot_title">Klõpsa osalise ekraanipildi tegemiseks</string>
+    <string name="click_partial_screenshot_summary">Osalise ekraanipildi tegemiseks klõpsa lühidalt helitugevus alla- ja toitenuppu</string>
     <string name="button_backlight_title">Taustvalgus</string>
     <string name="button_backlight_enabled">Valgusta nuppe</string>
     <string name="button_backlight_only_when_pressed_title">Valgusta nuppe ainult vajutades</string>

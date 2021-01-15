@@ -165,7 +165,7 @@
     <string name="volbtn_cursor_control_title">키보드 커서 제어</string>
     <string name="volbtn_cursor_control_off">사용 안 함</string>
     <string name="volbtn_cursor_control_on">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
-    <string name="volbtn_cursor_control_on_reverse">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
+    <string name="volbtn_cursor_control_on_reverse">볼륨 위/아래 버튼으로 커서를 오른쪽/왼쪽으로 이동</string>
     <string name="power_end_call_title">통화 종료</string>
     <string name="power_end_call_summary">전원 버튼을 눌러 현재 진행 중인 통화 종료</string>
     <string name="swap_volume_buttons_title">버튼 재정렬</string>
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">홈 버튼을 눌러 걸려온 전화를 받기</string>
     <string name="extras_title">추가 기능</string>
     <string name="additional_buttons_title">기타 버튼</string>
+    <string name="click_partial_screenshot_title">눌러서 부분 스크린샷 캡처</string>
+    <string name="click_partial_screenshot_summary">볼륨 아래 버튼과 전원 버튼을 동시에 짧게 눌러 부분 스크린샷 캡처</string>
     <string name="button_backlight_title">백라이트</string>
     <string name="button_backlight_enabled">버튼 조명 사용</string>
     <string name="button_backlight_only_when_pressed_title">버튼이 눌렸을 때만 조명을 켭니다.</string>

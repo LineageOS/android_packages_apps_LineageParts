@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Gələn zəngləri əsas ekran düyməsinə basaraq cavabla</string>
     <string name="extras_title">Əlavələr</string>
     <string name="additional_buttons_title">Əlavə düymələr</string>
+    <string name="click_partial_screenshot_title">Qismən ekran şəkli üçün basın</string>
+    <string name="click_partial_screenshot_summary">Qismən ekran şəklini çəkmək üçün Səs Azaltma və Güc düyməsinə uzun basın</string>
     <string name="button_backlight_title">Arxa işıq</string>
     <string name="button_backlight_enabled">Düymələri aydınlat</string>
     <string name="button_backlight_only_when_pressed_title">Düymələri yalnız basılarkən aydınlat</string>

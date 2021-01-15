@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Atender chamadas pressionando o botão Página Inicial</string>
     <string name="extras_title">Extras</string>
     <string name="additional_buttons_title">Botões adicionais</string>
+    <string name="click_partial_screenshot_title">Clique para captura de ecrã parcial</string>
+    <string name="click_partial_screenshot_summary">Clique curto no botão de Volume Baixo e botão de Energia para realizar uma captura de ecrã parcial</string>
     <string name="button_backlight_title">Luz de fundo</string>
     <string name="button_backlight_enabled">Iluminar os botões</string>
     <string name="button_backlight_only_when_pressed_title">Iluminar botões apenas ao tocar</string>

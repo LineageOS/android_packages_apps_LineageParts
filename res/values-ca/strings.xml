@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Contesta les trucades entrants prement el botó d\'inici</string>
     <string name="extras_title">Extres</string>
     <string name="additional_buttons_title">Botons addicionals</string>
+    <string name="click_partial_screenshot_title">Feu clic per fer una captura de pantalla parcial</string>
+    <string name="click_partial_screenshot_summary">Feu un clic curt per baixar el volum i encendre per fer una captura de pantalla parcial</string>
     <string name="button_backlight_title">Retroil·luminació</string>
     <string name="button_backlight_enabled">Il·lumina els botons</string>
     <string name="button_backlight_only_when_pressed_title">Il·lumina els botons només quan es premin</string>
