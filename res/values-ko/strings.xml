@@ -179,7 +179,7 @@
     <string name="volbtn_cursor_control_title">키보드 커서 제어</string>
     <string name="volbtn_cursor_control_off">사용 안 함</string>
     <string name="volbtn_cursor_control_on">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
-    <string name="volbtn_cursor_control_on_reverse">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
+    <string name="volbtn_cursor_control_on_reverse">볼륨 위/아래 버튼으로 커서를 오른쪽/왼쪽으로 이동</string>
     <string name="power_end_call_title">통화 종료</string>
     <string name="power_end_call_summary">전원 버튼을 눌러 현재 진행 중인 통화 종료</string>
     <string name="swap_volume_buttons_title">버튼 재정렬</string>

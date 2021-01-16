@@ -41,7 +41,7 @@
     <string name="privacy_guard_switch_label">Activer la protection des données</string>
     <string name="privacy_guard_dlg_title">Activer la protection des données ?</string>
     <string name="privacy_guard_dlg_text">Lorsque la protection des données est activée, les applications n\'ont pas accès à vos données personnelles telles que les contacts, les messages ou le journal d\'appels.</string>
-    <string name="privacy_guard_dlg_system_app_text">Lorsque la protection des données est activée pour une application système, cette dernière ne peut pas fournir de données personnelles ni y accéder. Cela peut provoquer des dysfonctionnements avec d\'autres applications.</string>
+    <string name="privacy_guard_dlg_system_app_text">Lorsque la protection des données est activée pour une application système, cette dernière ne peut pas fournir de données personnelles ni y accéder. Ceci peut provoquer des dysfonctionnements avec d\'autres applications.</string>
     <string name="privacy_guard_default_title">Activée par défaut</string>
     <string name="privacy_guard_manager_summary">Contrôler l\'accès des applications à vos données personnelles</string>
     <string name="privacy_guard_no_user_apps">Aucune application installée</string>
