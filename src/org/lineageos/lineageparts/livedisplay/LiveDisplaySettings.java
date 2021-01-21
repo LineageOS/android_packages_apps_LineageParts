@@ -16,7 +16,13 @@
  */
 package org.lineageos.lineageparts.livedisplay;
 
+import android.app.AlertDialog;
+import android.app.Activity;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.hardware.display.ColorDisplayManager;
 import android.net.Uri;
@@ -24,6 +30,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.Log;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.CheckBox;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -266,6 +275,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
                 !mHardware.isSupported(LineageHardwareManager.FEATURE_ANTI_FLICKER)) {
             liveDisplayPrefs.removePreference(mAntiFlicker);
             mAntiFlicker = null;
+        } else {
+            mAntiFlicker.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -400,6 +411,13 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             }
         } else if (preference == mReadingMode) {
             mHardware.set(LineageHardwareManager.FEATURE_READING_ENHANCEMENT, (Boolean) objValue);
+        } else if (preference == mAntiFlicker) {
+            SharedPreferences prefs = getActivity().getSharedPreferences(
+                    KEY_LIVE_DISPLAY_ANTI_FLICKER, Activity.MODE_PRIVATE);
+            if ((Boolean) objValue
+                    && !prefs.getBoolean("live_display_anti_flicker_warning_hidden", false)) {
+                showAntiFlickerWarningDialog();
+            }
         }
         return true;
     }
@@ -484,4 +502,50 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
             return Collections.singletonList(raw);
         }
     };
+
+    private class AntiFlickerWarningDialog extends DialogFragment {
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            View view = getActivity().getLayoutInflater().inflate(
+                    R.layout.live_display_anti_flicker_warning, null);
+            CheckBox hideDialog =
+                    (CheckBox) view.findViewById(R.id.live_display_anti_flicker_warning_hide);
+
+            hideDialog.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                    getActivity()
+                            .getSharedPreferences(
+                                    KEY_LIVE_DISPLAY_ANTI_FLICKER, Activity.MODE_PRIVATE)
+                            .edit()
+                            .putBoolean("live_display_anti_flicker_warning_hidden", isChecked)
+                            .commit();
+                }
+            });
+
+            return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.live_display_anti_flicker_warning_title)
+                    .setMessage(R.string.live_display_anti_flicker_warning_text)
+                    .setView(view)
+                    .setPositiveButton(R.string.dlg_ok,
+                            (dialog, which) -> dialog.cancel())
+                    .setNegativeButton(R.string.cancel,
+                            (dialog, which) -> {
+                                LineageSettings.System.putInt(getContext().getContentResolver(),
+                                        LineageSettings.System.DISPLAY_ANTI_FLICKER, 0);
+                                dialog.cancel();
+                            })
+                    .create();
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+            mAntiFlicker.setChecked(mHardware.get(LineageHardwareManager.FEATURE_ANTI_FLICKER));
+        }
+    }
+
+    private void showAntiFlickerWarningDialog() {
+        AntiFlickerWarningDialog fragment = new AntiFlickerWarningDialog();
+        fragment.show(getFragmentManager(), "anti_flicker_warning_dialog");
+    }
 }
