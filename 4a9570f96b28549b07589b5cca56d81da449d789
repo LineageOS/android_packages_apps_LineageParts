@@ -34,6 +34,24 @@
       "revId": "4a9570f96b28549b07589b5cca56d81da449d789",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "934d2492_0524bdd7",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2021-01-22T23:36:01Z",
+      "side": 1,
+      "message": "\"Prevent extensive flickering and reduce eye strain in low light conditions. It might degrade color accuracy and affect the way some items are displayed.\" seems of not unreasonable length to me (certainly, longer summaries can be found). \n\nSeparately, if I\u0027ve followed the code correctly, I\u0027m not keen on us having an alert that the user can dismiss and never get back if they later want to reread.",
+      "parentUuid": "87fed0f1_ecd86b1f",
+      "revId": "4a9570f96b28549b07589b5cca56d81da449d789",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
