@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "79923f1f_559d7080",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2021-01-22T19:19:56Z",
+      "side": 1,
+      "message": "What about just appending the latter half of the warning text below \"It might degrade color accuracy and affect the way some items are displayed\" to the summary here instead ?",
+      "revId": "4a9570f96b28549b07589b5cca56d81da449d789",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
