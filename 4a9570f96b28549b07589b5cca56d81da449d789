@@ -16,6 +16,24 @@
       "revId": "4a9570f96b28549b07589b5cca56d81da449d789",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "87fed0f1_ecd86b1f",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-01-22T21:52:00Z",
+      "side": 1,
+      "message": "The idea behind this dialog was to avoid long texts in settings.",
+      "parentUuid": "79923f1f_559d7080",
+      "revId": "4a9570f96b28549b07589b5cca56d81da449d789",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
