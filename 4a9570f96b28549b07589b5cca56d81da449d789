@@ -52,6 +52,24 @@
       "revId": "4a9570f96b28549b07589b5cca56d81da449d789",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e0899a2_063ccbae",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-01-26T23:27:17Z",
+      "side": 1,
+      "message": "Yes, that\u0027s right, if one taps on \"Do not show again\" one wouldn\u0027t be able to see the dialog anymore. The longer string sounds okay to me but i can\u0027t say what\u0027s the better experience.",
+      "parentUuid": "934d2492_0524bdd7",
+      "revId": "4a9570f96b28549b07589b5cca56d81da449d789",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
