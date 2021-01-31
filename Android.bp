@@ -33,6 +33,10 @@ android_app {
         proguard_flags_files: ["proguard.flags"],
     },
 
+    libs: [
+        "unsupportedappusage",
+    ],
+
     static_libs: [
         "androidx.appcompat_appcompat",
         "androidx.dynamicanimation_dynamicanimation",

@@ -35,7 +35,6 @@ import android.net.wifi.WifiManager;
 import android.nfc.NfcManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.SeekBarVolumizer;
 import android.provider.Settings;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
