@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2b879760_46d9571b",
+        "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-02-06T15:38:14Z",
+      "side": 1,
+      "message": "Remove this?",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 11
+      },
+      "revId": "d7b794a91e575b5b55f1aa85b966fa6b5bed43b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de5e3a09_3c740a11",
+        "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-02-06T15:38:14Z",
+      "side": 1,
+      "message": "Maybe remove these instead of importing unsupportedappusage lib",
+      "range": {
+        "startLine": 88,
+        "startChar": 4,
+        "endLine": 88,
+        "endChar": 24
+      },
+      "revId": "d7b794a91e575b5b55f1aa85b966fa6b5bed43b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
