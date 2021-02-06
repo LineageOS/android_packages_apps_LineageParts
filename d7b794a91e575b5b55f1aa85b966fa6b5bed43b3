@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9862d761_28827c40",
+        "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-02-06T16:37:26Z",
+      "side": 1,
+      "message": "done.",
+      "parentUuid": "2b879760_46d9571b",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 11
+      },
+      "revId": "d7b794a91e575b5b55f1aa85b966fa6b5bed43b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "de5e3a09_3c740a11",
         "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "d7b794a91e575b5b55f1aa85b966fa6b5bed43b3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2b8e2ae0_8f757388",
+        "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-02-06T16:37:26Z",
+      "side": 1,
+      "message": "Sounds good. The annotations don\u0027t make much sense here",
+      "parentUuid": "de5e3a09_3c740a11",
+      "range": {
+        "startLine": 88,
+        "startChar": 4,
+        "endLine": 88,
+        "endChar": 24
+      },
+      "revId": "d7b794a91e575b5b55f1aa85b966fa6b5bed43b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
