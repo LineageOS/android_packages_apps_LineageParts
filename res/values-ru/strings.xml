@@ -509,8 +509,8 @@
     <string name="trust_category_features">Статус</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Принудительный</string>
-    <string name="trust_feature_selinux_value_disabled">Отключено</string>
-    <string name="trust_feature_selinux_explain">SELinux определяет какие процессы имеют доступ к файлам/путям на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым им доступ не положен: таким образом, вредоносный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
+    <string name="trust_feature_selinux_value_disabled">Отключен</string>
+    <string name="trust_feature_selinux_explain">SELinux определяет какие процессы имеют доступ к файлам/путям на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым они не должны иметь доступа: таким образом, потенциальный злонамеренный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
     <string name="trust_feature_security_patches">Пакеты безопасности Android</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nПроизводитель: %2$s</string>
     <string name="trust_feature_security_patches_value_new">актуальны</string>
