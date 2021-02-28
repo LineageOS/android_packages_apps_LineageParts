@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -66,9 +66,6 @@
     <string name="power_end_call_title">Acabba sa mutida</string>
     <string name="backlight_summary_disabled">Disabilitadu</string>
     <string name="backlight_summary_enabled">Abilitadu</string>
-    <string name="power_menu_screenshot_title">Ischermada</string>
-    <string name="power_menu_screenshot_summary">Incarca a longu pro un\'ischermada partziale</string>
-    <string name="power_menu_lockdown_title">Bloca</string>
     <string name="torch_long_press_power_timeout_never">Mai</string>
     <string name="torch_long_press_power_timeout_1min">1 minutu</string>
     <string name="torch_long_press_power_timeout_2min">2 minutos</string>

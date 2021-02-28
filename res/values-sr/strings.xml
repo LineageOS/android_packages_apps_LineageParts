@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -197,14 +197,6 @@
     <string name="navigation_bar_home_long_press_title">Дуги притисак на дугме „Почетна“</string>
     <string name="navigation_bar_home_double_tap_title">Двоструки додир дугмета „Почетна“</string>
     <string name="navigation_bar_app_switch_long_press_title">Акција на дуги притисак дугмета „скорашње“</string>
-    <string name="power_menu_title">Мени за напајање</string>
-    <string name="power_menu_screenshot_title">Снимак екрана</string>
-    <string name="power_menu_screenshot_summary">Додирните и задржите да бисте одредили област за снимак екрана</string>
-    <string name="power_menu_airplane_title">Режим рада у авиону</string>
-    <string name="power_menu_users_title">Пребацивање корисника</string>
-    <string name="power_menu_bug_report_title">Пријава грешака</string>
-    <string name="power_menu_bug_report_disabled">Пријава грешака је онемогућена у опцијама за програмера.</string>
-    <string name="power_menu_lockdown_title">Закључавање</string>
     <string name="camera_double_tap_power_gesture_title">Двоструки додир дугмета за напајање покреће камеру</string>
     <string name="camera_double_tap_power_gesture_desc">Брзо отворите камеру без откључавања уређаја.</string>
     <string name="torch_long_press_power_gesture_title">Дуги притисак за лампу</string>
@@ -383,13 +375,7 @@
     <string name="contributors_cloud_loading_message">Учитавам податке о сарадницима\u2026</string>
     <string name="contributors_cloud_failed_message">Не могу да учитам податке о сарадницима.</string>
     <string name="contributor_info_menu">Подаци о сарадницима</string>
-    <string name="contributor_info_msg">&lt;b&gt;Име:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Надимак:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Доприноса:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;;</string>
     <string name="contributions_info_menu">Општа статистика</string>
-    <string name="contributions_info_msg">&lt;b&gt;Укупно сарадника:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Укупно доприноса:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Последња измена:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;;</string>
     <string name="anonymous_statistics_title">Слање статистике</string>
     <string name="anonymous_statistics_summary">Помозите нам да побољшамо LineageOS тако што ћете дозволити слање анонимне статистике.</string>
     <string name="anonymous_statistics_warning_title">Информације</string>

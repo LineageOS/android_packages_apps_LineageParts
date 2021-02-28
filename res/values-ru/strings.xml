@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Отвечать на входящие вызовы нажатием кнопки \'Домой\'</string>
     <string name="extras_title">Дополнительно</string>
     <string name="additional_buttons_title">Дополнительные кнопки</string>
+    <string name="click_partial_screenshot_title">Скриншот части экрана</string>
+    <string name="click_partial_screenshot_summary">Нажмите кнопку уменьшения громкости и кнопку питания, чтобы сделать скриншот части экрана</string>
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Подсветка кнопок</string>
     <string name="button_backlight_only_when_pressed_title">Подсветка кнопок только при нажатии</string>
@@ -202,14 +204,6 @@
     <string name="navigation_bar_home_double_tap_title">Двойное нажатие кнопки «Домой»</string>
     <string name="navigation_bar_app_switch_long_press_title">Длительное нажатие кнопки \'Недавние\'</string>
     <string name="navigation_bar_edge_long_swipe_title">Действие по долгому свайпу</string>
-    <string name="power_menu_title">Меню кнопки питания</string>
-    <string name="power_menu_screenshot_title">Скриншот</string>
-    <string name="power_menu_screenshot_summary">Удерживайте, чтобы выделить область для скриншота</string>
-    <string name="power_menu_airplane_title">Режим полета</string>
-    <string name="power_menu_users_title">Переключение пользователей</string>
-    <string name="power_menu_bug_report_title">Отчет об ошибке</string>
-    <string name="power_menu_bug_report_disabled">Отчет об ошибке отключен в настройках для разработчика</string>
-    <string name="power_menu_lockdown_title">Блокировка</string>
     <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для запуска камеры</string>
     <string name="camera_double_tap_power_gesture_desc">Быстро запустить камеру без разблокировки устройства</string>
     <string name="torch_long_press_power_gesture_title">Длительное нажатие для включения фонарика</string>
@@ -398,8 +392,8 @@
                  &lt;b&gt;Коммитов:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Общая статистика</string>
     <string name="contributions_info_msg">&lt;b&gt;Всего участников:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Всего коммитов:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Последнее обновление:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+                 &lt;b&gt;Всего коммитов:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Последнее обновление:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Отправка статистики</string>
     <string name="anonymous_statistics_summary">Помогите сделать LineageOS лучше, разрешив отправку анонимной статистики</string>
     <string name="anonymous_statistics_warning_title">Сведения</string>
@@ -507,8 +501,8 @@
     <string name="trust_category_features">Статус</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Принудительный</string>
-    <string name="trust_feature_selinux_value_disabled">Отключено</string>
-    <string name="trust_feature_selinux_explain">SELinux определяет какие процессы имеют доступ к файлам/путям на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым им доступ не положен: таким образом, вредоносный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
+    <string name="trust_feature_selinux_value_disabled">Отключен</string>
+    <string name="trust_feature_selinux_explain">SELinux определяет какие процессы имеют доступ к файлам/путям на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым они не должны иметь доступа: таким образом, потенциальный злонамеренный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
     <string name="trust_feature_security_patches">Пакеты безопасности Android</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nПроизводитель: %2$s</string>
     <string name="trust_feature_security_patches_value_new">актуальны</string>

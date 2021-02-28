@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -199,14 +199,6 @@
     <string name="navigation_bar_home_long_press_title">主畫面鍵長按動作</string>
     <string name="navigation_bar_home_double_tap_title">主畫面輕觸兩下動作</string>
     <string name="navigation_bar_app_switch_long_press_title">多工鍵長按動作</string>
-    <string name="power_menu_title">電源選單</string>
-    <string name="power_menu_screenshot_title">螢幕擷取</string>
-    <string name="power_menu_screenshot_summary">長按即可部分螢幕擷取</string>
-    <string name="power_menu_airplane_title">飛航模式</string>
-    <string name="power_menu_users_title">使用者切換器</string>
-    <string name="power_menu_bug_report_title">錯誤報告</string>
-    <string name="power_menu_bug_report_disabled">已在開發人員選項中停用錯誤報告</string>
-    <string name="power_menu_lockdown_title">鎖定</string>
     <string name="camera_double_tap_power_gesture_title">按住電源鍵兩下開啟相機</string>
     <string name="camera_double_tap_power_gesture_desc">快速開啟相機，無需解鎖螢幕</string>
     <string name="torch_long_press_power_gesture_title">長按開啟手電筒</string>
@@ -386,13 +378,7 @@
     <string name="contributors_cloud_loading_message">正在讀取貢獻者名單\u2026</string>
     <string name="contributors_cloud_failed_message">無法載入貢獻者資料</string>
     <string name="contributor_info_menu">貢獻者名單</string>
-    <string name="contributor_info_msg">&lt;b&gt;名稱：&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;暱稱：:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;提交：&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">貢獻者名單</string>
-    <string name="contributions_info_msg">&lt;b&gt;總貢獻者：&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;總認可：&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;最後更新：&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS 統計</string>
     <string name="anonymous_statistics_summary">加入匿名統計報告即可協助改進 LineageOS</string>
     <string name="anonymous_statistics_warning_title">相關資訊</string>

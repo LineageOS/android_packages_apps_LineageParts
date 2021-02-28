@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Vasta sissetulevatele kõnedele kodunupu vajutusega</string>
     <string name="extras_title">Lisad</string>
     <string name="additional_buttons_title">Täiendavad nupud</string>
+    <string name="click_partial_screenshot_title">Klõpsa osalise ekraanipildi tegemiseks</string>
+    <string name="click_partial_screenshot_summary">Osalise ekraanipildi tegemiseks klõpsa lühidalt helitugevus alla- ja toitenuppu</string>
     <string name="button_backlight_title">Taustvalgus</string>
     <string name="button_backlight_enabled">Valgusta nuppe</string>
     <string name="button_backlight_only_when_pressed_title">Valgusta nuppe ainult vajutades</string>
@@ -193,6 +195,7 @@
     <string name="disable_navkeys_title">Luba navigeerimisriba ekraanil</string>
     <string name="disable_navkeys_summary">Luba navigeerimisriba ekraanil ning keela riistvaralised nupud</string>
     <string name="navigation_bar_category">Navigeerimisriba</string>
+    <string name="navigation_bar_invert_layout_title">Pööra paigutus</string>
     <string name="navigation_bar_invert_layout_summary">Pöörab navigeerimisriba ja muid üksusi, näiteks IME-lülitit</string>
     <string name="navigation_bar_left_summary">Aseta navigeerimisriba vasakule, kui ekraan on rõhtasendis</string>
     <string name="navigation_bar_arrow_keys_title">Näita tippimise ajal nooleklahve</string>
@@ -201,14 +204,6 @@
     <string name="navigation_bar_home_double_tap_title">Kodunupu topeltkoputuse tegevus</string>
     <string name="navigation_bar_app_switch_long_press_title">Viimatiste nupu pika vajutuse tegevus</string>
     <string name="navigation_bar_edge_long_swipe_title">Serva pikk pühkimine</string>
-    <string name="power_menu_title">Toitemenüü</string>
-    <string name="power_menu_screenshot_title">Ekraanipilt</string>
-    <string name="power_menu_screenshot_summary">Osalise ekraanipildi tegemiseks hoia pikalt all</string>
-    <string name="power_menu_airplane_title">Lennurežiim</string>
-    <string name="power_menu_users_title">Kasutaja vahetaja</string>
-    <string name="power_menu_bug_report_title">Veaaruanne</string>
-    <string name="power_menu_bug_report_disabled">Veaaruanne on arendaja valikutes keelatud</string>
-    <string name="power_menu_lockdown_title">Lukustamine</string>
     <string name="camera_double_tap_power_gesture_title">Kaamera avamiseks vajuta 2 korda toitenuppu</string>
     <string name="camera_double_tap_power_gesture_desc">Ava kaamera kiirelt, ekraanilukku avamata</string>
     <string name="torch_long_press_power_gesture_title">Hoia all taskulambi jaoks</string>
@@ -394,10 +389,10 @@
     <string name="contributor_info_menu">Toetajate info</string>
     <string name="contributor_info_msg">&lt;b&gt;Nimi:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Hüüdnimi:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Muudatused:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+                 &lt;b&gt;Commitid:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Toetuste info</string>
-    <string name="contributions_info_msg">&lt;b&gt;Toetajaid kokku:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Muudatusi kokku:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+    <string name="contributions_info_msg">&lt;b&gt;Panustajaid kokku:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Commite kokku:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Viimane uuendus:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS\'i statistika</string>
     <string name="anonymous_statistics_summary">Aita LineageOS\'i paremaks teha, lülitades sisse anonüümse statistika raporteerimise</string>

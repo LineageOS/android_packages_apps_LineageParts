@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -185,12 +185,6 @@
     <string name="navigation_bar_arrow_keys_summary">Приказ на лево и десно курсорски копчиња додека пишувате. Преклопува преклопник за IME.</string>
     <string name="navigation_bar_home_long_press_title">Акција за долго притискање на домашно копче</string>
     <string name="navigation_bar_home_double_tap_title">Акција за двојно притискање на домашно копче</string>
-    <string name="power_menu_title">Мени за напојување</string>
-    <string name="power_menu_screenshot_title">Слика од екранот</string>
-    <string name="power_menu_airplane_title">Авионски режим</string>
-    <string name="power_menu_users_title">Замена на корисник</string>
-    <string name="power_menu_bug_report_title">Пријава на грешка</string>
-    <string name="power_menu_bug_report_disabled">Пријавување на грешки е оневозможено во развојните поставки</string>
     <string name="camera_double_tap_power_gesture_title">Притиснете го копчето за напојување двапати за да ја уклучите камерата</string>
     <string name="camera_double_tap_power_gesture_desc">Брзо отворање на камерата без да го отклучите вашиот екран</string>
     <string name="torch_long_press_power_gesture_title">Долг притисок за светилка</string>
@@ -351,13 +345,7 @@
     <string name="contributors_cloud_loading_message">Вчитување на податоците за соработниците\u2026</string>
     <string name="contributors_cloud_failed_message">Не може да се вчитаат податоците за соработниците</string>
     <string name="contributor_info_menu">Информации за соработникот</string>
-    <string name="contributor_info_msg">&lt;b&gt;Име:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Прекар:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Придонес:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Информации за придонеси</string>
-    <string name="contributions_info_msg">&lt;b&gt;Вкупно соработници:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Вкупно придонеси:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Последно ажурирање:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS статистика</string>
     <string name="anonymous_statistics_summary">Помогнете за подобрувањето на LineageOS со одбирање на анонимно известување за статистика</string>
     <string name="anonymous_statistics_warning_title">За</string>

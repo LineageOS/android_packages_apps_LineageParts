@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Gelen aramaları ana ekran tuşuna basarak cevaplayın</string>
     <string name="extras_title">Ekstralar</string>
     <string name="additional_buttons_title">Ek tuşlar</string>
+    <string name="click_partial_screenshot_title">Kısmi ekran görüntüsü için dokunun</string>
+    <string name="click_partial_screenshot_summary">Kısmi ekran görüntüsü almak için Sesi Kısma ve Güç tuşuna kısa basın</string>
     <string name="button_backlight_title">Aydınlatma ışığı</string>
     <string name="button_backlight_enabled">Tuşları aydınlat</string>
     <string name="button_backlight_only_when_pressed_title">Tuşları, sadece basıldığında aydınlat</string>
@@ -202,14 +204,6 @@
     <string name="navigation_bar_home_double_tap_title">Ana ekran tuşuna çift dokunma eylemi</string>
     <string name="navigation_bar_app_switch_long_press_title">Son uygulamalar tuşuna uzun basma eylemi</string>
     <string name="navigation_bar_edge_long_swipe_title">Kenar boyunca kaydırma eylemi</string>
-    <string name="power_menu_title">Güç menüsü</string>
-    <string name="power_menu_screenshot_title">Ekran görüntüsü</string>
-    <string name="power_menu_screenshot_summary">Kısmi ekran görüntüsü için basılı tutun</string>
-    <string name="power_menu_airplane_title">Uçak modu</string>
-    <string name="power_menu_users_title">Kullanıcı değiştir</string>
-    <string name="power_menu_bug_report_title">Hata raporu</string>
-    <string name="power_menu_bug_report_disabled">Hata raporlama geliştirici ayarlarında devre dışı bırakıldı</string>
-    <string name="power_menu_lockdown_title">Kilitle</string>
     <string name="camera_double_tap_power_gesture_title">Kamera için güç düğmesine iki kez basın</string>
     <string name="camera_double_tap_power_gesture_desc">Ekran kilidinizi açmadan kamerayı hızlıca açın</string>
     <string name="torch_long_press_power_gesture_title">El feneri için uzun basın</string>
@@ -393,9 +387,9 @@
     <string name="contributors_cloud_loading_message">Katkıda bulunanlar verisi yükleniyor\u2026</string>
     <string name="contributors_cloud_failed_message">Katkıda bulunanlar verisi yüklenemedi</string>
     <string name="contributor_info_menu">Katkıda bulunan bilgisi</string>
-    <string name="contributor_info_msg">&lt;b&gt;İsim:&lt;/b&gt;&lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Takma isim:&lt;/b&gt;&lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Girdiler:&lt;/b&gt;&lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg">&lt;b&gt;İsim:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Takma isim:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Girdiler:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Katkılar hakkında bilgi</string>
     <string name="contributions_info_msg">&lt;b&gt;Tüm katkı sağlayanlar:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Toplam girdi:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;

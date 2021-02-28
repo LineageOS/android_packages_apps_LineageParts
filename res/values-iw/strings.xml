@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -195,14 +195,6 @@
     <string name="navigation_bar_home_long_press_title">פעולת לחיצה ארוכה על מקש הבית</string>
     <string name="navigation_bar_home_double_tap_title">פעולת לחיצה כפולה על מקש הבית</string>
     <string name="navigation_bar_app_switch_long_press_title">פעולת לחיצה ארוכה על מקש יישומים אחרונים</string>
-    <string name="power_menu_title">תפריט כיבוי</string>
-    <string name="power_menu_screenshot_title">צילום מסך</string>
-    <string name="power_menu_screenshot_summary">לחיצה ארוכה לצילום מסך חלקי</string>
-    <string name="power_menu_airplane_title">מצב טיסה</string>
-    <string name="power_menu_users_title">מחליף משתמשים</string>
-    <string name="power_menu_bug_report_title">דיווח באגים</string>
-    <string name="power_menu_bug_report_disabled">דיווח באגים מושבת בהגדרות מפתח</string>
-    <string name="power_menu_lockdown_title">נעילה כללית</string>
     <string name="camera_double_tap_power_gesture_title">לחיצה כפולה על מקש ההפעלה לפתיחת המצלמה</string>
     <string name="camera_double_tap_power_gesture_desc">פתח את המצלמה במהירות בלי לבטל את נעילת המכשיר</string>
     <string name="torch_long_press_power_gesture_title">לחיצה ארוכה לפנס</string>
@@ -381,13 +373,7 @@
     <string name="contributors_cloud_loading_message">טוען נתוני תורמים\u2026</string>
     <string name="contributors_cloud_failed_message">לא ניתן לטעון נתוני תורמים</string>
     <string name="contributor_info_menu">פרטי תורם</string>
-    <string name="contributor_info_msg">&lt;b&gt;שם:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;כינוי:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;שינויים:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">פרטי תורמים</string>
-    <string name="contributions_info_msg">&lt;b&gt;סה"כ תורמים:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;סה"כ חלקי קוד:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;עדכון אחרון:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">סטטיסטיקות LineageOS</string>
     <string name="anonymous_statistics_summary">עזור לשפר את LineageOS על ידי שליחת דיווחי סטטיסטיקות אנונימית</string>
     <string name="anonymous_statistics_warning_title">אודות</string>

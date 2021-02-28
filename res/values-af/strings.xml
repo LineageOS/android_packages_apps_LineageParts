@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -185,12 +185,6 @@
     <string name="navigation_bar_arrow_keys_summary">Wys links en regs wyser knoppies terwyl tik. Oorskryf IME wisselaar.</string>
     <string name="navigation_bar_home_long_press_title">Tuis lang druk aksie</string>
     <string name="navigation_bar_home_double_tap_title">Tuis dubbel tik aksie</string>
-    <string name="power_menu_title">Krag kieslys</string>
-    <string name="power_menu_screenshot_title">Skermkiekie</string>
-    <string name="power_menu_airplane_title">Vliegtuigmodus</string>
-    <string name="power_menu_users_title">Gebruiker wisselaar</string>
-    <string name="power_menu_bug_report_title">Fout verslag</string>
-    <string name="power_menu_bug_report_disabled">Fout verslagdoening is in ontwikkelaar opsies gedeaktiveer</string>
     <string name="camera_double_tap_power_gesture_title">Druk aan/af-skakelaar 2 keer vir kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Maak kamera vinnig oop sonder om jou skerm te ontsluit</string>
     <string name="torch_long_press_power_gesture_title">Lang-druk vir flits</string>
@@ -351,13 +345,7 @@
     <string name="contributors_cloud_loading_message">Laai bydraersdata\u2026</string>
     <string name="contributors_cloud_failed_message">Kan nie bydraersdata laai nie</string>
     <string name="contributor_info_menu">Bydraersinligting</string>
-    <string name="contributor_info_msg">&lt;b&gt;Naam:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Bynaam:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Inligting oor bydraë</string>
-    <string name="contributions_info_msg">&lt;b&gt;Totale bydraers:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Totale commits:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Laaste opgedateer:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS statistieke</string>
     <string name="anonymous_statistics_summary">Help om LineageOS beter maak deur anonieme statistieke verslaggewing aan te skakel</string>
     <string name="anonymous_statistics_warning_title">Meer oor</string>

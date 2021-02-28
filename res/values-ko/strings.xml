@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -165,7 +165,7 @@
     <string name="volbtn_cursor_control_title">키보드 커서 제어</string>
     <string name="volbtn_cursor_control_off">사용 안 함</string>
     <string name="volbtn_cursor_control_on">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
-    <string name="volbtn_cursor_control_on_reverse">볼륨 위/아래 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
+    <string name="volbtn_cursor_control_on_reverse">볼륨 위/아래 버튼으로 커서를 오른쪽/왼쪽으로 이동</string>
     <string name="power_end_call_title">통화 종료</string>
     <string name="power_end_call_summary">전원 버튼을 눌러 현재 진행 중인 통화 종료</string>
     <string name="swap_volume_buttons_title">버튼 재정렬</string>
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">홈 버튼을 눌러 걸려온 전화를 받기</string>
     <string name="extras_title">추가 기능</string>
     <string name="additional_buttons_title">기타 버튼</string>
+    <string name="click_partial_screenshot_title">눌러서 부분 스크린샷 캡처</string>
+    <string name="click_partial_screenshot_summary">볼륨 아래 버튼과 전원 버튼을 동시에 짧게 눌러 부분 스크린샷 캡처</string>
     <string name="button_backlight_title">백라이트</string>
     <string name="button_backlight_enabled">버튼 조명 사용</string>
     <string name="button_backlight_only_when_pressed_title">버튼이 눌렸을 때만 조명을 켭니다.</string>
@@ -202,14 +204,6 @@
     <string name="navigation_bar_home_double_tap_title">홈 버튼을 두 번 누를 시 동작 설정</string>
     <string name="navigation_bar_app_switch_long_press_title">최근 앱 버튼을 길게 누를 때 동작</string>
     <string name="navigation_bar_edge_long_swipe_title">가장자리 길게 밀 때 동작</string>
-    <string name="power_menu_title">전원 메뉴</string>
-    <string name="power_menu_screenshot_title">스크린샷</string>
-    <string name="power_menu_screenshot_summary">길게 눌러 부분 스크린샷 촬영</string>
-    <string name="power_menu_airplane_title">비행기 모드</string>
-    <string name="power_menu_users_title">사용자 전환</string>
-    <string name="power_menu_bug_report_title">오류 신고</string>
-    <string name="power_menu_bug_report_disabled">개발자 설정에서 오류 보고가 비활성화되었습니다</string>
-    <string name="power_menu_lockdown_title">잠금</string>
     <string name="camera_double_tap_power_gesture_title">전원 버튼을 두 번 눌러 카메라 열기</string>
     <string name="camera_double_tap_power_gesture_desc">화면 잠금을 해제하지 않고 빠르게 카메라 열기</string>
     <string name="torch_long_press_power_gesture_title">길게 눌러 손전등 켜기</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Répondre aux appels entrants en appuyant sur le bouton d\'accueil</string>
     <string name="extras_title">Autres options</string>
     <string name="additional_buttons_title">Boutons supplémentaires</string>
+    <string name="click_partial_screenshot_title">Cliquer pour une capture d\'écran partielle</string>
+    <string name="click_partial_screenshot_summary">Presser brièvement Volume Bas et Marche/Arrêt pour une capture d\'écran partielle</string>
     <string name="button_backlight_title">Rétroéclairage</string>
     <string name="button_backlight_enabled">Rétroéclairage des boutons</string>
     <string name="button_backlight_only_when_pressed_title">Éclairer les boutons seulement lors de l\'appui</string>
@@ -202,14 +204,6 @@
     <string name="navigation_bar_home_double_tap_title">Appui double sur bouton d\'accueil</string>
     <string name="navigation_bar_app_switch_long_press_title">Appui long sur le bouton d\'applications récentes</string>
     <string name="navigation_bar_edge_long_swipe_title">Action de balayage long sur le bord</string>
-    <string name="power_menu_title">Menu Marche/Arrêt</string>
-    <string name="power_menu_screenshot_title">Capture d\'écran</string>
-    <string name="power_menu_screenshot_summary">Maintenir appuyé pour effectuer une capture d\'écran partielle</string>
-    <string name="power_menu_airplane_title">Mode Avion</string>
-    <string name="power_menu_users_title">Changer d\'utilisateur</string>
-    <string name="power_menu_bug_report_title">Rapport de bug</string>
-    <string name="power_menu_bug_report_disabled">Le rapport de bug est désactivé dans les paramètres de développement</string>
-    <string name="power_menu_lockdown_title">Verrouillage</string>
     <string name="camera_double_tap_power_gesture_title">Appuyer deux fois sur le bouton Marche/Arrêt pour lancer l\'appareil photo</string>
     <string name="camera_double_tap_power_gesture_desc">Ouvrir rapidement l\'appareil photo sans déverrouiller l\'écran</string>
     <string name="torch_long_press_power_gesture_title">Pression longue pour la lampe de poche</string>
@@ -393,13 +387,7 @@
     <string name="contributors_cloud_loading_message">Chargement des informations sur les contributeurs\u2026</string>
     <string name="contributors_cloud_failed_message">Impossible de charger les informations sur les contributeurs</string>
     <string name="contributor_info_menu">Informations du contributeur</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nom :&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Surnom :&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Contributions :&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Infos sur les contributions</string>
-    <string name="contributions_info_msg">&lt;b&gt;Nombre de contributeurs :&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nombre de contributions :&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Dernière mise à jour :&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Statistiques LineageOS</string>
     <string name="anonymous_statistics_summary">Contribuer à l\'amélioration de LineageOS en envoyant des rapports de statistiques anonymes</string>
     <string name="anonymous_statistics_warning_title">À propos</string>

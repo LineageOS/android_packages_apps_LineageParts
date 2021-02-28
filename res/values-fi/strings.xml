@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@
     <string name="yes">Kyllä</string>
     <string name="no">Ei</string>
     <string name="search">Etsi</string>
+    <string name="search_menu">Hakuasetukset</string>
     <string name="disabled">Pois käytöstä</string>
     <string name="enabled">Käytössä</string>
     <string name="privacy_settings_title">Tietosuoja</string>
@@ -178,6 +179,8 @@
     <string name="home_answer_call_summary">Vastaa puheluun painamalla kotinäppäintä</string>
     <string name="extras_title">Ekstrat</string>
     <string name="additional_buttons_title">Lisänäppäimet</string>
+    <string name="click_partial_screenshot_title">Osittainen kuvakaappaus</string>
+    <string name="click_partial_screenshot_summary">Napauta Vol - ja virtanäppäintä nopeasti ottaaksesi osittaisen kuvakaappauksen</string>
     <string name="button_backlight_title">Taustavalo</string>
     <string name="button_backlight_enabled">Valaise painikkeet</string>
     <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettuna</string>
@@ -192,20 +195,15 @@
     <string name="disable_navkeys_title">Näytön navigointipalkki</string>
     <string name="disable_navkeys_summary">Ota näytön navigointipalkki käyttöön ja poista fyysiset näppäimet käytöstä</string>
     <string name="navigation_bar_category">Navigointipalkki</string>
+    <string name="navigation_bar_invert_layout_title">Käännä asettelu</string>
+    <string name="navigation_bar_invert_layout_summary">Kääntää navigointipalkin ja muiden, kuten syöttötavan painikkeen asettelun</string>
     <string name="navigation_bar_left_summary">Siirtää navigointipalkin näytön vasempaan reunaan vaaka-asennossa</string>
     <string name="navigation_bar_arrow_keys_title">Näytä nuolinäppäimet kirjottaessa</string>
     <string name="navigation_bar_arrow_keys_summary">Näytä vasen ja oikea nuolinäppäin kirjoittaessa. Ohittaa syöttötavan valinnan.</string>
     <string name="navigation_bar_home_long_press_title">Kotinäppäimen pitkän painalluksen tehtävä</string>
     <string name="navigation_bar_home_double_tap_title">Kotinäppäimen kaksoisnapautuksen tehtävä</string>
     <string name="navigation_bar_app_switch_long_press_title">Viimeisimmät-painikkeen pitkän painalluksen tehtävä</string>
-    <string name="power_menu_title">Käynnistysvalikko</string>
-    <string name="power_menu_screenshot_title">Kuvakaappaus</string>
-    <string name="power_menu_screenshot_summary">Ositttainen kuvakaappaus pitkällä painalluksella</string>
-    <string name="power_menu_airplane_title">Lentotila</string>
-    <string name="power_menu_users_title">Käyttäjän vaihto</string>
-    <string name="power_menu_bug_report_title">Virheraportti</string>
-    <string name="power_menu_bug_report_disabled">Virheraportointi on poistettu käytöstä kehittäjäasetuksista</string>
-    <string name="power_menu_lockdown_title">Lukitus</string>
+    <string name="navigation_bar_edge_long_swipe_title">Reunan pitkän vetäisyn toiminto</string>
     <string name="camera_double_tap_power_gesture_title">Avaa kamera painamalla virtanäppäintä kahdesti</string>
     <string name="camera_double_tap_power_gesture_desc">Avaa kamera nopeasti avaamatta laitteen näyttöä</string>
     <string name="torch_long_press_power_gesture_title">Paina pitkään käynnistääksesi taskulampun</string>
@@ -306,6 +304,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Kannettava Wi\u2011Fi\u2011hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Sijainti</string>
     <string name="toggleData">Mobiilidata</string>
     <string name="toggleSync">Tietojen automaattinen synkronointi</string>
     <string name="toggleNfc">NFC</string>
@@ -360,6 +359,9 @@
     <string name="status_bar_brightness_slider_summary">Säädä kirkkautta Pika-asetuksista</string>
     <string name="status_bar_brightness_slider_auto_title">Automaattinen kirkkaus</string>
     <string name="status_bar_brightness_slider_auto_summary">Näytä automaattisen kirkkauden valinta liukusäätimen vieressä</string>
+    <string name="status_bar_brightness_slider_show_never">Älä näytä koskaan</string>
+    <string name="status_bar_brightness_slider_show_expanded">Näytä laajennettaessa</string>
+    <string name="status_bar_brightness_slider_show_always">Näytä aina</string>
     <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
     <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
     <string name="network_traffic_settings_title">Verkkoliikenne</string>
@@ -385,13 +387,7 @@
     <string name="contributors_cloud_loading_message">Ladataan kehittäjädataa\u2026</string>
     <string name="contributors_cloud_failed_message">Kehittäjien tietoja ei voitu ladata</string>
     <string name="contributor_info_menu">Kehittäjän tiedot</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nimi:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nimimerkki:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Muutokset:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Kehittäjien tiedot</string>
-    <string name="contributions_info_msg">&lt;b&gt;Kehittäjiä yhteensä:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Muutoksia yhteensä:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Päivitetty:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS-tilastot</string>
     <string name="anonymous_statistics_summary">Auta tekemään LineageOSista parempi tarjoamalla anonyymejä tilastoraportteja</string>
     <string name="anonymous_statistics_warning_title">Tietoja</string>
@@ -447,6 +443,7 @@
     <string name="auto_power_save_never">Ei koskaan</string>
     <string name="long_screen_settings_title">Koko näytön sovellukset</string>
     <string name="long_screen_settings_summary">Pakota vanhat sovellukset käyttämään koko näytön suhdetta</string>
+    <string name="long_screen_settings_no_apps">Ei sovelluksia</string>
     <string name="charging_sounds_settings_title">Latausäänet</string>
     <string name="charging_sounds_enabled_title">Ota käyttöön</string>
     <string name="charging_sounds_enabled_summary">Anna äänimerkki, kun virtalähde liitetään tai irrotetaan</string>
@@ -463,6 +460,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Pyyhkäise alas yhdellä sormella</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Pyykäise vasemmalle yhdellä sormella</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Pyyhkäise oikealle yhdellä sormella</string>
+    <string name="touchscreen_gesture_single_tap_title">Yksi napautus</string>
     <string name="touchscreen_gesture_up_arrow_title">Piirrä \"Λ\"</string>
     <string name="touchscreen_gesture_down_arrow_title">Piirrä \"V\"</string>
     <string name="touchscreen_gesture_left_arrow_title">Piirrä \"&lt;\"</string>
@@ -493,6 +491,7 @@
     <string name="touchscreen_gesture_action_next_track">Siirry seuraavaan musiikkikappaleeseen</string>
     <string name="touchscreen_gesture_action_volume_down">Pienennä median äänenvoimakkuutta</string>
     <string name="touchscreen_gesture_action_volume_up">Nosta median äänenvoimakkuutta</string>
+    <string name="touchscreen_gesture_action_ambient_display">Näytä himmennetty näyttö</string>
     <string name="trust_category_features">Tila</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Täytäntöönpano</string>

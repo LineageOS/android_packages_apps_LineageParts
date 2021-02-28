@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,9 +34,11 @@
     <string name="yes">Ano</string>
     <string name="no">Nie</string>
     <string name="search">Vyhľadať</string>
+    <string name="search_menu">Nastavenie vyhľadávania</string>
     <string name="disabled">Zakázané</string>
     <string name="enabled">Povolené</string>
     <string name="privacy_settings_title">Súkromie</string>
+    <string name="channel_light_settings_name">Náhľad nastavení sveteľnej signalizácie</string>
     <string name="edit_light_settings">Upraviť svetelnú signalizáciu</string>
     <string name="pulse_speed_title">Dĺžka a rýchlosť blikania</string>
     <string name="default_time">Normálny</string>
@@ -168,6 +170,8 @@
     <string name="power_end_call_summary">Stlačením tlačidla Napájanie sa ukončí aktuálny hovor</string>
     <string name="swap_volume_buttons_title">Preorientovať</string>
     <string name="swap_volume_buttons_summary">Po otočení obrazovky prevrátiť aj zmysel tlačidiel hlasitosti</string>
+    <string name="volume_panel_on_left_title">Zobraziť panel vľavo</string>
+    <string name="volume_panel_on_left_summary">Zobraziť panel hlasitosti na ľavej strane obrazovky</string>
     <string name="button_wake_title">Prebudiť zariadenie</string>
     <string name="volume_answer_call_title">Prijať hovor</string>
     <string name="volume_answer_call_summary">Prijať prichádzajúci hovor stlačením niektorého z tlačidiel hlasitosti</string>
@@ -175,6 +179,8 @@
     <string name="home_answer_call_summary">Prijať prichádzajúci hovor stlačením tlačidla Domov</string>
     <string name="extras_title">Doplnky</string>
     <string name="additional_buttons_title">Ďalšie tlačidlá</string>
+    <string name="click_partial_screenshot_title">Kliknutím vytvorte čiastočný snímok obrazovky</string>
+    <string name="click_partial_screenshot_summary">Krátkym súčasným stlačením tlačidiel zníženia hlasitosti a napájanie zhotoviť čiastočnú snímku obrazovky</string>
     <string name="button_backlight_title">Podsvietenie</string>
     <string name="button_backlight_enabled">Podsvietenie tlačidiel</string>
     <string name="button_backlight_only_when_pressed_title">Podsvietenie tlačidiel iba po stlačení</string>
@@ -189,20 +195,15 @@
     <string name="disable_navkeys_title">Navigačný panel na obrazovke</string>
     <string name="disable_navkeys_summary">Povoliť navigačný panel na obrazovke a zakázať hardvérové tlačidlá</string>
     <string name="navigation_bar_category">Navigačný panel</string>
+    <string name="navigation_bar_invert_layout_title">Invertovať rozloženie</string>
+    <string name="navigation_bar_invert_layout_summary">Otočí rozloženie navigačného panelu a iných položiek, ako napr. prepínač metódy vstupu (IME)</string>
     <string name="navigation_bar_left_summary">V režime na šírku umiestniť navigačný panel na ľavú stranu obrazovky</string>
     <string name="navigation_bar_arrow_keys_title">Zobraziť šípky pri písaní</string>
     <string name="navigation_bar_arrow_keys_summary">Zobraziť ľavé a pravé kurzorové tlačidlá pri písaní. Potlačí prepínač metódy vstupu.</string>
     <string name="navigation_bar_home_long_press_title">Akcia dlhého stlačenia tlačidla Domov</string>
     <string name="navigation_bar_home_double_tap_title">Akcia dvojkliku tlačidla Domov</string>
     <string name="navigation_bar_app_switch_long_press_title">Akcia dlhého stlačenia tlačidla Nedávne</string>
-    <string name="power_menu_title">Ponuka po stlačení tlačidla</string>
-    <string name="power_menu_screenshot_title">Snímka obrazovky</string>
-    <string name="power_menu_screenshot_summary">Dlhé stlačenie pre získanie čiastočnej snímky obrazovky</string>
-    <string name="power_menu_airplane_title">Režim v lietadle</string>
-    <string name="power_menu_users_title">Prepínač používateľov</string>
-    <string name="power_menu_bug_report_title">Nahlásiť chybu</string>
-    <string name="power_menu_bug_report_disabled">Hlásenie chýb je zakázané v nastaveniach pre vývojárov</string>
-    <string name="power_menu_lockdown_title">Uzamknutie</string>
+    <string name="navigation_bar_edge_long_swipe_title">Akcia dlhým potiahnutím od okraja</string>
     <string name="camera_double_tap_power_gesture_title">Fotoaparát dvoj. stlačením Napájania</string>
     <string name="camera_double_tap_power_gesture_desc">Rýchlo spustiť fotoaparát dvojitým stlačením tlačidla Napájanie, bez odomknutia obrazovky</string>
     <string name="torch_long_press_power_gesture_title">Dlhé stlačenie zapne Baterku</string>
@@ -303,6 +304,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Prenosný Wi\u2011Fi hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Poloha</string>
     <string name="toggleData">Dátové pripojenie</string>
     <string name="toggleSync">Automatická synchronizácia dát</string>
     <string name="toggleNfc">NFC</string>
@@ -357,6 +359,9 @@
     <string name="status_bar_brightness_slider_summary">Nastavenie jasu z panela rýchlych nastavení</string>
     <string name="status_bar_brightness_slider_auto_title">Automatický jas</string>
     <string name="status_bar_brightness_slider_auto_summary">Zobraziť prepínač automatického jasu v blízkosti posuvníka</string>
+    <string name="status_bar_brightness_slider_show_never">Nikdy nezobrazovať</string>
+    <string name="status_bar_brightness_slider_show_expanded">Zobraziť po rozbalení</string>
+    <string name="status_bar_brightness_slider_show_always">Vždy zobraziť</string>
     <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
     <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
     <string name="network_traffic_settings_title">Monitor sieťovej prevádzky</string>
@@ -375,6 +380,7 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazovať jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazenie jednotiek merania sieť. prevádzky v stavovom riadku</string>
+    <string name="network_traffic_disabled_clock">Sieťová prevádzka sa nezobrazí kvôli umiestneniu hodín</string>
     <string name="protected_apps_manager_title">Chránené aplikácie</string>
     <string name="protected_apps_manager_summary">Spravovať aplikácie, ktoré sú skryté za bezpečným zámkom</string>
     <string name="contributors_cloud_fragment_title">Prispievatelia</string>
@@ -382,12 +388,12 @@
     <string name="contributors_cloud_failed_message">Nie je možné načítať údaje o prispievateľoch</string>
     <string name="contributor_info_menu">Informácie o prispievateľovi</string>
     <string name="contributor_info_msg">&lt;b&gt;Meno:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Prezívka:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Potvrdenie:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+                 &lt;b&gt;Prezívka:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Potvrdenie:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Informácie o príspevkoch</string>
     <string name="contributions_info_msg">&lt;b&gt;Celkom prispievateľov:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Celkom príspevkov:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Posledná aktualizácia:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+                 &lt;b&gt;Celkom príspevkov:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Posledná aktualizácia:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Štatistiky LineageOS</string>
     <string name="anonymous_statistics_summary">Pomôžte zlepšiť LineageOS povolením anonymných štatistických hlásení</string>
     <string name="anonymous_statistics_warning_title">O</string>
@@ -443,6 +449,7 @@
     <string name="auto_power_save_never">Nikdy</string>
     <string name="long_screen_settings_title">Aplikácie na celú obrazovku</string>
     <string name="long_screen_settings_summary">Prinútiť staršie aplikácie na použitie pomerov na celú obrazovku</string>
+    <string name="long_screen_settings_no_apps">Žiadne aplikácie</string>
     <string name="charging_sounds_settings_title">Zvuky pri nabíjaní</string>
     <string name="charging_sounds_enabled_title">Povoliť</string>
     <string name="charging_sounds_enabled_summary">Prehrať zvuk pri pripojení alebo odpojení zdroja nabíjania</string>
@@ -459,6 +466,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Potiahnutie jedným prstom nadol</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Potiahnutie jedným prstom doľava</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Potiahnutie jedným prstom doprava</string>
+    <string name="touchscreen_gesture_single_tap_title">Jedno kliknutie</string>
     <string name="touchscreen_gesture_up_arrow_title">Nakreslite znak \"Λ\"</string>
     <string name="touchscreen_gesture_down_arrow_title">Nakreslite znak \"V\"</string>
     <string name="touchscreen_gesture_left_arrow_title">Nakreslite znak \"&lt;\"</string>
@@ -489,6 +497,7 @@
     <string name="touchscreen_gesture_action_next_track">Preskočiť na ďalšiu skladbu</string>
     <string name="touchscreen_gesture_action_volume_down">Zníženie hlasitosti médií</string>
     <string name="touchscreen_gesture_action_volume_up">Zvýšenie hlasitosti médií</string>
+    <string name="touchscreen_gesture_action_ambient_display">Zobraziť Ambientný displej</string>
     <string name="trust_category_features">Stav</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Vynútený</string>

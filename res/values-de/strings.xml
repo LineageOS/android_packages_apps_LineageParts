@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -202,14 +202,6 @@
     <string name="navigation_bar_home_double_tap_title">Home (doppeltes Tippen)</string>
     <string name="navigation_bar_app_switch_long_press_title">Aktion für langes Drücken auf Anwendungsverlauf</string>
     <string name="navigation_bar_edge_long_swipe_title">Aktion für langes Wischen am Rand</string>
-    <string name="power_menu_title">Ein-/Aus-Menü</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_screenshot_summary">Für zugeschnittenen Screenshot gedrückt halten</string>
-    <string name="power_menu_airplane_title">Flugmodus</string>
-    <string name="power_menu_users_title">Benutzer wechseln</string>
-    <string name="power_menu_bug_report_title">Fehlerbericht</string>
-    <string name="power_menu_bug_report_disabled">Fehlerberichte sind in Entwicklereinstellungen deaktiviert</string>
-    <string name="power_menu_lockdown_title">Sperren</string>
     <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren Ihres Bildschirms schnell öffnen</string>
     <string name="torch_long_press_power_gesture_title">Lange drücken für Taschenlampe</string>
@@ -393,13 +385,7 @@
     <string name="contributors_cloud_loading_message">Mitwirkende werden geladen\u2026</string>
     <string name="contributors_cloud_failed_message">Laden der Mitwirkenden nicht möglich</string>
     <string name="contributor_info_menu">Mitwirkender – Info</string>
-    <string name="contributor_info_msg">&lt;b&gt;Name:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Nickname:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Beiträge:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Beiträge – Info</string>
-    <string name="contributions_info_msg">&lt;b&gt;Mitwirkende insgesamt:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Beiträge insgesamt:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Letzte Aktualisierung:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS-Statistiken</string>
     <string name="anonymous_statistics_summary">Helfen Sie uns, LineageOS zu verbessern, indem Sie dem Sammeln anonymer Gerätestatistiken zustimmen.</string>
     <string name="anonymous_statistics_warning_title">Über</string>

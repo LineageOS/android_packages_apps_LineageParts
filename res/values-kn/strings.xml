@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2020 The LineageOS Project
+	              2017-2021 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -195,14 +195,6 @@
     <string name="navigation_bar_home_long_press_title">ತವರು ದೀರ್ಘವತ್ತು ಕ್ರಿಯೆ</string>
     <string name="navigation_bar_home_double_tap_title">ತವರು ಜೋಡಿವತ್ತು ಕ್ರಿಯೆ</string>
     <string name="navigation_bar_app_switch_long_press_title">ಇತ್ತೀಚಿನವು ದೀರ್ಘವತ್ತು ಕ್ರಿಯೆ</string>
-    <string name="power_menu_title">ಶಕ್ತಿ ಪಟ್ಟಿ</string>
-    <string name="power_menu_screenshot_title">ಪರದೆಚಿತ್ರ</string>
-    <string name="power_menu_screenshot_summary">ಭಾಗಶಃ ಪರದೆಸೆರೆಗೆ ದೀರ್ಘವತ್ತು</string>
-    <string name="power_menu_airplane_title">ವಿಮಾನ ರೀತಿ</string>
-    <string name="power_menu_users_title">ಬಳಕೆದಾರ ಪತ್ತುಕ</string>
-    <string name="power_menu_bug_report_title">ದೋಷ ವರದಿ</string>
-    <string name="power_menu_bug_report_disabled">ದೋಷ ವರದಿ ಸಲ್ಲಿಸುವಿಕೆಯನ್ನು ಅಭಿವೃದ್ಧಿ ಅಳವಡಿಕೆಗಳಲ್ಲಿ ಅಶಕ್ತವಾಗಿದೆ</string>
-    <string name="power_menu_lockdown_title">ಬೀಗ ಹಾಕು</string>
     <string name="camera_double_tap_power_gesture_title">ಕ್ಯಾಮರಾಕ್ಕಾಗಿ ಶಕ್ತಿ ಗುಂಡಿಯನ್ನು ಎರಡುಬಾರಿ ಒತ್ತಿ</string>
     <string name="camera_double_tap_power_gesture_desc">ನಿಮ್ಮ ಪರದೆಯ ಬೀಗ ತೆಗೆಯದೆ ತ್ವರಿತವಾಗಿ ಕ್ಯಾಮರಾ ಪ್ರಾರಂಭಿಸು</string>
     <string name="torch_long_press_power_gesture_title">ಪಂಜಿಗಾಗಿ ದೀರ್ಘವತ್ತು</string>
@@ -382,10 +374,7 @@
     <string name="contributors_cloud_loading_message">ನೆರವಾದವರ ದತ್ತಾಂಶವನ್ನು ಭರಿಸುತ್ತಿದೆ\u2026</string>
     <string name="contributors_cloud_failed_message">ನೆರವಾದವರ ದತ್ತಾಂಶವನ್ನು ಭರಿಸಲಾಗುತ್ತಿಲ್ಲ</string>
     <string name="contributor_info_menu">ನೆರವಾದವರ ಮಾಹಿತಿ</string>
-    <string name="contributor_info_msg">&lt;b&gt;ಹೆಸರು:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಉಪನಾಮ:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;ಸೇರಿಕೆಗಳು:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">ನೆರವುಗಳ ಮಾಹಿತಿ</string>
-    <string name="contributions_info_msg">&lt;b&gt;ಒಟ್ಟು ನೆರವಾದವರು:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಒಟ್ಟು ಸೇರಿಕೆಗಳು:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಕೊನೆಯ ನವೀಕರಣ:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS ಅಂಕ್ಯಾಂಶಗಳು</string>
     <string name="anonymous_statistics_summary">ಅಂಕ್ಯಾಂಶಗಳನ್ನು ಅನಾಮಿಕವಾಗಿ ಸಲ್ಲಿಸಲು ಒಪ್ಪುವ ಮೂಲಕ LineageOS ಅನ್ನು ಉತ್ತಮಗೊಳಿಸಲು ನೆರವಾಗಿ</string>
     <string name="anonymous_statistics_warning_title">ಬಗ್ಗೆ</string>
