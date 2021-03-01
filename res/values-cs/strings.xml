@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Přijmout příchozí hovor stisknutím tlačítka „Domů“</string>
     <string name="extras_title">Doplňky</string>
     <string name="additional_buttons_title">Další tlačítka</string>
+    <string name="click_partial_screenshot_title">Cvaknutím vytvořit částečný snímek obrazovky</string>
+    <string name="click_partial_screenshot_summary">Krátkým současným stiskem tlačítek snížení hlasitosti a napájení pořídit částečný snímek obrazovky</string>
     <string name="button_backlight_title">Podsvícení</string>
     <string name="button_backlight_enabled">Podsvícení tlačítek</string>
     <string name="button_backlight_only_when_pressed_title">Podsvícení tlačítek pouze při stisknutí</string>
