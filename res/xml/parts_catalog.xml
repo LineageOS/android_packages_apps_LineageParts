@@ -75,6 +75,11 @@
           android:fragment="org.lineageos.lineageparts.lineagestats.AnonymousStats"
           lineage:xmlRes="@xml/anonymous_stats" />
 
+    <part android:key="power_menu"
+          android:title="@string/power_menu_title"
+          android:fragment="org.lineageos.lineageparts.input.PowerMenuActions"
+          lineage:xmlRes="@xml/power_menu_settings" />
+
     <part android:key="weather_settings"
           android:title="@string/weather_settings_title"
           android:fragment="org.lineageos.lineageparts.weather.WeatherServiceSettings"
