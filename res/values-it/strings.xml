@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Rispondi alla chiamata in arrivo premendo il tasto home</string>
     <string name="extras_title">Extra</string>
     <string name="additional_buttons_title">Pulsanti aggiuntivi</string>
+    <string name="click_partial_screenshot_title">Clicca per catturare una schermata parziale</string>
+    <string name="click_partial_screenshot_summary">Premi brevemente i tasti volume giù e di accensione per catturare una schermata parziale</string>
     <string name="button_backlight_title">Retroilluminazione</string>
     <string name="button_backlight_enabled">Illumina pulsanti</string>
     <string name="button_backlight_only_when_pressed_title">Illumina i pulsanti solo se premuti</string>

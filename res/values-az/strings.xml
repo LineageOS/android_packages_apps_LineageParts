@@ -187,7 +187,7 @@
     <string name="keyboard_backlight_enabled">Klaviaturanı aydınlat</string>
     <string name="button_backlight_seekbar_title">Düymə parlaqlığı</string>
     <string name="keyboard_backlight_seekbar_title">Klaviatura parlaqlığı</string>
-    <string name="backlight_timeout_title">İşıqlandırmanın bitmə vaxtı</string>
+    <string name="backlight_timeout_title">Aydınlatmanın bitmə vaxtı</string>
     <string name="backlight_timeout_unlimited">Söndürmə</string>
     <string name="backlight_summary_disabled">Sıradan çıxarıldı</string>
     <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g> üçün fəaldır</string>
