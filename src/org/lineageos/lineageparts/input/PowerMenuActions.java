@@ -49,6 +49,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private CheckBoxPreference mUsersPref;
     private CheckBoxPreference mBugReportPref;
     private CheckBoxPreference mLockDownPref;
+    private CheckBoxPreference mEmergencyPref;
 
     private LineageGlobalActions mLineageGlobalActions;
 
@@ -78,6 +79,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mBugReportPref = findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
             } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
                 mLockDownPref = findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
+            } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
+                mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
             }
         }
 
@@ -116,6 +119,11 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                     GLOBAL_ACTION_KEY_BUGREPORT));
         }
 
+        if (mEmergencyPref != null) {
+            mEmergencyPref.setChecked(mLineageGlobalActions.userConfigContains(
+                    GLOBAL_ACTION_KEY_EMERGENCY));
+        }
+
         updatePreferences();
     }
 
@@ -152,6 +160,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
             Settings.Secure.putIntForUser(getContentResolver(),
                     Settings.Secure.LOCKDOWN_IN_POWER_MENU, value ? 1 : 0, UserHandle.USER_CURRENT);
+
+        } else if (preference == mEmergencyPref) {
+            value = mEmergencyPref.isChecked();
+            mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_EMERGENCY);
 
         } else {
             return super.onPreferenceTreeClick(preference);
