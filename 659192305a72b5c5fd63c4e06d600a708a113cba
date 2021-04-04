@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f1a762c3_f1a1193b",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2021-04-04T16:23:52Z",
+      "side": 1,
+      "message": "no new line here pls",
+      "range": {
+        "startLine": 170,
+        "startChar": 12,
+        "endLine": 170,
+        "endChar": 13
+      },
+      "revId": "659192305a72b5c5fd63c4e06d600a708a113cba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb7da9da_09772271",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2021-04-04T16:23:52Z",
+      "side": 1,
+      "message": "no new line here pls",
+      "revId": "659192305a72b5c5fd63c4e06d600a708a113cba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
