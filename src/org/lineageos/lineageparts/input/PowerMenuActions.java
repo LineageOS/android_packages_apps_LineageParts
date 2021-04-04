@@ -27,6 +27,8 @@ import android.provider.Settings;
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
 
+import com.android.internal.widget.LockPatternUtils;
+
 import org.lineageos.internal.util.PowerMenuConstants;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -51,6 +53,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private GlobalActionsManager mManager;
 
     Context mContext;
+    private LockPatternUtils mLockPatternUtils;
+    private UserManager mUserManager;
     private List<String> mLocalUserConfig = new ArrayList<String>();
 
     @Override
@@ -59,6 +63,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.power_menu_settings);
         mContext = getActivity().getApplicationContext();
+        mLockPatternUtils = new LockPatternUtils(mContext);
+        mUserManager = UserManager.get(mContext);
         mManager = GlobalActionsManager.getInstance(getActivity());
 
         for (String action : PowerMenuConstants.getAllActions()) {
@@ -95,8 +101,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
                 mUsersPref = null;
             } else {
-                List<UserInfo> users = ((UserManager) mContext.getSystemService(
-                        Context.USER_SERVICE)).getUsers();
+                List<UserInfo> users = mUserManager.getUsers();
                 boolean enabled = (users.size() > 1);
                 mUsersPref.setChecked(mManager.userConfigContains(GLOBAL_ACTION_KEY_USERS) && enabled);
                 mUsersPref.setEnabled(enabled);
@@ -135,6 +140,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mBugReportPref) {
             value = mBugReportPref.isChecked();
             mManager.updateUserConfig(value, GLOBAL_ACTION_KEY_BUGREPORT);
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Global.BUGREPORT_IN_POWER_MENU, value ? 1 : 0);
 
         } else if (preference == mLockDownPref) {
             value = mLockDownPref.isChecked();
@@ -149,15 +156,37 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     }
 
     private void updatePreferences() {
-        boolean bugreport = Settings.Global.getInt(getContentResolver(),
-                Settings.Global.BUGREPORT_IN_POWER_MENU, 0) != 0;
-
+        UserInfo currentUser = mUserManager.getUserInfo(UserHandle.myUserId());
+        boolean developmentSettings = Settings.Global.getInt(
+                getContentResolver(), Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) == 1;
+        boolean bugReport = Settings.Global.getInt(
+                getContentResolver(), Settings.Global.BUGREPORT_IN_POWER_MENU, 0) == 1;
+        boolean isPrimaryUser = currentUser == null || currentUser.isPrimary();
         if (mBugReportPref != null) {
-            mBugReportPref.setEnabled(bugreport);
-            if (bugreport) {
-                mBugReportPref.setSummary(null);
+            mBugReportPref.setEnabled(developmentSettings && isPrimaryUser);
+            if (!developmentSettings) {
+                mBugReportPref.setChecked(false);
+                mBugReportPref.setSummary(R.string.power_menu_bug_report_devoptions_unavailable);
+            } else if (!isPrimaryUser) {
+                mBugReportPref.setChecked(false);
+                mBugReportPref.setSummary(R.string.power_menu_bug_report_unavailable_for_user);
             } else {
-                mBugReportPref.setSummary(R.string.power_menu_bug_report_disabled);
+                mBugReportPref.setChecked(bugReport);
+                mBugReportPref.setSummary(null);
+            }
+        }
+
+        boolean isKeyguardSecure = mLockPatternUtils.isSecure(UserHandle.myUserId());
+        boolean lockdown = Settings.Secure.getInt(
+                getContentResolver(), Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0) == 1;
+        if (mLockDownPref != null) {
+            mLockDownPref.setEnabled(isKeyguardSecure);
+            if (isKeyguardSecure) {
+                mLockDownPref.setChecked(lockdown);
+                mLockDownPref.setSummary(null);
+            } else {
+                mLockDownPref.setChecked(false);
+                mLockDownPref.setSummary(R.string.power_menu_lockdown_unavailable);
             }
         }
     }
