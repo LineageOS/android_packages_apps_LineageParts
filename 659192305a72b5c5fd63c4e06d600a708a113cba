@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "05280fa5_a4263e40",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 23715
+      },
+      "writtenOn": "2021-04-04T17:21:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f1a762c3_f1a1193b",
+      "range": {
+        "startLine": 170,
+        "startChar": 12,
+        "endLine": 170,
+        "endChar": 13
+      },
+      "revId": "659192305a72b5c5fd63c4e06d600a708a113cba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eb7da9da_09772271",
         "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
         "patchSetId": 2
@@ -39,6 +63,24 @@
       "revId": "659192305a72b5c5fd63c4e06d600a708a113cba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "05b18e8a_df1f2be5",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 23715
+      },
+      "writtenOn": "2021-04-04T17:21:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eb7da9da_09772271",
+      "revId": "659192305a72b5c5fd63c4e06d600a708a113cba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
