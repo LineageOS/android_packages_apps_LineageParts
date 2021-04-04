@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "78024563_677bc496",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2021-04-04T16:24:30Z",
+      "side": 1,
+      "message": "no new line here pls",
+      "revId": "54702fc51559a8083504b6cf3fc0785d0532747f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
