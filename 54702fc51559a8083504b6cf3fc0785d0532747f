@@ -34,6 +34,24 @@
       "revId": "54702fc51559a8083504b6cf3fc0785d0532747f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4970d5e9_f449741e",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 23715
+      },
+      "writtenOn": "2021-04-04T17:17:06Z",
+      "side": 1,
+      "message": "nvm",
+      "parentUuid": "3cd126b4_cda13dfc",
+      "revId": "54702fc51559a8083504b6cf3fc0785d0532747f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
