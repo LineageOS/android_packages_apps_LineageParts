@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b27f6ac8_1805f4ac",
+        "filename": "res/values/themes.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-04-18T23:51:37Z",
+      "side": 1,
+      "message": "Replace tabs with spaces.",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 74
+      },
+      "revId": "6a187fdf551a64396646f37f8f43ecd25d8c3b1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
