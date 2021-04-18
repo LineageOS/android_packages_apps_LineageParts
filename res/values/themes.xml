@@ -49,6 +49,9 @@
 
         <!-- For all Alert Dialogs -->
         <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
+
+	<!-- Navigation bar -->
+	<item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
     <style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
