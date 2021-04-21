@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Etkin</string>
     <string name="disable_navkeys_title">Gezinme çubuğunu etkinleştir</string>
     <string name="disable_navkeys_summary">Ekranda gezinme çubuğunu etkinleştirin ve donanım düğmelerini devre dışı bırakın</string>
+    <string name="swap_capacitive_keys_title">Kapasitif tuşları değiştir</string>
+    <string name="swap_capacitive_keys_summary">Son kullanılanlar ve geri tuşlarının yerini değiştirin</string>
     <string name="navigation_bar_category">Gezinme çubuğu</string>
     <string name="navigation_bar_invert_layout_title">Düzeni tersine çevir</string>
     <string name="navigation_bar_invert_layout_summary">Gezinme çubuğunun ve klavye değiştirici gibi diğer öğelerin düzenini tersine çevirir</string>

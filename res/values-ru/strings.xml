@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Включена</string>
     <string name="disable_navkeys_title">Включение экранной панели навигации</string>
     <string name="disable_navkeys_summary">Включить экранную панель навигации и отключить аппаратные кнопки</string>
+    <string name="swap_capacitive_keys_title">Поменять местами сенсорные кнопки</string>
+    <string name="swap_capacitive_keys_summary">Поменять местами кнопки Недавние и Назад</string>
     <string name="navigation_bar_category">Панель навигации</string>
     <string name="navigation_bar_invert_layout_title">Инвертировать порядок кнопок</string>
     <string name="navigation_bar_invert_layout_summary">Инвертировать расположение панели навигации и других элементов, таких как кнопка переключения метода ввода</string>
