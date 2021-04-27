@@ -64,5 +64,7 @@
     <dimen name="trust_logo_width">-1px</dimen>
 
     <dimen name="package_list_padding_top">16dp</dimen>
+
+    <dimen name="color_mode_preview_height">320dp</dimen>
 </resources>
 

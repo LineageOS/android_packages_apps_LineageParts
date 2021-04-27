@@ -32,6 +32,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.util.ArrayUtils;
+import com.android.settingslib.widget.LayoutPreference;
 
 import org.lineageos.internal.util.PackageManagerUtils;
 import org.lineageos.lineageparts.R;
@@ -139,6 +140,13 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         mConfig = mLiveDisplayManager.getConfig();
 
         addPreferencesFromResource(R.xml.livedisplay);
+
+        PreferenceScreen screen = getPreferenceScreen();
+        LayoutPreference preview = new LayoutPreference(screen.getContext(),
+                R.layout.color_mode_preview);
+        preview.setOrder(-1);
+        preview.setSelectable(false);
+        screen.addPreference(preview);
 
         PreferenceScreen liveDisplayPrefs = findPreference(KEY_SCREEN_LIVE_DISPLAY);
 
