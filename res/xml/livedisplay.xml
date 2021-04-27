@@ -19,6 +19,11 @@
         android:key="livedisplay"
         android:title="@*lineageos.platform:string/live_display_title">
 
+    <!-- Color mode preview -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/color_mode_preview"
+        android:selectable="false" />
+
     <!-- Color profile -->
     <ListPreference
             android:key="live_display_color_profile"
