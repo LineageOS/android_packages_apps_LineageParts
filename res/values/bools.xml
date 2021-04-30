@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
+                   2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,5 +21,7 @@
     <bool name="def_battery_light_enabled">true</bool>
     <!-- Default value for battery light pulse -->
     <bool name="def_battery_light_pulse">true</bool>
+    <!-- Default value for battery light disabled when fully charged preference -->
+    <bool name="def_battery_light_full_charge_disabled">false</bool>
 
 </resources>
