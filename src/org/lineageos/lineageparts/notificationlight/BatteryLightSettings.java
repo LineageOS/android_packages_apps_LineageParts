@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ *               2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,6 +48,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private static final String MEDIUM_COLOR_PREF = "medium_color";
     private static final String FULL_COLOR_PREF = "full_color";
     private static final String LIGHT_ENABLED_PREF = "battery_light_enabled";
+    private static final String LIGHT_FULL_CHARGE_DISABLED_PREF =
+            "battery_light_full_charge_disabled";
     private static final String PULSE_ENABLED_PREF = "battery_light_pulse";
     private static final String BRIGHTNESS_PREFERENCE = "battery_light_brightness_level";
     private static final String BRIGHTNESS_ZEN_PREFERENCE = "battery_light_brightness_level_zen";
@@ -56,6 +59,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private ApplicationLightPreference mMediumColorPref;
     private ApplicationLightPreference mFullColorPref;
     private LineageSystemSettingSwitchPreference mLightEnabledPref;
+    private LineageSystemSettingSwitchPreference mLightFullChargeDisabledPref;
     private LineageSystemSettingSwitchPreference mPulseEnabledPref;
     private BatteryBrightnessPreference mBatteryBrightnessPref;
     private BatteryBrightnessZenPreference mBatteryBrightnessZenPref;
@@ -94,6 +98,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         PreferenceGroup generalPrefs = prefSet.findPreference(GENERAL_SECTION);
 
         mLightEnabledPref = prefSet.findPreference(LIGHT_ENABLED_PREF);
+        mLightFullChargeDisabledPref = prefSet.findPreference(LIGHT_FULL_CHARGE_DISABLED_PREF);
         mPulseEnabledPref = prefSet.findPreference(PULSE_ENABLED_PREF);
         mBatteryBrightnessPref = prefSet.findPreference(BRIGHTNESS_PREFERENCE);
         mBatteryBrightnessZenPref = prefSet.findPreference(BRIGHTNESS_ZEN_PREFERENCE);
@@ -112,6 +117,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
 
         if (mMultiColorLed) {
+            generalPrefs.removePreference(mLightFullChargeDisabledPref);
             setHasOptionsMenu(true);
 
             // Low, Medium and full color preferences
@@ -249,9 +255,14 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     protected void resetToDefaults() {
         final Resources res = getResources();
         final boolean batteryLightEnabled = res.getBoolean(R.bool.def_battery_light_enabled);
+        final boolean batteryLightFullChargeDisabled =
+                res.getBoolean(R.bool.def_battery_light_full_charge_disabled);
         final boolean batteryLightPulseEnabled = res.getBoolean(R.bool.def_battery_light_pulse);
 
         if (mLightEnabledPref != null) mLightEnabledPref.setChecked(batteryLightEnabled);
+        if (mLightFullChargeDisabledPref != null) {
+            mLightFullChargeDisabledPref.setChecked(batteryLightFullChargeDisabled);
+        }
         if (mPulseEnabledPref != null) mPulseEnabledPref.setChecked(batteryLightPulseEnabled);
 
         resetColors();
