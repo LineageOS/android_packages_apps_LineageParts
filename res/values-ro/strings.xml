@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Activat</string>
     <string name="disable_navkeys_title">Activare bară de navigare pe ecran</string>
     <string name="disable_navkeys_summary">Activare bara de navigare pe ecran și dezactivează butoanele hardware</string>
+    <string name="swap_capacitive_keys_title">Interschimbă butoanele capacitive</string>
+    <string name="swap_capacitive_keys_summary">Interschimbă ordinea butoanelor Recente și Înapoi</string>
     <string name="navigation_bar_category">Bară de navigare</string>
     <string name="navigation_bar_invert_layout_title">Inversare aspect</string>
     <string name="navigation_bar_invert_layout_summary">Inversează aspectul barei de navigare și alte elemente, cum ar fi comutatorul IME</string>

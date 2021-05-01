@@ -83,7 +83,7 @@
     <string name="led_notification_title">LED-Einstellungen</string>
     <string name="led_notification_text">Benachrichtigungs-LED durch Einstellungen aktiviert</string>
     <string name="notification_light_no_apps_summary">Um App-spezifische Einstellungen hinzuzufügen, \"%1$s\" aktivieren und \"\u002b\" in der Menüleiste berühren.</string>
-    <string name="live_display_summary">Optimiert Ihren Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
+    <string name="live_display_summary">Optimiert deinen Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
     <string name="live_display_mode">Bildschirmmodus</string>
     <string name="live_display_color_temperature_title">Farbtemperatur</string>
     <string name="live_display_color_temperature_summary">Tag: <xliff:g id="day_temperature">%1$d</xliff:g> K Nacht: <xliff:g id="night_temperature">%2$d</xliff:g> K</string>
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Eingehende Anrufe durch Drücken der Home-Taste annehmen</string>
     <string name="extras_title">Extras</string>
     <string name="additional_buttons_title">Weitere Tasten</string>
+    <string name="click_partial_screenshot_title">Für zugeschnittenen Screenshot klicken</string>
+    <string name="click_partial_screenshot_summary">Lautstärketaste nach unten und Powertaste kurz drücken, um einen partiellen Screenshot zu erstellen</string>
     <string name="button_backlight_title">Hintergrundbeleuchtung</string>
     <string name="button_backlight_enabled">Tasten beleuchten</string>
     <string name="button_backlight_only_when_pressed_title">Tasten nur beleuchten, wenn sie gedrückt werden</string>
@@ -192,6 +194,8 @@
     <string name="backlight_summary_enabled">Aktiviert</string>
     <string name="disable_navkeys_title">Navigationsleiste aktivieren</string>
     <string name="disable_navkeys_summary">Navigationstasten deaktivieren und stattdessen eine Navigationsleiste auf dem Bildschirm anzeigen</string>
+    <string name="swap_capacitive_keys_title">Sensortasten tauschen</string>
+    <string name="swap_capacitive_keys_summary">Anordnung der Tasten für Anwendungsverlauf und Zurück tauschen</string>
     <string name="navigation_bar_category">Navigationsleiste</string>
     <string name="navigation_bar_invert_layout_title">Layout umkehren</string>
     <string name="navigation_bar_invert_layout_summary">Kehrt das Layout der Navigationsleiste und anderer Elemente, wie dem IME-Switcher um</string>
@@ -203,7 +207,7 @@
     <string name="navigation_bar_app_switch_long_press_title">Aktion für langes Drücken auf Anwendungsverlauf</string>
     <string name="navigation_bar_edge_long_swipe_title">Aktion für langes Wischen am Rand</string>
     <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
-    <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren Ihres Bildschirms schnell öffnen</string>
+    <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren deines Bildschirms schnell öffnen</string>
     <string name="torch_long_press_power_gesture_title">Lange drücken für Taschenlampe</string>
     <string name="torch_long_press_power_gesture_desc">Taschenlampe bei ausgeschaltetem Bildschirm durch langes Drücken der Ein-/Aus-Taste anschalten</string>
     <string name="torch_long_press_power_timeout_title">Taschenlampe automatisch ausschalten</string>
@@ -228,16 +232,16 @@
     <string name="profile_setup_actions_title">Schritt 2: Aktionen festlegen</string>
     <string name="profile_setup_actions_title_config">Aktionen neu konfigurieren</string>
     <string name="wireless_networks_settings_title">Drahtlos &amp; Netzwerke</string>
-    <string name="no_bluetooth_triggers">Keine Bluetooth-Geräte gekoppelt.\nTippen Sie, um Bluetooth-Geräte vor dem Konfigurieren von Auslösern zu koppeln.</string>
-    <string name="no_wifi_triggers">Keine WLAN-Zugangspunkte konfiguriert.\nTippen Sie, um vor dem Konfigurieren von Auslösern eine WLAN-Verbindung herzustellen.</string>
-    <string name="no_triggers_configured">Keine Auslöser konfiguriert. Tippen Sie, um weitere hinzuzufügen.</string>
-    <string name="no_triggers_configured_nfc">Tippen Sie zum Einrichten eines neuen NFC-Auslösers.</string>
+    <string name="no_bluetooth_triggers">Keine Bluetooth-Geräte gekoppelt.\nTippe, um Bluetooth-Geräte vor dem Konfigurieren von Auslösern zu koppeln.</string>
+    <string name="no_wifi_triggers">Keine WLAN-Zugangspunkte konfiguriert.\nTippe, um vor dem Konfigurieren von Auslösern eine WLAN-Verbindung herzustellen.</string>
+    <string name="no_triggers_configured">Keine Auslöser konfiguriert. Tippe, um weitere hinzuzufügen.</string>
+    <string name="no_triggers_configured_nfc">Tippe zum Einrichten eines neuen NFC-Auslösers.</string>
     <string name="profile_setup_actions_description">Konfigurieren was passiert, wenn das Profil aktiviert ist</string>
     <string name="profiles_settings_title">Systemprofile</string>
     <string name="profiles_add">Hinzufügen</string>
     <string name="profile_menu_delete">Löschen</string>
     <string name="profile_settings_title">Profil</string>
-    <string name="profile_empty_list_profiles_off">Um Systemprofile zu aktivieren und zu benutzen, schalten Sie Profile an.</string>
+    <string name="profile_empty_list_profiles_off">Um Systemprofile zu aktivieren und zu benutzen, schalte Profile an.</string>
     <string name="profile_settings_summary_off">Systemprofile sind deaktiviert</string>
     <string name="profile_trigger_configure">Auslöser konfigurieren</string>
     <string name="profile_write_nfc_tag">NFC-Tag beschreiben</string>
@@ -249,7 +253,7 @@
     <string name="profile_unknown_nfc_tag">Unbekanntes Profil</string>
     <string name="profile_add_nfc_text">Der NFC-Tag verweist auf ein unbekanntes Profil. Das Verknüpfen des NFC-Tags mit einem existierenden Profil ermöglicht es, das entsprechende Profil in Zukunft durch eine Berührung zu aktivieren.</string>
     <string name="profile_select">Profil auswählen</string>
-    <string name="profile_remove_dialog_message">Wollen Sie wirklich das Profil %1$s entfernen?</string>
+    <string name="profile_remove_dialog_message">Willst du wirklich das Profil %1$s entfernen?</string>
     <string name="profile_populate_profile_from_state">Profil mit aktuellen Geräteeinstellungen erstellen?</string>
     <string name="profile_menu_fill_from_state">Aktuelle Geräteeinstellungen importieren</string>
     <string name="profile_remove_current_profile">Aktuelles Profil kann nicht gelöscht werden!</string>
@@ -380,12 +384,18 @@
     <string name="network_traffic_show_units_summary">Zeigt die Einheiten der Datenübertragungsraten in der Statusleiste an</string>
     <string name="network_traffic_disabled_clock">Datenverkehr-Anzeige aufgrund der Uhrzeitposition deaktiviert</string>
     <string name="protected_apps_manager_title">Geschützte Apps</string>
-    <string name="protected_apps_manager_summary">Verwalten Sie, welche Apps hinter einer sicheren Sperre verborgen sind.</string>
+    <string name="protected_apps_manager_summary">Verwalte, welche Apps hinter einer sicheren Sperre verborgen sind.</string>
     <string name="contributors_cloud_fragment_title">Mitwirkende</string>
     <string name="contributors_cloud_loading_message">Mitwirkende werden geladen\u2026</string>
     <string name="contributors_cloud_failed_message">Laden der Mitwirkenden nicht möglich</string>
     <string name="contributor_info_menu">Mitwirkender – Info</string>
+    <string name="contributor_info_msg">&lt;b&gt;Name:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Nickname:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Beiträge:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Beiträge – Info</string>
+    <string name="contributions_info_msg">&lt;b&gt;Mitwirkende insgesamt:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Beiträge insgesamt:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Letzte Aktualisierung:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS-Statistiken</string>
     <string name="anonymous_statistics_summary">Helfen Sie uns, LineageOS zu verbessern, indem Sie dem Sammeln anonymer Gerätestatistiken zustimmen.</string>
     <string name="anonymous_statistics_warning_title">Über</string>
@@ -414,7 +424,7 @@
     <string name="display_rotation_270_title">270 Grad</string>
     <string name="weather_settings_title">Wetter</string>
     <string name="weather_settings_no_services_prompt">Keine Wetterdaten-Anbieter installiert</string>
-    <string name="weather_settings_no_services_summary">Installieren Sie einen Wetterdatenanbieter, um Wetter-Aktualisierungen zu erhalten</string>
+    <string name="weather_settings_no_services_summary">Installiere einen Wetterdatenanbieter, um Wetter-Aktualisierungen zu erhalten</string>
     <string name="weather_settings_button">Anbieter-Einstellungen</string>
     <string name="weather_settings_activity_not_found">Das Einstellungsmenü dieses Anbieters konnte nicht gestartet werden</string>
     <string name="weather_settings_add_weather_provider">Wetterdatenanbieter hinzufügen</string>
@@ -427,7 +437,7 @@
     <string name="status_bar_show_weather_title">Wetter anzeigen</string>
     <string name="status_bar_show_weather_summary">Die aktuelle Temperatur in der Statusleiste anzeigen</string>
     <string name="perf_profile_settings_title">Energiesparmodus und Leistung</string>
-    <string name="perf_profile_settings_summary">Konfigurieren Sie Energiesparfunktionen und die Leistung des Geräts</string>
+    <string name="perf_profile_settings_summary">Konfiguriere Energiesparfunktionen und die Leistung des Geräts</string>
     <string name="perf_profile_overview_summary">Aktuelles Profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_category_title">Geräteleistung</string>
     <string name="perf_profile_title">Leistungsprofil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -449,7 +459,7 @@
     <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
     <string name="charging_sounds_ringtone_silent">Lautlos</string>
     <string name="touchscreen_gesture_settings_title">Bildschirmgesten</string>
-    <string name="touchscreen_gesture_settings_summary">Führen Sie durch verschiedene Bildschirmgesten einige schnelle Aktionen aus</string>
+    <string name="touchscreen_gesture_settings_summary">Führe durch verschiedene Bildschirmgesten einige schnelle Aktionen aus</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Haptisches Feedback</string>
     <string name="touchscreen_gestures_haptic_feedback_summary">Vibrieren, wenn eine Bildschirmgeste erkannt wurde</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Mit zwei Fingern nach unten wischen</string>
@@ -459,18 +469,18 @@
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Mit einem Finger nach links wischen</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Mit einem Finger nach rechts wischen</string>
     <string name="touchscreen_gesture_single_tap_title">Einfaches Tippen</string>
-    <string name="touchscreen_gesture_up_arrow_title">Zeichnen Sie ein \"Λ\"</string>
-    <string name="touchscreen_gesture_down_arrow_title">Zeichnen Sie ein \"V\"</string>
-    <string name="touchscreen_gesture_left_arrow_title">Zeichnen Sie ein \"&lt;\"</string>
-    <string name="touchscreen_gesture_right_arrow_title">Zeichnen Sie ein \"&gt;\"</string>
-    <string name="touchscreen_gesture_letter_c_title">Zeichnen Sie den Buchstaben \"C\"</string>
-    <string name="touchscreen_gesture_letter_e_title">Zeichnen Sie den Buchstaben \"e\"</string>
-    <string name="touchscreen_gesture_letter_o_title">Zeichnen Sie den Buchstaben \"O\"</string>
-    <string name="touchscreen_gesture_letter_m_title">Zeichnen Sie den Buchstaben \"M\"</string>
-    <string name="touchscreen_gesture_letter_s_title">Zeichnen Sie den Buchstaben \"S\"</string>
-    <string name="touchscreen_gesture_letter_v_title">Zeichnen Sie den Buchstaben \"V\"</string>
-    <string name="touchscreen_gesture_letter_w_title">Zeichnen Sie den Buchstaben \"W\"</string>
-    <string name="touchscreen_gesture_letter_z_title">Zeichnen Sie den Buchstaben \"Z\"</string>
+    <string name="touchscreen_gesture_up_arrow_title">Zeichne ein \"Λ\"</string>
+    <string name="touchscreen_gesture_down_arrow_title">Zeichne ein \"V\"</string>
+    <string name="touchscreen_gesture_left_arrow_title">Zeichne ein \"&lt;\"</string>
+    <string name="touchscreen_gesture_right_arrow_title">Zeichne ein \"&gt;\"</string>
+    <string name="touchscreen_gesture_letter_c_title">Zeichne den Buchstaben \"C\"</string>
+    <string name="touchscreen_gesture_letter_e_title">Zeichne den Buchstaben \"e\"</string>
+    <string name="touchscreen_gesture_letter_o_title">Zeichne den Buchstaben \"O\"</string>
+    <string name="touchscreen_gesture_letter_m_title">Zeichne den Buchstaben \"M\"</string>
+    <string name="touchscreen_gesture_letter_s_title">Zeichne den Buchstaben \"S\"</string>
+    <string name="touchscreen_gesture_letter_v_title">Zeichne den Buchstaben \"V\"</string>
+    <string name="touchscreen_gesture_letter_w_title">Zeichne den Buchstaben \"W\"</string>
+    <string name="touchscreen_gesture_letter_z_title">Zeichne den Buchstaben \"Z\"</string>
     <string name="touchscreen_gesture_swipe_up_stylus_title">Mit dem Stift nach oben wischen</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Mit dem Stift nach unten wischen</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Mit dem Stift nach links wischen</string>
@@ -482,8 +492,8 @@
     <string name="touchscreen_gesture_action_camera">Kamera öffnen</string>
     <string name="touchscreen_gesture_action_browser">Browser öffnen</string>
     <string name="touchscreen_gesture_action_dialer">Telefon-App öffnen</string>
-    <string name="touchscreen_gesture_action_email">Ihre E-Mails anzeigen</string>
-    <string name="touchscreen_gesture_action_messages">Ihre Nachrichten anzeigen</string>
+    <string name="touchscreen_gesture_action_email">Deine E-Mails anzeigen</string>
+    <string name="touchscreen_gesture_action_messages">Deine Nachrichten anzeigen</string>
     <string name="touchscreen_gesture_action_play_pause_music">Musikwiedergabe starten/anhalten</string>
     <string name="touchscreen_gesture_action_previous_track">Zum vorherigen Musiktitel springen</string>
     <string name="touchscreen_gesture_action_next_track">Zum nächsten Musiktitel springen</string>
@@ -494,13 +504,13 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
     <string name="trust_feature_selinux_value_disabled">Deaktiviert</string>
-    <string name="trust_feature_selinux_explain">SELinux bestimmt, welche Prozesse Zugriff auf welche Dateien/Verzeichnisse auf ihrem Gerät haben.\nDadurch wird verhindert, dass Anwendungen und Dienste auf Dateien zugreifen, die sie nicht benötigen: Auf diese Weise wird ein potenziell bösartiger Prozess eingeschränkt und ihre Sicherheit gewahrt.</string>
+    <string name="trust_feature_selinux_explain">SELinux bestimmt, welche Prozesse Zugriff auf welche Dateien/Verzeichnisse auf deinem Gerät haben.\nDadurch wird verhindert, dass Anwendungen und Dienste auf Dateien zugreifen, die sie nicht benötigen: Auf diese Weise wird ein potenziell bösartiger Prozess eingeschränkt und deine Sicherheit gewahrt.</string>
     <string name="trust_feature_security_patches">Android-Sicherheitspatches</string>
     <string name="trust_feature_security_patches_value_base">Plattform: %1$s\nVendor: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Aktuell</string>
     <string name="trust_feature_security_patches_value_medium">ein paar Monate veraltet</string>
     <string name="trust_feature_security_patches_value_old">Veraltet</string>
-    <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google in Zusammenarbeit mit SoC-Anbietern veröffentlicht. Diese beheben Fehler, mittels derer bösartige Anwendungen Sicherheitseinschränkungen umgehen und Ihr Gerät dauerhaft beschädigen können. Von Google bereitgestellte Patches werden jeden Monat auf alle unterstützten Geräte angewendet, aber Patches für proprietären Code können nur vom Hersteller Ihres Gerätes bereitgestellt werden. Um Ihr Gerät sicher zu halten, aktualisieren Sie LineageOS und (wenn möglich) Ihr Vendor-Image stets auf das von LineageOS empfohlene.</string>
+    <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google in Zusammenarbeit mit SoC-Anbietern veröffentlicht. Diese beheben Fehler, mittels derer bösartige Anwendungen Sicherheitseinschränkungen umgehen und dein Gerät dauerhaft beschädigen können. Von Google bereitgestellte Patches werden jeden Monat auf alle unterstützten Geräte angewendet, aber Patches für proprietären Code können nur vom Hersteller deines Gerätes bereitgestellt werden. Um dein Gerät sicher zu halten, aktualisiere LineageOS und (wenn möglich) dein Vendor-Image stets auf das von LineageOS empfohlene.</string>
     <string name="trust_feature_encryption">Verschlüsselung</string>
     <string name="trust_feature_encryption_value_enabled">Aktiviert</string>
     <string name="trust_feature_encryption_value_nolock">Benötigt einen sicheren Sperrbildschirm</string>
@@ -508,11 +518,11 @@
     <string name="trust_feature_encryption_explain">Die Verschlüsselung ihres Gerätes verhindert den Zugriff auf ihre Daten, wenn ihr Telefon nicht in Android gebootet wird. Dies ist besonders wichtig, wenn ihr Telefon gestohlen wird, da es Menschen daran hindert, ihre Nachrichten, Kontakte und andere private Informationen ohne ihr Passwort zu lesen.\nUm die Verschlüsselung effektiver zu gestalten, müssen Sie ein sicheres Passwort für den Sperrbildschirm festlegen.</string>
     <string name="trust_category_tools">Privatsphäre</string>
     <string name="trust_notification_alerts_title">Sicherheitswarnungen</string>
-    <string name="trust_warnings_alerts_intro">Sie können auswählen, auf welche Sicherheitsprobleme Sie hingewiesen werden möchten. Aus Sicherheitsgründen empfiehlt es sich, alle Warnungen zu aktivieren</string>
+    <string name="trust_warnings_alerts_intro">Du kannst auswählen, auf welche Sicherheitsprobleme du hingewiesen werden möchtest. Aus Sicherheitsgründen empfiehlt es sich, alle Warnungen zu aktivieren</string>
     <string name="trust_warnings_selinux">SELinux-Status</string>
     <string name="trust_warnings_keys">Build-Signatur</string>
     <string name="trust_onboarding_title">Sag Hallo zu Trust</string>
-    <string name="trust_onboarding_description">Trust hilft Ihnen, Ihr Gerät sicher zu halten und schützt Ihre Privatsphäre.\nDas Trust Icon wird nur angezeigt, wenn der Inhalt der Seite überprüft wurde.</string>
+    <string name="trust_onboarding_description">Trust hilft dir, dein Gerät sicher zu halten und schützt deine Privatsphäre.\nDas Trust Icon wird nur angezeigt, wenn der Inhalt der Seite überprüft wurde.</string>
     <string name="trust_onboarding_learn_more">Mehr erfahren</string>
     <string name="trust_onboarding_done">Verstanden</string>
     <string name="trust_restrict_usb_title">USB beschränken</string>
