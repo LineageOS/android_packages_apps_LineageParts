@@ -60,10 +60,10 @@
     <string name="light_brightness_title">Ravni svetlosti</string>
     <string name="light_brightness_normal">Običajna</string>
     <string name="light_brightness_zen">Ne moti</string>
-    <string name="battery_light_title">Lučka za akumulator</string>
-    <string name="battery_low_pulse_title">Utripaj, če je akumulator skoraj prazen</string>
+    <string name="battery_light_title">Lučka za baterijo</string>
+    <string name="battery_low_pulse_title">Utripaj, če je baterija skoraj prazna</string>
     <string name="battery_light_list_title">Barve</string>
-    <string name="battery_light_low_color_title">Nizko stanje akumulatorja</string>
+    <string name="battery_light_low_color_title">Nizko stanje baterije</string>
     <string name="battery_light_medium_color_title">Polnjenje</string>
     <string name="battery_light_full_color_title">Napolnjen</string>
     <string name="notification_light_title">Lučka za obvestila</string>
@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Omogočena</string>
     <string name="disable_navkeys_title">Omogoči vrstico za krmarjenje na zaslonu</string>
     <string name="disable_navkeys_summary">Omogoči vrstico za krmarjenje na zaslonu in onemogoči fizične gumbe</string>
+    <string name="swap_capacitive_keys_title">Zamenjaj kapacitivne gumbe</string>
+    <string name="swap_capacitive_keys_summary">Zamenjaj vrstni red gumbov nedavno in nazaj</string>
     <string name="navigation_bar_category">Vrstica za krmarjenje</string>
     <string name="navigation_bar_invert_layout_title">Obrni razporeditev</string>
     <string name="navigation_bar_invert_layout_summary">Obrne razporeditev vrstice za krmarjenje in drugih predmetov, kot je preklopnik IME</string>
@@ -345,12 +347,12 @@
     <string name="status_bar_am_pm_normal">Običajno</string>
     <string name="status_bar_am_pm_small">Majhno</string>
     <string name="status_bar_am_pm_hidden">Skrito</string>
-    <string name="status_bar_battery_title">Stanje akumulatorja</string>
-    <string name="status_bar_battery_style_title">Slog stanja akumulatorja</string>
+    <string name="status_bar_battery_title">Stanje baterije</string>
+    <string name="status_bar_battery_style_title">Slog stanja baterije</string>
     <string name="status_bar_battery_style_icon_portrait">Pokončna ikona</string>
     <string name="status_bar_battery_style_circle">Krog</string>
     <string name="status_bar_battery_style_text">Besedilo</string>
-    <string name="status_bar_battery_percentage_title">Odstotek napolnjenosti akumulatorja</string>
+    <string name="status_bar_battery_percentage_title">Odstotek napolnjenosti baterije</string>
     <string name="status_bar_battery_percentage_default">Skrito</string>
     <string name="status_bar_battery_percentage_text_inside">V ikoni</string>
     <string name="status_bar_battery_percentage_text_next">Poleg ikone</string>
@@ -436,17 +438,17 @@
     <string name="weather_settings_keyword">vreme</string>
     <string name="status_bar_show_weather_title">Prikaži vreme</string>
     <string name="status_bar_show_weather_summary">Prikaži trenutno temperaturo v vrstici stanja</string>
-    <string name="perf_profile_settings_title">Varčevanje z energijo akumulatorja in zmogljivost</string>
+    <string name="perf_profile_settings_title">Varčevanje z energijo baterije in zmogljivost</string>
     <string name="perf_profile_settings_summary">Prilagodi značilnosti varčevanja z energijo in zmogljivost naprave</string>
     <string name="perf_profile_overview_summary">Trenutni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_category_title">Zmogljivost naprave</string>
     <string name="perf_profile_title">Zmogljivostni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_fail_toast">Zmogljivostni profil trenutno ni na voljo</string>
-    <string name="power_save_category_title">Varčevanje z energijo akumulatorja</string>
+    <string name="power_save_category_title">Varčevanje z energijo baterije</string>
     <string name="power_save_title">Strogo varčevanje z energijo</string>
     <string name="power_save_summary">Omeji zmogljivost naprave in dejavnosti v ozadju za prihranek energije</string>
     <string name="auto_power_save_title">Samodejno varčevanje z energijo</string>
-    <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo akumulatorja, ko je stanje akumulatorja %s</string>
+    <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo baterije, ko je stanje baterije %s</string>
     <string name="auto_power_save_summary_off">Ne omogočaj načina varčevanja z energijo samodejno</string>
     <string name="auto_power_save_never">Nikoli</string>
     <string name="long_screen_settings_title">Celozaslonske aplikacije</string>

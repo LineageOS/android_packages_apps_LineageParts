@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Engedélyezve</string>
     <string name="disable_navkeys_title">Navigációs sáv engedélyezése</string>
     <string name="disable_navkeys_summary">Navigációs sáv engedélyezése és a hardveres gombok letiltása</string>
+    <string name="swap_capacitive_keys_title">A kapacitív gombok felcserélése</string>
+    <string name="swap_capacitive_keys_summary">Az Előzmények és a Vissza gomb sorrendjének felcserélése</string>
     <string name="navigation_bar_category">Navigációs sáv</string>
     <string name="navigation_bar_invert_layout_title">Fordított elrendezés</string>
     <string name="navigation_bar_invert_layout_summary">Navigációs sáv és más elemek megfordítása, mint például a bevitelimód-váltó elrendezése</string>

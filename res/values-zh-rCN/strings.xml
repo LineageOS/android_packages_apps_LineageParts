@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">已启用</string>
     <string name="disable_navkeys_title">启用屏幕上的导航栏</string>
     <string name="disable_navkeys_summary">启用屏幕上导航栏并禁用硬件按钮</string>
+    <string name="swap_capacitive_keys_title">交换电容式按钮</string>
+    <string name="swap_capacitive_keys_summary">交换最近使用与后退按钮的顺序</string>
     <string name="navigation_bar_category">导航栏</string>
     <string name="navigation_bar_invert_layout_title">反转布局</string>
     <string name="navigation_bar_invert_layout_summary">反转导航栏和其他项目（如输入法切换器）的布局</string>
