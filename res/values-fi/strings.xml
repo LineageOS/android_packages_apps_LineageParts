@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Käytössä</string>
     <string name="disable_navkeys_title">Näytön navigointipalkki</string>
     <string name="disable_navkeys_summary">Ota näytön navigointipalkki käyttöön ja poista fyysiset näppäimet käytöstä</string>
+    <string name="swap_capacitive_keys_title">Vaihda kosketusnäppäimet</string>
+    <string name="swap_capacitive_keys_summary">Vaihda Takaisin- ja Viimeisimmät-näppäinten paikkaa</string>
     <string name="navigation_bar_category">Navigointipalkki</string>
     <string name="navigation_bar_invert_layout_title">Käännä asettelu</string>
     <string name="navigation_bar_invert_layout_summary">Kääntää navigointipalkin ja muiden, kuten syöttötavan painikkeen asettelun</string>
@@ -387,7 +389,13 @@
     <string name="contributors_cloud_loading_message">Ladataan kehittäjädataa\u2026</string>
     <string name="contributors_cloud_failed_message">Kehittäjien tietoja ei voitu ladata</string>
     <string name="contributor_info_menu">Kehittäjän tiedot</string>
+    <string name="contributor_info_msg">&lt;b&gt;Nimi:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Nimimerkki:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Muutokset:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Kehittäjien tiedot</string>
+    <string name="contributions_info_msg">&lt;b&gt;Kehittäjiä yhteensä:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Muutoksia yhteensä:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Päivitetty:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS-tilastot</string>
     <string name="anonymous_statistics_summary">Auta tekemään LineageOSista parempi tarjoamalla anonyymejä tilastoraportteja</string>
     <string name="anonymous_statistics_warning_title">Tietoja</string>

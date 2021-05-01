@@ -187,13 +187,15 @@
     <string name="keyboard_backlight_enabled">Klaviaturanı aydınlat</string>
     <string name="button_backlight_seekbar_title">Düymə parlaqlığı</string>
     <string name="keyboard_backlight_seekbar_title">Klaviatura parlaqlığı</string>
-    <string name="backlight_timeout_title">İşıqlandırmanın bitmə vaxtı</string>
+    <string name="backlight_timeout_title">Aydınlatmanın bitmə vaxtı</string>
     <string name="backlight_timeout_unlimited">Söndürmə</string>
     <string name="backlight_summary_disabled">Sıradan çıxarıldı</string>
     <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g> üçün fəaldır</string>
     <string name="backlight_summary_enabled">Fəallaşdırıldı</string>
     <string name="disable_navkeys_title">Hərəkət sətrini fəallaşdır</string>
     <string name="disable_navkeys_summary">Ekranda hərəkət sətrini fəallaşdır və aparat təminatı düymələrini sıradan çıxart</string>
+    <string name="swap_capacitive_keys_title">Toxunaqlı düymələri dəyişdirin</string>
+    <string name="swap_capacitive_keys_summary">Ən son tətbiqlər və geri düymələrinin yerini dəyişdir</string>
     <string name="navigation_bar_category">Hərəkət sətri</string>
     <string name="navigation_bar_invert_layout_title">Tərsinə düz</string>
     <string name="navigation_bar_invert_layout_summary">Hərəkət sətrinin və IME dəyişdirici kimi digər elementlərin düzümünü tərsinə çevirər</string>

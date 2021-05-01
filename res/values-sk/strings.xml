@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Použiť</string>
     <string name="disable_navkeys_title">Navigačný panel na obrazovke</string>
     <string name="disable_navkeys_summary">Povoliť navigačný panel na obrazovke a zakázať hardvérové tlačidlá</string>
+    <string name="swap_capacitive_keys_title">Prehodiť kapacitné tlačidlá</string>
+    <string name="swap_capacitive_keys_summary">Vymeniť poradie tlačidiel Nedávne a Späť</string>
     <string name="navigation_bar_category">Navigačný panel</string>
     <string name="navigation_bar_invert_layout_title">Invertovať rozloženie</string>
     <string name="navigation_bar_invert_layout_summary">Otočí rozloženie navigačného panelu a iných položiek, ako napr. prepínač metódy vstupu (IME)</string>

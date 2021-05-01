@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Activada</string>
     <string name="disable_navkeys_title">Habilita la barra de navegació en pantalla</string>
     <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla i deshabilita els botons físics</string>
+    <string name="swap_capacitive_keys_title">Canvia els botons capacitius</string>
+    <string name="swap_capacitive_keys_summary">Canvia l\'ordre dels botons recent i enrere</string>
     <string name="navigation_bar_category">Barra de navegació</string>
     <string name="navigation_bar_invert_layout_title">Inverteix la disposició</string>
     <string name="navigation_bar_invert_layout_summary">Inverteix la disposició de la barra de navegació i altres elements, com ara el commutador IME</string>

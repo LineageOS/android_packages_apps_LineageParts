@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Ativada</string>
     <string name="disable_navkeys_title">Ativar os botões virtuais</string>
     <string name="disable_navkeys_summary">Ativar os botões virtuais e desativar os botões físicos</string>
+    <string name="swap_capacitive_keys_title">Inverter botões</string>
+    <string name="swap_capacitive_keys_summary">Inverter a ordem dos botões de Visão geral e Anterior</string>
     <string name="navigation_bar_category">Barra de navegação</string>
     <string name="navigation_bar_invert_layout_title">Inverter disposição</string>
     <string name="navigation_bar_invert_layout_summary">Inverte o esquema da barra de navegação e outros itens, como o seletor de IME</string>

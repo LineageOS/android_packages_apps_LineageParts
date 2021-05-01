@@ -194,6 +194,8 @@
     <string name="backlight_summary_enabled">Enabled</string>
     <string name="disable_navkeys_title">Enable on-screen nav bar</string>
     <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
+    <string name="swap_capacitive_keys_title">Swap capacitive buttons</string>
+    <string name="swap_capacitive_keys_summary">Swap the order of recents and back buttons</string>
     <string name="navigation_bar_category">Navigation bar</string>
     <string name="navigation_bar_invert_layout_title">Invert layout</string>
     <string name="navigation_bar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
@@ -387,7 +389,13 @@
     <string name="contributors_cloud_loading_message">Loading contributors data\u2026</string>
     <string name="contributors_cloud_failed_message">Cannot load contributors data</string>
     <string name="contributor_info_menu">Contributor info</string>
+    <string name="contributor_info_msg">&lt;b&gt;Name:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Nick:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Contributions info</string>
+    <string name="contributions_info_msg">&lt;b&gt;Total contributors:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Total commits:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Last update:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS statistics</string>
     <string name="anonymous_statistics_summary">Help make LineageOS better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
