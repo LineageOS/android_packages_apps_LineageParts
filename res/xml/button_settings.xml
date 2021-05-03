@@ -54,6 +54,14 @@
                 android:defaultValue="false" />
 
         <ListPreference
+            android:key="navigation_back_long_press"
+            android:dialogTitle="@string/navigation_bar_back_long_press_title"
+            android:title="@string/navigation_bar_back_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+        <ListPreference
             android:key="navigation_home_long_press"
             android:dialogTitle="@string/navigation_bar_home_long_press_title"
             android:title="@string/navigation_bar_home_long_press_title"
@@ -156,6 +164,14 @@
             android:key="back_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="false" />
+
+        <ListPreference
+            android:key="hardware_keys_back_long_press"
+            android:dialogTitle="@string/hardware_keys_long_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
 
     </PreferenceCategory>
 
