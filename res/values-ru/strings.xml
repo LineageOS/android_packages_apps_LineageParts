@@ -203,7 +203,7 @@
     <string name="navigation_bar_home_long_press_title">Длительное нажатие кнопки \'Домой\'</string>
     <string name="navigation_bar_home_double_tap_title">Двойное нажатие кнопки «Домой»</string>
     <string name="navigation_bar_app_switch_long_press_title">Длительное нажатие кнопки \'Недавние\'</string>
-    <string name="navigation_bar_edge_long_swipe_title">Действие по долгому свайпу</string>
+    <string name="navigation_bar_edge_long_swipe_title">Действие по длительному свайпу</string>
     <string name="power_menu_title">Меню кнопки питания</string>
     <string name="power_menu_screenshot_title">Скриншот</string>
     <string name="power_menu_screenshot_summary">Удерживайте, чтобы выделить область для скриншота</string>
