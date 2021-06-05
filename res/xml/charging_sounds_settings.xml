@@ -34,7 +34,13 @@
 
     <Preference
         android:key="charging_sounds"
-        android:title="@string/charging_sounds_ringtone_title"
+        android:title="@string/wired_charging_sounds_title"
+        android:dependency="charging_sounds_enabled"
+        android:persistent="false" />
+
+    <Preference
+        android:key="wireless_charging_sounds"
+        android:title="@string/wireless_charging_sounds_title"
         android:dependency="charging_sounds_enabled"
         android:persistent="false" />
 
