@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The CyanogenMod Project
-                   2017 The LineageOS Project
+                   2017-2018,2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -26,13 +26,14 @@
         android:summary="@string/charging_sounds_enabled_summary"
         android:defaultValue="true" />
 
-    <lineageos.preference.LineageGlobalSettingSwitchPreference
-        android:key="power_notifications_vibrate"
+    <lineageos.preference.SecureSettingSwitchPreference
+        android:key="charging_vibration_enabled"
         android:title="@string/power_notifications_vibrate_title"
-        android:dependency="charging_sounds_enabled" />
+        android:dependency="charging_sounds_enabled"
+        android:defaultValue="true" />
 
     <Preference
-        android:key="charging_sounds_ringtone"
+        android:key="charging_sounds"
         android:title="@string/charging_sounds_ringtone_title"
         android:dependency="charging_sounds_enabled"
         android:persistent="false" />
