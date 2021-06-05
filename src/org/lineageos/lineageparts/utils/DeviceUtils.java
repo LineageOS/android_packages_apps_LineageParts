@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod project
- *               2017-2020 The LineageOS project
+ *               2017-2021 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.lineageos.lineageparts.utils;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
@@ -242,6 +243,11 @@ public class DeviceUtils {
             // Ignore
         }
         return false;
+    }
+
+    public static boolean deviceSupportsWirelessCharging(Context context) {
+        return context.getResources().getBoolean(
+                org.lineageos.platform.internal.R.bool.config_deviceSupportsWirelessCharging);
     }
 
     public static boolean isSwipeUpEnabled(Context context) {
