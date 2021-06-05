@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4209d8f8_6f8da2cb",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 609,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-06-05T17:16:27Z",
+      "side": 1,
+      "message": "This title a bit too long now and will get longer in certain translations. Maybe put both settings in separate \u0027Notification sounds\u0027 category in that settings page and make it \u0027Wired charging\u0027 - \u0027Wireless charging\u0027",
+      "revId": "9b8c3fe24f21139c3b5299ccf3a3c6b073052fcc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
