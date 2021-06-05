@@ -32,26 +32,24 @@ import android.view.View;
 
 import androidx.preference.Preference;
 
-import lineageos.providers.LineageSettings;
-
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class ChargingSoundsSettings extends SettingsPreferenceFragment {
 
-    private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
-    private static final String KEY_CHARGING_SOUNDS_RINGTONE = "charging_sounds_ringtone";
+    private static final String KEY_CHARGING_SOUNDS = "charging_sounds";
+    private static final String KEY_CHARGING_VIBRATION_ENABLED = "charging_vibration_enabled";
 
     // Used for power notification uri string if set to silent
     private static final String RINGTONE_SILENT_URI_STRING = "silent";
 
-    private static final String DEFAULT_POWER_SOUND =
+    private static final String DEFAULT_CHARGING_SOUND =
             "/product/media/audio/ui/ChargingStarted.ogg";
 
     // Request code for charging notification ringtone picker
     private static final int REQUEST_CODE_CHARGING_NOTIFICATIONS_RINGTONE = 1;
 
-    private Preference mChargingSoundsRingtone;
+    private Preference mChargingSounds;
 
     private Uri mDefaultPowerSoundUri;
 
@@ -63,24 +61,24 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
 
         Vibrator vibrator = getActivity().getSystemService(Vibrator.class);
         if (vibrator == null || !vibrator.hasVibrator()) {
-            removePreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
+            removePreference(KEY_CHARGING_VIBRATION_ENABLED);
         }
 
-        mChargingSoundsRingtone = findPreference(KEY_CHARGING_SOUNDS_RINGTONE);
+        mChargingSounds = findPreference(KEY_CHARGING_SOUNDS);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        String curTone = LineageSettings.Global.getString(getContentResolver(),
-                LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
+        String curTone = Settings.Global.getString(getContentResolver(),
+                Settings.Global.CHARGING_STARTED_SOUND);
 
         // Convert default sound file path to a media uri so that we can
         // set a proper default for the ringtone picker.
-        mDefaultPowerSoundUri = audioFileToUri(getContext(), DEFAULT_POWER_SOUND);
+        mDefaultPowerSoundUri = audioFileToUri(getContext(), DEFAULT_CHARGING_SOUND);
 
-        updateChargingRingtone(curTone);
+        updateChargingSounds(curTone);
     }
 
     private Uri audioFileToUri(Context context, String audioFile) {
@@ -102,10 +100,10 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
                 Integer.toString(id));
     }
 
-    private void updateChargingRingtone(String toneUriString) {
+    private void updateChargingSounds(String toneUriString) {
         final String toneTitle;
 
-        if ((toneUriString == null || toneUriString.equals(DEFAULT_POWER_SOUND))
+        if ((toneUriString == null || toneUriString.equals(DEFAULT_CHARGING_SOUND))
                 && mDefaultPowerSoundUri != null) {
             toneUriString = mDefaultPowerSoundUri.toString();
         }
@@ -127,17 +125,17 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
             toneUriString = RINGTONE_SILENT_URI_STRING;
         }
 
-        mChargingSoundsRingtone.setSummary(toneTitle);
-        LineageSettings.Global.putString(getContentResolver(),
-                LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE, toneUriString);
+        mChargingSounds.setSummary(toneTitle);
+        Settings.Global.putString(getContentResolver(),
+                Settings.Global.CHARGING_STARTED_SOUND, toneUriString);
     }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mChargingSoundsRingtone) {
+        if (preference == mChargingSounds) {
             launchNotificationSoundPicker(REQUEST_CODE_CHARGING_NOTIFICATIONS_RINGTONE,
-                    LineageSettings.Global.getString(getContentResolver(),
-                    LineageSettings.Global.POWER_NOTIFICATIONS_RINGTONE));
+                    Settings.Global.getString(getContentResolver(),
+                    Settings.Global.CHARGING_STARTED_SOUND));
         }
         return super.onPreferenceTreeClick(preference);
     }
@@ -166,7 +164,7 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
         if (requestCode == REQUEST_CODE_CHARGING_NOTIFICATIONS_RINGTONE
                 && resultCode == Activity.RESULT_OK) {
             Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
-            updateChargingRingtone(uri != null ? uri.toString() : null);
+            updateChargingSounds(uri != null ? uri.toString() : null);
         }
     }
 }
