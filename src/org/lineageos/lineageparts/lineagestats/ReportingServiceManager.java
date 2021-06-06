@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017,2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -66,7 +66,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
 
         AlarmManager alarmManager = context.getSystemService(AlarmManager.class);
         alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + millisFromNow,
-                PendingIntent.getBroadcast(context, 0, intent, 0));
+                PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
         Log.d(TAG, "Next sync attempt in : "
                 + (millisFromNow / MILLIS_PER_HOUR) + " hours");
     }
