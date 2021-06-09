@@ -659,11 +659,11 @@
     <string name="trust_feature_security_patches">Android security patches</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <string name="trust_feature_security_patches_value_new">up to date</string>
+    <string name="trust_feature_security_patches_value_new">Up to date</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <string name="trust_feature_security_patches_value_medium">a few months out of date</string>
+    <string name="trust_feature_security_patches_value_medium">A few months out of date</string>
     <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
-    <string name="trust_feature_security_patches_value_old">out of date</string>
+    <string name="trust_feature_security_patches_value_old">Out of date</string>
     <string name="trust_feature_security_patches_explain">Security patches are released monthly by Google in cooperation with SoC vendors to address flaws which could be exploited by malicious apps to bypass security restrictions and cause permanent damage to your device. Patches made available by Google are applied every month on all supported devices, but patches to proprietary code can only be applied by your device\'s manufacturer. To keep your device safe make sure your LineageOS build is always up-to-date, and (if applicable) ensure your vendor image is updated to the latest one recommended by LineageOS.</string>
     <string name="trust_feature_encryption">Encryption</string>
     <string name="trust_feature_encryption_value_enabled">Enabled</string>
