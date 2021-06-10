@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a63ff427_a0b3c399",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 671,
+      "author": {
+        "id": 18921
+      },
+      "writtenOn": "2021-06-10T11:23:52Z",
+      "side": 0,
+      "message": "I think it\u0027s supposed to be lowercase on purpose 😊",
+      "range": {
+        "startLine": 671,
+        "startChar": 22,
+        "endLine": 671,
+        "endChar": 29
+      },
+      "revId": "983b7cbd0b5dc2c204d8a3a78c18406492cb27ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
