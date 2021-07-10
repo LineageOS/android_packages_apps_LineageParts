@@ -76,7 +76,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     public static final int ACTION_TEST = 0;
     public static final int ACTION_DELETE = 1;
-    private static final int MENU_ADD = 0;
     private static final int DIALOG_APPS = 0;
 
     private int mDefaultColor;
@@ -93,6 +92,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private ApplicationLightPreference mCallPref;
     private ApplicationLightPreference mVoicemailPref;
     private Menu mMenu;
+    private MenuItem mAddItem;
     private PackageListAdapter mPackageAdapter;
     private String mPackageList;
     private Map<String, Package> mPackages;
@@ -492,7 +492,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         mMenu = menu;
-        mMenu.add(0, MENU_ADD, 0, R.string.add)
+        mAddItem = mMenu.add(R.string.add)
                 .setIcon(R.drawable.ic_menu_add)
                 .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
     }
@@ -500,15 +500,14 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     @Override
     public void onPrepareOptionsMenu(Menu menu) {
         boolean enableAddButton = mEnabledPref.isChecked() && mCustomEnabledPref.isChecked();
-        menu.findItem(MENU_ADD).setVisible(enableAddButton);
+        mAddItem.setVisible(enableAddButton);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_ADD:
-                showDialog(DIALOG_APPS);
-                return true;
+        if (item == mAddItem) {
+            showDialog(DIALOG_APPS);
+            return true;
         }
         return false;
     }
