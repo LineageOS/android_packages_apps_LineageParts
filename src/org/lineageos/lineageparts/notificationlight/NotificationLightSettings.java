@@ -76,7 +76,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     public static final int ACTION_TEST = 0;
     public static final int ACTION_DELETE = 1;
-    private static final int MENU_ADD = 0;
+    private static final int MENU_ADD = 1;
     private static final int DIALOG_APPS = 0;
 
     private int mDefaultColor;
@@ -492,7 +492,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         mMenu = menu;
-        mMenu.add(0, MENU_ADD, 0, R.string.add)
+        mMenu.add(0, MENU_ADD, 1, R.string.add)
                 .setIcon(R.drawable.ic_menu_add)
                 .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
     }
