@@ -593,6 +593,14 @@
     <string name="auto_power_save_summary_on">Automatically enable power save mode at %s battery</string>
     <string name="auto_power_save_summary_off">Do not enable power save mode automatically</string>
     <string name="auto_power_save_never">Never</string>
+    <string name="battery_life_saver_title">Extending battery life</string>
+    <string name="battery_life_saver_summary_disabled">Do not optimize charging</string>
+    <string name="battery_life_saver_summary_optimized">Optimize charging to extend battery life</string>
+    <string name="battery_life_saver_summary_fully_optimized">Optimize charging to extend battery life. Do not charge until mandatory.</string>
+    <string name="battery_life_saver_pulldown_disabled">Disabled</string>
+    <string name="battery_life_saver_pulldown_optimized">Optimized</string>
+    <string name="battery_life_saver_pulldown_fully_optimized">Fully optimized</string>
+
 
     <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Full screen apps</string>

@@ -361,6 +361,19 @@
         <item>25</item>
     </string-array>
 
+    <!-- Battery Life Saver -->
+    <string-array name="battery_life_saver_entries" translatable="false">
+        <item>@string/battery_life_saver_pulldown_disabled</item>
+        <item>@string/battery_life_saver_pulldown_optimized</item>
+        <item>@string/battery_life_saver_pulldown_fully_optimized</item>
+    </string-array>
+
+    <string-array name="battery_life_saver_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Gestures - touchscreen gesture actions -->
     <string-array name="touchscreen_gesture_action_entries">
         <item>@string/touchscreen_gesture_action_do_nothing</item>

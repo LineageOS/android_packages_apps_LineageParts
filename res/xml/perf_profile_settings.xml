@@ -35,6 +35,12 @@
             android:title="@string/auto_power_save_title"
             android:persistent="false" />
 
+	<ListPreference
+            android:key="battery_life_saver"
+            android:title="@string/battery_life_saver_title"
+            android:summary="@string/battery_life_saver_summary_disabled"
+            android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

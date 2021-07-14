@@ -23,6 +23,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Resources;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.net.Uri;
@@ -36,6 +37,7 @@ import android.widget.Toast;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.SwitchPreference;
 
 import org.lineageos.lineageparts.PartsUpdater;
@@ -66,7 +68,11 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
     private static final String KEY_POWER_SAVE       = "power_save";
     private static final String KEY_PERF_SEEKBAR     = "perf_seekbar";
 
+    private static final int BATTERY_LIFE_SAVER_OPTIMIZED = 1;
+    private static final int BATTERY_LIFE_SAVER_FULLY_OPTIMIZED = 2;
+
     private ListPreference mAutoPowerSavePref;
+    private ListPreference mBatterLifeSaverPref;
     private SwitchPreference   mPowerSavePref;
 
     private SeekBarPreference        mPerfSeekBar;
@@ -96,6 +102,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         mPerfSeekBar = findPreference(KEY_PERF_SEEKBAR);
         mAutoPowerSavePref = findPreference(KEY_AUTO_POWER_SAVE);
         mPowerSavePref = findPreference(KEY_POWER_SAVE);
+        mBatterLifeSaverPref = findPreference(LineageSettings.System.BATTERY_LIFE_SAVER);
 
         mPowerManager = getActivity().getSystemService(PowerManager.class);
         mPerf = PerformanceManager.getInstance(getActivity());
@@ -126,6 +133,22 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         updateAutoPowerSaveValue();
         mAutoPowerSavePref.setOnPreferenceChangeListener(this);
         mPowerSavePref.setOnPreferenceChangeListener(this);
+
+        // Battery Life Saver
+        final Resources resources = getActivity().getResources();
+        final boolean deviceHasBatteryLifeSaver = resources.getBoolean(
+                com.android.internal.R.bool.config_deviceHasBatteryLifeSaver);
+        if (deviceHasBatteryLifeSaver) {
+            mBatterLifeSaverPref.setOnPreferenceChangeListener(this);
+            mBatterLifeSaverPref.setEntries(R.array.battery_life_saver_entries);
+            mBatterLifeSaverPref.setEntryValues(R.array.battery_life_saver_values);
+            final int state = LineageSettings.System.getInt(getContentResolver(),
+                    LineageSettings.System.BATTERY_LIFE_SAVER, 0);
+            updateBatteryLifeSaver(state);
+        } else {
+            PreferenceCategory category = (PreferenceCategory) findPreference("power_save_category");
+            category.removePreference(mBatterLifeSaverPref);
+        }
     }
 
 
@@ -246,6 +269,11 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
             final int level = Integer.parseInt((String) newValue);
             Global.putInt(getContentResolver(), Global.LOW_POWER_MODE_TRIGGER_LEVEL, level);
             updateAutoPowerSaveSummary(level);
+        } else if (preference == mBatterLifeSaverPref) {
+            final int state = Integer.parseInt((String) newValue);
+            updateBatteryLifeSaver(state);
+            LineageSettings.System.putInt(getContentResolver(),
+                    LineageSettings.System.BATTERY_LIFE_SAVER, state);
         }
         return true;
     }
@@ -268,6 +296,21 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
                 getContentResolver(), Global.LOW_POWER_MODE_TRIGGER_LEVEL, 0);
         mAutoPowerSavePref.setValue(String.valueOf(level));
         updateAutoPowerSaveSummary(level);
+    }
+
+    private void updateBatteryLifeSaver(int state) {
+        mBatterLifeSaverPref.setValue(String.valueOf(state));
+        switch(state) {
+            case BATTERY_LIFE_SAVER_OPTIMIZED:
+                mBatterLifeSaverPref.setSummary(R.string.battery_life_saver_summary_optimized);
+                break;
+            case BATTERY_LIFE_SAVER_FULLY_OPTIMIZED:
+                mBatterLifeSaverPref.setSummary(R.string.battery_life_saver_summary_fully_optimized);
+                break;
+            default:
+                mBatterLifeSaverPref.setSummary(R.string.battery_life_saver_summary_disabled);
+                break;
+        }
     }
 
     private void updateAutoPowerSaveSummary(int level) {
