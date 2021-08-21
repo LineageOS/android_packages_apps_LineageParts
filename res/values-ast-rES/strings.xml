@@ -152,8 +152,6 @@
     <string name="hardware_keys_action_sleep">Apagar la pantalla</string>
     <string name="hardware_keys_action_last_app">Aplicación cabera</string>
     <string name="hardware_keys_action_split_screen">Pantalla dixebrada</string>
-    <string name="hardware_keys_action_single_handed_left">Mou d\'una mano (izquierda)</string>
-    <string name="hardware_keys_action_single_handed_right">Mou d\'una mano (drecha)</string>
     <string name="camera_sleep_on_release_title">Vista rápida</string>
     <string name="camera_sleep_on_release_summary">Un primíu mediu caltendrá la pantalla prendida namái si\'l botón sigue primíu</string>
     <string name="camera_launch_title">Llanzar cámara</string>
@@ -195,6 +193,13 @@
     <string name="navigation_bar_home_long_press_title">Aición de primíu llargu d\'Aniciu</string>
     <string name="navigation_bar_home_double_tap_title">Aición de calcu doblu d\'Aniciu</string>
     <string name="navigation_bar_app_switch_long_press_title">Aición de primíu llargu de Recientes</string>
+    <string name="power_menu_title">Menú d\'apagáu</string>
+    <string name="power_menu_screenshot_title">Capturar pantalla</string>
+    <string name="power_menu_screenshot_summary">Primíu llargu pa captura parcial de pantalla</string>
+    <string name="power_menu_airplane_title">Mou avión</string>
+    <string name="power_menu_users_title">Seleutor d\'usuarios</string>
+    <string name="power_menu_bug_report_title">Informe de fallos</string>
+    <string name="power_menu_lockdown_title">Torgar</string>
     <string name="camera_double_tap_power_gesture_title">Primir dos vegaes el botón de prendíu pa la cámara</string>
     <string name="camera_double_tap_power_gesture_desc">Abre aína la cámara ensin desbloquiar la to pantalla</string>
     <string name="torch_long_press_power_gesture_title">Primíu llargu pa la llinterna</string>
@@ -485,9 +490,6 @@
     <string name="trust_feature_selinux_explain">SELinux dicta los procesos que tienen accesu a ficheros/caminos del preséu.\nEsto evita qu\'aplicaciones y servicios d\'accedan a ficheros que nun deberíen, d\'esti mou lléndase\'l potencial de los procesos maliciosos y caltener la seguranza.</string>
     <string name="trust_feature_security_patches">Parches de seguranza d\'Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nVendedor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">anovaos</string>
-    <string name="trust_feature_security_patches_value_medium">dellos meses ensin anovar</string>
-    <string name="trust_feature_security_patches_value_old">obsoletu</string>
     <string name="trust_feature_security_patches_explain">Los parches de seguranza llibéralos mensualmente Google cola cooperación de los fabricantes de SoC pa iguar fallos que puen aprovechase por aplicaciones malicioses pa saltar les restricciones de seguranza y causar daños permanentes al to dispositivu. Los parches disponibles dende Google aplíquense mensualmente en tolos dispositivos compatibles, pero los del códigu propietariu nun pueden aplicase más que pol fabricante del to dispositivu. Pa caltener el dispositivu seguru, asegúrate de que la compilación de LineageOS ta siempre anovada y (si ye posible) asegúrate que la imaxe del fornidor seya la más actual de LineageOS.</string>
     <string name="trust_feature_encryption">Cifráu</string>
     <string name="trust_feature_encryption_value_enabled">Activóse</string>

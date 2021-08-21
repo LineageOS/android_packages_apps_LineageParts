@@ -154,8 +154,6 @@
     <string name="hardware_keys_action_sleep">Wyłączenie ekranu</string>
     <string name="hardware_keys_action_last_app">Ostatnia aplikacja</string>
     <string name="hardware_keys_action_split_screen">Podziel ekran</string>
-    <string name="hardware_keys_action_single_handed_left">Tryb dla jednej dłoni (lewa)</string>
-    <string name="hardware_keys_action_single_handed_right">Tryb dla jednej dłoni (prawa)</string>
     <string name="camera_sleep_on_release_title">Podgląd ekranu</string>
     <string name="camera_sleep_on_release_summary">Lekkie naciśnięcie aktywuje ekran tylko do czasu zwolnienia przycisku</string>
     <string name="camera_launch_title">Włącz aparat</string>
@@ -201,6 +199,13 @@
     <string name="navigation_bar_home_double_tap_title">Akcja podwójnego puknięcia Home</string>
     <string name="navigation_bar_app_switch_long_press_title">Akcja długiego naciśnięcia Ostatnio Używanych</string>
     <string name="navigation_bar_edge_long_swipe_title">Akcja długiego przeciągnięcia krawędzi</string>
+    <string name="power_menu_title">Menu zasilania</string>
+    <string name="power_menu_screenshot_title">Zrzut ekranu</string>
+    <string name="power_menu_screenshot_summary">Naciśnij i przytrzymaj by wykonać częściowy zrzut ekranu</string>
+    <string name="power_menu_airplane_title">Tryb samolotowy</string>
+    <string name="power_menu_users_title">Przełącznik użytkowników</string>
+    <string name="power_menu_bug_report_title">Zgłoszenie błędu</string>
+    <string name="power_menu_lockdown_title">Blokada</string>
     <string name="camera_double_tap_power_gesture_title">Naciśnij przycisk zasilania dwa razy, aby uruchomić aparat</string>
     <string name="camera_double_tap_power_gesture_desc">Szybkie uruchamianie aparatu bez odblokowywania ekranu</string>
     <string name="torch_long_press_power_gesture_title">Długie naciśnięcie dla latarki</string>
@@ -494,9 +499,6 @@
     <string name="trust_feature_selinux_explain">SELinux narzuca, które procesy mają dostęp do poszczególnych plików na Twoim urządzeniu.\nZapobiega to dostępowi aplikacjom i usługom do plików, które nie powinny być obsługiwane. Dzięki temu złośliwy proces ma ograniczony dostęp, zapewniając utrzymanie bezpieczeństwa.</string>
     <string name="trust_feature_security_patches">Poprawki zabezpieczeń Androida</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">aktualne</string>
-    <string name="trust_feature_security_patches_value_medium">kilkumiesięczne</string>
-    <string name="trust_feature_security_patches_value_old">nieaktualne</string>
     <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google w kooperacji z dostawcami SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzenia trwałych szkód w twoim urządzeniu. Łatki udostępniane przez Google są aplikowane w każdym miesiącu na wszystkich wspieranych urządzeniach, ale poprawki dla kodu własnościowego mogą być aplikowane tylko przez producenta twojego telefonu. By utrzymać twój telefon bezpiecznym, zawsze używaj najnowsze wersji LineageOS i (jeżeli dotyczy) twój obraz vendor jest zaktualizowany do najnowszej wersji zalecanej przez LineageOS.</string>
     <string name="trust_feature_encryption">Szyfrowanie</string>
     <string name="trust_feature_encryption_value_enabled">Włączone</string>

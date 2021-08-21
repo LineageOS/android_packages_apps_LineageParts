@@ -153,8 +153,6 @@
     <string name="hardware_keys_action_sleep">Scherm uitschakelen</string>
     <string name="hardware_keys_action_last_app">Vorige app</string>
     <string name="hardware_keys_action_split_screen">Split-screen</string>
-    <string name="hardware_keys_action_single_handed_left">Bediening met één hand (links)</string>
-    <string name="hardware_keys_action_single_handed_right">Bediening met één hand (rechts)</string>
     <string name="camera_sleep_on_release_title">Scherm kort aan</string>
     <string name="camera_sleep_on_release_summary">Scherm aan tijdens half indrukken knop</string>
     <string name="camera_launch_title">Camera openen</string>
@@ -194,6 +192,11 @@
     <string name="navigation_bar_arrow_keys_summary">Cursor links en rechts weergeven tijdens typen. Verbergt invoermethodepictogram.</string>
     <string name="navigation_bar_home_long_press_title">Thuisknop lang indrukken</string>
     <string name="navigation_bar_home_double_tap_title">Thuisknop twee keer indrukken</string>
+    <string name="power_menu_title">Opties in afsluitmenu</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_airplane_title">Vliegtuigmodus</string>
+    <string name="power_menu_users_title">Gebruiker wisselen</string>
+    <string name="power_menu_bug_report_title">Foutenrapport</string>
     <string name="camera_double_tap_power_gesture_title">Twee keer op aan/uit-knop drukken voor camera</string>
     <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
     <string name="torch_long_press_power_gesture_title">Lang drukken voor zaklamp</string>
@@ -471,9 +474,6 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_security_patches">Android-beveiligingspatches</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nProvider: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">up-to-date</string>
-    <string name="trust_feature_security_patches_value_medium">een paar maanden oud</string>
-    <string name="trust_feature_security_patches_value_old">verouderd</string>
     <string name="trust_feature_encryption">Encryptie</string>
     <string name="trust_feature_encryption_value_enabled">Ingeschakeld</string>
     <string name="trust_feature_encryption_value_disabled">Uitgeschakeld</string>

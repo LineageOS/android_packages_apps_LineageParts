@@ -154,8 +154,6 @@
     <string name="hardware_keys_action_sleep">ปิดหน้าจอ</string>
     <string name="hardware_keys_action_last_app">แอปล่าสุด</string>
     <string name="hardware_keys_action_split_screen">แยกหน้าจอ</string>
-    <string name="hardware_keys_action_single_handed_left">โหมดมือเดียว (ซ้าย)</string>
-    <string name="hardware_keys_action_single_handed_right">โหมดมือเดียว (ขวา)</string>
     <string name="camera_sleep_on_release_title">ดูผ่านหน้าจอ</string>
     <string name="camera_sleep_on_release_summary">การกดเพียงครึ่งเดียวจะเปิดจอไว้เฉพาะเมื่อปุ่มถูกกดค้างอยู่</string>
     <string name="camera_launch_title">เปิดกล้อง</string>
@@ -201,6 +199,13 @@
     <string name="navigation_bar_home_double_tap_title">เมื่อกดปุ่มโฮม2ครั้ง</string>
     <string name="navigation_bar_app_switch_long_press_title">เมื่อกดปุ่มแอปล่าสุดค้าง</string>
     <string name="navigation_bar_edge_long_swipe_title">ท่าทางการปัดยาวจากขอบ</string>
+    <string name="power_menu_title">ปุ่มเปิด/ปิดเครื่อง</string>
+    <string name="power_menu_screenshot_title">ถ่ายภาพหน้าจอ</string>
+    <string name="power_menu_screenshot_summary">กดค้างเพื่อถ่ายรูปหน้าจอบางส่วน</string>
+    <string name="power_menu_airplane_title">โหมด​เครื่องบิน​</string>
+    <string name="power_menu_users_title">สลับผู้ใช้งาน</string>
+    <string name="power_menu_bug_report_title">รายงานข้อผิดพลาด</string>
+    <string name="power_menu_lockdown_title">ออกโรง</string>
     <string name="camera_double_tap_power_gesture_title">กดปุ่มเพาเวอร์ 2 ครั้งเพื่อเรียกใช้งานกล้อง</string>
     <string name="camera_double_tap_power_gesture_desc">เปิดกล้องได้อย่างรวดเร็วโดยไม่ต้องปลดล็อกหน้าจอ</string>
     <string name="torch_long_press_power_gesture_title">กดค้างสำหรับไฟฉาย</string>
@@ -495,9 +500,6 @@
     <string name="trust_feature_selinux_explain">SELinux บอกว่า กระบวนการสามารถเข้าถึง ไฟล์/พื้นที่ บนอุปกรณ์ของคุณ\nสิ่งนี้ป้องกันไม่ให้แอปและบริการการเข้าถึงไฟล์ที่ไม่ควรจะ: วิธีนี้กระบวนการที่เป็นอันตรายอาจถูกจำกัด และรักษาความปลอดภัยของคุณ</string>
     <string name="trust_feature_security_patches">แพตช์ความปลอดภัยแอนดรอยด์</string>
     <string name="trust_feature_security_patches_value_base">แพลตฟอร์ม: %1$s\nVendor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">รุ่นล่าสุด</string>
-    <string name="trust_feature_security_patches_value_medium">ล้าหลังไม่กี่เดือน</string>
-    <string name="trust_feature_security_patches_value_old">ล้าหลัง</string>
     <string name="trust_feature_security_patches_explain">Google ออกแพตช์รักษาความปลอดภัยเป็นประจำทุกเดือนโดยร่วมมือกับผู้ขาย SoC เพื่อแก้ไขข้อบกพร่องซึ่งอาจถูกใช้โดยแอปที่เป็นอันตรายเพื่อข้ามข้อจำกัดในด้านความปลอดภัยและทำให้อุปกรณ์ของคุณเสียหายอย่างถาวร Google มีการติดตั้งแพตช์แก้ไขทุกเดือนในอุปกรณ์ที่รองรับทั้งหมด แต่ผู้ผลิตอุปกรณ์ของคุณสามารถแก้ไขข้อบกพร่องสำหรับโค้ดที่เป็นกรรมสิทธิ์ได้เท่านั้น เพื่อให้อุปกรณ์ของคุณปลอดภัยตรวจสอบให้แน่ใจว่ารุ่น LineageOS ที่คุณใช้งานอยู่เป็นรุ่นล่าสุดอยู่เสมอและ (ถ้ามี) ให้แน่ใจว่าไฟล์ภาพผู้ขายของคุณได้รับการอัปเดตเป็นรุ่นล่าสุดที่ถูกแนะนำโดย LineageOS</string>
     <string name="trust_feature_encryption">การเข้ารหัส</string>
     <string name="trust_feature_encryption_value_enabled">เปิดใช้งาน</string>

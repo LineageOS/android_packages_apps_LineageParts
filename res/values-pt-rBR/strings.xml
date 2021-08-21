@@ -154,8 +154,6 @@
     <string name="hardware_keys_action_sleep">Desligar a tela</string>
     <string name="hardware_keys_action_last_app">Último aplicativo</string>
     <string name="hardware_keys_action_split_screen">Dividir a tela</string>
-    <string name="hardware_keys_action_single_handed_left">Modo de uma mão (mão esquerda)</string>
-    <string name="hardware_keys_action_single_handed_right">Modo de uma mão (mão direita)</string>
     <string name="camera_sleep_on_release_title">Espiar a tela</string>
     <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
     <string name="camera_launch_title">Iniciar a câmera</string>
@@ -202,6 +200,14 @@
     <string name="navigation_bar_home_double_tap_title">Ação de toque duplo no botão de Página Inicial</string>
     <string name="navigation_bar_app_switch_long_press_title">Pressionar e segurar no botão de visão geral</string>
     <string name="navigation_bar_edge_long_swipe_title">Deslizar a partir da borda</string>
+    <string name="power_menu_title">Opções do botão liga/desliga</string>
+    <string name="power_menu_screenshot_title">Captura de tela</string>
+    <string name="power_menu_screenshot_summary">Pressione, segure e solte para obter uma captura de tela parcial</string>
+    <string name="power_menu_airplane_title">Modo avião</string>
+    <string name="power_menu_users_title">Alternador de usuário</string>
+    <string name="power_menu_bug_report_title">Relatório de erros</string>
+    <string name="power_menu_lockdown_title">Bloquear</string>
+    <string name="power_menu_emergency_title">Emergência</string>
     <string name="camera_double_tap_power_gesture_title">Pressione o botão ligar/desligar duas vezes para iniciar a câmara</string>
     <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmera sem desbloquear a tela</string>
     <string name="torch_long_press_power_gesture_title">Manter pressionado para ligar a lanterna</string>
@@ -494,8 +500,6 @@
     <string name="trust_feature_selinux_explain">O SELinux determina quais processos têm acesso a determinados arquivos/pastas no seu dispositivo.\nIsto impede que aplicativos e serviços tenham acesso a arquivos com os quais não devem lidar. Dessa forma, um potencial processo malicioso terá acesso limitado e sua segurança está preservada.</string>
     <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">atualizado</string>
-    <string name="trust_feature_security_patches_value_medium">alguns meses desatualizado</string>
     <string name="trust_feature_security_patches_value_old">desatualizado</string>
     <string name="trust_feature_security_patches_explain">As atualizações de segurança são lançadas mensalmente pela Google em cooperação com os fabricantes de SoC para corrigir falhas que possam ser exploradas por aplicativos maliciosos que visam burlar as restrições de segurança e causar danos permanentes em seu dispositivo. As atualizações disponibilizadas pela Google são aplicadas mensalmente em todos os dispositivos suportados, mas as atualizações para o código proprietário só podem ser aplicadas pelo fabricante do seu dispositivo. Para manter o seu dispositivo seguro, certifique-se de que a sua versão do LineageOS esteja sempre atualizada e, se aplicável, assegure-se de que a imagem do seu fornecedor esteja atualizada para a versão recomendada pelo LineageOS.</string>
     <string name="trust_feature_encryption">Criptografia</string>

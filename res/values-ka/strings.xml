@@ -32,6 +32,9 @@
     <string name="button_wake_title">მოწყობილობის გაღვიძება</string>
     <string name="navigation_bar_invert_layout_title">განლაგების შებრუნება</string>
     <string name="navigation_bar_edge_long_swipe_title">კიდეზე ხანგრძლივი გადასმა</string>
+    <string name="power_menu_screenshot_title">ეკრანის სურათი</string>
+    <string name="power_menu_screenshot_summary">ხანგრძლივი დაჭერა ეკრანის ნაწილის გადასაღებად</string>
+    <string name="power_menu_airplane_title">ფრენის რეჟიმი</string>
     <string name="profile_entries_on">ჩართ.</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>

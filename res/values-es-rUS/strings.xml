@@ -152,8 +152,6 @@
     <string name="hardware_keys_action_sleep">Apagar la pantalla</string>
     <string name="hardware_keys_action_last_app">Última aplicación</string>
     <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
-    <string name="hardware_keys_action_single_handed_left">Modo de una mano (izquierda)</string>
-    <string name="hardware_keys_action_single_handed_right">Modo de una mano (derecha)</string>
     <string name="camera_sleep_on_release_title">Vista rápida</string>
     <string name="camera_sleep_on_release_summary">Una leve pulsación dejará la pantalla encendida hasta que el botón se libere</string>
     <string name="camera_launch_title">Iniciar cámara</string>
@@ -195,6 +193,13 @@
     <string name="navigation_bar_home_long_press_title">Acción de pulsación larga en Inicio</string>
     <string name="navigation_bar_home_double_tap_title">Acción de doble pulsación en Inicio</string>
     <string name="navigation_bar_app_switch_long_press_title">Últimas acciones de pulsación larga</string>
+    <string name="power_menu_title">Menú de apagado</string>
+    <string name="power_menu_screenshot_title">Captura de pantalla</string>
+    <string name="power_menu_screenshot_summary">Mantener pulsado para una captura de pantalla parcial</string>
+    <string name="power_menu_airplane_title">Modo avión</string>
+    <string name="power_menu_users_title">Selector de usuario</string>
+    <string name="power_menu_bug_report_title">Informe de errores</string>
+    <string name="power_menu_lockdown_title">Bloqueo de seguridad</string>
     <string name="camera_double_tap_power_gesture_title">Pulsar dos veces el botón de encendido para la cámara</string>
     <string name="camera_double_tap_power_gesture_desc">Abre rápidamente la cámara sin desbloquear la pantalla</string>
     <string name="torch_long_press_power_gesture_title">Mantenga pulsado para activar la linterna</string>
@@ -483,9 +488,6 @@
     <string name="trust_feature_selinux_explain">SELinux dicta qué procesos tienen acceso a qué archivos en el dispositivo.\n Esto evita que las aplicaciones y servicios tengan acceso a archivos con los que no deben tratar: de esta manera, un proceso malicioso tiene acceso limitado, por lo que su seguridad se mantiene.</string>
     <string name="trust_feature_security_patches">Parches de seguridad de Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProveedor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">actualizado</string>
-    <string name="trust_feature_security_patches_value_medium">hace algunos meses</string>
-    <string name="trust_feature_security_patches_value_old">desactualizado</string>
     <string name="trust_feature_security_patches_explain">Google publica mensualmente parches de seguridad en colaboración con los proveedores de SoC para solucionar los fallos que podrían ser explotados por aplicaciones maliciosas para eludir las restricciones de seguridad y causar daños permanentes al dispositivo. Los parches puestos a disposición por Google se aplican todos los meses en todos los dispositivos compatibles, pero los parches para el código propietario sólo pueden ser aplicados por el fabricante del dispositivo. Para mantener el dispositivo seguro, asegúrese de que su compilación LineageOS esté siempre actualizada, y (si corresponde) asegúrese de que su imagen de vendedor esté actualizada a la última recomendada por LineageOS.</string>
     <string name="trust_feature_encryption">Cifrado</string>
     <string name="trust_feature_encryption_value_enabled">Activado</string>

@@ -126,6 +126,9 @@
     <string name="backlight_summary_disabled">Avaktiverad</string>
     <string name="backlight_summary_enabled">Aktiverad</string>
     <string name="navigation_bar_invert_layout_title">Invertera layout</string>
+    <string name="power_menu_title">Avstängningsmeny</string>
+    <string name="power_menu_airplane_title">Flygplansläge</string>
+    <string name="power_menu_bug_report_title">Buggrapport</string>
     <string name="torch_long_press_power_timeout_never">Aldrig</string>
     <string name="torch_long_press_power_timeout_1min">1 minut</string>
     <string name="torch_long_press_power_timeout_2min">2 minuter</string>

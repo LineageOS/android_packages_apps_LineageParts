@@ -34,6 +34,7 @@
     <string name="yes">はい</string>
     <string name="no">いいえ</string>
     <string name="search">検索</string>
+    <string name="search_menu">検索設定</string>
     <string name="disabled">無効</string>
     <string name="enabled">有効</string>
     <string name="privacy_settings_title">プライバシー</string>
@@ -61,6 +62,7 @@
     <string name="light_brightness_zen">おやすみモード</string>
     <string name="battery_light_title">電池のライト</string>
     <string name="battery_low_pulse_title">残量低下時に点滅</string>
+    <string name="battery_light_full_charge_disabled_title">満充電で無効</string>
     <string name="battery_light_list_title">色</string>
     <string name="battery_light_low_color_title">残量低下</string>
     <string name="battery_light_medium_color_title">充電中</string>
@@ -91,6 +93,8 @@
     <string name="live_display_night">夜</string>
     <string name="live_display_outdoor_mode_title">自動屋外モード</string>
     <string name="live_display_outdoor_mode_summary">明るい日差しが照射する環境下で明るさと彩度を自動的に向上させる</string>
+    <string name="live_display_anti_flicker_title">アンチフリッカー</string>
+    <string name="live_display_anti_flicker_summary">幅広いちらつきを防ぎ、暗い環境での目への負担を軽減します。色の再現度が低下したり、いくつかの項目の表示に影響する可能性があります。</string>
     <string name="live_display_low_power_title">消費電力を削減</string>
     <string name="live_display_low_power_summary">性能を低下させずにディスプレイを最低の消費電力に調整する</string>
     <string name="live_display_enhance_color_title">色を補正</string>
@@ -153,8 +157,7 @@
     <string name="hardware_keys_action_sleep">画面を消灯</string>
     <string name="hardware_keys_action_last_app">前回のアプリ</string>
     <string name="hardware_keys_action_split_screen">画面の分割</string>
-    <string name="hardware_keys_action_single_handed_left">片手モード（左）</string>
-    <string name="hardware_keys_action_single_handed_right">片手モード（右）</string>
+    <string name="hardware_keys_action_kill_app">フォアグラウンドアプリを終了</string>
     <string name="camera_sleep_on_release_title">画面の覗き見</string>
     <string name="camera_sleep_on_release_summary">ボタンを半押しし続けている間だけ画面を点灯する</string>
     <string name="camera_launch_title">カメラを起動</string>
@@ -178,6 +181,8 @@
     <string name="home_answer_call_summary">ホームボタンを押して着信に応答する</string>
     <string name="extras_title">追加機能</string>
     <string name="additional_buttons_title">追加のボタン</string>
+    <string name="click_partial_screenshot_title">押して指定した範囲を撮影</string>
+    <string name="click_partial_screenshot_summary">音量ダウンと電源ボタンを短くクリックして指定した範囲を撮影します</string>
     <string name="button_backlight_title">バックライト</string>
     <string name="button_backlight_enabled">ボタンを点灯</string>
     <string name="button_backlight_only_when_pressed_title">ボタンを押したときだけ光らせる</string>
@@ -191,13 +196,30 @@
     <string name="backlight_summary_enabled">有効</string>
     <string name="disable_navkeys_title">スクリーンナビゲーションバーを有効化</string>
     <string name="disable_navkeys_summary">スクリーンナビゲーションバーを有効にしてハードウェアボタンを無効にする</string>
+    <string name="swap_capacitive_keys_title">ハードウェアキーの入れ替え</string>
+    <string name="swap_capacitive_keys_summary">履歴ボタンと戻るボタンの位置を入れ替えます</string>
     <string name="navigation_bar_category">ナビゲーションバー</string>
+    <string name="navigation_bar_invert_layout_title">レイアウトを反転</string>
+    <string name="navigation_bar_invert_layout_summary">ナビゲーションバーや IME の変更などのその他の項目のレイアウトを反転させます</string>
     <string name="navigation_bar_left_summary">横画面モードでナビゲーションバーを画面の左側に配置する</string>
     <string name="navigation_bar_arrow_keys_title">入力中は矢印キーを表示</string>
     <string name="navigation_bar_arrow_keys_summary">入力中は左右の矢印ボタンを表示します。IMEの切り替えアイコンは無効になります。</string>
+    <string name="navigation_bar_back_long_press_title">戻るボタン長押しの動作</string>
     <string name="navigation_bar_home_long_press_title">ホームボタン長押しの動作</string>
     <string name="navigation_bar_home_double_tap_title">ホームボタンのダブルタップの動作</string>
     <string name="navigation_bar_app_switch_long_press_title">履歴ボタンの長押しの動作</string>
+    <string name="navigation_bar_edge_long_swipe_title">端の長いスワイプの動作</string>
+    <string name="power_menu_title">電源メニュー</string>
+    <string name="power_menu_screenshot_title">スクリーンショット</string>
+    <string name="power_menu_screenshot_summary">長押しして指定した範囲を撮影します</string>
+    <string name="power_menu_airplane_title">機内モード</string>
+    <string name="power_menu_users_title">ユーザーの切り替え</string>
+    <string name="power_menu_bug_report_title">バグレポート</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">開発者向けオプションが有効でないためバグレポートは無効です</string>
+    <string name="power_menu_bug_report_unavailable_for_user">プライマリユーザー以外はバグレポートは無効です</string>
+    <string name="power_menu_lockdown_title">ロックダウン</string>
+    <string name="power_menu_lockdown_unavailable">キーガードが安全でないため画面ロックは無効です</string>
+    <string name="power_menu_emergency_title">緊急通報</string>
     <string name="camera_double_tap_power_gesture_title">ホームボタンを2回押してカメラを起動</string>
     <string name="camera_double_tap_power_gesture_desc">画面のロックを解除せずにカメラをすばやく起動する</string>
     <string name="torch_long_press_power_gesture_title">長押しでライト点灯</string>
@@ -298,6 +320,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Wi\u2011Fiテザリング</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">位置情報</string>
     <string name="toggleData">データ接続</string>
     <string name="toggleSync">データの自動同期</string>
     <string name="toggleNfc">NFC</string>
@@ -352,6 +375,9 @@
     <string name="status_bar_brightness_slider_summary">クイック設定で明るさを調節します</string>
     <string name="status_bar_brightness_slider_auto_title">明るさの自動調節</string>
     <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
+    <string name="status_bar_brightness_slider_show_never">常に非表示</string>
+    <string name="status_bar_brightness_slider_show_expanded">展開時に表示</string>
+    <string name="status_bar_brightness_slider_show_always">常に表示</string>
     <string name="status_bar_toggle_brightness">明るさコントロール</string>
     <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
     <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
@@ -377,7 +403,13 @@
     <string name="contributors_cloud_loading_message">貢献者のデータを読み込み中...</string>
     <string name="contributors_cloud_failed_message">貢献者の情報を読み込めません</string>
     <string name="contributor_info_menu">貢献者の情報</string>
+    <string name="contributor_info_msg">&lt;b&gt;名前:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;ニックネーム:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;コミット:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">貢献者の情報</string>
+    <string name="contributions_info_msg">&lt;b&gt;協力者の合計:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;コミットの合計:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;最終更新:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS の統計</string>
     <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してLineageOSの改善に協力する</string>
     <string name="anonymous_statistics_warning_title">情報</string>
@@ -433,6 +465,7 @@
     <string name="auto_power_save_never">使用しない</string>
     <string name="long_screen_settings_title">全画面表示のアプリ</string>
     <string name="long_screen_settings_summary">従来のアプリに全画面表示のアスペクト比を使用させる</string>
+    <string name="long_screen_settings_no_apps">なし</string>
     <string name="charging_sounds_settings_title">充電時の音</string>
     <string name="charging_sounds_enabled_title">有効</string>
     <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らします</string>
@@ -449,6 +482,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">一本指で下にスライド</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">一本指で左にスライド</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">一本指で右にスライド</string>
+    <string name="touchscreen_gesture_single_tap_title">シングルタップ</string>
     <string name="touchscreen_gesture_up_arrow_title">「Λ」を描く</string>
     <string name="touchscreen_gesture_down_arrow_title">「V」を描く</string>
     <string name="touchscreen_gesture_left_arrow_title">「&lt;」を描く</string>
@@ -479,6 +513,7 @@
     <string name="touchscreen_gesture_action_next_track">次の楽曲にスキップ</string>
     <string name="touchscreen_gesture_action_volume_down">メディア音量を下げる</string>
     <string name="touchscreen_gesture_action_volume_up">メディア音量を上げる</string>
+    <string name="touchscreen_gesture_action_ambient_display">アンビエント表示の有効化</string>
     <string name="trust_category_features">状態</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
@@ -487,9 +522,9 @@
     <string name="trust_feature_security_patches">Android セキュリティパッチ</string>
     <string name="trust_feature_security_patches_value_base">プラットフォーム: %1$s\nベンダー: %2$s</string>
     <string name="trust_feature_security_patches_value_new">最新です</string>
-    <string name="trust_feature_security_patches_value_medium">数カ月間の月例パッチが未適用</string>
+    <string name="trust_feature_security_patches_value_medium">数ヶ月間未更新です</string>
     <string name="trust_feature_security_patches_value_old">最新ではありません</string>
-    <string name="trust_feature_security_patches_explain">セキュリティパッチは、悪意のあるアプリが悪用してセキュリティ制限を回避し、端末に永続的な損害を与える可能性のある欠陥に対処するために Google が毎月 SoC ベンダーと協力してリリースしています。 Google が提供するパッチは、サポートされている全ての端末で毎月適用されますが、独自のコードへのパッチは端末の製造元のみが適用できます。機器を安全に保つためには、ビルドが常に最新であること、および（該当する場合）ベンダーイメージが推奨されている最新のものに更新されていることを確認してください。</string>
+    <string name="trust_feature_security_patches_explain">セキュリティパッチは、悪意のあるアプリが悪用してセキュリティ制限を回避し、端末に永続的な損害を与える可能性のある欠陥に対処するために Google が毎月 SoC ベンダーと協力してリリースしています。 Google が提供するパッチは、サポートされているすべての端末で毎月適用されますが、独自のコードへのパッチは端末の製造元のみが適用できます。機器を安全に保つためには、ビルドが常に最新であること、および（該当する場合）ベンダーイメージが推奨されている最新のものに更新されていることを確認してください。</string>
     <string name="trust_feature_encryption">暗号化</string>
     <string name="trust_feature_encryption_value_enabled">有効</string>
     <string name="trust_feature_encryption_value_nolock">保護されたロック画面が必要です</string>

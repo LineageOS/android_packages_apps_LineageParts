@@ -139,6 +139,11 @@
     <string name="navigation_bar_arrow_keys_summary">Паказваць кнопки левага и правага курсору падчас друкаваньня. Кнопка варыянту друкаваньня будзе схована.</string>
     <string name="navigation_bar_home_long_press_title">Доўгае утрыманьне кнопкі \"Хатоўка\"</string>
     <string name="navigation_bar_home_double_tap_title">Падвойнае крананьне кнопкі \"Хатоўка\"</string>
+    <string name="power_menu_title">Дзеяньні пры ўтрыманьні кнопкі выключэньня</string>
+    <string name="power_menu_screenshot_title">Здымак экрану</string>
+    <string name="power_menu_airplane_title">Рэжым лёту</string>
+    <string name="power_menu_users_title">Зьмяніць карыстальніка</string>
+    <string name="power_menu_bug_report_title">Справаздача пра памылкі</string>
     <string name="profile_menu_delete_title">Выдаліць</string>
     <string name="profile_action_none">Пакінуць без змяненьня</string>
     <string name="profile_action_system">Па змаўчаньні</string>

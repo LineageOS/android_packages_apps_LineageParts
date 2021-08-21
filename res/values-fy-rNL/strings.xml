@@ -154,8 +154,6 @@
     <string name="hardware_keys_action_sleep">Skerm útskeakelje</string>
     <string name="hardware_keys_action_last_app">Lêste app</string>
     <string name="hardware_keys_action_split_screen">Splitst skerm</string>
-    <string name="hardware_keys_action_single_handed_left">Betsjinning mei ien hân (links)</string>
-    <string name="hardware_keys_action_single_handed_right">Betsjinning mei ien hân (rjochts)</string>
     <string name="camera_sleep_on_release_title">Skerm koart oan</string>
     <string name="camera_sleep_on_release_summary">Skerm oan wylst de knop heal yndrukt</string>
     <string name="camera_launch_title">Kamera starte</string>
@@ -201,6 +199,13 @@
     <string name="navigation_bar_home_double_tap_title">Thúsknop twa kear yndrukke</string>
     <string name="navigation_bar_app_switch_long_press_title">Resinte apps-knop lang yndrukke</string>
     <string name="navigation_bar_edge_long_swipe_title">langs de rane feie</string>
+    <string name="power_menu_title">Opsjes yn ôfslútmenu</string>
+    <string name="power_menu_screenshot_title">Skermôfdruk</string>
+    <string name="power_menu_screenshot_summary">Lang yndrukke foar in part fan skermôfbylding</string>
+    <string name="power_menu_airplane_title">Fleantúchmodus</string>
+    <string name="power_menu_users_title">Brûker wikselje</string>
+    <string name="power_menu_bug_report_title">Flaterrapport</string>
+    <string name="power_menu_lockdown_title">Blokkade</string>
     <string name="camera_double_tap_power_gesture_title">Twa kear op oan/út-knop drukke foar kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Kamera fluch iepenje sûnder it skerm te ûntskoatteljen</string>
     <string name="torch_long_press_power_gesture_title">Lang drukke foar bûslamp</string>
@@ -493,9 +498,6 @@
     <string name="trust_feature_selinux_explain">SELinux bepaalt hokker prosessen tagong hawwe ta hokker bestannen/mappen op jo apparaat.\nDit foarkomt dat applikaasjes en tsjinsten tagong krije ta bestannen dy\'t se net nedich hawwe: op dizze manier wurdt in potinsjeel kwea-aardich proses beheind en jo feilichheid behâlden.</string>
     <string name="trust_feature_security_patches">Android-befeiligingspatches</string>
     <string name="trust_feature_security_patches_value_base">Platfoarm: %1$s\nLeveransier: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">by-de-tiid</string>
-    <string name="trust_feature_security_patches_value_medium">in pear moannen âld</string>
-    <string name="trust_feature_security_patches_value_old">ferâldere</string>
     <string name="trust_feature_security_patches_explain">Befeiligingspatches wurde elke moanne troch Google frijjûn yn gearwurking mei SoC-leveransiers om flaters oan te pakken dy\'t misbrûkt wurde kinne troch kweawollende apps om befeiligingsbeheiningen te omsilen en permaninte skea oan jo apparaat te feroarsaakjen. Patches dy\'t troch Google beskikber steld wurde, wurde elke moanne op alle stipe apparaten tapast, mar patches foar bedriuwseigen koade kinne allinnich troch de fabrikant fan jo apparaat tapast wurde. Om jo apparaat feilich te hâlden, moatte jo derfoar soargje dat jo LineageOS-build altyd by-de-tiid is en (wannear fan tapassing) soargje dat jo leveransiers-image fernijd wurdt nei de lêste dy\'t troch LineageOS oanrekommandearre wurdt.</string>
     <string name="trust_feature_encryption">Fersifering</string>
     <string name="trust_feature_encryption_value_enabled">Ynskeakele</string>

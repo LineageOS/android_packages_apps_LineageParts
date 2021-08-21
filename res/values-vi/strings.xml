@@ -152,8 +152,6 @@
     <string name="hardware_keys_action_sleep">Tắt màn hình</string>
     <string name="hardware_keys_action_last_app">Ứng dụng cuối</string>
     <string name="hardware_keys_action_split_screen">Chia màn hình</string>
-    <string name="hardware_keys_action_single_handed_left">Chế độ một tay (trái)</string>
-    <string name="hardware_keys_action_single_handed_right">Chế độ một tay (phải)</string>
     <string name="camera_sleep_on_release_title">Liếc màn hình</string>
     <string name="camera_sleep_on_release_summary">Nhấn nửa chừng sẽ giữ màn hình bật trong khi còn giữ nút</string>
     <string name="camera_launch_title">Mở máy ảnh</string>
@@ -195,6 +193,13 @@
     <string name="navigation_bar_home_long_press_title">Hành động khi nhấn giữ phím Trang chính</string>
     <string name="navigation_bar_home_double_tap_title">Hành động nhấn phím Trang chính hai lần</string>
     <string name="navigation_bar_app_switch_long_press_title">Thao tác nhấn giữ phím gần đây</string>
+    <string name="power_menu_title">Trình đơn nguồn</string>
+    <string name="power_menu_screenshot_title">Chụp ảnh màn hình</string>
+    <string name="power_menu_screenshot_summary">Nhấn giữ để chụp ảnh màn hình một phần</string>
+    <string name="power_menu_airplane_title">Chế độ máy bay</string>
+    <string name="power_menu_users_title">Chuyển người dùng</string>
+    <string name="power_menu_bug_report_title">Báo cáo lỗi</string>
+    <string name="power_menu_lockdown_title">Khóa lại</string>
     <string name="camera_double_tap_power_gesture_title">Nhấn nút nguồn hai lần để mở máy ảnh</string>
     <string name="camera_double_tap_power_gesture_desc">Mở nhanh máy ảnh mà không cần mở khóa màn hình của bạn</string>
     <string name="torch_long_press_power_gesture_title">Nhấn giữ bật đèn pin</string>
@@ -482,9 +487,6 @@
     <string name="trust_feature_selinux_explain">SELinux quy định những quy trình nào có quyền truy cập vào các tệp/đường dẫn trên thiết bị của bạn.\nĐiều này ngăn các ứng dụng và dịch vụ truy cập các tệp mà chúng không được cho phép.</string>
     <string name="trust_feature_security_patches">Bản vá bảo mật của Android</string>
     <string name="trust_feature_security_patches_value_base">Nền tảng: %1$s\nNhà cung cấp: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">đã cập nhật</string>
-    <string name="trust_feature_security_patches_value_medium">hết hạn một vài tháng</string>
-    <string name="trust_feature_security_patches_value_old">hết hạn</string>
     <string name="trust_feature_security_patches_explain">Các bản vá bảo mật được Google phát hành hàng tháng với sự hợp tác của các nhà cung cấp SoC để giải quyết các lỗi có thể bị các ứng dụng độc hại khai thác để vượt qua các hạn chế bảo mật và gây thiệt hại vĩnh viễn cho thiết bị của bạn. Các bản vá được Google cung cấp được áp dụng hàng tháng trên tất cả các thiết bị được hỗ trợ, nhưng bản vá cho mã độc quyền chỉ có thể được nhà sản xuất thiết bị của bạn áp dụng. Để giữ cho thiết bị của bạn an toàn, hãy đảm bảo rằng việc xây dựng LineageOS của bạn luôn được cập nhật và (nếu có) đảm bảo hình ảnh của nhà cung cấp của bạn được cập nhật thành hình ảnh mới nhất do LineageOS đề xuất.</string>
     <string name="trust_feature_encryption">Mã hóa</string>
     <string name="trust_feature_encryption_value_enabled">Đã bật</string>

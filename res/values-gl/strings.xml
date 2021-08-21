@@ -62,6 +62,7 @@
     <string name="light_brightness_zen">Non molestar</string>
     <string name="battery_light_title">Luz da batería</string>
     <string name="battery_low_pulse_title">Parpadear se hai pouca batería</string>
+    <string name="battery_light_full_charge_disabled_title">Desactivar cando a carga estea completa</string>
     <string name="battery_light_list_title">Cores</string>
     <string name="battery_light_low_color_title">Batería baixa</string>
     <string name="battery_light_medium_color_title">A cargar</string>
@@ -92,6 +93,8 @@
     <string name="live_display_night">Noite</string>
     <string name="live_display_outdoor_mode_title">Modo exterior automático</string>
     <string name="live_display_outdoor_mode_summary">Aumenta o brillo e saturación automáticamente ao estar baixo luz solar intensa</string>
+    <string name="live_display_anti_flicker_title">Anti escintileo</string>
+    <string name="live_display_anti_flicker_summary">Evite escintileo intenso e reduza a fatiga ocular en condicións de pouca luz. Isto pode degradar a precisión das cores e afectar á forma na que ve algúns items.</string>
     <string name="live_display_low_power_title">Reducir o consumo de enerxía</string>
     <string name="live_display_low_power_summary">Axusta a pantalla ata o mínimo consumo de nergía sen perda de calidade</string>
     <string name="live_display_enhance_color_title">Mellorar cores</string>
@@ -154,8 +157,7 @@
     <string name="hardware_keys_action_sleep">Apagar a pantalla</string>
     <string name="hardware_keys_action_last_app">Última aplicación</string>
     <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
-    <string name="hardware_keys_action_single_handed_left">Modo de unha man (esquerda)</string>
-    <string name="hardware_keys_action_single_handed_right">Modo de unha man (dereita)</string>
+    <string name="hardware_keys_action_kill_app">Pechar aplicativo en primeiro plano</string>
     <string name="camera_sleep_on_release_title">Vista rápida</string>
     <string name="camera_sleep_on_release_summary">Unha leve pulsación manterá a pantalla acendida ata que se solte o botón</string>
     <string name="camera_launch_title">Lanzar cámara</string>
@@ -194,16 +196,26 @@
     <string name="backlight_summary_enabled">Habilitar</string>
     <string name="disable_navkeys_title">Habilitar barra de navegación</string>
     <string name="disable_navkeys_summary">Habilitar a barra de navegación na pantalla e deshabilitar os botóns físicos</string>
+    <string name="swap_capacitive_keys_title">Cambiar botóns</string>
+    <string name="swap_capacitive_keys_summary">Cambiar a orde dos botóns Recente e Atrás</string>
     <string name="navigation_bar_category">Barra de navegación</string>
     <string name="navigation_bar_invert_layout_title">Inverter disposición</string>
     <string name="navigation_bar_invert_layout_summary">Inverter a disposición da barra de navegación e outro elementos, como o selector IME</string>
     <string name="navigation_bar_left_summary">Colocar a barra de navegación no lado esquerdo da pantalla cando estea en modo horizontal</string>
     <string name="navigation_bar_arrow_keys_title">Amosar as frechas ao escribir</string>
     <string name="navigation_bar_arrow_keys_summary">Amosar os cursores esquerda e dereita ao escribir. Substitúe ao selector IME.</string>
+    <string name="navigation_bar_back_long_press_title">Prema prolongandamente no botón Atrás</string>
     <string name="navigation_bar_home_long_press_title">Acción de pulsación larga do inicio</string>
     <string name="navigation_bar_home_double_tap_title">Acción con toque duplo en inicio</string>
     <string name="navigation_bar_app_switch_long_press_title">Últimas accións de pulsación longa</string>
     <string name="navigation_bar_edge_long_swipe_title">Acción no esvarado longo no bordo</string>
+    <string name="power_menu_title">Menú de apagado</string>
+    <string name="power_menu_screenshot_title">Captura de pantalla</string>
+    <string name="power_menu_screenshot_summary">Pulsación longa para realizar unha captura parcial da pantalla</string>
+    <string name="power_menu_airplane_title">Modo avión</string>
+    <string name="power_menu_users_title">Selector de usuario</string>
+    <string name="power_menu_bug_report_title">Informe de erros</string>
+    <string name="power_menu_lockdown_title">Bloquear</string>
     <string name="camera_double_tap_power_gesture_title">Pulsar dos veces o botón de encendido para a cámara</string>
     <string name="camera_double_tap_power_gesture_desc">Abrir rápidamente a cámara sen desbloquear a pantalla</string>
     <string name="torch_long_press_power_gesture_title">Manteña pulsado para activar a linterna</string>
@@ -387,7 +399,13 @@
     <string name="contributors_cloud_loading_message">Cargando datos dos colaboradores\u2026</string>
     <string name="contributors_cloud_failed_message">Non se poden cargar os datos dos colaboradores</string>
     <string name="contributor_info_menu">Información do colaborador</string>
+    <string name="contributor_info_msg">&lt;b&gt;Nome:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Alcume:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Contribucións:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Información das contribucións</string>
+    <string name="contributions_info_msg">&lt;b&gt;Colaboradores totais:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Total de contribucións:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Última actualización:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">LineageOS estadisticas</string>
     <string name="anonymous_statistics_summary">Axude a mellorar LineageOS enviando informes de estatísiticas anónimas</string>
     <string name="anonymous_statistics_warning_title">Sobre</string>
@@ -499,9 +517,6 @@
     <string name="trust_feature_selinux_explain">SELinux dita que procesos teñen acceso aos ficheiros do teu dispositivo.\nIsto impide que as aplicacións e os servizos acceder a ficheiros cos que non deben tratar: desta forma un proceso potencialmente malicioso ten acceso limitado e se preserva a túa seguranza.</string>
     <string name="trust_feature_security_patches">Parches de seguranza do Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProvedor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">actualizado</string>
-    <string name="trust_feature_security_patches_value_medium">desactualizado dende hai uns meses</string>
-    <string name="trust_feature_security_patches_value_old">desactualizado</string>
     <string name="trust_feature_security_patches_explain">Os parches de seguranza son liberados mensualmente por Google coa cooperación dos fabricantes de SoC para corrixir fallos que poden ser aproveitados por aplicacións maliciosas para saltar as restricións de seguranza e causar danos permanentes o teu dispositivo. Os parches dispoñíbeis dende Google aplícanse mensualmente en tódolos dispositivos compatíbeis, agás os de código propietario que serán aplicados polo fabricante do teu dispositivo. Para manter o teu dispositivo seguro verifica que a versión do LineageOS está actualizada, e (se aplica) asegúrate que a imaxe do teu fabricante está actualizada á máis recente recomendada polo equipo do LineageOS.</string>
     <string name="trust_feature_encryption">Cifrado</string>
     <string name="trust_feature_encryption_value_enabled">Activado</string>

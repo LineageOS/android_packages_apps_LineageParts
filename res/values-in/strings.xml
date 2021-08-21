@@ -62,6 +62,7 @@
     <string name="light_brightness_zen">Jangan Ganggu</string>
     <string name="battery_light_title">Lampu baterai</string>
     <string name="battery_low_pulse_title">Berkedip saat baterai lemah</string>
+    <string name="battery_light_full_charge_disabled_title">Matikan saat terisi penuh</string>
     <string name="battery_light_list_title">Warna</string>
     <string name="battery_light_low_color_title">Baterai lemah</string>
     <string name="battery_light_medium_color_title">Pengisian Daya</string>
@@ -92,6 +93,7 @@
     <string name="live_display_night">Malam</string>
     <string name="live_display_outdoor_mode_title">Mode luar ruangan otomatis</string>
     <string name="live_display_outdoor_mode_summary">Meningkatkan kecerahan dan saturasi otomatis saat dibawah sinar matahari</string>
+    <string name="live_display_anti_flicker_title">Anti flicker</string>
     <string name="live_display_low_power_title">Mengurangi konsumsi daya</string>
     <string name="live_display_low_power_summary">Menyesuaikan tampilan untuk konsumsi daya terendah tanpa degradasi</string>
     <string name="live_display_enhance_color_title">Meningkatkan warna</string>
@@ -154,8 +156,6 @@
     <string name="hardware_keys_action_sleep">Matikan layar</string>
     <string name="hardware_keys_action_last_app">Aplikasi terakhir</string>
     <string name="hardware_keys_action_split_screen">Tukar layar</string>
-    <string name="hardware_keys_action_single_handed_left">Mode satu tangan (kiri)</string>
-    <string name="hardware_keys_action_single_handed_right">Mode satu tangan (kanan)</string>
     <string name="camera_sleep_on_release_title">Intip layar</string>
     <string name="camera_sleep_on_release_summary">Menekan setengah akan menyalakan layar hanya saat tombol tertekan</string>
     <string name="camera_launch_title">Buka kamera</string>
@@ -192,6 +192,7 @@
     <string name="backlight_summary_enabled">Dihidupkan</string>
     <string name="disable_navkeys_title">Aktifkan navigasi pada layar</string>
     <string name="disable_navkeys_summary">Aktifkan layar navigasi bar dan menonaktifkan tombol pada perangkat keras</string>
+    <string name="swap_capacitive_keys_title">Tukar tombol kapasitif</string>
     <string name="navigation_bar_category">Bar Navigasi</string>
     <string name="navigation_bar_invert_layout_title">Balikkan tata letak</string>
     <string name="navigation_bar_left_summary">Tempatkan navigasi bar di sebelah kiri layar dalam mode lanskap</string>
@@ -200,6 +201,14 @@
     <string name="navigation_bar_home_long_press_title">Tindakan menekan lama home</string>
     <string name="navigation_bar_home_double_tap_title">Tindakan dua kali ketuk home</string>
     <string name="navigation_bar_app_switch_long_press_title">Tindakan menekan lama recent</string>
+    <string name="power_menu_title">Menu power</string>
+    <string name="power_menu_screenshot_title">Tangkap layar</string>
+    <string name="power_menu_screenshot_summary">Tekan lama untuk menangkap layar sebagian</string>
+    <string name="power_menu_airplane_title">Mode pesawat</string>
+    <string name="power_menu_users_title">Beralih pengguna</string>
+    <string name="power_menu_bug_report_title">Lapor bug</string>
+    <string name="power_menu_lockdown_title">Kuncian</string>
+    <string name="power_menu_emergency_title">Darurat</string>
     <string name="camera_double_tap_power_gesture_title">Tekan dua kali tombol power untuk ke kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Membuka cepat kamera tanpa membuka layar kunci</string>
     <string name="torch_long_press_power_gesture_title">Tekan lama untuk senter</string>
@@ -383,7 +392,13 @@
     <string name="contributors_cloud_loading_message">Memuat data kontributor\u2026</string>
     <string name="contributors_cloud_failed_message">Tidak dapat memuat data kontributor</string>
     <string name="contributor_info_menu">Info kontributor</string>
+    <string name="contributor_info_msg">&lt;b&gt;Nama:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Julukan:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Commit:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="contributions_info_menu">Informasi kontributor</string>
+    <string name="contributions_info_msg">&lt;b&gt;Total kontributor:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Total commit:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
+                 &lt;b&gt;Diperbarui:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
     <string name="anonymous_statistics_title">Statistik LineageOS</string>
     <string name="anonymous_statistics_summary">Bantu LineageOS untuk menjadi lebih baik dengan memilih ikut dalam pelaporan statistik anonim</string>
     <string name="anonymous_statistics_warning_title">Tentang</string>
@@ -493,9 +508,9 @@
     <string name="trust_feature_selinux_value_disabled">Dimatikan</string>
     <string name="trust_feature_security_patches">Patch keamanan android</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nVendor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">terbaru</string>
-    <string name="trust_feature_security_patches_value_medium">kadaluwarsa selama beberapa bulan</string>
-    <string name="trust_feature_security_patches_value_old">kadaluarsa</string>
+    <string name="trust_feature_security_patches_value_new">Terbaru</string>
+    <string name="trust_feature_security_patches_value_medium">Kedaluwarsa selama beberapa bulan</string>
+    <string name="trust_feature_security_patches_value_old">Kedaluwarsa</string>
     <string name="trust_feature_encryption">Enkripsi</string>
     <string name="trust_feature_encryption_value_enabled">Dihidupkan</string>
     <string name="trust_feature_encryption_value_nolock">Memerlukan kunci layar aman</string>

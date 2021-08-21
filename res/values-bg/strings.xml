@@ -154,8 +154,6 @@
     <string name="hardware_keys_action_sleep">Изключване на екрана</string>
     <string name="hardware_keys_action_last_app">Последното приложение</string>
     <string name="hardware_keys_action_split_screen">Разделяне на екрана</string>
-    <string name="hardware_keys_action_single_handed_left">Режим \"Една ръка\" (вляво)</string>
-    <string name="hardware_keys_action_single_handed_right">Режим \"Една ръка\" (вдясно)</string>
     <string name="camera_sleep_on_release_title">Поглед на екрана</string>
     <string name="camera_sleep_on_release_summary">Леко натискане ще запази екрана само, докато бутонът е натиснат</string>
     <string name="camera_launch_title">Стартиране на камерата</string>
@@ -206,6 +204,13 @@
     <string name="navigation_bar_home_double_tap_title">Действие при двукратно натискане на начало</string>
     <string name="navigation_bar_app_switch_long_press_title">Последни дълги натискания действия</string>
     <string name="navigation_bar_edge_long_swipe_title">Действие при дълго плъзване от ъгъла</string>
+    <string name="power_menu_title">Меню мощност</string>
+    <string name="power_menu_screenshot_title">Снимка на екрана</string>
+    <string name="power_menu_screenshot_summary">Продължително натискане за частична екранна снимка</string>
+    <string name="power_menu_airplane_title">Самолетен режим</string>
+    <string name="power_menu_users_title">Потребители</string>
+    <string name="power_menu_bug_report_title">Доклад за грешка</string>
+    <string name="power_menu_lockdown_title">Заключване</string>
     <string name="camera_double_tap_power_gesture_title">Натиснете двукратно бутона за захранване за камера</string>
     <string name="camera_double_tap_power_gesture_desc">Бързо стартиране на камера без отключване на екрана</string>
     <string name="torch_long_press_power_gesture_title">Активиране на фенерчето</string>
@@ -507,9 +512,6 @@
     <string name="trust_feature_selinux_explain">SELinux диктува кои процеси имат достъп до файлове на вашето устройство. \nТова предотвратява приложения и услуги да имат достъп до файлове, които те не би трябвало да имат. По този начин зловреден процес е ограничен, така че вашата сигурност се запазва.</string>
     <string name="trust_feature_security_patches">Андроид защитни кръпки</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nVendor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">актуално</string>
-    <string name="trust_feature_security_patches_value_medium">необновено от няколко месеца</string>
-    <string name="trust_feature_security_patches_value_old">неактуален</string>
     <string name="trust_feature_security_patches_explain">Защитните пакети се разпространяват ежемесечно от Google заедно с доставчиците на SoC, за да се поправят уязвимостите в системата, които могат да бъдат използвани от злонамерени приложения, който да заобиколят ограниченията за сигурност и да причинят необратими щети на вашето устройство. Корекциите, предоставени от Google, се прилагат всеки месец на всички поддържани устройства, но поправките за патентования код могат да се прилагат само от производителя на устройството ви. За да поддържате устройството си в безопасно състояние, уверете се, че използвате последната версия на LineageOS.</string>
     <string name="trust_feature_encryption">Криптиране</string>
     <string name="trust_feature_encryption_value_enabled">Активирано</string>
