@@ -100,6 +100,11 @@ public class DeviceUtils {
         return (getDeviceKeys(context) & KEY_MASK_VOLUME) != 0;
     }
 
+    /* returns whether the device has volume rocker or not. */
+    public static boolean hasNotificationSlider(Context context) {
+        return (getDeviceKeys(context) & KEY_MASK_NOTIF_SLIDER) != 0;
+    }
+
     /* returns whether the device can be waken using the home key or not. */
     public static boolean canWakeUsingHomeKey(Context context) {
         return (getDeviceWakeKeys(context) & KEY_MASK_HOME) != 0;
