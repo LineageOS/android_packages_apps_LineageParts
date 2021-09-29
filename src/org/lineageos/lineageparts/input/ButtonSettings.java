@@ -106,6 +106,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_CLICK_PARTIAL_SCREENSHOT =
             "click_partial_screenshot";
     private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
+    private static final String KEY_RINGER_MODE_TOP = "ringer_mode_top_position";
+    private static final String KEY_RINGER_MODE_MIDDLE = "ringer_mode_top_position";
+    private static final String KEY_RINGER_MODE_BOTTOM = "ringer_mode_top_position";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -117,6 +120,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
     private static final String CATEGORY_NAVBAR = "navigation_bar_category";
+    private static final String CATEGORY_NOTIF_SLIDER = "notification_slider";
     private static final String CATEGORY_EXTRAS = "extras_category";
 
     private ListPreference mBackLongPressAction;
@@ -148,6 +152,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mTorchLongPressPowerGesture;
     private ListPreference mTorchLongPressPowerTimeout;
     private SwitchPreference mSwapCapacitiveKeys;
+    private ListPreference mNotifSliderTopPositionMode;
+    private ListPreference mNotifSliderMiddlePositionMode;
+    private ListPreference mNotifSliderBottomPositionMode;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -175,6 +182,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         final boolean hasAppSwitchKey = DeviceUtils.hasAppSwitchKey(getActivity());
         final boolean hasCameraKey = DeviceUtils.hasCameraKey(getActivity());
         final boolean hasVolumeKeys = DeviceUtils.hasVolumeKeys(getActivity());
+        final boolean hasNotificationSlider = DeviceUtils.hasNotificationSlider(getActivity());
 
         final boolean showHomeWake = DeviceUtils.canWakeUsingHomeKey(getActivity());
         final boolean showBackWake = DeviceUtils.canWakeUsingBackKey(getActivity());
@@ -193,6 +201,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         final PreferenceCategory appSwitchCategory = prefScreen.findPreference(CATEGORY_APPSWITCH);
         final PreferenceCategory volumeCategory = prefScreen.findPreference(CATEGORY_VOLUME);
         final PreferenceCategory cameraCategory = prefScreen.findPreference(CATEGORY_CAMERA);
+        final PreferenceCategory notifSliderCategory = prefScreen.findPreference(CATEGORY_NOTIF_SLIDER);
         final PreferenceCategory extrasCategory = prefScreen.findPreference(CATEGORY_EXTRAS);
 
         // Power button ends calls.
@@ -433,6 +442,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
             prefScreen.removePreference(volumeCategory);
         }
 
+        if (!hasNotificationSlider) {
+            prefScreen.removePreference(notifSliderCategory);
+        }
+
         // Only show the navigation bar category on devices that have a navigation bar
         // or support disabling the hardware keys
         if (!hasNavigationBar() && !isKeyDisablerSupported(getActivity())) {
@@ -638,6 +651,15 @@ public class ButtonSettings extends SettingsPreferenceFragment
         } else if (preference == mSwapCapacitiveKeys) {
             mHardware.set(LineageHardwareManager.FEATURE_KEY_SWAP, (Boolean) newValue);
             return true;
+        } else if (preference == mNotifSliderTopPositionMode) {
+            handleListChange((ListPreference) preference, newValue,
+                    LineageSettings.System.KEY_NOTIF_SLIDER_TOP_POS_MODE);
+        } else if (preference == mNotifSliderMiddlePositionMode) {
+            handleListChange((ListPreference) preference, newValue,
+                    LineageSettings.System.KEY_NOTIF_SLIDER_MIDDLE_POS_MODE);
+        } else if (preference == mNotifSliderBottomPositionMode) {
+            handleListChange((ListPreference) preference, newValue,
+                    LineageSettings.System.KEY_NOTIF_SLIDER_BOTTOM_POS_MODE);
         }
         return false;
     }
@@ -965,6 +987,12 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 } else {
                     result.add(KEY_EDGE_LONG_SWIPE);
                 }
+            }
+
+            if (!DeviceUtils.hasNotificationSlider(context)) {
+                result.add(KEY_RINGER_MODE_TOP);
+                result.add(KEY_RINGER_MODE_MIDDLE);
+                result.add(KEY_RINGER_MODE_BOTTOM);
             }
             return result;
         }
