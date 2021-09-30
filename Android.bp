@@ -55,3 +55,25 @@ prebuilt_etc {
     src: "privapp_whitelist_org.lineageos.lineageparts.xml",
     filename_from_src: true,
 }
+
+android_library {
+    name: "org.lineageos.parts.resources",
+    defaults: [
+        "SettingsLibDefaults",
+    ],
+
+    resource_dirs: ["res"],
+
+    static_libs: [
+        "androidx.appcompat_appcompat",
+        "androidx.dynamicanimation_dynamicanimation",
+        "androidx.legacy_legacy-support-v13",
+        "androidx.palette_palette",
+        "androidx.preference_preference",
+        "androidx.recyclerview_recyclerview",
+        "jsr305",
+        "org.lineageos.platform.internal",
+    ],
+    sdk_version: "current",
+    manifest: "AndroidManifest-res.xml",
+}

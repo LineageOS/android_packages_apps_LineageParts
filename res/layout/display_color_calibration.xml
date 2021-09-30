@@ -42,11 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_red_text"
-                android:paddingTop="2dip"
-                lineage:minValue="0.20"
-                lineage:maxValue="1.00"
-                lineage:defaultValue="1.00"
-                lineage:digits="4" />
+                android:paddingTop="2dip" />
 
         <TextView android:id="@+id/color_green_text"
                 android:layout_width="wrap_content"
@@ -65,11 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_green_text"
-                android:paddingTop="2dip"
-                lineage:minValue="0.20"
-                lineage:maxValue="1.00"
-                lineage:defaultValue="1.00"
-                lineage:digits="4" />
+                android:paddingTop="2dip" />
 
         <TextView android:id="@+id/color_blue_text"
                 android:layout_width="match_parent"
@@ -88,11 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/color_blue_text"
-                android:paddingTop="2dip"
-                lineage:minValue="0.20"
-                lineage:maxValue="1.00"
-                lineage:defaultValue="1.00"
-                lineage:digits="4" />
+                android:paddingTop="2dip" />
 
         <ImageView android:id="@+id/black_scale_picture_color"
                 android:src="@drawable/color_tuning_preview"
