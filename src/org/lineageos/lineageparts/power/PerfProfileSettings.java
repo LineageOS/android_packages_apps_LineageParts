@@ -210,7 +210,7 @@ public class PerfProfileSettings extends SettingsPreferenceFragment
         if (mPowerSavePref != null) {
             updatePowerSaveValue();
             getActivity().registerReceiver(mPowerSaveReceiver,
-                    new IntentFilter(PowerManager.ACTION_POWER_SAVE_MODE_CHANGING));
+                    new IntentFilter(PowerManager.ACTION_POWER_SAVE_MODE_CHANGED));
         }
     }
 
