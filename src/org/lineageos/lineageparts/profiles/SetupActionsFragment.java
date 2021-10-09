@@ -414,7 +414,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             ConnectivityManager cm = context.getSystemService(ConnectivityManager.class);
             profile.setConnectionSettings(
                     new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA,
-                            cm.getMobileDataEnabled() ? 1 : 0, true));
+                            DeviceUtils.isMobileDataEnabled(context) ? 1 : 0, true));
         }
 
         // wifi hotspot

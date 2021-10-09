@@ -35,6 +35,8 @@ import android.nfc.NfcAdapter;
 import android.os.Build;
 import android.os.SystemProperties;
 import android.provider.Settings;
+import android.telephony.TelephonyManager;
+import android.telephony.SubscriptionManager;
 import android.text.TextUtils;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
@@ -211,8 +213,8 @@ public class DeviceUtils {
     }
 
     public static boolean deviceSupportsMobileData(Context ctx) {
-        ConnectivityManager cm = ctx.getSystemService(ConnectivityManager.class);
-        return cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE);
+        TelephonyManager telephonyManager = ctx.getSystemService(TelephonyManager.class);
+        return telephonyManager.isDataCapable();
     }
 
     public static boolean deviceSupportsBluetooth() {
@@ -242,6 +244,12 @@ public class DeviceUtils {
             // Ignore
         }
         return false;
+    }
+
+    public static boolean isMobileDataEnabled(Context context) {
+        TelephonyManager telephonyManager = context.getSystemService(TelephonyManager.class);
+        int subId = SubscriptionManager.getDefaultDataSubscriptionId();
+        return telephonyManager.createForSubscriptionId(subId).isDataEnabled();
     }
 
     public static boolean isSwipeUpEnabled(Context context) {
