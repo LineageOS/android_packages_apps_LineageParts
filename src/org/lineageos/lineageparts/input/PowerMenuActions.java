@@ -48,7 +48,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private CheckBoxPreference mAirplanePref;
     private CheckBoxPreference mUsersPref;
     private CheckBoxPreference mBugReportPref;
-    private CheckBoxPreference mLockDownPref;
     private CheckBoxPreference mEmergencyPref;
 
     private LineageGlobalActions mLineageGlobalActions;
@@ -77,8 +76,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mUsersPref = findPreference(GLOBAL_ACTION_KEY_USERS);
             } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
                 mBugReportPref = findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
-                mLockDownPref = findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
             } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
                 mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
             }
@@ -155,12 +152,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.BUGREPORT_IN_POWER_MENU, value ? 1 : 0);
 
-        } else if (preference == mLockDownPref) {
-            value = mLockDownPref.isChecked();
-            mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
-            Settings.Secure.putIntForUser(getContentResolver(),
-                    Settings.Secure.LOCKDOWN_IN_POWER_MENU, value ? 1 : 0, UserHandle.USER_CURRENT);
-
         } else if (preference == mEmergencyPref) {
             value = mEmergencyPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_EMERGENCY);
@@ -189,21 +180,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             } else {
                 mBugReportPref.setChecked(bugReport);
                 mBugReportPref.setSummary(null);
-            }
-        }
-
-        boolean isKeyguardSecure = mLockPatternUtils.isSecure(UserHandle.myUserId());
-        boolean lockdown = Settings.Secure.getIntForUser(
-                getContentResolver(), Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0,
-                UserHandle.USER_CURRENT) == 1;
-        if (mLockDownPref != null) {
-            mLockDownPref.setEnabled(isKeyguardSecure);
-            if (isKeyguardSecure) {
-                mLockDownPref.setChecked(lockdown);
-                mLockDownPref.setSummary(null);
-            } else {
-                mLockDownPref.setChecked(false);
-                mLockDownPref.setSummary(R.string.power_menu_lockdown_unavailable);
             }
         }
     }
