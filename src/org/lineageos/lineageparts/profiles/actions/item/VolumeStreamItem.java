@@ -59,7 +59,7 @@ public class VolumeStreamItem extends Item {
             return true;
         }
         final boolean volumeLinkNotification = Settings.Secure.getInt(
-                context.getContentResolver(), Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
+                context.getContentResolver(), "Settings.Secure.VOLUME_LINK_NOTIFICATION", 1) == 1;
         return !volumeLinkNotification;
     }
 

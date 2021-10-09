@@ -408,7 +408,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             }
 
             int cursorControlAction = Settings.System.getInt(resolver,
-                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
+                    "Settings.System.VOLUME_KEY_CURSOR_CONTROL", 0);
             mVolumeKeyCursorControl = initList(KEY_VOLUME_KEY_CURSOR_CONTROL,
                     cursorControlAction);
 
@@ -625,7 +625,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mVolumeKeyCursorControl) {
             handleSystemListChange(mVolumeKeyCursorControl, newValue,
-                    Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+                    "Settings.System.VOLUME_KEY_CURSOR_CONTROL");
             return true;
         } else if (preference == mTorchLongPressPowerTimeout) {
             handleListChange(mTorchLongPressPowerTimeout, newValue,
