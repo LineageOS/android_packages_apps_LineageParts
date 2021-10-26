@@ -524,7 +524,7 @@
     <string name="trust_feature_security_patches">Varnostni popravki Androida</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProizvajalec: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Posodobljeno</string>
-    <string name="trust_feature_security_patches_value_medium">Staro nekaj mesecev</string>
+    <string name="trust_feature_security_patches_value_medium">Nekaj mesecev zastarelo</string>
     <string name="trust_feature_security_patches_value_old">Zastarelo</string>
     <string name="trust_feature_security_patches_explain">Varnostni popravki so izdani mesečno s strani Googla v sodelovanju s proizvajalci SoC-ov, da naslovijo pomanjkljivosti, ki jih lahko zlonamerne aplikacije izrabijo za obvoz varnostnih omejitev in lahko povzročijo trajne poškodbe vaše naprave. Popravki s strani Googla so na vseh podprtih napravah uveljavljeni vsak mesec, vendar so lahko popravki lastniške kode uveljavljeni samo s strani proizvajalca naprave. Da ohranite vašo napravo varno, poskrbite, da je vaša izgradnja LineageOS-a vedno posodobljena in (v kolikor je na voljo) odtis dobavitelja posodobobljen na zadnjo različico priporočeno s strani LineageOS-a.</string>
     <string name="trust_feature_encryption">Šifriranje</string>

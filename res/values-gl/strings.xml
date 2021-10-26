@@ -16,7 +16,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Axustes de LineageOS</string>
+    <string name="lineageparts_title">Configuración de LineageOS</string>
     <string name="loading">Cargando\u2026</string>
     <string name="dlg_ok">ACEPTAR</string>
     <string name="cancel">Cancelar</string>
@@ -215,7 +215,11 @@
     <string name="power_menu_airplane_title">Modo avión</string>
     <string name="power_menu_users_title">Selector de usuario</string>
     <string name="power_menu_bug_report_title">Informe de erros</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">O informe de erros está desactivado xa que as opcións de desenvolvemento non están activas</string>
+    <string name="power_menu_bug_report_unavailable_for_user">O informe de erros está desactivado para os usuarios non principais.</string>
     <string name="power_menu_lockdown_title">Bloquear</string>
+    <string name="power_menu_lockdown_unavailable">O bloqueo está desactivado xa que o bloqueo de teclado non é seguro</string>
+    <string name="power_menu_emergency_title">Emerxencia</string>
     <string name="camera_double_tap_power_gesture_title">Pulsar dos veces o botón de encendido para a cámara</string>
     <string name="camera_double_tap_power_gesture_desc">Abrir rápidamente a cámara sen desbloquear a pantalla</string>
     <string name="torch_long_press_power_gesture_title">Manteña pulsado para activar a linterna</string>
@@ -303,6 +307,7 @@
     <string name="choose_soundtone">Escoller ton de notificación</string>
     <string name="choose_ringtone">Escoller ton de chamada</string>
     <string name="ringtone_title">Ton de chamada</string>
+    <string name="ringtone_summary">"[empty string]"</string>
     <string name="soundtone_title">Ton de notificación</string>
     <string name="profile_system_settings_title">Configuración do sistema</string>
     <string name="profile_lockmode_title">Bloqueo de pantalla</string>
@@ -517,6 +522,9 @@
     <string name="trust_feature_selinux_explain">SELinux dita que procesos teñen acceso aos ficheiros do teu dispositivo.\nIsto impide que as aplicacións e os servizos acceder a ficheiros cos que non deben tratar: desta forma un proceso potencialmente malicioso ten acceso limitado e se preserva a túa seguranza.</string>
     <string name="trust_feature_security_patches">Parches de seguranza do Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nProvedor: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Actualizada</string>
+    <string name="trust_feature_security_patches_value_medium">Desactualizada desde hai uns meses</string>
+    <string name="trust_feature_security_patches_value_old">Desactualizada</string>
     <string name="trust_feature_security_patches_explain">Os parches de seguranza son liberados mensualmente por Google coa cooperación dos fabricantes de SoC para corrixir fallos que poden ser aproveitados por aplicacións maliciosas para saltar as restricións de seguranza e causar danos permanentes o teu dispositivo. Os parches dispoñíbeis dende Google aplícanse mensualmente en tódolos dispositivos compatíbeis, agás os de código propietario que serán aplicados polo fabricante do teu dispositivo. Para manter o teu dispositivo seguro verifica que a versión do LineageOS está actualizada, e (se aplica) asegúrate que a imaxe do teu fabricante está actualizada á máis recente recomendada polo equipo do LineageOS.</string>
     <string name="trust_feature_encryption">Cifrado</string>
     <string name="trust_feature_encryption_value_enabled">Activado</string>

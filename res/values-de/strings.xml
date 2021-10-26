@@ -521,6 +521,9 @@
     <string name="trust_feature_selinux_explain">SELinux bestimmt, welche Prozesse Zugriff auf welche Dateien/Verzeichnisse auf deinem Gerät haben.\nDadurch wird verhindert, dass Anwendungen und Dienste auf Dateien zugreifen, die sie nicht benötigen: Auf diese Weise wird ein potenziell bösartiger Prozess eingeschränkt und deine Sicherheit gewahrt.</string>
     <string name="trust_feature_security_patches">Android-Sicherheitspatches</string>
     <string name="trust_feature_security_patches_value_base">Plattform: %1$s\nVendor: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">aktuell</string>
+    <string name="trust_feature_security_patches_value_medium">einige Monate veraltet</string>
+    <string name="trust_feature_security_patches_value_old">veraltet</string>
     <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google in Zusammenarbeit mit SoC-Anbietern veröffentlicht. Diese beheben Fehler, mittels derer bösartige Anwendungen Sicherheitseinschränkungen umgehen und dein Gerät dauerhaft beschädigen können. Von Google bereitgestellte Patches werden jeden Monat auf alle unterstützten Geräte angewendet, aber Patches für proprietären Code können nur vom Hersteller deines Gerätes bereitgestellt werden. Um dein Gerät sicher zu halten, aktualisiere LineageOS und (wenn möglich) dein Vendor-Image stets auf das von LineageOS empfohlene.</string>
     <string name="trust_feature_encryption">Verschlüsselung</string>
     <string name="trust_feature_encryption_value_enabled">Aktiviert</string>

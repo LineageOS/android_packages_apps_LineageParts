@@ -30,7 +30,7 @@
     <string name="finish">Mbaro</string>
     <string name="next">Vazhdo</string>
     <string name="on">Aktiv</string>
-    <string name="off">Inaktiv</string>
+    <string name="off">Fikur</string>
     <string name="yes">Po</string>
     <string name="no">Jo</string>
     <string name="search">Kërko</string>
@@ -168,8 +168,8 @@
     <string name="volbtn_cursor_control_off">I çaktivizuar</string>
     <string name="volbtn_cursor_control_on">Volumi lartë/poshtë lëviz kursorin majtas/djathtas</string>
     <string name="volbtn_cursor_control_on_reverse">Volumi lartë/poshtë lëviz kursorin djathtas/majtas</string>
-    <string name="power_end_call_title">Mbaro telefonatën</string>
-    <string name="power_end_call_summary">Mbaro telefonatën aktuale duke shtypur butonin e energjisë</string>
+    <string name="power_end_call_title">Mbyll telefonatën</string>
+    <string name="power_end_call_summary">Mbyll telefonatën aktuale duke shtypur butonin e energjisë</string>
     <string name="swap_volume_buttons_title">Rioriento</string>
     <string name="swap_volume_buttons_summary">Shkëmbe butonat e volumit kur ekrani është i kthyer</string>
     <string name="volume_panel_on_left_title">Shfaq panelin në të majtë</string>
@@ -196,6 +196,7 @@
     <string name="backlight_summary_enabled">I aktivizuar</string>
     <string name="disable_navkeys_title">Aktivizo shiritin e lundrimit në ekran</string>
     <string name="disable_navkeys_summary">Aktivizo shiritin e lundrimit në ekran dhe çaktivizo butonat fizikë</string>
+    <string name="swap_capacitive_keys_title">Këmbe butonat kondensues</string>
     <string name="swap_capacitive_keys_summary">Ndërroni rendin e butonave Të Fundit dhe Mbrapa</string>
     <string name="navigation_bar_category">Shiriti i lundrimit</string>
     <string name="navigation_bar_invert_layout_title">E anasjellta e ndërfaqes</string>
@@ -217,6 +218,7 @@
     <string name="power_menu_bug_report_devoptions_unavailable">Raportimi i problemeve është hequr pasi cilësimet e zhvillimit nuk janë hapur</string>
     <string name="power_menu_bug_report_unavailable_for_user">Raportimi i problemeve është e mbyllur për përdoruesit jo kryesorë.</string>
     <string name="power_menu_lockdown_title">Blloko</string>
+    <string name="power_menu_lockdown_unavailable">Bllokimi është çaktivizuar pasi që tastat nuk janë të sigurta</string>
     <string name="power_menu_emergency_title">Urgjencë</string>
     <string name="camera_double_tap_power_gesture_title">Shtyp dy herë butonin e energjisë për kamerën</string>
     <string name="camera_double_tap_power_gesture_desc">Hap menjëherë kamerën pa zhbllokuar ekranin</string>
@@ -273,7 +275,7 @@
     <string name="profile_app_group_item_instructions">Shto ose hiq grupe</string>
     <string name="profile_app_group_item_instructions_summary">Shto ose hiq nga ky profil ato grupe aplikacionesh që mund të shpërfillin njoftimet</string>
     <string name="profile_entries_on">Aktiv</string>
-    <string name="profile_entries_off">Inaktiv</string>
+    <string name="profile_entries_off">Fikur</string>
     <string name="profile_entries_no_override">Mos shpërfill</string>
     <string name="profile_name_title">Emri</string>
     <string name="new_profile_name">&lt;profil i ri&gt;</string>
@@ -337,7 +339,7 @@
     <string name="status_bar_quick_qs_pulldown_summary">Duke rrëshqitur nga skaji i %1$s i shiritit të statusit, do të hapen Parametrat e Shpejtë</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Majtas</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Djathtas</string>
-    <string name="status_bar_quick_qs_pulldown_off">Inaktiv</string>
+    <string name="status_bar_quick_qs_pulldown_off">Fikur</string>
     <string name="status_bar_quick_qs_pulldown_left">I majtë</string>
     <string name="status_bar_quick_qs_pulldown_right">I djathtë</string>
     <string name="status_bar_double_tap_to_sleep_title">Shtyp dy herë për të fikur ekranin</string>
@@ -461,8 +463,8 @@
     <string name="auto_power_save_summary_on">Aktivizo në mënyrë automatike profilin e kursimit të energjisë kur bateria arrin %s</string>
     <string name="auto_power_save_summary_off">Mos e aktivizo në mënyrë automatike profilin e kursimit të energjisë</string>
     <string name="auto_power_save_never">Kurrë</string>
-    <string name="long_screen_settings_title">Aplikacione që shfaqen në gjithë ekranin</string>
-    <string name="long_screen_settings_summary">Detyro aplikacionet e vjetra të përdorin dimension me ekran të plotë</string>
+    <string name="long_screen_settings_title">Aplikacione që shfaqen në ekran të plotë</string>
+    <string name="long_screen_settings_summary">Detyro aplikacionet e vjetra të përdoren në ekran të plotë</string>
     <string name="long_screen_settings_no_apps">Nuk ka aplikacione</string>
     <string name="charging_sounds_settings_title">Tingujt e karikimit</string>
     <string name="charging_sounds_enabled_title">Aktivizo</string>
@@ -517,12 +519,12 @@
     <string name="trust_feature_selinux_value_enforcing">Zbatuar</string>
     <string name="trust_feature_selinux_value_disabled">E çaktivizuar</string>
     <string name="trust_feature_selinux_explain">SELinux dikton se cilat proçese kanë të drejta në cilat skedarë në telefonin tuaj.\nKjo pengon programet dhe shërbimet të kenë të drejta tek skedarë që nuk gjykohet të kenë: në këtë mënyrë proçeset e dëmshme kufizohen dhe siguria tuaj mbrohet.</string>
-    <string name="trust_feature_security_patches">Arnime të sigurisë së Android</string>
+    <string name="trust_feature_security_patches">korrigjimet të sigurisë së Android</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProdhuesi: %2$s</string>
     <string name="trust_feature_security_patches_value_new">E përditësuar</string>
     <string name="trust_feature_security_patches_value_medium">Disa muaj e pa përditësuar</string>
     <string name="trust_feature_security_patches_value_old">E vjetërsuar</string>
-    <string name="trust_feature_security_patches_explain">Arnimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar të metat nga të cilat mund të shfrytëzohen nga programe keqadashës për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. Arnimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por arnimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar të metat nga të cilat mund të shfrytëzohen nga programe keqadashës për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. Arnimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por arnimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
     <string name="trust_feature_encryption">Shifrimi</string>
     <string name="trust_feature_encryption_value_enabled">E aktivizuar</string>
     <string name="trust_feature_encryption_value_nolock">Nevojitet një mbyllje e sigurtë e ekranit</string>

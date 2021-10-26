@@ -526,7 +526,7 @@
     <string name="trust_feature_security_patches_value_new">Cho ùr ’s a ghabhas</string>
     <string name="trust_feature_security_patches_value_medium">Corra mìos ro shean</string>
     <string name="trust_feature_security_patches_value_old">Dh’fhalbh an ùine air</string>
-    <string name="trust_feature_security_patches_explain">Sgaoilidh Google ’s reiceadairean SoC brèidean tèarainteachd gach mìos a dhèiligeas ri easbhaidhean a b’ urrainn do dh’aplacaidean droch-rùnach a chleachdadh airson cuingeachaidhean tèarainteachd a sheachnadh is cron maireannach a dhèanamh air an uidheam agad. Thèid na brèidean a chuireas Google gu làimh a chur an sàs gach mìos air gach uidheam ris a bheil taic ach cha ghabh brèidean air còd fo shealbh a chur an sàs ach le dèanadair an uidheim agad. Airson an t-uidheam agad a chumail sàbhailte, dèan cinnteach gu bheil am build agad dhe LineageOS cho ùr ’s a ghabhas an-còmhnaidh agus (ma tha seo iomchaidh) dèan cinnteach gun deach ìomhaigh an reiceadair agad ùrachadh dhan fhear as ùire a mholas LineageOS dhut.</string>
+    <string name="trust_feature_security_patches_explain">Sgaoilidh Google ’s reiceadairean SoC brèidean tèarainteachd gach mìos a dhèiligeas ri easbhaidhean a b’ urrainn do dh’aplacaidean droch-rùnach a chleachdadh airson cuingeachaidhean tèarainteachd a sheachnadh is cron maireannach a dhèanamh air an uidheam agad. Thèid na brèidean a chuireas Google gu làimh a chur an sàs gach mìos air gach uidheam ris a bheil taic ach cha ghabh brèidean air còd fo shealbh a chur an sàs ach le dèanadair an uidheim agad. Airson an t-uidheam agad a chumail sàbhailte, dèan cinnteach gu bheil an togail agad dhe LineageOS cho ùr ’s a ghabhas an-còmhnaidh agus (ma tha seo iomchaidh) dèan cinnteach gun deach ìomhaigh an reiceadair agad ùrachadh dhan fhear as ùire a mholas LineageOS dhut.</string>
     <string name="trust_feature_encryption">Crioptachadh</string>
     <string name="trust_feature_encryption_value_enabled">An comas</string>
     <string name="trust_feature_encryption_value_nolock">Feumach air sgrìn-ghlasaidh thèarainte</string>
@@ -536,7 +536,7 @@
     <string name="trust_notification_alerts_title">Rabhaidhean tèarainteachd</string>
     <string name="trust_warnings_alerts_intro">Tagh na cùisean tèarainteachd a bu toigh leat rabhaidhean fhaighinn mu an dèidhinn. Mholamaid gun cuir thu na rabhaidhean uile an comas a chùm do shàbhailteachd</string>
     <string name="trust_warnings_selinux">Staid SELinux</string>
-    <string name="trust_warnings_keys">Soidhneadh a’ build</string>
+    <string name="trust_warnings_keys">Soidhneadh na togail</string>
     <string name="trust_onboarding_title">Faigh earbsa</string>
     <string name="trust_onboarding_description">Cuidichidh an earbsa dhut ach an cùm thu an t-uidheam agad tèarainte is ach an dìon thu do phrìobhaideachd.\nCha nochd ìomhaigheag na h-earbsa mura deach susbaint na duilleige a dhearbhadh.</string>
     <string name="trust_onboarding_learn_more">Barrachd fiosrachaidh</string>
