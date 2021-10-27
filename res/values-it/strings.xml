@@ -436,20 +436,6 @@
     <string name="display_rotation_90_title">90 gradi</string>
     <string name="display_rotation_180_title">180 gradi</string>
     <string name="display_rotation_270_title">270 gradi</string>
-    <string name="weather_settings_title">Meteo</string>
-    <string name="weather_settings_no_services_prompt">Nessun provider meteo installato</string>
-    <string name="weather_settings_no_services_summary">Installa un provider meteo per ricevere aggiornamenti sul meteo</string>
-    <string name="weather_settings_button">Impostazioni provider</string>
-    <string name="weather_settings_activity_not_found">Impossibile aprire il menu d\'impostazioni di questo provider</string>
-    <string name="weather_settings_add_weather_provider">Aggiungi provider meteo</string>
-    <string name="weather_settings_general_settings_title">Generali</string>
-    <string name="weather_settings_providers_title">Provider</string>
-    <string name="weather_settings_temp_units_title">Unità temperatura</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">meteo</string>
-    <string name="status_bar_show_weather_title">Mostra meteo</string>
-    <string name="status_bar_show_weather_summary">Mostra la temperatura corrente nella barra di stato</string>
     <string name="perf_profile_settings_title">Risparmio energetico e prestazioni</string>
     <string name="perf_profile_settings_summary">Regola le impostazioni di risparmio energetico e delle prestazioni del dispositivo</string>
     <string name="perf_profile_overview_summary">Profilo corrente: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

@@ -436,20 +436,6 @@ andmete eelvaade.</string>
     <string name="display_rotation_90_title">90 kraadi</string>
     <string name="display_rotation_180_title">180 kraadi</string>
     <string name="display_rotation_270_title">270 kraadi</string>
-    <string name="weather_settings_title">Ilm</string>
-    <string name="weather_settings_no_services_prompt">Ilmapakkuja teenused pole installitud</string>
-    <string name="weather_settings_no_services_summary">Installi ilmapakkuja, et saada ilmateateid</string>
-    <string name="weather_settings_button">Pakkuja seaded</string>
-    <string name="weather_settings_activity_not_found">Selle pakkuja seadete menüü avamine ei õnnestunud</string>
-    <string name="weather_settings_add_weather_provider">Lisa ilmapakkuja</string>
-    <string name="weather_settings_general_settings_title">Üldine</string>
-    <string name="weather_settings_providers_title">Pakkujad</string>
-    <string name="weather_settings_temp_units_title">Temperatuuriühik</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">ilm</string>
-    <string name="status_bar_show_weather_title">Näita ilmateadet</string>
-    <string name="status_bar_show_weather_summary">Kuva olekuribal hetketemperatuuri</string>
     <string name="perf_profile_settings_title">Akusäästja ja jõudlus</string>
     <string name="perf_profile_settings_summary">Seadista akusäästmise funktsioone ja seadme jõudlust</string>
     <string name="perf_profile_overview_summary">Hetkeprofiil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

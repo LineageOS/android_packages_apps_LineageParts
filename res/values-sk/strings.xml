@@ -436,20 +436,6 @@
     <string name="display_rotation_90_title">90 stupňov</string>
     <string name="display_rotation_180_title">180 stupňov</string>
     <string name="display_rotation_270_title">270 stupňov</string>
-    <string name="weather_settings_title">Počasie</string>
-    <string name="weather_settings_no_services_prompt">Žiadne nainštalované služby poskytovateľa počasia</string>
-    <string name="weather_settings_no_services_summary">Nainštalovať poskytovateľa počasia pre príjem predpovede počasia</string>
-    <string name="weather_settings_button">Nastavenia poskytovateľa</string>
-    <string name="weather_settings_activity_not_found">Nepodarilo sa spustiť ponuku nastavení toto poskytovateľa</string>
-    <string name="weather_settings_add_weather_provider">Pridať poskytovateľa počasia</string>
-    <string name="weather_settings_general_settings_title">Všeobecné</string>
-    <string name="weather_settings_providers_title">Poskytovatelia</string>
-    <string name="weather_settings_temp_units_title">Jednotky teploty</string>
-    <string name="weather_settings_temp_celsius">Celzia</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheita</string>
-    <string name="weather_settings_keyword">počasie</string>
-    <string name="status_bar_show_weather_title">Zobraziť počasie</string>
-    <string name="status_bar_show_weather_summary">Zobrazovať aktuálnu teplotu v stavovom riadku</string>
     <string name="perf_profile_settings_title">Šetrič batérie a výkonu</string>
     <string name="perf_profile_settings_summary">Nastavenie jednotlivých funkcí pre úsporu energie a výkon zariadenia</string>
     <string name="perf_profile_overview_summary">Aktuálny profil: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>

@@ -427,20 +427,6 @@
     <string name="display_rotation_90_title">90 градуса</string>
     <string name="display_rotation_180_title">180 градуса</string>
     <string name="display_rotation_270_title">270 градуса</string>
-    <string name="weather_settings_title">Прогноза на времето</string>
-    <string name="weather_settings_no_services_prompt">Няма инсталиран доставчик на време</string>
-    <string name="weather_settings_no_services_summary">Инсталирайте на доставчик на време за да получавате актуализации за времето</string>
-    <string name="weather_settings_button">Настройки на доставчика</string>
-    <string name="weather_settings_activity_not_found">Неуспешно стартиране на меню \"Настройки\" на този доставчик</string>
-    <string name="weather_settings_add_weather_provider">Добавяне на доставчик</string>
-    <string name="weather_settings_general_settings_title">Общи</string>
-    <string name="weather_settings_providers_title">Доставчици</string>
-    <string name="weather_settings_temp_units_title">Температурни единици</string>
-    <string name="weather_settings_temp_celsius">Целзий</string>
-    <string name="weather_settings_temp_fahrenheit">Фаренхайт</string>
-    <string name="weather_settings_keyword">времето</string>
-    <string name="status_bar_show_weather_title">Покажи на времето</string>
-    <string name="status_bar_show_weather_summary">Покази текущата температура в лентата на състоянието</string>
     <string name="perf_profile_settings_title">Икономия и производителност на батерията</string>
     <string name="perf_profile_settings_summary">Регулира енергийна ефективност и производителност на устройството</string>
     <string name="perf_profile_overview_summary">Текущия профил: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>

@@ -438,20 +438,6 @@
     <string name="display_rotation_90_title">90 ceum</string>
     <string name="display_rotation_180_title">180 ceum</string>
     <string name="display_rotation_270_title">270 ceum</string>
-    <string name="weather_settings_title">An aimsir</string>
-    <string name="weather_settings_no_services_prompt">Cha deach seirbheis solaraiche aimsire a stàladh</string>
-    <string name="weather_settings_no_services_summary">Stàlaich solaraiche aimsire airson naidheachd na h-aimsire fhaighinn</string>
-    <string name="weather_settings_button">Roghainnean an t-solaraiche</string>
-    <string name="weather_settings_activity_not_found">Cha deach leinn clàr-taice nan roghainnean a chur gu dol airson an t-solaraiche seo</string>
-    <string name="weather_settings_add_weather_provider">Cuir solaraiche aimsire ris</string>
-    <string name="weather_settings_general_settings_title">Coitcheann</string>
-    <string name="weather_settings_providers_title">Solaraichean</string>
-    <string name="weather_settings_temp_units_title">Aonad na teothachd</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">aimsir</string>
-    <string name="status_bar_show_weather_title">Seall an aimsir</string>
-    <string name="status_bar_show_weather_summary">Seall an teothachd làithreach air bàr na staid</string>
     <string name="perf_profile_settings_title">Caomhnaiche a’ bhataraidh is an dèanadas</string>
     <string name="perf_profile_settings_summary">Cuir gleus air caomhnadh na cumhachd is dèanadas an uidheim</string>
     <string name="perf_profile_overview_summary">A’ phròifil làithreach: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

@@ -405,20 +405,6 @@
     <string name="display_rotation_90_title">90 מעלות</string>
     <string name="display_rotation_180_title">180 מעלות</string>
     <string name="display_rotation_270_title">270 מעלות</string>
-    <string name="weather_settings_title">תחזית</string>
-    <string name="weather_settings_no_services_prompt">לא מותקנים שירותי ספקי תחזית</string>
-    <string name="weather_settings_no_services_summary">התקן ספק תחזית בכדי לקבל עדכוני מזג האוויר</string>
-    <string name="weather_settings_button">הגדרות ספק</string>
-    <string name="weather_settings_activity_not_found">לא ניתן להפעיל את תפריט ההגדרות של ספק זה</string>
-    <string name="weather_settings_add_weather_provider">הוסף ספק מזג אוויר</string>
-    <string name="weather_settings_general_settings_title">כללי</string>
-    <string name="weather_settings_providers_title">ספקים</string>
-    <string name="weather_settings_temp_units_title">יחידת טמפרטורה</string>
-    <string name="weather_settings_temp_celsius">צלזיוס</string>
-    <string name="weather_settings_temp_fahrenheit">פרנהייט</string>
-    <string name="weather_settings_keyword">תחזית</string>
-    <string name="status_bar_show_weather_title">הראה תחזית</string>
-    <string name="status_bar_show_weather_summary">הצג את הטמפרטורה הנוכחית בשורת המצב</string>
     <string name="perf_profile_settings_title">שומר הסוללה וביצועים</string>
     <string name="perf_profile_settings_summary">התאמת חיסכון החשמל וביצועי המכשיר</string>
     <string name="perf_profile_overview_summary">פרופיל הנוכחי: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>

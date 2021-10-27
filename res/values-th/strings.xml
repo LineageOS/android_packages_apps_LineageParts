@@ -415,20 +415,6 @@
     <string name="display_rotation_90_title">90 องศา</string>
     <string name="display_rotation_180_title">180 องศา</string>
     <string name="display_rotation_270_title">270 องศา</string>
-    <string name="weather_settings_title">สภาพอากาศ</string>
-    <string name="weather_settings_no_services_prompt">ไม่มีผู้ให้บริการข้อมูลสภาพอากาศติดตั้งอยู่</string>
-    <string name="weather_settings_no_services_summary">ติดตั้งผู้ให้บริการสภาพอากาศรับการปรับปรุงสภาพอากาศ</string>
-    <string name="weather_settings_button">ตั้งค่าผู้ให้บริการ</string>
-    <string name="weather_settings_activity_not_found">ไม่สามารถเปิดการตั้งค่าของผู้ให้บริการนี้ได้</string>
-    <string name="weather_settings_add_weather_provider">เพิ่มผู้ให้บริการรายงานสภาพอากาศ</string>
-    <string name="weather_settings_general_settings_title">ทั่วไป</string>
-    <string name="weather_settings_providers_title">ผู้ให้บริการ</string>
-    <string name="weather_settings_temp_units_title">หน่วยอุณหภูมิ</string>
-    <string name="weather_settings_temp_celsius">เซลเซียส</string>
-    <string name="weather_settings_temp_fahrenheit">ฟาเรนไฮต์</string>
-    <string name="weather_settings_keyword">สภาพอากาศ</string>
-    <string name="status_bar_show_weather_title">แสดงสภาพอากาศ</string>
-    <string name="status_bar_show_weather_summary">แสดงอุณหภูมิปัจจุบันบนแถบสถานะ</string>
     <string name="perf_profile_settings_title">ประหยัดพลังงานและประสิทธิภาพ</string>
     <string name="perf_profile_settings_summary">ปรับคุณสมบัติการประหยัดพลังงานและประสิทธิภาพของอุปกรณ์</string>
     <string name="perf_profile_overview_summary">โปรไฟล์ปัจจุบัน: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

@@ -26,7 +26,6 @@
     <!-- Contributors -->
     <color name="contributors_cloud_selected_color">#ff5252</color>
 
-    <color name="weather_settings_icon_tint">#B4B9BA</color>
 
     <color name="perf_hot">#ffd10015</color>
     <color name="perf_cold">#ff005994</color>

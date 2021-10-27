@@ -80,11 +80,6 @@
           android:fragment="org.lineageos.lineageparts.input.PowerMenuActions"
           lineage:xmlRes="@xml/power_menu_settings" />
 
-    <part android:key="weather_settings"
-          android:title="@string/weather_settings_title"
-          android:fragment="org.lineageos.lineageparts.weather.WeatherServiceSettings"
-          lineage:xmlRes="@xml/weather_settings" />
-
     <part android:key="perf_profile_settings"
           android:title="@string/perf_profile_settings_title"
           android:summary="@string/perf_profile_settings_summary"

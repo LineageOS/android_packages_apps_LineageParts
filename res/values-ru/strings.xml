@@ -436,20 +436,6 @@
     <string name="display_rotation_90_title">90 градусов</string>
     <string name="display_rotation_180_title">180 градусов</string>
     <string name="display_rotation_270_title">270 градусов</string>
-    <string name="weather_settings_title">Погода</string>
-    <string name="weather_settings_no_services_prompt">Нет установленных служб поставщиков погоды</string>
-    <string name="weather_settings_no_services_summary">Установите службу поставщика погоды, чтобы получать обновления погоды</string>
-    <string name="weather_settings_button">Настройки поставщика</string>
-    <string name="weather_settings_activity_not_found">Не удается запустить меню настройки этого поставщика</string>
-    <string name="weather_settings_add_weather_provider">Добавить поставщика погоды</string>
-    <string name="weather_settings_general_settings_title">Общие</string>
-    <string name="weather_settings_providers_title">Поставщики</string>
-    <string name="weather_settings_temp_units_title">Единицы измерения температуры</string>
-    <string name="weather_settings_temp_celsius">Градус Цельсия</string>
-    <string name="weather_settings_temp_fahrenheit">Градус Фаренгейта</string>
-    <string name="weather_settings_keyword">погода</string>
-    <string name="status_bar_show_weather_title">Показать погоду</string>
-    <string name="status_bar_show_weather_summary">Отображение текущей погоды в строке состояния</string>
     <string name="perf_profile_settings_title">Энергосбережение и производительность</string>
     <string name="perf_profile_settings_summary">Подстраивать энергосбережение и производительность устройства</string>
     <string name="perf_profile_overview_summary">Профиль производительности: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>

@@ -432,20 +432,6 @@
     <string name="display_rotation_90_title">90 graos</string>
     <string name="display_rotation_180_title">180 graos</string>
     <string name="display_rotation_270_title">270 graos</string>
-    <string name="weather_settings_title">Tempo</string>
-    <string name="weather_settings_no_services_prompt">Non instalouse ningun probeedor do tempo</string>
-    <string name="weather_settings_no_services_summary">Instalar un proveedor do clima para recibir actualizacións do tempo</string>
-    <string name="weather_settings_button">Axustes do fornecedor</string>
-    <string name="weather_settings_activity_not_found">Non se puido iniciar o menú de configuración deste provedor</string>
-    <string name="weather_settings_add_weather_provider">Engadir fornecedor de clima</string>
-    <string name="weather_settings_general_settings_title">Xeral</string>
-    <string name="weather_settings_providers_title">Fornecedores</string>
-    <string name="weather_settings_temp_units_title">Unidade de temperatura</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">clima</string>
-    <string name="status_bar_show_weather_title">Amosar o tempo</string>
-    <string name="status_bar_show_weather_summary">Mostrar a temperatura actual na barra de estado</string>
     <string name="perf_profile_settings_title">Rendemento e aforro de batería</string>
     <string name="perf_profile_settings_summary">Axustar as características do consumo do aforro de enerxía e o rendimento</string>
     <string name="perf_profile_overview_summary">Perfil actual: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>

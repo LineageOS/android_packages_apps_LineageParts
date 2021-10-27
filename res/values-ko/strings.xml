@@ -436,20 +436,6 @@
     <string name="display_rotation_90_title">90도</string>
     <string name="display_rotation_180_title">180도</string>
     <string name="display_rotation_270_title">270도</string>
-    <string name="weather_settings_title">날씨</string>
-    <string name="weather_settings_no_services_prompt">날씨 공급자 서비스 설치되지 않음</string>
-    <string name="weather_settings_no_services_summary">날씨 정보를 받으려면 날씨 공급자를 설치하세요</string>
-    <string name="weather_settings_button">날씨 공급자 설정</string>
-    <string name="weather_settings_activity_not_found">이 날씨 공급자의 설정 메뉴를 열 수 없습니다</string>
-    <string name="weather_settings_add_weather_provider">날씨 공급자 추가</string>
-    <string name="weather_settings_general_settings_title">일반</string>
-    <string name="weather_settings_providers_title">공급자</string>
-    <string name="weather_settings_temp_units_title">온도 단위</string>
-    <string name="weather_settings_temp_celsius">섭씨</string>
-    <string name="weather_settings_temp_fahrenheit">화씨</string>
-    <string name="weather_settings_keyword">날씨</string>
-    <string name="status_bar_show_weather_title">날씨 표시</string>
-    <string name="status_bar_show_weather_summary">상태 표시줄에 현재 온도 표시</string>
     <string name="perf_profile_settings_title">배터리 절약 모드 및 성능</string>
     <string name="perf_profile_settings_summary">전원 절약 기능 및 기기 성능 조정</string>
     <string name="perf_profile_overview_summary">현재 프로필: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

@@ -408,20 +408,6 @@
     <string name="display_rotation_90_title">90 graos</string>
     <string name="display_rotation_180_title">180 graos</string>
     <string name="display_rotation_270_title">270 graos</string>
-    <string name="weather_settings_title">Meteoroloxía</string>
-    <string name="weather_settings_no_services_prompt">Nun hai fornidores meteorolóxicos instalaos</string>
-    <string name="weather_settings_no_services_summary">Instala un fornidor metereolóxicu pa recibir anovamientos del clima</string>
-    <string name="weather_settings_button">Axustes del fornidor</string>
-    <string name="weather_settings_activity_not_found">Nun pue llanzase\'l menú d\'axustes d\'esti fornidor</string>
-    <string name="weather_settings_add_weather_provider">Amestar fornidor meteorolóxicu</string>
-    <string name="weather_settings_general_settings_title">Xeneral</string>
-    <string name="weather_settings_providers_title">Fornidores</string>
-    <string name="weather_settings_temp_units_title">Unidá de temperatura</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">meteoroloxía</string>
-    <string name="status_bar_show_weather_title">Amosar metereoloxía</string>
-    <string name="status_bar_show_weather_summary">Amuesa la temperatura actual na barra d\'estáu</string>
     <string name="perf_profile_settings_title">Rindimientu y aforrador de batería</string>
     <string name="perf_profile_settings_summary">Axusta les carauterístiques d\'aforru d\'enerxía y rindimientu del preséu</string>
     <string name="perf_profile_overview_summary">Perfil actual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
