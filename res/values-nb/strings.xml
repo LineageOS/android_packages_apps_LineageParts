@@ -375,20 +375,6 @@
     <string name="display_rotation_90_title">90 grader</string>
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
-    <string name="weather_settings_title">Vær</string>
-    <string name="weather_settings_no_services_prompt">Ingen værleverandør tjeneste installert</string>
-    <string name="weather_settings_no_services_summary">Installer en værleverandør for å motta væroppdateringer</string>
-    <string name="weather_settings_button">Leverandørinnstillinger</string>
-    <string name="weather_settings_activity_not_found">Kan ikke starte innstillingsmenyen for denne leverandøren</string>
-    <string name="weather_settings_add_weather_provider">Legg til værleverandør</string>
-    <string name="weather_settings_general_settings_title">Generelt</string>
-    <string name="weather_settings_providers_title">Leverandører</string>
-    <string name="weather_settings_temp_units_title">Temperaturenhet</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">vær</string>
-    <string name="status_bar_show_weather_title">Vis været</string>
-    <string name="status_bar_show_weather_summary">Vise gjeldende temperatur på statuslinjen</string>
     <string name="perf_profile_settings_title">Batterisparing og ytelse</string>
     <string name="perf_profile_settings_summary">Juster strømsparingsfunksjoner og enhetens ytelse</string>
     <string name="perf_profile_overview_summary">Gjeldende profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

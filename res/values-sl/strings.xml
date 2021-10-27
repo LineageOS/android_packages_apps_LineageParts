@@ -438,20 +438,6 @@
     <string name="display_rotation_90_title">90 stopinj</string>
     <string name="display_rotation_180_title">180 stopinj</string>
     <string name="display_rotation_270_title">270 stopinj</string>
-    <string name="weather_settings_title">Vreme</string>
-    <string name="weather_settings_no_services_prompt">Ni nameščene storitve ponudnika vremena</string>
-    <string name="weather_settings_no_services_summary">Namestite ponudnika vremena, da boste prejemali vremenske posodobitve</string>
-    <string name="weather_settings_button">Nastavitve ponudnika</string>
-    <string name="weather_settings_activity_not_found">Menija nastavitev za tega ponudnika ni mogoče zagnati</string>
-    <string name="weather_settings_add_weather_provider">Dodaj ponudnika vremena</string>
-    <string name="weather_settings_general_settings_title">Splošno</string>
-    <string name="weather_settings_providers_title">Ponudniki</string>
-    <string name="weather_settings_temp_units_title">Enote za temperaturo</string>
-    <string name="weather_settings_temp_celsius">Celzij</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">vreme</string>
-    <string name="status_bar_show_weather_title">Prikaži vreme</string>
-    <string name="status_bar_show_weather_summary">Prikaži trenutno temperaturo v vrstici stanja</string>
     <string name="perf_profile_settings_title">Varčevanje z energijo baterije in zmogljivost</string>
     <string name="perf_profile_settings_summary">Prilagodi značilnosti varčevanja z energijo in zmogljivost naprave</string>
     <string name="perf_profile_overview_summary">Trenutni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

@@ -251,17 +251,6 @@
                  android:enabled="true"
                  android:exported="false" />
 
-        <!-- Weather settings -->
-        <activity-alias
-            android:name=".weather.WeatherServiceSettings"
-            android:label="@string/weather_settings_title"
-            android:targetActivity="PartsActivity">
-            <intent-filter android:priority="1">
-                <action android:name="lineageos.intent.action.MANAGE_WEATHER_PROVIDER_SERVICES" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity-alias>
-
         <activity android:name=".profiles.NFCProfile">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>

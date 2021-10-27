@@ -434,20 +434,6 @@
     <string name="display_rotation_90_title">90 gradë</string>
     <string name="display_rotation_180_title">180 gradë</string>
     <string name="display_rotation_270_title">270 gradë</string>
-    <string name="weather_settings_title">Moti</string>
-    <string name="weather_settings_no_services_prompt">Nuk është instaluar asnjë ofrues i shërbimit meteorologjik</string>
-    <string name="weather_settings_no_services_summary">Instalo një ofrues të shërbimit meteorologjik për të marrë përditësime të motit</string>
-    <string name="weather_settings_button">Parametrat e ofruesit</string>
-    <string name="weather_settings_activity_not_found">Menuja e parametrave të këtij ofruesi nuk mund të hapet</string>
-    <string name="weather_settings_add_weather_provider">Shto një ofrues të motit</string>
-    <string name="weather_settings_general_settings_title">Të përgjithshme</string>
-    <string name="weather_settings_providers_title">Ofruesit</string>
-    <string name="weather_settings_temp_units_title">Njësia e temperaturës</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">moti</string>
-    <string name="status_bar_show_weather_title">Shfaq motin</string>
-    <string name="status_bar_show_weather_summary">Trego temperaturën aktuale në shiritin e statusit</string>
     <string name="perf_profile_settings_title">Kursimi i baterisë dhe përformanca</string>
     <string name="perf_profile_settings_summary">Rregullo funksionet e kursimit të energjisë dhe të përformancës së pajisjes</string>
     <string name="perf_profile_overview_summary">Profili aktual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

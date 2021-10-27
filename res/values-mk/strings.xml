@@ -375,20 +375,6 @@
     <string name="display_rotation_90_title">90 степени</string>
     <string name="display_rotation_180_title">180 степени</string>
     <string name="display_rotation_270_title">270 степени</string>
-    <string name="weather_settings_title">Време</string>
-    <string name="weather_settings_no_services_prompt">Не се инсталирани услуги за временски прогнози</string>
-    <string name="weather_settings_no_services_summary">Инсталирајте временски провајдер за да добивате ажурирања на временските прогнози</string>
-    <string name="weather_settings_button">Поставувања на провајдерот</string>
-    <string name="weather_settings_activity_not_found">Не може да се подигне менито за поставувања на овој провајдер</string>
-    <string name="weather_settings_add_weather_provider">Додај временски провајдер</string>
-    <string name="weather_settings_general_settings_title">Општо</string>
-    <string name="weather_settings_providers_title">Провајдери</string>
-    <string name="weather_settings_temp_units_title">Единица за температура</string>
-    <string name="weather_settings_temp_celsius">Целзиус</string>
-    <string name="weather_settings_temp_fahrenheit">Фаренхајт</string>
-    <string name="weather_settings_keyword">време</string>
-    <string name="status_bar_show_weather_title">Покажи го времето</string>
-    <string name="status_bar_show_weather_summary">Прикажете ја моменталната температура на статусната лента</string>
     <string name="perf_profile_settings_title">Заштедувач на батерија и перформанси</string>
     <string name="perf_profile_settings_summary">Прилагодете ги функциите за заштеда на енергија и ефикасноста на уредот</string>
     <string name="perf_profile_overview_summary">Тековен профил: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

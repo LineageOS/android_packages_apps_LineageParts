@@ -436,20 +436,6 @@
     <string name="display_rotation_90_title">90 graus</string>
     <string name="display_rotation_180_title">180 graus</string>
     <string name="display_rotation_270_title">270 graus</string>
-    <string name="weather_settings_title">Meteorologia</string>
-    <string name="weather_settings_no_services_prompt">Não há serviços de fornecedor de meteorologia instalados</string>
-    <string name="weather_settings_no_services_summary">Instale um fornecedor de meteorologia para receber atualizações meteorológicas</string>
-    <string name="weather_settings_button">Definições do fornecedor</string>
-    <string name="weather_settings_activity_not_found">Não é possível iniciar o menu de definições deste fornecedor</string>
-    <string name="weather_settings_add_weather_provider">Adicionar fornecedor de meteorologia</string>
-    <string name="weather_settings_general_settings_title">Gerais</string>
-    <string name="weather_settings_providers_title">Fornecedores</string>
-    <string name="weather_settings_temp_units_title">Unidade de temperatura</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">meteorologia</string>
-    <string name="status_bar_show_weather_title">Mostrar meteorologia</string>
-    <string name="status_bar_show_weather_summary">Mostrar a temperatura atual na barra de estado</string>
     <string name="perf_profile_settings_title">Poupança de bateria e desempenho</string>
     <string name="perf_profile_settings_summary">Ajustar características de poupança de bateria e desempenho do dispositivo</string>
     <string name="perf_profile_overview_summary">Perfil atual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

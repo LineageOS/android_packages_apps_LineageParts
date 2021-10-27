@@ -400,20 +400,6 @@
     <string name="display_rotation_90_title">90 graden</string>
     <string name="display_rotation_180_title">180 graden</string>
     <string name="display_rotation_270_title">270 graden</string>
-    <string name="weather_settings_title">Weer</string>
-    <string name="weather_settings_no_services_prompt">Geen weeraanbiederservices geïnstalleerd</string>
-    <string name="weather_settings_no_services_summary">Installeer een weeraanbieder om weer-updates te ontvangen</string>
-    <string name="weather_settings_button">Instellingen aanbieder</string>
-    <string name="weather_settings_activity_not_found">Kan instellingenmenu van deze aanbieder niet openen</string>
-    <string name="weather_settings_add_weather_provider">Weeraanbieder toevoegen</string>
-    <string name="weather_settings_general_settings_title">Algemeen</string>
-    <string name="weather_settings_providers_title">Aanbieders</string>
-    <string name="weather_settings_temp_units_title">Eenheid temperatuur</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">weer</string>
-    <string name="status_bar_show_weather_title">Weer weergeven</string>
-    <string name="status_bar_show_weather_summary">Huidige temperatuur op de statusbalk weergeven</string>
     <string name="perf_profile_settings_title">Energiebesparing en prestaties</string>
     <string name="perf_profile_settings_summary">Instellingen energiebesparing en apparaatprestaties aanpassen</string>
     <string name="perf_profile_overview_summary">Huidige profiel: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

@@ -436,20 +436,6 @@
     <string name="display_rotation_90_title">90 Grad</string>
     <string name="display_rotation_180_title">180 Grad</string>
     <string name="display_rotation_270_title">270 Grad</string>
-    <string name="weather_settings_title">Wetter</string>
-    <string name="weather_settings_no_services_prompt">Keine Wetterdaten-Anbieter installiert</string>
-    <string name="weather_settings_no_services_summary">Installiere einen Wetterdatenanbieter, um Wetter-Aktualisierungen zu erhalten</string>
-    <string name="weather_settings_button">Anbieter-Einstellungen</string>
-    <string name="weather_settings_activity_not_found">Das Einstellungsmenü dieses Anbieters konnte nicht gestartet werden</string>
-    <string name="weather_settings_add_weather_provider">Wetterdatenanbieter hinzufügen</string>
-    <string name="weather_settings_general_settings_title">Allgemein</string>
-    <string name="weather_settings_providers_title">Anbieter</string>
-    <string name="weather_settings_temp_units_title">Temperatureinheit</string>
-    <string name="weather_settings_temp_celsius">Celsius</string>
-    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
-    <string name="weather_settings_keyword">Wetter</string>
-    <string name="status_bar_show_weather_title">Wetter anzeigen</string>
-    <string name="status_bar_show_weather_summary">Die aktuelle Temperatur in der Statusleiste anzeigen</string>
     <string name="perf_profile_settings_title">Energiesparmodus und Leistung</string>
     <string name="perf_profile_settings_summary">Konfiguriere Energiesparfunktionen und die Leistung des Geräts</string>
     <string name="perf_profile_overview_summary">Aktuelles Profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

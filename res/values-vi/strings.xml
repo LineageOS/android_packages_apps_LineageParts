@@ -405,20 +405,6 @@
     <string name="display_rotation_90_title">90 độ</string>
     <string name="display_rotation_180_title">180 độ</string>
     <string name="display_rotation_270_title">270 độ</string>
-    <string name="weather_settings_title">Thời tiết</string>
-    <string name="weather_settings_no_services_prompt">Không có dịch vụ nhà cung cấp thời tiết nào được cài đặt</string>
-    <string name="weather_settings_no_services_summary">Cài đặt nhà cung cấp thời tiết để nhận thông tin thời tiết cập nhật</string>
-    <string name="weather_settings_button">Cài đặt nhà cung cấp</string>
-    <string name="weather_settings_activity_not_found">Không thể khởi động trình đơn cài đặt của nhà cung cấp này</string>
-    <string name="weather_settings_add_weather_provider">Thêm nhà cung cấp thời tiết</string>
-    <string name="weather_settings_general_settings_title">Chung</string>
-    <string name="weather_settings_providers_title">Nhà cung cấp</string>
-    <string name="weather_settings_temp_units_title">Đơn vị nhiệt độ</string>
-    <string name="weather_settings_temp_celsius">Độ C</string>
-    <string name="weather_settings_temp_fahrenheit">Độ F</string>
-    <string name="weather_settings_keyword">thời tiết</string>
-    <string name="status_bar_show_weather_title">Hiển thị thời tiết</string>
-    <string name="status_bar_show_weather_summary">Hiển thị nhiệt độ hiện tại trên thanh trạng thái</string>
     <string name="perf_profile_settings_title">Tiết kiệm pin và hiệu suất</string>
     <string name="perf_profile_settings_summary">Điều chỉnh tính năng tiết kiệm pin và hiệu suất thiết bị</string>
     <string name="perf_profile_overview_summary">Cấu hình hiện tại: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

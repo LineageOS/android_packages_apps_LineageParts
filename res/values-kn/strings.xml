@@ -406,20 +406,6 @@
     <string name="display_rotation_90_title">೯೦ ಡಿಗ್ರಿಗಳು</string>
     <string name="display_rotation_180_title">೧೮೦ ಡಿಗ್ರಿಗಳು</string>
     <string name="display_rotation_270_title">೨೭೦ ಡಿಗ್ರಿಗಳು</string>
-    <string name="weather_settings_title">ಹವಾಮಾನ</string>
-    <string name="weather_settings_no_services_prompt">ಹವಾಮಾನ ಪರಿಚಾರಕ ಸೇವೆಗಳನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ</string>
-    <string name="weather_settings_no_services_summary">ಹವಾಮಾನ ವರದಿಗಳನ್ನು ಪಡೆಯಲು ಹವಾಮಾನ ಪರಿಚಾರಕವನ್ನು ಸ್ಥಾಪಿಸು</string>
-    <string name="weather_settings_button">ಪೂರೈಕೆದಾರ ಅಳವಡಿಕೆಗಳು</string>
-    <string name="weather_settings_activity_not_found">ಈ ಪರಿಚಾರಕದ ಅಳವಡಿಕೆ ಪಟ್ಟಿಯನ್ನು ತೆರೆಯಲಾಗುತ್ತಿಲ್ಲ</string>
-    <string name="weather_settings_add_weather_provider">ಹವಾಮಾನ ಪರಿಚಾರಕವನ್ನು ಸೇರಿಸು</string>
-    <string name="weather_settings_general_settings_title">ಸಾಮಾನ್ಯ</string>
-    <string name="weather_settings_providers_title">ಪೂರೈಕೆದಾರರು</string>
-    <string name="weather_settings_temp_units_title">ತಾಪಮಾನದ ಘಟಕ</string>
-    <string name="weather_settings_temp_celsius">ಸೆಲ್ಸಿಯಸ್</string>
-    <string name="weather_settings_temp_fahrenheit">ಫ್ಯಾರನ್ಹೀಟ್</string>
-    <string name="weather_settings_keyword">ಹವಾಮಾನ</string>
-    <string name="status_bar_show_weather_title">ಹವಾಮಾನ ತೋರಿಸು</string>
-    <string name="status_bar_show_weather_summary">ಪ್ರಸ್ತುತ ತಾಪಮಾನವನ್ನು ಸ್ಥಿತಿ ಪಟ್ಟಿ ಮೇಲೆ ಪ್ರದರ್ಶಿಸು</string>
     <string name="perf_profile_settings_title">ಮಿಂತಿಣಿ ಉಳಿತಾಯ ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ</string>
     <string name="perf_profile_settings_summary">ಶಕ್ತಿ ಉಳಿತಾಯ ವೈಶಿಷ್ಟ್ಯಗಳು ಮತ್ತು ಸಾಧನದ ಕಾರ್ಯಕ್ಷಮತೆ ಹೊಂದಿಸು</string>
     <string name="perf_profile_overview_summary">ಪ್ರಸ್ತುತ ರೇಖಾಕೃತಿ: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
