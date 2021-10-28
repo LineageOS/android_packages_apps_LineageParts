@@ -25,16 +25,9 @@
     <style name="Theme.SettingsBase" parent="@android:style/Theme.DeviceDefault.Settings" />
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
-        <item name="dialogPreferenceStyle">@style/DialogPreferenceStyle</item>
-        <item name="dropdownPreferenceStyle">@style/DropdownPreferenceStyle</item>
-        <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
         <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
         <item name="preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
-        <item name="preferenceScreenStyle">@style/PreferenceStyle</item>
-        <item name="preferenceStyle">@style/PreferenceStyle</item>
         <item name="preferenceTheme">@style/PreferenceTheme</item>
-        <item name="checkBoxPreferenceStyle">@style/CheckBoxPreferenceStyle</item>
-        <item name="switchPreferenceStyle">@style/SwitchPreferenceStyle</item>
 
         <item name="wifi_signal_color">?android:attr/colorAccent</item>
         <item name="side_margin">@dimen/settings_side_margin</item>
