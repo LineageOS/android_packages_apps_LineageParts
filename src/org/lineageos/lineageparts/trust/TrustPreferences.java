@@ -20,11 +20,20 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.Settings;
+<<<<<<< HEAD   (d582f5 Automatic translation import)
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v14.preference.SwitchPreference;
+=======
+>>>>>>> CHANGE (468118 parts: limit SMS rate limit setting viability)
 import android.util.Log;
+import android.telephony.TelephonyManager;
+
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.SwitchPreference;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -37,7 +46,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private static final String TAG = "TrustPreferences";
 
     private Preference mSELinuxPref;
-    private Preference mRootPref;
     private Preference mSecurityPatchesPref;
     private Preference mEncryptionPref;
     private PreferenceCategory mToolsCategory;
@@ -61,13 +69,22 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.trust_preferences);
 
         mSELinuxPref = findPreference("trust_selinux");
-        mRootPref = findPreference("trust_root");
         mSecurityPatchesPref = findPreference("trust_security_patch");
         mEncryptionPref = findPreference("trust_encryption");
+<<<<<<< HEAD   (d582f5 Automatic translation import)
         mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
         mUsbRestrictorPref = (LineageSecureSettingSwitchPreference)
                 mToolsCategory.findPreference("trust_restrict_usb");
         mSmsLimitPref = (ListPreference) mToolsCategory.findPreference("sms_security_check_limit");
+=======
+        mToolsCategory = findPreference("trust_category_tools");
+        mUsbRestrictorPref = mToolsCategory.findPreference("trust_restrict_usb");
+        mSmsLimitPref = mToolsCategory.findPreference("sms_security_check_limit");
+
+        mWarnScreen = findPreference("trust_category_warnings");
+        mWarnSELinuxPref = mWarnScreen.findPreference("trust_warning_selinux");
+        mWarnKeysPref = mWarnScreen.findPreference("trust_warning_keys");
+>>>>>>> CHANGE (468118 parts: limit SMS rate limit setting viability)
 
         mWarnScreen = (PreferenceCategory) findPreference("trust_category_warnings");
         mWarnSELinuxPref = (SwitchPreference) mWarnScreen.findPreference("trust_warning_selinux");
@@ -75,8 +92,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
 
         mSELinuxPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_selinux_explain));
-        mRootPref.setOnPreferenceClickListener(p ->
-                 showInfo(R.string.trust_feature_root_explain));
         mSecurityPatchesPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_security_patches_explain));
         mEncryptionPref.setOnPreferenceClickListener(p ->
@@ -93,7 +108,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
 
     private void setup() {
         int seLinuxLevel = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_SELINUX);
-        int rootLevel = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_ROOT);
         int secPLevel =
                 mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_PLATFORM_SECURITY_PATCH);
         int secVLevel =
@@ -101,7 +115,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         int encryptLevel = mInterface.getLevelForFeature(TrustInterface.TRUST_FEATURE_ENCRYPTION);
 
         setupSELinux(seLinuxLevel);
-        setupRoot(rootLevel);
         setupSecurityPatches(secPLevel, secVLevel);
         setupEncryption(encryptLevel);
 
@@ -110,11 +123,19 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mWarnSELinuxPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_SELINUX) != 0);
         mWarnKeysPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_PUBLIC_KEY) != 0);
 
+<<<<<<< HEAD   (d582f5 Automatic translation import)
         if (!isTelephony()) {
+=======
+        if (isTelephony()) {
+>>>>>>> CHANGE (468118 parts: limit SMS rate limit setting viability)
             mToolsCategory.removePreference(mSmsLimitPref);
         }
 
+<<<<<<< HEAD   (d582f5 Automatic translation import)
         if (!mInterface.hasUsbRestrictor()) {
+=======
+        if (mInterface.hasUsbRestrictor()) {
+>>>>>>> CHANGE (468118 parts: limit SMS rate limit setting viability)
             mToolsCategory.removePreference(mUsbRestrictorPref);
         }
     }
@@ -131,23 +152,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         }
         mSELinuxPref.setIcon(icon);
         mSELinuxPref.setSummary(getContext().getString(summary));
-    }
-
-    private void setupRoot(int level) {
-        int icon;
-        int summary;
-        if (level == TrustInterface.TRUST_FEATURE_LEVEL_GOOD) {
-            icon = R.drawable.ic_trust_root_good;
-            summary = R.string.trust_feature_root_value_disabled;
-        } else if (level == TrustInterface.TRUST_FEATURE_LEVEL_POOR) {
-            icon = R.drawable.ic_trust_root_poor;
-            summary = R.string.trust_feature_root_value_adb;
-        } else {
-            icon = R.drawable.ic_trust_root_bad;
-            summary = R.string.trust_feature_root_value_apps;
-        }
-        mRootPref.setIcon(icon);
-        mRootPref.setSummary(getContext().getString(summary));
     }
 
     private void setupSecurityPatches(int platform, int vendor) {
@@ -253,7 +257,12 @@ public class TrustPreferences extends SettingsPreferenceFragment {
                 LineageSettings.Secure.TRUST_WARNINGS, TrustInterface.TRUST_WARN_MAX_VALUE);
         int newValue = value ? (original | feature) : (original & ~feature);
         boolean success = LineageSettings.Secure.putInt(getContext().getContentResolver(),
+<<<<<<< HEAD   (d582f5 Automatic translation import)
                 LineageSettings.Secure.TRUST_WARNINGS, newValue);
+=======
+                LineageSettings.Secure.TRUST_WARNINGS,
+                newValue & TrustInterface.TRUST_WARN_MAX_VALUE);
+>>>>>>> CHANGE (468118 parts: limit SMS rate limit setting viability)
         if (success && !value) {
             mInterface.removeNotificationForFeature(feature);
         }
@@ -263,6 +272,15 @@ public class TrustPreferences extends SettingsPreferenceFragment {
 
     private boolean isTelephony() {
         PackageManager pm = getContext().getPackageManager();
-        return pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+        if (pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+            TelephonyManager manager = (TelephonyManager)getContext().getSystemService(Context.TELEPHONY_SERVICE);
+            if(manager.getPhoneType() == TelephonyManager.PHONE_TYPE_NONE){
+                return true;
+            }else{
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 }
