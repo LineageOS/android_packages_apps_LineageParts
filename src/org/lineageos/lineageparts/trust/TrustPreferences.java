@@ -104,11 +104,11 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mWarnSELinuxPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_SELINUX) != 0);
         mWarnKeysPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_PUBLIC_KEY) != 0);
 
-        if (!isTelephony()) {
+        if (isTelephony()) {
             mToolsCategory.removePreference(mSmsLimitPref);
         }
 
-        if (!mInterface.hasUsbRestrictor()) {
+        if (mInterface.hasUsbRestrictor()) {
             mToolsCategory.removePreference(mUsbRestrictorPref);
         }
     }
