@@ -25,6 +25,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v14.preference.SwitchPreference;
 import android.util.Log;
+import android.telephony.TelephonyManager;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -110,7 +111,7 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mWarnSELinuxPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_SELINUX) != 0);
         mWarnKeysPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_PUBLIC_KEY) != 0);
 
-        if (!isTelephony()) {
+        if (isTelephony()) {
             mToolsCategory.removePreference(mSmsLimitPref);
         }
 
@@ -263,6 +264,15 @@ public class TrustPreferences extends SettingsPreferenceFragment {
 
     private boolean isTelephony() {
         PackageManager pm = getContext().getPackageManager();
-        return pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+        if (pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+            TelephonyManager manager = (TelephonyManager)getContext().getSystemService(Context.TELEPHONY_SERVICE);
+            if(manager.getPhoneType() == TelephonyManager.PHONE_TYPE_NONE){
+                return true;
+            }else{
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 }
