@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2018-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,11 +23,15 @@ import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
+import android.support.v14.preference.SwitchPreference;
 import android.util.Log;
+import android.telephony.TelephonyManager;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
+import lineageos.preference.LineageSecureSettingSwitchPreference;
+import lineageos.providers.LineageSettings;
 import lineageos.trust.TrustInterface;
 
 public class TrustPreferences extends SettingsPreferenceFragment {
@@ -38,7 +42,12 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private Preference mSecurityPatchesPref;
     private Preference mEncryptionPref;
     private PreferenceCategory mToolsCategory;
+    private LineageSecureSettingSwitchPreference mUsbRestrictorPref;
     private ListPreference mSmsLimitPref;
+
+    private PreferenceCategory mWarnScreen;
+    private SwitchPreference mWarnSELinuxPref;
+    private SwitchPreference mWarnKeysPref;
 
     private TrustInterface mInterface;
 
@@ -57,7 +66,13 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mSecurityPatchesPref = findPreference("trust_security_patch");
         mEncryptionPref = findPreference("trust_encryption");
         mToolsCategory = (PreferenceCategory) findPreference("trust_category_tools");
+        mUsbRestrictorPref = (LineageSecureSettingSwitchPreference)
+                mToolsCategory.findPreference("trust_restrict_usb");
         mSmsLimitPref = (ListPreference) mToolsCategory.findPreference("sms_security_check_limit");
+
+        mWarnScreen = (PreferenceCategory) findPreference("trust_category_warnings");
+        mWarnSELinuxPref = (SwitchPreference) mWarnScreen.findPreference("trust_warning_selinux");
+        mWarnKeysPref = (SwitchPreference) mWarnScreen.findPreference("trust_warning_keys");
 
         mSELinuxPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_selinux_explain));
@@ -70,6 +85,10 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mSmsLimitPref.setOnPreferenceChangeListener((p, v) ->
                 onSmsLimitChanged(Integer.parseInt((String) v)));
 
+        mWarnSELinuxPref.setOnPreferenceChangeListener((p, v) ->
+                onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_SELINUX));
+        mWarnKeysPref.setOnPreferenceChangeListener((p, v) ->
+                onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_PUBLIC_KEY));
         setup();
     }
 
@@ -87,8 +106,17 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         setupSecurityPatches(secPLevel, secVLevel);
         setupEncryption(encryptLevel);
 
-        if (!isTelephony()) {
+        int currentFeatures = LineageSettings.Secure.getInt(getContext().getContentResolver(),
+                LineageSettings.Secure.TRUST_WARNINGS, TrustInterface.TRUST_WARN_MAX_VALUE);
+        mWarnSELinuxPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_SELINUX) != 0);
+        mWarnKeysPref.setChecked((currentFeatures & TrustInterface.TRUST_WARN_PUBLIC_KEY) != 0);
+
+        if (isTelephony()) {
             mToolsCategory.removePreference(mSmsLimitPref);
+        }
+
+        if (!mInterface.hasUsbRestrictor()) {
+            mToolsCategory.removePreference(mUsbRestrictorPref);
         }
     }
 
@@ -188,11 +216,11 @@ public class TrustPreferences extends SettingsPreferenceFragment {
             summary = R.string.trust_feature_encryption_value_enabled;
         } else if (level == TrustInterface.TRUST_FEATURE_LEVEL_POOR) {
             icon = R.drawable.ic_trust_encryption_poor;
-            summary = isLegacy ?
-                R.string.trust_feature_encryption_value_disabled :
-                R.string.trust_feature_encryption_value_nolock;
+            summary = R.string.trust_feature_encryption_value_nolock;
         } else {
-            icon = R.drawable.ic_trust_encryption_bad;
+            icon = isLegacy ?
+                R.drawable.ic_trust_encryption_poor :
+                R.drawable.ic_trust_encryption_bad;
             summary = R.string.trust_feature_encryption_value_disabled;
         }
         mEncryptionPref.setIcon(icon);
@@ -206,14 +234,45 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         return true;
     }
 
+    private void updateSmsSecuritySummary(int selection) {
+        String value = String.valueOf(selection);
+        String message = selection > 0
+                ? getContext().getString(R.string.sms_security_check_limit_summary, value)
+                : getContext().getString(R.string.sms_security_check_limit_summary_none);
+        mSmsLimitPref.setSummary(message);
+    }
+
     private boolean onSmsLimitChanged(Integer value) {
         Settings.Global.putInt(getContext().getContentResolver(),
                 Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, value);
+        updateSmsSecuritySummary(value);
         return true;
     }
 
+    private boolean onWarningChanged(Boolean value, int feature) {
+        int original = LineageSettings.Secure.getInt(getContext().getContentResolver(),
+                LineageSettings.Secure.TRUST_WARNINGS, TrustInterface.TRUST_WARN_MAX_VALUE);
+        int newValue = value ? (original | feature) : (original & ~feature);
+        boolean success = LineageSettings.Secure.putInt(getContext().getContentResolver(),
+                LineageSettings.Secure.TRUST_WARNINGS, newValue);
+        if (success && !value) {
+            mInterface.removeNotificationForFeature(feature);
+        }
+        return success;
+    }
+
+
     private boolean isTelephony() {
         PackageManager pm = getContext().getPackageManager();
-        return pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+        if (pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+            TelephonyManager manager = (TelephonyManager)getContext().getSystemService(Context.TELEPHONY_SERVICE);
+            if(manager.getPhoneType() == TelephonyManager.PHONE_TYPE_NONE){
+                return true;
+            }else{
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 }
