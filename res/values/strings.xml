@@ -453,6 +453,9 @@
     <string name="status_bar_clock_show_seconds_title">Show seconds</string>
     <string name="status_bar_clock_show_seconds_summary">Show hours, minutes, and seconds</string>
 
+    <string name="status_bar_clock_auto_hide_title">Auto hide</string>
+    <string name="status_bar_clock_auto_hide_summary">Hide clock if launcher is visible</string>
+
     <string name="status_bar_clock_position_title">Clock position</string>
     <string name="status_bar_clock_position_right">Right</string>
     <string name="status_bar_clock_position_left">Left</string>
