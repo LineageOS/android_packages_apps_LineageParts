@@ -53,10 +53,6 @@
 
     <dimen name="profile_instruction_padding">8dp</dimen>
 
-    <!-- Berry lite -->
-    <dimen name="style_accent_preview">32dp</dimen>
-    <dimen name="style_accent_icon">24dp</dimen>
-
     <!-- Trust onBoarding -->
     <dimen name="trust_logo_vertical_margin">48dp</dimen>
     <dimen name="trust_logo_horizontal_margin">40dp</dimen>
