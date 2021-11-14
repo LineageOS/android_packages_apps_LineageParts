@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3ecf69a_acdf6226",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24774
+      },
+      "writtenOn": "2021-11-14T20:04:10Z",
+      "side": 1,
+      "message": "Hello all! I got it working with a BroadcastReceiver so there is no need anymore to have a change in the NetworkPolicyManager. Can you please verify that? I will abandon the change for the frameworks/base then.\n\nOne thing which I think should be done is, that the list view should be horizontally scrollable for narrower devices when needed. ",
+      "revId": "2a41022d29561848b68e0a041a686aaaadc58b08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
