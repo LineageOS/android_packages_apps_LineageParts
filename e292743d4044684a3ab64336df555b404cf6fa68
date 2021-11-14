@@ -16,6 +16,24 @@
       "message": "alert dialogs fixed?",
       "revId": "e292743d4044684a3ab64336df555b404cf6fa68",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ea17597_8391e291",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17117
+      },
+      "writtenOn": "2021-11-14T15:16:12Z",
+      "side": 1,
+      "message": "yeah, there was a problem with dialogPreferenceStyle being overriden incorrectly",
+      "parentUuid": "ef906e89_2c2c423d",
+      "revId": "e292743d4044684a3ab64336df555b404cf6fa68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
