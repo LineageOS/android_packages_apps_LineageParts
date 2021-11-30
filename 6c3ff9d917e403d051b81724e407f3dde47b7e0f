@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b380cc2_5eb366f1",
+        "filename": "src/org/lineageos/lineageparts/atv/KeyHandler.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-11-30T16:06:23Z",
+      "side": 1,
+      "message": "this does nothing, .collect re-creates the Map",
+      "range": {
+        "startLine": 35,
+        "startChar": 47,
+        "endLine": 35,
+        "endChar": 64
+      },
+      "revId": "6c3ff9d917e403d051b81724e407f3dde47b7e0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
