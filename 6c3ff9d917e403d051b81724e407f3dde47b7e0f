@@ -22,6 +22,30 @@
       },
       "revId": "6c3ff9d917e403d051b81724e407f3dde47b7e0f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87cddef0_4b2f3e94",
+        "filename": "src/org/lineageos/lineageparts/atv/KeyHandler.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2021-11-30T17:03:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3b380cc2_5eb366f1",
+      "range": {
+        "startLine": 35,
+        "startChar": 47,
+        "endLine": 35,
+        "endChar": 64
+      },
+      "revId": "6c3ff9d917e403d051b81724e407f3dde47b7e0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
