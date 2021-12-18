@@ -78,6 +78,9 @@ public class KeyHandler implements DeviceKeyHandler {
         } else if (packageName.equals("com.android.tv.settings")) {
             launchIntent = new Intent("android.settings.SETTINGS");
             launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        } else if (packageName.equals("com.google.android.intent.action.CONNECT_INPUT")) {
+            launchIntent = new Intent("com.google.android.intent.action.CONNECT_INPUT");
+            launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         } else {
             launchIntent = mContext.getPackageManager()
                     .getLaunchIntentForPackage(packageName);
