@@ -14,86 +14,13 @@
      limitations under the License.
 -->
 
-<resources>
+<resources
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
 
-    <style name="TextAppearance" parent="android:TextAppearance.Material">
-    </style>
+    <style name="TextAppearance" parent="android:TextAppearance.DeviceDefault"/>
 
-    <style name="TextAppearance.info_label">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextAppearance.info_small">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textStyle">normal</item>
-    </style>
-
-    <style name="TextAppearance.info_value">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">normal</item>
-    </style>
-
-    <style name="DialogPreferenceStyle" parent="@*android:style/Preference.DeviceDefault.DialogPreference">
-        <item name="allowDividerAbove">false</item>
-        <item name="allowDividerBelow">true</item>
-    </style>
-
-    <style name="PreferenceFragmentStyle" parent="@*android:style/PreferenceFragment.Material">
-        <item name="allowDividerAfterLastItem">false</item>
-        <item name="android:layout">@layout/preference_list_fragment</item>
-    </style>
-
-    <style name="PreferenceScreenStyle" parent="@*android:style/Preference.DeviceDefault.PreferenceScreen">
-        <item name="allowDividerAbove">false</item>
-        <item name="allowDividerBelow">true</item>
-    </style>
-
-    <style name="PreferenceTheme" parent="@style/PreferenceTheme.SettingsLib">
-        <item name="dialogPreferenceStyle">@style/DialogPreferenceStyle</item>
-        <item name="preferenceScreenStyle">@style/PreferenceScreenStyle</item>
-    </style>
-
-    <style name="PreferenceHeaderPanelSinglePane">
-        <item name="android:layout_marginStart">0dp</item>
-        <item name="android:layout_marginEnd">0dp</item>
-        <item name="android:background">@null</item>
-    </style>
-
-    <style name="PreferencePanelSinglePane" parent="@*android:style/PreferencePanel">
-        <item name="android:layout_marginStart">0dp</item>
-        <item name="android:layout_marginEnd">0dp</item>
-        <item name="android:paddingStart">0dp</item>
-        <item name="android:paddingEnd">0dp</item>
-        <item name="android:background">@null</item>
-        <item name="android:scrollbarStyle">outsideOverlay</item>
-    </style>
-
-    <style name="PreferenceHeaderListSinglePane" parent="@*android:style/PreferenceHeaderList">
-        <item name="android:paddingStart">@dimen/settings_side_margin</item>
-        <item name="android:paddingEnd">@dimen/settings_side_margin</item>
-        <item name="android:paddingTop">0dp</item>
-        <item name="android:paddingBottom">0dp</item>
-        <item name="android:layout_marginStart">0dp</item>
-        <item name="android:layout_marginEnd">0dp</item>
-        <item name="android:layout_marginTop">0dp</item>
-        <item name="android:layout_marginBottom">0dp</item>
-        <item name="android:scrollbarStyle">outsideOverlay</item>
-    </style>
-
-    <style name="PreferenceFragmentListSinglePane" parent="@*android:style/PreferenceFragmentList">
-        <item name="android:paddingStart">@dimen/settings_side_margin</item>
-        <item name="android:paddingEnd">@dimen/settings_side_margin</item>
-        <item name="android:layout_marginStart">0dp</item>
-        <item name="android:layout_marginEnd">0dp</item>
-        <item name="android:scrollbarStyle">outsideOverlay</item>
-    </style>
-
-    <style name="TextAppearance.PagerTabs" parent="@android:style/TextAppearance.Material.Widget.TabWidget" />
-
-    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
-    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small" />
-    <style name="TextAppearance.Switch" parent="@android:style/TextAppearance.Material.Title" />
+    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.DeviceDefault.Medium"/>
+    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.DeviceDefault.Small"/>
 
     <style name="TextAppearance.CategoryTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Body2">
@@ -101,11 +28,6 @@
         <item name="android:textSize">11sp</item>
         <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->
         <item name="android:letterSpacing">0.072727273</item>
-    </style>
-
-    <style name="TextAppearance.Small.SwitchBar">
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:textStyle">normal</item>
     </style>
 
     <style name="ProfilesPreferenceStyle">

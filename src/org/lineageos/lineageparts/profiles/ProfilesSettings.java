@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017-2020 The LineageOS Project
+ *               2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,8 @@ import android.widget.TextView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
-import org.lineageos.lineageparts.widget.LineageBaseSystemSettingSwitchBar;
+import com.android.settingslib.widget.MainSwitchBar;
+
 import org.lineageos.lineageparts.PartsActivity;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -51,8 +52,7 @@ import lineageos.app.ProfileManager;
 import lineageos.providers.LineageSettings;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements LineageBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
-        Preference.OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "ProfilesSettings";
 
     public static final String EXTRA_PROFILE = "Profile";
@@ -63,8 +63,8 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private final IntentFilter mFilter;
     private final BroadcastReceiver mReceiver;
 
+    private MainSwitchBar mProfileEnabler;
     private ProfileManager mProfileManager;
-    private LineageBaseSystemSettingSwitchBar mProfileEnabler;
 
     private boolean mEnabled;
 
@@ -121,6 +121,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         TextView emptyTextView = (TextView) v.findViewById(R.id.empty);
         setEmptyView(emptyTextView);
 
+        /*
         getFloatingActionButton().setImageResource(R.drawable.ic_menu_add_white);
         getFloatingActionButton().setContentDescription(getString(R.string.profiles_add));
         getFloatingActionButton().setOnClickListener(
@@ -130,6 +131,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                         addProfile();
                     }
                 });
+         */
     }
 
     @Override
@@ -144,21 +146,13 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
-        if (mProfileEnabler != null) {
-            mProfileEnabler.resume(getActivity());
-        }
         getActivity().registerReceiver(mReceiver, mFilter);
-
-        // check if we are enabled
         updateProfilesEnabledState();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        if (mProfileEnabler != null) {
-            mProfileEnabler.pause();
-        }
         getActivity().unregisterReceiver(mReceiver);
     }
 
@@ -166,16 +160,13 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onStart() {
         super.onStart();
         final PartsActivity activity = (PartsActivity) getActivity();
-        mProfileEnabler = new LineageBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                LineageSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
-    }
-
-    @Override
-    public void onDestroyView() {
-        if (mProfileEnabler != null) {
-            mProfileEnabler.teardownSwitchBar();
-        }
-        super.onDestroyView();
+        mProfileEnabler = activity.getMainSwitchBar();
+        mProfileEnabler.getSwitch().setOnCheckedChangeListener((buttonView, isChecked) -> {
+            LineageSettings.System.putInt(activity.getContentResolver(),
+                    LineageSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0);
+        });
+        mProfileEnabler.setTitle(getString(R.string.profiles_settings_enable_title));
+        mProfileEnabler.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -232,9 +223,10 @@ public class ProfilesSettings extends SettingsPreferenceFragment
 
         mEnabled = LineageSettings.System.getInt(activity.getContentResolver(),
                 LineageSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        mProfileEnabler.setChecked(mEnabled);
         activity.invalidateOptionsMenu();
 
-        getFloatingActionButton().setVisibility(mEnabled ? View.VISIBLE : View.GONE);
+//        getFloatingActionButton().setVisibility(mEnabled ? View.VISIBLE : View.GONE);
         if (!mEnabled) {
             getPreferenceScreen().removeAll(); // empty it
         } else {
@@ -244,6 +236,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         onSettingsChanged(null);
     }
 
+    /*
     @Override
     public void onEnablerChanged(boolean isEnabled) {
         Intent intent = new Intent(ProfileManager.PROFILES_STATE_CHANGED_ACTION);
@@ -253,6 +246,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                         ProfileManager.PROFILES_STATE_DISABLED);
         getActivity().sendBroadcast(intent);
     }
+    */
 
     public void refreshList() {
         PreferenceScreen plist = getPreferenceScreen();
