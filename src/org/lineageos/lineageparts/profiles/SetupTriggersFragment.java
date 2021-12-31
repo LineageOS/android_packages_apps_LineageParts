@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.lineageos.lineageparts.profiles;
 
 import android.annotation.Nullable;
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -83,16 +83,21 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        final ActionBar actionBar = getActivity().getActionBar();
-        if (actionBar != null) {
-            if (mNewProfileMode) {
-                actionBar.setTitle(R.string.profile_setup_setup_triggers_title);
-            } else {
-                String title = getString(R.string.profile_setup_setup_triggers_title_config,
-                        mProfile.getName());
-                actionBar.setTitle(title);
-            }
+        final PartsActivity activity = (PartsActivity) getActivity();
+        if (mNewProfileMode) {
+            activity.setTitle(R.string.profiles_create_new);
+            activity.getTopIntro().setText(R.string.profile_setup_setup_triggers_title);
+        } else {
+            activity.setTitle(R.string.profile_profile_manage);
+            activity.getTopIntro().setText(getString(
+                    R.string.profile_setup_setup_triggers_title_config, mProfile.getName()));
         }
+        activity.showTopIntro(true);
+
+        activity.getCollapsingToolbarLayout().measure(
+                View.MeasureSpec.EXACTLY, View.MeasureSpec.EXACTLY);
+        activity.getCollapsingToolbarLayout().post(() ->
+                mPager.setHeightOffset(activity.getCollapsingToolbarLayout().getMeasuredHeight()));
     }
 
     @Override

@@ -33,6 +33,8 @@ import java.util.Locale;
  */
 public final class RtlCompatibleViewPager extends ViewPager {
 
+    private int mHeightOffset;
+
     /**
      * Callback interface for responding to changing state of the selected page.
      * Positions supplied will always be the logical position in the adapter -
@@ -73,6 +75,16 @@ public final class RtlCompatibleViewPager extends ViewPager {
         super.onRestoreInstanceState(rtlSavedState.getSuperState());
 
         setCurrentItem(rtlSavedState.position);
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec - mHeightOffset);
+    }
+
+    public void setHeightOffset(int heightOffset) {
+        mHeightOffset = heightOffset;
+        requestLayout();
     }
 
     /**

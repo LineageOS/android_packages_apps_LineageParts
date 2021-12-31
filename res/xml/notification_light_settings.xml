@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!--
+     Copyright (C) 2016 The CyanogenMod Project
+                   2017-2018,2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,13 +20,13 @@
         android:key="notification_lights"
         android:title="@string/notification_light_title">
 
+    <lineageos.preference.SystemSettingMainSwitchPreference
+        android:key="notification_light_pulse"
+        android:title="@string/notification_light_enable_title" />
+
     <PreferenceCategory
         android:key="general_section"
         android:title="@string/notification_light_general_title">
-
-        <lineageos.preference.SystemSettingSwitchPreference
-            android:key="notification_light_pulse"
-            android:title="@string/notification_light_title" />
 
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="notification_light_color_auto"
