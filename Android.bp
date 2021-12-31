@@ -39,7 +39,6 @@ android_app {
         "androidx.dynamicanimation_dynamicanimation",
         "androidx.legacy_legacy-support-v13",
         "androidx.palette_palette",
-        "androidx.preference_preference",
         "androidx.recyclerview_recyclerview",
         "jsr305",
         "org.lineageos.platform.internal",
