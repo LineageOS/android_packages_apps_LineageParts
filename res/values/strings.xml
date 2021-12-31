@@ -580,14 +580,6 @@
     <string name="long_screen_settings_summary">Force legacy apps to use full screen aspect ratio</string>
     <string name="long_screen_settings_no_apps">No apps</string>
 
-    <!-- Sounds: Charging sounds -->
-    <string name="charging_sounds_settings_title">Charging sounds</string>
-    <string name="charging_sounds_enabled_title">Enable</string>
-    <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
-    <string name="power_notifications_vibrate_title">Vibrate</string>
-    <string name="charging_sounds_ringtone_title">Notification sound</string>
-    <string name="charging_sounds_ringtone_silent">Silent</string>
-
     <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
     <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>

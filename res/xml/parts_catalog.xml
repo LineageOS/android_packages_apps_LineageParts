@@ -92,11 +92,6 @@
           android:fragment="org.lineageos.lineageparts.applications.LongScreenSettings"
           lineage:xmlRes="@xml/long_screen_prefs" />
 
-    <part android:key="charging_sounds_settings"
-          android:title="@string/charging_sounds_settings_title"
-          android:fragment="org.lineageos.lineageparts.sounds.ChargingSoundsSettings"
-          lineage:xmlRes="@xml/charging_sounds_settings" />
-
     <part android:key="touchscreen_gesture_settings"
           android:title="@string/touchscreen_gesture_settings_title"
           android:summary="@string/touchscreen_gesture_settings_summary"
