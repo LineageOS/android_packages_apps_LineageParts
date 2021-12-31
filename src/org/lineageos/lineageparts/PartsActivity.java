@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017-2019 The LineageOS Project
+ *               2017-2019,2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,31 +17,31 @@
 
 package org.lineageos.lineageparts;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.MainSwitchBar;
+
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
-import org.lineageos.lineageparts.widget.SwitchBar;
 import org.lineageos.internal.lineageparts.PartInfo;
 import org.lineageos.internal.lineageparts.PartsList;
 
-public class PartsActivity extends FragmentActivity implements
+public class PartsActivity extends CollapsingToolbarBaseActivity implements
         PreferenceFragment.OnPreferenceStartFragmentCallback,
         PreferenceFragment.OnPreferenceStartScreenCallback {
 
@@ -120,25 +120,6 @@ public class PartsActivity extends FragmentActivity implements
         if (getActionBar() != null) {
             getActionBar().setDisplayHomeAsUpEnabled(true);
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        if (menu == null) {
-            return false;
-        }
-
-        final MenuItem searchItem = menu.add(Menu.NONE, Menu.NONE, Menu.NONE, R.string.search_menu);
-        searchItem.setIcon(R.drawable.ic_search_24dp);
-        searchItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
-        searchItem.setOnMenuItemClickListener(item -> {
-                Intent intent = new Intent(Settings.ACTION_APP_SEARCH_SETTINGS);
-                intent.setPackage("com.android.settings.intelligence");
-                startActivity(intent);
-                return true;
-            });
-
-        return true;
     }
 
     @Override
@@ -241,7 +222,7 @@ public class PartsActivity extends FragmentActivity implements
 
         fragment.setArguments(args);
 
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.main_content, fragment);
         if (titleRes > 0) {
             transaction.setBreadCrumbTitle(titleRes);
@@ -253,6 +234,13 @@ public class PartsActivity extends FragmentActivity implements
         return true;
     }
 
+    public TextView getTopIntro() {
+        return (TextView) findViewById(R.id.top_intro);
+    }
+
+    public void showTopIntro(boolean show) {
+        findViewById(R.id.top_intro).setVisibility(show ? View.VISIBLE : View.GONE);
+    }
 
     public Button getBackButton() {
         return (Button) findViewById(R.id.back_button);
@@ -266,8 +254,8 @@ public class PartsActivity extends FragmentActivity implements
         findViewById(R.id.button_bar).setVisibility(show ? View.VISIBLE : View.GONE);
     }
 
-    public SwitchBar getSwitchBar() {
-        return (SwitchBar) findViewById(R.id.switch_bar);
+    public MainSwitchBar getMainSwitchBar() {
+        return (MainSwitchBar) findViewById(R.id.main_switch_bar);
     }
 
     private void setTitleFromIntent(Intent intent, PartInfo part) {
