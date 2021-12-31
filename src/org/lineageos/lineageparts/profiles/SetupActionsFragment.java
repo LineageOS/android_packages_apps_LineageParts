@@ -14,11 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.lineageos.lineageparts.profiles;
 
-import android.app.ActionBar;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.NotificationGroup;
 import android.app.admin.DevicePolicyManager;
@@ -56,6 +55,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileGroup;
@@ -342,14 +343,16 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        final ActionBar actionBar = getActivity().getActionBar();
-        if (actionBar != null) {
-            if (mNewProfileMode) {
-                getActivity().getActionBar().setTitle(R.string.profile_setup_actions_title);
-            } else {
-                getActivity().getActionBar().setTitle(mProfile.getName());
-            }
+        final PartsActivity activity = (PartsActivity) getActivity();
+        if (mNewProfileMode) {
+            activity.setTitle(getString(R.string.profiles_create_new));
+            activity.getTopIntro().setText(R.string.profile_setup_actions_title);
+        } else {
+            activity.setTitle(R.string.profile_profile_manage);
+            activity.getTopIntro().setText(getString(
+                    R.string.profile_selected, mProfile.getName()));
         }
+        activity.showTopIntro(true);
     }
 
     private AlertDialog requestFillProfileFromSettingsDialog() {

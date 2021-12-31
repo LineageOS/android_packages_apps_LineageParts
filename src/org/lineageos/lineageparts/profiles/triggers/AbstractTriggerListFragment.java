@@ -15,8 +15,6 @@
  */
 package org.lineageos.lineageparts.profiles.triggers;
 
-import android.app.AlertDialog;
-import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -29,6 +27,9 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
