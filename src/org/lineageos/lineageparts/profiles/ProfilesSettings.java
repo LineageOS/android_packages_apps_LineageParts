@@ -39,7 +39,7 @@ import android.widget.TextView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
-import org.lineageos.lineageparts.widget.LineageBaseSystemSettingSwitchBar;
+//import org.lineageos.lineageparts.widget.LineageBaseSystemSettingSwitchBar;
 import org.lineageos.lineageparts.PartsActivity;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -51,8 +51,7 @@ import lineageos.app.ProfileManager;
 import lineageos.providers.LineageSettings;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements LineageBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
-        Preference.OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "ProfilesSettings";
 
     public static final String EXTRA_PROFILE = "Profile";
@@ -64,7 +63,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private final BroadcastReceiver mReceiver;
 
     private ProfileManager mProfileManager;
-    private LineageBaseSystemSettingSwitchBar mProfileEnabler;
+//    private LineageBaseSystemSettingSwitchBar mProfileEnabler;
 
     private boolean mEnabled;
 
@@ -144,9 +143,11 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
+        /*
         if (mProfileEnabler != null) {
             mProfileEnabler.resume(getActivity());
         }
+        */
         getActivity().registerReceiver(mReceiver, mFilter);
 
         // check if we are enabled
@@ -156,9 +157,11 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     @Override
     public void onPause() {
         super.onPause();
+        /*
         if (mProfileEnabler != null) {
             mProfileEnabler.pause();
         }
+        */
         getActivity().unregisterReceiver(mReceiver);
     }
 
@@ -166,15 +169,17 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onStart() {
         super.onStart();
         final PartsActivity activity = (PartsActivity) getActivity();
-        mProfileEnabler = new LineageBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                LineageSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
+//        mProfileEnabler = new LineageBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
+//                LineageSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
     }
 
     @Override
     public void onDestroyView() {
+        /*
         if (mProfileEnabler != null) {
             mProfileEnabler.teardownSwitchBar();
         }
+        */
         super.onDestroyView();
     }
 
@@ -244,6 +249,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         onSettingsChanged(null);
     }
 
+/*
     @Override
     public void onEnablerChanged(boolean isEnabled) {
         Intent intent = new Intent(ProfileManager.PROFILES_STATE_CHANGED_ACTION);
@@ -253,6 +259,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                         ProfileManager.PROFILES_STATE_DISABLED);
         getActivity().sendBroadcast(intent);
     }
+*/
 
     public void refreshList() {
         PreferenceScreen plist = getPreferenceScreen();

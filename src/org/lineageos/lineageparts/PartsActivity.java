@@ -31,17 +31,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.fragment.app.FragmentActivity;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
+
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
-import org.lineageos.lineageparts.widget.SwitchBar;
+//import org.lineageos.lineageparts.widget.SwitchBar;
 import org.lineageos.internal.lineageparts.PartInfo;
 import org.lineageos.internal.lineageparts.PartsList;
 
-public class PartsActivity extends FragmentActivity implements
+public class PartsActivity extends CollapsingToolbarBaseActivity implements
         PreferenceFragment.OnPreferenceStartFragmentCallback,
         PreferenceFragment.OnPreferenceStartScreenCallback {
 
@@ -266,9 +268,9 @@ public class PartsActivity extends FragmentActivity implements
         findViewById(R.id.button_bar).setVisibility(show ? View.VISIBLE : View.GONE);
     }
 
-    public SwitchBar getSwitchBar() {
-        return (SwitchBar) findViewById(R.id.switch_bar);
-    }
+//    public SwitchBar getSwitchBar() {
+//        return (SwitchBar) findViewById(R.id.switch_bar);
+//    }
 
     private void setTitleFromIntent(Intent intent, PartInfo part) {
         if (part != null) {
