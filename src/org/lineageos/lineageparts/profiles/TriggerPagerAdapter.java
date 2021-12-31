@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ *               2017,2019,2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,16 +14,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.lineageos.lineageparts.profiles;
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.ViewGroup;
 
-import androidx.legacy.app.FragmentPagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.profiles.triggers.BluetoothTriggerFragment;
@@ -44,7 +46,7 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
 
     private final List<Holder> mHolderList = Lists.newArrayList();
 
-    private final Activity mFragmentActivity;
+    private final FragmentActivity mFragmentActivity;
 
     private int mCurrentPage;
 
@@ -55,7 +57,7 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
      *            {@link androidx.fragment.app.Fragment}.
      * @param fm the FragmentManager to use.
      */
-    public TriggerPagerAdapter(Activity activity, FragmentManager fm) {
+    public TriggerPagerAdapter(FragmentActivity activity, FragmentManager fm) {
         super(fm);
         mFragmentActivity = activity;
     }

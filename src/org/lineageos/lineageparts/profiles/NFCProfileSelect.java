@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017,2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,12 +20,13 @@ package org.lineageos.lineageparts.profiles;
 import java.util.UUID;
 
 import android.app.Activity;
-import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
@@ -85,7 +86,7 @@ public class NFCProfileSelect extends Activity {
             profileNames[i] = profiles[i].getName();
         }
 
-        Builder builder = new Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.profile_settings_title);
         builder.setSingleChoiceItems(profileNames, currentChoice, new DialogInterface.OnClickListener() {
             @Override
