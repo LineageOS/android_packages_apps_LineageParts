@@ -37,7 +37,6 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="search">Search</string>
-    <string name="search_menu">Search settings</string>
     <string name="disabled">Disabled</string>
     <string name="enabled">Enabled</string>
 
@@ -81,6 +80,7 @@
 
     <!-- Battery light settings -->
     <string name="battery_light_title">Battery light</string>
+    <string name="battery_light_enable_title">Enable battery light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_full_charge_disabled_title">Turn off when fully charged</string>
     <string name="battery_light_list_title">Colors</string>
@@ -92,6 +92,7 @@
 
     <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Notification light</string>
+    <string name="notification_light_enable_title">Enable notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_advanced_title">Advanced</string>
     <string name="notification_light_applist_title">Apps</string>
@@ -311,6 +312,7 @@
 
     <!-- Profiles settings  -->
     <string name="profiles_settings_title">System profiles</string>
+    <string name="profiles_settings_enable_title">Enable profiles</string>
     <string name="profiles_add">Add</string>
     <string name="profile_menu_delete">Delete</string>
     <string name="profile_settings_title">Profile</string>
@@ -544,7 +546,7 @@
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>
-    <string name="stats_collection_title">Stats collection</string>
+    <string name="stats_collection_enable_title">Enable stats collection</string>
     <string name="stats_collection_summary">Allow installation metrics and device statistics to be collected</string>
 
     <!-- Display : Rotation  -->
@@ -582,8 +584,8 @@
 
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Charging sounds</string>
-    <string name="charging_sounds_enabled_title">Enable</string>
-    <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
+    <string name="charging_sounds_enable_title">Enable charging sounds</string>
+    <string name="charging_sounds_summary">Play a sound when connecting or disconnecting a power source</string>
     <string name="power_notifications_vibrate_title">Vibrate</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
     <string name="charging_sounds_notification_category_title">Notification sounds</string>
