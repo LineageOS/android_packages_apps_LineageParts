@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017-2020 The LineageOS Project
+ *               2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,12 +34,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
-import org.lineageos.lineageparts.widget.LineageBaseSystemSettingSwitchBar;
+import com.android.settingslib.widget.MainSwitchPreference;
+import com.android.settingslib.widget.OnMainSwitchChangeListener;
+
 import org.lineageos.lineageparts.PartsActivity;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -51,8 +54,7 @@ import lineageos.app.ProfileManager;
 import lineageos.providers.LineageSettings;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements LineageBaseSystemSettingSwitchBar.SwitchBarChangeCallback,
-        Preference.OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener, OnMainSwitchChangeListener {
     private static final String TAG = "ProfilesSettings";
 
     public static final String EXTRA_PROFILE = "Profile";
@@ -64,7 +66,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     private final BroadcastReceiver mReceiver;
 
     private ProfileManager mProfileManager;
-    private LineageBaseSystemSettingSwitchBar mProfileEnabler;
+    private MainSwitchPreference mProfileEnabler;
 
     private boolean mEnabled;
 
@@ -145,7 +147,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onResume() {
         super.onResume();
         if (mProfileEnabler != null) {
-            mProfileEnabler.resume(getActivity());
+//            mProfileEnabler.resume(getActivity());
         }
         getActivity().registerReceiver(mReceiver, mFilter);
 
@@ -157,7 +159,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onPause() {
         super.onPause();
         if (mProfileEnabler != null) {
-            mProfileEnabler.pause();
+//            mProfileEnabler.pause();
         }
         getActivity().unregisterReceiver(mReceiver);
     }
@@ -166,14 +168,14 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     public void onStart() {
         super.onStart();
         final PartsActivity activity = (PartsActivity) getActivity();
-        mProfileEnabler = new LineageBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                LineageSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
+//        mProfileEnabler = new LineageBaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
+//                LineageSettings.System.SYSTEM_PROFILES_ENABLED, true, this);
     }
 
     @Override
     public void onDestroyView() {
         if (mProfileEnabler != null) {
-            mProfileEnabler.teardownSwitchBar();
+//            mProfileEnabler.teardownSwitchBar();
         }
         super.onDestroyView();
     }
@@ -245,10 +247,10 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     }
 
     @Override
-    public void onEnablerChanged(boolean isEnabled) {
+    public void onSwitchChanged(Switch switchView, boolean isChecked) {
         Intent intent = new Intent(ProfileManager.PROFILES_STATE_CHANGED_ACTION);
         intent.putExtra(ProfileManager.EXTRA_PROFILES_STATE,
-                isEnabled ?
+                isChecked ?
                         ProfileManager.PROFILES_STATE_ENABLED :
                         ProfileManager.PROFILES_STATE_DISABLED);
         getActivity().sendBroadcast(intent);
