@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!--
+     Copyright (C) 2016 The CyanogenMod Project
+                   2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,11 +21,14 @@
     android:key="lineagestats"
     android:title="@string/anonymous_statistics_title">
 
-    <lineageos.preference.LineageSecureSettingSwitchPreference
-            android:key="stats_collection"
-            android:title="@string/stats_collection_title"
-            android:summary="@string/stats_collection_summary"
-            android:defaultValue="true" />
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="stats_collection_top_intro"
+        android:title="@string/stats_collection_summary"/>
+
+    <lineageos.preference.SecureSettingMainSwitchPreference
+        android:key="stats_collection"
+        android:title="@string/stats_collection_enable_title"
+        android:defaultValue="true" />
 
     <PreferenceScreen
         android:title="@string/preview_data_title"
