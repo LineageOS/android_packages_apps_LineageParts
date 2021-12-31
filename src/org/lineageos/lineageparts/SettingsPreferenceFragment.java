@@ -49,7 +49,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.widget.DialogCreatable;
-import org.lineageos.lineageparts.widget.FloatingActionButton;
 import org.lineageos.lineageparts.widget.HighlightablePreferenceGroupAdapter;
 import org.lineageos.lineageparts.widget.LayoutPreference;
 
@@ -100,7 +99,6 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
     };
 
     private ViewGroup mPinnedHeaderFrameLayout;
-    private FloatingActionButton mFloatingActionButton;
     private ViewGroup mButtonBar;
 
     private LayoutPreference mHeader;
@@ -128,17 +126,12 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             Bundle savedInstanceState) {
         final View root = super.onCreateView(inflater, container, savedInstanceState);
         mPinnedHeaderFrameLayout = (ViewGroup) root.findViewById(R.id.pinned_header);
-        mFloatingActionButton = (FloatingActionButton) root.findViewById(R.id.fab);
         mButtonBar = (ViewGroup) root.findViewById(R.id.button_bar);
         return root;
     }
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-    }
-
-    public FloatingActionButton getFloatingActionButton() {
-        return mFloatingActionButton;
     }
 
     public ViewGroup getButtonBar() {
