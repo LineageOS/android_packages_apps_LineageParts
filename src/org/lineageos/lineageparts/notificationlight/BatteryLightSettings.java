@@ -33,6 +33,7 @@ import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
+import lineageos.preference.LineageSystemSettingMainSwitchPreference;
 import lineageos.preference.LineageSystemSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
@@ -58,7 +59,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private ApplicationLightPreference mLowColorPref;
     private ApplicationLightPreference mMediumColorPref;
     private ApplicationLightPreference mFullColorPref;
-    private LineageSystemSettingSwitchPreference mLightEnabledPref;
+    private LineageSystemSettingMainSwitchPreference mLightEnabledPref;
     private LineageSystemSettingSwitchPreference mLightFullChargeDisabledPref;
     private LineageSystemSettingSwitchPreference mPulseEnabledPref;
     private BatteryBrightnessPreference mBatteryBrightnessPref;
