@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d687f951_cca6b227",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-12-31T12:47:48Z",
+      "side": 1,
+      "message": "I\u0027ll address concerns from https://review.lineageos.org/q/topic:eleven-custom-charging-sounds and forward port it.",
+      "revId": "79509bab19abeb5b946be66a1f6d8b9bba0a0142",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
