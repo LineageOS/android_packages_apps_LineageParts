@@ -21,10 +21,13 @@
     android:key="charging_sounds_settings"
     android:title="@string/charging_sounds_settings_title">
 
-    <lineageos.preference.GlobalSettingSwitchPreference
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="charging_sounds_top_intro"
+        android:title="@string/charging_sounds_summary"/>
+
+    <lineageos.preference.GlobalSettingMainSwitchPreference
         android:key="charging_sounds_enabled"
         android:title="@string/charging_sounds_enabled_title"
-        android:summary="@string/charging_sounds_enabled_summary"
         android:defaultValue="true" />
 
     <lineageos.preference.SecureSettingSwitchPreference
