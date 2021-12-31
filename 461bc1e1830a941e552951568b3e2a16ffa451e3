@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac3fb33e_4985ae57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-12-31T14:31:27Z",
+      "side": 1,
+      "message": "Example on lineage-19.0: https://imgur.com/a/kLxEaHm",
+      "revId": "461bc1e1830a941e552951568b3e2a16ffa451e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
