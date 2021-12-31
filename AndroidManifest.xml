@@ -2,7 +2,7 @@
 <!--
 /**
  * Copyright 2016, The CyanogenMod Project
- * Copyright 2017-2020, The LineageOS Project
+ * Copyright 2017-2021, The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,7 +48,7 @@
 
     <application android:label="@string/lineageparts_title"
             android:icon="@mipmap/ic_launcher"
-            android:theme="@style/Theme.Settings"
+            android:theme="@style/Theme.SubSettingsBase"
             android:hardwareAccelerated="true"
             android:supportsRtl="true"
             android:defaultToDeviceProtectedStorage="true"

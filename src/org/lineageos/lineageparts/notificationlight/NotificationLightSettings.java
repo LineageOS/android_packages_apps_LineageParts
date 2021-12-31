@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017-2020 The LineageOS Project
+ *               2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,7 +56,7 @@ import java.util.List;
 import java.util.Map;
 
 import lineageos.preference.LineageSystemSettingSwitchPreference;
-import lineageos.preference.SystemSettingSwitchPreference;
+import lineageos.preference.SystemSettingMainSwitchPreference;
 import lineageos.providers.LineageSettings;
 import lineageos.util.ColorUtils;
 
@@ -84,7 +84,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private PackageManager mPackageManager;
     private PreferenceGroup mApplicationPrefList;
     private NotificationBrightnessPreference mNotificationBrightnessPref;
-    private SystemSettingSwitchPreference mEnabledPref;
+    private SystemSettingMainSwitchPreference mEnabledPref;
     private LineageSystemSettingSwitchPreference mCustomEnabledPref;
     private LineageSystemSettingSwitchPreference mScreenOnLightsPref;
     private LineageSystemSettingSwitchPreference mAutoGenerateColors;
