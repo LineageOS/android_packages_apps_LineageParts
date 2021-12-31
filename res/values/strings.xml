@@ -37,7 +37,6 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="search">Search</string>
-    <string name="search_menu">Search settings</string>
     <string name="disabled">Disabled</string>
     <string name="enabled">Enabled</string>
 
@@ -582,8 +581,8 @@
 
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Charging sounds</string>
-    <string name="charging_sounds_enabled_title">Enable</string>
-    <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
+    <string name="charging_sounds_enabled_title">Enable charging sounds</string>
+    <string name="charging_sounds_summary">Play a sound when connecting or disconnecting a power source</string>
     <string name="power_notifications_vibrate_title">Vibrate</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
     <string name="charging_sounds_notification_category_title">Notification sounds</string>
