@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2019 The LineageOS Project
+ * Copyright (C) 2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,6 +44,8 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.network_traffic_settings);
+        getActivity().setTitle(R.string.network_traffic_settings_title);
+
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mNetTrafficMode = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_MODE);

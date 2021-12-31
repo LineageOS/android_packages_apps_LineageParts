@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2010 Daniel Nilsson
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017,2019-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,6 @@
 package org.lineageos.lineageparts.notificationlight;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -45,6 +44,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
 
 import org.lineageos.internal.notification.LedValues;
 import org.lineageos.internal.notification.LightsCapabilities;
