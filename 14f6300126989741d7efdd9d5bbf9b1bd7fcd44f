@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "14d23c12_582e1910",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-01-01T01:21:12Z",
+      "side": 1,
+      "message": "If I am not mistaken, only thing left is to check LiveDisplay settings and deal with Profiles mess.",
+      "revId": "14f6300126989741d7efdd9d5bbf9b1bd7fcd44f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
