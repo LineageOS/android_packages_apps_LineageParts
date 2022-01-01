@@ -19,13 +19,14 @@ package org.lineageos.lineageparts.profiles;
 
 import java.util.UUID;
 
-import android.app.Activity;
-import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
+
+import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.app.AlertDialog.Builder;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
@@ -35,7 +36,7 @@ import org.lineageos.lineageparts.R;
 /**
  * Activity to support attaching a unknown NFC tag to an existing profile.
  */
-public class NFCProfileSelect extends Activity {
+public class NFCProfileSelect extends FragmentActivity {
 
     private static final String TAG = "NFCProfileSelect";
 
