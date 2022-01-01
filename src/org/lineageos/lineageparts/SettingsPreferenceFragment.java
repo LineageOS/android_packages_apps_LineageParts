@@ -19,8 +19,6 @@ package org.lineageos.lineageparts;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.Fragment;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -38,14 +36,17 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.animation.*;
 
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceGroupAdapter;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.PreferenceViewHolder;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.settingslib.core.lifecycle.ObservablePreferenceFragment;
 
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.widget.DialogCreatable;
@@ -60,7 +61,7 @@ import lineageos.preference.SettingsHelper;
 /**
  * Base class for Settings fragments, with some helper functions and dialog management.
  */
-public abstract class SettingsPreferenceFragment extends PreferenceFragment
+public abstract class SettingsPreferenceFragment extends ObservablePreferenceFragment
         implements DialogCreatable, PartsUpdater.Refreshable {
 
     /**
@@ -507,7 +508,7 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
         if (mDialogFragment != null) {
             Log.e(TAG, "Old dialog fragment not null!");
         }
-        mDialogFragment = new SettingsDialogFragment(this, dialogId);
+        mDialogFragment = SettingsDialogFragment.newInstance(this, dialogId);
         mDialogFragment.show(getChildFragmentManager(), Integer.toString(dialogId));
     }
 
@@ -569,7 +570,7 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             // Auto-key preferences that don't have a key, so the dialog can find them.
             preference.setKey(UUID.randomUUID().toString());
         }
-        DialogFragment f = null;
+        CustomDialogPreference.CustomPreferenceDialogFragment f = null;
         if (preference instanceof CustomDialogPreference) {
             f = CustomDialogPreference.CustomPreferenceDialogFragment
                     .newInstance(preference.getKey());
@@ -593,17 +594,17 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
         private DialogInterface.OnCancelListener mOnCancelListener;
         private DialogInterface.OnDismissListener mOnDismissListener;
 
-        public SettingsDialogFragment() {
-            /* do nothing */
-        }
-
-        public SettingsDialogFragment(DialogCreatable fragment, int dialogId) {
-            mDialogId = dialogId;
+        public static SettingsDialogFragment newInstance(DialogCreatable fragment, int dialogId) {
             if (!(fragment instanceof Fragment)) {
                 throw new IllegalArgumentException("fragment argument must be an instance of "
                         + Fragment.class.getName());
             }
-            mParentFragment = (Fragment) fragment;
+
+            final SettingsDialogFragment settingsDialogFragment = new SettingsDialogFragment();
+            settingsDialogFragment.setParentFragment(fragment);
+            settingsDialogFragment.setDialogId(dialogId);
+
+            return settingsDialogFragment;
         }
 
         @Override
@@ -682,6 +683,14 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
                 }
             }
         }
+
+        private void setParentFragment(DialogCreatable fragment) {
+            mParentFragment = (Fragment) fragment;
+        }
+
+        private void setDialogId(int dialogId) {
+            mDialogId = dialogId;
+        }
     }
 
     protected Button getBackButton() {
@@ -725,6 +734,11 @@ public abstract class SettingsPreferenceFragment extends PreferenceFragment
             return;
         }
         getActivity().setResult(result);
+    }
+
+    protected boolean isFinishingOrDestroyed() {
+        final Activity activity = getActivity();
+        return activity == null || activity.isFinishing() || activity.isDestroyed();
     }
 
     public boolean isAvailable() {
