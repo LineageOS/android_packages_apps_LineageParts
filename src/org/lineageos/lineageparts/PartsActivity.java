@@ -17,8 +17,6 @@
 
 package org.lineageos.lineageparts;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.nfc.NfcAdapter;
@@ -30,6 +28,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -222,7 +222,7 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
 
         fragment.setArguments(args);
 
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.main_content, fragment);
         if (titleRes > 0) {
             transaction.setBreadCrumbTitle(titleRes);

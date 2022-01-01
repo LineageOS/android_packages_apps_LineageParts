@@ -1,5 +1,7 @@
 /*
  * Copyright (C) 2015 The Android Open Source Project
+ *               2016 The CyanogenMod Project
+ *               2017,2019,2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,9 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.lineageos.lineageparts.widget;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,8 +26,10 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog.Builder;
 import androidx.preference.DialogPreference;
-import androidx.preference.PreferenceDialogFragment;
+import androidx.preference.PreferenceDialogFragmentCompat;
 
 public class CustomDialogPreference<T extends DialogInterface> extends DialogPreference {
 
@@ -97,7 +101,7 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
         return true;
     }
 
-    public static class CustomPreferenceDialogFragment extends PreferenceDialogFragment {
+    public static class CustomPreferenceDialogFragment extends PreferenceDialogFragmentCompat {
 
         public static CustomPreferenceDialogFragment newInstance(String key) {
             final CustomPreferenceDialogFragment fragment = new CustomPreferenceDialogFragment();
@@ -169,7 +173,7 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
         }
 
         @Override
-        protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
+        protected void onPrepareDialogBuilder(Builder builder) {
             super.onPrepareDialogBuilder(builder);
             getCustomizablePreference().setFragment(this);
             getCustomizablePreference().onPrepareDialogBuilder(builder, this);
