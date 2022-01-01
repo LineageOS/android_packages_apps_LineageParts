@@ -18,7 +18,6 @@
 package org.lineageos.lineageparts.profiles;
 
 import android.annotation.Nullable;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -26,6 +25,8 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.FragmentActivity;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
@@ -151,7 +152,8 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
             getBackButton().setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    finishPreferencePanel(SetupTriggersFragment.this, Activity.RESULT_CANCELED, null);
+                    finishPreferencePanel(SetupTriggersFragment.this,
+                            FragmentActivity.RESULT_CANCELED, null);
                 }
             });
         }
@@ -162,7 +164,7 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_SETUP_ACTIONS) {
-            if (resultCode == Activity.RESULT_OK) {
+            if (resultCode == FragmentActivity.RESULT_OK) {
                 // exit out of the wizard!
                 finishFragment();
             }
