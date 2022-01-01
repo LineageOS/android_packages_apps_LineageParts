@@ -17,7 +17,6 @@
 
 package org.lineageos.lineageparts;
 
-import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -30,6 +29,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.fragment.app.Fragment;
+//import androidx.fragment.app.FragmentTransaction;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;

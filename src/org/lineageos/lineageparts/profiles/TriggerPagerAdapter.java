@@ -15,13 +15,13 @@
  */
 package org.lineageos.lineageparts.profiles;
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.legacy.app.FragmentPagerAdapter;
 
 import org.lineageos.lineageparts.R;
@@ -44,7 +44,7 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
 
     private final List<Holder> mHolderList = Lists.newArrayList();
 
-    private final Activity mFragmentActivity;
+    private final FragmentActivity mFragmentActivity;
 
     private int mCurrentPage;
 
@@ -55,7 +55,7 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
      *            {@link androidx.fragment.app.Fragment}.
      * @param fm the FragmentManager to use.
      */
-    public TriggerPagerAdapter(Activity activity, FragmentManager fm) {
+    public TriggerPagerAdapter(FragmentActivity activity, FragmentManager fm) {
         super(fm);
         mFragmentActivity = activity;
     }
