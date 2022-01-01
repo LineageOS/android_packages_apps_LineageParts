@@ -17,7 +17,6 @@
 
 package org.lineageos.lineageparts.profiles;
 
-import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -26,6 +25,8 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
+
+import androidx.fragment.app.FragmentActivity;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
@@ -39,7 +40,7 @@ import java.util.UUID;
  * The mime type is "lineage/profile" and the payload is the raw bytes of the profile's
  * UUID. The payload was intentionally kept small to support writing on 46-byte tags.
  */
-public class NFCProfileWriter extends Activity {
+public class NFCProfileWriter extends FragmentActivity {
 
     private static final String TAG = "NFCProfileWriter";
 
