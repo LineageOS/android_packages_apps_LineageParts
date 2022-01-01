@@ -15,7 +15,6 @@
  */
 package org.lineageos.lineageparts.widget;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -23,9 +22,11 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.View;
 
+import androidx.appcompat.app.AlertDialog;
+
 import androidx.annotation.NonNull;
 import androidx.preference.DialogPreference;
-import androidx.preference.PreferenceDialogFragment;
+import androidx.preference.PreferenceDialogFragmentCompat;
 
 public class CustomDialogPreference<T extends DialogInterface> extends DialogPreference {
 
@@ -97,7 +98,7 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
         return true;
     }
 
-    public static class CustomPreferenceDialogFragment extends PreferenceDialogFragment {
+    public static class CustomPreferenceDialogFragment extends PreferenceDialogFragmentCompat {
 
         public static CustomPreferenceDialogFragment newInstance(String key) {
             final CustomPreferenceDialogFragment fragment = new CustomPreferenceDialogFragment();
@@ -166,13 +167,6 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
         public void onResume() {
             super.onResume();
             getCustomizablePreference().onResume();
-        }
-
-        @Override
-        protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
-            super.onPrepareDialogBuilder(builder);
-            getCustomizablePreference().setFragment(this);
-            getCustomizablePreference().onPrepareDialogBuilder(builder, this);
         }
 
         @Override
