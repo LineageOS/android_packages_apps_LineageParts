@@ -17,8 +17,6 @@
 
 package org.lineageos.lineageparts.profiles;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.NotificationGroup;
 import android.app.admin.DevicePolicyManager;
@@ -56,6 +54,9 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.app.AlertDialog;
 
 import lineageos.app.Profile;
 import lineageos.app.ProfileGroup;
@@ -952,7 +953,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             getBackButton().setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    finishPreferencePanel(SetupActionsFragment.this, Activity.RESULT_OK, null);
+                    finishPreferencePanel(SetupActionsFragment.this, FragmentActivity.RESULT_OK,
+                            null);
                 }
             });
 
@@ -961,7 +963,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                 @Override
                 public void onClick(View view) {
                     mProfileManager.addProfile(mProfile);
-                    finishPreferencePanel(SetupActionsFragment.this, Activity.RESULT_OK, null);
+                    finishPreferencePanel(SetupActionsFragment.this, FragmentActivity.RESULT_OK,
+                            null);
                 }
             });
         }

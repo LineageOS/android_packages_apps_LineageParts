@@ -18,8 +18,6 @@
 package org.lineageos.lineageparts.profiles;
 
 import android.annotation.Nullable;
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -36,6 +34,8 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.FragmentActivity;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -200,7 +200,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     }
 
     private void updateProfilesEnabledState() {
-        Activity activity = getActivity();
+        FragmentActivity activity = getActivity();
 
         mEnabled = LineageSettings.System.getInt(activity.getContentResolver(),
                 LineageSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
