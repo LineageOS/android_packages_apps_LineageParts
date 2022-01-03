@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05ee03e5_00ea9d5a",
+        "filename": "res/xml/anonymous_stats.xml",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-01-03T23:13:18Z",
+      "side": 0,
+      "message": "I realized that a main switch pref here doesn\u0027t make sense. Will drop this.",
+      "revId": "1bdef167c873e1b5acd74a7029c373290fd67591",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
