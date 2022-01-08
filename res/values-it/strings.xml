@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">Attiva</string>
     <string name="charging_sounds_enabled_summary">Riproduci un suono quando si collega o si scollega l\'alimentatore</string>
     <string name="power_notifications_vibrate_title">Vibra</string>
-    <string name="charging_sounds_ringtone_title">Suono di notifica</string>
     <string name="charging_sounds_ringtone_silent">Silenzioso</string>
     <string name="touchscreen_gesture_settings_title">Gesti a schermo spento</string>
     <string name="touchscreen_gesture_settings_summary">Esegui vari movimenti sul touchscreen per azioni rapide</string>

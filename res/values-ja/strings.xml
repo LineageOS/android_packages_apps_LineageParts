@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">有効</string>
     <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らします</string>
     <string name="power_notifications_vibrate_title">バイブレーション</string>
-    <string name="charging_sounds_ringtone_title">通知音</string>
     <string name="charging_sounds_ringtone_silent">サイレント</string>
     <string name="touchscreen_gesture_settings_title">タッチスクリーンジェスチャー</string>
     <string name="touchscreen_gesture_settings_summary">様々なタッチスクリーンジェスチャーですばやくアクションを実行します</string>

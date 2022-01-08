@@ -62,6 +62,7 @@
     <string name="light_brightness_zen">Não Perturbe</string>
     <string name="battery_light_title">Luz da bateria</string>
     <string name="battery_low_pulse_title">Pulsar quando a bateria estiver baixa</string>
+    <string name="battery_light_full_charge_disabled_title">Desligar quando carregado</string>
     <string name="battery_light_list_title">Cores</string>
     <string name="battery_light_low_color_title">Bateria baixa</string>
     <string name="battery_light_medium_color_title">Carregando</string>
@@ -154,6 +155,7 @@
     <string name="hardware_keys_action_sleep">Desligar a tela</string>
     <string name="hardware_keys_action_last_app">Último aplicativo</string>
     <string name="hardware_keys_action_split_screen">Dividir a tela</string>
+    <string name="hardware_keys_action_kill_app">Fechar aplicativo em primeiro plano</string>
     <string name="camera_sleep_on_release_title">Espiar a tela</string>
     <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
     <string name="camera_launch_title">Iniciar a câmera</string>
@@ -190,6 +192,7 @@
     <string name="backlight_summary_enabled">Ativado</string>
     <string name="disable_navkeys_title">Ativar barra de navegação na tela</string>
     <string name="disable_navkeys_summary">Ativar barra de navegação na tela e desativar botões físicos</string>
+    <string name="swap_capacitive_keys_title">Inverter botões capacitivos</string>
     <string name="swap_capacitive_keys_summary">Trocar a ordem dos botões Visão geral e Voltar</string>
     <string name="navigation_bar_category">Barra de navegação</string>
     <string name="navigation_bar_invert_layout_title">Inverter botões</string>
@@ -449,7 +452,6 @@
     <string name="charging_sounds_enabled_title">Ativar</string>
     <string name="charging_sounds_enabled_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
     <string name="power_notifications_vibrate_title">Vibrar</string>
-    <string name="charging_sounds_ringtone_title">Som de notificação</string>
     <string name="charging_sounds_ringtone_silent">Silencioso</string>
     <string name="touchscreen_gesture_settings_title">Gestos na tela</string>
     <string name="touchscreen_gesture_settings_summary">Faça vários gestos na tela para ações rápidas</string>

@@ -457,7 +457,6 @@
     <string name="charging_sounds_enabled_title">Galluogi</string>
     <string name="charging_sounds_enabled_summary">Chwarae sain wrth gysylltu neu ddatgysylltu ffynhonnell pŵer</string>
     <string name="power_notifications_vibrate_title">Dirgrynu</string>
-    <string name="charging_sounds_ringtone_title">Hysbysiad sain</string>
     <string name="charging_sounds_ringtone_silent">Distaw</string>
     <string name="touchscreen_gesture_settings_title">Ystumiau sgrin gyffwrdd</string>
     <string name="touchscreen_gesture_settings_summary">Perfformio ystumiau amrywiol ar y sgrin gyffwrdd am weithredoedd cyflym</string>

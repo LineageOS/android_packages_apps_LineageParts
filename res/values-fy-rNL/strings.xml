@@ -447,7 +447,6 @@
     <string name="charging_sounds_enabled_title">Ynskeakelje</string>
     <string name="charging_sounds_enabled_summary">Lûd ôfspylje by it oansluten of loskeppeljen fan in lader</string>
     <string name="power_notifications_vibrate_title">Trille</string>
-    <string name="charging_sounds_ringtone_title">Meldingslûd</string>
     <string name="charging_sounds_ringtone_silent">Stil</string>
     <string name="touchscreen_gesture_settings_title">Skermgebearen</string>
     <string name="touchscreen_gesture_settings_summary">Skermgebearen brûke foar flugge aksjes</string>

@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">Inschakelen</string>
     <string name="charging_sounds_enabled_summary">Geluid afspelen bij het aansluiten of loskoppelen van een lader</string>
     <string name="power_notifications_vibrate_title">Trillen</string>
-    <string name="charging_sounds_ringtone_title">Meldingsgeluid</string>
     <string name="charging_sounds_ringtone_silent">Stil</string>
     <string name="touchscreen_gesture_settings_title">Schermgebaren</string>
     <string name="touchscreen_gesture_settings_summary">Schermgebaren gebruiken voor snelle acties</string>

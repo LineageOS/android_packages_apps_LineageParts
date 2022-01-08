@@ -472,7 +472,6 @@
     <string name="charging_sounds_enabled_title">Cuir an comas</string>
     <string name="charging_sounds_enabled_summary">Cluich fuaim nuair a thèid tùs cumhachd a cheangal ris no a dhì-cheangal</string>
     <string name="power_notifications_vibrate_title">Dèan crith</string>
-    <string name="charging_sounds_ringtone_title">Fuaim a’ bhratha</string>
     <string name="charging_sounds_ringtone_silent">Sàmhach</string>
     <string name="touchscreen_gesture_settings_title">Gluasadan na sgrìn-shuathaidh</string>
     <string name="touchscreen_gesture_settings_summary">Cleachd gluasadan sgrìn-shuathaidh airson gnìomhan luatha</string>

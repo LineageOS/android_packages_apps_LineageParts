@@ -472,8 +472,10 @@
     <string name="charging_sounds_enabled_title">Activați</string>
     <string name="charging_sounds_enabled_summary">Redă un sunet la conectarea sau deconectarea unei surse de alimentare</string>
     <string name="power_notifications_vibrate_title">Vibrare</string>
-    <string name="charging_sounds_ringtone_title">Sunet notificare</string>
     <string name="charging_sounds_ringtone_silent">Silențios</string>
+    <string name="charging_sounds_notification_category_title">Sunete de notificare</string>
+    <string name="wired_charging_sounds_title">Încărcare cu cablu</string>
+    <string name="wireless_charging_sounds_title">Încărcare wireless</string>
     <string name="touchscreen_gesture_settings_title">Gesturi touchscreen</string>
     <string name="touchscreen_gesture_settings_summary">Efectuați diverse gesturi pe touchscreen pentru acţiuni rapide</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Feedback haptic</string>

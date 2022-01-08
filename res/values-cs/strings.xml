@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">Povolit</string>
     <string name="charging_sounds_enabled_summary">Přehrát zvuk při připojení nebo odpojení nabíječky</string>
     <string name="power_notifications_vibrate_title">Vibrovat</string>
-    <string name="charging_sounds_ringtone_title">Zvuk upozornění</string>
     <string name="charging_sounds_ringtone_silent">Tichý</string>
     <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
     <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>

@@ -469,7 +469,6 @@
     <string name="charging_sounds_enabled_title">Ota käyttöön</string>
     <string name="charging_sounds_enabled_summary">Anna äänimerkki, kun virtalähde liitetään tai irrotetaan</string>
     <string name="power_notifications_vibrate_title">Värinä</string>
-    <string name="charging_sounds_ringtone_title">Ilmoitusääni</string>
     <string name="charging_sounds_ringtone_silent">Äänetön</string>
     <string name="touchscreen_gesture_settings_title">Kosketusnäytön eleet</string>
     <string name="touchscreen_gesture_settings_summary">Tee erilaisia kosketusnäytön eleitä käyttääksesi pikatoimintoja</string>

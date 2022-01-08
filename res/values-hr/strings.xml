@@ -449,7 +449,6 @@
     <string name="charging_sounds_enabled_title">Omogući</string>
     <string name="charging_sounds_enabled_summary">Reproducirat će zvuk pri spajanju ili odspajanju s izvora napajanja</string>
     <string name="power_notifications_vibrate_title">Vibracija</string>
-    <string name="charging_sounds_ringtone_title">Zvuk obavijesti</string>
     <string name="charging_sounds_ringtone_silent">Bešumno</string>
     <string name="touchscreen_gesture_settings_title">Geste dodirnog zaslona</string>
     <string name="touchscreen_gesture_settings_summary">Razne geste zaslona za brze radnje</string>

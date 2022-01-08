@@ -474,8 +474,10 @@
     <string name="charging_sounds_enabled_title">Ενεργοποίηση</string>
     <string name="charging_sounds_enabled_summary">Αναπαραγωγή ήχου κατά τη σύνδεση ή την αποσύνδεση μιας πηγής ισχύος</string>
     <string name="power_notifications_vibrate_title">Δόνηση</string>
-    <string name="charging_sounds_ringtone_title">Ήχος ειδοποίησης</string>
     <string name="charging_sounds_ringtone_silent">Αθόρυβο</string>
+    <string name="charging_sounds_notification_category_title">Ήχοι ειδοποίησης</string>
+    <string name="wired_charging_sounds_title">Ενσύρματη φόρτιση</string>
+    <string name="wireless_charging_sounds_title">Ασύρματη φόρτιση</string>
     <string name="touchscreen_gesture_settings_title">Χειρονομίες αφής</string>
     <string name="touchscreen_gesture_settings_summary">Εκτελέστε διάφορες χειρονομίες αφής για γρήγορες ενέργειες</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Απτική ανάδραση</string>

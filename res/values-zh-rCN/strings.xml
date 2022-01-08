@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">启用</string>
     <string name="charging_sounds_enabled_summary">连接或断开电源时发出声音</string>
     <string name="power_notifications_vibrate_title">振动</string>
-    <string name="charging_sounds_ringtone_title">提示音</string>
     <string name="charging_sounds_ringtone_silent">静音</string>
     <string name="touchscreen_gesture_settings_title">触摸屏手势</string>
     <string name="touchscreen_gesture_settings_summary">为快捷操作采用各种触摸屏手势</string>

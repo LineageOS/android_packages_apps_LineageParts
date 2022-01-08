@@ -472,7 +472,6 @@
     <string name="charging_sounds_enabled_title">Fəallaşdır</string>
     <string name="charging_sounds_enabled_summary">Cərəyan mənbəyinə taxarkən və ya çıxararkən bir səs oxut</string>
     <string name="power_notifications_vibrate_title">Titrət</string>
-    <string name="charging_sounds_ringtone_title">Bildiriş səsi</string>
     <string name="charging_sounds_ringtone_silent">Səssiz</string>
     <string name="touchscreen_gesture_settings_title">Toxunuşlu ekran jestləri</string>
     <string name="touchscreen_gesture_settings_summary">Cəld hərəkətlər üçün cürbəcür toxunaqlı ekran jestlərini həyata keçirin</string>

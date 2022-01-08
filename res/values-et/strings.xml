@@ -470,7 +470,6 @@ andmete eelvaade.</string>
     <string name="charging_sounds_enabled_title">Luba</string>
     <string name="charging_sounds_enabled_summary">Mängi heli vooluallika ühendamisel või lahtiühendamisel</string>
     <string name="power_notifications_vibrate_title">Vibreeri</string>
-    <string name="charging_sounds_ringtone_title">Teavituse heli</string>
     <string name="charging_sounds_ringtone_silent">Vaikne</string>
     <string name="touchscreen_gesture_settings_title">Puuteekraani žestid</string>
     <string name="touchscreen_gesture_settings_summary">Soorita mitmeid puuteekraani žeste kiirtoimingute teostamiseks</string>

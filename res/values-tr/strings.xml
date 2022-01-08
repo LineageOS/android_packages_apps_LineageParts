@@ -215,7 +215,6 @@
     <string name="power_menu_airplane_title">Uçak modu</string>
     <string name="power_menu_users_title">Kullanıcı değiştir</string>
     <string name="power_menu_bug_report_title">Hata raporu</string>
-    <string name="power_menu_bug_report_devoptions_unavailable">Geliştirici ayarları etkinleştirilmediğinden hata raporlama devre dışı bırakıldı</string>
     <string name="power_menu_bug_report_unavailable_for_user">Birincil olmayan kullanıcılar için hata raporlama devre dışı bırakıldı.</string>
     <string name="power_menu_lockdown_title">Kilitle</string>
     <string name="power_menu_lockdown_unavailable">Cihaz kilidi güvenli olmadığı için cihaz kilitleme devre dışı bırakıldı</string>
@@ -472,7 +471,6 @@
     <string name="charging_sounds_enabled_title">Etkin</string>
     <string name="charging_sounds_enabled_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken bir ses çal</string>
     <string name="power_notifications_vibrate_title">Titreşim</string>
-    <string name="charging_sounds_ringtone_title">Bildirim sesi</string>
     <string name="charging_sounds_ringtone_silent">Sessiz</string>
     <string name="touchscreen_gesture_settings_title">Ekran hareketleri</string>
     <string name="touchscreen_gesture_settings_summary">Hızlı işlemler için çeşitli dokunmatik ekran hareketleri gerçekleştirin</string>
@@ -525,7 +523,7 @@
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nÜretici: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Güncel</string>
     <string name="trust_feature_security_patches_value_medium">Birkaç ay eski</string>
-    <string name="trust_feature_security_patches_value_old">Güncelleme gerekli</string>
+    <string name="trust_feature_security_patches_value_old">Güncellenmemiş</string>
     <string name="trust_feature_security_patches_explain">Güvenlik kısıtlamalarını atlamak ve cihazınızda kalıcı hasara neden olmak için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek hataları gidermek için SoC satıcılarıyla işbirliği içinde Google tarafından aylık olarak güvenlik yamaları yayınlanır. Google tarafından kullanıma sunulan yamalar, desteklenen tüm cihazlarda her ay uygulanır, ancak tescilli koddaki yamalar sadece cihazınızın üreticisi tarafından uygulanabilir. Cihazınızı güvende tutmak için LineageOS yapınızın her zaman güncel olduğundan ve (varsa) satıcı dosyanızın LineageOS tarafından önerilen en yeni sürüme güncellendiğinden emin olun.</string>
     <string name="trust_feature_encryption">Şifreleme</string>
     <string name="trust_feature_encryption_value_enabled">Etkin</string>

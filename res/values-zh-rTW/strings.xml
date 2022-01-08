@@ -468,7 +468,6 @@
     <string name="charging_sounds_enabled_title">啟用</string>
     <string name="charging_sounds_enabled_summary">接上或拔除電源時播放音效</string>
     <string name="power_notifications_vibrate_title">震動</string>
-    <string name="charging_sounds_ringtone_title">通知音效</string>
     <string name="charging_sounds_ringtone_silent">靜音</string>
     <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
     <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>

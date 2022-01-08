@@ -472,8 +472,10 @@
     <string name="charging_sounds_enabled_title">Omogoči</string>
     <string name="charging_sounds_enabled_summary">Predvajaj zvok ob priključitvi ali izključitvi vira napajanja</string>
     <string name="power_notifications_vibrate_title">Vibriraj</string>
-    <string name="charging_sounds_ringtone_title">Zvok obvestila</string>
     <string name="charging_sounds_ringtone_silent">Tiho</string>
+    <string name="charging_sounds_notification_category_title">Zvoki obvestila</string>
+    <string name="wired_charging_sounds_title">Žično polnjenje</string>
+    <string name="wireless_charging_sounds_title">Brezžično polnjenje</string>
     <string name="touchscreen_gesture_settings_title">Poteze na zaslonu na dotik</string>
     <string name="touchscreen_gesture_settings_summary">Za hitra dejanja na zaslonu na dotik izvedite različne poteze</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Haptično zaznavanje</string>

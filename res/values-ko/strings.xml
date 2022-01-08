@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">사용</string>
     <string name="charging_sounds_enabled_summary">전원이 연결되거나 연결이 해제될 때 소리 재생</string>
     <string name="power_notifications_vibrate_title">진동</string>
-    <string name="charging_sounds_ringtone_title">알림 소리</string>
     <string name="charging_sounds_ringtone_silent">음소거</string>
     <string name="touchscreen_gesture_settings_title">터치스크린 제스처</string>
     <string name="touchscreen_gesture_settings_summary">다양한 터치스크린 제스처를 사용하여 빠른 작업 실행</string>

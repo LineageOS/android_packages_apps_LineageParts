@@ -439,7 +439,6 @@
     <string name="charging_sounds_enabled_title">ಸಶಕ್ತಿಸು</string>
     <string name="charging_sounds_enabled_summary">ಶಕ್ತಿ ಮೂಲವನ್ನು ಸಂಪರ್ಕಿಸಿದಾಗ ಅಥವಾ ಸಂಪರ್ಕ ಕಡಿತದಾಗ ಧ್ವನಿ ಮೊಳಗಿಸು</string>
     <string name="power_notifications_vibrate_title">ಕಂಪಿಸು</string>
-    <string name="charging_sounds_ringtone_title">ಸೂಚನೆ ಶಬ್ಧ</string>
     <string name="charging_sounds_ringtone_silent">ಮೌನ</string>
     <string name="touchscreen_gesture_settings_title">ಸ್ಪರ್ಷಪರದೆಯ ಸನ್ನೆಗಳು</string>
     <string name="touchscreen_gesture_settings_summary">ತ್ವರಿತ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಸ್ಪರ್ಶಪರದೆ ಮೇಲೆ ವಿವಿಧ ಸನ್ನೆಗಳನ್ನು ಮಾಡು</string>

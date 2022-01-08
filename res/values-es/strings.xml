@@ -297,6 +297,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Punto de acceso Wi\u2011Fi portátil</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Ubicación</string>
     <string name="toggleData">Conexión de datos</string>
     <string name="toggleSync">Sincronización automática</string>
     <string name="toggleNfc">NFC</string>
@@ -349,6 +350,9 @@
     <string name="status_bar_brightness_slider_summary">Ajuste el brillo desde los ajustes rápidos</string>
     <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
     <string name="status_bar_brightness_slider_auto_summary">Mostrar el interruptor de brillo automático al lado de la barra de brillo</string>
+    <string name="status_bar_brightness_slider_show_never">No mostrar nunca</string>
+    <string name="status_bar_brightness_slider_show_expanded">Mostrar al expandir</string>
+    <string name="status_bar_brightness_slider_show_always">Mostrar siempre</string>
     <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
     <string name="network_traffic_settings_title">Monitor de tráfico de red</string>
@@ -427,11 +431,11 @@
     <string name="auto_power_save_summary_on">Activar automáticamente el modo de ahorro de energía al %s de batería</string>
     <string name="auto_power_save_summary_off">No activar el modo de ahorro de energía automáticamente</string>
     <string name="auto_power_save_never">Nunca</string>
+    <string name="long_screen_settings_no_apps">Sin aplicaciones</string>
     <string name="charging_sounds_settings_title">Sonidos de carga del dispositivo</string>
     <string name="charging_sounds_enabled_title">Activar</string>
     <string name="charging_sounds_enabled_summary">Reproducir un sonido al conectar o desconectar el cargador</string>
     <string name="power_notifications_vibrate_title">Vibración</string>
-    <string name="charging_sounds_ringtone_title">Sonido de notificación</string>
     <string name="charging_sounds_ringtone_silent">Silencio</string>
     <string name="touchscreen_gesture_settings_title">Gestos en pantalla táctil</string>
     <string name="touchscreen_gesture_settings_summary">Realizar varios gestos en pantalla para acciones rápidas</string>
@@ -442,6 +446,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abajo con un dedo</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia la izquierda con un dedo</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar a la derecha con un dedo</string>
+    <string name="touchscreen_gesture_single_tap_title">Una pulsación</string>
     <string name="touchscreen_gesture_up_arrow_title">Dibujar un «Λ»</string>
     <string name="touchscreen_gesture_down_arrow_title">Dibuja una «V»</string>
     <string name="touchscreen_gesture_left_arrow_title">Dibujar un «&lt;»</string>
@@ -472,6 +477,7 @@
     <string name="touchscreen_gesture_action_next_track">Saltar a la siguiente pista de música</string>
     <string name="touchscreen_gesture_action_volume_down">Menor volumen multimedia</string>
     <string name="touchscreen_gesture_action_volume_up">Mayor volumen multimedia</string>
+    <string name="touchscreen_gesture_action_ambient_display">Mostrar pantalla ambiente</string>
     <string name="trust_feature_encryption">Cifrado</string>
     <string name="trust_warnings_selinux">Estado de SELinux</string>
     <string name="trust_onboarding_learn_more">Saber más</string>

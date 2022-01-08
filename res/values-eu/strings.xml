@@ -443,7 +443,6 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="charging_sounds_enabled_title">Gaitu</string>
     <string name="charging_sounds_enabled_summary">Soinua jo kargadorea konektatu edo deskonektatzean</string>
     <string name="power_notifications_vibrate_title">Bibratu</string>
-    <string name="charging_sounds_ringtone_title">Jakinarazpen-soinua</string>
     <string name="charging_sounds_ringtone_silent">Isilik</string>
     <string name="touchscreen_gesture_settings_title">Ukitze-pantailaren keinuak</string>
     <string name="touchscreen_gesture_settings_summary">Egin ukimen-pantailako keinuak ekintza azkarretarako</string>

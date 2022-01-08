@@ -406,7 +406,6 @@
     <string name="charging_sounds_enabled_title">Овозможи</string>
     <string name="charging_sounds_enabled_summary">Репродуцирај звук при поврзување или исклучување на извор на енергија</string>
     <string name="power_notifications_vibrate_title">Вибрација</string>
-    <string name="charging_sounds_ringtone_title">Звук за известување</string>
     <string name="charging_sounds_ringtone_silent">Тивко</string>
     <string name="touchscreen_gesture_settings_title">Гестови на допир</string>
     <string name="touchscreen_gesture_settings_summary">Изведување на различни гестови на допир за брзо дејство</string>

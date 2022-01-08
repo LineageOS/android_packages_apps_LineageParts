@@ -461,7 +461,6 @@
     <string name="charging_sounds_enabled_title">Активиране</string>
     <string name="charging_sounds_enabled_summary">Възпроизвежда звук, когато включвате или изключвате източник на захранване</string>
     <string name="power_notifications_vibrate_title">Вибрация</string>
-    <string name="charging_sounds_ringtone_title">Тон за уведомяване</string>
     <string name="charging_sounds_ringtone_silent">Без звук</string>
     <string name="touchscreen_gesture_settings_title">Тъчскрийн жестове</string>
     <string name="touchscreen_gesture_settings_summary">Изпълнява различни бързи действия чрез жестове върху сензорния екран</string>

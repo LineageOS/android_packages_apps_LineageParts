@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">Aktivieren</string>
     <string name="charging_sounds_enabled_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
     <string name="power_notifications_vibrate_title">Vibrieren</string>
-    <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
     <string name="charging_sounds_ringtone_silent">Lautlos</string>
     <string name="touchscreen_gesture_settings_title">Bildschirmgesten</string>
     <string name="touchscreen_gesture_settings_summary">Führe durch verschiedene Bildschirmgesten einige schnelle Aktionen aus</string>

@@ -468,7 +468,6 @@
     <string name="charging_sounds_enabled_title">تمكين</string>
     <string name="charging_sounds_enabled_summary">تشغيل الصوت عند توصيل أو فصل مصدر الطاقة</string>
     <string name="power_notifications_vibrate_title">إهتزاز</string>
-    <string name="charging_sounds_ringtone_title">صوت الإشعار</string>
     <string name="charging_sounds_ringtone_silent">صامت</string>
     <string name="touchscreen_gesture_settings_title">الإيماءات اللمسية</string>
     <string name="touchscreen_gesture_settings_summary">عمل إيماءات لمسية متعددة لإجراءات سريعة</string>

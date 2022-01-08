@@ -406,7 +406,6 @@
     <string name="charging_sounds_enabled_title">Aktiver</string>
     <string name="charging_sounds_enabled_summary">Spill av en lyd når du kobler til eller fra en strømkilde</string>
     <string name="power_notifications_vibrate_title">Vibrer</string>
-    <string name="charging_sounds_ringtone_title">Varslingslyd</string>
     <string name="charging_sounds_ringtone_silent">Lydløs</string>
     <string name="touchscreen_gesture_settings_title">Berøringsskjerm bevegelser</string>
     <string name="touchscreen_gesture_settings_summary">Utfør forskjellige berøringsskjerm bevegelser for raske handlinger</string>

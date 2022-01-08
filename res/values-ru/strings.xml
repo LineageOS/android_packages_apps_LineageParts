@@ -470,8 +470,10 @@
     <string name="charging_sounds_enabled_title">Включить</string>
     <string name="charging_sounds_enabled_summary">Воспроизводить звук при подключении или отключении источника питания</string>
     <string name="power_notifications_vibrate_title">Вибросигнал</string>
-    <string name="charging_sounds_ringtone_title">Звук уведомления</string>
     <string name="charging_sounds_ringtone_silent">Без звука</string>
+    <string name="charging_sounds_notification_category_title">Звуки уведомлений</string>
+    <string name="wired_charging_sounds_title">Проводная зарядка</string>
+    <string name="wireless_charging_sounds_title">Беспроводная зарядка</string>
     <string name="touchscreen_gesture_settings_title">Жесты сенсорного экрана</string>
     <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Виброотклик</string>

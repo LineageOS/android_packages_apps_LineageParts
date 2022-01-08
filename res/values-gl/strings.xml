@@ -471,7 +471,6 @@
     <string name="charging_sounds_enabled_title">Activar</string>
     <string name="charging_sounds_enabled_summary">Reproducir un son ao conectar e desconectar a fonte de alimentación</string>
     <string name="power_notifications_vibrate_title">Vibrar</string>
-    <string name="charging_sounds_ringtone_title">Son de notificación</string>
     <string name="charging_sounds_ringtone_silent">Silencio</string>
     <string name="touchscreen_gesture_settings_title">Xestos na pantalla táctil</string>
     <string name="touchscreen_gesture_settings_summary">Realizar varios xestos na pantalla para accions rápidas</string>

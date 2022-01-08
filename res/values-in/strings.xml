@@ -459,7 +459,6 @@
     <string name="charging_sounds_enabled_title">Hidupkan</string>
     <string name="charging_sounds_enabled_summary">Putar suara peringatan saat menghubungkan atau melepaskan sumber daya</string>
     <string name="power_notifications_vibrate_title">Getar</string>
-    <string name="charging_sounds_ringtone_title">Suara pemberitahuan</string>
     <string name="charging_sounds_ringtone_silent">Senyap</string>
     <string name="touchscreen_gesture_settings_title">Gerakan layar sentuh</string>
     <string name="touchscreen_gesture_settings_summary">Melakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>

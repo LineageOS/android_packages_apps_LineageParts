@@ -470,8 +470,10 @@
     <string name="charging_sounds_enabled_title">Habilita</string>
     <string name="charging_sounds_enabled_summary">Reprodueix un so en connectar o desconnectar d\'una font d\'energia</string>
     <string name="power_notifications_vibrate_title">Vibra</string>
-    <string name="charging_sounds_ringtone_title">So de la notificació</string>
     <string name="charging_sounds_ringtone_silent">Silenci</string>
+    <string name="charging_sounds_notification_category_title">Sons de notificació</string>
+    <string name="wired_charging_sounds_title">Càrrega per cable</string>
+    <string name="wireless_charging_sounds_title">Càrrega sense fils</string>
     <string name="touchscreen_gesture_settings_title">Gestos a la pantalla tàctil</string>
     <string name="touchscreen_gesture_settings_summary">Fes diversos gestos a la pantalla tàctil per fer accions ràpides</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Resposta hàptica</string>
