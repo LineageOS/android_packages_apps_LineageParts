@@ -17,6 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">การตั้งค่า LineageOS</string>
+    <!-- Generic stuff used everywhere -->
     <string name="loading">กำลังโหลด\u2026</string>
     <string name="dlg_ok">ตกลง</string>
     <string name="cancel">ยกเลิก</string>
@@ -37,8 +38,12 @@
     <string name="search_menu">ตั้งค่าการค้นหา</string>
     <string name="disabled">ปิดการใช้งาน</string>
     <string name="enabled">เปิดใช้งาน</string>
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">ความเป็นส่วนตัว</string>
+    <!-- Notification channels -->
     <string name="channel_light_settings_name">ตัวอย่างการตั้งค่าแสง</string>
+    <!-- Notification light dialogs -->
     <string name="edit_light_settings">แก้ไขการตั้งค่าแสง</string>
     <string name="pulse_speed_title">ความเร็วและระยะเวลาการกระพริบ</string>
     <string name="default_time">ปกติ</string>
@@ -46,6 +51,7 @@
     <string name="dialog_delete_title">ลบ</string>
     <string name="dialog_delete_message">ลบรายการที่เลือกหรือไม่</string>
     <string name="brightness">ระดับความสว่าง</string>
+    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">เปิดตลอด</string>
     <string name="pulse_length_very_short">สั้นมาก</string>
     <string name="pulse_length_short">สั้น</string>
@@ -57,15 +63,19 @@
     <string name="pulse_speed_normal">ปกติ</string>
     <string name="pulse_speed_slow">ช้า</string>
     <string name="pulse_speed_very_slow">ช้ามาก</string>
+    <!-- Common light settings strings -->
     <string name="light_brightness_title">ระดับความสว่าง</string>
     <string name="light_brightness_normal">ปกติ</string>
     <string name="light_brightness_zen">ห้ามรบกวน</string>
+    <!-- Battery light settings -->
     <string name="battery_light_title">ไฟแบตเตอรี่</string>
     <string name="battery_low_pulse_title">กระพริบเมื่อแบตเตอรี่ต่ำ</string>
+    <string name="battery_light_full_charge_disabled_title">ปิดเมื่อชาร์จเต็ม</string>
     <string name="battery_light_list_title">สี</string>
     <string name="battery_light_low_color_title">แบตเตอรี่ต่ำ</string>
     <string name="battery_light_medium_color_title">กำลังชาร์จ</string>
     <string name="battery_light_full_color_title">ชาร์จเต็มแล้ว</string>
+    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">ไฟแจ้งเตือน</string>
     <string name="notification_light_general_title">ทั่วไป</string>
     <string name="notification_light_advanced_title">ขั้นสูง</string>
@@ -80,9 +90,11 @@
     <string name="keywords_lights_brightness_level">ลดความสว่าง Led</string>
     <string name="notification_light_automagic">เลือกสีอัตโนมัติ</string>
     <string name="notification_light_automagic_summary">การเลือกสีอัตโนมัติ</string>
+    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">ตั้งค่าไฟแจ้งเตือน</string>
     <string name="led_notification_text">เปิดใช้งาน LED จากการตั้งค่า</string>
     <string name="notification_light_no_apps_summary">เพื่อเพิ่มการควบคุมแอป เปิดใช้ \'%1$s\' และกด \'\u002b\' บนแถบเมนู</string>
+    <!-- LiveDisplay -->
     <string name="live_display_summary">ปรับหน้าความสว่างหน้าจอตามเวลาและแสงโดยรอบเพื่อทำให้อ่านได้ง่ายขึ้นและลดอาการปวดตา</string>
     <string name="live_display_mode">โหมดการแสดงผล</string>
     <string name="live_display_color_temperature_title">อุณหภูมิสี</string>
@@ -92,6 +104,7 @@
     <string name="live_display_night">กลางคืน</string>
     <string name="live_display_outdoor_mode_title">โหมดกลางแจ้งอัตโนมัติ</string>
     <string name="live_display_outdoor_mode_summary">เพิ่มความสว่างและความอิ่มตัวของสีโดยอัตโนมัติภายใต้แสงแดด</string>
+    <string name="live_display_anti_flicker_title">ป้องกันการกระพริบ</string>
     <string name="live_display_low_power_title">ลดการใช้พลังงาน</string>
     <string name="live_display_low_power_summary">ปรับการแสดงผลให้ใช้พลังงานน้อยที่สุดโดยที่ไม่ลดประสิทธิภาพ</string>
     <string name="live_display_enhance_color_title">เพิ่มประสิทธิภาพสี</string>
@@ -126,12 +139,14 @@
     <string name="color_red_title">แดง</string>
     <string name="color_green_title">เขียว</string>
     <string name="color_blue_title">น้ำเงิน</string>
+    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">การปรับรูปภาพ</string>
     <string name="picture_adjustment_summary">ปรับโทนสี ความอิ่มตัว ความเข้ม และคอนทราสต์</string>
     <string name="adj_hue_title">โทนสี</string>
     <string name="adj_saturation_title">ความอิ่มตัว</string>
     <string name="adj_intensity_title">ความเข้ม</string>
     <string name="adj_contrast_title">คอนทราสต์</string>
+    <!-- Button settings -->
     <string name="button_pref_title">ปุ่ม</string>
     <string name="hardware_keys_power_key_title">ปุ่มเพาเวอร์</string>
     <string name="hardware_keys_home_key_title">ปุ่มหน้าหลัก</string>
@@ -154,6 +169,7 @@
     <string name="hardware_keys_action_sleep">ปิดหน้าจอ</string>
     <string name="hardware_keys_action_last_app">แอปล่าสุด</string>
     <string name="hardware_keys_action_split_screen">แยกหน้าจอ</string>
+    <string name="hardware_keys_action_kill_app">ปิดแอปปัจจุบัน</string>
     <string name="camera_sleep_on_release_title">ดูผ่านหน้าจอ</string>
     <string name="camera_sleep_on_release_summary">การกดเพียงครึ่งเดียวจะเปิดจอไว้เฉพาะเมื่อปุ่มถูกกดค้างอยู่</string>
     <string name="camera_launch_title">เปิดกล้อง</string>
@@ -177,6 +193,7 @@
     <string name="home_answer_call_summary">รับสายเรียกเข้าโดยกดปุ่มโฮม</string>
     <string name="extras_title">เพิ่มเติม</string>
     <string name="additional_buttons_title">ปุ่มเพิ่มเติม</string>
+    <!-- Key backlight -->
     <string name="button_backlight_title">แสงไฟ</string>
     <string name="button_backlight_enabled">แสงไฟปุ่มกด</string>
     <string name="button_backlight_only_when_pressed_title">ส่องสว่างปุ่มเมื่อกดปุ่มเท่านั้น</string>
@@ -188,17 +205,24 @@
     <string name="backlight_summary_disabled">ปิดการใช้งาน</string>
     <string name="backlight_summary_enabled_with_timeout">เปิดสำหรับ <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">เปิดใช้งาน</string>
+    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">เปิดใช้งานแถบนำทางบนหน้าจอ</string>
     <string name="disable_navkeys_summary">เปิดใช้งานแถบนำทางบนหน้าจอและปิดการใช้งานปุ่มฮาร์ดแวร์</string>
+    <!-- Buttons - Swap capacitive keys -->
+    <string name="swap_capacitive_keys_title">สลับปุ่มสัมผัส</string>
+    <string name="swap_capacitive_keys_summary">สลับตำแหน่งของปุ่มรายการล่าสุดและปุ่มย้อนกลับ</string>
+    <!-- Navigation Bar -->
     <string name="navigation_bar_category">แถบนำทาง</string>
     <string name="navigation_bar_invert_layout_title">สลับรูปแบบ</string>
     <string name="navigation_bar_left_summary">ให้แถบนำทางไปอยู่ด้านซ้ายจอเมื่ออยู่ในรูปแบบแนวนอน</string>
     <string name="navigation_bar_arrow_keys_title">แสดงปุ่มลูกศรขณะพิมพ์</string>
     <string name="navigation_bar_arrow_keys_summary">แสดงปุ่มเลื่อนเคอร์เซอร์ซ้ายขวาขณะพิมพ์ แทนที่ปุ่มสลับแป้นพิมพ์</string>
+    <string name="navigation_bar_back_long_press_title">เมื่อกดปุ่มย้อนหลังค้าง</string>
     <string name="navigation_bar_home_long_press_title">เมื่อกดปุ่มโฮมค้าง</string>
     <string name="navigation_bar_home_double_tap_title">เมื่อกดปุ่มโฮม2ครั้ง</string>
     <string name="navigation_bar_app_switch_long_press_title">เมื่อกดปุ่มแอปล่าสุดค้าง</string>
     <string name="navigation_bar_edge_long_swipe_title">ท่าทางการปัดยาวจากขอบ</string>
+    <!-- Power menu -->
     <string name="power_menu_title">ปุ่มเปิด/ปิดเครื่อง</string>
     <string name="power_menu_screenshot_title">ถ่ายภาพหน้าจอ</string>
     <string name="power_menu_screenshot_summary">กดค้างเพื่อถ่ายรูปหน้าจอบางส่วน</string>
@@ -206,7 +230,9 @@
     <string name="power_menu_users_title">สลับผู้ใช้งาน</string>
     <string name="power_menu_bug_report_title">รายงานข้อผิดพลาด</string>
     <string name="power_menu_lockdown_title">ออกโรง</string>
+    <string name="power_menu_emergency_title">ฉุกเฉิน</string>
     <string name="camera_double_tap_power_gesture_title">กดปุ่มเพาเวอร์ 2 ครั้งเพื่อเรียกใช้งานกล้อง</string>
+    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">เปิดกล้องได้อย่างรวดเร็วโดยไม่ต้องปลดล็อกหน้าจอ</string>
     <string name="torch_long_press_power_gesture_title">กดค้างสำหรับไฟฉาย</string>
     <string name="torch_long_press_power_gesture_desc">เปิดใช้งานไฟฉาย โดยกดปุ่มเปิด/ปิด​เครื่องค้างไว้ในขณะที่จอแสดงผลปิดอยู่</string>
@@ -216,6 +242,7 @@
     <string name="torch_long_press_power_timeout_2min">2 นาที</string>
     <string name="torch_long_press_power_timeout_5min">5 นาที</string>
     <string name="torch_long_press_power_timeout_10min">10 นาที</string>
+    <!-- Profiles -->
     <string name="profile_menu_delete_title">ลบ</string>
     <string name="profile_action_none">ไม่บันทึกการเปลี่ยนแปลง</string>
     <string name="profile_action_system">ค่าเริ่มต้นระบบ</string>
@@ -232,11 +259,13 @@
     <string name="profile_setup_actions_title">ขั้นตอนที่ 2: เลือกการกระทำ</string>
     <string name="profile_setup_actions_title_config">ตั้งค่าการกระทำใหม่</string>
     <string name="wireless_networks_settings_title">ระบบไร้สายและเครือข่าย</string>
+    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">ไม่มีอุปกรณ์บลูทูธที่จับคู่\nแตะเพื่อจับคู่อุปกรณ์บลูทูธก่อนการตั้งค่าทริกเกอร์</string>
     <string name="no_wifi_triggers">ไม่มีจุดเข้าถึง Wi\u2011Fi ที่ตั้งไว้\nแตะเพื่อเชื่อมต่อ Wi\u2011Fi ก่อนตั้งตัวกระตุ้น</string>
     <string name="no_triggers_configured">ไม่มีตัวกระตุ้นที่กำหนดไว้ แตะเพื่อเพิ่ม</string>
     <string name="no_triggers_configured_nfc">แตะเพื่อตั้งค่า NFC ใหม่</string>
     <string name="profile_setup_actions_description">ตอนนี้ตั้งสิ่งที่จะเกิดขึ้นเมื่อใช้งานโปรไฟล์นี้</string>
+    <!-- Profiles settings  -->
     <string name="profiles_settings_title">โปรไฟล์ระบบ</string>
     <string name="profiles_add">เพิ่ม</string>
     <string name="profile_menu_delete">ลบ</string>
@@ -260,32 +289,42 @@
     <string name="profile_app_group_category_title">แทนที่การแจ้งเตือน</string>
     <string name="profile_app_group_item_instructions">เพิ่มหรือลบกลุ่ม</string>
     <string name="profile_app_group_item_instructions_summary">เพิ่มหรือลบกลุ่มแอปแทนที่การแจ้งเตือนของโปรไฟล์นี้</string>
+    <!-- Profile mode options. -->
     <string name="profile_entries_on">เปิด</string>
     <string name="profile_entries_off">ปิด</string>
     <string name="profile_entries_no_override">ไม่มีการเขียนทับ</string>
+    <!-- Add Profile -->
     <string name="profile_name_title">ชื่อ</string>
     <string name="new_profile_name">&lt;โปรไฟล์ใหม่&gt;</string>
+    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">เปลี่ยนชื่อ</string>
     <string name="rename_dialog_message">ป้อนชื่อใหม่</string>
     <string name="rename_dialog_hint">ป้อนชื่อโปรไฟล์</string>
+    <!-- Reset Profiles -->
     <string name="profile_reset_title">รีเซ็ต</string>
     <string name="profile_reset_message">ลบโปรไฟล์และกลุ่มแอปที่ผู้ใช้สร้างไว้ทั้งหมดพร้อมเรียกคืนค่าเริ่มต้นหรือไม่</string>
+    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">ลบแอปนี้หรือไม่</string>
+    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
+    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">แทนที่ระดับเสียง</string>
     <string name="connection_state_enabled">เปิด</string>
     <string name="volume_override_summary">ตั้งเป็น %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">แทนที่ระดับเสียง</string>
+    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">โปรไฟล์</string>
     <string name="profile_profile_manage">จัดการโปรไฟล์</string>
+    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">การตั้งค่าโปรไฟล์</string>
     <string name="profile_trigger_connect">เมื่อเชื่อมต่อ</string>
     <string name="profile_trigger_disconnect">เมื่อตัดการเชื่อมต่อ</string>
     <string name="profile_trigger_notrigger">ไม่มีตัวกระตุ้น</string>
+    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">รูปแบบการแจ้งเตือน</string>
     <string name="ringer_mode">รูปแบบเสียงเรียกเข้า</string>
     <string name="lights_mode">รูปแบบแสง</string>
@@ -293,7 +332,9 @@
     <string name="choose_soundtone">เลือกเสียงแจ้งเตือน</string>
     <string name="choose_ringtone">เลือกเสียงเรียกเข้า</string>
     <string name="ringtone_title">เสียงเรียกเข้าโทรศัพท์</string>
+    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">เสียงแจ้งเตือน</string>
+    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">การตั้งค่าระบบ</string>
     <string name="profile_lockmode_title">รูปแบบล็อคหน้าจอ</string>
     <string name="profile_lockmode_policy_disabled_summary">ตัวเลือกโปรไฟล์นี้ถูกปิดโดยนโยบายของผู้ควบคุมดูแลอุปกรณ์</string>
@@ -303,12 +344,14 @@
     <string name="profile_brightness_title">ความสว่างหน้าจอ</string>
     <string name="profile_brightness_override_summary">ตั้งเป็น %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">แทนที่ความสว่าง</string>
+    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifiAp">ฮอตสปอต \u2011 แบบพกพา</string>
     <string name="toggleBluetooth">บลู​ทู​ธ</string>
     <string name="toggleLocation">ตำแหน่ง</string>
     <string name="toggleData">การเชื่อมต่อข้อมูล</string>
     <string name="toggleSync">ซิงค์ข้อมูลอัตโนมัติ</string>
     <string name="toggleNfc">NFC</string>
+    <!-- Sound settings screen -->
     <string name="ring_mode_title">รูปแบบเสียงเรียกเข้า</string>
     <string name="ring_mode_normal">ปกติ</string>
     <string name="ring_mode_vibrate">สั่น</string>
@@ -319,6 +362,7 @@
     <string name="media_volume_title">มีเดีย</string>
     <string name="alarm_volume_title">นาฬิกาปลุก</string>
     <string name="doze_title">หน้าจอแอมเบียนต์</string>
+    <!-- Status bar -->
     <string name="status_bar_title">แถบสถานะ</string>
     <string name="status_bar_quick_qs_pulldown_title">ปัดแถบสถานะลงอย่างเร็ว</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s ปัดที่มุมของแถบการแจ้งเตือนเพื่อเปิดแผงการตั้งค่าอย่างรวดเร็ว</string>
@@ -329,11 +373,13 @@
     <string name="status_bar_quick_qs_pulldown_right">ขวา</string>
     <string name="status_bar_double_tap_to_sleep_title">แตะสองครั้งเพื่อปิดจอ</string>
     <string name="status_bar_double_tap_to_sleep_summary">แตะสองครั้งที่แถบสถานะเพื่อปิดหน้าจอ</string>
+    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">ไอคอนแถบสถานะ</string>
     <string name="status_bar_notif_count_title">แสดงการแจ้งเตือน</string>
     <string name="status_bar_notif_count_summary">แสดงจำนวนการแจ้งเตือนที่ค้างอยู่</string>
     <string name="status_bar_system_icons_title">ไอคอนระบบ</string>
     <string name="status_bar_system_icons_summary">ควบคุมไอคอนที่จะแสดงบนแถบสถานะ</string>
+    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">นาฬิกา</string>
     <string name="status_bar_clock_show_seconds_title">แสดงวินาที</string>
     <string name="status_bar_clock_show_seconds_summary">แสดงชั่วโมง, นาที, และวินาที</string>
@@ -346,15 +392,18 @@
     <string name="status_bar_am_pm_normal">ปกติ</string>
     <string name="status_bar_am_pm_small">เล็ก</string>
     <string name="status_bar_am_pm_hidden">ซ่อน</string>
+    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">ไฟแสดงสถานะแบตเตอรี่</string>
     <string name="status_bar_battery_style_title">รูปแบบสถานะแบตเตอรี่</string>
     <string name="status_bar_battery_style_icon_portrait">ไอคอนแนวตั้ง</string>
     <string name="status_bar_battery_style_circle">วงกลม</string>
     <string name="status_bar_battery_style_text">ข้อความ</string>
+    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">เปอร์เซ็นต์แบตเตอรี่</string>
     <string name="status_bar_battery_percentage_default">ซ่อน</string>
     <string name="status_bar_battery_percentage_text_inside">ภายในไอคอน</string>
     <string name="status_bar_battery_percentage_text_next">ถัดจากไอคอน</string>
+    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">ความสว่าง</string>
     <string name="status_bar_brightness_slider_title">แถบเลื่อนความสว่าง</string>
     <string name="status_bar_brightness_slider_summary">ปรับความสว่างจากการตั้งค่าด่วน</string>
@@ -365,6 +414,7 @@
     <string name="status_bar_brightness_slider_show_always">แสดงเสมอ</string>
     <string name="status_bar_toggle_brightness">ควบคุมความสว่าง</string>
     <string name="status_bar_toggle_brightness_summary">ปรับความสว่างหน้าจอโดยการเลื่อนแถบสถานะ</string>
+    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">ตรวจสอบการรับส่งข้อมูลเครือข่าย</string>
     <string name="network_traffic_settings_summary">แสดงสถานะการรับส่งข้อมูลเครือข่ายปัจจุบันในแถบสถานะ</string>
     <string name="network_traffic_mode_title">โหมดการแสดงผล</string>
@@ -382,13 +432,17 @@
     <string name="network_traffic_show_units">แสดงหน่วย</string>
     <string name="network_traffic_show_units_summary">จะแสดงหน่วยการวัดการรับส่งข้อมูลในแถบสถานะหรือไม่</string>
     <string name="network_traffic_disabled_clock">การรับส่งข้อมูลเครือข่ายถูกปิดใช้งานเนื่องจากตำแหน่งของนาฬิกา</string>
+    <!-- Protected apps -->
     <string name="protected_apps_manager_title">แอปที่ได้รับการปกป้อง</string>
     <string name="protected_apps_manager_summary">จัดการว่าแอปใดที่จะซ่อนไว้ในใหมดปลอดภัย</string>
+    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">ผู้ร่วมพัฒนา</string>
     <string name="contributors_cloud_loading_message">กำลังโหลดข้อมูลผู้ร่วมพัฒนา\u2026</string>
     <string name="contributors_cloud_failed_message">ไม่สามารถโหลดข้อมูลผู้ร่วมพัฒนา</string>
     <string name="contributor_info_menu">ข้อมูลผู้ร่วมพัฒนา</string>
     <string name="contributions_info_menu">ข้อมูลผู้ร่วมพัฒนา</string>
+    <!-- Anonymous Statistics #Lineage -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">สถิติ LineageOS</string>
     <string name="anonymous_statistics_summary">ช่วยทำให้ LineageOS ดีขึ้นโดยการส่งรายงานสถิติแบบไม่ระบุตัวตน</string>
     <string name="anonymous_statistics_warning_title">เกี่ยวกับ</string>
@@ -397,6 +451,7 @@
     <string name="preview_data_title">แสดงตัวอย่างข้อมูล</string>
     <string name="view_stats_title">ดูสถิติ</string>
     <string name="anonymous_learn_more">เรียนรู้เพิ่มเติม</string>
+    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">รหัสเฉพาะ</string>
     <string name="preview_device_title">อุปกรณ์</string>
     <string name="preview_version_title">เวอร์ชัน</string>
@@ -404,6 +459,7 @@
     <string name="preview_carrier_title">ผู้ให้บริการ</string>
     <string name="stats_collection_title">การเก็บสถิติ</string>
     <string name="stats_collection_summary">อนุญาตให้ติดตั้งอุปกรณ์และเก็บรวบรวมสถิติ</string>
+    <!-- Display : Rotation  -->
     <string name="accelerometer_title">หมุน​หน้า​จอ​อัตโนมัติ</string>
     <string name="display_rotation_title">การตั้งค่าการหมุน</string>
     <string name="display_rotation_enabled">การหมุนอัตโนมัติ เปิดอยู่</string>
@@ -415,6 +471,7 @@
     <string name="display_rotation_90_title">90 องศา</string>
     <string name="display_rotation_180_title">180 องศา</string>
     <string name="display_rotation_270_title">270 องศา</string>
+    <!-- Weather -->
     <string name="weather_settings_title">สภาพอากาศ</string>
     <string name="weather_settings_no_services_prompt">ไม่มีผู้ให้บริการข้อมูลสภาพอากาศติดตั้งอยู่</string>
     <string name="weather_settings_no_services_summary">ติดตั้งผู้ให้บริการสภาพอากาศรับการปรับปรุงสภาพอากาศ</string>
@@ -429,6 +486,7 @@
     <string name="weather_settings_keyword">สภาพอากาศ</string>
     <string name="status_bar_show_weather_title">แสดงสภาพอากาศ</string>
     <string name="status_bar_show_weather_summary">แสดงอุณหภูมิปัจจุบันบนแถบสถานะ</string>
+    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">ประหยัดพลังงานและประสิทธิภาพ</string>
     <string name="perf_profile_settings_summary">ปรับคุณสมบัติการประหยัดพลังงานและประสิทธิภาพของอุปกรณ์</string>
     <string name="perf_profile_overview_summary">โปรไฟล์ปัจจุบัน: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -442,15 +500,17 @@
     <string name="auto_power_save_summary_on">เปิดใช้งานโหมดประหยัด​พลังงานอัตโนมัติเมื่อเหลือแบตเตอรี่ %s</string>
     <string name="auto_power_save_summary_off">ไม่เปิดใช้งานโหมดประหยัดพลังงานโดยอัตโนมัติ</string>
     <string name="auto_power_save_never">ไม่เลย</string>
+    <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">แอปพลิเคชันเต็มหน้าจอ</string>
     <string name="long_screen_settings_summary">บังคับให้แอปเก่าใช้อัตราส่วนจอแบบเต็ม</string>
     <string name="long_screen_settings_no_apps">ไม่มีแอป</string>
+    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">เสียงขณะชาร์จไฟ</string>
     <string name="charging_sounds_enabled_title">เปิดใช้งาน</string>
     <string name="charging_sounds_enabled_summary">เล่นเสียงเมื่อมีการชาร์จหรือถอดสายชาร์จ</string>
     <string name="power_notifications_vibrate_title">สั่น</string>
-    <string name="charging_sounds_ringtone_title">เสียงการแจ้งเตือน</string>
     <string name="charging_sounds_ringtone_silent">ไม่มีเสียง</string>
+    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">ท่าทางสัมผัสบนหน้าจอ</string>
     <string name="touchscreen_gesture_settings_summary">ใช้ท่าทางสัมผัสรูปแบบต่าง ๆ เพื่อการทำงานที่รวดเร็วขึ้น</string>
     <string name="touchscreen_gestures_haptic_feedback_title">สั่นเมื่อแตะ</string>
@@ -474,6 +534,7 @@
     <string name="touchscreen_gesture_letter_v_title">วาดตัวอักษร \"V\"</string>
     <string name="touchscreen_gesture_letter_w_title">วาดตัวอักษร \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">วาดตัวอักษร \"Z\"</string>
+    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">ปัดขึ้นด้วยปากกา</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">ปัดลงด้วยปากกา</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">ปัดซ้ายด้วยปากกา</string>
@@ -493,6 +554,8 @@
     <string name="touchscreen_gesture_action_volume_down">ลดระดับเสียงมีเดีย</string>
     <string name="touchscreen_gesture_action_volume_up">เพิ่มระดับเสียงมีเดีย</string>
     <string name="touchscreen_gesture_action_ambient_display">แสดงหน้าจอแอมเบียนต์</string>
+    <!-- Egg: Title for the easter egg activity -->
+    <!-- Trust interface -->
     <string name="trust_category_features">สถานะ</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">การบังคับใช้</string>
@@ -500,6 +563,12 @@
     <string name="trust_feature_selinux_explain">SELinux บอกว่า กระบวนการสามารถเข้าถึง ไฟล์/พื้นที่ บนอุปกรณ์ของคุณ\nสิ่งนี้ป้องกันไม่ให้แอปและบริการการเข้าถึงไฟล์ที่ไม่ควรจะ: วิธีนี้กระบวนการที่เป็นอันตรายอาจถูกจำกัด และรักษาความปลอดภัยของคุณ</string>
     <string name="trust_feature_security_patches">แพตช์ความปลอดภัยแอนดรอยด์</string>
     <string name="trust_feature_security_patches_value_base">แพลตฟอร์ม: %1$s\nVendor: %2$s</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_value_new">รุ่นล่าสุด</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_value_medium">ล้าหลังไม่กี่เดือน</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
+    <string name="trust_feature_security_patches_value_old">ล้าสมัย</string>
     <string name="trust_feature_security_patches_explain">Google ออกแพตช์รักษาความปลอดภัยเป็นประจำทุกเดือนโดยร่วมมือกับผู้ขาย SoC เพื่อแก้ไขข้อบกพร่องซึ่งอาจถูกใช้โดยแอปที่เป็นอันตรายเพื่อข้ามข้อจำกัดในด้านความปลอดภัยและทำให้อุปกรณ์ของคุณเสียหายอย่างถาวร Google มีการติดตั้งแพตช์แก้ไขทุกเดือนในอุปกรณ์ที่รองรับทั้งหมด แต่ผู้ผลิตอุปกรณ์ของคุณสามารถแก้ไขข้อบกพร่องสำหรับโค้ดที่เป็นกรรมสิทธิ์ได้เท่านั้น เพื่อให้อุปกรณ์ของคุณปลอดภัยตรวจสอบให้แน่ใจว่ารุ่น LineageOS ที่คุณใช้งานอยู่เป็นรุ่นล่าสุดอยู่เสมอและ (ถ้ามี) ให้แน่ใจว่าไฟล์ภาพผู้ขายของคุณได้รับการอัปเดตเป็นรุ่นล่าสุดที่ถูกแนะนำโดย LineageOS</string>
     <string name="trust_feature_encryption">การเข้ารหัส</string>
     <string name="trust_feature_encryption_value_enabled">เปิดใช้งาน</string>
@@ -517,6 +586,7 @@
     <string name="trust_onboarding_done">เข้าใจแล้ว</string>
     <string name="trust_restrict_usb_title">จำกัด USB</string>
     <string name="trust_restrict_usb_summary">ปิดการใช้งานอุปกรณ์ USB ใหม่เมื่ออุปกรณ์ถูกล็อค</string>
+    <!-- Sms limit -->
     <string name="sms_security_check_limit_title">ขีดจำกัดข้อความสูงสุด</string>
     <string name="sms_security_check_limit_summary">แอปสามารถส่ง %s ข้อความ ในเวลา 1 นาที ก่อนที่จะต้องการการยืนยัน</string>
     <string name="sms_security_check_limit_summary_none">แอปจะไม่สามารถส่งข้อความโดยไม่ได้รับการยืนยัน</string>

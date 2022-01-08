@@ -17,6 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">Настройки LineageOS</string>
+    <!-- Generic stuff used everywhere -->
     <string name="loading">Загрузка\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Отмена</string>
@@ -37,8 +38,12 @@
     <string name="search_menu">Настройки поиска</string>
     <string name="disabled">Выключен</string>
     <string name="enabled">Включен</string>
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Конфиденциальность</string>
+    <!-- Notification channels -->
     <string name="channel_light_settings_name">Предварительный просмотр настроек яркости</string>
+    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Изменение настроек индикатора</string>
     <string name="pulse_speed_title">Длительность и скорость мигания</string>
     <string name="default_time">Обычный</string>
@@ -46,6 +51,7 @@
     <string name="dialog_delete_title">Удалить</string>
     <string name="dialog_delete_message">Удалить выбранный элемент?</string>
     <string name="brightness">Уровень яркости</string>
+    <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Всегда вкл</string>
     <string name="pulse_length_very_short">Очень коротко</string>
     <string name="pulse_length_short">Коротко</string>
@@ -57,9 +63,11 @@
     <string name="pulse_speed_normal">Обычный</string>
     <string name="pulse_speed_slow">Медленно</string>
     <string name="pulse_speed_very_slow">Очень медленно</string>
+    <!-- Common light settings strings -->
     <string name="light_brightness_title">Уровень яркости</string>
     <string name="light_brightness_normal">Стандартный</string>
     <string name="light_brightness_zen">Не беспокоить</string>
+    <!-- Battery light settings -->
     <string name="battery_light_title">Индикация батареи</string>
     <string name="battery_low_pulse_title">Мигать при низком уровне заряда</string>
     <string name="battery_light_full_charge_disabled_title">Отключить при полном заряде</string>
@@ -67,6 +75,7 @@
     <string name="battery_light_low_color_title">Батарея разряжена</string>
     <string name="battery_light_medium_color_title">Заряжается</string>
     <string name="battery_light_full_color_title">Полностью заряжена</string>
+    <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Индикация уведомлений</string>
     <string name="notification_light_general_title">Общие</string>
     <string name="notification_light_advanced_title">Расширенные</string>
@@ -81,9 +90,11 @@
     <string name="keywords_lights_brightness_level">уменьшить яркость</string>
     <string name="notification_light_automagic">Подбирать цвета автоматически</string>
     <string name="notification_light_automagic_summary">Выбор цвета согласно цвету значка приложения</string>
+    <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Индикатор событий</string>
     <string name="led_notification_text">Светодиод включен в настройках</string>
     <string name="notification_light_no_apps_summary">Чтобы разрешить управление приложениями, включите \'%1$s\' и нажмите \'\u002b\' в строке меню</string>
+    <!-- LiveDisplay -->
     <string name="live_display_summary">Подстраивать экран на основе времени суток и освещения, чтобы повысить удобочитаемость и снизить нагрузку на глаза</string>
     <string name="live_display_mode">Режим</string>
     <string name="live_display_color_temperature_title">Цветовая температура</string>
@@ -129,12 +140,14 @@
     <string name="color_red_title">Красный</string>
     <string name="color_green_title">Зеленый</string>
     <string name="color_blue_title">Синий</string>
+    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Регулировка изображения</string>
     <string name="picture_adjustment_summary">Отрегулируйте оттенок, насыщенность, глубину и контрастность</string>
     <string name="adj_hue_title">Оттенок</string>
     <string name="adj_saturation_title">Насыщенность</string>
     <string name="adj_intensity_title">Насыщенность</string>
     <string name="adj_contrast_title">Контраст</string>
+    <!-- Button settings -->
     <string name="button_pref_title">Кнопки</string>
     <string name="hardware_keys_power_key_title">Кнопка питания</string>
     <string name="hardware_keys_home_key_title">Кнопка «Домой»</string>
@@ -183,6 +196,7 @@
     <string name="additional_buttons_title">Дополнительные кнопки</string>
     <string name="click_partial_screenshot_title">Скриншот части экрана</string>
     <string name="click_partial_screenshot_summary">Нажмите кнопку уменьшения громкости и кнопку питания, чтобы сделать скриншот части экрана</string>
+    <!-- Key backlight -->
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Подсветка кнопок</string>
     <string name="button_backlight_only_when_pressed_title">Подсветка кнопок только при нажатии</string>
@@ -194,10 +208,13 @@
     <string name="backlight_summary_disabled">Выключена</string>
     <string name="backlight_summary_enabled_with_timeout">Включена <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Включена</string>
+    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Включение экранной панели навигации</string>
     <string name="disable_navkeys_summary">Включить экранную панель навигации и отключить аппаратные кнопки</string>
+    <!-- Buttons - Swap capacitive keys -->
     <string name="swap_capacitive_keys_title">Поменять местами сенсорные кнопки</string>
     <string name="swap_capacitive_keys_summary">Поменять местами кнопки Недавние и Назад</string>
+    <!-- Navigation Bar -->
     <string name="navigation_bar_category">Панель навигации</string>
     <string name="navigation_bar_invert_layout_title">Инвертировать порядок кнопок</string>
     <string name="navigation_bar_invert_layout_summary">Инвертировать расположение панели навигации и других элементов, таких как кнопка переключения метода ввода</string>
@@ -209,6 +226,7 @@
     <string name="navigation_bar_home_double_tap_title">Двойное нажатие кнопки «Домой»</string>
     <string name="navigation_bar_app_switch_long_press_title">Длительное нажатие кнопки \'Недавние\'</string>
     <string name="navigation_bar_edge_long_swipe_title">Действие по длительному свайпу</string>
+    <!-- Power menu -->
     <string name="power_menu_title">Меню кнопки питания</string>
     <string name="power_menu_screenshot_title">Скриншот</string>
     <string name="power_menu_screenshot_summary">Удерживайте, чтобы выделить область для скриншота</string>
@@ -221,6 +239,7 @@
     <string name="power_menu_lockdown_unavailable">Блокировка отключена, так как экран блокировки не защищен</string>
     <string name="power_menu_emergency_title">Экстренная ситуация</string>
     <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для запуска камеры</string>
+    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
     <string name="camera_double_tap_power_gesture_desc">Быстро запустить камеру без разблокировки устройства</string>
     <string name="torch_long_press_power_gesture_title">Длительное нажатие для включения фонарика</string>
     <string name="torch_long_press_power_gesture_desc">Включать фонарик длительным нажатием кнопки питания при выключенном экране</string>
@@ -230,6 +249,7 @@
     <string name="torch_long_press_power_timeout_2min">Через 2 минуты</string>
     <string name="torch_long_press_power_timeout_5min">Через 5 минут</string>
     <string name="torch_long_press_power_timeout_10min">Через 10 минут</string>
+    <!-- Profiles -->
     <string name="profile_menu_delete_title">Удалить</string>
     <string name="profile_action_none">Оставить без изменений</string>
     <string name="profile_action_system">По умолчанию</string>
@@ -246,11 +266,13 @@
     <string name="profile_setup_actions_title">Шаг 2: настройте требуемые действия</string>
     <string name="profile_setup_actions_title_config">Изменение действий</string>
     <string name="wireless_networks_settings_title">Беспроводные сети</string>
+    <!-- Profile triggers -->
     <string name="no_bluetooth_triggers">Нет сопряженных устройств Bluetooth.\nНажмите, чтобы добавить устройство и создать условие переключения на его основе.</string>
     <string name="no_wifi_triggers">Нет сохраненных сетей Wi\u2011Fi.\nНажмите, чтобы добавить сеть Wi\u2011Fi и создать условие переключения на ее основе.</string>
     <string name="no_triggers_configured">Условия переключения не настроены. Нажмите, чтобы добавить условие.</string>
     <string name="no_triggers_configured_nfc">Нажмите для добавления NFC-метки к этому профилю.</string>
     <string name="profile_setup_actions_description">Теперь можно настроить, что должно происходить при активации профиля</string>
+    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Системные профили</string>
     <string name="profiles_add">Добавить</string>
     <string name="profile_menu_delete">Удалить</string>
@@ -274,32 +296,42 @@
     <string name="profile_app_group_category_title">Уведомления</string>
     <string name="profile_app_group_item_instructions">Добавить или удалить группы</string>
     <string name="profile_app_group_item_instructions_summary">Изменение настроек уведомлений для групп приложений в этом профиле</string>
+    <!-- Profile mode options. -->
     <string name="profile_entries_on">Включено</string>
     <string name="profile_entries_off">Выключено</string>
     <string name="profile_entries_no_override">Оставить без изменения</string>
+    <!-- Add Profile -->
     <string name="profile_name_title">Название</string>
     <string name="new_profile_name">&lt;Новый профиль&gt;</string>
+    <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Переименовать</string>
     <string name="rename_dialog_message">Введите новое название</string>
     <string name="rename_dialog_hint">Введите название профиля</string>
+    <!-- Reset Profiles -->
     <string name="profile_reset_title">Сбросить</string>
     <string name="profile_reset_message">Удалить все пользовательские профили и группы приложений и восстановить их по умолчанию?</string>
+    <!-- Delete confimation messages -->
     <string name="profile_app_delete_confirm">Удалить это приложение?</string>
+    <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
+    <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_volumeoverrides_title">Громкость</string>
     <string name="connection_state_enabled">Включить</string>
     <string name="volume_override_summary">Установить в %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Изменять громкость</string>
+    <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Профили</string>
     <string name="profile_profile_manage">Управление профилями</string>
+    <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Настройки профиля</string>
     <string name="profile_trigger_connect">При подключении</string>
     <string name="profile_trigger_disconnect">При отключении</string>
     <string name="profile_trigger_notrigger">Не влияет на изменение профиля</string>
+    <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Режим уведомлений</string>
     <string name="ringer_mode">Режим звонка</string>
     <string name="lights_mode">Индикатор событий</string>
@@ -307,7 +339,9 @@
     <string name="choose_soundtone">Выбрать звук уведомлений</string>
     <string name="choose_ringtone">Выбрать рингтон</string>
     <string name="ringtone_title">Рингтон звонка</string>
+    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Звук уведомления</string>
+    <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Настройки системы</string>
     <string name="profile_lockmode_title">Режим блокировки экрана</string>
     <string name="profile_lockmode_policy_disabled_summary">Этот параметр профиля отключен администратором устройства</string>
@@ -317,6 +351,7 @@
     <string name="profile_brightness_title">Яркость экрана</string>
     <string name="profile_brightness_override_summary">Установить на уровень %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Изменять яркость</string>
+    <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Точка доступа Wi-Fi</string>
     <string name="toggleBluetooth">Bluetooth</string>
@@ -324,6 +359,7 @@
     <string name="toggleData">Мобильные данные</string>
     <string name="toggleSync">Автосинхронизация</string>
     <string name="toggleNfc">NFC</string>
+    <!-- Sound settings screen -->
     <string name="ring_mode_title">Режим звонка</string>
     <string name="ring_mode_normal">Обычный</string>
     <string name="ring_mode_vibrate">Вибрация</string>
@@ -334,6 +370,7 @@
     <string name="media_volume_title">Мультимедиа</string>
     <string name="alarm_volume_title">Будильник</string>
     <string name="doze_title">Индикация событий</string>
+    <!-- Status bar -->
     <string name="status_bar_title">Строка состояния</string>
     <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s край строки состояния вытягивает быстрые настройки</string>
@@ -344,11 +381,13 @@
     <string name="status_bar_quick_qs_pulldown_right">Правый</string>
     <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
+    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Значки в строке состояния</string>
     <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
     <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
     <string name="status_bar_system_icons_title">Системные значки</string>
     <string name="status_bar_system_icons_summary">Настройка видимости значков в строке состояния</string>
+    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Часы</string>
     <string name="status_bar_clock_show_seconds_title">Показывать секунды</string>
     <string name="status_bar_clock_show_seconds_summary">Показывать часы, минуты и секунды</string>
@@ -361,15 +400,18 @@
     <string name="status_bar_am_pm_normal">Обычный</string>
     <string name="status_bar_am_pm_small">Небольшой</string>
     <string name="status_bar_am_pm_hidden">Не показывать</string>
+    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Индикатор батареи</string>
     <string name="status_bar_battery_style_title">Индикатор батареи</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальный значок</string>
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
+    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
     <string name="status_bar_battery_percentage_default">Не показывать</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Яркость</string>
     <string name="status_bar_brightness_slider_title">Регулятор яркости</string>
     <string name="status_bar_brightness_slider_summary">Регулировка яркости в быстрых настройках</string>
@@ -380,6 +422,7 @@
     <string name="status_bar_brightness_slider_show_always">Показывать всегда</string>
     <string name="status_bar_toggle_brightness">Управление яркостью</string>
     <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
+    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Индикатор сетевого трафика</string>
     <string name="network_traffic_settings_summary">Отображать текущую скорость соединения в строке состояния</string>
     <string name="network_traffic_mode_title">Режим отображения</string>
@@ -397,19 +440,23 @@
     <string name="network_traffic_show_units">Показать единицы</string>
     <string name="network_traffic_show_units_summary">Отображать скорость передачи данных в строке состояния</string>
     <string name="network_traffic_disabled_clock">Индикация сетевого трафика отключена из-за позиции часов</string>
+    <!-- Protected apps -->
     <string name="protected_apps_manager_title">Заблокированные приложения</string>
     <string name="protected_apps_manager_summary">Управление приложениями, для запуска которых требуется ввод пароля</string>
+    <!-- Contributors cloud activity -->
     <string name="contributors_cloud_fragment_title">Имена разработчиков</string>
     <string name="contributors_cloud_loading_message">Загрузка данных\u2026</string>
     <string name="contributors_cloud_failed_message">Не удалось загрузить сведения об участниках проекта</string>
     <string name="contributor_info_menu">Сведения об участнике</string>
-    <string name="contributor_info_msg">&lt;b&gt;Имя:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Псевдоним:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Коммитов:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Имя:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Псевдоним:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Коммитов:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Общая статистика</string>
-    <string name="contributions_info_msg">&lt;b&gt;Всего участников:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Всего коммитов:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Последнее обновление:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Всего участников:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Всего коммитов:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Последнее обновление:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+    <!-- Anonymous Statistics #Lineage -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Отправка статистики</string>
     <string name="anonymous_statistics_summary">Помогите сделать LineageOS лучше, разрешив отправку анонимной статистики</string>
     <string name="anonymous_statistics_warning_title">Сведения</string>
@@ -418,6 +465,7 @@
     <string name="preview_data_title">Предварительный просмотр данных</string>
     <string name="view_stats_title">Просмотр статистики</string>
     <string name="anonymous_learn_more">Подробнее</string>
+    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Идентификатор устройства</string>
     <string name="preview_device_title">Устройство</string>
     <string name="preview_version_title">Версия</string>
@@ -425,6 +473,7 @@
     <string name="preview_carrier_title">Оператор</string>
     <string name="stats_collection_title">Сбор статистики</string>
     <string name="stats_collection_summary">Разрешить сбор статистики устройства и сведений об установке</string>
+    <!-- Display : Rotation  -->
     <string name="accelerometer_title">Автоповорот экрана</string>
     <string name="display_rotation_title">Параметры вращения</string>
     <string name="display_rotation_enabled">Автоповорот включен</string>
@@ -436,6 +485,7 @@
     <string name="display_rotation_90_title">90 градусов</string>
     <string name="display_rotation_180_title">180 градусов</string>
     <string name="display_rotation_270_title">270 градусов</string>
+    <!-- Weather -->
     <string name="weather_settings_title">Погода</string>
     <string name="weather_settings_no_services_prompt">Нет установленных служб поставщиков погоды</string>
     <string name="weather_settings_no_services_summary">Установите службу поставщика погоды, чтобы получать обновления погоды</string>
@@ -450,6 +500,7 @@
     <string name="weather_settings_keyword">погода</string>
     <string name="status_bar_show_weather_title">Показать погоду</string>
     <string name="status_bar_show_weather_summary">Отображение текущей погоды в строке состояния</string>
+    <!-- Power: Performance profiles -->
     <string name="perf_profile_settings_title">Энергосбережение и производительность</string>
     <string name="perf_profile_settings_summary">Подстраивать энергосбережение и производительность устройства</string>
     <string name="perf_profile_overview_summary">Профиль производительности: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
@@ -463,15 +514,20 @@
     <string name="auto_power_save_summary_on">Автоматически включать энергосбережение при уровне заряда %s</string>
     <string name="auto_power_save_summary_off">Не включать энергосбережение автоматически</string>
     <string name="auto_power_save_never">Не включать</string>
+    <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Полноэкранные приложения</string>
     <string name="long_screen_settings_summary">Принудительное использование полноэкранного режима устаревшими приложениями</string>
     <string name="long_screen_settings_no_apps">Нет приложений</string>
+    <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Звук при зарядке</string>
     <string name="charging_sounds_enabled_title">Включить</string>
     <string name="charging_sounds_enabled_summary">Воспроизводить звук при подключении или отключении источника питания</string>
     <string name="power_notifications_vibrate_title">Вибросигнал</string>
-    <string name="charging_sounds_ringtone_title">Звук уведомления</string>
     <string name="charging_sounds_ringtone_silent">Без звука</string>
+    <string name="charging_sounds_notification_category_title">Звуки уведомлений</string>
+    <string name="wired_charging_sounds_title">Проводная зарядка</string>
+    <string name="wireless_charging_sounds_title">Беспроводная зарядка</string>
+    <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">Жесты сенсорного экрана</string>
     <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Виброотклик</string>
@@ -495,6 +551,7 @@
     <string name="touchscreen_gesture_letter_v_title">Нарисовать букву «V»</string>
     <string name="touchscreen_gesture_letter_w_title">Нарисовать букву «W»</string>
     <string name="touchscreen_gesture_letter_z_title">Нарисовать букву «Z»</string>
+    <!-- Gesture: Stylus gestures -->
     <string name="touchscreen_gesture_swipe_up_stylus_title">Свайп вверх стилусом</string>
     <string name="touchscreen_gesture_swipe_down_stylus_title">Свайп вниз стилусом</string>
     <string name="touchscreen_gesture_swipe_left_stylus_title">Свайп влево стилусом</string>
@@ -514,6 +571,8 @@
     <string name="touchscreen_gesture_action_volume_down">Уменьшить громкость</string>
     <string name="touchscreen_gesture_action_volume_up">Увеличить громкость</string>
     <string name="touchscreen_gesture_action_ambient_display">Показать внешний дисплей</string>
+    <!-- Egg: Title for the easter egg activity -->
+    <!-- Trust interface -->
     <string name="trust_category_features">Статус</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Принудительный</string>
@@ -521,8 +580,11 @@
     <string name="trust_feature_selinux_explain">SELinux определяет какие процессы имеют доступ к файлам/путям на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым они не должны иметь доступа: таким образом, потенциальный злонамеренный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
     <string name="trust_feature_security_patches">Пакеты безопасности Android</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nПроизводитель: %2$s</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_new">актуален</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_medium">устарел на несколько месяцев</string>
+    <!-- Lowercase on purpose, appears in trust_feature_security_patches_value_base -->
     <string name="trust_feature_security_patches_value_old">устарел</string>
     <string name="trust_feature_security_patches_explain">Исправления безопасности ежемесячно выпускаются Google совместно с поставщиками SoC для устранения уязвимостей в системе, которые могут быть использованы вредоносными приложениями для обхода ограничений безопасности и нанесения необратимого повреждения вашему устройству. Исправления, предоставляемые Google, применяются каждый месяц на всех поддерживаемых устройствах, но исправления для проприетарного кода могут применяться только производителем вашего устройства. Для поддержания вашего устройства в безопасном состоянии, убедитесь, что ваша сборка LineageOS актуальна ​​и (если применимо) образ производителя обновлен до последней версии, рекомендованной LineageOS.</string>
     <string name="trust_feature_encryption">Шифрование</string>
@@ -541,6 +603,7 @@
     <string name="trust_onboarding_done">Понятно</string>
     <string name="trust_restrict_usb_title">Ограничение USB</string>
     <string name="trust_restrict_usb_summary">Отключить определение новых USB-гаджетов, когда устройство заблокировано</string>
+    <!-- Sms limit -->
     <string name="sms_security_check_limit_title">Ограничение SMS-сообщений</string>
     <string name="sms_security_check_limit_summary">Запрашивать подтверждение при отправке более %s сообщений в минуту</string>
     <string name="sms_security_check_limit_summary_none">Приложениям запрещено отправлять сообщения без подтверждения</string>
