@@ -481,4 +481,9 @@
     <string name="touchscreen_gesture_action_next_track">Saltar a la siguiente pista de música</string>
     <string name="touchscreen_gesture_action_volume_down">Menor volumen multimedia</string>
     <string name="touchscreen_gesture_action_volume_up">Mayor volumen multimedia</string>
+    <string name="trust_feature_encryption">Cifrado</string>
+    <string name="trust_warnings_selinux">Estado de SELinux</string>
+    <string name="trust_onboarding_learn_more">Saber más</string>
+    <string name="trust_onboarding_done">Entiendo</string>
+    <string name="sms_security_check_limit_title">Límite de mensajes SMS</string>
 </resources>

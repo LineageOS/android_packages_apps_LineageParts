@@ -528,7 +528,7 @@
     <string name="trust_warnings_selinux">SELinux 상태</string>
     <string name="trust_warnings_keys">빌드 서명</string>
     <string name="trust_onboarding_title">Trust를 만나보세요</string>
-    <string name="trust_onboarding_description">Trust는 기기를 안전하게 보호하고 사용자의 개인 정보를 보호합니다.\nTrust 아이콘은 페이지의 내용이 검증되었을 때만 나타납니다.</string>
+    <string name="trust_onboarding_description">Trust는 기기를 안전하게 유지하고 사용자의 개인 정보를 보호합니다.\nTrust 아이콘은 페이지의 내용이 검증되었을 때만 나타납니다.</string>
     <string name="trust_onboarding_learn_more">더 알아보기</string>
     <string name="trust_onboarding_done">확인</string>
     <string name="trust_restrict_usb_title">USB 제한</string>

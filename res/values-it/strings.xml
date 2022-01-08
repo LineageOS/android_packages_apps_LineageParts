@@ -532,7 +532,7 @@
     <string name="trust_onboarding_learn_more">Scopri di più</string>
     <string name="trust_onboarding_done">Capito</string>
     <string name="trust_restrict_usb_title">Restrizioni USB</string>
-    <string name="trust_restrict_usb_summary">Impedisci la connessione di nuovi dispositivi USB quando il dispositivo é bloccato</string>
+    <string name="trust_restrict_usb_summary">Impedisci la connessione di nuovi dispositivi USB quando il dispositivo è bloccato</string>
     <string name="sms_security_check_limit_title">Limite invio SMS</string>
     <string name="sms_security_check_limit_summary">Le applicazioni possono inviare %s messaggi in 1 minuto prima di richiedere conferma</string>
     <string name="sms_security_check_limit_summary_none">Non è consentito alle app l\'invio di messaggi senza conferma</string>

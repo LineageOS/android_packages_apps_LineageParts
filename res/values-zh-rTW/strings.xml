@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">按主畫面鍵接聽來電</string>
     <string name="extras_title">附加功能</string>
     <string name="additional_buttons_title">附加按鍵</string>
+    <string name="click_partial_screenshot_title">點擊以局部螢幕截圖</string>
+    <string name="click_partial_screenshot_summary">短按音量下鍵與電源鍵以局部螢幕截圖</string>
     <string name="button_backlight_title">背光</string>
     <string name="button_backlight_enabled">開啟按鍵背光</string>
     <string name="button_backlight_only_when_pressed_title">僅在按下按鈕才點亮指示燈</string>
@@ -193,12 +195,15 @@
     <string name="disable_navkeys_title">啟用螢幕上的導覽列</string>
     <string name="disable_navkeys_summary">啟用螢幕上的導覽列和停用實體按鍵</string>
     <string name="navigation_bar_category">導覽列</string>
+    <string name="navigation_bar_invert_layout_title">反轉佈局</string>
+    <string name="navigation_bar_invert_layout_summary">反轉導覽列和其他項目的版面配置，例如輸入法選擇器</string>
     <string name="navigation_bar_left_summary">橫向模式下將導覽列置於螢幕左側</string>
     <string name="navigation_bar_arrow_keys_title">輸入時顯示方向鍵</string>
     <string name="navigation_bar_arrow_keys_summary">輸入時顯示游標鍵。取代輸入法切換器。</string>
     <string name="navigation_bar_home_long_press_title">主畫面鍵長按動作</string>
     <string name="navigation_bar_home_double_tap_title">主畫面輕觸兩下動作</string>
     <string name="navigation_bar_app_switch_long_press_title">多工鍵長按動作</string>
+    <string name="navigation_bar_edge_long_swipe_title">邊緣長滑動作</string>
     <string name="power_menu_title">電源選單</string>
     <string name="power_menu_screenshot_title">螢幕擷取</string>
     <string name="power_menu_screenshot_summary">長按即可部分螢幕擷取</string>
@@ -307,6 +312,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">可攜式 Wi\u2011Fi 無線基地台</string>
     <string name="toggleBluetooth">藍牙</string>
+    <string name="toggleLocation">位置</string>
     <string name="toggleData">數據連線</string>
     <string name="toggleSync">自動同步處理資料</string>
     <string name="toggleNfc">NFC</string>
@@ -361,6 +367,9 @@
     <string name="status_bar_brightness_slider_summary">在快速設定中調整亮度</string>
     <string name="status_bar_brightness_slider_auto_title">自動調整亮度</string>
     <string name="status_bar_brightness_slider_auto_summary">在亮度滑動條附近顯示自動調節亮度開關</string>
+    <string name="status_bar_brightness_slider_show_never">永不顯示</string>
+    <string name="status_bar_brightness_slider_show_expanded">當展開時顯示</string>
+    <string name="status_bar_brightness_slider_show_always">始終顯示</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
     <string name="network_traffic_settings_title">網路流量監測器</string>
@@ -450,6 +459,7 @@
     <string name="auto_power_save_never">永不</string>
     <string name="long_screen_settings_title">全螢幕應用程式</string>
     <string name="long_screen_settings_summary">強制舊型應用程式使用全螢幕的比例</string>
+    <string name="long_screen_settings_no_apps">沒有應用程式</string>
     <string name="charging_sounds_settings_title">充電音效</string>
     <string name="charging_sounds_enabled_title">啟用</string>
     <string name="charging_sounds_enabled_summary">接上或拔除電源時播放音效</string>
@@ -466,6 +476,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">用一根手指向下滑動</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">用一根手指向左滑動</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">用一根手指向右滑動</string>
+    <string name="touchscreen_gesture_single_tap_title">輕觸一下</string>
     <string name="touchscreen_gesture_up_arrow_title">畫出一個「Λ」</string>
     <string name="touchscreen_gesture_down_arrow_title">畫出一個「V」</string>
     <string name="touchscreen_gesture_left_arrow_title">畫出一個「&lt;」</string>
@@ -496,6 +507,7 @@
     <string name="touchscreen_gesture_action_next_track">跳到下一首音樂曲目</string>
     <string name="touchscreen_gesture_action_volume_down">降低媒體音量</string>
     <string name="touchscreen_gesture_action_volume_up">提高媒體音量</string>
+    <string name="touchscreen_gesture_action_ambient_display">顯示環境顯示</string>
     <string name="trust_category_features">狀態</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">強制執行</string>

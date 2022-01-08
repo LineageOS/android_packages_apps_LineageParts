@@ -206,7 +206,7 @@
     <string name="navigation_bar_edge_long_swipe_title">Kənar boyunca sürüşdürmə hərəkəti</string>
     <string name="power_menu_title">Güc menyusu</string>
     <string name="power_menu_screenshot_title">Ekran şəkli</string>
-    <string name="power_menu_screenshot_summary">Bir hissənin ekran şəkli üçün basılı tutun</string>
+    <string name="power_menu_screenshot_summary">Ekranın bir hisəsini çəkmək üçün basılı tutun</string>
     <string name="power_menu_airplane_title">Təyyarə rejimi</string>
     <string name="power_menu_users_title">İstifadəçi dəyişdirici</string>
     <string name="power_menu_bug_report_title">Xəta hesabatı</string>
