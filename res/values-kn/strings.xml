@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -199,7 +199,6 @@
     <string name="power_menu_airplane_title">ವಿಮಾನ ರೀತಿ</string>
     <string name="power_menu_users_title">ಬಳಕೆದಾರ ಪತ್ತುಕ</string>
     <string name="power_menu_bug_report_title">ದೋಷ ವರದಿ</string>
-    <string name="power_menu_lockdown_title">ಬೀಗ ಹಾಕು</string>
     <string name="camera_double_tap_power_gesture_title">ಕ್ಯಾಮರಾಕ್ಕಾಗಿ ಶಕ್ತಿ ಗುಂಡಿಯನ್ನು ಎರಡುಬಾರಿ ಒತ್ತಿ</string>
     <string name="camera_double_tap_power_gesture_desc">ನಿಮ್ಮ ಪರದೆಯ ಬೀಗ ತೆಗೆಯದೆ ತ್ವರಿತವಾಗಿ ಕ್ಯಾಮರಾ ಪ್ರಾರಂಭಿಸು</string>
     <string name="torch_long_press_power_gesture_title">ಪಂಜಿಗಾಗಿ ದೀರ್ಘವತ್ತು</string>
@@ -232,8 +231,6 @@
     <string name="no_triggers_configured_nfc">ಹೊಸ NFC ಪ್ರಚೋದಕಗಳನ್ನು ರಚಿಸಲು ಸ್ಪರ್ಶಿಸಿ.</string>
     <string name="profile_setup_actions_description">ರೇಖಾಕೃತಿ ಸಶಕ್ತವಾದ ನಂತರ ಏನಾಗಬೇಕೆಂದು ಸಂರಚಿಸಿ</string>
     <string name="profiles_settings_title">ವ್ಯವಸ್ಥೆಯ ರೇಖಾಕೃತಿಗಳು</string>
-    <string name="profiles_add">ಸೇರಿಸು</string>
-    <string name="profile_menu_delete">ಅಳಿಸು</string>
     <string name="profile_settings_title">ರೇಖಾಕೃತಿ</string>
     <string name="profile_empty_list_profiles_off">ವ್ಯವಸ್ಥೆಯ ರೇಖಾಕೃತಿಗಳನ್ನು ಸಂರಚಿಸಲು ಮತ್ತು ಬಳಸಲು, ರೇಖಾಕೃತಿಗಳನ್ನು ಸಶಕ್ತಿಸು.</string>
     <string name="profile_settings_summary_off">ರೇಖಾಕೃತಿಗಳು ಅಶಕ್ತವಾಗಿವೆ</string>
@@ -324,8 +321,6 @@
     <string name="status_bar_double_tap_to_sleep_title">ನಿದ್ರಿಸಲು ಜೋಡಿವತ್ತು</string>
     <string name="status_bar_double_tap_to_sleep_summary">ಪ್ರದರ್ಶನವನ್ನು ನಂದಿಸಲು ಸ್ಥಿತಿ ಪಟ್ಟಿ ಮೇಲೆ ಜೋಡಿವತ್ತ್ತಿ</string>
     <string name="status_bar_icons_title">ಸ್ಥಿತಿ ಪಟ್ಟಿ ಚಿಹ್ನೆಗಳು</string>
-    <string name="status_bar_notif_count_title">ಸೂಚನೆಗಳ ಎಣಿಕೆ ತೋರಿಸು</string>
-    <string name="status_bar_notif_count_summary">ಬಾಕಿ ಉಳಿದ ಸೂಚನೆಗಳ ಎಣಿಕೆ ಪ್ರದರ್ಶಿಸು</string>
     <string name="status_bar_system_icons_title">ವ್ಯವಸ್ಥೆಯ ಚಿಹ್ನೆಗಳು</string>
     <string name="status_bar_system_icons_summary">ಯಾವ ಸ್ಥಿತಿಪಟ್ಟಿ ಚಿಹ್ನೆಗಳ ತೋರಿಸುವುದೆಂದು ನಿಯಂತ್ರಿಸು</string>
     <string name="status_bar_clock_title">ಗಡಿಯಾರ</string>
@@ -422,10 +417,8 @@
     <string name="long_screen_settings_title">ಪೂರ್ಣ ಪರದೆಯ ಆಪ್ಗಳು</string>
     <string name="long_screen_settings_summary">ಪೂರ್ವಾರ್ಜಿತ ಆಪ್ಗಳಿಗೆ ಪೂರ್ಣ ಪರದೆ ಅನುಪಾತವನ್ನು ಬಳಸಲು ಒತ್ತಾಯಿಸು</string>
     <string name="charging_sounds_settings_title">ತುಂಬುಕ ಶಬ್ಧಗಳು</string>
-    <string name="charging_sounds_enabled_title">ಸಶಕ್ತಿಸು</string>
-    <string name="charging_sounds_enabled_summary">ಶಕ್ತಿ ಮೂಲವನ್ನು ಸಂಪರ್ಕಿಸಿದಾಗ ಅಥವಾ ಸಂಪರ್ಕ ಕಡಿತದಾಗ ಧ್ವನಿ ಮೊಳಗಿಸು</string>
+    <string name="charging_sounds_summary">ಶಕ್ತಿ ಮೂಲವನ್ನು ಸಂಪರ್ಕಿಸಿದಾಗ ಅಥವಾ ಸಂಪರ್ಕ ಕಡಿತದಾಗ ಧ್ವನಿ ಮೊಳಗಿಸು</string>
     <string name="power_notifications_vibrate_title">ಕಂಪಿಸು</string>
-    <string name="charging_sounds_ringtone_title">ಸೂಚನೆ ಶಬ್ಧ</string>
     <string name="charging_sounds_ringtone_silent">ಮೌನ</string>
     <string name="touchscreen_gesture_settings_title">ಸ್ಪರ್ಷಪರದೆಯ ಸನ್ನೆಗಳು</string>
     <string name="touchscreen_gesture_settings_summary">ತ್ವರಿತ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಸ್ಪರ್ಶಪರದೆ ಮೇಲೆ ವಿವಿಧ ಸನ್ನೆಗಳನ್ನು ಮಾಡು</string>

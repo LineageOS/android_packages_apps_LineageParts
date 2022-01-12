@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -164,8 +164,6 @@
     <string name="no_wifi_triggers">Няма захаваных сетак Wi\u2011Fi.\nНацісьні, каб дадаць сетку Wi\u2011Fi і стварыць умову пераключэньня на яе аснове.</string>
     <string name="no_triggers_configured">Умовы пераключэньня не наладжаны. Націсьні, каб дадаць умову.</string>
     <string name="profiles_settings_title">Профілі сістэмы</string>
-    <string name="profiles_add">Дадаць</string>
-    <string name="profile_menu_delete">Выдаліць</string>
     <string name="profile_settings_title">Профіль</string>
     <string name="profile_empty_list_profiles_off">Для выкарыстаньня і наладаў профіляў сістэмы задзейнічай функцыю \"Профілі\".</string>
     <string name="profile_settings_summary_off">Профілі не задзейнічаныя</string>
@@ -216,8 +214,6 @@
     <string name="status_bar_quick_qs_pulldown_off">Адключаны</string>
     <string name="status_bar_quick_qs_pulldown_left">Улева</string>
     <string name="status_bar_quick_qs_pulldown_right">Управа</string>
-    <string name="status_bar_notif_count_title">Лічыльнік паведамленьняў</string>
-    <string name="status_bar_notif_count_summary">Паказваць колькасць новых паведамленьняў у радку стану</string>
     <string name="status_bar_am_pm_title">Варыянт \"AM/PM\"</string>
     <string name="status_bar_am_pm_info">24-гадзінны фармат часу</string>
     <string name="status_bar_am_pm_normal">Нармальна</string>

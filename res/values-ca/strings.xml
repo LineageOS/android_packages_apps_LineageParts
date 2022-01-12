@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Sí</string>
     <string name="no">No</string>
     <string name="search">Cerca</string>
-    <string name="search_menu">Configuració de la cerca</string>
     <string name="disabled">Deshabilitat</string>
     <string name="enabled">Habilitat</string>
     <string name="privacy_settings_title">Privadesa</string>
@@ -61,6 +60,7 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">No molestis</string>
     <string name="battery_light_title">Llum de la bateria</string>
+    <string name="battery_light_enable_title">Activa la llum de la bateria</string>
     <string name="battery_low_pulse_title">Parpalleja si la bateria està baixa</string>
     <string name="battery_light_full_charge_disabled_title">Desactiva quan la càrrega estigui completa</string>
     <string name="battery_light_list_title">Colors</string>
@@ -68,6 +68,7 @@
     <string name="battery_light_medium_color_title">S\'està carregant</string>
     <string name="battery_light_full_color_title">Completament carregada</string>
     <string name="notification_light_title">Llum de notificació</string>
+    <string name="notification_light_enable_title">Activa la llum de notificació</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_advanced_title">Avançat</string>
     <string name="notification_light_applist_title">Aplicacions</string>
@@ -217,8 +218,6 @@
     <string name="power_menu_bug_report_title">Informe d\'error</string>
     <string name="power_menu_bug_report_devoptions_unavailable">Els informes d\'errors estan desactivats ja que la configuració de desenvolupament no està activada</string>
     <string name="power_menu_bug_report_unavailable_for_user">Els informes d\'errors estan desactivats per a usuaris no principals.</string>
-    <string name="power_menu_lockdown_title">Bloqueig</string>
-    <string name="power_menu_lockdown_unavailable">El bloqueig està desactivat perquè el bloqueig del teclat no és segur</string>
     <string name="power_menu_emergency_title">Emergència</string>
     <string name="camera_double_tap_power_gesture_title">Prem el botó d\'apagat dues vegades per a la càmera</string>
     <string name="camera_double_tap_power_gesture_desc">Obre la càmera ràpidament sense desbloquejar la pantalla</string>
@@ -252,8 +251,8 @@
     <string name="no_triggers_configured_nfc">Pica per configurar un nou activador NFC.</string>
     <string name="profile_setup_actions_description">Configura ara el que passa quan s\'activa el perfil</string>
     <string name="profiles_settings_title">Perfils del sistema</string>
-    <string name="profiles_add">Afegeix</string>
-    <string name="profile_menu_delete">Esborra</string>
+    <string name="profiles_settings_enable_title">Activa els perfils</string>
+    <string name="profiles_create_new">Crea un nou perfil</string>
     <string name="profile_settings_title">Perfil</string>
     <string name="profile_empty_list_profiles_off">Per configurar i utilitzar perfils de sistema, activa els Perfils.</string>
     <string name="profile_settings_summary_off">Els perfils estan deshabilitats</string>
@@ -345,8 +344,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Pica dues vegades per posar en repòs</string>
     <string name="status_bar_double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat per apagar la pantalla</string>
     <string name="status_bar_icons_title">Icones de la barra d\'estat</string>
-    <string name="status_bar_notif_count_title">Mostra comptador de notificacions</string>
-    <string name="status_bar_notif_count_summary">Mostra el nombre de notificacions pendents</string>
     <string name="status_bar_system_icons_title">Icones del sistema</string>
     <string name="status_bar_system_icons_summary">Controla quines icones de la barra d\'estat es mostren</string>
     <string name="status_bar_clock_title">Rellotge</string>
@@ -403,13 +400,13 @@
     <string name="contributors_cloud_loading_message">S\'estan carregant les dades dels contribuïdors\u2026</string>
     <string name="contributors_cloud_failed_message">No s\'han pogut carregar les dades dels contribuïdors</string>
     <string name="contributor_info_menu">Informació del contribuïdor</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nom:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Sobrenom:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Aportacions:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nom:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Sobrenom:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Aportacions:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informació de les contribucions</string>
-    <string name="contributions_info_msg">&lt;b&gt;Col·laboradors totals:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Aportacions totals:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Darrera actualització:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Col·laboradors totals:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Aportacions totals:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Darrera actualització:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Estadístiques de LineageOS</string>
     <string name="anonymous_statistics_summary">Ajuda a fer millor LineageOS optant a transmetre estadístiques anònimes</string>
     <string name="anonymous_statistics_warning_title">Quant a</string>
@@ -453,11 +450,13 @@
     <string name="long_screen_settings_summary">Força les aplicacions heretades per utilitzar la relació d\'aspecte de pantalla completa</string>
     <string name="long_screen_settings_no_apps">Cap aplicació</string>
     <string name="charging_sounds_settings_title">Sons de càrrega</string>
-    <string name="charging_sounds_enabled_title">Habilita</string>
-    <string name="charging_sounds_enabled_summary">Reprodueix un so en connectar o desconnectar d\'una font d\'energia</string>
+    <string name="charging_sounds_enable_title">Activa els sons de càrrega</string>
+    <string name="charging_sounds_summary">Reprodueix un so en connectar o desconnectar d\'una font d\'energia</string>
     <string name="power_notifications_vibrate_title">Vibra</string>
-    <string name="charging_sounds_ringtone_title">So de la notificació</string>
     <string name="charging_sounds_ringtone_silent">Silenci</string>
+    <string name="charging_sounds_notification_category_title">Sons de notificació</string>
+    <string name="wired_charging_sounds_title">Càrrega per cable</string>
+    <string name="wireless_charging_sounds_title">Càrrega sense fils</string>
     <string name="touchscreen_gesture_settings_title">Gestos a la pantalla tàctil</string>
     <string name="touchscreen_gesture_settings_summary">Fes diversos gestos a la pantalla tàctil per fer accions ràpides</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Resposta hàptica</string>

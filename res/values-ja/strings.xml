@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">はい</string>
     <string name="no">いいえ</string>
     <string name="search">検索</string>
-    <string name="search_menu">検索設定</string>
     <string name="disabled">無効</string>
     <string name="enabled">有効</string>
     <string name="privacy_settings_title">プライバシー</string>
@@ -61,6 +60,7 @@
     <string name="light_brightness_normal">標準</string>
     <string name="light_brightness_zen">おやすみモード</string>
     <string name="battery_light_title">電池のライト</string>
+    <string name="battery_light_enable_title">バッテリーライトを有効化</string>
     <string name="battery_low_pulse_title">残量低下時に点滅</string>
     <string name="battery_light_full_charge_disabled_title">満充電で無効</string>
     <string name="battery_light_list_title">色</string>
@@ -68,6 +68,7 @@
     <string name="battery_light_medium_color_title">充電中</string>
     <string name="battery_light_full_color_title">充電完了</string>
     <string name="notification_light_title">通知のライト</string>
+    <string name="notification_light_enable_title">通知ライトを有効化</string>
     <string name="notification_light_general_title">全般</string>
     <string name="notification_light_advanced_title">詳細設定</string>
     <string name="notification_light_applist_title">アプリ</string>
@@ -217,8 +218,6 @@
     <string name="power_menu_bug_report_title">バグレポート</string>
     <string name="power_menu_bug_report_devoptions_unavailable">開発者向けオプションが有効でないためバグレポートは無効です</string>
     <string name="power_menu_bug_report_unavailable_for_user">プライマリユーザー以外はバグレポートは無効です</string>
-    <string name="power_menu_lockdown_title">ロックダウン</string>
-    <string name="power_menu_lockdown_unavailable">キーガードが安全でないため画面ロックは無効です</string>
     <string name="power_menu_emergency_title">緊急通報</string>
     <string name="camera_double_tap_power_gesture_title">ホームボタンを2回押してカメラを起動</string>
     <string name="camera_double_tap_power_gesture_desc">画面のロックを解除せずにカメラをすばやく起動する</string>
@@ -252,8 +251,8 @@
     <string name="no_triggers_configured_nfc">タップして新しいNFCトリガーをセットアップします。</string>
     <string name="profile_setup_actions_description">このプロファイルが有効になったときの動作を設定してください</string>
     <string name="profiles_settings_title">システムプロファイル</string>
-    <string name="profiles_add">追加</string>
-    <string name="profile_menu_delete">削除</string>
+    <string name="profiles_settings_enable_title">プロファイルを有効化</string>
+    <string name="profiles_create_new">新しいプロファイルを作成</string>
     <string name="profile_settings_title">プロファイル</string>
     <string name="profile_empty_list_profiles_off">システムのプロファイルを設定または使用するには、プロファイルをONにします。</string>
     <string name="profile_settings_summary_off">プロファイルは無効になっています</string>
@@ -345,8 +344,6 @@
     <string name="status_bar_double_tap_to_sleep_title">ダブルタップしてスリープ</string>
     <string name="status_bar_double_tap_to_sleep_summary">ステータスバーをダブルタップしてディスプレイを消灯します</string>
     <string name="status_bar_icons_title">ステータスバーのアイコン</string>
-    <string name="status_bar_notif_count_title">通知の数を表示</string>
-    <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
     <string name="status_bar_system_icons_title">システムアイコン</string>
     <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを設定します</string>
     <string name="status_bar_clock_title">時計</string>
@@ -403,13 +400,13 @@
     <string name="contributors_cloud_loading_message">貢献者のデータを読み込み中...</string>
     <string name="contributors_cloud_failed_message">貢献者の情報を読み込めません</string>
     <string name="contributor_info_menu">貢献者の情報</string>
-    <string name="contributor_info_msg">&lt;b&gt;名前:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;ニックネーム:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;コミット:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>名前:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>ニックネーム:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>コミット:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">貢献者の情報</string>
-    <string name="contributions_info_msg">&lt;b&gt;協力者の合計:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;コミットの合計:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;最終更新:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>協力者の合計:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>コミットの合計:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>最終更新:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS の統計</string>
     <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してLineageOSの改善に協力する</string>
     <string name="anonymous_statistics_warning_title">情報</string>
@@ -453,11 +450,13 @@
     <string name="long_screen_settings_summary">従来のアプリに全画面表示のアスペクト比を使用させる</string>
     <string name="long_screen_settings_no_apps">なし</string>
     <string name="charging_sounds_settings_title">充電時の音</string>
-    <string name="charging_sounds_enabled_title">有効</string>
-    <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らします</string>
+    <string name="charging_sounds_enable_title">充電音を有効化</string>
+    <string name="charging_sounds_summary">電源を接続または切断したときに音を鳴らします</string>
     <string name="power_notifications_vibrate_title">バイブレーション</string>
-    <string name="charging_sounds_ringtone_title">通知音</string>
     <string name="charging_sounds_ringtone_silent">サイレント</string>
+    <string name="charging_sounds_notification_category_title">通知音</string>
+    <string name="wired_charging_sounds_title">有線充電</string>
+    <string name="wireless_charging_sounds_title">ワイヤレス充電</string>
     <string name="touchscreen_gesture_settings_title">タッチスクリーンジェスチャー</string>
     <string name="touchscreen_gesture_settings_summary">様々なタッチスクリーンジェスチャーですばやくアクションを実行します</string>
     <string name="touchscreen_gestures_haptic_feedback_title">タッチ操作バイブ</string>

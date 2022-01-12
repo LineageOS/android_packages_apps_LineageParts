@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -199,7 +199,6 @@
     <string name="power_menu_airplane_title">Modo avión</string>
     <string name="power_menu_users_title">Selector de usuario</string>
     <string name="power_menu_bug_report_title">Informe de errores</string>
-    <string name="power_menu_lockdown_title">Bloqueo de seguridad</string>
     <string name="camera_double_tap_power_gesture_title">Pulsar dos veces el botón de encendido para la cámara</string>
     <string name="camera_double_tap_power_gesture_desc">Abre rápidamente la cámara sin desbloquear la pantalla</string>
     <string name="torch_long_press_power_gesture_title">Mantenga pulsado para activar la linterna</string>
@@ -232,8 +231,6 @@
     <string name="no_triggers_configured_nfc">Pulsa para configurar un nuevo evento NFC.</string>
     <string name="profile_setup_actions_description">Ahora configura qué sucederá al activar el perfil</string>
     <string name="profiles_settings_title">Perfiles del sistema</string>
-    <string name="profiles_add">Añadir</string>
-    <string name="profile_menu_delete">Borrar</string>
     <string name="profile_settings_title">Perfil</string>
     <string name="profile_empty_list_profiles_off">Para configurar y usar los perfiles del sistema, actívalos previamente.</string>
     <string name="profile_settings_summary_off">Perfiles desactivados</string>
@@ -324,8 +321,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Doble pulsación para suspender</string>
     <string name="status_bar_double_tap_to_sleep_summary">Pulsa dos veces la barra de estado para apagar la pantalla</string>
     <string name="status_bar_icons_title">Iconos de la barra de estado</string>
-    <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
-    <string name="status_bar_notif_count_summary">Mostrar el número de notificaciones pendientes en la barra de estado</string>
     <string name="status_bar_system_icons_title">Iconos del sistema</string>
     <string name="status_bar_system_icons_summary">Elija los iconos que aparecerán en la barra de estado</string>
     <string name="status_bar_clock_title">Reloj</string>
@@ -422,10 +417,8 @@
     <string name="long_screen_settings_title">Aplicaciones a pantalla completa</string>
     <string name="long_screen_settings_summary">Forzar a las aplicaciones antiguas, a utilizar la relación de aspecto a pantalla completa</string>
     <string name="charging_sounds_settings_title">Sonidos al cargar el dispositivo</string>
-    <string name="charging_sounds_enabled_title">Activar</string>
-    <string name="charging_sounds_enabled_summary">Reproducir un sonido al conectar o desconectar el cargador</string>
+    <string name="charging_sounds_summary">Reproducir un sonido al conectar o desconectar el cargador</string>
     <string name="power_notifications_vibrate_title">Vibración</string>
-    <string name="charging_sounds_ringtone_title">Sonido de notificación</string>
     <string name="charging_sounds_ringtone_silent">Silencio</string>
     <string name="touchscreen_gesture_settings_title">Gestos en pantalla táctil</string>
     <string name="touchscreen_gesture_settings_summary">Realizar varios gestos en pantalla para acciones rápidas</string>

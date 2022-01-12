@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Igen</string>
     <string name="no">Nem</string>
     <string name="search">Keresés</string>
-    <string name="search_menu">Keresési beállítások</string>
     <string name="disabled">Letiltva</string>
     <string name="enabled">Engedélyezve</string>
     <string name="privacy_settings_title">Adatvédelem</string>
@@ -217,8 +216,6 @@
     <string name="power_menu_bug_report_title">Hibabejelentés</string>
     <string name="power_menu_bug_report_devoptions_unavailable">Nincs lehetőség hibajelentésre, mivel a fejlesztői beállítások nincsenek engedélyezve</string>
     <string name="power_menu_bug_report_unavailable_for_user">Nem elsődleges felhasználók nem adhatnak hibajelentést.</string>
-    <string name="power_menu_lockdown_title">Lezárás</string>
-    <string name="power_menu_lockdown_unavailable">Zárolás letiltva, mert a billentyűzár nem biztonságos</string>
     <string name="power_menu_emergency_title">Vészhelyzet</string>
     <string name="camera_double_tap_power_gesture_title">Nyomja meg a bekapcsoló gombot kétszer a kamerához</string>
     <string name="camera_double_tap_power_gesture_desc">Kamera gyors megnyitása a képernyő feloldása nélkül</string>
@@ -252,8 +249,6 @@
     <string name="no_triggers_configured_nfc">Érintse meg egy új NFC trigger beállításáért.</string>
     <string name="profile_setup_actions_description">Most állítsa be, hogy mi történjen a profil aktiválásakor</string>
     <string name="profiles_settings_title">Rendszer profilok</string>
-    <string name="profiles_add">Hozzáad</string>
-    <string name="profile_menu_delete">Törlés</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">Rendszerprofil konfiguráláshoz és használathoz kapcsolja be a profilokat.</string>
     <string name="profile_settings_summary_off">Profilok letiltva</string>
@@ -345,8 +340,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Dupla érintésre alvó mód</string>
     <string name="status_bar_double_tap_to_sleep_summary">Az állapotsorra kétszer koppintva kikapcsol a képernyő</string>
     <string name="status_bar_icons_title">Állapotsor ikonok</string>
-    <string name="status_bar_notif_count_title">Értesítések számának mutatása</string>
-    <string name="status_bar_notif_count_summary">Folyamatban lévő értesítések számának megjelenítése az értesítési sávon</string>
     <string name="status_bar_system_icons_title">Rendszerikonok</string>
     <string name="status_bar_system_icons_summary">Állapotsor ikonok megjelenítésének vezérlése</string>
     <string name="status_bar_clock_title">Óra</string>
@@ -403,13 +396,13 @@
     <string name="contributors_cloud_loading_message">Közreműködői adatok betöltése\u2026</string>
     <string name="contributors_cloud_failed_message">Közreműködői adatok betöltés sikertelen</string>
     <string name="contributor_info_menu">Közreműködői információ</string>
-    <string name="contributor_info_msg">&lt;b&gt;Név:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Becenév:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Feladatai:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Név:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Becenév:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Feladatai:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Közreműködési információ</string>
-    <string name="contributions_info_msg">&lt;b&gt;Összes közreműködő:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Összes feladat:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Utolsó frissítés:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Összes közreműködő:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Összes feladat:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Utolsó frissítés:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS statisztika</string>
     <string name="anonymous_statistics_summary">Segítsen a LineageOS jobbá tételében, kapcsolja be a névtelen statisztikai adatok gyűjtését</string>
     <string name="anonymous_statistics_warning_title">Névjegy</string>
@@ -453,11 +446,12 @@
     <string name="long_screen_settings_summary">Régi alkalmazások kényszerítése, hogy a teljes képernyőt használják</string>
     <string name="long_screen_settings_no_apps">Nincsenek alkalmazások</string>
     <string name="charging_sounds_settings_title">Töltés jelzése</string>
-    <string name="charging_sounds_enabled_title">Engedélyezés</string>
-    <string name="charging_sounds_enabled_summary">Hangjelzés töltő csatlakoztatása, vagy leválasztása esetén</string>
+    <string name="charging_sounds_summary">Hangjelzés töltő csatlakoztatása, vagy leválasztása esetén</string>
     <string name="power_notifications_vibrate_title">Rezgés</string>
-    <string name="charging_sounds_ringtone_title">Értesítési hang</string>
     <string name="charging_sounds_ringtone_silent">Néma</string>
+    <string name="charging_sounds_notification_category_title">Értesítési hangok</string>
+    <string name="wired_charging_sounds_title">Vezetékes töltés</string>
+    <string name="wireless_charging_sounds_title">Vezeték nélküli töltés</string>
     <string name="touchscreen_gesture_settings_title">Érintőképernyő kézmozdulatok</string>
     <string name="touchscreen_gesture_settings_summary">Különböző érintőképernyő kézmozdulat végrehajtása a gyors műveletekért</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Érintési visszajelzés</string>

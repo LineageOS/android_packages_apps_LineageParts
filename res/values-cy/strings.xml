@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Iawn</string>
     <string name="no">Na</string>
     <string name="search">Chwilio</string>
-    <string name="search_menu">Chwilio\'r gosodiadau</string>
     <string name="disabled">Wedi\'i analluogi</string>
     <string name="enabled">Wedi\'i alluogi</string>
     <string name="privacy_settings_title">Preifatrwydd</string>
@@ -206,7 +205,6 @@
     <string name="power_menu_airplane_title">Modd awyren</string>
     <string name="power_menu_users_title">Newidydd defnyddiwr</string>
     <string name="power_menu_bug_report_title">Adroddiad Gwall</string>
-    <string name="power_menu_lockdown_title">Cloi lawr</string>
     <string name="camera_double_tap_power_gesture_title">Gwasgu\'r botwm pŵer dwywaith am y camera</string>
     <string name="camera_double_tap_power_gesture_desc">Agor y camera yn gyflym heb orfod datgloi dy sgrin</string>
     <string name="torch_long_press_power_gesture_title">Dal yn hir i lansio\'r fflacholau</string>
@@ -239,8 +237,6 @@
     <string name="no_triggers_configured_nfc">Tapia i osod sbardun NFC newydd.</string>
     <string name="profile_setup_actions_description">Nawr ffurfwedda beth sy\'n digwydd pan mae\'r proffil yn cael ei actifadu</string>
     <string name="profiles_settings_title">Proffiliau system</string>
-    <string name="profiles_add">Ychwanegu</string>
-    <string name="profile_menu_delete">Dileu</string>
     <string name="profile_settings_title">Proffil</string>
     <string name="profile_empty_list_profiles_off">I ffurfweddu a defnyddio proffiliau system, tro proffiliau ymlaen.</string>
     <string name="profile_settings_summary_off">Mae proffiliau wedi\'u hanalluogi</string>
@@ -332,8 +328,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Tariad dwbl i gysgu</string>
     <string name="status_bar_double_tap_to_sleep_summary">Tapio dwywaith ar y bar statws i droi\'r sgrin i ffwrdd</string>
     <string name="status_bar_icons_title">Eiconau\'r bar statws</string>
-    <string name="status_bar_notif_count_title">Dangos nifer hysbysiadau</string>
-    <string name="status_bar_notif_count_summary">Dangos nifer yr hysbysiadau cyfredol</string>
     <string name="status_bar_system_icons_title">Eiconau system</string>
     <string name="status_bar_system_icons_summary">Rheoli pa eiconau bar statws sy\'n cael eu dangos</string>
     <string name="status_bar_clock_title">Cloc</string>
@@ -390,13 +384,13 @@
     <string name="contributors_cloud_loading_message">Yn llwytho data cyfranwyr\u2026</string>
     <string name="contributors_cloud_failed_message">Methu â llwytho data cyfranwyr</string>
     <string name="contributor_info_menu">Manylion cyfrannwr</string>
-    <string name="contributor_info_msg">&lt;b&gt;Enw:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Llysenw:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Cyfraniadau:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Enw:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Llysenw:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Cyfraniadau:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Manylion cyfranwyr</string>
-    <string name="contributions_info_msg">&lt;b&gt;Nifer cyfranwyr:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nifer o gyfraniadau (commits):&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Diweddariad diwethaf:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Nifer cyfranwyr:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Nifer o gyfraniadau (commits):</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Diweddariad diwethaf:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Ystadegau LineageOS</string>
     <string name="anonymous_statistics_summary">Helpu i wella LineageOS gan ganiatáu casglu adroddiadau ystadegau anhysbys</string>
     <string name="anonymous_statistics_warning_title">Ynghylch</string>
@@ -440,10 +434,8 @@
     <string name="long_screen_settings_summary">Gorfodi apiau cymyd i ddefnyddio cymhareb agwedd sgrin lawn</string>
     <string name="long_screen_settings_no_apps">Dim apiau</string>
     <string name="charging_sounds_settings_title">Seiniau gwefru</string>
-    <string name="charging_sounds_enabled_title">Galluogi</string>
-    <string name="charging_sounds_enabled_summary">Chwarae sain wrth gysylltu neu ddatgysylltu ffynhonnell pŵer</string>
+    <string name="charging_sounds_summary">Chwarae sain wrth gysylltu neu ddatgysylltu ffynhonnell pŵer</string>
     <string name="power_notifications_vibrate_title">Dirgrynu</string>
-    <string name="charging_sounds_ringtone_title">Hysbysiad sain</string>
     <string name="charging_sounds_ringtone_silent">Distaw</string>
     <string name="touchscreen_gesture_settings_title">Ystumiau sgrin gyffwrdd</string>
     <string name="touchscreen_gesture_settings_summary">Perfformio ystumiau amrywiol ar y sgrin gyffwrdd am weithredoedd cyflym</string>

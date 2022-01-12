@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">예</string>
     <string name="no">아니오</string>
     <string name="search">검색</string>
-    <string name="search_menu">설정 검색</string>
     <string name="disabled">사용 안 함</string>
     <string name="enabled">사용</string>
     <string name="privacy_settings_title">프라이버시</string>
@@ -217,8 +216,6 @@
     <string name="power_menu_bug_report_title">오류 신고</string>
     <string name="power_menu_bug_report_devoptions_unavailable">개발자 설정이 비활성화되어 있어 오류 보고를 사용할 수 없습니다.</string>
     <string name="power_menu_bug_report_unavailable_for_user">주요 사용자가 아니므로 오류 보고를 사용할 수 없습니다.</string>
-    <string name="power_menu_lockdown_title">잠금</string>
-    <string name="power_menu_lockdown_unavailable">보안성이 낮은 잠금 화면이 설정되어 있어 잠금을 사용할 수 없습니다.</string>
     <string name="power_menu_emergency_title">비상</string>
     <string name="camera_double_tap_power_gesture_title">전원 버튼을 두 번 눌러 카메라 열기</string>
     <string name="camera_double_tap_power_gesture_desc">화면 잠금을 해제하지 않고 빠르게 카메라 열기</string>
@@ -252,8 +249,6 @@
     <string name="no_triggers_configured_nfc">눌러서 새 NFC 트리거를 설정하세요.</string>
     <string name="profile_setup_actions_description">이제 이 프로필이 활성화되면 무엇을 할 것인지 설정해 주세요</string>
     <string name="profiles_settings_title">시스템 프로필</string>
-    <string name="profiles_add">추가</string>
-    <string name="profile_menu_delete">삭제</string>
     <string name="profile_settings_title">프로필</string>
     <string name="profile_empty_list_profiles_off">시스템 프로필을 구성하고 사용하려면 프로필을 켜세요.</string>
     <string name="profile_settings_summary_off">프로필 사용 안 함</string>
@@ -345,8 +340,6 @@
     <string name="status_bar_double_tap_to_sleep_title">두 번 두드려 화면 끄기</string>
     <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄을 두 번 두드려 화면 끄기</string>
     <string name="status_bar_icons_title">상태 표시줄 아이콘</string>
-    <string name="status_bar_notif_count_title">알림 갯수 표시</string>
-    <string name="status_bar_notif_count_summary">읽지 않은 알림 숫자 표시</string>
     <string name="status_bar_system_icons_title">시스템 아이콘</string>
     <string name="status_bar_system_icons_summary">상태 표시줄에 표시할 아이콘 설정</string>
     <string name="status_bar_clock_title">시계</string>
@@ -403,13 +396,13 @@
     <string name="contributors_cloud_loading_message">기여자 정보를 불러오는 중\u2026</string>
     <string name="contributors_cloud_failed_message">기여자 정보를 불러올 수 없습니다</string>
     <string name="contributor_info_menu">기여자 정보</string>
-    <string name="contributor_info_msg">&lt;b&gt;이름:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;별명:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;변경 사항:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>이름:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>별명:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>변경 사항:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">기여 정보</string>
-    <string name="contributions_info_msg">&lt;b&gt;총 기여자:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;총 변경 사항:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;마지막 업데이트:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>총 기여자:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>총 변경 사항:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>마지막 업데이트:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS 통계</string>
     <string name="anonymous_statistics_summary">익명의 통계 자료를 보내 LineageOS 개선에 도움 주기</string>
     <string name="anonymous_statistics_warning_title">정보</string>
@@ -453,10 +446,8 @@
     <string name="long_screen_settings_summary">레거시 앱에서 전체 화면 가로 세로 비율 강제 사용</string>
     <string name="long_screen_settings_no_apps">앱 없음</string>
     <string name="charging_sounds_settings_title">충전 소리</string>
-    <string name="charging_sounds_enabled_title">사용</string>
-    <string name="charging_sounds_enabled_summary">전원이 연결되거나 연결이 해제될 때 소리 재생</string>
+    <string name="charging_sounds_summary">전원이 연결되거나 연결이 해제될 때 소리 재생</string>
     <string name="power_notifications_vibrate_title">진동</string>
-    <string name="charging_sounds_ringtone_title">알림 소리</string>
     <string name="charging_sounds_ringtone_silent">음소거</string>
     <string name="touchscreen_gesture_settings_title">터치스크린 제스처</string>
     <string name="touchscreen_gesture_settings_summary">다양한 터치스크린 제스처를 사용하여 빠른 작업 실행</string>

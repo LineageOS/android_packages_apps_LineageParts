@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="search">Поиск</string>
-    <string name="search_menu">Настройки поиска</string>
     <string name="disabled">Выключен</string>
     <string name="enabled">Включен</string>
     <string name="privacy_settings_title">Конфиденциальность</string>
@@ -61,6 +60,7 @@
     <string name="light_brightness_normal">Стандартный</string>
     <string name="light_brightness_zen">Не беспокоить</string>
     <string name="battery_light_title">Индикация батареи</string>
+    <string name="battery_light_enable_title">Включить индикатор батареи</string>
     <string name="battery_low_pulse_title">Мигать при низком уровне заряда</string>
     <string name="battery_light_full_charge_disabled_title">Отключить при полном заряде</string>
     <string name="battery_light_list_title">Цвета</string>
@@ -68,6 +68,7 @@
     <string name="battery_light_medium_color_title">Заряжается</string>
     <string name="battery_light_full_color_title">Полностью заряжена</string>
     <string name="notification_light_title">Индикация уведомлений</string>
+    <string name="notification_light_enable_title">Включить индикатор уведомлений</string>
     <string name="notification_light_general_title">Общие</string>
     <string name="notification_light_advanced_title">Расширенные</string>
     <string name="notification_light_applist_title">Приложения</string>
@@ -217,8 +218,6 @@
     <string name="power_menu_bug_report_title">Отчет об ошибке</string>
     <string name="power_menu_bug_report_devoptions_unavailable">Отчеты об ошибках отключены, поскольку не включены настройки для разработчиков</string>
     <string name="power_menu_bug_report_unavailable_for_user">Отчеты об ошибках отключены для неосновных пользователей.</string>
-    <string name="power_menu_lockdown_title">Блокировка</string>
-    <string name="power_menu_lockdown_unavailable">Блокировка отключена, так как экран блокировки не защищен</string>
     <string name="power_menu_emergency_title">Экстренная ситуация</string>
     <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для запуска камеры</string>
     <string name="camera_double_tap_power_gesture_desc">Быстро запустить камеру без разблокировки устройства</string>
@@ -252,8 +251,8 @@
     <string name="no_triggers_configured_nfc">Нажмите для добавления NFC-метки к этому профилю.</string>
     <string name="profile_setup_actions_description">Теперь можно настроить, что должно происходить при активации профиля</string>
     <string name="profiles_settings_title">Системные профили</string>
-    <string name="profiles_add">Добавить</string>
-    <string name="profile_menu_delete">Удалить</string>
+    <string name="profiles_settings_enable_title">Включить профили</string>
+    <string name="profiles_create_new">Создать новый профиль</string>
     <string name="profile_settings_title">Профиль</string>
     <string name="profile_empty_list_profiles_off">Для использования и настройки системных профилей включите функцию «Профили».</string>
     <string name="profile_settings_summary_off">Профили отключены</string>
@@ -345,8 +344,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
     <string name="status_bar_icons_title">Значки в строке состояния</string>
-    <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
-    <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
     <string name="status_bar_system_icons_title">Системные значки</string>
     <string name="status_bar_system_icons_summary">Настройка видимости значков в строке состояния</string>
     <string name="status_bar_clock_title">Часы</string>
@@ -403,13 +400,13 @@
     <string name="contributors_cloud_loading_message">Загрузка данных\u2026</string>
     <string name="contributors_cloud_failed_message">Не удалось загрузить сведения об участниках проекта</string>
     <string name="contributor_info_menu">Сведения об участнике</string>
-    <string name="contributor_info_msg">&lt;b&gt;Имя:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Псевдоним:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Коммитов:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Имя:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Псевдоним:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Коммитов:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Общая статистика</string>
-    <string name="contributions_info_msg">&lt;b&gt;Всего участников:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Всего коммитов:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Последнее обновление:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Всего участников:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Всего коммитов:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Последнее обновление:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Отправка статистики</string>
     <string name="anonymous_statistics_summary">Помогите сделать LineageOS лучше, разрешив отправку анонимной статистики</string>
     <string name="anonymous_statistics_warning_title">Сведения</string>
@@ -453,11 +450,13 @@
     <string name="long_screen_settings_summary">Принудительное использование полноэкранного режима устаревшими приложениями</string>
     <string name="long_screen_settings_no_apps">Нет приложений</string>
     <string name="charging_sounds_settings_title">Звук при зарядке</string>
-    <string name="charging_sounds_enabled_title">Включить</string>
-    <string name="charging_sounds_enabled_summary">Воспроизводить звук при подключении или отключении источника питания</string>
+    <string name="charging_sounds_enable_title">Включить звук при зарядке</string>
+    <string name="charging_sounds_summary">Воспроизводить звук при подключении или отключении источника питания</string>
     <string name="power_notifications_vibrate_title">Вибросигнал</string>
-    <string name="charging_sounds_ringtone_title">Звук уведомления</string>
     <string name="charging_sounds_ringtone_silent">Без звука</string>
+    <string name="charging_sounds_notification_category_title">Звуки уведомлений</string>
+    <string name="wired_charging_sounds_title">Проводная зарядка</string>
+    <string name="wireless_charging_sounds_title">Беспроводная зарядка</string>
     <string name="touchscreen_gesture_settings_title">Жесты сенсорного экрана</string>
     <string name="touchscreen_gesture_settings_summary">Настройка жестов сенсорного экрана для выполнения действий</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Виброотклик</string>

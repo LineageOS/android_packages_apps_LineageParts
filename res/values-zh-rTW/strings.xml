@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">是</string>
     <string name="no">否</string>
     <string name="search">搜尋</string>
-    <string name="search_menu">搜尋設定</string>
     <string name="disabled">已停用</string>
     <string name="enabled">已啟用</string>
     <string name="privacy_settings_title">隱私權</string>
@@ -217,8 +216,6 @@
     <string name="power_menu_bug_report_title">錯誤報告</string>
     <string name="power_menu_bug_report_devoptions_unavailable">由於開發人員選項未啟用，錯誤報告已被停用</string>
     <string name="power_menu_bug_report_unavailable_for_user">非主要使用者的錯誤報告已被停用</string>
-    <string name="power_menu_lockdown_title">鎖定</string>
-    <string name="power_menu_lockdown_unavailable">滑動解鎖不安全，因此鎖定已被停用</string>
     <string name="power_menu_emergency_title">緊急情況</string>
     <string name="camera_double_tap_power_gesture_title">按住電源鍵兩下開啟相機</string>
     <string name="camera_double_tap_power_gesture_desc">快速開啟相機，無需解鎖螢幕</string>
@@ -252,8 +249,6 @@
     <string name="no_triggers_configured_nfc">輕觸即可設定新的 NFC 觸發器。</string>
     <string name="profile_setup_actions_description">現在配置設定檔啟動時將發生的動作</string>
     <string name="profiles_settings_title">系統設定檔</string>
-    <string name="profiles_add">新增</string>
-    <string name="profile_menu_delete">刪除</string>
     <string name="profile_settings_title">設定檔</string>
     <string name="profile_empty_list_profiles_off">開啟設定檔功能即可設定與使用設定檔。</string>
     <string name="profile_settings_summary_off">已停用設定檔</string>
@@ -345,8 +340,6 @@
     <string name="status_bar_double_tap_to_sleep_title">輕觸兩下即可休眠</string>
     <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列來關閉螢幕</string>
     <string name="status_bar_icons_title">狀態列圖示</string>
-    <string name="status_bar_notif_count_title">顯示通知計數</string>
-    <string name="status_bar_notif_count_summary">顯示未處理通知的數量</string>
     <string name="status_bar_system_icons_title">系統圖示</string>
     <string name="status_bar_system_icons_summary">控制顯示哪些狀態列圖示</string>
     <string name="status_bar_clock_title">時鐘</string>
@@ -403,9 +396,9 @@
     <string name="contributors_cloud_loading_message">正在讀取貢獻者名單\u2026</string>
     <string name="contributors_cloud_failed_message">無法載入貢獻者資料</string>
     <string name="contributor_info_menu">貢獻者名單</string>
-    <string name="contributor_info_msg">&lt;b&gt;名稱：&lt;/b&gt;&lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;                 &lt;b&gt;暱稱：&lt;/b&gt;&lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;                 &lt;b&gt;提交：&lt;/b&gt;&lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>名稱：</b><xliff:g id="name">%1$s</xliff:g>                 <b>暱稱：</b><xliff:g id="nick">%2$s</xliff:g>                 <b>提交：</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">貢獻者名單</string>
-    <string name="contributions_info_msg">&lt;b&gt;總貢獻者：&lt;/b&gt;&lt;xliff:g id="total_contributors"&gt;&lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;總提交：&lt;/b&gt;&lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;最近更新：&lt;/b&gt;&lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>總貢獻者：</b><xliff:g id="total_contributors"><xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>總提交：</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>                 <b>最近更新：</b><xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS 統計</string>
     <string name="anonymous_statistics_summary">加入匿名統計報告即可協助改進 LineageOS</string>
     <string name="anonymous_statistics_warning_title">相關資訊</string>
@@ -451,10 +444,8 @@
     <string name="long_screen_settings_summary">強制舊型應用程式使用全螢幕的比例</string>
     <string name="long_screen_settings_no_apps">沒有應用程式</string>
     <string name="charging_sounds_settings_title">充電音效</string>
-    <string name="charging_sounds_enabled_title">啟用</string>
-    <string name="charging_sounds_enabled_summary">接上或拔除電源時播放音效</string>
+    <string name="charging_sounds_summary">接上或拔除電源時播放音效</string>
     <string name="power_notifications_vibrate_title">震動</string>
-    <string name="charging_sounds_ringtone_title">通知音效</string>
     <string name="charging_sounds_ringtone_silent">靜音</string>
     <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
     <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>

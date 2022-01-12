@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Ja</string>
     <string name="no">Nein</string>
     <string name="search">Suche</string>
-    <string name="search_menu">Einstellungen durchsuchen</string>
     <string name="disabled">Deaktiviert</string>
     <string name="enabled">Aktiviert</string>
     <string name="privacy_settings_title">Datenschutz</string>
@@ -207,7 +206,7 @@
     <string name="navigation_bar_back_long_press_title">Zurück (langes Drücken)</string>
     <string name="navigation_bar_home_long_press_title">Home (langes Drücken)</string>
     <string name="navigation_bar_home_double_tap_title">Home (doppeltes Tippen)</string>
-    <string name="navigation_bar_app_switch_long_press_title">Anwendungsverlauf (langes Drücken)</string>
+    <string name="navigation_bar_app_switch_long_press_title">Aktion für langes Drücken auf Anwendungsverlauf</string>
     <string name="navigation_bar_edge_long_swipe_title">Aktion für langes Wischen am Rand</string>
     <string name="power_menu_title">Ein-/Aus-Menü</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
@@ -217,8 +216,6 @@
     <string name="power_menu_bug_report_title">Fehlerbericht</string>
     <string name="power_menu_bug_report_devoptions_unavailable">Fehlerberichte sind deaktiviert, da die Entwickleroptionen nicht aktiviert sind</string>
     <string name="power_menu_bug_report_unavailable_for_user">Fehlerberichte sind für nicht-primäre Benutzer deaktiviert.</string>
-    <string name="power_menu_lockdown_title">Sperren</string>
-    <string name="power_menu_lockdown_unavailable">Lockdown-Modus deaktiviert, weil die Displaysperre nicht sicher ist</string>
     <string name="power_menu_emergency_title">Notfall</string>
     <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren deines Bildschirms schnell öffnen</string>
@@ -252,8 +249,6 @@
     <string name="no_triggers_configured_nfc">Tippe zum Einrichten eines neuen NFC-Auslösers.</string>
     <string name="profile_setup_actions_description">Konfigurieren was passiert, wenn das Profil aktiviert ist</string>
     <string name="profiles_settings_title">Systemprofile</string>
-    <string name="profiles_add">Hinzufügen</string>
-    <string name="profile_menu_delete">Löschen</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">Um Systemprofile zu aktivieren und zu benutzen, schalte Profile an.</string>
     <string name="profile_settings_summary_off">Systemprofile sind deaktiviert</string>
@@ -345,8 +340,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Display ausschalten durch doppeltes Tippen</string>
     <string name="status_bar_double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Display auszuschalten</string>
     <string name="status_bar_icons_title">Statusleistensymbole</string>
-    <string name="status_bar_notif_count_title">Benachrichtigungszähler</string>
-    <string name="status_bar_notif_count_summary">Anzahl der ungelesenen Benachrichtigungen in der Statusleiste anzeigen</string>
     <string name="status_bar_system_icons_title">Systemsymbole</string>
     <string name="status_bar_system_icons_summary">Festlegen, welche Statusleistensymbole angezeigt werden</string>
     <string name="status_bar_clock_title">Uhr</string>
@@ -403,13 +396,13 @@
     <string name="contributors_cloud_loading_message">Mitwirkende werden geladen\u2026</string>
     <string name="contributors_cloud_failed_message">Laden der Mitwirkenden nicht möglich</string>
     <string name="contributor_info_menu">Mitwirkender – Info</string>
-    <string name="contributor_info_msg">&lt;b&gt;Name:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nickname:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Beiträge:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Name:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Nickname:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Beiträge:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Beiträge – Info</string>
-    <string name="contributions_info_msg">&lt;b&gt;Mitwirkende insgesamt:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Beiträge insgesamt:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Letzte Aktualisierung:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Mitwirkende insgesamt:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Beiträge insgesamt:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Letzte Aktualisierung:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS-Statistiken</string>
     <string name="anonymous_statistics_summary">Helfen Sie uns, LineageOS zu verbessern, indem Sie dem Sammeln anonymer Gerätestatistiken zustimmen.</string>
     <string name="anonymous_statistics_warning_title">Über</string>
@@ -453,10 +446,8 @@
     <string name="long_screen_settings_summary">Ältere Anwendungen zu Vollbild zwingen</string>
     <string name="long_screen_settings_no_apps">Keine Apps</string>
     <string name="charging_sounds_settings_title">Ladegeräte-Töne</string>
-    <string name="charging_sounds_enabled_title">Aktivieren</string>
-    <string name="charging_sounds_enabled_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
+    <string name="charging_sounds_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
     <string name="power_notifications_vibrate_title">Vibrieren</string>
-    <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
     <string name="charging_sounds_ringtone_silent">Lautlos</string>
     <string name="touchscreen_gesture_settings_title">Bildschirmgesten</string>
     <string name="touchscreen_gesture_settings_summary">Führe durch verschiedene Bildschirmgesten einige schnelle Aktionen aus</string>
@@ -507,6 +498,9 @@
     <string name="trust_feature_selinux_explain">SELinux bestimmt, welche Prozesse Zugriff auf welche Dateien/Verzeichnisse auf deinem Gerät haben.\nDadurch wird verhindert, dass Anwendungen und Dienste auf Dateien zugreifen, die sie nicht benötigen: Auf diese Weise wird ein potenziell bösartiger Prozess eingeschränkt und deine Sicherheit gewahrt.</string>
     <string name="trust_feature_security_patches">Android-Sicherheitspatches</string>
     <string name="trust_feature_security_patches_value_base">Plattform: %1$s\nVendor: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">aktuell</string>
+    <string name="trust_feature_security_patches_value_medium">einige Monate veraltet</string>
+    <string name="trust_feature_security_patches_value_old">veraltet</string>
     <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google in Zusammenarbeit mit SoC-Anbietern veröffentlicht. Diese beheben Fehler, mittels derer bösartige Anwendungen Sicherheitseinschränkungen umgehen und dein Gerät dauerhaft beschädigen können. Von Google bereitgestellte Patches werden jeden Monat auf alle unterstützten Geräte angewendet, aber Patches für proprietären Code können nur vom Hersteller deines Gerätes bereitgestellt werden. Um dein Gerät sicher zu halten, aktualisiere LineageOS und (wenn möglich) dein Vendor-Image stets auf das von LineageOS empfohlene.</string>
     <string name="trust_feature_encryption">Verschlüsselung</string>
     <string name="trust_feature_encryption_value_enabled">Aktiviert</string>

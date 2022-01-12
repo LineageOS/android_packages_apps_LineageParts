@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="search">Rechercher</string>
-    <string name="search_menu">Paramètres de recherche</string>
     <string name="disabled">Désactivé</string>
     <string name="enabled">Activé</string>
     <string name="privacy_settings_title">Confidentialité</string>
@@ -62,6 +61,7 @@
     <string name="light_brightness_zen">Ne pas déranger</string>
     <string name="battery_light_title">Voyant batterie</string>
     <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>
+    <string name="battery_light_full_charge_disabled_title">Éteindre une fois la charge terminée</string>
     <string name="battery_light_list_title">Couleurs</string>
     <string name="battery_light_low_color_title">Batterie faible</string>
     <string name="battery_light_medium_color_title">En charge</string>
@@ -92,6 +92,8 @@
     <string name="live_display_night">Nuit</string>
     <string name="live_display_outdoor_mode_title">Mode extérieur automatique</string>
     <string name="live_display_outdoor_mode_summary">Augmenter la luminosité et la saturation automatiquement sous la lumière du soleil</string>
+    <string name="live_display_anti_flicker_title">Anti-scintillement</string>
+    <string name="live_display_anti_flicker_summary">Évite le scintillement et réduit la fatigue oculaire dans des conditions de faible luminosité. La précision des couleurs et la manière dont les éléments sont affichés peuvent être affectées.</string>
     <string name="live_display_low_power_title">Réduire la consommation d\'énergie</string>
     <string name="live_display_low_power_summary">Régler l\'affichage pour une plus faible consommation sans dégradation</string>
     <string name="live_display_enhance_color_title">Améliorer les couleurs</string>
@@ -154,6 +156,7 @@
     <string name="hardware_keys_action_sleep">Éteindre l\'écran</string>
     <string name="hardware_keys_action_last_app">Application précédente</string>
     <string name="hardware_keys_action_split_screen">Écran partagé</string>
+    <string name="hardware_keys_action_kill_app">Arrêter l\'application en cours</string>
     <string name="camera_sleep_on_release_title">Aperçu de l\'écran</string>
     <string name="camera_sleep_on_release_summary">Appuyer à moitié pour garder l\'écran allumé tant que le bouton est maintenu enfoncé</string>
     <string name="camera_launch_title">Démarrer l\'appareil photo</string>
@@ -192,12 +195,15 @@
     <string name="backlight_summary_enabled">Activé</string>
     <string name="disable_navkeys_title">Activer la barre de navigation à l\'écran</string>
     <string name="disable_navkeys_summary">Activer la barre de navigation à l\'écran et désactiver les touches physiques</string>
+    <string name="swap_capacitive_keys_title">Permuter les touches tactiles</string>
+    <string name="swap_capacitive_keys_summary">Permuter les boutons retour et récent</string>
     <string name="navigation_bar_category">Barre de navigation</string>
     <string name="navigation_bar_invert_layout_title">Inverser la disposition</string>
     <string name="navigation_bar_invert_layout_summary">Inverse la disposition de la barre de navigation et d\'autres éléments tels que le sélecteur de méthode de saisie</string>
     <string name="navigation_bar_left_summary">Placer la barre de navigation du côté gauche de l\'écran en mode paysage</string>
     <string name="navigation_bar_arrow_keys_title">Afficher les flèches lors de la frappe</string>
     <string name="navigation_bar_arrow_keys_summary">Afficher les touches de curseur gauche et droite lors de la saisie. Remplace le changeur de mode de saisie.</string>
+    <string name="navigation_bar_back_long_press_title">Appui long sur le bouton retour</string>
     <string name="navigation_bar_home_long_press_title">Appui long sur bouton d\'accueil</string>
     <string name="navigation_bar_home_double_tap_title">Appui double sur bouton d\'accueil</string>
     <string name="navigation_bar_app_switch_long_press_title">Appui long sur le bouton d\'applications récentes</string>
@@ -208,7 +214,9 @@
     <string name="power_menu_airplane_title">Mode Avion</string>
     <string name="power_menu_users_title">Changer d\'utilisateur</string>
     <string name="power_menu_bug_report_title">Rapport de bug</string>
-    <string name="power_menu_lockdown_title">Verrouillage</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">Le rapport de bugs est désactivé car les paramètres de développement ne sont pas activés</string>
+    <string name="power_menu_bug_report_unavailable_for_user">Le rapport de bugs est réservé à l\'utilisateur principal</string>
+    <string name="power_menu_emergency_title">Urgence</string>
     <string name="camera_double_tap_power_gesture_title">Appuyer deux fois sur le bouton Marche/Arrêt pour lancer l\'appareil photo</string>
     <string name="camera_double_tap_power_gesture_desc">Ouvrir rapidement l\'appareil photo sans déverrouiller l\'écran</string>
     <string name="torch_long_press_power_gesture_title">Pression longue pour la lampe de poche</string>
@@ -241,8 +249,6 @@
     <string name="no_triggers_configured_nfc">Appuyez pour configurer une nouvelle action NFC.</string>
     <string name="profile_setup_actions_description">Configurer maintenant ce qu\'il se passe lorsque le profil est activé</string>
     <string name="profiles_settings_title">Profils système</string>
-    <string name="profiles_add">Ajouter</string>
-    <string name="profile_menu_delete">Supprimer</string>
     <string name="profile_settings_title">Profils</string>
     <string name="profile_empty_list_profiles_off">Pour configurer et utiliser des profils système, veuillez les activer.</string>
     <string name="profile_settings_summary_off">Profils désactivés</string>
@@ -334,8 +340,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Double appui pour mettre en veille</string>
     <string name="status_bar_double_tap_to_sleep_summary">Appuyer deux fois sur la barre d\'état pour éteindre l\'écran</string>
     <string name="status_bar_icons_title">Icônes de la barre d\'état</string>
-    <string name="status_bar_notif_count_title">Afficher le nombre de notifications</string>
-    <string name="status_bar_notif_count_summary">Afficher le nombre de notifications en attente</string>
     <string name="status_bar_system_icons_title">Icônes système</string>
     <string name="status_bar_system_icons_summary">Choisir les icônes à afficher dans la barre d\'état</string>
     <string name="status_bar_clock_title">Horloge</string>
@@ -392,13 +396,13 @@
     <string name="contributors_cloud_loading_message">Chargement des informations sur les contributeurs\u2026</string>
     <string name="contributors_cloud_failed_message">Impossible de charger les informations sur les contributeurs</string>
     <string name="contributor_info_menu">Informations du contributeur</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nom :&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Pseudo :&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Contributions :&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nom :</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Pseudo :</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Contributions :</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Infos sur les contributions</string>
-    <string name="contributions_info_msg">&lt;b&gt;Nombre de contributeurs :&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nombre de contributions :&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Dernière mise à jour :&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Nombre de contributeurs :</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Nombre de contributions :</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Dernière mise à jour :</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistiques LineageOS</string>
     <string name="anonymous_statistics_summary">Contribuer à l\'amélioration de LineageOS en envoyant des rapports de statistiques anonymes</string>
     <string name="anonymous_statistics_warning_title">À propos</string>
@@ -442,10 +446,8 @@
     <string name="long_screen_settings_summary">Forcer l\'affichage des anciennes applications en plein écran</string>
     <string name="long_screen_settings_no_apps">Aucune application</string>
     <string name="charging_sounds_settings_title">Sons d\'alimentation</string>
-    <string name="charging_sounds_enabled_title">Activer</string>
-    <string name="charging_sounds_enabled_summary">Émettre un son au branchement ou débranchement d\'une source d\'alimentation</string>
+    <string name="charging_sounds_summary">Émettre un son au branchement ou débranchement d\'une source d\'alimentation</string>
     <string name="power_notifications_vibrate_title">Vibreur</string>
-    <string name="charging_sounds_ringtone_title">Son de notification</string>
     <string name="charging_sounds_ringtone_silent">Silencieux</string>
     <string name="touchscreen_gesture_settings_title">Gestes tactiles</string>
     <string name="touchscreen_gesture_settings_summary">Effectuer des actions rapides à l\'aide de différents gestes tactiles</string>
@@ -496,6 +498,9 @@
     <string name="trust_feature_selinux_explain">SELinux permet de contrôler les processus autorisés à accéder aux fichiers/chemins sur votre appareil.\nCette fonctionnalité empêche ainsi des applications et services d\'accéder à des fichiers qu\'ils ne sont pas censés gérer. Étant donné que les éventuels processus malveillants ont un accès limité à vos données, votre appareil reste protégé.</string>
     <string name="trust_feature_security_patches">Correctifs de sécurité Android</string>
     <string name="trust_feature_security_patches_value_base">Plate-forme : %1$s\nFournisseur : %2$s</string>
+    <string name="trust_feature_security_patches_value_new">À jour</string>
+    <string name="trust_feature_security_patches_value_medium">Obsolète de quelques mois</string>
+    <string name="trust_feature_security_patches_value_old">Obsolète</string>
     <string name="trust_feature_security_patches_explain">Les correctifs de sécurité sont publiés chaque mois par Google, en coopération avec les fournisseurs de SoC. Ils permettent de corriger des failles que des applications malveillantes sont susceptibles d\'exploiter pour contourner les restrictions de sécurité et endommager votre appareil de façon définitive. Les correctifs fournis par Google sont appliqués chaque mois à tous les appareils compatibles, mais ceux concernant le code propriétaire ne peuvent l\'être que par le fabricant de votre appareil. Pour garantir la sécurité de votre appareil, veillez à toujours utiliser la dernière version de LineageOS et, le cas échéant, mettez à jour votre fichier vendor.img afin qu\'il corresponde à la dernière version recommandée par LineageOS.</string>
     <string name="trust_feature_encryption">Chiffrement</string>
     <string name="trust_feature_encryption_value_enabled">Activé</string>

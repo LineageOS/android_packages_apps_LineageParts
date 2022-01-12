@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Ya</string>
     <string name="no">Tidak</string>
     <string name="search">Cari</string>
-    <string name="search_menu">Pencarian setelan</string>
     <string name="disabled">Dimatikan</string>
     <string name="enabled">Dihidupkan</string>
     <string name="privacy_settings_title">Privasi</string>
@@ -207,7 +206,6 @@
     <string name="power_menu_airplane_title">Mode pesawat</string>
     <string name="power_menu_users_title">Beralih pengguna</string>
     <string name="power_menu_bug_report_title">Lapor bug</string>
-    <string name="power_menu_lockdown_title">Kuncian</string>
     <string name="power_menu_emergency_title">Darurat</string>
     <string name="camera_double_tap_power_gesture_title">Tekan dua kali tombol power untuk ke kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Membuka cepat kamera tanpa membuka layar kunci</string>
@@ -241,8 +239,6 @@
     <string name="no_triggers_configured_nfc">Ketuk untuk memicu setup NFC baru.</string>
     <string name="profile_setup_actions_description">Sekarang konfigurasi apa yang terjadi saat profil tersebut diaktifkan</string>
     <string name="profiles_settings_title">Profil sistem</string>
-    <string name="profiles_add">Tambah</string>
-    <string name="profile_menu_delete">Hapus</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">Untuk mengkonfigurasi dan menggunakan sistem profil, aktifkan profil.</string>
     <string name="profile_settings_summary_off">Profil dinonaktifkan</string>
@@ -334,8 +330,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Ketuk dua kali untuk tidur</string>
     <string name="status_bar_double_tap_to_sleep_summary">Ketuk dua kali pada status bar untuk mematikan layar</string>
     <string name="status_bar_icons_title">Ikon Status bar</string>
-    <string name="status_bar_notif_count_title">Tampilkan hitungan pemberitahuan</string>
-    <string name="status_bar_notif_count_summary">Tampilkan jumlah pemberitahuan yang tertunda</string>
     <string name="status_bar_system_icons_title">Ikon sistem</string>
     <string name="status_bar_system_icons_summary">Atur baris Ikon yang ditampilkan</string>
     <string name="status_bar_clock_title">Jam</string>
@@ -392,13 +386,13 @@
     <string name="contributors_cloud_loading_message">Memuat data kontributor\u2026</string>
     <string name="contributors_cloud_failed_message">Tidak dapat memuat data kontributor</string>
     <string name="contributor_info_menu">Info kontributor</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nama:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Julukan:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Commit:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nama:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Julukan:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informasi kontributor</string>
-    <string name="contributions_info_msg">&lt;b&gt;Total kontributor:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Total commit:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Diperbarui:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Total kontributor:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Total commit:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Diperbarui:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistik LineageOS</string>
     <string name="anonymous_statistics_summary">Bantu LineageOS untuk menjadi lebih baik dengan memilih ikut dalam pelaporan statistik anonim</string>
     <string name="anonymous_statistics_warning_title">Tentang</string>
@@ -442,10 +436,8 @@
     <string name="long_screen_settings_summary">Paksa aplikasi lawas untuk menggunakan rasio aspek layar penuh</string>
     <string name="long_screen_settings_no_apps">Tidak ada aplikasi</string>
     <string name="charging_sounds_settings_title">Suara pengisian daya</string>
-    <string name="charging_sounds_enabled_title">Hidupkan</string>
-    <string name="charging_sounds_enabled_summary">Putar suara peringatan saat menghubungkan atau melepaskan sumber daya</string>
+    <string name="charging_sounds_summary">Putar suara peringatan saat menghubungkan atau melepaskan sumber daya</string>
     <string name="power_notifications_vibrate_title">Getar</string>
-    <string name="charging_sounds_ringtone_title">Suara pemberitahuan</string>
     <string name="charging_sounds_ringtone_silent">Senyap</string>
     <string name="touchscreen_gesture_settings_title">Gerakan layar sentuh</string>
     <string name="touchscreen_gesture_settings_summary">Melakukan berbagai gerakan layar sentuh untuk tindakan cepat</string>

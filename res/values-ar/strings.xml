@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">نعم</string>
     <string name="no">لا</string>
     <string name="search">بحث</string>
-    <string name="search_menu">إعدادات البحث</string>
     <string name="disabled">معطّل</string>
     <string name="enabled">مفعل</string>
     <string name="privacy_settings_title">الخصوصية</string>
@@ -217,8 +216,6 @@
     <string name="power_menu_bug_report_title">تقرير الأخطاء</string>
     <string name="power_menu_bug_report_devoptions_unavailable">الإبلاغ عن الأخطاء معطل لعدم تمكين إعدادات التطوير</string>
     <string name="power_menu_bug_report_unavailable_for_user">الإبلاغ عن الأخطاء معطل للمستخدمين غير الأساسيين.</string>
-    <string name="power_menu_lockdown_title">تأمين</string>
-    <string name="power_menu_lockdown_unavailable">قفل المفاتيح معطل لأن حارس المفاتيح ليس آمنًأ</string>
     <string name="power_menu_emergency_title">الطوارئ</string>
     <string name="camera_double_tap_power_gesture_title">الضغط على مفتاح التشغيل مرتين لفتح الكاميرا</string>
     <string name="camera_double_tap_power_gesture_desc">فتح الكاميرا سريعاً بدون إلغاء تأمين الشاشة</string>
@@ -252,8 +249,6 @@
     <string name="no_triggers_configured_nfc">اضغط لإنشاء وسم NFC جديد.</string>
     <string name="profile_setup_actions_description">والآن اختر ما يحدث عندما يبدأ هذا الوضع</string>
     <string name="profiles_settings_title">ملفات تعريف النظام</string>
-    <string name="profiles_add">إضافة</string>
-    <string name="profile_menu_delete">حذف</string>
     <string name="profile_settings_title">ملف التعريف</string>
     <string name="profile_empty_list_profiles_off">لتكوين ملفات تعريف النظام واستخدامها، قم بتشغيل الملفات التعريفية.</string>
     <string name="profile_settings_summary_off">ملفات التعريف معطلة</string>
@@ -345,8 +340,6 @@
     <string name="status_bar_double_tap_to_sleep_title">الضغط مرتين لإطفاء الشاشة</string>
     <string name="status_bar_double_tap_to_sleep_summary">اضغط مرتين على شريط الحالة لإطفاء الشاشة</string>
     <string name="status_bar_icons_title">أيقونات شريط الحالة</string>
-    <string name="status_bar_notif_count_title">إظهار عدد الإشعارات</string>
-    <string name="status_bar_notif_count_summary">عرض عدد الإشعارات المعلقة</string>
     <string name="status_bar_system_icons_title">أيقونات النظام</string>
     <string name="status_bar_system_icons_summary">التحكم في الايقونات الظاهرة على شريط الحالة</string>
     <string name="status_bar_clock_title">الساعة</string>
@@ -403,11 +396,11 @@
     <string name="contributors_cloud_loading_message">يتم تحميل بيانات المُساهمين</string>
     <string name="contributors_cloud_failed_message">تعذّر تحميل بيانات المُساهمين</string>
     <string name="contributor_info_menu">معلومات المُساهم</string>
-    <string name="contributor_info_msg">&lt;b&gt;الاسم:&lt;/b&gt;&lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;اللقب:&lt;/b&gt;&lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;الالتزامات:&lt;/b&gt;&lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>الاسم:</b><xliff:g id="name">%1$s</xliff:g><br/><br/>                 <b>اللقب:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>                 <b>الالتزامات:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">معلومات المساهمين</string>
-    <string name="contributions_info_msg">&lt;b&gt;إجمالي المساهمين:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 إجمالي الالتزامات:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;آخر تحديث:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>إجمالي المساهمين:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 إجمالي الالتزامات:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>آخر تحديث:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">إحصائيات نظام LineageOS</string>
     <string name="anonymous_statistics_summary">ساهم في جعل LineageOS أفضل بإرسال تقارير الإحصائيات</string>
     <string name="anonymous_statistics_warning_title">حول</string>
@@ -451,10 +444,8 @@
     <string name="long_screen_settings_summary">اجبِر التطبيقات القديمة على إستخدام نسبة العرض إلى الارتفاع على كامل الشاشة</string>
     <string name="long_screen_settings_no_apps">لا تطبيقات</string>
     <string name="charging_sounds_settings_title">أصوات الشحن</string>
-    <string name="charging_sounds_enabled_title">تمكين</string>
-    <string name="charging_sounds_enabled_summary">تشغيل الصوت عند توصيل أو فصل مصدر الطاقة</string>
+    <string name="charging_sounds_summary">تشغيل الصوت عند توصيل أو فصل مصدر الطاقة</string>
     <string name="power_notifications_vibrate_title">إهتزاز</string>
-    <string name="charging_sounds_ringtone_title">صوت الإشعار</string>
     <string name="charging_sounds_ringtone_silent">صامت</string>
     <string name="touchscreen_gesture_settings_title">الإيماءات اللمسية</string>
     <string name="touchscreen_gesture_settings_summary">عمل إيماءات لمسية متعددة لإجراءات سريعة</string>

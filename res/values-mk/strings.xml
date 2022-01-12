@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -220,8 +220,6 @@
     <string name="no_triggers_configured_nfc">Допрете за да поставите нов NFC предизвикувач.</string>
     <string name="profile_setup_actions_description">Сега конфигурирај што се случува кога профилот е активиран</string>
     <string name="profiles_settings_title">Системски профили</string>
-    <string name="profiles_add">Додај</string>
-    <string name="profile_menu_delete">Избриши</string>
     <string name="profile_settings_title">Профил</string>
     <string name="profile_empty_list_profiles_off">За да ги конфигурирате и користите системските профили, вклучете ги профилите.</string>
     <string name="profile_settings_summary_off">Профилите се оневозможени</string>
@@ -312,8 +310,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Двоен допир за спиење</string>
     <string name="status_bar_double_tap_to_sleep_summary">Двоен-допир на статусната лента за да го исклучите екранот</string>
     <string name="status_bar_icons_title">Икони на статусната лента</string>
-    <string name="status_bar_notif_count_title">Прикажи го бројот на известувања</string>
-    <string name="status_bar_notif_count_summary">Прикажи го бројот на очекуваните известувања</string>
     <string name="status_bar_system_icons_title">Системски икони</string>
     <string name="status_bar_system_icons_summary">Контролирај кои икони на статусната лента се прикажани</string>
     <string name="status_bar_clock_title">Часовник</string>
@@ -389,10 +385,8 @@
     <string name="auto_power_save_summary_off">Не овозможувај автоматски режим за штедење</string>
     <string name="auto_power_save_never">Никогаш</string>
     <string name="charging_sounds_settings_title">Звуци за полнење</string>
-    <string name="charging_sounds_enabled_title">Овозможи</string>
-    <string name="charging_sounds_enabled_summary">Репродуцирај звук при поврзување или исклучување на извор на енергија</string>
+    <string name="charging_sounds_summary">Репродуцирај звук при поврзување или исклучување на извор на енергија</string>
     <string name="power_notifications_vibrate_title">Вибрација</string>
-    <string name="charging_sounds_ringtone_title">Звук за известување</string>
     <string name="charging_sounds_ringtone_silent">Тивко</string>
     <string name="touchscreen_gesture_settings_title">Гестови на допир</string>
     <string name="touchscreen_gesture_settings_summary">Изведување на различни гестови на допир за брзо дејство</string>

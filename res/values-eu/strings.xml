@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -202,7 +202,6 @@
     <string name="power_menu_airplane_title">Hegaldi modua</string>
     <string name="power_menu_users_title">Erabiltzaile aldaketa</string>
     <string name="power_menu_bug_report_title">Errore-txostena</string>
-    <string name="power_menu_lockdown_title">Blokeatu</string>
     <string name="camera_double_tap_power_gesture_title">Sakatu itzaltze botoia bitan kamerarako</string>
     <string name="camera_double_tap_power_gesture_desc">Ireki kamera azkar pantaila desblokeatu gabe</string>
     <string name="torch_long_press_power_gesture_title">Sakatu luze linternarako</string>
@@ -235,8 +234,6 @@
     <string name="no_triggers_configured_nfc">Sakatu NFC eragile berri bat ezartzeko.</string>
     <string name="profile_setup_actions_description">Hautatu zer gertatuko den profil hau gaitzean</string>
     <string name="profiles_settings_title">Sistema-profilak</string>
-    <string name="profiles_add">Gehitu</string>
-    <string name="profile_menu_delete">Ezabatu</string>
     <string name="profile_settings_title">Profila</string>
     <string name="profile_empty_list_profiles_off">Sistemaren profilak ezarri eta erabili ahal izateko, gaitu egin behar dira.</string>
     <string name="profile_settings_summary_off">Profilak desgaituta daude</string>
@@ -327,8 +324,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Birritan sakatu lokartzeko</string>
     <string name="status_bar_double_tap_to_sleep_summary">Birritan sakatu egoera-barran pantaila itzaltzeko</string>
     <string name="status_bar_icons_title">Egoera-barrako ikonoak</string>
-    <string name="status_bar_notif_count_title">Erakutsi jakinarazpen kopurua</string>
-    <string name="status_bar_notif_count_summary">Bistaratu zain dauden jakinarazpen kopurua</string>
     <string name="status_bar_system_icons_title">Sistemaren ikonoak</string>
     <string name="status_bar_system_icons_summary">Kontrolatu erakutsiko diren egoera-barrako ikonoak</string>
     <string name="status_bar_clock_title">Erlojua</string>
@@ -426,10 +421,8 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="long_screen_settings_title">Pantaila osoko aplikazioak</string>
     <string name="long_screen_settings_summary">Behartu aplikazio zaharrei pantaila osoko aspektu erlazioa errabiltzera</string>
     <string name="charging_sounds_settings_title">Kargatze-soinuak</string>
-    <string name="charging_sounds_enabled_title">Gaitu</string>
-    <string name="charging_sounds_enabled_summary">Soinua jo kargadorea konektatu edo deskonektatzean</string>
+    <string name="charging_sounds_summary">Soinua jo kargadorea konektatu edo deskonektatzean</string>
     <string name="power_notifications_vibrate_title">Bibratu</string>
-    <string name="charging_sounds_ringtone_title">Jakinarazpen-soinua</string>
     <string name="charging_sounds_ringtone_silent">Isilik</string>
     <string name="touchscreen_gesture_settings_title">Ukitze-pantailaren keinuak</string>
     <string name="touchscreen_gesture_settings_summary">Egin ukimen-pantailako keinuak ekintza azkarretarako</string>

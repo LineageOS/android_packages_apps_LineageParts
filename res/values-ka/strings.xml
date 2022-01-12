@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="search_menu">ძიების პარამეტრები</string>
     <string name="edit_light_settings">განათების პარამეტრების ჩასწორება</string>
     <string name="default_time">ჩვეულებრივი</string>
     <string name="battery_light_title">ბატარეის განათება</string>

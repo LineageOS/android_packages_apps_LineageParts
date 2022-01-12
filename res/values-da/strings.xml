@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -216,8 +216,6 @@
     <string name="no_triggers_configured_nfc">Tryk for at konfigurere en ny NFC-udløser.</string>
     <string name="profile_setup_actions_description">Nu skal du konfigurere, hvad der sker, når profilen er aktiveret</string>
     <string name="profiles_settings_title">Systemprofiler</string>
-    <string name="profiles_add">Tilføj</string>
-    <string name="profile_menu_delete">Slet</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">For at konfigurere og bruge System-profiler, skal du slå Profiler til.</string>
     <string name="profile_settings_summary_off">Profiler deaktiveret</string>
@@ -308,8 +306,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Dobbelt-tryk for at slumre</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dobbelt-tryk på statusbjælken, for at slukke for skærmen</string>
     <string name="status_bar_icons_title">Statusbjælke-ikoner</string>
-    <string name="status_bar_notif_count_title">Vis notifikationstæller</string>
-    <string name="status_bar_notif_count_summary">Vis antallet af ventende notifikationer</string>
     <string name="status_bar_system_icons_title">System-ikoner</string>
     <string name="status_bar_system_icons_summary">Kontrollér hvilke statusbjælke-ikoner, der vises</string>
     <string name="status_bar_clock_title">Ur</string>
@@ -392,10 +388,8 @@
     <string name="auto_power_save_summary_off">Aktivér ikke strømsparende tilstand automatisk</string>
     <string name="auto_power_save_never">Aldrig</string>
     <string name="charging_sounds_settings_title">Opladningslyde</string>
-    <string name="charging_sounds_enabled_title">Aktivér</string>
-    <string name="charging_sounds_enabled_summary">Afspil en lyd, når du tilslutter eller frakobler en strømkilde</string>
+    <string name="charging_sounds_summary">Afspil en lyd, når du tilslutter eller frakobler en strømkilde</string>
     <string name="power_notifications_vibrate_title">Vibrér</string>
-    <string name="charging_sounds_ringtone_title">Underretningslyd</string>
     <string name="charging_sounds_ringtone_silent">Lydløs</string>
     <string name="touchscreen_gesture_settings_title">Bevægelser til touchskærm</string>
     <string name="touchscreen_gesture_settings_summary">Udfør forskellige bevægelser på touchskærmen for hurtige handlinger</string>

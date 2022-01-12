@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -144,8 +144,6 @@
     <string name="profile_setup_actions_title">Steg 2: Ställ in åtgärder</string>
     <string name="wireless_networks_settings_title">Trådlöst &amp; nätverk</string>
     <string name="profiles_settings_title">Systemprofiler</string>
-    <string name="profiles_add">Lägg till</string>
-    <string name="profile_menu_delete">Radera</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_write_nfc_tag">Skriv till en NFC-tagg</string>
     <string name="profile_selected">Vald profil: %1$s</string>
@@ -248,9 +246,7 @@
     <string name="auto_power_save_title">Automatiskt strömsparläge</string>
     <string name="auto_power_save_never">Aldrig</string>
     <string name="charging_sounds_settings_title">Laddningsljud</string>
-    <string name="charging_sounds_enabled_title">Aktivera</string>
     <string name="power_notifications_vibrate_title">Vibrera</string>
-    <string name="charging_sounds_ringtone_title">Aviseringsljud</string>
     <string name="charging_sounds_ringtone_silent">Tyst</string>
     <string name="touchscreen_gesture_settings_title">Skärmgester</string>
     <string name="touchscreen_gesture_up_arrow_title">Rita ett \"Λ\"</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -34,7 +34,6 @@
     <string name="yes">Sim</string>
     <string name="no">Não</string>
     <string name="search">Procurar</string>
-    <string name="search_menu">Pesquisar nas configurações</string>
     <string name="disabled">Desabilitado</string>
     <string name="enabled">Habilitado</string>
     <string name="privacy_settings_title">Privacidade</string>
@@ -62,6 +61,7 @@
     <string name="light_brightness_zen">Não Perturbe</string>
     <string name="battery_light_title">Luz da bateria</string>
     <string name="battery_low_pulse_title">Pulsar quando a bateria estiver baixa</string>
+    <string name="battery_light_full_charge_disabled_title">Desligar quando carregado</string>
     <string name="battery_light_list_title">Cores</string>
     <string name="battery_light_low_color_title">Bateria baixa</string>
     <string name="battery_light_medium_color_title">Carregando</string>
@@ -154,6 +154,7 @@
     <string name="hardware_keys_action_sleep">Desligar a tela</string>
     <string name="hardware_keys_action_last_app">Último aplicativo</string>
     <string name="hardware_keys_action_split_screen">Dividir a tela</string>
+    <string name="hardware_keys_action_kill_app">Fechar aplicativo em primeiro plano</string>
     <string name="camera_sleep_on_release_title">Espiar a tela</string>
     <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
     <string name="camera_launch_title">Iniciar a câmera</string>
@@ -190,6 +191,7 @@
     <string name="backlight_summary_enabled">Ativado</string>
     <string name="disable_navkeys_title">Ativar barra de navegação na tela</string>
     <string name="disable_navkeys_summary">Ativar barra de navegação na tela e desativar botões físicos</string>
+    <string name="swap_capacitive_keys_title">Inverter botões capacitivos</string>
     <string name="swap_capacitive_keys_summary">Trocar a ordem dos botões Visão geral e Voltar</string>
     <string name="navigation_bar_category">Barra de navegação</string>
     <string name="navigation_bar_invert_layout_title">Inverter botões</string>
@@ -206,7 +208,6 @@
     <string name="power_menu_airplane_title">Modo avião</string>
     <string name="power_menu_users_title">Alternador de usuário</string>
     <string name="power_menu_bug_report_title">Relatório de erros</string>
-    <string name="power_menu_lockdown_title">Bloquear</string>
     <string name="power_menu_emergency_title">Emergência</string>
     <string name="camera_double_tap_power_gesture_title">Pressione o botão ligar/desligar duas vezes para iniciar a câmara</string>
     <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmera sem desbloquear a tela</string>
@@ -240,8 +241,6 @@
     <string name="no_triggers_configured_nfc">Toque para configurar um novo gatilho NFC.</string>
     <string name="profile_setup_actions_description">Agora configure o que acontece quando o perfil é ativado</string>
     <string name="profiles_settings_title">Perfis de sistema</string>
-    <string name="profiles_add">Adicionar</string>
-    <string name="profile_menu_delete">Excluir</string>
     <string name="profile_settings_title">Perfil</string>
     <string name="profile_empty_list_profiles_off">Para configurar e usar perfis de sistema, ative os perfis.</string>
     <string name="profile_settings_summary_off">Perfis desativados</string>
@@ -333,8 +332,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Toque duplo para suspender</string>
     <string name="status_bar_double_tap_to_sleep_summary">Toque duas vezes na barra de status para desligar a tela</string>
     <string name="status_bar_icons_title">Ícones da barra de status</string>
-    <string name="status_bar_notif_count_title">Mostrar contador de notificações</string>
-    <string name="status_bar_notif_count_summary">Mostra o número de notificações pendentes na barra de status</string>
     <string name="status_bar_system_icons_title">Ícones do sistema</string>
     <string name="status_bar_system_icons_summary">Controlar quais ícones são exibidas na barra de status</string>
     <string name="status_bar_clock_title">Relógio</string>
@@ -432,10 +429,8 @@
     <string name="long_screen_settings_summary">Forçar os aplicativos preexistentes a utilizarem a proporção em tela cheia</string>
     <string name="long_screen_settings_no_apps">Nenhum aplicativo</string>
     <string name="charging_sounds_settings_title">Sons de carregamento</string>
-    <string name="charging_sounds_enabled_title">Ativar</string>
-    <string name="charging_sounds_enabled_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
+    <string name="charging_sounds_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
     <string name="power_notifications_vibrate_title">Vibrar</string>
-    <string name="charging_sounds_ringtone_title">Som de notificação</string>
     <string name="charging_sounds_ringtone_silent">Silencioso</string>
     <string name="touchscreen_gesture_settings_title">Gestos na tela</string>
     <string name="touchscreen_gesture_settings_summary">Faça vários gestos na tela para ações rápidas</string>
@@ -486,6 +481,7 @@
     <string name="trust_feature_selinux_explain">O SELinux determina quais processos têm acesso a determinados arquivos/pastas no seu dispositivo.\nIsto impede que aplicativos e serviços tenham acesso a arquivos com os quais não devem lidar. Dessa forma, um potencial processo malicioso terá acesso limitado e sua segurança está preservada.</string>
     <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Atualizado</string>
     <string name="trust_feature_security_patches_value_old">desatualizado</string>
     <string name="trust_feature_security_patches_explain">As atualizações de segurança são lançadas mensalmente pela Google em cooperação com os fabricantes de SoC para corrigir falhas que possam ser exploradas por aplicativos maliciosos que visam burlar as restrições de segurança e causar danos permanentes em seu dispositivo. As atualizações disponibilizadas pela Google são aplicadas mensalmente em todos os dispositivos suportados, mas as atualizações para o código proprietário só podem ser aplicadas pelo fabricante do seu dispositivo. Para manter o seu dispositivo seguro, certifique-se de que a sua versão do LineageOS esteja sempre atualizada e, se aplicável, assegure-se de que a imagem do seu fornecedor esteja atualizada para a versão recomendada pelo LineageOS.</string>
     <string name="trust_feature_encryption">Criptografia</string>

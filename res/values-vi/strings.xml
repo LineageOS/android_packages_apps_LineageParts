@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2021 The LineageOS Project
+	              2017-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -199,7 +199,6 @@
     <string name="power_menu_airplane_title">Chế độ máy bay</string>
     <string name="power_menu_users_title">Chuyển người dùng</string>
     <string name="power_menu_bug_report_title">Báo cáo lỗi</string>
-    <string name="power_menu_lockdown_title">Khóa lại</string>
     <string name="camera_double_tap_power_gesture_title">Nhấn nút nguồn hai lần để mở máy ảnh</string>
     <string name="camera_double_tap_power_gesture_desc">Mở nhanh máy ảnh mà không cần mở khóa màn hình của bạn</string>
     <string name="torch_long_press_power_gesture_title">Nhấn giữ bật đèn pin</string>
@@ -232,8 +231,6 @@
     <string name="no_triggers_configured_nfc">Chạm để cài đặt một bộ kích hoạt NFC mới.</string>
     <string name="profile_setup_actions_description">Bây giờ thiết lập cấu hình những gì xảy ra khi cấu hình được kích hoạt</string>
     <string name="profiles_settings_title">Cấu hình hệ thống</string>
-    <string name="profiles_add">Thêm</string>
-    <string name="profile_menu_delete">Xóa</string>
     <string name="profile_settings_title">Cấu hình</string>
     <string name="profile_empty_list_profiles_off">Để thiết lập và sử dụng các cấu hình, hãy bật cấu hình.</string>
     <string name="profile_settings_summary_off">Cấu hình bị tắt</string>
@@ -324,8 +321,6 @@
     <string name="status_bar_double_tap_to_sleep_title">Chạm hai lần để tắt màn hình</string>
     <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái để tắt màn hình</string>
     <string name="status_bar_icons_title">Biểu tượng thanh trạng thái</string>
-    <string name="status_bar_notif_count_title">Hiện số lượng thông báo</string>
-    <string name="status_bar_notif_count_summary">Màn hình hiển thị số lượng thông báo đang chờ</string>
     <string name="status_bar_system_icons_title">Biểu tượng hệ thống</string>
     <string name="status_bar_system_icons_summary">Kiểm soát các biểu tượng thanh trạng thái được hiển thị</string>
     <string name="status_bar_clock_title">Đồng hồ</string>
@@ -421,10 +416,8 @@
     <string name="long_screen_settings_title">Ứng dụng toàn màn hình</string>
     <string name="long_screen_settings_summary">Buộc ứng dụng cũ sử dụng tỷ lệ cỡ ảnh toàn màn hình</string>
     <string name="charging_sounds_settings_title">Âm báo đang sạc</string>
-    <string name="charging_sounds_enabled_title">Bật</string>
-    <string name="charging_sounds_enabled_summary">Phát một âm báo khi cắm sạc hoặc rút sạc</string>
+    <string name="charging_sounds_summary">Phát một âm báo khi cắm sạc hoặc rút sạc</string>
     <string name="power_notifications_vibrate_title">Rung</string>
-    <string name="charging_sounds_ringtone_title">Âm thanh thông báo</string>
     <string name="charging_sounds_ringtone_silent">Im lặng</string>
     <string name="touchscreen_gesture_settings_title">Cử chỉ màn hình cảm ứng</string>
     <string name="touchscreen_gesture_settings_summary">Thực hiện các cử chỉ màn hình cảm ứng khác nhau cho các thao tác nhanh</string>
