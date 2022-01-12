@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">Încărcare date contribuitori\u2026</string>
     <string name="contributors_cloud_failed_message">Nu s-au putut încărca datele contribuitorilor</string>
     <string name="contributor_info_menu">Informații contribuitori</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nume:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Pseudonim:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Contribuții:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nume:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Pseudonim:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Contribuții:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informații contribuții</string>
-    <string name="contributions_info_msg">&lt;b&gt;Total contribuitori:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Total contribuții:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ultima actualizare:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Total contribuitori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Total contribuții:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Ultima actualizare:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistici LineageOS</string>
     <string name="anonymous_statistics_summary">Ajutați la îmbunătățirea lui LineageOS prin optarea pentru raportarea anonimă de statistici</string>
     <string name="anonymous_statistics_warning_title">Despre</string>
@@ -515,9 +515,9 @@
     <string name="trust_feature_selinux_explain">SELinux dictează ce procese au acces la fișiere/căi de fișiere pe dispozitivul dvs.\nAceasta previne ca aplicațiile și serviciile să aibă acces la fișiere la care nu ar trebui să îl aibă: prin aceasta, un potențial proces malițios are acces limitat, așa că se menține securitatea dvs.</string>
     <string name="trust_feature_security_patches">Corecțiile de securitate Android</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProducător: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">la zi</string>
-    <string name="trust_feature_security_patches_value_medium">expirate de câteva luni</string>
-    <string name="trust_feature_security_patches_value_old">expirat</string>
+    <string name="trust_feature_security_patches_value_new">La zi</string>
+    <string name="trust_feature_security_patches_value_medium">Expirate de câteva luni</string>
+    <string name="trust_feature_security_patches_value_old">Expirat</string>
     <string name="trust_feature_security_patches_explain">Corecțiile de securitate sunt lansate lunar de către Google în cooperare cu vânzătorii SoC pentru a remedia problemele care pot fi exploatate de aplicațiile malițioase pentru a trece peste restricțiile de securitate și să cauzeze daune permanente în dispozitivul dvs. Patch-urile făcute disponibile de Google sunt aplicate lunar pe toate dispozitivele compatibile, dar patch-urile la codul proprietar pot fi aplicate numai de către producătorul dispozitivului. Pentru a vă menține dispozitivul în siguranță, asigurați-vă că build-ul LineageOS al dvs. este la zi și (dacă se aplică) asigurați-vă că imaginea vendor-ului este actualizată la cea recomandată de LineageOS.</string>
     <string name="trust_feature_encryption">Criptare</string>
     <string name="trust_feature_encryption_value_enabled">Activat</string>

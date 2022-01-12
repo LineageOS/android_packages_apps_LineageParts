@@ -389,13 +389,13 @@
     <string name="contributors_cloud_loading_message">Ynformaasje oer meiwurkers lade\u2026</string>
     <string name="contributors_cloud_failed_message">Kin ynformaasje oer meiwurkers net lade</string>
     <string name="contributor_info_menu">Meiwurkersynformaasje</string>
-    <string name="contributor_info_msg">&lt;b&gt;Namme:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Alias:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Bydragen:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Namme:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Alias:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Bydragen:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Meiwurkersynformaasje</string>
-    <string name="contributions_info_msg">&lt;b&gt;Oantal meiwurkers:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Oantal bydragen:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Lêste fernijing:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Oantal meiwurkers:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Oantal bydragen:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Lêste fernijing:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS-statistiken</string>
     <string name="anonymous_statistics_summary">Help LineageOS te ferbetterjen troch anonime statistiken te ferstjoeren</string>
     <string name="anonymous_statistics_warning_title">Oer</string>
@@ -507,9 +507,6 @@
     <string name="trust_feature_selinux_explain">SELinux bepaalt hokker prosessen tagong hawwe ta hokker bestannen/mappen op jo apparaat.\nDit foarkomt dat applikaasjes en tsjinsten tagong krije ta bestannen dy\'t se net nedich hawwe: op dizze manier wurdt in potinsjeel kwea-aardich proses beheind en jo feilichheid behâlden.</string>
     <string name="trust_feature_security_patches">Android-befeiligingspatches</string>
     <string name="trust_feature_security_patches_value_base">Platfoarm: %1$s\nLeveransier: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">by-de-tiid</string>
-    <string name="trust_feature_security_patches_value_medium">in pear moannen âld</string>
-    <string name="trust_feature_security_patches_value_old">ferâldere</string>
     <string name="trust_feature_security_patches_explain">Befeiligingspatches wurde elke moanne troch Google frijjûn yn gearwurking mei SoC-leveransiers om flaters oan te pakken dy\'t misbrûkt wurde kinne troch kweawollende apps om befeiligingsbeheiningen te omsilen en permaninte skea oan jo apparaat te feroarsaakjen. Patches dy\'t troch Google beskikber steld wurde, wurde elke moanne op alle stipe apparaten tapast, mar patches foar bedriuwseigen koade kinne allinnich troch de fabrikant fan jo apparaat tapast wurde. Om jo apparaat feilich te hâlden, moatte jo derfoar soargje dat jo LineageOS-build altyd by-de-tiid is en (wannear fan tapassing) soargje dat jo leveransiers-image fernijd wurdt nei de lêste dy\'t troch LineageOS oanrekommandearre wurdt.</string>
     <string name="trust_feature_encryption">Fersifering</string>
     <string name="trust_feature_encryption_value_enabled">Ynskeakele</string>

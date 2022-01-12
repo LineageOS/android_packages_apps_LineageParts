@@ -382,10 +382,10 @@
     <string name="contributors_cloud_loading_message">ನೆರವಾದವರ ದತ್ತಾಂಶವನ್ನು ಭರಿಸುತ್ತಿದೆ\u2026</string>
     <string name="contributors_cloud_failed_message">ನೆರವಾದವರ ದತ್ತಾಂಶವನ್ನು ಭರಿಸಲಾಗುತ್ತಿಲ್ಲ</string>
     <string name="contributor_info_menu">ನೆರವಾದವರ ಮಾಹಿತಿ</string>
-    <string name="contributor_info_msg">&lt;b&gt;ಹೆಸರು:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಉಪನಾಮ:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;ಸೇರಿಕೆಗಳು:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>ಹೆಸರು:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/><b>ಉಪನಾಮ:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+<b>ಸೇರಿಕೆಗಳು:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">ನೆರವುಗಳ ಮಾಹಿತಿ</string>
-    <string name="contributions_info_msg">&lt;b&gt;ಒಟ್ಟು ನೆರವಾದವರು:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಒಟ್ಟು ಸೇರಿಕೆಗಳು:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಕೊನೆಯ ನವೀಕರಣ:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>ಒಟ್ಟು ನೆರವಾದವರು:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/><b>ಒಟ್ಟು ಸೇರಿಕೆಗಳು:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/><b>ಕೊನೆಯ ನವೀಕರಣ:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS ಅಂಕ್ಯಾಂಶಗಳು</string>
     <string name="anonymous_statistics_summary">ಅಂಕ್ಯಾಂಶಗಳನ್ನು ಅನಾಮಿಕವಾಗಿ ಸಲ್ಲಿಸಲು ಒಪ್ಪುವ ಮೂಲಕ LineageOS ಅನ್ನು ಉತ್ತಮಗೊಳಿಸಲು ನೆರವಾಗಿ</string>
     <string name="anonymous_statistics_warning_title">ಬಗ್ಗೆ</string>
@@ -494,9 +494,6 @@
     <string name="trust_feature_selinux_explain">SELinux ನಿಮ್ಮ ಯಂತ್ರದಲ್ಲಿನ ಯಾವ ಕಡತಗಳು/ಮಾರ್ಗಗಳಿಗೆ ಯಾವ ಆಪ್ಗಳು ಎಟುಕುಹಕ್ಕನ್ನು ಹೊಂದಿವೆಯಂದು ಆದೇಶಿಸುತ್ತದೆ.\nಇದರಿಂದ ಆಪ್ಗಳು ಮತ್ತು ಸೇವೆಗಳು ಎಟುಕುಹಕ್ಕಿಲ್ಲದ ಕಡತಗಳನ್ನು ಎಟುಕುವುದನ್ನು ತಡೆಯುತ್ತದೆ. ಈ ರೀತಿ ಸಂಭಾವ್ಯ ದುರುದ್ದೇಶಪೂರಿತ ಆಪ್ ಮೊಟಕಾಗುತ್ತದೆ ಮತ್ತು ನಿಮ್ಮ ಭದ್ರತೆ ಸುರಕ್ಷ.</string>
     <string name="trust_feature_security_patches">Android ಭದ್ರತಾ ತೇಪೆಗಳು</string>
     <string name="trust_feature_security_patches_value_base">ವೇದಿಕೆ: %1$s\nತಯಾರಕ: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">ನವೀಕೃತವಾಗಿದೆ</string>
-    <string name="trust_feature_security_patches_value_medium">ಕೆಲವು ತಿಂಗಳು ಹಿಂದೆಯಿದೆ</string>
-    <string name="trust_feature_security_patches_value_old">ಹಳೆಯದಾಗಿದೆ</string>
     <string name="trust_feature_security_patches_explain">ಭದ್ರತಾ ನಿರ್ಬಂಧಗಳನ್ನು ತಪ್ಪಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಸಾಧನಕ್ಕೆ ಶಾಶ್ವತ ಹಾನಿಯನ್ನು ಉಂಟುಮಾಡಲು ದುರುದ್ದೇಶಪೂರಿತ ಆಪ್ಗಳು ಬಳಸಿಕೊಳ್ಳಬಹುದಾದ ದೋಷಗಳನ್ನು ಪರಿಹರಿಸಲು ಭದ್ರತಾ ತೇಪೆಗಳನ್ನು Google SoC ಮಾರಾಟಗಾರರ ಸಹಯೋಗದೊಂದಿಗೆ ಮಾಸಿಕವಾಗಿ ಬಿಡುಗಡೆ ಮಾಡುತ್ತದೆ. Google ನಿಂದ ಲಭ್ಯವಿರುವ ತೇಪೆಗಳನ್ನು ಎಲ್ಲಾ ಬೆಂಬಲಿತ ಯಂತ್ರಗಳಲ್ಲಿ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ, ಆದರೆ ಸ್ವಾಮ್ಯದ ತಂತ್ರಾಂಶ ತೇಪೆಗಳನ್ನು ನಿಮ್ಮ ಯಂತ್ರದ ತಯಾರಕರಿಂದ ಮಾತ್ರ ಅನ್ವಯಿಸಬಹುದು. ನಿಮ್ಮ ಯಂತ್ರವನ್ನು ಸುರಕ್ಷಿತವಾಗಿಡಲು LineageOS ಸದಾ ನವೀಕೃತವಾಗಿರುತ್ತದೆ ಮತ್ತು ಸಾಧ್ಯವಾದರೆ ನಿಮ್ಮ ಮಾರಾಟಗಾರರ ತಂತ್ರಾಂಶದ ಆವೃತ್ತಿ LineageOS ಸಲಹೆಯಂತೆ ನವೀಕರಿಸಲಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.</string>
     <string name="trust_feature_encryption">ಗುಪ್ತಲಿಪೀಕರಣ</string>
     <string name="trust_feature_encryption_value_enabled">ಸಶಕ್ತ</string>

@@ -352,13 +352,13 @@
     <string name="contributors_cloud_loading_message">Indlæser bidragyderdata\u2026</string>
     <string name="contributors_cloud_failed_message">Kan ikke indlæse bidragyderdata</string>
     <string name="contributor_info_menu">Bidragyderinfo</string>
-    <string name="contributor_info_msg">&lt;b&gt;Navn:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Kaldenavn:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Bidrag:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Navn:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Kaldenavn:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Bidrag:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Bidrag-info</string>
-    <string name="contributions_info_msg">&lt;b&gt;Bidragsydere i alt:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Bidrag i alt:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Seneste opdatering:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Bidragsydere i alt:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Bidrag i alt:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Seneste opdatering:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS-statistikker</string>
     <string name="anonymous_statistics_summary">Hjælp med at gøre LineageOS bedre, ved at deltage i anonym statistik-rapportering</string>
     <string name="anonymous_statistics_warning_title">Om</string>
@@ -462,8 +462,5 @@
     <string name="touchscreen_gesture_action_volume_up">Hæv medielydstyrke</string>
     <string name="trust_feature_security_patches">Android-sikkerhedsrettelser</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nProducent: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">ajour</string>
-    <string name="trust_feature_security_patches_value_medium">et par måneder forældet</string>
-    <string name="trust_feature_security_patches_value_old">forældet</string>
     <string name="trust_feature_security_patches_explain">Sikkerhedsrettelser frigives månedligt af Google i samarbejde med SoC-leverandører, for at adressere fejl, som kunne blive udnyttet af ondsindede apps, til at omgå sikkerhedsrestriktioner, og forårsage permanent skade på din enhed. Rettelser gjort tilgængelige af Google anvendes hver måned, på alle understøttede enheder, men rettelser til proprietær kode kun kan anvendes af din enheds producent. Sørg for at dit LineageOS-build altid er ajour, for at holde din enhed sikker, og (hvis gældende) sikre at dit producent-billede er opdateret til den seneste, som anbefales af LineageOS.</string>
 </resources>

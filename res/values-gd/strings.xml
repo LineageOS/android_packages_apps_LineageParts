@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">A’ luchdadh dàta an luchd-cuideachaidh\u2026</string>
     <string name="contributors_cloud_failed_message">Cha b’ urrainn dhuinn dàta an luchd-cuideachaidh a luchdadh</string>
     <string name="contributor_info_menu">Fiosrachadh an neach-cuideachaidh</string>
-    <string name="contributor_info_msg">&lt;b&gt;Ainm:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Far-ainm:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Ainm:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Far-ainm:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Fiosrachadh nan tabhartasan</string>
-    <string name="contributions_info_msg">&lt;b&gt;Luchd-cuideachaidh iomlan:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Commits iomlan:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;An t-ùrachadh mu dheireadh:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Luchd-cuideachaidh iomlan:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Commits iomlan:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>An t-ùrachadh mu dheireadh:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Stadastaireachd air LineageOS</string>
     <string name="anonymous_statistics_summary">Cuidich leinn a thoirt piseach air LineageOS is tu a’ cur aithrisean stadastaireachd gun urra an comas</string>
     <string name="anonymous_statistics_warning_title">Mu dhèidhinn</string>
@@ -515,9 +515,9 @@
     <string name="trust_feature_selinux_explain">Èignichidh SELinux dè na pròiseasan a gheibh inntrigeadh air faidhlichean/slighe fa leth air an uidheam agad.\nBacaidh seo aplacaidean is seirbheisean o inntrigeadh nam faidhlichean nach bu chòir dhaibh beantainn riutha: air an dòigh sin, cha bhi ach inntrigeadh cuingichte aig pròiseasan droch-rùnach a chùm do thèarainteachd a dhìon.</string>
     <string name="trust_feature_security_patches">Brèidean tèarainteachd Android</string>
     <string name="trust_feature_security_patches_value_base">Ùrlar: %1$s\nReiceadair: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">cho ùr ’s a ghabhas</string>
-    <string name="trust_feature_security_patches_value_medium">corra mìos ro shean</string>
-    <string name="trust_feature_security_patches_value_old">ro shean</string>
+    <string name="trust_feature_security_patches_value_new">Cho ùr ’s a ghabhas</string>
+    <string name="trust_feature_security_patches_value_medium">Corra mìos ro shean</string>
+    <string name="trust_feature_security_patches_value_old">Dh’fhalbh an ùine air</string>
     <string name="trust_feature_security_patches_explain">Sgaoilidh Google ’s reiceadairean SoC brèidean tèarainteachd gach mìos a dhèiligeas ri easbhaidhean a b’ urrainn do dh’aplacaidean droch-rùnach a chleachdadh airson cuingeachaidhean tèarainteachd a sheachnadh is cron maireannach a dhèanamh air an uidheam agad. Thèid na brèidean a chuireas Google gu làimh a chur an sàs gach mìos air gach uidheam ris a bheil taic ach cha ghabh brèidean air còd fo shealbh a chur an sàs ach le dèanadair an uidheim agad. Airson an t-uidheam agad a chumail sàbhailte, dèan cinnteach gu bheil an togail agad dhe LineageOS cho ùr ’s a ghabhas an-còmhnaidh agus (ma tha seo iomchaidh) dèan cinnteach gun deach ìomhaigh an reiceadair agad ùrachadh dhan fhear as ùire a mholas LineageOS dhut.</string>
     <string name="trust_feature_encryption">Crioptachadh</string>
     <string name="trust_feature_encryption_value_enabled">An comas</string>

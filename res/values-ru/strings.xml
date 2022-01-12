@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">Загрузка данных\u2026</string>
     <string name="contributors_cloud_failed_message">Не удалось загрузить сведения об участниках проекта</string>
     <string name="contributor_info_menu">Сведения об участнике</string>
-    <string name="contributor_info_msg">&lt;b&gt;Имя:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Псевдоним:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Коммитов:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Имя:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Псевдоним:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Коммитов:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Общая статистика</string>
-    <string name="contributions_info_msg">&lt;b&gt;Всего участников:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Всего коммитов:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Последнее обновление:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Всего участников:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+<b>Всего коммитов:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+<b>Последнее обновление:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Отправка статистики</string>
     <string name="anonymous_statistics_summary">Помогите сделать LineageOS лучше, разрешив отправку анонимной статистики</string>
     <string name="anonymous_statistics_warning_title">Сведения</string>
@@ -513,9 +513,9 @@
     <string name="trust_feature_selinux_explain">SELinux определяет какие процессы имеют доступ к файлам/путям на вашем устройстве.\nЭто предотвращает доступ приложений и служб к файлам, к которым они не должны иметь доступа: таким образом, потенциальный злонамеренный процесс имеет ограниченный доступ, что позволяет сохранить вашу безопасность.</string>
     <string name="trust_feature_security_patches">Пакеты безопасности Android</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nПроизводитель: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">актуальны</string>
-    <string name="trust_feature_security_patches_value_medium">устаревший на несколько месяцев</string>
-    <string name="trust_feature_security_patches_value_old">устаревший</string>
+    <string name="trust_feature_security_patches_value_new">актуален</string>
+    <string name="trust_feature_security_patches_value_medium">устарел на несколько месяцев</string>
+    <string name="trust_feature_security_patches_value_old">устарел</string>
     <string name="trust_feature_security_patches_explain">Исправления безопасности ежемесячно выпускаются Google совместно с поставщиками SoC для устранения уязвимостей в системе, которые могут быть использованы вредоносными приложениями для обхода ограничений безопасности и нанесения необратимого повреждения вашему устройству. Исправления, предоставляемые Google, применяются каждый месяц на всех поддерживаемых устройствах, но исправления для проприетарного кода могут применяться только производителем вашего устройства. Для поддержания вашего устройства в безопасном состоянии, убедитесь, что ваша сборка LineageOS актуальна ​​и (если применимо) образ производителя обновлен до последней версии, рекомендованной LineageOS.</string>
     <string name="trust_feature_encryption">Шифрование</string>
     <string name="trust_feature_encryption_value_enabled">Включено</string>

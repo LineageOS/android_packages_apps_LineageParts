@@ -351,13 +351,13 @@
     <string name="contributors_cloud_loading_message">Laster inn data over bidragsytere\u2026</string>
     <string name="contributors_cloud_failed_message">Kunne ikke laste inn data over bidragsytere</string>
     <string name="contributor_info_menu">Bidragsytersinformasjon</string>
-    <string name="contributor_info_msg">&lt;b&gt;Navn:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Kallenavn:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Utfører:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Navn:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Kallenavn:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Utfører:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Bidragsinfo</string>
-    <string name="contributions_info_msg">&lt;b&gt;Totalt antall bidragsytere:&lt;/b&gt;&lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Totalt antall utførelser:&lt;/b&gt;&lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Siste oppdatering:&lt;/b&gt;&lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Totalt antall bidragsytere:</b><xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Totalt antall utførelser:</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Siste oppdatering:</b><xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS-statistikk</string>
     <string name="anonymous_statistics_summary">Hjelp oss med å gjøre LineageOS bedre ved å velge å sende inn anonym statistikkrapportering</string>
     <string name="anonymous_statistics_warning_title">Om</string>

@@ -375,13 +375,13 @@
     <string name="contributors_cloud_loading_message">Cargando datos de collaboradores\u2026</string>
     <string name="contributors_cloud_failed_message">Nun puen cargase los datos de los collaboradores</string>
     <string name="contributor_info_menu">Información del collaborador</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nome:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nomatu:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Unvios:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Nomatu:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Unvios:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Información de collaboraciones</string>
-    <string name="contributions_info_msg">&lt;b&gt;Collaboradores totales:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Unvios totales:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Anovamientu caberu:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Collaboradores totales:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Unvios totales:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Anovamientu caberu:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Estadístiques de LineageOS</string>
     <string name="anonymous_statistics_summary">Ayuda a ameyorar LineageOS dando laude al unviu anónimu d\'estadístiques</string>
     <string name="anonymous_statistics_warning_title">Tocante a</string>
@@ -493,9 +493,9 @@
     <string name="trust_feature_selinux_explain">SELinux dicta los procesos que tienen accesu a ficheros/caminos del preséu.\nEsto evita qu\'aplicaciones y servicios d\'accedan a ficheros que nun deberíen, d\'esti mou lléndase\'l potencial de los procesos maliciosos y caltener la seguranza.</string>
     <string name="trust_feature_security_patches">Parches de seguranza d\'Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nVendedor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">anovaos</string>
-    <string name="trust_feature_security_patches_value_medium">dellos meses ensin anovar</string>
-    <string name="trust_feature_security_patches_value_old">obsoletu</string>
+    <string name="trust_feature_security_patches_value_new">Anovaos</string>
+    <string name="trust_feature_security_patches_value_medium">Ensin anovar hai unos meses</string>
+    <string name="trust_feature_security_patches_value_old">Ensin anovar</string>
     <string name="trust_feature_security_patches_explain">Los parches de seguranza llibéralos mensualmente Google cola cooperación de los fabricantes de SoC pa iguar fallos que puen aprovechase por aplicaciones malicioses pa saltar les restricciones de seguranza y causar daños permanentes al to dispositivu. Los parches disponibles dende Google aplíquense mensualmente en tolos dispositivos compatibles, pero los del códigu propietariu nun pueden aplicase más que pol fabricante del to dispositivu. Pa caltener el dispositivu seguru, asegúrate de que la compilación de LineageOS ta siempre anovada y (si ye posible) asegúrate que la imaxe del fornidor seya la más actual de LineageOS.</string>
     <string name="trust_feature_encryption">Cifráu</string>
     <string name="trust_feature_encryption_value_enabled">Activóse</string>

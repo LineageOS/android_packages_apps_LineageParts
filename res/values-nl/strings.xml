@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">Informatie over bijdragers laden\u2026</string>
     <string name="contributors_cloud_failed_message">Kan informatie over bijdragers niet laden</string>
     <string name="contributor_info_menu">Informatie over bijdragers</string>
-    <string name="contributor_info_msg">&lt;b&gt;Naam:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Alias:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Naam:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Alias:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informatie over bijdragers</string>
-    <string name="contributions_info_msg">&lt;b&gt;Aantal bijdragers:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Aantal commits:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Laatste update:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Aantal bijdragers:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Aantal commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Laatste update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS-statistieken</string>
     <string name="anonymous_statistics_summary">Help LineageOS te verbeteren door anonieme statistieken te verzenden</string>
     <string name="anonymous_statistics_warning_title">Over</string>
@@ -513,9 +513,9 @@
     <string name="trust_feature_selinux_explain">SELinux bepaalt welke processen toegang hebben tot welke bestanden/mappen op uw apparaat.\nDit voorkomt dat applicaties en services toegang krijgen tot bestanden die ze niet nodig hebben: op deze manier wordt een potentieel kwaadaardig proces beperkt en uw veiligheid behouden.</string>
     <string name="trust_feature_security_patches">Android-beveiligingspatches</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nProvider: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">up-to-date</string>
-    <string name="trust_feature_security_patches_value_medium">een paar maanden oud</string>
-    <string name="trust_feature_security_patches_value_old">verouderd</string>
+    <string name="trust_feature_security_patches_value_new">Bijgewerkt</string>
+    <string name="trust_feature_security_patches_value_medium">Een paar maanden oud</string>
+    <string name="trust_feature_security_patches_value_old">Verouderd</string>
     <string name="trust_feature_security_patches_explain">Beveiligingspatches worden maandelijks door Google vrijgegeven in samenwerking met SoC-leveranciers om fouten aan te pakken die kunnen worden uitgebuit door kwaadwillende apps om beveiligingsbeperkingen te omzeilen en permanente schade aan uw apparaat te veroorzaken. Patches die door Google beschikbaar worden gesteld, worden elke maand op alle ondersteunde apparaten toegepast, maar patches voor bedrijfseigen code kunnen alleen door de fabrikant van uw apparaat worden toegepast. Om uw apparaat veilig te houden, moet u ervoor zorgen dat uw LineageOS-build altijd up-to-date is en (indien van toepassing) zorgen dat uw leveranciers-image wordt geüpdatet naar de laatste die door LineageOS wordt aanbevolen.</string>
     <string name="trust_feature_encryption">Encryptie</string>
     <string name="trust_feature_encryption_value_enabled">Ingeschakeld</string>

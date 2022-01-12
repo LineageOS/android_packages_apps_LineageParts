@@ -399,9 +399,9 @@
 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
 <b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Info contributi</string>
-    <string name="contributions_info_msg">&lt;b&gt;Numero contributori:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Numero commit:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ultimo aggiornamento:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Numero contributori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Numero commit:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistiche LineageOS</string>
     <string name="anonymous_statistics_summary">Aiuta a migliorare LineageOS consentendo l\'invio di statistiche anonime</string>
     <string name="anonymous_statistics_warning_title">Info</string>
@@ -513,9 +513,9 @@
     <string name="trust_feature_selinux_explain">Il SELinux definisce quali processi hanno accesso a quali file sul dispositivo.\nQuesto impedisce alle app e servizi di accedere a file che non dovrebbero gestire: in questo modo un potenziale processo dannoso sarà limitato e la tua sicurezza preservata.</string>
     <string name="trust_feature_security_patches">Livello patch sicurezza Android</string>
     <string name="trust_feature_security_patches_value_base">Piattaforma: %1$s\nProduttore: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">aggiornate</string>
-    <string name="trust_feature_security_patches_value_medium">abbastanza datate</string>
-    <string name="trust_feature_security_patches_value_old">non aggiornate</string>
+    <string name="trust_feature_security_patches_value_new">Aggiornate</string>
+    <string name="trust_feature_security_patches_value_medium">Non aggiornate da qualche mese</string>
+    <string name="trust_feature_security_patches_value_old">Non aggiornate</string>
     <string name="trust_feature_security_patches_explain">Le patch di sicurezza vengono rilasciate mensilmente da Google in cooperazione con i produttori di SoC per risolvere problemi che potrebbero essere sfruttati dalle app dannose per aggirare le restrizioni di sicurezza e causare danni permanenti al dispositivo. Le patch rese disponibili da Google sono applicate a tutti i dispositivi supportati, ma quelle relative ai componenti proprietari possono essere applicati solo dal produttore del dispositivo. Per mantenere il dispositivo sicuro, controlla che la tua versione di LineageOS sia sempre aggiornata ed eventualmente assicurati che i componenti proprietari come firmware e immagine vendor siano quelli raccomandati da LineageOS.</string>
     <string name="trust_feature_encryption">Criptazione</string>
     <string name="trust_feature_encryption_value_enabled">Attiva</string>

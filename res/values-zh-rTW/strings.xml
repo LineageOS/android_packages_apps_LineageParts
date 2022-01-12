@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">正在讀取貢獻者名單\u2026</string>
     <string name="contributors_cloud_failed_message">無法載入貢獻者資料</string>
     <string name="contributor_info_menu">貢獻者名單</string>
-    <string name="contributor_info_msg">&lt;b&gt;名稱：&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;暱稱：:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;提交：&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>名稱：</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>暱稱：:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>提交：</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">貢獻者名單</string>
-    <string name="contributions_info_msg">&lt;b&gt;總貢獻者：&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;總認可：&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;最後更新：&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>總貢獻者：</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>總認可：</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>最後更新：</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS 統計</string>
     <string name="anonymous_statistics_summary">加入匿名統計報告即可協助改進 LineageOS</string>
     <string name="anonymous_statistics_warning_title">相關資訊</string>
@@ -515,9 +515,9 @@
     <string name="trust_feature_selinux_explain">SELinux 規定了哪些程式可以存取您的裝置上的哪些檔案。\n這個機制可以防止應用程式和服務存取它們不該存取的檔案，因此惡意程式的存取也會受到限制，從而保護了您的安全。</string>
     <string name="trust_feature_security_patches">Android 安全性修補</string>
     <string name="trust_feature_security_patches_value_base">平台：%1$s\n廠商：%2$s</string>
-    <string name="trust_feature_security_patches_value_new">已是最新版本！</string>
+    <string name="trust_feature_security_patches_value_new">已是最新</string>
     <string name="trust_feature_security_patches_value_medium">幾個月未更新</string>
-    <string name="trust_feature_security_patches_value_old">過時</string>
+    <string name="trust_feature_security_patches_value_old">已過期</string>
     <string name="trust_feature_security_patches_explain">安全性修補由 Google 和 SoC 廠商每月發佈，用以修復可能會被惡意應用程式利用、繞過安全限制對您的裝置造成暫時或永久損壞的缺陷。\n平台修補每個月都會統一更新，但廠商修補只能每次從 OEM 取得。\n要保證您的裝置安全，請使用最新的 LineageOS 版本。</string>
     <string name="trust_feature_encryption">加密</string>
     <string name="trust_feature_encryption_value_enabled">已啟用</string>

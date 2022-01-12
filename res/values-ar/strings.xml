@@ -399,9 +399,9 @@
                  <b>اللقب:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
                  <b>الإلتزامات:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">معلومات المساهمين</string>
-    <string name="contributions_info_msg">&lt;b&gt;إجمالي المساهمين:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;إجمالي المساهمات:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;آخر تحديث:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;k</string>
+    <string name="contributions_info_msg"><![CDATA[<b>إجمالي المساهمين:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+<b>إجمالي المساهمات:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+<b>آخر تحديث:</b> <xliff:g id="date">%3$s</xliff:g>]]>k</string>
     <string name="anonymous_statistics_title">إحصائيات نظام LineageOS</string>
     <string name="anonymous_statistics_summary">ساهم في جعل LineageOS أفضل بإرسال تقارير الإحصائيات</string>
     <string name="anonymous_statistics_warning_title">حول</string>
@@ -513,8 +513,8 @@
     <string name="trust_feature_selinux_explain">تملي SELinux العمليات التي لها حق الوصول إلى الملفات الموجودة على جهازك.\nويمنع ذلك التطبيقات والخدمات من الوصول إلى الملفات التي ليس من المفترض أن يتعامل معها: بهذه الطريقة ، فإن العملية الخبيثة لديها وصول محدود حتى يتم الحفاظ على الأمن الخاص بك.</string>
     <string name="trust_feature_security_patches">تصحيحات أمان الاندرويد</string>
     <string name="trust_feature_security_patches_value_base">المنصة: %1$s\nالبائع: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">مُحدث</string>
-    <string name="trust_feature_security_patches_value_medium">بضعة أشهر قبل اخر تحديث</string>
+    <string name="trust_feature_security_patches_value_new">آخِر إصدار</string>
+    <string name="trust_feature_security_patches_value_medium">بضعة أشهر قبل آخر تحديث</string>
     <string name="trust_feature_security_patches_value_old">غير محدّث</string>
     <string name="trust_feature_security_patches_explain">تصدر تصحيحات الأمان شهريًا من Google بالتعاون مع موردي SoC لمعالجة العيوب التي يمكن استغلالها من قبل تطبيقات خبيثة لتجاوز القيود الأمنية ويتسبب في ذلك في ضرر دائم لجهازك. التحديثات التي أتاحتها Google تطبق كل شهر على جميع الأجهزة المدعومة، ولكن يمكن تطبيق تصحيحات رمز الملكية فقط من الشركة المصنعة لجهازك. للحفاظ على جعل جهازك آمن برجاء التأكد بأن اصدار LineageOS الخاص بك محدث باستمرار، وضمان تحديث (إذا كان ممكنًا) صورة موردك إلى آخر اصدار موصى به من LineageOS.</string>
     <string name="trust_feature_encryption">التشفير</string>

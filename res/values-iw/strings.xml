@@ -381,13 +381,13 @@
     <string name="contributors_cloud_loading_message">טוען נתוני תורמים\u2026</string>
     <string name="contributors_cloud_failed_message">לא ניתן לטעון נתוני תורמים</string>
     <string name="contributor_info_menu">פרטי תורם</string>
-    <string name="contributor_info_msg">&lt;b&gt;שם:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;כינוי:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;שינויים:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>שם:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>כינוי:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>שינויים:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">פרטי תורמים</string>
-    <string name="contributions_info_msg">&lt;b&gt;סה"כ תורמים:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;סה"כ חלקי קוד:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;עדכון אחרון:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>סה"כ תורמים:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>סה"כ חלקי קוד:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>עדכון אחרון:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">סטטיסטיקות LineageOS</string>
     <string name="anonymous_statistics_summary">עזור לשפר את LineageOS על ידי שליחת דיווחי סטטיסטיקות אנונימית</string>
     <string name="anonymous_statistics_warning_title">אודות</string>
@@ -495,9 +495,6 @@
     <string name="trust_feature_selinux_value_disabled">כבוי (Disabled)</string>
     <string name="trust_feature_security_patches">‏רמה עדכון תיקוני אבטחה של המערכת</string>
     <string name="trust_feature_security_patches_value_base">פלטפורמה: %1$s\nיצרן: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">עדכני</string>
-    <string name="trust_feature_security_patches_value_medium">לא מעודכן כבר כמה חודשים</string>
-    <string name="trust_feature_security_patches_value_old">לא תקף</string>
     <string name="trust_feature_encryption">הצפנה</string>
     <string name="trust_feature_encryption_value_enabled">מופעלת</string>
     <string name="trust_feature_encryption_value_nolock">נעילת מסך מאובטחת נדרשת</string>

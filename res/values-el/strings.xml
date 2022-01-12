@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">Φόρτωση δεδομένων συνεισφερόντων\u2026</string>
     <string name="contributors_cloud_failed_message">Δεν είναι δυνατή η φόρτωση των δεδομένων συνεισφερόντων</string>
     <string name="contributor_info_menu">Πληροφορίες συνεισφερόντων</string>
-    <string name="contributor_info_msg">&lt;b&gt;Όνομα:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ψευδώνυμο:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Συνεισφορές:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Όνομα:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Ψευδώνυμο:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Συνεισφορές:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Πληροφορίες συνεισφορών</string>
-    <string name="contributions_info_msg">&lt;b&gt;Σύνολο συνεισφερόντων:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Σύνολο συνεισφορών:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Τελευταία ενημέρωση:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Σύνολο συνεισφερόντων:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Σύνολο συνεισφορών:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Τελευταία ενημέρωση:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Στατιστικά LineageOS</string>
     <string name="anonymous_statistics_summary">Βοηθήστε το LineageOS να γίνει καλύτερο ενεργοποιώντας την αποστολή ανώνυμων στατιστικών στοιχείων</string>
     <string name="anonymous_statistics_warning_title">Σχετικά</string>
@@ -517,9 +517,9 @@
     <string name="trust_feature_selinux_explain">Το SELinux καθορίζει ποιες διεργασίες έχουν πρόσβαση σε ποια αρχεία στη συσκευή σας.\nΑποτρέπει εφαρμογές και υπηρεσίες από το να έχουν πρόσβαση σε αρχεία που δεν θα έπρεπε: με αυτόν τον τρόπο μια κακόβουλη διεργασία έχει περιορισμένη πρόσβαση και η ασφάλειά σας διαφυλάσσεται.</string>
     <string name="trust_feature_security_patches">Ενημερωμένη έκδοση κώδικα ασφαλείας Android</string>
     <string name="trust_feature_security_patches_value_base">Πλατφόρμα: %1$s\nΚατασκευαστής: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">ενημερωμένη</string>
-    <string name="trust_feature_security_patches_value_medium">μερικούς μήνες παλιά</string>
-    <string name="trust_feature_security_patches_value_old">ξεπερασμένη</string>
+    <string name="trust_feature_security_patches_value_new">Ενημερωμένη</string>
+    <string name="trust_feature_security_patches_value_medium">Μερικούς μήνες παλιά</string>
+    <string name="trust_feature_security_patches_value_old">Ξεπερασμένη</string>
     <string name="trust_feature_security_patches_explain">Οι ενημερωμένες εκδόσεις ασφαλείας αποστέλλονται κάθε μήνα από την Google σε συνεργασία με τους κατασκευαστές SoC για την αντιμετώπιση σφαλμάτων τα οποία θα μπορούσαν να εκμεταλλευτούν από κακόβουλες εφαρμογές για να παρακάμψουν τους περιορισμούς ασφαλείας και να προκαλέσουν μόνιμη βλάβη στη συσκευή σας.\nΟι ενημερώσεις ασφαλείας που διατίθενται από την Google εφαρμόζονται για όλες τις υποστηριζόμενες συσκευές κάθε μήνα, αλλά οι ενημερώσεις ασφαλείας για κλειστό κώδικα μπορούν να εφαρμοστούν μόνο από τον κατασκευαστή της συσκευής σας.\nΓια να διατηρήσετε τη συσκευή σας ασφαλή, βεβαιωθείτε ότι χρησιμοποιείτε πάντα μια ενημερωμένη έκδοση του LineageOS και (ενδεχομένως) σιγουρευτείτε ότι η εικόνα \"vendor\" είναι ενημερωμένη στην πιο πρόσφατη έκδοση προτεινόμενη από το LineageOS.</string>
     <string name="trust_feature_encryption">Κρυπτογράφηση</string>
     <string name="trust_feature_encryption_value_enabled">Ενεργή</string>

@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">Katkıda bulunanlar verisi yükleniyor\u2026</string>
     <string name="contributors_cloud_failed_message">Katkıda bulunanlar verisi yüklenemedi</string>
     <string name="contributor_info_menu">Katkıda bulunan bilgisi</string>
-    <string name="contributor_info_msg">&lt;b&gt;İsim:&lt;/b&gt;&lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Takma isim:&lt;/b&gt;&lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Girdiler:&lt;/b&gt;&lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>İsim:</b><xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Takma isim:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Girdiler:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Katkılar hakkında bilgi</string>
-    <string name="contributions_info_msg">&lt;b&gt;Tüm katkı sağlayanlar:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Toplam girdi:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Son güncelleme:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Tüm katkı sağlayanlar:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Toplam girdi:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Son güncelleme:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS istatistikleri</string>
     <string name="anonymous_statistics_summary">Anonim istatistik raporlamayı tercih ederek LineageOS\'u daha iyi hale getirmeye yardımcı olun</string>
     <string name="anonymous_statistics_warning_title">Hakkında</string>
@@ -515,9 +515,9 @@
     <string name="trust_feature_selinux_explain">SELinux, hangi işlemlerin cihazınızda ki hangi dosyalara/yollara erişebileceğini belirler.\nBu, uygulamaların ve hizmetlerin söz konusu olmayan dosyalara erişmesini önler: bu şekilde olası kötü amaçlı bir işlem sınırlandırılır ve güvenliğiniz korunur.</string>
     <string name="trust_feature_security_patches">Android güvenlik yaması</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nÜretici: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">güncel</string>
-    <string name="trust_feature_security_patches_value_medium">birkaç ay eski</string>
-    <string name="trust_feature_security_patches_value_old">eski</string>
+    <string name="trust_feature_security_patches_value_new">Güncel</string>
+    <string name="trust_feature_security_patches_value_medium">Birkaç ay eski</string>
+    <string name="trust_feature_security_patches_value_old">Güncellenmemiş</string>
     <string name="trust_feature_security_patches_explain">Güvenlik kısıtlamalarını atlamak ve cihazınızda kalıcı hasara neden olmak için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek hataları gidermek için SoC satıcılarıyla işbirliği içinde Google tarafından aylık olarak güvenlik yamaları yayınlanır. Google tarafından kullanıma sunulan yamalar, desteklenen tüm cihazlarda her ay uygulanır, ancak tescilli koddaki yamalar sadece cihazınızın üreticisi tarafından uygulanabilir. Cihazınızı güvende tutmak için LineageOS yapınızın her zaman güncel olduğundan ve (varsa) satıcı dosyanızın LineageOS tarafından önerilen en yeni sürüme güncellendiğinden emin olun.</string>
     <string name="trust_feature_encryption">Şifreleme</string>
     <string name="trust_feature_encryption_value_enabled">Etkin</string>

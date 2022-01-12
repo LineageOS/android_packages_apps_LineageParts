@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">Зареждане на данните за разработчици\u2026</string>
     <string name="contributors_cloud_failed_message">Неуспех при изтеглянето на информация за разработчиците</string>
     <string name="contributor_info_menu">Потребителска информация</string>
-    <string name="contributor_info_msg">&lt;b&gt;Име:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ник:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ангажира:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Ник:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Ангажира:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Обща информация</string>
-    <string name="contributions_info_msg">&lt;b&gt;Брой разработчици:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Брой промени:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Последна актуализация:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Брой разработчици:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Брой промени:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Последна актуализация:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Статистики</string>
     <string name="anonymous_statistics_summary">Помогнете да направим LineageOS по-добър, като разрешите да събира анонимни статистически данни</string>
     <string name="anonymous_statistics_warning_title">За проложението</string>
@@ -513,9 +513,6 @@
     <string name="trust_feature_selinux_explain">SELinux диктува кои процеси имат достъп до файлове на вашето устройство. \nТова предотвратява приложения и услуги да имат достъп до файлове, които те не би трябвало да имат. По този начин зловреден процес е ограничен, така че вашата сигурност се запазва.</string>
     <string name="trust_feature_security_patches">Андроид защитни кръпки</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nVendor: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">актуално</string>
-    <string name="trust_feature_security_patches_value_medium">необновено от няколко месеца</string>
-    <string name="trust_feature_security_patches_value_old">неактуален</string>
     <string name="trust_feature_security_patches_explain">Защитните пакети се разпространяват ежемесечно от Google заедно с доставчиците на SoC, за да се поправят уязвимостите в системата, които могат да бъдат използвани от злонамерени приложения, който да заобиколят ограниченията за сигурност и да причинят необратими щети на вашето устройство. Корекциите, предоставени от Google, се прилагат всеки месец на всички поддържани устройства, но поправките за патентования код могат да се прилагат само от производителя на устройството ви. За да поддържате устройството си в безопасно състояние, уверете се, че използвате последната версия на LineageOS.</string>
     <string name="trust_feature_encryption">Криптиране</string>
     <string name="trust_feature_encryption_value_enabled">Активирано</string>

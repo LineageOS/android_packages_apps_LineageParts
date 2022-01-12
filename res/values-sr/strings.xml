@@ -383,13 +383,13 @@
     <string name="contributors_cloud_loading_message">Учитавам податке о сарадницима\u2026</string>
     <string name="contributors_cloud_failed_message">Не могу да учитам податке о сарадницима.</string>
     <string name="contributor_info_menu">Подаци о сарадницима</string>
-    <string name="contributor_info_msg">&lt;b&gt;Име:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Надимак:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Доприноса:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Надимак:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Доприноса:</b> <xliff:g id="commits">%3$s</xliff:g>]]>;</string>
     <string name="contributions_info_menu">Општа статистика</string>
-    <string name="contributions_info_msg">&lt;b&gt;Укупно сарадника:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Укупно доприноса:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Последња измена:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Укупно сарадника:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Укупно доприноса:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Последња измена:</b> <xliff:g id="date">%3$s</xliff:g>]]>;</string>
     <string name="anonymous_statistics_title">Слање статистике</string>
     <string name="anonymous_statistics_summary">Помозите нам да побољшамо LineageOS тако што ћете дозволити слање анонимне статистике.</string>
     <string name="anonymous_statistics_warning_title">Информације</string>
@@ -498,9 +498,6 @@
     <string name="trust_feature_selinux_explain">SELinux одређује који процеси имају приступ којим фајловима/путањама на Вашем уређају.\nОво спречава апликације и сервисе да добију приступ фајловима којима не би требало: овако се малициозни процеси ограничавају и осигурава се ваша сигурност.</string>
     <string name="trust_feature_security_patches">Андроид безбедоносне закрпе</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nДобављач: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">ажурно</string>
-    <string name="trust_feature_security_patches_value_medium">прошло је неколико месеци од задњег освежавања</string>
-    <string name="trust_feature_security_patches_value_old">застарела</string>
     <string name="trust_feature_security_patches_explain">Сигуроносне закрпе се раде на месечном нивоу од стране Google-а у сарадњи са SoC добављачем да реше преблеме које могу искористити злонамерне апликације да заобиђу сигурносне рестрикције и да трајно оштете уређај. Закрпе које су доступне Google прави сваког месеца на свим подржаним уређајима, али закрпе може поставити само произвођач уређаја. Да осигурате сигурност уређаја нека LineageOS увек буде ажуриран, и (ако је примењиво) осигурајте да је слика добављача ажурирана по препоруци LineageOS-а.</string>
     <string name="trust_feature_encryption">Enkripcija</string>
     <string name="trust_feature_encryption_value_enabled">Омогућено</string>

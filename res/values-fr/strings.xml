@@ -395,13 +395,13 @@
     <string name="contributors_cloud_loading_message">Chargement des informations sur les contributeurs\u2026</string>
     <string name="contributors_cloud_failed_message">Impossible de charger les informations sur les contributeurs</string>
     <string name="contributor_info_menu">Informations du contributeur</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nom :&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Surnom :&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Contributions :&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nom :</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Surnom :</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Contributions :</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Infos sur les contributions</string>
-    <string name="contributions_info_msg">&lt;b&gt;Nombre de contributeurs :&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nombre de contributions :&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Dernière mise à jour :&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Nombre de contributeurs :</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Nombre de contributions :</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Dernière mise à jour :</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistiques LineageOS</string>
     <string name="anonymous_statistics_summary">Contribuer à l\'amélioration de LineageOS en envoyant des rapports de statistiques anonymes</string>
     <string name="anonymous_statistics_warning_title">À propos</string>
@@ -513,9 +513,9 @@
     <string name="trust_feature_selinux_explain">SELinux permet de contrôler les processus autorisés à accéder aux fichiers/chemins sur votre appareil.\nCette fonctionnalité empêche ainsi des applications et services d\'accéder à des fichiers qu\'ils ne sont pas censés gérer. Étant donné que les éventuels processus malveillants ont un accès limité à vos données, votre appareil reste protégé.</string>
     <string name="trust_feature_security_patches">Correctifs de sécurité Android</string>
     <string name="trust_feature_security_patches_value_base">Plate-forme : %1$s\nFournisseur : %2$s</string>
-    <string name="trust_feature_security_patches_value_new">à jour</string>
-    <string name="trust_feature_security_patches_value_medium">obsolètes de quelques mois</string>
-    <string name="trust_feature_security_patches_value_old">obsolètes</string>
+    <string name="trust_feature_security_patches_value_new">À jour</string>
+    <string name="trust_feature_security_patches_value_medium">Obsolète de quelques mois</string>
+    <string name="trust_feature_security_patches_value_old">Obsolète</string>
     <string name="trust_feature_security_patches_explain">Les correctifs de sécurité sont publiés chaque mois par Google, en coopération avec les fournisseurs de SoC. Ils permettent de corriger des failles que des applications malveillantes sont susceptibles d\'exploiter pour contourner les restrictions de sécurité et endommager votre appareil de façon définitive. Les correctifs fournis par Google sont appliqués chaque mois à tous les appareils compatibles, mais ceux concernant le code propriétaire ne peuvent l\'être que par le fabricant de votre appareil. Pour garantir la sécurité de votre appareil, veillez à toujours utiliser la dernière version de LineageOS et, le cas échéant, mettez à jour votre fichier vendor.img afin qu\'il corresponde à la dernière version recommandée par LineageOS.</string>
     <string name="trust_feature_encryption">Chiffrement</string>
     <string name="trust_feature_encryption_value_enabled">Activé</string>
