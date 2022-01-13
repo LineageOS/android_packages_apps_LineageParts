@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ *               2021-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -78,10 +79,23 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder, DialogInterface.OnClickListener listener) {
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
+            DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
 
         builder.setNeutralButton(R.string.reset,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        builder.setNegativeButton(R.string.cancel,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        builder.setPositiveButton(R.string.dlg_ok,
                 new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
