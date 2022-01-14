@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2016 The CyanogenMod Project
-	              2019-2021 The LineageOS Project
+	              2019-2022 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -19,10 +19,7 @@
     <!-- Contributors -->
     <color name="contributors_cloud_selected_color">#ff5252</color>
 
-
-    <color name="perf_hot">#ffd10015</color>
-    <color name="perf_cold">#ff005994</color>
-
+    <!-- Trust -->
     <color name="trust_status_good">#36B37E</color>
     <color name="trust_status_poor">#FFAB00</color>
     <color name="trust_status_bad">#FF5630</color>
