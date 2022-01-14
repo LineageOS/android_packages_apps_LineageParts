@@ -559,21 +559,6 @@
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
 
-    <!-- Power: Performance profiles -->
-    <string name="perf_profile_settings_title">Battery saver and performance</string>
-    <string name="perf_profile_settings_summary">Adjust power saving features and device performance</string>
-    <string name="perf_profile_overview_summary">Current profile: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Device performance</string>
-    <string name="perf_profile_title">Performance profile: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">The performance profile is currently unavailable</string>
-    <string name="power_save_category_title">Battery saving</string>
-    <string name="power_save_title">Extreme power saver</string>
-    <string name="power_save_summary">Restrict device performance and background activity to save power</string>
-    <string name="auto_power_save_title">Automatic power saver</string>
-    <string name="auto_power_save_summary_on">Automatically enable power save mode at %s battery</string>
-    <string name="auto_power_save_summary_off">Do not enable power save mode automatically</string>
-    <string name="auto_power_save_never">Never</string>
-
     <!-- Applications: Long screen -->
     <string name="long_screen_settings_title">Full screen apps</string>
     <string name="long_screen_settings_summary">Force legacy apps to use full screen aspect ratio</string>
