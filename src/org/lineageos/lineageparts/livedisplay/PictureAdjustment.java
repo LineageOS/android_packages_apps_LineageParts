@@ -83,24 +83,9 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
             DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
 
-        builder.setNeutralButton(R.string.reset,
-                new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
-        builder.setNegativeButton(R.string.cancel,
-                new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
-        builder.setPositiveButton(R.string.dlg_ok,
-                new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
+        builder.setNeutralButton(R.string.reset, null);
+        builder.setNegativeButton(R.string.cancel, null);
+        builder.setPositiveButton(R.string.dlg_ok, null);
     }
 
     private void updateBars() {
