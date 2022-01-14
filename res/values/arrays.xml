@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2015 The CyanogenMod Project
-     Copyright (C) 2017-2018 The LineageOS Project
+                   2017-2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -331,23 +331,6 @@
         <item>2</item>
         <item>1</item>
         <item>0</item>
-    </string-array>
-
-    <!-- Auto power save mode: Allowable trigger threshold entries -->
-    <string-array name="auto_power_save_entries" translatable="false">
-        <item>@string/auto_power_save_never</item>
-        <item>5%</item>
-        <item>15%</item>
-        <item>25%</item>
-    </string-array>
-
-    <!-- Auto power save mode: Allowable trigger threshold levels.
-         Similar to the battery_saver_trigger_values integer-array in Settings -->
-    <string-array name="auto_power_save_values" translatable="false">
-        <item>0</item>
-        <item>5</item>
-        <item>15</item>
-        <item>25</item>
     </string-array>
 
     <!-- Gestures - touchscreen gesture actions -->
