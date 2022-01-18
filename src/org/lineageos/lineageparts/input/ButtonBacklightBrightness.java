@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
- *               2017-2020 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -112,6 +112,18 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
             public void onClick(DialogInterface dialog, int which) {
             }
         });
+        builder.setNegativeButton(R.string.cancel,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        builder.setPositiveButton(R.string.dlg_ok,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });    
     }
 
     @Override
