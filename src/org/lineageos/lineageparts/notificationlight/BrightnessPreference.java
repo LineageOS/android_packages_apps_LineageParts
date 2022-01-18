@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017,2019-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -126,9 +126,19 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
     protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
             DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
-        // Set no-op handler for RESET button
-        // (note, the reset itself is handled in onDismissDialog())
         builder.setNeutralButton(R.string.reset,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        builder.setNegativeButton(R.string.cancel,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        builder.setPositiveButton(R.string.dlg_ok,
                 new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
