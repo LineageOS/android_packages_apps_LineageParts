@@ -78,16 +78,6 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
         setDialogLayoutResource(R.layout.display_picture_adjustment);
     }
 
-    @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
-            DialogInterface.OnClickListener listener) {
-        super.onPrepareDialogBuilder(builder, listener);
-
-        builder.setNeutralButton(R.string.reset, null);
-        builder.setNegativeButton(R.string.cancel, null);
-        builder.setPositiveButton(R.string.dlg_ok, null);
-    }
-
     private void updateBars() {
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
             mSeekBars[i].setValue(mCurrentAdj[i]);

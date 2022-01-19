@@ -104,15 +104,6 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
-            DialogInterface.OnClickListener listener) {
-        super.onPrepareDialogBuilder(builder, listener);
-        builder.setNeutralButton(R.string.reset, null);
-        builder.setNegativeButton(R.string.cancel, null);
-        builder.setPositiveButton(R.string.dlg_ok, null);
-    }
-
-    @Override
     protected boolean onDismissDialog(AlertDialog dialog, int which) {
         if (which == DialogInterface.BUTTON_NEUTRAL) {
             mTimeoutBar.setProgress(DEFAULT_BUTTON_TIMEOUT);

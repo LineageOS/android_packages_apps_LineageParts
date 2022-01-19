@@ -65,16 +65,6 @@ public class DisplayTemperature extends CustomDialogPreference<AlertDialog> {
     }
 
     @Override
-    protected void onPrepareDialogBuilder(AlertDialog.Builder builder,
-            DialogInterface.OnClickListener listener) {
-        super.onPrepareDialogBuilder(builder, listener);
-
-        builder.setNeutralButton(R.string.reset, null);
-        builder.setNegativeButton(R.string.cancel, null);
-        builder.setPositiveButton(R.string.dlg_ok, null);
-    }
-
-    @Override
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 

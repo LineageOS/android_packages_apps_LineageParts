@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2015 The Android Open Source Project
  *               2016 The CyanogenMod Project
- *               2017,2019,2021 The LineageOS Project
+ *               2017,2019,2021-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,6 +29,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.DialogPreference;
 import androidx.preference.PreferenceDialogFragmentCompat;
+
+import org.lineageos.lineageparts.R;
 
 public class CustomDialogPreference<T extends DialogInterface> extends DialogPreference {
 
@@ -176,6 +178,10 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
             super.onPrepareDialogBuilder(builder);
             getCustomizablePreference().setFragment(this);
             getCustomizablePreference().onPrepareDialogBuilder(builder, this);
+
+            builder.setNeutralButton(R.string.reset, null);
+            builder.setNegativeButton(R.string.cancel, null);
+            builder.setPositiveButton(R.string.dlg_ok, null);
         }
 
         @Override
