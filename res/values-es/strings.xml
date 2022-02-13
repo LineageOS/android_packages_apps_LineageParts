@@ -495,6 +495,7 @@
     <string name="touchscreen_gesture_action_volume_up">Mayor volumen multimedia</string>
     <string name="touchscreen_gesture_action_ambient_display">Mostrar pantalla ambiente</string>
     <string name="trust_feature_encryption">Cifrado</string>
+    <string name="trust_feature_encryption_explain">Cifrar el dispositivo impide el acceso a tus datos cuando el teléfono no se inicia en Android. Esto es particularmente importante si el teléfono es robado, ya que evita que la gente vea tus mensajes, contactos y otra información privada sin tu contraseña.\nPara hacer el cifrado más efectivo, es necesario establecer una contraseña segura en la pantalla de bloqueo.</string>
     <string name="trust_warnings_selinux">Estado de SELinux</string>
     <string name="trust_onboarding_learn_more">Saber más</string>
     <string name="trust_onboarding_done">Entiendo</string>

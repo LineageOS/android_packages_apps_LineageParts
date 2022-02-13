@@ -468,7 +468,7 @@
     <string name="charging_sounds_ringtone_silent">Tiho</string>
     <string name="touchscreen_gesture_settings_title">Poteze na zaslonu na dotik</string>
     <string name="touchscreen_gesture_settings_summary">Za hitra dejanja na zaslonu na dotik izvedite različne poteze</string>
-    <string name="touchscreen_gestures_haptic_feedback_title">Haptično zaznavanje</string>
+    <string name="touchscreen_gestures_haptic_feedback_title">Haptični odziv</string>
     <string name="touchscreen_gestures_haptic_feedback_summary">Vibriraj, ko je zaznana poteza na zaslonu na dotik</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Poteg navzdol z dvema prstoma</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">Poteg navzgor z enim prstom</string>
