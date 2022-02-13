@@ -180,8 +180,8 @@
     <string name="volbtn_cursor_control_off">I çaktivizuar</string>
     <string name="volbtn_cursor_control_on">Volumi lartë/poshtë lëviz kursorin majtas/djathtas</string>
     <string name="volbtn_cursor_control_on_reverse">Volumi lartë/poshtë lëviz kursorin djathtas/majtas</string>
-    <string name="power_end_call_title">Mbaro telefonatën</string>
-    <string name="power_end_call_summary">Mbaro telefonatën aktuale duke shtypur butonin e energjisë</string>
+    <string name="power_end_call_title">Mbyll telefonatën</string>
+    <string name="power_end_call_summary">Mbyll telefonatën aktuale duke shtypur butonin e energjisë</string>
     <string name="swap_volume_buttons_title">Rioriento</string>
     <string name="swap_volume_buttons_summary">Shkëmbe butonat e volumit kur ekrani është i kthyer</string>
     <string name="volume_panel_on_left_title">Shfaq panelin në të majtë</string>
@@ -415,7 +415,7 @@
     <string name="contributor_info_menu">Informacion rreth kontribuesit</string>
     <string name="contributor_info_msg"><b>Emri:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>                 <b>Pseudonimi:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>                 <b>Kontributet:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Informacion rreth kontribimeve</string>
-    <string name="contributions_info_msg">&lt;b&gt;Kontribuesit në total:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;Kontribimet në total:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;Përditësimi i fundit:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Kontribuesit në total:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>Kontribimet në total:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>                 <b>Përditësimi i fundit:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistikat e LineageOS</string>
     <string name="anonymous_statistics_summary">Ndihmo në përmirësimin e LineageOS duke lejuar raportimin anonim të statistikave</string>
     <string name="anonymous_statistics_warning_title">Rreth nesh</string>
@@ -556,12 +556,12 @@
     <string name="trust_feature_root_value_adb">Vetëm ADB</string>
     <string name="trust_feature_root_value_apps">Aplikacionet dhe ADB</string>
     <string name="trust_feature_root_explain">Të drejtat si Root lejon anashkalimin e kufizimeve të sigurisë nga aplikacionet dhe shërbimet që ti zgjedh, duke i lejuar ato për të kryer ndryshime në sistem, të cilat mund të shkaktojnë dëmtime të paisjes ose sistemit operativ.</string>
-    <string name="trust_feature_security_patches">Arnime të sigurisë së Android</string>
+    <string name="trust_feature_security_patches">korrigjimet të sigurisë së Android</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProdhuesi: %2$s</string>
     <string name="trust_feature_security_patches_value_new">e përditësuar</string>
     <string name="trust_feature_security_patches_value_medium">disa muaj e pa përditësuar</string>
     <string name="trust_feature_security_patches_value_old">e prapambetur</string>
-    <string name="trust_feature_security_patches_explain">Arnimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar të metat nga të cilat mund të shfrytëzohen nga programe keqadashës për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. Arnimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por arnimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar të metat nga të cilat mund të shfrytëzohen nga programe keqadashës për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. Arnimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por arnimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
     <string name="trust_feature_encryption">Shifrimi</string>
     <string name="trust_feature_encryption_value_enabled">E aktivizuar</string>
     <string name="trust_feature_encryption_value_nolock">Nevojitet një mbyllje e sigurtë e ekranit</string>

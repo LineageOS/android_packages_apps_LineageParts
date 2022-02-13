@@ -417,9 +417,9 @@
 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
 <b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Info contributi</string>
-    <string name="contributions_info_msg">&lt;b&gt;Numero contributori:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Numero commit:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ultimo aggiornamento:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Numero contributori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Numero commit:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistiche LineageOS</string>
     <string name="anonymous_statistics_summary">Aiuta a migliorare LineageOS consentendo l\'invio di statistiche anonime</string>
     <string name="anonymous_statistics_warning_title">Info</string>
@@ -581,7 +581,7 @@
     <string name="trust_onboarding_learn_more">Scopri di più</string>
     <string name="trust_onboarding_done">Capito</string>
     <string name="trust_restrict_usb_title">Restrizioni USB</string>
-    <string name="trust_restrict_usb_summary">Impedisci la connessione di nuovi dispositivi USB quando il dispositivo é bloccato</string>
+    <string name="trust_restrict_usb_summary">Impedisci la connessione di nuovi dispositivi USB quando il dispositivo è bloccato</string>
     <string name="sms_security_check_limit_title">Limite invio SMS</string>
     <string name="sms_security_check_limit_summary">Le applicazioni possono inviare %s messaggi in 1 minuto prima di richiedere conferma</string>
     <string name="sms_security_check_limit_summary_none">Non è consentito alle app l\'invio di messaggi senza conferma</string>

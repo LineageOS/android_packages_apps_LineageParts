@@ -409,10 +409,10 @@
     <string name="contributors_cloud_loading_message">ನೆರವಾದವರ ದತ್ತಾಂಶವನ್ನು ಭರಿಸುತ್ತಿದೆ\u2026</string>
     <string name="contributors_cloud_failed_message">ನೆರವಾದವರ ದತ್ತಾಂಶವನ್ನು ಭರಿಸಲಾಗುತ್ತಿಲ್ಲ</string>
     <string name="contributor_info_menu">ನೆರವಾದವರ ಮಾಹಿತಿ</string>
-    <string name="contributor_info_msg">&lt;b&gt;ಹೆಸರು:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಉಪನಾಮ:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;ಸೇರಿಕೆಗಳು:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>ಹೆಸರು:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/><b>ಉಪನಾಮ:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+<b>ಸೇರಿಕೆಗಳು:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">ನೆರವುಗಳ ಮಾಹಿತಿ</string>
-    <string name="contributions_info_msg">&lt;b&gt;ಒಟ್ಟು ನೆರವಾದವರು:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಒಟ್ಟು ಸೇರಿಕೆಗಳು:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;ಕೊನೆಯ ನವೀಕರಣ:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>ಒಟ್ಟು ನೆರವಾದವರು:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/><b>ಒಟ್ಟು ಸೇರಿಕೆಗಳು:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/><b>ಕೊನೆಯ ನವೀಕರಣ:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS ಅಂಕ್ಯಾಂಶಗಳು</string>
     <string name="anonymous_statistics_summary">ಅಂಕ್ಯಾಂಶಗಳನ್ನು ಅನಾಮಿಕವಾಗಿ ಸಲ್ಲಿಸಲು ಒಪ್ಪುವ ಮೂಲಕ LineageOS ಅನ್ನು ಉತ್ತಮಗೊಳಿಸಲು ನೆರವಾಗಿ</string>
     <string name="anonymous_statistics_warning_title">ಬಗ್ಗೆ</string>

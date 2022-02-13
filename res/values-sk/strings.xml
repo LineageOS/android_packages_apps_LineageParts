@@ -34,6 +34,7 @@
     <string name="yes">Ano</string>
     <string name="no">Nie</string>
     <string name="search">Vyhľadať</string>
+    <string name="search_menu">Nastavenie vyhľadávania</string>
     <string name="disabled">Zakázané</string>
     <string name="enabled">Povolené</string>
     <string name="privacy_settings_title">Súkromie</string>
@@ -51,6 +52,7 @@
     <string name="privacy_guard_manager_show_system_apps">Zobraziť systémové aplikácie</string>
     <string name="privacy_guard_advanced_settings_title">Pokročilé</string>
     <string name="privacy_guard_notification_title">Zobraziť upozornenia</string>
+    <string name="channel_light_settings_name">Náhľad nastavení sveteľnej signalizácie</string>
     <string name="edit_light_settings">Upraviť svetelnú signalizáciu</string>
     <string name="pulse_speed_title">Dĺžka a rýchlosť blikania</string>
     <string name="default_time">Normálny</string>
@@ -182,6 +184,8 @@
     <string name="power_end_call_summary">Stlačením tlačidla Napájanie sa ukončí aktuálny hovor</string>
     <string name="swap_volume_buttons_title">Preorientovať</string>
     <string name="swap_volume_buttons_summary">Po otočení obrazovky prevrátiť aj zmysel tlačidiel hlasitosti</string>
+    <string name="volume_panel_on_left_title">Zobraziť panel vľavo</string>
+    <string name="volume_panel_on_left_summary">Zobraziť panel hlasitosti na ľavej strane obrazovky</string>
     <string name="button_wake_title">Prebudiť zariadenie</string>
     <string name="volume_answer_call_title">Prijať hovor</string>
     <string name="volume_answer_call_summary">Prijať prichádzajúci hovor stlačením niektorého z tlačidiel hlasitosti</string>
@@ -402,19 +406,20 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazovať jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazenie jednotiek merania sieť. prevádzky v stavovom riadku</string>
+    <string name="network_traffic_disabled_clock">Sieťová prevádzka sa nezobrazí kvôli umiestneniu hodín</string>
     <string name="protected_apps_manager_title">Chránené aplikácie</string>
     <string name="protected_apps_manager_summary">Spravovať aplikácie, ktoré sú skryté za bezpečným zámkom</string>
     <string name="contributors_cloud_fragment_title">Prispievatelia</string>
     <string name="contributors_cloud_loading_message">Načítavanie údajov o prispievateľoch\u2026</string>
     <string name="contributors_cloud_failed_message">Nie je možné načítať údaje o prispievateľoch</string>
     <string name="contributor_info_menu">Informácie o prispievateľovi</string>
-    <string name="contributor_info_msg">&lt;b&gt;Meno:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Prezívka:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Potvrdenie:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Meno:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+<b>Prezívka:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+<b>Potvrdenie:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informácie o príspevkoch</string>
-    <string name="contributions_info_msg">&lt;b&gt;Celkom prispievateľov:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Celkom príspevkov:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;b&gt;Posledná aktualizácia:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Celkom prispievateľov:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+<b>Celkom príspevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+<b>Posledná aktualizácia:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Štatistiky LineageOS</string>
     <string name="anonymous_statistics_summary">Pomôžte zlepšiť LineageOS povolením anonymných štatistických hlásení</string>
     <string name="anonymous_statistics_warning_title">O</string>
