@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">正在载入贡献者数据\u2026</string>
     <string name="contributors_cloud_failed_message">无法读取贡献者数据</string>
     <string name="contributor_info_menu">贡献者信息</string>
-    <string name="contributor_info_msg">&lt;b&gt;名字:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;昵称:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;提交:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>名字:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>昵称:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>提交:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">贡献信息</string>
-    <string name="contributions_info_msg">&lt;b&gt;贡献者总数:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;提交总数:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;上次更新:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>贡献者总数:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>提交总数:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>上次更新:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS 统计</string>
     <string name="anonymous_statistics_summary">开启匿名统计报告以便帮助 LineageOS 未来向更好的方向发展</string>
     <string name="anonymous_statistics_warning_title">关于</string>
@@ -470,8 +470,10 @@
     <string name="charging_sounds_enabled_title">启用</string>
     <string name="charging_sounds_enabled_summary">连接或断开电源时发出声音</string>
     <string name="power_notifications_vibrate_title">振动</string>
-    <string name="charging_sounds_ringtone_title">提示音</string>
     <string name="charging_sounds_ringtone_silent">静音</string>
+    <string name="charging_sounds_notification_category_title">通知声音</string>
+    <string name="wired_charging_sounds_title">有线充电</string>
+    <string name="wireless_charging_sounds_title">无线充电</string>
     <string name="touchscreen_gesture_settings_title">触摸屏手势</string>
     <string name="touchscreen_gesture_settings_summary">为快捷操作采用各种触摸屏手势</string>
     <string name="touchscreen_gestures_haptic_feedback_title">触觉反馈</string>

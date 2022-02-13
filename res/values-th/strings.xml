@@ -62,6 +62,7 @@
     <string name="light_brightness_zen">ห้ามรบกวน</string>
     <string name="battery_light_title">ไฟแบตเตอรี่</string>
     <string name="battery_low_pulse_title">กระพริบเมื่อแบตเตอรี่ต่ำ</string>
+    <string name="battery_light_full_charge_disabled_title">ปิดเมื่อชาร์จเต็ม</string>
     <string name="battery_light_list_title">สี</string>
     <string name="battery_light_low_color_title">แบตเตอรี่ต่ำ</string>
     <string name="battery_light_medium_color_title">กำลังชาร์จ</string>
@@ -92,6 +93,7 @@
     <string name="live_display_night">กลางคืน</string>
     <string name="live_display_outdoor_mode_title">โหมดกลางแจ้งอัตโนมัติ</string>
     <string name="live_display_outdoor_mode_summary">เพิ่มความสว่างและความอิ่มตัวของสีโดยอัตโนมัติภายใต้แสงแดด</string>
+    <string name="live_display_anti_flicker_title">ป้องกันการกระพริบ</string>
     <string name="live_display_low_power_title">ลดการใช้พลังงาน</string>
     <string name="live_display_low_power_summary">ปรับการแสดงผลให้ใช้พลังงานน้อยที่สุดโดยที่ไม่ลดประสิทธิภาพ</string>
     <string name="live_display_enhance_color_title">เพิ่มประสิทธิภาพสี</string>
@@ -154,6 +156,7 @@
     <string name="hardware_keys_action_sleep">ปิดหน้าจอ</string>
     <string name="hardware_keys_action_last_app">แอปล่าสุด</string>
     <string name="hardware_keys_action_split_screen">แยกหน้าจอ</string>
+    <string name="hardware_keys_action_kill_app">ปิดแอปปัจจุบัน</string>
     <string name="camera_sleep_on_release_title">ดูผ่านหน้าจอ</string>
     <string name="camera_sleep_on_release_summary">การกดเพียงครึ่งเดียวจะเปิดจอไว้เฉพาะเมื่อปุ่มถูกกดค้างอยู่</string>
     <string name="camera_launch_title">เปิดกล้อง</string>
@@ -190,11 +193,14 @@
     <string name="backlight_summary_enabled">เปิดใช้งาน</string>
     <string name="disable_navkeys_title">เปิดใช้งานแถบนำทางบนหน้าจอ</string>
     <string name="disable_navkeys_summary">เปิดใช้งานแถบนำทางบนหน้าจอและปิดการใช้งานปุ่มฮาร์ดแวร์</string>
+    <string name="swap_capacitive_keys_title">สลับปุ่มสัมผัส</string>
+    <string name="swap_capacitive_keys_summary">สลับตำแหน่งของปุ่มรายการล่าสุดและปุ่มย้อนกลับ</string>
     <string name="navigation_bar_category">แถบนำทาง</string>
     <string name="navigation_bar_invert_layout_title">สลับรูปแบบ</string>
     <string name="navigation_bar_left_summary">ให้แถบนำทางไปอยู่ด้านซ้ายจอเมื่ออยู่ในรูปแบบแนวนอน</string>
     <string name="navigation_bar_arrow_keys_title">แสดงปุ่มลูกศรขณะพิมพ์</string>
     <string name="navigation_bar_arrow_keys_summary">แสดงปุ่มเลื่อนเคอร์เซอร์ซ้ายขวาขณะพิมพ์ แทนที่ปุ่มสลับแป้นพิมพ์</string>
+    <string name="navigation_bar_back_long_press_title">เมื่อกดปุ่มย้อนหลังค้าง</string>
     <string name="navigation_bar_home_long_press_title">เมื่อกดปุ่มโฮมค้าง</string>
     <string name="navigation_bar_home_double_tap_title">เมื่อกดปุ่มโฮม2ครั้ง</string>
     <string name="navigation_bar_app_switch_long_press_title">เมื่อกดปุ่มแอปล่าสุดค้าง</string>
@@ -206,6 +212,7 @@
     <string name="power_menu_users_title">สลับผู้ใช้งาน</string>
     <string name="power_menu_bug_report_title">รายงานข้อผิดพลาด</string>
     <string name="power_menu_lockdown_title">ออกโรง</string>
+    <string name="power_menu_emergency_title">ฉุกเฉิน</string>
     <string name="camera_double_tap_power_gesture_title">กดปุ่มเพาเวอร์ 2 ครั้งเพื่อเรียกใช้งานกล้อง</string>
     <string name="camera_double_tap_power_gesture_desc">เปิดกล้องได้อย่างรวดเร็วโดยไม่ต้องปลดล็อกหน้าจอ</string>
     <string name="torch_long_press_power_gesture_title">กดค้างสำหรับไฟฉาย</string>
@@ -449,7 +456,6 @@
     <string name="charging_sounds_enabled_title">เปิดใช้งาน</string>
     <string name="charging_sounds_enabled_summary">เล่นเสียงเมื่อมีการชาร์จหรือถอดสายชาร์จ</string>
     <string name="power_notifications_vibrate_title">สั่น</string>
-    <string name="charging_sounds_ringtone_title">เสียงการแจ้งเตือน</string>
     <string name="charging_sounds_ringtone_silent">ไม่มีเสียง</string>
     <string name="touchscreen_gesture_settings_title">ท่าทางสัมผัสบนหน้าจอ</string>
     <string name="touchscreen_gesture_settings_summary">ใช้ท่าทางสัมผัสรูปแบบต่าง ๆ เพื่อการทำงานที่รวดเร็วขึ้น</string>
@@ -500,6 +506,9 @@
     <string name="trust_feature_selinux_explain">SELinux บอกว่า กระบวนการสามารถเข้าถึง ไฟล์/พื้นที่ บนอุปกรณ์ของคุณ\nสิ่งนี้ป้องกันไม่ให้แอปและบริการการเข้าถึงไฟล์ที่ไม่ควรจะ: วิธีนี้กระบวนการที่เป็นอันตรายอาจถูกจำกัด และรักษาความปลอดภัยของคุณ</string>
     <string name="trust_feature_security_patches">แพตช์ความปลอดภัยแอนดรอยด์</string>
     <string name="trust_feature_security_patches_value_base">แพลตฟอร์ม: %1$s\nVendor: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">รุ่นล่าสุด</string>
+    <string name="trust_feature_security_patches_value_medium">ล้าหลังไม่กี่เดือน</string>
+    <string name="trust_feature_security_patches_value_old">ล้าสมัย</string>
     <string name="trust_feature_security_patches_explain">Google ออกแพตช์รักษาความปลอดภัยเป็นประจำทุกเดือนโดยร่วมมือกับผู้ขาย SoC เพื่อแก้ไขข้อบกพร่องซึ่งอาจถูกใช้โดยแอปที่เป็นอันตรายเพื่อข้ามข้อจำกัดในด้านความปลอดภัยและทำให้อุปกรณ์ของคุณเสียหายอย่างถาวร Google มีการติดตั้งแพตช์แก้ไขทุกเดือนในอุปกรณ์ที่รองรับทั้งหมด แต่ผู้ผลิตอุปกรณ์ของคุณสามารถแก้ไขข้อบกพร่องสำหรับโค้ดที่เป็นกรรมสิทธิ์ได้เท่านั้น เพื่อให้อุปกรณ์ของคุณปลอดภัยตรวจสอบให้แน่ใจว่ารุ่น LineageOS ที่คุณใช้งานอยู่เป็นรุ่นล่าสุดอยู่เสมอและ (ถ้ามี) ให้แน่ใจว่าไฟล์ภาพผู้ขายของคุณได้รับการอัปเดตเป็นรุ่นล่าสุดที่ถูกแนะนำโดย LineageOS</string>
     <string name="trust_feature_encryption">การเข้ารหัส</string>
     <string name="trust_feature_encryption_value_enabled">เปิดใช้งาน</string>

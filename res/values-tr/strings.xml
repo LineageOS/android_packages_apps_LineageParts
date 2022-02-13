@@ -94,7 +94,7 @@
     <string name="live_display_outdoor_mode_title">Otomatik dış mekan modu</string>
     <string name="live_display_outdoor_mode_summary">Parlak güneş ışığı altında parlaklığı ve doygunluğu otomatik olarak arttırır</string>
     <string name="live_display_anti_flicker_title">Titreme önleme</string>
-    <string name="live_display_anti_flicker_summary">Düşük ışık koşullarında aşırı titremeyi önleyin ve göz yorgunluğunu azaltın. Bu ayar renk doğruluğunu düşürebilir ve bazı öğelerin görüntülenme şeklini etkileyebilir.</string>
+    <string name="live_display_anti_flicker_summary">Düşük ışık koşullarında aşırı titremeyi önleyin ve göz yorgunluğunu azaltın. Bu ayar renk doğruluğunu düşürebilir ve bazı ögelerin görüntülenme şeklini etkileyebilir.</string>
     <string name="live_display_low_power_title">Güç tüketimini azalt</string>
     <string name="live_display_low_power_summary">Ekranda bozulma olmadan en düşük güç tüketimi için ayarlar</string>
     <string name="live_display_enhance_color_title">Renkleri geliştir</string>
@@ -200,7 +200,7 @@
     <string name="swap_capacitive_keys_summary">Son kullanılanlar ve geri tuşlarının yerini değiştirin</string>
     <string name="navigation_bar_category">Gezinme çubuğu</string>
     <string name="navigation_bar_invert_layout_title">Düzeni tersine çevir</string>
-    <string name="navigation_bar_invert_layout_summary">Gezinme çubuğunun ve klavye değiştirici gibi diğer öğelerin düzenini tersine çevirir</string>
+    <string name="navigation_bar_invert_layout_summary">Gezinme çubuğunun ve klavye değiştirici gibi diğer ögelerin düzenini tersine çevirir</string>
     <string name="navigation_bar_left_summary">Yatay modda ekranın sol tarafına gezinme çubuğunu yerleştirir</string>
     <string name="navigation_bar_arrow_keys_title">Yazı yazarken ok tuşlarını göster</string>
     <string name="navigation_bar_arrow_keys_summary">Yazı yazarken sağ ve sol imleç tuşlarını göster. Klavye değiştiriciyi gösterme.</string>
@@ -215,7 +215,7 @@
     <string name="power_menu_airplane_title">Uçak modu</string>
     <string name="power_menu_users_title">Kullanıcı değiştir</string>
     <string name="power_menu_bug_report_title">Hata raporu</string>
-    <string name="power_menu_bug_report_devoptions_unavailable">Geliştirici ayarları etkinleştirilmediğinden hata raporlama devre dışı bırakıldı</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">Geliştirici ayarları etkinleştirilemediğinden hata raporlama devre dışı bırakıldı</string>
     <string name="power_menu_bug_report_unavailable_for_user">Birincil olmayan kullanıcılar için hata raporlama devre dışı bırakıldı.</string>
     <string name="power_menu_lockdown_title">Kilitle</string>
     <string name="power_menu_lockdown_unavailable">Cihaz kilidi güvenli olmadığı için cihaz kilitleme devre dışı bırakıldı</string>
@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Katkıda bulunanlar verisi yükleniyor\u2026</string>
     <string name="contributors_cloud_failed_message">Katkıda bulunanlar verisi yüklenemedi</string>
     <string name="contributor_info_menu">Katkıda bulunan bilgisi</string>
-    <string name="contributor_info_msg">&lt;b&gt;İsim:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Takma isim:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Girdiler:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>İsim:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Takma isim:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Girdiler:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Katkılar hakkında bilgi</string>
-    <string name="contributions_info_msg">&lt;b&gt;Tüm katkı sağlayanlar:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Toplam girdi:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Son güncelleme:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Tüm katkı sağlayanlar:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Toplam girdi:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Son güncelleme:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS istatistikleri</string>
     <string name="anonymous_statistics_summary">Anonim istatistik raporlamayı tercih ederek LineageOS\'u daha iyi hale getirmeye yardımcı olun</string>
     <string name="anonymous_statistics_warning_title">Hakkında</string>
@@ -472,8 +472,10 @@
     <string name="charging_sounds_enabled_title">Etkin</string>
     <string name="charging_sounds_enabled_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken bir ses çal</string>
     <string name="power_notifications_vibrate_title">Titreşim</string>
-    <string name="charging_sounds_ringtone_title">Bildirim sesi</string>
     <string name="charging_sounds_ringtone_silent">Sessiz</string>
+    <string name="charging_sounds_notification_category_title">Bildirim sesleri</string>
+    <string name="wired_charging_sounds_title">Kablolu şarj</string>
+    <string name="wireless_charging_sounds_title">Kablosuz şarj</string>
     <string name="touchscreen_gesture_settings_title">Ekran hareketleri</string>
     <string name="touchscreen_gesture_settings_summary">Hızlı işlemler için çeşitli dokunmatik ekran hareketleri gerçekleştirin</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Dokunmatik geri bildirim</string>
@@ -525,7 +527,7 @@
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nÜretici: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Güncel</string>
     <string name="trust_feature_security_patches_value_medium">Birkaç ay eski</string>
-    <string name="trust_feature_security_patches_value_old">Güncelleme gerekli</string>
+    <string name="trust_feature_security_patches_value_old">Güncellenmemiş</string>
     <string name="trust_feature_security_patches_explain">Güvenlik kısıtlamalarını atlamak ve cihazınızda kalıcı hasara neden olmak için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek hataları gidermek için SoC satıcılarıyla işbirliği içinde Google tarafından aylık olarak güvenlik yamaları yayınlanır. Google tarafından kullanıma sunulan yamalar, desteklenen tüm cihazlarda her ay uygulanır, ancak tescilli koddaki yamalar sadece cihazınızın üreticisi tarafından uygulanabilir. Cihazınızı güvende tutmak için LineageOS yapınızın her zaman güncel olduğundan ve (varsa) satıcı dosyanızın LineageOS tarafından önerilen en yeni sürüme güncellendiğinden emin olun.</string>
     <string name="trust_feature_encryption">Şifreleme</string>
     <string name="trust_feature_encryption_value_enabled">Etkin</string>

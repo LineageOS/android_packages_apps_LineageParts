@@ -406,7 +406,6 @@
     <string name="charging_sounds_enabled_title">Увімкнути</string>
     <string name="charging_sounds_enabled_summary">Грати звук при підключенні чи від\'єднанні від зарядного пристрою</string>
     <string name="power_notifications_vibrate_title">Вібрувати</string>
-    <string name="charging_sounds_ringtone_title">Звук сповіщення</string>
     <string name="charging_sounds_ringtone_silent">Без звуку</string>
     <string name="touchscreen_gesture_settings_title">Жести сенсорного екрану</string>
     <string name="touchscreen_gesture_settings_summary">Виконувати різні жести для швидкого доступу</string>

@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Nalaganje podatkov o sodelavcih \u2026</string>
     <string name="contributors_cloud_failed_message">Podatkov o sodelavcih ni mogoče naložiti</string>
     <string name="contributor_info_menu">Podatki o sodelavcih</string>
-    <string name="contributor_info_msg">&lt;b&gt;Ime:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Vzdevek:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Prispevki:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Ime:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Vzdevek:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Prispevki:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Podatki o sodelavcih</string>
-    <string name="contributions_info_msg">&lt;b&gt;Skupaj sodelavcev:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Skupaj prispevkov:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Zadnja posodobitev:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Skupaj sodelavcev:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Skupaj prispevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Zadnja posodobitev:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistika LineageOS</string>
     <string name="anonymous_statistics_summary">Pomagajte izboljšati LineageOS tako, da izberete pošiljanje anonimne statistike</string>
     <string name="anonymous_statistics_warning_title">O aplikaciji</string>
@@ -472,11 +472,13 @@
     <string name="charging_sounds_enabled_title">Omogoči</string>
     <string name="charging_sounds_enabled_summary">Predvajaj zvok ob priključitvi ali izključitvi vira napajanja</string>
     <string name="power_notifications_vibrate_title">Vibriraj</string>
-    <string name="charging_sounds_ringtone_title">Zvok obvestila</string>
     <string name="charging_sounds_ringtone_silent">Tiho</string>
+    <string name="charging_sounds_notification_category_title">Zvoki obvestila</string>
+    <string name="wired_charging_sounds_title">Žično polnjenje</string>
+    <string name="wireless_charging_sounds_title">Brezžično polnjenje</string>
     <string name="touchscreen_gesture_settings_title">Poteze na zaslonu na dotik</string>
     <string name="touchscreen_gesture_settings_summary">Za hitra dejanja na zaslonu na dotik izvedite različne poteze</string>
-    <string name="touchscreen_gestures_haptic_feedback_title">Haptično zaznavanje</string>
+    <string name="touchscreen_gestures_haptic_feedback_title">Haptični odziv</string>
     <string name="touchscreen_gestures_haptic_feedback_summary">Vibriraj, ko je zaznana poteza na zaslonu na dotik</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Poteg navzdol z dvema prstoma</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">Poteg navzgor z enim prstom</string>

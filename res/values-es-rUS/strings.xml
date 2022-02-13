@@ -439,7 +439,6 @@
     <string name="charging_sounds_enabled_title">Activar</string>
     <string name="charging_sounds_enabled_summary">Reproducir un sonido al conectar o desconectar el cargador</string>
     <string name="power_notifications_vibrate_title">Vibración</string>
-    <string name="charging_sounds_ringtone_title">Sonido de notificación</string>
     <string name="charging_sounds_ringtone_silent">Silencio</string>
     <string name="touchscreen_gesture_settings_title">Gestos en pantalla táctil</string>
     <string name="touchscreen_gesture_settings_summary">Realizar varios gestos en pantalla para acciones rápidas</string>

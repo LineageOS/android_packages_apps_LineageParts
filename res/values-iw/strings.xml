@@ -438,7 +438,6 @@
     <string name="charging_sounds_enabled_title">אפשר</string>
     <string name="charging_sounds_enabled_summary">השמע צליל בעת חיבור או ניתוק ממקור חשמל</string>
     <string name="power_notifications_vibrate_title">רטט</string>
-    <string name="charging_sounds_ringtone_title">צליל התראה</string>
     <string name="charging_sounds_ringtone_silent">שקט</string>
     <string name="touchscreen_gesture_settings_title">מחוות מגע</string>
     <string name="touchscreen_gesture_settings_summary">השתמש במחוות מגע שונות לפעולות מהירות</string>

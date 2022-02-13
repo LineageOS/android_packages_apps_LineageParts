@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Chargement des informations sur les contributeurs\u2026</string>
     <string name="contributors_cloud_failed_message">Impossible de charger les informations sur les contributeurs</string>
     <string name="contributor_info_menu">Informations du contributeur</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nom :&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Pseudo :&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Contributions :&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nom :</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Pseudo :</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Contributions :</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Infos sur les contributions</string>
-    <string name="contributions_info_msg">&lt;b&gt;Nombre de contributeurs :&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nombre de contributions :&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Dernière mise à jour :&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Nombre de contributeurs :</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Nombre de contributions :</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Dernière mise à jour :</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistiques LineageOS</string>
     <string name="anonymous_statistics_summary">Contribuer à l\'amélioration de LineageOS en envoyant des rapports de statistiques anonymes</string>
     <string name="anonymous_statistics_warning_title">À propos</string>
@@ -470,7 +470,6 @@
     <string name="charging_sounds_enabled_title">Activer</string>
     <string name="charging_sounds_enabled_summary">Émettre un son au branchement ou débranchement d\'une source d\'alimentation</string>
     <string name="power_notifications_vibrate_title">Vibreur</string>
-    <string name="charging_sounds_ringtone_title">Son de notification</string>
     <string name="charging_sounds_ringtone_silent">Silencieux</string>
     <string name="touchscreen_gesture_settings_title">Gestes tactiles</string>
     <string name="touchscreen_gesture_settings_summary">Effectuer des actions rapides à l\'aide de différents gestes tactiles</string>

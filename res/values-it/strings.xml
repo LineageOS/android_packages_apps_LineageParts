@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Caricamento dati collaboratori\u2026</string>
     <string name="contributors_cloud_failed_message">Impossibile caricare dati collaboratori</string>
     <string name="contributor_info_menu">Info collaboratore</string>
-    <string name="contributor_info_msg">&lt;b&gt;Nome:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nick:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Info contributi</string>
-    <string name="contributions_info_msg">&lt;b&gt;Totale collaboratori:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Totale commit:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ultimo aggiornamento:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Totale collaboratori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Totale commit:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistiche LineageOS</string>
     <string name="anonymous_statistics_summary">Aiuta a migliorare LineageOS consentendo l\'invio di statistiche anonime</string>
     <string name="anonymous_statistics_warning_title">Info</string>
@@ -470,8 +470,10 @@
     <string name="charging_sounds_enabled_title">Attiva</string>
     <string name="charging_sounds_enabled_summary">Riproduci un suono quando si collega o si scollega l\'alimentatore</string>
     <string name="power_notifications_vibrate_title">Vibra</string>
-    <string name="charging_sounds_ringtone_title">Suono di notifica</string>
     <string name="charging_sounds_ringtone_silent">Silenzioso</string>
+    <string name="charging_sounds_notification_category_title">Suoni di notifica</string>
+    <string name="wired_charging_sounds_title">Ricarica via cavo</string>
+    <string name="wireless_charging_sounds_title">Ricarica wireless</string>
     <string name="touchscreen_gesture_settings_title">Gesti a schermo spento</string>
     <string name="touchscreen_gesture_settings_summary">Esegui vari movimenti sul touchscreen per azioni rapide</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Feedback tattile</string>

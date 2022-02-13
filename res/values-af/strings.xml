@@ -406,7 +406,6 @@
     <string name="charging_sounds_enabled_title">Aktiveer</string>
     <string name="charging_sounds_enabled_summary">Speel \'n klank met die koppeling of ontkoppeling van \'n kragbron</string>
     <string name="power_notifications_vibrate_title">Vibreer</string>
-    <string name="charging_sounds_ringtone_title">Kennisgewing klank</string>
     <string name="charging_sounds_ringtone_silent">Stil</string>
     <string name="touchscreen_gesture_settings_title">Raakskerm gebare</string>
     <string name="touchscreen_gesture_settings_summary">Verrig verskeie raakskerm gebare vir vinnige aksies</string>

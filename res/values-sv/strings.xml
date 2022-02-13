@@ -259,7 +259,6 @@
     <string name="charging_sounds_settings_title">Laddningsljud</string>
     <string name="charging_sounds_enabled_title">Aktivera</string>
     <string name="power_notifications_vibrate_title">Vibrera</string>
-    <string name="charging_sounds_ringtone_title">Aviseringsljud</string>
     <string name="charging_sounds_ringtone_silent">Tyst</string>
     <string name="touchscreen_gesture_settings_title">Skärmgester</string>
     <string name="touchscreen_gesture_up_arrow_title">Rita ett \"Λ\"</string>

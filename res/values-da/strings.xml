@@ -165,6 +165,7 @@
     <string name="home_answer_call_title">Besvar opkald</string>
     <string name="home_answer_call_summary">Besvar indgående opkald, ved at trykke på hjem-knappen</string>
     <string name="additional_buttons_title">Yderligere knapper</string>
+    <string name="click_partial_screenshot_title">Klik for delvist skærmbillede</string>
     <string name="button_backlight_title">Bagbelysning</string>
     <string name="button_backlight_enabled">Oplys knapper</string>
     <string name="keyboard_backlight_enabled">Oplys tastatur</string>
@@ -409,7 +410,6 @@
     <string name="charging_sounds_enabled_title">Aktivér</string>
     <string name="charging_sounds_enabled_summary">Afspil en lyd, når du tilslutter eller frakobler en strømkilde</string>
     <string name="power_notifications_vibrate_title">Vibrér</string>
-    <string name="charging_sounds_ringtone_title">Underretningslyd</string>
     <string name="charging_sounds_ringtone_silent">Lydløs</string>
     <string name="touchscreen_gesture_settings_title">Bevægelser til touchskærm</string>
     <string name="touchscreen_gesture_settings_summary">Udfør forskellige bevægelser på touchskærmen for hurtige handlinger</string>

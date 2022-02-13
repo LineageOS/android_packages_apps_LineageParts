@@ -29,7 +29,7 @@
     <string name="back">Prapa</string>
     <string name="finish">Mbaro</string>
     <string name="next">Vazhdo</string>
-    <string name="on">Aktiv</string>
+    <string name="on">ndezur</string>
     <string name="off">Fikur</string>
     <string name="yes">Po</string>
     <string name="no">Jo</string>
@@ -233,8 +233,8 @@
     <string name="profile_menu_delete_title">Fshi</string>
     <string name="profile_action_none">Lëre të pandryshuar</string>
     <string name="profile_action_system">Paracaktimet e sistemit</string>
-    <string name="profile_action_disable">Çaktivizo</string>
-    <string name="profile_action_enable">Aktivizo</string>
+    <string name="profile_action_disable">Fike</string>
+    <string name="profile_action_enable">ndize</string>
     <string name="profile_trigger_a2dp_connect">Kur lidhet me A2DP</string>
     <string name="profile_trigger_a2dp_disconnect">Kur shkëputet nga A2DP</string>
     <string name="profile_tabs_wifi">Wi\u2011Fi</string>
@@ -274,7 +274,7 @@
     <string name="profile_app_group_category_title">Shpërfillja e njoftimeve</string>
     <string name="profile_app_group_item_instructions">Shto ose hiq grupe</string>
     <string name="profile_app_group_item_instructions_summary">Shto ose hiq nga ky profil ato grupe aplikacionesh që mund të shpërfillin njoftimet</string>
-    <string name="profile_entries_on">Aktiv</string>
+    <string name="profile_entries_on">Ndezur</string>
     <string name="profile_entries_off">Fikur</string>
     <string name="profile_entries_no_override">Mos shpërfill</string>
     <string name="profile_name_title">Emri</string>
@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Duke ngarkuar të dhënat e kontribuesve\u2026</string>
     <string name="contributors_cloud_failed_message">Të dhënat e kontribuesve nuk mund të ngarkohen</string>
     <string name="contributor_info_menu">Informacion rreth kontribuesit</string>
-    <string name="contributor_info_msg">&lt;b&gt;Emri:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nofka:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Kryen:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Emri:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Nofka:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Kryen:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informacion rreth kontribimeve</string>
-    <string name="contributions_info_msg">&lt;b&gt;Kontribuesit total:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Totali i angazhimeve:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Përditësimet e fundit:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Kontribuesit total:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Totali i angazhimeve:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Përditësimet e fundit:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistikat e LineageOS</string>
     <string name="anonymous_statistics_summary">Ndihmo në përmirësimin e LineageOS duke lejuar raportimin anonim të statistikave</string>
     <string name="anonymous_statistics_warning_title">Rreth nesh</string>
@@ -463,15 +463,17 @@
     <string name="auto_power_save_summary_on">Aktivizo në mënyrë automatike profilin e kursimit të energjisë kur bateria arrin %s</string>
     <string name="auto_power_save_summary_off">Mos e aktivizo në mënyrë automatike profilin e kursimit të energjisë</string>
     <string name="auto_power_save_never">Kurrë</string>
-    <string name="long_screen_settings_title">Aplikacione që shfaqen në ekran të plotë</string>
-    <string name="long_screen_settings_summary">Detyro aplikacionet e vjetra të përdoren në ekran të plotë</string>
+    <string name="long_screen_settings_title">Aplikacionet që shfaqen me ekran të plotë</string>
+    <string name="long_screen_settings_summary">Detyro aplikacionet e vjetra të përdoren me ekran të plotë</string>
     <string name="long_screen_settings_no_apps">Nuk ka aplikacione</string>
     <string name="charging_sounds_settings_title">Tingujt e karikimit</string>
     <string name="charging_sounds_enabled_title">Aktivizo</string>
     <string name="charging_sounds_enabled_summary">Luaj një tingull gjatë lidhjes apo shpëputjes me një burim energjie</string>
     <string name="power_notifications_vibrate_title">Dridhja</string>
-    <string name="charging_sounds_ringtone_title">Zilja e njoftimeve</string>
     <string name="charging_sounds_ringtone_silent">Pa zë</string>
+    <string name="charging_sounds_notification_category_title">Tingujt e njoftimeve</string>
+    <string name="wired_charging_sounds_title">Karikimi me tela</string>
+    <string name="wireless_charging_sounds_title">Karikimi me valë</string>
     <string name="touchscreen_gesture_settings_title">Gjestet me prekje ekrani</string>
     <string name="touchscreen_gesture_settings_summary">Kryej gjeste të ndryshme duke prekur ekranin për veprime të shpejta</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Reagimi haptik</string>

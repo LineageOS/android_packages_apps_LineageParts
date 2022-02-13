@@ -403,11 +403,11 @@
     <string name="contributors_cloud_loading_message">يتم تحميل بيانات المُساهمين</string>
     <string name="contributors_cloud_failed_message">تعذّر تحميل بيانات المُساهمين</string>
     <string name="contributor_info_menu">معلومات المُساهم</string>
-    <string name="contributor_info_msg">&lt;b&gt;الاسم:&lt;/b&gt;&lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;اللقب:&lt;/b&gt;&lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;                 &lt;b&gt;الالتزامات:&lt;/b&gt;&lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>الاسم:</b><xliff:g id="name">%1$s</xliff:g><br/><br/>                 <b>اللقب:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>                 <b>الالتزامات:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">معلومات المساهمين</string>
-    <string name="contributions_info_msg">&lt;b&gt;إجمالي المساهمين:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 إجمالي الالتزامات:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;آخر تحديث:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>إجمالي المساهمين:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 إجمالي الالتزامات:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>آخر تحديث:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">إحصائيات نظام LineageOS</string>
     <string name="anonymous_statistics_summary">ساهم في جعل LineageOS أفضل بإرسال تقارير الإحصائيات</string>
     <string name="anonymous_statistics_warning_title">حول</string>
@@ -468,7 +468,6 @@
     <string name="charging_sounds_enabled_title">تمكين</string>
     <string name="charging_sounds_enabled_summary">تشغيل الصوت عند توصيل أو فصل مصدر الطاقة</string>
     <string name="power_notifications_vibrate_title">إهتزاز</string>
-    <string name="charging_sounds_ringtone_title">صوت الإشعار</string>
     <string name="charging_sounds_ringtone_silent">صامت</string>
     <string name="touchscreen_gesture_settings_title">الإيماءات اللمسية</string>
     <string name="touchscreen_gesture_settings_summary">عمل إيماءات لمسية متعددة لإجراءات سريعة</string>

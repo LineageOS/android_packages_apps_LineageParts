@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Loading contributors data\u2026</string>
     <string name="contributors_cloud_failed_message">Cannot load contributors data</string>
     <string name="contributor_info_menu">Contributor info</string>
-    <string name="contributor_info_msg">&lt;b&gt;Name:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Nick:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Commits:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Name:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Contributions info</string>
-    <string name="contributions_info_msg">&lt;b&gt;Total contributors:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Total commits:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Last update:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Total contributors:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Total commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Last update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS statistics</string>
     <string name="anonymous_statistics_summary">Help make LineageOS better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
@@ -472,8 +472,10 @@
     <string name="charging_sounds_enabled_title">Enable</string>
     <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
     <string name="power_notifications_vibrate_title">Vibrate</string>
-    <string name="charging_sounds_ringtone_title">Notification sound</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
+    <string name="charging_sounds_notification_category_title">Notification sounds</string>
+    <string name="wired_charging_sounds_title">Wired charging</string>
+    <string name="wireless_charging_sounds_title">Wireless charging</string>
     <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
     <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Haptic feedback</string>

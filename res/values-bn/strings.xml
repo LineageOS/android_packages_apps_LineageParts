@@ -22,9 +22,9 @@
     <string name="toggleLocation">অবস্থান</string>
     <string name="status_bar_brightness_slider_show_never">কখনো দেখাবেন না</string>
     <string name="status_bar_brightness_slider_show_always">সবসময় দেখান</string>
-    <string name="contributor_info_msg">&lt;b&gt;নাম:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;ডাকনাম:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;কমিট:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>নাম:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>ডাকনাম:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>কমিট:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="long_screen_settings_no_apps">কোনো অ্যাপ নেই</string>
     <string name="touchscreen_gesture_single_tap_title">একবার টিপ</string>
 </resources>

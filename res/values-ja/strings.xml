@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">貢献者のデータを読み込み中...</string>
     <string name="contributors_cloud_failed_message">貢献者の情報を読み込めません</string>
     <string name="contributor_info_menu">貢献者の情報</string>
-    <string name="contributor_info_msg">&lt;b&gt;名前:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;ニックネーム:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;コミット:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>名前:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>ニックネーム:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>コミット:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">貢献者の情報</string>
-    <string name="contributions_info_msg">&lt;b&gt;協力者の合計:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;コミットの合計:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;最終更新:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>協力者の合計:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>コミットの合計:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>最終更新:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS の統計</string>
     <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してLineageOSの改善に協力する</string>
     <string name="anonymous_statistics_warning_title">情報</string>
@@ -470,8 +470,10 @@
     <string name="charging_sounds_enabled_title">有効</string>
     <string name="charging_sounds_enabled_summary">電源を接続または切断したときに音を鳴らします</string>
     <string name="power_notifications_vibrate_title">バイブレーション</string>
-    <string name="charging_sounds_ringtone_title">通知音</string>
     <string name="charging_sounds_ringtone_silent">サイレント</string>
+    <string name="charging_sounds_notification_category_title">通知音</string>
+    <string name="wired_charging_sounds_title">有線充電</string>
+    <string name="wireless_charging_sounds_title">ワイヤレス充電</string>
     <string name="touchscreen_gesture_settings_title">タッチスクリーンジェスチャー</string>
     <string name="touchscreen_gesture_settings_summary">様々なタッチスクリーンジェスチャーですばやくアクションを実行します</string>
     <string name="touchscreen_gestures_haptic_feedback_title">タッチ操作バイブ</string>

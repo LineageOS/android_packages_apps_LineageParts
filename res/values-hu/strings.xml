@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Közreműködői adatok betöltése\u2026</string>
     <string name="contributors_cloud_failed_message">Közreműködői adatok betöltés sikertelen</string>
     <string name="contributor_info_menu">Közreműködői információ</string>
-    <string name="contributor_info_msg">&lt;b&gt;Név:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Becenév:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Feladatai:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Név:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Becenév:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Feladatai:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Közreműködési információ</string>
-    <string name="contributions_info_msg">&lt;b&gt;Összes közreműködő:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Összes feladat:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Utolsó frissítés:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Összes közreműködő:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Összes feladat:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Utolsó frissítés:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS statisztika</string>
     <string name="anonymous_statistics_summary">Segítsen a LineageOS jobbá tételében, kapcsolja be a névtelen statisztikai adatok gyűjtését</string>
     <string name="anonymous_statistics_warning_title">Névjegy</string>
@@ -470,8 +470,10 @@
     <string name="charging_sounds_enabled_title">Engedélyezés</string>
     <string name="charging_sounds_enabled_summary">Hangjelzés töltő csatlakoztatása, vagy leválasztása esetén</string>
     <string name="power_notifications_vibrate_title">Rezgés</string>
-    <string name="charging_sounds_ringtone_title">Értesítési hang</string>
     <string name="charging_sounds_ringtone_silent">Néma</string>
+    <string name="charging_sounds_notification_category_title">Értesítési hangok</string>
+    <string name="wired_charging_sounds_title">Vezetékes töltés</string>
+    <string name="wireless_charging_sounds_title">Vezeték nélküli töltés</string>
     <string name="touchscreen_gesture_settings_title">Érintőképernyő kézmozdulatok</string>
     <string name="touchscreen_gesture_settings_summary">Különböző érintőképernyő kézmozdulat végrehajtása a gyors műveletekért</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Érintési visszajelzés</string>

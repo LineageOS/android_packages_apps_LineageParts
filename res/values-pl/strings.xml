@@ -449,7 +449,6 @@
     <string name="charging_sounds_enabled_title">Włącz</string>
     <string name="charging_sounds_enabled_summary">Odtwarzaj dźwięk podczas podłączania lub odłączania źródła zasilania</string>
     <string name="power_notifications_vibrate_title">Wibracja</string>
-    <string name="charging_sounds_ringtone_title">Dźwięk powiadomienia</string>
     <string name="charging_sounds_ringtone_silent">Cichy</string>
     <string name="touchscreen_gesture_settings_title">Gesty ekranu dotykowego</string>
     <string name="touchscreen_gesture_settings_summary">Wykonuj różne gesty na ekranie dotykowym, aby wykonać szybkie akcje</string>

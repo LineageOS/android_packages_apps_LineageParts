@@ -403,13 +403,13 @@
     <string name="contributors_cloud_loading_message">Φόρτωση δεδομένων συνεισφερόντων\u2026</string>
     <string name="contributors_cloud_failed_message">Δεν είναι δυνατή η φόρτωση των δεδομένων συνεισφερόντων</string>
     <string name="contributor_info_menu">Πληροφορίες συνεισφερόντων</string>
-    <string name="contributor_info_msg">&lt;b&gt;Όνομα:&lt;/b&gt; &lt;xliff:g id="name"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Ψευδώνυμο:&lt;/b&gt; &lt;xliff:g id="nick"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Συνεισφορές:&lt;/b&gt; &lt;xliff:g id="commits"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Όνομα:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Ψευδώνυμο:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Συνεισφορές:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Πληροφορίες συνεισφορών</string>
-    <string name="contributions_info_msg">&lt;b&gt;Σύνολο συνεισφερόντων:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Σύνολο συνεισφορών:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
-                 &lt;b&gt;Τελευταία ενημέρωση:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Σύνολο συνεισφερόντων:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Σύνολο συνεισφορών:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Τελευταία ενημέρωση:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Στατιστικά LineageOS</string>
     <string name="anonymous_statistics_summary">Βοηθήστε το LineageOS να γίνει καλύτερο ενεργοποιώντας την αποστολή ανώνυμων στατιστικών στοιχείων</string>
     <string name="anonymous_statistics_warning_title">Σχετικά</string>
@@ -474,8 +474,10 @@
     <string name="charging_sounds_enabled_title">Ενεργοποίηση</string>
     <string name="charging_sounds_enabled_summary">Αναπαραγωγή ήχου κατά τη σύνδεση ή την αποσύνδεση μιας πηγής ισχύος</string>
     <string name="power_notifications_vibrate_title">Δόνηση</string>
-    <string name="charging_sounds_ringtone_title">Ήχος ειδοποίησης</string>
     <string name="charging_sounds_ringtone_silent">Αθόρυβο</string>
+    <string name="charging_sounds_notification_category_title">Ήχοι ειδοποίησης</string>
+    <string name="wired_charging_sounds_title">Ενσύρματη φόρτιση</string>
+    <string name="wireless_charging_sounds_title">Ασύρματη φόρτιση</string>
     <string name="touchscreen_gesture_settings_title">Χειρονομίες αφής</string>
     <string name="touchscreen_gesture_settings_summary">Εκτελέστε διάφορες χειρονομίες αφής για γρήγορες ενέργειες</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Απτική ανάδραση</string>
