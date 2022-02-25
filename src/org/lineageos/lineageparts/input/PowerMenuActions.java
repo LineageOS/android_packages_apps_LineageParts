@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014-2015 The CyanogenMod Project
- *               2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,6 +49,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private CheckBoxPreference mUsersPref;
     private CheckBoxPreference mBugReportPref;
     private CheckBoxPreference mEmergencyPref;
+    private CheckBoxPreference mDeviceControlsPref;
 
     private LineageGlobalActions mLineageGlobalActions;
 
@@ -79,6 +80,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mBugReportPref = findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
             } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
                 mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
+            } else if (action.equals(GLOBAL_ACTION_KEY_DEVICECONTROLS)) {
+                mDeviceControlsPref = findPreference(GLOBAL_ACTION_KEY_DEVICECONTROLS);
             }
         }
 
@@ -122,6 +125,11 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                     GLOBAL_ACTION_KEY_EMERGENCY));
         }
 
+        if (mDeviceControlsPref != null) {
+            mDeviceControlsPref.setChecked(mLineageGlobalActions.userConfigContains(
+                    GLOBAL_ACTION_KEY_DEVICECONTROLS));
+        }
+
         updatePreferences();
     }
 
@@ -156,6 +164,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mEmergencyPref) {
             value = mEmergencyPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_EMERGENCY);
+
+        } else if (preference == mDeviceControlsPref) {
+            value = mDeviceControlsPref.isChecked();
+            mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_DEVICECONTROLS);
 
         } else {
             return super.onPreferenceTreeClick(preference);
