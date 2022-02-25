@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6920993_a69dc9f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-25T16:01:36Z",
+      "side": 1,
+      "message": "We need to hide this somehow, based on availability of controls apps.",
+      "revId": "245e4ce031061ea5b8e5a049e6e64d8f9204c884",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
