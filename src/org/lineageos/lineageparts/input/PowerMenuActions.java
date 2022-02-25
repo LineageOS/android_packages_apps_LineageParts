@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014-2015 The CyanogenMod Project
- *               2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,12 +26,14 @@ import android.provider.Settings;
 
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 
 import com.android.internal.widget.LockPatternUtils;
 
 import org.lineageos.internal.util.PowerMenuConstants;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.utils.TelephonyUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +45,10 @@ import static org.lineageos.internal.util.PowerMenuConstants.*;
 
 public class PowerMenuActions extends SettingsPreferenceFragment {
     final static String TAG = "PowerMenuActions";
+
+    private static final String CATEGORY_POWER_MENU_ITEMS = "power_menu_items";
+
+    private PreferenceCategory mPowerMenuItemsCategory;
 
     private CheckBoxPreference mScreenshotPref;
     private CheckBoxPreference mAirplanePref;
@@ -68,6 +74,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         mUserManager = UserManager.get(mContext);
         mLineageGlobalActions = LineageGlobalActions.getInstance(mContext);
 
+        mPowerMenuItemsCategory = findPreference(CATEGORY_POWER_MENU_ITEMS);
+
         for (String action : PowerMenuConstants.getAllActions()) {
             if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
@@ -80,6 +88,11 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
                 mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
             }
+        }
+
+        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+            mPowerMenuItemsCategory.removePreference(mEmergencyPref);
+            mEmergencyPref = null;
         }
 
         mLocalUserConfig = mLineageGlobalActions.getLocalUserConfig();
@@ -101,7 +114,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
         if (mUsersPref != null) {
             if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
-                getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
+                mPowerMenuItemsCategory.removePreference(mUsersPref);
                 mUsersPref = null;
             } else {
                 List<UserInfo> users = mUserManager.getUsers();
