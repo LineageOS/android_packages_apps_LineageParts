@@ -30,7 +30,6 @@ import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
-import com.android.internal.widget.LockPatternUtils;
 import com.android.settingslib.applications.ServiceListing;
 
 import org.lineageos.internal.util.PowerMenuConstants;
@@ -38,11 +37,9 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.TelephonyUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lineageos.app.LineageGlobalActions;
-import lineageos.providers.LineageSettings;
 
 import static org.lineageos.internal.util.PowerMenuConstants.*;
 
@@ -63,9 +60,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private LineageGlobalActions mLineageGlobalActions;
 
     Context mContext;
-    private LockPatternUtils mLockPatternUtils;
     private UserManager mUserManager;
-    private List<String> mLocalUserConfig = new ArrayList<String>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,25 +69,31 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.power_menu_settings);
         getActivity().setTitle(R.string.power_menu_title);
         mContext = getActivity().getApplicationContext();
-        mLockPatternUtils = new LockPatternUtils(mContext);
         mUserManager = UserManager.get(mContext);
         mLineageGlobalActions = LineageGlobalActions.getInstance(mContext);
 
         mPowerMenuItemsCategory = findPreference(CATEGORY_POWER_MENU_ITEMS);
 
         for (String action : PowerMenuConstants.getAllActions()) {
-            if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
-                mScreenshotPref = findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
-                mAirplanePref = findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
-            } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
-                mUsersPref = findPreference(GLOBAL_ACTION_KEY_USERS);
-            } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
-                mBugReportPref = findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
-                mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
-            } else if (action.equals(GLOBAL_ACTION_KEY_DEVICECONTROLS)) {
-                mDeviceControlsPref = findPreference(GLOBAL_ACTION_KEY_DEVICECONTROLS);
+            switch (action) {
+                case GLOBAL_ACTION_KEY_SCREENSHOT:
+                    mScreenshotPref = findPreference(action);
+                    break;
+                case GLOBAL_ACTION_KEY_AIRPLANE:
+                    mAirplanePref = findPreference(action);
+                    break;
+                case GLOBAL_ACTION_KEY_USERS:
+                    mUsersPref = findPreference(action);
+                    break;
+                case GLOBAL_ACTION_KEY_BUGREPORT:
+                    mBugReportPref = findPreference(action);
+                    break;
+                case GLOBAL_ACTION_KEY_EMERGENCY:
+                    mEmergencyPref = findPreference(action);
+                    break;
+                case GLOBAL_ACTION_KEY_DEVICECONTROLS:
+                    mDeviceControlsPref = findPreference(action);
+                    break;
             }
         }
 
@@ -101,7 +102,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             mEmergencyPref = null;
         }
 
-        mLocalUserConfig = mLineageGlobalActions.getLocalUserConfig();
+        mLineageGlobalActions.getLocalUserConfig();
     }
 
     @Override
@@ -124,7 +125,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mUsersPref = null;
             } else {
                 List<UserInfo> users = mUserManager.getUsers();
-                boolean enabled = (users.size() > 1);
+                final boolean enabled = (users.size() > 1);
                 mUsersPref.setChecked(mLineageGlobalActions.userConfigContains(
                         GLOBAL_ACTION_KEY_USERS) && enabled);
                 mUsersPref.setEnabled(enabled);
@@ -169,34 +170,26 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
-        boolean value;
-
         if (preference == mScreenshotPref) {
-            value = mScreenshotPref.isChecked();
+            final boolean value = mScreenshotPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
-
         } else if (preference == mAirplanePref) {
-            value = mAirplanePref.isChecked();
+            final boolean value = mAirplanePref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
-
         } else if (preference == mUsersPref) {
-            value = mUsersPref.isChecked();
+            final boolean value = mUsersPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
-
         } else if (preference == mBugReportPref) {
-            value = mBugReportPref.isChecked();
+            final boolean value = mBugReportPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_BUGREPORT);
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.BUGREPORT_IN_POWER_MENU, value ? 1 : 0);
-
         } else if (preference == mEmergencyPref) {
-            value = mEmergencyPref.isChecked();
+            final boolean value = mEmergencyPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_EMERGENCY);
-
         } else if (preference == mDeviceControlsPref) {
-            value = mDeviceControlsPref.isChecked();
+            final boolean value = mDeviceControlsPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_DEVICECONTROLS);
-
         } else {
             return super.onPreferenceTreeClick(preference);
         }
@@ -205,14 +198,14 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
     private void updatePreferences() {
         UserInfo currentUser = mUserManager.getUserInfo(UserHandle.myUserId());
-        boolean developmentSettings = Settings.Global.getInt(
+        final boolean developmentSettingsEnabled = Settings.Global.getInt(
                 getContentResolver(), Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) == 1;
-        boolean bugReport = Settings.Global.getInt(
+        final boolean bugReport = Settings.Global.getInt(
                 getContentResolver(), Settings.Global.BUGREPORT_IN_POWER_MENU, 0) == 1;
-        boolean isPrimaryUser = currentUser == null || currentUser.isPrimary();
+        final boolean isPrimaryUser = currentUser == null || currentUser.isPrimary();
         if (mBugReportPref != null) {
-            mBugReportPref.setEnabled(developmentSettings && isPrimaryUser);
-            if (!developmentSettings) {
+            mBugReportPref.setEnabled(developmentSettingsEnabled && isPrimaryUser);
+            if (!developmentSettingsEnabled) {
                 mBugReportPref.setChecked(false);
                 mBugReportPref.setSummary(R.string.power_menu_bug_report_devoptions_unavailable);
             } else if (!isPrimaryUser) {
