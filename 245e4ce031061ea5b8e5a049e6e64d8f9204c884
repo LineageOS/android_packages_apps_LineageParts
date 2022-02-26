@@ -16,6 +16,24 @@
       "message": "We need to hide this somehow, based on availability of controls apps.",
       "revId": "245e4ce031061ea5b8e5a049e6e64d8f9204c884",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a411e63b_c6164cf7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-02-26T13:28:12Z",
+      "side": 1,
+      "message": "This is now hidden SystemUI side.",
+      "parentUuid": "b6920993_a69dc9f8",
+      "revId": "245e4ce031061ea5b8e5a049e6e64d8f9204c884",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
