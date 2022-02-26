@@ -30,7 +30,6 @@ import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
-import com.android.internal.widget.LockPatternUtils;
 import com.android.settingslib.applications.ServiceListing;
 
 import org.lineageos.internal.util.PowerMenuConstants;
@@ -38,11 +37,9 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.TelephonyUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lineageos.app.LineageGlobalActions;
-import lineageos.providers.LineageSettings;
 
 import static org.lineageos.internal.util.PowerMenuConstants.*;
 
@@ -63,9 +60,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private LineageGlobalActions mLineageGlobalActions;
 
     Context mContext;
-    private LockPatternUtils mLockPatternUtils;
     private UserManager mUserManager;
-    private List<String> mLocalUserConfig = new ArrayList<String>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,25 +69,31 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.power_menu_settings);
         getActivity().setTitle(R.string.power_menu_title);
         mContext = getActivity().getApplicationContext();
-        mLockPatternUtils = new LockPatternUtils(mContext);
         mUserManager = UserManager.get(mContext);
         mLineageGlobalActions = LineageGlobalActions.getInstance(mContext);
 
         mPowerMenuItemsCategory = findPreference(CATEGORY_POWER_MENU_ITEMS);
 
         for (String action : PowerMenuConstants.getAllActions()) {
-            if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
-                mScreenshotPref = findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
-                mAirplanePref = findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
-            } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
-                mUsersPref = findPreference(GLOBAL_ACTION_KEY_USERS);
-            } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
-                mBugReportPref = findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
-                mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
-            } else if (action.equals(GLOBAL_ACTION_KEY_DEVICECONTROLS)) {
-                mDeviceControlsPref = findPreference(GLOBAL_ACTION_KEY_DEVICECONTROLS);
+            switch (action) {
+                case GLOBAL_ACTION_KEY_SCREENSHOT:
+                    mScreenshotPref = findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
+                    break;
+                case GLOBAL_ACTION_KEY_AIRPLANE:
+                    mAirplanePref = findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
+                    break;
+                case GLOBAL_ACTION_KEY_USERS:
+                    mUsersPref = findPreference(GLOBAL_ACTION_KEY_USERS);
+                    break;
+                case GLOBAL_ACTION_KEY_BUGREPORT:
+                    mBugReportPref = findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
+                    break;
+                case GLOBAL_ACTION_KEY_EMERGENCY:
+                    mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
+                    break;
+                case GLOBAL_ACTION_KEY_DEVICECONTROLS:
+                    mDeviceControlsPref = findPreference(GLOBAL_ACTION_KEY_DEVICECONTROLS);
+                    break;
             }
         }
 
@@ -101,7 +102,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             mEmergencyPref = null;
         }
 
-        mLocalUserConfig = mLineageGlobalActions.getLocalUserConfig();
+        mLineageGlobalActions.getLocalUserConfig();
     }
 
     @Override
