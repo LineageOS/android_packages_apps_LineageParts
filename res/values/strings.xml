@@ -664,7 +664,10 @@
     <string name="trust_onboarding_learn_more">Learn more</string>
     <string name="trust_onboarding_done">Got it</string>
     <string name="trust_restrict_usb_title">Restrict USB</string>
-    <string name="trust_restrict_usb_summary">Disable new USB gadgets when the device is locked</string>
+    <string name="trust_restrict_usb_summary">Control support for USB gadgets such as earphones, storage devices and input (mice, keyboards, joysticks)</string>
+    <string name="trust_restrict_usb_always">Deny USB gadgets</string>
+    <string name="trust_restrict_usb_keyguard">Allow USB gadgets when unlocked</string>
+    <string name="trust_restrict_usb_disabled">Allow USB gadgets always</string>
 
     <!-- Sms limit -->
     <string name="sms_security_check_limit_title">SMS message limit</string>
