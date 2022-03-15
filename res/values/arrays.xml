@@ -431,4 +431,17 @@
         <item>100</item>
         <item>200</item>
     </string-array>
+
+    <!-- Restrict USB -->
+    <string-array name="trust_restrict_usb_entries" translatable="false">
+        <item>@string/trust_restrict_usb_always</item>
+        <item>@string/trust_restrict_usb_keyguard</item>
+        <item>@string/trust_restrict_usb_disabled</item>
+    </string-array>
+
+    <string-array name="trust_restrict_usb_values" translatable="false">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
 </resources>

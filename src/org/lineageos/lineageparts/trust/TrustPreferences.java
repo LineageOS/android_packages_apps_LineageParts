@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2021 The LineageOS Project
+ * Copyright (C) 2018-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ import androidx.preference.SwitchPreference;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
-import lineageos.preference.LineageSecureSettingSwitchPreference;
+import lineageos.preference.LineageGlobalSettingListPreference;
 import lineageos.providers.LineageSettings;
 import lineageos.trust.TrustInterface;
 
@@ -42,7 +42,7 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private Preference mSecurityPatchesPref;
     private Preference mEncryptionPref;
     private PreferenceCategory mToolsCategory;
-    private LineageSecureSettingSwitchPreference mUsbRestrictorPref;
+    private LineageGlobalSettingListPreference mUsbRestrictorPref;
     private ListPreference mSmsLimitPref;
 
     private PreferenceCategory mWarnScreen;
