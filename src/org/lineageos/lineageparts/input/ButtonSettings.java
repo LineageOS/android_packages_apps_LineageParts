@@ -22,6 +22,7 @@ import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.om.IOverlayManager;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
@@ -29,6 +30,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.ArraySet;
@@ -52,6 +54,8 @@ import org.lineageos.lineageparts.search.Searchable;
 import org.lineageos.lineageparts.utils.DeviceUtils;
 import org.lineageos.lineageparts.utils.TelephonyUtils;
 import org.lineageos.internal.util.ScreenType;
+
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
 
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
@@ -823,6 +827,14 @@ public class ButtonSettings extends SettingsPreferenceFragment
             writeDisableNavkeysOption(getActivity(), mDisableNavigationKeys.isChecked());
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(true, false);
+            if (!mDisableNavigationKeys.isChecked()) {
+                IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(
+                        ServiceManager.getService(Context.OVERLAY_SERVICE));
+                try {
+                    overlayManager.setEnabledExclusiveInCategory(NAV_BAR_MODE_3BUTTON_OVERLAY,
+                            UserHandle.USER_CURRENT);
+                } catch (Exception e) {}
+            }
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
