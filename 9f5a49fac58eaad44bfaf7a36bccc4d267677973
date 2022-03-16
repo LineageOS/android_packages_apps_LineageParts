@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88a313b1_9b383d70",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 668,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-03-16T15:57:31Z",
+      "side": 1,
+      "message": "\"new\" was dropped but it\u0027s still applicable for trust HAL.\n\nOnly USB HAL v1.3 does instant ejection",
+      "revId": "9f5a49fac58eaad44bfaf7a36bccc4d267677973",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
