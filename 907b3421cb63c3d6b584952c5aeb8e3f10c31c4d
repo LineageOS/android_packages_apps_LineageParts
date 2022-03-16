@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb1f5edc_7222e9c7",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 668,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-03-16T15:56:58Z",
+      "side": 1,
+      "message": "Maybe USB connections?",
+      "revId": "907b3421cb63c3d6b584952c5aeb8e3f10c31c4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
