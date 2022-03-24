@@ -79,6 +79,7 @@ public class KeyHandler implements DeviceKeyHandler {
         if (launchIntent == null) {
             launchIntent = new Intent(targetName);
             launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            launchIntent.putExtra("no_input_mode", true);
 
             if (mContext.getPackageManager().resolveService(launchIntent, 0) == null) {
                 launchIntent = null;
