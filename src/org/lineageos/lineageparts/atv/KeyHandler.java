@@ -81,6 +81,7 @@ public class KeyHandler implements DeviceKeyHandler {
         } else if (packageName.equals("com.google.android.intent.action.CONNECT_INPUT")) {
             launchIntent = new Intent("com.google.android.intent.action.CONNECT_INPUT");
             launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            launchIntent.putExtra("no_input_mode", true);
         } else {
             launchIntent = mContext.getPackageManager()
                     .getLaunchIntentForPackage(packageName);
