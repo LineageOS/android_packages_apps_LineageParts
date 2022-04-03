@@ -371,19 +371,6 @@
     <string name="display_rotation_90_title">90 grade</string>
     <string name="display_rotation_180_title">180 grade</string>
     <string name="display_rotation_270_title">270 grade</string>
-    <string name="perf_profile_settings_title">Batteryspaarder en prestasie</string>
-    <string name="perf_profile_settings_summary">Verstel kragspaar kenmerke en toestel prestasie</string>
-    <string name="perf_profile_overview_summary">Huidige profiel: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
-    <string name="perf_profile_category_title">Toestelprestasie</string>
-    <string name="perf_profile_title">Prestasieprofiel: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
-    <string name="perf_profile_fail_toast">Die prestasieprofiel is tans onbeskikbaar</string>
-    <string name="power_save_category_title">Batterybesparing</string>
-    <string name="power_save_title">Uiterste kragbesparing</string>
-    <string name="power_save_summary">Beperk toestelprestasie en agtergrondaktiwiteit om krag te spaar</string>
-    <string name="auto_power_save_title">Outomatiese kragbesparing</string>
-    <string name="auto_power_save_summary_on">Aktiveer outomaties krag spaar modus by %s battery</string>
-    <string name="auto_power_save_summary_off">Moenie outomatoes kragspaarmodus aktiveer nie</string>
-    <string name="auto_power_save_never">Nooit</string>
     <string name="charging_sounds_settings_title">Laai klanke</string>
     <string name="charging_sounds_summary">Speel \'n klank met die koppeling of ontkoppeling van \'n kragbron</string>
     <string name="power_notifications_vibrate_title">Vibreer</string>

@@ -222,7 +222,4 @@
     <string name="status_bar_battery_style_title">Варыянт адлюстроўвання батарэі</string>
     <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
     <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
-    <string name="perf_profile_overview_summary">Бягучы профіль: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="power_save_category_title">Энергазахаваньне</string>
-    <string name="power_save_summary">Абмяжоўваньне працаздольнасьці і фанавай актыўнасьці дзеля энэргазахаваньня</string>
 </resources>

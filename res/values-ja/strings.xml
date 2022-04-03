@@ -37,7 +37,6 @@
     <string name="disabled">無効</string>
     <string name="enabled">有効</string>
     <string name="privacy_settings_title">プライバシー</string>
-    <string name="channel_light_settings_name">ライト設定のプレビュー</string>
     <string name="edit_light_settings">ライトの設定を編集</string>
     <string name="pulse_speed_title">点滅時間と点滅速度</string>
     <string name="default_time">標準</string>
@@ -349,6 +348,7 @@
     <string name="status_bar_clock_title">時計</string>
     <string name="status_bar_clock_show_seconds_title">秒を表示</string>
     <string name="status_bar_clock_show_seconds_summary">時間、分、秒を表示します</string>
+    <string name="status_bar_clock_auto_hide_title">自動的に隠す</string>
     <string name="status_bar_clock_position_title">時計のスタイル</string>
     <string name="status_bar_clock_position_right">右</string>
     <string name="status_bar_clock_position_left">左</string>
@@ -433,19 +433,6 @@
     <string name="display_rotation_90_title">90度</string>
     <string name="display_rotation_180_title">180度</string>
     <string name="display_rotation_270_title">270度</string>
-    <string name="perf_profile_settings_title">バッテリーセーバーとパフォーマンス</string>
-    <string name="perf_profile_settings_summary">省電力機能と端末のパフォーマンスを調整する</string>
-    <string name="perf_profile_overview_summary">現在のプロファイル: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">端末のパフォーマンス</string>
-    <string name="perf_profile_title">パフォーマンスプロファイル: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">パフォーマンスプロファイルは現在利用できません</string>
-    <string name="power_save_category_title">バッテリーセーバー</string>
-    <string name="power_save_title">超省電力</string>
-    <string name="power_save_summary">端末のパフォーマンスとバックグラウンドのアクティビティを制限して省電力化する</string>
-    <string name="auto_power_save_title">自動省電力</string>
-    <string name="auto_power_save_summary_on">バッテリー残量%sで省電力モードを自動的に有効にする</string>
-    <string name="auto_power_save_summary_off">省電力モードを自動的に有効にしない</string>
-    <string name="auto_power_save_never">使用しない</string>
     <string name="long_screen_settings_title">全画面表示のアプリ</string>
     <string name="long_screen_settings_summary">従来のアプリに全画面表示のアスペクト比を使用させる</string>
     <string name="long_screen_settings_no_apps">なし</string>

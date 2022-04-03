@@ -186,6 +186,7 @@
     <string name="backlight_summary_enabled">Activado</string>
     <string name="disable_navkeys_title">Activar la barra de navegación</string>
     <string name="disable_navkeys_summary">Activar la barra de navegación en pantalla y desactivar los botones físicos</string>
+    <string name="swap_capacitive_keys_title">Intercambiar botones capacitivos</string>
     <string name="navigation_bar_category">Barra de navegación</string>
     <string name="navigation_bar_invert_layout_title">Invertir barra de navegación</string>
     <string name="navigation_bar_invert_layout_summary">Invierte el diseño de la barra de navegación y otros elementos, como el conmutador IME</string>
@@ -263,7 +264,7 @@
     <string name="rename_dialog_message">Introducir un nuevo nombre</string>
     <string name="rename_dialog_hint">Introducir el nombre del perfil</string>
     <string name="profile_reset_title">Restablecer</string>
-    <string name="profile_reset_message">¿Borrar todos los perfiles y grupos de aplicaciones creados por el usuario y restaurarlos a los valores predeterminados?</string>
+    <string name="profile_reset_message">¿Borrar todos los perfiles y grupos de aplicaciones creados por el usuario y restaurarlos a los valores predefinidos?</string>
     <string name="profile_app_delete_confirm">¿Quitar esta aplicación?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
@@ -328,6 +329,7 @@
     <string name="status_bar_system_icons_title">Iconos del sistema</string>
     <string name="status_bar_system_icons_summary">Configurar que iconos se muestran en la barra de estado</string>
     <string name="status_bar_clock_title">Reloj</string>
+    <string name="status_bar_clock_auto_hide_title">Ocultar automáticamente</string>
     <string name="status_bar_clock_position_title">Posición del reloj</string>
     <string name="status_bar_clock_position_right">Derecha</string>
     <string name="status_bar_clock_position_left">Izquierda</string>
@@ -406,19 +408,6 @@
     <string name="display_rotation_90_title">90 grados</string>
     <string name="display_rotation_180_title">180 grados</string>
     <string name="display_rotation_270_title">270 grados</string>
-    <string name="perf_profile_settings_title">Rendimiento y ahorro de batería</string>
-    <string name="perf_profile_settings_summary">Ajustar las características del consumo del ahorro de energía y el rendimiento</string>
-    <string name="perf_profile_overview_summary">Perfil actual: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
-    <string name="perf_profile_category_title">Rendimiento del dispositivo</string>
-    <string name="perf_profile_title">Perfil de rendimiento: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">El perfil de rendimiento no está disponible actualmente</string>
-    <string name="power_save_category_title">Ahorro de batería</string>
-    <string name="power_save_title">Ahorrador de energía extrema</string>
-    <string name="power_save_summary">Restringir la actividad del rendimiento y fondo del dispositivo para ahorrar energía</string>
-    <string name="auto_power_save_title">Ahorro de energía automático</string>
-    <string name="auto_power_save_summary_on">Activar automáticamente el modo de ahorro de energía al %s de batería</string>
-    <string name="auto_power_save_summary_off">No activar el modo de ahorro de energía automáticamente</string>
-    <string name="auto_power_save_never">Nunca</string>
     <string name="long_screen_settings_no_apps">Sin aplicaciones</string>
     <string name="charging_sounds_settings_title">Sonidos de carga del dispositivo</string>
     <string name="charging_sounds_summary">Reproducir un sonido al conectar o desconectar el cargador</string>
@@ -466,6 +455,7 @@
     <string name="touchscreen_gesture_action_volume_up">Mayor volumen multimedia</string>
     <string name="touchscreen_gesture_action_ambient_display">Mostrar pantalla ambiente</string>
     <string name="trust_feature_encryption">Cifrado</string>
+    <string name="trust_feature_encryption_explain">Cifrar el dispositivo impide el acceso a tus datos cuando el teléfono no se inicia en Android. Esto es particularmente importante si el teléfono es robado, ya que evita que la gente vea tus mensajes, contactos y otra información privada sin tu contraseña.\nPara hacer el cifrado más efectivo, es necesario establecer una contraseña segura en la pantalla de bloqueo.</string>
     <string name="trust_warnings_selinux">Estado de SELinux</string>
     <string name="trust_onboarding_learn_more">Saber más</string>
     <string name="trust_onboarding_done">Entiendo</string>

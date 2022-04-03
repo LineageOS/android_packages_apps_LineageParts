@@ -16,7 +16,6 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="channel_light_settings_name">Forskoðun ljósastillinga</string>
     <string name="led_notification_text">LED-ljós virkjað í stillingum</string>
     <string name="notification_light_no_apps_summary">Til að virkja stýringu á hvert forrit, virkjaðu \'%1$s\' og ýttu á \'\u002b\' í valmyndastikunni</string>
     <string name="live_display_outdoor_mode_summary">Auka birtustig og litmettun sjálfvirkt í miklu sólskini</string>

@@ -60,13 +60,15 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Narahat Etmə</string>
     <string name="battery_light_title">Batereya işığı</string>
-    <string name="battery_low_pulse_title">Batareya zəifdirsə yanıb sön</string>
+    <string name="battery_light_enable_title">Batareya işığını fəallaşdır</string>
+    <string name="battery_low_pulse_title">Batereya zəifdirsə yanıb sön</string>
     <string name="battery_light_full_charge_disabled_title">Tam dolanda söndür</string>
     <string name="battery_light_list_title">Rənglər</string>
     <string name="battery_light_low_color_title">Zəif batereya</string>
     <string name="battery_light_medium_color_title">Enerji yığır</string>
     <string name="battery_light_full_color_title">Tam doldu</string>
     <string name="notification_light_title">Bildiriş işığı</string>
+    <string name="notification_light_enable_title">Bildiriş işığını fəallaşdır</string>
     <string name="notification_light_general_title">Ümumi</string>
     <string name="notification_light_advanced_title">Qabaqcıl</string>
     <string name="notification_light_applist_title">Tətbiqlər</string>
@@ -249,6 +251,8 @@
     <string name="no_triggers_configured_nfc">Yeni bir NFC tətikləyici quraşdırmaq üçün toxunun.</string>
     <string name="profile_setup_actions_description">İndi profil aktivləşdiriləndə nə baş verəcəyini konfiqurasiya edin</string>
     <string name="profiles_settings_title">Sistem profilləri</string>
+    <string name="profiles_settings_enable_title">Profilləri fəallaşdır</string>
+    <string name="profiles_create_new">Yeni profil yarat</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">Sistem profillərini işlətmək və konfiqurasiya etmək üçün profilləri işə salın.</string>
     <string name="profile_settings_summary_off">Profillər sıradan çıxarıldı</string>
@@ -345,6 +349,7 @@
     <string name="status_bar_clock_title">Saat</string>
     <string name="status_bar_clock_show_seconds_title">Saniyəni göstər</string>
     <string name="status_bar_clock_show_seconds_summary">Saat, dəqiqə, və saniyəni göstər</string>
+    <string name="status_bar_clock_auto_hide_title">Avtomatik gizlət</string>
     <string name="status_bar_clock_position_title">Saat mövqeyi</string>
     <string name="status_bar_clock_position_right">Sağ</string>
     <string name="status_bar_clock_position_left">Sol</string>
@@ -431,23 +436,11 @@
     <string name="display_rotation_90_title">90 dərəcə</string>
     <string name="display_rotation_180_title">180 dərəcə</string>
     <string name="display_rotation_270_title">270 dərəcə</string>
-    <string name="perf_profile_settings_title">Batereyaya qənaət və performans</string>
-    <string name="perf_profile_settings_summary">Enerjiyə qənaət özəlliklərini və cihaz performansını nizamla</string>
-    <string name="perf_profile_overview_summary">Hazırki profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Cihaz performansı</string>
-    <string name="perf_profile_title">Performans profili: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Performans profili hazırda əlçatmazdır</string>
-    <string name="power_save_category_title">Batereyaya qənaət</string>
-    <string name="power_save_title">Yüksək enerji qənaəti</string>
-    <string name="power_save_summary">Enerjiyə qənaət üçün cihaz performansını və arxaplan fəaliyyətini məhdudlaşdır</string>
-    <string name="auto_power_save_title">Avtomatik enerji qənaəti</string>
-    <string name="auto_power_save_summary_on">Batereya %s olanda enerjiyə qənaət rejimini avtomatik fəallaşdır</string>
-    <string name="auto_power_save_summary_off">Enerjiyə qənaət rejimini avtomatik fəallaşdırma</string>
-    <string name="auto_power_save_never">Heç vaxt</string>
     <string name="long_screen_settings_title">Tam ekran tətbiqləri</string>
     <string name="long_screen_settings_summary">Köhnəlmiş tətbiqləri tam ekran rejimini istifadə etməyə məcbur edər</string>
     <string name="long_screen_settings_no_apps">Tətbiq yoxdur</string>
     <string name="charging_sounds_settings_title">Enerji yığma səsləri</string>
+    <string name="charging_sounds_enable_title">Enerji yığma səslərini fəallaşdır</string>
     <string name="charging_sounds_summary">Cərəyan mənbəyinə taxarkən və ya çıxararkən bir səs oxut</string>
     <string name="power_notifications_vibrate_title">Titrət</string>
     <string name="charging_sounds_ringtone_silent">Səssiz</string>

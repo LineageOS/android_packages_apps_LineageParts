@@ -371,19 +371,6 @@
     <string name="display_rotation_90_title">90 степени</string>
     <string name="display_rotation_180_title">180 степени</string>
     <string name="display_rotation_270_title">270 степени</string>
-    <string name="perf_profile_settings_title">Заштедувач на батерија и перформанси</string>
-    <string name="perf_profile_settings_summary">Прилагодете ги функциите за заштеда на енергија и ефикасноста на уредот</string>
-    <string name="perf_profile_overview_summary">Тековен профил: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Перформанси на уредот</string>
-    <string name="perf_profile_title">Профил за перформанси: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Профилот за перформанси во моментов не е достапен</string>
-    <string name="power_save_category_title">Заштеда на батерија</string>
-    <string name="power_save_title">Екстремно штедење на енергија</string>
-    <string name="power_save_summary">Ограничете ги перформансите на уредот и активноста во позадина за да заштедите енергија</string>
-    <string name="auto_power_save_title">Автоматско штедење на енергија</string>
-    <string name="auto_power_save_summary_on">Автоматски вклучи режим за штедење на енергија на %s на батеријата</string>
-    <string name="auto_power_save_summary_off">Не овозможувај автоматски режим за штедење</string>
-    <string name="auto_power_save_never">Никогаш</string>
     <string name="charging_sounds_settings_title">Звуци за полнење</string>
     <string name="charging_sounds_summary">Репродуцирај звук при поврзување или исклучување на извор на енергија</string>
     <string name="power_notifications_vibrate_title">Вибрација</string>

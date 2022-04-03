@@ -37,7 +37,6 @@
     <string name="disabled">Dezactivat</string>
     <string name="enabled">Activat</string>
     <string name="privacy_settings_title">Intimitate</string>
-    <string name="channel_light_settings_name">Previzualizare setări lumină</string>
     <string name="edit_light_settings">Editare setări lumină</string>
     <string name="pulse_speed_title">Durată și viteză puls</string>
     <string name="default_time">Normal</string>
@@ -349,6 +348,7 @@
     <string name="status_bar_clock_title">Ceas</string>
     <string name="status_bar_clock_show_seconds_title">Afișare secunde</string>
     <string name="status_bar_clock_show_seconds_summary">Afișează orele, minutele și secundele</string>
+    <string name="status_bar_clock_auto_hide_title">Ascundere automată</string>
     <string name="status_bar_clock_position_title">Poziţia ceasului</string>
     <string name="status_bar_clock_position_right">Dreapta</string>
     <string name="status_bar_clock_position_left">Stânga</string>
@@ -435,19 +435,6 @@
     <string name="display_rotation_90_title">90 de grade</string>
     <string name="display_rotation_180_title">180 de grade</string>
     <string name="display_rotation_270_title">270 de grade</string>
-    <string name="perf_profile_settings_title">Economizor de baterie și performanță</string>
-    <string name="perf_profile_settings_summary">Ajustați caracteristicile economiei de energie și performanța dispozitivului</string>
-    <string name="perf_profile_overview_summary">Profil curent: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Performanță dispozitiv</string>
-    <string name="perf_profile_title">Profil performanță: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Profilul de performanţă este indisponibil în prezent</string>
-    <string name="power_save_category_title">Economisire baterie</string>
-    <string name="power_save_title">Economisire energie extremă</string>
-    <string name="power_save_summary">Restricționează performanța dispozitivului și activitatea de fundal pentru a salva energie</string>
-    <string name="auto_power_save_title">Economisire energie automată</string>
-    <string name="auto_power_save_summary_on">Activează automat modul de economisire a energiei la baterie %s</string>
-    <string name="auto_power_save_summary_off">Nu activa automat modul de economisire a energiei</string>
-    <string name="auto_power_save_never">Niciodată</string>
     <string name="long_screen_settings_title">Aplicații ecran complet</string>
     <string name="long_screen_settings_summary">Forțează aplicațiile vechi să utilizeze ecranul complet</string>
     <string name="long_screen_settings_no_apps">Nicio aplicație</string>

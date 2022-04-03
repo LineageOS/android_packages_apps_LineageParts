@@ -37,7 +37,6 @@
     <string name="disabled">Devre dışı</string>
     <string name="enabled">Etkin</string>
     <string name="privacy_settings_title">Gizlilik</string>
-    <string name="channel_light_settings_name">Işık ayarları ön izlemesi</string>
     <string name="edit_light_settings">Işık ayarlarını düzenle</string>
     <string name="pulse_speed_title">Yanma süresi ve hızı</string>
     <string name="default_time">Normal</string>
@@ -93,7 +92,7 @@
     <string name="live_display_outdoor_mode_title">Otomatik dış mekan modu</string>
     <string name="live_display_outdoor_mode_summary">Parlak güneş ışığı altında parlaklığı ve doygunluğu otomatik olarak arttırır</string>
     <string name="live_display_anti_flicker_title">Titreme önleme</string>
-    <string name="live_display_anti_flicker_summary">Düşük ışık koşullarında aşırı titremeyi önleyin ve göz yorgunluğunu azaltın. Bu ayar renk doğruluğunu düşürebilir ve bazı öğelerin görüntülenme şeklini etkileyebilir.</string>
+    <string name="live_display_anti_flicker_summary">Düşük ışık koşullarında aşırı titremeyi önleyin ve göz yorgunluğunu azaltın. Bu ayar renk doğruluğunu düşürebilir ve bazı ögelerin görüntülenme şeklini etkileyebilir.</string>
     <string name="live_display_low_power_title">Güç tüketimini azalt</string>
     <string name="live_display_low_power_summary">Ekranda bozulma olmadan en düşük güç tüketimi için ayarlar</string>
     <string name="live_display_enhance_color_title">Renkleri geliştir</string>
@@ -199,7 +198,7 @@
     <string name="swap_capacitive_keys_summary">Son kullanılanlar ve geri tuşlarının yerini değiştirin</string>
     <string name="navigation_bar_category">Gezinme çubuğu</string>
     <string name="navigation_bar_invert_layout_title">Düzeni tersine çevir</string>
-    <string name="navigation_bar_invert_layout_summary">Gezinme çubuğunun ve klavye değiştirici gibi diğer öğelerin düzenini tersine çevirir</string>
+    <string name="navigation_bar_invert_layout_summary">Gezinme çubuğunun ve klavye değiştirici gibi diğer ögelerin düzenini tersine çevirir</string>
     <string name="navigation_bar_left_summary">Yatay modda ekranın sol tarafına gezinme çubuğunu yerleştirir</string>
     <string name="navigation_bar_arrow_keys_title">Yazı yazarken ok tuşlarını göster</string>
     <string name="navigation_bar_arrow_keys_summary">Yazı yazarken sağ ve sol imleç tuşlarını göster. Klavye değiştiriciyi gösterme.</string>
@@ -345,6 +344,7 @@
     <string name="status_bar_clock_title">Saat</string>
     <string name="status_bar_clock_show_seconds_title">Saniye göster</string>
     <string name="status_bar_clock_show_seconds_summary">Saati, dakikayı ve saniyeyi göster</string>
+    <string name="status_bar_clock_auto_hide_title">Otomatik gizle</string>
     <string name="status_bar_clock_position_title">Saat konumu</string>
     <string name="status_bar_clock_position_right">Sağ</string>
     <string name="status_bar_clock_position_left">Sol</string>
@@ -431,19 +431,6 @@
     <string name="display_rotation_90_title">90 derece</string>
     <string name="display_rotation_180_title">180 derece</string>
     <string name="display_rotation_270_title">270 derece</string>
-    <string name="perf_profile_settings_title">Pil tasarrufu ve performans</string>
-    <string name="perf_profile_settings_summary">Güç tasarrufu özelliklerini ve cihaz performansını ayarlayın</string>
-    <string name="perf_profile_overview_summary">Geçerli profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Cihaz performansı</string>
-    <string name="perf_profile_title">Performans profili: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Bu performans profili kullanılamaz</string>
-    <string name="power_save_category_title">Pil tasarrufu</string>
-    <string name="power_save_title">Yüksek pil tasarrufu</string>
-    <string name="power_save_summary">Güç tasarrufu için cihaz performansını ve arka plan etkinliğini kısıtla</string>
-    <string name="auto_power_save_title">Otomatik pil tasarrufu</string>
-    <string name="auto_power_save_summary_on">Pil %s olduğunda güç tasarrufu modunu otomatik olarak etkinleştir</string>
-    <string name="auto_power_save_summary_off">Pil tasarrufu modunu otomatik olarak etkinleştirme</string>
-    <string name="auto_power_save_never">Asla</string>
     <string name="long_screen_settings_title">Tam ekran uygulamaları</string>
     <string name="long_screen_settings_summary">Eski uygulamaların tam ekranın en boy oranını kullanmasına zorlanır</string>
     <string name="long_screen_settings_no_apps">Uygulama yok</string>

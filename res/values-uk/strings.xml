@@ -371,19 +371,6 @@
     <string name="display_rotation_90_title">90 градусів</string>
     <string name="display_rotation_180_title">180 градусів</string>
     <string name="display_rotation_270_title">270 градусів</string>
-    <string name="perf_profile_settings_title">Енергозбереження та продуктивність</string>
-    <string name="perf_profile_settings_summary">Підлаштовувати функції енергозбереження і продуктивності пристрою</string>
-    <string name="perf_profile_overview_summary">Поточний профіль: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
-    <string name="perf_profile_category_title">Продуктивність пристрою</string>
-    <string name="perf_profile_title">Профіль продуктивності: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
-    <string name="perf_profile_fail_toast">Профіль продуктивності в даний момент недоступний</string>
-    <string name="power_save_category_title">Енергозбереження</string>
-    <string name="power_save_title">Екстремальне енергозбереження</string>
-    <string name="power_save_summary">Обмежити продуктивність і фонову діяльність пристрою для економії енергії</string>
-    <string name="auto_power_save_title">Автоматичне енергозбереження</string>
-    <string name="auto_power_save_summary_on">Автоматично активувати режим енергозбереження при %s батареї</string>
-    <string name="auto_power_save_summary_off">Не вмикати режим енергозбереження автоматично</string>
-    <string name="auto_power_save_never">Ніколи</string>
     <string name="charging_sounds_settings_title">Звуки зарядки</string>
     <string name="charging_sounds_summary">Грати звук при підключенні чи від\'єднанні від зарядного пристрою</string>
     <string name="power_notifications_vibrate_title">Вібрувати</string>

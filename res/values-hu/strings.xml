@@ -37,7 +37,6 @@
     <string name="disabled">Letiltva</string>
     <string name="enabled">Engedélyezve</string>
     <string name="privacy_settings_title">Adatvédelem</string>
-    <string name="channel_light_settings_name">Fénybeállítási előnézet</string>
     <string name="edit_light_settings">Értesítési fény beállítások</string>
     <string name="pulse_speed_title">Villogás hossza és sebessége</string>
     <string name="default_time">Normál</string>
@@ -60,6 +59,7 @@
     <string name="light_brightness_normal">Normál</string>
     <string name="light_brightness_zen">Ne zavarjanak (DND)</string>
     <string name="battery_light_title">Akkumulátor jelző fény</string>
+    <string name="battery_light_enable_title">Akku-fényjelek engedélyezése</string>
     <string name="battery_low_pulse_title">Villog, ha merül az akkumulátor</string>
     <string name="battery_light_full_charge_disabled_title">Kikapcsolás teljes feltöltöttség esetén</string>
     <string name="battery_light_list_title">Színek</string>
@@ -67,6 +67,7 @@
     <string name="battery_light_medium_color_title">Töltés</string>
     <string name="battery_light_full_color_title">Teljesen feltöltve</string>
     <string name="notification_light_title">Értesítési fény</string>
+    <string name="notification_light_enable_title">Értesítés-fényjelek engedélyezése</string>
     <string name="notification_light_general_title">Általános</string>
     <string name="notification_light_advanced_title">Haladó</string>
     <string name="notification_light_applist_title">Alkalmazások</string>
@@ -249,6 +250,8 @@
     <string name="no_triggers_configured_nfc">Érintse meg egy új NFC trigger beállításáért.</string>
     <string name="profile_setup_actions_description">Most állítsa be, hogy mi történjen a profil aktiválásakor</string>
     <string name="profiles_settings_title">Rendszer profilok</string>
+    <string name="profiles_settings_enable_title">Profilok engedélyezése</string>
+    <string name="profiles_create_new">Új profil létrehozása</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">Rendszerprofil konfiguráláshoz és használathoz kapcsolja be a profilokat.</string>
     <string name="profile_settings_summary_off">Profilok letiltva</string>
@@ -345,6 +348,7 @@
     <string name="status_bar_clock_title">Óra</string>
     <string name="status_bar_clock_show_seconds_title">Másodpercmutató</string>
     <string name="status_bar_clock_show_seconds_summary">Órák, percek és másodpercek megjelenítése</string>
+    <string name="status_bar_clock_auto_hide_title">Automatikus elrejtés</string>
     <string name="status_bar_clock_position_title">Óra pozíció</string>
     <string name="status_bar_clock_position_right">Jobb</string>
     <string name="status_bar_clock_position_left">Bal</string>
@@ -429,23 +433,11 @@
     <string name="display_rotation_90_title">90 fok</string>
     <string name="display_rotation_180_title">180 fok</string>
     <string name="display_rotation_270_title">270 fok</string>
-    <string name="perf_profile_settings_title">Energiatakarékos és teljesítmény</string>
-    <string name="perf_profile_settings_summary">Energiatakarékosság és eszközteljesítmény beállítása</string>
-    <string name="perf_profile_overview_summary">Aktuális profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Eszközteljesítmény</string>
-    <string name="perf_profile_title">Teljesítmény profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">A teljesítmény profil jelenleg nem érhető el</string>
-    <string name="power_save_category_title">Energiatakarékos</string>
-    <string name="power_save_title">Extrém energiatakarékos</string>
-    <string name="power_save_summary">Eszközteljesítmény és háttértevékenység korlátozása energiamegtakarításhoz</string>
-    <string name="auto_power_save_title">Automatikus energiatakarékos</string>
-    <string name="auto_power_save_summary_on">Energiatakarékos üzemmód automatikus engedélyezése, ha az akkumulátor: %s</string>
-    <string name="auto_power_save_summary_off">Energiatakarékos üzemmód ne induljon automatikusan</string>
-    <string name="auto_power_save_never">Soha</string>
     <string name="long_screen_settings_title">Teljesképernyős alkalmazások</string>
     <string name="long_screen_settings_summary">Régi alkalmazások kényszerítése, hogy a teljes képernyőt használják</string>
     <string name="long_screen_settings_no_apps">Nincsenek alkalmazások</string>
     <string name="charging_sounds_settings_title">Töltés jelzése</string>
+    <string name="charging_sounds_enable_title">Töltési hangok engedélyezése</string>
     <string name="charging_sounds_summary">Hangjelzés töltő csatlakoztatása, vagy leválasztása esetén</string>
     <string name="power_notifications_vibrate_title">Rezgés</string>
     <string name="charging_sounds_ringtone_silent">Néma</string>

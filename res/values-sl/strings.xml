@@ -184,7 +184,7 @@
     <string name="additional_buttons_title">Dodatni gumbi</string>
     <string name="click_partial_screenshot_title">Klik za delno zaslonsko sliko</string>
     <string name="click_partial_screenshot_summary">Na kratko kliknite gumb za povečanje glasnosti in gumb za vklop, da zajamete delno zaslonsko sliko</string>
-    <string name="button_backlight_title">Osvetlitev ozadja</string>
+    <string name="button_backlight_title">Osvetlitev</string>
     <string name="button_backlight_enabled">Osvetli gumbe</string>
     <string name="button_backlight_only_when_pressed_title">Osvetli gumbe samo ob pritisku</string>
     <string name="keyboard_backlight_enabled">Osvetli tipkovnico</string>
@@ -349,6 +349,7 @@
     <string name="status_bar_clock_title">Ura</string>
     <string name="status_bar_clock_show_seconds_title">Prikaži sekunde</string>
     <string name="status_bar_clock_show_seconds_summary">Prikaži ure, minute in sekunde</string>
+    <string name="status_bar_clock_auto_hide_title">Samodejno skrij</string>
     <string name="status_bar_clock_position_title">Položaj ure</string>
     <string name="status_bar_clock_position_right">Desno</string>
     <string name="status_bar_clock_position_left">Levo</string>
@@ -435,19 +436,6 @@
     <string name="display_rotation_90_title">90 stopinj</string>
     <string name="display_rotation_180_title">180 stopinj</string>
     <string name="display_rotation_270_title">270 stopinj</string>
-    <string name="perf_profile_settings_title">Varčevanje z energijo baterije in zmogljivost</string>
-    <string name="perf_profile_settings_summary">Prilagodi značilnosti varčevanja z energijo in zmogljivost naprave</string>
-    <string name="perf_profile_overview_summary">Trenutni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Zmogljivost naprave</string>
-    <string name="perf_profile_title">Zmogljivostni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Zmogljivostni profil trenutno ni na voljo</string>
-    <string name="power_save_category_title">Varčevanje z energijo baterije</string>
-    <string name="power_save_title">Strogo varčevanje z energijo</string>
-    <string name="power_save_summary">Omeji zmogljivost naprave in dejavnosti v ozadju za prihranek energije</string>
-    <string name="auto_power_save_title">Samodejno varčevanje z energijo</string>
-    <string name="auto_power_save_summary_on">Samodejno omogoči način varčevanja z energijo baterije, ko je stanje baterije %s</string>
-    <string name="auto_power_save_summary_off">Ne omogočaj načina varčevanja z energijo samodejno</string>
-    <string name="auto_power_save_never">Nikoli</string>
     <string name="long_screen_settings_title">Celozaslonske aplikacije</string>
     <string name="long_screen_settings_summary">Vsili zapuščinskim aplikacijam uporabo celozaslonskega razmerja slike</string>
     <string name="long_screen_settings_no_apps">Ni aplikacij</string>
@@ -461,7 +449,7 @@
     <string name="wireless_charging_sounds_title">Brezžično polnjenje</string>
     <string name="touchscreen_gesture_settings_title">Poteze na zaslonu na dotik</string>
     <string name="touchscreen_gesture_settings_summary">Za hitra dejanja na zaslonu na dotik izvedite različne poteze</string>
-    <string name="touchscreen_gestures_haptic_feedback_title">Haptično zaznavanje</string>
+    <string name="touchscreen_gestures_haptic_feedback_title">Haptični odziv</string>
     <string name="touchscreen_gestures_haptic_feedback_summary">Vibriraj, ko je zaznana poteza na zaslonu na dotik</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Poteg navzdol z dvema prstoma</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">Poteg navzgor z enim prstom</string>

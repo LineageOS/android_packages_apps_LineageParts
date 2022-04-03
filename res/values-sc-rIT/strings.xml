@@ -103,6 +103,5 @@
     <string name="display_rotation_90_title">90 grados</string>
     <string name="display_rotation_180_title">180 grados</string>
     <string name="display_rotation_270_title">270 grados</string>
-    <string name="auto_power_save_never">Mai</string>
     <string name="power_notifications_vibrate_title">Vibratzione</string>
 </resources>

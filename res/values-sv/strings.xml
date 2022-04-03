@@ -198,6 +198,7 @@
     <string name="status_bar_quick_qs_pulldown_right">Höger</string>
     <string name="status_bar_icons_title">Statusfältsikoner</string>
     <string name="status_bar_clock_title">Klocka</string>
+    <string name="status_bar_clock_auto_hide_title">Göm automatiskt</string>
     <string name="status_bar_clock_position_title">Klockans position</string>
     <string name="status_bar_clock_position_right">Höger</string>
     <string name="status_bar_clock_position_left">Vänster</string>
@@ -240,11 +241,6 @@
     <string name="display_rotation_90_title">90 grader</string>
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
-    <string name="perf_profile_category_title">Enhetsprestanda</string>
-    <string name="power_save_category_title">Strömsparläge</string>
-    <string name="power_save_title">Extrem strömbesparing</string>
-    <string name="auto_power_save_title">Automatiskt strömsparläge</string>
-    <string name="auto_power_save_never">Aldrig</string>
     <string name="charging_sounds_settings_title">Laddningsljud</string>
     <string name="power_notifications_vibrate_title">Vibrera</string>
     <string name="charging_sounds_ringtone_silent">Tyst</string>

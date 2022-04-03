@@ -332,6 +332,7 @@
     <string name="status_bar_system_icons_title">Ikone sustava</string>
     <string name="status_bar_system_icons_summary">Odaberite koje se ikone prikazuju u statusnoj traci</string>
     <string name="status_bar_clock_title">Sat</string>
+    <string name="status_bar_clock_auto_hide_title">Automatski sakrij</string>
     <string name="status_bar_clock_position_title">Pozicija sata</string>
     <string name="status_bar_clock_position_right">Desno</string>
     <string name="status_bar_clock_position_left">Lijevo</string>
@@ -412,19 +413,6 @@
     <string name="display_rotation_90_title">90 stupnjeva</string>
     <string name="display_rotation_180_title">180 stupnjeva</string>
     <string name="display_rotation_270_title">270 stupnjeva</string>
-    <string name="perf_profile_settings_title">Ušteda baterije i performanse</string>
-    <string name="perf_profile_settings_summary">Prilagodite značajke uštede energije i performansi uređaja</string>
-    <string name="perf_profile_overview_summary">Trenutni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Performanse uređaja</string>
-    <string name="perf_profile_title">Profil performansi: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Profil performansi je trenutno nedostupan</string>
-    <string name="power_save_category_title">Štednja baterije</string>
-    <string name="power_save_title">Ekstremna ušteda energije</string>
-    <string name="power_save_summary">Ograničite performanse uređaja i pozadinske aktivnosti radi uštede energije.</string>
-    <string name="auto_power_save_title">Automatska ušteda energije</string>
-    <string name="auto_power_save_summary_on">Način uštede energije automatski će se omogućiti na %s baterije</string>
-    <string name="auto_power_save_summary_off">Ne omogućuj automatski način uštede energije</string>
-    <string name="auto_power_save_never">Nikad</string>
     <string name="charging_sounds_settings_title">Zvukovi punjenja</string>
     <string name="charging_sounds_summary">Reproducirat će zvuk pri spajanju ili odspajanju s izvora napajanja</string>
     <string name="power_notifications_vibrate_title">Vibracija</string>

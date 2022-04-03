@@ -371,19 +371,6 @@
     <string name="display_rotation_90_title">90 grader</string>
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
-    <string name="perf_profile_settings_title">Batterisparing og ytelse</string>
-    <string name="perf_profile_settings_summary">Juster strømsparingsfunksjoner og enhetens ytelse</string>
-    <string name="perf_profile_overview_summary">Gjeldende profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Enhetens ytelse</string>
-    <string name="perf_profile_title">Ytelsesprofil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Ytelsesprofilen er ikke tilgjengelig for øyeblikket</string>
-    <string name="power_save_category_title">Batterisparing</string>
-    <string name="power_save_title">Ekstrem strømsparing</string>
-    <string name="power_save_summary">Begrenser enhetens ytelse og bakgrunnsaktivitet for å spare strøm</string>
-    <string name="auto_power_save_title">Automatisk strømsparing</string>
-    <string name="auto_power_save_summary_on">Aktiver strømsparing automatisk på %s batteriprosent</string>
-    <string name="auto_power_save_summary_off">Ikke slå på strømsparingsmodus automatisk</string>
-    <string name="auto_power_save_never">Aldri</string>
     <string name="charging_sounds_settings_title">Lade-lyder</string>
     <string name="charging_sounds_summary">Spill av en lyd når du kobler til eller fra en strømkilde</string>
     <string name="power_notifications_vibrate_title">Vibrer</string>

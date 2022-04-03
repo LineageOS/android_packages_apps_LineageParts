@@ -60,6 +60,7 @@
     <string name="light_brightness_normal">Àbhaisteach</string>
     <string name="light_brightness_zen">Na bris a-steach orm</string>
     <string name="battery_light_title">Solas a’ bhataraidh</string>
+    <string name="battery_light_enable_title">Cuir an comas solas a’ bhataraidh</string>
     <string name="battery_low_pulse_title">Dèan frith-bhualadh nuair a bhios am bataraidh fann</string>
     <string name="battery_light_full_charge_disabled_title">Chuir dheth nuair a bhios làn-teàirrds air</string>
     <string name="battery_light_list_title">Dathan</string>
@@ -67,6 +68,7 @@
     <string name="battery_light_medium_color_title">’Ga theàirrdseadh</string>
     <string name="battery_light_full_color_title">Air a làn-teàirrdseadh</string>
     <string name="notification_light_title">Solas nam brath</string>
+    <string name="notification_light_enable_title">Cuir an comas solas nam brath</string>
     <string name="notification_light_general_title">Coitcheann</string>
     <string name="notification_light_advanced_title">Adhartach</string>
     <string name="notification_light_applist_title">Aplacaidean</string>
@@ -249,6 +251,8 @@
     <string name="no_triggers_configured_nfc">Thoir gnogag airson trigear NFC ùr a shuidheachadh.</string>
     <string name="profile_setup_actions_description">Nise, rèitich na thachras nuair a thèid a’ phròifil a ghnìomhachadh</string>
     <string name="profiles_settings_title">Pròifilean an t-siostaim</string>
+    <string name="profiles_settings_enable_title">Cuir an comas na pròifilean</string>
+    <string name="profiles_create_new">Cruthaich pròifil ùr</string>
     <string name="profile_settings_title">Pròifil</string>
     <string name="profile_empty_list_profiles_off">Airson pròifilean an t-siostaim a rèiteachadh ’s a chleachdadh, cuir na pròifilean air.</string>
     <string name="profile_settings_summary_off">Tha na pròifilean à comas</string>
@@ -345,6 +349,7 @@
     <string name="status_bar_clock_title">Cleoc</string>
     <string name="status_bar_clock_show_seconds_title">Seall na diogan</string>
     <string name="status_bar_clock_show_seconds_summary">Seall na h-uairean, mionaidean is diogan</string>
+    <string name="status_bar_clock_auto_hide_title">Falaich gu fèin-obrachail</string>
     <string name="status_bar_clock_position_title">Ionad a’ chleoca</string>
     <string name="status_bar_clock_position_right">Deas</string>
     <string name="status_bar_clock_position_left">Clì</string>
@@ -431,26 +436,17 @@
     <string name="display_rotation_90_title">90 ceum</string>
     <string name="display_rotation_180_title">180 ceum</string>
     <string name="display_rotation_270_title">270 ceum</string>
-    <string name="perf_profile_settings_title">Caomhnaiche a’ bhataraidh is an dèanadas</string>
-    <string name="perf_profile_settings_summary">Cuir gleus air caomhnadh na cumhachd is dèanadas an uidheim</string>
-    <string name="perf_profile_overview_summary">A’ phròifil làithreach: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Dèanadas an uidheim</string>
-    <string name="perf_profile_title">Pròifil an dèanadais: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Chan eil pròifil an dèanadais ri a faighinn an-dràsta</string>
-    <string name="power_save_category_title">Caomhnadh a’ bhataraidh</string>
-    <string name="power_save_title">Caomhnaiche teann na cumhachd</string>
-    <string name="power_save_summary">Cuingich dèanadas an uidheim is a’ ghnìomhachd sa chùlaibh airson cumhachd a chaomhnadh</string>
-    <string name="auto_power_save_title">Caomhnaiche fèin-obrachail na cumhachd</string>
-    <string name="auto_power_save_summary_on">Cuir an comas modh caomhnadh na cumhachd air %s dhen bhataraidh</string>
-    <string name="auto_power_save_summary_off">Na cuir modh caomhnadh na cumhachd an comas gu fèin-obrachail</string>
-    <string name="auto_power_save_never">Chan ann idir</string>
     <string name="long_screen_settings_title">Aplacaidean làn-sgrìn</string>
     <string name="long_screen_settings_summary">Spàrr air aplacaidean dìleabach gun cleachd iad co-mheas deilbh na làn-sgrìn</string>
     <string name="long_screen_settings_no_apps">Chan eil aplacaid ann</string>
     <string name="charging_sounds_settings_title">Fuaimean an teàirrdsidh</string>
+    <string name="charging_sounds_enable_title">Cuir an comas fuaimean an teàirrdsidh</string>
     <string name="charging_sounds_summary">Cluich fuaim nuair a thèid tùs cumhachd a cheangal ris no a dhì-cheangal</string>
     <string name="power_notifications_vibrate_title">Dèan crith</string>
     <string name="charging_sounds_ringtone_silent">Sàmhach</string>
+    <string name="charging_sounds_notification_category_title">Fuaimean nam brathan</string>
+    <string name="wired_charging_sounds_title">Teàirrdseadh uèirichte</string>
+    <string name="wireless_charging_sounds_title">Teàirrdseadh gun uèir</string>
     <string name="touchscreen_gesture_settings_title">Gluasadan na sgrìn-shuathaidh</string>
     <string name="touchscreen_gesture_settings_summary">Cleachd gluasadan sgrìn-shuathaidh airson gnìomhan luatha</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Freagairt suathaidh</string>

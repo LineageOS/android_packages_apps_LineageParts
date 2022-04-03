@@ -37,7 +37,6 @@
     <string name="disabled">Desativada</string>
     <string name="enabled">Ativada</string>
     <string name="privacy_settings_title">Privacidade</string>
-    <string name="channel_light_settings_name">Pré-visualização das configs. de luz</string>
     <string name="edit_light_settings">Editar definições de luz</string>
     <string name="pulse_speed_title">Duração e velocidade da luz ao piscar</string>
     <string name="default_time">Normal</string>
@@ -60,6 +59,7 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Não Incomodar</string>
     <string name="battery_light_title">Luz da bateria</string>
+    <string name="battery_light_enable_title">Ativar luz de bateria</string>
     <string name="battery_low_pulse_title">Piscar se a bateria estiver fraca</string>
     <string name="battery_light_full_charge_disabled_title">Desligar quando completamente carregada</string>
     <string name="battery_light_list_title">Cores</string>
@@ -67,6 +67,7 @@
     <string name="battery_light_medium_color_title">A carregar</string>
     <string name="battery_light_full_color_title">Completamente carregada</string>
     <string name="notification_light_title">Luz de notificação</string>
+    <string name="notification_light_enable_title">Ativar luz de notificação</string>
     <string name="notification_light_general_title">Gerais</string>
     <string name="notification_light_advanced_title">Avançadas</string>
     <string name="notification_light_applist_title">Aplicações</string>
@@ -249,6 +250,8 @@
     <string name="no_triggers_configured_nfc">Toque para establecer um novo atuador NFC.</string>
     <string name="profile_setup_actions_description">Agora configure o que acontece quando o perfil é ativado</string>
     <string name="profiles_settings_title">Perfis de sistema</string>
+    <string name="profiles_settings_enable_title">Ativar perfis</string>
+    <string name="profiles_create_new">Criar novo perfil</string>
     <string name="profile_settings_title">Perfil</string>
     <string name="profile_empty_list_profiles_off">Para configurar e usar os perfis de sistema, ative-os.</string>
     <string name="profile_settings_summary_off">Perfis desativados</string>
@@ -345,6 +348,7 @@
     <string name="status_bar_clock_title">Relógio</string>
     <string name="status_bar_clock_show_seconds_title">Mostrar segundos</string>
     <string name="status_bar_clock_show_seconds_summary">Mostrar horas, minutos e segundos</string>
+    <string name="status_bar_clock_auto_hide_title">Ocultar automaticamente</string>
     <string name="status_bar_clock_position_title">Posição do relógio</string>
     <string name="status_bar_clock_position_right">Direita</string>
     <string name="status_bar_clock_position_left">Esquerda</string>
@@ -429,26 +433,17 @@
     <string name="display_rotation_90_title">90 graus</string>
     <string name="display_rotation_180_title">180 graus</string>
     <string name="display_rotation_270_title">270 graus</string>
-    <string name="perf_profile_settings_title">Poupança de bateria e desempenho</string>
-    <string name="perf_profile_settings_summary">Ajustar características de poupança de bateria e desempenho do dispositivo</string>
-    <string name="perf_profile_overview_summary">Perfil atual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Desempenho do dispositivo</string>
-    <string name="perf_profile_title">Perfil de desempenho: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">O perfil de desempenho não está atualmente disponível</string>
-    <string name="power_save_category_title">Poupança de bateria</string>
-    <string name="power_save_title">Poupança extrema de bateria</string>
-    <string name="power_save_summary">Restringir o desempenho do dispositivo e as atividades em segundo plano para poupar energia</string>
-    <string name="auto_power_save_title">Poupança de bateria automática</string>
-    <string name="auto_power_save_summary_on">Ativar automaticamente a poupança de bateria aos %s por cento de bateria</string>
-    <string name="auto_power_save_summary_off">Não ativar automaticamente a poupança de bateria</string>
-    <string name="auto_power_save_never">Nunca</string>
     <string name="long_screen_settings_title">Aplicações em ecrã inteiro</string>
     <string name="long_screen_settings_summary">Forçar aplicações legadas a usarem a proporção de apresentação do ecrã inteiro</string>
     <string name="long_screen_settings_no_apps">Sem aplicações</string>
     <string name="charging_sounds_settings_title">Sons de carregamento</string>
+    <string name="charging_sounds_enable_title">Ativar sons de carregamento</string>
     <string name="charging_sounds_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
     <string name="power_notifications_vibrate_title">Vibrar</string>
     <string name="charging_sounds_ringtone_silent">Silencioso</string>
+    <string name="charging_sounds_notification_category_title">Sons de notificação</string>
+    <string name="wired_charging_sounds_title">Carregamento com fios</string>
+    <string name="wireless_charging_sounds_title">Carregamento sem fios</string>
     <string name="touchscreen_gesture_settings_title">Gestos do ecrã</string>
     <string name="touchscreen_gesture_settings_summary">Executar vários gestos no ecrã para ações rápidas</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Vibrar ao tocar</string>

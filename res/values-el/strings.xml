@@ -211,6 +211,7 @@
     <string name="navigation_bar_app_switch_long_press_title">Ενέργεια παρατεταμένης πίεσης προσφάτων</string>
     <string name="navigation_bar_edge_long_swipe_title">Ενέργεια μακράς κίνησης από την άκρη της οθόνης</string>
     <string name="power_menu_title">Μενού πλήκτρου απενεργοποίησης</string>
+    <string name="power_menu_items_title">Στοιχεία μενού του πλήκτρου απενεργοποίησης</string>
     <string name="power_menu_screenshot_title">Στιγμιότυπο οθόνης</string>
     <string name="power_menu_screenshot_summary">Πιέστε παρατεταμένα για μερικό στιγμιότυπο οθόνης</string>
     <string name="power_menu_airplane_title">Λειτουργία πτήσης</string>
@@ -219,6 +220,9 @@
     <string name="power_menu_bug_report_devoptions_unavailable">Η αναφορά σφαλμάτων είναι απενεργοποιημένη καθώς οι ρυθμίσεις για προγραμματιστές δεν είναι ενεργοποιημένες</string>
     <string name="power_menu_bug_report_unavailable_for_user">Η αναφορά σφαλμάτων είναι απενεργοποιημένη για μη πρωτεύοντες χρήστες.</string>
     <string name="power_menu_emergency_title">Έκτακτη ανάγκη</string>
+    <string name="power_menu_devicecontrols_title">Στοιχεία ελέγχου συσκευής</string>
+    <string name="power_menu_advanced_restart_title">Προηγμένη επανεκκίνηση</string>
+    <string name="power_menu_advanced_restart_summary">Όταν είναι ενεργή, περιλαμβάνονται στο μενού πλήκτρου απενεργοποίησης οι επιλογές επανεκκίνησης σε λειτουργία recovery ή bootloader</string>
     <string name="camera_double_tap_power_gesture_title">Διπλό πάτημα πλήκτρου ενεργοποίησης για φωτ. μηχανή</string>
     <string name="camera_double_tap_power_gesture_desc">Γρήγορο άνοιγμα της φωτογραφικής μηχανής χωρίς ξεκλείδωμα οθόνης</string>
     <string name="torch_long_press_power_gesture_title">Παρατεταμένη πίεση για φακό</string>
@@ -349,6 +353,8 @@
     <string name="status_bar_clock_title">Ρολόι</string>
     <string name="status_bar_clock_show_seconds_title">Εμφάνιση δευτερολέπτων</string>
     <string name="status_bar_clock_show_seconds_summary">Να εμφανίζονται ώρες, λεπτά και δευτερόλεπτα</string>
+    <string name="status_bar_clock_auto_hide_title">Αυτόματη απόκρυψη</string>
+    <string name="status_bar_clock_auto_hide_summary">Απόκρυψη ρολογιού αν ο εκκινητής είναι ορατός</string>
     <string name="status_bar_clock_position_title">Θέση ρολογιού</string>
     <string name="status_bar_clock_position_right">Δεξιά</string>
     <string name="status_bar_clock_position_left">Αριστερά</string>
@@ -437,19 +443,6 @@
     <string name="display_rotation_90_title">90 μοίρες</string>
     <string name="display_rotation_180_title">180 μοίρες</string>
     <string name="display_rotation_270_title">270 μοίρες</string>
-    <string name="perf_profile_settings_title">Εξοικονόμηση ενέργειας και επιδόσεις</string>
-    <string name="perf_profile_settings_summary">Προσαρμογή χαρακτηριστικών εξοικονόμησης ενέργειας και επιδόσεων συσκευής</string>
-    <string name="perf_profile_overview_summary">Τρέχον προφίλ: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Επιδόσεις συσκευής</string>
-    <string name="perf_profile_title">Προφίλ επιδόσεων: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Το προφίλ επιδόσεων δεν είναι διαθέσιμο προς το παρόν</string>
-    <string name="power_save_category_title">Εξοικονόμηση μπαταρίας</string>
-    <string name="power_save_title">Ακραία εξοικονόμηση ενέργειας</string>
-    <string name="power_save_summary">Περιορίσετε τις επιδόσεις και τις δραστηριότητες παρασκηνίου για εξοικονόμηση ενέργειας</string>
-    <string name="auto_power_save_title">Αυτόματη εξοικονόμηση ενέργειας</string>
-    <string name="auto_power_save_summary_on">Αυτόματη ενεργοποίηση λειτουργίας εξοικονόμησης ενέργειας στο %s της μπαταρίας</string>
-    <string name="auto_power_save_summary_off">Να μην ενεργοποιείται αυτόματα η λειτουργία εξοικονόμησης ενέργειας</string>
-    <string name="auto_power_save_never">Ποτέ</string>
     <string name="long_screen_settings_title">Εφαρμογές πλήρους οθόνης</string>
     <string name="long_screen_settings_summary">Αναγκάστε τις εφαρμογές παλαιού τύπου να χρησιμοποιούν αναλογία διαστάσεων πλήρους οθόνης</string>
     <string name="long_screen_settings_no_apps">Δεν υπάρχουν εφαρμογές</string>

@@ -60,6 +60,7 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Do Not Disturb</string>
     <string name="battery_light_title">Battery light</string>
+    <string name="battery_light_enable_title">Enable battery light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_full_charge_disabled_title">Turn off when fully charged</string>
     <string name="battery_light_list_title">Colours</string>
@@ -67,6 +68,7 @@
     <string name="battery_light_medium_color_title">Charging</string>
     <string name="battery_light_full_color_title">Fully charged</string>
     <string name="notification_light_title">Notification light</string>
+    <string name="notification_light_enable_title">Enable notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_advanced_title">Advanced</string>
     <string name="notification_light_applist_title">Apps</string>
@@ -249,6 +251,8 @@
     <string name="no_triggers_configured_nfc">Tap to setup a new NFC trigger.</string>
     <string name="profile_setup_actions_description">Now configure what happens when the profile is activated</string>
     <string name="profiles_settings_title">System profiles</string>
+    <string name="profiles_settings_enable_title">Enable profiles</string>
+    <string name="profiles_create_new">Create new profile</string>
     <string name="profile_settings_title">Profile</string>
     <string name="profile_empty_list_profiles_off">To configure and use system profiles, turn profiles on.</string>
     <string name="profile_settings_summary_off">Profiles are disabled</string>
@@ -345,6 +349,7 @@
     <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_clock_show_seconds_title">Show seconds</string>
     <string name="status_bar_clock_show_seconds_summary">Show hours, minutes, and seconds</string>
+    <string name="status_bar_clock_auto_hide_title">Auto hide</string>
     <string name="status_bar_clock_position_title">Clock position</string>
     <string name="status_bar_clock_position_right">Right</string>
     <string name="status_bar_clock_position_left">Left</string>
@@ -431,26 +436,17 @@
     <string name="display_rotation_90_title">90 degrees</string>
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
-    <string name="perf_profile_settings_title">Battery saver and performance</string>
-    <string name="perf_profile_settings_summary">Adjust power saving features and device performance</string>
-    <string name="perf_profile_overview_summary">Current profile: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_category_title">Device performance</string>
-    <string name="perf_profile_title">Performance profile: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">The performance profile is currently unavailable</string>
-    <string name="power_save_category_title">Battery saving</string>
-    <string name="power_save_title">Extreme power saver</string>
-    <string name="power_save_summary">Restrict device performance and background activity to save power</string>
-    <string name="auto_power_save_title">Automatic power saver</string>
-    <string name="auto_power_save_summary_on">Automatically enable power save mode at %s battery</string>
-    <string name="auto_power_save_summary_off">Do not enable power save mode automatically</string>
-    <string name="auto_power_save_never">Never</string>
     <string name="long_screen_settings_title">Full screen apps</string>
     <string name="long_screen_settings_summary">Force legacy apps to use full screen aspect ratio</string>
     <string name="long_screen_settings_no_apps">No apps</string>
     <string name="charging_sounds_settings_title">Charging sounds</string>
+    <string name="charging_sounds_enable_title">Enable charging sounds</string>
     <string name="charging_sounds_summary">Play a sound when connecting or disconnecting a power source</string>
     <string name="power_notifications_vibrate_title">Vibrate</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
+    <string name="charging_sounds_notification_category_title">Notification sounds</string>
+    <string name="wired_charging_sounds_title">Wired charging</string>
+    <string name="wireless_charging_sounds_title">Wireless charging</string>
     <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
     <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Haptic feedback</string>

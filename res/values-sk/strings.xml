@@ -37,7 +37,6 @@
     <string name="disabled">Zakázané</string>
     <string name="enabled">Povolené</string>
     <string name="privacy_settings_title">Súkromie</string>
-    <string name="channel_light_settings_name">Náhľad nastavení sveteľnej signalizácie</string>
     <string name="edit_light_settings">Upraviť svetelnú signalizáciu</string>
     <string name="pulse_speed_title">Dĺžka a rýchlosť blikania</string>
     <string name="default_time">Normálny</string>
@@ -345,6 +344,7 @@
     <string name="status_bar_clock_title">Hodiny</string>
     <string name="status_bar_clock_show_seconds_title">Zobraziť sekundy</string>
     <string name="status_bar_clock_show_seconds_summary">Zobraziť hodiny, minúty a sekundy</string>
+    <string name="status_bar_clock_auto_hide_title">Automatické skrývanie</string>
     <string name="status_bar_clock_position_title">Umiestnenie hodín</string>
     <string name="status_bar_clock_position_right">Vpravo</string>
     <string name="status_bar_clock_position_left">Vľavo</string>
@@ -429,19 +429,6 @@
     <string name="display_rotation_90_title">90 stupňov</string>
     <string name="display_rotation_180_title">180 stupňov</string>
     <string name="display_rotation_270_title">270 stupňov</string>
-    <string name="perf_profile_settings_title">Šetrič batérie a výkonu</string>
-    <string name="perf_profile_settings_summary">Nastavenie jednotlivých funkcí pre úsporu energie a výkon zariadenia</string>
-    <string name="perf_profile_overview_summary">Aktuálny profil: <xliff:g id="perf_profile_name">%1$s </xliff:g></string>
-    <string name="perf_profile_category_title">Výkon zariadenia</string>
-    <string name="perf_profile_title">Výkonový profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
-    <string name="perf_profile_fail_toast">Profil výkonu nie je momentálne k dispozícii</string>
-    <string name="power_save_category_title">Šetrenie batérie</string>
-    <string name="power_save_title">Extrémna úspora</string>
-    <string name="power_save_summary">Omedziť výkon zariadenia a aktivity na pozadí z dôvodov úspory energie</string>
-    <string name="auto_power_save_title">Automatický úsporný režim</string>
-    <string name="auto_power_save_summary_on">Automatické povolenie úsporného režimu od %s percent batérie</string>
-    <string name="auto_power_save_summary_off">Nepovoliť automatický režim zníženia spotreby</string>
-    <string name="auto_power_save_never">Nikdy</string>
     <string name="long_screen_settings_title">Aplikácie na celú obrazovku</string>
     <string name="long_screen_settings_summary">Prinútiť staršie aplikácie na použitie pomerov na celú obrazovku</string>
     <string name="long_screen_settings_no_apps">Žiadne aplikácie</string>
