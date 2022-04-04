@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2021 The LineageOS Project
+ * Copyright (C) 2019-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,10 @@ android_app {
     defaults: ["SettingsLibDefaults"],
 
     srcs: ["src/**/*.java"],
-    resource_dirs: ["res"],
+    resource_dirs: [
+        "res",
+        "res-shared",
+    ],
 
     manifest: "AndroidManifest.xml",
 
@@ -54,4 +57,16 @@ prebuilt_etc {
     sub_dir: "permissions",
     src: "privapp_whitelist_org.lineageos.lineageparts.xml",
     filename_from_src: true,
+}
+
+android_library {
+    name: "org.lineageos.lineageparts.resources",
+    defaults: [
+        "SettingsLibDefaults",
+    ],
+
+    resource_dirs: ["res-shared"],
+
+    sdk_version: "current",
+    manifest: "AndroidManifest-res.xml",
 }
