@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "82d71a86_8d995d05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-04-06T22:56:47Z",
+      "side": 1,
+      "message": "doesn\u0027t work due to intent issues - but this is still right.",
+      "revId": "30a75d81ccb6c3531ca9f26e194c47595b247863",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
