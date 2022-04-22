@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5f73688_2d3c2b04",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2022-04-22T14:00:49Z",
+      "side": 1,
+      "message": "Fixes that gestures are still active when disabling on-screen nav bar while gestures are being used.",
+      "revId": "bf50d518844761b1248028c6c253e84f45530903",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
