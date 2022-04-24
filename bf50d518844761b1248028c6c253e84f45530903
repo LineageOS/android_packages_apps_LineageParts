@@ -33,6 +33,29 @@
       "message": "fixed it on wt88047x",
       "revId": "bf50d518844761b1248028c6c253e84f45530903",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65929430_50f1ec21",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 833,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-04-24T20:49:10Z",
+      "side": 1,
+      "message": "maybe `catch (RemoteException e) { throw e.rethrowFromSystemServer(); }`; This matches src/com/android/settings/gestures/SystemNavigationGestureSettings.java.",
+      "range": {
+        "startLine": 833,
+        "startChar": 17,
+        "endLine": 833,
+        "endChar": 40
+      },
+      "revId": "bf50d518844761b1248028c6c253e84f45530903",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
