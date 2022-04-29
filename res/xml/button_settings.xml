@@ -43,6 +43,10 @@
         android:key="navigation_bar_category"
         android:title="@string/navigation_bar_category" >
 
+        <SwitchPreference
+                android:key="enable_taskbar"
+                android:title="@string/navigation_bar_enable_taskbar_title" />
+
         <lineageos.preference.LineageSystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:title="@string/navigation_bar_arrow_keys_title"
