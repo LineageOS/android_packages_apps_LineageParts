@@ -45,6 +45,8 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
+import static com.android.systemui.shared.recents.utilities.Utilities.isTablet;
+
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
@@ -106,6 +108,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_CLICK_PARTIAL_SCREENSHOT =
             "click_partial_screenshot";
     private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
+    private static final String KEY_NAV_BAR_INVERSE = "sysui_nav_bar_inverse";
+    private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -148,6 +152,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreference mTorchLongPressPowerGesture;
     private ListPreference mTorchLongPressPowerTimeout;
     private SwitchPreference mSwapCapacitiveKeys;
+    private SwitchPreference mNavBarInverse;
+    private SwitchPreference mEnableTaskbar;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -470,6 +476,17 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mSwapCapacitiveKeys.setDependency(KEY_DISABLE_NAV_KEYS);
         }
 
+        mNavBarInverse = findPreference(KEY_NAV_BAR_INVERSE);
+
+        mEnableTaskbar = findPreference(KEY_ENABLE_TASKBAR);
+        if (mEnableTaskbar != null && (!isTablet(getContext()) || !hasNavigationBar())) {
+            mNavigationPreferencesCat.removePreference(mEnableTaskbar);
+        } else {
+            mEnableTaskbar.setDefaultValue(isTablet(getContext()));
+            mEnableTaskbar.setOnPreferenceChangeListener(this);
+            toggleTaskBarDependencies(mEnableTaskbar.isChecked());
+        }
+
         // Override key actions on Go devices in order to hide any unsupported features
         if (ActivityManager.isLowRamDeviceStatic()) {
             String[] actionEntriesGo = res.getStringArray(R.array.hardware_keys_action_entries_go);
@@ -638,8 +655,37 @@ public class ButtonSettings extends SettingsPreferenceFragment
         } else if (preference == mSwapCapacitiveKeys) {
             mHardware.set(LineageHardwareManager.FEATURE_KEY_SWAP, (Boolean) newValue);
             return true;
+        } else if (preference == mEnableTaskbar) {
+            toggleTaskBarDependencies((Boolean) newValue);
+            return true;
         }
         return false;
+    }
+
+    private void toggleTaskBarDependencies(boolean enabled) {
+        if (mNavigationArrowKeys != null) {
+            mNavigationArrowKeys.setEnabled(!enabled);
+        }
+
+        if (mNavBarInverse != null) {
+            mNavBarInverse.setEnabled(!enabled);
+        }
+
+        if (mNavigationBackLongPressAction != null) {
+            mNavigationBackLongPressAction.setEnabled(!enabled);
+        }
+
+        if (mNavigationHomeLongPressAction != null) {
+            mNavigationHomeLongPressAction.setEnabled(!enabled);
+        }
+
+        if (mNavigationHomeDoubleTapAction != null) {
+            mNavigationHomeDoubleTapAction.setEnabled(!enabled);
+        }
+
+        if (mNavigationAppSwitchLongPressAction != null) {
+            mNavigationAppSwitchLongPressAction.setEnabled(!enabled);
+        }
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
