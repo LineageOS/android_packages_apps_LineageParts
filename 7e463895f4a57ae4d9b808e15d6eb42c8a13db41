@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "116885c0_282dac52",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 488,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-05-01T12:14:38Z",
+      "side": 1,
+      "message": "surround everything with this check, otherwise, if it were null, the else-branch would cause a crash due to NPE",
+      "range": {
+        "startLine": 488,
+        "startChar": 12,
+        "endLine": 488,
+        "endChar": 34
+      },
+      "revId": "7e463895f4a57ae4d9b808e15d6eb42c8a13db41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
