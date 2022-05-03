@@ -61,6 +61,7 @@ import lineageos.app.Profile;
 import lineageos.app.ProfileGroup;
 import lineageos.app.ProfileManager;
 import lineageos.profiles.AirplaneModeSettings;
+import lineageos.profiles.AutobrightnessSettings;
 import lineageos.profiles.BrightnessSettings;
 import lineageos.profiles.ConnectionSettings;
 import lineageos.profiles.LockSettings;
@@ -72,6 +73,7 @@ import org.lineageos.lineageparts.PartsActivity;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.profiles.actions.ItemListAdapter;
 import org.lineageos.lineageparts.profiles.actions.item.AirplaneModeItem;
+import org.lineageos.lineageparts.profiles.actions.item.AutobrightnessItem;
 import org.lineageos.lineageparts.profiles.actions.item.BrightnessItem;
 import org.lineageos.lineageparts.profiles.actions.item.ConnectionOverrideItem;
 import org.lineageos.lineageparts.profiles.actions.item.DisabledItem;
@@ -124,6 +126,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
     private static final int DIALOG_NOTIFICATION_LIGHT_MODE = 11;
 
+    private static final int DIALOG_AUTOBRIGHTNESS = 12;
+    
     private int mLastSelectedPosition = -1;
     private Item mSelectedItem;
 
@@ -249,6 +253,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             mItems.add(new DisabledItem(R.string.profile_lockmode_title,
                     R.string.profile_lockmode_policy_disabled_summary));
         }
+        mItems.add(new AutobrightnessItem(mProfile.getAutobrightness()));
         mItems.add(new BrightnessItem(mProfile.getBrightness()));
 
         if (DeviceUtils.isDozeAvailable(context)) {
@@ -474,6 +479,12 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         // lock screen mode
         // populated only from profiles, so we can read the current profile,
         // but let's skip this one
+        
+        // autobrightness
+        boolean autobrightness = Settings.System.getInt(context.getContentResolver(),
+                Settings.System.SCREEN_BRIGHTNESS_MODE,
+                Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL) != 0;
+        profile.setAutobrightness(new AutobrightnessSettings(autobrightness ? 1 : 0, true));
     }
 
     @Override
@@ -485,6 +496,9 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             case DIALOG_AIRPLANE_MODE:
                 return requestAirplaneModeDialog(((AirplaneModeItem) mSelectedItem).getSettings());
 
+            case DIALOG_AUTOBRIGHTNESS:
+                return requestAutobrightnessDialog(((AutobrightnessItem) mSelectedItem).getSettings());
+            
             case DIALOG_BRIGHTNESS:
                 return requestBrightnessDialog(((BrightnessItem) mSelectedItem).getSettings());
 
@@ -674,6 +688,49 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
                                 break;
                         }
                         mProfile.setAirplaneMode(setting);
+                        mAdapter.notifyDataSetChanged();
+                        updateProfile();
+                        dialog.dismiss();
+                    }
+                });
+
+        builder.setNegativeButton(android.R.string.cancel, null);
+        return builder.create();
+    }
+
+    private AlertDialog requestAutobrightnessDialog(final AutobrightnessSettings setting) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final String[] connectionNames =
+                getResources().getStringArray(R.array.profile_action_generic_connection_entries);
+
+        int defaultIndex = 0; // no action
+        if (setting.isOverride()) {
+            if (setting.getValue() == 1) {
+                defaultIndex = 2; // enabled
+            } else {
+                defaultIndex = 1; // disabled
+            }
+        }
+
+        builder.setTitle(R.string.profile_autobrightness_title);
+        builder.setSingleChoiceItems(connectionNames, defaultIndex,
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int item) {
+                        switch (item) {
+                            case 0: // disable override
+                                setting.setOverride(false);
+                                break;
+                            case 1: // enable override, disable
+                                setting.setOverride(true);
+                                setting.setValue(0);
+                                break;
+                            case 2: // enable override, enable
+                                setting.setOverride(true);
+                                setting.setValue(1);
+                                break;
+                        }
+                        mProfile.setAutobrightness(setting);
                         mAdapter.notifyDataSetChanged();
                         updateProfile();
                         dialog.dismiss();
@@ -973,6 +1030,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         if (item instanceof AirplaneModeItem) {
             showDialog(DIALOG_AIRPLANE_MODE);
+        } else if (item instanceof AutobrightnessItem) {
+            showDialog(DIALOG_AUTOBRIGHTNESS);
         } else if (item instanceof BrightnessItem) {
             showDialog(DIALOG_BRIGHTNESS);
         } else if (item instanceof LockModeItem) {
