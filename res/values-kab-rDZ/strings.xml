@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright (C) 2015 The CyanogenMod Project
+	              2017-2022 The LineageOS Project
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="pulse_length_normal">Amagnu</string>
+    <string name="pulse_length_long">Aɣezfan</string>
+    <string name="pulse_length_very_long">Aɣezfan aṭas</string>
+    <string name="pulse_speed_very_fast">Rured aṭas</string>
+    <string name="pulse_speed_fast">Arurad</string>
+    <string name="pulse_speed_normal">Amagnu</string>
+    <string name="pulse_speed_slow">Amaẓay</string>
+    <string name="pulse_speed_very_slow">Amaẓay aṭas</string>
+    <string name="light_brightness_normal">Amagnu</string>
+    <string name="battery_light_title">Tafat n uẓru</string>
+    <string name="battery_low_pulse_title">Sablaw ma yenɣes wazṛu</string>
+    <string name="battery_light_list_title">Initen</string>
+    <string name="battery_light_low_color_title">Aẓru qrib ad yefak</string>
+    <string name="battery_light_medium_color_title">Ittɛemmiṛ</string>
+    <string name="battery_light_full_color_title">Ittwaɛmmer s lekmal-is</string>
+    <string name="notification_light_title">Tafat n ilɣa</string>
+    <string name="notification_light_general_title">Amatu</string>
+    <string name="notification_light_advanced_title">Talqayt</string>
+    <string name="notification_light_applist_title">Isnasen</string>
+    <string name="notification_light_phonelist_title">Tiliɣri</string>
+    <string name="notification_light_use_custom">Seqdec azalen udmawanen</string>
+    <string name="notification_light_default_value">Prédéfini(e)</string>
+    <string name="notification_light_missed_call_title">Asiwel yettwazgalen</string>
+    <string name="notification_light_voicemail_title">Izen aɣectan</string>
+    <string name="notification_light_screen_on">Taftilt n tiddin n wagdil </string>
+    <string name="notification_light_zen_mode">Taftilt deg waskar \"Ur smermed ara\"</string>
+    <string name="notification_light_automagic">Fren initen s udem awurman</string>
+    <string name="notification_light_automagic_summary">Fren initen s udem awurman</string>
+    <string name="led_notification_title">Iɣewwaṛen n tafat</string>
+    <string name="led_notification_text">Tafat LED termed s iɣewwaṛen</string>
+    <string name="notification_light_no_apps_summary">I tmerniwt n usefrek s usnas,rmed \'%1$s\' u senned ɣef \'\u002b deg tafeggagt n wumuɣ</string>
+    <string name="live_display_color_temperature_title">Tifesniwin n lḥamu n yini</string>
+    <string name="live_display_color_temperature_summary">Ass:<xliff:g id="day_temperature">%1$d</xliff:g>K Deg iḍ:<xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g></string>
+    <string name="live_display_day">Ass</string>
+    <string name="live_display_night">Iḍ</string>
+    <string name="live_display_color_profile_title">Ini n umaɣnu</string>
+    <string name="live_display_color_profile_standard_title">Alugen</string>
+    <string name="live_display_color_profile_natural_title">Agaman</string>
+    <string name="live_display_color_profile_dynamic_title">Asmussan</string>
+    <string name="live_display_color_profile_cinema_title">Ssinima</string>
+    <string name="live_display_color_profile_astronomy_title">Tasnallunt</string>
+    <string name="live_display_color_profile_photography_title">Assewlef</string>
+    <string name="live_display_color_profile_basic_title">Azadur</string>
+    <string name="live_display_color_profile_reading_title">Taɣuri</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="color_red_title">Azeggaγ</string>
+    <string name="color_green_title">Adal</string>
+    <string name="color_blue_title">Azegzaw</string>
+    <string name="torch_long_press_power_timeout_2min">2 n tisdatin</string>
+    <string name="torch_long_press_power_timeout_5min">5 n tisdatin</string>
+    <string name="torch_long_press_power_timeout_10min">10 n tisdatin</string>
+    <string name="profile_menu_delete_title">KKES</string>
+    <string name="profile_action_none">Eǧǧ-it s war abeddel</string>
+    <string name="profile_action_system">Amezwer n unagraw</string>
+    <string name="profile_action_disable">Sens</string>
+    <string name="profile_action_enable">Rmed</string>
+    <string name="profile_trigger_a2dp_connect">Mara iqqen s A2DP</string>
+    <string name="profile_trigger_a2dp_disconnect">Mara d iffeɣ s tuqqna n A2DP</string>
+    <string name="profile_tabs_wifi">Wi\u2011Fi</string>
+    <string name="profile_tabs_bluetooth">Bluetooth</string>
+    <string name="profile_tabs_nfc">NFC</string>
+    <string name="profile_triggers_header">Ineddaḥen ara iremden amaɣnu agi</string>
+    <string name="profile_setup_setup_triggers_title">Amecwaṛ 1: Rnu ineddaḥen</string>
+    <string name="profile_setup_setup_triggers_title_config">Snifel ineddaḥen:<xliff:g id="profile_name">%1$s</xliff:g></string>
+    <string name="profile_setup_actions_title">Amecwaṛ 2: Sbadu tigawin</string>
+    <string name="profile_setup_actions_title_config">Ɛiwed tawila n tgawin</string>
+    <string name="no_triggers_configured">Ulac ineddaḥen ittwaswalen. Senned akken ad-ternuḍ akteṛ.</string>
+    <string name="no_triggers_configured_nfc">Senned akken ad-tsweleḍ annedaḥ NFC amaynut.</string>
+    <string name="profile_setup_actions_description">Tura swel dacu ara iḍrun ticki irmed umaɣnu</string>
+    <string name="profiles_settings_title">Imaɣnuyen n unagraw</string>
+    <string name="profile_settings_title">Amaγnu</string>
+    <string name="profile_empty_list_profiles_off">Rmed imuɣna, i-wakken ad-tsweleḍ w ad-tqedceḍ imuɣna n unagraw.</string>
+    <string name="profile_settings_summary_off">Imaɣnuyen nsan</string>
+    <string name="profile_trigger_configure">Swel annedaḥ</string>
+    <string name="profile_write_nfc_tag">Aru ɣef tegmirt NFC</string>
+    <string name="profile_write_touch_tag">Senned ɣef tegmirt akken ad-taruḍ</string>
+    <string name="profile_write_success">Tagmirt tettwaru akken iwata</string>
+    <string name="profile_write_failed">Tecceḍ tira n tegmirt!</string>
+    <string name="profile_selected">Amaɣnu ittwafernen: %1$s</string>
+    <string name="profile_nfc_text">Tira n umaɣnu ɣer tegmirt NFC Ak yeǧǧ ad-tsenndeḍ ɣef tegmirt akken ad-tferneḍ amaɣnu. Ma tsenndeḍ tikkelt-nniḍen, ad-tuɣaleḍ ar umaɣnu-ni ittwafernen uqbel.</string>
+    <string name="profile_unknown_nfc_tag">Amaɣnu arussin</string>
+    <string name="profile_select">Fren amaɣnu</string>
+    <string name="profile_remove_dialog_message">Kkes amaɣnu %1$s?</string>
+    <string name="profile_populate_profile_from_state">Ad tsewleḍ amaɣnu s yiɣewwaren imiranen n yibenk ?</string>
+    <string name="profile_menu_fill_from_state">Kter iɣewwaren imiranen n yibenk</string>
+    <string name="profile_remove_current_profile">Ur izmira ara ad-ikkes amaɣnu amiran!</string>
+    <string name="profile_app_group_item_instructions">Rnu neɣ kkes igrawen</string>
+    <string name="profile_entries_on">Irmed</string>
+    <string name="profile_entries_off">Insa</string>
+    <string name="profile_name_title">Isem</string>
+    <string name="new_profile_name">&lt;amaɣnu amaynut&gt;</string>
+    <string name="rename_dialog_title">Snifel isem</string>
+    <string name="rename_dialog_message">Sekcem isem amaynut</string>
+    <string name="rename_dialog_hint">Sekcem amaɣnu amaynut</string>
+    <string name="profile_reset_title">Ales awennez</string>
+    <string name="profile_reset_message">Ad tekkseḍ akk imaɣnuyen akked yigrawen n yisnasen yerna ad d-terreḍ tawila n lexṣas ?</string>
+    <string name="status_bar_icons_title">Tignitin n ufeggag n uddad</string>
+    <string name="status_bar_system_icons_title">Tignitin unagraw</string>
+    <string name="status_bar_clock_title">Tamrint</string>
+    <string name="status_bar_clock_position_right">Ayeffus</string>
+    <string name="status_bar_clock_position_left">Azelmad</string>
+    <string name="status_bar_clock_position_center">Alemmas</string>
+    <string name="status_bar_am_pm_info">Amasal 24-asrag irmed</string>
+    <string name="status_bar_am_pm_normal">Amagnu</string>
+    <string name="status_bar_am_pm_small">Meẓẓi</string>
+    <string name="status_bar_am_pm_hidden">Yeffer</string>
+    <string name="status_bar_battery_style_title">Aɣanib n waddad n uẓru</string>
+    <string name="status_bar_battery_style_icon_portrait">Tugna s teɣzi</string>
+    <string name="status_bar_battery_style_circle">Tawinest</string>
+    <string name="status_bar_battery_style_text">Aḍris</string>
+    <string name="status_bar_battery_percentage_title">Afmiḍi uɛemmaṛ n uẓru</string>
+    <string name="status_bar_battery_percentage_default">Yeffer</string>
+    <string name="status_bar_battery_percentage_text_inside">Deg tignit</string>
+    <string name="status_bar_battery_percentage_text_next">Rrif n tignit</string>
+    <string name="status_bar_brightness_category">Abruṛeq</string>
+    <string name="status_bar_brightness_slider_title">Taḥnaccaḍt n tafat</string>
+    <string name="status_bar_brightness_slider_auto_title">Abruṛeq awurman</string>
+    <string name="status_bar_toggle_brightness">Asenqed ubruṛeq</string>
+    <string name="network_traffic_mode_disable">Yensa</string>
+    <string name="protected_apps_manager_title">Isnasen immestnen</string>
+    <string name="contributors_cloud_fragment_title">Iwiziwen</string>
+    <string name="anonymous_statistics_title">Tiddadanin n LineageOS</string>
+    <string name="anonymous_statistics_warning_title">Awal ɣef...</string>
+    <string name="view_stats_title">Wali tidaddanin</string>
+    <string name="anonymous_learn_more">Issin ugar</string>
+    <string name="preview_id_title">Asulay asuf</string>
+    <string name="preview_device_title">Ibenk</string>
+    <string name="preview_version_title">Lqem</string>
+    <string name="preview_country_title">Tamurt</string>
+    <string name="stats_collection_title">Ajmaɛ n tidaddanin</string>
+    <string name="display_rotation_unit">tifesniwin</string>
+    <string name="display_rotation_category_title">Iskaren n tuzzya</string>
+    <string name="display_rotation_0_title">0 n tifesniwin</string>
+    <string name="display_rotation_90_title">90 n tifesniwin</string>
+    <string name="display_rotation_180_title">180 n tifesniwin</string>
+    <string name="display_rotation_270_title">270 n tifesniwin</string>
+</resources>

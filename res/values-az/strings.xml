@@ -211,6 +211,7 @@
     <string name="navigation_bar_app_switch_long_press_title">Son tətbiqlər düyməsinə uzun basma</string>
     <string name="navigation_bar_edge_long_swipe_title">Kənar boyunca sürüşdürmə hərəkəti</string>
     <string name="power_menu_title">Güc menyusu</string>
+    <string name="power_menu_items_title">Güc menyusu elementləri</string>
     <string name="power_menu_screenshot_title">Ekran şəkli</string>
     <string name="power_menu_screenshot_summary">Ekranın bir hisəsini çəkmək üçün basılı tutun</string>
     <string name="power_menu_airplane_title">Təyyarə rejimi</string>
@@ -219,6 +220,9 @@
     <string name="power_menu_bug_report_devoptions_unavailable">Tərtibatçı tənzimləmələri fəal olmadığı üçün xəta hesabatı sıradan çıxarıldı</string>
     <string name="power_menu_bug_report_unavailable_for_user">Əsas olmayan istifadəçilər üçün xəta hesabatı sıradan çıxarıldı.</string>
     <string name="power_menu_emergency_title">Fövqəladə</string>
+    <string name="power_menu_devicecontrols_title">Cihaz kontrolları</string>
+    <string name="power_menu_advanced_restart_title">Qabaqcıl yenidən başlatma</string>
+    <string name="power_menu_advanced_restart_summary">Kilid açılanda, bərpa və ya ön yükləmə rejimində yenidən başlatmaq üçün güc menyusuna seçimlər əlavə edir</string>
     <string name="camera_double_tap_power_gesture_title">Kameraya keçmək üçün güc düyməsinə iki dəfə bas</string>
     <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan kameranı tez açmaq</string>
     <string name="torch_long_press_power_gesture_title">Fənər üçün uzun basın</string>
@@ -350,6 +354,7 @@
     <string name="status_bar_clock_show_seconds_title">Saniyəni göstər</string>
     <string name="status_bar_clock_show_seconds_summary">Saat, dəqiqə, və saniyəni göstər</string>
     <string name="status_bar_clock_auto_hide_title">Avtomatik gizlət</string>
+    <string name="status_bar_clock_auto_hide_summary">Başladıcı görünsə saatı gizlət</string>
     <string name="status_bar_clock_position_title">Saat mövqeyi</string>
     <string name="status_bar_clock_position_right">Sağ</string>
     <string name="status_bar_clock_position_left">Sol</string>

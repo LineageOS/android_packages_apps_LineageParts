@@ -37,6 +37,7 @@
     <string name="disabled">Deaktiviert</string>
     <string name="enabled">Aktiviert</string>
     <string name="privacy_settings_title">Datenschutz</string>
+    <string name="channel_light_settings_name">Vorschau der LED-Einstellungen</string>
     <string name="edit_light_settings">LED-Einstellungen ändern</string>
     <string name="pulse_speed_title">Pulsdauer und Geschwindigkeit</string>
     <string name="default_time">Standard</string>
@@ -210,6 +211,7 @@
     <string name="navigation_bar_app_switch_long_press_title">Aktion für langes Drücken auf Anwendungsverlauf</string>
     <string name="navigation_bar_edge_long_swipe_title">Aktion für langes Wischen am Rand</string>
     <string name="power_menu_title">Ein-/Aus-Menü</string>
+    <string name="power_menu_items_title">Elemente des Neustartmenüs</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_screenshot_summary">Für zugeschnittenen Screenshot gedrückt halten</string>
     <string name="power_menu_airplane_title">Flugmodus</string>
@@ -218,6 +220,9 @@
     <string name="power_menu_bug_report_devoptions_unavailable">Fehlerberichte sind deaktiviert, da die Entwickleroptionen nicht aktiviert sind</string>
     <string name="power_menu_bug_report_unavailable_for_user">Fehlerberichte sind für nicht-primäre Benutzer deaktiviert.</string>
     <string name="power_menu_emergency_title">Notfall</string>
+    <string name="power_menu_devicecontrols_title">Gerätesteuerung</string>
+    <string name="power_menu_advanced_restart_title">Erweiterter Neustart</string>
+    <string name="power_menu_advanced_restart_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für Neustart in Recovery oder in Bootloader hinzufügen</string>
     <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren deines Bildschirms schnell öffnen</string>
     <string name="torch_long_press_power_gesture_title">Lange drücken für Taschenlampe</string>
@@ -349,6 +354,7 @@
     <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
     <string name="status_bar_clock_show_seconds_summary">Stunden, Minuten und Sekunden anzeigen</string>
     <string name="status_bar_clock_auto_hide_title">Automatisch ausblenden</string>
+    <string name="status_bar_clock_auto_hide_summary">Uhr auf dem Startbildschirm ausblenden</string>
     <string name="status_bar_clock_position_title">Position der Uhr</string>
     <string name="status_bar_clock_position_right">Rechts</string>
     <string name="status_bar_clock_position_left">Links</string>

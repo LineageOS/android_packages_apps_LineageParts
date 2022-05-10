@@ -219,6 +219,8 @@
     <string name="power_menu_bug_report_devoptions_unavailable">Els informes d\'errors estan desactivats ja que la configuració de desenvolupament no està activada</string>
     <string name="power_menu_bug_report_unavailable_for_user">Els informes d\'errors estan desactivats per a usuaris no principals.</string>
     <string name="power_menu_emergency_title">Emergència</string>
+    <string name="power_menu_devicecontrols_title">Controls del dispositiu</string>
+    <string name="power_menu_advanced_restart_title">Reinici avançat</string>
     <string name="camera_double_tap_power_gesture_title">Prem el botó d\'apagat dues vegades per a la càmera</string>
     <string name="camera_double_tap_power_gesture_desc">Obre la càmera ràpidament sense desbloquejar la pantalla</string>
     <string name="torch_long_press_power_gesture_title">Pulsació llarga per la torxa</string>

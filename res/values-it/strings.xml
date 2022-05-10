@@ -218,6 +218,8 @@
     <string name="power_menu_bug_report_devoptions_unavailable">La segnalazione dei bug è disattivata perché le opzioni sviluppatore non sono attive</string>
     <string name="power_menu_bug_report_unavailable_for_user">La segnalazione dei bug è disattivata per utenti non primari.</string>
     <string name="power_menu_emergency_title">Emergenza</string>
+    <string name="power_menu_advanced_restart_title">Riavvio avanzato</string>
+    <string name="power_menu_advanced_restart_summary">Quando il dispositivo è sbloccato, mostra nel menù di accensione le opzioni per il riavvio in recovery o nel bootloader</string>
     <string name="camera_double_tap_power_gesture_title">Premi due volte il tasto di accensione per avviare la fotocamera</string>
     <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>
     <string name="torch_long_press_power_gesture_title">Premi a lungo per la torcia</string>
@@ -349,6 +351,7 @@
     <string name="status_bar_clock_show_seconds_title">Mostra secondi</string>
     <string name="status_bar_clock_show_seconds_summary">Mostra ore, minuti e secondi</string>
     <string name="status_bar_clock_auto_hide_title">Nascondi automaticamente</string>
+    <string name="status_bar_clock_auto_hide_summary">Nascondi l\'orologio se il launcher è visibile</string>
     <string name="status_bar_clock_position_title">Posizione orologio</string>
     <string name="status_bar_clock_position_right">Destra</string>
     <string name="status_bar_clock_position_left">Sinistra</string>

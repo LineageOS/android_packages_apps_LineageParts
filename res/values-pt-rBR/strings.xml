@@ -208,6 +208,7 @@
     <string name="power_menu_users_title">Alternador de usuário</string>
     <string name="power_menu_bug_report_title">Relatório de erros</string>
     <string name="power_menu_emergency_title">Emergência</string>
+    <string name="power_menu_devicecontrols_title">Controles do dispositivo</string>
     <string name="camera_double_tap_power_gesture_title">Pressione o botão ligar/desligar duas vezes para iniciar a câmara</string>
     <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmera sem desbloquear a tela</string>
     <string name="torch_long_press_power_gesture_title">Manter pressionado para ligar a lanterna</string>
@@ -240,6 +241,8 @@
     <string name="no_triggers_configured_nfc">Toque para configurar um novo gatilho NFC.</string>
     <string name="profile_setup_actions_description">Agora configure o que acontece quando o perfil é ativado</string>
     <string name="profiles_settings_title">Perfis de sistema</string>
+    <string name="profiles_settings_enable_title">Ativar perfis</string>
+    <string name="profiles_create_new">Criar novo perfil</string>
     <string name="profile_settings_title">Perfil</string>
     <string name="profile_empty_list_profiles_off">Para configurar e usar perfis de sistema, ative os perfis.</string>
     <string name="profile_settings_summary_off">Perfis desativados</string>
@@ -416,6 +419,7 @@
     <string name="long_screen_settings_summary">Forçar os aplicativos preexistentes a utilizarem a proporção em tela cheia</string>
     <string name="long_screen_settings_no_apps">Nenhum aplicativo</string>
     <string name="charging_sounds_settings_title">Sons de carregamento</string>
+    <string name="charging_sounds_enable_title">Ativar sons de carregamento</string>
     <string name="charging_sounds_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
     <string name="power_notifications_vibrate_title">Vibrar</string>
     <string name="charging_sounds_ringtone_silent">Silencioso</string>
