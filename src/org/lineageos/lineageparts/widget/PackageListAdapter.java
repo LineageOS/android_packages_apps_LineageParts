@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012-2014 The CyanogenMod Project
+ *               2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,14 +36,17 @@ import android.widget.TextView;
 import org.lineageos.lineageparts.R;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class PackageListAdapter extends BaseAdapter implements Runnable {
     private PackageManager mPm;
     private LayoutInflater mInflater;
     private List<PackageItem> mInstalledPackages = new LinkedList<PackageItem>();
+    private Set<String> mExcludedPackages = new HashSet<>();
 
     // Packages which don't have launcher icons, but which we want to show nevertheless
     private static final String[] PACKAGE_WHITELIST = new String[] {
@@ -160,6 +164,10 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
 
         for (ResolveInfo info : installedAppsInfo) {
             ApplicationInfo appInfo = info.activityInfo.applicationInfo;
+            if (mExcludedPackages.contains(appInfo.packageName)) {
+                continue;
+            }
+
             final PackageItem item = new PackageItem(appInfo.packageName,
                     appInfo.loadLabel(mPm), appInfo.loadIcon(mPm));
             item.activityTitles.add(info.loadLabel(mPm));
@@ -167,6 +175,9 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
         }
 
         for (String packageName : PACKAGE_WHITELIST) {
+            if (mExcludedPackages.contains(packageName)) {
+                continue;
+            }
             try {
                 ApplicationInfo appInfo = mPm.getApplicationInfo(packageName, 0);
                 final PackageItem item = new PackageItem(appInfo.packageName,
@@ -176,6 +187,11 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
                 // package not present, so nothing to add -> ignore it
             }
         }
+    }
+
+    public void setExcludedPackages(HashSet<String> packages) {
+        mExcludedPackages = packages;
+        reloadList();
     }
 
     private static class ViewHolder {
