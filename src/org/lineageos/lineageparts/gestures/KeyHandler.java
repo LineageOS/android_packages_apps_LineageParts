@@ -189,7 +189,7 @@ public class KeyHandler implements DeviceKeyHandler {
                     return;
                 }
                 mEventHandler.removeMessages(GESTURE_REQUEST);
-                if (event.values[0] == mProximitySensor.getMaximumRange()) {
+                if (event.values[0] >= mProximitySensor.getMaximumRange()) {
                     Message msg = getMessageForAction(action);
                     mEventHandler.sendMessage(msg);
                 }
