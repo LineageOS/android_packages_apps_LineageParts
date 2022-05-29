@@ -2,7 +2,7 @@
 <!--
 /**
  * Copyright 2016, The CyanogenMod Project
- * Copyright 2017-2021, The LineageOS Project
+ * Copyright 2017-2022, The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -265,7 +265,7 @@
             android:excludeFromRecents="true"/>
 
         <activity android:name=".logo.PlatLogoActivity"
-                android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
+                android:theme="@style/EggStyle"
                 android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -274,7 +274,7 @@
         </activity>
 
         <activity android:name=".egg.octo.Ocquarium"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:theme="@style/EggStyle"
             android:label="@string/egg_title">
             <intent-filter>
                 <action android:name="org.lineageos.lineageparts.EASTER_EGG"/>
