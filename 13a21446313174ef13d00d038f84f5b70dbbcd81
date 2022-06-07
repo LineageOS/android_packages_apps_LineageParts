@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "081350f3_048c5ff7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-07T22:53:22Z",
+      "side": 1,
+      "message": "You are not taking into account PACKAGE_WHITELIST.",
+      "revId": "13a21446313174ef13d00d038f84f5b70dbbcd81",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
