@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e30464a4_aea9ae17",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-07T22:42:26Z",
+      "side": 1,
+      "message": "Is it me or notification_light_add_apps_empty_summary is never shown?\n\nAnyways, I am not sold to this new UI change. Not sure if it\u0027s a real improvement. It feels strange to have the \"Add\" button as a preference.",
+      "revId": "4b043e964d3b09ca75e47322cebbe0fa576ad609",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
