@@ -16,6 +16,23 @@
       "message": "bump?",
       "revId": "18fa5a6c49c7550a2e97b9b8c0c2782756477d7d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b2f85a3_e0899efc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-10T14:23:34Z",
+      "side": 1,
+      "message": "merge?",
+      "revId": "18fa5a6c49c7550a2e97b9b8c0c2782756477d7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
