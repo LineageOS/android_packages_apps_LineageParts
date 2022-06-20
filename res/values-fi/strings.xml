@@ -501,7 +501,6 @@
     <string name="trust_onboarding_learn_more">Lue lisää</string>
     <string name="trust_onboarding_done">Selvä</string>
     <string name="trust_restrict_usb_title">Rajoita USB</string>
-    <string name="trust_restrict_usb_summary">Poista uudet USB-laitteet käytöstä kun laite on lukittu</string>
     <string name="sms_security_check_limit_title">Tekstiviestiraja</string>
     <string name="sms_security_check_limit_summary">Sovellukset voivat lähettää %s viestiä 1 minuutissa ennenkuin vahvistus vaaditaan</string>
     <string name="sms_security_check_limit_summary_none">Sovellukset eivät saa lähettää tekstiviestiä ilman vahvistusta</string>

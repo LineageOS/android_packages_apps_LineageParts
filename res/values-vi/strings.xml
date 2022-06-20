@@ -513,7 +513,6 @@
     <string name="trust_onboarding_learn_more">Tìm hiểu thêm</string>
     <string name="trust_onboarding_done">Đã hiểu</string>
     <string name="trust_restrict_usb_title">Hạn chế USB</string>
-    <string name="trust_restrict_usb_summary">Vô hiệu hóa các tiện ích USB mới khi thiết bị bị khóa</string>
     <string name="sms_security_check_limit_title">Giới hạn tin nhắn SMS</string>
     <string name="sms_security_check_limit_summary">Ứng dụng có thể gửi tin nhắn %s trong 1 phút trước khi yêu cầu xác nhận</string>
     <string name="sms_security_check_limit_summary_none">Ứng dụng không được phép gửi bất kỳ tin nhắn nào mà không được xác nhận</string>

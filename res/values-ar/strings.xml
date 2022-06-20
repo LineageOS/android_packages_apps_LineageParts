@@ -502,7 +502,6 @@
     <string name="trust_onboarding_learn_more">معرفة المزيد</string>
     <string name="trust_onboarding_done">فهمت ذلك</string>
     <string name="trust_restrict_usb_title">تقييد USB</string>
-    <string name="trust_restrict_usb_summary">تعطيل أدوات USB الجديدة عندما يكون الجهاز مقفلاً</string>
     <string name="sms_security_check_limit_title">حد رسالة SMS</string>
     <string name="sms_security_check_limit_summary">التطبيقات يمكنها إرسال %s رسائل في 1 دقيقة قبل ان تتطلب التأكيد</string>
     <string name="sms_security_check_limit_summary_none">لا يُسمح للتطبيقات بإرسال أيّة رسائل دون إذن</string>

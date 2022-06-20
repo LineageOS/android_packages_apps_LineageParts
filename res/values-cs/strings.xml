@@ -504,7 +504,6 @@
     <string name="trust_onboarding_learn_more">Dozvědět se více</string>
     <string name="trust_onboarding_done">Chápu</string>
     <string name="trust_restrict_usb_title">Omezit USB</string>
-    <string name="trust_restrict_usb_summary">V případě zamčeného přístroje zakázat nové USB zařízení</string>
     <string name="sms_security_check_limit_title">Limit SMS zpráv</string>
     <string name="sms_security_check_limit_summary">Aplikace může poslat %s zpráv za 1 minutu před tím, než bude vyžádáno potvrzení</string>
     <string name="sms_security_check_limit_summary_none">Aplikacím není umožněno bez předchozího potvrzení zasílat jakékoliv zprávy</string>

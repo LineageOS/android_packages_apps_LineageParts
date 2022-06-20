@@ -513,7 +513,6 @@
     <string name="trust_onboarding_learn_more">Dysgu mwy</string>
     <string name="trust_onboarding_done">Deall yn iawn</string>
     <string name="trust_restrict_usb_title">Cyfyngu USB</string>
-    <string name="trust_restrict_usb_summary">Analluogi teclynnau USB newydd pan fo\'r ddyfais wedi\'i chloi</string>
     <string name="sms_security_check_limit_title">Cyfyngiad negeseuon SMS</string>
     <string name="sms_security_check_limit_summary">Gall apiau anfon hyd at %s neges o fewn 1 munud cyn bod angen cadarnhad.</string>
     <string name="sms_security_check_limit_summary_none">Ni chaiff apiau anfon unrhyw negeseuon heb gael cadarnhad</string>

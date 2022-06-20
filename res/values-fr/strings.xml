@@ -504,7 +504,6 @@
     <string name="trust_onboarding_learn_more">En savoir plus</string>
     <string name="trust_onboarding_done">OK</string>
     <string name="trust_restrict_usb_title">Restreindre l’USB</string>
-    <string name="trust_restrict_usb_summary">Désactiver les nouveaux périphériques USB lorsque l\'appareil est verrouillé</string>
     <string name="sms_security_check_limit_title">Limiter l\'émission de SMS</string>
     <string name="sms_security_check_limit_summary">Les applications peuvent envoyer %s messages en une minute avant qu\'une confirmation ne soit requise</string>
     <string name="sms_security_check_limit_summary_none">Les applications ne sont pas autorisées à envoyer de messages sans confirmation</string>

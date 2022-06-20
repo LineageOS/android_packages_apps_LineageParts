@@ -515,7 +515,6 @@
     <string name="trust_onboarding_learn_more">Barrachd fiosrachaidh</string>
     <string name="trust_onboarding_done">Tha mi agaibh</string>
     <string name="trust_restrict_usb_title">Cuingich USB</string>
-    <string name="trust_restrict_usb_summary">Cuir uidheaman USB ùra à comas nuair a bhios an t-uidheam glaiste</string>
     <string name="sms_security_check_limit_title">Crìoch nan teachdaireachdan SMS</string>
     <string name="sms_security_check_limit_summary">Faodaidh aplacaidean %s teachdaireachd(an) a chur am broinn mionaid mus dèid dearbhadh iarraidh orra</string>
     <string name="sms_security_check_limit_summary_none">Chan fhaod aplacaidean teachdaireachd sam bith a chur gun dearbhadh</string>

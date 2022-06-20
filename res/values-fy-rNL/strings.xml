@@ -479,7 +479,6 @@
     <string name="trust_onboarding_learn_more">Mear ynfo</string>
     <string name="trust_onboarding_done">Ik begryp it</string>
     <string name="trust_restrict_usb_title">USB beheine</string>
-    <string name="trust_restrict_usb_summary">Skeakelje nije USB-gadgets út wannear it apparaat beskoattele is</string>
     <string name="sms_security_check_limit_title">sms-berjochtenlimyt</string>
     <string name="sms_security_check_limit_summary">Apps kinne binnen 1 minút %s berjochten sûnder befêstiging ferstjoere</string>
     <string name="sms_security_check_limit_summary_none">Apps meie gjin berjochten sûnder befêstiging ferstjoere</string>

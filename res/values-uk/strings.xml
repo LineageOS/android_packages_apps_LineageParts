@@ -455,7 +455,6 @@
     <string name="trust_onboarding_learn_more">Докладніше</string>
     <string name="trust_onboarding_done">Зрозуміло</string>
     <string name="trust_restrict_usb_title">Обмежити USB</string>
-    <string name="trust_restrict_usb_summary">Не вмикати нові USB-пристрої, коли пристрій заблоковано</string>
     <string name="sms_security_check_limit_title">Обмеження SMS-повідомлень</string>
     <string name="sms_security_check_limit_always_confirm">Завжди підтверджувати</string>
 </resources>

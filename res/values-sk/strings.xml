@@ -504,7 +504,6 @@
     <string name="trust_onboarding_learn_more">Zistiť viac</string>
     <string name="trust_onboarding_done">Chápem</string>
     <string name="trust_restrict_usb_title">Obmedziť USB</string>
-    <string name="trust_restrict_usb_summary">Nepovoliť nové USB zariadenia ak je telefón uzamknutý</string>
     <string name="sms_security_check_limit_title">Obmedzenie správ SMS</string>
     <string name="sms_security_check_limit_summary">Aplikácie môžu odoslať len %s správ za minút, pred vyžiadaním potvrdenia</string>
     <string name="sms_security_check_limit_summary_none">Aplikácie nemajú povolené odosielanie žiadnych správ bez potvrdenia</string>

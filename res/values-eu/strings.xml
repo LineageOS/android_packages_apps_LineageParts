@@ -474,7 +474,6 @@ Informazio hau gailuaren abio bakoitzean bidaltzen da.\n\nBidalitako informazioa
     <string name="trust_onboarding_learn_more">Ikasi gehiago</string>
     <string name="trust_onboarding_done">Ulertu dut</string>
     <string name="trust_restrict_usb_title">Murriztu USB</string>
-    <string name="trust_restrict_usb_summary">Desgaitu USB gailu berriak gailua blokeatuta dagoenean</string>
     <string name="sms_security_check_limit_title">SMS mezuen muga</string>
     <string name="sms_security_check_limit_summary">Aplikazioek %s mezu bidali ditzakete minutu batean berrespena eskatu aurretik</string>
     <string name="sms_security_check_limit_summary_none">Aplikazioek ezin dute mezurik bidali berrespenik gabe</string>

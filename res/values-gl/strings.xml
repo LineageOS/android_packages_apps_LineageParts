@@ -513,7 +513,6 @@
     <string name="trust_onboarding_learn_more">Saber máis</string>
     <string name="trust_onboarding_done">Entendo</string>
     <string name="trust_restrict_usb_title">Restrinxir o USB</string>
-    <string name="trust_restrict_usb_summary">Desactivar novos trebellos USB cando o dispositivo está bloqueado</string>
     <string name="sms_security_check_limit_title">Límite de mensaxes SMS</string>
     <string name="sms_security_check_limit_summary">As aplicacións poden enviar %s mensaxes durante 1 minuto antes de pedir confirmación</string>
     <string name="sms_security_check_limit_summary_none">As aplicacións non teñen permiso para enviar ningunha mensaxe sen confirmación</string>

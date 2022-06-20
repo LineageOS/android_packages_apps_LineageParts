@@ -18,5 +18,4 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="network_traffic_disabled_clock">Tráfico de red desactivado debido a la posición del reloj</string>
     <string name="trust_restrict_usb_title">Restringir USB</string>
-    <string name="trust_restrict_usb_summary">Desactivar nuevos dispositivos USB cuando el dispositivo esté bloqueado</string>
 </resources>

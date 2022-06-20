@@ -200,6 +200,7 @@
     <string name="swap_capacitive_keys_title">Swap capacitive buttons</string>
     <string name="swap_capacitive_keys_summary">Swap the order of recents and back buttons</string>
     <string name="navigation_bar_category">Navigation bar</string>
+    <string name="navigation_bar_enable_taskbar_title">Enable taskbar</string>
     <string name="navigation_bar_invert_layout_title">Invert layout</string>
     <string name="navigation_bar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
@@ -520,7 +521,10 @@
     <string name="trust_onboarding_learn_more">Learn more</string>
     <string name="trust_onboarding_done">Got it</string>
     <string name="trust_restrict_usb_title">Restrict USB</string>
-    <string name="trust_restrict_usb_summary">Disable new USB gadgets when the device is locked</string>
+    <string name="trust_restrict_usb_summary">Control support for USB connections such as earphones, storage devices, input (mice, keyboards, joysticks) and ADB</string>
+    <string name="trust_restrict_usb_always">Deny USB connections</string>
+    <string name="trust_restrict_usb_keyguard">Allow USB connections when unlocked</string>
+    <string name="trust_restrict_usb_disabled">Always allow USB connections</string>
     <string name="sms_security_check_limit_title">SMS message limit</string>
     <string name="sms_security_check_limit_summary">Apps can send %s messages in 1 minute before requiring confirmation</string>
     <string name="sms_security_check_limit_summary_none">Apps are not allowed to send any messages without confirmation</string>

@@ -197,6 +197,7 @@
     <string name="swap_capacitive_keys_title">Vaheta puutetundlikud nupud</string>
     <string name="swap_capacitive_keys_summary">Vaheta omavahel hiljutiste ja tagasinupp</string>
     <string name="navigation_bar_category">Navigeerimisriba</string>
+    <string name="navigation_bar_enable_taskbar_title">Luba tegumiriba</string>
     <string name="navigation_bar_invert_layout_title">Pööra paigutus</string>
     <string name="navigation_bar_invert_layout_summary">Pöörab navigeerimisriba ja muid üksusi, näiteks IME-lülitit</string>
     <string name="navigation_bar_left_summary">Aseta navigeerimisriba vasakule, kui ekraan on rõhtasendis</string>
@@ -505,7 +506,6 @@ andmete eelvaade.</string>
     <string name="trust_onboarding_learn_more">Lisateave</string>
     <string name="trust_onboarding_done">Sain aru</string>
     <string name="trust_restrict_usb_title">Piira USB-d</string>
-    <string name="trust_restrict_usb_summary">Keela uued USB-seadmed, kui seade on lukus</string>
     <string name="sms_security_check_limit_title">SMS-sõnumite limiit</string>
     <string name="sms_security_check_limit_summary">Rakendused saavad 1 minuti jooksul saata %s sõnumit, enne kui vajavad kinnitust</string>
     <string name="sms_security_check_limit_summary_none">Rakendused ei tohi saata ühtegi sõnumit ilma kinnituseta</string>

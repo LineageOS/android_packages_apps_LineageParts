@@ -491,7 +491,6 @@
     <string name="trust_onboarding_learn_more">เรียนรู้เพิ่มเติม</string>
     <string name="trust_onboarding_done">เข้าใจแล้ว</string>
     <string name="trust_restrict_usb_title">จำกัด USB</string>
-    <string name="trust_restrict_usb_summary">ปิดการใช้งานอุปกรณ์ USB ใหม่เมื่ออุปกรณ์ถูกล็อค</string>
     <string name="sms_security_check_limit_title">ขีดจำกัดข้อความสูงสุด</string>
     <string name="sms_security_check_limit_summary">แอปสามารถส่ง %s ข้อความ ในเวลา 1 นาที ก่อนที่จะต้องการการยืนยัน</string>
     <string name="sms_security_check_limit_summary_none">แอปจะไม่สามารถส่งข้อความโดยไม่ได้รับการยืนยัน</string>

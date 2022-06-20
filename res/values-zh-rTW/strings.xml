@@ -502,7 +502,6 @@
     <string name="trust_onboarding_learn_more">瞭解更多</string>
     <string name="trust_onboarding_done">明白了</string>
     <string name="trust_restrict_usb_title">限制 USB</string>
-    <string name="trust_restrict_usb_summary">當裝置被鎖定時，停用新的 USB 裝置</string>
     <string name="sms_security_check_limit_title">簡訊訊息限制</string>
     <string name="sms_security_check_limit_summary">在使用者認可之前，應用程式在 1 分鐘內只能傳送 %s 則訊息</string>
     <string name="sms_security_check_limit_summary_none">未經確認的應用程式不允許傳送任何訊息</string>

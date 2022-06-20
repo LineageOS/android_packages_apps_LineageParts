@@ -467,7 +467,6 @@
     <string name="trust_onboarding_learn_more">ಇನ್ನಷ್ಟು ಕಲಿ</string>
     <string name="trust_onboarding_done">ಸಿಕ್ಕಿತು</string>
     <string name="trust_restrict_usb_title">USB ನಿರ್ಬಂಧಿಸು</string>
-    <string name="trust_restrict_usb_summary">ಸಾಧನ ಬಂಧಿತವಾದಾಗ ಹೊಸ USB ನಲ್ಚೂಟಿಗಳನ್ನು ಅಶಕ್ತಿಸು</string>
     <string name="sms_security_check_limit_title">SMS ಸಂದೇಶ ಮಿತಿ</string>
     <string name="sms_security_check_limit_summary">೧ ನಿಮಿಷದಲ್ಲಿ ಆಪ್ಗಳು %s ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಬಹುದು, ನಂತರ ದೃಢೀಕರಣದ ಅಗತ್ಯವಿದೆ</string>
     <string name="sms_security_check_limit_summary_none">ದೃಢೀಕರಣವಿಲ್ಲದೆ ಆಪ್ಗಳು ಯಾವುದೇ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸುವಂತಿಲ್ಲ</string>

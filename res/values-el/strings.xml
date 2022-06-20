@@ -523,7 +523,10 @@
     <string name="trust_onboarding_learn_more">Μάθετε περισσότερα</string>
     <string name="trust_onboarding_done">Το έπιασα</string>
     <string name="trust_restrict_usb_title">Περιορισμός USB</string>
-    <string name="trust_restrict_usb_summary">Απενεργοποίηση εντοπισμού νέων συσκευών USB όταν η συσκευή είναι κλειδωμένη</string>
+    <string name="trust_restrict_usb_summary">Έλεγχος υποστήριξης για συνδέσεις USB, όπως ακουστικά, συσκευές αποθήκευσης, εισόδου (ποντίκια, πληκτρολόγια, χειριστήρια) και ADB</string>
+    <string name="trust_restrict_usb_always">Να μην επιτρέπονται συνδέσεις USB</string>
+    <string name="trust_restrict_usb_keyguard">Να επιτρέπονται συνδέσεις USB όταν η συσκευή είναι ξεκλειδωμένη</string>
+    <string name="trust_restrict_usb_disabled">Να επιτρέπονται πάντα συνδέσεις USB</string>
     <string name="sms_security_check_limit_title">Όριο μηνυμάτων SMS</string>
     <string name="sms_security_check_limit_summary">Οι εφαρμογές μπορούν να στείλουν %s μηνύματα μέσα σε 1 λεπτό πριν χρειαστούν επιβεβαίωση</string>
     <string name="sms_security_check_limit_summary_none">Οι εφαρμογές μπορούν να στείλουν απεριόριστα μηνύματα χωρίς επιβεβαίωση</string>

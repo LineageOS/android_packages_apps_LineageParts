@@ -513,7 +513,6 @@
     <string name="trust_onboarding_learn_more">Научете повече</string>
     <string name="trust_onboarding_done">Разбрано</string>
     <string name="trust_restrict_usb_title">Забраняване на USB</string>
-    <string name="trust_restrict_usb_summary">Забрани нови USB джаджи, когато устройството е заключено</string>
     <string name="sms_security_check_limit_title">Лимит на SMS съобщения</string>
     <string name="sms_security_check_limit_summary">Приложенията могат да изпращат до %s съобщения за 1 минута преди да поискат потвърждение</string>
     <string name="sms_security_check_limit_summary_none">Приложенията не могат да изпращат съобщения, без потвърждение</string>

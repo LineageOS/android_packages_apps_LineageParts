@@ -520,7 +520,6 @@
     <string name="trust_onboarding_learn_more">Daha fazla bilgi</string>
     <string name="trust_onboarding_done">Anladım</string>
     <string name="trust_restrict_usb_title">USB\'yi kısıtla</string>
-    <string name="trust_restrict_usb_summary">Cihaz kilitlendiğinde yeni USB aygıtlarını devre dışı bırak</string>
     <string name="sms_security_check_limit_title">SMS mesaj limiti</string>
     <string name="sms_security_check_limit_summary">Uygulamalar onay gerektirmeden önce %s mesajını 1 dakika içinde gönderebilir</string>
     <string name="sms_security_check_limit_summary_none">Uygulamaların onay almadan mesaj göndermesine izin verilmez</string>

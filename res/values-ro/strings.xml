@@ -521,7 +521,10 @@
     <string name="trust_onboarding_learn_more">Aflați mai multe</string>
     <string name="trust_onboarding_done">Am înțeles</string>
     <string name="trust_restrict_usb_title">Restricționare USB</string>
-    <string name="trust_restrict_usb_summary">Dezactivează noile gadget-uri USB atunci când dispozitivul este blocat</string>
+    <string name="trust_restrict_usb_summary">Controlează suportul pentru conexiunile USB, cum ar fi căștile, dispozitivele de stocare, intrare (mouse-uri, tastaturi, joystick-uri) și ADB</string>
+    <string name="trust_restrict_usb_always">Interzice conexiunile USB</string>
+    <string name="trust_restrict_usb_keyguard">Permite conexiunile USB când telefonul este deblocat</string>
+    <string name="trust_restrict_usb_disabled">Permiteţi întotdeauna conexiunile USB</string>
     <string name="sms_security_check_limit_title">Limită mesaje SMS</string>
     <string name="sms_security_check_limit_summary">Aplicațiile pot trimite %s mesaje într-un minut înainte de a fi necesară confirmarea</string>
     <string name="sms_security_check_limit_summary_none">Aplicațiilor nu li se permite să poată trimite vreun mesaj decât cu confirmare</string>

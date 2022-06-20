@@ -37,6 +37,7 @@
     <string name="disabled">Deaktiveret</string>
     <string name="enabled">Aktiveret</string>
     <string name="privacy_settings_title">Privatliv</string>
+    <string name="channel_light_settings_name">Eksempel på lysindstillinger</string>
     <string name="edit_light_settings">Rediger LED-indstillinger</string>
     <string name="pulse_speed_title">Blinklængde og hastighed</string>
     <string name="default_time">Normal</string>
@@ -59,6 +60,7 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Forstyr ikke</string>
     <string name="battery_light_title">Batteri-LED</string>
+    <string name="battery_light_enable_title">Aktivér batterilys</string>
     <string name="battery_low_pulse_title">Blink ved lavt batteriniveau</string>
     <string name="battery_light_full_charge_disabled_title">Slå fra, når fuldt opladet</string>
     <string name="battery_light_list_title">Farver</string>
@@ -66,6 +68,7 @@
     <string name="battery_light_medium_color_title">Oplader</string>
     <string name="battery_light_full_color_title">Fuldt opladt</string>
     <string name="notification_light_title">Underretningslys</string>
+    <string name="notification_light_enable_title">Aktiver notifikationslys</string>
     <string name="notification_light_general_title">Generelt</string>
     <string name="notification_light_advanced_title">Avanceret</string>
     <string name="notification_light_applist_title">Apps</string>
@@ -91,6 +94,7 @@
     <string name="live_display_night">Nat</string>
     <string name="live_display_outdoor_mode_title">Automatisk udendørstilstand</string>
     <string name="live_display_outdoor_mode_summary">Forøg lysstyrke og farvemætning automatisk, under stærkt sollys</string>
+    <string name="live_display_anti_flicker_title">Anti flimmer</string>
     <string name="live_display_low_power_title">Reducér strømforbruget</string>
     <string name="live_display_low_power_summary">Justér skærmen til laveste strømforbrug uden forringelse</string>
     <string name="live_display_enhance_color_title">Forbedr farver</string>
@@ -186,6 +190,7 @@
     <string name="disable_navkeys_title">Aktivér navigationsbjælke på skærm</string>
     <string name="disable_navkeys_summary">Aktivér navigationsbjælke på skærm og deaktivér fysiske knapper</string>
     <string name="navigation_bar_category">Navigationsbjælke</string>
+    <string name="navigation_bar_enable_taskbar_title">Aktiver opgavelinje</string>
     <string name="navigation_bar_left_summary">Placér navigationsbjælken på venstre side af skærmen, i liggende tilstand</string>
     <string name="navigation_bar_arrow_keys_title">Vis piletaster, imens du taster</string>
     <string name="navigation_bar_arrow_keys_summary">Vis venstre og højre piletaster, imens du skriver. Tilsidesætter IME-skifter.</string>
@@ -193,10 +198,14 @@
     <string name="navigation_bar_home_double_tap_title">Hjem dobbelt-tryk handling</string>
     <string name="navigation_bar_app_switch_long_press_title">Seneste langt tryk-handling</string>
     <string name="power_menu_title">Tænd/sluk-menu</string>
+    <string name="power_menu_items_title">Power menu genstande</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_airplane_title">Flytilstand</string>
     <string name="power_menu_users_title">Brugerskifter</string>
     <string name="power_menu_bug_report_title">Fejlrapport</string>
+    <string name="power_menu_devicecontrols_title">Enhedsstyring</string>
+    <string name="power_menu_advanced_restart_title">Avanceret genstart</string>
+    <string name="power_menu_advanced_restart_summary">Når oplåst, vis muligheder i tænd-/slukmenuen for at genstarte til recovery eller bootloader</string>
     <string name="camera_double_tap_power_gesture_title">Tryk på strømknappen to gange for at starte kameraet</string>
     <string name="camera_double_tap_power_gesture_desc">Åbn kameraet hurtigt uden at låse din skærm op</string>
     <string name="torch_long_press_power_gesture_title">Langt tryk for lommelygte</string>
@@ -229,6 +238,8 @@
     <string name="no_triggers_configured_nfc">Tryk for at konfigurere en ny NFC-udløser.</string>
     <string name="profile_setup_actions_description">Nu skal du konfigurere, hvad der sker, når profilen er aktiveret</string>
     <string name="profiles_settings_title">Systemprofiler</string>
+    <string name="profiles_settings_enable_title">Aktiver profiler</string>
+    <string name="profiles_create_new">Opret ny profil</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">For at konfigurere og bruge System-profiler, skal du slå Profiler til.</string>
     <string name="profile_settings_summary_off">Profiler deaktiveret</string>
@@ -325,6 +336,7 @@
     <string name="status_bar_clock_show_seconds_title">Vis sekunder</string>
     <string name="status_bar_clock_show_seconds_summary">Vis timer, minutter og sekunder</string>
     <string name="status_bar_clock_auto_hide_title">Skjul automatisk</string>
+    <string name="status_bar_clock_auto_hide_summary">Skjul ur hvis hjemmeskærm er synlig</string>
     <string name="status_bar_clock_position_title">Ur-position</string>
     <string name="status_bar_clock_position_right">Højre</string>
     <string name="status_bar_clock_position_left">Venstre</string>
@@ -402,6 +414,7 @@
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
     <string name="charging_sounds_settings_title">Opladningslyde</string>
+    <string name="charging_sounds_enable_title">Aktivér opladningslyde</string>
     <string name="charging_sounds_summary">Afspil en lyd, når du tilslutter eller frakobler en strømkilde</string>
     <string name="power_notifications_vibrate_title">Vibrér</string>
     <string name="charging_sounds_ringtone_silent">Lydløs</string>

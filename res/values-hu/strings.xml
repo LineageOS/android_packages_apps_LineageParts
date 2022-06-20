@@ -512,7 +512,6 @@
     <string name="trust_onboarding_learn_more">Tudjon meg többet</string>
     <string name="trust_onboarding_done">Rendben</string>
     <string name="trust_restrict_usb_title">Az USB korlátozása</string>
-    <string name="trust_restrict_usb_summary">Ha a készülék le van zárva, letiltja egy új USB-eszköz csatlakozási lehetőségét</string>
     <string name="sms_security_check_limit_title">SMS-üzenetkorlát</string>
     <string name="sms_security_check_limit_summary">Az alkalmazások %s üzenetet küldhetnek percenként, mielőtt megerősítésre lenne szükség</string>
     <string name="sms_security_check_limit_summary_none">Az alkalmazások nem küldhetnek üzeneteket megerősítés nélkül</string>

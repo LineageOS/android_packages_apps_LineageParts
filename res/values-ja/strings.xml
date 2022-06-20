@@ -517,7 +517,10 @@
     <string name="trust_onboarding_learn_more">詳細</string>
     <string name="trust_onboarding_done">わかりました</string>
     <string name="trust_restrict_usb_title">USB の制限</string>
-    <string name="trust_restrict_usb_summary">端末ロック時は新しい USB 周辺機器を無効にします</string>
+    <string name="trust_restrict_usb_summary">イヤホン、ストレージデバイス、入力 (マウス、キーボード、ジョイスティック)、ADB などの USB 接続の制御サポート</string>
+    <string name="trust_restrict_usb_always">USB 接続を拒否</string>
+    <string name="trust_restrict_usb_keyguard">ロック解除時に USB 接続を許可する</string>
+    <string name="trust_restrict_usb_disabled">常に USB 接続を許可する</string>
     <string name="sms_security_check_limit_title">SMS メッセージの制限</string>
     <string name="sms_security_check_limit_summary">アプリは確認をする前に1分間に%s通のメッセージを送信できます</string>
     <string name="sms_security_check_limit_summary_none">アプリは許可無くメッセージを送信することはできません</string>

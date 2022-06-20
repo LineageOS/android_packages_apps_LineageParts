@@ -60,6 +60,7 @@
     <string name="light_brightness_normal">기본</string>
     <string name="light_brightness_zen">방해 금지 모드</string>
     <string name="battery_light_title">배터리 표시등</string>
+    <string name="battery_light_enable_title">배터리 표시등 사용</string>
     <string name="battery_low_pulse_title">배터리가 적을 때 깜빡임</string>
     <string name="battery_light_full_charge_disabled_title">충전 완료 시 끄기</string>
     <string name="battery_light_list_title">색상</string>
@@ -67,6 +68,7 @@
     <string name="battery_light_medium_color_title">충전 중</string>
     <string name="battery_light_full_color_title">충전 완료</string>
     <string name="notification_light_title">알림 표시등</string>
+    <string name="notification_light_enable_title">알림 표시등 사용</string>
     <string name="notification_light_general_title">기본</string>
     <string name="notification_light_advanced_title">고급</string>
     <string name="notification_light_applist_title">앱</string>
@@ -198,6 +200,7 @@
     <string name="swap_capacitive_keys_title">터치 버튼 스왑</string>
     <string name="swap_capacitive_keys_summary">최근 앱 버튼과 뒤로 버튼의 위치를 바꾸기</string>
     <string name="navigation_bar_category">내비게이션 바</string>
+    <string name="navigation_bar_enable_taskbar_title">작업 표시줄 사용</string>
     <string name="navigation_bar_invert_layout_title">레이아웃 반전</string>
     <string name="navigation_bar_invert_layout_summary">내비게이션 바 및 입력기 전환 등 기타 항목의 레이아웃을 반전시킵니다.</string>
     <string name="navigation_bar_left_summary">화면 가로 모드에서 화면의 왼쪽에 내비게이션 바를 배치</string>
@@ -209,6 +212,7 @@
     <string name="navigation_bar_app_switch_long_press_title">최근 앱 버튼을 길게 누를 때 동작</string>
     <string name="navigation_bar_edge_long_swipe_title">가장자리 길게 밀 때 동작</string>
     <string name="power_menu_title">전원 메뉴</string>
+    <string name="power_menu_items_title">전원 메뉴 항목</string>
     <string name="power_menu_screenshot_title">스크린샷</string>
     <string name="power_menu_screenshot_summary">길게 눌러 부분 스크린샷 촬영</string>
     <string name="power_menu_airplane_title">비행기 모드</string>
@@ -217,6 +221,9 @@
     <string name="power_menu_bug_report_devoptions_unavailable">개발자 설정이 비활성화되어 있어 오류 보고를 사용할 수 없습니다.</string>
     <string name="power_menu_bug_report_unavailable_for_user">주요 사용자가 아니므로 오류 보고를 사용할 수 없습니다.</string>
     <string name="power_menu_emergency_title">비상</string>
+    <string name="power_menu_devicecontrols_title">기기 제어</string>
+    <string name="power_menu_advanced_restart_title">고급 다시 시작</string>
+    <string name="power_menu_advanced_restart_summary">화면 잠금이 해제되어 있으면 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션을 추가합니다.</string>
     <string name="camera_double_tap_power_gesture_title">전원 버튼을 두 번 눌러 카메라 열기</string>
     <string name="camera_double_tap_power_gesture_desc">화면 잠금을 해제하지 않고 빠르게 카메라 열기</string>
     <string name="torch_long_press_power_gesture_title">길게 눌러 손전등 켜기</string>
@@ -249,6 +256,7 @@
     <string name="no_triggers_configured_nfc">눌러서 새 NFC 트리거를 설정하세요.</string>
     <string name="profile_setup_actions_description">이제 이 프로필이 활성화되면 무엇을 할 것인지 설정해 주세요</string>
     <string name="profiles_settings_title">시스템 프로필</string>
+    <string name="profiles_settings_enable_title">프로필 사용</string>
     <string name="profiles_create_new">새 프로필 만들기</string>
     <string name="profile_settings_title">프로필</string>
     <string name="profile_empty_list_profiles_off">시스템 프로필을 구성하고 사용하려면 프로필을 켜세요.</string>
@@ -347,6 +355,7 @@
     <string name="status_bar_clock_show_seconds_title">초 표시</string>
     <string name="status_bar_clock_show_seconds_summary">시간, 분, 초 표시</string>
     <string name="status_bar_clock_auto_hide_title">자동 숨기기</string>
+    <string name="status_bar_clock_auto_hide_summary">런처를 보고 있을 때 시계 숨기기</string>
     <string name="status_bar_clock_position_title">시계 위치</string>
     <string name="status_bar_clock_position_right">오른쪽</string>
     <string name="status_bar_clock_position_left">왼쪽</string>
@@ -435,6 +444,7 @@
     <string name="long_screen_settings_summary">레거시 앱에서 전체 화면 가로 세로 비율 강제 사용</string>
     <string name="long_screen_settings_no_apps">앱 없음</string>
     <string name="charging_sounds_settings_title">충전 소리</string>
+    <string name="charging_sounds_enable_title">충전음 사용</string>
     <string name="charging_sounds_summary">전원이 연결되거나 연결이 해제될 때 소리 재생</string>
     <string name="power_notifications_vibrate_title">진동</string>
     <string name="charging_sounds_ringtone_silent">음소거</string>
@@ -509,7 +519,6 @@
     <string name="trust_onboarding_learn_more">더 알아보기</string>
     <string name="trust_onboarding_done">확인</string>
     <string name="trust_restrict_usb_title">USB 제한</string>
-    <string name="trust_restrict_usb_summary">장치가 잠겨 있을 때 새로운 USB 장비 사용 안 함</string>
     <string name="sms_security_check_limit_title">SMS 메시지 발신 제한</string>
     <string name="sms_security_check_limit_summary">앱은 확인을 요청하기 전까지 1분 내에 %s개의 메시지만 보낼 수 있습니다.</string>
     <string name="sms_security_check_limit_summary_none">앱은 어떤 메시지도 확인 없이 보낼 수 없습니다.</string>

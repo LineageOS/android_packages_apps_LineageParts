@@ -509,7 +509,6 @@
     <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
     <string name="trust_onboarding_done">Mengerti</string>
     <string name="trust_restrict_usb_title">Batasi USB</string>
-    <string name="trust_restrict_usb_summary">Nonaktifkan gadget USB baru saat perangkat terkunci</string>
     <string name="sms_security_check_limit_title">Batas pesan SMS</string>
     <string name="sms_security_check_limit_summary">Aplikasi dapat mengirim %s pesan dalam 1 menit sebelum konfirmasi</string>
     <string name="sms_security_check_limit_summary_none">Aplikasi tidak diizinkan untuk mengirim pesan tanpa konfirmasi</string>

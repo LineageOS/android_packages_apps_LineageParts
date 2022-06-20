@@ -72,5 +72,4 @@
     <string name="trust_feature_encryption_explain">Dulritun tækisins þíns kemur í veg fyrir aðgang að gögnunum þínum þegar síminn er keyrður upp án þess að ræsa í uppsetta Android stýrikerfinu. Þetta er sérstaklega mikilvægt ef símanum skyldi verða stolið, þar sem þetta kemur í veg fyrir að aðrir geti lesið skilaboð, tengiliði og aðrar persónulegar upplýsingar án lykilorðsins þíns.\nTil að gera dulritunina enn víðtækari ættiðu að stilla öruggt lykilorð fyrir skjálæsingu.</string>
     <string name="trust_warnings_alerts_intro">Þú getur valið hvaða öryggisvandamál þú vilt fá aðvaranir um. Öryggis þíns vegna er mælt með að þú virkir allar aðvaranirnar</string>
     <string name="trust_restrict_usb_title">Takmarka USB</string>
-    <string name="trust_restrict_usb_summary">Gera ný USB-tæki óvirk þegar tækið er læst</string>
 </resources>

@@ -490,7 +490,6 @@
     <string name="trust_onboarding_learn_more">Saiba mais</string>
     <string name="trust_onboarding_done">Entendi</string>
     <string name="trust_restrict_usb_title">Restringir USB</string>
-    <string name="trust_restrict_usb_summary">Desativar novos dispositivos USB quando o dispositivo estiver bloqueado</string>
     <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
     <string name="sms_security_check_limit_summary">Os aplicativos podem enviar %s mensagens durante 1 minuto antes de exigirem confirmação</string>
     <string name="sms_security_check_limit_summary_none">Os aplicativos não podem enviar qualquer mensagem sem confirmação</string>

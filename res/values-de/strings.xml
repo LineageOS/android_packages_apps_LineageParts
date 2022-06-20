@@ -518,7 +518,6 @@
     <string name="trust_onboarding_learn_more">Mehr erfahren</string>
     <string name="trust_onboarding_done">Verstanden</string>
     <string name="trust_restrict_usb_title">USB beschränken</string>
-    <string name="trust_restrict_usb_summary">Keine neuen USB-Geräte zulassen, wenn das Gerät gesperrt ist</string>
     <string name="sms_security_check_limit_title">SMS-Begrenzung</string>
     <string name="sms_security_check_limit_summary">Apps können %s Nachrichten in 1 Minute ohne Bestätigung versenden</string>
     <string name="sms_security_check_limit_summary_none">Apps dürfen keine Nachrichten ohne Bestätigung versenden</string>
