@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod project
- *               2017-2020 The LineageOS project
+ *               2017-2022 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,6 +27,8 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Point;
+import android.graphics.Rect;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
@@ -38,6 +40,8 @@ import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.telephony.SubscriptionManager;
 import android.text.TextUtils;
+import android.view.Display;
+import android.view.DisplayCutout;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.Surface;
@@ -48,8 +52,16 @@ public class DeviceUtils {
 
     /* returns whether the device has a notch or not. */
     public static boolean hasNotch(Context context) {
-        return context.getResources().getBoolean(
-                org.lineageos.platform.internal.R.bool.config_haveNotch);
+        Display display = context.getDisplay();
+        DisplayCutout cutout = display.getCutout();
+        if (cutout != null) {
+            Point realSize = new Point();
+            display.getRealSize(realSize);
+
+            Rect boundingRectTop = cutout.getBoundingRectTop();
+            return !(boundingRectTop.left <= 0 || boundingRectTop.right >= realSize.y);
+        }
+        return false;
     }
 
     public static int getDeviceKeys(Context context) {
