@@ -22,6 +22,30 @@
       },
       "revId": "46e135df858bc38f5ad3233f828858e8ef7c00ec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7fe71dcb_1e74c60c",
+        "filename": "src/org/lineageos/lineageparts/utils/DeviceUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-06-25T23:03:22Z",
+      "side": 1,
+      "message": "I guess we could do that while at it",
+      "parentUuid": "94483ca9_16bdc72e",
+      "range": {
+        "startLine": 54,
+        "startChar": 26,
+        "endLine": 54,
+        "endChar": 34
+      },
+      "revId": "46e135df858bc38f5ad3233f828858e8ef7c00ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
