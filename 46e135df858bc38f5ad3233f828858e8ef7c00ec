@@ -107,6 +107,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "931f5f4f_90d2e7a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-27T23:39:26Z",
+      "side": 1,
+      "message": "Well they are both visible in status bar when the phone is in landscape, so...",
+      "revId": "46e135df858bc38f5ad3233f828858e8ef7c00ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "94483ca9_16bdc72e",
