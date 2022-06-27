@@ -36,6 +36,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "48b3db1f_99f167fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-27T22:53:19Z",
+      "side": 1,
+      "message": "Works on crosshatch, settings are hidden and \u0027hide cutout\u0027 enables the settings again.",
+      "revId": "46e135df858bc38f5ad3233f828858e8ef7c00ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "94483ca9_16bdc72e",
