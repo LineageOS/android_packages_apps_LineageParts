@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4af1e3f0_4f55378f",
+        "filename": "src/org/lineageos/lineageparts/utils/DeviceUtils.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-07-05T20:51:30Z",
+      "side": 1,
+      "message": "front camera?!?",
+      "range": {
+        "startLine": 53,
+        "startChar": 49,
+        "endLine": 53,
+        "endChar": 61
+      },
+      "revId": "0ef8f7070f4a6c37baa3d6f8edea790f51e649b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
