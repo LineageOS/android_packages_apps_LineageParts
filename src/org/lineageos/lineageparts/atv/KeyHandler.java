@@ -72,8 +72,10 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private void launchTarget(String targetName) {
+        PackageManager pm = mContext.getPackageManager();
+
         // First try to look the name up as a package
-        Intent launchIntent = mContext.getPackageManager().getLaunchIntentForPackage(targetName);
+        Intent launchIntent = pm.getLaunchIntentForPackage(targetName);
 
         // If it isn't an installed package, try as an intent
         if (launchIntent == null) {
@@ -81,7 +83,7 @@ public class KeyHandler implements DeviceKeyHandler {
             launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             launchIntent.putExtra("no_input_mode", true);
 
-            if (mContext.getPackageManager().resolveService(launchIntent, 0) == null) {
+            if (launchIntent.resolveActivity(pm) == null) {
                 launchIntent = null;
             }
         }
