@@ -50,6 +50,24 @@
       "message": "Oh.. I understood the context now.\nThis patch should be also fine.",
       "revId": "940bc06e6486411b186829be8eac64cbe458ec2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4a63a66_842e44ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-07-15T19:02:30Z",
+      "side": 1,
+      "message": "we don\u0027t have to remove the emergency affordance. I have added the reference in the description.",
+      "parentUuid": "0d745849_b0d29e85",
+      "revId": "940bc06e6486411b186829be8eac64cbe458ec2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
