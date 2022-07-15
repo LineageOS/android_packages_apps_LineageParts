@@ -177,13 +177,13 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         } else {
             mApplicationPrefList = findPreference(APPLICATION_SECTION);
             mApplicationPrefList.setOrderingAsAdded(false);
+
+            // Get launch-able applications
+            mPackageManager = getActivity().getPackageManager();
+            mPackageAdapter = new PackageListAdapter(getActivity());
+
+            mPackages = new HashMap<String, Package>();
         }
-
-        // Get launch-able applications
-        mPackageManager = getActivity().getPackageManager();
-        mPackageAdapter = new PackageListAdapter(getActivity());
-
-        mPackages = new HashMap<String, Package>();
 
         if (!mMultiColorLed) {
             resetColors();
