@@ -16,6 +16,23 @@
       "message": "I verified this patch (from India).\nSome one from other than India, have to verify it.",
       "revId": "940bc06e6486411b186829be8eac64cbe458ec2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d745849_b0d29e85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-07-15T18:54:57Z",
+      "side": 1,
+      "message": "Submit this instead -\nhttps://github.com/crdroidandroid/android_frameworks_base/commit/da1db4121300ee6fb9c67ffd7ac6837fbe736182\n\nWorks fine even in India.",
+      "revId": "940bc06e6486411b186829be8eac64cbe458ec2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
