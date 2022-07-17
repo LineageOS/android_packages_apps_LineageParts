@@ -16,6 +16,24 @@
       "message": "You will also need to move below code inside\n\n        Preference addPreference \u003d prefSet.findPreference(ADD_APPS);\n        addPreference.setOnPreferenceClickListener(preference -\u003e {\n            showDialog(DIALOG_APPS);\n            return true;\n        });",
       "revId": "236a942c190dd2af34e73f23bedd51b7b89e34b0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef06c2bd_141e00b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-07-17T05:20:35Z",
+      "side": 1,
+      "message": "Yup, was a picking error - fixed.",
+      "parentUuid": "c9442bf5_4c71caa3",
+      "revId": "236a942c190dd2af34e73f23bedd51b7b89e34b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
