@@ -39,6 +39,30 @@
       },
       "revId": "3378b4b93a6919a1d9418a8e0448d2a0b54b27a4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ab92f6d_27c0132d",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-07-17T15:23:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "143587ff_697859d3",
+      "range": {
+        "startLine": 189,
+        "startChar": 0,
+        "endLine": 191,
+        "endChar": 16
+      },
+      "revId": "3378b4b93a6919a1d9418a8e0448d2a0b54b27a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
