@@ -51,6 +51,24 @@
       "parentUuid": "7318570f_58be007c",
       "revId": "0449be33c80774a74f271db2e6d2cee6e7b04a04",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f50b5606_21679ed7",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-07-18T00:04:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7fe22c64_67989292",
+      "revId": "0449be33c80774a74f271db2e6d2cee6e7b04a04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
