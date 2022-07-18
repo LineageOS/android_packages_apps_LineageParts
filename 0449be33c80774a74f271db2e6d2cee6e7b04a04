@@ -33,6 +33,24 @@
       "message": "enabled -\u003e forceEnable?\n\nOtherwise the setEnabled() call below looks pretty confusing...",
       "revId": "0449be33c80774a74f271db2e6d2cee6e7b04a04",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7fe22c64_67989292",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-07-18T00:03:57Z",
+      "side": 1,
+      "message": "\u003e enabled -\u003e forceEnable?\n\u003e \n\u003e Otherwise the setEnabled() call below looks pretty confusing...\n\nDone. Now it\u0027s fine?",
+      "parentUuid": "7318570f_58be007c",
+      "revId": "0449be33c80774a74f271db2e6d2cee6e7b04a04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
