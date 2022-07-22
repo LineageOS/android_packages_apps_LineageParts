@@ -16,6 +16,23 @@
       "message": "Verified",
       "revId": "f1919fdc10b49f8696552100cce9e40a30d96d5a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a17594ba_1854d12b",
+        "filename": "src/org/lineageos/lineageparts/input/PowerMenuActions.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-22T13:47:29Z",
+      "side": 1,
+      "message": "maybe do a global boolean and use it here and below.",
+      "revId": "f1919fdc10b49f8696552100cce9e40a30d96d5a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
