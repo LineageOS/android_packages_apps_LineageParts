@@ -16,6 +16,24 @@
       "message": "Set\u003cT\u003e?",
       "revId": "2d70000bcd10e3400958faccc29492333083cf33",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50755a63_a7d07327",
+        "filename": "src/org/lineageos/lineageparts/profiles/triggers/WifiTriggerFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-07-22T18:06:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "689040c9_f9ad1727",
+      "revId": "2d70000bcd10e3400958faccc29492333083cf33",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
