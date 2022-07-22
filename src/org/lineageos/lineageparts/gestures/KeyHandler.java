@@ -1,6 +1,6 @@
-/**
+/*
  * Copyright (C) 2016 The CyanogenMod project
- *               2017-2020 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -124,7 +124,8 @@ public class KeyHandler implements DeviceKeyHandler {
             mProximityTimeOut = resources.getInteger(
                     org.lineageos.platform.internal.R.integer.config_proximityCheckTimeout);
             mDefaultProximity = mContext.getResources().getBoolean(
-                    org.lineageos.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
+                    org.lineageos.platform.internal.R.bool.
+                            config_proximityCheckOnWakeEnabledByDefault);
 
             mSensorManager = context.getSystemService(SensorManager.class);
             mProximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
@@ -157,7 +158,8 @@ public class KeyHandler implements DeviceKeyHandler {
 
         if (action != 0 && !mEventHandler.hasMessages(GESTURE_REQUEST)) {
             final Message msg = getMessageForAction(action);
-            final boolean proxWakeEnabled = LineageSettings.System.getInt(mContext.getContentResolver(),
+            final boolean proxWakeEnabled = LineageSettings.System.getInt(
+                    mContext.getContentResolver(),
                     LineageSettings.System.PROXIMITY_ON_WAKE, mDefaultProximity ? 1 : 0) == 1;
             if (mProximityWakeSupported && proxWakeEnabled && mProximitySensor != null) {
                 mGestureWakeLock.acquire(2 * mProximityTimeOut);

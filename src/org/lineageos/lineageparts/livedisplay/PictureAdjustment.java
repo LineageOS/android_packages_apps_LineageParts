@@ -210,7 +210,8 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
         private TextView mValue;
         private Range<Float> mRange;
 
-        public ColorSeekBar(IntervalSeekBar seekBar, Range<Float> range, TextView value, int index) {
+        public ColorSeekBar(IntervalSeekBar seekBar, Range<Float> range, TextView value,
+                            int index) {
             mSeekBar = seekBar;
             mValue = value;
             mIndex = index;
