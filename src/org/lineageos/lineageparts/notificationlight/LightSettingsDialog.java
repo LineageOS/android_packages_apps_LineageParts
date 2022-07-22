@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2010 Daniel Nilsson
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017,2019-2021 The LineageOS Project
+ *               2017,2019-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -245,7 +245,8 @@ public class LightSettingsDialog extends AlertDialog implements
     }
 
     public void setAlphaSliderVisible(boolean visible) {
-        mHexColorInput.setFilters(new InputFilter[] { new InputFilter.LengthFilter(visible ? 8 : 6) } );
+        mHexColorInput.setFilters(new InputFilter[] {
+                new InputFilter.LengthFilter(visible ? 8 : 6) } );
         mColorPicker.setAlphaSliderVisible(visible);
     }
 
@@ -273,7 +274,9 @@ public class LightSettingsDialog extends AlertDialog implements
     @SuppressWarnings("unchecked")
     public int getPulseSpeedOff() {
         // return 0 if 'Always on' is selected
-        return getPulseSpeedOn() == 1 ? 0 : ((Pair<String, Integer>) mPulseSpeedOff.getSelectedItem()).second;
+        return getPulseSpeedOn() == 1
+                ? 0
+                : ((Pair<String, Integer>) mPulseSpeedOff.getSelectedItem()).second;
     }
 
     public void setPulseSpeedOff(int speedOff) {
@@ -388,7 +391,8 @@ public class LightSettingsDialog extends AlertDialog implements
          * @param customTime Current time value that might be one of the
          *            predefined values or a totally custom value
          */
-        public PulseSpeedAdapter(int timeNamesResource, int timeValuesResource, Integer customTime) {
+        public PulseSpeedAdapter(int timeNamesResource, int timeValuesResource,
+                                 Integer customTime) {
             this(timeNamesResource, timeValuesResource);
 
             // Check if we also need to add the custom value entry

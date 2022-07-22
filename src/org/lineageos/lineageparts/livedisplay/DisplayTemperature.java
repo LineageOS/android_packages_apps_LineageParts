@@ -231,7 +231,8 @@ public class DisplayTemperature extends CustomDialogPreference<AlertDialog> {
                     ((mBalanceMin != 0) || (mBalanceMax != 0));
 
             if (mUseBalance) {
-                mBalanceCurve = MathUtils.powerCurve(mMin, mConfig.getDefaultDayTemperature(), mMax);
+                mBalanceCurve = MathUtils.powerCurve(mMin, mConfig.getDefaultDayTemperature(),
+                        mMax);
                 mBarMax = mBalanceMax - mBalanceMin;
             } else {
                 mBalanceCurve = null;

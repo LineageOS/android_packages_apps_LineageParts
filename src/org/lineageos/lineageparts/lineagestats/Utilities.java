@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2021-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,8 @@ import java.util.Locale;
 
 public class Utilities {
     public static String getUniqueID(Context context) {
-        final String id = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+        final String id = Settings.Secure.getString(context.getContentResolver(),
+                Settings.Secure.ANDROID_ID);
         return digest(context.getPackageName() + id);
     }
 
