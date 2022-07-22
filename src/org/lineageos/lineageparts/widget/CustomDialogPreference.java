@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2015 The Android Open Source Project
  *               2016 The CyanogenMod Project
- *               2017,2019,2021 The LineageOS Project
+ *               2017,2019,2021-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,7 +52,8 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
     }
 
     public boolean isDialogOpen() {
-        return getDialog() != null && getDialog() instanceof Dialog && ((Dialog)getDialog()).isShowing();
+        return getDialog() != null && getDialog() instanceof Dialog &&
+                ((Dialog)getDialog()).isShowing();
     }
 
     public T getDialog() {

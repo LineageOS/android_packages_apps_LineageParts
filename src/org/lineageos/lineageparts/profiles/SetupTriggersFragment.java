@@ -156,7 +156,8 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
             getBackButton().setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    finishPreferencePanel(SetupTriggersFragment.this, Activity.RESULT_CANCELED, null);
+                    finishPreferencePanel(SetupTriggersFragment.this, Activity.RESULT_CANCELED,
+                            null);
                 }
             });
         }

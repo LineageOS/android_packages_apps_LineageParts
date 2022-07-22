@@ -297,9 +297,7 @@ public class BrightnessPreference extends CustomDialogPreference<AlertDialog>
             dest.writeInt(seekBarBrightness);
         }
 
-        public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
-
+        public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.Creator<>() {
             public SavedState createFromParcel(Parcel in) {
                 return new SavedState(in);
             }

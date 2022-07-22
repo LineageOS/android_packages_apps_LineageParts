@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -86,10 +86,10 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                 LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_RGB_BATTERY_LED);
         mHALAdjustableBrightness = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_BATTERY_LED_BRIGHTNESS);
-        final boolean pulsatingLed =
-                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED);
-        final boolean segmentedBatteryLed =
-                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_SEGMENTED_BATTERY_LED);
+        final boolean pulsatingLed = LightsCapabilities.supports(context,
+                LightsCapabilities.LIGHTS_PULSATING_LED);
+        final boolean segmentedBatteryLed = LightsCapabilities.supports(context,
+                LightsCapabilities.LIGHTS_SEGMENTED_BATTERY_LED);
 
         addPreferencesFromResource(R.xml.battery_light_settings);
         getActivity().getActionBar().setTitle(R.string.battery_light_title);
@@ -210,11 +210,14 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (key.equals(LOW_COLOR_PREF)) {
-            LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_LOW_COLOR, color);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.BATTERY_LIGHT_LOW_COLOR, color);
         } else if (key.equals(MEDIUM_COLOR_PREF)) {
-            LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
         } else if (key.equals(FULL_COLOR_PREF)) {
-            LineageSettings.System.putInt(resolver, LineageSettings.System.BATTERY_LIGHT_FULL_COLOR, color);
+            LineageSettings.System.putInt(resolver,
+                    LineageSettings.System.BATTERY_LIGHT_FULL_COLOR, color);
             updateBrightnessPrefColor(color);
         }
     }
