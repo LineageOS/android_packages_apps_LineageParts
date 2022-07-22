@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2020 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,6 +27,7 @@ import lineageos.app.Profile;
 
 import org.lineageos.lineageparts.R;
 
+import java.util.HashSet;
 import java.util.List;
 
 public class WifiTriggerFragment extends AbstractTriggerListFragment {
@@ -48,14 +49,17 @@ public class WifiTriggerFragment extends AbstractTriggerListFragment {
     protected void onLoadTriggers(Profile profile, List<AbstractTriggerItem> triggers) {
         final Resources res = getResources();
         final List<WifiConfiguration> configs = mWifiManager.getConfiguredNetworks();
+        final HashSet<String> alreadyAdded = new HashSet<>();
 
         if (configs != null) {
             for (WifiConfiguration config : configs) {
                 WifiTrigger accessPoint = new WifiTrigger(config);
-                int state = profile.getTriggerState(
-                        Profile.TriggerType.WIFI, accessPoint.getSSID());
+                String ssid = accessPoint.getSSID();
+                int state = profile.getTriggerState(Profile.TriggerType.WIFI, ssid);
                 initTriggerItemFromState(accessPoint, state, R.drawable.ic_wifi_signal_4);
-                triggers.add(accessPoint);
+                if (alreadyAdded.add(ssid)) {
+                    triggers.add(accessPoint);
+                }
             }
         } else {
             final List<Profile.ProfileTrigger> origTriggers =
