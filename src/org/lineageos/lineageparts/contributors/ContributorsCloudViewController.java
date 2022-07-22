@@ -87,8 +87,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
     private boolean mIsDragging;
     private boolean mIgnoreDoubleTapScale;
 
-    private static void checkZoomLevels(float minZoom, float midZoom,
-                                        float maxZoom) {
+    private static void checkZoomLevels(float minZoom, float midZoom, float maxZoom) {
         if (minZoom >= midZoom) {
             throw new IllegalArgumentException(
                     "MinZoom has to be less than MidZoom");

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017,2021 The LineageOS Project
+ *               2017,2021-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -101,7 +101,8 @@ public class NFCProfileSelect extends Activity {
                     Profile profile = profiles[currentChoice];
                     profile.addSecondaryUuid(mProfileUuid);
                     mProfileManager.updateProfile(profile);
-                    Toast.makeText(NFCProfileSelect.this, R.string.profile_write_success, Toast.LENGTH_LONG).show();
+                    Toast.makeText(NFCProfileSelect.this, R.string.profile_write_success,
+                            Toast.LENGTH_LONG).show();
                 }
                 finish();
             }

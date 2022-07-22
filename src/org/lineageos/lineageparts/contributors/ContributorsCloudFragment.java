@@ -740,11 +740,10 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         }
 
         // Total contributors
-        String[] args = new String[]{String.valueOf(query.replaceAll("\\|", ""))};
-        Cursor c = db.rawQuery(
-                "select id, name || case when username is null then '' else ' <'||username||'>' end contributor " +
-                "from metadata where lower(filter) like lower('%' || ? || '%') and id > 0 " +
-                "order by commits desc", args);
+        String[] args = new String[]{query.replaceAll("\\|", "")};
+        Cursor c = db.rawQuery("select id, name || case when username is null then '' " +
+                "else ' <'||username||'>' end contributor from metadata where lower(filter) like " +
+                "lower('%' || ? || '%') and id > 0 order by commits desc", args);
         if (c == null) {
             // We don't have a valid cursor reference
             return new ArrayList<>();
