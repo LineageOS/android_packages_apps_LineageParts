@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017,2019,2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -97,7 +97,8 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
      * @param onOffChangeable
      */
     public ApplicationLightPreference(Context context, AttributeSet attrs,
-                                      int color, int onValue, int offValue, boolean onOffChangeable) {
+                                      int color, int onValue, int offValue,
+                                      boolean onOffChangeable) {
         super(context, attrs);
         mColorValue = color;
         mOnValue = onValue;
@@ -156,7 +157,8 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     }
 
     private void updatePreferenceViews() {
-        final int size = (int) getContext().getResources().getDimension(R.dimen.oval_notification_size);
+        final int size = (int) getContext().getResources().getDimension(
+                R.dimen.oval_notification_size);
 
         if (mLightColorView != null) {
             mLightColorView.setEnabled(true);
@@ -314,8 +316,10 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
             return getContext().getResources().getString(R.string.default_time);
         }
 
-        String[] timeNames = getContext().getResources().getStringArray(R.array.notification_pulse_length_entries);
-        String[] timeValues = getContext().getResources().getStringArray(R.array.notification_pulse_length_values);
+        String[] timeNames = getContext().getResources().getStringArray(
+                R.array.notification_pulse_length_entries);
+        String[] timeValues = getContext().getResources().getStringArray(
+                R.array.notification_pulse_length_values);
 
         for (int i = 0; i < timeValues.length; i++) {
             if (Integer.decode(timeValues[i]).equals(time)) {
@@ -331,8 +335,10 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
             return getContext().getResources().getString(R.string.default_time);
         }
 
-        String[] timeNames = getContext().getResources().getStringArray(R.array.notification_pulse_speed_entries);
-        String[] timeValues = getContext().getResources().getStringArray(R.array.notification_pulse_speed_values);
+        String[] timeNames = getContext().getResources().getStringArray(
+                R.array.notification_pulse_speed_entries);
+        String[] timeValues = getContext().getResources().getStringArray(
+                R.array.notification_pulse_speed_values);
 
         for (int i = 0; i < timeValues.length; i++) {
             if (Integer.decode(timeValues[i]).equals(time)) {
