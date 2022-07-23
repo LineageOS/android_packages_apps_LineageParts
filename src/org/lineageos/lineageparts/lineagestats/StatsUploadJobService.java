@@ -36,6 +36,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Map;
 
@@ -113,17 +114,15 @@ public class StatsUploadJobService extends JobService {
             boolean success = false;
             int jobType = extras.getInt(KEY_JOB_TYPE, -1);
             if (!isCancelled()) {
-                switch (jobType) {
-                    case JOB_TYPE_LINEAGEORG:
-                        try {
-                            JSONObject json = buildStatsRequest(deviceId, deviceName,
-                                    deviceVersion, deviceCountry, deviceCarrier, deviceCarrierId);
-                            success = uploadToLineage(json);
-                        } catch (IOException | JSONException e) {
-                            Log.e(TAG, "Could not upload stats checkin to community server", e);
-                            success = false;
-                        }
-                        break;
+                if (jobType == JOB_TYPE_LINEAGEORG) {
+                    try {
+                        JSONObject json = buildStatsRequest(deviceId, deviceName,
+                                deviceVersion, deviceCountry, deviceCarrier, deviceCarrierId);
+                        success = uploadToLineage(json);
+                    } catch (IOException | JSONException e) {
+                        Log.e(TAG, "Could not upload stats checkin to community server", e);
+                        success = false;
+                    }
                 }
             }
             if (DEBUG)
@@ -163,7 +162,7 @@ public class StatsUploadJobService extends JobService {
             urlConnection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
 
             OutputStream os = urlConnection.getOutputStream();
-            os.write(json.toString().getBytes("UTF-8"));
+            os.write(json.toString().getBytes(StandardCharsets.UTF_8));
             os.close();
 
             final int responseCode = urlConnection.getResponseCode();

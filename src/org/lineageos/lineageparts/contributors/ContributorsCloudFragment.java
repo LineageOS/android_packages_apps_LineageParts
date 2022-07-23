@@ -542,21 +542,18 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                     // Horizontal
                     canvas.drawText(name, x, y, paint);
                 } else {
+                    canvas.save();
                     if (r == -1) {
                         // Vertical (-90 rotation)
-                        canvas.save();
                         canvas.translate(h, w - h);
                         canvas.rotate(-90, x, y);
-                        canvas.drawText(name, x, y, paint);
-                        canvas.restore();
                     } else {
                         // Vertical (+90 rotation)
-                        canvas.save();
                         canvas.translate(h/2, -h);
                         canvas.rotate(90, x, y);
-                        canvas.drawText(name, x, y, paint);
-                        canvas.restore();
                     }
+                    canvas.drawText(name, x, y, paint);
+                    canvas.restore();
                 }
 
                 // Calculate focus
@@ -825,19 +822,20 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                     }
 
                     List<SearchIndexableRaw> result = new ArrayList<>();
-                    Cursor c = db.rawQuery(
-                            "select id, username from metadata order by commits desc limit 100;", null);
-                    while (c.moveToNext()) {
-                        SearchIndexableRaw raw = new SearchIndexableRaw(context);
-                        raw.key = KEY_PREFIX + c.getString(0);
-                        raw.rank = 10;
-                        raw.title = c.getString(1);
-                        result.add(raw);
+                    try (Cursor c = db.rawQuery(
+                            "select id, username from metadata order by commits desc limit 100;",
+                            null)) {
+                        while (c.moveToNext()) {
+                            SearchIndexableRaw raw = new SearchIndexableRaw(context);
+                            raw.key = KEY_PREFIX + c.getString(0);
+                            raw.rank = 10;
+                            raw.title = c.getString(1);
+                            result.add(raw);
+                        }
                     }
-                    c.close();
                     db.close();
 
                     return result;
                 }
-            };
+    };
 }

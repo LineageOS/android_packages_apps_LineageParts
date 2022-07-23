@@ -228,10 +228,9 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_RESET:
-                resetToDefaults();
-                return true;
+        if (item.getItemId() == MENU_RESET) {
+            resetToDefaults();
+            return true;
         }
         return false;
     }

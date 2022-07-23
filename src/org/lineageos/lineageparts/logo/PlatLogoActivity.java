@@ -202,8 +202,8 @@ public class PlatLogoActivity extends Activity {
             // Draw LineageOS Logo drawable
             canvas.save();
             {
-                canvas.translate((-360 / 2) * mRadius / BASE_SCALE,
-                                (-180 / 2) * mRadius / BASE_SCALE);
+                canvas.translate((-360 / 2f) * mRadius / BASE_SCALE,
+                                (-180 / 2f) * mRadius / BASE_SCALE);
                 canvas.scale(mRadius / BASE_SCALE, mRadius / BASE_SCALE);
                 mLogo.draw(canvas);
             }
