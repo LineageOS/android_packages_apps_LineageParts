@@ -284,7 +284,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
         // Add the Application Preferences
         if (mApplicationPrefList != null) {
-            for (int i = 0; i < mApplicationPrefList.getPreferenceCount();) {
+            for (int i = 0; i < mApplicationPrefList.getPreferenceCount(); ) {
                 Preference pref = mApplicationPrefList.getPreference(i);
                 if (ADD_APPS.equals(pref.getKey())) {
                     i++;
@@ -319,8 +319,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         }
     }
 
-    private void maybeDisplayApplicationHint(Context context)
-    {
+    private void maybeDisplayApplicationHint(Context context) {
         /* Display a pref explaining how to add apps */
         if (mApplicationPrefList != null && mApplicationPrefList.getPreferenceCount() == 1) {
             String summary = getResources().getString(

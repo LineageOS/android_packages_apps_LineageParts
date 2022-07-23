@@ -161,10 +161,9 @@ public class ProfilesSettings extends SettingsPreferenceFragment
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_RESET:
-                resetAll();
-                return true;
+        if (item.getItemId() == MENU_RESET) {
+            resetAll();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

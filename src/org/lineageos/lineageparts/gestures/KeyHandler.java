@@ -163,7 +163,7 @@ public class KeyHandler implements DeviceKeyHandler {
                     mContext.getContentResolver(),
                     LineageSettings.System.PROXIMITY_ON_WAKE, mDefaultProximity ? 1 : 0) == 1;
             if (mProximityWakeSupported && proxWakeEnabled && mProximitySensor != null) {
-                mGestureWakeLock.acquire(2 * mProximityTimeOut);
+                mGestureWakeLock.acquire(2L * mProximityTimeOut);
                 mEventHandler.sendMessageDelayed(msg, mProximityTimeOut);
                 processEvent(action);
             } else {
