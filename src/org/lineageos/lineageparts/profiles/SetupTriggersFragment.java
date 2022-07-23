@@ -132,28 +132,21 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
 
         if (mNewProfileMode) {
             showButtonBar(true);
-            getNextButton().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Bundle args = new Bundle();
-                    args.putParcelable(ProfilesSettings.EXTRA_PROFILE,  mProfile);
-                    args.putBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, mNewProfileMode);
+            getNextButton().setOnClickListener(view -> {
+                Bundle args = new Bundle();
+                args.putParcelable(ProfilesSettings.EXTRA_PROFILE, mProfile);
+                args.putBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, mNewProfileMode);
 
-                    PartsActivity pa = (PartsActivity) getActivity();
-                    pa.startPreferencePanel(SetupActionsFragment.class.getCanonicalName(), args,
-                            R.string.profile_profile_manage, null,
-                            SetupTriggersFragment.this, REQUEST_SETUP_ACTIONS);
-                }
+                PartsActivity pa = (PartsActivity) getActivity();
+                pa.startPreferencePanel(SetupActionsFragment.class.getCanonicalName(), args,
+                        R.string.profile_profile_manage, null,
+                        SetupTriggersFragment.this, REQUEST_SETUP_ACTIONS);
             });
 
             // back button
-            getBackButton().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            getBackButton().setOnClickListener(view ->
                     finishPreferencePanel(SetupTriggersFragment.this, Activity.RESULT_CANCELED,
-                            null);
-                }
-            });
+                    null));
         }
         return root;
     }

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -143,13 +143,10 @@ public class DisplayRotation extends SettingsPreferenceFragment
         RotationPolicy.setRotationLockForAccessibility(getActivity(), !mAccelerometer.isChecked());
     }
 
-    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
-        @Override
-        public String getSummary(Context context, String key) {
-            if (RotationPolicy.isRotationLocked(context)) {
-                return context.getString(R.string.display_rotation_disabled);
-            }
-            return context.getString(R.string.display_rotation_enabled);
+    public static final SummaryProvider SUMMARY_PROVIDER = (context, key) -> {
+        if (RotationPolicy.isRotationLocked(context)) {
+            return context.getString(R.string.display_rotation_disabled);
         }
+        return context.getString(R.string.display_rotation_enabled);
     };
 }
