@@ -118,7 +118,7 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
                 TriggerPagerAdapter.TriggerFragments.values();
 
         for (final TriggerPagerAdapter.TriggerFragments fragment : fragments) {
-            if (fragment.getFragmentClass() == NfcTriggerFragment.class) {
+            if (fragment.getFragmentClass().equals(NfcTriggerFragment.class)) {
                 if (!getActivity().getPackageManager().hasSystemFeature(
                         PackageManager.FEATURE_NFC)) {
                     // device doesn't have NFC
