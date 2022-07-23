@@ -177,7 +177,7 @@ public class DeviceUtils {
                 || hasAssistKey(context) || hasAppSwitchKey(context));
     }
 
-    /* returns whether the device supports keyboard backlight adjusment or not. */
+    /* returns whether the device supports keyboard backlight adjustment or not. */
     public static boolean hasKeyboardBacklightSupport(Context context) {
         return context.getResources().getInteger(org.lineageos.platform.internal.R.integer
                 .config_deviceSupportsKeyboardBrightnessControl) != 0;
@@ -200,7 +200,6 @@ public class DeviceUtils {
 
     /**
      * Locks the activity orientation to the current device orientation
-     * @param activity
      */
     public static void lockCurrentOrientation(Activity activity) {
         int currentRotation = activity.getWindowManager().getDefaultDisplay().getRotation();
