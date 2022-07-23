@@ -28,7 +28,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
@@ -43,9 +42,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class LongScreenSettings extends SettingsPreferenceFragment
         implements ApplicationsState.Callbacks {
@@ -54,10 +51,7 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     private ApplicationsState mApplicationsState;
     private ApplicationsState.Session mSession;
     private ActivityFilter mActivityFilter;
-    private Map<String, ApplicationsState.AppEntry> mEntryMap =
-            new HashMap<String, ApplicationsState.AppEntry>();
 
-    private ListView mUserListView;
     private LongScreen mLongScreen;
 
     @Override
@@ -88,9 +82,9 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mUserListView = (ListView) view.findViewById(R.id.user_list_view);
-        mUserListView.setAdapter(mAllPackagesAdapter);
-        mUserListView.setEmptyView(view.findViewById(R.id.user_list_empty_view));
+        ListView userListView = view.findViewById(R.id.user_list_view);
+        userListView.setAdapter(mAllPackagesAdapter);
+        userListView.setEmptyView(view.findViewById(R.id.user_list_empty_view));
     }
 
     @Override
@@ -173,10 +167,6 @@ public class LongScreenSettings extends SettingsPreferenceFragment
         }
 
         mAllPackagesAdapter.setEntries(entries, sections, positions);
-        mEntryMap.clear();
-        for (ApplicationsState.AppEntry e : entries) {
-            mEntryMap.put(e.info.packageName, e);
-        }
     }
 
     private void rebuild() {
@@ -253,7 +243,7 @@ public class LongScreenSettings extends SettingsPreferenceFragment
         private void setEntries(List<ApplicationsState.AppEntry> entries,
                 List<String> sections, List<Integer> positions) {
             mEntries = entries;
-            mSections = sections.toArray(new String[sections.size()]);
+            mSections = sections.toArray(new String[0]);
             mPositions = new int[positions.size()];
             for (int i = 0; i < positions.size(); i++) {
                 mPositions[i] = positions.get(i);
@@ -296,15 +286,15 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     }
 
     private static class ViewHolder {
-        private TextView title;
-        private ImageView icon;
-        private Switch state;
-        private View rootView;
+        private final TextView title;
+        private final ImageView icon;
+        private final Switch state;
+        private final View rootView;
 
         private ViewHolder(View view) {
-            this.title = (TextView) view.findViewById(R.id.app_name);
-            this.icon = (ImageView) view.findViewById(R.id.app_icon);
-            this.state = (Switch) view.findViewById(R.id.state);
+            this.title = view.findViewById(R.id.app_name);
+            this.icon = view.findViewById(R.id.app_icon);
+            this.state = view.findViewById(R.id.state);
             this.rootView = view;
 
             view.setTag(this);
@@ -314,7 +304,7 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     private class ActivityFilter implements ApplicationsState.AppFilter {
 
         private final PackageManager mPackageManager;
-        private final List<String> mLauncherResolveInfoList = new ArrayList<String>();
+        private final List<String> mLauncherResolveInfoList = new ArrayList<>();
 
         private ActivityFilter(PackageManager packageManager) {
             this.mPackageManager = packageManager;

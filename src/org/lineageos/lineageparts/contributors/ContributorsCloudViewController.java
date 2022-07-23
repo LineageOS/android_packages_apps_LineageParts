@@ -20,7 +20,6 @@ package org.lineageos.lineageparts.contributors;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.graphics.Matrix.ScaleToFit;
 import android.graphics.RectF;
@@ -32,7 +31,6 @@ import android.view.ScaleGestureDetector;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ScaleGestureDetector.OnScaleGestureListener;
-import android.view.View.OnLongClickListener;
 import android.view.ViewConfiguration;
 import android.view.ViewParent;
 import android.view.ViewTreeObserver;
@@ -70,11 +68,10 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
     static final int EDGE_RIGHT = 1;
     static final int EDGE_BOTH = 2;
 
-    private float mMinScale = DEFAULT_MIN_SCALE;
+    private final float mMinScale = DEFAULT_MIN_SCALE;
     private float mMidScale = DEFAULT_MID_SCALE;
     private float mMaxScale = DEFAULT_MAX_SCALE;
 
-    private boolean mAllowParentInterceptOnEdge = true;
     private boolean mBlockParentIntercept = false;
 
     private static final int INVALID_POINTER_ID = -1;
@@ -103,24 +100,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
      */
     private static boolean hasDrawable(ImageView imageView) {
         return null != imageView && null != imageView.getDrawable();
-    }
-
-    /**
-     * @return true if the ScaleType is supported.
-     */
-    private static boolean isSupportedScaleType(final ScaleType scaleType) {
-        if (null == scaleType) {
-            return false;
-        }
-
-        switch (scaleType) {
-            case MATRIX:
-                throw new IllegalArgumentException(scaleType.name()
-                        + " is not supported in PhotoView");
-
-            default:
-                return true;
-        }
     }
 
     /**
@@ -229,18 +208,14 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
     private final float[] mMatrixValues = new float[9];
 
     // Listeners
-    private OnMatrixChangedListener mMatrixChangeListener;
     private OnPhotoTapListener mPhotoTapListener;
     private OnViewTapListener mViewTapListener;
-    private OnLongClickListener mLongClickListener;
-    private OnScaleChangeListener mScaleChangeListener;
 
     private int mIvTop, mIvRight, mIvBottom, mIvLeft;
     private FlingRunnable mCurrentFlingRunnable;
     private int mScrollEdge = EDGE_BOTH;
 
     private boolean mZoomEnabled;
-    private ScaleType mScaleType = ScaleType.FIT_CENTER;
 
     public ContributorsCloudViewController(ImageView imageView) {
         this(imageView, true);
@@ -253,7 +228,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
 
         mImageView = new WeakReference<>(imageView);
 
-        imageView.setDrawingCacheEnabled(true);
         imageView.setOnTouchListener(this);
 
         ViewTreeObserver observer = imageView.getViewTreeObserver();
@@ -294,36 +268,11 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         mScaleDragDetector = new ScaleGestureDetector(imageView.getContext(), mScaleListener);
 
         mGestureDetector = new GestureDetector(imageView.getContext(),
-                new GestureDetector.SimpleOnGestureListener() {
-
-                    // forward long click listener
-                    @Override
-                    public void onLongPress(MotionEvent e) {
-                        if (null != mLongClickListener) {
-                            mLongClickListener.onLongClick(getImageView());
-                        }
-                    }
-                });
+                new GestureDetector.SimpleOnGestureListener());
         mGestureDetector.setOnDoubleTapListener(new DefaultOnDoubleTapListener(this));
 
         // Finally, update the UI so that we're zoomable
         setZoomable(zoomable);
-    }
-
-    public void setOnDoubleTapListener(GestureDetector.OnDoubleTapListener newOnDoubleTapListener) {
-        if (newOnDoubleTapListener != null) {
-            this.mGestureDetector.setOnDoubleTapListener(newOnDoubleTapListener);
-        } else {
-            this.mGestureDetector.setOnDoubleTapListener(new DefaultOnDoubleTapListener(this));
-        }
-    }
-
-    public void setOnScaleChangeListener(OnScaleChangeListener onScaleChangeListener) {
-        this.mScaleChangeListener = onScaleChangeListener;
-    }
-
-    public boolean canZoom() {
-        return mZoomEnabled;
     }
 
     /**
@@ -359,7 +308,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         }
 
         // Clear listeners too
-        mMatrixChangeListener = null;
         mPhotoTapListener = null;
         mViewTapListener = null;
 
@@ -370,34 +318,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
     public RectF getDisplayRect() {
         checkMatrixBounds();
         return getDisplayRect(getDrawMatrix());
-    }
-
-    public boolean setDisplayMatrix(Matrix finalMatrix) {
-        if (finalMatrix == null)
-            throw new IllegalArgumentException("Matrix cannot be null");
-
-        ImageView imageView = getImageView();
-        if (null == imageView)
-            return false;
-
-        if (null == imageView.getDrawable())
-            return false;
-
-        mSuppMatrix.set(finalMatrix);
-        setImageViewMatrix(getDrawMatrix());
-        checkMatrixBounds();
-
-        return true;
-    }
-
-    public void setRotationTo(float degrees) {
-        mSuppMatrix.setRotate(degrees % 360);
-        checkAndDisplayMatrix();
-    }
-
-    public void setRotationBy(float degrees) {
-        mSuppMatrix.postRotate(degrees % 360);
-        checkAndDisplayMatrix();
     }
 
     public ImageView getImageView() {
@@ -434,10 +354,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
                 + (float) Math.pow(getValue(mSuppMatrix, Matrix.MSKEW_Y), 2));
     }
 
-    public ScaleType getScaleType() {
-        return mScaleType;
-    }
-
     public void onDrag(float dx, float dy) {
         if (mScaleDragDetector.isInProgress()) {
             return; // Do not drag if we are already scaling
@@ -461,8 +377,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
          * the edge, aka 'overscrolling', let the parent take over).
          */
         ViewParent parent = imageView.getParent();
-        if (mAllowParentInterceptOnEdge && !mScaleDragDetector.isInProgress()
-                && !mBlockParentIntercept) {
+        if (!mScaleDragDetector.isInProgress() && !mBlockParentIntercept) {
             if (mScrollEdge == EDGE_BOTH
                     || (mScrollEdge == EDGE_LEFT && dx >= 1f)
                     || (mScrollEdge == EDGE_RIGHT && dx <= -1f)) {
@@ -532,9 +447,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         }
 
         if (getScale() < mMaxScale || scaleFactor < 1f) {
-            if (null != mScaleChangeListener) {
-                mScaleChangeListener.onScaleChange(scaleFactor, focusX, focusY);
-            }
             mSuppMatrix.postScale(scaleFactor, scaleFactor, focusX, focusY);
             checkAndDisplayMatrix();
         }
@@ -600,15 +512,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         return handled;
     }
 
-    public void setAllowParentInterceptOnEdge(boolean allow) {
-        mAllowParentInterceptOnEdge = allow;
-    }
-
-    public void setMinimumScale(float minimumScale) {
-        checkZoomLevels(minimumScale, mMidScale, mMaxScale);
-        mMinScale = minimumScale;
-    }
-
     public void setMediumScale(float mediumScale) {
         checkZoomLevels(mMinScale, mediumScale, mMaxScale);
         mMidScale = mediumScale;
@@ -619,31 +522,8 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         mMaxScale = maximumScale;
     }
 
-    public void setScaleLevels(float minimumScale, float mediumScale, float maximumScale) {
-        checkZoomLevels(minimumScale, mediumScale, maximumScale);
-        mMinScale = minimumScale;
-        mMidScale = mediumScale;
-        mMaxScale = maximumScale;
-    }
-
-    public void setOnLongClickListener(OnLongClickListener listener) {
-        mLongClickListener = listener;
-    }
-
-    public void setOnMatrixChangeListener(OnMatrixChangedListener listener) {
-        mMatrixChangeListener = listener;
-    }
-
-    public void setOnPhotoTapListener(OnPhotoTapListener listener) {
-        mPhotoTapListener = listener;
-    }
-
     public OnPhotoTapListener getOnPhotoTapListener() {
         return mPhotoTapListener;
-    }
-
-    public void setOnViewTapListener(OnViewTapListener listener) {
-        mViewTapListener = listener;
     }
 
     public OnViewTapListener getOnViewTapListener() {
@@ -691,15 +571,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         }
     }
 
-    public void setScaleType(ScaleType scaleType) {
-        if (isSupportedScaleType(scaleType) && scaleType != mScaleType) {
-            mScaleType = scaleType;
-
-            // Finally update
-            update();
-        }
-    }
-
     public void setZoomable(boolean zoomable) {
         mZoomEnabled = zoomable;
         update();
@@ -720,10 +591,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
                 resetMatrix();
             }
         }
-    }
-
-    public Matrix getDisplayMatrix() {
-        return new Matrix(getDrawMatrix());
     }
 
     public Matrix getDrawMatrix() {
@@ -779,17 +646,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
 
         final int viewHeight = getImageViewHeight(imageView);
         if (height <= viewHeight) {
-            switch (mScaleType) {
-                case FIT_START:
-                    deltaY = -rect.top;
-                    break;
-                case FIT_END:
-                    deltaY = viewHeight - height - rect.top;
-                    break;
-                default:
-                    deltaY = (viewHeight - height) / 2 - rect.top;
-                    break;
-            }
+            deltaY = (viewHeight - height) / 2 - rect.top;
         } else if (rect.top > 0) {
             deltaY = -rect.top;
         } else if (rect.bottom < viewHeight) {
@@ -798,17 +655,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
 
         final int viewWidth = getImageViewWidth(imageView);
         if (width <= viewWidth) {
-            switch (mScaleType) {
-                case FIT_START:
-                    deltaX = -rect.left;
-                    break;
-                case FIT_END:
-                    deltaX = viewWidth - width - rect.left;
-                    break;
-                default:
-                    deltaX = (viewWidth - width) / 2 - rect.left;
-                    break;
-            }
+            deltaX = (viewWidth - width) / 2 - rect.left;
             mScrollEdge = EDGE_BOTH;
         } else if (rect.left > 0) {
             mScrollEdge = EDGE_LEFT;
@@ -846,11 +693,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         return null;
     }
 
-    public Bitmap getVisibleRectangleBitmap() {
-        ImageView imageView = getImageView();
-        return imageView == null ? null : imageView.getDrawingCache();
-    }
-
     public void setZoomTransitionDuration(int milliseconds) {
         if (milliseconds < 0)
             milliseconds = DEFAULT_ZOOM_DURATION;
@@ -884,14 +726,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
 
             checkImageViewScaleType();
             imageView.setImageMatrix(matrix);
-
-            // Call MatrixChangedListener if needed
-            if (null != mMatrixChangeListener) {
-                RectF displayRect = getDisplayRect(matrix);
-                if (null != displayRect) {
-                    mMatrixChangeListener.onMatrixChanged(displayRect);
-                }
-            }
         }
     }
 
@@ -913,51 +747,10 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
 
         mBaseMatrix.reset();
 
-        final float widthScale = viewWidth / drawableWidth;
-        final float heightScale = viewHeight / drawableHeight;
+        RectF mTempSrc = new RectF(0, 0, drawableWidth, drawableHeight);
+        RectF mTempDst = new RectF(0, 0, viewWidth, viewHeight);
 
-        if (mScaleType == ScaleType.CENTER) {
-            mBaseMatrix.postTranslate((viewWidth - drawableWidth) / 2F,
-                    (viewHeight - drawableHeight) / 2F);
-
-        } else if (mScaleType == ScaleType.CENTER_CROP) {
-            float scale = Math.max(widthScale, heightScale);
-            mBaseMatrix.postScale(scale, scale);
-            mBaseMatrix.postTranslate((viewWidth - drawableWidth * scale) / 2F,
-                    (viewHeight - drawableHeight * scale) / 2F);
-
-        } else if (mScaleType == ScaleType.CENTER_INSIDE) {
-            float scale = Math.min(1.0f, Math.min(widthScale, heightScale));
-            mBaseMatrix.postScale(scale, scale);
-            mBaseMatrix.postTranslate((viewWidth - drawableWidth * scale) / 2F,
-                    (viewHeight - drawableHeight * scale) / 2F);
-
-        } else {
-            RectF mTempSrc = new RectF(0, 0, drawableWidth, drawableHeight);
-            RectF mTempDst = new RectF(0, 0, viewWidth, viewHeight);
-
-            switch (mScaleType) {
-                case FIT_CENTER:
-                    mBaseMatrix
-                            .setRectToRect(mTempSrc, mTempDst, ScaleToFit.CENTER);
-                    break;
-
-                case FIT_START:
-                    mBaseMatrix.setRectToRect(mTempSrc, mTempDst, ScaleToFit.START);
-                    break;
-
-                case FIT_END:
-                    mBaseMatrix.setRectToRect(mTempSrc, mTempDst, ScaleToFit.END);
-                    break;
-
-                case FIT_XY:
-                    mBaseMatrix.setRectToRect(mTempSrc, mTempDst, ScaleToFit.FILL);
-                    break;
-
-                default:
-                    break;
-            }
-        }
+        mBaseMatrix.setRectToRect(mTempSrc, mTempDst, ScaleToFit.CENTER);
 
         resetMatrix();
     }
@@ -1109,7 +902,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
      *
      * @author Chris Banes
      */
-    public static interface OnMatrixChangedListener {
+    public interface OnMatrixChangedListener {
         /**
          * Callback for when the Matrix displaying the Drawable has changed. This could be because
          * the View's bounds have changed, or the user has zoomed.
@@ -1120,28 +913,12 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
     }
 
     /**
-     * Interface definition for callback to be invoked when attached ImageView scale changes
-     *
-     * @author Marek Sebera
-     */
-    public static interface OnScaleChangeListener {
-        /**
-         * Callback for when the scale changes
-         *
-         * @param scaleFactor the scale factor (<1 for zoom out, >1 for zoom in)
-         * @param focusX      focal point X position
-         * @param focusY      focal point Y position
-         */
-        void onScaleChange(float scaleFactor, float focusX, float focusY);
-    }
-
-    /**
      * Interface definition for a callback to be invoked when the Photo is tapped with a single
      * tap.
      *
      * @author Chris Banes
      */
-    public static interface OnPhotoTapListener {
+    public interface OnPhotoTapListener {
 
         /**
          * A callback to receive where the user taps on a photo. You will only receive a callback if
@@ -1162,7 +939,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
      *
      * @author Chris Banes
      */
-    public static interface OnViewTapListener {
+    public interface OnViewTapListener {
 
         /**
          * A callback to receive where the user taps on a ImageView. You will receive a callback if

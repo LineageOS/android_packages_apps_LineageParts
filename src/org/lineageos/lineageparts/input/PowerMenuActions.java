@@ -39,7 +39,6 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.TelephonyUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lineageos.app.LineageGlobalActions;
@@ -67,9 +66,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private boolean mForceEmergCheck = false;
 
     Context mContext;
-    private LockPatternUtils mLockPatternUtils;
     private UserManager mUserManager;
-    private List<String> mLocalUserConfig = new ArrayList<String>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -78,7 +75,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.power_menu_settings);
         getActivity().setTitle(R.string.power_menu_title);
         mContext = getActivity().getApplicationContext();
-        mLockPatternUtils = new LockPatternUtils(mContext);
         mUserManager = UserManager.get(mContext);
         mLineageGlobalActions = LineageGlobalActions.getInstance(mContext);
         mEmergencyAffordanceManager = new EmergencyAffordanceManager(mContext);
@@ -105,8 +101,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             mPowerMenuItemsCategory.removePreference(mEmergencyPref);
             mEmergencyPref = null;
         }
-
-        mLocalUserConfig = mLineageGlobalActions.getLocalUserConfig();
     }
 
     @Override

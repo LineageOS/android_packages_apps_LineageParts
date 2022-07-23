@@ -17,9 +17,6 @@
 package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.content.Context;
-import androidx.recyclerview.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
 
 public class DisabledItem extends Item {
     private final int mResTitle;

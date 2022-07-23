@@ -23,7 +23,7 @@ import org.lineageos.lineageparts.R;
 import lineageos.app.Profile;
 
 public class LockModeItem extends Item {
-    Profile mProfile;
+    private final Profile mProfile;
 
     public LockModeItem(Profile profile) {
         mProfile = profile;

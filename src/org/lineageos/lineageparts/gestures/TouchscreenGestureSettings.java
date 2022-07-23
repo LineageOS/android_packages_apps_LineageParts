@@ -23,7 +23,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.util.ArraySet;
-import android.util.Log;
 
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceManager;
@@ -219,7 +218,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
 
         @Override
         public Set<String> getNonIndexableKeys(Context context) {
-            final Set<String> result = new ArraySet<String>();
+            final Set<String> result = new ArraySet<>();
 
             if (!isTouchscreenGesturesSupported(context)) {
                 result.add(KEY_TOUCHSCREEN_GESTURE_SETTINGS);

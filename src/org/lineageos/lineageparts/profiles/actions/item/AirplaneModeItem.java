@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2020 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import org.lineageos.lineageparts.R;
 import lineageos.profiles.AirplaneModeSettings;
 
 public class AirplaneModeItem extends Item {
-    AirplaneModeSettings mSettings;
+    private final AirplaneModeSettings mSettings;
 
     public AirplaneModeItem(AirplaneModeSettings airplaneModeSettings) {
         if (airplaneModeSettings == null) {

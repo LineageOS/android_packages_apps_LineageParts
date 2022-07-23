@@ -44,9 +44,9 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class PackageListAdapter extends BaseAdapter implements Runnable {
-    private PackageManager mPm;
-    private LayoutInflater mInflater;
-    private List<PackageItem> mInstalledPackages = new LinkedList<PackageItem>();
+    private final PackageManager mPm;
+    private final LayoutInflater mInflater;
+    private final List<PackageItem> mInstalledPackages = new LinkedList<>();
     private Set<String> mExcludedPackages = new HashSet<>();
 
     // Packages which don't have launcher icons, but which we want to show nevertheless
@@ -73,7 +73,7 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
     public static class PackageItem implements Comparable<PackageItem> {
         public final String packageName;
         public final CharSequence title;
-        private final TreeSet<CharSequence> activityTitles = new TreeSet<CharSequence>();
+        private final TreeSet<CharSequence> activityTitles = new TreeSet<>();
         public final Drawable icon;
 
         PackageItem(String packageName, CharSequence title, Drawable icon) {
@@ -126,9 +126,9 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
             convertView = mInflater.inflate(R.layout.preference_icon, null, false);
             holder = new ViewHolder();
             convertView.setTag(holder);
-            holder.title = (TextView) convertView.findViewById(com.android.internal.R.id.title);
-            holder.summary = (TextView) convertView.findViewById(com.android.internal.R.id.summary);
-            holder.icon = (ImageView) convertView.findViewById(com.android.internal.R.id.icon);
+            holder.title = convertView.findViewById(com.android.internal.R.id.title);
+            holder.summary = convertView.findViewById(com.android.internal.R.id.summary);
+            holder.icon = convertView.findViewById(com.android.internal.R.id.icon);
         }
 
         PackageItem applicationInfo = getItem(position);

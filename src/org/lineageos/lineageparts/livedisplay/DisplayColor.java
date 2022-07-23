@@ -40,7 +40,6 @@ import lineageos.hardware.LiveDisplayManager;
 public class DisplayColor extends CustomDialogPreference<AlertDialog> {
     private static final String TAG = "ColorCalibration";
 
-    private final Context mContext;
     private final LiveDisplayManager mLiveDisplay;
 
     // These arrays must all match in length and order
@@ -56,7 +55,7 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
         R.id.color_blue_value
     };
 
-    private ColorSeekBar[] mSeekBars = new ColorSeekBar[SEEKBAR_ID.length];
+    private final ColorSeekBar[] mSeekBars = new ColorSeekBar[SEEKBAR_ID.length];
 
     private final float[] mCurrentColors = new float[3];
     private final float[] mOriginalColors = new float[3];
@@ -64,8 +63,7 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
     public DisplayColor(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        mContext = context;
-        mLiveDisplay = LiveDisplayManager.getInstance(mContext);
+        mLiveDisplay = LiveDisplayManager.getInstance(context);
 
         setDialogLayoutResource(R.layout.display_color_calibration);
     }
@@ -88,8 +86,8 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
         System.arraycopy(mOriginalColors, 0, mCurrentColors, 0, 3);
 
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
-            IntervalSeekBar seekBar = (IntervalSeekBar) view.findViewById(SEEKBAR_ID[i]);
-            TextView value = (TextView) view.findViewById(SEEKBAR_VALUE_ID[i]);
+            IntervalSeekBar seekBar = view.findViewById(SEEKBAR_ID[i]);
+            TextView value = view.findViewById(SEEKBAR_VALUE_ID[i]);
             mSeekBars[i] = new ColorSeekBar(seekBar, value, i);
             mSeekBars[i].mSeekBar.setMinimum(0.1f);
             mSeekBars[i].mSeekBar.setMaximum(1.0f);
@@ -197,9 +195,9 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
     }
 
     private class ColorSeekBar implements SeekBar.OnSeekBarChangeListener {
-        private int mIndex;
+        private final int mIndex;
         private final IntervalSeekBar mSeekBar;
-        private TextView mValue;
+        private final TextView mValue;
 
         public ColorSeekBar(IntervalSeekBar seekBar, TextView value, int index) {
             mSeekBar = seekBar;

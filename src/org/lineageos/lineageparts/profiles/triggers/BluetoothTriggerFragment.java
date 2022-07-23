@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2020 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
 
@@ -48,7 +47,6 @@ public class BluetoothTriggerFragment extends AbstractTriggerListFragment {
 
     @Override
     protected void onLoadTriggers(Profile profile, List<AbstractTriggerItem> triggers) {
-        final Resources res = getResources();
         final Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
 
         if (!pairedDevices.isEmpty()) {
@@ -107,7 +105,7 @@ public class BluetoothTriggerFragment extends AbstractTriggerListFragment {
     }
 
     public static class BluetoothTrigger extends AbstractTriggerItem {
-        private String mAddress;
+        private final String mAddress;
 
         public BluetoothTrigger(BluetoothDevice device) {
             mAddress = device.getAddress();

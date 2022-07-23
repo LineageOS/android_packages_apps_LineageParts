@@ -19,7 +19,6 @@ package org.lineageos.lineageparts.atv;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Log;
@@ -27,7 +26,6 @@ import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

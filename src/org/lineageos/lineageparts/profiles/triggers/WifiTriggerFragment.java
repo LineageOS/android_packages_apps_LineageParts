@@ -17,7 +17,6 @@
 package org.lineageos.lineageparts.profiles.triggers;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -47,7 +46,6 @@ public class WifiTriggerFragment extends AbstractTriggerListFragment {
 
     @Override
     protected void onLoadTriggers(Profile profile, List<AbstractTriggerItem> triggers) {
-        final Resources res = getResources();
         final List<WifiConfiguration> configs = mWifiManager.getConfiguredNetworks();
         final HashSet<String> alreadyAdded = new HashSet<>();
 
