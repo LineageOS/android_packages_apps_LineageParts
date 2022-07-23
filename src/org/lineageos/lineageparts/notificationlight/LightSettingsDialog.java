@@ -27,6 +27,7 @@ import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -270,7 +271,7 @@ public class LightSettingsDialog extends AlertDialog implements
         mPulseSpeedOff.setSelection(mPulseSpeedAdapterOff.getTimePosition(speedOff));
     }
 
-    private Handler mLedHandler = new Handler() {
+    private final Handler mLedHandler = new Handler(Looper.getMainLooper()) {
         public void handleMessage(Message msg) {
             updateLed();
         }
