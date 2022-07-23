@@ -540,8 +540,8 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
 
         if (null != imageView) {
             setScale(scale,
-                    (imageView.getRight()) / 2,
-                    (imageView.getBottom()) / 2,
+                    (imageView.getRight()) / 2f,
+                    (imageView.getBottom()) / 2f,
                     animate);
         }
     }

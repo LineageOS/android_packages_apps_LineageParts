@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,15 +38,17 @@ public class ReportingService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         JobScheduler js = getSystemService(JobScheduler.class);
 
-        String deviceId = Utilities.getUniqueID(getApplicationContext());
+        Context context = getApplicationContext();
+
+        String deviceId = Utilities.getUniqueID(context);
         String deviceName = Utilities.getDevice();
         String deviceVersion = Utilities.getModVersion();
-        String deviceCountry = Utilities.getCountryCode(getApplicationContext());
-        String deviceCarrier = Utilities.getCarrier(getApplicationContext());
-        String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
+        String deviceCountry = Utilities.getCountryCode(context);
+        String deviceCarrier = Utilities.getCarrier(context);
+        String deviceCarrierId = Utilities.getCarrierId(context);
 
-        final int lineageOldJobId = AnonymousStats.getLastJobId(getApplicationContext());
-        final int lineageOrgJobId = AnonymousStats.getNextJobId(getApplicationContext());
+        final int lineageOldJobId = AnonymousStats.getLastJobId(context);
+        final int lineageOrgJobId = AnonymousStats.getNextJobId(context);
 
         if (DEBUG) Log.d(TAG, "scheduling job id: " + lineageOrgJobId);
 
