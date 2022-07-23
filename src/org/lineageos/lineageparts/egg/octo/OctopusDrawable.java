@@ -21,7 +21,6 @@ import android.animation.TimeAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
-import android.graphics.DashPathEffect;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -54,23 +53,22 @@ public class OctopusDrawable extends Drawable {
                                         {-1f, 1f, 4f},
                                         {0, 5f, 10f}};
 
-    private Paint mPaint = new Paint();
-    private Arm[] mArms = new Arm[4]; // 8
+    private final Paint mPaint = new Paint();
+    private final Arm[] mArms = new Arm[4]; // 8
     final PointF mCenter = new PointF();
-    private int mSizePx = 100;
     final Matrix M = new Matrix();
     final Matrix M_inv = new Matrix();
     private TimeAnimator mDriftAnimation;
-    private float[] mPtmp = new float[2];
-    private float[] mScaledBounds = new float[2];
+    private final float[] mPtmp = new float[2];
+    private final float[] mScaledBounds = new float[2];
 
-    private Drawable mEyeLogo;
+    private final Drawable mEyeLogo;
 
     public static float randfrange(float a, float b) {
         return (float) (Math.random() * (b - a) + a);
     }
     public static float clamp(float v, float a, float b) {
-        return v < a ? a : v > b ? b : v;
+        return v < a ? a : Math.min(v, b);
     }
 
     public OctopusDrawable(Context context) {
@@ -90,9 +88,8 @@ public class OctopusDrawable extends Drawable {
     }
 
     public void setSizePx(int size) {
-        mSizePx = size;
-        M.setScale(mSizePx / BASE_SCALE, mSizePx / BASE_SCALE);
-        TaperedPathStroke.setMinStep(8f * BASE_SCALE / mSizePx); // classic tentacles
+        M.setScale(size / BASE_SCALE, size / BASE_SCALE);
+        TaperedPathStroke.setMinStep(8f * BASE_SCALE / size); // classic tentacles
         M.invert(M_inv);
     }
 
@@ -103,17 +100,18 @@ public class OctopusDrawable extends Drawable {
                 static final float MAX_VY = 35f;
                 static final float JUMP_VY = -100f;
                 static final float MAX_VX = 15f;
-                private float ax = 0f, ay = 30f;
+                float ax = 0f;
+                final float ay = 30f;
                 private float vx, vy;
-                long nextjump = 0;
+                long nextJump = 0;
 
                 @Override
                 public void onTimeUpdate(TimeAnimator timeAnimator, long t, long dt) {
                     float t_sec = 0.001f * t;
                     float dt_sec = 0.001f * dt;
-                    if (t > nextjump) {
+                    if (t > nextJump) {
                         vy = JUMP_VY;
-                        nextjump = t + (long) randfrange(5000, 10000);
+                        nextJump = t + (long) randfrange(5000, 10000);
                     }
 
                     ax = (float) (MAX_VX * Math.sin(t_sec * .25f));
@@ -279,7 +277,7 @@ public class OctopusDrawable extends Drawable {
     private class Link implements DynamicAnimation.OnAnimationUpdateListener {
         final FloatValueHolder[] coords = new FloatValueHolder[2];
         final SpringAnimation[] anims = new SpringAnimation[coords.length];
-        private float dx, dy;
+        private final float dx, dy;
         private boolean locked = false;
         Link next;
 
@@ -345,7 +343,7 @@ public class OctopusDrawable extends Drawable {
 
     private class Arm {
         final Link link1, link2, link3;
-        float max, min;
+        final float max, min;
 
         public Arm(float x, float y, float dx1, float dy1, float dx2, float dy2,
                 float dx3, float dy3, float max, float min) {

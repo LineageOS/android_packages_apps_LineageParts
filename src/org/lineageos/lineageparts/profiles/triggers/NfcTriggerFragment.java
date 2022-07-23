@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2017,2021 The LineageOS Project
+ *               2017,2021-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +42,6 @@ public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallbac
     Profile mProfile;
 
     private NfcAdapter mNfcAdapter;
-    private IntentFilter[] mWriteTagFilters;
 
     public static NfcTriggerFragment newInstance(Profile profile) {
         NfcTriggerFragment fragment = new NfcTriggerFragment();
@@ -100,8 +99,8 @@ public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallbac
 
     private void enableTagWriteMode() {
         IntentFilter tagDetected = new IntentFilter(NfcAdapter.ACTION_TAG_DISCOVERED);
-        mWriteTagFilters = new IntentFilter[] {
-            tagDetected
+        IntentFilter[] writeTagFilters = new IntentFilter[]{
+                tagDetected
         };
         mNfcAdapter.enableForegroundDispatch(getActivity(), getPendingIntent(), writeTagFilters,
                 null);

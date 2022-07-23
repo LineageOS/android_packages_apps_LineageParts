@@ -219,7 +219,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
 
         @Override
         public Set<String> getNonIndexableKeys(Context context) {
-            final Set<String> result = new ArraySet<String>();
+            final Set<String> result = new ArraySet<>();
 
             if (!isTouchscreenGesturesSupported(context)) {
                 result.add(KEY_TOUCHSCREEN_GESTURE_SETTINGS);

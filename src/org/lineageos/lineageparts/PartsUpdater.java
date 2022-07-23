@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,7 +63,7 @@ public class PartsUpdater extends RemotePreferenceUpdater {
             return null;
         }
 
-        if (clazz == null || !Refreshable.class.isAssignableFrom(clazz)) {
+        if (!Refreshable.class.isAssignableFrom(clazz)) {
             return null;
         }
 
@@ -99,8 +100,8 @@ public class PartsUpdater extends RemotePreferenceUpdater {
     }
 
     public interface Refreshable extends SettingsHelper.OnSettingsChangeListener {
-        public interface SummaryProvider {
-            public String getSummary(Context context, String key);
+        interface SummaryProvider {
+            String getSummary(Context context, String key);
         }
     }
 }

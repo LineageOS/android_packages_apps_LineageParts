@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,5 +19,5 @@ package org.lineageos.lineageparts.profiles;
 import android.nfc.Tag;
 
 public interface NFCProfileTagCallback {
-    public void onTagRead(Tag tag);
+    void onTagRead(Tag tag);
 }

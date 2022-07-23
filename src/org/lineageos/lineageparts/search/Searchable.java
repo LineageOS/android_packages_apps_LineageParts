@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,10 +33,10 @@ import java.util.Set;
  */
 public interface Searchable {
 
-    public interface SearchIndexProvider {
+    interface SearchIndexProvider {
 
-        public List<SearchIndexableRaw> getRawDataToIndex(Context context);
+        List<SearchIndexableRaw> getRawDataToIndex(Context context);
 
-        public Set<String> getNonIndexableKeys(Context context);
+        Set<String> getNonIndexableKeys(Context context);
     }
 }

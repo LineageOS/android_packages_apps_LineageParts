@@ -22,7 +22,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -76,11 +75,6 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         final PartsActivity activity = (PartsActivity) getActivity();
@@ -114,7 +108,7 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
         View root = inflater.inflate(R.layout.fragment_setup_triggers, container, false);
 
         mPager = (RtlCompatibleViewPager) root.findViewById(R.id.view_pager);
-        mTabLayout = (SlidingTabLayout) root.findViewById(R.id.sliding_tabs);
+        mTabLayout = root.findViewById(R.id.sliding_tabs);
         mAdapter = new TriggerPagerAdapter(getActivity(), getChildFragmentManager());
 
         Bundle profileArgs = new Bundle();

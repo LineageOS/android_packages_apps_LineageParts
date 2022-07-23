@@ -62,7 +62,6 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
 
     private static final int MSG_GROUP_VOLUME_CHANGED = 1;
     private final Handler mVolumeHandler = new VolumeHandler(Looper.getMainLooper());
-    private AudioAttributes mAttributes;
     private int mVolumeGroupId;
 
     private final AudioManager.VolumeGroupCallback mVolumeGroupCallback =
@@ -89,8 +88,8 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
     private final int mMaxStreamVolume;
     private final int mMinStreamVolume;
     private final boolean mVoiceCapable;
-    private boolean mAffectedByRingerMode;
-    private boolean mNotificationOrRing;
+    private final boolean mAffectedByRingerMode;
+    private final boolean mNotificationOrRing;
     private final Receiver mReceiver = new Receiver();
 
     private Handler mHandler;
@@ -108,7 +107,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
     private int mVolumeBeforeMute = -1;
     private int mRingerMode;
     private int mZenMode;
-    private boolean mPlaySample;
+    private final boolean mPlaySample;
 
     private static final int MSG_SET_STREAM_VOLUME = 0;
     private static final int MSG_START_SAMPLE = 1;
@@ -151,8 +150,6 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
 
         if (hasAudioProductStrategies()) {
             mVolumeGroupId = getVolumeGroupIdForLegacyStreamType(mStreamType);
-            mAttributes = getAudioAttributesForLegacyStreamType(
-                    mStreamType);
         }
 
         mMaxStreamVolume = mAudioManager.getStreamMaxVolume(mStreamType);
@@ -198,19 +195,6 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
                 .filter(volumeGroupId -> volumeGroupId != AudioVolumeGroup.DEFAULT_VOLUME_GROUP)
                 .findFirst()
                 .orElse(AudioVolumeGroup.DEFAULT_VOLUME_GROUP);
-    }
-
-    private @NonNull AudioAttributes getAudioAttributesForLegacyStreamType(int streamType) {
-        for (final AudioProductStrategy productStrategy :
-                AudioManager.getAudioProductStrategies()) {
-            AudioAttributes aa = productStrategy.getAudioAttributesForLegacyStreamType(streamType);
-            if (aa != null) {
-                return aa;
-            }
-        }
-        return new AudioAttributes.Builder()
-                .setContentType(AudioAttributes.CONTENT_TYPE_UNKNOWN)
-                .setUsage(AudioAttributes.USAGE_UNKNOWN).build();
     }
 
     private static boolean isNotificationOrRing(int stream) {
@@ -483,7 +467,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
                 if (mSeekBar != null) {
                     mLastProgress = msg.arg1;
                     mLastAudibleStreamVolume = msg.arg2;
-                    final boolean muted = ((Boolean)msg.obj).booleanValue();
+                    final boolean muted = (Boolean) msg.obj;
                     if (muted != mMuted) {
                         mMuted = muted;
                         if (mCallback != null) {
@@ -496,7 +480,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
         }
 
         public void postUpdateSlider(int volume, int lastAudibleVolume, boolean mute) {
-            obtainMessage(UPDATE_SLIDER, volume, lastAudibleVolume, new Boolean(mute)).sendToTarget();
+            obtainMessage(UPDATE_SLIDER, volume, lastAudibleVolume, mute).sendToTarget();
         }
     }
 

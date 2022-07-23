@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +25,6 @@ import android.widget.SeekBar;
 public class BacklightTimeoutSeekBar extends SeekBar {
     private int mMax;
     private int mGap;
-    private boolean mUpdatingThumb;
 
     public BacklightTimeoutSeekBar(Context context) {
         super(context);
@@ -40,16 +40,12 @@ public class BacklightTimeoutSeekBar extends SeekBar {
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        mUpdatingThumb = true;
         super.onSizeChanged(w, h, oldw, oldh);
-        mUpdatingThumb = false;
     }
 
     @Override
     public void setThumb(Drawable thumb) {
-        mUpdatingThumb = true;
         super.setThumb(thumb);
-        mUpdatingThumb = false;
     }
 
     @Override

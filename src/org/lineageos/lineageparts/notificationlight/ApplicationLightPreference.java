@@ -39,7 +39,7 @@ import org.lineageos.lineageparts.R;
 public class ApplicationLightPreference extends CustomDialogPreference<LightSettingsDialog>
         implements View.OnLongClickListener {
 
-    private static String TAG = "AppLightPreference";
+    private static final String TAG = "AppLightPreference";
     public static final int DEFAULT_TIME = 1000;
     public static final int DEFAULT_COLOR = 0xffffff;
 
@@ -62,7 +62,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     private LightSettingsDialog mDialog;
 
     public interface ItemLongClickListener {
-        public boolean onItemLongClick(String key);
+        boolean onItemLongClick(String key);
     }
 
     private ItemLongClickListener mLongClickListener;
@@ -224,18 +224,8 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         updatePreferenceViews();
     }
 
-    public void setOnValue(int value) {
-        mOnValue = value;
-        updatePreferenceViews();
-    }
-
     public int getOnValue() {
         return mOnValue;
-    }
-
-    public void setOffValue(int value) {
-        mOffValue = value;
-        updatePreferenceViews();
     }
 
     public int getOffValue() {
@@ -255,16 +245,6 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         mOffValue = offValue;
         mOnOffChangeable = onOffChangeable;
         updatePreferenceViews();
-    }
-
-    public void setOnOffValue(int onValue, int offValue) {
-        mOnValue = onValue;
-        mOffValue = offValue;
-        updatePreferenceViews();
-    }
-
-    public void setOnOffChangeable(boolean value) {
-        mOnOffChangeable = value;
     }
 
     public void setDefaultValues(int color, int onValue, int offValue) {
