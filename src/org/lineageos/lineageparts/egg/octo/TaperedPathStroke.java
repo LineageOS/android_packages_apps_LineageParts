@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,18 +21,12 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
-import android.os.Debug;
-
-import java.util.Arrays;
 
 public class TaperedPathStroke {
     static float sMinStepPx = 4f;
     static PathMeasure pm = new PathMeasure();
     static float[] pos = {0, 0};
     static float[] tan = {0, 0};
-    static float lerp(float t, float a, float b) {
-        return a + t * (b - a);
-    }
     public static void setMinStep(float px) {
         sMinStepPx = px;
     }

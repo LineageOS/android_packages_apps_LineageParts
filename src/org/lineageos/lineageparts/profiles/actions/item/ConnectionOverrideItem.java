@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2020 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,20 +17,15 @@
 package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.content.Context;
-import android.telephony.SubscriptionManager;
 
 import org.lineageos.lineageparts.R;
 
 import lineageos.profiles.ConnectionSettings;
 
 public class ConnectionOverrideItem extends Item {
-    int mConnectionId;
-    ConnectionSettings mConnectionSettings;
-
-    public static final int Lineage_MODE_SYSTEM_DEFAULT = -1;
+    private final ConnectionSettings mConnectionSettings;
 
     public ConnectionOverrideItem(int connectionId, ConnectionSettings settings) {
-        mConnectionId = connectionId;
         if (settings == null) {
             settings = new ConnectionSettings(connectionId);
         }
@@ -45,7 +40,7 @@ public class ConnectionOverrideItem extends Item {
     @Override
     public String getSummary(Context context) {
         int resId = R.string.profile_action_none;
-        if (mConnectionSettings != null && mConnectionSettings.isOverride()) {
+        if (mConnectionSettings.isOverride()) {
             if (mConnectionSettings.getValue() == 1) {
                 resId = R.string.profile_action_enable;
             } else {
@@ -77,9 +72,5 @@ public class ConnectionOverrideItem extends Item {
 
     public ConnectionSettings getSettings() {
         return mConnectionSettings;
-    }
-
-    public int getConnectionType() {
-        return mConnectionId;
     }
 }

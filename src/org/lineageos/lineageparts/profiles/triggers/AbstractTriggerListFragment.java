@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020-2021 The LineageOS Project
+ * Copyright (C) 2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
 
 package org.lineageos.lineageparts.profiles.triggers;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -45,13 +44,13 @@ public abstract class AbstractTriggerListFragment extends Fragment {
     private ProfileManager mProfileManager;
     private Profile mProfile;
 
-    private List<AbstractTriggerItem> mTriggers = new ArrayList<>();
+    private final List<AbstractTriggerItem> mTriggers = new ArrayList<>();
 
     private View mEmptyView;
     private RecyclerView mRecyclerView;
     private TriggerAdapter mAdapter;
 
-    private TriggerAdapter.ItemClickListener mItemClickListener = item -> {
+    private final TriggerAdapter.ItemClickListener mItemClickListener = item -> {
         final Resources res = getResources();
         final String[] possibleEntries = res.getStringArray(getOptionArrayResId());
         final String[] possibleValues = res.getStringArray(getOptionValuesArrayResId());
@@ -183,9 +182,9 @@ public abstract class AbstractTriggerListFragment extends Fragment {
     }
 
     private static class TriggerViewHolder extends RecyclerView.ViewHolder {
-        private TextView mTitleView;
-        private TextView mDescView;
-        private ImageView mIconView;
+        private final TextView mTitleView;
+        private final TextView mDescView;
+        private final ImageView mIconView;
 
         public TriggerViewHolder(View view) {
             super(view);

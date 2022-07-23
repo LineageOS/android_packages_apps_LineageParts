@@ -47,7 +47,6 @@ public class WifiTriggerFragment extends AbstractTriggerListFragment {
 
     @Override
     protected void onLoadTriggers(Profile profile, List<AbstractTriggerItem> triggers) {
-        final Resources res = getResources();
         final List<WifiConfiguration> configs = mWifiManager.getConfiguredNetworks();
         final HashSet<String> alreadyAdded = new HashSet<>();
 

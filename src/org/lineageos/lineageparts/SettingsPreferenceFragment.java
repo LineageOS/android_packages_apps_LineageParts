@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
- *               2020-2021 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -86,12 +86,11 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
     // Cache the content resolver for async callbacks
     private ContentResolver mContentResolver;
 
-    private String mPreferenceKey;
     private boolean mPreferenceHighlighted = false;
 
     private RecyclerView.Adapter mCurrentRootAdapter;
     private boolean mIsDataSetObserverRegistered = false;
-    private RecyclerView.AdapterDataObserver mDataSetObserver =
+    private final RecyclerView.AdapterDataObserver mDataSetObserver =
             new RecyclerView.AdapterDataObserver() {
         @Override
         public void onChanged() {
@@ -106,7 +105,6 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
 
     private LayoutPreference mFooter;
     private View mEmptyView;
-    private LinearLayoutManager mLayoutManager;
     private HighlightablePreferenceGroupAdapter mAdapter;
     private ArrayMap<String, Preference> mPreferenceCache;
     private boolean mAnimationAllowed;
@@ -126,8 +124,8 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         final View root = super.onCreateView(inflater, container, savedInstanceState);
-        mPinnedHeaderFrameLayout = (ViewGroup) root.findViewById(R.id.pinned_header);
-        mButtonBar = (ViewGroup) root.findViewById(R.id.button_bar);
+        mPinnedHeaderFrameLayout = root.findViewById(R.id.pinned_header);
+        mButtonBar = root.findViewById(R.id.button_bar);
         return root;
     }
 
@@ -171,7 +169,6 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
 
         final Bundle args = getArguments();
         if (args != null) {
-            mPreferenceKey = args.getString(PartsActivity.EXTRA_FRAGMENT_ARG_KEY);
             highlightPreferenceIfNeeded();
         }
     }
@@ -363,8 +360,7 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
 
     @Override
     public RecyclerView.LayoutManager onCreateLayoutManager() {
-        mLayoutManager = new LinearLayoutManager(getContext());
-        return mLayoutManager;
+        return new LinearLayoutManager(getContext());
     }
 
     @Override
@@ -470,8 +466,7 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         synchronized (mTriggerUris) {
-            SettingsHelper.get(activity).startWatching(this,
-                    mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+            SettingsHelper.get(activity).startWatching(this, mTriggerUris.toArray(new Uri[0]));
         }
     }
 
@@ -495,7 +490,7 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
             mTriggerUris.addAll(Arrays.asList(contentUris));
             if (!isDetached()) {
                 SettingsHelper.get(getActivity()).startWatching(this,
-                        mTriggerUris.toArray(new Uri[mTriggerUris.size()]));
+                        mTriggerUris.toArray(new Uri[0]));
             }
         }
     }
@@ -692,11 +687,11 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
     }
 
     protected Button getBackButton() {
-        return (Button) ((PartsActivity)getActivity()).getBackButton();
+        return ((PartsActivity)getActivity()).getBackButton();
     }
 
     protected Button getNextButton() {
-        return (Button) ((PartsActivity)getActivity()).getNextButton();
+        return ((PartsActivity)getActivity()).getNextButton();
     }
 
     protected void showButtonBar(boolean show) {

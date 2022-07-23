@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2020 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,9 +30,9 @@ import java.util.List;
 
 public class ItemListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         implements View.OnClickListener {
-    private LayoutInflater mInflater;
-    private List<Item> mItems;
-    private OnItemClickListener mItemClickListener;
+    private final LayoutInflater mInflater;
+    private final List<Item> mItems;
+    private final OnItemClickListener mItemClickListener;
 
     public interface OnItemClickListener {
         void onItemClick(Item item, int position);
@@ -107,8 +107,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
-        private TextView mTitleView;
-        private TextView mSummaryView;
+        private final TextView mTitleView;
+        private final TextView mSummaryView;
 
         private ItemViewHolder(View view) {
             super(view);

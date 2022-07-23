@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@ import android.util.AttributeSet;
 import lineageos.providers.LineageSettings;
 
 public class BatteryBrightnessZenPreference extends BrightnessPreference {
-    private static String TAG = "BatteryBrightnessZenPreference";
+    private static final String TAG = "BatteryBrightnessZenPreference";
 
-    private Context mContext;
+    private final Context mContext;
 
     public BatteryBrightnessZenPreference(Context context, AttributeSet attrs) {
         super(context, attrs);

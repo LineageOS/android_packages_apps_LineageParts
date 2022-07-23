@@ -58,7 +58,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     private SeekBar mTimeoutBar;
     private TextView mTimeoutValue;
 
-    private ContentResolver mResolver;
+    private final ContentResolver mResolver;
 
     private int mOriginalTimeout;
 
@@ -132,16 +132,16 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
-        mTimeoutContainer = (ViewGroup) view.findViewById(R.id.timeout_container);
-        mTimeoutBar = (SeekBar) view.findViewById(R.id.timeout_seekbar);
-        mTimeoutValue = (TextView) view.findViewById(R.id.timeout_value);
+        mTimeoutContainer = view.findViewById(R.id.timeout_container);
+        mTimeoutBar = view.findViewById(R.id.timeout_seekbar);
+        mTimeoutValue = view.findViewById(R.id.timeout_value);
         mTimeoutBar.setMax(30);
         mTimeoutBar.setOnSeekBarChangeListener(this);
         mOriginalTimeout = getTimeout();
         mTimeoutBar.setProgress(mOriginalTimeout);
         handleTimeoutUpdate(mTimeoutBar.getProgress());
 
-        ViewGroup buttonContainer = (ViewGroup) view.findViewById(R.id.button_container);
+        ViewGroup buttonContainer = view.findViewById(R.id.button_container);
         if (mButtonBrightness != null) {
             mButtonBrightness.init(buttonContainer);
         } else {
@@ -149,7 +149,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
             mTimeoutContainer.setVisibility(View.GONE);
         }
 
-        ViewGroup keyboardContainer = (ViewGroup) view.findViewById(R.id.keyboard_container);
+        ViewGroup keyboardContainer = view.findViewById(R.id.keyboard_container);
         if (mKeyboardBrightness != null) {
             mKeyboardBrightness.init(keyboardContainer);
         } else {
@@ -350,9 +350,9 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
     private class BrightnessControl implements
             SeekBar.OnSeekBarChangeListener, CheckBox.OnCheckedChangeListener {
-        private String mSetting;
-        private boolean mIsSingleValue;
-        private float mDefaultBrightness;
+        private final String mSetting;
+        private final boolean mIsSingleValue;
+        private final float mDefaultBrightness;
         private CheckBox mCheckBox;
         private SeekBar mSeekBar;
         private TextView mValue;
@@ -372,13 +372,13 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
 
             if (mIsSingleValue) {
                 container.findViewById(R.id.seekbar_container).setVisibility(View.GONE);
-                mCheckBox = (CheckBox) container.findViewById(R.id.backlight_switch);
+                mCheckBox = container.findViewById(R.id.backlight_switch);
                 mCheckBox.setChecked(brightness != 0.0f);
                 mCheckBox.setOnCheckedChangeListener(this);
             } else {
                 container.findViewById(R.id.checkbox_container).setVisibility(View.GONE);
-                mSeekBar = (SeekBar) container.findViewById(R.id.seekbar);
-                mValue = (TextView) container.findViewById(R.id.value);
+                mSeekBar = container.findViewById(R.id.seekbar);
+                mValue = container.findViewById(R.id.value);
 
                 mSeekBar.setMax(100);
                 mSeekBar.setProgress((int)(brightness * 100.0f));
@@ -447,7 +447,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
     }
 
     private class ButtonBrightnessControl extends BrightnessControl {
-        private String mOnlyWhenPressedSetting;
+        private final String mOnlyWhenPressedSetting;
         private CheckBox mOnlyWhenPressedCheckBox;
 
         public ButtonBrightnessControl(String brightnessSetting, String onlyWhenPressedSetting,
@@ -461,7 +461,7 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
             super.init(container);
 
             mOnlyWhenPressedCheckBox =
-                    (CheckBox) container.findViewById(R.id.backlight_only_when_pressed_switch);
+                    container.findViewById(R.id.backlight_only_when_pressed_switch);
             mOnlyWhenPressedCheckBox.setChecked(isOnlyWhenPressedEnabled());
             mOnlyWhenPressedCheckBox.setOnCheckedChangeListener(this);
         }

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2020 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,8 +31,8 @@ public class TriggerItem extends Item {
     // not in Profile.TriggerType, but we need it.
     public static final int NFC = 2;
 
-    Profile mProfile;
-    int mTriggerType;
+    private final Profile mProfile;
+    private final int mTriggerType;
 
     public TriggerItem(Profile profile, int whichTrigger) {
         mProfile = profile;

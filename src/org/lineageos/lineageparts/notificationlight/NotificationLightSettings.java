@@ -18,7 +18,6 @@
 package org.lineageos.lineageparts.notificationlight;
 
 import android.app.Dialog;
-import android.app.NotificationManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -82,7 +81,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private int mDefaultLedOff;
     private PackageManager mPackageManager;
     private PreferenceGroup mApplicationPrefList;
-    private NotificationBrightnessPreference mNotificationBrightnessPref;
     private SystemSettingMainSwitchPreference mEnabledPref;
     private LineageSystemSettingSwitchPreference mCustomEnabledPref;
     private LineageSystemSettingSwitchPreference mScreenOnLightsPref;
@@ -93,8 +91,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private PackageListAdapter mPackageAdapter;
     private String mPackageList;
     private Map<String, Package> mPackages;
-    // liblights supports brightness control
-    private boolean mHALAdjustableBrightness;
     // Supports rgb color control
     private boolean mMultiColorLed;
     // Supports adjustable pulse
@@ -124,7 +120,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mDefaultLedOff = resources.getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
 
-        mHALAdjustableBrightness = LightsCapabilities.supports(
+        // liblights supports brightness control
+        final boolean halAdjustableBrightness = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS);
         mLedCanPulse = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_PULSATING_LED);
@@ -139,14 +136,12 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mAutoGenerateColors = findPreference(LineageSettings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
 
         // Advanced light settings
-        mNotificationBrightnessPref =
-                findPreference(LineageSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
         mScreenOnLightsPref =
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref =
                 findPreference(LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
-        if (!mMultiColorLed && !mHALAdjustableBrightness) {
+        if (!mMultiColorLed && !halAdjustableBrightness) {
             removePreference(BRIGHTNESS_SECTION);
         }
         if (!mLedCanPulse && !mMultiColorLed) {
@@ -183,7 +178,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mPackageManager = getActivity().getPackageManager();
             mPackageAdapter = new PackageListAdapter(getActivity());
 
-            mPackages = new HashMap<String, Package>();
+            mPackages = new HashMap<>();
 
             Preference addPreference = prefSet.findPreference(ADD_APPS);
             addPreference.setOnPreferenceClickListener(preference -> {
@@ -595,9 +590,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 return null;
 
             try {
-                Package item = new Package(app[0], Integer.parseInt(values[0]), Integer
+                return new Package(app[0], Integer.parseInt(values[0]), Integer
                         .parseInt(values[1]), Integer.parseInt(values[2]));
-                return item;
             } catch (NumberFormatException e) {
                 return null;
             }
