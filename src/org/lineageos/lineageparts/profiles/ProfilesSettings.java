@@ -275,19 +275,13 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         }
     }
 
-    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
-        @Override
-        public String getSummary(Context context, String key) {
-            ProfileManager pm = ProfileManager.getInstance(context);
-            if (!pm.isProfilesEnabled()) {
-                return context.getString(R.string.profile_settings_summary_off);
-            }
-
-            Profile p = pm.getActiveProfile();
-            if (p != null) {
-                return p.getName();
-            }
-            return null;
+    public static final SummaryProvider SUMMARY_PROVIDER = (context, key) -> {
+        ProfileManager pm = ProfileManager.getInstance(context);
+        if (!pm.isProfilesEnabled()) {
+            return context.getString(R.string.profile_settings_summary_off);
         }
+
+        Profile p = pm.getActiveProfile();
+        return p != null ? p.getName() : null;
     };
 }
