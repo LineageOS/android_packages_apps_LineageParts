@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,11 +27,11 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 public class AnonymousStats extends SettingsPreferenceFragment {
 
     private static final String PREF_FILE_NAME = "LineageStats";
-    /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
-    /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
+    static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
+    static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 
-    /* package */ static final String KEY_LAST_JOB_ID = "last_job_id";
-    /* package */ static final int QUEUE_MAX_THRESHOLD = 1000;
+    static final String KEY_LAST_JOB_ID = "last_job_id";
+    static final int QUEUE_MAX_THRESHOLD = 1000;
 
     public static SharedPreferences getPreferences(Context context) {
         return context.getSharedPreferences(PREF_FILE_NAME, 0);

@@ -74,10 +74,6 @@ public class LayoutPreference extends Preference {
     private void setView(View view) {
         setLayoutResource(R.layout.layout_preference_frame);
         setSelectable(false);
-        //final ViewGroup allDetails = (ViewGroup) view.findViewById(R.id.all_details);
-        //if (allDetails != null) {
-        //    forceCustomPadding(allDetails, true /* additive padding */);
-        //}
         mRootView = view;
         setShouldDisableView(false);
     }

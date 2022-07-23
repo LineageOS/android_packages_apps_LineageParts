@@ -1,19 +1,20 @@
-/*******************************************************************************
+/*
  * Copyright 2011, 2012 Chris Banes.
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *******************************************************************************/
+ */
 
 package org.lineageos.lineageparts.contributors;
 
@@ -126,11 +127,11 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
      * Set's the ImageView's ScaleType to Matrix.
      */
     private static void setImageViewScaleTypeMatrix(ImageView imageView) {
-        /**
+        /*
          * PhotoView sets it's own ScaleType to Matrix, then diverts all calls
          * setScaleType to this.setScaleType automatically.
          */
-        if (null != imageView /*&& !(imageView instanceof IPhotoView)*/) {
+        if (null != imageView) {
             if (!ScaleType.MATRIX.equals(imageView.getScaleType())) {
                 imageView.setScaleType(ScaleType.MATRIX);
             }
@@ -450,7 +451,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         mSuppMatrix.postTranslate(dx, dy);
         checkAndDisplayMatrix();
 
-        /**
+        /*
          * Here we decide whether to let the ImageView's parent to start taking
          * over the touch event.
          *
@@ -500,7 +501,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
                 final int bottom = imageView.getBottom();
                 final int left = imageView.getLeft();
 
-                /**
+                /*
                  * We need to check whether the ImageView's bounds have changed.
                  * This would be easier if we targeted API 11+ as we could just use
                  * View.OnLayoutChangeListener. Instead we have to replicate the
@@ -750,7 +751,7 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
     private void checkImageViewScaleType() {
         ImageView imageView = getImageView();
 
-        /**
+        /*
          * PhotoView's getScaleType() will just divert to this.getScaleType() so
          * only call if we're not attached to a PhotoView.
          */

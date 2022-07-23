@@ -86,12 +86,6 @@ public class LightSettingsDialog extends AlertDialog implements
 
     private Context mContext;
 
-    /**
-     * @param context
-     * @param initialColor
-     * @param initialSpeedOn
-     * @param initialSpeedOff
-     */
     protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
             int initialSpeedOff) {
         super(context);
@@ -99,13 +93,6 @@ public class LightSettingsDialog extends AlertDialog implements
         init(context, initialColor, initialSpeedOn, initialSpeedOff, true, 0);
     }
 
-    /**
-     * @param context
-     * @param initialColor
-     * @param initialSpeedOn
-     * @param initialSpeedOff
-     * @param onOffChangeable
-     */
     protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
             int initialSpeedOff, boolean onOffChangeable, int brightness) {
         super(context);
