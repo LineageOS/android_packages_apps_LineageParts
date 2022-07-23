@@ -272,14 +272,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         return true;
     }
 
-    public static final SummaryProvider SUMMARY_PROVIDER = new SummaryProvider() {
-        @Override
-        public String getSummary(Context context, String key) {
-            if (LineageSettings.System.getInt(context.getContentResolver(),
-                    LineageSettings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
-                return context.getString(R.string.enabled);
-            }
-            return context.getString(R.string.disabled);
+    public static final SummaryProvider SUMMARY_PROVIDER = (context, key) -> {
+        if (LineageSettings.System.getInt(context.getContentResolver(),
+                LineageSettings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
+            return context.getString(R.string.enabled);
         }
+        return context.getString(R.string.disabled);
     };
 }
