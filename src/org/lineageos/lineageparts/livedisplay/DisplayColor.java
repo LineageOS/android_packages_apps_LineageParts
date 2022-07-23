@@ -212,7 +212,7 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
             IntervalSeekBar isb = (IntervalSeekBar)seekBar;
             float fp = isb.getProgressFloat();
             if (fromUser) {
-                mCurrentColors[mIndex] = fp > 1.0f ? 1.0f : fp;
+                mCurrentColors[mIndex] = Math.min(fp, 1.0f);
                 updateColors(mCurrentColors);
             }
 

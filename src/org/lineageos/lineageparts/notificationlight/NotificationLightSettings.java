@@ -319,8 +319,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         }
     }
 
-    private void maybeDisplayApplicationHint(Context context)
-    {
+    private void maybeDisplayApplicationHint(Context context) {
         /* Display a pref explaining how to add apps */
         if (mApplicationPrefList != null && mApplicationPrefList.getPreferenceCount() == 1) {
             String summary = getResources().getString(
