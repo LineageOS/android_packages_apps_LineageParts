@@ -33,6 +33,7 @@ import android.media.audiopolicy.AudioVolumeGroup;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.Looper;
 import android.os.Message;
 import android.preference.VolumePreference.VolumeStore;
 import android.provider.Settings;
@@ -60,7 +61,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
     }
 
     private static final int MSG_GROUP_VOLUME_CHANGED = 1;
-    private final Handler mVolumeHandler = new VolumeHandler();
+    private final Handler mVolumeHandler = new VolumeHandler(Looper.getMainLooper());
     private AudioAttributes mAttributes;
     private int mVolumeGroupId;
 
@@ -79,7 +80,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
     };
 
     private final Context mContext;
-    private final H mUiHandler = new H();
+    private final H mUiHandler = new H(Looper.getMainLooper());
     private final Callback mCallback;
     private final Uri mDefaultUri;
     private final AudioManager mAudioManager;
@@ -472,6 +473,10 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
     private final class H extends Handler {
         private static final int UPDATE_SLIDER = 1;
 
+        public H(Looper looper) {
+            super(looper);
+        }
+
         @Override
         public void handleMessage(Message msg) {
             if (msg.what == UPDATE_SLIDER) {
@@ -604,6 +609,11 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
     }
 
     private class VolumeHandler extends Handler {
+
+        public VolumeHandler(Looper looper) {
+            super(looper);
+        }
+
         @Override
         public void handleMessage(Message msg) {
             SomeArgs args = (SomeArgs) msg.obj;
