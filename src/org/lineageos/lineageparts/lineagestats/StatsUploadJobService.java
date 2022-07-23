@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017 The LineageOS project
+ *               2017-2022 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -92,7 +92,7 @@ public class StatsUploadJobService extends JobService {
 
     private class StatsUploadTask extends AsyncTask<Void, Void, Boolean> {
 
-        private JobParameters mJobParams;
+        private final JobParameters mJobParams;
 
         public StatsUploadTask(JobParameters jobParams) {
             this.mJobParams = jobParams;
@@ -109,7 +109,6 @@ public class StatsUploadJobService extends JobService {
             String deviceCountry = extras.getString(KEY_COUNTRY);
             String deviceCarrier = extras.getString(KEY_CARRIER);
             String deviceCarrierId = extras.getString(KEY_CARRIER_ID);
-            long timeStamp = extras.getLong(KEY_TIMESTAMP);
 
             boolean success = false;
             int jobType = extras.getInt(KEY_JOB_TYPE, -1);
@@ -171,8 +170,7 @@ public class StatsUploadJobService extends JobService {
             if (DEBUG) Log.d(TAG, "lineage server response code=" + responseCode);
             final boolean success = responseCode == HttpURLConnection.HTTP_OK;
             if (!success) {
-                Log.w(TAG, "failed sending, server returned: " + getResponse(urlConnection,
-                        !success));
+                Log.w(TAG, "failed sending, server returned: " + getResponse(urlConnection));
             }
             return success;
         } finally {
@@ -181,11 +179,9 @@ public class StatsUploadJobService extends JobService {
 
     }
 
-    private String getResponse(HttpURLConnection httpUrlConnection, boolean errorStream)
+    private String getResponse(HttpURLConnection httpUrlConnection)
             throws IOException {
-        InputStream responseStream = new BufferedInputStream(errorStream
-                ? httpUrlConnection.getErrorStream()
-                : httpUrlConnection.getInputStream());
+        InputStream responseStream = new BufferedInputStream(httpUrlConnection.getErrorStream());
 
         BufferedReader responseStreamReader = new BufferedReader(
                 new InputStreamReader(responseStream));

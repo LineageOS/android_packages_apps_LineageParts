@@ -44,7 +44,6 @@ import lineageos.hardware.LiveDisplayManager;
 public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     private static final String TAG = "PictureAdjustment";
 
-    private final Context mContext;
     private final LiveDisplayManager mLiveDisplay;
     private final List<Range<Float>> mRanges;
 
@@ -63,7 +62,7 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
         R.id.adj_contrast_value
     };
 
-    private ColorSeekBar[] mSeekBars = new ColorSeekBar[SEEKBAR_ID.length];
+    private final ColorSeekBar[] mSeekBars = new ColorSeekBar[SEEKBAR_ID.length];
 
     private final float[] mCurrentAdj = new float[5];
     private final float[] mOriginalAdj = new float[5];
@@ -71,8 +70,7 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     public PictureAdjustment(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        mContext = context;
-        mLiveDisplay = LiveDisplayManager.getInstance(mContext);
+        mLiveDisplay = LiveDisplayManager.getInstance(context);
         mRanges = mLiveDisplay.getConfig().getPictureAdjustmentRanges();
 
         setDialogLayoutResource(R.layout.display_picture_adjustment);
@@ -102,8 +100,8 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
         System.arraycopy(mOriginalAdj, 0, mCurrentAdj, 0, 5);
 
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
-            IntervalSeekBar seekBar = (IntervalSeekBar) view.findViewById(SEEKBAR_ID[i]);
-            TextView value = (TextView) view.findViewById(SEEKBAR_VALUE_ID[i]);
+            IntervalSeekBar seekBar = view.findViewById(SEEKBAR_ID[i]);
+            TextView value = view.findViewById(SEEKBAR_VALUE_ID[i]);
             final Range<Float> range = mRanges.get(i);
             mSeekBars[i] = new ColorSeekBar(seekBar, range, value, i);
         }
@@ -205,10 +203,10 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
     }
 
     private class ColorSeekBar implements SeekBar.OnSeekBarChangeListener {
-        private int mIndex;
+        private final int mIndex;
         private final IntervalSeekBar mSeekBar;
-        private TextView mValue;
-        private Range<Float> mRange;
+        private final TextView mValue;
+        private final Range<Float> mRange;
 
         public ColorSeekBar(IntervalSeekBar seekBar, Range<Float> range, TextView value,
                             int index) {

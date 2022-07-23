@@ -99,9 +99,8 @@ public class NFCProfileUtils {
         for (int i = 8; i < 16; i++) {
             lsb = (lsb << 8) | (byteArray[i] & 0xff);
         }
-        UUID result = new UUID(msb, lsb);
 
-        return result;
+        return new UUID(msb, lsb);
     }
 
     /* Convert a UUID to a 16-byte array */

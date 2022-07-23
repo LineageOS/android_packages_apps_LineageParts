@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2017,2019,2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,8 +41,7 @@ import java.util.List;
  */
 public class TriggerPagerAdapter extends FragmentPagerAdapter {
 
-    private final SparseArray<WeakReference<Fragment>> mFragmentArray =
-            new SparseArray<WeakReference<Fragment>>();
+    private final SparseArray<WeakReference<Fragment>> mFragmentArray = new SparseArray<>();
 
     private final List<Holder> mHolderList = Lists.newArrayList();
 
@@ -117,9 +116,8 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(final int position) {
         final Holder mCurrentHolder = mHolderList.get(position);
-        final Fragment mFragment = Fragment.instantiate(mFragmentActivity,
+        return Fragment.instantiate(mFragmentActivity,
                 mCurrentHolder.mClassName, mCurrentHolder.mParams);
-        return mFragment;
     }
 
     /**
@@ -185,15 +183,15 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
          */
         NFC(NfcTriggerFragment.class, R.string.profile_tabs_nfc);
 
-        private Class<? extends Fragment> mFragmentClass;
-        private int mNameRes;
+        private final Class<? extends Fragment> mFragmentClass;
+        private final int mNameRes;
 
         /**
          * Constructor of <code>MusicFragments</code>
          *
          * @param fragmentClass The fragment class
          */
-        private TriggerFragments(final Class<? extends Fragment> fragmentClass, int nameRes) {
+        TriggerFragments(final Class<? extends Fragment> fragmentClass, int nameRes) {
             mFragmentClass = fragmentClass;
             mNameRes = nameRes;
         }

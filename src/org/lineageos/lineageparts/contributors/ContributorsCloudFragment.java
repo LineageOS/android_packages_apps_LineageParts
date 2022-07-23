@@ -140,7 +140,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                 LayoutInflater li = LayoutInflater.from(getContext());
                 convertView = li.inflate(R.layout.contributors_search_result, null);
                 ContributorsViewHolder viewHolder = new ContributorsViewHolder();
-                viewHolder.mLabel = (TextView) convertView.findViewById(R.id.contributor_name);
+                viewHolder.mLabel = convertView.findViewById(R.id.contributor_name);
                 convertView.setTag(viewHolder);
             }
 
@@ -191,7 +191,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
         @Override
         protected void onPostExecute(Boolean result) {
-            if (result == true) {
+            if (result) {
                 mImageView.setImageBitmap(mViewInfo.mBitmap);
                 mViewController.update();
                 if (mNotify) {
@@ -314,12 +314,12 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
         mLoadingView= v.findViewById(R.id.contributors_cloud_loading);
         mFailedView= v.findViewById(R.id.contributors_cloud_failed);
-        mImageView = (ImageView) v.findViewById(R.id.contributors_cloud_image);
+        mImageView = v.findViewById(R.id.contributors_cloud_image);
         mViewController = new ContributorsCloudViewController(mImageView);
         mViewController.setMaximumScale(20f);
         mViewController.setMediumScale(7f);
 
-        mSearchResults = (ListView) v.findViewById(R.id.contributors_cloud_search_results);
+        mSearchResults = v.findViewById(R.id.contributors_cloud_search_results);
         mSearchAdapter = new ContributorsAdapter(getActivity());
         mSearchResults.setAdapter(mSearchAdapter);
         mSearchResults.setOnItemClickListener(new OnItemClickListener() {
@@ -346,7 +346,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         if (args != null) {
             String c = args.getString(PartsActivity.EXTRA_FRAGMENT_ARG_KEY);
             if (c != null && c.startsWith(KEY_PREFIX)) {
-                onContributorSelected(Integer.valueOf(c.substring(KEY_PREFIX.length())));
+                onContributorSelected(Integer.parseInt(c.substring(KEY_PREFIX.length())));
                 args.remove(PartsActivity.EXTRA_FRAGMENT_ARG_KEY);
             }
         }
@@ -575,8 +575,8 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                     int cy = ih / 2;
                     int cbx = bsize / 2;
                     int cby = bsize / 2;
-                    float cw = 0f;
-                    float ch = 0f;
+                    float cw;
+                    float ch;
                     if (r == 0) {
                         cw = translate(w, bsize, Math.min(iw, ih)) / 2;
                         ch = translate(h, bsize, Math.min(iw, ih)) / 2;
@@ -787,7 +787,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     public static void extractContributorsCloudDatabase(Context context) {
         final int BUFFER = 1024;
         InputStream is = null;
-        OutputStream os = null;
+        OutputStream os;
         File databasePath = context.getDatabasePath(DB_NAME);
         try {
             databasePath.getParentFile().mkdir();
@@ -819,7 +819,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
                     // Index the top 100 contributors, for fun :)
                     File dbPath = context.getDatabasePath(DB_NAME);
-                    SQLiteDatabase db = null;
+                    SQLiteDatabase db;
                     try {
                         db = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                                 null, SQLiteDatabase.OPEN_READONLY);
@@ -829,9 +829,6 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                         }
                     } catch (Exception e) {
                         Log.e(TAG, e.getMessage(), e);
-                        if (db != null && db.isOpen()) {
-                            db.close();
-                        }
                         return null;
                     }
 

@@ -45,13 +45,10 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private LineageGlobalSettingListPreference mUsbRestrictorPref;
     private ListPreference mSmsLimitPref;
 
-    private PreferenceCategory mWarnScreen;
     private SwitchPreference mWarnSELinuxPref;
     private SwitchPreference mWarnKeysPref;
 
     private TrustInterface mInterface;
-
-    private int[] mSecurityLevel = new int[4];
 
     @Override
     public void onCreate(Bundle savedInstance) {
@@ -68,9 +65,9 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mUsbRestrictorPref = mToolsCategory.findPreference("trust_restrict_usb");
         mSmsLimitPref = mToolsCategory.findPreference("sms_security_check_limit");
 
-        mWarnScreen = findPreference("trust_category_warnings");
-        mWarnSELinuxPref = mWarnScreen.findPreference("trust_warning_selinux");
-        mWarnKeysPref = mWarnScreen.findPreference("trust_warning_keys");
+        PreferenceCategory warnScreen = findPreference("trust_category_warnings");
+        mWarnSELinuxPref = warnScreen.findPreference("trust_warning_selinux");
+        mWarnKeysPref = warnScreen.findPreference("trust_warning_keys");
 
         mSELinuxPref.setOnPreferenceClickListener(p ->
                 showInfo(R.string.trust_feature_selinux_explain));

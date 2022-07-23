@@ -40,16 +40,13 @@ public class NFCProfileSelect extends Activity {
 
     private static final String TAG = "NFCProfileSelect";
 
-    static final String EXTRA_PROFILE_UUID = "PROFILE_UUID";
+    private static final int DEFAULT_CHOICE = -1;
+
+    public static final String EXTRA_PROFILE_UUID = "PROFILE_UUID";
 
     private ProfileManager mProfileManager;
-
     private UUID mProfileUuid;
-
-    final static int defaultChoice = -1;
-
-    private int currentChoice = defaultChoice;
-
+    private int mCurrentChoice = DEFAULT_CHOICE;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,17 +85,17 @@ public class NFCProfileSelect extends Activity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.profile_settings_title);
-        builder.setSingleChoiceItems(profileNames, currentChoice, new DialogInterface.OnClickListener() {
+        builder.setSingleChoiceItems(profileNames, mCurrentChoice, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                currentChoice = which;
+                mCurrentChoice = which;
             }
         });
         builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if (currentChoice != defaultChoice) {
-                    Profile profile = profiles[currentChoice];
+                if (mCurrentChoice != DEFAULT_CHOICE) {
+                    Profile profile = profiles[mCurrentChoice];
                     profile.addSecondaryUuid(mProfileUuid);
                     mProfileManager.updateProfile(profile);
                     Toast.makeText(NFCProfileSelect.this, R.string.profile_write_success,

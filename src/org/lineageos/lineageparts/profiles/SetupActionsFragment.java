@@ -19,7 +19,6 @@ package org.lineageos.lineageparts.profiles;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.NotificationGroup;
 import android.app.admin.DevicePolicyManager;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
@@ -28,7 +27,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.LocationManager;
 import android.media.AudioManager;
-import android.media.RingtoneManager;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.nfc.NfcManager;
@@ -37,9 +35,6 @@ import android.os.Bundle;
 import android.provider.Settings;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.telephony.SubscriptionInfo;
-import android.telephony.SubscriptionManager;
-import android.telephony.TelephonyManager;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -101,11 +96,7 @@ import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
 public class SetupActionsFragment extends SettingsPreferenceFragment
         implements ItemListAdapter.OnItemClickListener {
 
-    private static final int RINGTONE_REQUEST_CODE = 1000;
     private static final int NEW_TRIGGER_REQUEST_CODE = 1001;
-    private static final int SET_NETWORK_MODE_REQUEST_CODE = 1002;
-
-    public static final String EXTRA_NETWORK_MODE_PICKED = "network_mode_picker::chosen_value";
 
     private static final int MENU_REMOVE = Menu.FIRST;
     private static final int MENU_FILL_PROFILE = Menu.FIRST + 1;
@@ -148,7 +139,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             Profile.NotificationLightMode.ENABLE,
             Profile.NotificationLightMode.DISABLE
     };
-    private List<Item> mItems = new ArrayList<Item>();
+    private final List<Item> mItems = new ArrayList<>();
 
     public static SetupActionsFragment newInstance(Profile profile, boolean newProfile) {
         SetupActionsFragment fragment = new SetupActionsFragment();
@@ -684,15 +675,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         return builder.create();
     }
 
-    private void requestProfileRingMode() {
-        // Launch the ringtone picker
-        Intent intent = new Intent(RingtoneManager.ACTION_RINGTONE_PICKER);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_DEFAULT, false);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_SILENT, true);
-        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_TYPE, RingtoneManager.TYPE_RINGTONE);
-        startActivityForResult(intent, RINGTONE_REQUEST_CODE);
-    }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -804,11 +786,10 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(VolumeStreamItem.getNameForStream(streamId));
 
-        final AudioManager am = getActivity().getSystemService(AudioManager.class);
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         final View view = inflater.inflate(R.layout.dialog_profiles_volume_override, null);
-        final SeekBar seekBar = (SeekBar) view.findViewById(R.id.seekbar);
-        final CheckBox override = (CheckBox) view.findViewById(R.id.checkbox);
+        final SeekBar seekBar = view.findViewById(R.id.seekbar);
+        final CheckBox override = view.findViewById(R.id.checkbox);
         override.setChecked(streamSettings.isOverride());
         override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -853,8 +834,8 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         final LayoutInflater inflater = LayoutInflater.from(getActivity());
         final View view = inflater.inflate(R.layout.dialog_profiles_brightness_override, null);
-        final SeekBar seekBar = (SeekBar) view.findViewById(R.id.seekbar);
-        final CheckBox override = (CheckBox) view.findViewById(R.id.checkbox);
+        final SeekBar seekBar = view.findViewById(R.id.seekbar);
+        final CheckBox override = view.findViewById(R.id.checkbox);
         override.setChecked(brightnessSettings.isOverride());
         override.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -891,7 +872,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         LayoutInflater inflater = LayoutInflater.from(getActivity());
         View dialogView = inflater.inflate(R.layout.profile_name_dialog, null);
 
-        final EditText entry = (EditText) dialogView.findViewById(R.id.name);
+        final EditText entry = dialogView.findViewById(R.id.name);
         entry.setText(mProfile.getName());
         entry.setSelectAllOnFocus(true);
 
