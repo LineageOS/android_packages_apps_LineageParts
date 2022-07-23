@@ -239,23 +239,20 @@ public class PlatLogoActivity extends Activity {
                 mTapCount = 0;
 
                 // Launch the Easter Egg
-                mLayout.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            startActivity(new Intent("org.lineageos.lineageparts.EASTER_EGG")
-                                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                                            | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                            | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
-                                    .addCategory("com.android.internal.category.PLATLOGO"));
-                        } catch (ActivityNotFoundException ex) {
-                            Log.e("PlatLogoActivity", "No more eggs.");
-                        }
+                mLayout.post(() -> {
+                    try {
+                        startActivity(new Intent("org.lineageos.lineageparts.EASTER_EGG")
+                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                        | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
+                                .addCategory("com.android.internal.category.PLATLOGO"));
+                    } catch (ActivityNotFoundException ex) {
+                        Log.e("PlatLogoActivity", "No more eggs.");
                     }
                 });
             }
         }
-    };
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -311,14 +308,10 @@ public class PlatLogoActivity extends Activity {
         mBG.randomizePalette();
 
         mAnim = new TimeAnimator();
-        mAnim.setTimeListener(
-            new TimeAnimator.TimeListener() {
-                @Override
-                public void onTimeUpdate(TimeAnimator animation, long totalTime, long deltaTime) {
-                    mBG.setOffset((float) totalTime / 60000f);
-                    mBG.invalidateSelf();
-                }
-            });
+        mAnim.setTimeListener((animation, totalTime, deltaTime) -> {
+            mBG.setOffset((float) totalTime / 60000f);
+            mBG.invalidateSelf();
+        });
 
         mAnim.start();
     }
