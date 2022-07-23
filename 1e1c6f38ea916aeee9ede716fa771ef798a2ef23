@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d533df30_0685d63b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-07-23T13:29:47Z",
+      "side": 1,
+      "message": "uh, how is that a fix?\nI\u0027d say remove them only if there\u0027s a single case",
+      "revId": "1e1c6f38ea916aeee9ede716fa771ef798a2ef23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
