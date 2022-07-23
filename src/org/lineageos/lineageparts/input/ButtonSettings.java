@@ -33,6 +33,7 @@ import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
@@ -220,7 +221,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         // Home button answers calls.
         mHomeAnswerCall = findPreference(KEY_HOME_ANSWER_CALL);
 
-        mHandler = new Handler();
+        mHandler = new Handler(Looper.getMainLooper());
 
         // Force Navigation bar related options
         mDisableNavigationKeys = findPreference(KEY_DISABLE_NAV_KEYS);

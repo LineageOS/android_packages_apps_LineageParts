@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2018 The LineageOS Project
+ *               2018-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +23,7 @@ import android.nfc.NdefRecord;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
 import android.nfc.tech.NdefFormatable;
+import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.util.Log;
 
@@ -41,7 +42,8 @@ public class NFCProfileUtils {
 
     public static void vibrate(Context context) {
         Vibrator vibrator = context.getSystemService(Vibrator.class);
-        vibrator.vibrate(VIBRATION_PATTERN, -1);
+        VibrationEffect effect = VibrationEffect.createWaveform(VIBRATION_PATTERN, -1);
+        vibrator.vibrate(effect);
     }
 
     /*

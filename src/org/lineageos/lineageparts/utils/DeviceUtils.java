@@ -202,7 +202,7 @@ public class DeviceUtils {
      * Locks the activity orientation to the current device orientation
      */
     public static void lockCurrentOrientation(Activity activity) {
-        int currentRotation = activity.getWindowManager().getDefaultDisplay().getRotation();
+        int currentRotation = activity.getDisplay().getRotation();
         int orientation = activity.getResources().getConfiguration().orientation;
         int frozenRotation = 0;
         switch (currentRotation) {
