@@ -322,13 +322,10 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         mSearchResults = v.findViewById(R.id.contributors_cloud_search_results);
         mSearchAdapter = new ContributorsAdapter(getActivity());
         mSearchResults.setAdapter(mSearchAdapter);
-        mSearchResults.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ContributorsDataHolder contributor =
-                        (ContributorsDataHolder) parent.getItemAtPosition(position);
-                onContributorSelected(contributor);
-            }
+        mSearchResults.setOnItemClickListener((parent, view, position, id) -> {
+            ContributorsDataHolder contributor =
+                    (ContributorsDataHolder) parent.getItemAtPosition(position);
+            onContributorSelected(contributor);
         });
 
         // Load the data from the database and fill the image
@@ -424,12 +421,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         if (focusX != -1 && focusY != -1) {
             mViewController.setZoomTransitionDuration(2500);
             mViewController.setScale(10, focusX, focusY, true);
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mViewController.setZoomTransitionDuration(-1);
-                }
-            }, 2500);
+            mHandler.postDelayed(() -> mViewController.setZoomTransitionDuration(-1), 2500);
         }
     }
 

@@ -22,8 +22,6 @@ import java.util.UUID;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -56,12 +54,7 @@ public class NFCProfileSelect extends Activity {
         setContentView(R.layout.nfc_select);
         setTitle(R.string.profile_unknown_nfc_tag);
 
-        findViewById(R.id.add_tag).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showProfileSelectionDialog();
-            }
-        });
+        findViewById(R.id.add_tag).setOnClickListener(v -> showProfileSelectionDialog());
     }
 
     @Override
@@ -85,31 +78,21 @@ public class NFCProfileSelect extends Activity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.profile_settings_title);
-        builder.setSingleChoiceItems(profileNames, mCurrentChoice, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mCurrentChoice = which;
+        builder.setSingleChoiceItems(profileNames, mCurrentChoice,
+                (DialogInterface.OnClickListener) (dialog, which) -> mCurrentChoice = which);
+        builder.setPositiveButton(android.R.string.ok,
+                (DialogInterface.OnClickListener) (dialog, which) -> {
+            if (mCurrentChoice != DEFAULT_CHOICE) {
+                Profile profile = profiles[mCurrentChoice];
+                profile.addSecondaryUuid(mProfileUuid);
+                mProfileManager.updateProfile(profile);
+                Toast.makeText(NFCProfileSelect.this, R.string.profile_write_success,
+                        Toast.LENGTH_LONG).show();
             }
+            finish();
         });
-        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if (mCurrentChoice != DEFAULT_CHOICE) {
-                    Profile profile = profiles[mCurrentChoice];
-                    profile.addSecondaryUuid(mProfileUuid);
-                    mProfileManager.updateProfile(profile);
-                    Toast.makeText(NFCProfileSelect.this, R.string.profile_write_success,
-                            Toast.LENGTH_LONG).show();
-                }
-                finish();
-            }
-        });
-        builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-            }
-        });
+        builder.setNegativeButton(android.R.string.cancel,
+                (DialogInterface.OnClickListener) (dialog, which) -> finish());
         builder.show();
     }
 }
