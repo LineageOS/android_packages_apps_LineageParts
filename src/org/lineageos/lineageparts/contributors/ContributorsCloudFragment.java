@@ -36,6 +36,7 @@ import android.graphics.Rect;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.text.Html;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
@@ -255,7 +256,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         activity.getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
                 | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING);
-        mHandler = new Handler();
+        mHandler = new Handler(Looper.getMainLooper());
     }
 
     @Override
@@ -508,8 +509,9 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             TypedValue colorAccent = new TypedValue();
             context.getTheme().resolveAttribute(com.android.internal.R.attr.colorAccent,
                     colorAccent, true);
-            int colorForeground = res.getColor(colorAccent.resourceId);
-            int colorSelected = res.getColor(R.color.contributors_cloud_selected_color);
+            int colorForeground = res.getColor(colorAccent.resourceId, context.getTheme());
+            int colorSelected = res.getColor(R.color.contributors_cloud_selected_color,
+                    context.getTheme());
             Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
 
             // Create a bitmap large enough to hold the cloud (use large bitmap when available)
@@ -705,7 +707,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle(R.string.contributor_info_menu);
         builder.setMessage(Html.fromHtml(getString(R.string.contributor_info_msg,
-                name, nick, commits)));
+                name, nick, commits), Html.FROM_HTML_MODE_LEGACY));
         builder.setPositiveButton(android.R.string.ok, null);
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -725,7 +727,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle(R.string.contributions_info_menu);
         builder.setMessage(Html.fromHtml(getString(R.string.contributions_info_msg,
-                totalContributors, totalCommits, lastUpdate)));
+                totalContributors, totalCommits, lastUpdate), Html.FROM_HTML_MODE_LEGACY));
         builder.setPositiveButton(android.R.string.ok, null);
         AlertDialog dialog = builder.create();
         dialog.show();

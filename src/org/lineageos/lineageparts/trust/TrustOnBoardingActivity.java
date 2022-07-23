@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2018-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -48,7 +49,7 @@ public class TrustOnBoardingActivity extends AppCompatActivity {
 
         mInterface = TrustInterface.getInstance(this);
 
-        new Handler().postDelayed(this::showAnimation, 800);
+        new Handler(Looper.getMainLooper()).postDelayed(this::showAnimation, 800);
     }
 
     private void showAnimation() {
