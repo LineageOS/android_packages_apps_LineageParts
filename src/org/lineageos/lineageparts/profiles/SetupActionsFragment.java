@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -225,9 +225,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_MOBILEDATA));
             mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_WIFIAP));
         }
-        //if (WimaxHelper.isWimaxSupported(getActivity())) {
-        //    mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_WIMAX));
-        //}
         if (DeviceUtils.deviceSupportsNfc(getActivity())) {
             mItems.add(generateConnectionOverrideItem(PROFILE_CONNECTION_NFC));
         }

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
- * Copyright (C) 2017-2018 The LineageOS Project
+ * Copyright (C) 2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -277,7 +277,7 @@ public class PlatLogoActivity extends Activity {
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                // make sure the user doesnt launch stage 2 while zooming
+                // make sure the user doesn't launch stage 2 while zooming
                 if (event.getPointerCount() > 1 && mTouchHeld > 0) {
                     mTouchHeld = 0;
                 }

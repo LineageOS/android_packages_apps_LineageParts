@@ -94,7 +94,6 @@ public class Utilities {
 
     /**
      * Check to see if global stats are enabled.
-     * @param context
      * @return Whether or not stats collection is enabled.
      */
     public static boolean isStatsCollectionEnabled(Context context) {
@@ -104,7 +103,6 @@ public class Utilities {
 
     /**
      * Enabled or disable stats collection
-     * @param context
      * @param enabled Boolean that sets collection being enabled.
      */
     public static void setStatsCollectionEnabled(Context context, boolean enabled) {

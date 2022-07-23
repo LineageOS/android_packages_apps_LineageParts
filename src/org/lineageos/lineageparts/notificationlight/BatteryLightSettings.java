@@ -204,7 +204,6 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
      * Updates the default or application specific notification settings.
      *
      * @param key of the specific setting to update
-     * @param color
      */
     protected void updateValues(String key, Integer color) {
         ContentResolver resolver = getActivity().getContentResolver();
