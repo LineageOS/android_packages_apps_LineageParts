@@ -601,15 +601,13 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
         @Override
         public void handleMessage(Message msg) {
             SomeArgs args = (SomeArgs) msg.obj;
-            switch (msg.what) {
-                case MSG_GROUP_VOLUME_CHANGED:
-                    int group = (int) args.arg1;
-                    if (mVolumeGroupId != group
-                            || mVolumeGroupId == AudioVolumeGroup.DEFAULT_VOLUME_GROUP) {
-                        return;
-                    }
-                    updateSlider();
-                    break;
+            if (msg.what == MSG_GROUP_VOLUME_CHANGED) {
+                int group = (int) args.arg1;
+                if (mVolumeGroupId != group
+                        || mVolumeGroupId == AudioVolumeGroup.DEFAULT_VOLUME_GROUP) {
+                    return;
+                }
+                updateSlider();
             }
         }
     }
