@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017-2018,2021 The LineageOS Project
+ *               2017-2018,2021-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,8 +47,6 @@ public class NFCProfileWriter extends Activity {
 
     private NfcAdapter mNfcAdapter;
 
-    private IntentFilter[] mWriteTagFilters;
-
     private Profile mProfile;
 
     private ProfileManager mProfileManager;
@@ -94,10 +92,10 @@ public class NFCProfileWriter extends Activity {
 
     private void enableTagWriteMode() {
         IntentFilter tagDetected = new IntentFilter(NfcAdapter.ACTION_TAG_DISCOVERED);
-        mWriteTagFilters = new IntentFilter[] {
-            tagDetected
+        IntentFilter[] writeTagFilters = new IntentFilter[]{
+                tagDetected
         };
-        mNfcAdapter.enableForegroundDispatch(this, getPendingIntent(), mWriteTagFilters, null);
+        mNfcAdapter.enableForegroundDispatch(this, getPendingIntent(), writeTagFilters, null);
     }
 
     @Override

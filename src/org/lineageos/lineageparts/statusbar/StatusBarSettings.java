@@ -64,7 +64,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private LineageSystemSettingListPreference mQuickPulldown;
     private LineageSystemSettingListPreference mStatusBarClock;
     private LineageSystemSettingListPreference mStatusBarAmPm;
-    private LineageSystemSettingListPreference mStatusBarBattery;
     private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
 
     private PreferenceCategory mStatusBarBatteryCategory;
@@ -92,9 +91,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarClockCategory = getPreferenceScreen().findPreference(CATEGORY_CLOCK);
 
         mStatusBarBatteryShowPercent = findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
-        mStatusBarBattery = findPreference(STATUS_BAR_BATTERY_STYLE);
-        mStatusBarBattery.setOnPreferenceChangeListener(this);
-        enableStatusBarBatteryDependents(mStatusBarBattery.getIntValue(2));
+        LineageSystemSettingListPreference statusBarBattery =
+                findPreference(STATUS_BAR_BATTERY_STYLE);
+        statusBarBattery.setOnPreferenceChangeListener(this);
+        enableStatusBarBatteryDependents(statusBarBattery.getIntValue(2));
 
         mStatusBarBatteryCategory = getPreferenceScreen().findPreference(CATEGORY_BATTERY);
 

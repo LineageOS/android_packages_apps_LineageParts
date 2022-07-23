@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,8 +31,8 @@ import org.lineageos.lineageparts.R;
 public class IntervalSeekBar extends SeekBar {
     private float mMin;
     private float mMax;
-    private float mDefault;
-    private float mMultiplier;
+    private final float mDefault;
+    private final float mMultiplier;
 
     public IntervalSeekBar(Context context, AttributeSet attrs) {
         super(context, attrs);

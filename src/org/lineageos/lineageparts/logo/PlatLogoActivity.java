@@ -28,12 +28,8 @@ import android.graphics.ColorFilter;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.drawable.Drawable;
 import android.graphics.Paint;
-import android.graphics.Path;
-import android.graphics.PorterDuff.Mode;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.MotionEvent.PointerCoords;
 import android.view.View;
@@ -58,7 +54,7 @@ public class PlatLogoActivity extends Activity {
         0,     0,     0,    1,      0  // alpha
     };
     private static final int BASE_SCALE = 50; // magic number scale multiple. Looks good on all DPI
-    private static final long LONG_PRESS_TIMEOUT= new Long(ViewConfiguration.getLongPressTimeout());
+    private static final long LONG_PRESS_TIMEOUT = ViewConfiguration.getLongPressTimeout();
 
     private class PBackground extends Drawable {
         private float mRadius, mX, mY, mDP;
@@ -67,7 +63,7 @@ public class PlatLogoActivity extends Activity {
         private float mOffset;
 
         // LineageOS logo drawable
-        private Drawable mLogo;
+        private final Drawable mLogo;
 
         public PBackground(Context context) {
             randomizePalette();

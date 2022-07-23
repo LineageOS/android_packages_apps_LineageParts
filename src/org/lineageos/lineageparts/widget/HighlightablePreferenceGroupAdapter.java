@@ -128,10 +128,8 @@ public class HighlightablePreferenceGroupAdapter extends PreferenceGroupAdapter 
             return;
         }
         mFadeInAnimated = true;
-        final int colorFrom = Color.WHITE;
-        final int colorTo = mHighlightColor;
         final ValueAnimator fadeInLoop = ValueAnimator.ofObject(
-                new ArgbEvaluator(), colorFrom, colorTo);
+                new ArgbEvaluator(), Color.WHITE, mHighlightColor);
         fadeInLoop.setDuration(HIGHLIGHT_FADE_IN_DURATION);
         fadeInLoop.addUpdateListener(
                 animator -> v.setBackgroundColor((int) animator.getAnimatedValue()));
@@ -155,12 +153,10 @@ public class HighlightablePreferenceGroupAdapter extends PreferenceGroupAdapter 
             Log.d(TAG, "RemoveHighlight: Not highlighted - skipping");
             return;
         }
-        int colorFrom = mHighlightColor;
-        int colorTo = Color.WHITE;
 
         v.setTag(R.id.preference_highlighted, false);
         final ValueAnimator colorAnimation = ValueAnimator.ofObject(
-                new ArgbEvaluator(), colorFrom, colorTo);
+                new ArgbEvaluator(), mHighlightColor, Color.WHITE);
         colorAnimation.setDuration(HIGHLIGHT_FADE_OUT_DURATION);
         colorAnimation.addUpdateListener(
                 animator -> v.setBackgroundColor((int) animator.getAnimatedValue()));
