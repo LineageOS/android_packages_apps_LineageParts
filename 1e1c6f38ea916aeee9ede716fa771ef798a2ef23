@@ -16,6 +16,24 @@
       "message": "uh, how is that a fix?\nI\u0027d say remove them only if there\u0027s a single case",
       "revId": "1e1c6f38ea916aeee9ede716fa771ef798a2ef23",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bdced5b_13e355a7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-07-30T11:27:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d533df30_0685d63b",
+      "revId": "1e1c6f38ea916aeee9ede716fa771ef798a2ef23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
