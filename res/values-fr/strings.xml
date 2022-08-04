@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">Sélectionner les couleurs automatiquement</string>
     <string name="led_notification_title">Paramètres du voyant</string>
     <string name="led_notification_text">LED activée par les paramètres</string>
-    <string name="notification_light_no_apps_summary">Pour ajouter la gestion par application, activer \'%1$s\' et appuyer sur \'\u002b\' dans la barre de menu</string>
     <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
     <string name="live_display_mode">Mode d\'affichage</string>
     <string name="live_display_color_temperature_title">Température de la couleur</string>

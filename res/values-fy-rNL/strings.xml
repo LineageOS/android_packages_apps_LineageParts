@@ -80,7 +80,6 @@
     <string name="notification_light_automagic_summary">Kleuren wurde automatysk keazen</string>
     <string name="led_notification_title">Ferljochtingsynstellingen</string>
     <string name="led_notification_text">LED-ferljochting ynskeakele troch ynstellingen</string>
-    <string name="notification_light_no_apps_summary">Om kontrôle per app ta te foegjen, aktivearje %1$s en tik \'\u002b\' op de menubalke</string>
     <string name="live_display_summary">Jo skerm optimalisearje oan de hân fan aktuele tiid en ljochtomstannichheden om de lêsberheid te ferbetterjen en eachwurgens te ferminderjen</string>
     <string name="live_display_mode">Werjeftemodus</string>
     <string name="live_display_color_temperature_title">Kleurtemperatuer</string>

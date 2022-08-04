@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">自動選擇顏色</string>
     <string name="led_notification_title">指示燈設定</string>
     <string name="led_notification_text">已透過設定啟用 LED 指示燈</string>
-    <string name="notification_light_no_apps_summary">若要控制個別應用程式，請啟動「%1$s」然後按下選單列中的 [\u002b] </string>
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
     <string name="live_display_color_temperature_title">色溫</string>

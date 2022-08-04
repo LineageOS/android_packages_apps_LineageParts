@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">Automaticky zvoliť farby</string>
     <string name="led_notification_title">Nastavenia LED</string>
     <string name="led_notification_text">LED svetlá zapnuté v nastaveniach</string>
-    <string name="notification_light_no_apps_summary">Na pridanie ovládania podľa aplikácie, aktivujte \'%1$s\' a stlačte \'\u002b\' v ponuke.</string>
     <string name="live_display_summary">Optimalizovať vašu obrazovku na základe dennej doby a podmienok okolia na zlepšenie čitateľnosti a zníženia únavy očí</string>
     <string name="live_display_mode">Režim zobrazenia</string>
     <string name="live_display_color_temperature_title">Teplota farieb</string>

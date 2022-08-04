@@ -80,7 +80,6 @@
     <string name="notification_light_automagic_summary">Аутоматски изаберите боју индикатора.</string>
     <string name="led_notification_title">Подешавања индикатора</string>
     <string name="led_notification_text">LED светло је омогућено у подешавањима</string>
-    <string name="notification_light_no_apps_summary">Да бисте дозволили управљање апликацијама, омогућите „%1$s“ и додирните „\u002b“ у траци менија.</string>
     <string name="live_display_summary">Прилагодите екран на основу доба дана и осветљености, како би се повећала читљивост и смањило напрезање очију.</string>
     <string name="live_display_mode">Режим приказа</string>
     <string name="live_display_color_temperature_title">Температура боје</string>

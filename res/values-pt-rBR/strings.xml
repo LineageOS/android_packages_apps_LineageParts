@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">Escolher as cores automaticamente</string>
     <string name="led_notification_title">Configurações de brilho</string>
     <string name="led_notification_text">Luz de LED ativada nas configurações</string>
-    <string name="notification_light_no_apps_summary">Para adicionar controle por app, ative o \'%1$s\' e pressione \'\u002b\' na barra de menu</string>
     <string name="live_display_summary">Otimiza sua tela com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir o cansaço visual</string>
     <string name="live_display_mode">Modo da tela</string>
     <string name="live_display_color_temperature_title">Temperatura da cor</string>

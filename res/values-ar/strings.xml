@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">اختيار الألوان تلقائياً</string>
     <string name="led_notification_title">إعدادات الإضاءة</string>
     <string name="led_notification_text">إضاءة الـ LED مفعلة من الإعدادات</string>
-    <string name="notification_light_no_apps_summary">لإضافة تحكم لكل تطبيق، قم بتنشيط \'%1$s\' واضغط على \'\u002b\' في شريط القائمة</string>
     <string name="live_display_summary">تحسين الشاشة استناداً إلى الوقت من اليوم والظروف المحيطة لتحسين قابلية القراءة وتقليل إجهاد العين</string>
     <string name="live_display_mode">نمط العرض</string>
     <string name="live_display_color_temperature_title">درجة حرارة اللون</string>

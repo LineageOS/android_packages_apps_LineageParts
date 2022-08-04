@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">Chọn màu một cách tự động</string>
     <string name="led_notification_title">Cài đặt đèn</string>
     <string name="led_notification_text">Đèn LED đã bật theo cài đặt</string>
-    <string name="notification_light_no_apps_summary">Để thêm một điều khiển ứng dụng, kích hoạt \'%1$s\' và nhấn \'\u002b\' trên thanh trình đơn</string>
     <string name="live_display_summary">Tối ưu hóa màn hình dựa trên điều kiện môi trường và thời gian trong ngày để cải thiện khả năng đọc và giảm mỏi mắt</string>
     <string name="live_display_mode">Chế độ hiển thị</string>
     <string name="live_display_color_temperature_title">Nhiệt độ màu</string>

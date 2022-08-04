@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">Rənglər avtomatik seçilir</string>
     <string name="led_notification_title">İşıq tənzimləmələri</string>
     <string name="led_notification_text">LED işıq, tənzimləmələr tərəfindən fəallaşdırıldı</string>
-    <string name="notification_light_no_apps_summary">Tətbiqetmə nəzarətini əlavə etmək üçün, \'%1$s\' aktivləşdirmə və menyu sətrində \'\u002b\' basın</string>
+    <string name="notification_light_add_apps_empty_summary">Hər tətbiqə nəzarət əlavə etmək üçün, \'%1$s\' aktivləşdirib \"Əlavə et\"ə basın</string>
     <string name="live_display_summary">Oxunaqlılığı artırmaq və göz yorğunluğu azaltmaq üçün ekranınızı günün saatına və mühit şərtlərinə görə optimallaşdırın</string>
     <string name="live_display_mode">Görüntü rejimi</string>
     <string name="live_display_color_temperature_title">Rəng hərarəti</string>
@@ -273,7 +273,7 @@
     <string name="profile_select">Profil seçin</string>
     <string name="profile_remove_dialog_message">%1$s profili çıxarılsın?</string>
     <string name="profile_populate_profile_from_state">Hazırki cihaz tənzimləmələri istifadə edilərək profil konfiqurasiya edilsin?</string>
-    <string name="profile_menu_fill_from_state">Hazırki cihaz tənzimləmələrini götür</string>
+    <string name="profile_menu_fill_from_state">Hazırkı cihaz tənzimləmələrini daxilə köçür</string>
     <string name="profile_remove_current_profile">Hazırki profil silinə bilməz!</string>
     <string name="profile_app_group_category_title">Bildirişlərə əhəmiyyət vermə</string>
     <string name="profile_app_group_item_instructions">Qrupları əlavə et və ya çıxart</string>
@@ -315,7 +315,7 @@
     <string name="profile_system_settings_title">Sistem tənzimləməsi</string>
     <string name="profile_lockmode_title">Kilid ekranı rejimi</string>
     <string name="profile_lockmode_policy_disabled_summary">Bu profil, bir cihaz inzibatçı siyasəti tərəfindən sıradan çıxarıldı</string>
-    <string name="profile_lockmode_insecure_summary">PIN və ya şifrə soruşma</string>
+    <string name="profile_lockmode_insecure_summary">PIN və ya parol soruşma</string>
     <string name="profile_lockmode_disabled_summary">Kilid ekranını sıradan çıxart</string>
     <string name="profile_airplanemode_title">Təyyarə rejimi</string>
     <string name="profile_brightness_title">Ekran parlaqlığı</string>
@@ -325,7 +325,7 @@
     <string name="toggleWifiAp">Daşına bilən Wi\u2011Fi giriş nöqtəsi</string>
     <string name="toggleBluetooth">Bluetooth</string>
     <string name="toggleLocation">Yerləşmə</string>
-    <string name="toggleData">Verilənlər bağlantısı</string>
+    <string name="toggleData">Mobil internet bağlantısı</string>
     <string name="toggleSync">Verilənləri avto-eyniləşdirmə</string>
     <string name="toggleNfc">NFC</string>
     <string name="ring_mode_title">Zəng rejimi</string>
@@ -413,7 +413,7 @@
     <string name="contributions_info_menu">Töhfələr barədə məlumat</string>
     <string name="contributions_info_msg"><![CDATA[<b>Cəmi töhfə verənlər:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Cəmi daxil edilənlər:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Son yeniləmə:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Son güncəlləmə:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS statistikaları</string>
     <string name="anonymous_statistics_summary">Anonim statistika göndərməni tərcih edərək, LineageOS-u təkmilləşdirməyimizə kömək edin</string>
     <string name="anonymous_statistics_warning_title">Haqqında</string>
@@ -499,21 +499,21 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Məcburi</string>
     <string name="trust_feature_selinux_value_disabled">Sıradan çıxarıldı</string>
-    <string name="trust_feature_selinux_explain">SELinux, hansı əməliyyatların cihazınızda hansı fayllara/yollara müraciət edəcəyini müəyyənləşdirər.\nBu, tətbiqlərin və xidmətlərin aidiyyatı olmayan fayllara müraciət etməsinin qarşısını alar: bu yolla mümkün ola biləcək zərərli bir proses məhdudlaşdırılar və təhlükəsizliyiniz qorunar.</string>
-    <string name="trust_feature_security_patches">Android təhlükəsizlik yamaqları</string>
-    <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nİstehsalçı: %2$s</string>
-    <string name="trust_feature_security_patches_value_new">Yenilənib</string>
+    <string name="trust_feature_selinux_explain">SELinux, hansı əməliyyatların cihazınızda hansı fayllara/yollara müraciət edəcəyini müəyyənləşdirir.\nBu, tətbiqlərin və xidmətlərin aidiyyatı olmayan fayllara müraciət etməsinin qarşısını alır: bu yolla mümkün ola biləcək zərərli bir proses məhdudlaşdırılır və güvənliyiniz qorunur.</string>
+    <string name="trust_feature_security_patches">Android güvənlik yamaqları</string>
+    <string name="trust_feature_security_patches_value_base">Platform: %1$s\nİstehsalçı: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Güncəldir</string>
     <string name="trust_feature_security_patches_value_medium">Bir neçə ay köhnəlib</string>
     <string name="trust_feature_security_patches_value_old">Köhnəlib</string>
-    <string name="trust_feature_security_patches_explain">Təhlükəsizlik yamaqları Google tərəfindən, SoC satıcıları ilə əməkdaşlıq edilərək, təhlükəsizlik məhdudiyyətlərini ötürmək və cihazınıza zərər vurmaq üçün zərərli tətbiqlər tərəfindən istismar edilə biləcək çatışmazlıqları aradan qaldırmaq üçün aylıq olaraq yayımlanır. Google tərəfindən hazırlanan yamaqlar hər ay bütün dəstəklənən cihazlara tətbiq olunur, ancaq xüsusi kodlu yamaqlar yalnız cihazınızın istehsalçısı tərəfindən tətbiq oluna bilər. Cihazınızı etibarlı şəkildə saxlamaq üçün LineageOS quruluşunuzun həmişə yeniləndiyindən və (mümkündürsə) satıcı faylınızın LineageOS tərəfindən məsləhət görülən ən son versiyaya yeniləndiyindən əmin olun.</string>
+    <string name="trust_feature_security_patches_explain">Güvənlik yamaqları Google tərəfindən, SoC satıcıları ilə əməkdaşlıq edilərək, güvənlik məhdudiyyətlərini ötürmək və cihazınıza zərər vurmaq üçün zərərli tətbiqlər tərəfindən istismar edilə biləcək çatışmazlıqları aradan qaldırmaq üçün aylıq olaraq yayımlanır. Google tərəfindən hazırlanan yamaqlar hər ay bütün dəstəklənən cihazlara tətbiq olunur, ancaq xüsusi kodlu yamaqlar yalnız cihazınızın istehsalçısı tərəfindən tətbiq oluna bilər. Cihazınızı güvənli şəkildə saxlamaq üçün LineageOS quruluşunuzun həmişə güncəl olduğuna və (mümkündürsə) satıcı faylınızın LineageOS tərəfindən məsləhət görülən ən son versiyaya güncəlləndiyinə əmin olun.</string>
     <string name="trust_feature_encryption">Şifrələmə</string>
     <string name="trust_feature_encryption_value_enabled">Fəaldır</string>
     <string name="trust_feature_encryption_value_nolock">Təhlükəsiz bir kilid ekranı lazımdır</string>
     <string name="trust_feature_encryption_value_disabled">Sıradan çıxarıldı</string>
-    <string name="trust_feature_encryption_explain">Cihazınızın şifrələnməsi, telefonunuz Android-ə ön yükləmə edilmədiyi vaxt verilənlərə müraciətin qarşısını alar. Bu xüsusilə telefonunuz oğurlandığı vaxt önəmlidir, beləcə mesajlarınızın, şəxslərinizin və digər şəxsi məlumatlarınızın başqaları tərəfindən şifrəniz olmadan oxunmasının qarşısını alar.\nŞifrələməni daha effektiv etmək üçün təhlükəsiz bir kilid ekranı şifrəsi tənzimləməlisiniz.</string>
+    <string name="trust_feature_encryption_explain">Cihazınızın şifrələnməsi, telefonunuz Android-ə ön yükləmə edilmədiyi vaxt verilənlərə müraciətin qarşısını alır. Bu xüsusilə telefonunuz oğurlandığı vaxt önəmlidir, beləcə mesajlarınızın, kontaktlarınızın və digər şəxsi məlumatlarınızın başqaları tərəfindən şifrəniz olmadan oxunmasının qarşısını alar.\nŞifrələməni daha effektiv etmək üçün təhlükəsiz bir kilid ekranı parolu tənzimləməlisiniz.</string>
     <string name="trust_category_tools">Gizlilik</string>
-    <string name="trust_notification_alerts_title">Təhlükəsizlik xəbərdarlıqları</string>
-    <string name="trust_warnings_alerts_intro">Xəbərdarlıq almaq istədiyiniz təhlükəsizlik məsələlərini seçə bilərsiniz. Təhlükəsizlik üçün bütün xəbərdarlıqları fəallaşdırmağınız məsləhətdir</string>
+    <string name="trust_notification_alerts_title">Güvənlik xəbərdarlıqları</string>
+    <string name="trust_warnings_alerts_intro">Xəbərdarlıq almaq istədiyiniz güvənlik məsələlərini seçə bilərsiniz. Güvənlik üçün bütün xəbərdarlıqları fəallaşdırmağınız məsləhətdir</string>
     <string name="trust_warnings_selinux">SELinux vəziyyəti</string>
     <string name="trust_warnings_keys">Quruluş imzası</string>
     <string name="trust_onboarding_title">Trust-a salam de</string>

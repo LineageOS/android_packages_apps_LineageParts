@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">Memilih warna otomatis</string>
     <string name="led_notification_title">Pengaturan lampu</string>
     <string name="led_notification_text">Lampu LED diaktifkan oleh pengaturan</string>
-    <string name="notification_light_no_apps_summary">Untuk menambahkan kontrol pada setiap aplikasi, aktifkan \'%1$s\' dan tekan \'\u002b\' pada bilah menu</string>
     <string name="live_display_summary">Optimalkan layar berdasarkan waktu dan kondisi ruangan untuk meningkatkan keterbacaan dan mengurangi kelelahan mata</string>
     <string name="live_display_mode">Mode tampilan</string>
     <string name="live_display_color_temperature_title">Suhu pada warna</string>

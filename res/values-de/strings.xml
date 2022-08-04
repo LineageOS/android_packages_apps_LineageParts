@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">Farben automatisch wählen</string>
     <string name="led_notification_title">LED-Einstellungen</string>
     <string name="led_notification_text">Benachrichtigungs-LED durch Einstellungen aktiviert</string>
-    <string name="notification_light_no_apps_summary">Um App-spezifische Einstellungen hinzuzufügen, \"%1$s\" aktivieren und \"\u002b\" in der Menüleiste berühren.</string>
     <string name="live_display_summary">Optimiert deinen Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
     <string name="live_display_mode">Bildschirmmodus</string>
     <string name="live_display_color_temperature_title">Farbtemperatur</string>
@@ -200,6 +199,7 @@
     <string name="swap_capacitive_keys_title">Sensortasten tauschen</string>
     <string name="swap_capacitive_keys_summary">Anordnung der Tasten für Anwendungsverlauf und Zurück tauschen</string>
     <string name="navigation_bar_category">Navigationsleiste</string>
+    <string name="navigation_bar_enable_taskbar_title">Taskleiste aktivieren</string>
     <string name="navigation_bar_invert_layout_title">Layout umkehren</string>
     <string name="navigation_bar_invert_layout_summary">Kehrt das Layout der Navigationsleiste und anderer Elemente, wie dem IME-Switcher um</string>
     <string name="navigation_bar_left_summary">Navigationsleiste im Querformat auf der linken Seite anzeigen</string>
@@ -518,6 +518,10 @@
     <string name="trust_onboarding_learn_more">Mehr erfahren</string>
     <string name="trust_onboarding_done">Verstanden</string>
     <string name="trust_restrict_usb_title">USB beschränken</string>
+    <string name="trust_restrict_usb_summary">Unterstützung für USB-Anschlüsse wie Kopfhörer, Speichergeräte, Eingabegeräte (Mäuse, Tastaturen, Joysticks) und ADB regeln</string>
+    <string name="trust_restrict_usb_always">USB-Verbindungen ablehnen</string>
+    <string name="trust_restrict_usb_keyguard">USB-Verbindungen zulassen, wenn entsperrt</string>
+    <string name="trust_restrict_usb_disabled">USB-Verbindungen immer zulassen</string>
     <string name="sms_security_check_limit_title">SMS-Begrenzung</string>
     <string name="sms_security_check_limit_summary">Apps können %s Nachrichten in 1 Minute ohne Bestätigung versenden</string>
     <string name="sms_security_check_limit_summary_none">Apps dürfen keine Nachrichten ohne Bestätigung versenden</string>

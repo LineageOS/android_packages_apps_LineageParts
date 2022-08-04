@@ -30,7 +30,7 @@
     <string name="finish">Mbaro</string>
     <string name="next">Vazhdo</string>
     <string name="on">Aktiv</string>
-    <string name="off">Inaktiv</string>
+    <string name="off">Fikur</string>
     <string name="yes">Po</string>
     <string name="no">Jo</string>
     <string name="search">Kërko</string>
@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">Zgjedhja e ngjyrave bëhet automatikisht</string>
     <string name="led_notification_title">Parametrat e dritës</string>
     <string name="led_notification_text">Drita LED e aktivizuar nga parametrat</string>
-    <string name="notification_light_no_apps_summary">Për të modifikuar individualisht parametrat e çdo aplikacioni, aktivizoni \'%1$s\' dhe shtypni \'\u002b\' në shiritin e menusë</string>
+    <string name="notification_light_add_apps_empty_summary">Për të shtuar kontrollin për aplikacion, aktivizoni \'%1$s\' dhe shtypni \'Shto\'</string>
     <string name="live_display_summary">Optimizo ekranin në bazë të orës së ditës dhe konditave të mjedisit për të përmirësuar lexueshmërinë dhe për të reduktuar lodhjen e syve</string>
     <string name="live_display_mode">Profili i ekranit</string>
     <string name="live_display_color_temperature_title">Temperatura e ngjyrave</string>
@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Kontrollet e pajisjes</string>
     <string name="power_menu_advanced_restart_title">Rindezje e përparuar</string>
     <string name="power_menu_advanced_restart_summary">Kur telefoni është i zhbllokuar, përfshi në menunë e energjisë opsione për t\'u rindezur në Recovery ose Bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Mundësia e urgjencës është aktivizuar</string>
     <string name="camera_double_tap_power_gesture_title">Shtyp dy herë butonin e energjisë për kamerën</string>
     <string name="camera_double_tap_power_gesture_desc">Hap menjëherë kamerën pa zhbllokuar ekranin</string>
     <string name="torch_long_press_power_gesture_title">Mbaj shtypur për të ndezur elektrikun e dorës</string>
@@ -237,7 +238,7 @@
     <string name="profile_menu_delete_title">Fshi</string>
     <string name="profile_action_none">Lëre të pandryshuar</string>
     <string name="profile_action_system">Paracaktimet e sistemit</string>
-    <string name="profile_action_disable">Çaktivizo</string>
+    <string name="profile_action_disable">Fike</string>
     <string name="profile_action_enable">Aktivizo</string>
     <string name="profile_trigger_a2dp_connect">Kur lidhet me A2DP</string>
     <string name="profile_trigger_a2dp_disconnect">Kur shkëputet nga A2DP</string>
@@ -291,9 +292,9 @@
     <string name="profile_app_delete_confirm">Dëshiron ta heqësh këtë aplikacion?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
-    <string name="profile_networkmode_4g">LTE</string>
+    <string name="profile_networkmode_4g">4G</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
-    <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
+    <string name="profile_networkmode_2g3g4g">2G/3G/4G</string>
     <string name="profile_volumeoverrides_title">Shpërfillja e volumit</string>
     <string name="connection_state_enabled">Aktivizo</string>
     <string name="volume_override_summary">Vendose në %1$s/%2$s</string>
@@ -497,13 +498,13 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Zbatuar</string>
     <string name="trust_feature_selinux_value_disabled">E çaktivizuar</string>
-    <string name="trust_feature_selinux_explain">SELinux dikton se cilat proçese kanë të drejta në cilat skedarë në telefonin tuaj.\nKjo pengon programet dhe shërbimet të kenë të drejta tek skedarë që nuk gjykohet të kenë: në këtë mënyrë proçeset e dëmshme kufizohen dhe siguria tuaj mbrohet.</string>
+    <string name="trust_feature_selinux_explain">SELinux dikton se cilat proçese kanë të drejta në skedarët e telefonit tuaj.\nKjo pengon programet dhe shërbimet të kenë të drejta tek skedarë që nuk gjykohet të kenë: në këtë mënyrë proçeset e dëmshme kufizohen dhe siguria tuaj mbrohet.</string>
     <string name="trust_feature_security_patches">korrigjimet të sigurisë së Android</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProdhuesi: %2$s</string>
     <string name="trust_feature_security_patches_value_new">E përditësuar</string>
     <string name="trust_feature_security_patches_value_medium">Disa muaj e pa përditësuar</string>
     <string name="trust_feature_security_patches_value_old">E vjetërsuar</string>
-    <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar të metat nga të cilat mund të shfrytëzohen nga programe keqadashës për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. Arnimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por arnimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar gabimet nga të cilat mund të shfrytëzohen nga programet keqadashëse për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. korrigjimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por korrigjimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
     <string name="trust_feature_encryption">Shifrimi</string>
     <string name="trust_feature_encryption_value_enabled">E aktivizuar</string>
     <string name="trust_feature_encryption_value_nolock">Nevojitet një mbyllje e sigurtë e ekranit</string>

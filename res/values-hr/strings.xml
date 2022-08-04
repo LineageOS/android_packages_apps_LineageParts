@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">Automatski odaberi boje</string>
     <string name="led_notification_title">Postavke svjetla</string>
     <string name="led_notification_text">LED svjetlo omogućeno postavkama</string>
-    <string name="notification_light_no_apps_summary">Da biste dodali kontrolu za pojedine aplikacije, omogućite \'%1$s\' i pritisnite \'\u002b\' u traci izbornika</string>
     <string name="live_display_summary">Prilagođuje zaslon prema vremenu dana i okolini za poboljšanje čitljivosti i smanjenje naprezanja očiju</string>
     <string name="live_display_mode">Način prikaza</string>
     <string name="live_display_color_temperature_title">Temperatura boje</string>

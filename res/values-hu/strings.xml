@@ -83,7 +83,6 @@
     <string name="notification_light_automagic_summary">Automatikus színválasztás</string>
     <string name="led_notification_title">LED beállítások</string>
     <string name="led_notification_text">LED engedélyezve a beállítások által</string>
-    <string name="notification_light_no_apps_summary">Alkalmazásonkénti vezérléshez aktiválja: \"%1$s\" és nyomja meg \"\u002b\" jelet a menüsávon</string>
     <string name="live_display_summary">Optimalizálja a képernyőt a napszaknak és a fényviszonyoknak megfelelően, javítva az olvashatóságot és csökkentve a szemek terhelését</string>
     <string name="live_display_mode">Képernyő mód</string>
     <string name="live_display_color_temperature_title">Színhőmérséklet</string>

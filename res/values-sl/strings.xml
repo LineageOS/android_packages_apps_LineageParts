@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">Samodejno izbiranje barv</string>
     <string name="led_notification_title">Nastavitve lučke</string>
     <string name="led_notification_text">Lučka LED omogočena v nastavitvah</string>
-    <string name="notification_light_no_apps_summary">Da dodate nadzor za posamezne aplikacije, omogočite »%1$s« in pritisnite »\u002b« v menijski vrstici</string>
+    <string name="notification_light_add_apps_empty_summary">Za dodajanje nadzora za posamezno aplikacijo, omogočite »%1$s« in pritisnite »Dodaj«</string>
     <string name="live_display_summary">Optimiziranje zaslona glede na čas dneva in pogojev okolice, da se izboljša berljivost in zmanjša obremenitev oči</string>
     <string name="live_display_mode">Način prikaza</string>
     <string name="live_display_color_temperature_title">Temperatura barve</string>

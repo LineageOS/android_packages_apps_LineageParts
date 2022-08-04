@@ -80,7 +80,6 @@
     <string name="notification_light_automagic_summary">Wybieranie kolorów automatycznie</string>
     <string name="led_notification_title">Ustawienia diody LED</string>
     <string name="led_notification_text">Diody LED włączone przez ustawienia</string>
-    <string name="notification_light_no_apps_summary">Aby dodać kontrolę dla indywidualnych aplikacji, aktywuj \'%1$s\' i naciśnij \'\u002b\' na pasku menu</string>
     <string name="live_display_summary">Zoptymalizuj swój ekran w zależności od pory dnia, aby poprawić czytelność i zredukować zmęczenie oczu</string>
     <string name="live_display_mode">Tryb wyświetlania</string>
     <string name="live_display_color_temperature_title">Temperatura barw</string>

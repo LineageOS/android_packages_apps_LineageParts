@@ -76,7 +76,6 @@
     <string name="notification_light_automagic_summary">Вибирати кольори автоматично</string>
     <string name="led_notification_title">Налаштування індикатора</string>
     <string name="led_notification_text">LED-діод увімкнено в налаштуваннях</string>
-    <string name="notification_light_no_apps_summary">Для дозволу управління додатками увімкніть «%1$s» і натисніть «\u002b» у рядку стану</string>
     <string name="live_display_summary">Налаштовувати екран залежно від часу доби і умов освітлення для підвищення зручності читання і зменшення втоми очей</string>
     <string name="live_display_mode">Режим екрану</string>
     <string name="live_display_color_temperature_title">Колірна температура</string>
@@ -197,11 +196,16 @@
     <string name="navigation_bar_app_switch_long_press_title">Затиснення «Нещодавні»</string>
     <string name="navigation_bar_edge_long_swipe_title">Коли тягнете збоку довше</string>
     <string name="power_menu_title">Меню кнопки живлення</string>
-    <string name="power_menu_screenshot_title">Скріншот</string>
+    <string name="power_menu_items_title">Пункти меню живлення</string>
+    <string name="power_menu_screenshot_title">Знімок екрана</string>
+    <string name="power_menu_screenshot_summary">Тривале затиснення — знімок частини екрана</string>
     <string name="power_menu_airplane_title">Режим польоту</string>
     <string name="power_menu_users_title">Перемикання користувачів</string>
     <string name="power_menu_bug_report_title">Звіт про помилку</string>
-    <string name="power_menu_advanced_restart_summary">Додати в меню перезапуску рекавері й завантажувач, коли пристрій розблоковано</string>
+    <string name="power_menu_emergency_title">Екстрений виклик</string>
+    <string name="power_menu_devicecontrols_title">Керування пристроями</string>
+    <string name="power_menu_advanced_restart_title">Варіанти перезапуску</string>
+    <string name="power_menu_advanced_restart_summary">Додати в меню перезапуску режим відновлення й завантажувач, коли пристрій розблоковано</string>
     <string name="camera_double_tap_power_gesture_title">Двічі натисніть кнопку живлення для запуску камери</string>
     <string name="camera_double_tap_power_gesture_desc">Швидко запустити камеру, не розблоковуючи екран</string>
     <string name="torch_long_press_power_gesture_title">Тривале натискання для увімкнення ліхтарика</string>
@@ -365,7 +369,7 @@
     <string name="network_traffic_autohide">Приховувати автоматично</string>
     <string name="network_traffic_units_title">Одиниці вимірювання трафіку</string>
     <string name="protected_apps_manager_title">Захищені додатки</string>
-    <string name="protected_apps_manager_summary">Керування додатками, для запуску яких потрібно ввести пароль</string>
+    <string name="protected_apps_manager_summary">Оберіть, для запуску яких застосунків потрібно вводити пароль</string>
     <string name="contributors_cloud_fragment_title">Учасники проекту</string>
     <string name="contributors_cloud_loading_message">Завантаження даних учасників\u2026</string>
     <string name="contributors_cloud_failed_message">Не вдалося завантажити дані учасників</string>
@@ -442,6 +446,8 @@
     <string name="trust_feature_security_patches">Патчі захисту Android</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nВиробник: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Усі оновлення встановлено</string>
+    <string name="trust_feature_security_patches_value_medium">Застаріло на кілька місяців</string>
+    <string name="trust_feature_security_patches_value_old">Застаріло</string>
     <string name="trust_feature_encryption">Шифрування</string>
     <string name="trust_feature_encryption_value_enabled">Увімкнено</string>
     <string name="trust_feature_encryption_value_nolock">Потребує безпечного екрана блокування</string>
@@ -451,10 +457,12 @@
     <string name="trust_warnings_alerts_intro">Оберіть, про які вади захисту системи бажаєте дізнаватись. Найбезпечніше ввімкнути всі застереження</string>
     <string name="trust_warnings_selinux">Стан SELinux</string>
     <string name="trust_warnings_keys">Підпис збірки</string>
+    <string name="trust_onboarding_title">Вас вітає Trust</string>
     <string name="trust_onboarding_description">Trust допомагає захистити ваш пристрій і вашу приватність.\nЗначок Trust ви бачите лише при успішному підтвердженні вмісту сторінки.</string>
     <string name="trust_onboarding_learn_more">Докладніше</string>
     <string name="trust_onboarding_done">Зрозуміло</string>
     <string name="trust_restrict_usb_title">Обмежити USB</string>
     <string name="sms_security_check_limit_title">Обмеження SMS-повідомлень</string>
+    <string name="sms_security_check_limit_summary">При спробі застосунків надіслати понад %s повідомлень за хвилину буде запитано підтвердження</string>
     <string name="sms_security_check_limit_always_confirm">Завжди підтверджувати</string>
 </resources>

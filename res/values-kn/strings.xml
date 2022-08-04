@@ -80,7 +80,6 @@
     <string name="notification_light_automagic_summary">ಸ್ವಯಂ ಬಣ್ಣಗಳನ್ನು ಆರಿಸುತ್ತಿದೆ</string>
     <string name="led_notification_title">ಬೆಳಕಿನ ಆಯ್ಕೆಗಳು</string>
     <string name="led_notification_text">ಅಳವಡಿಕೆಯಿಂದ LED ಮಿಣುಕು ಸಶಕ್ತ</string>
-    <string name="notification_light_no_apps_summary">ಪ್ರತಿ ಅಪ್ ನಿಯಂತ್ರಣ ಸೇರಿಸಲು, \'%1$s\' ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಪಟ್ಟಿಯಲ್ಲಿ \'\ u002b\' ಒತ್ತಿರಿ</string>
     <string name="live_display_summary">ದಿನದ ಸಮಯ ಮತ್ತು ಪರಿಸರದ ಪರಿಸ್ಥಿತಿ ಆಧಾರಿಸಿ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಉತ್ತಮವಾಗಿಸಿ ವಾಚನೀಯತೆ ಉತ್ತಮಗೊಳಿಸಿ ಕಣ್ಣಿನ ಆಯಾಸ ಕಡಿಮೆ ಮಾಡು</string>
     <string name="live_display_mode">ಪ್ರದರ್ಶನ ರೀತಿ</string>
     <string name="live_display_color_temperature_title">ಬಣ್ಣದ ತಾಪಮಾನ</string>

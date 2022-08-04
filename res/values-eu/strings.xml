@@ -80,7 +80,6 @@
     <string name="notification_light_automagic_summary">Koloreak automatikoki hautatzen</string>
     <string name="led_notification_title">Argien ezarpenak</string>
     <string name="led_notification_text">LED argia ezarpenetan aktibatuta</string>
-    <string name="notification_light_no_apps_summary">Aplikazioz aplikazioko kontrola gehitzeko, aktibatu \'%1$s\' eta sakatu\'\u002b\' menu-barran</string>
     <string name="live_display_summary">Optimizatu zure pantaila eguneko orduaren eta inguruneko baldintzen arabera irakurgarritasuna hobetzeko eta begien nekea gutxiagotzeko</string>
     <string name="live_display_mode">Pantaila modua</string>
     <string name="live_display_color_temperature_title">Kolore-tenperatura</string>

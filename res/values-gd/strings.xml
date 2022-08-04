@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">A’ taghadh nan dathan gu fèin-obrachail</string>
     <string name="led_notification_title">Roghainnean an t-solais</string>
     <string name="led_notification_text">Tha solas LED an comas a-rèir nan roghainnean</string>
-    <string name="notification_light_no_apps_summary">Airson stiùireadh fa leth gach aplacaid a chur ris, cuir an comas “%1$s” is brùth air “\u002b” air a bhàr-inneal</string>
     <string name="live_display_summary">Pisich an sgrìn agad a-rèir àm dhen latha is na h-àrainneachd ach am bi cùisean nas fhasa leughadh is nas lugha a sgithear sùla ort</string>
     <string name="live_display_mode">Modh an taisbeanaidh</string>
     <string name="live_display_color_temperature_title">Teothachd an datha</string>

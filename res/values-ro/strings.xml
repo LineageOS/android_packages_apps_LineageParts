@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">Se aleg culorile automat</string>
     <string name="led_notification_title">Setări lumină</string>
     <string name="led_notification_text">Lumină LED activată de setări</string>
-    <string name="notification_light_no_apps_summary">Pentru a adăuga control per aplicație, activați \'%1$s\' și apăsați \'\u002b\' în bara meniului</string>
+    <string name="notification_light_add_apps_empty_summary">Pentru a adăuga control per aplicație, activați \'%1$s\' și apăsați \'Adăugați\'</string>
     <string name="live_display_summary">Optimizați ecranul bazat pe timpul zilei şi condiţiile mediului ambient pentru a îmbunătăţi lizibilitatea şi a reduce oboseala ochilor</string>
     <string name="live_display_mode">Mod de afișare</string>
     <string name="live_display_color_temperature_title">Temperatura culorii</string>

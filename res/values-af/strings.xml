@@ -76,7 +76,6 @@
     <string name="notification_light_automagic_summary">Kies kleure outomaties</string>
     <string name="led_notification_title">Ligte instellings</string>
     <string name="led_notification_text">LED liggie is deur instellings geaktiveer</string>
-    <string name="notification_light_no_apps_summary">Om per toep beheer by te voeg, aktiveer \'%1$s\' en druk \'\u002b\' op die kieslys balk</string>
     <string name="live_display_summary">Optimaliseer jou skerm gebaseer op die tyd van die dag en die omringende omstandighede om leesbaarheid te verbeter en oogspanning te verminder</string>
     <string name="live_display_mode">Skerm modus</string>
     <string name="live_display_color_temperature_title">Kleurtemperatuur</string>

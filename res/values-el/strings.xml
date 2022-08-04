@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">Αυτόματη επιλογή χρωμάτων</string>
     <string name="led_notification_title">Ρυθμίσεις LED</string>
     <string name="led_notification_text">Το LED ενεργοποιήθηκε από τις ρυθμίσεις</string>
-    <string name="notification_light_no_apps_summary">Για προσαρμογή ένδειξης ανά εφαρμογή, ενεργοποιήστε το \'%1$s\' και πιέστε \'\u002b\' στη γραμμή μενού</string>
+    <string name="notification_light_add_apps_empty_summary">Για να προσθέσετε έλεγχο ανά εφαρμογή, ενεργοποιήστε το \'%1$s\' και πατήστε \'Προσθήκη\'</string>
     <string name="live_display_summary">Βελτιστοποίηση της οθόνης σας με βάση την ώρα της ημέρας και τις συνθήκες περιβάλλοντος για βελτίωση της αναγνωσιμότητας και μείωση της καταπόνησης των ματιών</string>
     <string name="live_display_mode">Λειτουργία οθόνης</string>
     <string name="live_display_color_temperature_title">Θερμοκρασία χρώματος</string>
@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Στοιχεία ελέγχου συσκευής</string>
     <string name="power_menu_advanced_restart_title">Προηγμένη επανεκκίνηση</string>
     <string name="power_menu_advanced_restart_summary">Όταν είναι ενεργή, περιλαμβάνονται στο μενού πλήκτρου απενεργοποίησης οι επιλογές επανεκκίνησης σε λειτουργία recovery ή bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Η δυνατότητα έκτακτης ανάγκης είναι ενεργοποιημένη</string>
     <string name="camera_double_tap_power_gesture_title">Διπλό πάτημα πλήκτρου ενεργοποίησης για φωτ. μηχανή</string>
     <string name="camera_double_tap_power_gesture_desc">Γρήγορο άνοιγμα της φωτογραφικής μηχανής χωρίς ξεκλείδωμα οθόνης</string>
     <string name="torch_long_press_power_gesture_title">Παρατεταμένη πίεση για φακό</string>

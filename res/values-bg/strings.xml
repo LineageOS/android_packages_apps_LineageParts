@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">Автоматичен избор на цветове</string>
     <string name="led_notification_title">Настройки на светлината</string>
     <string name="led_notification_text">LED светлини, разрешени в настройките</string>
-    <string name="notification_light_no_apps_summary">За да добавите отделен контрол за приложение, активирайте \'%1$s\' и натиснете \'\u002b\' в лентата на менюто</string>
     <string name="live_display_summary">Оптимизира настройките на дисплея, въз основа на времето от деня и условията на околната среда за да се подобри четливостта и да намали умората на очите</string>
     <string name="live_display_mode">Режим на екрана</string>
     <string name="live_display_color_temperature_title">Температура на цвета</string>

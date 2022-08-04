@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">Valitaan värit automaattisesti</string>
     <string name="led_notification_title">Valoasetukset</string>
     <string name="led_notification_text">LED-valo otettu käyttöön asetuksissa</string>
-    <string name="notification_light_no_apps_summary">Lisätäksesi sovelluskohtaisen hallinnan, ota \'%1$s\' käyttöön ja paina \'\u002b\' valikkopalkista</string>
     <string name="live_display_summary">Optimoi näyttösi kellonajan ja ympäristöolosuhteiden perusteella parantaaksesi luettavuutta ja vähentääksesi silmien rasitusta</string>
     <string name="live_display_mode">Näyttötila</string>
     <string name="live_display_color_temperature_title">Värilämpötila</string>

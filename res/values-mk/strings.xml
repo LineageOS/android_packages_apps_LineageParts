@@ -76,7 +76,6 @@
     <string name="notification_light_automagic_summary">Одбирање бои автоматски</string>
     <string name="led_notification_title">Поставки за светла</string>
     <string name="led_notification_text">LED светло овозможено од поставките</string>
-    <string name="notification_light_no_apps_summary">За да додадете контрола на апликацијата, активирајте %1$s и притиснете \u002b на менито</string>
     <string name="live_display_summary">Оптимизирајте го вашиот екран врз основа на време од денот и амбиентални услови за да се подобри читливоста и да се намали обемот на очите</string>
     <string name="live_display_mode">Режим на екранот</string>
     <string name="live_display_color_temperature_title">Температура на бојата</string>

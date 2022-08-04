@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">S\'estan triant els colors automàticament</string>
     <string name="led_notification_title">Configuració de llums</string>
     <string name="led_notification_text">Llum LED habilitada per la configuració</string>
-    <string name="notification_light_no_apps_summary">Per afegir control específic per aplicació, activa \'%1$s\' i prem \"\u002b\" a la barra de menú</string>
     <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
     <string name="live_display_mode">Mode de pantalla</string>
     <string name="live_display_color_temperature_title">Temperatura del color</string>

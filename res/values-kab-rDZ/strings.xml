@@ -76,7 +76,6 @@
     <string name="notification_light_automagic_summary">Fren initen s udem awurman</string>
     <string name="led_notification_title">Iɣewwaṛen n tafat</string>
     <string name="led_notification_text">Tafat LED termed s iɣewwaṛen</string>
-    <string name="notification_light_no_apps_summary">I tmerniwt n usefrek s usnas,rmed \'%1$s\' u senned ɣef \'\u002b deg tafeggagt n wumuɣ</string>
     <string name="live_display_color_temperature_title">Tifesniwin n lḥamu n yini</string>
     <string name="live_display_color_temperature_summary">Ass:<xliff:g id="day_temperature">%1$d</xliff:g>K Deg iḍ:<xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g></string>

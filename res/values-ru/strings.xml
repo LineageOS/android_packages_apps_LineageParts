@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">Автоматический выбор цветов</string>
     <string name="led_notification_title">Индикатор событий</string>
     <string name="led_notification_text">Светодиод включен в настройках</string>
-    <string name="notification_light_no_apps_summary">Чтобы разрешить управление приложениями, включите \'%1$s\' и нажмите \'\u002b\' в строке меню</string>
+    <string name="notification_light_add_apps_empty_summary">Чтобы разрешить управление приложениями, включите \'%1$s\' и нажмите \'Добавить\'</string>
     <string name="live_display_summary">Подстраивать экран на основе времени суток и освещения, чтобы повысить удобочитаемость и снизить нагрузку на глаза</string>
     <string name="live_display_mode">Режим</string>
     <string name="live_display_color_temperature_title">Цветовая температура</string>

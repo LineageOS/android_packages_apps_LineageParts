@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">자동으로 색상 선택</string>
     <string name="led_notification_title">표시등 설정</string>
     <string name="led_notification_text">설정 앱이 LED 표시등을 활성화함</string>
-    <string name="notification_light_no_apps_summary">앱 별 제어를 추가하려면 \'%1$s\'을(를) 활성화하고 메뉴 바에서 \'\u002b\'를 누르세요</string>
+    <string name="notification_light_add_apps_empty_summary">앱 별 컨트롤을 추가하려면 \'%1$s\'을(를) 활성화하고 \'추가\'를 누르세요</string>
     <string name="live_display_summary">가독성을 향상시키고 눈의 피로를 줄이기 위해 주변 환경과 시간에 따라 화면을 최적화</string>
     <string name="live_display_mode">화면 모드</string>
     <string name="live_display_color_temperature_title">색 온도</string>
@@ -519,6 +519,10 @@
     <string name="trust_onboarding_learn_more">더 알아보기</string>
     <string name="trust_onboarding_done">확인</string>
     <string name="trust_restrict_usb_title">USB 제한</string>
+    <string name="trust_restrict_usb_summary">이어폰, 저장 장치, 입력 (마우스, 키보드, 조이스틱) 그리고 ADB와 같은 USB 연결에 대한 제어 지원</string>
+    <string name="trust_restrict_usb_always">USB 연결 거부</string>
+    <string name="trust_restrict_usb_keyguard">잠금 해제 시에만 USB 연결 허용</string>
+    <string name="trust_restrict_usb_disabled">항상 USB 연결 허용</string>
     <string name="sms_security_check_limit_title">SMS 메시지 발신 제한</string>
     <string name="sms_security_check_limit_summary">앱은 확인을 요청하기 전까지 1분 내에 %s개의 메시지만 보낼 수 있습니다.</string>
     <string name="sms_security_check_limit_summary_none">앱은 어떤 메시지도 확인 없이 보낼 수 없습니다.</string>

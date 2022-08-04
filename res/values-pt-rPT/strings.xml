@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">A escolher cores automaticamente</string>
     <string name="led_notification_title">Definições de luz</string>
     <string name="led_notification_text">Luz do LED ativada pelas definições</string>
-    <string name="notification_light_no_apps_summary">Para configurar as luzes de notificação para uma aplicação específica, ative \"%1$s\" e toque em \"\u002b\" na barra de menu</string>
     <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
     <string name="live_display_mode">Modo do ecrã</string>
     <string name="live_display_color_temperature_title">Temperatura da cor</string>

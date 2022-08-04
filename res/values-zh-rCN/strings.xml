@@ -84,7 +84,7 @@
     <string name="notification_light_automagic_summary">自动选择颜色</string>
     <string name="led_notification_title">指示灯设置</string>
     <string name="led_notification_text">LED 灯被“设置”启用</string>
-    <string name="notification_light_no_apps_summary">若要添加单个应用控制，请激活“%1$s”并按下菜单栏上的“\u002b”</string>
+    <string name="notification_light_add_apps_empty_summary">要添加对每个应用的控制，请先激活 \'%1$s\'，然后按 \'添加\'</string>
     <string name="live_display_summary">基于当前时间和环境条件来优化您的屏幕以改善可读性和减少视疲劳</string>
     <string name="live_display_mode">显示模式</string>
     <string name="live_display_color_temperature_title">色温</string>

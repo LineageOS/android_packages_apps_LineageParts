@@ -81,7 +81,6 @@
     <string name="notification_light_automagic_summary">การเลือกสีอัตโนมัติ</string>
     <string name="led_notification_title">ตั้งค่าไฟแจ้งเตือน</string>
     <string name="led_notification_text">เปิดใช้งาน LED จากการตั้งค่า</string>
-    <string name="notification_light_no_apps_summary">เพื่อเพิ่มการควบคุมแอป เปิดใช้ \'%1$s\' และกด \'\u002b\' บนแถบเมนู</string>
     <string name="live_display_summary">ปรับหน้าความสว่างหน้าจอตามเวลาและแสงโดยรอบเพื่อทำให้อ่านได้ง่ายขึ้นและลดอาการปวดตา</string>
     <string name="live_display_mode">โหมดการแสดงผล</string>
     <string name="live_display_color_temperature_title">อุณหภูมิสี</string>

@@ -80,7 +80,6 @@
     <string name="notification_light_automagic_summary">בוחר צבעים אוטומטית</string>
     <string name="led_notification_title">הגדרות נורית ההתראה</string>
     <string name="led_notification_text">נורית LED מופעלת בהגדרות</string>
-    <string name="notification_light_no_apps_summary">כדי להוסיף בקרה ברמת יישום בודד, הפעל את \"%1$s\" ולחץ על \"\u002b\" בסרגל התפריטים</string>
     <string name="live_display_summary">התאם את מסך מכשירך בהתאם לשעה ולתנאי הסביבה על מנת לשפר את נוחות הקריאה ולהפחית את עייפות העין</string>
     <string name="live_display_mode">מצב תצוגה</string>
     <string name="live_display_color_temperature_title">טמפרטורת צבע</string>

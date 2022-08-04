@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">I colori sono scelti automaticamente</string>
     <string name="led_notification_title">Impostazioni luci</string>
     <string name="led_notification_text">LED attivato dalle impostazioni</string>
-    <string name="notification_light_no_apps_summary">Per modificare le impostazioni per le singole app, attiva \'%1$s\' e premi \'\u002b\' sulla barra di menù</string>
     <string name="live_display_summary">Ottimizza lo schermo in base all\'ora del giorno e alle condizioni ambientali per migliorare la leggibilità e ridurre l\'affaticamento degli occhi</string>
     <string name="live_display_mode">Modalità display</string>
     <string name="live_display_color_temperature_title">Temperatura colore</string>

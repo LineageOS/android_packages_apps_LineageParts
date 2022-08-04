@@ -84,7 +84,6 @@
     <string name="notification_light_automagic_summary">Vælger farver automatisk</string>
     <string name="led_notification_title">Lysindstillinger</string>
     <string name="led_notification_text">LED-lys aktiveret via indstillinger</string>
-    <string name="notification_light_no_apps_summary">Aktivér \'%1$s\' og tryk på \'\u002b\' på menubjælken, for at tilføje pr. app-kontrol</string>
     <string name="live_display_summary">Optimér din skærm, baseret på tid på dagen, og omkringværende forhold, for at forbedre læsbarhed og reducere øjen-anstrengelse</string>
     <string name="live_display_mode">Visningstilstand</string>
     <string name="live_display_color_temperature_title">Farvetemperatur</string>
