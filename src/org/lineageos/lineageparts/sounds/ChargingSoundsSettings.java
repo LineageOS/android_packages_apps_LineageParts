@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017,2019-2021 The LineageOS Project
+ *               2017,2019-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 
 import androidx.preference.Preference;
@@ -36,6 +37,7 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class ChargingSoundsSettings extends SettingsPreferenceFragment {
+    private static final String TAG = "ChargingSoundsSettings";
 
     private static final String KEY_CHARGING_VIBRATION_ENABLED = "charging_vibration_enabled";
     private static final String KEY_WIRED_CHARGING_SOUNDS = "charging_sounds";
@@ -199,14 +201,26 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == REQUEST_CODE_WIRED_CHARGING_SOUND
-                && resultCode == Activity.RESULT_OK) {
+        if ((requestCode == REQUEST_CODE_WIRED_CHARGING_SOUND ||
+                requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND) &&
+                resultCode == Activity.RESULT_OK) {
             Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
-            updateChargingSounds(uri != null ? uri.toString() : null, false /* wireless */);
-        } else if (requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND
-                && resultCode == Activity.RESULT_OK) {
-            Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
-            updateChargingSounds(uri != null ? uri.toString() : null, true /* wireless */);
+
+            String mimeType = getContext().getContentResolver().getType(uri);
+            if (mimeType == null) {
+                Log.e(TAG, "call to updateChargingSounds for URI:" + uri
+                        + " ignored: failure to find mimeType (no access from this context?)");
+                return;
+            }
+
+            if (!(mimeType.startsWith("audio/") || mimeType.equals("application/ogg"))) {
+                Log.e(TAG, "call to updateChargingSounds for URI:" + uri
+                        + " ignored: associated mimeType:" + mimeType + " is not an audio type");
+                return;
+            }
+
+            updateChargingSounds(uri != null ? uri.toString() : null,
+                    requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
         }
     }
 }
