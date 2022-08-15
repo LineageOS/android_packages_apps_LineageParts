@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Kontrolniki naprave</string>
     <string name="power_menu_advanced_restart_title">Napredni vnovičen zagon</string>
     <string name="power_menu_advanced_restart_summary">Ko je odklenjeno, v meni izklopa vključi možnosti za vnovično zaganjanje v obnovitev ali zagonski nalagalnik</string>
+    <string name="power_menu_emergency_affordance_enabled">Nujna dostopnost je omogočena</string>
     <string name="camera_double_tap_power_gesture_title">Dvakrat pritisnite gumb za vklop za fotoaparat</string>
     <string name="camera_double_tap_power_gesture_desc">Hitro odprite fotoaparat brez odklepanja zaslona</string>
     <string name="torch_long_press_power_gesture_title">Pridržanje za svetilko</string>

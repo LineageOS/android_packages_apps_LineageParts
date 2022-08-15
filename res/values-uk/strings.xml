@@ -206,6 +206,7 @@
     <string name="power_menu_devicecontrols_title">Керування пристроями</string>
     <string name="power_menu_advanced_restart_title">Варіанти перезапуску</string>
     <string name="power_menu_advanced_restart_summary">Додати в меню перезапуску режим відновлення й завантажувач, коли пристрій розблоковано</string>
+    <string name="power_menu_emergency_affordance_enabled">Ввімкнено екстрену доступність</string>
     <string name="camera_double_tap_power_gesture_title">Двічі натисніть кнопку живлення для запуску камери</string>
     <string name="camera_double_tap_power_gesture_desc">Швидко запустити камеру, не розблоковуючи екран</string>
     <string name="torch_long_press_power_gesture_title">Тривале натискання для увімкнення ліхтарика</string>
