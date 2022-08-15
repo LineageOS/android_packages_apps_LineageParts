@@ -205,7 +205,7 @@
     <string name="navigation_bar_invert_layout_summary">Hərəkət sətrinin və IME dəyişdirici kimi digər elementlərin düzümünü tərsinə çevirər</string>
     <string name="navigation_bar_left_summary">Üfüqi rejimdə ekranın sol tərəfinə hərəkət sətrini yerləşdirər</string>
     <string name="navigation_bar_arrow_keys_title">Yazı yazanda ox düymələrini göstər</string>
-    <string name="navigation_bar_arrow_keys_summary">Yazı yazarkən sol və sağ kursor düymələrini göstər. Klaviatura dəyişdiricini göstərməz.</string>
+    <string name="navigation_bar_arrow_keys_summary">Yazı yazarkən sol və sağ kursor düymələrini göstər. Klaviatura dəyişdiricini yararsız edir.</string>
     <string name="navigation_bar_back_long_press_title">Geri düyməsinə uzun basma</string>
     <string name="navigation_bar_home_long_press_title">Əsas ekran düyməsinə uzun basma</string>
     <string name="navigation_bar_home_double_tap_title">Əsas ekran düyməsinə cüt toxunma</string>
@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Cihaz kontrolları</string>
     <string name="power_menu_advanced_restart_title">Qabaqcıl yenidən başlatma</string>
     <string name="power_menu_advanced_restart_summary">Kilid açılanda, bərpa və ya ön yükləmə rejimində yenidən başlatmaq üçün güc menyusuna seçimlər əlavə edir</string>
+    <string name="power_menu_emergency_affordance_enabled">Fövqəladə vəziyyət təminatı fəaldır</string>
     <string name="camera_double_tap_power_gesture_title">Kameraya keçmək üçün güc düyməsinə iki dəfə bas</string>
     <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan kameranı tez açmaq</string>
     <string name="torch_long_press_power_gesture_title">Fənər üçün uzun basın</string>
@@ -275,9 +276,9 @@
     <string name="profile_populate_profile_from_state">Hazırki cihaz tənzimləmələri istifadə edilərək profil konfiqurasiya edilsin?</string>
     <string name="profile_menu_fill_from_state">Hazırkı cihaz tənzimləmələrini daxilə köçür</string>
     <string name="profile_remove_current_profile">Hazırki profil silinə bilməz!</string>
-    <string name="profile_app_group_category_title">Bildirişlərə əhəmiyyət vermə</string>
+    <string name="profile_app_group_category_title">Bildirişləri yararsız et</string>
     <string name="profile_app_group_item_instructions">Qrupları əlavə et və ya çıxart</string>
-    <string name="profile_app_group_item_instructions_summary">Qrupları əlavə etmək və ya çıxartmaq bildirişi bu profilin tətbiq qruplarını rədd edər</string>
+    <string name="profile_app_group_item_instructions_summary">Bildiriş əlavə etmək və ya silmək, bu profilin tətbiq qruplarını yararsız edir</string>
     <string name="profile_entries_on">Açıq</string>
     <string name="profile_entries_off">Bağlı</string>
     <string name="profile_entries_no_override">Dəyişiklik yoxdur</string>
@@ -320,7 +321,7 @@
     <string name="profile_airplanemode_title">Təyyarə rejimi</string>
     <string name="profile_brightness_title">Ekran parlaqlığı</string>
     <string name="profile_brightness_override_summary">%1$d%% tənzimləndi</string>
-    <string name="profile_brightness_override_checkbox_label">Parlaqlığa əhəmiyyət vermə</string>
+    <string name="profile_brightness_override_checkbox_label">Parlaqlığı yararsız et</string>
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Daşına bilən Wi\u2011Fi giriş nöqtəsi</string>
     <string name="toggleBluetooth">Bluetooth</string>

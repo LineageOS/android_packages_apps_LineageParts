@@ -210,7 +210,7 @@
     <string name="navigation_bar_home_long_press_title">მოქმედება მთავარზე დიდხანს დაჭერისას</string>
     <string name="navigation_bar_home_double_tap_title">მოქმედება, მთავარ ღილაკზე ორჯერ შეხებისას</string>
     <string name="navigation_bar_app_switch_long_press_title">მოქმედება ბოლოების ღილაკზე დიდხანს დაჭერისას</string>
-    <string name="navigation_bar_edge_long_swipe_title">კიდეზე ხანგრძლივი გადასმა</string>
+    <string name="navigation_bar_edge_long_swipe_title">კიდიდან შორს გასმა</string>
     <string name="power_menu_title">ჩართვის მენიუ</string>
     <string name="power_menu_items_title">ჩართვის მენიუში ასარჩევი</string>
     <string name="power_menu_screenshot_title">ეკრანის ანაბეჭდი</string>
@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">მოწყობილობის სამართავი</string>
     <string name="power_menu_advanced_restart_title">გადატვირთვის ასარჩევი</string>
     <string name="power_menu_advanced_restart_summary">ეკრანი როცა არაა ჩაკეტილი, ჩართვის მენიუში დაემატება აღმდგენ გარსში ან ჩამტვირთავში გადასვლის შესაძლებლობა</string>
+    <string name="power_menu_emergency_affordance_enabled">საგანგებო დახმარების უზრუნველყოფა ჩართულია</string>
     <string name="camera_double_tap_power_gesture_title">ჩართვის ღილაკზე ორმაგი დაჭერით კამერის გახსნა</string>
     <string name="camera_double_tap_power_gesture_desc">კამერის სწრაფი გაშვება ჩაკეტილი ეკრანის გაუხსნელად</string>
     <string name="torch_long_press_power_gesture_title">ხანგრძლივი დაჭერა სანათისთვის</string>

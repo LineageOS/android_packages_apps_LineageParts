@@ -222,6 +222,7 @@
     <string name="power_menu_devicecontrols_title">デバイスコントロール</string>
     <string name="power_menu_advanced_restart_title">高度な再起動</string>
     <string name="power_menu_advanced_restart_summary">ロック解除時に、リカバリーやブートローダーへ再起動するオプションを電源メニューに含めます</string>
+    <string name="power_menu_emergency_affordance_enabled">緊急時アフォーダンスが有効です</string>
     <string name="camera_double_tap_power_gesture_title">ホームボタンを2回押してカメラを起動</string>
     <string name="camera_double_tap_power_gesture_desc">画面のロックを解除せずにカメラをすばやく起動する</string>
     <string name="torch_long_press_power_gesture_title">長押しでライト点灯</string>

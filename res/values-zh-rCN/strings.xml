@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">设备控制</string>
     <string name="power_menu_advanced_restart_title">高级重启</string>
     <string name="power_menu_advanced_restart_summary">解锁状态下，在电源菜单中加入重启至恢复模式或引导程序的选项</string>
+    <string name="power_menu_emergency_affordance_enabled">紧急呼叫能力已启用</string>
     <string name="camera_double_tap_power_gesture_title">按两下电源键启动相机</string>
     <string name="camera_double_tap_power_gesture_desc">在不解锁屏幕的情况下快速开启相机</string>
     <string name="torch_long_press_power_gesture_title">长按打开手电筒</string>
