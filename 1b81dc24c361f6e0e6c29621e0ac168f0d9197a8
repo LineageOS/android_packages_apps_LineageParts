@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0858eac3_292dfc2a",
+        "filename": "src/org/lineageos/lineageparts/lineagestats/StatsUploadJobService.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-08-17T16:05:51Z",
+      "side": 0,
+      "message": "not a fan of this",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f22d64a7_3aa3c090",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/BatteryLightSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-08-17T16:05:51Z",
+      "side": 0,
+      "message": "ditto",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a2cf972_c8f51a2d",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-08-17T16:05:51Z",
+      "side": 0,
+      "message": "uh no",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "57b2fac7_6bbf865d",
+        "filename": "src/org/lineageos/lineageparts/profiles/ProfilesSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-08-17T16:05:51Z",
+      "side": 0,
+      "message": "ditto",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "361817b7_1ac9bd46",
+        "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 604,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-08-17T16:05:51Z",
+      "side": 0,
+      "message": "ditto",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
