@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "27b07de3_f35d4bae",
+        "filename": "src/org/lineageos/lineageparts/lineagestats/StatsUploadJobService.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-18T19:30:39Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "0858eac3_292dfc2a",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f22d64a7_3aa3c090",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-08-17T16:05:51Z",
       "side": 0,
       "message": "ditto",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc286c86_076e377d",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/BatteryLightSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-18T19:30:39Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "f22d64a7_3aa3c090",
       "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -52,6 +88,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "43dbada9_fa629286",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-18T19:30:39Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "9a2cf972_c8f51a2d",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "57b2fac7_6bbf865d",
@@ -69,6 +123,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c3d2e75_d7370536",
+        "filename": "src/org/lineageos/lineageparts/profiles/ProfilesSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-18T19:30:39Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "57b2fac7_6bbf865d",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "361817b7_1ac9bd46",
@@ -82,6 +154,24 @@
       "writtenOn": "2022-08-17T16:05:51Z",
       "side": 0,
       "message": "ditto",
+      "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1ebe16e_cd259409",
+        "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 604,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-18T19:30:39Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "361817b7_1ac9bd46",
       "revId": "1b81dc24c361f6e0e6c29621e0ac168f0d9197a8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
