@@ -498,6 +498,14 @@ public class ButtonSettings extends SettingsPreferenceFragment
             unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
         }
 
+        // Hide split screen option when window animations are disabled - they won't work in that
+        // case
+        boolean windowAnimationsDisabled = Settings.Global.getFloat(getContentResolver(),
+                Settings.Global.WINDOW_ANIMATION_SCALE, 0f) == 0f;
+        if (windowAnimationsDisabled) {
+            unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
+        }
+
         for (int i = 0; i < defaultActionValues.length; i++) {
             if (!unsupportedValues.contains(i)) {
                 entries.add(defaultActionEntries[i]);
