@@ -493,9 +493,18 @@ public class ButtonSettings extends SettingsPreferenceFragment
         String[] defaultActionEntries = res.getStringArray(R.array.hardware_keys_action_entries);
         String[] defaultActionValues = res.getStringArray(R.array.hardware_keys_action_values);
 
+        boolean windowAnimationsDisabled = Settings.Global.getFloat(getContentResolver(),
+                Settings.Global.WINDOW_ANIMATION_SCALE, 0f) == 0f;
+
         // Override key actions on Go devices in order to hide any unsupported features
         if (ActivityManager.isLowRamDeviceStatic()) {
-            unsupportedValues.add(Action.SPLIT_SCREEN);
+            unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
+        }
+
+        // Hide split screen option when window animations are disabled - they won't work in that
+        // case
+        if (windowAnimationsDisabled) {
+            unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
         }
 
         for (int i = 0; i < defaultActionValues.length; i++) {
@@ -504,8 +513,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 values.add(defaultActionValues[i]);
             }
         }
-        String[] actionEntries = (String[])entries.toArray();
-        String[] actionValues = (String[])values.toArray();
+        String[] actionEntries = entries.toArray(new String[0]);
+        String[] actionValues = values.toArray(new String[0]);
 
         if (hasBackKey) {
             mBackLongPressAction.setEntries(actionEntries);
