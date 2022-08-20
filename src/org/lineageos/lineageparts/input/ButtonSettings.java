@@ -21,7 +21,6 @@ import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY;
 
-import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.om.IOverlayManager;
@@ -493,10 +492,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
         String[] defaultActionEntries = res.getStringArray(R.array.hardware_keys_action_entries);
         String[] defaultActionValues = res.getStringArray(R.array.hardware_keys_action_values);
 
-        // Override key actions on Go devices in order to hide any unsupported features
-        if (ActivityManager.isLowRamDeviceStatic()) {
-            unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
-        }
+        // hide split screen option unconditionally - it doesn't work at the moment
+        // once someone gets it working again: hide it only for low-ram devices
+        // (check ActivityManager.isLowRamDeviceStatic())
+        unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
 
         for (int i = 0; i < defaultActionValues.length; i++) {
             if (!unsupportedValues.contains(i)) {
