@@ -498,14 +498,22 @@ public class ButtonSettings extends SettingsPreferenceFragment
             unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
         }
 
+        // Hide split screen option when window animations are disabled - they won't work in that
+        // case
+        boolean windowAnimationsDisabled = Settings.Global.getFloat(getContentResolver(),
+                Settings.Global.WINDOW_ANIMATION_SCALE, 0f) == 0f;
+        if (windowAnimationsDisabled) {
+            unsupportedValues.add(Action.SPLIT_SCREEN.ordinal());
+        }
+
         for (int i = 0; i < defaultActionValues.length; i++) {
             if (!unsupportedValues.contains(i)) {
                 entries.add(defaultActionEntries[i]);
                 values.add(defaultActionValues[i]);
             }
         }
-        String[] actionEntries = (String[])entries.toArray();
-        String[] actionValues = (String[])values.toArray();
+        String[] actionEntries = entries.toArray(new String[0]);
+        String[] actionValues = values.toArray(new String[0]);
 
         if (hasBackKey) {
             mBackLongPressAction.setEntries(actionEntries);
