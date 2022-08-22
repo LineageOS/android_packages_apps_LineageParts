@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f11ae0db_0e6236f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-22T16:56:43Z",
+      "side": 1,
+      "message": "You are right, it doesn\u0027t. Made a commit to remove it instead: /review.lineageos.org/c/LineageOS/android_packages_apps_LineageParts/+/335478/",
+      "revId": "b53acc5aefe7744c76b02c630622cc6a0aabd873",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
