@@ -413,16 +413,15 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mVolumeKeyCursorControl = initList(KEY_VOLUME_KEY_CURSOR_CONTROL,
                     cursorControlAction);
 
-            int swapVolumeKeys = LineageSettings.System.getInt(getContentResolver(),
+            int swapVolumeKeys = LineageSettings.System.getInt(resolver,
                     LineageSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0);
             mSwapVolumeButtons = prefScreen.findPreference(KEY_SWAP_VOLUME_BUTTONS);
             if (mSwapVolumeButtons != null) {
                 mSwapVolumeButtons.setChecked(swapVolumeKeys > 0);
             }
 
-            final boolean volumePanelOnLeft = LineageSettings.Secure.getIntForUser(
-                    getContentResolver(), LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, 0,
-                    UserHandle.USER_CURRENT) != 0;
+            final boolean volumePanelOnLeft = LineageSettings.Secure.getIntForUser(resolver,
+                    LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, 0, UserHandle.USER_CURRENT) != 0;
             mVolumePanelOnLeft = prefScreen.findPreference(KEY_VOLUME_PANEL_ON_LEFT);
             if (mVolumePanelOnLeft != null) {
                 mVolumePanelOnLeft.setChecked(volumePanelOnLeft);
@@ -479,7 +478,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 mNavigationPreferencesCat.removePreference(mEnableTaskbar);
             } else {
                 mEnableTaskbar.setOnPreferenceChangeListener(this);
-                mEnableTaskbar.setChecked(LineageSettings.System.getInt(getContentResolver(),
+                mEnableTaskbar.setChecked(LineageSettings.System.getInt(resolver,
                         LineageSettings.System.ENABLE_TASKBAR,
                         isTablet(getContext()) ? 1 : 0) == 1);
                 toggleTaskBarDependencies(mEnableTaskbar.isChecked());
