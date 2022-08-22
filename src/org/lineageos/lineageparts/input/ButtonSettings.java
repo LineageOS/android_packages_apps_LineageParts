@@ -681,28 +681,17 @@ public class ButtonSettings extends SettingsPreferenceFragment
     }
 
     private void toggleTaskBarDependencies(boolean enabled) {
-        if (mNavigationArrowKeys != null) {
-            mNavigationArrowKeys.setEnabled(!enabled);
-        }
+        enablePreference(mNavigationArrowKeys, !enabled);
+        enablePreference(mNavBarInverse, !enabled);
+        enablePreference(mNavigationBackLongPressAction, !enabled);
+        enablePreference(mNavigationHomeLongPressAction, !enabled);
+        enablePreference(mNavigationHomeDoubleTapAction, !enabled);
+        enablePreference(mNavigationAppSwitchLongPressAction, !enabled);
+    }
 
-        if (mNavBarInverse != null) {
-            mNavBarInverse.setEnabled(!enabled);
-        }
-
-        if (mNavigationBackLongPressAction != null) {
-            mNavigationBackLongPressAction.setEnabled(!enabled);
-        }
-
-        if (mNavigationHomeLongPressAction != null) {
-            mNavigationHomeLongPressAction.setEnabled(!enabled);
-        }
-
-        if (mNavigationHomeDoubleTapAction != null) {
-            mNavigationHomeDoubleTapAction.setEnabled(!enabled);
-        }
-
-        if (mNavigationAppSwitchLongPressAction != null) {
-            mNavigationAppSwitchLongPressAction.setEnabled(!enabled);
+    private void enablePreference(Preference pref, boolean enabled) {
+        if (pref != null) {
+            pref.setEnabled(enabled);
         }
     }
 
@@ -771,44 +760,24 @@ public class ButtonSettings extends SettingsPreferenceFragment
             }
         }
         if (backCategory != null) {
-            if (mBackLongPressAction != null) {
-                mBackLongPressAction.setEnabled(!navbarEnabled);
-            }
+            enablePreference(mBackLongPressAction, !navbarEnabled);
         }
         if (homeCategory != null) {
-            if (mHomeAnswerCall != null) {
-                mHomeAnswerCall.setEnabled(!navbarEnabled);
-            }
-            if (mHomeLongPressAction != null) {
-                mHomeLongPressAction.setEnabled(!navbarEnabled);
-            }
-            if (mHomeDoubleTapAction != null) {
-                mHomeDoubleTapAction.setEnabled(!navbarEnabled);
-            }
+            enablePreference(mHomeAnswerCall, !navbarEnabled);
+            enablePreference(mHomeLongPressAction, !navbarEnabled);
+            enablePreference(mHomeDoubleTapAction, !navbarEnabled);
         }
         if (menuCategory != null) {
-            if (mMenuPressAction != null) {
-                mMenuPressAction.setEnabled(!navbarEnabled);
-            }
-            if (mMenuLongPressAction != null) {
-                mMenuLongPressAction.setEnabled(!navbarEnabled);
-            }
+            enablePreference(mMenuPressAction, !navbarEnabled);
+            enablePreference(mMenuLongPressAction, !navbarEnabled);
         }
         if (assistCategory != null) {
-            if (mAssistPressAction != null) {
-                mAssistPressAction.setEnabled(!navbarEnabled);
-            }
-            if (mAssistLongPressAction != null) {
-                mAssistLongPressAction.setEnabled(!navbarEnabled);
-            }
+            enablePreference(mAssistPressAction, !navbarEnabled);
+            enablePreference(mAssistLongPressAction, !navbarEnabled);
         }
         if (appSwitchCategory != null) {
-            if (mAppSwitchPressAction != null) {
-                mAppSwitchPressAction.setEnabled(!navbarEnabled);
-            }
-            if (mAppSwitchLongPressAction != null) {
-                mAppSwitchLongPressAction.setEnabled(!navbarEnabled);
-            }
+            enablePreference(mAppSwitchPressAction, !navbarEnabled);
+            enablePreference(mAppSwitchLongPressAction, !navbarEnabled);
         }
     }
 
