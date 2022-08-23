@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9952ad55_7ba4b113",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-08-23T15:21:09Z",
+      "side": 1,
+      "message": "List\u003cString\u003e actionEntries \u003d new ArrayList\u003cString\u003e(Arrays.asList(res.getStringArray(R.array.hardware_keys_action_entries)));\n        List\u003cString\u003e actionValues \u003d new ArrayList\u003cString\u003e(Arrays.asList(res.getStringArray(R.array.hardware_keys_action_values)));\n        \n        for (Integer unsupportedValue : unsupportedValues) {\n            actionEntries.remove(unsupportedValue);\n            actionValues.remove(unsupportedValue);\n        }\n\n        String[] actionEntries \u003d entries.toArray(new String[0]);\n        String[] actionValues \u003d values.toArray(new String[0]);",
+      "range": {
+        "startLine": 493,
+        "startChar": 0,
+        "endLine": 494,
+        "endChar": 93
+      },
+      "revId": "8ac9b89865addabee9dae42e4415f700e3706d2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
