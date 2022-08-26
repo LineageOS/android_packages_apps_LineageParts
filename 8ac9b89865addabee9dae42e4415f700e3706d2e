@@ -22,6 +22,30 @@
       },
       "revId": "8ac9b89865addabee9dae42e4415f700e3706d2e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ac0a6da_9c482f95",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-26T18:20:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9952ad55_7ba4b113",
+      "range": {
+        "startLine": 493,
+        "startChar": 0,
+        "endLine": 494,
+        "endChar": 93
+      },
+      "revId": "8ac9b89865addabee9dae42e4415f700e3706d2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
