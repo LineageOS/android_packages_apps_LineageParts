@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a127d212_4cc2e065",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-08-29T16:26:59Z",
+      "side": 1,
+      "message": "This is probably fine. If anyone has objections I\u0027ll give them a few days.",
+      "revId": "96f6ee39436a1eaae751987faba0dda778bde320",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
