@@ -47,7 +47,7 @@
             android:entryValues="@array/trust_restrict_usb_values"
             android:defaultValue="0" />
 
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
+        <lineageos.preference.LineagePartsPreference
             android:key="lineagestats" />
 
         <ListPreference
