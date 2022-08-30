@@ -37,9 +37,10 @@ import androidx.preference.PreferenceScreen;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.MainSwitchBar;
 
+import lineageos.preference.PartInfo;
+import lineageos.preference.PartsList;
+
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
-import org.lineageos.internal.lineageparts.PartInfo;
-import org.lineageos.internal.lineageparts.PartsList;
 
 public class PartsActivity extends CollapsingToolbarBaseActivity implements
         PreferenceFragment.OnPreferenceStartFragmentCallback,
