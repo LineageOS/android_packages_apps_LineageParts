@@ -20,17 +20,17 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import org.lineageos.internal.lineageparts.PartInfo;
-import org.lineageos.internal.lineageparts.PartsList;
+import lineageos.preference.PartInfo;
+import lineageos.preference.PartsList;
 
 import java.lang.reflect.Field;
 
 import lineageos.preference.RemotePreferenceUpdater;
 import lineageos.preference.SettingsHelper;
 
+import static lineageos.preference.PartsList.EXTRA_PART;
 import static lineageos.preference.RemotePreference.EXTRA_KEY;
 import static lineageos.preference.RemotePreference.EXTRA_SUMMARY;
-import static org.lineageos.internal.lineageparts.PartsList.EXTRA_PART;
 
 /**
  * PartsRefresher keeps remote UI clients up to date with any changes in the
