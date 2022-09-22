@@ -37,7 +37,6 @@
     <string name="disabled">Deaktiveret</string>
     <string name="enabled">Aktiveret</string>
     <string name="privacy_settings_title">Privatliv</string>
-    <string name="channel_light_settings_name">Eksempel på lysindstillinger</string>
     <string name="edit_light_settings">Rediger LED-indstillinger</string>
     <string name="pulse_speed_title">Blinklængde og hastighed</string>
     <string name="default_time">Normal</string>
