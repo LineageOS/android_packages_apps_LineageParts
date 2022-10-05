@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Управление устройством</string>
     <string name="power_menu_advanced_restart_title">Варианты перезапуска</string>
     <string name="power_menu_advanced_restart_summary">Когда устройство разблокировано, в меню кнопки питания доступны опции перезагрузки в Recovery и загрузчик</string>
+    <string name="power_menu_emergency_affordance_enabled">Возможности для экстренных ситуаций включены</string>
     <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для запуска камеры</string>
     <string name="camera_double_tap_power_gesture_desc">Быстро запустить камеру без разблокировки устройства</string>
     <string name="torch_long_press_power_gesture_title">Длительное нажатие для включения фонарика</string>
