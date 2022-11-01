@@ -206,20 +206,24 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
                 resultCode == Activity.RESULT_OK) {
             Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
 
-            String mimeType = getContext().getContentResolver().getType(uri);
-            if (mimeType == null) {
-                Log.e(TAG, "call to updateChargingSounds for URI:" + uri
-                        + " ignored: failure to find mimeType (no access from this context?)");
-                return;
+            if (uri != null) {
+                String mimeType = getContext().getContentResolver().getType(uri);
+
+                if (mimeType == null) {
+                    Log.e(TAG, "call to updateChargingSounds for URI:" + uri
+                            + " ignored: failure to find mimeType (no access from this context?)");
+                    return;
+                }
+
+                if (!(mimeType.startsWith("audio/") || mimeType.equals("application/ogg"))) {
+                    Log.e(TAG, "call to updateChargingSounds for URI:" + uri
+                            + " ignored: associated mimeType:" + mimeType
+                            + " is not an audio type");
+                    return;
+                }
             }
 
-            if (!(mimeType.startsWith("audio/") || mimeType.equals("application/ogg"))) {
-                Log.e(TAG, "call to updateChargingSounds for URI:" + uri
-                        + " ignored: associated mimeType:" + mimeType + " is not an audio type");
-                return;
-            }
-
-            updateChargingSounds(uri != null ? uri.toString() : null,
+            updateChargingSounds(uri != null ? uri.toString() : RINGTONE_SILENT_URI_STRING,
                     requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
         }
     }
