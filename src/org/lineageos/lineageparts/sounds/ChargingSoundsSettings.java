@@ -206,6 +206,12 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
                 resultCode == Activity.RESULT_OK) {
             Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
 
+            if (uri == null) {
+                updateChargingSounds(RINGTONE_SILENT_URI_STRING,
+                        requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
+                return;
+            }
+
             String mimeType = getContext().getContentResolver().getType(uri);
             if (mimeType == null) {
                 Log.e(TAG, "call to updateChargingSounds for URI:" + uri
@@ -219,7 +225,7 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
                 return;
             }
 
-            updateChargingSounds(uri != null ? uri.toString() : null,
+            updateChargingSounds(uri.toString(),
                     requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
         }
     }
