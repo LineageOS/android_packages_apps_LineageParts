@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24cf442a_681f2a32",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-11-01T08:04:33Z",
+      "side": 1,
+      "message": "maybe we should try using an early return kind of stuff to avoid moving all this code\nif \u003d\u003d null bla bla return;",
+      "revId": "ba64e66ecdefe57ba352e9d8bf2458503aa865c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b4f02f8_c13f9304",
+        "filename": "src/org/lineageos/lineageparts/sounds/ChargingSoundsSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-11-01T08:04:33Z",
+      "side": 1,
+      "message": "I guess it would be better to have an early return case\nif Uri \u003d\u003d null bla bla return;",
+      "revId": "ba64e66ecdefe57ba352e9d8bf2458503aa865c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
