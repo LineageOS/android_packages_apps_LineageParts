@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">I colori sono scelti automaticamente</string>
     <string name="led_notification_title">Impostazioni luci</string>
     <string name="led_notification_text">LED attivato dalle impostazioni</string>
+    <string name="notification_light_add_apps_empty_summary">Per aggiungere impostazioni per specifiche app, attiva \'%1$s\' e premi \'Aggiungi\'</string>
     <string name="live_display_summary">Ottimizza lo schermo in base all\'ora del giorno e alle condizioni ambientali per migliorare la leggibilità e ridurre l\'affaticamento degli occhi</string>
     <string name="live_display_mode">Modalità display</string>
     <string name="live_display_color_temperature_title">Temperatura colore</string>
@@ -223,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Controlli dispositivo</string>
     <string name="power_menu_advanced_restart_title">Riavvio avanzato</string>
     <string name="power_menu_advanced_restart_summary">Quando il dispositivo è sbloccato, mostra nel menù di accensione le opzioni per il riavvio in recovery o nel bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Il servizio di emergenza è attivato</string>
     <string name="camera_double_tap_power_gesture_title">Premi due volte il tasto di accensione per avviare la fotocamera</string>
     <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>
     <string name="torch_long_press_power_gesture_title">Premi a lungo per la torcia</string>
