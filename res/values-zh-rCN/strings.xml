@@ -367,7 +367,7 @@
     <string name="status_bar_am_pm_small">较小</string>
     <string name="status_bar_am_pm_hidden">隐藏</string>
     <string name="status_bar_battery_title">电量指示器</string>
-    <string name="status_bar_battery_style_title">电池状态样式</string>
+    <string name="status_bar_battery_style_title">电量图标样式</string>
     <string name="status_bar_battery_style_icon_portrait">纵向图标</string>
     <string name="status_bar_battery_style_circle">环形</string>
     <string name="status_bar_battery_style_text">文本</string>
