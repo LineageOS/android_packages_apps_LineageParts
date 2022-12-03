@@ -111,9 +111,7 @@ public class NFCProfileUtils {
 
         for (int i = 0; i < 8; i++) {
             buffer[i] = (byte) (msb >>> 8 * (7 - i));
-        }
-        for (int i = 8; i < 16; i++) {
-            buffer[i] = (byte) (lsb >>> 8 * (7 - i));
+            buffer[i + 8] = (byte) (lsb >>> 8 * (7 - i));
         }
 
         return buffer;
