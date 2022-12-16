@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">Farben automatisch wählen</string>
     <string name="led_notification_title">LED-Einstellungen</string>
     <string name="led_notification_text">Benachrichtigungs-LED durch Einstellungen aktiviert</string>
+    <string name="notification_light_add_apps_empty_summary">Um App-spezifische Einstellungen hinzuzufügen, „%1$s“ aktivieren und „Hinzufügen“ antippen</string>
     <string name="live_display_summary">Optimiert deinen Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
     <string name="live_display_mode">Bildschirmmodus</string>
     <string name="live_display_color_temperature_title">Farbtemperatur</string>
