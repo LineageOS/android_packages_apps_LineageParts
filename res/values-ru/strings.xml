@@ -356,7 +356,7 @@
     <string name="status_bar_clock_show_seconds_title">Показывать секунды</string>
     <string name="status_bar_clock_show_seconds_summary">Показывать часы, минуты и секунды</string>
     <string name="status_bar_clock_auto_hide_title">Автоскрытие</string>
-    <string name="status_bar_clock_auto_hide_summary">Скрывать часы, если открыт главный экран</string>
+    <string name="status_bar_clock_auto_hide_summary">Скрывать часы, если открыт лаунчер</string>
     <string name="status_bar_clock_position_title">Часы</string>
     <string name="status_bar_clock_position_right">Справа</string>
     <string name="status_bar_clock_position_left">Слева</string>
