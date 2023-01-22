@@ -78,6 +78,22 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Do Not Disturb</string>
 
+    <!-- Battery care settings -->
+    <string name="battery_care_title">Battery Care</string>
+    <string name="battery_care_enable_title">Enable Battery Care</string>
+    <string name="battery_care_mode_title">Mode</string>
+    <string name="battery_care_mode_auto_title">Auto</string>
+    <string name="battery_care_mode_auto_summary">Auto - Your device automatically learns when you usually leave your device charging for hours and it estimates suitable times to activate Battery Care</string>
+    <string name="battery_care_mode_custom_title">Custom</string>
+    <string name="battery_care_mode_custom_summary">Custom - Set time range when you usually leave your device charging for hours</string>
+    <string name="battery_care_mode_always_title">Always</string>
+    <string name="battery_care_mode_always_summary">Always - Stop charging after a specified limit to increase lifespan</string>
+    <string name="battery_care_start_time_title">Start time</string>
+    <string name="battery_care_start_time_summary">%s - Battery Care is activated when you start charging after this time</string>
+    <string name="battery_care_target_time_title">Target time for full charge</string>
+    <string name="battery_care_target_time_summary">%s - Battery will be fully charged by this time</string>
+    <string name="battery_care_charging_limit_title">Charging limit</string>
+
     <!-- Battery light settings -->
     <string name="battery_light_title">Battery light</string>
     <string name="battery_light_enable_title">Enable battery light</string>

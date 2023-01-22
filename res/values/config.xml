@@ -38,4 +38,27 @@
              (true for some tablets) -->
     <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
 
+    <!-- Default Battery Care mode.
+         This integer should be set to:
+
+         1 - auto - Automatically learns when the device is usually
+             charging for hours and estimates suitable times
+             to activate Battery Care
+         2 - custom - Use time range when the device is usually
+             charging for hours
+         3 - always - Stops charging after a specified limit
+             to increase lifespan -->
+    <integer name="config_defaultBatteryCareMode">1</integer>
+
+    <!-- Default time when Battery Care is activated.
+         Represented as seconds from midnight (e.g. 79200 == 10pm). -->
+    <integer name="config_defaultBatteryCareStartTime">79200</integer>
+
+    <!-- Default time when battery will be fully charged.
+         Represented as seconds from midnight (e.g. 21600 == 6am). -->
+    <integer name="config_defaultBatteryCareTargetTime">21600</integer>
+
+    <!-- Default charging limit. -->
+    <integer name="config_defaultBatteryCareChargingLimit">80</integer>
+
 </resources>
