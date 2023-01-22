@@ -101,6 +101,17 @@
             </intent-filter>
         </provider>
 
+        <!-- Charging control settings (Battery category) -->
+        <activity-alias
+            android:name=".health.ChargingControlSettings"
+            android:label="@string/charging_control_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="org.lineageos.lineageparts.CHARGING_CONTROL_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
         <!-- Button settings (System category) -->
         <activity-alias
             android:name=".input.ButtonSettings"

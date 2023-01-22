@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The CyanogenMod Project
-                   2017-2022 The LineageOS Project
+                   2017-2023 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,6 +28,11 @@
 -->
 <parts-catalog xmlns:android="http://schemas.android.com/apk/res/android"
                xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
+
+    <part android:key="charging_control"
+          android:title="@string/charging_control_title"
+          android:fragment="org.lineageos.lineageparts.health.ChargingControlSettings"
+          lineage:xmlRes="@xml/charging_control_settings" />
 
     <part android:key="battery_lights"
           android:title="@string/battery_light_title"
