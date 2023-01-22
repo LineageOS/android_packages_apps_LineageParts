@@ -29,6 +29,11 @@
 <parts-catalog xmlns:android="http://schemas.android.com/apk/res/android"
                xmlns:lineage="http://schemas.android.com/apk/res-auto">
 
+    <part android:key="battery_health"
+          android:title="@string/battery_health_title"
+          android:fragment="org.lineageos.lineageparts.health.BatteryHealthSettings"
+          lineage:xmlRes="@xml/battery_health_settings" />
+
     <part android:key="battery_lights"
           android:title="@string/battery_light_title"
           android:fragment="org.lineageos.lineageparts.notificationlight.BatteryLightSettings"
