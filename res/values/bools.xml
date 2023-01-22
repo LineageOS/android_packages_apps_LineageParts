@@ -17,6 +17,8 @@
 -->
 <resources>
 
+    <!-- Default value for charging_control_enabled preference -->
+    <bool name="def_charging_control_enabled">false</bool>
     <!-- Default value for battery_light_enabled preference -->
     <bool name="def_battery_light_enabled">true</bool>
     <!-- Default value for battery light pulse -->
