@@ -38,4 +38,23 @@
              (true for some tablets) -->
     <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
 
+    <!-- Default charging control mode.
+         This integer should be set to:
+
+         1 - auto - Use the alarm to calculate the time range when to activate charging control
+         2 - custom - Use time range when the device is usually charging for hours
+         3 - limit - Just limit charging -->
+    <integer name="config_defaultChargingControlMode">1</integer>
+
+    <!-- Default time when charging control is activated.
+         Represented as seconds from midnight (e.g. 79200 == 10pm). -->
+    <integer name="config_defaultChargingControlStartTime">79200</integer>
+
+    <!-- Default time when battery will be fully charged.
+         Represented as seconds from midnight (e.g. 21600 == 6am). -->
+    <integer name="config_defaultChargingControlTargetTime">21600</integer>
+
+    <!-- Default charging limit. -->
+    <integer name="config_defaultChargingControlLimit">80</integer>
+
 </resources>
