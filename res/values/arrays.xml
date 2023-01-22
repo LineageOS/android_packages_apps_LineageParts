@@ -16,6 +16,26 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Values for the charging control modes -->
+    <string-array name="charging_control_mode_entries" translatable="false">
+        <item>@string/charging_control_mode_auto_title</item>
+        <item>@string/charging_control_mode_custom_title</item>
+    </string-array>
+
+    <string-array name="charging_control_mode_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Values for the additional charging control modes if fine-grained control is supported -->
+    <string-array name="charging_control_mode_entries_fine_grained_control" translatable="false">
+        <item>@string/charging_control_mode_limit_title</item>
+    </string-array>
+
+    <string-array name="charging_control_mode_values_fine_grained_control" translatable="false">
+        <item>3</item>
+    </string-array>
+
     <!-- Values for the notification light pulse spinners -->
     <string-array name="notification_pulse_length_entries" translatable="false">
         <item>@string/pulse_length_always_on</item>
