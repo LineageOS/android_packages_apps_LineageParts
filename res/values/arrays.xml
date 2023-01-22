@@ -16,6 +16,17 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Values for the battery care modes -->
+    <string-array name="battery_care_mode_entries" translatable="false">
+        <item>@string/battery_care_mode_auto_title</item>
+        <item>@string/battery_care_mode_custom_title</item>
+    </string-array>
+
+    <string-array name="battery_care_mode_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Values for the notification light pulse spinners -->
     <string-array name="notification_pulse_length_entries" translatable="false">
         <item>@string/pulse_length_always_on</item>
