@@ -503,6 +503,10 @@
     <string name="network_traffic_mode_up">Upload only</string>
     <string name="network_traffic_mode_down">Download only</string>
     <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_position_title">Position</string>
+    <string name="network_traffic_position_centered">Center</string>
+    <string name="network_traffic_position_right">Right</string>
+    <string name="network_traffic_position_left">Left</string>
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_units_title">Traffic measurement units</string>
