@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2017-2018 The LineageOS Project
+     Copyright (C) 2017-2018,2023 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -23,6 +23,14 @@
         android:title="@string/network_traffic_mode_title"
         android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
+        android:summary="%s"
+        android:persistent="false" />
+
+    <DropDownPreference
+        android:key="network_traffic_position"
+        android:title="@string/network_traffic_position_title"
+        android:entries="@array/network_traffic_position_entries"
+        android:entryValues="@array/network_traffic_position_values"
         android:summary="%s"
         android:persistent="false" />
 
