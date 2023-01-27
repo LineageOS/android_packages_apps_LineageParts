@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a47d7722_71d07924",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-01-27T10:11:19Z",
+      "side": 1,
+      "message": "Remove it from being a memeber variable.",
+      "range": {
+        "startLine": 70,
+        "startChar": 4,
+        "endLine": 70,
+        "endChar": 39
+      },
+      "revId": "c1e4954ee2393ed9f73b1b95a81b99c3058843e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68c2eadd_17923bf5",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-01-27T10:11:19Z",
+      "side": 1,
+      "message": "Remove.",
+      "range": {
+        "startLine": 77,
+        "startChar": 8,
+        "endLine": 77,
+        "endChar": 61
+      },
+      "revId": "c1e4954ee2393ed9f73b1b95a81b99c3058843e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d1b6d58d_3b0c668e",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-01-27T10:11:19Z",
+      "side": 1,
+      "message": "Replace with local variable or simply inline:\n\n\u003e DeviceUtils.hasCenteredCutout(getActivity())",
+      "range": {
+        "startLine": 122,
+        "startChar": 46,
+        "endLine": 122,
+        "endChar": 65
+      },
+      "revId": "c1e4954ee2393ed9f73b1b95a81b99c3058843e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
