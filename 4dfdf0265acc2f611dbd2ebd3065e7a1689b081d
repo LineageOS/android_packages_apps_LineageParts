@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d75bc7f_f9d5ce9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-01-27T17:21:37Z",
+      "side": 1,
+      "message": "Clock and network traffic are mutually exclusive allowed to use the center (if available at all). With different notch situations (centered, on the side) the clock and ntwork settings show correctly \"left/right\" or \"left/center/right\".\nIn RTL situation the position selection of network traffic stays semantically at \"start/center/end\", i.e. the labels \"left/right\" are switched.",
+      "revId": "4dfdf0265acc2f611dbd2ebd3065e7a1689b081d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
