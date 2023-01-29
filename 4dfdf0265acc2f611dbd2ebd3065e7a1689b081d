@@ -16,6 +16,52 @@
       "message": "Clock and network traffic are mutually exclusive allowed to use the center (if available at all). With different notch situations (centered, on the side) the clock and ntwork settings show correctly \"left/right\" or \"left/center/right\".\nIn RTL situation the position selection of network traffic stays semantically at \"start/center/end\", i.e. the labels \"left/right\" are switched.",
       "revId": "4dfdf0265acc2f611dbd2ebd3065e7a1689b081d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8477f565_5e8db304",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 509,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-01-29T17:17:10Z",
+      "side": 1,
+      "message": "I know these are named specifically but there are already\n    \u003cstring name\u003d\"status_bar_clock_position_right\"\u003eRight\u003c/string\u003e\n    \u003cstring name\u003d\"status_bar_clock_position_left\"\u003eLeft\u003c/string\u003e\n    \u003cstring name\u003d\"status_bar_clock_position_center\"\u003eCenter\u003c/string\u003e",
+      "range": {
+        "startLine": 507,
+        "startChar": 0,
+        "endLine": 509,
+        "endChar": 62
+      },
+      "revId": "4dfdf0265acc2f611dbd2ebd3065e7a1689b081d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ce55c85_5ceef9c4",
+        "filename": "src/org/lineageos/lineageparts/statusbar/NetworkTrafficSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-01-29T17:17:10Z",
+      "side": 1,
+      "message": "extra space",
+      "range": {
+        "startLine": 61,
+        "startChar": 66,
+        "endLine": 61,
+        "endChar": 67
+      },
+      "revId": "4dfdf0265acc2f611dbd2ebd3065e7a1689b081d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
