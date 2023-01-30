@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2015 The CyanogenMod Project
-                   2017-2022 The LineageOS Project
+                   2017-2023 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -199,12 +199,6 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="status_bar_clock_position_values_rtl" translatable="false">
-        <item>2</item>
-        <item>1</item>
-        <item>0</item>
-    </string-array>
-
     <string-array name="status_bar_clock_position_entries_notch" translatable="false">
         <item>@string/status_bar_clock_position_right</item>
         <item>@string/status_bar_clock_position_left</item>
@@ -218,11 +212,6 @@
     <string-array name="status_bar_clock_position_values_notch" translatable="false">
         <item>0</item>
         <item>2</item>
-    </string-array>
-
-    <string-array name="status_bar_clock_position_values_notch_rtl" translatable="false">
-        <item>2</item>
-        <item>0</item>
     </string-array>
 
     <string-array name="status_bar_am_pm_entries" translatable="false">
