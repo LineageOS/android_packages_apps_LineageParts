@@ -281,12 +281,6 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="status_bar_quick_qs_pulldown_values_rtl" translatable="false">
-        <item>2</item>
-        <item>1</item>
-        <item>0</item>
-    </string-array>
-
     <!-- Gestures - touchscreen gesture actions -->
     <string-array name="touchscreen_gesture_action_entries">
         <item>@string/touchscreen_gesture_action_do_nothing</item>
