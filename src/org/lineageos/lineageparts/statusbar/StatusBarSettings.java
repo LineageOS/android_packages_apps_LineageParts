@@ -139,13 +139,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
-            mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
-        } else if (disallowCenteredClock) {
-            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
-            mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
         } else {
-            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries);
-            mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
+            if (disallowCenteredClock) {
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
+                mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
+            } else {
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries);
+                mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
+            }
+            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries);
         }
 
         // Disable network traffic preferences if clock is centered in the status bar
@@ -186,7 +188,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             case PULLDOWN_DIR_RIGHT:
                 summary = getResources().getString(
                     R.string.status_bar_quick_qs_pulldown_summary,
-                    getResources().getString(value == PULLDOWN_DIR_LEFT
+                    getResources().getString(
+                        (value == PULLDOWN_DIR_LEFT) ^
+                        (getResources().getConfiguration().getLayoutDirection()
+                            == View.LAYOUT_DIRECTION_RTL)
                         ? R.string.status_bar_quick_qs_pulldown_summary_left
                         : R.string.status_bar_quick_qs_pulldown_summary_right));
                 break;
