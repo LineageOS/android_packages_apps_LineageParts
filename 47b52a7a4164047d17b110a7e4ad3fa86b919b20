@@ -33,6 +33,24 @@
       "message": "100 chars",
       "revId": "47b52a7a4164047d17b110a7e4ad3fa86b919b20",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef28e88e_5be884b7",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-02-02T06:24:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a1c5a5df_08656fa8",
+      "revId": "47b52a7a4164047d17b110a7e4ad3fa86b919b20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
