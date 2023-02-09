@@ -41,7 +41,8 @@
 
         <activity
             android:name=".PartsActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -66,7 +67,8 @@
 
         <receiver
             android:name=".BootReceiver"
-            android:enabled="true">
+            android:enabled="true"
+            android:exported="false">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -74,7 +76,8 @@
 
         <receiver
             android:name=".PartsUpdater"
-            android:enabled="true">
+            android:enabled="true"
+            android:exported="false">
             <intent-filter>
                 <action android:name="lineageos.intent.action.UPDATE_PREFERENCE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -289,7 +292,8 @@
             android:label="ReportingService" />
 
         <activity
-            android:name=".profiles.NFCProfile">
+            android:name=".profiles.NFCProfile"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -305,6 +309,7 @@
         <activity
             android:name=".logo.PlatLogoActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:theme="@style/EggStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -314,6 +319,7 @@
 
         <activity
             android:name=".egg.octo.Ocquarium"
+            android:exported="true"
             android:label="@string/egg_title"
             android:theme="@style/EggStyle">
             <intent-filter>
