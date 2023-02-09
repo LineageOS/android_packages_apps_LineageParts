@@ -52,7 +52,8 @@
             android:directBootAware="true">
 
         <activity android:name=".PartsActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize">
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -74,13 +75,17 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".BootReceiver" android:enabled="true">
+        <receiver android:name=".BootReceiver"
+            android:exported="false"
+            android:enabled="true">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".PartsUpdater" android:enabled="true">
+        <receiver android:name=".PartsUpdater"
+            android:exported="false"
+            android:enabled="true">
             <intent-filter>
                 <action android:name="lineageos.intent.action.UPDATE_PREFERENCE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -113,7 +118,8 @@
         <activity-alias
             android:name=".input.ButtonSettings"
             android:label="@string/button_pref_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.BUTTON_SETTINGS" />
@@ -145,7 +151,8 @@
         <activity-alias
             android:name=".profiles.ProfilesSettings"
             android:label="@string/profiles_settings_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.PROFILES_SETTINGS" />
@@ -175,7 +182,8 @@
         <activity-alias
             android:name=".statusbar.StatusBarSettings"
             android:label="@string/status_bar_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
@@ -205,7 +213,8 @@
         <activity-alias
             android:name=".trust.TrustPreferences"
             android:label="@string/trust_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.TRUST_INTERFACE" />
@@ -229,7 +238,8 @@
         <activity-alias
             android:name=".contributors.ContributorsCloudFragment"
             android:label="@string/contributors_cloud_fragment_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.CONTRIBUTORS_CLOUD" />
@@ -274,7 +284,8 @@
                  android:enabled="true"
                  android:exported="false" />
 
-        <activity android:name=".profiles.NFCProfile">
+        <activity android:name=".profiles.NFCProfile"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -288,8 +299,9 @@
             android:excludeFromRecents="true"/>
 
         <activity android:name=".logo.PlatLogoActivity"
-                android:theme="@style/EggStyle"
-                android:configChanges="orientation|keyboardHidden">
+            android:exported="true"
+            android:theme="@style/EggStyle"
+            android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -297,6 +309,7 @@
         </activity>
 
         <activity android:name=".egg.octo.Ocquarium"
+            android:exported="true"
             android:theme="@style/EggStyle"
             android:label="@string/egg_title">
             <intent-filter>
