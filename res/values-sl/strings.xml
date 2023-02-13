@@ -143,7 +143,7 @@
     <string name="hardware_keys_menu_key_title">Menijski gumb</string>
     <string name="hardware_keys_assist_key_title">Gumb Iskanje</string>
     <string name="hardware_keys_appswitch_key_title">Gumb Nedavno</string>
-    <string name="hardware_keys_camera_key_title">Gumb fotoaparata</string>
+    <string name="hardware_keys_camera_key_title">Gumb za fotoaparat</string>
     <string name="hardware_keys_volume_keys_title">Gumba za glasnost</string>
     <string name="hardware_keys_short_press_title">Dejanje kratkega pritiska</string>
     <string name="hardware_keys_long_press_title">Dejanje pridržanja</string>

@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Управление устройством</string>
     <string name="power_menu_advanced_restart_title">Варианты перезапуска</string>
     <string name="power_menu_advanced_restart_summary">Когда устройство разблокировано, в меню кнопки питания доступны опции перезагрузки в Recovery и загрузчик</string>
+    <string name="power_menu_emergency_affordance_enabled">Возможности для экстренных ситуаций включены</string>
     <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для запуска камеры</string>
     <string name="camera_double_tap_power_gesture_desc">Быстро запустить камеру без разблокировки устройства</string>
     <string name="torch_long_press_power_gesture_title">Длительное нажатие для включения фонарика</string>
@@ -355,7 +356,7 @@
     <string name="status_bar_clock_show_seconds_title">Показывать секунды</string>
     <string name="status_bar_clock_show_seconds_summary">Показывать часы, минуты и секунды</string>
     <string name="status_bar_clock_auto_hide_title">Автоскрытие</string>
-    <string name="status_bar_clock_auto_hide_summary">Скрывать часы, если открыт главный экран</string>
+    <string name="status_bar_clock_auto_hide_summary">Скрывать часы, если открыт лаунчер</string>
     <string name="status_bar_clock_position_title">Часы</string>
     <string name="status_bar_clock_position_right">Справа</string>
     <string name="status_bar_clock_position_left">Слева</string>

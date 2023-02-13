@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">A escolher cores automaticamente</string>
     <string name="led_notification_title">Definições de luz</string>
     <string name="led_notification_text">Luz do LED ativada pelas definições</string>
+    <string name="notification_light_add_apps_empty_summary">Para adicionar controlo por aplicação, ative \'%1$s\' e pressione \'Adicionar\'</string>
     <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
     <string name="live_display_mode">Modo do ecrã</string>
     <string name="live_display_color_temperature_title">Temperatura da cor</string>
@@ -223,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Controlos do dispositivo</string>
     <string name="power_menu_advanced_restart_title">Reinício avançado</string>
     <string name="power_menu_advanced_restart_summary">Quando desbloqueado, incluir opções no menu ligar/desligar para reiniciar em modo de recuperação ou bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">O fornecimento de emergência está ativado</string>
     <string name="camera_double_tap_power_gesture_title">Pressione o botão ligar/desligar duas vezes para iniciar a câmara</string>
     <string name="camera_double_tap_power_gesture_desc">Abrir rapidamente a câmara sem desbloquear o ecrã</string>
     <string name="torch_long_press_power_gesture_title">Lanterna através de pressão longa</string>

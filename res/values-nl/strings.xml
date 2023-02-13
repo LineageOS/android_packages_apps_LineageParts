@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">Kleuren worden automatisch gekozen</string>
     <string name="led_notification_title">Verlichtingsinstellingen</string>
     <string name="led_notification_text">LED-verlichting ingeschakeld door instellingen</string>
+    <string name="notification_light_add_apps_empty_summary">Om per-app beheer toe te voegen, activeer \'%1$s\' en klik op \'Toevoegen\'</string>
     <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
     <string name="live_display_mode">Weergavemodus</string>
     <string name="live_display_color_temperature_title">Kleurtemperatuur</string>
@@ -223,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Apparaatbediening</string>
     <string name="power_menu_advanced_restart_title">Geavanceerd herstarten</string>
     <string name="power_menu_advanced_restart_summary">Indien ontgrendeld, opties tonen in het aan/uit-menu voor herstarten naar recovery of bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Noodvoorziening is ingeschakeld</string>
     <string name="camera_double_tap_power_gesture_title">Twee keer op aan/uit-knop drukken voor camera</string>
     <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
     <string name="torch_long_press_power_gesture_title">Lang drukken voor zaklamp</string>

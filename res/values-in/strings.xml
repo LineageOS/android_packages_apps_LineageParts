@@ -94,6 +94,7 @@
     <string name="live_display_outdoor_mode_title">Mode luar ruangan otomatis</string>
     <string name="live_display_outdoor_mode_summary">Meningkatkan kecerahan dan saturasi otomatis saat dibawah sinar matahari</string>
     <string name="live_display_anti_flicker_title">Anti flicker</string>
+    <string name="live_display_anti_flicker_summary">Mencegah kerlipan berlebih dan mengurangi ketegangan mata di kondisi cahaya redup. Hal ini dapat menurunkan akurasi warna dan mempengaruhi cara beberapa item saat ditampilkan.</string>
     <string name="live_display_low_power_title">Mengurangi konsumsi daya</string>
     <string name="live_display_low_power_summary">Menyesuaikan tampilan untuk konsumsi daya terendah tanpa degradasi</string>
     <string name="live_display_enhance_color_title">Meningkatkan warna</string>
@@ -508,6 +509,9 @@
     <string name="trust_onboarding_learn_more">Pelajari selengkapnya</string>
     <string name="trust_onboarding_done">Mengerti</string>
     <string name="trust_restrict_usb_title">Batasi USB</string>
+    <string name="trust_restrict_usb_always">Tolak koneksi USB</string>
+    <string name="trust_restrict_usb_keyguard">Izinkan koneksi USB saat tidak terkunci</string>
+    <string name="trust_restrict_usb_disabled">Selalu izinkan koneksi USB</string>
     <string name="sms_security_check_limit_title">Batas pesan SMS</string>
     <string name="sms_security_check_limit_summary">Aplikasi dapat mengirim %s pesan dalam 1 menit sebelum konfirmasi</string>
     <string name="sms_security_check_limit_summary_none">Aplikasi tidak diizinkan untuk mengirim pesan tanpa konfirmasi</string>
