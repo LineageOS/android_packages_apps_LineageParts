@@ -65,6 +65,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7eaa7629_bceb96db",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 509,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-02-13T19:47:15Z",
+      "side": 1,
+      "message": "I am sure that translators simply translate the words. Also, i couldn\u0027t find references to a language where context matters for direction.\nAnyway, I might do a separate patch on top of this and clock, renaming the strings to something more generic.",
+      "parentUuid": "81fdcb3e_30ba25b3",
+      "range": {
+        "startLine": 507,
+        "startChar": 0,
+        "endLine": 509,
+        "endChar": 62
+      },
+      "revId": "4dfdf0265acc2f611dbd2ebd3065e7a1689b081d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6ce55c85_5ceef9c4",
