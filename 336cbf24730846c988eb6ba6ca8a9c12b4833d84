@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36cb7ca6_74e6b94d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-02-13T17:09:51Z",
+      "side": 1,
+      "message": "The code is now refactored to consistently use start/center/end to denote the positions in the statusbar. Only text strings use left/right according to the LTR/RTL configuration.\nThe function is as expected. Notch and clock position are regarded.",
+      "revId": "336cbf24730846c988eb6ba6ca8a9c12b4833d84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
