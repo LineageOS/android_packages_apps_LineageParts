@@ -520,7 +520,7 @@
     <string name="trust_onboarding_learn_more">Scopri di più</string>
     <string name="trust_onboarding_done">Capito</string>
     <string name="trust_restrict_usb_title">Restrizioni USB</string>
-    <string name="trust_restrict_usb_summary">Controlla le connessioni USB quali auricolari, dispositivi d\'archiviazione, dispositivi d\'input (mouse, tastiere, joysticks) e connessioni ADB</string>
+    <string name="trust_restrict_usb_summary">Controlla le connessioni USB quali auricolari, dispositivi d\'archiviazione, dispositivi d\'input (mouse, tastiere, joystick) e connessioni ADB</string>
     <string name="trust_restrict_usb_always">Nega le connessioni USB</string>
     <string name="trust_restrict_usb_keyguard">Consenti le connessioni USB solo quando il dispositivo è sbloccato</string>
     <string name="trust_restrict_usb_disabled">Consenti sempre le connessioni USB</string>
