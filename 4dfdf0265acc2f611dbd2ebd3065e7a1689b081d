@@ -89,6 +89,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cdef189a_7a5f10a2",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 509,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-02-14T23:12:56Z",
+      "side": 1,
+      "message": "OK, now the status_bar_clock_position words are used for network_traffic_position.",
+      "parentUuid": "7eaa7629_bceb96db",
+      "range": {
+        "startLine": 507,
+        "startChar": 0,
+        "endLine": 509,
+        "endChar": 62
+      },
+      "revId": "4dfdf0265acc2f611dbd2ebd3065e7a1689b081d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6ce55c85_5ceef9c4",
