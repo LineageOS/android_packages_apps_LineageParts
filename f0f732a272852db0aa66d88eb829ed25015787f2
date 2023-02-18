@@ -16,6 +16,24 @@
       "message": "Do you have any device with display cutout on the left side? After these changes, it seems to exist an even bigger offset when nw traffic is set to centered position. Also when set to the left, along with clock also on the left, it almost overlaps with clock.",
       "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "af452bc0_efc60277",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-02-18T19:08:54Z",
+      "side": 1,
+      "message": "My device has center cutout, so I only could test with the \"punch hole\" from the developer options (which is on the left). In this configuration the nw traffic (left) has a small distance to the clock (left), maybe a bit to small. But no contact or overlap.",
+      "parentUuid": "c03f8dfd_00c4c44a",
+      "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
