@@ -34,6 +34,23 @@
       "parentUuid": "c03f8dfd_00c4c44a",
       "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6457c41f_25038d52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-02-20T20:51:58Z",
+      "side": 1,
+      "message": "Increased the space between nw traffic on the left and clock or icons on the left. Looks good to me.",
+      "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
