@@ -51,6 +51,24 @@
       "message": "Increased the space between nw traffic on the left and clock or icons on the left. Looks good to me.",
       "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00dcbac4_0e59a755",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-02-21T19:47:20Z",
+      "side": 1,
+      "message": "Looks much better now. The only issue is the centered layout not being really centered with a display cutout on the left, but this was already an issue before these changes.",
+      "parentUuid": "6457c41f_25038d52",
+      "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
