@@ -94,6 +94,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e3d5730_84c3dc8d",
+        "filename": "src/org/lineageos/lineageparts/statusbar/NetworkTrafficSettings.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-02-21T21:16:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55235eaf_47bfd86d",
+      "range": {
+        "startLine": 88,
+        "startChar": 51,
+        "endLine": 88,
+        "endChar": 52
+      },
+      "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "35e1566e_c0c3be63",
@@ -107,6 +131,30 @@
       "writtenOn": "2023-02-21T19:57:17Z",
       "side": 1,
       "message": "Make it into a single line.",
+      "range": {
+        "startLine": 187,
+        "startChar": 0,
+        "endLine": 189,
+        "endChar": 18
+      },
+      "revId": "f0f732a272852db0aa66d88eb829ed25015787f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d092a8f_2c2c2ca4",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-02-21T21:16:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "35e1566e_c0c3be63",
       "range": {
         "startLine": 187,
         "startChar": 0,
