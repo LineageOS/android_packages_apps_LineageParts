@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1d6c960_7258e6af",
+        "filename": "res/values/bools.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-03-03T16:40:34Z",
+      "side": 1,
+      "message": "I think this should be off by default",
+      "range": {
+        "startLine": 21,
+        "startChar": 44,
+        "endLine": 21,
+        "endChar": 48
+      },
+      "revId": "57644f72464c5f96f4540eb1071b183d96577698",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80589dd5_45ba8368",
+        "filename": "src/org/lineageos/lineageparts/health/BatteryHealthSettings.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-03-03T16:40:34Z",
+      "side": 1,
+      "message": "I think this should be enough unless the majority of the code is copy pasted from other files:\n\nCopyright (C) 2023 The LineageOS Project\n\nSame goes for the other newly created files in this commit.",
+      "range": {
+        "startLine": 2,
+        "startChar": 3,
+        "endLine": 3,
+        "endChar": 48
+      },
+      "revId": "57644f72464c5f96f4540eb1071b183d96577698",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
