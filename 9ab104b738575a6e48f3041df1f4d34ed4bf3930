@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "537b9ecb_e9c33e15",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-03-12T16:37:28Z",
+      "side": 1,
+      "message": "this somehow breaks clicking on search results:\n03-12 17:11:32.075  1422  9030 W PackageManager: Intent does not match component\u0027s intent filter: Intent { act\u003dorg.lineageos.lineageparts.parts.contributors cmp\u003dorg.lineageos.lineageparts/.PartsActivity (has extras) }\n03-12 17:11:32.075  1422  9030 W PackageManager: Access blocked: ComponentInfo{org.lineageos.lineageparts/org.lineageos.lineageparts.PartsActivity}\n03-12 17:11:32.076  9281  9281 E IntentSearchViewHolder: Cannot launch search result, title: Mitwirkende, Intent { act\u003dorg.lineageos.lineageparts.parts.contributors cmp\u003dorg.lineageos.lineageparts/.PartsActivity (has extras) }",
+      "revId": "9ab104b738575a6e48f3041df1f4d34ed4bf3930",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
