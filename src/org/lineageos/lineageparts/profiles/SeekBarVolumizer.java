@@ -230,7 +230,7 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
 
     private boolean isNotificationStreamLinked() {
         return mVoiceCapable && Settings.Secure.getInt(mContext.getContentResolver(),
-                Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
+                "volume_link_notification", 1) == 1;
     }
 
     public void setSeekBar(SeekBar seekBar) {
