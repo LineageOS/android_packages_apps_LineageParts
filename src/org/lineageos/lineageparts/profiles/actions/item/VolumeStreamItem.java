@@ -58,9 +58,7 @@ public class VolumeStreamItem extends Item {
         if (mStreamId != AudioManager.STREAM_NOTIFICATION) {
             return true;
         }
-        final boolean volumeLinkNotification = Settings.Secure.getInt(
-                context.getContentResolver(), Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
-        return !volumeLinkNotification;
+        return false;
     }
 
     public static int getNameForStream(int stream) {
