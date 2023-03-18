@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a467fc6_7df533f2",
+        "filename": "src/org/lineageos/lineageparts/profiles/SeekBarVolumizer.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-03-18T14:30:41Z",
+      "side": 1,
+      "message": "Maybe return mVoiceCapable instead?",
+      "range": {
+        "startLine": 232,
+        "startChar": 15,
+        "endLine": 232,
+        "endChar": 19
+      },
+      "revId": "f6a502388d4c4b6ae4ec77e3e4a1cfff80f4f89d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
