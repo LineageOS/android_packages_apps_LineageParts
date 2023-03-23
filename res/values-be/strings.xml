@@ -167,6 +167,11 @@
     <string name="power_menu_emergency_title">Экстранны</string>
     <string name="power_menu_devicecontrols_title">Кіраванне прыладай</string>
     <string name="torch_long_press_power_gesture_desc">Актываваць ліхтарык доўгім націскам кнопкі сілкавання пры выключаным экране</string>
+    <string name="torch_long_press_power_timeout_never">Ніколі</string>
+    <string name="torch_long_press_power_timeout_1min">1 хвіліна</string>
+    <string name="torch_long_press_power_timeout_2min">2 хвіліны</string>
+    <string name="torch_long_press_power_timeout_5min">5 хвілін</string>
+    <string name="torch_long_press_power_timeout_10min">10 хвілін</string>
     <string name="profile_menu_delete_title">Выдаліць</string>
     <string name="profile_action_none">Пакінуць без змянення</string>
     <string name="profile_action_system">Па змаўчаньні</string>

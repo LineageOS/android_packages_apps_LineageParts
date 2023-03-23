@@ -228,7 +228,7 @@
     <string name="camera_double_tap_power_gesture_title">Premi due volte il tasto di accensione per avviare la fotocamera</string>
     <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>
     <string name="torch_long_press_power_gesture_title">Premi a lungo per la torcia</string>
-    <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo é spento</string>
+    <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo è spento</string>
     <string name="torch_long_press_power_timeout_title">Spegni la torcia automaticamente</string>
     <string name="torch_long_press_power_timeout_never">Mai</string>
     <string name="torch_long_press_power_timeout_1min">1 minuto</string>
