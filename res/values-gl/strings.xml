@@ -353,6 +353,7 @@
     <string name="status_bar_clock_title">Reloxo</string>
     <string name="status_bar_clock_show_seconds_title">Amosar os segundos</string>
     <string name="status_bar_clock_show_seconds_summary">Amosar horas, minutos e segundos</string>
+    <string name="status_bar_clock_auto_hide_title">Ocultar automáticamente</string>
     <string name="status_bar_clock_position_title">Posición do reloxo</string>
     <string name="status_bar_clock_position_right">Dereita</string>
     <string name="status_bar_clock_position_left">Esquerda</string>
@@ -472,6 +473,9 @@
     <string name="charging_sounds_enabled_summary">Reproducir un son ao conectar e desconectar a fonte de alimentación</string>
     <string name="power_notifications_vibrate_title">Vibrar</string>
     <string name="charging_sounds_ringtone_silent">Silencio</string>
+    <string name="charging_sounds_notification_category_title">Sons das notificacións</string>
+    <string name="wired_charging_sounds_title">Carga con fíos</string>
+    <string name="wireless_charging_sounds_title">Carga sen fíos</string>
     <string name="touchscreen_gesture_settings_title">Xestos na pantalla táctil</string>
     <string name="touchscreen_gesture_settings_summary">Realizar varios xestos na pantalla para accions rápidas</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Resposta háptica</string>

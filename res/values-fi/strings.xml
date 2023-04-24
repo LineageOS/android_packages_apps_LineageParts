@@ -38,7 +38,6 @@
     <string name="disabled">Pois käytöstä</string>
     <string name="enabled">Käytössä</string>
     <string name="privacy_settings_title">Tietosuoja</string>
-    <string name="channel_light_settings_name">Valoasetusten esikatselu</string>
     <string name="edit_light_settings">Säädä valon asetuksia</string>
     <string name="pulse_speed_title">Vilkunnan kesto ja nopeus</string>
     <string name="default_time">Normaali</string>
@@ -351,6 +350,7 @@
     <string name="status_bar_clock_title">Kello</string>
     <string name="status_bar_clock_show_seconds_title">Näytä sekunnit</string>
     <string name="status_bar_clock_show_seconds_summary">Näytä tunnit, minuutit ja sekunnit</string>
+    <string name="status_bar_clock_auto_hide_title">Piilota automaattisesti</string>
     <string name="status_bar_clock_position_title">Kellon sijainti</string>
     <string name="status_bar_clock_position_right">Oikea</string>
     <string name="status_bar_clock_position_left">Vasen</string>

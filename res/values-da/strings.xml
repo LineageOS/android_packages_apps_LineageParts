@@ -55,8 +55,12 @@
     <string name="pulse_speed_normal">Normal</string>
     <string name="pulse_speed_slow">Langsom</string>
     <string name="pulse_speed_very_slow">Meget langsom</string>
+    <string name="light_brightness_title">Lysstyrke</string>
+    <string name="light_brightness_normal">Normal</string>
+    <string name="light_brightness_zen">Forstyr ikke</string>
     <string name="battery_light_title">Batteri-LED</string>
     <string name="battery_low_pulse_title">Blink ved lavt batteriniveau</string>
+    <string name="battery_light_full_charge_disabled_title">Slå fra, når fuldt opladet</string>
     <string name="battery_light_list_title">Farver</string>
     <string name="battery_light_low_color_title">Lavt batteriniveau</string>
     <string name="battery_light_medium_color_title">Oplader</string>
@@ -87,6 +91,7 @@
     <string name="live_display_night">Nat</string>
     <string name="live_display_outdoor_mode_title">Automatisk udendørstilstand</string>
     <string name="live_display_outdoor_mode_summary">Forøg lysstyrke og farvemætning automatisk, under stærkt sollys</string>
+    <string name="live_display_anti_flicker_title">Anti flimmer</string>
     <string name="live_display_low_power_title">Reducér strømforbruget</string>
     <string name="live_display_low_power_summary">Justér skærmen til laveste strømforbrug uden forringelse</string>
     <string name="live_display_enhance_color_title">Forbedr farver</string>
@@ -112,6 +117,8 @@
     <string name="live_display_color_profile_reading_summary">Varmere farver til mindre belastning af øjnene</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">Farver, som matcher sRGB-farverummet</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_reading_mode_title">Læsetilstand</string>
     <string name="color_calibration_title">Farvekalibrering</string>
     <string name="color_calibration_summary">Kalibrér skærmfarver</string>
     <string name="color_red_title">Rød</string>
@@ -164,10 +171,12 @@
     <string name="volume_answer_call_summary">Besvar indgående opkald, ved at trykke på lydstyrke-knapperne</string>
     <string name="home_answer_call_title">Besvar opkald</string>
     <string name="home_answer_call_summary">Besvar indgående opkald, ved at trykke på hjem-knappen</string>
+    <string name="extras_title">Ekstrafunktioner</string>
     <string name="additional_buttons_title">Yderligere knapper</string>
     <string name="click_partial_screenshot_title">Klik for delvist skærmbillede</string>
     <string name="button_backlight_title">Bagbelysning</string>
     <string name="button_backlight_enabled">Oplys knapper</string>
+    <string name="button_backlight_only_when_pressed_title">Oplys kun knapper ved tryk</string>
     <string name="keyboard_backlight_enabled">Oplys tastatur</string>
     <string name="button_backlight_seekbar_title">Knap-lysstyrke</string>
     <string name="keyboard_backlight_seekbar_title">Tastatur-lysstyrke</string>
@@ -177,7 +186,7 @@
     <string name="backlight_summary_enabled_with_timeout">Aktiveret for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Aktiveret</string>
     <string name="disable_navkeys_title">Aktivér navigationsbjælke på skærm</string>
-    <string name="disable_navkeys_summary">Aktivér navigationsbjælke på skærm og deaktivér hardware-knapper</string>
+    <string name="disable_navkeys_summary">Aktivér navigationsbjælke på skærm og deaktivér fysiske knapper</string>
     <string name="navigation_bar_category">Navigationsbjælke</string>
     <string name="navigation_bar_left_summary">Placér navigationsbjælken på venstre side af skærmen, i liggende tilstand</string>
     <string name="navigation_bar_arrow_keys_title">Vis piletaster, imens du taster</string>
@@ -195,6 +204,11 @@
     <string name="torch_long_press_power_gesture_title">Langt tryk for lommelygte</string>
     <string name="torch_long_press_power_gesture_desc">Aktivér lommelygten med et langt tryk på strømknappen, mens skærmen er slukket</string>
     <string name="torch_long_press_power_timeout_title">Sluk automatisk for lommelygte</string>
+    <string name="torch_long_press_power_timeout_never">Aldrig</string>
+    <string name="torch_long_press_power_timeout_1min">1 minut</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutter</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutter</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutter</string>
     <string name="profile_menu_delete_title">Slet</string>
     <string name="profile_action_none">Efterlad uændret</string>
     <string name="profile_action_system">Systemstandard</string>
@@ -316,6 +330,8 @@
     <string name="status_bar_clock_title">Ur</string>
     <string name="status_bar_clock_show_seconds_title">Vis sekunder</string>
     <string name="status_bar_clock_show_seconds_summary">Vis timer, minutter og sekunder</string>
+    <string name="status_bar_clock_auto_hide_title">Skjul automatisk</string>
+    <string name="status_bar_clock_auto_hide_summary">Skjul ur hvis hjemmeskærm er synlig</string>
     <string name="status_bar_clock_position_title">Ur-position</string>
     <string name="status_bar_clock_position_right">Højre</string>
     <string name="status_bar_clock_position_left">Venstre</string>
@@ -339,10 +355,23 @@
     <string name="status_bar_brightness_slider_summary">Justér lysstyrke fra Hurtig-Indstillinger</string>
     <string name="status_bar_brightness_slider_auto_title">Auto-lysstyrke</string>
     <string name="status_bar_brightness_slider_auto_summary">Vis skifter til adaptiv lysstyrke, nær skyderen</string>
+    <string name="status_bar_brightness_slider_show_never">Vis aldrig</string>
     <string name="status_bar_toggle_brightness">Lysstyrkekontrol</string>
     <string name="status_bar_toggle_brightness_summary">Justér lysstyrken, ved at stryge tværs over statusbjælken</string>
     <string name="network_traffic_settings_title">Netværkstrafikovervågning</string>
     <string name="network_traffic_settings_summary">Vis aktuelle netværkstrafikniveauer i statusbjælken</string>
+    <string name="network_traffic_mode_title">Visningstilstand</string>
+    <string name="network_traffic_mode_disable">Deaktiveret</string>
+    <string name="network_traffic_mode_up">Kun upload</string>
+    <string name="network_traffic_mode_down">Kun download</string>
+    <string name="network_traffic_mode_all">Upload og download</string>
+    <string name="network_traffic_autohide">Skjul automatisk</string>
+    <string name="network_traffic_units_title">Trafikmåleenheder</string>
+    <string name="network_traffic_units_kilobits">Kilobit pr. sekund (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabit pr. sekund (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes pr. sekund (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes pr. sekund (MB/s)</string>
+    <string name="network_traffic_show_units">Vis enheder</string>
     <string name="network_traffic_show_units_summary">Hvor vidt trafikmåle-enheder skal vises i statusbjælken</string>
     <string name="protected_apps_manager_title">Beskyttede apps</string>
     <string name="protected_apps_manager_summary">Håndtér, hvilke apps, der er skjult bag en sikker lås</string>
@@ -451,7 +480,16 @@
     <string name="touchscreen_gesture_action_next_track">Spring til næste musik-spor</string>
     <string name="touchscreen_gesture_action_volume_down">Sænk medielydstyrke</string>
     <string name="touchscreen_gesture_action_volume_up">Hæv medielydstyrke</string>
+    <string name="trust_category_features">Status</string>
+    <string name="trust_feature_selinux">SELinux</string>
+    <string name="trust_feature_selinux_value_disabled">Deaktiveret</string>
     <string name="trust_feature_security_patches">Android-sikkerhedsrettelser</string>
     <string name="trust_feature_security_patches_value_base">Platform: %1$s\nProducent: %2$s</string>
     <string name="trust_feature_security_patches_explain">Sikkerhedsrettelser frigives månedligt af Google i samarbejde med SoC-leverandører, for at adressere fejl, som kunne blive udnyttet af ondsindede apps, til at omgå sikkerhedsrestriktioner, og forårsage permanent skade på din enhed. Rettelser gjort tilgængelige af Google anvendes hver måned, på alle understøttede enheder, men rettelser til proprietær kode kun kan anvendes af din enheds producent. Sørg for at dit LineageOS-build altid er ajour, for at holde din enhed sikker, og (hvis gældende) sikre at dit producent-billede er opdateret til den seneste, som anbefales af LineageOS.</string>
+    <string name="trust_category_tools">Privatliv</string>
+    <string name="trust_notification_alerts_title">Sikkerhedsadvarsler</string>
+    <string name="trust_warnings_selinux">SELinux status</string>
+    <string name="trust_onboarding_title">Sig hej til Tillid</string>
+    <string name="trust_onboarding_learn_more">Lær mere</string>
+    <string name="trust_onboarding_done">Forstået</string>
 </resources>

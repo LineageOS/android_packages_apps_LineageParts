@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Hodiny</string>
     <string name="status_bar_clock_show_seconds_title">Zobrazit sekundy</string>
     <string name="status_bar_clock_show_seconds_summary">Zobrazit hodiny, minuty a sekundy</string>
+    <string name="status_bar_clock_auto_hide_title">Automaticky skrývat</string>
+    <string name="status_bar_clock_auto_hide_summary">Skrýt hodiny, pokud je spouštěč viditelný</string>
     <string name="status_bar_clock_position_title">Pozice hodin</string>
     <string name="status_bar_clock_position_right">Napravo</string>
     <string name="status_bar_clock_position_left">Nalevo</string>
@@ -471,6 +473,9 @@
     <string name="charging_sounds_enabled_summary">Přehrát zvuk při připojení nebo odpojení nabíječky</string>
     <string name="power_notifications_vibrate_title">Vibrovat</string>
     <string name="charging_sounds_ringtone_silent">Tichý</string>
+    <string name="charging_sounds_notification_category_title">Zvuky oznámení</string>
+    <string name="wired_charging_sounds_title">Drátové nabíjení</string>
+    <string name="wireless_charging_sounds_title">Bezdrátové nabíjení</string>
     <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
     <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Hmatová odezva</string>

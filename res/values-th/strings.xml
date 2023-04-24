@@ -38,7 +38,6 @@
     <string name="disabled">ปิดการใช้งาน</string>
     <string name="enabled">เปิดใช้งาน</string>
     <string name="privacy_settings_title">ความเป็นส่วนตัว</string>
-    <string name="channel_light_settings_name">ตัวอย่างการตั้งค่าแสง</string>
     <string name="edit_light_settings">แก้ไขการตั้งค่าแสง</string>
     <string name="pulse_speed_title">ความเร็วและระยะเวลาการกระพริบ</string>
     <string name="default_time">ปกติ</string>
@@ -344,6 +343,7 @@
     <string name="status_bar_clock_title">นาฬิกา</string>
     <string name="status_bar_clock_show_seconds_title">แสดงวินาที</string>
     <string name="status_bar_clock_show_seconds_summary">แสดงชั่วโมง, นาที, และวินาที</string>
+    <string name="status_bar_clock_auto_hide_title">ซ่อนอัตโนมัติ</string>
     <string name="status_bar_clock_position_title">ตำแหน่งนาฬิกา</string>
     <string name="status_bar_clock_position_right">ขวา</string>
     <string name="status_bar_clock_position_left">ซ้าย</string>

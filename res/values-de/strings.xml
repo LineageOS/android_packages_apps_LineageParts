@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Uhr</string>
     <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
     <string name="status_bar_clock_show_seconds_summary">Stunden, Minuten und Sekunden anzeigen</string>
+    <string name="status_bar_clock_auto_hide_title">Automatisch ausblenden</string>
+    <string name="status_bar_clock_auto_hide_summary">Uhr auf dem Startbildschirm ausblenden</string>
     <string name="status_bar_clock_position_title">Position der Uhr</string>
     <string name="status_bar_clock_position_right">Rechts</string>
     <string name="status_bar_clock_position_left">Links</string>

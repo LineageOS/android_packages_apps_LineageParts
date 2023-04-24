@@ -38,7 +38,6 @@
     <string name="disabled">Keelatud</string>
     <string name="enabled">Lubatud</string>
     <string name="privacy_settings_title">Privaatsus</string>
-    <string name="channel_light_settings_name">Märgutule seadete eelvaade</string>
     <string name="edit_light_settings">Muuda märgutule seadeid</string>
     <string name="pulse_speed_title">Vilkumise pikkus ja kiirus</string>
     <string name="default_time">Tavaline</string>
@@ -349,6 +348,7 @@
     <string name="status_bar_clock_title">Kell</string>
     <string name="status_bar_clock_show_seconds_title">Kuva sekundid</string>
     <string name="status_bar_clock_show_seconds_summary">Kuva tunde, minuteid ja sekundeid</string>
+    <string name="status_bar_clock_auto_hide_title">Peida automaatselt</string>
     <string name="status_bar_clock_position_title">Kella asukoht</string>
     <string name="status_bar_clock_position_right">Paremal</string>
     <string name="status_bar_clock_position_left">Vasakul</string>
