@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Óra</string>
     <string name="status_bar_clock_show_seconds_title">Másodpercmutató</string>
     <string name="status_bar_clock_show_seconds_summary">Órák, percek és másodpercek megjelenítése</string>
+    <string name="status_bar_clock_auto_hide_title">Automatikus elrejtés</string>
+    <string name="status_bar_clock_auto_hide_summary">Óraelrejtés ha a Launcher látszik</string>
     <string name="status_bar_clock_position_title">Óra pozíció</string>
     <string name="status_bar_clock_position_right">Jobb</string>
     <string name="status_bar_clock_position_left">Bal</string>

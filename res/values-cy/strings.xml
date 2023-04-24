@@ -34,7 +34,7 @@
     <string name="yes">Iawn</string>
     <string name="no">Na</string>
     <string name="search">Chwilio</string>
-    <string name="search_menu">Chwilio\'r gosodiadau</string>
+    <string name="search_menu">Chwilio gosodiadau</string>
     <string name="disabled">Wedi\'i analluogi</string>
     <string name="enabled">Wedi\'i alluogi</string>
     <string name="privacy_settings_title">Preifatrwydd</string>
@@ -62,6 +62,7 @@
     <string name="light_brightness_zen">Dim Tarfu</string>
     <string name="battery_light_title">Golau batri</string>
     <string name="battery_low_pulse_title">Curiad os yw\'r batri\'n isel</string>
+    <string name="battery_light_full_charge_disabled_title">Diffodd pan fydd wedi\'i wefru\'n llawn</string>
     <string name="battery_light_list_title">Lliwiau</string>
     <string name="battery_light_low_color_title">Batri\'n isel</string>
     <string name="battery_light_medium_color_title">Yn gwefru</string>
@@ -92,6 +93,8 @@
     <string name="live_display_night">Nos</string>
     <string name="live_display_outdoor_mode_title">Modd awyr agored awtomatig</string>
     <string name="live_display_outdoor_mode_summary">Cynyddu\'r disgleirdeb a dyfnder lliw yn awtomatig dan olau heulwen llachar</string>
+    <string name="live_display_anti_flicker_title">Gwrth-fflachio</string>
+    <string name="live_display_anti_flicker_summary">Atal fflachio helaeth a lleihau straen ar y llygaid mewn amodau golau isel. Gallai ddiraddio cywirdeb lliw ac effeithio ar y ffordd y mae rhai eitemau\'n cael eu harddangos.</string>
     <string name="live_display_low_power_title">Lleihau defnydd pŵer</string>
     <string name="live_display_low_power_summary">Addasu\'r dangosydd i ddefnyddio\'r maint isaf o bŵer heb ddirywiad</string>
     <string name="live_display_enhance_color_title">Gwella lliwiau</string>
@@ -154,6 +157,7 @@
     <string name="hardware_keys_action_sleep">Troi\'r sgrin i ffwrdd</string>
     <string name="hardware_keys_action_last_app">Ap diwethaf</string>
     <string name="hardware_keys_action_split_screen">Sgrin hollt</string>
+    <string name="hardware_keys_action_kill_app">Lladd ap y blaendir</string>
     <string name="camera_sleep_on_release_title">Cipolwg sgrin</string>
     <string name="camera_sleep_on_release_summary">Bydd hanner gwasgu yn cadw\'r sgrin ymlaen dim ond tra bod y botwm yn cael ei dal i lawr</string>
     <string name="camera_launch_title">Agor camera</string>
@@ -177,6 +181,8 @@
     <string name="home_answer_call_summary">Ateb galwadau gan wasgu\'r botwm cartref</string>
     <string name="extras_title">Ychwanegion</string>
     <string name="additional_buttons_title">Botymau ychwanegol</string>
+    <string name="click_partial_screenshot_title">Clic i lun sgrin rannol</string>
+    <string name="click_partial_screenshot_summary">Clic byr Sain i Lawr a Phŵer i gymryd llun sgrin rannol</string>
     <string name="button_backlight_title">Golau\'r sgrin</string>
     <string name="button_backlight_enabled">Goleuo botymau</string>
     <string name="button_backlight_only_when_pressed_title">Goleuo botymau dim ond wrth eu gwasgu</string>
@@ -190,12 +196,15 @@
     <string name="backlight_summary_enabled">Galluogwyd</string>
     <string name="disable_navkeys_title">Galluogi bar llywio ar y sgrin</string>
     <string name="disable_navkeys_summary">Galluogi\'r bar llywio ar y sgrin ac analluogi\'r botymau caledwedd</string>
+    <string name="swap_capacitive_keys_title">Cyfnewid botymau cynhwysaidd</string>
+    <string name="swap_capacitive_keys_summary">Cyfnewid trefn botymau nôl a diweddar</string>
     <string name="navigation_bar_category">Bar llywio</string>
     <string name="navigation_bar_invert_layout_title">Gwrthdroi\'r cynllun</string>
     <string name="navigation_bar_invert_layout_summary">Mae\'n gwrthdroi gosodiad y bar llywio ac eitemau eraill, fel y newidydd IME</string>
     <string name="navigation_bar_left_summary">Gosod y bar llywio ar ochr chwith y sgrin yng ngorweddiad tirlun</string>
     <string name="navigation_bar_arrow_keys_title">Dangos bysellau saethau wrth deipio</string>
     <string name="navigation_bar_arrow_keys_summary">Dangos y botymau pwyntydd de a chwith wrth deipio. Bydd yn diystyru newidydd IME.</string>
+    <string name="navigation_bar_back_long_press_title">Gweithred gwasgiad hir yn ôl</string>
     <string name="navigation_bar_home_long_press_title">Gweithred gwasgiad hir o\'r botwm cartref</string>
     <string name="navigation_bar_home_double_tap_title">Gweithred tap dwbl o\'r botwm cartref</string>
     <string name="navigation_bar_app_switch_long_press_title">Gweithred gwasgiad hir o\'r botwm eitemau diweddar</string>
@@ -206,7 +215,11 @@
     <string name="power_menu_airplane_title">Modd awyren</string>
     <string name="power_menu_users_title">Newidydd defnyddiwr</string>
     <string name="power_menu_bug_report_title">Adroddiad Gwall</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">Mae adrodd ar wallau wedi ei analluogi gan nad yw\'r gosodiadau datblygu wedi eu galluogi</string>
+    <string name="power_menu_bug_report_unavailable_for_user">Mae adrodd ar wallau wedi ei analluogi ar gyfer defnyddwyr nad ydynt yn brif ddefnyddwyr</string>
     <string name="power_menu_lockdown_title">Cloi lawr</string>
+    <string name="power_menu_lockdown_unavailable">Mae cloi wedi ei analluogi gan nad yw\'r gwarchodwr bysellau yn ddiogel</string>
+    <string name="power_menu_emergency_title">Argyfwng</string>
     <string name="camera_double_tap_power_gesture_title">Gwasgu\'r botwm pŵer dwywaith am y camera</string>
     <string name="camera_double_tap_power_gesture_desc">Agor y camera yn gyflym heb orfod datgloi dy sgrin</string>
     <string name="torch_long_press_power_gesture_title">Dal yn hir i lansio\'r fflacholau</string>
@@ -339,6 +352,8 @@
     <string name="status_bar_clock_title">Cloc</string>
     <string name="status_bar_clock_show_seconds_title">Dangos eiliadau</string>
     <string name="status_bar_clock_show_seconds_summary">Dangos oriau, munudau ac eiliadau</string>
+    <string name="status_bar_clock_auto_hide_title">Cuddio\'n awtomatig</string>
+    <string name="status_bar_clock_auto_hide_summary">Cuddio\'r cloc os yw\'r lansiwr yn weladwy</string>
     <string name="status_bar_clock_position_title">Lleoliad cloc</string>
     <string name="status_bar_clock_position_right">De</string>
     <string name="status_bar_clock_position_left">Chwith</string>
@@ -458,6 +473,9 @@
     <string name="charging_sounds_enabled_summary">Chwarae sain wrth gysylltu neu ddatgysylltu ffynhonnell pŵer</string>
     <string name="power_notifications_vibrate_title">Dirgrynu</string>
     <string name="charging_sounds_ringtone_silent">Distaw</string>
+    <string name="charging_sounds_notification_category_title">Seiniau hysbysiadau</string>
+    <string name="wired_charging_sounds_title">Gwefru trwy wifren</string>
+    <string name="wireless_charging_sounds_title">Gwefru diwifr</string>
     <string name="touchscreen_gesture_settings_title">Ystumiau sgrin gyffwrdd</string>
     <string name="touchscreen_gesture_settings_summary">Perfformio ystumiau amrywiol ar y sgrin gyffwrdd am weithredoedd cyflym</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Adborth habtig</string>
@@ -507,6 +525,9 @@
     <string name="trust_feature_selinux_explain">Mae SELinux yn pennu pa brosesau sydd gyda mynediad at ba ffeiliau/llwybrau ar dy ddyfais.\nMae hyn yn rhwystro apiau a gwasanaethau rhag cael mynediad at ffeiliau na ddylen nhw wneud. Mae hyn yn cyfyngu\'r perygl o brosesau maleisus ac yn gwarchod dy ddiogelwch.</string>
     <string name="trust_feature_security_patches">Patshiau diogelwch Android</string>
     <string name="trust_feature_security_patches_value_base">Platfform: %1$s\nGwneuthurwr: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Yn gyfredol</string>
+    <string name="trust_feature_security_patches_value_medium">Rhai misoedd yn hen</string>
+    <string name="trust_feature_security_patches_value_old">Yn hen</string>
     <string name="trust_feature_security_patches_explain">Mae Google yn rhyddhau cyweiriadau diogelwch (security patches) yn fisol ar y cyd â darparwyr i fynd i\'r afael â namau y gellir cael eu hecsbloetio gan apiau maleisus er mwyn osgoi cyfyngiadau diogelwch ac achosi niwed parhaol i dy ddyfais. Mae cyweiriadau gan Google yn cael eu rhyddhau pob mis ond gall cyweiriadau i god dy ddyfais fel arfer ond cael eu gosod gan y gwneuthurwr. Wrth dy fod wedi gosod LineageOS i gymryd lle\'r fersiwn Android gwreiddiol ar dy ddyfais, mae\'r materion hyn yn dy ddwylo dy hun. I gadw dy ddyfais yn ddiogel, sicrha dy fod yn diweddaru dy adeiledd LineageOS i\'w gadw yn gyfredol ac, os yn berthnasol, sicrha bod y ddelwedd darparwr (vendor image) yn cael ei ddiweddaru i\'r un mwyaf diweddar a argymhellir gan LineageOS.</string>
     <string name="trust_feature_encryption">Amgryptiad</string>
     <string name="trust_feature_encryption_value_enabled">Galluogwyd</string>

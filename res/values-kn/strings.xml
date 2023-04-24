@@ -91,7 +91,6 @@
     <string name="live_display_outdoor_mode_title">ಸ್ವಯಂ ಹೊರಾಂಗಣ ರೀತಿ</string>
     <string name="live_display_outdoor_mode_summary">ಪ್ರಖರ ಸೂರ್ಯನಡಿ ಪರದೆಯ ಪ್ರಖರತೆ ಮತ್ತು ಆರ್ದ್ರೀಯತೆ ಸ್ವಯಂ ಹೆಚ್ಚಿಸು</string>
     <string name="live_display_low_power_title">ಶಕ್ತಿ ಬಳಕೆ ಕುಗ್ಗಿಸು</string>
-    <string name="live_display_low_power_summary">ಪ್ರದರ್ಶನವನ್ನು ಕ್ಷೀಣಿಸದೆ ಕನಿಷ್ಠ ಶಕ್ತಿ ಬಳಸುವಂತೆ ಹೊಂದಿಸು</string>
     <string name="live_display_enhance_color_title">ಬಣ್ಣಗಳನ್ನು ವರ್ಧಿಸು</string>
     <string name="live_display_enhance_color_summary">ಚರ್ಮ ಛಾಯೆ, ದೃಶ್ಯಾವಳಿ, ಮತ್ತು ಇತರೆ ಚಿತ್ರಗಳ ಬಣ್ಣದ ಹೊಳಪನ್ನು ಉತ್ತಮಗೊಳಿಸು</string>
     <string name="live_display_color_profile_title">ಬಣ್ಣದ ರೇಖಾಕೃತಿ</string>
@@ -125,7 +124,6 @@
     <string name="color_green_title">ಹಸಿರು</string>
     <string name="color_blue_title">ನೀಲಿ</string>
     <string name="picture_adjustment_title">ಚಿತ್ರದ ಹೊಂದಾಣಿಕೆ</string>
-    <string name="picture_adjustment_summary">ರಂಗು, ಆರ್ದ್ರೀಯತೆ, ತೀವ್ರತೆ ಮತ್ತು ವೈದೃಶ್ಯ ಹೊಂದಿಸು</string>
     <string name="adj_hue_title">ರಂಗು</string>
     <string name="adj_saturation_title">ಆರ್ದ್ರೀಯತೆ</string>
     <string name="adj_intensity_title">ತೀವ್ರತೆ</string>
@@ -258,7 +256,6 @@
     <string name="profile_entries_off">ಆಫ್</string>
     <string name="profile_entries_no_override">ತಳ್ಳಿಹಾಕಬೇಡ</string>
     <string name="profile_name_title">ಹೆಸರು</string>
-    <string name="new_profile_name">&lt;ಹೊಸ ರೇಖಾಕೃತಿ&gt;</string>
     <string name="rename_dialog_title">ಮರುನಾಮ</string>
     <string name="rename_dialog_message">ಹೊಸ ಹೆಸರು ನಮೂದಿಸಿ</string>
     <string name="rename_dialog_hint">ರೇಖಾಕೃತಿಯ ಹೆಸರು ನಮೂದಿಸಿ</string>
@@ -331,6 +328,7 @@
     <string name="status_bar_clock_title">ಗಡಿಯಾರ</string>
     <string name="status_bar_clock_show_seconds_title">ಕ್ಷಣಗಳನ್ನು ತೋರಿಸು</string>
     <string name="status_bar_clock_show_seconds_summary">ಗಂಟೆ, ನಿಮಿಷ ಮತ್ತು ಕ್ಷಣಗಳನ್ನು ತೋರಿಸು</string>
+    <string name="status_bar_clock_auto_hide_title">ಸ್ವಯಂ ಅವಿಸಿಡು</string>
     <string name="status_bar_clock_position_title">ಗಡಿಯಾರದ ಸ್ಥಾನ</string>
     <string name="status_bar_clock_position_right">ಬಲ</string>
     <string name="status_bar_clock_position_left">ಎಡ</string>
@@ -355,7 +353,7 @@
     <string name="status_bar_brightness_slider_auto_title">ಸ್ವಯಂ ಪ್ರಖರತೆ</string>
     <string name="status_bar_brightness_slider_auto_summary">ಜಾರುಫಲಕದ ಬಳಿ ಹೊಂದಿಕೊಳ್ಳುವ ಪ್ರಖರತೆಗೆ ಅಂತರಣ ತೋರಿಸು</string>
     <string name="status_bar_toggle_brightness">ಪ್ರಖರತೆ ನಿಯಂತ್ರಣ</string>
-    <string name="status_bar_toggle_brightness_summary">ಸ್ಥಿತಿ ಪಟ್ಟಿ ಮೇಲೆ ಅಡ್ಡಲಾಗಿ ಜಾರುವ ಮೂಲಕ ಪ್ರಖರತೆ ಸರಿಪಡಿಸು</string>
+    <string name="status_bar_toggle_brightness_summary">ಸ್ಥಿತಿ ಪಟ್ಟಿ ಮೇಲೆ ಅಡ್ಡಲಾಗಿ ಜಾರುವ ಮೂಲಕ ಪ್ರಖರತೆಯನ್ನು ಸರಿಪಡಿಸು</string>
     <string name="network_traffic_settings_title">ಜಾಲದ ಸಾಗಾಟ ತೋರುಕ</string>
     <string name="network_traffic_settings_summary">ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯಲ್ಲಿ ಪ್ರಸ್ತುತ ಜಾಲದ ಸಾಗಾಟ ಮಟ್ಟಗಳನ್ನು ತೋರಿಸು</string>
     <string name="network_traffic_mode_title">ಪ್ರದರ್ಶನ ರೀತಿ</string>
@@ -402,7 +400,6 @@
     <string name="display_rotation_unit">ಡಿಗ್ರಿಗಳು</string>
     <string name="display_lockscreen_rotation_title">ಬಿಗಿದ ಪರದೆ ಆವರ್ತಿಸು</string>
     <string name="display_rotation_category_title">ಆವರ್ತನೆ ರೀತಿಗಳು</string>
-    <string name="display_rotation_0_title">೦ ಡಿಗ್ರಿಗಳು</string>
     <string name="display_rotation_90_title">೯೦ ಡಿಗ್ರಿಗಳು</string>
     <string name="display_rotation_180_title">೧೮೦ ಡಿಗ್ರಿಗಳು</string>
     <string name="display_rotation_270_title">೨೭೦ ಡಿಗ್ರಿಗಳು</string>
@@ -411,7 +408,6 @@
     <string name="weather_settings_no_services_summary">ಹವಾಮಾನ ವರದಿಗಳನ್ನು ಪಡೆಯಲು ಹವಾಮಾನ ಪರಿಚಾರಕವನ್ನು ಸ್ಥಾಪಿಸು</string>
     <string name="weather_settings_button">ಪೂರೈಕೆದಾರ ಅಳವಡಿಕೆಗಳು</string>
     <string name="weather_settings_activity_not_found">ಈ ಪರಿಚಾರಕದ ಅಳವಡಿಕೆ ಪಟ್ಟಿಯನ್ನು ತೆರೆಯಲಾಗುತ್ತಿಲ್ಲ</string>
-    <string name="weather_settings_add_weather_provider">ಹವಾಮಾನ ಪರಿಚಾರಕವನ್ನು ಸೇರಿಸು</string>
     <string name="weather_settings_general_settings_title">ಸಾಮಾನ್ಯ</string>
     <string name="weather_settings_providers_title">ಪೂರೈಕೆದಾರರು</string>
     <string name="weather_settings_temp_units_title">ತಾಪಮಾನದ ಘಟಕ</string>
@@ -421,7 +417,6 @@
     <string name="status_bar_show_weather_title">ಹವಾಮಾನ ತೋರಿಸು</string>
     <string name="status_bar_show_weather_summary">ಪ್ರಸ್ತುತ ತಾಪಮಾನವನ್ನು ಸ್ಥಿತಿ ಪಟ್ಟಿ ಮೇಲೆ ಪ್ರದರ್ಶಿಸು</string>
     <string name="perf_profile_settings_title">ಮಿಂತಿಣಿ ಉಳಿತಾಯ ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ</string>
-    <string name="perf_profile_settings_summary">ಶಕ್ತಿ ಉಳಿತಾಯ ವೈಶಿಷ್ಟ್ಯಗಳು ಮತ್ತು ಸಾಧನದ ಕಾರ್ಯಕ್ಷಮತೆ ಹೊಂದಿಸು</string>
     <string name="perf_profile_overview_summary">ಪ್ರಸ್ತುತ ರೇಖಾಕೃತಿ: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_category_title">ಸಾಧನದ ಕಾರ್ಯಕ್ಷಮತೆ</string>
     <string name="perf_profile_title">ಕಾರ್ಯಕ್ಷಮತೆ ರೇಖಾಕೃತಿ: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

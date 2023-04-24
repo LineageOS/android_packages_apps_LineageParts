@@ -266,7 +266,7 @@
     <string name="rename_dialog_message">Introducir un nuevo nombre</string>
     <string name="rename_dialog_hint">Introducir el nombre del perfil</string>
     <string name="profile_reset_title">Restablecer</string>
-    <string name="profile_reset_message">¿Borrar todos los perfiles y grupos de aplicaciones creados por el usuario y restaurarlos a los valores predeterminados?</string>
+    <string name="profile_reset_message">¿Borrar todos los perfiles y grupos de aplicaciones creados por el usuario y restaurarlos a los valores predefinidos?</string>
     <string name="profile_app_delete_confirm">¿Quitar esta aplicación?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
@@ -333,6 +333,7 @@
     <string name="status_bar_system_icons_title">Iconos del sistema</string>
     <string name="status_bar_system_icons_summary">Configurar que iconos se muestran en la barra de estado</string>
     <string name="status_bar_clock_title">Reloj</string>
+    <string name="status_bar_clock_auto_hide_title">Ocultar automáticamente</string>
     <string name="status_bar_clock_position_title">Posición del reloj</string>
     <string name="status_bar_clock_position_right">Derecha</string>
     <string name="status_bar_clock_position_left">Izquierda</string>

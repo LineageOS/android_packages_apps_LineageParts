@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Ora</string>
     <string name="status_bar_clock_show_seconds_title">Shfaq sekondat</string>
     <string name="status_bar_clock_show_seconds_summary">Shfaq orët, minutat, dhe sekondat</string>
+    <string name="status_bar_clock_auto_hide_title">Vetëfshehje</string>
+    <string name="status_bar_clock_auto_hide_summary">Fshih orën nëse lëshuesi është i dukshëm</string>
     <string name="status_bar_clock_position_title">Pozicionimi i orës</string>
     <string name="status_bar_clock_position_right">Në të djathtë</string>
     <string name="status_bar_clock_position_left">Në të majtë</string>

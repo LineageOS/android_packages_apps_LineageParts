@@ -38,7 +38,7 @@
     <string name="disabled">Деактивирано</string>
     <string name="enabled">Активирано</string>
     <string name="privacy_settings_title">Поверителност</string>
-    <string name="channel_light_settings_name">Предварителен преглед на настройките за яркост</string>
+    <string name="channel_light_settings_name">Преглед на настройките за яркост</string>
     <string name="edit_light_settings">Редактиране на настройките на светлинните индикации</string>
     <string name="pulse_speed_title">Продължителност и скорост на пулсирането</string>
     <string name="default_time">Нормална</string>
@@ -62,6 +62,7 @@
     <string name="light_brightness_zen">Не безпокойте</string>
     <string name="battery_light_title">Индикации на батерия</string>
     <string name="battery_low_pulse_title">Индикация при изтощена батерия</string>
+    <string name="battery_light_full_charge_disabled_title">Изключи, когато е напълно заредена</string>
     <string name="battery_light_list_title">Цветове</string>
     <string name="battery_light_low_color_title">Изтощена батерия</string>
     <string name="battery_light_medium_color_title">Зареждане</string>
@@ -92,6 +93,8 @@
     <string name="live_display_night">Нощен</string>
     <string name="live_display_outdoor_mode_title">Автоматичен режим на открито</string>
     <string name="live_display_outdoor_mode_summary">Автоматично увеличаване на яркостта и наситеността при ярка слънчева светлина</string>
+    <string name="live_display_anti_flicker_title">Анти трептене</string>
+    <string name="live_display_anti_flicker_summary">Предотвратете силно трептене и намалете напрежението на очите при условия на слаба светлина. Това може да влоши точността на цветовете и да повлияе на начина на показване на някои елементи.</string>
     <string name="live_display_low_power_title">Намали консумацията на енергия</string>
     <string name="live_display_low_power_summary">Настройка на дисплея за ниска консумация на енергия без влошаване</string>
     <string name="live_display_enhance_color_title">Подобряване на цветовете</string>
@@ -154,6 +157,7 @@
     <string name="hardware_keys_action_sleep">Изключване на екрана</string>
     <string name="hardware_keys_action_last_app">Последното приложение</string>
     <string name="hardware_keys_action_split_screen">Разделяне на екрана</string>
+    <string name="hardware_keys_action_kill_app">Затвори активното приложение</string>
     <string name="camera_sleep_on_release_title">Поглед на екрана</string>
     <string name="camera_sleep_on_release_summary">Леко натискане ще запази екрана само, докато бутонът е натиснат</string>
     <string name="camera_launch_title">Стартиране на камерата</string>
@@ -200,6 +204,7 @@
     <string name="navigation_bar_left_summary">Поставете лентата за навигация от лявата страна на екрана в пейзажен режим</string>
     <string name="navigation_bar_arrow_keys_title">Показване на стрелките при въвеждане</string>
     <string name="navigation_bar_arrow_keys_summary">Показване на ляв и десен курсорен бутони при въвеждане. Замества IME превключвател.</string>
+    <string name="navigation_bar_back_long_press_title">Действие при дълго натискане на Назад</string>
     <string name="navigation_bar_home_long_press_title">Действие при дълго натисканане на начало</string>
     <string name="navigation_bar_home_double_tap_title">Действие при двукратно натискане на начало</string>
     <string name="navigation_bar_app_switch_long_press_title">Последни дълги натискания действия</string>
@@ -210,7 +215,11 @@
     <string name="power_menu_airplane_title">Самолетен режим</string>
     <string name="power_menu_users_title">Потребители</string>
     <string name="power_menu_bug_report_title">Доклад за грешка</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">Докладването на грешки е забранено, тъй като настройките на разработчика не са активирани</string>
+    <string name="power_menu_bug_report_unavailable_for_user">Докладването на грешки е забранено за неосновни потребители</string>
     <string name="power_menu_lockdown_title">Заключване</string>
+    <string name="power_menu_lockdown_unavailable">Блокировката е деактивирана, тъй като защитата на клавиатурата не е сигурна</string>
+    <string name="power_menu_emergency_title">Извънредна ситуация</string>
     <string name="camera_double_tap_power_gesture_title">Натиснете двукратно бутона за захранване за камера</string>
     <string name="camera_double_tap_power_gesture_desc">Бързо стартиране на камера без отключване на екрана</string>
     <string name="torch_long_press_power_gesture_title">Активиране на фенерчето</string>
@@ -343,6 +352,7 @@
     <string name="status_bar_clock_title">Часовник</string>
     <string name="status_bar_clock_show_seconds_title">Покажи секунди</string>
     <string name="status_bar_clock_show_seconds_summary">Покажи часове, минути и секунди</string>
+    <string name="status_bar_clock_auto_hide_title">Автоматично скриване</string>
     <string name="status_bar_clock_position_title">Позиция на часовника</string>
     <string name="status_bar_clock_position_right">Вдясно</string>
     <string name="status_bar_clock_position_left">Вляво</string>
@@ -462,6 +472,9 @@
     <string name="charging_sounds_enabled_summary">Възпроизвежда звук, когато включвате или изключвате източник на захранване</string>
     <string name="power_notifications_vibrate_title">Вибрация</string>
     <string name="charging_sounds_ringtone_silent">Без звук</string>
+    <string name="charging_sounds_notification_category_title">Звуци на известията</string>
+    <string name="wired_charging_sounds_title">Зареждане през кабел</string>
+    <string name="wireless_charging_sounds_title">Безжично зареждане</string>
     <string name="touchscreen_gesture_settings_title">Тъчскрийн жестове</string>
     <string name="touchscreen_gesture_settings_summary">Изпълнява различни бързи действия чрез жестове върху сензорния екран</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Вибрация при докосване</string>
@@ -511,6 +524,9 @@
     <string name="trust_feature_selinux_explain">SELinux диктува кои процеси имат достъп до файлове на вашето устройство. \nТова предотвратява приложения и услуги да имат достъп до файлове, които те не би трябвало да имат. По този начин зловреден процес е ограничен, така че вашата сигурност се запазва.</string>
     <string name="trust_feature_security_patches">Андроид защитни кръпки</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nVendor: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Актуално</string>
+    <string name="trust_feature_security_patches_value_medium">необновявано от няколко месеца</string>
+    <string name="trust_feature_security_patches_value_old">Неактуална версия</string>
     <string name="trust_feature_security_patches_explain">Защитните пакети се разпространяват ежемесечно от Google заедно с доставчиците на SoC, за да се поправят уязвимостите в системата, които могат да бъдат използвани от злонамерени приложения, който да заобиколят ограниченията за сигурност и да причинят необратими щети на вашето устройство. Корекциите, предоставени от Google, се прилагат всеки месец на всички поддържани устройства, но поправките за патентования код могат да се прилагат само от производителя на устройството ви. За да поддържате устройството си в безопасно състояние, уверете се, че използвате последната версия на LineageOS.</string>
     <string name="trust_feature_encryption">Криптиране</string>
     <string name="trust_feature_encryption_value_enabled">Активирано</string>

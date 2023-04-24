@@ -34,9 +34,11 @@
     <string name="yes">Sí</string>
     <string name="no">No</string>
     <string name="search">Buscar</string>
+    <string name="search_menu">Buscar ajustes</string>
     <string name="disabled">Desactivado</string>
     <string name="enabled">Activado</string>
     <string name="privacy_settings_title">Privacidad</string>
+    <string name="channel_light_settings_name">Ajustes del LED de notificación</string>
     <string name="edit_light_settings">Editar ajustes de luz</string>
     <string name="pulse_speed_title">Duración y velocidad de la pulsación</string>
     <string name="default_time">Normal</string>
@@ -166,6 +168,8 @@
     <string name="power_end_call_summary">Finalizar la llamada actual pulsando el botón de encendido</string>
     <string name="swap_volume_buttons_title">Reorientar botones</string>
     <string name="swap_volume_buttons_summary">Intercambiar los botones de control de volumen al girar la pantalla</string>
+    <string name="volume_panel_on_left_title">Mostrar panel a la izquierda</string>
+    <string name="volume_panel_on_left_summary">Mostrar el panel de volumen en el lado izquierdo de la pantalla</string>
     <string name="button_wake_title">Encender dispositivo</string>
     <string name="volume_answer_call_title">Contestar la llamada</string>
     <string name="volume_answer_call_summary">Contestar llamadas entrantes presionando los botones de volumen</string>
@@ -173,6 +177,7 @@
     <string name="home_answer_call_summary">Contestar llamadas entrantes presionando el botón de inicio</string>
     <string name="extras_title">Extras</string>
     <string name="additional_buttons_title">Botones adicionales</string>
+    <string name="click_partial_screenshot_title">Pulsar para una captura de pantalla parcial</string>
     <string name="button_backlight_title">Contraluz</string>
     <string name="button_backlight_enabled">Iluminar botones</string>
     <string name="button_backlight_only_when_pressed_title">Iluminar los botones solamente al presionarlos</string>
@@ -187,12 +192,15 @@
     <string name="disable_navkeys_title">Activar barra de navegación en pantalla</string>
     <string name="disable_navkeys_summary">Activar la barra de navegación en pantalla y desactivar los botones físicos</string>
     <string name="navigation_bar_category">Barra de navegación</string>
+    <string name="navigation_bar_invert_layout_title">Invertir diseño</string>
+    <string name="navigation_bar_invert_layout_summary">Invierte el diseño de la barra de navegación y otros elementos, como el interruptor IME</string>
     <string name="navigation_bar_left_summary">Colocar la barra de navegación a la izquierda de la pantalla en modo horizontal</string>
     <string name="navigation_bar_arrow_keys_title">Mostrar teclas de flechas al escribir</string>
     <string name="navigation_bar_arrow_keys_summary">Mostrar el botón izquierdo y derecho del cursor al escribir. Reemplaza al selector IME.</string>
     <string name="navigation_bar_home_long_press_title">Acción de pulsación larga en Inicio</string>
     <string name="navigation_bar_home_double_tap_title">Acción de doble pulsación en Inicio</string>
     <string name="navigation_bar_app_switch_long_press_title">Últimas acciones de pulsación larga</string>
+    <string name="navigation_bar_edge_long_swipe_title">Acción de deslizamiento largo</string>
     <string name="power_menu_title">Menú de apagado</string>
     <string name="power_menu_screenshot_title">Captura de pantalla</string>
     <string name="power_menu_screenshot_summary">Mantener pulsado para una captura de pantalla parcial</string>
@@ -300,6 +308,7 @@
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Punto de acceso Wi\u2011Fi portátil</string>
     <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleLocation">Ubicación</string>
     <string name="toggleData">Conexión de datos</string>
     <string name="toggleSync">Sincronización automática</string>
     <string name="toggleNfc">NFC</string>
@@ -331,6 +340,7 @@
     <string name="status_bar_clock_title">Reloj</string>
     <string name="status_bar_clock_show_seconds_title">Mostrar segundos</string>
     <string name="status_bar_clock_show_seconds_summary">Mostrar horas, minutos y segundos</string>
+    <string name="status_bar_clock_auto_hide_title">Ocultar automáticamente</string>
     <string name="status_bar_clock_position_title">Posición del reloj</string>
     <string name="status_bar_clock_position_right">Derecho</string>
     <string name="status_bar_clock_position_left">Izquierdo</string>
@@ -354,6 +364,9 @@
     <string name="status_bar_brightness_slider_summary">Ajusta el brillo desde los ajustes rápidos</string>
     <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
     <string name="status_bar_brightness_slider_auto_summary">Mostrar interruptor cerca del deslizador, para el brillo automático</string>
+    <string name="status_bar_brightness_slider_show_never">No mostrar nunca</string>
+    <string name="status_bar_brightness_slider_show_expanded">Mostrar al expandir</string>
+    <string name="status_bar_brightness_slider_show_always">Mostrar siempre</string>
     <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
     <string name="network_traffic_settings_title">Monitor de tráfico de red</string>
@@ -435,6 +448,7 @@
     <string name="auto_power_save_never">Nunca</string>
     <string name="long_screen_settings_title">Aplicaciones a pantalla completa</string>
     <string name="long_screen_settings_summary">Forzar a las aplicaciones antiguas, a utilizar la relación de aspecto a pantalla completa</string>
+    <string name="long_screen_settings_no_apps">Sin aplicaciones</string>
     <string name="charging_sounds_settings_title">Sonidos al cargar el dispositivo</string>
     <string name="charging_sounds_enabled_title">Activar</string>
     <string name="charging_sounds_enabled_summary">Reproducir un sonido al conectar o desconectar el cargador</string>
@@ -450,6 +464,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abajo con un dedo</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia la izquierda con un dedo</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar a la derecha con un dedo</string>
+    <string name="touchscreen_gesture_single_tap_title">Una pulsación</string>
     <string name="touchscreen_gesture_up_arrow_title">Dibujar un «Λ»</string>
     <string name="touchscreen_gesture_down_arrow_title">Dibujar una «V»</string>
     <string name="touchscreen_gesture_left_arrow_title">Dibujar un «&lt;»</string>
@@ -480,6 +495,7 @@
     <string name="touchscreen_gesture_action_next_track">Saltar a la siguiente pista de música</string>
     <string name="touchscreen_gesture_action_volume_down">Reducir volumen de multimedia</string>
     <string name="touchscreen_gesture_action_volume_up">Aumentar volumen de multimedia</string>
+    <string name="touchscreen_gesture_action_ambient_display">Mostrar pantalla ambiente</string>
     <string name="trust_category_features">Estado</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Aplicación</string>

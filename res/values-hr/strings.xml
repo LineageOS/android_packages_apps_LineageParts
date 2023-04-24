@@ -338,6 +338,7 @@
     <string name="status_bar_system_icons_title">Ikone sustava</string>
     <string name="status_bar_system_icons_summary">Odaberite koje se ikone prikazuju u statusnoj traci</string>
     <string name="status_bar_clock_title">Sat</string>
+    <string name="status_bar_clock_auto_hide_title">Automatski sakrij</string>
     <string name="status_bar_clock_position_title">Pozicija sata</string>
     <string name="status_bar_clock_position_right">Desno</string>
     <string name="status_bar_clock_position_left">Lijevo</string>

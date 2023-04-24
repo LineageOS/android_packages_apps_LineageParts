@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Ρολόι</string>
     <string name="status_bar_clock_show_seconds_title">Εμφάνιση δευτερολέπτων</string>
     <string name="status_bar_clock_show_seconds_summary">Να εμφανίζονται ώρες, λεπτά και δευτερόλεπτα</string>
+    <string name="status_bar_clock_auto_hide_title">Αυτόματη απόκρυψη</string>
+    <string name="status_bar_clock_auto_hide_summary">Απόκρυψη ρολογιού αν ο εκκινητής είναι ορατός</string>
     <string name="status_bar_clock_position_title">Θέση ρολογιού</string>
     <string name="status_bar_clock_position_right">Δεξιά</string>
     <string name="status_bar_clock_position_left">Αριστερά</string>
