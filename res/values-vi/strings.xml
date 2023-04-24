@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">Chọn màu một cách tự động</string>
     <string name="led_notification_title">Cài đặt đèn</string>
     <string name="led_notification_text">Đèn LED đã bật theo cài đặt</string>
+    <string name="notification_light_add_apps_empty_summary">Để thêm điều khiển mỗi ứng dụng, hãy kích hoạt \'%1$s\' và nhấn \'Thêm\'</string>
     <string name="live_display_summary">Tối ưu hóa màn hình dựa trên điều kiện môi trường và thời gian trong ngày để cải thiện khả năng đọc và giảm mỏi mắt</string>
     <string name="live_display_mode">Chế độ hiển thị</string>
     <string name="live_display_color_temperature_title">Nhiệt độ màu</string>
@@ -199,6 +200,7 @@
     <string name="swap_capacitive_keys_title">Hoán đổi phím</string>
     <string name="swap_capacitive_keys_summary">Đổi vị trí phím Đa nhiệm và Trở về</string>
     <string name="navigation_bar_category">Thanh điều hướng</string>
+    <string name="navigation_bar_enable_taskbar_title">Bật thanh tác vụ</string>
     <string name="navigation_bar_invert_layout_title">Đảo ngược bố cục</string>
     <string name="navigation_bar_invert_layout_summary">Đảo ngược bố cục của thanh điều hướng và các mục khác, chẳng hạn như trình chuyển đổi IME</string>
     <string name="navigation_bar_left_summary">Đặt thanh điều hướng bên trái màn hình ở chế độ ngang</string>
@@ -210,6 +212,7 @@
     <string name="navigation_bar_app_switch_long_press_title">Thao tác nhấn giữ phím gần đây</string>
     <string name="navigation_bar_edge_long_swipe_title">Hành động vuốt dài ở cạnh</string>
     <string name="power_menu_title">Trình đơn nguồn</string>
+    <string name="power_menu_items_title">Tùy chọn trình đơn nguồn</string>
     <string name="power_menu_screenshot_title">Chụp ảnh màn hình</string>
     <string name="power_menu_screenshot_summary">Nhấn giữ để chụp ảnh màn hình một phần</string>
     <string name="power_menu_airplane_title">Chế độ máy bay</string>
@@ -218,6 +221,10 @@
     <string name="power_menu_bug_report_devoptions_unavailable">Báo cáo lỗi bị tắt vì cài đặt nhà phát triển chưa được bật</string>
     <string name="power_menu_bug_report_unavailable_for_user">Báo cáo lỗi bị tắt bởi người dùng phụ.</string>
     <string name="power_menu_emergency_title">Khẩn cấp</string>
+    <string name="power_menu_devicecontrols_title">Điều khiển thiết bị</string>
+    <string name="power_menu_advanced_restart_title">Khởi động lại nâng cao</string>
+    <string name="power_menu_advanced_restart_summary">Khi mở khóa, bao gồm các tùy chọn trong trình đơn nguồn để khởi động lại vào chế độ phục hồi hoặc trình nạp khởi động</string>
+    <string name="power_menu_emergency_affordance_enabled">Hỗ trợ khẩn cấp được bật</string>
     <string name="camera_double_tap_power_gesture_title">Nhấn nút nguồn hai lần để mở máy ảnh</string>
     <string name="camera_double_tap_power_gesture_desc">Mở nhanh máy ảnh mà không cần mở khóa màn hình của bạn</string>
     <string name="torch_long_press_power_gesture_title">Nhấn giữ bật đèn pin</string>
@@ -349,6 +356,7 @@
     <string name="status_bar_clock_show_seconds_title">Hiển thị giây</string>
     <string name="status_bar_clock_show_seconds_summary">Hiển thị giờ, phút và giây</string>
     <string name="status_bar_clock_auto_hide_title">Tự động ẩn</string>
+    <string name="status_bar_clock_auto_hide_summary">Ẩn đồng hồ nếu trình khởi chạy hiển thị</string>
     <string name="status_bar_clock_position_title">Vị trí đồng hồ</string>
     <string name="status_bar_clock_position_right">Phải</string>
     <string name="status_bar_clock_position_left">Trái</string>
@@ -512,6 +520,10 @@
     <string name="trust_onboarding_learn_more">Tìm hiểu thêm</string>
     <string name="trust_onboarding_done">Đã hiểu</string>
     <string name="trust_restrict_usb_title">Hạn chế USB</string>
+    <string name="trust_restrict_usb_summary">Hỗ trợ điều khiển cho các kết nối USB như tai nghe, thiết bị lưu trữ, đầu vào (chuột, bàn phím, cần điều khiển) và ADB</string>
+    <string name="trust_restrict_usb_always">Từ chối kết nối USB</string>
+    <string name="trust_restrict_usb_keyguard">Cho phép kết nối USB khi mở khoá</string>
+    <string name="trust_restrict_usb_disabled">Luôn cho phép kết nối USB</string>
     <string name="sms_security_check_limit_title">Giới hạn tin nhắn SMS</string>
     <string name="sms_security_check_limit_summary">Ứng dụng có thể gửi tin nhắn %s trong 1 phút trước khi yêu cầu xác nhận</string>
     <string name="sms_security_check_limit_summary_none">Ứng dụng không được phép gửi bất kỳ tin nhắn nào mà không được xác nhận</string>

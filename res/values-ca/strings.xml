@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">S\'estan triant els colors automàticament</string>
     <string name="led_notification_title">Configuració de llums</string>
     <string name="led_notification_text">Llum LED habilitada per la configuració</string>
+    <string name="notification_light_add_apps_empty_summary">Per afegir un control per aplicació, activeu «%1$s» i premeu «Afegeix»</string>
     <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
     <string name="live_display_mode">Mode de pantalla</string>
     <string name="live_display_color_temperature_title">Temperatura del color</string>
@@ -199,6 +200,7 @@
     <string name="swap_capacitive_keys_title">Canvia els botons capacitius</string>
     <string name="swap_capacitive_keys_summary">Canvia l\'ordre dels botons recent i enrere</string>
     <string name="navigation_bar_category">Barra de navegació</string>
+    <string name="navigation_bar_enable_taskbar_title">Activa la barra de tasques</string>
     <string name="navigation_bar_invert_layout_title">Inverteix la disposició</string>
     <string name="navigation_bar_invert_layout_summary">Inverteix la disposició de la barra de navegació i altres elements, com ara el commutador IME</string>
     <string name="navigation_bar_left_summary">Col·loca la barra de navegació al costat esquerre de la pantalla en el mode horitzontal</string>
@@ -210,6 +212,7 @@
     <string name="navigation_bar_app_switch_long_press_title">Acció pulsació llarga de Recents</string>
     <string name="navigation_bar_edge_long_swipe_title">Acció de lliscament llarg a la vora</string>
     <string name="power_menu_title">Menú d\'apagat</string>
+    <string name="power_menu_items_title">Elements del menú d\'encesa</string>
     <string name="power_menu_screenshot_title">Captura de pantalla</string>
     <string name="power_menu_screenshot_summary">Pulsació llarga per a fer una captura de pantalla parcial</string>
     <string name="power_menu_airplane_title">Mode avió</string>
@@ -220,6 +223,8 @@
     <string name="power_menu_emergency_title">Emergència</string>
     <string name="power_menu_devicecontrols_title">Controls del dispositiu</string>
     <string name="power_menu_advanced_restart_title">Reinici avançat</string>
+    <string name="power_menu_advanced_restart_summary">Quan està desbloquejat, inclou opcions en el menú d\'encesa per a reiniciar al recovery o bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">L\'assequibilitat d\'emergència està activada</string>
     <string name="camera_double_tap_power_gesture_title">Prem el botó d\'apagat dues vegades per a la càmera</string>
     <string name="camera_double_tap_power_gesture_desc">Obre la càmera ràpidament sense desbloquejar la pantalla</string>
     <string name="torch_long_press_power_gesture_title">Pulsació llarga per la torxa</string>
@@ -351,6 +356,7 @@
     <string name="status_bar_clock_show_seconds_title">Mostra els segons</string>
     <string name="status_bar_clock_show_seconds_summary">Mostra hores, minuts i segons</string>
     <string name="status_bar_clock_auto_hide_title">Amaga automàticament</string>
+    <string name="status_bar_clock_auto_hide_summary">Amaga el rellotge si el launcher és visible</string>
     <string name="status_bar_clock_position_title">Posició del rellotge</string>
     <string name="status_bar_clock_position_right">Dreta</string>
     <string name="status_bar_clock_position_left">Esquerra</string>

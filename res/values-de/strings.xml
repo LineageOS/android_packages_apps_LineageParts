@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">Farben automatisch wählen</string>
     <string name="led_notification_title">LED-Einstellungen</string>
     <string name="led_notification_text">Benachrichtigungs-LED durch Einstellungen aktiviert</string>
+    <string name="notification_light_add_apps_empty_summary">Um App-spezifische Einstellungen hinzuzufügen, „%1$s“ aktivieren und „Hinzufügen“ antippen</string>
     <string name="live_display_summary">Optimiert deinen Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
     <string name="live_display_mode">Bildschirmmodus</string>
     <string name="live_display_color_temperature_title">Farbtemperatur</string>
@@ -223,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">Gerätesteuerung</string>
     <string name="power_menu_advanced_restart_title">Erweiterter Neustart</string>
     <string name="power_menu_advanced_restart_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für Neustart in Recovery oder in Bootloader hinzufügen</string>
+    <string name="power_menu_emergency_affordance_enabled">Notfallausstattung ist aktiviert</string>
     <string name="camera_double_tap_power_gesture_title">Doppelt drücken für Kamera</string>
     <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren deines Bildschirms schnell öffnen</string>
     <string name="torch_long_press_power_gesture_title">Lange drücken für Taschenlampe</string>
