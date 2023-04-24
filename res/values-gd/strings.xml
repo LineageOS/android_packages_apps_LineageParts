@@ -352,6 +352,7 @@
     <string name="status_bar_clock_title">Cleoc</string>
     <string name="status_bar_clock_show_seconds_title">Seall na diogan</string>
     <string name="status_bar_clock_show_seconds_summary">Seall na h-uairean, mionaidean is diogan</string>
+    <string name="status_bar_clock_auto_hide_title">Falaich gu fèin-obrachail</string>
     <string name="status_bar_clock_position_title">Ionad a’ chleoca</string>
     <string name="status_bar_clock_position_right">Deas</string>
     <string name="status_bar_clock_position_left">Clì</string>

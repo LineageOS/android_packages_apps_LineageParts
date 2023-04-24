@@ -16,11 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> segundu</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> segundos</item>
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> secont</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconts</item>
     </plurals>
     <plurals name="app_ops_count">
-        <item quantity="one">una vegada</item>
-        <item quantity="other">%d vegaes</item>
+        <item quantity="one">1 volte</item>
+        <item quantity="other">%d voltis</item>
     </plurals>
 </resources>

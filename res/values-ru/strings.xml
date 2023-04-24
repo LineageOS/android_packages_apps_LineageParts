@@ -38,7 +38,7 @@
     <string name="disabled">Выключен</string>
     <string name="enabled">Включен</string>
     <string name="privacy_settings_title">Конфиденциальность</string>
-    <string name="channel_light_settings_name">Предварительный просмотр настроек яркости</string>
+    <string name="channel_light_settings_name">Предпросмотр настроек яркости</string>
     <string name="edit_light_settings">Изменение настроек индикатора</string>
     <string name="pulse_speed_title">Длительность и скорость мигания</string>
     <string name="default_time">Обычный</string>
@@ -80,7 +80,7 @@
     <string name="notification_light_zen_mode">Использовать в режиме «Не беспокоить»</string>
     <string name="keywords_lights_brightness_level">уменьшить яркость</string>
     <string name="notification_light_automagic">Подбирать цвета автоматически</string>
-    <string name="notification_light_automagic_summary">Выбор цвета согласно цвету значка приложения</string>
+    <string name="notification_light_automagic_summary">Автоматический выбор цветов</string>
     <string name="led_notification_title">Индикатор событий</string>
     <string name="led_notification_text">Светодиод включен в настройках</string>
     <string name="notification_light_no_apps_summary">Чтобы разрешить управление приложениями, включите \'%1$s\' и нажмите \'\u002b\' в строке меню</string>
@@ -171,7 +171,7 @@
     <string name="power_end_call_title">Завершение вызова</string>
     <string name="power_end_call_summary">Завершение текущего вызова нажатием кнопки питания</string>
     <string name="swap_volume_buttons_title">Автоповорот</string>
-    <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
+    <string name="swap_volume_buttons_summary">Поменять местами кнопки регулировки громкости при повороте экрана</string>
     <string name="volume_panel_on_left_title">Панель громкости слева</string>
     <string name="volume_panel_on_left_summary">Отображать панель громкости с левой стороны экрана</string>
     <string name="button_wake_title">Выход из режима сна</string>
@@ -182,7 +182,7 @@
     <string name="extras_title">Дополнительно</string>
     <string name="additional_buttons_title">Дополнительные кнопки</string>
     <string name="click_partial_screenshot_title">Скриншот части экрана</string>
-    <string name="click_partial_screenshot_summary">Нажмите кнопку уменьшения громкости и кнопку питания, чтобы сделать скриншот части экрана</string>
+    <string name="click_partial_screenshot_summary">Кратковременно нажмите кнопки уменьшения громкости и питания, чтобы сделать скриншот части экрана</string>
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Подсветка кнопок</string>
     <string name="button_backlight_only_when_pressed_title">Подсветка кнопок только при нажатии</string>
@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Часы</string>
     <string name="status_bar_clock_show_seconds_title">Показывать секунды</string>
     <string name="status_bar_clock_show_seconds_summary">Показывать часы, минуты и секунды</string>
+    <string name="status_bar_clock_auto_hide_title">Автоскрытие</string>
+    <string name="status_bar_clock_auto_hide_summary">Скрывать часы, если открыт лаунчер</string>
     <string name="status_bar_clock_position_title">Часы</string>
     <string name="status_bar_clock_position_right">Справа</string>
     <string name="status_bar_clock_position_left">Слева</string>
@@ -415,7 +417,7 @@
     <string name="anonymous_statistics_warning_title">Сведения</string>
     <string name="anonymous_statistics_warning">Анонимные отчеты позволяют разработчикам LineageOS отслеживать работу ОС на различных устройствах. Отправляемая информация включает название устройства, версию прошивки и уникальный идентификатор, что никаким образом не затрагивает Вашу конфиденциальность. Данные отправляются при каждой загрузке устройства.\n\nЧтобы просмотреть пример, нажмите «Просмотр данных».</string>
     <string name="enable_reporting_title">Разрешить отправку статистики</string>
-    <string name="preview_data_title">Предварительный просмотр данных</string>
+    <string name="preview_data_title">Предпросмотр данных</string>
     <string name="view_stats_title">Просмотр статистики</string>
     <string name="anonymous_learn_more">Подробнее</string>
     <string name="preview_id_title">Идентификатор устройства</string>
@@ -515,7 +517,7 @@
     <string name="touchscreen_gesture_action_next_track">Перейти к следующему треку</string>
     <string name="touchscreen_gesture_action_volume_down">Уменьшить громкость</string>
     <string name="touchscreen_gesture_action_volume_up">Увеличить громкость</string>
-    <string name="touchscreen_gesture_action_ambient_display">Показать внешний дисплей</string>
+    <string name="touchscreen_gesture_action_ambient_display">Показывать индикацию событий</string>
     <string name="trust_category_features">Статус</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Принудительный</string>

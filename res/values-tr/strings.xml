@@ -38,7 +38,7 @@
     <string name="disabled">Devre dışı</string>
     <string name="enabled">Etkin</string>
     <string name="privacy_settings_title">Gizlilik</string>
-    <string name="channel_light_settings_name">Işık ayarları ön izlemesi</string>
+    <string name="channel_light_settings_name">Işık ayarları önizlemesi</string>
     <string name="edit_light_settings">Işık ayarlarını düzenle</string>
     <string name="pulse_speed_title">Yanma süresi ve hızı</string>
     <string name="default_time">Normal</string>
@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Saat</string>
     <string name="status_bar_clock_show_seconds_title">Saniye göster</string>
     <string name="status_bar_clock_show_seconds_summary">Saati, dakikayı ve saniyeyi göster</string>
+    <string name="status_bar_clock_auto_hide_title">Otomatik gizle</string>
+    <string name="status_bar_clock_auto_hide_summary">Başlatıcı görünürse saati gizle</string>
     <string name="status_bar_clock_position_title">Saat konumu</string>
     <string name="status_bar_clock_position_right">Sağ</string>
     <string name="status_bar_clock_position_left">Sol</string>

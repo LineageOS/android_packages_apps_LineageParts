@@ -38,7 +38,7 @@
     <string name="disabled">Désactivé</string>
     <string name="enabled">Activé</string>
     <string name="privacy_settings_title">Confidentialité</string>
-    <string name="channel_light_settings_name">Aperçu des paramètres d\'éclairage</string>
+    <string name="channel_light_settings_name">Aperçu des paramètres de luminosité</string>
     <string name="edit_light_settings">Modifier les paramètres du voyant</string>
     <string name="pulse_speed_title">Durée et vitesse du clignotement</string>
     <string name="default_time">Normal</string>
@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Horloge</string>
     <string name="status_bar_clock_show_seconds_title">Afficher les secondes</string>
     <string name="status_bar_clock_show_seconds_summary">Afficher les heures, minutes et secondes</string>
+    <string name="status_bar_clock_auto_hide_title">Masquer automatiquement</string>
+    <string name="status_bar_clock_auto_hide_summary">Masquer l\'horloge si le lanceur est visible</string>
     <string name="status_bar_clock_position_title">Position de l\'horloge</string>
     <string name="status_bar_clock_position_right">Droite</string>
     <string name="status_bar_clock_position_left">Gauche</string>
@@ -471,6 +473,9 @@
     <string name="charging_sounds_enabled_summary">Émettre un son au branchement ou débranchement d\'une source d\'alimentation</string>
     <string name="power_notifications_vibrate_title">Vibreur</string>
     <string name="charging_sounds_ringtone_silent">Silencieux</string>
+    <string name="charging_sounds_notification_category_title">Sons de notification</string>
+    <string name="wired_charging_sounds_title">Charge filaire</string>
+    <string name="wireless_charging_sounds_title">Charge sans fil</string>
     <string name="touchscreen_gesture_settings_title">Gestes tactiles</string>
     <string name="touchscreen_gesture_settings_summary">Effectuer des actions rapides à l\'aide de différents gestes tactiles</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Retour haptique</string>

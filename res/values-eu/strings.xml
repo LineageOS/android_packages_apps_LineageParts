@@ -37,7 +37,6 @@
     <string name="disabled">Desgaituta</string>
     <string name="enabled">Gaituta</string>
     <string name="privacy_settings_title">Pribatutasuna</string>
-    <string name="channel_light_settings_name">Argien ezarpenen aurreikuspena</string>
     <string name="edit_light_settings">Editatu argien ezarpenak</string>
     <string name="pulse_speed_title">Ledaren iraupena eta abiadura</string>
     <string name="default_time">Arrunta</string>
@@ -334,6 +333,7 @@
     <string name="status_bar_clock_title">Erlojua</string>
     <string name="status_bar_clock_show_seconds_title">Erakutsi segundoak</string>
     <string name="status_bar_clock_show_seconds_summary">Erakutsi orduak, minutuak, eta segundoak</string>
+    <string name="status_bar_clock_auto_hide_title">Ezkutatu automatikoki</string>
     <string name="status_bar_clock_position_title">Erlojuaren posizioa</string>
     <string name="status_bar_clock_position_right">Eskuinean</string>
     <string name="status_bar_clock_position_left">Ezkerrean</string>

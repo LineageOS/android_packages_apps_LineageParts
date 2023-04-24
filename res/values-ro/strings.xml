@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">Ceas</string>
     <string name="status_bar_clock_show_seconds_title">Afișare secunde</string>
     <string name="status_bar_clock_show_seconds_summary">Afișează orele, minutele și secundele</string>
+    <string name="status_bar_clock_auto_hide_title">Ascundere automată</string>
+    <string name="status_bar_clock_auto_hide_summary">Ascunde ceasul dacă launcher-ul este vizibil</string>
     <string name="status_bar_clock_position_title">Poziţia ceasului</string>
     <string name="status_bar_clock_position_right">Dreapta</string>
     <string name="status_bar_clock_position_left">Stânga</string>

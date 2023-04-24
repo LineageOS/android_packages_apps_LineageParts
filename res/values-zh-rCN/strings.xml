@@ -352,6 +352,8 @@
     <string name="status_bar_clock_title">时钟</string>
     <string name="status_bar_clock_show_seconds_title">显示秒</string>
     <string name="status_bar_clock_show_seconds_summary">显示小时、分钟和秒</string>
+    <string name="status_bar_clock_auto_hide_title">自动隐藏</string>
+    <string name="status_bar_clock_auto_hide_summary">如果启动器可见，则隐藏时钟</string>
     <string name="status_bar_clock_position_title">时钟位置</string>
     <string name="status_bar_clock_position_right">右侧</string>
     <string name="status_bar_clock_position_left">左侧</string>
@@ -362,7 +364,7 @@
     <string name="status_bar_am_pm_small">较小</string>
     <string name="status_bar_am_pm_hidden">隐藏</string>
     <string name="status_bar_battery_title">电量指示器</string>
-    <string name="status_bar_battery_style_title">电池状态样式</string>
+    <string name="status_bar_battery_style_title">电量图标样式</string>
     <string name="status_bar_battery_style_icon_portrait">纵向图标</string>
     <string name="status_bar_battery_style_circle">环形</string>
     <string name="status_bar_battery_style_text">文本</string>

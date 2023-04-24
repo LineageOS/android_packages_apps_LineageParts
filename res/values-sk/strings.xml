@@ -38,7 +38,6 @@
     <string name="disabled">Zakázané</string>
     <string name="enabled">Povolené</string>
     <string name="privacy_settings_title">Súkromie</string>
-    <string name="channel_light_settings_name">Náhľad nastavení sveteľnej signalizácie</string>
     <string name="edit_light_settings">Upraviť svetelnú signalizáciu</string>
     <string name="pulse_speed_title">Dĺžka a rýchlosť blikania</string>
     <string name="default_time">Normálny</string>
@@ -352,6 +351,7 @@
     <string name="status_bar_clock_title">Hodiny</string>
     <string name="status_bar_clock_show_seconds_title">Zobraziť sekundy</string>
     <string name="status_bar_clock_show_seconds_summary">Zobraziť hodiny, minúty a sekundy</string>
+    <string name="status_bar_clock_auto_hide_title">Automatické skrývanie</string>
     <string name="status_bar_clock_position_title">Umiestnenie hodín</string>
     <string name="status_bar_clock_position_right">Vpravo</string>
     <string name="status_bar_clock_position_left">Vľavo</string>

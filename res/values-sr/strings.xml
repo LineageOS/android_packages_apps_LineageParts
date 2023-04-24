@@ -37,7 +37,6 @@
     <string name="disabled">Онемогућено</string>
     <string name="enabled">Омогућено</string>
     <string name="privacy_settings_title">Приватност</string>
-    <string name="channel_light_settings_name">Приказ подешавања осветљења</string>
     <string name="edit_light_settings">Подешавања индикатора</string>
     <string name="pulse_speed_title">Дужина и брзина трептаја</string>
     <string name="default_time">Нормално</string>
@@ -333,6 +332,7 @@
     <string name="status_bar_clock_title">Сат</string>
     <string name="status_bar_clock_show_seconds_title">Прикажи секунде</string>
     <string name="status_bar_clock_show_seconds_summary">Прикажи сате, минуте и секунде</string>
+    <string name="status_bar_clock_auto_hide_title">Аутоматски сакриј</string>
     <string name="status_bar_clock_position_title">Положај сата</string>
     <string name="status_bar_clock_position_right">Десно</string>
     <string name="status_bar_clock_position_left">Лево</string>

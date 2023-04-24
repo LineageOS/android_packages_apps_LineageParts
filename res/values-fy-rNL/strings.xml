@@ -38,7 +38,6 @@
     <string name="disabled">Utskeakele</string>
     <string name="enabled">Ynskeakele</string>
     <string name="privacy_settings_title">Privacy</string>
-    <string name="channel_light_settings_name">Foarbyld fan ferljochtingsynstellingen</string>
     <string name="edit_light_settings">Meldingsledynstellingen</string>
     <string name="pulse_speed_title">Doer en snelheid fan knipperjen</string>
     <string name="default_time">Normaal</string>
@@ -338,6 +337,7 @@
     <string name="status_bar_clock_title">Klok</string>
     <string name="status_bar_clock_show_seconds_title">Sekonden toane</string>
     <string name="status_bar_clock_show_seconds_summary">Oeren, minuten en sekonden toane</string>
+    <string name="status_bar_clock_auto_hide_title">Automatysk ferstopje</string>
     <string name="status_bar_clock_position_title">Posysje klok</string>
     <string name="status_bar_clock_position_right">Rjochts</string>
     <string name="status_bar_clock_position_left">Links</string>
