@@ -16,11 +16,11 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Axustes de LineageOS</string>
+    <string name="lineageparts_title">Configuración de LineageOS</string>
     <string name="loading">Cargando\u2026</string>
     <string name="dlg_ok">D\'acuerdu</string>
     <string name="cancel">Encaboxar</string>
-    <string name="settings">Axustes</string>
+    <string name="settings">Configuración</string>
     <string name="name">Nome</string>
     <string name="back">Atrás</string>
     <string name="finish">Finar</string>
@@ -113,7 +113,7 @@
     <string name="power_menu_title">Menú d\'apagáu</string>
     <string name="power_menu_items_title">Elementos del menú d\'apagáu</string>
     <string name="power_menu_airplane_title">Mou avión</string>
-    <string name="power_menu_bug_report_devoptions_unavailable">L\'informe de fallos ta desactiváu darréu que los axustes de desendolcu nun tán activaos</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">L\'informe de fallos ta desactiváu darréu que la configuración de desendolcu nun tán activaos</string>
     <string name="power_menu_bug_report_unavailable_for_user">L\'informe de fallos ta desactiváu pa usuarios que nun son primarios.</string>
     <string name="power_menu_emergency_title">Emerxencia</string>
     <string name="power_menu_devicecontrols_title">Controles de preseos</string>
@@ -175,7 +175,7 @@
     <string name="status_bar_battery_percentage_text_next">Al llau del iconu</string>
     <string name="status_bar_brightness_category">Brillu</string>
     <string name="status_bar_brightness_slider_title">Eslizador del brillu</string>
-    <string name="status_bar_brightness_slider_summary">Axusta\'l brillu dende los axustes rápidos</string>
+    <string name="status_bar_brightness_slider_summary">Axusta\'l brillu dende la configuración rápida</string>
     <string name="status_bar_brightness_slider_auto_title">Brillu automáticu</string>
     <string name="status_bar_brightness_slider_auto_summary">Amuesa l\'alternador del brillu adautable cierca l\'eslizador</string>
     <string name="status_bar_brightness_slider_show_never">Nun amosar enxamás</string>

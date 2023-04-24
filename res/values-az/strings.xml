@@ -252,7 +252,7 @@
     <string name="profile_setup_actions_title_config">Hərəkətləri təkrar konfiqurasiya et</string>
     <string name="wireless_networks_settings_title">Naqilsiz &amp; şəbəkələr</string>
     <string name="no_bluetooth_triggers">Cütləşdirilmiş Bluetooth cihazı yoxdur.\nTətikləyiciləri konfiqurasiya etməmişdən əvvəl Bluetooth cihazını cütləşdirmək üçün toxunun.</string>
-    <string name="no_wifi_triggers">Konfiqurasiya edilmiş Wi\u2011Fi müraciət nöqtəsi yoxdur.\nTətikləyiciləri konfiqurasiya etməmişdən əvvəl Wi\u2011Fi ilə bağlantı qurmaq üçün toxunun.</string>
+    <string name="no_wifi_triggers">Konfiqurasiya edilmiş Wi\u2011Fi müraciət nöqtəsi yoxdur.\nTətikləyiciləri konfiqurasiya etməmişdən əvvəl Wi\u2011Fi-a bağlanmaq üçün toxunun.</string>
     <string name="no_triggers_configured">Konfiqurasiya edilmiş tətikləyici yoxdur. Əlavə etmək üçün toxunun.</string>
     <string name="no_triggers_configured_nfc">Yeni bir NFC tətikləyici quraşdırmaq üçün toxunun.</string>
     <string name="profile_setup_actions_description">İndi profil aktivləşdiriləndə nə baş verəcəyini konfiqurasiya edin</string>

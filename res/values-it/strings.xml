@@ -84,6 +84,7 @@
     <string name="notification_light_automagic_summary">I colori sono scelti automaticamente</string>
     <string name="led_notification_title">Impostazioni luci</string>
     <string name="led_notification_text">LED attivato dalle impostazioni</string>
+    <string name="notification_light_add_apps_empty_summary">Per aggiungere impostazioni per specifiche app, attiva \'%1$s\' e premi \'Aggiungi\'</string>
     <string name="live_display_summary">Ottimizza lo schermo in base all\'ora del giorno e alle condizioni ambientali per migliorare la leggibilità e ridurre l\'affaticamento degli occhi</string>
     <string name="live_display_mode">Modalità display</string>
     <string name="live_display_color_temperature_title">Temperatura colore</string>
@@ -223,10 +224,11 @@
     <string name="power_menu_devicecontrols_title">Controlli dispositivo</string>
     <string name="power_menu_advanced_restart_title">Riavvio avanzato</string>
     <string name="power_menu_advanced_restart_summary">Quando il dispositivo è sbloccato, mostra nel menù di accensione le opzioni per il riavvio in recovery o nel bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Il servizio di emergenza è attivato</string>
     <string name="camera_double_tap_power_gesture_title">Premi due volte il tasto di accensione per avviare la fotocamera</string>
     <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>
     <string name="torch_long_press_power_gesture_title">Premi a lungo per la torcia</string>
-    <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo é spento</string>
+    <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo è spento</string>
     <string name="torch_long_press_power_timeout_title">Spegni la torcia automaticamente</string>
     <string name="torch_long_press_power_timeout_never">Mai</string>
     <string name="torch_long_press_power_timeout_1min">1 minuto</string>
@@ -503,11 +505,11 @@
     <string name="trust_feature_security_patches_value_medium">Non aggiornate da qualche mese</string>
     <string name="trust_feature_security_patches_value_old">Non aggiornate</string>
     <string name="trust_feature_security_patches_explain">Le patch di sicurezza vengono rilasciate mensilmente da Google in cooperazione con i produttori di SoC per risolvere problemi che potrebbero essere sfruttati dalle app dannose per aggirare le restrizioni di sicurezza e causare danni permanenti al dispositivo. Le patch rese disponibili da Google sono applicate a tutti i dispositivi supportati, ma quelle relative ai componenti proprietari possono essere applicati solo dal produttore del dispositivo. Per mantenere il dispositivo sicuro, controlla che la tua versione di LineageOS sia sempre aggiornata ed eventualmente assicurati che i componenti proprietari come firmware e immagine vendor siano quelli raccomandati da LineageOS.</string>
-    <string name="trust_feature_encryption">Criptazione</string>
+    <string name="trust_feature_encryption">Cifratura</string>
     <string name="trust_feature_encryption_value_enabled">Attiva</string>
-    <string name="trust_feature_encryption_value_nolock">Necessita di una schermata di sblocco sicura</string>
+    <string name="trust_feature_encryption_value_nolock">Necessita di un blocco schermo sicuro</string>
     <string name="trust_feature_encryption_value_disabled">Disattivata</string>
-    <string name="trust_feature_encryption_explain">Abilitando la criptazione del dispositivo viene bloccato l\'accesso ai tuoi dati quando il dispositivo non è acceso. Questo risulta particolarmente importante nel caso in cui il dispositivo venisse rubato: in tal caso l\'accesso ai tuoi messaggi, contatti e altre informazioni personali verrà impedito fino all\'inserimento della tua password.\nPer rendere la criptazione del dispositivo più efficace è importante attivare un blocco schermo sicuro.</string>
+    <string name="trust_feature_encryption_explain">Abilitando la cifratura del dispositivo, viene bloccato l\'accesso ai tuoi dati quando il dispositivo non è acceso. Questo risulta particolarmente importante nel caso in cui il dispositivo venisse rubato: in tal caso l\'accesso ai tuoi messaggi, contatti e altre informazioni personali verrà impedito fino all\'inserimento della tua password.\nPer rendere la cifratura del dispositivo più efficace, è importante attivare un blocco schermo sicuro.</string>
     <string name="trust_category_tools">Privacy</string>
     <string name="trust_notification_alerts_title">Avvisi di sicurezza</string>
     <string name="trust_warnings_alerts_intro">Puoi scegliere quali problemi di sicurezza devono essere segnalati. Per la tua sicurezza è consigliabile attivarli tutti</string>
@@ -518,7 +520,7 @@
     <string name="trust_onboarding_learn_more">Scopri di più</string>
     <string name="trust_onboarding_done">Capito</string>
     <string name="trust_restrict_usb_title">Restrizioni USB</string>
-    <string name="trust_restrict_usb_summary">Controlla le connessioni USB quali auricolari, dispositivi d\'archiviazione, dispositivi d\'input (mouse, tastiere, joysticks) e connessioni ADB</string>
+    <string name="trust_restrict_usb_summary">Controlla le connessioni USB quali auricolari, dispositivi d\'archiviazione, dispositivi d\'input (mouse, tastiere, joystick) e connessioni ADB</string>
     <string name="trust_restrict_usb_always">Nega le connessioni USB</string>
     <string name="trust_restrict_usb_keyguard">Consenti le connessioni USB solo quando il dispositivo è sbloccato</string>
     <string name="trust_restrict_usb_disabled">Consenti sempre le connessioni USB</string>
