@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "64bcd8eb_ba791eeb",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-05-01T19:31:35Z",
+      "side": 1,
+      "message": "What about this one?",
+      "range": {
+        "startLine": 135,
+        "startChar": 8,
+        "endLine": 135,
+        "endChar": 52
+      },
+      "revId": "a7101b238310d89447f352f94d49127a02c8b1c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
