@@ -22,6 +22,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 
+import android.os.UserHandle;
+import android.util.Log;
+
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
@@ -35,6 +38,11 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
+        if (ctx.getUserId() != UserHandle.USER_SYSTEM) {
+            Log.d(TAG, "Current User ID " + ctx.getUserId() +
+                "is not the primary user, bypassing LineageParts tunable restoration");
+            return;
+        }
         if (!hasRestoredTunable(ctx)) {
             /* Restore the hardware tunable values */
             ButtonSettings.restoreKeyDisabler(ctx);
