@@ -2,7 +2,7 @@
 <!--
 /**
  * Copyright 2016, The CyanogenMod Project
- * Copyright 2017-2022, The LineageOS Project
+ * Copyright 2017-2023, The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -123,6 +123,9 @@
                 android:name="com.android.settings.order"
                 android:value="-256" />
             <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity-alias>
@@ -152,6 +155,9 @@
                 android:name="com.android.settings.order"
                 android:value="-255" />
             <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity-alias>
@@ -179,6 +185,9 @@
                 android:name="com.android.settings.order"
                 android:value="-254" />
             <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity-alias>
@@ -200,6 +209,9 @@
                 android:name="com.android.settings.order"
                 android:value="0" />
             <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity-alias>
@@ -220,6 +232,9 @@
             <meta-data
                 android:name="com.android.settings.order"
                 android:value="2" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
