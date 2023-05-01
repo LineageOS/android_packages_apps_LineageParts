@@ -2,7 +2,7 @@
 <!--
 /**
  * Copyright 2016, The CyanogenMod Project
- * Copyright 2017-2022, The LineageOS Project
+ * Copyright 2017-2023, The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -125,6 +125,9 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
         </activity-alias>
 
         <activity android:name=".gestures.KeyHandler" />
@@ -154,6 +157,9 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
         </activity-alias>
 
         <!-- Status bar settings (System category) -->
@@ -181,6 +187,9 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
         </activity-alias>
 
         <!-- Trust interface (Privacy category) -->
@@ -202,6 +211,9 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
         </activity-alias>
 
         <!-- Contributors Cloud (MyDeviceInfo category) -->
@@ -223,6 +235,9 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
         </activity-alias>
 
         <!-- Anonymous Statistics -->
