@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- *               2017-2019,2021 The LineageOS project
+ *               2017-2019,2021,2023 The LineageOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +21,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.UserManager;
+import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
@@ -30,11 +32,16 @@ import org.lineageos.lineageparts.input.ButtonSettings;
 
 public class BootReceiver extends BroadcastReceiver {
 
-    private static final String TAG = "BootReceiver";
+    private static final String TAG = "PartsBootReceiver";
     private static final String ONE_TIME_TUNABLE_RESTORE = "hardware_tunable_restored";
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
+        if (!ctx.getSystemService(UserManager.class).isPrimaryUser()) {
+            Log.d(TAG, "Not running as the primary user, skipping tunable restoration.");
+            return;
+        }
+
         if (!hasRestoredTunable(ctx)) {
             /* Restore the hardware tunable values */
             ButtonSettings.restoreKeyDisabler(ctx);
