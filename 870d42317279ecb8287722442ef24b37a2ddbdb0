@@ -16,6 +16,41 @@
       "message": "So, Luk sugested this change. It works fine as well.\n\nWaiting for your validation too before merging.",
       "revId": "870d42317279ecb8287722442ef24b37a2ddbdb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01e7a693_1f484e54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-05-03T11:21:11Z",
+      "side": 1,
+      "message": "Clear \u0026 concise. Thank you :)",
+      "parentUuid": "cb620549_c2fd2999",
+      "revId": "870d42317279ecb8287722442ef24b37a2ddbdb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72e3e04d_fc88920c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-05-03T11:21:11Z",
+      "side": 1,
+      "message": "OK to merge",
+      "revId": "870d42317279ecb8287722442ef24b37a2ddbdb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
