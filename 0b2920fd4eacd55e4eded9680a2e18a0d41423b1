@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ddd656c2_a3a03bc7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-05-03T10:08:23Z",
+      "side": 1,
+      "message": "I would like to backport it to lineage-19.1 as well",
+      "revId": "0b2920fd4eacd55e4eded9680a2e18a0d41423b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
