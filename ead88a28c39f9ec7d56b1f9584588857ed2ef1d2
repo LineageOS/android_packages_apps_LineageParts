@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f94046a_8ca250c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-05-03T10:08:17Z",
+      "side": 1,
+      "message": "Verified that touchscreen gesture states no longer get reset:\n\n\u003e 05-03 11:03:20.417 12374 12374 D BootReceiver: Current user ID 10 is not the \u0027system\u0027 user, skipping tunable restoration.",
+      "revId": "ead88a28c39f9ec7d56b1f9584588857ed2ef1d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
