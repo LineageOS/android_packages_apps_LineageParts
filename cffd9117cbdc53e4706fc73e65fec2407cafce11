@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c3432cf_fbef84ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14462
+      },
+      "writtenOn": "2023-05-08T11:13:23Z",
+      "side": 1,
+      "message": "Nice feature! I found a minor UI glitch: when charging limit is set/saved at 70%, upon (re-)entering the fragment the label that should display the value (70%) is not shown",
+      "revId": "cffd9117cbdc53e4706fc73e65fec2407cafce11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "52968293_5a864365",
+        "filename": "src/org/lineageos/lineageparts/health/ChargingLimitPreference.java",
+        "patchSetId": 16
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 14462
+      },
+      "writtenOn": "2023-05-08T11:13:23Z",
+      "side": 1,
+      "message": "Minor UI thing: when limit is set/saved at 70%, upon re-entering the fragment the label next to the SeekBar is not diplayed, while expecting it to display 70%. Happens only with the value of 70%, not other values.\n\nmChargingLimitBar gets instantiated at a progress of 70 (prob. from resource file min value). When current saved limit preference is also at 70, calling setProgress() here doesn\u0027t seem to trigger onProgressChanged(), so updateValue() doesn\u0027t get called, thus mChargingLimitValue is not set, and not displayed. Only after changing the value (dragging the seeker), the label gets displayed. \n\nMaybe add updateValue() here manually, or alternatively setProgress() to a dummy value first, in order to trigger onProgressChanged() after setting the real value.",
+      "revId": "cffd9117cbdc53e4706fc73e65fec2407cafce11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
