@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a478321d_d4c1525d",
+        "filename": "src/org/lineageos/lineageparts/health/ChargingControlSettings.java",
+        "patchSetId": 18
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-05-10T09:59:21Z",
+      "side": 1,
+      "message": "You should use the named modes, MODE_AUTO, MODE_MANUAL, MODE_LIMIT",
+      "range": {
+        "startLine": 145,
+        "startChar": 17,
+        "endLine": 145,
+        "endChar": 18
+      },
+      "revId": "c75139ad94d39ad7fa265a665c5ba02bc7cd08d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89bb9c9b_302ca08c",
+        "filename": "src/org/lineageos/lineageparts/health/ChargingControlSettings.java",
+        "patchSetId": 18
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-05-10T09:59:21Z",
+      "side": 1,
+      "message": "return?",
+      "revId": "c75139ad94d39ad7fa265a665c5ba02bc7cd08d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
