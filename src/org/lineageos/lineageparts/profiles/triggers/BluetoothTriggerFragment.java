@@ -81,7 +81,8 @@ public class BluetoothTriggerFragment extends AbstractTriggerListFragment {
             return true;
         }
         BluetoothDevice dev = mBluetoothAdapter.getRemoteDevice(info.id);
-        return dev.getBluetoothClass().doesClassMatch(BluetoothClass.PROFILE_A2DP);
+        return dev != null && dev.getBluetoothClass() != null
+               && dev.getBluetoothClass().doesClassMatch(BluetoothClass.PROFILE_A2DP);
     }
 
     @Override
