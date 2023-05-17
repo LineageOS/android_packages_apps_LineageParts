@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66bc0d45_2c5184d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13559
+      },
+      "writtenOn": "2023-05-17T13:56:27Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_packages_modules_Bluetooth/blob/lineage-20.0/framework/java/android/bluetooth/BluetoothAdapter.java#L1713  if bluetooth was off configuring trigger was giving npe https://katb.in/akihanamuza",
+      "revId": "02700c1d1e6614d0d257dbb3ddd3961193711399",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
