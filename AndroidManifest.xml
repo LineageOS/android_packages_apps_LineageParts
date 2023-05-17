@@ -207,13 +207,13 @@
                 android:value="com.android.settings.category.ia.privacy" />
             <meta-data
                 android:name="com.android.settings.order"
-                android:value="0" />
+                android:value="-256" />
             <meta-data
                 android:name="com.android.settings.profile"
                 android:value="primary_profile_only" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/summary_empty" />
+                android:resource="@string/trust_summary" />
         </activity-alias>
 
         <!-- Contributors Cloud (MyDeviceInfo category) -->
