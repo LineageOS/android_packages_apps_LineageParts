@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
- *               2017-2021 The LineageOS Project
+ *               2017-2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -91,7 +91,7 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
         activity.getCollapsingToolbarLayout().measure(
                 View.MeasureSpec.EXACTLY, View.MeasureSpec.EXACTLY);
         activity.getCollapsingToolbarLayout().post(() ->
-                mPager.setHeightOffset(activity.getCollapsingToolbarLayout().getMeasuredHeight()));
+                mPager.setHeightOffset(mTabLayout.getHeight()));
     }
 
     @Override
