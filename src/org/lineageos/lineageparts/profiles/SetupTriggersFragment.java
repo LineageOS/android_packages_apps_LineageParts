@@ -91,7 +91,7 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
         activity.getCollapsingToolbarLayout().measure(
                 View.MeasureSpec.EXACTLY, View.MeasureSpec.EXACTLY);
         activity.getCollapsingToolbarLayout().post(() ->
-                mPager.setHeightOffset(activity.getCollapsingToolbarLayout().getMeasuredHeight()));
+                mPager.setHeightOffset(mTabLayout.getHeight()));
     }
 
     @Override
