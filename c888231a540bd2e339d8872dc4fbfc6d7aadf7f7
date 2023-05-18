@@ -16,6 +16,23 @@
       "message": "After: https://imgur.com/a/PZXzsxu",
       "revId": "c888231a540bd2e339d8872dc4fbfc6d7aadf7f7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c7bc2d54_34a74ec5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15346
+      },
+      "writtenOn": "2023-05-18T03:56:44Z",
+      "side": 1,
+      "message": "Summary could be possibly truncated more to be:\n\"Keep your device secure and protect your privacy\"\nto match the bottom few preferences",
+      "revId": "c888231a540bd2e339d8872dc4fbfc6d7aadf7f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
