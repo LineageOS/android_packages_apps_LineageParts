@@ -16,6 +16,24 @@
       "message": "https://imgur.com/a/Q39l8R8",
       "revId": "fd2032adbc06319298a33d383d3690c36f71ae71",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52d566e2_ad0409ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-05-22T01:05:14Z",
+      "side": 1,
+      "message": "hi, thanks for testing. but I am not sure what exactly are you trying to convey in this image. what is your device? where is the device tree side change? if you declare in your board config that your device does not support bypass, then you got only two modes available.\n\nAlso note that the deadline mode is not yet complete.",
+      "parentUuid": "5f3d54d1_6345e9ad",
+      "revId": "fd2032adbc06319298a33d383d3690c36f71ae71",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
