@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a2c62fc_441d762e",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 22
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-05-23T20:46:02Z",
+      "side": 1,
+      "message": "`Enable charging control`\n\nThis should remain as it was to match all the other main preference toggles in Settings",
+      "range": {
+        "startLine": 83,
+        "startChar": 49,
+        "endLine": 83,
+        "endChar": 69
+      },
+      "revId": "80f7b8e89447cf97075ed4fd49c0f510f1bdd5cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ec3fe8bd_4a1120f3",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 22
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-05-23T20:46:02Z",
+      "side": 1,
+      "message": "Limit",
+      "range": {
+        "startLine": 90,
+        "startChar": 55,
+        "endLine": 90,
+        "endChar": 61
+      },
+      "revId": "80f7b8e89447cf97075ed4fd49c0f510f1bdd5cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f59aa80_d633fb85",
+        "filename": "src/org/lineageos/lineageparts/health/ChargingControlSettings.java",
+        "patchSetId": 22
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-05-23T20:46:02Z",
+      "side": 1,
+      "message": "These should remain as-is (enabled/disabled) to match the other preferences in Settings",
+      "range": {
+        "startLine": 224,
+        "startChar": 0,
+        "endLine": 226,
+        "endChar": 47
+      },
+      "revId": "80f7b8e89447cf97075ed4fd49c0f510f1bdd5cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
