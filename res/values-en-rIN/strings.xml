@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2022 The LineageOS Project
+	              2017-2023 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -526,6 +526,7 @@
     <string name="trust_restrict_usb_always">Deny USB connections</string>
     <string name="trust_restrict_usb_keyguard">Allow USB connections when unlocked</string>
     <string name="trust_restrict_usb_disabled">Always allow USB connections</string>
+    <string name="trust_summary">Keep your device secure and protect your privacy</string>
     <string name="sms_security_check_limit_title">SMS message limit</string>
     <string name="sms_security_check_limit_summary">Apps can send %s messages in 1 minute before requiring confirmation</string>
     <string name="sms_security_check_limit_summary_none">Apps are not allowed to send any messages without confirmation</string>

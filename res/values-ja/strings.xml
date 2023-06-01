@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2022 The LineageOS Project
+	              2017-2023 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -524,6 +524,7 @@
     <string name="trust_restrict_usb_always">USB 接続を拒否</string>
     <string name="trust_restrict_usb_keyguard">ロック解除時に USB 接続を許可する</string>
     <string name="trust_restrict_usb_disabled">常に USB 接続を許可する</string>
+    <string name="trust_summary">デバイスを安全に保ち、プライバシーを保護します</string>
     <string name="sms_security_check_limit_title">SMS メッセージの制限</string>
     <string name="sms_security_check_limit_summary">アプリは確認をする前に1分間に%s通のメッセージを送信できます</string>
     <string name="sms_security_check_limit_summary_none">アプリは許可無くメッセージを送信することはできません</string>

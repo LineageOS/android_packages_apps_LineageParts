@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2022 The LineageOS Project
+	              2017-2023 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -326,11 +326,19 @@
     <string name="touchscreen_gesture_letter_w_title">Намалюйце літару \"W\"</string>
     <string name="touchscreen_gesture_letter_z_title">Намалюйце літару \"Z\"</string>
     <string name="touchscreen_gesture_action_dialog_title">Дзеянні жэстаў</string>
+    <string name="touchscreen_gesture_action_flashlight">Уключыць або выключыць ліхтарык</string>
+    <string name="touchscreen_gesture_action_dialer">Адкрыць тэлефон</string>
+    <string name="touchscreen_gesture_action_volume_down">Паменшыць гучнасць</string>
+    <string name="touchscreen_gesture_action_volume_up">Павялічыць гучнасць</string>
     <string name="touchscreen_gesture_action_ambient_display">Паказваць актыўны экран</string>
     <string name="trust_feature_selinux_value_disabled">Адключана</string>
+    <string name="trust_feature_encryption">Шыфраванне</string>
     <string name="trust_feature_encryption_value_disabled">Адключана</string>
+    <string name="trust_warnings_keys">Подпіс зборкі</string>
     <string name="trust_onboarding_learn_more">Даведайцеся больш</string>
+    <string name="trust_onboarding_done">Зразумела</string>
     <string name="trust_restrict_usb_summary">Кіраванне падтрымкай злучэнняў па USB, такіх як навушнікі, прылады захоўвання даных, увод (мышы, клавіятуры, джойсцікі) і ADB</string>
     <string name="trust_restrict_usb_always">Забараніць злучэнні па USB</string>
     <string name="sms_security_check_limit_title">Абмежаванне паведамленняў SMS</string>
+    <string name="sms_security_check_limit_always_confirm">Заўсёды пацвярджаць</string>
 </resources>

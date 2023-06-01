@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2022 The LineageOS Project
+	              2017-2023 The LineageOS Project
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -526,6 +526,7 @@
     <string name="trust_restrict_usb_always">Zavrni povezave USB</string>
     <string name="trust_restrict_usb_keyguard">Dovoli povezave USB, ko je odklenjeno</string>
     <string name="trust_restrict_usb_disabled">Vedno dovoli povezave USB</string>
+    <string name="trust_summary">Ohranite vašo napravo varno in zaščitite vašo zasebnost.</string>
     <string name="sms_security_check_limit_title">Omejitev sporočil SMS</string>
     <string name="sms_security_check_limit_summary">Aplikacije lahko pošljejo %s sporočil v eni minuti, preden je zahtevana potrditev</string>
     <string name="sms_security_check_limit_summary_none">Aplikacijam ni dovoljeno pošiljanje sporočil brez potrditve</string>
