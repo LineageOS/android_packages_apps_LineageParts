@@ -37,6 +37,7 @@
     <string name="disabled">Wyłączone</string>
     <string name="enabled">Włączono</string>
     <string name="privacy_settings_title">Prywatność</string>
+    <string name="channel_light_settings_name">Podgląd ustawień diody</string>
     <string name="edit_light_settings">Edytuj ustawienia diody</string>
     <string name="pulse_speed_title">Długość i szybkość migania</string>
     <string name="default_time">Standardowy</string>
@@ -59,12 +60,15 @@
     <string name="light_brightness_normal">Normalny</string>
     <string name="light_brightness_zen">Nie przeszkadzać</string>
     <string name="battery_light_title">Dioda baterii</string>
+    <string name="battery_light_enable_title">Włącz diodę dla baterii</string>
     <string name="battery_low_pulse_title">Migaj, gdy poziom baterii jest niski</string>
+    <string name="battery_light_full_charge_disabled_title">Wyłącz po naładowaniu</string>
     <string name="battery_light_list_title">Kolory</string>
     <string name="battery_light_low_color_title">Bateria rozładowana</string>
     <string name="battery_light_medium_color_title">Ładowanie</string>
     <string name="battery_light_full_color_title">W pełni naładowana</string>
     <string name="notification_light_title">Dioda powiadomień</string>
+    <string name="notification_light_enable_title">Włącz diodę dla powiadomień</string>
     <string name="notification_light_general_title">Ogólne</string>
     <string name="notification_light_advanced_title">Zaawansowane</string>
     <string name="notification_light_applist_title">Aplikacje</string>
@@ -80,6 +84,7 @@
     <string name="notification_light_automagic_summary">Wybieranie kolorów automatycznie</string>
     <string name="led_notification_title">Ustawienia diody LED</string>
     <string name="led_notification_text">Diody LED włączone przez ustawienia</string>
+    <string name="notification_light_add_apps_empty_summary">Aby ustawić indywidualnie dla danej aplikacji, aktywuj \'%1$s\', następnie dotknij \"Dodaj\"</string>
     <string name="live_display_summary">Zoptymalizuj swój ekran w zależności od pory dnia, aby poprawić czytelność i zredukować zmęczenie oczu</string>
     <string name="live_display_mode">Tryb wyświetlania</string>
     <string name="live_display_color_temperature_title">Temperatura barw</string>
@@ -89,6 +94,8 @@
     <string name="live_display_night">Nocny</string>
     <string name="live_display_outdoor_mode_title">Automatyczny tryb na zewnątrz</string>
     <string name="live_display_outdoor_mode_summary">Automatycznie zwiększ jasność i nasycenie w jasnym świetle słonecznym</string>
+    <string name="live_display_anti_flicker_title">Redukcja migotania</string>
+    <string name="live_display_anti_flicker_summary">Zapobiegaj rozległemu migotaniu i zmniejszaj zmęczenie oczu w warunkach słabego oświetlenia. Może to pogarszać dokładność kolorów i wpływać na sposób wyświetlania niektórych elementów.</string>
     <string name="live_display_low_power_title">Redukcja zużycia energii</string>
     <string name="live_display_low_power_summary">Dostosuj sposób wyświetlania do najniższego zużycia energii bez utraty jakości</string>
     <string name="live_display_enhance_color_title">Wzmocnienie kolorów</string>
@@ -151,6 +158,7 @@
     <string name="hardware_keys_action_sleep">Wyłączenie ekranu</string>
     <string name="hardware_keys_action_last_app">Ostatnia aplikacja</string>
     <string name="hardware_keys_action_split_screen">Podziel ekran</string>
+    <string name="hardware_keys_action_kill_app">Zamknij aplikacje</string>
     <string name="camera_sleep_on_release_title">Podgląd ekranu</string>
     <string name="camera_sleep_on_release_summary">Lekkie naciśnięcie aktywuje ekran tylko do czasu zwolnienia przycisku</string>
     <string name="camera_launch_title">Włącz aparat</string>
@@ -174,6 +182,8 @@
     <string name="home_answer_call_summary">Odbieraj połączenia przychodzące za pomocą przycisku Home</string>
     <string name="extras_title">Dodatki</string>
     <string name="additional_buttons_title">Dodatkowe przyciski</string>
+    <string name="click_partial_screenshot_title">Dotknij, aby wykonać częściowy zrzut ekranu</string>
+    <string name="click_partial_screenshot_summary"> Wciśnij przycisk ściszania i zasilania, aby wykonać częściowy zrzut ekranu</string>
     <string name="button_backlight_title">Podświetlenie</string>
     <string name="button_backlight_enabled">Podświetlenie przycisków</string>
     <string name="button_backlight_only_when_pressed_title">Podświetlenie przycisków tylko po naciśnięciu</string>
@@ -187,21 +197,34 @@
     <string name="backlight_summary_enabled">Włączone</string>
     <string name="disable_navkeys_title">Włącz ekranowy pasek nawigacji</string>
     <string name="disable_navkeys_summary">Włącz ekranowy pasek nawigacji i wyłącz przyciski sprzętowe</string>
+    <string name="swap_capacitive_keys_title">Zamień miejscami przyciski pojemnościowe</string>
+    <string name="swap_capacitive_keys_summary">Zamień miejscami przyciski: Ostatnio uruchomione aplikacje z Wstecz</string>
     <string name="navigation_bar_category">Pasek nawigacji</string>
+    <string name="navigation_bar_enable_taskbar_title">Włącz pasek zadań</string>
     <string name="navigation_bar_invert_layout_title">Odwróć układ</string>
+    <string name="navigation_bar_invert_layout_summary">Odwraca układ paska nawigacji i innych elementów, takich jak przełącznik metod wprowadzania</string>
     <string name="navigation_bar_left_summary">W trybie poziomym pokaż pasek nawigacji po lewej stronie ekranu</string>
     <string name="navigation_bar_arrow_keys_title">Pokaż klawisze strzałek podczas pisania</string>
     <string name="navigation_bar_arrow_keys_summary">Pokaż przyciski lewego i prawego kursora podczas pisania. Zastępuje przełącznik IME.</string>
+    <string name="navigation_bar_back_long_press_title">Akcja długiego przytrzymania Wstecz</string>
     <string name="navigation_bar_home_long_press_title">Akcja długiego naciśnięcia Home</string>
     <string name="navigation_bar_home_double_tap_title">Akcja podwójnego puknięcia Home</string>
     <string name="navigation_bar_app_switch_long_press_title">Akcja długiego naciśnięcia Ostatnio Używanych</string>
     <string name="navigation_bar_edge_long_swipe_title">Akcja długiego przeciągnięcia krawędzi</string>
     <string name="power_menu_title">Menu zasilania</string>
+    <string name="power_menu_items_title">Elementy menu zasilania</string>
     <string name="power_menu_screenshot_title">Zrzut ekranu</string>
     <string name="power_menu_screenshot_summary">Naciśnij i przytrzymaj by wykonać częściowy zrzut ekranu</string>
     <string name="power_menu_airplane_title">Tryb samolotowy</string>
     <string name="power_menu_users_title">Przełącznik użytkowników</string>
     <string name="power_menu_bug_report_title">Zgłoszenie błędu</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">Raportowanie błędów jest wyłączone, ponieważ ustawienia programistyczne nie są włączone</string>
+    <string name="power_menu_bug_report_unavailable_for_user">Zgłaszanie błędów jest wyłączone dla użytkowników innych niż główni.</string>
+    <string name="power_menu_emergency_title">Alarmowy</string>
+    <string name="power_menu_devicecontrols_title">Sterowanie urządzeniami</string>
+    <string name="power_menu_advanced_restart_title">Opcje ponownego uruchamiania</string>
+    <string name="power_menu_advanced_restart_summary">Gdy odblokowany dodaj w menu zasilania opcje ponownego uruchomienia w trybie recovery lub bootloadera</string>
+    <string name="power_menu_emergency_affordance_enabled">Funkcja awaryjna jest aktywna</string>
     <string name="camera_double_tap_power_gesture_title">Naciśnij przycisk zasilania dwa razy, aby uruchomić aparat</string>
     <string name="camera_double_tap_power_gesture_desc">Szybkie uruchamianie aparatu bez odblokowywania ekranu</string>
     <string name="torch_long_press_power_gesture_title">Długie naciśnięcie dla latarki</string>
@@ -234,6 +257,8 @@
     <string name="no_triggers_configured_nfc">Dotknij, by ustawić nowy wyzwalacz NFC.</string>
     <string name="profile_setup_actions_description">Teraz skonfiguruj akcję, która wydarzy się, gdy profil zostanie aktywowany</string>
     <string name="profiles_settings_title">Profile systemu</string>
+    <string name="profiles_settings_enable_title">Włącz profile</string>
+    <string name="profiles_create_new">Utwórz nowy profil</string>
     <string name="profile_settings_title">Profil</string>
     <string name="profile_empty_list_profiles_off">Aby konfigurować i korzystać z profili systemowych musisz je aktywować.</string>
     <string name="profile_settings_summary_off">Profile są wyłączone</string>
@@ -331,6 +356,7 @@
     <string name="status_bar_clock_show_seconds_title">Pokaż sekundy</string>
     <string name="status_bar_clock_show_seconds_summary">Pokazuj godziny, minuty i sekundy</string>
     <string name="status_bar_clock_auto_hide_title">Autoukrywanie</string>
+    <string name="status_bar_clock_auto_hide_summary">Ukryj zegar na ekranie głównym</string>
     <string name="status_bar_clock_position_title">Pozycja zegara</string>
     <string name="status_bar_clock_position_right">Po prawej</string>
     <string name="status_bar_clock_position_left">Po lewej</string>
@@ -354,6 +380,9 @@
     <string name="status_bar_brightness_slider_summary">Dostosuj jasność z Szybkich Ustawień</string>
     <string name="status_bar_brightness_slider_auto_title">Automatyczna jasność</string>
     <string name="status_bar_brightness_slider_auto_summary">Pokaż przełącznik dla automatycznej jasności blisko suwaka</string>
+    <string name="status_bar_brightness_slider_show_never">Nigdy nie pokazuj</string>
+    <string name="status_bar_brightness_slider_show_expanded">Pokaż po rozwinięciu</string>
+    <string name="status_bar_brightness_slider_show_always">Pokazuj zawsze</string>
     <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
     <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
     <string name="network_traffic_settings_title">Monitor ruchu sieciowego</string>
@@ -379,7 +408,13 @@
     <string name="contributors_cloud_loading_message">Wczytywanie danych o twórcach\u2026</string>
     <string name="contributors_cloud_failed_message">Nie można wczytać danych o twórcach</string>
     <string name="contributor_info_menu">Informacje o twórcach</string>
+    <string name="contributor_info_msg"><![CDATA[<b>Nazwa:</b><xliff:g id="name"></xliff:g><br/><br/> 
+                 <b>Pseudonim:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Poprawki:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informacje o twórcach</string>
+    <string name="contributions_info_msg"><![CDATA[<b>Łączna liczba współtwórców:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Łączna liczba poprawek:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Ostatnia aktualizacja:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statystyki LineageOS</string>
     <string name="anonymous_statistics_summary">Pomóż ulepszyć LineageOS, pozwalając na wysyłanie anonimowych statystyk</string>
     <string name="anonymous_statistics_warning_title">O programie</string>
@@ -412,9 +447,13 @@
     <string name="long_screen_settings_summary">Wymuś na starszych aplikacjach korzystanie z pełnych proporcji ekranu</string>
     <string name="long_screen_settings_no_apps">Brak aplikacji</string>
     <string name="charging_sounds_settings_title">Dźwięki ładowania</string>
+    <string name="charging_sounds_enable_title">Włącz dźwięki ładowania</string>
     <string name="charging_sounds_summary">Odtwarzaj dźwięk podczas podłączania lub odłączania źródła zasilania</string>
     <string name="power_notifications_vibrate_title">Wibracja</string>
     <string name="charging_sounds_ringtone_silent">Cichy</string>
+    <string name="charging_sounds_notification_category_title">Dźwięki powiadomień</string>
+    <string name="wired_charging_sounds_title">Ładowanie przewodowe</string>
+    <string name="wireless_charging_sounds_title">Ładowanie bezprzewodowe</string>
     <string name="touchscreen_gesture_settings_title">Gesty ekranu dotykowego</string>
     <string name="touchscreen_gesture_settings_summary">Wykonuj różne gesty na ekranie dotykowym, aby wykonać szybkie akcje</string>
     <string name="touchscreen_gestures_haptic_feedback_title">Wibracja przy dotknięciu</string>
@@ -456,6 +495,7 @@
     <string name="touchscreen_gesture_action_next_track">Przejdź do następnego utworu muzycznego</string>
     <string name="touchscreen_gesture_action_volume_down">Mniejsza głośność multimediów</string>
     <string name="touchscreen_gesture_action_volume_up">Większa głośność multimediów</string>
+    <string name="touchscreen_gesture_action_ambient_display">Pokaż aktywny wyświetlacz</string>
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Restrykcyjny</string>
@@ -463,6 +503,9 @@
     <string name="trust_feature_selinux_explain">SELinux narzuca, które procesy mają dostęp do poszczególnych plików na Twoim urządzeniu.\nZapobiega to dostępowi aplikacjom i usługom do plików, które nie powinny być obsługiwane. Dzięki temu złośliwy proces ma ograniczony dostęp, zapewniając utrzymanie bezpieczeństwa.</string>
     <string name="trust_feature_security_patches">Poprawki zabezpieczeń Androida</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Aktualne</string>
+    <string name="trust_feature_security_patches_value_medium">Przestarzałe od kilku miesięcy</string>
+    <string name="trust_feature_security_patches_value_old">Nieaktualne</string>
     <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google w kooperacji z dostawcami SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzenia trwałych szkód w twoim urządzeniu. Łatki udostępniane przez Google są aplikowane w każdym miesiącu na wszystkich wspieranych urządzeniach, ale poprawki dla kodu własnościowego mogą być aplikowane tylko przez producenta twojego telefonu. By utrzymać twój telefon bezpiecznym, zawsze używaj najnowsze wersji LineageOS i (jeżeli dotyczy) twój obraz vendor jest zaktualizowany do najnowszej wersji zalecanej przez LineageOS.</string>
     <string name="trust_feature_encryption">Szyfrowanie</string>
     <string name="trust_feature_encryption_value_enabled">Włączone</string>
@@ -479,6 +522,10 @@
     <string name="trust_onboarding_learn_more">Dowiedz się więcej</string>
     <string name="trust_onboarding_done">Rozumiem</string>
     <string name="trust_restrict_usb_title">Ogranicz połączenie USB</string>
+    <string name="trust_restrict_usb_summary">Sterowanie obsługą połączeń USB takich jak słuchawki, urządzenia pamięci masowej, wejścia (myszy, klawiatury i joysticki) oraz ADB</string>
+    <string name="trust_restrict_usb_always">Odmawiaj połączeń USB</string>
+    <string name="trust_restrict_usb_keyguard">Zezwalaj na połączenia USB po odblokowaniu</string>
+    <string name="trust_restrict_usb_disabled">Zawsze zezwalaj na połączenia USB</string>
     <string name="sms_security_check_limit_title">Limit wiadomości SMS</string>
     <string name="sms_security_check_limit_summary">Aplikacje mogą wysłać %s wiadomości przez 1 minutę, nim konieczne będzie potwierdzenie</string>
     <string name="sms_security_check_limit_summary_none">Aplikacje nie mogą wysyłać żadnych wiadomości bez potwierdzenia</string>
