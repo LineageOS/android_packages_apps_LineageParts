@@ -16,8 +16,10 @@
 
 package org.lineageos.lineageparts.health;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.ArraySet;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -27,10 +29,13 @@ import androidx.preference.PreferenceScreen;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Set;
 import java.util.stream.Stream;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.Searchable;
 
 import lineageos.health.HealthInterface;
 import lineageos.preference.LineageSystemSettingDropDownPreference;
@@ -42,9 +47,10 @@ import static lineageos.health.HealthInterface.MODE_MANUAL;
 import static lineageos.health.HealthInterface.MODE_LIMIT;
 
 public class ChargingControlSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Searchable {
     private static final String TAG = ChargingControlSettings.class.getSimpleName();
 
+    private static final String CHARGING_CONTROL_PREF = "charging_control";
     private static final String CHARGING_CONTROL_ENABLED_PREF = "charging_control_enabled";
     private static final String CHARGING_CONTROL_MODE_PREF = "charging_control_mode";
     private static final String CHARGING_CONTROL_START_TIME_PREF = "charging_control_start_time";
@@ -228,5 +234,24 @@ public class ChargingControlSettings extends SettingsPreferenceFragment implemen
             return context.getString(R.string.enabled);
         }
         return context.getString(R.string.disabled);
+    };
+
+    public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+
+        @Override
+        public Set<String> getNonIndexableKeys(Context context) {
+            final Set<String> result = new ArraySet<>();
+
+            if (!HealthInterface.isChargingControlSupported(context)) {
+                result.add(CHARGING_CONTROL_PREF);
+                result.add(CHARGING_CONTROL_ENABLED_PREF);
+                result.add(CHARGING_CONTROL_MODE_PREF);
+                result.add(CHARGING_CONTROL_START_TIME_PREF);
+                result.add(CHARGING_CONTROL_TARGET_TIME_PREF);
+                result.add(CHARGING_CONTROL_LIMIT_PREF);
+            }
+            return result;
+        }
     };
 }
