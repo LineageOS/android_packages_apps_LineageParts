@@ -137,14 +137,22 @@
     <string name="profile_menu_delete_title">Radera</string>
     <string name="profile_action_none">Lämna oförändrad</string>
     <string name="profile_action_disable">Stäng av</string>
+    <string name="profile_trigger_a2dp_connect">Vid A2DP-anslutning</string>
+    <string name="profile_trigger_a2dp_disconnect">Vid A2DP-frånkoppling</string>
     <string name="profile_tabs_wifi">Wi\u2011Fi</string>
     <string name="profile_tabs_bluetooth">Bluetooth</string>
     <string name="profile_tabs_nfc">NFC</string>
+    <string name="profile_triggers_header">Utlösare som kommer att aktivera den här profilen</string>
+    <string name="profile_setup_setup_triggers_title">Steg 1: Lägg till utlösare</string>
     <string name="profile_setup_setup_triggers_title_config">Modifiera utlösare: <xliff:g id="profile_name">%1$s</xliff:g></string>
     <string name="profile_setup_actions_title">Steg 2: Ställ in åtgärder</string>
     <string name="wireless_networks_settings_title">Trådlöst &amp; nätverk</string>
+    <string name="no_bluetooth_triggers">Inga Bluetooth-enheter har parkopplats.\nTryck för att parkoppla en Bluetooth-enhet innan du konfigurerar utlösare.</string>
+    <string name="no_wifi_triggers">Inga Wi\u2011Fi\u2011nätverk har konfigurerats.\nTryck för att koppla upp dig på ett Wi\u2011Fi\u2011nätverk innan du konfigurerar utlösare.</string>
+    <string name="no_triggers_configured">Inga utlösare har konfigurerats. Tryck för att lägga till fler.</string>
     <string name="profiles_settings_title">Systemprofiler</string>
     <string name="profile_settings_title">Profil</string>
+    <string name="profile_trigger_configure">Konfigurera utlösare</string>
     <string name="profile_write_nfc_tag">Skriv till en NFC-tagg</string>
     <string name="profile_selected">Vald profil: %1$s</string>
     <string name="profile_unknown_nfc_tag">Okänd profil</string>
@@ -168,6 +176,7 @@
     <string name="connection_state_enabled">Aktivera</string>
     <string name="profile_profiles_manage">Profiler</string>
     <string name="profile_trigger_connect">Vid anslutning</string>
+    <string name="profile_trigger_disconnect">Vid frånkoppling</string>
     <string name="profile_trigger_notrigger">Ingen utlösare</string>
     <string name="sound_mode">Aviseringsläge</string>
     <string name="lights_mode">Ljusläge</string>
@@ -180,6 +189,7 @@
     <string name="profile_airplanemode_title">Flygplansläge</string>
     <string name="profile_brightness_override_summary">Inställd på %1$d%%</string>
     <string name="toggleWifi">Wi\u2011Fi</string>
+    <string name="toggleWifiAp">Mobil surfzon</string>
     <string name="toggleBluetooth">Bluetooth</string>
     <string name="toggleData">Dataanslutning</string>
     <string name="toggleNfc">NFC</string>
@@ -224,8 +234,13 @@
     <string name="network_traffic_autohide">Göm automatiskt</string>
     <string name="network_traffic_units_kilobits">Kilobits per sekund (kb/s)</string>
     <string name="protected_apps_manager_title">Skyddade appar</string>
-    <string name="anonymous_statistics_title">LineageOS statistik</string>
+    <string name="contributors_cloud_fragment_title">Bidragsgivare</string>
+    <string name="anonymous_statistics_title">LineageOS-statistik</string>
+    <string name="anonymous_statistics_summary">Hjälp till att göra LineageOS bättre genom att skicka in anonym statistik</string>
     <string name="anonymous_statistics_warning_title">Om</string>
+    <string name="anonymous_statistics_warning">Att delta i LineageOS statistikprogram tillåter att icke-personlig data skickas till
+        LineageOS-utvecklarna för att spåra unika installationer mellan enheter. Den delgivna informationen innehåller ett unikt ID-nummer,
+        som inte kränker din integritet eller dina personliga data. Datan skickas varje gång enheten startas.\n\nFör ett exempel på den data som skickas, tryck på Förhandsgranska data.</string>
     <string name="preview_data_title">Förhandsgranska data</string>
     <string name="view_stats_title">Visa statistik</string>
     <string name="preview_id_title">Unikt ID</string>

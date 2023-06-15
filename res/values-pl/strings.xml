@@ -29,8 +29,8 @@
     <string name="back">Wróć</string>
     <string name="finish">Zakończ</string>
     <string name="next">Dalej</string>
-    <string name="on">Włączone</string>
-    <string name="off">Wyłączone</string>
+    <string name="on">Włączono</string>
+    <string name="off">Wyłączono</string>
     <string name="yes">Tak</string>
     <string name="no">Nie</string>
     <string name="search">Szukaj</string>
@@ -166,7 +166,7 @@
     <string name="volbtn_music_controls_title">Sterowanie odtwarzaniem</string>
     <string name="volbtn_music_controls_summary">Przełączanie utworów muzycznych przy wyłączonym ekranie poprzez przytrzymanie klawiszy głośności</string>
     <string name="volbtn_cursor_control_title">Poruszanie kursorem za pomocą klawiszy głośności</string>
-    <string name="volbtn_cursor_control_off">Wyłączone</string>
+    <string name="volbtn_cursor_control_off">Wyłączono</string>
     <string name="volbtn_cursor_control_on">Przyciski głośności w górę/dół poruszają kursorem w lewo/prawo</string>
     <string name="volbtn_cursor_control_on_reverse">Przyciski głośności w górę/dół przesuwają kursor w prawo/lewo</string>
     <string name="power_end_call_title">Zakończ połączenie</string>
@@ -192,9 +192,9 @@
     <string name="keyboard_backlight_seekbar_title">Jasność klawiatury</string>
     <string name="backlight_timeout_title">Czas podświetlenia</string>
     <string name="backlight_timeout_unlimited">Nie wyłączaj</string>
-    <string name="backlight_summary_disabled">Wyłączone</string>
-    <string name="backlight_summary_enabled_with_timeout">Włączone przez <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="backlight_summary_enabled">Włączone</string>
+    <string name="backlight_summary_disabled">Wyłączono</string>
+    <string name="backlight_summary_enabled_with_timeout">Włączono na <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Włączono</string>
     <string name="disable_navkeys_title">Włącz ekranowy pasek nawigacji</string>
     <string name="disable_navkeys_summary">Włącz ekranowy pasek nawigacji i wyłącz przyciski sprzętowe</string>
     <string name="swap_capacitive_keys_title">Zamień miejscami przyciski pojemnościowe</string>
@@ -279,8 +279,8 @@
     <string name="profile_app_group_category_title">Nadpisuje powiadomienia</string>
     <string name="profile_app_group_item_instructions">Dodaj lub usuń grupy</string>
     <string name="profile_app_group_item_instructions_summary">Dodaj lub usuń powiadomienie nadpisywania grupy aplikacji do tego profilu</string>
-    <string name="profile_entries_on">Wł.</string>
-    <string name="profile_entries_off">Wył.</string>
+    <string name="profile_entries_on">Włączono</string>
+    <string name="profile_entries_off">Wyłączono</string>
     <string name="profile_entries_no_override">Nie nadpisuj</string>
     <string name="profile_name_title">Nazwa</string>
     <string name="new_profile_name">&lt;nowy profil&gt;</string>
@@ -344,7 +344,7 @@
     <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija szybkie ustawienia</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Po lewej</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Po prawej</string>
-    <string name="status_bar_quick_qs_pulldown_off">Wyłączone</string>
+    <string name="status_bar_quick_qs_pulldown_off">Wyłączono</string>
     <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
     <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>
     <string name="status_bar_double_tap_to_sleep_title">Dwukrotnie naciśnij, aby uśpić</string>
@@ -362,7 +362,7 @@
     <string name="status_bar_clock_position_left">Po lewej</string>
     <string name="status_bar_clock_position_center">Na środku</string>
     <string name="status_bar_am_pm_title">Znacznik AM/PM</string>
-    <string name="status_bar_am_pm_info">24 godzinny format zegara jest włączony</string>
+    <string name="status_bar_am_pm_info">Włączono 24-godzinny format zegara</string>
     <string name="status_bar_am_pm_normal">Normalny</string>
     <string name="status_bar_am_pm_small">Mały</string>
     <string name="status_bar_am_pm_hidden">Ukryty</string>
@@ -388,7 +388,7 @@
     <string name="network_traffic_settings_title">Monitor ruchu sieciowego</string>
     <string name="network_traffic_settings_summary">Pokaż bieżące poziomy ruchu sieciowego na pasku stanu</string>
     <string name="network_traffic_mode_title">Tryb wyświetlania</string>
-    <string name="network_traffic_mode_disable">Wyłączone</string>
+    <string name="network_traffic_mode_disable">Wyłączono</string>
     <string name="network_traffic_mode_up">Tylko wysyłanie</string>
     <string name="network_traffic_mode_down">Tylko pobieranie</string>
     <string name="network_traffic_mode_all">Wysyłanie i pobieranie</string>
@@ -499,7 +499,7 @@
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Restrykcyjny</string>
-    <string name="trust_feature_selinux_value_disabled">Wyłączone</string>
+    <string name="trust_feature_selinux_value_disabled">Wyłączono</string>
     <string name="trust_feature_selinux_explain">SELinux narzuca, które procesy mają dostęp do poszczególnych plików na Twoim urządzeniu.\nZapobiega to dostępowi aplikacjom i usługom do plików, które nie powinny być obsługiwane. Dzięki temu złośliwy proces ma ograniczony dostęp, zapewniając utrzymanie bezpieczeństwa.</string>
     <string name="trust_feature_security_patches">Poprawki zabezpieczeń Androida</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
@@ -508,9 +508,9 @@
     <string name="trust_feature_security_patches_value_old">Nieaktualne</string>
     <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google w kooperacji z dostawcami SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzenia trwałych szkód w twoim urządzeniu. Łatki udostępniane przez Google są aplikowane w każdym miesiącu na wszystkich wspieranych urządzeniach, ale poprawki dla kodu własnościowego mogą być aplikowane tylko przez producenta twojego telefonu. By utrzymać twój telefon bezpiecznym, zawsze używaj najnowsze wersji LineageOS i (jeżeli dotyczy) twój obraz vendor jest zaktualizowany do najnowszej wersji zalecanej przez LineageOS.</string>
     <string name="trust_feature_encryption">Szyfrowanie</string>
-    <string name="trust_feature_encryption_value_enabled">Włączone</string>
+    <string name="trust_feature_encryption_value_enabled">Włączono</string>
     <string name="trust_feature_encryption_value_nolock">Wymaga zabezpieczonego ekranu blokady</string>
-    <string name="trust_feature_encryption_value_disabled">Wyłączone</string>
+    <string name="trust_feature_encryption_value_disabled">Wyłączono</string>
     <string name="trust_feature_encryption_explain">Szyfrowanie twojego urządzenia zabezpiecza znajdujące się na nim dane gdy twój telefon jest wyłączony, lub znajduje się w trybie recovery. Jest to szczególnie ważne kiedy twoje urządzenie zostanie skradzione, gdyż uniemożliwia to dostęp do wiadomości, kontaktów i innych prywatnych danych bez podania hasła.\nAby szyfrowanie było bardziej efektywne potrzebne jest ustawienie zabezpieczenia ekranu blokady.</string>
     <string name="trust_category_tools">Prywatność</string>
     <string name="trust_notification_alerts_title">Alerty zabezpieczeń</string>

@@ -62,11 +62,11 @@
     <string name="battery_light_title">Lučka za baterijo</string>
     <string name="battery_light_enable_title">Omogoči lučko za baterijo</string>
     <string name="battery_low_pulse_title">Utripaj, če je baterija skoraj prazna</string>
-    <string name="battery_light_full_charge_disabled_title">Izklopi, ko je napolnjeno</string>
+    <string name="battery_light_full_charge_disabled_title">Izklopi, ko je popolnoma napolnjena</string>
     <string name="battery_light_list_title">Barve</string>
     <string name="battery_light_low_color_title">Nizko stanje baterije</string>
     <string name="battery_light_medium_color_title">Polnjenje</string>
-    <string name="battery_light_full_color_title">Napolnjen</string>
+    <string name="battery_light_full_color_title">Popolnoma napolnjena</string>
     <string name="notification_light_title">Lučka za obvestila</string>
     <string name="notification_light_enable_title">Omogoči lučko za obvestila</string>
     <string name="notification_light_general_title">Splošno</string>
