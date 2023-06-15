@@ -59,6 +59,8 @@
     <string name="light_brightness_title">Niveau de luminosité</string>
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Ne pas déranger</string>
+    <string name="charging_control_title">Contrôle de la charge</string>
+    <string name="charging_control_enable_title">Activer le contrôle de la charge</string>
     <string name="battery_light_title">Voyant batterie</string>
     <string name="battery_light_enable_title">Activer le voyant de la batterie</string>
     <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>

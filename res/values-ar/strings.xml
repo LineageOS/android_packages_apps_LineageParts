@@ -37,6 +37,7 @@
     <string name="disabled">معطّل</string>
     <string name="enabled">مفعل</string>
     <string name="privacy_settings_title">الخصوصية</string>
+    <string name="channel_light_settings_name">معاينة إعدادات الإضاءة</string>
     <string name="edit_light_settings">تعديل إعدادات الإضاءة</string>
     <string name="pulse_speed_title">طول و سرعة النبض</string>
     <string name="default_time">عادي</string>
@@ -433,6 +434,9 @@
     <string name="charging_sounds_summary">تشغيل الصوت عند توصيل أو فصل مصدر الطاقة</string>
     <string name="power_notifications_vibrate_title">إهتزاز</string>
     <string name="charging_sounds_ringtone_silent">صامت</string>
+    <string name="charging_sounds_notification_category_title">أصوات الإشعارات</string>
+    <string name="wired_charging_sounds_title">شحن سلكي</string>
+    <string name="wireless_charging_sounds_title">الشحن اللاسلكي</string>
     <string name="touchscreen_gesture_settings_title">الإيماءات اللمسية</string>
     <string name="touchscreen_gesture_settings_summary">عمل إيماءات لمسية متعددة لإجراءات سريعة</string>
     <string name="touchscreen_gestures_haptic_feedback_title">رد الفعل الإهتزازي</string>
