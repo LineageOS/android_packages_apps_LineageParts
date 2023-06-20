@@ -31,6 +31,20 @@
     <string name="dialog_delete_message">¿Quies quitar l\'elementu seleicionáu?</string>
     <string name="brightness">Nivel del brillu</string>
     <string name="light_brightness_zen">Nun molestar</string>
+    <string name="charging_control_title">Control de la carga</string>
+    <string name="charging_control_enable_title">Activar el control de la carga</string>
+    <string name="charging_control_mode_title">Mou de la carga</string>
+    <string name="charging_control_mode_auto_title">Programación automática</string>
+    <string name="charging_control_mode_auto_summary">Determina automáticamente cuándo comienza la carga según les alarmes configuraes</string>
+    <string name="charging_control_mode_custom_title">Programación personalizada</string>
+    <string name="charging_control_mode_custom_summary">Configura una hora pa completar la carga</string>
+    <string name="charging_control_mode_limit_title">Llendar la carga</string>
+    <string name="charging_control_mode_limit_summary">Llenda la carga a un porcentaxe concretu</string>
+    <string name="charging_control_start_time_title">Hora d\'aniciu</string>
+    <string name="charging_control_start_time_summary">El control de la carga actívase cuando anicies la carga dempués de la hora configurada (%s)</string>
+    <string name="charging_control_target_time_title">Hora del fin de la carga</string>
+    <string name="charging_control_target_time_summary">La batería va cargase completamente a la hora configurada (%s)</string>
+    <string name="charging_control_limit_title">Llende</string>
     <string name="battery_light_enable_title">Activar la lluz de la batería</string>
     <string name="battery_low_pulse_title">Parpaguiar si queda poca batería</string>
     <string name="battery_light_full_charge_disabled_title">Apagar al completar la carga</string>
@@ -40,6 +54,7 @@
     <string name="notification_light_general_title">Xeneral</string>
     <string name="notification_light_applist_title">Aplicaciones</string>
     <string name="notification_light_missed_call_title">Llamada perdida</string>
+    <string name="notification_light_add_apps_empty_summary">P\'amestar un control per aplicación, activa «%1$s» ya primi «Amestar»</string>
     <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g> K  Nueche: <xliff:g id="night_temperature">%2$d</xliff:g> K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g> K</string>
     <string name="live_display_day">Día</string>
@@ -188,6 +203,7 @@
     <string name="network_traffic_mode_up">Namás la xuba</string>
     <string name="network_traffic_mode_down">Namás la baxada</string>
     <string name="network_traffic_mode_all">Xuba y baxada</string>
+    <string name="network_traffic_position_title">Posición</string>
     <string name="network_traffic_autohide_summary">Anubre\'l supervisor del tránsitu de rede cuando nun hai actividá</string>
     <string name="network_traffic_units_title">Unidaes de midida del tránsitu</string>
     <string name="network_traffic_units_kilobits">Kilobits per segundu (kb/s)</string>

@@ -59,6 +59,20 @@
     <string name="light_brightness_title">Nivells de lluminositat</string>
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">No molestis</string>
+    <string name="charging_control_title">Control de càrrega</string>
+    <string name="charging_control_enable_title">Activa el control de càrrega</string>
+    <string name="charging_control_mode_title">Mode de càrrega</string>
+    <string name="charging_control_mode_auto_title">Programació automàtica</string>
+    <string name="charging_control_mode_auto_summary">Determina automàticament quan s\'ha de començar a carregar en funció de les alarmes establertes</string>
+    <string name="charging_control_mode_custom_title">Programació personalitzada</string>
+    <string name="charging_control_mode_custom_summary">Estableix un temps objectiu per a la càrrega completa</string>
+    <string name="charging_control_mode_limit_title">Limita la càrrega</string>
+    <string name="charging_control_mode_limit_summary">Limiteu la càrrega a un percentatge determinat</string>
+    <string name="charging_control_start_time_title">Hora d\'inici</string>
+    <string name="charging_control_start_time_summary">El control de càrrega s\'activa quan comenceu a carregar després de %s</string>
+    <string name="charging_control_target_time_title">Temps de finalització de la càrrega</string>
+    <string name="charging_control_target_time_summary">La bateria es carregarà completament en %s</string>
+    <string name="charging_control_limit_title">Límit</string>
     <string name="battery_light_title">Llum de la bateria</string>
     <string name="battery_light_enable_title">Activa la llum de la bateria</string>
     <string name="battery_low_pulse_title">Parpalleja si la bateria està baixa</string>
@@ -392,6 +406,7 @@
     <string name="network_traffic_mode_up">Només pujada</string>
     <string name="network_traffic_mode_down">Només baixada</string>
     <string name="network_traffic_mode_all">Pujada i baixada</string>
+    <string name="network_traffic_position_title">Posició</string>
     <string name="network_traffic_autohide">Amaga automàticament</string>
     <string name="network_traffic_autohide_summary">Amaga el monitor de trànsit quan no hi hagi activitat</string>
     <string name="network_traffic_units_title">Unitats de mesura de trànsit</string>
@@ -524,6 +539,7 @@
     <string name="trust_restrict_usb_always">Denega les connexions USB</string>
     <string name="trust_restrict_usb_keyguard">Permet les connexions USB quan estigui desbloquejat</string>
     <string name="trust_restrict_usb_disabled">Permet sempre les connexions USB</string>
+    <string name="trust_summary">Manteniu el vostre dispositiu segur i protegiu la vostra privadesa</string>
     <string name="sms_security_check_limit_title">Límit de missatges SMS</string>
     <string name="sms_security_check_limit_summary">Les aplicacions poden enviar %s missatges en 1 minut abans de necessitar una confirmació</string>
     <string name="sms_security_check_limit_summary_none">Les aplicacions no tenen permès enviar cap missatge sense confirmar-ho</string>

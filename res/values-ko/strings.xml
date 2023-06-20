@@ -224,6 +224,7 @@
     <string name="power_menu_devicecontrols_title">기기 제어</string>
     <string name="power_menu_advanced_restart_title">고급 다시 시작</string>
     <string name="power_menu_advanced_restart_summary">화면 잠금이 해제되어 있으면 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션을 추가합니다.</string>
+    <string name="power_menu_emergency_affordance_enabled">긴급 상황 어포던스를 사용합니다</string>
     <string name="camera_double_tap_power_gesture_title">전원 버튼을 두 번 눌러 카메라 열기</string>
     <string name="camera_double_tap_power_gesture_desc">화면 잠금을 해제하지 않고 빠르게 카메라 열기</string>
     <string name="torch_long_press_power_gesture_title">길게 눌러 손전등 켜기</string>
@@ -523,6 +524,7 @@
     <string name="trust_restrict_usb_always">USB 연결 거부</string>
     <string name="trust_restrict_usb_keyguard">잠금 해제 시에만 USB 연결 허용</string>
     <string name="trust_restrict_usb_disabled">항상 USB 연결 허용</string>
+    <string name="trust_summary">개인 정보를 보호하고 기기를 안전하게 유지</string>
     <string name="sms_security_check_limit_title">SMS 메시지 발신 제한</string>
     <string name="sms_security_check_limit_summary">앱은 확인을 요청하기 전까지 1분 내에 %s개의 메시지만 보낼 수 있습니다.</string>
     <string name="sms_security_check_limit_summary_none">앱은 어떤 메시지도 확인 없이 보낼 수 없습니다.</string>
