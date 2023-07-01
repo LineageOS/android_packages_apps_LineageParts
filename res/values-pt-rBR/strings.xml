@@ -58,6 +58,11 @@
     <string name="light_brightness_title">Níveis de brilho</string>
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Não Perturbe</string>
+    <string name="charging_control_title">Controle de carregamento</string>
+    <string name="charging_control_enable_title">Habilitar controle de carregamento</string>
+    <string name="charging_control_mode_title">Modo de carregamento</string>
+    <string name="charging_control_mode_limit_title">Limitar o carregamento</string>
+    <string name="charging_control_limit_title">Limite</string>
     <string name="battery_light_title">Luz da bateria</string>
     <string name="battery_low_pulse_title">Pulsar quando a bateria estiver baixa</string>
     <string name="battery_light_full_charge_disabled_title">Desligar quando carregado</string>
@@ -371,6 +376,7 @@
     <string name="network_traffic_mode_up">Apenas upload</string>
     <string name="network_traffic_mode_down">Apenas download</string>
     <string name="network_traffic_mode_all">Upload e download</string>
+    <string name="network_traffic_position_title">Posição</string>
     <string name="network_traffic_autohide">Ocultar automaticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfego quando não houver atividade</string>
     <string name="network_traffic_units_title">Unidades de medida do tráfego</string>

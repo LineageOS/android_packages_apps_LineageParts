@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">Налады LineageOS</string>
     <string name="loading">Загрузка\u2026</string>
-    <string name="dlg_ok">Добра</string>
     <string name="cancel">Скасаваць</string>
     <string name="add">Дадаць</string>
     <string name="choose_app">Выбраць праграму</string>
@@ -102,7 +101,6 @@
     <string name="color_red_title">Чырвоны</string>
     <string name="color_green_title">Зялёны</string>
     <string name="color_blue_title">Сіні</string>
-    <string name="picture_adjustment_title">Карэкціроўка малюнка</string>
     <string name="picture_adjustment_summary">Карэкціраваць адценне, насычанасць, глыбіню і кантраст</string>
     <string name="adj_hue_title">Адценне</string>
     <string name="adj_saturation_title">Насычанасць</string>
@@ -112,7 +110,6 @@
     <string name="hardware_keys_power_key_title">Кнопка сілкавання</string>
     <string name="hardware_keys_back_key_title">Кнопка \"Назад\"</string>
     <string name="hardware_keys_assist_key_title">Кнопка Пошук</string>
-    <string name="hardware_keys_appswitch_key_title">Кнопка Нядаўнія праграмы</string>
     <string name="hardware_keys_camera_key_title">Кнопка \"Камера\"</string>
     <string name="hardware_keys_volume_keys_title">Кнопкі гучнасці</string>
     <string name="hardware_keys_short_press_title">Дзеянні пры кароткім націску</string>
@@ -185,8 +182,6 @@
     <string name="profile_action_system">Па змаўчаньні</string>
     <string name="profile_action_disable">Выключыць</string>
     <string name="profile_action_enable">Уключыць</string>
-    <string name="profile_trigger_a2dp_connect">Пры падлучэнні A2DP</string>
-    <string name="profile_trigger_a2dp_disconnect">Пры адлучэнні A2DP</string>
     <string name="profile_tabs_wifi">Wi\u2011Fi</string>
     <string name="profile_tabs_bluetooth">Bluetooth</string>
     <string name="profile_tabs_nfc">NFC</string>
@@ -205,12 +200,14 @@
     <string name="profile_settings_title">Профіль</string>
     <string name="profile_empty_list_profiles_off">Для выкарыстання і налад профіляў сістэмы задзейнічай функцыю \"Профілі\".</string>
     <string name="profile_settings_summary_off">Профілі адключаны</string>
+    <string name="profile_selected">Выбраны профіль: %1$s</string>
     <string name="profile_nfc_text">Запіс меткі NFC для профілю дазволіць дотыкам да меткі выбраць неабходны профіль. Пры паўторным дотыку будзе адноўлены профіль, які выкарыстоўваўся раней.</string>
     <string name="profile_unknown_nfc_tag">Невядомы профіль</string>
     <string name="profile_add_nfc_text">Гэта метка NFC спасылаецца на невядомы профіль. Далучэнне меткі NFC да існуючага профілю дазволіць выкарыстоўваць метку для яго выбару.</string>
     <string name="profile_remove_dialog_message">Выдаліць профіль %1$s?</string>
     <string name="profile_menu_fill_from_state">Імпартаваць бягучыя налады прылады</string>
     <string name="profile_remove_current_profile">Не атрымалася выдаліць бягучы профіль!</string>
+    <string name="profile_entries_on">Уключана</string>
     <string name="profile_entries_off">Выключана</string>
     <string name="profile_name_title">Назва</string>
     <string name="new_profile_name">&lt;новы профіль&gt;</string>
@@ -227,7 +224,6 @@
     <string name="profile_volumeoverrides_title">Перавызначэнне гуку</string>
     <string name="connection_state_enabled">Уключыць</string>
     <string name="volume_override_summary">Задаць у %1$s/%2$s</string>
-    <string name="profile_volume_override_checkbox_label">Перавызначыць гук</string>
     <string name="profile_profiles_manage">Профілі</string>
     <string name="profile_settings">Налады профілю</string>
     <string name="profile_trigger_connect">Пры падключэнні</string>
@@ -265,7 +261,6 @@
     <string name="media_volume_title">Медыя</string>
     <string name="alarm_volume_title">Будзільнік</string>
     <string name="status_bar_title">Панэль стану</string>
-    <string name="status_bar_quick_qs_pulldown_title">Хуткі доступ</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s край радка панэлі стану выцягвае хуткія налады</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Злева</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Справа</string>
@@ -331,10 +326,10 @@
     <string name="long_screen_settings_no_apps">Няма праграм</string>
     <string name="charging_sounds_settings_title">Гукі зарадкі</string>
     <string name="charging_sounds_enable_title">Уключыць гукі зарадкі</string>
+    <string name="charging_sounds_summary">Прайграванне гуку пры падключэнні або адключэнні крыніцы сілкавання</string>
     <string name="power_notifications_vibrate_title">Вібрацыя</string>
     <string name="charging_sounds_ringtone_silent">Без гуку</string>
     <string name="touchscreen_gesture_settings_title">Жэсты сэнсарнага экрана</string>
-    <string name="touchscreen_gesture_settings_summary">Наладзьце жэсты сэнсарнага экрана для выканання хуткіх дзеянняў</string>
     <string name="touchscreen_gestures_haptic_feedback_summary">Вібрыраваць пры выяўленні жэста сэнсарнага экрана</string>
     <string name="touchscreen_gesture_two_finger_down_swipe_title">Правядзіце ўніз двума пальцамі</string>
     <string name="touchscreen_gesture_one_finger_up_swipe_title">Правядзіце ўверх адным пальцам</string>
@@ -357,6 +352,7 @@
     <string name="touchscreen_gesture_action_volume_up">Павялічыць гучнасць</string>
     <string name="touchscreen_gesture_action_ambient_display">Паказваць актыўны экран</string>
     <string name="trust_feature_selinux_value_disabled">Адключана</string>
+    <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nВытворца: %2$s</string>
     <string name="trust_feature_encryption">Шыфраванне</string>
     <string name="trust_feature_encryption_value_disabled">Адключана</string>
     <string name="trust_warnings_keys">Подпіс зборкі</string>

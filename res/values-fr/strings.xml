@@ -61,6 +61,8 @@
     <string name="light_brightness_zen">Ne pas déranger</string>
     <string name="charging_control_title">Contrôle de la charge</string>
     <string name="charging_control_enable_title">Activer le contrôle de la charge</string>
+    <string name="charging_control_mode_auto_title">Planification automatique</string>
+    <string name="charging_control_mode_limit_summary">Limiter la charge à un certain pourcentage</string>
     <string name="charging_control_start_time_summary">Le contrôle de charge s\'active lorsque vous commencez à charger après %s</string>
     <string name="battery_light_title">Voyant batterie</string>
     <string name="battery_light_enable_title">Activer le voyant de la batterie</string>
@@ -395,6 +397,7 @@
     <string name="network_traffic_mode_up">Débit montant uniquement</string>
     <string name="network_traffic_mode_down">Débit descendant uniquement</string>
     <string name="network_traffic_mode_all">Débits montant et descendant</string>
+    <string name="network_traffic_position_title">Position</string>
     <string name="network_traffic_autohide">Masquer automatiquement</string>
     <string name="network_traffic_autohide_summary">Masquer le moniteur réseau lorsqu\'il n\'y a pas d\'activité</string>
     <string name="network_traffic_units_title">Unités de mesure du trafic</string>
