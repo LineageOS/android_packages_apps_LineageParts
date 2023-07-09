@@ -16,6 +16,24 @@
       "message": "acquire() is called from here.",
       "revId": "f06caa639ec8c4e6040cf710448050c822860094",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ec6d6e9_6a203984",
+        "filename": "src/org/lineageos/lineageparts/gestures/KeyHandler.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-09T22:28:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cb06f905_15c592b4",
+      "revId": "f06caa639ec8c4e6040cf710448050c822860094",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
