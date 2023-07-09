@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb06f905_15c592b4",
+        "filename": "src/org/lineageos/lineageparts/gestures/KeyHandler.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-07-09T22:27:19Z",
+      "side": 1,
+      "message": "acquire() is called from here.",
+      "revId": "f06caa639ec8c4e6040cf710448050c822860094",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
