@@ -184,7 +184,9 @@ public class KeyHandler implements DeviceKeyHandler {
         mSensorManager.registerListener(new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent event) {
-                mProximityWakeLock.release();
+                if (mProximityWakeLock.isHeld()) {
+                    mProximityWakeLock.release();
+                }
                 mSensorManager.unregisterListener(this);
                 if (!mEventHandler.hasMessages(GESTURE_REQUEST)) {
                     // The sensor took too long; ignoring
