@@ -106,12 +106,15 @@
     <string name="live_display_enhance_color_summary">Förbättra färglyster på hudtoner, landskap, och andra bilder</string>
     <string name="live_display_color_profile_title">Färgprofil</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
+    <string name="live_display_color_profile_standard_summary">Korrekta färger och kritvitt</string>
     <string name="live_display_color_profile_natural_title">Naturlig</string>
     <string name="live_display_color_profile_natural_summary">Realistiska färger och hudtoner</string>
     <string name="live_display_color_profile_dynamic_title">Dynamisk</string>
+    <string name="live_display_color_profile_dynamic_summary">Förbättrade färger och kritvitt</string>
     <string name="live_display_color_profile_cinema_title">Biograf</string>
     <string name="live_display_color_profile_cinema_summary">Perfekt färgåtergivning för video</string>
     <string name="live_display_color_profile_astronomy_title">Astronomi</string>
+    <string name="live_display_color_profile_astronomy_summary">Djup röd för att bevara mörkerseendet</string>
     <string name="live_display_color_profile_photography_title">Fotografering</string>
     <string name="live_display_color_profile_photography_summary">Perfekt färgåtergivning för foton</string>
     <string name="live_display_color_profile_basic_title">Grundläggande</string>
@@ -121,7 +124,9 @@
     <string name="live_display_color_profile_reading_title">Läser</string>
     <string name="live_display_color_profile_reading_summary">Varmare färger för mindre påfrestning på ögonen</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Färger överensstämmer med sRGB-färgrymden</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Färger överensstämmer med DCI-P3-färgrymden</string>
     <string name="live_display_reading_mode_title">Läsläge</string>
     <string name="live_display_reading_mode_summary">Gråskaleläge för långtidsläsning</string>
     <string name="color_calibration_title">Färgkalibrering</string>
@@ -183,7 +188,10 @@
     <string name="button_backlight_title">Bakgrundsbelysning</string>
     <string name="button_backlight_enabled">Knappljus</string>
     <string name="button_backlight_only_when_pressed_title">Tänd knapparna enbart när de trycks ned</string>
+    <string name="keyboard_backlight_enabled">Tangentbordsljus</string>
+    <string name="button_backlight_seekbar_title">Knappljusstyrka</string>
     <string name="keyboard_backlight_seekbar_title">Tangetbordsljusstyrka</string>
+    <string name="backlight_timeout_title">Tidsgräns för belysning</string>
     <string name="backlight_timeout_unlimited">Stäng inte av</string>
     <string name="backlight_summary_disabled">Avaktiverad</string>
     <string name="backlight_summary_enabled_with_timeout">Aktiverat i <xliff:g id="timeout">%s</xliff:g></string>
@@ -192,6 +200,7 @@
     <string name="disable_navkeys_summary">Aktivera navigeringsfält på skärmen och inaktivera hårdvaruknappar</string>
     <string name="navigation_bar_category">Navigeringsfält</string>
     <string name="navigation_bar_invert_layout_title">Invertera layout</string>
+    <string name="navigation_bar_invert_layout_summary">Inverterar utformningen för navigeringsfältet och andra föremål, som till exempel IME-växlaren</string>
     <string name="navigation_bar_left_summary">Placera navigeringsfältet på vänster sida av skärmen i landskapsläge</string>
     <string name="navigation_bar_arrow_keys_title">Visa piltangenterna under tiden du skriver</string>
     <string name="navigation_bar_home_long_press_title">Åtgärd för långtryck på hemknappen</string>
