@@ -37,6 +37,7 @@
     <string name="disabled">已停用</string>
     <string name="enabled">已啟用</string>
     <string name="privacy_settings_title">隱私權</string>
+    <string name="channel_light_settings_name">淺色設定預覽</string>
     <string name="edit_light_settings">編輯指示燈設定</string>
     <string name="pulse_speed_title">閃爍呼吸燈長度與速度</string>
     <string name="default_time">正常</string>
@@ -59,6 +60,7 @@
     <string name="light_brightness_normal">一般</string>
     <string name="light_brightness_zen">勿干擾模式</string>
     <string name="battery_light_title">電量指示燈</string>
+    <string name="battery_light_enable_title">啟用電池指示燈</string>
     <string name="battery_low_pulse_title">電量不足時閃爍呼吸燈</string>
     <string name="battery_light_full_charge_disabled_title">充電完成後關閉</string>
     <string name="battery_light_list_title">顏色</string>
@@ -66,6 +68,7 @@
     <string name="battery_light_medium_color_title">充電中</string>
     <string name="battery_light_full_color_title">電量充足</string>
     <string name="notification_light_title">通知指示燈</string>
+    <string name="notification_light_enable_title">啟用通知指示燈</string>
     <string name="notification_light_general_title">一般</string>
     <string name="notification_light_advanced_title">進階</string>
     <string name="notification_light_applist_title">應用程式</string>
@@ -81,6 +84,7 @@
     <string name="notification_light_automagic_summary">自動選擇顏色</string>
     <string name="led_notification_title">指示燈設定</string>
     <string name="led_notification_text">已透過設定啟用 LED 指示燈</string>
+    <string name="notification_light_add_apps_empty_summary">若要自訂個別應用程式的指示燈，請先啟用「%1$s」然後按下「新增」按鈕。</string>
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
     <string name="live_display_color_temperature_title">色溫</string>
@@ -196,6 +200,7 @@
     <string name="swap_capacitive_keys_title">交換實體按鈕</string>
     <string name="swap_capacitive_keys_summary">交換總覽鍵和返回鍵的順序</string>
     <string name="navigation_bar_category">導覽列</string>
+    <string name="navigation_bar_enable_taskbar_title">啟用工作列</string>
     <string name="navigation_bar_invert_layout_title">反轉佈局</string>
     <string name="navigation_bar_invert_layout_summary">反轉導覽列和其他項目的版面配置，例如輸入法選擇器</string>
     <string name="navigation_bar_left_summary">橫向模式下將導覽列置於螢幕左側</string>
@@ -207,6 +212,7 @@
     <string name="navigation_bar_app_switch_long_press_title">多工鍵長按動作</string>
     <string name="navigation_bar_edge_long_swipe_title">邊緣長滑動作</string>
     <string name="power_menu_title">電源選單</string>
+    <string name="power_menu_items_title">電源選單項目</string>
     <string name="power_menu_screenshot_title">螢幕擷取</string>
     <string name="power_menu_screenshot_summary">長按即可部分螢幕擷取</string>
     <string name="power_menu_airplane_title">飛航模式</string>
@@ -215,6 +221,10 @@
     <string name="power_menu_bug_report_devoptions_unavailable">由於開發人員選項未啟用，錯誤報告已被停用</string>
     <string name="power_menu_bug_report_unavailable_for_user">非主要使用者的錯誤報告已被停用</string>
     <string name="power_menu_emergency_title">緊急情況</string>
+    <string name="power_menu_devicecontrols_title">裝置控制</string>
+    <string name="power_menu_advanced_restart_title">進階重新啟動</string>
+    <string name="power_menu_advanced_restart_summary">解鎖後，在電源選單加入重新啟動進入 recovery 或 bootloader 的選項</string>
+    <string name="power_menu_emergency_affordance_enabled">「緊急呼叫」已啟用</string>
     <string name="camera_double_tap_power_gesture_title">按住電源鍵兩下開啟相機</string>
     <string name="camera_double_tap_power_gesture_desc">快速開啟相機，無需解鎖螢幕</string>
     <string name="torch_long_press_power_gesture_title">長按開啟手電筒</string>
@@ -247,6 +257,8 @@
     <string name="no_triggers_configured_nfc">輕觸即可設定新的 NFC 觸發器。</string>
     <string name="profile_setup_actions_description">現在配置設定檔啟動時將發生的動作</string>
     <string name="profiles_settings_title">系統設定檔</string>
+    <string name="profiles_settings_enable_title">啟用設定檔</string>
+    <string name="profiles_create_new">建立新設定檔</string>
     <string name="profile_settings_title">設定檔</string>
     <string name="profile_empty_list_profiles_off">開啟設定檔功能即可設定與使用設定檔。</string>
     <string name="profile_settings_summary_off">已停用設定檔</string>
@@ -344,6 +356,7 @@
     <string name="status_bar_clock_show_seconds_title">顯示秒數</string>
     <string name="status_bar_clock_show_seconds_summary">顯示小時、分鐘和秒數</string>
     <string name="status_bar_clock_auto_hide_title">自動隱藏</string>
+    <string name="status_bar_clock_auto_hide_summary">在主畫面時自動隱藏時鐘</string>
     <string name="status_bar_clock_position_title">時鐘位置</string>
     <string name="status_bar_clock_position_right">靠右</string>
     <string name="status_bar_clock_position_left">靠左</string>
@@ -430,9 +443,13 @@
     <string name="long_screen_settings_summary">強制舊型應用程式使用全螢幕的比例</string>
     <string name="long_screen_settings_no_apps">沒有應用程式</string>
     <string name="charging_sounds_settings_title">充電音效</string>
+    <string name="charging_sounds_enable_title">啟用充電音效</string>
     <string name="charging_sounds_summary">接上或拔除電源時播放音效</string>
     <string name="power_notifications_vibrate_title">震動</string>
     <string name="charging_sounds_ringtone_silent">靜音</string>
+    <string name="charging_sounds_notification_category_title">通知音效</string>
+    <string name="wired_charging_sounds_title">有線充電</string>
+    <string name="wireless_charging_sounds_title">無線充電</string>
     <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
     <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>
     <string name="touchscreen_gestures_haptic_feedback_title">觸控震動</string>
@@ -501,6 +518,10 @@
     <string name="trust_onboarding_learn_more">瞭解更多</string>
     <string name="trust_onboarding_done">明白了</string>
     <string name="trust_restrict_usb_title">限制 USB</string>
+    <string name="trust_restrict_usb_summary">對 USB 連線的控制支援，如耳機、儲存裝置、輸入裝置 (滑鼠、鍵盤、手把) 與 ADB</string>
+    <string name="trust_restrict_usb_always">拒絕 USB 連線</string>
+    <string name="trust_restrict_usb_keyguard">解鎖時允許 USB 連線</string>
+    <string name="trust_restrict_usb_disabled">一律允許 USB 連線</string>
     <string name="sms_security_check_limit_title">簡訊訊息限制</string>
     <string name="sms_security_check_limit_summary">在使用者認可之前，應用程式在 1 分鐘內只能傳送 %s 則訊息</string>
     <string name="sms_security_check_limit_summary_none">未經確認的應用程式不允許傳送任何訊息</string>
