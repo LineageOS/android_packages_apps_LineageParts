@@ -38,6 +38,7 @@
     <string name="disabled">已停用</string>
     <string name="enabled">已啟用</string>
     <string name="privacy_settings_title">隱私權</string>
+    <string name="channel_light_settings_name">淺色設定預覽</string>
     <string name="edit_light_settings">編輯指示燈設定</string>
     <string name="pulse_speed_title">閃爍呼吸燈長度與速度</string>
     <string name="default_time">正常</string>
@@ -352,6 +353,7 @@
     <string name="status_bar_clock_show_seconds_title">顯示秒數</string>
     <string name="status_bar_clock_show_seconds_summary">顯示小時、分鐘和秒數</string>
     <string name="status_bar_clock_auto_hide_title">自動隱藏</string>
+    <string name="status_bar_clock_auto_hide_summary">在主畫面時自動隱藏時鐘</string>
     <string name="status_bar_clock_position_title">時鐘位置</string>
     <string name="status_bar_clock_position_right">靠右</string>
     <string name="status_bar_clock_position_left">靠左</string>
@@ -469,6 +471,9 @@
     <string name="charging_sounds_enabled_summary">接上或拔除電源時播放音效</string>
     <string name="power_notifications_vibrate_title">震動</string>
     <string name="charging_sounds_ringtone_silent">靜音</string>
+    <string name="charging_sounds_notification_category_title">通知音效</string>
+    <string name="wired_charging_sounds_title">有線充電</string>
+    <string name="wireless_charging_sounds_title">無線充電</string>
     <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
     <string name="touchscreen_gesture_settings_summary">執行各種觸控螢幕手勢以進行快速動作</string>
     <string name="touchscreen_gestures_haptic_feedback_title">觸控震動</string>
