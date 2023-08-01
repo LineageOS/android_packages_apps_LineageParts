@@ -520,11 +520,11 @@
     <string name="trust_feature_security_patches_value_medium">Non aggiornate da qualche mese</string>
     <string name="trust_feature_security_patches_value_old">Non aggiornate</string>
     <string name="trust_feature_security_patches_explain">Le patch di sicurezza vengono rilasciate mensilmente da Google in cooperazione con i produttori di SoC per risolvere problemi che potrebbero essere sfruttati dalle app dannose per aggirare le restrizioni di sicurezza e causare danni permanenti al dispositivo. Le patch rese disponibili da Google sono applicate a tutti i dispositivi supportati, ma quelle relative ai componenti proprietari possono essere applicati solo dal produttore del dispositivo. Per mantenere il dispositivo sicuro, controlla che la tua versione di LineageOS sia sempre aggiornata ed eventualmente assicurati che i componenti proprietari come firmware e immagine vendor siano quelli raccomandati da LineageOS.</string>
-    <string name="trust_feature_encryption">Criptazione</string>
+    <string name="trust_feature_encryption">Cifratura</string>
     <string name="trust_feature_encryption_value_enabled">Attiva</string>
-    <string name="trust_feature_encryption_value_nolock">Necessita di una schermata di sblocco sicura</string>
+    <string name="trust_feature_encryption_value_nolock">Necessita di un blocco schermo sicuro</string>
     <string name="trust_feature_encryption_value_disabled">Disattivata</string>
-    <string name="trust_feature_encryption_explain">Abilitando la criptazione del dispositivo viene bloccato l\'accesso ai tuoi dati quando il dispositivo non è acceso. Questo risulta particolarmente importante nel caso in cui il dispositivo venisse rubato: in tal caso l\'accesso ai tuoi messaggi, contatti e altre informazioni personali verrà impedito fino all\'inserimento della tua password.\nPer rendere la criptazione del dispositivo più efficace è importante attivare un blocco schermo sicuro.</string>
+    <string name="trust_feature_encryption_explain">Abilitando la cifratura del dispositivo, viene bloccato l\'accesso ai tuoi dati quando il dispositivo non è acceso. Questo risulta particolarmente importante nel caso in cui il dispositivo venisse rubato: in tal caso l\'accesso ai tuoi messaggi, contatti e altre informazioni personali verrà impedito fino all\'inserimento della tua password.\nPer rendere la cifratura del dispositivo più efficace è importante attivare un blocco schermo sicuro.</string>
     <string name="trust_category_tools">Privacy</string>
     <string name="trust_notification_alerts_title">Avvisi di sicurezza</string>
     <string name="trust_warnings_alerts_intro">Puoi scegliere quali problemi di sicurezza devono essere segnalati. Per la tua sicurezza è consigliabile attivarli tutti</string>

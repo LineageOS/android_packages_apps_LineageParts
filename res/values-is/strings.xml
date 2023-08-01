@@ -59,6 +59,11 @@
     <string name="light_brightness_title">Birtustig</string>
     <string name="light_brightness_normal">Venjulegt</string>
     <string name="light_brightness_zen">Ekki ónáða</string>
+    <string name="charging_control_mode_auto_summary">Greina sjálfvirkt hvenær eigi að byrja hleðslu út frá stilltum áminningum</string>
+    <string name="charging_control_mode_custom_summary">Stilltu áætlaðan tíma að fullri hleðslu</string>
+    <string name="charging_control_start_time_summary">Hleðslustýring virkjast þegar þú byrjar að hlaða eftir %s</string>
+    <string name="charging_control_target_time_title">Áætlaður tími að fullri hleðslu</string>
+    <string name="charging_control_target_time_summary">Rafhlaða verður fullhlaðin kl. %s</string>
     <string name="battery_light_title">Rafhlöðuljós</string>
     <string name="battery_light_enable_title">Virkja ljós fyrir rafhlöðu</string>
     <string name="battery_low_pulse_title">Blikka ef lítið er á rafhlöðu</string>
@@ -519,6 +524,7 @@
     <string name="trust_restrict_usb_always">Hafna USB-tengingum</string>
     <string name="trust_restrict_usb_keyguard">Leyfa USB-tengingar þegar aflæst</string>
     <string name="trust_restrict_usb_disabled">Alltaf leyfa USB-tengingar</string>
+    <string name="trust_summary">Haltu tækinu þínu öruggu og verndaðu friðhelgi þína</string>
     <string name="sms_security_check_limit_title">Takmörk SMS-skilaboða</string>
     <string name="sms_security_check_limit_summary">Forrit geta sent %s skilaboð á 1 mínútu áður en staðfestingar er krafist</string>
     <string name="sms_security_check_limit_summary_none">Forritum er ekki leyft að senda nein skilaboð án staðfestingar</string>

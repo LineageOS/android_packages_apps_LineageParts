@@ -56,6 +56,7 @@
     <string name="notification_light_applist_title">Праграмы</string>
     <string name="notification_light_phonelist_title">Тэлефон</string>
     <string name="notification_light_missed_call_title">Прапушчаны выклік</string>
+    <string name="notification_light_voicemail_title">Галасавая пошта</string>
     <string name="notification_light_screen_on">Індыкатар пры ўключаным экране</string>
     <string name="notification_light_automagic_summary">Выбіраць колеры аўтаматычна</string>
     <string name="led_notification_title">Налады індыкатара</string>
@@ -130,8 +131,6 @@
     <string name="volbtn_music_controls_summary">Пераключаць музычныя кампазіцыі доўгім націскам кнопак гучнасці пры выключаным экране</string>
     <string name="volbtn_cursor_control_title">Кіраванне курсорам клавіятуры</string>
     <string name="volbtn_cursor_control_off">Адключана</string>
-    <string name="volbtn_cursor_control_on">Гучнасць больш/меньш перасоўвае курсор налева/направа</string>
-    <string name="volbtn_cursor_control_on_reverse">Гучнасць больш/меньш перасоўвае курсор направа/налева</string>
     <string name="power_end_call_title">Завяршыць выклік</string>
     <string name="power_end_call_summary">Завяршаць тэлефонны выклік націскам кнопкі выключэння</string>
     <string name="swap_volume_buttons_title">Пераарыентаваць</string>
@@ -303,6 +302,7 @@
     <string name="network_traffic_show_units_summary">Паказваць хуткасць перадачы даных у панэлі стану</string>
     <string name="contributor_info_menu">Інфармацыя пра ўдзельніка</string>
     <string name="contributions_info_menu">Агульная статыстыка</string>
+    <string name="view_stats_title">Прагляд статыстыкі</string>
     <string name="preview_device_title">Прылада</string>
     <string name="preview_version_title">Версія</string>
     <string name="preview_country_title">Краіна</string>

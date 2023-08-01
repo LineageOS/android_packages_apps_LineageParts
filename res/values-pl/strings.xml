@@ -515,7 +515,7 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Restrykcyjny</string>
     <string name="trust_feature_selinux_value_disabled">Wyłączono</string>
-    <string name="trust_feature_selinux_explain">SELinux narzuca, które procesy mają dostęp do poszczególnych plików na Twoim urządzeniu.\nZapobiega to dostępowi aplikacjom i usługom do plików, które nie powinny być obsługiwane. Dzięki temu złośliwy proces ma ograniczony dostęp, zapewniając utrzymanie bezpieczeństwa.</string>
+    <string name="trust_feature_selinux_explain">SELinux określa, które procesy mają dostęp do jakich plików/ścieżek na urządzeniu.\nZapobiega to niepowołanemu dostępowi aplikacji i usług do plików, do których nie powinny mieć dostępu. W ten sposób potencjalnie złośliwy proces jest ograniczony, a bezpieczeństwo jest zachowane.</string>
     <string name="trust_feature_security_patches">Poprawki zabezpieczeń Androida</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nDostawca: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Aktualne</string>
@@ -529,11 +529,11 @@
     <string name="trust_feature_encryption_explain">Szyfrowanie twojego urządzenia zabezpiecza znajdujące się na nim dane gdy twój telefon jest wyłączony, lub znajduje się w trybie recovery. Jest to szczególnie ważne kiedy twoje urządzenie zostanie skradzione, gdyż uniemożliwia to dostęp do wiadomości, kontaktów i innych prywatnych danych bez podania hasła.\nAby szyfrowanie było bardziej efektywne potrzebne jest ustawienie zabezpieczenia ekranu blokady.</string>
     <string name="trust_category_tools">Prywatność</string>
     <string name="trust_notification_alerts_title">Alerty zabezpieczeń</string>
-    <string name="trust_warnings_alerts_intro">Możesz wybrać o których problemach z bezpieczeństwem będziesz powiadamiany. Dla twojego bezpieczeństwa, zalecane jest włączenie wszystkich powiadomień</string>
+    <string name="trust_warnings_alerts_intro">Możesz wybrać, o których problemach związanych z bezpieczeństwem ma zostać wyświetlone ostrzeżenie. Dla twojego bezpieczeństwa zalecane jest włączenie wszystkich ostrzeżeń</string>
     <string name="trust_warnings_selinux">Stan SELinux</string>
     <string name="trust_warnings_keys">Sygnatura kompilacji</string>
     <string name="trust_onboarding_title">Przywitaj się z Trust</string>
-    <string name="trust_onboarding_description">Trust pomaga utrzymać twoje urządzenie bezpiecznym oraz chronić twoją prywatność.\nIkona Trust wyświetla się by pomóc ci poprzez sprawdzanie bezpieczeństwa zawartości.</string>
+    <string name="trust_onboarding_description">Trust pomaga utrzymać twoje urządzenie bezpiecznym oraz chronić twoją prywatność.\nIkona Trust pojawi się dopiero po zweryfikowaniu zawartości strony.</string>
     <string name="trust_onboarding_learn_more">Dowiedz się więcej</string>
     <string name="trust_onboarding_done">Rozumiem</string>
     <string name="trust_restrict_usb_title">Ogranicz połączenie USB</string>
