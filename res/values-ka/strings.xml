@@ -58,7 +58,7 @@
     <string name="pulse_speed_very_slow">ძალიან ნელი</string>
     <string name="light_brightness_title">სიკაშკაშის დონეები</string>
     <string name="light_brightness_normal">ჩვეულებრივი</string>
-    <string name="light_brightness_zen">არ შემაწუხოთ</string>
+    <string name="light_brightness_zen">არ შემაწუხო</string>
     <string name="charging_control_title">დამუხტვის მართვა</string>
     <string name="charging_control_enable_title">დამუხტვის მართვის ამოქმედება</string>
     <string name="charging_control_mode_title">დამუხტვის რეჟიმი</string>
@@ -92,7 +92,7 @@
     <string name="notification_light_missed_call_title">გამოტოვებული ზარი</string>
     <string name="notification_light_voicemail_title">ხმოვანი ფოსტა</string>
     <string name="notification_light_screen_on">განათება ჩართული ეკრანით</string>
-    <string name="notification_light_zen_mode">განათება რეჟიმში „არ შემაწუხოთ“</string>
+    <string name="notification_light_zen_mode">განათება რეჟიმში „არ შემაწუხო“</string>
     <string name="keywords_lights_brightness_level">შუქდიოდების სიკაშკაშის შემცირება</string>
     <string name="notification_light_automagic">ფერების თვითშერჩევა</string>
     <string name="notification_light_automagic_summary">მიმდინარეობს ფერების თვითშერჩევა</string>
