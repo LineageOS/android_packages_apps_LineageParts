@@ -58,7 +58,7 @@
     <string name="pulse_speed_very_slow">ძალიან ნელი</string>
     <string name="light_brightness_title">სიკაშკაშის დონეები</string>
     <string name="light_brightness_normal">ჩვეულებრივი</string>
-    <string name="light_brightness_zen">არ შემაწუხოთ</string>
+    <string name="light_brightness_zen">არ შემაწუხო</string>
     <string name="battery_light_title">ბატარეის განათება</string>
     <string name="battery_light_enable_title">ბატარეის განათების ჩართვა</string>
     <string name="battery_low_pulse_title">ციმციმი, ბატარეის დაჯდომისას</string>
@@ -78,7 +78,7 @@
     <string name="notification_light_missed_call_title">გამოტოვებული ზარი</string>
     <string name="notification_light_voicemail_title">ხმოვანი ფოსტა</string>
     <string name="notification_light_screen_on">განათება ჩართული ეკრანით</string>
-    <string name="notification_light_zen_mode">განათება რეჟიმში „არ შემაწუხოთ“</string>
+    <string name="notification_light_zen_mode">განათება რეჟიმში „არ შემაწუხო“</string>
     <string name="keywords_lights_brightness_level">შუქდიოდების სიკაშკაშის შემცირება</string>
     <string name="notification_light_automagic">ფერების თვითშერჩევა</string>
     <string name="notification_light_automagic_summary">მიმდინარეობს ფერების თვითშერჩევა</string>
