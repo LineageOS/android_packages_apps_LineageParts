@@ -140,6 +140,7 @@
     <string name="volume_answer_call_summary">Адказваць на ўваходныя выклікі, націскам кнопак гучнасці</string>
     <string name="home_answer_call_title">Адказаць на выклік</string>
     <string name="extras_title">Дадаткі</string>
+    <string name="additional_buttons_title">Дадатковыя кнопкі</string>
     <string name="click_partial_screenshot_title">Націсніце, каб зняць частку экрана</string>
     <string name="click_partial_screenshot_summary">Адначасова хутка націсніце кнопку гучнасці і сілкавання, каб зрабіць здымак часткі экрана</string>
     <string name="button_backlight_title">Падсветка</string>
@@ -285,6 +286,7 @@
     <string name="status_bar_battery_percentage_text_next">Побач са значком</string>
     <string name="status_bar_brightness_category">Яркасць</string>
     <string name="status_bar_brightness_slider_summary">Карэкціроўка яркасці ў хуткіх наладах</string>
+    <string name="status_bar_brightness_slider_auto_title">Аўтаматычная яркасць</string>
     <string name="status_bar_brightness_slider_show_never">Ніколі не паказваць</string>
     <string name="status_bar_toggle_brightness">Кіраванне яркасцю</string>
     <string name="status_bar_toggle_brightness_summary">Карэкціраваць яркасць экрана працягваннем па панэлі стану</string>

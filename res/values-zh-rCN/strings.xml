@@ -71,7 +71,7 @@
     <string name="charging_control_start_time_title">开始时间</string>
     <string name="charging_control_start_time_summary">当您在 %s 后开始充电时启用充电控制</string>
     <string name="charging_control_target_time_title">完全充满所需的时间</string>
-    <string name="charging_control_target_time_summary">电池将被 %s 完全充满</string>
+    <string name="charging_control_target_time_summary">电池将在 %s 完全充满</string>
     <string name="charging_control_limit_title">上限</string>
     <string name="battery_light_title">电量指示灯</string>
     <string name="battery_light_enable_title">启用电池指示灯</string>

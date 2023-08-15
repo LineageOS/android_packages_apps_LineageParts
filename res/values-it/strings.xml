@@ -209,7 +209,7 @@
     <string name="backlight_summary_disabled">Disattivata</string>
     <string name="backlight_summary_enabled_with_timeout">Attivata per <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Attivata</string>
-    <string name="disable_navkeys_title">Abilità barra di navigazione su schermo</string>
+    <string name="disable_navkeys_title">Abilita barra di navigazione su schermo</string>
     <string name="disable_navkeys_summary">Attiva la barra di navigazione a schermo e disattiva i pulsanti fisici</string>
     <string name="swap_capacitive_keys_title">Inverti pulsanti capacitivi</string>
     <string name="swap_capacitive_keys_summary">Inverti la posizione dei pulsanti \"recenti\" ed \"indietro\" </string>
