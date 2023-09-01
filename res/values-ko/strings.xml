@@ -59,6 +59,17 @@
     <string name="light_brightness_title">밝기 수준</string>
     <string name="light_brightness_normal">기본</string>
     <string name="light_brightness_zen">방해 금지 모드</string>
+    <string name="charging_control_title">충전 제어</string>
+    <string name="charging_control_enable_title">충전 제어 사용</string>
+    <string name="charging_control_mode_title">충전 모드</string>
+    <string name="charging_control_mode_auto_title">자동 스케줄</string>
+    <string name="charging_control_mode_custom_title">일정 직접 설정</string>
+    <string name="charging_control_mode_custom_summary">완전 충전할 목표 시간 설정</string>
+    <string name="charging_control_mode_limit_title">충전량 제한</string>
+    <string name="charging_control_mode_limit_summary">특정 퍼센트로 충전량 제한</string>
+    <string name="charging_control_start_time_title">시작 시간</string>
+    <string name="charging_control_target_time_title">완전 충전할 목표 시간</string>
+    <string name="charging_control_limit_title">제한</string>
     <string name="battery_light_title">배터리 표시등</string>
     <string name="battery_light_enable_title">배터리 표시등 사용</string>
     <string name="battery_low_pulse_title">배터리가 적을 때 깜빡임</string>
@@ -392,6 +403,7 @@
     <string name="network_traffic_mode_up">업로드만</string>
     <string name="network_traffic_mode_down">다운로드만</string>
     <string name="network_traffic_mode_all">업로드와 다운로드</string>
+    <string name="network_traffic_position_title">위치</string>
     <string name="network_traffic_autohide">자동 숨기기</string>
     <string name="network_traffic_autohide_summary">아무런 활동이 없을 때 트래픽 모니터 숨기기</string>
     <string name="network_traffic_units_title">트래픽 측정 단위</string>
