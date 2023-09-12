@@ -41,6 +41,12 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private static final int POSITION_CENTER = 1;
     private static final int POSITION_END = 2;
 
+    private static final int UNITS_KILOBITS = 0;
+    private static final int UNITS_MEGABITS = 1;
+    private static final int UNITS_KILOBYTES = 2;
+    private static final int UNITS_MEGABYTES = 3;
+    private static final int UNITS_AUTOBYTES = 4;
+
     private DropDownPreference mNetTrafficMode;
     private DropDownPreference mNetTrafficPosition;
     private LineageSecureSettingSwitchPreference mNetTrafficAutohide;
@@ -103,12 +109,13 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficUnits.setOnPreferenceChangeListener(this);
         int units = LineageSettings.Secure.getInt(resolver,
                 LineageSettings.Secure.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1);
+        boolean autoUnits = units == UNITS_AUTOBYTES;
         mNetTrafficUnits.setValue(String.valueOf(units));
 
         mNetTrafficShowUnits = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_SHOW_UNITS);
         mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
 
-        updateEnabledStates(mode);
+        updateEnabledStates(mode, autoUnits);
     }
 
     @Override
@@ -117,7 +124,9 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             int mode = Integer.valueOf((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
                     LineageSettings.Secure.NETWORK_TRAFFIC_MODE, mode);
-            updateEnabledStates(mode);
+            boolean autoUnits = LineageSettings.Secure.getInt(getActivity().getContentResolver(),
+                    LineageSettings.Secure.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1) == UNITS_AUTOBYTES;
+            updateEnabledStates(mode, autoUnits);
         } else if (preference == mNetTrafficPosition) {
             int position = Integer.valueOf((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
@@ -126,16 +135,20 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             int units = Integer.valueOf((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
                     LineageSettings.Secure.NETWORK_TRAFFIC_UNITS, units);
+            boolean autoUnits = units == UNITS_AUTOBYTES;
+            int mode = LineageSettings.Secure.getInt(getActivity().getContentResolver(),
+                    LineageSettings.Secure.NETWORK_TRAFFIC_MODE, 0);
+            updateEnabledStates(mode, autoUnits);
         }
         return true;
     }
 
-    private void updateEnabledStates(int mode) {
+    private void updateEnabledStates(int mode, boolean autoUnits) {
         final boolean enabled = mode != 0;
         mNetTrafficPosition.setEnabled(enabled);
         mNetTrafficAutohide.setEnabled(enabled);
         mNetTrafficUnits.setEnabled(enabled);
-        mNetTrafficShowUnits.setEnabled(enabled);
+        mNetTrafficShowUnits.setEnabled(enabled && !autoUnits);
     }
 
     private int getClockPosition() {
