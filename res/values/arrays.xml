@@ -403,6 +403,7 @@
         <item>@string/network_traffic_units_megabits</item>
         <item>@string/network_traffic_units_kilobytes</item>
         <item>@string/network_traffic_units_megabytes</item>
+        <item>@string/network_traffic_units_auto</item>
     </string-array>
 
     <string-array name="network_traffic_units_values" translatable="false">
@@ -410,6 +411,7 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
     </string-array>
 
     <!-- Sms limit -->
