@@ -392,6 +392,7 @@
         <item>@string/network_traffic_units_megabits</item>
         <item>@string/network_traffic_units_kilobytes</item>
         <item>@string/network_traffic_units_megabytes</item>
+        <item>@string/network_traffic_units_auto</item>
     </string-array>
 
     <string-array name="network_traffic_units_values" translatable="false">
@@ -399,6 +400,39 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="network_traffic_show_units_entries" translatable="false">
+        <item>@string/network_traffic_show_units_off</item>
+        <item>@string/network_traffic_show_units_on</item>
+        <item>@string/network_traffic_show_units_compact</item>
+    </string-array>
+
+    <string-array name="network_traffic_show_units_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="network_traffic_show_units_entries_bits" translatable="false">
+        <item>@string/network_traffic_show_units_off</item>
+        <item>@string/network_traffic_show_units_on</item>
+    </string-array>
+
+    <string-array name="network_traffic_show_units_values_bits" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="network_traffic_show_units_entries_auto" translatable="false">
+        <item>@string/network_traffic_show_units_on</item>
+        <item>@string/network_traffic_show_units_compact</item>
+    </string-array>
+
+    <string-array name="network_traffic_show_units_values_auto" translatable="false">
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
     <!-- Sms limit -->
