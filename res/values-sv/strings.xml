@@ -227,6 +227,7 @@
     <string name="profile_action_none">Lämna oförändrad</string>
     <string name="profile_action_system">Systemstandard</string>
     <string name="profile_action_disable">Stäng av</string>
+    <string name="profile_action_enable">Sätt på</string>
     <string name="profile_trigger_a2dp_connect">Vid A2DP-anslutning</string>
     <string name="profile_trigger_a2dp_disconnect">Vid A2DP-frånkoppling</string>
     <string name="profile_tabs_wifi">Wi\u2011Fi</string>
@@ -270,6 +271,8 @@
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
     <string name="connection_state_enabled">Aktivera</string>
     <string name="profile_profiles_manage">Profiler</string>
+    <string name="profile_profile_manage">Hantera profilen</string>
+    <string name="profile_settings">Profilinställningar</string>
     <string name="profile_trigger_connect">Vid anslutning</string>
     <string name="profile_trigger_disconnect">Vid frånkoppling</string>
     <string name="profile_trigger_notrigger">Ingen utlösare</string>
@@ -292,6 +295,7 @@
     <string name="ring_mode_vibrate">Vibrera</string>
     <string name="ring_mode_mute">Stäng av ljud</string>
     <string name="incoming_call_volume_title">Ringsignal</string>
+    <string name="notification_volume_title">Avisering</string>
     <string name="media_volume_title">Media</string>
     <string name="alarm_volume_title">Alarm</string>
     <string name="doze_title">Omgivningsskärm</string>
@@ -302,7 +306,10 @@
     <string name="status_bar_quick_qs_pulldown_left">Vänster</string>
     <string name="status_bar_quick_qs_pulldown_right">Höger</string>
     <string name="status_bar_icons_title">Statusfältsikoner</string>
+    <string name="status_bar_system_icons_title">Systemikoner</string>
     <string name="status_bar_clock_title">Klocka</string>
+    <string name="status_bar_clock_show_seconds_title">Visa sekunder</string>
+    <string name="status_bar_clock_show_seconds_summary">Visa timmar, minuter och sekunder</string>
     <string name="status_bar_clock_auto_hide_title">Göm automatiskt</string>
     <string name="status_bar_clock_position_title">Klockans position</string>
     <string name="status_bar_clock_position_right">Höger</string>
@@ -317,10 +324,12 @@
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_percentage_title">Batterinivå</string>
     <string name="status_bar_battery_percentage_default">Dold</string>
+    <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
     <string name="status_bar_battery_percentage_text_next">Bredvid ikonen</string>
     <string name="status_bar_brightness_category">Ljusstyrka</string>
     <string name="status_bar_brightness_slider_title">Ljusstyrkereglage</string>
     <string name="status_bar_brightness_slider_auto_title">Automatisk ljusstyrka</string>
+    <string name="status_bar_brightness_slider_show_never">Visa aldrig</string>
     <string name="status_bar_toggle_brightness">Ljusstyrkekontroll</string>
     <string name="network_traffic_mode_title">Visningsläge</string>
     <string name="network_traffic_mode_disable">Inaktiverat</string>

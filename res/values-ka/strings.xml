@@ -220,7 +220,7 @@
     <string name="navigation_bar_left_summary">სამოძრაო ღილაკების მარცხნივ განთავსება თარაზული რეჟიმისას</string>
     <string name="navigation_bar_arrow_keys_title">ისრის ღილაკების გამოჩენა აკრეფისას</string>
     <string name="navigation_bar_arrow_keys_summary">მარცხენა და მარჯვენა მაჩვენებელი ღილაკების გამოჩენა აკრეფისას. ჩაანაცვლებს IME-გადამრთველს.</string>
-    <string name="navigation_bar_back_long_press_title">მოქმედება, უკუსვლაზე დიდხანს დაჭერისას</string>
+    <string name="navigation_bar_back_long_press_title">მოქმედება უკუსვლაზე დიდხანს დაჭერისას</string>
     <string name="navigation_bar_home_long_press_title">მოქმედება მთავარზე დიდხანს დაჭერისას</string>
     <string name="navigation_bar_home_double_tap_title">მოქმედება, მთავარ ღილაკზე ორჯერ შეხებისას</string>
     <string name="navigation_bar_app_switch_long_press_title">მოქმედება ბოლოების ღილაკზე დიდხანს დაჭერისას</string>

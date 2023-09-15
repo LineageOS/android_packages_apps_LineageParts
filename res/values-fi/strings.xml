@@ -108,7 +108,7 @@
     <string name="live_display_color_profile_astronomy_title">Astronomia</string>
     <string name="live_display_color_profile_astronomy_summary">Syvät punaiset värit hämärällä käytettäessä</string>
     <string name="live_display_color_profile_photography_title">Valokuvaus</string>
-    <string name="live_display_color_profile_photography_summary">Täydellinen värintoisto kuviin</string>
+    <string name="live_display_color_profile_photography_summary">Täydellinen värintoisto valokuviin.</string>
     <string name="live_display_color_profile_basic_title">Perus</string>
     <string name="live_display_color_profile_basic_summary">Käytä näyttöä kalibroimatta</string>
     <string name="live_display_color_profile_adaptive_title">Mukautuva</string>
