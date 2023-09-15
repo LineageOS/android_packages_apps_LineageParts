@@ -21,6 +21,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.ArraySet;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -32,19 +33,24 @@ import androidx.preference.PreferenceScreen;
 import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.Searchable;
 
 import lineageos.preference.LineageSystemSettingMainSwitchPreference;
 import lineageos.preference.LineageSystemSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
+import java.util.Set;
+
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Searchable {
     private static final String TAG = "BatteryLightSettings";
 
     private static final String GENERAL_SECTION = "general_section";
     private static final String COLORS_SECTION = "colors_list";
     private static final String BRIGHTNESS_SECTION = "brightness_section";
 
+    private static final String BATTERY_LIGHT_PREF = "battery_lights";
     private static final String LOW_COLOR_PREF = "low_color";
     private static final String MEDIUM_COLOR_PREF = "medium_color";
     private static final String FULL_COLOR_PREF = "full_color";
@@ -279,4 +285,20 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
         return context.getString(R.string.disabled);
     };
+
+    public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+
+                @Override
+                public Set<String> getNonIndexableKeys(Context context) {
+                    final Set<String> result = new ArraySet<>();
+                    boolean intrusiveNotificationLed = context.getResources().getBoolean(
+                            com.android.internal.R.bool.config_intrusiveNotificationLed);
+                    if (!intrusiveNotificationLed) {
+                        result.add(BATTERY_LIGHT_PREF);
+                    }
+                    return result;
+                }
+            };
+
 }

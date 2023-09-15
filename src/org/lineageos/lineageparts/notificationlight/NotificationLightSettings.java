@@ -29,6 +29,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+import android.util.ArraySet;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -43,11 +44,14 @@ import org.lineageos.lineageparts.widget.PackageListAdapter;
 import org.lineageos.lineageparts.widget.PackageListAdapter.PackageItem;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.Searchable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.Map;
 
 import lineageos.preference.LineageSystemSettingSwitchPreference;
@@ -56,7 +60,7 @@ import lineageos.providers.LineageSettings;
 import lineageos.util.ColorUtils;
 
 public class NotificationLightSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener, ApplicationLightPreference.ItemLongClickListener {
+        Preference.OnPreferenceChangeListener, ApplicationLightPreference.ItemLongClickListener, Searchable {
     private static final String TAG = "NotificationLightSettings";
 
     private static final String ADVANCED_SECTION = "advanced_section";
@@ -64,6 +68,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private static final String BRIGHTNESS_SECTION = "brightness_section";
     private static final String GENERAL_SECTION = "general_section";
     private static final String PHONE_SECTION = "phone_list";
+    private static final String NOTIFICATION_LIGHT_PREF = "notification_lights";
 
     private static final String DEFAULT_PREF = "default";
     private static final String MISSED_CALL_PREF = "missed_call";
@@ -601,4 +606,19 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         }
         return context.getString(R.string.disabled);
     };
+
+    public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+
+                @Override
+                public Set<String> getNonIndexableKeys(Context context) {
+                    final Set<String> result = new ArraySet<>();
+                    boolean intrusiveNotificationLed = context.getResources().getBoolean(
+                            com.android.internal.R.bool.config_intrusiveNotificationLed);
+                    if (!intrusiveNotificationLed) {
+                        result.add(NOTIFICATION_LIGHT_PREF);
+                    }
+                    return result;
+                }
+            };
 }
