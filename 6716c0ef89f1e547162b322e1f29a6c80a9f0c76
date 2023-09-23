@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "286c9292_08c9daae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-09-23T17:56:36Z",
+      "side": 1,
+      "message": "Reworked a good deal.\nInstead of show units \"off/on\" it\u0027s now \"off/on/compact\" (where applicable).\nTried to reuse as much as possible.",
+      "revId": "6716c0ef89f1e547162b322e1f29a6c80a9f0c76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
