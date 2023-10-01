@@ -21,6 +21,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.ArraySet;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -32,15 +33,20 @@ import androidx.preference.PreferenceScreen;
 import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.Searchable;
 
 import lineageos.preference.LineageSystemSettingMainSwitchPreference;
 import lineageos.preference.LineageSystemSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
+import java.util.Set;
+
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Searchable {
     private static final String TAG = "BatteryLightSettings";
 
+    private static final String KEY_BATTERY_LIGHTS = "battery_lights";
     private static final String GENERAL_SECTION = "general_section";
     private static final String COLORS_SECTION = "colors_list";
     private static final String BRIGHTNESS_SECTION = "brightness_section";
@@ -278,5 +284,41 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             return context.getString(R.string.enabled);
         }
         return context.getString(R.string.disabled);
+    };
+
+    public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+
+        @Override
+        public Set<String> getNonIndexableKeys(Context context) {
+            final Set<String> result = new ArraySet<>();
+
+            if (!LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_BATTERY_LED)) {
+                result.add(KEY_BATTERY_LIGHTS);
+                result.add(LIGHT_ENABLED_PREF);
+                result.add(LIGHT_FULL_CHARGE_DISABLED_PREF);
+                result.add(LOW_COLOR_PREF);
+                result.add(MEDIUM_COLOR_PREF);
+                result.add(FULL_COLOR_PREF);
+            } else if (LightsCapabilities.supports(context,
+                    LightsCapabilities.LIGHTS_RGB_BATTERY_LED)) {
+                result.add(LIGHT_FULL_CHARGE_DISABLED_PREF);
+            } else {
+                result.add(LOW_COLOR_PREF);
+                result.add(MEDIUM_COLOR_PREF);
+                result.add(FULL_COLOR_PREF);
+            }
+            if (!LightsCapabilities.supports(context,
+                    LightsCapabilities.LIGHTS_ADJUSTABLE_BATTERY_LED_BRIGHTNESS)) {
+                result.add(BRIGHTNESS_PREFERENCE);
+                result.add(BRIGHTNESS_ZEN_PREFERENCE);
+            }
+            if (!LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED) ||
+                    LightsCapabilities.supports(context,
+                            LightsCapabilities.LIGHTS_SEGMENTED_BATTERY_LED)) {
+                result.add(PULSE_ENABLED_PREF);
+            }
+            return result;
+        }
     };
 }
