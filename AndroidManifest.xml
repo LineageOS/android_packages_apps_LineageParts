@@ -23,7 +23,7 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
-    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -53,8 +53,10 @@
             android:defaultToDeviceProtectedStorage="true"
             android:directBootAware="true">
 
-        <activity android:name=".PartsActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize">
+        <activity
+            android:name=".PartsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -76,13 +78,19 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".BootReceiver" android:enabled="true">
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".PartsUpdater" android:enabled="true">
+        <receiver
+            android:name=".PartsUpdater"
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="lineageos.intent.action.UPDATE_PREFERENCE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -104,7 +112,8 @@
         <activity-alias
             android:name=".health.ChargingControlSettings"
             android:label="@string/charging_control_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.lineageos.lineageparts.CHARGING_CONTROL_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -115,7 +124,8 @@
         <activity-alias
             android:name=".input.ButtonSettings"
             android:label="@string/button_pref_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.BUTTON_SETTINGS" />
@@ -147,7 +157,8 @@
         <activity-alias
             android:name=".profiles.ProfilesSettings"
             android:label="@string/profiles_settings_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.PROFILES_SETTINGS" />
@@ -177,7 +188,8 @@
         <activity-alias
             android:name=".statusbar.StatusBarSettings"
             android:label="@string/status_bar_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
@@ -207,7 +219,8 @@
         <activity-alias
             android:name=".trust.TrustPreferences"
             android:label="@string/trust_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.TRUST_INTERFACE" />
@@ -231,7 +244,8 @@
         <activity-alias
             android:name=".contributors.ContributorsCloudFragment"
             android:label="@string/contributors_cloud_fragment_title"
-            android:targetActivity="PartsActivity">
+            android:targetActivity="PartsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.CONTRIBUTORS_CLOUD" />
@@ -276,7 +290,8 @@
                  android:enabled="true"
                  android:exported="false" />
 
-        <activity android:name=".profiles.NFCProfile">
+        <activity android:name=".profiles.NFCProfile"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -289,18 +304,22 @@
             android:label="@string/profile_select"
             android:excludeFromRecents="true"/>
 
-        <activity android:name=".logo.PlatLogoActivity"
-                android:theme="@style/EggStyle"
-                android:configChanges="orientation|keyboardHidden">
+        <activity
+            android:name=".logo.PlatLogoActivity"
+            android:theme="@style/EggStyle"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".egg.octo.Ocquarium"
+        <activity
+            android:name=".egg.octo.Ocquarium"
             android:theme="@style/EggStyle"
-            android:label="@string/egg_title">
+            android:label="@string/egg_title"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.lineageos.lineageparts.EASTER_EGG"/>
                 <category android:name="android.intent.category.DEFAULT" />
