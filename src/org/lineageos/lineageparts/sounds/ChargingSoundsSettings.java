@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017,2019-2022 The LineageOS Project
+ *               2017,2019-2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.ArraySet;
 import android.util.Log;
 import android.view.View;
 
@@ -35,8 +36,13 @@ import androidx.preference.Preference;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
+import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
+import org.lineageos.lineageparts.search.Searchable;
 
-public class ChargingSoundsSettings extends SettingsPreferenceFragment {
+import java.util.Set;
+
+public class ChargingSoundsSettings
+        extends SettingsPreferenceFragment implements Searchable {
     private static final String TAG = "ChargingSoundsSettings";
 
     private static final String KEY_CHARGING_VIBRATION_ENABLED = "charging_vibration_enabled";
@@ -229,4 +235,19 @@ public class ChargingSoundsSettings extends SettingsPreferenceFragment {
                     requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
         }
     }
+
+    public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+
+        @Override
+        public Set<String> getNonIndexableKeys(Context context) {
+            final Set<String> result = new ArraySet<>();
+
+            if (!context.getResources().getBoolean(org.lineageos.platform.internal.R.bool
+                    .config_deviceSupportsWirelessCharging)) {
+                result.add(KEY_WIRELESS_CHARGING_SOUNDS);
+            }
+            return result;
+        }
+    };
 }
