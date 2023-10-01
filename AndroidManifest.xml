@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/**
- * Copyright 2016, The CyanogenMod Project
- * Copyright 2017-2023, The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+     SPDX-FileCopyrightText: 2016 The CyanogenMod Project, 2017-2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lineageos.lineageparts"
+    android:sharedUserId="android.uid.system"
     android:versionCode="1"
-    android:versionName="1.0"
-    android:sharedUserId="android.uid.system">
+    android:versionName="1.0">
 
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -43,17 +29,19 @@
     <protected-broadcast android:name="org.lineageos.lineageparts.REFRESH_PART" />
     <protected-broadcast android:name="org.lineageos.lineageparts.gestures.UPDATE_SETTINGS" />
 
-    <application android:label="@string/lineageparts_title"
-            android:icon="@mipmap/ic_launcher"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:hardwareAccelerated="true"
-            android:supportsRtl="true"
-            android:defaultToDeviceProtectedStorage="true"
-            android:directBootAware="true">
+    <application
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/lineageparts_title"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SubSettingsBase">
 
-        <activity android:name=".PartsActivity"
-            android:exported="true"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+        <activity
+            android:name=".PartsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -63,41 +51,45 @@
                 android:value="org.lineageos.lineageparts.PartsUpdater" />
         </activity>
 
-        <activity android:name=".trust.TrustOnBoardingActivity"
-            android:label="@string/trust_title"
-            android:theme="@style/OnBoardingStyle"
-            android:exported="true"
+        <activity
+            android:name=".trust.TrustOnBoardingActivity"
             android:enabled="true"
-            android:excludeFromRecents="true">
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/trust_title"
+            android:theme="@style/OnBoardingStyle">
             <intent-filter android:priority="-4">
                 <action android:name="org.lineageos.lineageparts.TRUST_HINT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <receiver android:name=".BootReceiver"
-            android:exported="false"
-            android:enabled="true">
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="false">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".PartsUpdater"
-            android:exported="false"
-            android:enabled="true">
+        <receiver
+            android:name=".PartsUpdater"
+            android:enabled="true"
+            android:exported="false">
             <intent-filter>
                 <action android:name="lineageos.intent.action.UPDATE_PREFERENCE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
-        <provider android:name=".search.LineagePartsSearchIndexablesProvider"
-                  android:authorities="org.lineageos.lineageparts"
-                  android:multiprocess="false"
-                  android:grantUriPermissions="true"
-                  android:permission="android.permission.READ_SEARCH_INDEXABLES"
-                  android:exported="true">
+        <provider
+            android:name=".search.LineagePartsSearchIndexablesProvider"
+            android:authorities="org.lineageos.lineageparts"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:multiprocess="false"
+            android:permission="android.permission.READ_SEARCH_INDEXABLES">
             <intent-filter>
                 <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
             </intent-filter>
@@ -117,14 +109,16 @@
         <!-- Button settings (System category) -->
         <activity-alias
             android:name=".input.ButtonSettings"
+            android:exported="true"
             android:label="@string/button_pref_title"
-            android:targetActivity="PartsActivity"
-            android:exported="true">
+            android:targetActivity="PartsActivity">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.BUTTON_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.system" />
@@ -150,14 +144,16 @@
         <!-- Profiles settings (System category) -->
         <activity-alias
             android:name=".profiles.ProfilesSettings"
+            android:exported="true"
             android:label="@string/profiles_settings_title"
-            android:targetActivity="PartsActivity"
-            android:exported="true">
+            android:targetActivity="PartsActivity">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.PROFILES_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.system" />
@@ -181,14 +177,16 @@
         <!-- Status bar settings (System category) -->
         <activity-alias
             android:name=".statusbar.StatusBarSettings"
+            android:exported="true"
             android:label="@string/status_bar_title"
-            android:targetActivity="PartsActivity"
-            android:exported="true">
+            android:targetActivity="PartsActivity">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.system" />
@@ -212,14 +210,16 @@
         <!-- Trust interface (Privacy category) -->
         <activity-alias
             android:name=".trust.TrustPreferences"
+            android:exported="true"
             android:label="@string/trust_title"
-            android:targetActivity="PartsActivity"
-            android:exported="true">
+            android:targetActivity="PartsActivity">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.TRUST_INTERFACE" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.privacy" />
@@ -237,14 +237,16 @@
         <!-- Contributors Cloud (MyDeviceInfo category) -->
         <activity-alias
             android:name=".contributors.ContributorsCloudFragment"
+            android:exported="true"
             android:label="@string/contributors_cloud_fragment_title"
-            android:targetActivity="PartsActivity"
-            android:exported="true">
+            android:targetActivity="PartsActivity">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="org.lineageos.lineageparts.CONTRIBUTORS_CLOUD" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.my_device_info" />
@@ -260,7 +262,8 @@
         </activity-alias>
 
         <!-- Anonymous Statistics -->
-        <receiver android:name=".lineagestats.ReportingServiceManager"
+        <receiver
+            android:name=".lineagestats.ReportingServiceManager"
             android:enabled="true"
             android:exported="false"
             android:label="ReportingServiceManager">
@@ -270,50 +273,56 @@
             </intent-filter>
         </receiver>
 
-        <service android:label="ReportingService"
+        <service
+            android:name=".lineagestats.ReportingService"
             android:enabled="true"
             android:exported="false"
-            android:name=".lineagestats.ReportingService">
-        </service>
+            android:label="ReportingService" />
 
-        <service android:name=".lineagestats.StatsUploadJobService"
-                 android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".lineagestats.StatsUploadJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <service android:name=".lineagestats.ReportingService"
-                 android:label="ReportingService"
-                 android:enabled="true"
-                 android:exported="false" />
+        <service
+            android:name=".lineagestats.ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingService" />
 
-        <activity android:name=".profiles.NFCProfile"
+        <activity
+            android:name=".profiles.NFCProfile"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="lineage/profile" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".profiles.NFCProfileSelect"
-            android:label="@string/profile_select"
-            android:excludeFromRecents="true"/>
+            android:excludeFromRecents="true"
+            android:label="@string/profile_select" />
 
-        <activity android:name=".logo.PlatLogoActivity"
+        <activity
+            android:name=".logo.PlatLogoActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:exported="true"
-            android:theme="@style/EggStyle"
-            android:configChanges="orientation|keyboardHidden">
+            android:theme="@style/EggStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".egg.octo.Ocquarium"
+        <activity
+            android:name=".egg.octo.Ocquarium"
             android:exported="true"
-            android:theme="@style/EggStyle"
-            android:label="@string/egg_title">
+            android:label="@string/egg_title"
+            android:theme="@style/EggStyle">
             <intent-filter>
-                <action android:name="org.lineageos.lineageparts.EASTER_EGG"/>
+                <action android:name="org.lineageos.lineageparts.EASTER_EGG" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.android.internal.category.PLATLOGO" />
             </intent-filter>
