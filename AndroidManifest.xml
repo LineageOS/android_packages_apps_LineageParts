@@ -262,12 +262,6 @@
             </intent-filter>
         </receiver>
 
-        <service android:label="ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:name=".lineagestats.ReportingService">
-        </service>
-
         <service android:name=".lineagestats.StatsUploadJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
