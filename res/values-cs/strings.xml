@@ -59,6 +59,20 @@
     <string name="light_brightness_title">Úrovně jasu</string>
     <string name="light_brightness_normal">Normální</string>
     <string name="light_brightness_zen">Nerušit</string>
+    <string name="charging_control_title">Ovládání nabíjení</string>
+    <string name="charging_control_enable_title">Povolit ovládání nabíjení</string>
+    <string name="charging_control_mode_title">Režim nabíjení</string>
+    <string name="charging_control_mode_auto_title">Automatické plánování</string>
+    <string name="charging_control_mode_auto_summary">Automatické určení začátku nabíjení na základě nastavených budíků</string>
+    <string name="charging_control_mode_custom_title">Vlastní plán</string>
+    <string name="charging_control_mode_custom_summary">Nastavit cílový čas do úplného nabití</string>
+    <string name="charging_control_mode_limit_title">Omezit nabíjení</string>
+    <string name="charging_control_mode_limit_summary">Omezit nabíjení na určité procento</string>
+    <string name="charging_control_start_time_title">Čas zahájení</string>
+    <string name="charging_control_start_time_summary">Ovládání nabíjení se aktivuje při zahájení nabíjení po %s</string>
+    <string name="charging_control_target_time_title">Čas do plného nabití</string>
+    <string name="charging_control_target_time_summary">Baterie bude plně nabita do %s</string>
+    <string name="charging_control_limit_title">Limit</string>
     <string name="battery_light_title">Ukazatel baterie</string>
     <string name="battery_light_enable_title">Zapnout oznamování baterie</string>
     <string name="battery_low_pulse_title">Blikat, když je baterie vybitá</string>
@@ -392,6 +406,7 @@
     <string name="network_traffic_mode_up">Pouze odchozí data</string>
     <string name="network_traffic_mode_down">Pouze příchozí data</string>
     <string name="network_traffic_mode_all">Příchozí a odchozí data</string>
+    <string name="network_traffic_position_title">Pozice</string>
     <string name="network_traffic_autohide">Automaticky skrývat</string>
     <string name="network_traffic_autohide_summary">Skrýt indikátor síťového provozu, pokud není žádná aktivita</string>
     <string name="network_traffic_units_title">Jednotky měření síťového provozu</string>
@@ -524,6 +539,7 @@
     <string name="trust_restrict_usb_always">Zamítnout připojení USB</string>
     <string name="trust_restrict_usb_keyguard">Povolit připojení USB při odemknutí</string>
     <string name="trust_restrict_usb_disabled">Vždy povolit připojení USB</string>
+    <string name="trust_summary">Zabezpečte své zařízení a chraňte své soukromí</string>
     <string name="sms_security_check_limit_title">Limit SMS zpráv</string>
     <string name="sms_security_check_limit_summary">Aplikace může poslat %s zpráv za 1 minutu před tím, než bude vyžádáno potvrzení</string>
     <string name="sms_security_check_limit_summary_none">Aplikacím není umožněno bez předchozího potvrzení zasílat jakékoliv zprávy</string>
