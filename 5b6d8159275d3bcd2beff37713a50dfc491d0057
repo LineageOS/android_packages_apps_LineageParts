@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c0a8b72_07eac3f6",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-01T20:53:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1daed3dc_7597363a",
+      "revId": "5b6d8159275d3bcd2beff37713a50dfc491d0057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c0653055_18a45c36",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-10-01T20:43:36Z",
       "side": 1,
       "message": "Follows the same logic.",
+      "revId": "5b6d8159275d3bcd2beff37713a50dfc491d0057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f92b82d8_b0fc0399",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/NotificationLightSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 649,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-01T20:53:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c0653055_18a45c36",
       "revId": "5b6d8159275d3bcd2beff37713a50dfc491d0057",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
