@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d1d7b50e_49efb744",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-02T12:11:58Z",
+      "side": 1,
+      "message": "We are adding a new line here and two lines below, but there are other places in this file that the same would apply. Was this done manually and forgotten?",
+      "revId": "a3b886378aa71ef147b781f12533cde645a9ad12",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
