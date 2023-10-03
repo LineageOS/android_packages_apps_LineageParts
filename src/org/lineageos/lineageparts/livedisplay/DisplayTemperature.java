@@ -168,9 +168,7 @@ public class DisplayTemperature extends CustomDialogPreference<AlertDialog> {
             dest.writeInt(currentNightTemperature);
         }
 
-        public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
-
+        public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.Creator<>() {
             public SavedState createFromParcel(Parcel in) {
                 return new SavedState(in);
             }

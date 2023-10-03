@@ -166,9 +166,7 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
             dest.writeFloatArray(currentColors);
         }
 
-        public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
-
+        public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.Creator<>() {
             public SavedState createFromParcel(Parcel in) {
                 return new SavedState(in);
             }

@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.utils;
@@ -9,7 +9,7 @@ import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
 
 import android.app.Activity;
-import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
@@ -33,6 +33,8 @@ import android.view.KeyEvent;
 import android.view.Surface;
 
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
+
+import androidx.annotation.NonNull;
 
 public class DeviceUtils {
 
@@ -172,7 +174,8 @@ public class DeviceUtils {
     public static boolean isPackageInstalled(Context context, String pkg, boolean ignoreState) {
         if (pkg != null) {
             try {
-                PackageInfo pi = context.getPackageManager().getPackageInfo(pkg, 0);
+                PackageInfo pi = context.getPackageManager().getPackageInfo(pkg,
+                        PackageManager.PackageInfoFlags.of(0));
                 if (!pi.applicationInfo.enabled && !ignoreState) {
                     return false;
                 }
@@ -230,15 +233,17 @@ public class DeviceUtils {
         return telephonyManager.isDataCapable();
     }
 
-    public static boolean deviceSupportsBluetooth() {
-        return (BluetoothAdapter.getDefaultAdapter() != null);
+    public static boolean deviceSupportsBluetooth(Context ctx) {
+        BluetoothManager bluetoothManager = (BluetoothManager)
+                ctx.getSystemService(Context.BLUETOOTH_SERVICE);
+        return (bluetoothManager.getAdapter() != null);
     }
 
     public static boolean deviceSupportsNfc(Context ctx) {
         return NfcAdapter.getDefaultAdapter(ctx) != null;
     }
 
-    public static boolean deviceSupportsFlashLight(Context context) {
+    public static boolean deviceSupportsFlashLight(@NonNull Context context) {
         CameraManager cameraManager = context.getSystemService(CameraManager.class);
         try {
             String[] ids = cameraManager.getCameraIdList();

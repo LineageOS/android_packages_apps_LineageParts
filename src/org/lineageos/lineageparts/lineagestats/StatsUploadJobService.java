@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -9,7 +9,8 @@ package org.lineageos.lineageparts.lineagestats;
 import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.net.Uri;
-import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.PersistableBundle;
 import android.util.ArrayMap;
 import android.util.Log;
@@ -28,6 +29,8 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class StatsUploadJobService extends JobService {
 
@@ -46,7 +49,7 @@ public class StatsUploadJobService extends JobService {
     public static final String KEY_TIMESTAMP = "timeStamp";
 
     private final Map<JobParameters, StatsUploadTask> mCurrentJobs
-            = Collections.synchronizedMap(new ArrayMap<JobParameters, StatsUploadTask>());
+            = Collections.synchronizedMap(new ArrayMap<>());
 
     @Override
     public boolean onStartJob(JobParameters jobParameters) {
@@ -59,7 +62,7 @@ public class StatsUploadJobService extends JobService {
 
         final StatsUploadTask uploadTask = new StatsUploadTask(jobParameters);
         mCurrentJobs.put(jobParameters, uploadTask);
-        uploadTask.execute((Void) null);
+        uploadTask.execute();
         return true;
     }
 
@@ -73,59 +76,67 @@ public class StatsUploadJobService extends JobService {
 
         if (cancelledJob != null) {
             // cancel the ongoing background task
-            cancelledJob.cancel(true);
+            cancelledJob.cancel();
             return true; // reschedule
         }
 
         return false;
     }
 
-    private class StatsUploadTask extends AsyncTask<Void, Void, Boolean> {
+    private class StatsUploadTask {
 
         private final JobParameters mJobParams;
+        private boolean mCancelled;
 
         public StatsUploadTask(JobParameters jobParams) {
             this.mJobParams = jobParams;
         }
 
-        @Override
-        protected Boolean doInBackground(Void... params) {
+        public void execute() {
+            ExecutorService executor = Executors.newSingleThreadExecutor();
+            Handler handler = new Handler(Looper.getMainLooper());
+            executor.execute(() -> {
+                PersistableBundle extras = mJobParams.getExtras();
 
-            PersistableBundle extras = mJobParams.getExtras();
+                String deviceId = extras.getString(KEY_UNIQUE_ID);
+                String deviceName = extras.getString(KEY_DEVICE_NAME);
+                String deviceVersion = extras.getString(KEY_VERSION);
+                String deviceCountry = extras.getString(KEY_COUNTRY);
+                String deviceCarrier = extras.getString(KEY_CARRIER);
+                String deviceCarrierId = extras.getString(KEY_CARRIER_ID);
 
-            String deviceId = extras.getString(KEY_UNIQUE_ID);
-            String deviceName = extras.getString(KEY_DEVICE_NAME);
-            String deviceVersion = extras.getString(KEY_VERSION);
-            String deviceCountry = extras.getString(KEY_COUNTRY);
-            String deviceCarrier = extras.getString(KEY_CARRIER);
-            String deviceCarrierId = extras.getString(KEY_CARRIER_ID);
-
-            boolean success = false;
-            int jobType = extras.getInt(KEY_JOB_TYPE, -1);
-            if (!isCancelled()) {
-                switch (jobType) {
-                    case JOB_TYPE_LINEAGEORG:
-                        try {
-                            JSONObject json = buildStatsRequest(deviceId, deviceName,
-                                    deviceVersion, deviceCountry, deviceCarrier, deviceCarrierId);
-                            success = uploadToLineage(json);
-                        } catch (IOException | JSONException e) {
-                            Log.e(TAG, "Could not upload stats checkin to community server", e);
-                            success = false;
-                        }
-                        break;
+                boolean success = false;
+                int jobType = extras.getInt(KEY_JOB_TYPE, -1);
+                if (!mCancelled) {
+                    switch (jobType) {
+                        case JOB_TYPE_LINEAGEORG:
+                            try {
+                                JSONObject json = buildStatsRequest(deviceId, deviceName,
+                                        deviceVersion, deviceCountry, deviceCarrier,
+                                        deviceCarrierId);
+                                success = uploadToLineage(json);
+                            } catch (IOException | JSONException e) {
+                                Log.e(TAG, "Could not upload stats checkin to community server", e);
+                            }
+                            break;
+                    }
                 }
-            }
-            if (DEBUG)
-                Log.d(TAG, "job id " + mJobParams.getJobId() + ", has finished with success="
-                        + success);
-            return success;
+                if (DEBUG)
+                    Log.d(TAG, "job id " + mJobParams.getJobId() + ", has finished with success="
+                            + success);
+
+                if (!mCancelled) {
+                    final boolean finalResult = success;
+                    handler.post(() -> {
+                        mCurrentJobs.remove(mJobParams);
+                        jobFinished(mJobParams, !finalResult);
+                    });
+                }
+            });
         }
 
-        @Override
-        protected void onPostExecute(Boolean success) {
-            mCurrentJobs.remove(mJobParams);
-            jobFinished(mJobParams, !success);
+        public void cancel() {
+            mCancelled = true;
         }
     }
 

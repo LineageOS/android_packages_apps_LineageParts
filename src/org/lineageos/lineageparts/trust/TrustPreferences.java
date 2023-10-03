@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2018-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -190,7 +190,7 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     }
 
     private boolean showInfo(int text) {
-        new AlertDialog.Builder(getContext())
+        new AlertDialog.Builder(requireContext())
             .setMessage(text)
             .show();
         return true;
@@ -199,23 +199,23 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private void updateSmsSecuritySummary(int selection) {
         String value = String.valueOf(selection);
         String message = selection > 0
-                ? getContext().getString(R.string.sms_security_check_limit_summary, value)
-                : getContext().getString(R.string.sms_security_check_limit_summary_none);
+                ? requireContext().getString(R.string.sms_security_check_limit_summary, value)
+                : requireContext().getString(R.string.sms_security_check_limit_summary_none);
         mSmsLimitPref.setSummary(message);
     }
 
     private boolean onSmsLimitChanged(Integer value) {
-        Settings.Global.putInt(getContext().getContentResolver(),
+        Settings.Global.putInt(requireContext().getContentResolver(),
                 Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, value);
         updateSmsSecuritySummary(value);
         return true;
     }
 
     private boolean onWarningChanged(Boolean value, int feature) {
-        int original = LineageSettings.Secure.getInt(getContext().getContentResolver(),
+        int original = LineageSettings.Secure.getInt(requireContext().getContentResolver(),
                 LineageSettings.Secure.TRUST_WARNINGS, TrustInterface.TRUST_WARN_MAX_VALUE);
         int newValue = value ? (original | feature) : (original & ~feature);
-        boolean success = LineageSettings.Secure.putInt(getContext().getContentResolver(),
+        boolean success = LineageSettings.Secure.putInt(requireContext().getContentResolver(),
                 LineageSettings.Secure.TRUST_WARNINGS,
                 newValue & TrustInterface.TRUST_WARN_MAX_VALUE);
         if (success && !value) {
