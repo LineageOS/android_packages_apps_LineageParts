@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2018,2021-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -91,7 +91,7 @@ public class NFCProfileWriter extends Activity {
     protected void onNewIntent(Intent intent) {
         // Tag writing mode
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
-            Tag detectedTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+            Tag detectedTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG, Tag.class);
             if (NFCProfileUtils.writeTag(NFCProfileUtils.getProfileAsNdef(mProfile), detectedTag)) {
                 Toast.makeText(this, R.string.profile_write_success, Toast.LENGTH_LONG).show();
                 NFCProfileUtils.vibrate(this);

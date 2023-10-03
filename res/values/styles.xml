@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
      SPDX-FileCopyrightText: 2010 The Android Open Source Project
+     SPDX-FileCopyrightText: 2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources
-    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+<resources>
 
-    <style name="TextAppearance" parent="android:TextAppearance.DeviceDefault"/>
+    <style name="TextAppearance" parent="android:TextAppearance.DeviceDefault" />
 
-    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.DeviceDefault.Medium"/>
-    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.DeviceDefault.Small"/>
+    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.DeviceDefault.Medium" />
 
-    <style name="TextAppearance.CategoryTitle"
-           parent="@*android:style/TextAppearance.DeviceDefault.Body2">
+    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.DeviceDefault.Small" />
+
+    <style name="TextAppearance.CategoryTitle" parent="@*android:style/TextAppearance.DeviceDefault.Body2">
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">11sp</item>
         <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->

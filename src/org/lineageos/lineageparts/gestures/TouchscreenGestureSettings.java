@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod project
- * SPDX-FileCopyrightText: 2017,2019-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -54,7 +54,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
     private void initTouchscreenGestures() {
         final LineageHardwareManager manager = LineageHardwareManager.getInstance(getContext());
         mTouchscreenGestures = manager.getTouchscreenGestures();
-        final int[] actions = getDefaultGestureActions(getContext(), mTouchscreenGestures);
+        final int[] actions = getDefaultGestureActions(requireContext(), mTouchscreenGestures);
         for (final TouchscreenGesture gesture : mTouchscreenGestures) {
             getPreferenceScreen().addPreference(new TouchscreenGesturePreference(
                     getContext(), gesture, actions[gesture.id]));

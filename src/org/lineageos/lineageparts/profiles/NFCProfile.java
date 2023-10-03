@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2018 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -53,7 +53,8 @@ public class NFCProfile extends Activity {
         Intent intent = getIntent();
         String action = intent.getAction();
         if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) {
-            Parcelable[] rawMsgs = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
+            Parcelable[] rawMsgs = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES,
+                    Parcelable.class);
             if (rawMsgs != null) {
                 NdefMessage[] msgs = new NdefMessage[rawMsgs.length];
                 for (int i = 0; i < rawMsgs.length; i++) {
@@ -61,8 +62,7 @@ public class NFCProfile extends Activity {
                     for (NdefRecord record : msgs[i].getRecords()) {
                         String type = new String(record.getType());
                         byte[] payload = record.getPayload();
-                        if (PROFILE_MIME_TYPE.equals(type) && payload != null
-                                && payload.length == 16) {
+                        if (PROFILE_MIME_TYPE.equals(type) && payload.length == 16) {
                             handleProfileMimeType(payload);
                         }
                     }

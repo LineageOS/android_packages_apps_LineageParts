@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
+ * SPDX-FileCopyrightText: 2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -121,7 +122,7 @@ public class ProfilesPreference extends CheckBoxPreference implements View.OnCli
 
     // utility method used to start sub activity
     private void startProfileConfigActivity() {
-        PartsActivity pa = (PartsActivity) mFragment.getActivity();
+        PartsActivity pa = (PartsActivity) mFragment.requireActivity();
         pa.startPreferencePanel(SetupActionsFragment.class.getCanonicalName(), mSettingsBundle,
                 R.string.profile_profile_manage, null, null, PROFILE_DETAILS);
     }

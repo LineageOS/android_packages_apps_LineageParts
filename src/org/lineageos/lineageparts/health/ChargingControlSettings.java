@@ -63,7 +63,7 @@ public class ChargingControlSettings extends SettingsPreferenceFragment implemen
         final Resources res = getResources();
 
         addPreferencesFromResource(R.xml.charging_control_settings);
-        getActivity().getActionBar().setTitle(R.string.charging_control_title);
+        requireActivity().getActionBar().setTitle(R.string.charging_control_title);
 
         mHealthInterface = HealthInterface.getInstance(getActivity());
 

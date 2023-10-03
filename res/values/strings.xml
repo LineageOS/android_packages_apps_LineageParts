@@ -30,7 +30,7 @@
     <string name="enabled">Enabled</string>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
-    <string name="summary_empty" translatable="false"></string>
+    <string name="summary_empty" translatable="false" />
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Privacy</string>
