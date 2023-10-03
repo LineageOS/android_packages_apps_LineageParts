@@ -31,7 +31,7 @@ public abstract class TimePreference extends CustomDialogPreference<AlertDialog>
     private TimePicker mTimePicker;
     private LocalTime mLocalTime;
 
-    protected HealthInterface mHealthInterface;
+    protected final HealthInterface mHealthInterface;
 
     public TimePreference(final Context context, final AttributeSet attrs) {
         super(context, attrs);

@@ -1,61 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2012 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/profile_settings"
-        android:key="profile_settings"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    android:key="profile_settings"
+    android:title="@string/profile_settings">
 
     <ListPreference
-            android:key="sound_mode"
-            android:title="@string/sound_mode"
-            android:summary="@string/sound_mode"
-            android:entries="@array/profile_entries"
-            android:persistent="false"
-            android:entryValues="@array/profile_values" />
+        android:entries="@array/profile_entries"
+        android:entryValues="@array/profile_values"
+        android:key="sound_mode"
+        android:persistent="false"
+        android:summary="@string/sound_mode"
+        android:title="@string/sound_mode" />
 
     <org.lineageos.lineageparts.profiles.ProfileRingtonePreference
-            android:key="soundtone"
-            android:title="@string/soundtone_title"
-            android:summary="@string/soundtone_summary"
-            android:dialogTitle="@string/soundtone_title"
-            android:persistent="false"
-            android:ringtoneType="notification" />
+        android:dialogTitle="@string/soundtone_title"
+        android:key="soundtone"
+        android:persistent="false"
+        android:ringtoneType="notification"
+        android:summary="@string/soundtone_summary"
+        android:title="@string/soundtone_title" />
 
     <ListPreference
-            android:key="ringer_mode"
-            android:title="@string/ringer_mode"
-            android:summary="@string/ringer_mode"
-            android:entries="@array/profile_entries"
-            android:persistent="false"
-            android:entryValues="@array/profile_values" />
+        android:entries="@array/profile_entries"
+        android:entryValues="@array/profile_values"
+        android:key="ringer_mode"
+        android:persistent="false"
+        android:summary="@string/ringer_mode"
+        android:title="@string/ringer_mode" />
 
     <org.lineageos.lineageparts.profiles.ProfileRingtonePreference
-            android:key="ringtone"
-            android:title="@string/ringtone_title"
-            android:summary="@string/ringtone_summary"
-            android:dialogTitle="@string/ringtone_title"
-            android:persistent="false"
-            android:ringtoneType="ringtone" />
+        android:dialogTitle="@string/ringtone_title"
+        android:key="ringtone"
+        android:persistent="false"
+        android:ringtoneType="ringtone"
+        android:summary="@string/ringtone_summary"
+        android:title="@string/ringtone_title" />
 
     <ListPreference
-            android:key="vibrate_mode"
-            android:title="@string/vibrate_mode"
-            android:summary="@string/sound_mode"
-            android:entries="@array/profile_entries"
-            android:persistent="false"
-            android:entryValues="@array/profile_values" />
+        android:entries="@array/profile_entries"
+        android:entryValues="@array/profile_values"
+        android:key="vibrate_mode"
+        android:persistent="false"
+        android:summary="@string/sound_mode"
+        android:title="@string/vibrate_mode" />
 
     <ListPreference
-            android:key="lights_mode"
-            android:title="@string/lights_mode"
-            android:summary="@string/sound_mode"
-            android:entries="@array/profile_entries"
-            android:persistent="false"
-            android:entryValues="@array/profile_values" />
-
-
+        android:entries="@array/profile_entries"
+        android:entryValues="@array/profile_values"
+        android:key="lights_mode"
+        android:persistent="false"
+        android:summary="@string/sound_mode"
+        android:title="@string/lights_mode" />
 </PreferenceScreen>

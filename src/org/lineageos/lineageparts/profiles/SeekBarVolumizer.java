@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2014 The Android Open Source Project
- * SPDX-FileCopyrightText: 2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -299,7 +299,11 @@ public class SeekBarVolumizer implements OnSeekBarChangeListener, Handler.Callba
         synchronized (this) {
             mRingtone = RingtoneManager.getRingtone(mContext, mDefaultUri);
             if (mRingtone != null) {
-                mRingtone.setStreamType(mStreamType);
+                AudioAttributes attributes =
+                        new AudioAttributes.Builder(mRingtone.getAudioAttributes())
+                                .setLegacyStreamType(mStreamType)
+                                .build();
+                mRingtone.setAudioAttributes(attributes);
             }
         }
     }

@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2020-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2020-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,6 +8,8 @@ package org.lineageos.lineageparts.profiles.triggers;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -68,7 +70,7 @@ public abstract class AbstractTriggerListFragment extends Fragment {
             }
         }
 
-        new AlertDialog.Builder(getActivity())
+        new AlertDialog.Builder(requireActivity())
                 .setTitle(R.string.profile_trigger_configure)
                 .setSingleChoiceItems(entries, currentItem, (dialog, which) -> {
                     mProfile.setTrigger(info.type, info.id, valueInts[which], info.name);
@@ -90,7 +92,7 @@ public abstract class AbstractTriggerListFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mProfileManager = ProfileManager.getInstance(getActivity());
         if (getArguments() != null) {
-            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE);
+            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE, Profile.class);
         }
     }
 
@@ -111,7 +113,7 @@ public abstract class AbstractTriggerListFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mAdapter = new TriggerAdapter(mTriggers, mItemClickListener);
         mRecyclerView.setAdapter(mAdapter);
@@ -210,6 +212,7 @@ public abstract class AbstractTriggerListFragment extends Fragment {
             return mTriggers.size();
         }
 
+        @NonNull
         @Override
         public TriggerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
@@ -228,7 +231,7 @@ public abstract class AbstractTriggerListFragment extends Fragment {
         @Override
         public void onClick(View view) {
             TriggerViewHolder holder = (TriggerViewHolder) view.getTag();
-            int position = holder.getAdapterPosition();
+            int position = holder.getBindingAdapterPosition();
             if (position != RecyclerView.NO_POSITION) {
                 mItemClickListener.onItemClick(mTriggers.get(position));
             }

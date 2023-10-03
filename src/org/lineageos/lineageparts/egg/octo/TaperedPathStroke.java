@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2010 The Android Open Source Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -13,9 +13,9 @@ import android.graphics.PathMeasure;
 
 public class TaperedPathStroke {
     static float sMinStepPx = 4f;
-    static PathMeasure pm = new PathMeasure();
-    static float[] pos = {0, 0};
-    static float[] tan = {0, 0};
+    static final PathMeasure pm = new PathMeasure();
+    static final float[] pos = {0, 0};
+    static final float[] tan = {0, 0};
     public static void setMinStep(float px) {
         sMinStepPx = px;
     }

@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -9,7 +9,6 @@ package org.lineageos.lineageparts.profiles;
 import android.annotation.Nullable;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -23,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentActivity;
 import androidx.preference.Preference;
@@ -57,10 +57,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
 
     private boolean mEnabled;
 
-    ViewGroup mContainer;
-
-    static Bundle mSavedState;
-
     public ProfilesSettings() {
         mFilter = new IntentFilter();
         mFilter.addAction(ProfileManager.PROFILES_STATE_CHANGED_ACTION);
@@ -85,19 +81,18 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
-        FrameLayout frameLayout = new FrameLayout(getActivity());
-        mContainer = frameLayout;
+        FrameLayout frameLayout = new FrameLayout(requireActivity());
         frameLayout.addView(view);
         return frameLayout;
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        View v = LayoutInflater.from(getActivity())
+        View v = LayoutInflater.from(requireActivity())
                 .inflate(R.layout.empty_textview, (ViewGroup) view, true);
 
         TextView emptyTextView = v.findViewById(R.id.empty);
@@ -116,25 +111,24 @@ public class ProfilesSettings extends SettingsPreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
-        getActivity().registerReceiver(mReceiver, mFilter);
+        requireActivity().registerReceiver(mReceiver, mFilter);
         updateProfilesEnabledState();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        getActivity().unregisterReceiver(mReceiver);
+        requireActivity().unregisterReceiver(mReceiver);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        final PartsActivity activity = (PartsActivity) getActivity();
+        final PartsActivity activity = (PartsActivity) requireActivity();
         mProfileEnabler = activity.getMainSwitchBar();
-        mProfileEnabler.getSwitch().setOnCheckedChangeListener((buttonView, isChecked) -> {
-            LineageSettings.System.putInt(activity.getContentResolver(),
-                    LineageSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0);
-        });
+        mProfileEnabler.getSwitch().setOnCheckedChangeListener((buttonView, isChecked) ->
+                LineageSettings.System.putInt(activity.getContentResolver(),
+                LineageSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0));
         mProfileEnabler.setTitle(getString(R.string.profiles_settings_enable_title));
         mProfileEnabler.setVisibility(View.VISIBLE);
     }
@@ -163,33 +157,29 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         args.putBoolean(EXTRA_NEW_PROFILE, true);
         args.putParcelable(EXTRA_PROFILE, new Profile(getString(R.string.new_profile_name)));
 
-        PartsActivity pa = (PartsActivity) getActivity();
+        PartsActivity pa = (PartsActivity) requireActivity();
         pa.startPreferencePanel(SetupTriggersFragment.class.getCanonicalName(), args,
                 0, null, this, 0);
     }
 
     private void resetAll() {
-        new AlertDialog.Builder(getActivity())
+        new AlertDialog.Builder(requireActivity())
                 .setTitle(R.string.profile_reset_title)
                 .setIconAttribute(android.R.attr.alertDialogIcon)
                 .setMessage(R.string.profile_reset_message)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        mProfileManager.resetAll();
-                        mProfileManager.setActiveProfile(
-                                mProfileManager.getActiveProfile().getUuid());
-                        dialog.dismiss();
-                        refreshList();
-
-                    }
+                .setPositiveButton(android.R.string.ok, (dialog, id) -> {
+                    mProfileManager.resetAll();
+                    mProfileManager.setActiveProfile(
+                            mProfileManager.getActiveProfile().getUuid());
+                    dialog.dismiss();
+                    refreshList();
                 })
                 .setNegativeButton(R.string.cancel, null)
                 .show();
     }
 
     private void updateProfilesEnabledState() {
-        FragmentActivity activity = getActivity();
+        FragmentActivity activity = requireActivity();
 
         mEnabled = LineageSettings.System.getInt(activity.getContentResolver(),
                 LineageSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
@@ -234,7 +224,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         }
 
         // Add pref to create new profile
-        Preference preference = new Preference(getContext());
+        Preference preference = new Preference(requireContext());
         preference.setIcon(R.drawable.ic_add_24dp);
         preference.setTitle(R.string.profiles_create_new);
         preference.setSelectable(true);

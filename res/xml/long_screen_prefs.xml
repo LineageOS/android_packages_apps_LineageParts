@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2018 The LineageOS Project
+     SPDX-FileCopyrightText: 2018-2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:lineage="http://schemas.android.com/apk/res/org.lineageos.lineageparts"
     android:key="long_screen_settings"
     android:title="@string/long_screen_settings_title">
 

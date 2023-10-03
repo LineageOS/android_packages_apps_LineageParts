@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The Android Open Source Project
- * SPDX-FileCopyrightText: 2020 The LineageOS Project
+ * SPDX-FileCopyrightText: 2020-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -112,7 +112,7 @@ public final class RtlCompatibleViewPager extends ViewPager {
         }
 
         public static final Parcelable.ClassLoaderCreator<RtlSavedState> CREATOR
-                = new Parcelable.ClassLoaderCreator<RtlSavedState>() {
+                = new Parcelable.ClassLoaderCreator<>() {
             @Override
             public RtlSavedState createFromParcel(Parcel source,
                     ClassLoader loader) {

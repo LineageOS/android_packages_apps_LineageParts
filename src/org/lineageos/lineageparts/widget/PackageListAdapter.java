@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012-2014 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2022-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -150,7 +150,8 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
     public void run() {
         final Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
         mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-        List<ResolveInfo> installedAppsInfo = mPm.queryIntentActivities(mainIntent, 0);
+        List<ResolveInfo> installedAppsInfo = mPm.queryIntentActivities(mainIntent,
+                PackageManager.ResolveInfoFlags.of(0));
 
         for (ResolveInfo info : installedAppsInfo) {
             ApplicationInfo appInfo = info.activityInfo.applicationInfo;
@@ -169,7 +170,8 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
                 continue;
             }
             try {
-                ApplicationInfo appInfo = mPm.getApplicationInfo(packageName, 0);
+                ApplicationInfo appInfo = mPm.getApplicationInfo(packageName,
+                        PackageManager.ApplicationInfoFlags.of(0));
                 final PackageItem item = new PackageItem(appInfo.packageName,
                         appInfo.loadLabel(mPm), appInfo.loadIcon(mPm));
                 mHandler.obtainMessage(0, item).sendToTarget();
