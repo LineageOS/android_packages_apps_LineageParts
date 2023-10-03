@@ -5,26 +5,21 @@
  */
 package org.lineageos.lineageparts.statusbar;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.text.format.DateFormat;
 import android.text.TextUtils;
-import android.util.ArraySet;
+import android.text.format.DateFormat;
 import android.view.View;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceScreen;
-
-import lineageos.preference.LineageSystemSettingListPreference;
-import lineageos.providers.LineageSettings;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
 
-import java.util.Set;
+import lineageos.preference.LineageSystemSettingListPreference;
+import lineageos.providers.LineageSettings;
 
 public class StatusBarSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {

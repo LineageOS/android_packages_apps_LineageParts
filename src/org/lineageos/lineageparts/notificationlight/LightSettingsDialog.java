@@ -1,7 +1,7 @@
 /*
  * SPDX-FileCopyrightText: 2010 Daniel Nilsson
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017,2019-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -370,7 +370,7 @@ public class LightSettingsDialog extends AlertDialog implements
 
             // Check if we also need to add the custom value entry
             if (getTimePosition(customTime) == -1) {
-                times.add(new Pair<String, Integer>(mContext.getResources()
+                times.add(new Pair<>(mContext.getResources()
                         .getString(R.string.custom_time), customTime));
             }
         }

@@ -1,11 +1,13 @@
 /*
  * SPDX-FileCopyrightText: 2014 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2020-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2020-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.profiles.actions;
 
 import android.content.Context;
+
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,8 +49,9 @@ public class ItemListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         return mItems.get(position).isHeader() ? VIEW_TYPE_HEADER : VIEW_TYPE_ITEM;
     }
 
+    @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         final RecyclerView.ViewHolder holder;
         if (viewType == VIEW_TYPE_HEADER) {
             holder = new HeaderViewHolder(
@@ -63,7 +66,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         final Item item = mItems.get(position);
         if (holder instanceof HeaderViewHolder) {
             ((HeaderViewHolder) holder).bind(item);
@@ -76,7 +79,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public void onClick(View view) {
         RecyclerView.ViewHolder holder = (RecyclerView.ViewHolder) view.getTag();
-        int position = holder.getAdapterPosition();
+        int position = holder.getBindingAdapterPosition();
         if (position != RecyclerView.NO_POSITION) {
             mItemClickListener.onItemClick(mItems.get(position), position);
         }

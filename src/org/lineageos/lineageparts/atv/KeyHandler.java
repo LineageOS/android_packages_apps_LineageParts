@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2021-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -8,7 +8,6 @@ package org.lineageos.lineageparts.atv;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;

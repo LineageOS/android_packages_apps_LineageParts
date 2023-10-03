@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2019,2021-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -138,7 +138,7 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
     @Override
     protected void onNewIntent(Intent intent) {
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
-            Tag detectedTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+            Tag detectedTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG, Tag.class);
             if (mNfcProfileCallback != null) {
                 mNfcProfileCallback.onTagRead(detectedTag);
             }
@@ -151,7 +151,7 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
     public void onBackPressed() {
         setTitle(mInitialTitle);
 
-        if (!getFragmentManager().popBackStackImmediate()) {
+        if (!getSupportFragmentManager().popBackStackImmediate()) {
             super.onBackPressed();
         }
     }
@@ -189,11 +189,7 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
 
     public boolean switchToFragment(String fragmentClass, Bundle args, int titleRes,
                                     CharSequence titleText) {
-        Fragment fragment = Fragment.instantiate(this, fragmentClass);
-        if (fragment == null) {
-            Log.e(TAG, "Invalid fragment! " + fragmentClass);
-            return false;
-        }
+        Fragment fragment = Fragment.instantiate(this, fragmentClass, null);
         return switchToFragment(fragment, args, titleRes, titleText);
     }
 

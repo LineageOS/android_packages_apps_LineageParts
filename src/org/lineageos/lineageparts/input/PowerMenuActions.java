@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2014-2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -20,7 +20,6 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
 import com.android.internal.util.EmergencyAffordanceManager;
-import com.android.internal.widget.LockPatternUtils;
 import com.android.settingslib.applications.ServiceListing;
 
 import org.lineageos.internal.util.PowerMenuConstants;
@@ -31,7 +30,6 @@ import org.lineageos.lineageparts.utils.TelephonyUtils;
 import java.util.List;
 
 import lineageos.app.LineageGlobalActions;
-import lineageos.providers.LineageSettings;
 
 import static org.lineageos.internal.util.PowerMenuConstants.*;
 
@@ -62,8 +60,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.power_menu_settings);
-        getActivity().setTitle(R.string.power_menu_title);
-        mContext = getActivity().getApplicationContext();
+        requireActivity().setTitle(R.string.power_menu_title);
+        mContext = requireActivity().getApplicationContext();
         mUserManager = UserManager.get(mContext);
         mLineageGlobalActions = LineageGlobalActions.getInstance(mContext);
         mEmergencyAffordanceManager = new EmergencyAffordanceManager(mContext);
@@ -86,7 +84,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             }
         }
 
-        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+        if (!TelephonyUtils.isVoiceCapable(requireActivity())) {
             mPowerMenuItemsCategory.removePreference(mEmergencyPref);
             mEmergencyPref = null;
         }

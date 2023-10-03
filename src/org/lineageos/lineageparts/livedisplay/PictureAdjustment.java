@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2021-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -174,9 +174,7 @@ public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
             dest.writeFloatArray(currentAdj);
         }
 
-        public static final Creator<SavedState> CREATOR =
-                new Creator<PictureAdjustment.SavedState>() {
-
+        public static final Creator<SavedState> CREATOR = new Creator<>() {
             public PictureAdjustment.SavedState createFromParcel(Parcel in) {
                 return new PictureAdjustment.SavedState(in);
             }

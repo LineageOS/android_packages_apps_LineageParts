@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017,2020-2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -84,7 +84,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
 
         Intent intent = new Intent();
         intent.setClass(context, ReportingService.class);
-        context.startServiceAsUser(intent, UserHandle.OWNER);
+        context.startServiceAsUser(intent, UserHandle.SYSTEM);
     }
 
     private static void migrate(Context context, SharedPreferences prefs) {

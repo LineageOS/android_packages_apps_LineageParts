@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
+ * SPDX-FileCopyrightText: 2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -30,6 +31,7 @@ public class ProfileGroupConfig extends SettingsPreferenceFragment implements
     private static final CharSequence KEY_RINGERMODE = "ringer_mode";
     private static final CharSequence KEY_SOUNDTONE = "soundtone";
     private static final CharSequence KEY_RINGTONE = "ringtone";
+    private static final String EXTRA_PROFILE_GROUP = "ProfileGroup";
 
     Profile mProfile;
     ProfileGroup mProfileGroup;
@@ -50,8 +52,8 @@ public class ProfileGroupConfig extends SettingsPreferenceFragment implements
 
         final Bundle args = getArguments();
         if (args != null) {
-            mProfile = (Profile) args.getParcelable("Profile");
-            UUID uuid = UUID.fromString(args.getString("ProfileGroup"));
+            mProfile = args.getParcelable(ProfilesSettings.EXTRA_PROFILE, Profile.class);
+            UUID uuid = UUID.fromString(args.getString(EXTRA_PROFILE_GROUP));
 
             mProfileManager = ProfileManager.getInstance(getActivity());
             mProfileGroup = mProfile.getProfileGroup(uuid);

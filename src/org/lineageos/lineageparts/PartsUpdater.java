@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2022-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts;
@@ -25,13 +25,13 @@ import static lineageos.preference.RemotePreference.EXTRA_SUMMARY;
  * PartsRefresher keeps remote UI clients up to date with any changes in the
  * state of the Part which should be reflected immediately. For preferences,
  * the clear use case is refreshing the summary.
- *
+ * <p>
  * This works in conjunction with LineagePartsPreference, which will send an
  * ordered broadcast requesting updated information. The part will be
  * looked up, and checked for a static SUMMARY_INFO field. If an
  * instance of SummaryInfo is found in this field, the result of the
  * broadcast will be updated with the new information.
- *
+ * <p>
  * Parts can also call refreshPart to send an asynchronous update to any
  * active remote components via broadcast.
  */
@@ -81,8 +81,7 @@ public class PartsUpdater extends RemotePreferenceUpdater {
             bundle.putString(EXTRA_SUMMARY, pi.getSummary());
         }
 
-        if (DEBUG) Log.d(TAG, "fillResultExtras key=" + key +
-                         " part=" + pi.toString());
+        if (DEBUG) Log.d(TAG, "fillResultExtras key=" + key + " part=" + pi);
 
         bundle.putParcelable(EXTRA_PART, pi);
         return true;

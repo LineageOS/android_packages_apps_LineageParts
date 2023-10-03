@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2018,2020-2021 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -10,7 +10,6 @@ import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -22,7 +21,6 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -39,14 +37,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
@@ -65,6 +62,8 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ContributorsCloudFragment extends Fragment implements SearchView.OnQueryTextListener,
         SearchView.OnCloseListener, MenuItem.OnActionExpandListener, Searchable {
@@ -120,7 +119,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     private static class ContributorsAdapter extends ArrayAdapter<ContributorsDataHolder> {
 
         public ContributorsAdapter(Context context) {
-            super(context, R.id.contributor_name, new ArrayList<ContributorsDataHolder>());
+            super(context, R.id.contributor_name, new ArrayList<>());
         }
 
         @Override
@@ -147,7 +146,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         }
     }
 
-    private class ContributorCloudLoaderTask extends AsyncTask<Void, Void, Boolean> {
+    private class ContributorCloudLoaderTask {
         private ViewInfo mViewInfo;
         private final boolean mNotify;
         private final boolean mNavigate;
@@ -157,54 +156,49 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             mNavigate = navigate;
         }
 
-        @Override
-        protected void onPreExecute() {
+        public void execute() {
             mLoadingView.setAlpha(1f);
-        }
 
-        @Override
-        protected Boolean doInBackground(Void... params) {
-            try {
-                loadContributorsInfo(getActivity());
-                loadUserInfo(getActivity());
-                mViewInfo = generateViewInfo(getActivity(), mSelectedContributor);
-                if (mViewInfo != null && mViewInfo.mBitmap != null) {
-                    return Boolean.TRUE;
-                }
-
-            } catch (Exception ex) {
-                Log.e(TAG, "Failed to generate cloud bitmap", ex);
-            }
-            return Boolean.FALSE;
-        }
-
-        @Override
-        protected void onPostExecute(Boolean result) {
-            if (result) {
-                mImageView.setImageBitmap(mViewInfo.mBitmap);
-                mViewController.update();
-                if (mNotify) {
-                    if (mNavigate) {
-                        onLoadCloudDataSuccess(mViewInfo.mFocusX, mViewInfo.mFocusY);
-                    } else {
-                        onLoadCloudDataSuccess(-1, -1);
+            ExecutorService executor = Executors.newSingleThreadExecutor();
+            Handler handler = new Handler(Looper.getMainLooper());
+            executor.execute(() -> {
+                Boolean result = Boolean.FALSE;
+                try {
+                    loadContributorsInfo(getActivity());
+                    loadUserInfo(getActivity());
+                    mViewInfo = generateViewInfo(requireActivity(), mSelectedContributor);
+                    if (mViewInfo != null && mViewInfo.mBitmap != null) {
+                        result = Boolean.TRUE;
                     }
-                }
-            } else {
-                mImageView.setImageBitmap(null);
-                mViewController.update();
-                if (mViewInfo != null && mViewInfo.mBitmap != null) {
-                    mViewInfo.mBitmap.recycle();
-                }
-                if (mNotify) {
-                    onLoadCloudDataFailed();
-                }
-            }
-        }
 
-        @Override
-        protected void onCancelled() {
-            onLoadCloudDataFailed();
+                } catch (Exception ex) {
+                    Log.e(TAG, "Failed to generate cloud bitmap", ex);
+                }
+
+                final Boolean finalResult = result;
+                handler.post(() -> {
+                    if (finalResult) {
+                        mImageView.setImageBitmap(mViewInfo.mBitmap);
+                        mViewController.update();
+                        if (mNotify) {
+                            if (mNavigate) {
+                                onLoadCloudDataSuccess(mViewInfo.mFocusX, mViewInfo.mFocusY);
+                            } else {
+                                onLoadCloudDataSuccess(-1, -1);
+                            }
+                        }
+                    } else {
+                        mImageView.setImageBitmap(null);
+                        mViewController.update();
+                        if (mViewInfo != null && mViewInfo.mBitmap != null) {
+                            mViewInfo.mBitmap.recycle();
+                        }
+                        if (mNotify) {
+                            onLoadCloudDataFailed();
+                        }
+                    }
+                });
+            });
         }
     }
 
@@ -234,22 +228,22 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState) {
+    public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(STATE_SELECTED_CONTRIBUTOR, mSelectedContributor);
     }
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        activity.getWindow().setSoftInputMode(
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        requireActivity().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
                 | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING);
         mHandler = new Handler(Looper.getMainLooper());
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
 
         // Remove all previous menus
@@ -586,10 +580,6 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
             try {
                 mDatabase = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                         null, SQLiteDatabase.OPEN_READONLY);
-                if (mDatabase == null) {
-                    Log.e(TAG, "Cannot open cloud database: " + DB_NAME + ". db == null");
-                    return null;
-                }
                 return mDatabase;
 
             } catch (SQLException ex) {
@@ -753,7 +743,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
     }
 
     private boolean hasLargeHeap() {
-        ActivityManager am = getActivity().getSystemService(ActivityManager.class);
+        ActivityManager am = requireActivity().getSystemService(ActivityManager.class);
         return am.getMemoryClass() >= 96;
     }
 
@@ -768,6 +758,7 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
         OutputStream os;
         File databasePath = context.getDatabasePath(DB_NAME);
         try {
+            //noinspection ResultOfMethodCallIgnored
             databasePath.getParentFile().mkdir();
             is = context.getResources().getAssets().open(DB_NAME, AssetManager.ACCESS_BUFFER);
             os = new FileOutputStream(databasePath);
@@ -801,10 +792,6 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
                     try {
                         db = SQLiteDatabase.openDatabase(dbPath.getAbsolutePath(),
                                 null, SQLiteDatabase.OPEN_READONLY);
-                        if (db == null) {
-                            Log.e(TAG, "Cannot open cloud database: " + DB_NAME + ". db == null");
-                            return null;
-                        }
                     } catch (Exception e) {
                         Log.e(TAG, e.getMessage(), e);
                         return null;

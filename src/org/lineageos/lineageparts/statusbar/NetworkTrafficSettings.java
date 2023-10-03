@@ -8,7 +8,6 @@ package org.lineageos.lineageparts.statusbar;
 import android.content.ContentResolver;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.preference.DropDownPreference;
 import androidx.preference.Preference;
@@ -103,16 +102,16 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mNetTrafficMode) {
-            int mode = Integer.valueOf((String) newValue);
+            int mode = Integer.parseInt((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
                     LineageSettings.Secure.NETWORK_TRAFFIC_MODE, mode);
             updateEnabledStates(mode);
         } else if (preference == mNetTrafficPosition) {
-            int position = Integer.valueOf((String) newValue);
+            int position = Integer.parseInt((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
                     LineageSettings.Secure.NETWORK_TRAFFIC_POSITION, position);
         } else if (preference == mNetTrafficUnits) {
-            int units = Integer.valueOf((String) newValue);
+            int units = Integer.parseInt((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
                     LineageSettings.Secure.NETWORK_TRAFFIC_UNITS, units);
         }
