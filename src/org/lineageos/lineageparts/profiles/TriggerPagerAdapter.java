@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2014 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -36,10 +37,8 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
 
     private final FragmentActivity mFragmentActivity;
 
-    private int mCurrentPage;
-
     /**
-     * Constructor of <code>PagerAdatper<code>
+     * Constructor of <code>PagerAdapter<code>
      *
      * @param activity The {@link androidx.fragment.app.FragmentActivity} of the
      *            {@link androidx.fragment.app.Fragment}.
@@ -71,37 +70,24 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
     }
 
     /**
-     * Method that returns the {@link androidx.fragment.app.Fragment} in the argument
-     * position.
-     *
-     * @param position The position of the fragment to return.
-     * @return Fragment The {@link androidx.fragment.app.Fragment} in the argument position.
-     */
-    public Fragment getFragment(final int position) {
-        final WeakReference<Fragment> mWeakFragment = mFragmentArray.get(position);
-        if (mWeakFragment != null && mWeakFragment.get() != null) {
-            return mWeakFragment.get();
-        }
-        return getItem(position);
-    }
-
-    /**
      * {@inheritDoc}
      */
+    @NonNull
     @Override
-    public Object instantiateItem(final ViewGroup container, final int position) {
+    public Object instantiateItem(@NonNull final ViewGroup container, final int position) {
         final Fragment mFragment = (Fragment)super.instantiateItem(container, position);
         final WeakReference<Fragment> mWeakFragment = mFragmentArray.get(position);
         if (mWeakFragment != null) {
             mWeakFragment.clear();
         }
-        mFragmentArray.put(position, new WeakReference<Fragment>(mFragment));
+        mFragmentArray.put(position, new WeakReference<>(mFragment));
         return mFragment;
     }
 
     /**
      * {@inheritDoc}
      */
+    @NonNull
     @Override
     public Fragment getItem(final int position) {
         final Holder mCurrentHolder = mHolderList.get(position);
@@ -113,7 +99,8 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
      * {@inheritDoc}
      */
     @Override
-    public void destroyItem(final ViewGroup container, final int position, final Object object) {
+    public void destroyItem(@NonNull final ViewGroup container, final int position,
+                            @NonNull final Object object) {
         super.destroyItem(container, position, object);
         final WeakReference<Fragment> mWeakFragment = mFragmentArray.get(position);
         if (mWeakFragment != null) {
@@ -135,24 +122,6 @@ public class TriggerPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(final int position) {
         return mFragmentActivity.getString(mHolderList.get(position).mTitleResId);
-    }
-
-    /**
-     * Method that returns the current page position.
-     *
-     * @return int The current page.
-     */
-    public int getCurrentPage() {
-        return mCurrentPage;
-    }
-
-    /**
-     * Method that sets the current page position.
-     *
-     * @param currentPage The current page.
-     */
-    protected void setCurrentPage(final int currentPage) {
-        mCurrentPage = currentPage;
     }
 
     /**

@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -28,7 +28,7 @@ public class PreviewData extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.preview_data);
 
         final PreferenceScreen prefSet = getPreferenceScreen();
-        final Context context = getActivity();
+        final Context context = requireActivity();
 
         prefSet.findPreference(UNIQUE_ID).setSummary(Utilities.getUniqueID(context));
         prefSet.findPreference(DEVICE).setSummary(Utilities.getDevice());

@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2013 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -323,13 +323,10 @@ public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialo
             dest.writeFloat(keyboard);
         }
 
-        public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
-
+        public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.Creator<>() {
             public SavedState createFromParcel(Parcel in) {
                 return new SavedState(in);
             }
-
             public SavedState[] newArray(int size) {
                 return new SavedState[size];
             }

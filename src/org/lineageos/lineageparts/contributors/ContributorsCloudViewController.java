@@ -1,7 +1,7 @@
 /*
  * SPDX-FileCopyrightText: 2011, 2012 Chris Banes.
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2022-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -883,22 +883,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
         }
 
         return true;
-    }
-
-    /**
-     * Interface definition for a callback to be invoked when the internal Matrix has changed for
-     * this View.
-     *
-     * @author Chris Banes
-     */
-    public interface OnMatrixChangedListener {
-        /**
-         * Callback for when the Matrix displaying the Drawable has changed. This could be because
-         * the View's bounds have changed, or the user has zoomed.
-         *
-         * @param rect - Rectangle displaying the Drawable's new bounds.
-         */
-        void onMatrixChanged(RectF rect);
     }
 
     /**
