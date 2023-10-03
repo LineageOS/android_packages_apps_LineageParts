@@ -1,13 +1,12 @@
 /*
  * SPDX-FileCopyrightText: 2014 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2020-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2020-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.profiles.actions.item;
 
 import android.content.Context;
 import android.media.AudioManager;
-import android.provider.Settings;
 
 import org.lineageos.lineageparts.R;
 
@@ -44,10 +43,7 @@ public class VolumeStreamItem extends Item {
     @Override
     public boolean isEnabled(Context context) {
         // all streams are enabled, except notification stream if linking to ring volume is enabled
-        if (mStreamId != AudioManager.STREAM_NOTIFICATION) {
-            return true;
-        }
-        return false;
+        return mStreamId != AudioManager.STREAM_NOTIFICATION;
     }
 
     public static int getNameForStream(int stream) {

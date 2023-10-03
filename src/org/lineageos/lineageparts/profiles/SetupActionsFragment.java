@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2014 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -9,19 +9,21 @@ package org.lineageos.lineageparts.profiles;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.admin.DevicePolicyManager;
-import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.LocationManager;
 import android.media.AudioManager;
-import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.nfc.NfcManager;
-import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.Settings;
+
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
@@ -42,7 +44,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 
 import lineageos.app.Profile;
-import lineageos.app.ProfileGroup;
 import lineageos.app.ProfileManager;
 import lineageos.profiles.AirplaneModeSettings;
 import lineageos.profiles.BrightnessSettings;
@@ -72,6 +73,8 @@ import org.lineageos.lineageparts.utils.DeviceUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
 import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_LOCATION;
@@ -147,7 +150,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE);
+            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE, Profile.class);
             mNewProfileMode = getArguments().getBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, false);
         }
 
@@ -183,7 +186,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
             // triggers
             mItems.add(new Header(R.string.profile_triggers_header));
             mItems.add(generateTriggerItem(TriggerItem.WIFI));
-            if (DeviceUtils.deviceSupportsBluetooth()) {
+            if (DeviceUtils.deviceSupportsBluetooth(context)) {
                 mItems.add(generateTriggerItem(TriggerItem.BLUETOOTH));
             }
             if (DeviceUtils.deviceSupportsNfc(context)) {
@@ -193,7 +196,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         // connection overrides
         mItems.add(new Header(R.string.wireless_networks_settings_title));
-        if (DeviceUtils.deviceSupportsBluetooth()) {
+        if (DeviceUtils.deviceSupportsBluetooth(context)) {
             mItems.add(new ConnectionOverrideItem(PROFILE_CONNECTION_BLUETOOTH,
                     mProfile.getSettingsForConnection(PROFILE_CONNECTION_BLUETOOTH)));
         }
@@ -295,7 +298,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         mRecyclerView = view.findViewById(android.R.id.list);
@@ -303,7 +306,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mRecyclerView.setAdapter(mAdapter);
 
         if (mNewProfileMode) {
-            TextView desc = new TextView(getActivity());
+            TextView desc = new TextView(requireActivity());
             int descPadding = getResources().getDimensionPixelSize(
                     R.dimen.profile_instruction_padding);
             desc.setPadding(descPadding, descPadding, descPadding, descPadding);
@@ -319,7 +322,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        final PartsActivity activity = (PartsActivity) getActivity();
+        final PartsActivity activity = (PartsActivity) requireActivity();
         if (mNewProfileMode) {
             activity.setTitle(getString(R.string.profiles_create_new));
             activity.getTopIntro().setText(R.string.profile_setup_actions_title);
@@ -332,11 +335,10 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     }
 
     private AlertDialog requestFillProfileFromSettingsDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
         builder.setMessage(R.string.profile_populate_profile_from_state);
         builder.setNegativeButton(R.string.no, null);
-        builder.setPositiveButton(R.string.yes,
-                (DialogInterface.OnClickListener) (dialog, which) -> {
+        builder.setPositiveButton(R.string.yes, (dialog, which) -> {
             fillProfileFromCurrentSettings();
             dialog.dismiss();
         });
@@ -344,28 +346,23 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     }
 
     private void fillProfileFromCurrentSettings() {
-        new AsyncTask<Void, Void, Void>() {
-            @Override
-            protected Void doInBackground(Void... params) {
-                fillProfileWithCurrentSettings(getActivity(), mProfile);
-                updateProfile();
-                return null;
-            }
-
-            @Override
-            protected void onPostExecute(Void aVoid) {
-                super.onPostExecute(aVoid);
-                rebuildItemList();
-            }
-        }.execute((Void) null);
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        Handler handler = new Handler(Looper.getMainLooper());
+        executor.execute(() -> {
+            fillProfileWithCurrentSettings(getActivity(), mProfile);
+            updateProfile();
+            handler.post(this::rebuildItemList);
+        });
     }
 
     public static void fillProfileWithCurrentSettings(Context context, Profile profile) {
         // bt
-        if (DeviceUtils.deviceSupportsBluetooth()) {
+        if (DeviceUtils.deviceSupportsBluetooth(context)) {
+            BluetoothManager bluetoothManager =
+                    (BluetoothManager) context.getSystemService(Context.BLUETOOTH_SERVICE);
             profile.setConnectionSettings(
                     new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH,
-                            BluetoothAdapter.getDefaultAdapter().isEnabled() ? 1 : 0,
+                            bluetoothManager.getAdapter().isEnabled() ? 1 : 0,
                             true));
         }
 
@@ -388,7 +385,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
         // mobile data
         if (DeviceUtils.deviceSupportsMobileData(context)) {
-            ConnectivityManager cm = context.getSystemService(ConnectivityManager.class);
             profile.setConnectionSettings(
                     new ConnectionSettings(ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA,
                             DeviceUtils.isMobileDataEnabled(context) ? 1 : 0, true));
@@ -653,7 +649,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     }
 
     private AlertDialog requestRingModeDialog(final RingModeSettings setting) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
         final String[] values = getResources().getStringArray(R.array.ring_mode_values);
         final String[] names = getResources().getStringArray(R.array.ring_mode_entries);
 
@@ -857,7 +853,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_setup_actions, container, false);
 

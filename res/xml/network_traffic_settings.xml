@@ -1,45 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2017-2018,2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <DropDownPreference
-        android:key="network_traffic_mode"
-        android:title="@string/network_traffic_mode_title"
         android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
+        android:key="network_traffic_mode"
+        android:persistent="false"
         android:summary="%s"
-        android:persistent="false" />
+        android:title="@string/network_traffic_mode_title" />
 
     <DropDownPreference
-        android:key="network_traffic_position"
-        android:title="@string/network_traffic_position_title"
         android:entries="@array/network_traffic_position_entries"
         android:entryValues="@array/network_traffic_position_values"
+        android:key="network_traffic_position"
+        android:persistent="false"
         android:summary="%s"
-        android:persistent="false" />
+        android:title="@string/network_traffic_position_title" />
 
     <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:defaultValue="false"
         android:key="network_traffic_autohide"
-        android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
-        android:defaultValue="false" />
+        android:title="@string/network_traffic_autohide" />
 
     <DropDownPreference
-        android:key="network_traffic_units"
-        android:title="@string/network_traffic_units_title"
         android:entries="@array/network_traffic_units_entries"
         android:entryValues="@array/network_traffic_units_values"
+        android:key="network_traffic_units"
+        android:persistent="false"
         android:summary="%s"
-        android:persistent="false" />
+        android:title="@string/network_traffic_units_title" />
 
     <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:defaultValue="true"
         android:key="network_traffic_show_units"
-        android:title="@string/network_traffic_show_units"
         android:summary="@string/network_traffic_show_units_summary"
-        android:defaultValue="true" />
+        android:title="@string/network_traffic_show_units" />
 
 </PreferenceScreen>

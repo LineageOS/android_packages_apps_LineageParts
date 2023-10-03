@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017,2019-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -21,6 +21,9 @@ import android.util.ArraySet;
 import android.util.Log;
 import android.view.View;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.preference.Preference;
 
 import org.lineageos.lineageparts.R;
@@ -56,13 +59,57 @@ public class ChargingSoundsSettings
     private Uri mDefaultWiredChargingSoundUri;
     private Uri mDefaultWirelessChargingSoundUri;
 
+    private int mRequestCode;
+
+    private final ActivityResultLauncher<Intent> mActivityResultLauncher =
+            registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+                    result -> {
+                        if (result.getResultCode() != Activity.RESULT_OK) {
+                            return;
+                        }
+                        Intent data = result.getData();
+                        if (data == null) {
+                            return;
+                        }
+                        Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI,
+                                Uri.class);
+
+                        if (uri == null) {
+                            updateChargingSounds(RINGTONE_SILENT_URI_STRING,
+                                    mRequestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
+                            return;
+                        }
+
+                        String mimeType = requireContext().getContentResolver().getType(uri);
+                        if (mimeType == null) {
+                            Log.e(TAG, "call to updateChargingSounds for URI:" + uri
+                                    + " ignored: failure to find mimeType "
+                                    + "(no access from this context?)");
+                            return;
+                        }
+
+                        if (!isSupportedMimeType(mimeType)) {
+                            Log.e(TAG, "call to updateChargingSounds for URI:" + uri
+                                    + " ignored: associated mimeType:" + mimeType
+                                    + " is not an audio type");
+                            return;
+                        }
+
+                        updateChargingSounds(uri.toString(),
+                                mRequestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
+            });
+
+    private boolean isSupportedMimeType(String mimeType) {
+        return mimeType.startsWith("audio/") || mimeType.equals("application/ogg");
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.charging_sounds_settings);
 
-        Vibrator vibrator = getActivity().getSystemService(Vibrator.class);
+        Vibrator vibrator = requireActivity().getSystemService(Vibrator.class);
         if (vibrator == null || !vibrator.hasVibrator()) {
             removePreference(KEY_CHARGING_VIBRATION_ENABLED);
         }
@@ -72,7 +119,7 @@ public class ChargingSoundsSettings
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         final String currentWiredChargingSound = Settings.Global.getString(getContentResolver(),
@@ -82,16 +129,16 @@ public class ChargingSoundsSettings
 
         // Convert default sound file path to a media uri so that we can
         // set a proper default for the ringtone picker.
-        mDefaultWiredChargingSoundUri = audioFileToUri(getContext(),
+        mDefaultWiredChargingSoundUri = audioFileToUri(requireContext(),
                 DEFAULT_WIRED_CHARGING_SOUND);
-        mDefaultWirelessChargingSoundUri = audioFileToUri(getContext(),
+        mDefaultWirelessChargingSoundUri = audioFileToUri(requireContext(),
                 DEFAULT_WIRELESS_CHARGING_SOUND);
 
         updateChargingSounds(currentWiredChargingSound, false /* wireless */);
         updateChargingSounds(currentWirelessChargingSound, true /* wireless */);
     }
 
-    private Uri audioFileToUri(Context context, String audioFile) {
+    private Uri audioFileToUri(@NonNull Context context, String audioFile) {
         Cursor cursor = context.getContentResolver().query(
                 MediaStore.Audio.Media.INTERNAL_CONTENT_URI,
                 new String[] { MediaStore.Audio.Media._ID },
@@ -185,44 +232,10 @@ public class ChargingSoundsSettings
         }
         if (toneUriString != null && !toneUriString.equals(RINGTONE_SILENT_URI_STRING)) {
             Uri uri = Uri.parse(toneUriString);
-            if (uri != null) {
-                intent.putExtra(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI, uri);
-            }
+            intent.putExtra(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI, uri);
         }
-        startActivityForResult(intent, requestCode);
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if ((requestCode == REQUEST_CODE_WIRED_CHARGING_SOUND ||
-                requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND) &&
-                resultCode == Activity.RESULT_OK) {
-            Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
-
-            if (uri == null) {
-                updateChargingSounds(RINGTONE_SILENT_URI_STRING,
-                        requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
-                return;
-            }
-
-            String mimeType = getContext().getContentResolver().getType(uri);
-            if (mimeType == null) {
-                Log.e(TAG, "call to updateChargingSounds for URI:" + uri
-                        + " ignored: failure to find mimeType (no access from this context?)");
-                return;
-            }
-
-            if (!(mimeType.startsWith("audio/") || mimeType.equals("application/ogg"))) {
-                Log.e(TAG, "call to updateChargingSounds for URI:" + uri
-                        + " ignored: associated mimeType:" + mimeType + " is not an audio type");
-                return;
-            }
-
-            updateChargingSounds(uri.toString(),
-                    requestCode == REQUEST_CODE_WIRELESS_CHARGING_SOUND);
-        }
+        mRequestCode = requestCode;
+        mActivityResultLauncher.launch(intent);
     }
 
     public static final Searchable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

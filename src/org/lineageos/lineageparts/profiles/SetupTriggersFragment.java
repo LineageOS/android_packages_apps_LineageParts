@@ -15,6 +15,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 import lineageos.app.Profile;
 import lineageos.app.ProfileManager;
 
@@ -29,7 +33,6 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
 
     RtlCompatibleViewPager mPager;
     Profile mProfile;
-    ProfileManager mProfileManager;
     SlidingTabLayout mTabLayout;
     TriggerPagerAdapter mAdapter;
     boolean mNewProfileMode;
@@ -56,17 +59,16 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE);
+            mProfile = getArguments().getParcelable(ProfilesSettings.EXTRA_PROFILE, Profile.class);
             mNewProfileMode = getArguments().getBoolean(ProfilesSettings.EXTRA_NEW_PROFILE, false);
             mPreselectedItem = getArguments().getInt(EXTRA_INITIAL_PAGE, 0);
         }
-        mProfileManager = ProfileManager.getInstance(getActivity());
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        final PartsActivity activity = (PartsActivity) getActivity();
+        final PartsActivity activity = (PartsActivity) requireActivity();
         if (mNewProfileMode) {
             activity.setTitle(R.string.profiles_create_new);
             activity.getTopIntro().setText(R.string.profile_setup_setup_triggers_title);
@@ -76,11 +78,11 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
                     R.string.profile_setup_setup_triggers_title_config, mProfile.getName()));
         }
         activity.showTopIntro(true);
-
-        activity.getCollapsingToolbarLayout().measure(
-                View.MeasureSpec.EXACTLY, View.MeasureSpec.EXACTLY);
-        activity.getCollapsingToolbarLayout().post(() ->
-                mPager.setHeightOffset(mTabLayout.getHeight()));
+        CollapsingToolbarLayout toolbarLayout = activity.getCollapsingToolbarLayout();
+        if (toolbarLayout != null) {
+            toolbarLayout.measure(View.MeasureSpec.EXACTLY, View.MeasureSpec.EXACTLY);
+            toolbarLayout.post(() -> mPager.setHeightOffset(mTabLayout.getHeight()));
+        }
     }
 
     @Override
@@ -91,8 +93,8 @@ public class SetupTriggersFragment extends SettingsPreferenceFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_setup_triggers, container, false);
 

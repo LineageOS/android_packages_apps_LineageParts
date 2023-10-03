@@ -261,8 +261,7 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private void launchBrowser() {
-        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
-        mPowerManager.wakeUp(SystemClock.uptimeMillis(), GESTURE_WAKEUP_REASON);
+        performWakeUp();
         final Intent intent = getLaunchableIntent(
                 new Intent(Intent.ACTION_VIEW, Uri.parse("http:")));
         startActivitySafely(intent);
@@ -270,16 +269,14 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private void launchDialer() {
-        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
-        mPowerManager.wakeUp(SystemClock.uptimeMillis(), GESTURE_WAKEUP_REASON);
+        performWakeUp();
         final Intent intent = new Intent(Intent.ACTION_DIAL, null);
         startActivitySafely(intent);
         doHapticFeedback();
     }
 
     private void launchEmail() {
-        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
-        mPowerManager.wakeUp(SystemClock.uptimeMillis(), GESTURE_WAKEUP_REASON);
+        performWakeUp();
         final Intent intent = getLaunchableIntent(
                 new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:")));
         startActivitySafely(intent);
@@ -287,12 +284,17 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private void launchMessages() {
-        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
-        mPowerManager.wakeUp(SystemClock.uptimeMillis(), GESTURE_WAKEUP_REASON);
+        performWakeUp();
         final Intent intent = getLaunchableIntent(
                 new Intent(Intent.ACTION_VIEW, Uri.parse("sms:")));
         startActivitySafely(intent);
         doHapticFeedback();
+    }
+
+    private void performWakeUp() {
+        mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
+        mPowerManager.wakeUp(SystemClock.uptimeMillis(), PowerManager.WAKE_REASON_GESTURE,
+                GESTURE_WAKEUP_REASON);
     }
 
     private void toggleFlashlight() {
@@ -412,7 +414,8 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private Intent getLaunchableIntent(Intent intent) {
         PackageManager pm = mContext.getPackageManager();
-        List<ResolveInfo> resInfo = pm.queryIntentActivities(intent, 0);
+        List<ResolveInfo> resInfo = pm.queryIntentActivities(intent,
+                PackageManager.ResolveInfoFlags.of(0));
         if (resInfo.isEmpty()) {
             return null;
         }

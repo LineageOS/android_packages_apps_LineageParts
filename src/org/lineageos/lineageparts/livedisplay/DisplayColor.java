@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2021-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2021-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -166,9 +166,7 @@ public class DisplayColor extends CustomDialogPreference<AlertDialog> {
             dest.writeFloatArray(currentColors);
         }
 
-        public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
-
+        public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.Creator<>() {
             public SavedState createFromParcel(Parcel in) {
                 return new SavedState(in);
             }
