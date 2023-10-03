@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -159,7 +159,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.button_settings);
 
         final Resources res = getResources();
-        final ContentResolver resolver = getActivity().getContentResolver();
+        final ContentResolver resolver = requireActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         final boolean hasPowerKey = DeviceUtils.hasPowerKey();
@@ -589,7 +589,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         String value = (String) newValue;
         int index = pref.findIndexOfValue(value);
         pref.setSummary(pref.getEntries()[index]);
-        LineageSettings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
+        LineageSettings.System.putInt(getContentResolver(), setting, Integer.parseInt(value));
     }
 
     private void handleSystemListChange(ListPreference pref, Object newValue, String setting) {
@@ -658,7 +658,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mEnableTaskbar) {
             toggleTaskBarDependencies((Boolean) newValue);
-            if ((Boolean) newValue && is2ButtonNavigationEnabled(getContext())) {
+            if ((Boolean) newValue && is2ButtonNavigationEnabled(requireContext())) {
                 // Let's switch to gestural mode if user previously had 2 buttons enabled.
                 setButtonNavigationMode(NAV_BAR_MODE_GESTURAL_OVERLAY);
             }
@@ -705,7 +705,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
     }
 
     private void updateDisableNavkeysOption() {
-        boolean enabled = LineageSettings.System.getIntForUser(getActivity().getContentResolver(),
+        boolean enabled = LineageSettings.System.getIntForUser(requireActivity()
+                        .getContentResolver(),
                 LineageSettings.System.FORCE_SHOW_NAVBAR, 0, UserHandle.USER_CURRENT) != 0;
 
         mDisableNavigationKeys.setChecked(enabled);
@@ -738,7 +739,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         /* Toggle hardkey control availability depending on navbar state */
         if (mNavigationPreferencesCat != null) {
             if (force || navbarEnabled) {
-                if (DeviceUtils.isEdgeToEdgeEnabled(getContext())) {
+                if (DeviceUtils.isEdgeToEdgeEnabled(requireContext())) {
                     mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
 
                     mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
@@ -847,10 +848,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 /* Disable the re-orient functionality */
                 value = 0;
             }
-            LineageSettings.System.putInt(getActivity().getContentResolver(),
+            LineageSettings.System.putInt(requireActivity().getContentResolver(),
                     LineageSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION, value);
         } else if (preference == mVolumePanelOnLeft) {
-            LineageSettings.Secure.putIntForUser(getActivity().getContentResolver(),
+            LineageSettings.Secure.putIntForUser(requireActivity().getContentResolver(),
                     LineageSettings.Secure.VOLUME_PANEL_ON_LEFT,
                     mVolumePanelOnLeft.isChecked() ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
@@ -860,7 +861,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             if (!mDisableNavigationKeys.isChecked()) {
                 setButtonNavigationMode(NAV_BAR_MODE_3BUTTON_OVERLAY);
             }
-            writeDisableNavkeysOption(getActivity(), mDisableNavigationKeys.isChecked());
+            writeDisableNavkeysOption(requireActivity(), mDisableNavigationKeys.isChecked());
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(true, false);
             mHandler.postDelayed(new Runnable() {

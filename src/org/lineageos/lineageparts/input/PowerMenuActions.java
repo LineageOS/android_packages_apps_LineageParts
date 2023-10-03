@@ -62,8 +62,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.power_menu_settings);
-        getActivity().setTitle(R.string.power_menu_title);
-        mContext = getActivity().getApplicationContext();
+        requireActivity().setTitle(R.string.power_menu_title);
+        mContext = requireActivity().getApplicationContext();
         mUserManager = UserManager.get(mContext);
         mLineageGlobalActions = LineageGlobalActions.getInstance(mContext);
         mEmergencyAffordanceManager = new EmergencyAffordanceManager(mContext);
@@ -86,7 +86,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             }
         }
 
-        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+        if (!TelephonyUtils.isVoiceCapable(requireActivity())) {
             mPowerMenuItemsCategory.removePreference(mEmergencyPref);
             mEmergencyPref = null;
         }

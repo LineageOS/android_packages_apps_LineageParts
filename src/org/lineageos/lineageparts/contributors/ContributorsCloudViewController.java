@@ -886,22 +886,6 @@ public class ContributorsCloudViewController implements View.OnTouchListener,
     }
 
     /**
-     * Interface definition for a callback to be invoked when the internal Matrix has changed for
-     * this View.
-     *
-     * @author Chris Banes
-     */
-    public interface OnMatrixChangedListener {
-        /**
-         * Callback for when the Matrix displaying the Drawable has changed. This could be because
-         * the View's bounds have changed, or the user has zoomed.
-         *
-         * @param rect - Rectangle displaying the Drawable's new bounds.
-         */
-        void onMatrixChanged(RectF rect);
-    }
-
-    /**
      * Interface definition for a callback to be invoked when the Photo is tapped with a single
      * tap.
      *
