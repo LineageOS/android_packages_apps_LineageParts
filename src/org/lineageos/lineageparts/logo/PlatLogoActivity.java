@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2010 The Android Open Source Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -198,9 +198,7 @@ public class PlatLogoActivity extends Activity {
             }
             canvas.restore();
 
-            // Disable until we get a stage 2 easter egg
-            // check if a long press event has occured
-            // checkLongPressTimeout();
+            checkLongPressTimeout();
         }
 
         @Override
