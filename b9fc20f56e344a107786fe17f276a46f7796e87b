@@ -1,0 +1,193 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dd668cdd_8885d281",
+        "filename": "src/org/lineageos/lineageparts/gestures/TouchscreenGestureSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "2017-2023",
+      "range": {
+        "startLine": 3,
+        "startChar": 27,
+        "endLine": 3,
+        "endChar": 41
+      },
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a75624c2_f1876501",
+        "filename": "src/org/lineageos/lineageparts/input/ButtonSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 706,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "Wrong indentation?",
+      "range": {
+        "startLine": 706,
+        "startChar": 16,
+        "endLine": 706,
+        "endChar": 24
+      },
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24dd657b_fc4733c0",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/DisplayColor.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "2023",
+      "range": {
+        "startLine": 3,
+        "startChar": 32,
+        "endLine": 3,
+        "endChar": 36
+      },
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0df9f0a1_af5b960a",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/DisplayTemperature.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "2023",
+      "range": {
+        "startLine": 3,
+        "startChar": 32,
+        "endLine": 3,
+        "endChar": 36
+      },
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24099f80_4053053f",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/LiveDisplaySettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "2023",
+      "range": {
+        "startLine": 3,
+        "startChar": 32,
+        "endLine": 3,
+        "endChar": 36
+      },
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bda0e6e9_8ebe39d1",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/LightSettingsDialog.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "2017-2023",
+      "range": {
+        "startLine": 4,
+        "startChar": 27,
+        "endLine": 4,
+        "endChar": 41
+      },
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "48d00bce_70e30bc0",
+        "filename": "src/org/lineageos/lineageparts/profiles/ProfilesPreference.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "add 2023 lineage?",
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aece817e_dc2b8c77",
+        "filename": "src/org/lineageos/lineageparts/search/Searchable.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "-2023",
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "31fc53ba_2212bd36",
+        "filename": "src/org/lineageos/lineageparts/utils/TelephonyUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-09T18:54:09Z",
+      "side": 1,
+      "message": "Add 2023 lineage? Also project needs capital P, maybe in the previous commit?",
+      "revId": "b9fc20f56e344a107786fe17f276a46f7796e87b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
