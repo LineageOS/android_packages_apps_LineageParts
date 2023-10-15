@@ -320,7 +320,7 @@
     <string name="ring_mode_title">Äänet</string>
     <string name="ring_mode_normal">Normaali</string>
     <string name="ring_mode_vibrate">Värinä</string>
-    <string name="ring_mode_mute">Äänetön</string>
+    <string name="ring_mode_mute">Mykistys</string>
     <string name="ring_volume_title">Soittoäänen voimakkuus</string>
     <string name="incoming_call_volume_title">Soittoääni</string>
     <string name="notification_volume_title">Ilmoitus</string>

@@ -59,6 +59,12 @@
     <string name="light_brightness_title">Lefelau disgleirdeb</string>
     <string name="light_brightness_normal">Arferol</string>
     <string name="light_brightness_zen">Dim Tarfu</string>
+    <string name="charging_control_title">Rheolaeth gwefru</string>
+    <string name="charging_control_enable_title">Galluogi rheolaeth gwefru</string>
+    <string name="charging_control_mode_title">Modd gwefru</string>
+    <string name="charging_control_start_time_title">Amser dechrau</string>
+    <string name="charging_control_target_time_title">Amser targed i wefru\'n llawn</string>
+    <string name="charging_control_limit_title">Terfyn</string>
     <string name="battery_light_title">Golau batri</string>
     <string name="battery_light_enable_title">Galluogi golau batri</string>
     <string name="battery_low_pulse_title">Curiad os yw\'r batri\'n isel</string>
