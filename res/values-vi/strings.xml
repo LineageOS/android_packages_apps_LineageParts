@@ -59,7 +59,7 @@
     <string name="pulse_speed_very_slow">Rất chậm</string>
     <string name="light_brightness_title">Độ sáng</string>
     <string name="light_brightness_normal">Bình thường</string>
-    <string name="light_brightness_zen">Đừng Làm Phiền</string>
+    <string name="light_brightness_zen">Không Làm Phiền</string>
     <string name="battery_light_title">Đèn báo pin</string>
     <string name="battery_low_pulse_title">Nhấp nháy khi pin yếu</string>
     <string name="battery_light_full_charge_disabled_title">Tắt khi đã sạc đầy</string>
@@ -392,10 +392,10 @@
     <string name="network_traffic_autohide">Tự động ẩn</string>
     <string name="network_traffic_autohide_summary">Ẩn giám sát lưu lượng mạng khi không có hoạt động</string>
     <string name="network_traffic_units_title">Đơn vị đo lưu lượng</string>
-    <string name="network_traffic_units_kilobits">Kilobit mỗi giây (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabit mỗi giây (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobyte mỗi giây (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabit mỗi giây (Mb/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobit trên giây (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabit trên giây (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobyte trên giây (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabyte trên giây (MB/s)</string>
     <string name="network_traffic_show_units">Hiển thị các đơn vị</string>
     <string name="network_traffic_show_units_summary">Hiển thị các đơn vị đo lưu lượng truy cập trong thanh trạng thái</string>
     <string name="network_traffic_disabled_clock">Lưu lượng mạng bị vô hiệu hóa do vị trí đồng hồ</string>
@@ -546,7 +546,7 @@
     <string name="trust_restrict_usb_title">Hạn chế USB</string>
     <string name="trust_restrict_usb_summary">Vô hiệu hóa các tiện ích USB mới khi thiết bị bị khóa</string>
     <string name="sms_security_check_limit_title">Giới hạn tin nhắn SMS</string>
-    <string name="sms_security_check_limit_summary">Ứng dụng có thể gửi tin nhắn %s trong 1 phút trước khi yêu cầu xác nhận</string>
+    <string name="sms_security_check_limit_summary">Ứng dụng có thể gửi %s tin nhắn trong 1 phút trước khi yêu cầu xác nhận</string>
     <string name="sms_security_check_limit_summary_none">Ứng dụng không được phép gửi bất kỳ tin nhắn nào mà không được xác nhận</string>
     <string name="sms_security_check_limit_always_confirm">Luôn xác nhận</string>
 </resources>
