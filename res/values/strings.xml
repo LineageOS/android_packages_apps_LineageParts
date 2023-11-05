@@ -531,6 +531,10 @@
     <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
     <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
 
+    <!-- Status bar - Symmetrical padding -->
+    <string name="status_bar_symmetrical_padding_settings_title">Symmetrical padding</string>
+    <string name="status_bar_symmetrical_padding_settings_summary">Add extra padding to status bar for symmetry with privacy dot area</string>
+
     <!-- Protected apps -->
     <string name="protected_apps_manager_title">Protected apps</string>
     <string name="protected_apps_manager_summary">Manage which apps are hidden behind a secure lock</string>
