@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      SPDX-FileCopyrightText: 2014-2016 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2018,2020-2022 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2018,2020-2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen
@@ -110,14 +110,6 @@
             android:dependency="qs_show_brightness_slider"
             lineage:requiresConfig="@*android:bool/config_automatic_brightness_available"
             android:defaultValue="true" />
-
-        <!--
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="status_bar_brightness_control"
-            android:title="@string/status_bar_toggle_brightness"
-            android:summary="@string/status_bar_toggle_brightness_summary"
-            android:defaultValue="false" />
-        -->
     </PreferenceCategory>
 
 </PreferenceScreen>
