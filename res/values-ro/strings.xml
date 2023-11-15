@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2023 The LineageOS Project
-
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-
-	http://www.apache.org/licenses/LICENSE-2.0
-
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">Setări LineageOS</string>
@@ -414,7 +403,11 @@
     <string name="network_traffic_units_megabits">Megabiţi pe secundă (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobytes pe secundă (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabytes pe secundă (MB/s)</string>
+    <string name="network_traffic_units_auto">Automat (kB/s sau MB/s)</string>
     <string name="network_traffic_show_units">Arată unităţi</string>
+    <string name="network_traffic_show_units_off">Dezactivat</string>
+    <string name="network_traffic_show_units_on">Activat</string>
+    <string name="network_traffic_show_units_compact">Compact</string>
     <string name="network_traffic_show_units_summary">Afișarea unităților de măsurare ale traficului în bara de stare</string>
     <string name="network_traffic_disabled_clock">Trafic de reţea dezactivat din cauza poziţiei ceasului</string>
     <string name="protected_apps_manager_title">Aplicații protejate</string>

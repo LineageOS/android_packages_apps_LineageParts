@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2023 The LineageOS Project
-
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-
-	http://www.apache.org/licenses/LICENSE-2.0
-
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="loading">Laster inn\u2026</string>
@@ -337,6 +326,8 @@
     <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke ved siden av dimmeren</string>
     <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
     <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
+    <string name="network_traffic_show_units_off">Av</string>
+    <string name="network_traffic_show_units_on">På</string>
     <string name="protected_apps_manager_title">Beskyttede apper</string>
     <string name="protected_apps_manager_summary">Administrer hvilke apper som er skjult bak en sikkerhetslås</string>
     <string name="contributors_cloud_fragment_title">Bidragsytere</string>

@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright (C) 2015 The CyanogenMod Project
-	              2017-2023 The LineageOS Project
-
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-
-	http://www.apache.org/licenses/LICENSE-2.0
-
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">Cilësimet e LineageOS</string>
@@ -414,7 +403,11 @@
     <string name="network_traffic_units_megabits">Megabite për sekondë (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobyte për sekondë (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabyte për sekondë (MB/s)</string>
+    <string name="network_traffic_units_auto">Automatik (kB/s ose MB/s)</string>
     <string name="network_traffic_show_units">Shfaq njësitë</string>
+    <string name="network_traffic_show_units_off">Inaktiv</string>
+    <string name="network_traffic_show_units_on">Aktiv</string>
+    <string name="network_traffic_show_units_compact">Kompakt</string>
     <string name="network_traffic_show_units_summary">Për të shfaqur matjet e trafikut në shiritin e statusit</string>
     <string name="network_traffic_disabled_clock">Treguesi i trafikut të rrjetit u hoq për shkak të pozicionit të orës</string>
     <string name="protected_apps_manager_title">Aplikacionet e mbrojtura</string>
