@@ -392,10 +392,10 @@
     <string name="network_traffic_autohide">Samodejno skrij</string>
     <string name="network_traffic_autohide_summary">Skrij nadzornika prometa, ko ni dejavnosti</string>
     <string name="network_traffic_units_title">Merske enote prometa</string>
-    <string name="network_traffic_units_kilobits">Kilobitov na sekundo (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabitov na sekundo (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobajtov na sekundo (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabajtov na sekundo (MB/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobiti na sekundo (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabiti na sekundo (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobajti na sekundo (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabajti na sekundo (MB/s)</string>
     <string name="network_traffic_show_units">Prikaži enote</string>
     <string name="network_traffic_show_units_summary">Prikaz merskih enot prometa v vrstici stanja</string>
     <string name="network_traffic_disabled_clock">Omrežni promet je onemogočen zaradi položaja ure</string>

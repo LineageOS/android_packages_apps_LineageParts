@@ -180,14 +180,15 @@
     <string name="status_bar_toggle_brightness_summary">Axusta\'l brillu al eslizar el deu pela barra d\'estáu</string>
     <string name="network_traffic_settings_title">Supervisor del tránsitu de rede</string>
     <string name="network_traffic_settings_summary">Amuesa\'l nivel del tránsitu de rede na barra d\'estáu</string>
+    <string name="network_traffic_mode_title">Mou de visualización</string>
     <string name="network_traffic_mode_up">Namás la xuba</string>
     <string name="network_traffic_mode_down">Namás la baxada</string>
     <string name="network_traffic_mode_all">Xuba y baxada</string>
     <string name="network_traffic_autohide_summary">Anubre\'l supervisor del tránsitu de rede cuando nun hai actividá</string>
     <string name="network_traffic_units_title">Unidaes de midida del tránsitu</string>
-    <string name="network_traffic_units_kilobits">Kilobits per segundu (kb/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobits per segundu (Kb/s)</string>
     <string name="network_traffic_units_megabits">Megabits per segundu (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobytes per segundu (kB/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per segundu (KB/s)</string>
     <string name="network_traffic_units_megabytes">Megabytes per segundu (MB/s)</string>
     <string name="network_traffic_disabled_clock">El supervisor del tránsitu de rede ta desactiváu pola mor de la posición del reló</string>
     <string name="protected_apps_manager_title">Aplicaciones protexíes</string>
