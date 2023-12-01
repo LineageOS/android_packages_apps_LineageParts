@@ -403,9 +403,11 @@
     <string name="network_traffic_units_megabits">Megabits al secont (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobytes al secont (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabytes al secont (MB/s)</string>
+    <string name="network_traffic_units_auto">Automatic (kB/s or MB/s)</string>
     <string name="network_traffic_show_units">Mostre unitâts</string>
     <string name="network_traffic_show_units_off">Off</string>
     <string name="network_traffic_show_units_on">On</string>
+    <string name="network_traffic_show_units_compact">Compat</string>
     <string name="network_traffic_show_units_summary">Indiche se mostrâ lis unitâts di misure dal trafic te sbare di stât</string>
     <string name="network_traffic_disabled_clock">Indicadôr trafic di rêt disativât par vie de posizion dal orloi</string>
     <string name="protected_apps_manager_title">Aplicazions protetis</string>

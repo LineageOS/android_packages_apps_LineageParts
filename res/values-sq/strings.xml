@@ -405,8 +405,8 @@
     <string name="network_traffic_units_megabytes">Megabyte për sekondë (MB/s)</string>
     <string name="network_traffic_units_auto">Automatik (kB/s ose MB/s)</string>
     <string name="network_traffic_show_units">Shfaq njësitë</string>
-    <string name="network_traffic_show_units_off">Inaktiv</string>
-    <string name="network_traffic_show_units_on">Aktiv</string>
+    <string name="network_traffic_show_units_off">Fikur</string>
+    <string name="network_traffic_show_units_on">Ndezur</string>
     <string name="network_traffic_show_units_compact">Kompakt</string>
     <string name="network_traffic_show_units_summary">Për të shfaqur matjet e trafikut në shiritin e statusit</string>
     <string name="network_traffic_disabled_clock">Treguesi i trafikut të rrjetit u hoq për shkak të pozicionit të orës</string>
