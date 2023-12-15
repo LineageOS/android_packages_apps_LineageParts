@@ -359,7 +359,7 @@
     <string name="status_bar_clock_show_seconds_title">Hiển thị giây</string>
     <string name="status_bar_clock_show_seconds_summary">Hiển thị giờ, phút và giây</string>
     <string name="status_bar_clock_auto_hide_title">Tự động ẩn</string>
-    <string name="status_bar_clock_auto_hide_summary">Ẩn đồng hồ nếu trình khởi chạy hiển thị</string>
+    <string name="status_bar_clock_auto_hide_summary">Ẩn đồng hồ khi đang ở màn hình chính</string>
     <string name="status_bar_clock_position_title">Vị trí đồng hồ</string>
     <string name="status_bar_clock_position_right">Phải</string>
     <string name="status_bar_clock_position_left">Trái</string>
