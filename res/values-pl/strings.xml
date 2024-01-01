@@ -113,7 +113,7 @@
     <string name="live_display_color_profile_photography_title">Fotografia</string>
     <string name="live_display_color_profile_photography_summary">Doskonałe odwzorowanie kolorów dla zdjęć</string>
     <string name="live_display_color_profile_basic_title">Podstawowe</string>
-    <string name="live_display_color_profile_basic_summary">Używaj nieskalibrowanego wyświetlacza</string>
+    <string name="live_display_color_profile_basic_summary">Używaj nieskalibrowanego ekranu</string>
     <string name="live_display_color_profile_adaptive_title">Adaptacyjny</string>
     <string name="live_display_color_profile_adaptive_summary">Kolory dostosowują się do warunków otoczenia</string>
     <string name="live_display_color_profile_reading_title">Czytanie</string>
@@ -125,7 +125,7 @@
     <string name="live_display_reading_mode_title">Tryb czytania</string>
     <string name="live_display_reading_mode_summary">Tryb skali szarości dla długotrwałego czytania</string>
     <string name="color_calibration_title">Kalibracja kolorów</string>
-    <string name="color_calibration_summary">Kalibruj kolory wyświetlacza</string>
+    <string name="color_calibration_summary">Kalibruj kolory ekranu</string>
     <string name="color_red_title">Czerwony</string>
     <string name="color_green_title">Zielony</string>
     <string name="color_blue_title">Niebieski</string>
@@ -182,7 +182,7 @@
     <string name="extras_title">Dodatki</string>
     <string name="additional_buttons_title">Dodatkowe przyciski</string>
     <string name="click_partial_screenshot_title">Dotknij, aby wykonać częściowy zrzut ekranu</string>
-    <string name="click_partial_screenshot_summary"> Wciśnij przycisk ściszania i zasilania, aby wykonać częściowy zrzut ekranu</string>
+    <string name="click_partial_screenshot_summary"> Wciśnij przyciski ściszania i zasilania, aby wykonać częściowy zrzut ekranu</string>
     <string name="button_backlight_title">Podświetlenie</string>
     <string name="button_backlight_enabled">Podświetlenie przycisków</string>
     <string name="button_backlight_only_when_pressed_title">Podświetlenie przycisków tylko po naciśnięciu</string>
@@ -197,7 +197,7 @@
     <string name="disable_navkeys_title">Włącz ekranowy pasek nawigacji</string>
     <string name="disable_navkeys_summary">Włącz ekranowy pasek nawigacji i wyłącz przyciski sprzętowe</string>
     <string name="swap_capacitive_keys_title">Zamień miejscami przyciski pojemnościowe</string>
-    <string name="swap_capacitive_keys_summary">Zamień miejscami przyciski: Ostatnio uruchomione aplikacje z Wstecz</string>
+    <string name="swap_capacitive_keys_summary">Zamień miejscami przyciski: Ostatnio uruchomionych aplikacji z Wstecz</string>
     <string name="navigation_bar_category">Pasek nawigacji</string>
     <string name="navigation_bar_invert_layout_title">Odwróć układ</string>
     <string name="navigation_bar_invert_layout_summary">Odwraca układ paska nawigacji i innych elementów, takich jak przełącznik metod wprowadzania</string>
@@ -207,7 +207,7 @@
     <string name="navigation_bar_back_long_press_title">Akcja długiego przytrzymania Wstecz</string>
     <string name="navigation_bar_home_long_press_title">Akcja długiego naciśnięcia Home</string>
     <string name="navigation_bar_home_double_tap_title">Akcja podwójnego puknięcia Home</string>
-    <string name="navigation_bar_app_switch_long_press_title">Akcja długiego naciśnięcia Ostatnio Używanych</string>
+    <string name="navigation_bar_app_switch_long_press_title">Akcja przytrzymania Ostatnio uruchomionych aplikacji</string>
     <string name="navigation_bar_edge_long_swipe_title">Akcja długiego przeciągnięcia krawędzi</string>
     <string name="power_menu_title">Menu zasilania</string>
     <string name="power_menu_screenshot_title">Zrzut ekranu</string>
@@ -333,17 +333,17 @@
     <string name="notification_volume_title">Powiadomienie</string>
     <string name="media_volume_title">Multimedia</string>
     <string name="alarm_volume_title">Alarm</string>
-    <string name="doze_title">Aktywny wyświetlacz</string>
+    <string name="doze_title">Ekran Ambient</string>
     <string name="status_bar_title">Pasek stanu</string>
     <string name="status_bar_quick_qs_pulldown_title">Szybkie rozwijanie</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija szybkie ustawienia</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija Szybkie Ustawienia</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Po lewej</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Po prawej</string>
     <string name="status_bar_quick_qs_pulldown_off">Wyłączono</string>
     <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
     <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>
     <string name="status_bar_double_tap_to_sleep_title">Dwukrotnie naciśnij, aby uśpić</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Dwukrotnie dotknij paska statusu, aby wyłączyć ekran</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Dotknij dwukrotnie na pasku stanu, aby wyłączyć ekran</string>
     <string name="status_bar_icons_title">Ikony paska stanu</string>
     <string name="status_bar_notif_count_title">Pokaż liczbę powiadomień</string>
     <string name="status_bar_notif_count_summary">Wyświetla liczbę oczekujących powiadomień</string>
@@ -357,8 +357,8 @@
     <string name="status_bar_clock_position_title">Pozycja zegara</string>
     <string name="status_bar_clock_position_right">Po prawej</string>
     <string name="status_bar_clock_position_left">Po lewej</string>
-    <string name="status_bar_clock_position_center">Na środku</string>
-    <string name="status_bar_am_pm_title">Znacznik AM/PM</string>
+    <string name="status_bar_clock_position_center">Pośrodku</string>
+    <string name="status_bar_am_pm_title">Format 12-godzinny</string>
     <string name="status_bar_am_pm_info">Włączono 24-godzinny format zegara</string>
     <string name="status_bar_am_pm_normal">Normalny</string>
     <string name="status_bar_am_pm_small">Mały</string>
@@ -519,7 +519,7 @@
     <string name="touchscreen_gesture_action_next_track">Przejdź do następnego utworu muzycznego</string>
     <string name="touchscreen_gesture_action_volume_down">Mniejsza głośność multimediów</string>
     <string name="touchscreen_gesture_action_volume_up">Większa głośność multimediów</string>
-    <string name="touchscreen_gesture_action_ambient_display">Pokaż aktywny wyświetlacz</string>
+    <string name="touchscreen_gesture_action_ambient_display">Pokaż Ekran Ambient</string>
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Restrykcyjny</string>
