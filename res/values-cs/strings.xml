@@ -403,9 +403,11 @@
     <string name="network_traffic_units_megabits">Megabity za sekundu (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobajty za sekundu (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
+    <string name="network_traffic_units_auto">Automaticky (kB/s nebo MB/s)</string>
     <string name="network_traffic_show_units">Zobrazit jednotky</string>
     <string name="network_traffic_show_units_off">Vypnout</string>
     <string name="network_traffic_show_units_on">Zapnout</string>
+    <string name="network_traffic_show_units_compact">Kompaktní</string>
     <string name="network_traffic_show_units_summary">Zobrazení jednotek měření síť. provozu ve stavové liště</string>
     <string name="network_traffic_disabled_clock">Síťový provoz se nezobrazí kvůli umístění hodin</string>
     <string name="protected_apps_manager_title">Chráněné aplikace</string>
