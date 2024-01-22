@@ -1,18 +1,32 @@
 /*
- * SPDX-FileCopyrightText: 2019-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2019-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
 android_app {
     name: "LineageParts",
+    defaults: ["LineagePartsDefaults"],
+
+    manifest: "AndroidManifest.xml",
+}
+
+android_app {
+    name: "LineagePartsLite",
+    defaults: ["LineagePartsDefaults"],
+
+    manifest: "AndroidManifestLite.xml",
+
+    overrides: ["LineageParts"],
+}
+
+java_defaults {
+    name: "LineagePartsDefaults",
 
     // Include SettingsLib and it's dependencies
     defaults: ["SettingsLibDefaults"],
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
-
-    manifest: "AndroidManifest.xml",
 
     platform_apis: true,
     certificate: "platform",
