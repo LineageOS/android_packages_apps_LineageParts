@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa0b92e8_e77a2518",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-22T12:54:02Z",
+      "side": 1,
+      "message": "I think I\u0027ll with a common AndroidManifest and then additional ones for regular and lite versions, just like it\u0027s done on Trebuchet.",
+      "revId": "523c87d7732241455627e1cbaa6bcd50c6165195",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
