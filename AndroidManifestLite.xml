@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lineageos.lineageparts"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="lineageos.permission.MANAGE_REMOTE_PREFERENCES" />
+
+    <protected-broadcast android:name="org.lineageos.lineageparts.PART_CHANGED" />
+    <protected-broadcast android:name="org.lineageos.lineageparts.REFRESH_PART" />
+
+    <application
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/lineageparts_title"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SubSettingsBase">
+
+        <activity
+            android:name=".PartsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="org.lineageos.settings.summary.receiver"
+                android:value="org.lineageos.lineageparts.PartsUpdater" />
+        </activity>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".PartsUpdater"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="lineageos.intent.action.UPDATE_PREFERENCE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Contributors Cloud (System category) -->
+        <activity-alias
+            android:name=".contributors.ContributorsCloudFragment"
+            android:exported="true"
+            android:label="@string/contributors_cloud_fragment_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.CONTRIBUTORS_CLOUD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="2" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/summary_empty" />
+        </activity-alias>
+
+        <!-- Anonymous Statistics -->
+        <receiver
+            android:name=".lineagestats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="org.lineageos.lineageparts.action.TRIGGER_REPORT_METRICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".lineagestats.ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingService" />
+
+        <service
+            android:name=".lineagestats.StatsUploadJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name=".logo.PlatLogoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:theme="@style/EggStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".egg.octo.Ocquarium"
+            android:exported="true"
+            android:label="@string/egg_title"
+            android:theme="@style/EggStyle">
+            <intent-filter>
+                <action android:name="org.lineageos.lineageparts.EASTER_EGG" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.internal.category.PLATLOGO" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
