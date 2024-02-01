@@ -486,7 +486,7 @@
     <string name="touchscreen_gesture_one_finger_down_swipe_title">Glisser vers le bas avec un doigt</string>
     <string name="touchscreen_gesture_one_finger_left_swipe_title">Glisser vers la gauche avec un doigt</string>
     <string name="touchscreen_gesture_one_finger_right_swipe_title">Glisser vers la droite avec un doigt</string>
-    <string name="touchscreen_gesture_single_tap_title">Appui unique</string>
+    <string name="touchscreen_gesture_single_tap_title">Appui simple</string>
     <string name="touchscreen_gesture_up_arrow_title">Dessiner un « Λ »</string>
     <string name="touchscreen_gesture_down_arrow_title">Dessiner un « V »</string>
     <string name="touchscreen_gesture_left_arrow_title">Dessiner un « &lt; »</string>
