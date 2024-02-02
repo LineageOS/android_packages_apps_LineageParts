@@ -174,6 +174,18 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
+        <!-- Rotation Settings -->
+        <activity-alias
+            android:name=".hardware.DisplayRotation"
+            android:exported="true"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.DISPLAY_ROTATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
         <!-- Status bar settings (System category) -->
         <activity-alias
             android:name=".statusbar.StatusBarSettings"
