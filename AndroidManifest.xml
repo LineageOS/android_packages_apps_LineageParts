@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2016 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -172,6 +172,17 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
+        </activity-alias>
+
+        <!-- Rotation settings -->
+        <activity-alias
+            android:name=".hardware.DisplayRotation"
+            android:exported="true"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="org.lineageos.lineageparts.DISPLAY_ROTATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity-alias>
 
         <!-- Status bar settings (System category) -->
