@@ -16,6 +16,24 @@
       "message": "I believe that after this we must remove the hook in Settings app ( https://review.lineageos.org/c/LineageOS/android_packages_apps_Settings/+/336007 ), but I will check it myself as well.",
       "revId": "ba688b29fe82358317b26eb773511b1cea7cb572",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "699268ff_a9a65303",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-02-06T17:36:04Z",
+      "side": 1,
+      "message": "Or maybe not, this is not injecting it into Settings via IA.",
+      "parentUuid": "6af1ea1b_00e26204",
+      "revId": "ba688b29fe82358317b26eb773511b1cea7cb572",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
