@@ -38,7 +38,7 @@
     <string name="disabled">Деактивирано</string>
     <string name="enabled">Активирано</string>
     <string name="privacy_settings_title">Поверителност</string>
-    <string name="channel_light_settings_name">Предварителен преглед на настройките за яркост</string>
+    <string name="channel_light_settings_name">Преглед на настройките за яркост</string>
     <string name="edit_light_settings">Редактиране на настройките на светлинните индикации</string>
     <string name="pulse_speed_title">Продължителност и скорост на пулсирането</string>
     <string name="default_time">Нормална</string>
@@ -513,6 +513,9 @@
     <string name="trust_feature_selinux_explain">SELinux диктува кои процеси имат достъп до файлове на вашето устройство. \nТова предотвратява приложения и услуги да имат достъп до файлове, които те не би трябвало да имат. По този начин зловреден процес е ограничен, така че вашата сигурност се запазва.</string>
     <string name="trust_feature_security_patches">Андроид защитни кръпки</string>
     <string name="trust_feature_security_patches_value_base">Платформа: %1$s\nVendor: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Актуално</string>
+    <string name="trust_feature_security_patches_value_medium">необновявано от няколко месеца</string>
+    <string name="trust_feature_security_patches_value_old">Неактуална версия</string>
     <string name="trust_feature_security_patches_explain">Защитните пакети се разпространяват ежемесечно от Google заедно с доставчиците на SoC, за да се поправят уязвимостите в системата, които могат да бъдат използвани от злонамерени приложения, който да заобиколят ограниченията за сигурност и да причинят необратими щети на вашето устройство. Корекциите, предоставени от Google, се прилагат всеки месец на всички поддържани устройства, но поправките за патентования код могат да се прилагат само от производителя на устройството ви. За да поддържате устройството си в безопасно състояние, уверете се, че използвате последната версия на LineageOS.</string>
     <string name="trust_feature_encryption">Криптиране</string>
     <string name="trust_feature_encryption_value_enabled">Активирано</string>

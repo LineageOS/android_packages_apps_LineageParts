@@ -37,7 +37,6 @@
     <string name="disabled">Онемогућено</string>
     <string name="enabled">Омогућено</string>
     <string name="privacy_settings_title">Приватност</string>
-    <string name="channel_light_settings_name">Приказ подешавања осветљења</string>
     <string name="edit_light_settings">Подешавања индикатора</string>
     <string name="pulse_speed_title">Дужина и брзина трептаја</string>
     <string name="default_time">Нормално</string>

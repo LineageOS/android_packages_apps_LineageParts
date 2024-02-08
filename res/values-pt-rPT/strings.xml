@@ -38,7 +38,7 @@
     <string name="disabled">Desativada</string>
     <string name="enabled">Ativada</string>
     <string name="privacy_settings_title">Privacidade</string>
-    <string name="channel_light_settings_name">Pré-visualização das configs. de luz</string>
+    <string name="channel_light_settings_name">Pré-visualização das definicões de luz</string>
     <string name="edit_light_settings">Editar definições de luz</string>
     <string name="pulse_speed_title">Duração e velocidade da luz ao piscar</string>
     <string name="default_time">Normal</string>

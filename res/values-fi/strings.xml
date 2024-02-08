@@ -38,7 +38,6 @@
     <string name="disabled">Pois käytöstä</string>
     <string name="enabled">Käytössä</string>
     <string name="privacy_settings_title">Tietosuoja</string>
-    <string name="channel_light_settings_name">Valoasetusten esikatselu</string>
     <string name="edit_light_settings">Säädä valon asetuksia</string>
     <string name="pulse_speed_title">Vilkunnan kesto ja nopeus</string>
     <string name="default_time">Normaali</string>
@@ -108,7 +107,7 @@
     <string name="live_display_color_profile_astronomy_title">Astronomia</string>
     <string name="live_display_color_profile_astronomy_summary">Syvät punaiset värit hämärällä käytettäessä</string>
     <string name="live_display_color_profile_photography_title">Valokuvaus</string>
-    <string name="live_display_color_profile_photography_summary">Täydellinen värintoisto kuviin</string>
+    <string name="live_display_color_profile_photography_summary">Täydellinen värintoisto valokuviin.</string>
     <string name="live_display_color_profile_basic_title">Perus</string>
     <string name="live_display_color_profile_basic_summary">Käytä näyttöä kalibroimatta</string>
     <string name="live_display_color_profile_adaptive_title">Mukautuva</string>
@@ -319,7 +318,7 @@
     <string name="ring_mode_title">Äänet</string>
     <string name="ring_mode_normal">Normaali</string>
     <string name="ring_mode_vibrate">Värinä</string>
-    <string name="ring_mode_mute">Äänetön</string>
+    <string name="ring_mode_mute">Mykistys</string>
     <string name="ring_volume_title">Soittoäänen voimakkuus</string>
     <string name="incoming_call_volume_title">Soittoääni</string>
     <string name="notification_volume_title">Ilmoitus</string>

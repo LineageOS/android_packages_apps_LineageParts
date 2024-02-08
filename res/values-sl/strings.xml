@@ -65,7 +65,7 @@
     <string name="battery_light_list_title">Barve</string>
     <string name="battery_light_low_color_title">Nizko stanje baterije</string>
     <string name="battery_light_medium_color_title">Polnjenje</string>
-    <string name="battery_light_full_color_title">Napolnjen</string>
+    <string name="battery_light_full_color_title">Popolnoma napolnjena</string>
     <string name="notification_light_title">Lučka za obvestila</string>
     <string name="notification_light_general_title">Splošno</string>
     <string name="notification_light_advanced_title">Napredno</string>
@@ -139,7 +139,7 @@
     <string name="hardware_keys_menu_key_title">Menijski gumb</string>
     <string name="hardware_keys_assist_key_title">Gumb Iskanje</string>
     <string name="hardware_keys_appswitch_key_title">Gumb Nedavno</string>
-    <string name="hardware_keys_camera_key_title">Gumb fotoaparata</string>
+    <string name="hardware_keys_camera_key_title">Gumb za fotoaparat</string>
     <string name="hardware_keys_volume_keys_title">Gumba za glasnost</string>
     <string name="hardware_keys_short_press_title">Dejanje kratkega pritiska</string>
     <string name="hardware_keys_long_press_title">Dejanje pridržanja</string>
@@ -181,7 +181,7 @@
     <string name="additional_buttons_title">Dodatni gumbi</string>
     <string name="click_partial_screenshot_title">Klik za delno zaslonsko sliko</string>
     <string name="click_partial_screenshot_summary">Na kratko kliknite gumb za povečanje glasnosti in gumb za vklop, da zajamete delno zaslonsko sliko</string>
-    <string name="button_backlight_title">Osvetlitev ozadja</string>
+    <string name="button_backlight_title">Osvetlitev</string>
     <string name="button_backlight_enabled">Osvetli gumbe</string>
     <string name="button_backlight_only_when_pressed_title">Osvetli gumbe samo ob pritisku</string>
     <string name="keyboard_backlight_enabled">Osvetli tipkovnico</string>
@@ -382,10 +382,10 @@
     <string name="network_traffic_autohide">Samodejno skrij</string>
     <string name="network_traffic_autohide_summary">Skrij nadzornika prometa, ko ni dejavnosti</string>
     <string name="network_traffic_units_title">Merske enote prometa</string>
-    <string name="network_traffic_units_kilobits">Kilobitov na sekundo (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabitov na sekundo (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobajtov na sekundo (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabajtov na sekundo (MB/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobiti na sekundo (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabiti na sekundo (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobajti na sekundo (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabajti na sekundo (MB/s)</string>
     <string name="network_traffic_show_units">Prikaži enote</string>
     <string name="network_traffic_show_units_summary">Prikaz merskih enot prometa v vrstici stanja</string>
     <string name="network_traffic_disabled_clock">Omrežni promet je onemogočen zaradi položaja ure</string>

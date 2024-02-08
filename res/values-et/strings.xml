@@ -38,7 +38,6 @@
     <string name="disabled">Keelatud</string>
     <string name="enabled">Lubatud</string>
     <string name="privacy_settings_title">Privaatsus</string>
-    <string name="channel_light_settings_name">Märgutule seadete eelvaade</string>
     <string name="edit_light_settings">Muuda märgutule seadeid</string>
     <string name="pulse_speed_title">Vilkumise pikkus ja kiirus</string>
     <string name="default_time">Tavaline</string>

@@ -37,7 +37,6 @@
     <string name="disabled">Desgaituta</string>
     <string name="enabled">Gaituta</string>
     <string name="privacy_settings_title">Pribatutasuna</string>
-    <string name="channel_light_settings_name">Argien ezarpenen aurreikuspena</string>
     <string name="edit_light_settings">Editatu argien ezarpenak</string>
     <string name="pulse_speed_title">Ledaren iraupena eta abiadura</string>
     <string name="default_time">Arrunta</string>

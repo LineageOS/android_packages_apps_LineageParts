@@ -38,7 +38,6 @@
     <string name="disabled">Zakázané</string>
     <string name="enabled">Povolené</string>
     <string name="privacy_settings_title">Súkromie</string>
-    <string name="channel_light_settings_name">Náhľad nastavení sveteľnej signalizácie</string>
     <string name="edit_light_settings">Upraviť svetelnú signalizáciu</string>
     <string name="pulse_speed_title">Dĺžka a rýchlosť blikania</string>
     <string name="default_time">Normálny</string>

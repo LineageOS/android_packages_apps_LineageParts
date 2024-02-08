@@ -38,7 +38,7 @@
     <string name="disabled">Disattivato</string>
     <string name="enabled">Attivato</string>
     <string name="privacy_settings_title">Privacy</string>
-    <string name="channel_light_settings_name">Anteprime configurazione luci</string>
+    <string name="channel_light_settings_name">Anteprima impostazioni luci</string>
     <string name="edit_light_settings">Modifica impostazioni luci</string>
     <string name="pulse_speed_title">Durata e velocità del lampeggio</string>
     <string name="default_time">Normale</string>
@@ -95,7 +95,7 @@
     <string name="live_display_low_power_title">Riduci consumo energetico</string>
     <string name="live_display_low_power_summary">Regola il display per un minore consumo energetico senza degradazione</string>
     <string name="live_display_enhance_color_title">Migliora colori</string>
-    <string name="live_display_enhance_color_summary">Migliora la vividezza del colore dei toni della pelle, paesaggi e altre immagini</string>
+    <string name="live_display_enhance_color_summary">Migliora la vividezza dei colori dei toni della pelle, dei paesaggi e di altre immagini</string>
     <string name="live_display_color_profile_title">Profilo colore</string>
     <string name="live_display_color_profile_standard_title">Predefinito</string>
     <string name="live_display_color_profile_standard_summary">Colori accurati e bianchi luminosi</string>
@@ -104,11 +104,11 @@
     <string name="live_display_color_profile_dynamic_title">Dinamico</string>
     <string name="live_display_color_profile_dynamic_summary">Colori intensi e bianchi luminosi</string>
     <string name="live_display_color_profile_cinema_title">Cinema</string>
-    <string name="live_display_color_profile_cinema_summary">Riproduzione del colore perfetto per i video</string>
+    <string name="live_display_color_profile_cinema_summary">Riproduzione del colore perfetta per i video</string>
     <string name="live_display_color_profile_astronomy_title">Astronomia</string>
     <string name="live_display_color_profile_astronomy_summary">Rosso profondo per la visione notturna</string>
     <string name="live_display_color_profile_photography_title">Fotografia</string>
-    <string name="live_display_color_profile_photography_summary">Colori perfetti per riproduzione foto</string>
+    <string name="live_display_color_profile_photography_summary">Riproduzione del colore perfetta per le foto</string>
     <string name="live_display_color_profile_basic_title">Base</string>
     <string name="live_display_color_profile_basic_summary">Usa il display non calibrato</string>
     <string name="live_display_color_profile_adaptive_title">Adattivo</string>
@@ -192,7 +192,7 @@
     <string name="backlight_summary_disabled">Disattivata</string>
     <string name="backlight_summary_enabled_with_timeout">Attivata per <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Attivata</string>
-    <string name="disable_navkeys_title">Abilità barra di navigazione su schermo</string>
+    <string name="disable_navkeys_title">Abilita barra di navigazione su schermo</string>
     <string name="disable_navkeys_summary">Attiva la barra di navigazione a schermo e disattiva i pulsanti fisici</string>
     <string name="navigation_bar_category">Barra di navigazione</string>
     <string name="navigation_bar_invert_layout_title">Inverti disposizione</string>
@@ -215,7 +215,7 @@
     <string name="camera_double_tap_power_gesture_title">Premi due volte il tasto di accensione per avviare la fotocamera</string>
     <string name="camera_double_tap_power_gesture_desc">Apri velocemente la fotocamera senza sbloccare lo schermo</string>
     <string name="torch_long_press_power_gesture_title">Premi a lungo per la torcia</string>
-    <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo é spento</string>
+    <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo è spento</string>
     <string name="torch_long_press_power_timeout_title">Spegni la torcia automaticamente</string>
     <string name="torch_long_press_power_timeout_never">Mai</string>
     <string name="torch_long_press_power_timeout_1min">1 minuto</string>
@@ -508,20 +508,20 @@
     <string name="touchscreen_gesture_action_ambient_display">Mostra display ambient</string>
     <string name="trust_category_features">Stato</string>
     <string name="trust_feature_selinux">SELinux</string>
-    <string name="trust_feature_selinux_value_enforcing">Applicazione</string>
+    <string name="trust_feature_selinux_value_enforcing">Applicato</string>
     <string name="trust_feature_selinux_value_disabled">Disattivato</string>
-    <string name="trust_feature_selinux_explain">Il SELinux definisce quali processi hanno accesso a quali file sul dispositivo.\nQuesto impedisce alle app e servizi di accedere a file che non dovrebbero gestire: in questo modo un potenziale processo dannoso sarà limitato e la tua sicurezza preservata.</string>
+    <string name="trust_feature_selinux_explain">SELinux definisce quali processi hanno accesso a quali file sul dispositivo.\nQuesto impedisce ad app e servizi di accedere a file che non dovrebbero gestire: in questo modo, un potenziale processo dannoso sarà limitato e la tua sicurezza preservata.</string>
     <string name="trust_feature_security_patches">Livello patch sicurezza Android</string>
     <string name="trust_feature_security_patches_value_base">Piattaforma: %1$s\nProduttore: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Aggiornate</string>
     <string name="trust_feature_security_patches_value_medium">Non aggiornate da qualche mese</string>
     <string name="trust_feature_security_patches_value_old">Non aggiornate</string>
     <string name="trust_feature_security_patches_explain">Le patch di sicurezza vengono rilasciate mensilmente da Google in cooperazione con i produttori di SoC per risolvere problemi che potrebbero essere sfruttati dalle app dannose per aggirare le restrizioni di sicurezza e causare danni permanenti al dispositivo. Le patch rese disponibili da Google sono applicate a tutti i dispositivi supportati, ma quelle relative ai componenti proprietari possono essere applicati solo dal produttore del dispositivo. Per mantenere il dispositivo sicuro, controlla che la tua versione di LineageOS sia sempre aggiornata ed eventualmente assicurati che i componenti proprietari come firmware e immagine vendor siano quelli raccomandati da LineageOS.</string>
-    <string name="trust_feature_encryption">Criptazione</string>
+    <string name="trust_feature_encryption">Cifratura</string>
     <string name="trust_feature_encryption_value_enabled">Attiva</string>
     <string name="trust_feature_encryption_value_nolock">Necessita di una schermata di sblocco sicura</string>
     <string name="trust_feature_encryption_value_disabled">Disattivata</string>
-    <string name="trust_feature_encryption_explain">Abilitando la criptazione del dispositivo viene bloccato l\'accesso ai tuoi dati quando il dispositivo non è acceso. Questo risulta particolarmente importante nel caso in cui il dispositivo venisse rubato: in tal caso l\'accesso ai tuoi messaggi, contatti e altre informazioni personali verrà impedito fino all\'inserimento della tua password.\nPer rendere la criptazione del dispositivo più efficace è importante attivare un blocco schermo sicuro.</string>
+    <string name="trust_feature_encryption_explain">Abilitando la cifratura del dispositivo viene bloccato l\'accesso ai tuoi dati quando il dispositivo non è acceso. Questo risulta particolarmente importante nel caso in cui il dispositivo venga rubato: in tal caso l\'accesso ai tuoi messaggi, contatti e altre informazioni personali verrà impedito fino all\'inserimento della tua password.\nPer rendere la cifratura del dispositivo più efficace è importante attivare un blocco schermo sicuro.</string>
     <string name="trust_category_tools">Privacy</string>
     <string name="trust_notification_alerts_title">Avvisi di sicurezza</string>
     <string name="trust_warnings_alerts_intro">Puoi scegliere quali problemi di sicurezza devono essere segnalati. Per la tua sicurezza è consigliabile attivarli tutti</string>

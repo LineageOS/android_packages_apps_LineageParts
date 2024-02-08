@@ -34,7 +34,7 @@
     <string name="yes">Iawn</string>
     <string name="no">Na</string>
     <string name="search">Chwilio</string>
-    <string name="search_menu">Chwilio\'r gosodiadau</string>
+    <string name="search_menu">Chwilio gosodiadau</string>
     <string name="disabled">Wedi\'i analluogi</string>
     <string name="enabled">Wedi\'i alluogi</string>
     <string name="privacy_settings_title">Preifatrwydd</string>
@@ -179,6 +179,8 @@
     <string name="home_answer_call_summary">Ateb galwadau gan wasgu\'r botwm cartref</string>
     <string name="extras_title">Ychwanegion</string>
     <string name="additional_buttons_title">Botymau ychwanegol</string>
+    <string name="click_partial_screenshot_title">Clic i lun sgrin rannol</string>
+    <string name="click_partial_screenshot_summary">Clic byr Sain i Lawr a Phŵer i gymryd llun sgrin rannol</string>
     <string name="button_backlight_title">Golau\'r sgrin</string>
     <string name="button_backlight_enabled">Goleuo botymau</string>
     <string name="button_backlight_only_when_pressed_title">Goleuo botymau dim ond wrth eu gwasgu</string>
@@ -511,6 +513,9 @@
     <string name="trust_feature_selinux_explain">Mae SELinux yn pennu pa brosesau sydd gyda mynediad at ba ffeiliau/llwybrau ar dy ddyfais.\nMae hyn yn rhwystro apiau a gwasanaethau rhag cael mynediad at ffeiliau na ddylen nhw wneud. Mae hyn yn cyfyngu\'r perygl o brosesau maleisus ac yn gwarchod dy ddiogelwch.</string>
     <string name="trust_feature_security_patches">Patshiau diogelwch Android</string>
     <string name="trust_feature_security_patches_value_base">Platfform: %1$s\nGwneuthurwr: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Yn gyfredol</string>
+    <string name="trust_feature_security_patches_value_medium">Rhai misoedd yn hen</string>
+    <string name="trust_feature_security_patches_value_old">Yn hen</string>
     <string name="trust_feature_security_patches_explain">Mae Google yn rhyddhau cyweiriadau diogelwch (security patches) yn fisol ar y cyd â darparwyr i fynd i\'r afael â namau y gellir cael eu hecsbloetio gan apiau maleisus er mwyn osgoi cyfyngiadau diogelwch ac achosi niwed parhaol i dy ddyfais. Mae cyweiriadau gan Google yn cael eu rhyddhau pob mis ond gall cyweiriadau i god dy ddyfais fel arfer ond cael eu gosod gan y gwneuthurwr. Wrth dy fod wedi gosod LineageOS i gymryd lle\'r fersiwn Android gwreiddiol ar dy ddyfais, mae\'r materion hyn yn dy ddwylo dy hun. I gadw dy ddyfais yn ddiogel, sicrha dy fod yn diweddaru dy adeiledd LineageOS i\'w gadw yn gyfredol ac, os yn berthnasol, sicrha bod y ddelwedd darparwr (vendor image) yn cael ei ddiweddaru i\'r un mwyaf diweddar a argymhellir gan LineageOS.</string>
     <string name="trust_feature_encryption">Amgryptiad</string>
     <string name="trust_feature_encryption_value_enabled">Galluogwyd</string>
