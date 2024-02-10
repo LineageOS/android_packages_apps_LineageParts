@@ -364,8 +364,6 @@
     <string name="status_bar_brightness_slider_show_never">Na seall idir e</string>
     <string name="status_bar_brightness_slider_show_expanded">Seall nuair a bhios e leudaichte</string>
     <string name="status_bar_brightness_slider_show_always">Seall an-còmhnaidh</string>
-    <string name="status_bar_toggle_brightness">Stiùireadh na soilleireachd</string>
-    <string name="status_bar_toggle_brightness_summary">Cuir gleus air an t-soilleireachd le slaighdeadh thar bàr na staid</string>
     <string name="network_traffic_settings_title">Monatair trafaig an lìonraidh</string>
     <string name="network_traffic_settings_summary">Seall na leibheilean trafaige làithreach air bàr na staid</string>
     <string name="network_traffic_mode_title">Modh an taisbeanaidh</string>

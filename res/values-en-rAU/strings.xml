@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">Never show</string>
     <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
     <string name="status_bar_brightness_slider_show_always">Show always</string>
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
     <string name="network_traffic_settings_title">Network traffic monitor</string>
     <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
     <string name="network_traffic_mode_title">Display mode</string>

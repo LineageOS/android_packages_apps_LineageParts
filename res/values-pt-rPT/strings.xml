@@ -372,8 +372,6 @@
     <string name="status_bar_brightness_slider_show_never">Nunca mostrar</string>
     <string name="status_bar_brightness_slider_show_expanded">Mostrar quando expandida</string>
     <string name="status_bar_brightness_slider_show_always">Mostrar sempre</string>
-    <string name="status_bar_toggle_brightness">Controlo de brilho</string>
-    <string name="status_bar_toggle_brightness_summary">Ajustar o brilho deslizando através da barra de estado</string>
     <string name="network_traffic_settings_title">Monitor de tráfego de rede</string>
     <string name="network_traffic_settings_summary">Mostrar na barra de estado os níveis de tráfego de rede atual</string>
     <string name="network_traffic_mode_title">Modo de visualização</string>

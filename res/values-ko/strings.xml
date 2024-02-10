@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">표시 안 함</string>
     <string name="status_bar_brightness_slider_show_expanded">펼치면 표시</string>
     <string name="status_bar_brightness_slider_show_always">항상 표시</string>
-    <string name="status_bar_toggle_brightness">밝기 조절</string>
-    <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
     <string name="network_traffic_settings_title">네트워크 트래픽 모니터</string>
     <string name="network_traffic_settings_summary">상태 표시줄에 현재 네트워크 트래픽 수준 표시</string>
     <string name="network_traffic_mode_title">표시 모드</string>

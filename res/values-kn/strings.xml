@@ -335,8 +335,6 @@
     <string name="status_bar_brightness_slider_summary">ತ್ವರಿತ ಆಯ್ಕೆಗಳಿಂದ ಪ್ರಖರತೆ ಸರಿಪಡಿಸು</string>
     <string name="status_bar_brightness_slider_auto_title">ಸ್ವಯಂ ಪ್ರಖರತೆ</string>
     <string name="status_bar_brightness_slider_auto_summary">ಜಾರುಫಲಕದ ಬಳಿ ಹೊಂದಿಕೊಳ್ಳುವ ಪ್ರಖರತೆಗೆ ಅಂತರಣ ತೋರಿಸು</string>
-    <string name="status_bar_toggle_brightness">ಪ್ರಖರತೆ ನಿಯಂತ್ರಣ</string>
-    <string name="status_bar_toggle_brightness_summary">ಸ್ಥಿತಿ ಪಟ್ಟಿ ಮೇಲೆ ಅಡ್ಡಲಾಗಿ ಜಾರುವ ಮೂಲಕ ಪ್ರಖರತೆಯನ್ನು ಸರಿಪಡಿಸು</string>
     <string name="network_traffic_settings_title">ಜಾಲದ ಸಾಗಾಟ ತೋರುಕ</string>
     <string name="network_traffic_settings_summary">ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯಲ್ಲಿ ಪ್ರಸ್ತುತ ಜಾಲದ ಸಾಗಾಟ ಮಟ್ಟಗಳನ್ನು ತೋರಿಸು</string>
     <string name="network_traffic_mode_title">ಪ್ರದರ್ಶನ ರೀತಿ</string>

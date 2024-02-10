@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">常に非表示</string>
     <string name="status_bar_brightness_slider_show_expanded">展開時に表示</string>
     <string name="status_bar_brightness_slider_show_always">常に表示</string>
-    <string name="status_bar_toggle_brightness">明るさコントロール</string>
-    <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
     <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
     <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
     <string name="network_traffic_mode_title">表示モード</string>

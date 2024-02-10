@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">Никогда не показывать</string>
     <string name="status_bar_brightness_slider_show_expanded">Показать, когда развернуто</string>
     <string name="status_bar_brightness_slider_show_always">Показывать всегда</string>
-    <string name="status_bar_toggle_brightness">Управление яркостью</string>
-    <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
     <string name="network_traffic_settings_title">Индикатор сетевого трафика</string>
     <string name="network_traffic_settings_summary">Отображать текущую скорость соединения в строке состояния</string>
     <string name="network_traffic_mode_title">Режим отображения</string>

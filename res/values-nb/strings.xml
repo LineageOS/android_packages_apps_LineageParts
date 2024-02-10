@@ -324,8 +324,6 @@
     <string name="status_bar_brightness_slider_summary">Juster lysstyrken i fra Hurtiginnstillingene</string>
     <string name="status_bar_brightness_slider_auto_title">Automatisk lysstyrke</string>
     <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke ved siden av dimmeren</string>
-    <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
-    <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
     <string name="network_traffic_show_units_off">Av</string>
     <string name="network_traffic_show_units_on">På</string>
     <string name="protected_apps_manager_title">Beskyttede apper</string>

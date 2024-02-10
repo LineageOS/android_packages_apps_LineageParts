@@ -378,8 +378,6 @@
     <string name="status_bar_brightness_slider_show_never">Byth dangos</string>
     <string name="status_bar_brightness_slider_show_expanded">Dangos pan wedi\'i ehangu</string>
     <string name="status_bar_brightness_slider_show_always">Dangos o hyd</string>
-    <string name="status_bar_toggle_brightness">Rheolaeth disgleirdeb</string>
-    <string name="status_bar_toggle_brightness_summary">Addasu\'r disgleirdeb wrth lithro ar draws y bar statws</string>
     <string name="network_traffic_settings_title">Monitro traffig rhwydwaith</string>
     <string name="network_traffic_settings_summary">Dangos lefel traffig rhwydwaith cyfredol yn y bar statws</string>
     <string name="network_traffic_mode_title">Modd dangosydd</string>

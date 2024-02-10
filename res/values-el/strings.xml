@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">Να μην εμφανίζεται ποτέ</string>
     <string name="status_bar_brightness_slider_show_expanded">Εμφάνιση κατά την επέκταση</string>
     <string name="status_bar_brightness_slider_show_always">Εμφάνιση πάντα</string>
-    <string name="status_bar_toggle_brightness">Έλεγχος φωτεινότητας</string>
-    <string name="status_bar_toggle_brightness_summary">Επιτρέπει τον έλεγχο της φωτεινότητας με ολίσθιση στη γραμή κατάστασης</string>
     <string name="network_traffic_settings_title">Εποπτεία της κίνησης δικτύου</string>
     <string name="network_traffic_settings_summary">Να εμφανίζονται τα τρέχοντα επίπεδα κίνησης δικτύου στη γραμμή κατάστασης</string>
     <string name="network_traffic_mode_title">Λειτουργία προβολής</string>
@@ -403,9 +401,11 @@
     <string name="network_traffic_units_megabits">Megabit ανά δευτερόλεπτο (Mb/δ)</string>
     <string name="network_traffic_units_kilobytes">Kilobyte ανά δευτερόλεπτο (kB/δ)</string>
     <string name="network_traffic_units_megabytes">Megabyte ανά δευτερόλεπτο (MB/δ)</string>
+    <string name="network_traffic_units_auto">Αυτόματα (kB/s ή MB/s)</string>
     <string name="network_traffic_show_units">Εμφάνιση μονάδων</string>
     <string name="network_traffic_show_units_off">Ανενεργό</string>
     <string name="network_traffic_show_units_on">Ενεργό</string>
+    <string name="network_traffic_show_units_compact">Συμπαγές</string>
     <string name="network_traffic_show_units_summary">Επιλέξτε αν θα εμφανίζονται οι μονάδες μέτρησης κίνησης στη γραμμή κατάστασης</string>
     <string name="network_traffic_disabled_clock">Η κίνηση δικτύου είναι απενεργοποιημένη λόγω της θέσης του ρολογιού</string>
     <string name="protected_apps_manager_title">Προστατευμένες εφαρμογές</string>

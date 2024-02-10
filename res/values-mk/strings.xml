@@ -324,8 +324,6 @@
     <string name="status_bar_brightness_slider_summary">Прилагодете ја осветленоста од брзите поставки</string>
     <string name="status_bar_brightness_slider_auto_title">Автоматска осветленост</string>
     <string name="status_bar_brightness_slider_auto_summary">Покажи го менувачот за адаптивна осветленост во близина на лизгачот</string>
-    <string name="status_bar_toggle_brightness">Контрола на осветленост</string>
-    <string name="status_bar_toggle_brightness_summary">Прилагодете ја осветленоста со лизгање низ статусната лента</string>
     <string name="network_traffic_show_units_off">Исклучено</string>
     <string name="network_traffic_show_units_on">Уклучено</string>
     <string name="protected_apps_manager_title">Заштитени апликации</string>

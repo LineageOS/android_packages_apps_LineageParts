@@ -338,8 +338,6 @@
     <string name="status_bar_brightness_slider_summary">כוונון בהירות דרך ההגדרות המהירות</string>
     <string name="status_bar_brightness_slider_auto_title">בהירות אוטומוטית</string>
     <string name="status_bar_brightness_slider_auto_summary">הראה כפתור להפעלת בהירות אוטומטית ליד המחוון</string>
-    <string name="status_bar_toggle_brightness">בקרת בהירות</string>
-    <string name="status_bar_toggle_brightness_summary">שנה הבהירות על ידי הזזת האצבע על שורת המצב</string>
     <string name="network_traffic_settings_title">ניטור תעבורת רשת</string>
     <string name="network_traffic_settings_summary">הצג את מהירות תעבורת הרשת בזמן אמת בשורת המצב</string>
     <string name="network_traffic_mode_title">מצב תצוגה</string>

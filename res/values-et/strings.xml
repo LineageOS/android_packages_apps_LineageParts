@@ -358,8 +358,6 @@
     <string name="status_bar_brightness_slider_show_never">Ära kuva kunagi</string>
     <string name="status_bar_brightness_slider_show_expanded">Kuva laiendamisel</string>
     <string name="status_bar_brightness_slider_show_always">Kuva alati</string>
-    <string name="status_bar_toggle_brightness">Heleduse reguleerimine</string>
-    <string name="status_bar_toggle_brightness_summary">Reguleeri heledust, libistades mööda ülariba</string>
     <string name="network_traffic_settings_title">Võrguliikluse jälgija</string>
     <string name="network_traffic_settings_summary">Kuva olekuribal võrguliikluse hetketasemeid</string>
     <string name="network_traffic_mode_title">Kuvamise režiim</string>

@@ -364,8 +364,6 @@
     <string name="status_bar_brightness_slider_show_never">Никога не показвай</string>
     <string name="status_bar_brightness_slider_show_expanded">Показване при разгъване</string>
     <string name="status_bar_brightness_slider_show_always">Винаги показвай</string>
-    <string name="status_bar_toggle_brightness">Контрол на яркостта</string>
-    <string name="status_bar_toggle_brightness_summary">Настройване на яркостта чрез плъзгане в лентата на състоянието</string>
     <string name="network_traffic_settings_title">Монитор на Мрежовия трафик</string>
     <string name="network_traffic_settings_summary">Покажи нивата на текущия мрежов трафик в лентата на състоянието</string>
     <string name="network_traffic_mode_title">Режим на екрана</string>

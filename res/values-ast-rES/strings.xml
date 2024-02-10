@@ -185,8 +185,6 @@
     <string name="status_bar_brightness_slider_show_never">Nun amosar enxamás</string>
     <string name="status_bar_brightness_slider_show_expanded">Amosar al espander</string>
     <string name="status_bar_brightness_slider_show_always">Amosar siempres</string>
-    <string name="status_bar_toggle_brightness">Control del brillu</string>
-    <string name="status_bar_toggle_brightness_summary">Axusta\'l brillu al eslizar el deu pela barra d\'estáu</string>
     <string name="network_traffic_settings_title">Supervisor del tránsitu de rede</string>
     <string name="network_traffic_settings_summary">Amuesa\'l nivel del tránsitu de rede na barra d\'estáu</string>
     <string name="network_traffic_mode_title">Mou de visualización</string>

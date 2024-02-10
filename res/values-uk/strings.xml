@@ -354,8 +354,6 @@
     <string name="status_bar_brightness_slider_show_never">Ніколи</string>
     <string name="status_bar_brightness_slider_show_expanded">Коли розгорнуто</string>
     <string name="status_bar_brightness_slider_show_always">Завжди</string>
-    <string name="status_bar_toggle_brightness">Керування яскравістю</string>
-    <string name="status_bar_toggle_brightness_summary">Регулювати яскравість екрану рухом пальця по рядку стану</string>
     <string name="network_traffic_autohide">Приховувати автоматично</string>
     <string name="network_traffic_units_title">Одиниці вимірювання трафіку</string>
     <string name="network_traffic_show_units_off">Вимк</string>

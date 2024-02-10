@@ -255,7 +255,6 @@
     <string name="status_bar_brightness_category">Abruṛeq</string>
     <string name="status_bar_brightness_slider_title">Taḥnaccaḍt n tafat</string>
     <string name="status_bar_brightness_slider_auto_title">Abruṛeq awurman</string>
-    <string name="status_bar_toggle_brightness">Asenqed ubruṛeq</string>
     <string name="network_traffic_mode_disable">Yensa</string>
     <string name="network_traffic_show_units_off">Insa</string>
     <string name="network_traffic_show_units_on">Rmed</string>

@@ -180,6 +180,7 @@
     <string name="home_answer_call_summary">Besvar indgående opkald, ved at trykke på hjem-knappen</string>
     <string name="extras_title">Ekstrafunktioner</string>
     <string name="additional_buttons_title">Yderligere knapper</string>
+    <string name="click_partial_screenshot_title">Klik for delvist skærmbillede</string>
     <string name="button_backlight_title">Bagbelysning</string>
     <string name="button_backlight_enabled">Oplys knapper</string>
     <string name="button_backlight_only_when_pressed_title">Oplys kun knapper ved tryk</string>
@@ -373,9 +374,6 @@
     <string name="status_bar_brightness_slider_auto_title">Auto-lysstyrke</string>
     <string name="status_bar_brightness_slider_auto_summary">Vis skifter til adaptiv lysstyrke, nær skyderen</string>
     <string name="status_bar_brightness_slider_show_never">Vis aldrig</string>
-    <string name="status_bar_brightness_slider_show_always">Vis altid</string>
-    <string name="status_bar_toggle_brightness">Lysstyrkekontrol</string>
-    <string name="status_bar_toggle_brightness_summary">Justér lysstyrken, ved at stryge tværs over statusbjælken</string>
     <string name="network_traffic_settings_title">Netværkstrafikovervågning</string>
     <string name="network_traffic_settings_summary">Vis aktuelle netværkstrafikniveauer i statusbjælken</string>
     <string name="network_traffic_mode_title">Visningstilstand</string>
@@ -404,9 +402,6 @@
                  <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
                  <b>Forpligter sig:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Bidrag-info</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Samlede bidragydere:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
-                 <b>Samlede bidrag:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Seneste opdatering:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS-statistikker</string>
     <string name="anonymous_statistics_summary">Hjælp med at gøre LineageOS bedre, ved at deltage i anonym statistik-rapportering</string>
     <string name="anonymous_statistics_warning_title">Om</string>

@@ -277,8 +277,6 @@
     <string name="status_bar_brightness_slider_summary">Карэкціроўка яркасці ў хуткіх наладах</string>
     <string name="status_bar_brightness_slider_auto_title">Аўтаматычная яркасць</string>
     <string name="status_bar_brightness_slider_show_never">Ніколі не паказваць</string>
-    <string name="status_bar_toggle_brightness">Кіраванне яркасцю</string>
-    <string name="status_bar_toggle_brightness_summary">Карэкціраваць яркасць экрана працягваннем па панэлі стану</string>
     <string name="network_traffic_settings_summary">Паказваць бягучыя ўзроўні сеткавага трафіку ў панэлі стану</string>
     <string name="network_traffic_mode_title">Рэжым паказу</string>
     <string name="network_traffic_mode_disable">Адключана</string>

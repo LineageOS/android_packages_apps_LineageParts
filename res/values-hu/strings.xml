@@ -372,8 +372,6 @@
     <string name="status_bar_brightness_slider_show_never">Sose jelenítse meg</string>
     <string name="status_bar_brightness_slider_show_expanded">Kiterjesztéskor jelenítse meg</string>
     <string name="status_bar_brightness_slider_show_always">Mindig jelenítse meg</string>
-    <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
-    <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
     <string name="network_traffic_settings_title">Hálózatiforgalom-figyelő</string>
     <string name="network_traffic_settings_summary">Kijelzi az aktuális hálózathasználatot az értesítési sávon</string>
     <string name="network_traffic_mode_title">Megjelenítési mód</string>

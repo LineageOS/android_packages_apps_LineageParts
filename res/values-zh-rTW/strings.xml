@@ -170,7 +170,7 @@
     <string name="volbtn_music_controls_summary">在顯示螢幕關閉時長按音量鍵可尋找音樂曲目</string>
     <string name="volbtn_cursor_control_title">鍵盤游標控制</string>
     <string name="volbtn_cursor_control_off">已停用</string>
-    <string name="volbtn_cursor_control_on">音量上/下使游標右/左移動</string>
+    <string name="volbtn_cursor_control_on">音量上/下使游標左/右移動</string>
     <string name="volbtn_cursor_control_on_reverse">音量上/下使游標右/左移動</string>
     <string name="power_end_call_title">結束通話</string>
     <string name="power_end_call_summary">按電源鍵結束目前通話</string>
@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">永不顯示</string>
     <string name="status_bar_brightness_slider_show_expanded">當展開時顯示</string>
     <string name="status_bar_brightness_slider_show_always">始終顯示</string>
-    <string name="status_bar_toggle_brightness">亮度控制</string>
-    <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
     <string name="network_traffic_settings_title">網路流量監測器</string>
     <string name="network_traffic_settings_summary">在狀態列中顯示目前的網路級別</string>
     <string name="network_traffic_mode_title">顯示模式</string>
@@ -522,7 +520,7 @@
     <string name="trust_warnings_selinux">SELinux 狀態</string>
     <string name="trust_warnings_keys">編譯簽名</string>
     <string name="trust_onboarding_title">歡迎使用安全中心</string>
-    <string name="trust_onboarding_description">安全中心能保障您的裝置安全性和您的隱私嗎？\ n您可以透過顯示的安全圖示檢查內容的安全性</string>
+    <string name="trust_onboarding_description">安全中心能保障您的裝置安全性和您的隱私。\n安全圖示只有當頁面的內容已獲驗證才會顯示。</string>
     <string name="trust_onboarding_learn_more">瞭解更多</string>
     <string name="trust_onboarding_done">明白了</string>
     <string name="trust_restrict_usb_title">限制 USB</string>

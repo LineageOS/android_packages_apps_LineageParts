@@ -359,7 +359,7 @@
     <string name="status_bar_clock_show_seconds_title">Hiển thị giây</string>
     <string name="status_bar_clock_show_seconds_summary">Hiển thị giờ, phút và giây</string>
     <string name="status_bar_clock_auto_hide_title">Tự động ẩn</string>
-    <string name="status_bar_clock_auto_hide_summary">Ẩn đồng hồ nếu trình khởi chạy hiển thị</string>
+    <string name="status_bar_clock_auto_hide_summary">Ẩn đồng hồ khi đang ở màn hình chính</string>
     <string name="status_bar_clock_position_title">Vị trí đồng hồ</string>
     <string name="status_bar_clock_position_right">Phải</string>
     <string name="status_bar_clock_position_left">Trái</string>
@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">Luôn ẩn</string>
     <string name="status_bar_brightness_slider_show_expanded">Hiển thị khi được mở rộng</string>
     <string name="status_bar_brightness_slider_show_always">Luôn hiện</string>
-    <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
-    <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
     <string name="network_traffic_settings_title">Giám sát lưu lượng mạng</string>
     <string name="network_traffic_settings_summary">Hiển thị mức lưu lượng mạng hiện tại trên thanh trạng thái</string>
     <string name="network_traffic_mode_title">Chế độ hiển thị</string>

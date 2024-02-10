@@ -26,7 +26,7 @@
     <string name="disabled">Sıradan çıxarıldı</string>
     <string name="enabled">Fəallaşdırıldı</string>
     <string name="privacy_settings_title">Gizlilik</string>
-    <string name="channel_light_settings_name">İşıq ayarlarına önbaxış</string>
+    <string name="channel_light_settings_name">İşıq ayarlarını önizlə</string>
     <string name="edit_light_settings">İşıq ayarlarına düzəliş et</string>
     <string name="pulse_speed_title">Yanıb sönmə uzunluğu və sürəti</string>
     <string name="default_time">Normal</string>
@@ -118,7 +118,7 @@
     <string name="live_display_color_profile_photography_summary">Fotolar üçün mükəmməl rəng istehsalı</string>
     <string name="live_display_color_profile_basic_title">Əsas</string>
     <string name="live_display_color_profile_basic_summary">Ekranı kalibrasiya etmədən istifadə et</string>
-    <string name="live_display_color_profile_adaptive_title">Uyğunlaşdırılmış</string>
+    <string name="live_display_color_profile_adaptive_title">Adaptiv</string>
     <string name="live_display_color_profile_adaptive_summary">Rəngləri mühit şərtlərinə görə uyğunlaşdır</string>
     <string name="live_display_color_profile_reading_title">Oxuma</string>
     <string name="live_display_color_profile_reading_summary">Daha az göz yorğunluğu üçün isti rənglər</string>
@@ -292,7 +292,7 @@
     <string name="rename_dialog_hint">Profil adını daxil edin</string>
     <string name="profile_reset_title">Sıfırla</string>
     <string name="profile_reset_message">İstifadәçi tərəfindən yaradılan bütün profillər və tətbiq qrupları silinib ilkin dəyərləri bərpa edilsin?</string>
-    <string name="profile_app_delete_confirm">Tətbiqetməni sil?</string>
+    <string name="profile_app_delete_confirm">Bu tətbiq silinsin?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
     <string name="profile_networkmode_4g">LTE</string>
@@ -330,7 +330,7 @@
     <string name="toggleBluetooth">Bluetooth</string>
     <string name="toggleLocation">Yerləşmə</string>
     <string name="toggleData">Mobil internet bağlantısı</string>
-    <string name="toggleSync">Verilənləri avto-eyniləşdirmə</string>
+    <string name="toggleSync">Datanı avto-sinxr</string>
     <string name="toggleNfc">NFC</string>
     <string name="ring_mode_title">Zəng rejimi</string>
     <string name="ring_mode_normal">Normal</string>
@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">Heç vaxt göstərmə</string>
     <string name="status_bar_brightness_slider_show_expanded">Genişləndiriləndə göstər</string>
     <string name="status_bar_brightness_slider_show_always">Həmişə göstər</string>
-    <string name="status_bar_toggle_brightness">Parlaqlıq nəzarəti</string>
-    <string name="status_bar_toggle_brightness_summary">Status çubuğunun üzərində sürüşdürərək parlaqlığı nizamla</string>
     <string name="network_traffic_settings_title">Şəbəkə trafik monitoru</string>
     <string name="network_traffic_settings_summary">Status çubuğunda hazırkı şəbəkə trafikini göstər</string>
     <string name="network_traffic_mode_title">Görüntü rejimi</string>
@@ -410,11 +408,11 @@
     <string name="network_traffic_show_units_compact">Yığcam</string>
     <string name="network_traffic_show_units_summary">Status çubuğunda trafik ölçmə vahidlərini göstərilib göstərilməyəcəyi</string>
     <string name="network_traffic_disabled_clock">Saat mövqeyinə görə şəbəkə trafiki sıradan çıxarıldı</string>
-    <string name="protected_apps_manager_title">Qorunan tətbiqetmələr</string>
+    <string name="protected_apps_manager_title">Qorunan tətbiqlər</string>
     <string name="protected_apps_manager_summary">Təhlükəsiz kildin arxasında hansı tətbiqlərin gizlədiləcəyini idarə edin</string>
     <string name="contributors_cloud_fragment_title">Töhfə verənlər</string>
-    <string name="contributors_cloud_loading_message">Töhfə verənlər verilənləri yüklənir\u2026</string>
-    <string name="contributors_cloud_failed_message">Töhfə verənlər verilənləri yüklənə bilmədi</string>
+    <string name="contributors_cloud_loading_message">Töhfə verənlər datası yüklənir\u2026</string>
+    <string name="contributors_cloud_failed_message">Töhfə verənlər datası yüklənə bilmədi</string>
     <string name="contributor_info_menu">Töhfə verənlər məlumatı</string>
     <string name="contributor_info_msg"><![CDATA[<b>Ad:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Ləqəb:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
@@ -427,10 +425,10 @@
     <string name="anonymous_statistics_summary">Anonim statistika göndərməni tərcih edərək, LineageOS-u təkmilləşdirməyimizə kömək edin</string>
     <string name="anonymous_statistics_warning_title">Haqqında</string>
     <string name="anonymous_statistics_warning">LineageOS Statistikalarına daxil olmaq, cihazlar arasındakı unikal quraşdırmaların
-        izlənilməsi üçün LineageOS-un tərtibatçılarına şəxsi olmayan verilənlərin göndərilməsinə icazə verəcək. Göndərilən məlumatlar, gizliliyiniz və ya şəxsi verilənləriniz
-        üçün təhlükəli olmayan unikal bir identifikator ehtiva edir. Verilənlər hər önyükləmə vaxtı göndərilir.\n\nGöndərilən verilənlərə nümunə olaraq Verilənlərə Önbaxış-a toxunun.</string>
+        izlənilməsi üçün LineageOS-un tərtibatçılarına şəxsi olmayan dataların göndərilməsinə icazə verəcək. Göndərilən məlumatlar, gizliliyiniz və ya şəxsi datanız
+        üçün təhlükəli olmayan unikal bir identifikator ehtiva edir. Datalar, hər açlış zamanı göndərilir.\n\nGöndərilən datalara nümunə olaraq \"Datanı önizlə\"yə toxunun.</string>
     <string name="enable_reporting_title">Hesabat göndərməni fəallaşdır</string>
-    <string name="preview_data_title">Verilənlərə önbaxış</string>
+    <string name="preview_data_title">Datanı önizlə</string>
     <string name="view_stats_title">Statistikalara bax</string>
     <string name="anonymous_learn_more">Ətraflı öyrən</string>
     <string name="preview_id_title">Unikal kimlik</string>

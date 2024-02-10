@@ -319,7 +319,6 @@
     <string name="status_bar_brightness_slider_title">Ljusstyrkereglage</string>
     <string name="status_bar_brightness_slider_auto_title">Automatisk ljusstyrka</string>
     <string name="status_bar_brightness_slider_show_never">Visa aldrig</string>
-    <string name="status_bar_toggle_brightness">Ljusstyrkekontroll</string>
     <string name="network_traffic_mode_title">Visningsläge</string>
     <string name="network_traffic_mode_disable">Inaktiverat</string>
     <string name="network_traffic_mode_up">Bara upp</string>

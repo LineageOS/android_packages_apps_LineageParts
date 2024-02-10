@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">არასდროს გამოჩნდეს</string>
     <string name="status_bar_brightness_slider_show_expanded">გამოჩნდეს ჩამოშლისას</string>
     <string name="status_bar_brightness_slider_show_always">ყოველთვის გამოჩნდეს</string>
-    <string name="status_bar_toggle_brightness">სიკაშკაშის მართვა</string>
-    <string name="status_bar_toggle_brightness_summary">სიკაშკაშის შერჩევა მდგომარეობის ზოლზე გადასმით</string>
     <string name="network_traffic_settings_title">ქსელის დატვირთვის ჩვენება</string>
     <string name="network_traffic_settings_summary">ქსელის მიმდინარე დატვირთვის ჩვენება მდგომარეობის ზოლზე</string>
     <string name="network_traffic_mode_title">ჩვენების რეჟიმი</string>

@@ -359,8 +359,6 @@
     <string name="status_bar_brightness_slider_show_never">Älä näytä koskaan</string>
     <string name="status_bar_brightness_slider_show_expanded">Näytä laajennettaessa</string>
     <string name="status_bar_brightness_slider_show_always">Näytä aina</string>
-    <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
-    <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
     <string name="network_traffic_settings_title">Verkkoliikenne</string>
     <string name="network_traffic_settings_summary">Näyttää verkon nopeuden tilapalkissa</string>
     <string name="network_traffic_mode_title">Näyttötila</string>

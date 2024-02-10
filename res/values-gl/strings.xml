@@ -5,7 +5,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Axustes de LineageOS</string>
+    <string name="lineageparts_title">Configuración de LineageOS</string>
     <string name="loading">Cargando\u2026</string>
     <string name="dlg_ok">ACEPTAR</string>
     <string name="cancel">Cancelar</string>
@@ -294,6 +294,7 @@
     <string name="choose_soundtone">Escoller ton de notificación</string>
     <string name="choose_ringtone">Escoller ton de chamada</string>
     <string name="ringtone_title">Ton de chamada</string>
+    <string name="ringtone_summary">"[empty string]"</string>
     <string name="soundtone_title">Ton de notificación</string>
     <string name="profile_system_settings_title">Configuración do sistema</string>
     <string name="profile_lockmode_title">Bloqueo de pantalla</string>
@@ -364,8 +365,6 @@
     <string name="status_bar_brightness_slider_show_never">Non amosar nunca</string>
     <string name="status_bar_brightness_slider_show_expanded">Amosar ao expandir</string>
     <string name="status_bar_brightness_slider_show_always">Amosar sempre</string>
-    <string name="status_bar_toggle_brightness">Control de brillo</string>
-    <string name="status_bar_toggle_brightness_summary">Axustar o brillo arrastrando pola barra de estado</string>
     <string name="network_traffic_settings_title">Monitor de tráfico de rede</string>
     <string name="network_traffic_settings_summary">Amosar os niveis actuais do tráfico de rede na barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>

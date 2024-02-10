@@ -212,7 +212,7 @@
     <string name="navigation_bar_back_long_press_title">Zurück (langes Drücken)</string>
     <string name="navigation_bar_home_long_press_title">Home (langes Drücken)</string>
     <string name="navigation_bar_home_double_tap_title">Home (doppeltes Tippen)</string>
-    <string name="navigation_bar_app_switch_long_press_title">Aktion für langes Drücken auf Anwendungsverlauf</string>
+    <string name="navigation_bar_app_switch_long_press_title">Anwendungsverlauf (langes Drücken)</string>
     <string name="navigation_bar_edge_long_swipe_title">Aktion für langes Wischen am Rand</string>
     <string name="power_menu_title">Ein-/Aus-Menü</string>
     <string name="power_menu_items_title">Elemente des Neustartmenüs</string>
@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">Niemals anzeigen</string>
     <string name="status_bar_brightness_slider_show_expanded">Anzeigen wenn erweitert</string>
     <string name="status_bar_brightness_slider_show_always">Immer anzeigen</string>
-    <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
-    <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
     <string name="network_traffic_settings_title">Datenverkehr-Anzeige</string>
     <string name="network_traffic_settings_summary">Aktuellen Datenverkehr in der Statusleiste anzeigen</string>
     <string name="network_traffic_mode_title">Anzeigemodus</string>
@@ -403,9 +401,11 @@
     <string name="network_traffic_units_megabits">Megabits pro Sekunde (Mbit/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobyte pro Sekunde (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabyte pro Sekunde (MB/s)</string>
+    <string name="network_traffic_units_auto">Automatisch (kB/s oder MB/s)</string>
     <string name="network_traffic_show_units">Einheiten anzeigen</string>
     <string name="network_traffic_show_units_off">Aus</string>
     <string name="network_traffic_show_units_on">An</string>
+    <string name="network_traffic_show_units_compact">Kompakt</string>
     <string name="network_traffic_show_units_summary">Zeigt die Einheiten der Datenübertragungsraten in der Statusleiste an</string>
     <string name="network_traffic_disabled_clock">Datenverkehr-Anzeige aufgrund der Uhrzeitposition deaktiviert</string>
     <string name="protected_apps_manager_title">Geschützte Apps</string>

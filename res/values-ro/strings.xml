@@ -386,8 +386,6 @@
     <string name="status_bar_brightness_slider_show_never">Nu mai arăta</string>
     <string name="status_bar_brightness_slider_show_expanded">Arată la extindere</string>
     <string name="status_bar_brightness_slider_show_always">Arată întotdeauna</string>
-    <string name="status_bar_toggle_brightness">Control luminozitate</string>
-    <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
     <string name="network_traffic_settings_title">Monitorizare trafic rețea</string>
     <string name="network_traffic_settings_summary">Afișează nivelele curente ale traficului rețelei în bara de stare</string>
     <string name="network_traffic_mode_title">Mod de afișare</string>

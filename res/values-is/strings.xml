@@ -377,8 +377,6 @@
     <string name="status_bar_brightness_slider_show_never">Aldrei sýna</string>
     <string name="status_bar_brightness_slider_show_expanded">Sýna þegar útflett</string>
     <string name="status_bar_brightness_slider_show_always">Sýna alltaf</string>
-    <string name="status_bar_toggle_brightness">Birtustigsstýring</string>
-    <string name="status_bar_toggle_brightness_summary">Breyta birtustigi með því að renna eftir stöðustiku</string>
     <string name="network_traffic_settings_title">Netkerfisvöktun</string>
     <string name="network_traffic_settings_summary">Birta tákn um netumferð á stöðustiku</string>
     <string name="network_traffic_mode_title">Birtingarhamur</string>

@@ -360,8 +360,6 @@
     <string name="status_bar_brightness_slider_show_never">عدم الإظهار أبداً</string>
     <string name="status_bar_brightness_slider_show_expanded">إظهار عند التوسيع</string>
     <string name="status_bar_brightness_slider_show_always">الإظهار دائمًا</string>
-    <string name="status_bar_toggle_brightness">التحكم بالسطوع</string>
-    <string name="status_bar_toggle_brightness_summary">التحكم بالسطوع عبر السحب على شريط الحالة</string>
     <string name="network_traffic_settings_title">مراقبة حركة مرور الشبكة</string>
     <string name="network_traffic_settings_summary">عرض مستويات حركة مرور الشبكة الحالية في شريط الحالة</string>
     <string name="network_traffic_mode_title">وضع العرض</string>
