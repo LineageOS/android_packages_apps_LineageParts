@@ -458,7 +458,7 @@
     <string name="perf_profile_category_title">Geräteleistung</string>
     <string name="perf_profile_title">Leistungsprofil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_fail_toast">Das Leistungsprofil ist derzeit nicht verfügbar</string>
-    <string name="power_save_category_title">Akku-Sparmodus</string>
+    <string name="power_save_category_title">Akkusparmodus</string>
     <string name="power_save_title">Extremer Energiesparmodus</string>
     <string name="power_save_summary">Leistung und Hintergrundaktivitäten beschränken, um Strom zu sparen</string>
     <string name="auto_power_save_title">Automatischer Energiesparmodus</string>

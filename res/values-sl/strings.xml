@@ -455,7 +455,7 @@
     <string name="status_bar_show_weather_title">Prikaži vreme</string>
     <string name="status_bar_show_weather_summary">Prikaži trenutno temperaturo v vrstici stanja</string>
     <string name="perf_profile_settings_title">Varčevanje z energijo baterije in zmogljivost</string>
-    <string name="perf_profile_settings_summary">Prilagodi značilnosti varčevanja z energijo in zmogljivost naprave</string>
+    <string name="perf_profile_settings_summary">Prilagodi funkcije varčevanja z energijo in zmogljivost naprave</string>
     <string name="perf_profile_overview_summary">Trenutni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
     <string name="perf_profile_category_title">Zmogljivost naprave</string>
     <string name="perf_profile_title">Zmogljivostni profil: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>

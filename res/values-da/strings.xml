@@ -365,7 +365,6 @@
     <string name="status_bar_brightness_slider_auto_title">Auto-lysstyrke</string>
     <string name="status_bar_brightness_slider_auto_summary">Vis skifter til adaptiv lysstyrke, nær skyderen</string>
     <string name="status_bar_brightness_slider_show_never">Vis aldrig</string>
-    <string name="status_bar_brightness_slider_show_always">Vis altid</string>
     <string name="status_bar_toggle_brightness">Lysstyrkekontrol</string>
     <string name="status_bar_toggle_brightness_summary">Justér lysstyrken, ved at stryge tværs over statusbjælken</string>
     <string name="network_traffic_settings_title">Netværkstrafikovervågning</string>
