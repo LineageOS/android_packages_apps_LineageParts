@@ -30,6 +30,7 @@
     <string name="profiles_create_new">নতুন প্রোফাইল তৈরি করো</string>
     <string name="toggleLocation">অবস্থান</string>
     <string name="status_bar_clock_auto_hide_summary">লনচার দেখা গেলে ঘড়িটিকে লুকিয়ে রাখো</string>
+    <string name="status_bar_brightness_slider_show_never">কখনো দেখাবেন না</string>
     <string name="status_bar_brightness_slider_show_always">সবসময় দেখান</string>
     <string name="contributor_info_msg"><![CDATA[<b>নাম:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>ডাকনাম:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
