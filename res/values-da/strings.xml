@@ -180,6 +180,7 @@
     <string name="home_answer_call_summary">Besvar indgående opkald, ved at trykke på hjem-knappen</string>
     <string name="extras_title">Ekstrafunktioner</string>
     <string name="additional_buttons_title">Yderligere knapper</string>
+    <string name="click_partial_screenshot_title">Klik for delvist skærmbillede</string>
     <string name="button_backlight_title">Bagbelysning</string>
     <string name="button_backlight_enabled">Oplys knapper</string>
     <string name="button_backlight_only_when_pressed_title">Oplys kun knapper ved tryk</string>
@@ -373,7 +374,6 @@
     <string name="status_bar_brightness_slider_auto_title">Auto-lysstyrke</string>
     <string name="status_bar_brightness_slider_auto_summary">Vis skifter til adaptiv lysstyrke, nær skyderen</string>
     <string name="status_bar_brightness_slider_show_never">Vis aldrig</string>
-    <string name="status_bar_brightness_slider_show_always">Vis altid</string>
     <string name="status_bar_toggle_brightness">Lysstyrkekontrol</string>
     <string name="status_bar_toggle_brightness_summary">Justér lysstyrken, ved at stryge tværs over statusbjælken</string>
     <string name="network_traffic_settings_title">Netværkstrafikovervågning</string>
