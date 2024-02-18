@@ -8,6 +8,7 @@
     <string name="battery_light_enable_title">ব্যাটারি লাইট চালু করো</string>
     <string name="notification_light_enable_title">বিজ্ঞপ্তি লাইট চালু করো</string>
     <string name="volume_panel_on_left_title">বামে প্যানেল দেখান</string>
+    <string name="volume_panel_on_left_summary">ভলিউম প্যানেল স্ক্রিনের বাম দিকে দেখান</string>
     <string name="swap_capacitive_keys_title">ক্যাপাসিটিভ বোতামগুলো বিনিময় করো</string>
     <string name="navigation_bar_invert_layout_summary">নেভিগেশন বার এবং অন্যান্য আইটেম যেমন আইএমই সুইচারের লেআউট উল্টায়</string>
     <string name="power_menu_items_title">পাওয়ার মেনুর অপশনসমূহ</string>
@@ -17,6 +18,7 @@
     <string name="profiles_create_new">নতুন প্রোফাইল তৈরি করো</string>
     <string name="toggleLocation">অবস্থান</string>
     <string name="status_bar_clock_auto_hide_summary">লনচার দেখা গেলে ঘড়িটিকে লুকিয়ে রাখো</string>
+    <string name="status_bar_brightness_slider_show_never">কখনো দেখাবেন না</string>
     <string name="status_bar_brightness_slider_show_always">সবসময় দেখান</string>
     <string name="contributor_info_msg"><![CDATA[<b>নাম:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>ডাকনাম:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>

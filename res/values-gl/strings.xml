@@ -5,7 +5,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Axustes de LineageOS</string>
+    <string name="lineageparts_title">Configuración de LineageOS</string>
     <string name="loading">Cargando\u2026</string>
     <string name="dlg_ok">ACEPTAR</string>
     <string name="cancel">Cancelar</string>
@@ -294,6 +294,7 @@
     <string name="choose_soundtone">Escoller ton de notificación</string>
     <string name="choose_ringtone">Escoller ton de chamada</string>
     <string name="ringtone_title">Ton de chamada</string>
+    <string name="ringtone_summary">"[empty string]"</string>
     <string name="soundtone_title">Ton de notificación</string>
     <string name="profile_system_settings_title">Configuración do sistema</string>
     <string name="profile_lockmode_title">Bloqueo de pantalla</string>

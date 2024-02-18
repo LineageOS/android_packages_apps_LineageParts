@@ -403,9 +403,11 @@
     <string name="network_traffic_units_megabits">Megabit ανά δευτερόλεπτο (Mb/δ)</string>
     <string name="network_traffic_units_kilobytes">Kilobyte ανά δευτερόλεπτο (kB/δ)</string>
     <string name="network_traffic_units_megabytes">Megabyte ανά δευτερόλεπτο (MB/δ)</string>
+    <string name="network_traffic_units_auto">Αυτόματα (kB/s ή MB/s)</string>
     <string name="network_traffic_show_units">Εμφάνιση μονάδων</string>
     <string name="network_traffic_show_units_off">Ανενεργό</string>
     <string name="network_traffic_show_units_on">Ενεργό</string>
+    <string name="network_traffic_show_units_compact">Συμπαγές</string>
     <string name="network_traffic_show_units_summary">Επιλέξτε αν θα εμφανίζονται οι μονάδες μέτρησης κίνησης στη γραμμή κατάστασης</string>
     <string name="network_traffic_disabled_clock">Η κίνηση δικτύου είναι απενεργοποιημένη λόγω της θέσης του ρολογιού</string>
     <string name="protected_apps_manager_title">Προστατευμένες εφαρμογές</string>
