@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2016 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017,2021-2022 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -19,7 +19,7 @@
         android:key="lockscreen_rotation"
         android:title="@string/display_lockscreen_rotation_title"
         android:dependency="accelerometer"
-        android:defaultValue="false"
+        android:defaultValue="@*lineageos.platform:bool/config_lockScreenRotationEnabledByDefault"
         lineage:requiresConfig="@*android:bool/config_enableLockScreenRotation" />
 
     <PreferenceCategory
