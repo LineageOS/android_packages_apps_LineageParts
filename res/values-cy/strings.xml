@@ -52,7 +52,8 @@
     <string name="charging_control_enable_title">Galluogi rheolaeth gwefru</string>
     <string name="charging_control_mode_title">Modd gwefru</string>
     <string name="charging_control_start_time_title">Amser dechrau</string>
-    <string name="charging_control_target_time_title">Amser targed i wefru\'n llawn</string>
+    <string name="charging_control_target_time_title">Amser targed i wefru\u2019n llawn</string>
+    <string name="charging_control_target_time_summary">Caiff y batri ei wefru\u2019n llawn erbyn %s</string>
     <string name="charging_control_limit_title">Terfyn</string>
     <string name="battery_light_title">Golau batri</string>
     <string name="battery_light_enable_title">Galluogi golau batri</string>
@@ -387,6 +388,7 @@
     <string name="network_traffic_mode_up">Uwchlwytho yn unig</string>
     <string name="network_traffic_mode_down">Lawrlwytho yn unig</string>
     <string name="network_traffic_mode_all">Uwchlwytho a lawrlwytho</string>
+    <string name="network_traffic_position_title">Safle</string>
     <string name="network_traffic_autohide">Cuddio\'n awtomatig</string>
     <string name="network_traffic_autohide_summary">Cuddio\'r monitor traffig pan nad oes weithgarwch</string>
     <string name="network_traffic_units_title">Unedau mesur traffig</string>
