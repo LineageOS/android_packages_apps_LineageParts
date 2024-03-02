@@ -341,7 +341,7 @@
     <string name="notification_volume_title">通知</string>
     <string name="media_volume_title">媒体</string>
     <string name="alarm_volume_title">闹钟</string>
-    <string name="doze_title">环境显示</string>
+    <string name="doze_title">主动显示</string>
     <string name="status_bar_title">状态栏</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
     <string name="status_bar_quick_qs_pulldown_summary">从状态栏的%1$s边缘下拉开启快速设置面板</string>
@@ -499,7 +499,7 @@
     <string name="touchscreen_gesture_action_next_track">转到下一曲目</string>
     <string name="touchscreen_gesture_action_volume_down">降低媒体音量</string>
     <string name="touchscreen_gesture_action_volume_up">提高媒体音量</string>
-    <string name="touchscreen_gesture_action_ambient_display">显示环境显示</string>
+    <string name="touchscreen_gesture_action_ambient_display">点亮主动显示</string>
     <string name="trust_category_features">状态</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">强制执行</string>
