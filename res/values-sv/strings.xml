@@ -59,6 +59,16 @@
     <string name="light_brightness_title">Ljusstyrka</string>
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Stör ej</string>
+    <string name="charging_control_mode_auto_title">Automatiskt schema</string>
+    <string name="charging_control_mode_auto_summary">Bestäm automatiskt när laddning ska påbörjas baserat på satta alarm</string>
+    <string name="charging_control_mode_custom_title">Anpassat schema</string>
+    <string name="charging_control_mode_custom_summary">Ange en måltid till full laddning</string>
+    <string name="charging_control_mode_limit_title">Begränsa laddning</string>
+    <string name="charging_control_mode_limit_summary">Begränsa laddning till en viss procent</string>
+    <string name="charging_control_start_time_title">Starttid</string>
+    <string name="charging_control_start_time_summary">Laddningskontrollen aktiveras när du börjar ladda efter %s</string>
+    <string name="charging_control_target_time_title">Måltid till full laddning</string>
+    <string name="charging_control_target_time_summary">Batteriet kommer att vara fulladdat vid %s</string>
     <string name="battery_light_title">Batteriljus</string>
     <string name="battery_low_pulse_title">Pulsera vid låg batterinivå</string>
     <string name="battery_light_list_title">Färger</string>
