@@ -9,6 +9,7 @@ import static java.time.format.FormatStyle.SHORT;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.text.format.DateFormat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TimePicker;
@@ -72,6 +73,7 @@ public abstract class TimePreference extends CustomDialogPreference<AlertDialog>
         super.onBindDialogView(view);
 
         mTimePicker = view.findViewById(R.id.time_picker);
+        mTimePicker.setIs24HourView(DateFormat.is24HourFormat(getContext()));
         mTimePicker.setHour(mLocalTime.getHour());
         mTimePicker.setMinute(mLocalTime.getMinute());
     }
