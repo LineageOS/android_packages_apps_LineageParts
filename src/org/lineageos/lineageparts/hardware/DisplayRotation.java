@@ -128,7 +128,7 @@ public class DisplayRotation extends SettingsPreferenceFragment
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         RotationPolicy.setRotationLockForAccessibility(requireActivity(),
-                !mAccelerometer.isChecked());
+                !mAccelerometer.isChecked(), /* caller= */ "DisplayRotation");
     }
 
     public static final SummaryProvider SUMMARY_PROVIDER = (context, key) -> {
