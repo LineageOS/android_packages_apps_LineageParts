@@ -10,7 +10,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
-import android.widget.Switch;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
@@ -18,13 +19,12 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.internal.view.RotationPolicy;
 import com.android.settingslib.widget.MainSwitchPreference;
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class DisplayRotation extends SettingsPreferenceFragment
-        implements OnMainSwitchChangeListener {
+        implements OnCheckedChangeListener {
     private static final String TAG = "DisplayRotation";
 
     public static final String KEY_ACCELEROMETER = "accelerometer";
@@ -126,7 +126,7 @@ public class DisplayRotation extends SettingsPreferenceFragment
     }
 
     @Override
-    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         RotationPolicy.setRotationLockForAccessibility(requireActivity(),
                 !mAccelerometer.isChecked());
     }
