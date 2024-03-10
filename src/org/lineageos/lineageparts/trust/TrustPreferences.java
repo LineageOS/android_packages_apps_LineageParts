@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2018-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -14,7 +14,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
@@ -33,8 +33,8 @@ public class TrustPreferences extends SettingsPreferenceFragment {
     private LineageGlobalSettingListPreference mUsbRestrictorPref;
     private ListPreference mSmsLimitPref;
 
-    private SwitchPreference mWarnSELinuxPref;
-    private SwitchPreference mWarnKeysPref;
+    private SwitchPreferenceCompat mWarnSELinuxPref;
+    private SwitchPreferenceCompat mWarnKeysPref;
 
     private TrustInterface mInterface;
 
