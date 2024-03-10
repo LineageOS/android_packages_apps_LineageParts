@@ -33,7 +33,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import static com.android.systemui.shared.recents.utilities.Utilities.isLargeScreen;
 
@@ -122,24 +122,24 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private ListPreference mAssistLongPressAction;
     private ListPreference mAppSwitchPressAction;
     private ListPreference mAppSwitchLongPressAction;
-    private SwitchPreference mCameraWakeScreen;
-    private SwitchPreference mCameraSleepOnRelease;
+    private SwitchPreferenceCompat mCameraWakeScreen;
+    private SwitchPreferenceCompat mCameraSleepOnRelease;
     private ListPreference mVolumeKeyCursorControl;
-    private SwitchPreference mSwapVolumeButtons;
-    private SwitchPreference mVolumePanelOnLeft;
-    private SwitchPreference mDisableNavigationKeys;
-    private SwitchPreference mNavigationArrowKeys;
+    private SwitchPreferenceCompat mSwapVolumeButtons;
+    private SwitchPreferenceCompat mVolumePanelOnLeft;
+    private SwitchPreferenceCompat mDisableNavigationKeys;
+    private SwitchPreferenceCompat mNavigationArrowKeys;
     private ListPreference mNavigationBackLongPressAction;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
     private ListPreference mEdgeLongSwipeAction;
-    private SwitchPreference mPowerEndCall;
-    private SwitchPreference mHomeAnswerCall;
+    private SwitchPreferenceCompat mPowerEndCall;
+    private SwitchPreferenceCompat mHomeAnswerCall;
     private ListPreference mTorchLongPressPowerTimeout;
-    private SwitchPreference mSwapCapacitiveKeys;
-    private SwitchPreference mNavBarInverse;
-    private SwitchPreference mEnableTaskbar;
+    private SwitchPreferenceCompat mSwapCapacitiveKeys;
+    private SwitchPreferenceCompat mNavBarInverse;
+    private SwitchPreferenceCompat mEnableTaskbar;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -190,7 +190,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
         mPowerEndCall = findPreference(KEY_POWER_END_CALL);
 
         // Long press power while display is off to activate torchlight
-        SwitchPreference torchLongPressPowerGesture =
+        SwitchPreferenceCompat torchLongPressPowerGesture =
                 findPreference(KEY_TORCH_LONG_PRESS_POWER_GESTURE);
         final int torchLongPressPowerTimeout = LineageSettings.System.getInt(resolver,
                 LineageSettings.System.TORCH_LONG_PRESS_POWER_TIMEOUT, 0);
@@ -439,8 +439,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             }
         }
 
-        SwitchPreference volumeWakeScreen = findPreference(KEY_VOLUME_WAKE_SCREEN);
-        SwitchPreference volumeMusicControls = findPreference(KEY_VOLUME_MUSIC_CONTROLS);
+        SwitchPreferenceCompat volumeWakeScreen = findPreference(KEY_VOLUME_WAKE_SCREEN);
+        SwitchPreferenceCompat volumeMusicControls = findPreference(KEY_VOLUME_MUSIC_CONTROLS);
 
         if (volumeWakeScreen != null) {
             if (volumeMusicControls != null) {
