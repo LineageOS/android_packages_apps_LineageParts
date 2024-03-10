@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2018-2022 The LineageOS Project
+     SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
@@ -56,12 +56,12 @@
             android:icon="@drawable/ic_info"
             android:summary="@string/trust_warnings_alerts_intro" />
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="trust_warning_selinux"
             android:summary="@string/trust_warnings_selinux"
             android:defaultValue="true" />
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="trust_warning_keys"
             android:summary="@string/trust_warnings_keys"
             android:defaultValue="true" />
