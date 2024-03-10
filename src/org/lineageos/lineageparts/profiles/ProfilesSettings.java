@@ -126,9 +126,11 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         super.onStart();
         final PartsActivity activity = (PartsActivity) requireActivity();
         mProfileEnabler = activity.getMainSwitchBar();
+/*
         mProfileEnabler.getSwitch().setOnCheckedChangeListener((buttonView, isChecked) ->
                 LineageSettings.System.putInt(activity.getContentResolver(),
                 LineageSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0));
+*/
         mProfileEnabler.setTitle(getString(R.string.profiles_settings_enable_title));
         mProfileEnabler.setVisibility(View.VISIBLE);
     }
