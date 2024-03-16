@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2013-2014 The CyanogenMod Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="backlight_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> সেকেন্ড</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> সেকেন্ড</item>
+    </plurals>
+    <plurals name="app_ops_count">
+        <item quantity="one">একবার</item>
+        <item quantity="other">%d বার</item>
+    </plurals>
+</resources>

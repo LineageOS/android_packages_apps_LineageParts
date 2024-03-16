@@ -391,7 +391,7 @@
     <string name="network_traffic_settings_title">Monitorues të trafikut të rrjetit</string>
     <string name="network_traffic_settings_summary">Shfaq nivelin aktual të trafikut të rrjetit në shiritin e statusit</string>
     <string name="network_traffic_mode_title">Mënyra e shfaqjes</string>
-    <string name="network_traffic_mode_disable">I çaktivizuar</string>
+    <string name="network_traffic_mode_disable">E çaktivizuar</string>
     <string name="network_traffic_mode_up">Vetëm Ngarkimin</string>
     <string name="network_traffic_mode_down">Vetëm Shkarkimin</string>
     <string name="network_traffic_mode_all">Ngarkim dhe Shkarkim</string>
@@ -506,7 +506,7 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Zbatuar</string>
     <string name="trust_feature_selinux_value_disabled">E çaktivizuar</string>
-    <string name="trust_feature_selinux_explain">SELinux dikton se cilat proçese kanë të drejta në cilat skedarë në telefonin tuaj.\nKjo pengon programet dhe shërbimet të kenë të drejta tek skedarë që nuk gjykohet të kenë: në këtë mënyrë proçeset e dëmshme kufizohen dhe siguria tuaj mbrohet.</string>
+    <string name="trust_feature_selinux_explain">SELinux dikton se cilat proçese kanë të drejta në skedarët e telefonit tuaj.\nKjo pengon programet dhe shërbimet të kenë të drejta tek skedarë që nuk gjykohet të kenë: në këtë mënyrë proçeset e dëmshme kufizohen dhe siguria tuaj mbrohet.</string>
     <string name="trust_feature_security_patches">korrigjimet të sigurisë së Android</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProdhuesi: %2$s</string>
     <string name="trust_feature_security_patches_value_new">E përditësuar</string>

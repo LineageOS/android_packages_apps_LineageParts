@@ -233,6 +233,7 @@
     <string name="charging_sounds_notification_category_title">Soníos d\'avisu</string>
     <string name="wired_charging_sounds_title">Carga per cable</string>
     <string name="wireless_charging_sounds_title">Carga ensin filos</string>
+    <string name="touchscreen_gestures_haptic_feedback_title">Rempuesta háptica</string>
     <string name="touchscreen_gesture_single_tap_title">Un toque</string>
     <string name="touchscreen_gesture_action_do_nothing">Nun facer nada</string>
     <string name="touchscreen_gesture_action_ambient_display">Amosar la visualización d\'ambiente</string>

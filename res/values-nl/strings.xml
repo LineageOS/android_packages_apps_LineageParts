@@ -6,12 +6,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lineageparts_title">LineageOS-instellingen</string>
-    <string name="loading">Laden\u2026</string>
+    <string name="loading">Aan het laden\u2026</string>
     <string name="dlg_ok">OK</string>
-    <string name="cancel">Annuleren</string>
-    <string name="add">Toevoegen</string>
-    <string name="choose_app">App selecteren</string>
-    <string name="reset">Opnieuw instellen</string>
+    <string name="cancel">Annuleer</string>
+    <string name="add">Voeg toe</string>
+    <string name="choose_app">Kies applicatie</string>
+    <string name="reset">Herstel</string>
     <string name="advanced">Geavanceerd</string>
     <string name="settings">Instellingen</string>
     <string name="name">Naam</string>
