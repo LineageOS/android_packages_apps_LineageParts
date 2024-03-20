@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -19,6 +19,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -41,7 +42,7 @@ import lineageos.app.ProfileManager;
 import lineageos.providers.LineageSettings;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+        implements CompoundButton.OnCheckedChangeListener, Preference.OnPreferenceChangeListener {
     private static final String TAG = "ProfilesSettings";
 
     public static final String EXTRA_PROFILE = "Profile";
@@ -126,9 +127,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         super.onStart();
         final PartsActivity activity = (PartsActivity) requireActivity();
         mProfileEnabler = activity.getMainSwitchBar();
-        mProfileEnabler.getSwitch().setOnCheckedChangeListener((buttonView, isChecked) ->
-                LineageSettings.System.putInt(activity.getContentResolver(),
-                LineageSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0));
+        mProfileEnabler.addOnSwitchChangeListener(this);
         mProfileEnabler.setTitle(getString(R.string.profiles_settings_enable_title));
         mProfileEnabler.setVisibility(View.VISIBLE);
     }
@@ -150,6 +149,12 @@ public class ProfilesSettings extends SettingsPreferenceFragment
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        LineageSettings.System.putInt(getContentResolver(),
+                LineageSettings.System.SYSTEM_PROFILES_ENABLED, isChecked ? 1 : 0);
     }
 
     private void addProfile() {
