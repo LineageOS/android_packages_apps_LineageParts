@@ -295,9 +295,9 @@
     <string name="profile_app_delete_confirm">Dëshiron ta heqësh këtë aplikacion?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
-    <string name="profile_networkmode_4g">LTE</string>
+    <string name="profile_networkmode_4g">4G</string>
     <string name="profile_networkmode_2g3g">2G/3G</string>
-    <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
+    <string name="profile_networkmode_2g3g4g">2G/3G/4G</string>
     <string name="profile_volumeoverrides_title">Shpërfillja e volumit</string>
     <string name="connection_state_enabled">Aktivizo</string>
     <string name="volume_override_summary">Vendose në %1$s/%2$s</string>
@@ -389,7 +389,7 @@
     <string name="network_traffic_settings_title">Monitorues të trafikut të rrjetit</string>
     <string name="network_traffic_settings_summary">Shfaq nivelin aktual të trafikut të rrjetit në shiritin e statusit</string>
     <string name="network_traffic_mode_title">Mënyra e shfaqjes</string>
-    <string name="network_traffic_mode_disable">I çaktivizuar</string>
+    <string name="network_traffic_mode_disable">E çaktivizuar</string>
     <string name="network_traffic_mode_up">Vetëm Ngarkimin</string>
     <string name="network_traffic_mode_down">Vetëm Shkarkimin</string>
     <string name="network_traffic_mode_all">Ngarkim dhe Shkarkim</string>
@@ -504,13 +504,13 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Zbatuar</string>
     <string name="trust_feature_selinux_value_disabled">E çaktivizuar</string>
-    <string name="trust_feature_selinux_explain">SELinux dikton se cilat proçese kanë të drejta në cilat skedarë në telefonin tuaj.\nKjo pengon programet dhe shërbimet të kenë të drejta tek skedarë që nuk gjykohet të kenë: në këtë mënyrë proçeset e dëmshme kufizohen dhe siguria tuaj mbrohet.</string>
+    <string name="trust_feature_selinux_explain">SELinux dikton se cilat proçese kanë të drejta në skedarët e telefonit tuaj.\nKjo pengon programet dhe shërbimet të kenë të drejta tek skedarë që nuk gjykohet të kenë: në këtë mënyrë proçeset e dëmshme kufizohen dhe siguria tuaj mbrohet.</string>
     <string name="trust_feature_security_patches">korrigjimet të sigurisë së Android</string>
     <string name="trust_feature_security_patches_value_base">Platforma: %1$s\nProdhuesi: %2$s</string>
     <string name="trust_feature_security_patches_value_new">E përditësuar</string>
     <string name="trust_feature_security_patches_value_medium">Disa muaj e pa përditësuar</string>
     <string name="trust_feature_security_patches_value_old">E vjetërsuar</string>
-    <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar të metat nga të cilat mund të shfrytëzohen nga programe keqadashës për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. Arnimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por arnimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar gabimet nga të cilat mund të shfrytëzohen nga programet keqadashëse për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. korrigjimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por korrigjimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
     <string name="trust_feature_encryption">Shifrimi</string>
     <string name="trust_feature_encryption_value_enabled">E aktivizuar</string>
     <string name="trust_feature_encryption_value_nolock">Nevojitet një mbyllje e sigurtë e ekranit</string>
