@@ -48,6 +48,11 @@
     <string name="light_brightness_title">Tingkat kecerahan</string>
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Jangan Ganggu</string>
+    <string name="charging_control_title">Kontrol pengisian daya</string>
+    <string name="charging_control_enable_title">Aktifkan kontrol pengisian daya</string>
+    <string name="charging_control_mode_title">Mode pengisian daya</string>
+    <string name="charging_control_mode_auto_title">Jadwal otomatis</string>
+    <string name="charging_control_start_time_title">Waktu mulai</string>
     <string name="battery_light_title">Lampu baterai</string>
     <string name="battery_light_enable_title">Aktifkan lampu baterai</string>
     <string name="battery_low_pulse_title">Berkedip saat baterai lemah</string>
@@ -374,6 +379,7 @@
     <string name="network_traffic_mode_up">Hanya unggah</string>
     <string name="network_traffic_mode_down">Hanya unduh</string>
     <string name="network_traffic_mode_all">Unggah dan unduh</string>
+    <string name="network_traffic_position_title">Posisi</string>
     <string name="network_traffic_autohide">Sembunyi otomatis</string>
     <string name="network_traffic_autohide_summary">Sembunyikan monitor lalu lintas ketika tidak ada aktivitas</string>
     <string name="network_traffic_units_title">Satuan pengukuran lalu lintas</string>
@@ -381,6 +387,7 @@
     <string name="network_traffic_units_megabits">Megabit per detik (Mb/d)</string>
     <string name="network_traffic_units_kilobytes">Kilobyte per detik (kB/d)</string>
     <string name="network_traffic_units_megabytes">Megabyte per detik (MB/d)</string>
+    <string name="network_traffic_units_auto">Otomatis (kB/s atau MB/s)</string>
     <string name="network_traffic_show_units">Tampilkan satuan</string>
     <string name="network_traffic_show_units_off">Mati</string>
     <string name="network_traffic_show_units_on">Hidup</string>
