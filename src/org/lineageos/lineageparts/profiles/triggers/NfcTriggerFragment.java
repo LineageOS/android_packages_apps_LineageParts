@@ -81,7 +81,7 @@ public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallbac
         Activity activity = requireActivity();
         Intent intent = new Intent(activity, activity.getClass())
                 .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        return PendingIntent.getActivity(requireActivity(), 0, intent, PendingIntent.FLAG_IMMUTABLE);
+        return PendingIntent.getActivity(requireActivity(), 0, intent, PendingIntent.FLAG_MUTABLE);
     }
 
     private void disableTagWriteMode() {

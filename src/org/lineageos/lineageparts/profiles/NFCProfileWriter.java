@@ -72,7 +72,7 @@ public class NFCProfileWriter extends Activity {
     private PendingIntent getPendingIntent() {
         return PendingIntent.getActivity(this, 0,
                 new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP),
-                        PendingIntent.FLAG_IMMUTABLE);
+                        PendingIntent.FLAG_MUTABLE);
     }
 
     private void disableTagWriteMode() {
