@@ -90,7 +90,7 @@ public class NfcTriggerFragment extends Fragment implements NFCProfileTagCallbac
     private PendingIntent getPendingIntent() {
         Intent intent = new Intent(getActivity(), getActivity().getClass())
                 .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        return PendingIntent.getActivity(getActivity(), 0, intent, PendingIntent.FLAG_IMMUTABLE);
+        return PendingIntent.getActivity(getActivity(), 0, intent, PendingIntent.FLAG_MUTABLE);
     }
 
     private void disableTagWriteMode() {
