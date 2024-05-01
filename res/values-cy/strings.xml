@@ -51,6 +51,9 @@
     <string name="charging_control_title">Rheolaeth gwefru</string>
     <string name="charging_control_enable_title">Galluogi rheolaeth gwefru</string>
     <string name="charging_control_mode_title">Modd gwefru</string>
+    <string name="charging_control_mode_auto_title">Amserlen awtomatig</string>
+    <string name="charging_control_mode_custom_title">Amserlen addasedig</string>
+    <string name="charging_control_mode_custom_summary">Gosod amser targed i wefru\u2019n llawn</string>
     <string name="charging_control_start_time_title">Amser dechrau</string>
     <string name="charging_control_target_time_title">Amser targed i wefru\u2019n llawn</string>
     <string name="charging_control_target_time_summary">Caiff y batri ei wefru\u2019n llawn erbyn %s</string>
