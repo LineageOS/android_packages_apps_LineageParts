@@ -96,6 +96,18 @@
             </intent-filter>
         </provider>
 
+        <!-- Accessories settings (Devices category) -->
+        <activity-alias
+            android:name=".accessories.AccessoriesSettings"
+            android:exported="true"
+            android:label="@string/accessories_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="org.lineageos.lineageparts.ACCESSORIES_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
         <!-- Charging control settings (Battery category) -->
         <activity-alias
             android:name=".health.ChargingControlSettings"
