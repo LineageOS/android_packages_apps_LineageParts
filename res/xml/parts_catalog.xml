@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2016 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -17,6 +17,11 @@
 -->
 <parts-catalog xmlns:android="http://schemas.android.com/apk/res/android"
                xmlns:lineage="http://schemas.android.com/apk/res-auto">
+
+    <part android:key="accessories"
+        android:title="@string/accessories_title"
+        android:fragment="org.lineageos.lineageparts.accessories.AccessoriesSettings"
+        lineage:xmlRes="@xml/empty_preferences" />
 
     <part android:key="charging_control"
           android:title="@string/charging_control_title"
