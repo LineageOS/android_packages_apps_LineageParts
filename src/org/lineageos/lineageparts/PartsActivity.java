@@ -190,11 +190,11 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
     public boolean switchToFragment(String fragmentClass, Bundle args, int titleRes,
                                     CharSequence titleText) {
         Fragment fragment = Fragment.instantiate(this, fragmentClass, null);
-        return switchToFragment(fragment, args, titleRes, titleText);
+        return switchToFragment(fragment, args, titleRes, titleText, false);
     }
 
-    private  boolean switchToFragment(Fragment fragment, Bundle args, int titleRes,
-                                    CharSequence titleText) {
+    public boolean switchToFragment(Fragment fragment, Bundle args, int titleRes,
+                                    CharSequence titleText, boolean addToBackStack) {
         Log.d(TAG, "Launching fragment: " + fragment.getClass().getName());
 
         fragment.setArguments(args);
@@ -207,6 +207,9 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
             transaction.setBreadCrumbTitle(titleText);
         }
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        if (addToBackStack) {
+            transaction.addToBackStack(null);
+        }
         transaction.commit();
         return true;
     }
