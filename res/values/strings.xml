@@ -67,6 +67,26 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Do Not Disturb</string>
 
+    <!-- Accessories settings -->
+    <string name="accessories_title">Accessories</string>
+    <string name="accessories_accessory_enabled_title">Enabled</string>
+    <string name="accessories_accessory_name_title">Name</string>
+    <string name="accessories_accessory_type_title">Type</string>
+    <string name="accessories_accessory_battery_info_title">Battery information</string>
+    <string name="accessories_accessory_battery_info_summary" translatable="false">%s, %d%%</string>
+    <string name="accessories_accessory_id_title">Accessory identifier: %s</string>
+
+    <!-- Accessories - accessory type -->
+    <string name="accessories_accessory_type_unknown">Unknown</string>
+    <string name="accessories_accessory_type_keyboard">Keyboard</string>
+    <string name="accessories_accessory_type_active_pen">Active pen</string>
+
+    <!-- Accessories - battery status -->
+    <string name="accessories_battery_status_unknown">Unknown</string>
+    <string name="accessories_battery_status_charging">Charging</string>
+    <string name="accessories_battery_status_discharging">Discharging</string>
+    <string name="accessories_battery_status_not_charging">Not charging</string>
+
     <!-- Charging control settings -->
     <string name="charging_control_title">Charging control</string>
     <string name="charging_control_enable_title">Enable charging control</string>
