@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2024 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="enabled"
+        android:title="@string/accessories_accessory_enabled_title" />
+
+    <Preference
+        android:key="name"
+        android:selectable="false"
+        android:title="@string/accessories_accessory_name_title" />
+
+    <Preference
+        android:key="type"
+        android:selectable="false"
+        android:title="@string/accessories_accessory_type_title" />
+
+    <Preference
+        android:key="battery_info"
+        android:selectable="false"
+        android:title="@string/accessories_accessory_battery_info_title" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="id"
+        android:selectable="false" />
+
+</PreferenceScreen>
