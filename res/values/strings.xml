@@ -67,6 +67,9 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Do Not Disturb</string>
 
+    <!-- Accessories settings -->
+    <string name="accessories_title">Accessories</string>
+
     <!-- Charging control settings -->
     <string name="charging_control_title">Charging control</string>
     <string name="charging_control_enable_title">Enable charging control</string>
