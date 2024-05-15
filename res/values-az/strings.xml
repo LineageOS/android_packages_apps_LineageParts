@@ -382,7 +382,7 @@
     <string name="status_bar_brightness_slider_title">Parlaqlıq diyircəyini göstər</string>
     <string name="status_bar_brightness_slider_summary">Cəld Ayarlardan parlaqlığı nizamla</string>
     <string name="status_bar_brightness_slider_auto_title">Avto parlaqlıq</string>
-    <string name="status_bar_brightness_slider_auto_summary">Avtomatik parlaqlıq nişanını diyircəyin yanında göstər</string>
+    <string name="status_bar_brightness_slider_auto_summary">Adaptiv parlaqlıq keçidini diyircəyin yanında göstər</string>
     <string name="status_bar_brightness_slider_show_never">Heç vaxt göstərmə</string>
     <string name="status_bar_brightness_slider_show_expanded">Genişləndiriləndə göstər</string>
     <string name="status_bar_brightness_slider_show_always">Həmişə göstər</string>
