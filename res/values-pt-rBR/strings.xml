@@ -220,9 +220,9 @@
     <string name="power_menu_screenshot_summary">Pressione, segure e solte para obter uma captura de tela parcial</string>
     <string name="power_menu_airplane_title">Modo avião</string>
     <string name="power_menu_users_title">Alternador de usuário</string>
-    <string name="power_menu_bug_report_title">Relatório de erros</string>
-    <string name="power_menu_bug_report_devoptions_unavailable">O relatório de erros está desativado porque as configurações de desenvolvimento não estão ativadas</string>
-    <string name="power_menu_bug_report_unavailable_for_user">Relatório de erros está desabilitado para usuários que não são primários.</string>
+    <string name="power_menu_bug_report_title">Relatório de bugs</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">O relatório de bugs está desativado porque as configurações de desenvolvimento não estão ativadas</string>
+    <string name="power_menu_bug_report_unavailable_for_user">Os relatórios de bugs estão desativados para usuários que não são primários.</string>
     <string name="power_menu_emergency_title">Emergência</string>
     <string name="power_menu_devicecontrols_title">Controles do dispositivo</string>
     <string name="power_menu_advanced_restart_title">Reinicialização avançada</string>
