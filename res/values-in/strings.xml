@@ -508,6 +508,7 @@
     <string name="trust_restrict_usb_always">Tolak koneksi USB</string>
     <string name="trust_restrict_usb_keyguard">Izinkan koneksi USB saat tidak terkunci</string>
     <string name="trust_restrict_usb_disabled">Selalu izinkan koneksi USB</string>
+    <string name="trust_summary">Jaga keamanan perangkat Anda dan lindungi privasi Anda</string>
     <string name="sms_security_check_limit_title">Batas pesan SMS</string>
     <string name="sms_security_check_limit_summary">Aplikasi dapat mengirim %s pesan dalam 1 menit sebelum konfirmasi</string>
     <string name="sms_security_check_limit_summary_none">Aplikasi tidak diizinkan untuk mengirim pesan tanpa konfirmasi</string>

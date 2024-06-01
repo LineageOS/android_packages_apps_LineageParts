@@ -185,7 +185,7 @@
     <string name="home_answer_call_summary">Odbieraj połączenia przychodzące za pomocą przycisku \"Ekranu głównego\"</string>
     <string name="extras_title">Dodatki</string>
     <string name="additional_buttons_title">Dodatkowe przyciski</string>
-    <string name="click_partial_screenshot_title">Dotknij, aby wykonać częściowy zrzut ekranu</string>
+    <string name="click_partial_screenshot_title">Częściowy zrzut ekranu</string>
     <string name="click_partial_screenshot_summary"> Wciśnij przyciski ściszania i zasilania, aby wykonać częściowy zrzut ekranu</string>
     <string name="button_backlight_title">Podświetlenie</string>
     <string name="button_backlight_enabled">Podświetlenie przycisków</string>
@@ -267,7 +267,7 @@
     <string name="profile_settings_summary_off">Profile są wyłączone</string>
     <string name="profile_trigger_configure">Skonfiguruj wyzwalacz</string>
     <string name="profile_write_nfc_tag">Zapisz na tagu NFC</string>
-    <string name="profile_write_touch_tag">Dotknij taga by zapisać</string>
+    <string name="profile_write_touch_tag">Dotknij znacznika, aby zapisać</string>
     <string name="profile_write_success">Tag został zapisany pomyślnie</string>
     <string name="profile_write_failed">Nie udało się zapisać taga!</string>
     <string name="profile_selected">Wybrany profil: %1$s</string>
@@ -350,7 +350,7 @@
     <string name="status_bar_quick_qs_pulldown_off">Wyłączono</string>
     <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
     <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>
-    <string name="status_bar_double_tap_to_sleep_title">Dwukrotnie naciśnij, aby uśpić</string>
+    <string name="status_bar_double_tap_to_sleep_title">Dwukrotnie dotknij, aby uśpić</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dotknij dwukrotnie na pasku stanu, aby wyłączyć ekran</string>
     <string name="status_bar_icons_title">Ikony paska stanu</string>
     <string name="status_bar_system_icons_title">Ikony systemowe</string>
