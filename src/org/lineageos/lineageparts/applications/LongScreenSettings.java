@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2018-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.applications;
@@ -20,12 +20,12 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
 import com.android.settingslib.applications.ApplicationsState;
+import com.google.android.material.materialswitch.MaterialSwitch;
 
 import org.lineageos.internal.applications.LongScreen;
 import org.lineageos.lineageparts.R;
@@ -274,7 +274,7 @@ public class LongScreenSettings extends SettingsPreferenceFragment
     private static class ViewHolder {
         private final TextView title;
         private final ImageView icon;
-        private final Switch state;
+        private final MaterialSwitch state;
         private final View rootView;
 
         private ViewHolder(View view) {
