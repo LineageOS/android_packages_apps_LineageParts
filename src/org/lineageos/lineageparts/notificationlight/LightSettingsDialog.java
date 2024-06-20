@@ -1,7 +1,7 @@
 /*
  * SPDX-FileCopyrightText: 2010 Daniel Nilsson
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -195,13 +195,11 @@ public class LightSettingsDialog extends AlertDialog implements
 
     @Override
     public void onStop() {
-        super.onStop();
         dismissLed();
     }
 
     @Override
     public void onStart() {
-        super.onStart();
         updateLed();
     }
 
