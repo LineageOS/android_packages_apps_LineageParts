@@ -114,15 +114,17 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         holder.itemView.setOnLongClickListener(this);
     }
 
-    public void onStop() {
+    @Override
+    public void onPause() {
         if (getDialog() != null) {
-            getDialog().onStop();
+            getDialog().onPause();
         }
     }
 
-    public void onStart() {
+    @Override
+    public void onResume() {
         if (getDialog() != null) {
-            getDialog().onStart();
+            getDialog().onResume();
         }
     }
 
