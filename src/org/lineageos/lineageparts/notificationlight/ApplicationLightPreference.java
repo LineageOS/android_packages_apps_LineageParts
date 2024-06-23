@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -114,15 +114,17 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         holder.itemView.setOnLongClickListener(this);
     }
 
-    public void onStop() {
+    @Override
+    public void onPause() {
         if (getDialog() != null) {
-            getDialog().onStop();
+            getDialog().onPause();
         }
     }
 
-    public void onStart() {
+    @Override
+    public void onResume() {
         if (getDialog() != null) {
-            getDialog().onStart();
+            getDialog().onResume();
         }
     }
 

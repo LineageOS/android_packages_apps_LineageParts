@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -242,35 +242,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         if (mLedCanPulse || mMultiColorLed) {
             mApplicationPrefList = findPreference(APPLICATION_SECTION);
             mApplicationPrefList.setOrderingAsAdded(false);
-        }
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        setChildrenStarted(getPreferenceScreen(), true);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        setChildrenStarted(getPreferenceScreen(), false);
-    }
-
-    private void setChildrenStarted(PreferenceGroup group, boolean started) {
-        final int count = group.getPreferenceCount();
-        for (int i = 0; i < count; i++) {
-            Preference pref = group.getPreference(i);
-            if (pref instanceof ApplicationLightPreference) {
-                ApplicationLightPreference ap = (ApplicationLightPreference) pref;
-                if (started) {
-                    ap.onStart();
-                } else {
-                    ap.onStop();
-                }
-            } else if (pref instanceof PreferenceGroup) {
-                setChildrenStarted((PreferenceGroup) pref, started);
-            }
         }
     }
 
