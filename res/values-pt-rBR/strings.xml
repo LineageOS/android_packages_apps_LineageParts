@@ -10,7 +10,7 @@
     <string name="dlg_ok">OK</string>
     <string name="cancel">Cancelar</string>
     <string name="add">Adicionar</string>
-    <string name="choose_app">Escolher aplicativo</string>
+    <string name="choose_app">Escolher app</string>
     <string name="reset">Redefinir</string>
     <string name="advanced">Avançado</string>
     <string name="settings">Configurações</string>
@@ -74,7 +74,7 @@
     <string name="notification_light_enable_title">Ativar a luz de notificação</string>
     <string name="notification_light_general_title">Geral</string>
     <string name="notification_light_advanced_title">Avançado</string>
-    <string name="notification_light_applist_title">Aplicativos</string>
+    <string name="notification_light_applist_title">Apps</string>
     <string name="notification_light_phonelist_title">Telefone</string>
     <string name="notification_light_use_custom">Usar valores personalizados</string>
     <string name="notification_light_default_value">Padrão</string>
@@ -87,7 +87,7 @@
     <string name="notification_light_automagic_summary">As cores são escolhidas automaticamente</string>
     <string name="led_notification_title">Configurações da luz</string>
     <string name="led_notification_text">Luz do LED ativada pelas configurações</string>
-    <string name="notification_light_add_apps_empty_summary">Para adicionar controle por aplicativo, ative \'%1$s\' e pressione \'Adicionar\'</string>
+    <string name="notification_light_add_apps_empty_summary">Para adicionar controle por app, ative \'%1$s\' e pressione \'Adicionar\'</string>
     <string name="live_display_summary">Otimize sua tela com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir o cansaço visual</string>
     <string name="live_display_mode">Modo da tela</string>
     <string name="live_display_color_temperature_title">Temperatura da cor</string>
@@ -156,12 +156,12 @@
     <string name="hardware_keys_action_app_switch">Alternador de apps recentes</string>
     <string name="hardware_keys_action_search">Assistente de pesquisa</string>
     <string name="hardware_keys_action_voice_search">Pesquisa por voz</string>
-    <string name="hardware_keys_action_in_app_search">Pesquisa dentro do aplicativo</string>
+    <string name="hardware_keys_action_in_app_search">Pesquisa dentro do app</string>
     <string name="hardware_keys_action_launch_camera">Iniciar a câmera</string>
     <string name="hardware_keys_action_sleep">Desligar a tela</string>
-    <string name="hardware_keys_action_last_app">Último aplicativo</string>
+    <string name="hardware_keys_action_last_app">Último app</string>
     <string name="hardware_keys_action_split_screen">Dividir a tela</string>
-    <string name="hardware_keys_action_kill_app">Fechar aplicativo em primeiro plano</string>
+    <string name="hardware_keys_action_kill_app">Fechar app em primeiro plano</string>
     <string name="camera_sleep_on_release_title">Espiar a tela</string>
     <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
     <string name="camera_launch_title">Iniciar a câmera</string>
@@ -281,7 +281,7 @@
     <string name="profile_remove_current_profile">Não é possível excluir o perfil ativo!</string>
     <string name="profile_app_group_category_title">Substituições de notificações</string>
     <string name="profile_app_group_item_instructions">Adicionar ou remover grupos</string>
-    <string name="profile_app_group_item_instructions_summary">Adicionar ou remover grupos de aplicativos que substituem a notificação deste perfil</string>
+    <string name="profile_app_group_item_instructions_summary">Adicionar ou remover grupos de apps que substituem a notificação deste perfil</string>
     <string name="profile_entries_on">Ativado</string>
     <string name="profile_entries_off">Desativado</string>
     <string name="profile_entries_no_override">Não substituir</string>
@@ -291,7 +291,7 @@
     <string name="rename_dialog_message">Digite um novo nome</string>
     <string name="rename_dialog_hint">Digite o nome do perfil</string>
     <string name="profile_reset_title">Redefinir</string>
-    <string name="profile_reset_message">Excluir todos os perfis e grupos de aplicativos criados e restaurá-los para o padrão?</string>
+    <string name="profile_reset_message">Excluir todos os perfis e grupos de apps criados e restaurá-los para o padrão?</string>
     <string name="profile_app_delete_confirm">Remover este app?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>
@@ -410,8 +410,8 @@
     <string name="network_traffic_show_units_compact">Compacto</string>
     <string name="network_traffic_show_units_summary">Mostrar as unidades de medida do tráfego na barra de status</string>
     <string name="network_traffic_disabled_clock">Tráfego de rede desativado devido à posição do relógio na barra de status</string>
-    <string name="protected_apps_manager_title">Aplicativos protegidos</string>
-    <string name="protected_apps_manager_summary">Gerenciar quais aplicativos ficarão escondidos atrás de um bloqueio seguro</string>
+    <string name="protected_apps_manager_title">apps protegidos</string>
+    <string name="protected_apps_manager_summary">Gerenciar quais apps ficarão escondidos atrás de um bloqueio seguro</string>
     <string name="contributors_cloud_fragment_title">Colaboradores</string>
     <string name="contributors_cloud_loading_message">Carregando dados de colaboradores\u2026</string>
     <string name="contributors_cloud_failed_message">Não foi possível carregar os dados de colaboradores</string>
@@ -449,9 +449,9 @@
     <string name="display_rotation_90_title">90 graus</string>
     <string name="display_rotation_180_title">180 graus</string>
     <string name="display_rotation_270_title">270 graus</string>
-    <string name="long_screen_settings_title">Aplicativos em tela cheia</string>
-    <string name="long_screen_settings_summary">Forçar os aplicativos preexistentes a utilizarem a proporção em tela cheia</string>
-    <string name="long_screen_settings_no_apps">Nenhum aplicativo</string>
+    <string name="long_screen_settings_title">Apps em tela cheia</string>
+    <string name="long_screen_settings_summary">Forçar os apps preexistentes a utilizarem a proporção em tela cheia</string>
+    <string name="long_screen_settings_no_apps">Nenhum app</string>
     <string name="charging_sounds_settings_title">Sons de carregamento</string>
     <string name="charging_sounds_enable_title">Ativar sons de carregamento</string>
     <string name="charging_sounds_summary">Tocar um som quando conectar ou desconectar uma fonte de energia</string>
@@ -506,13 +506,13 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Impondo</string>
     <string name="trust_feature_selinux_value_disabled">Desligado</string>
-    <string name="trust_feature_selinux_explain">O SELinux determina quais processos têm acesso a determinados arquivos/pastas no seu dispositivo.\nIsto impede que aplicativos e serviços tenham acesso a arquivos com os quais não devem lidar. Dessa forma, um potencial processo malicioso terá acesso limitado e sua segurança está preservada.</string>
+    <string name="trust_feature_selinux_explain">O SELinux determina quais processos têm acesso a determinados arquivos/pastas no seu dispositivo.\nIsto impede que apps e serviços tenham acesso a arquivos com os quais não devem lidar. Dessa forma, um potencial processo malicioso terá acesso limitado e sua segurança está preservada.</string>
     <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
     <string name="trust_feature_security_patches_value_base">Plataforma: %1$s\nFabricante: %2$s</string>
     <string name="trust_feature_security_patches_value_new">Atualizado</string>
     <string name="trust_feature_security_patches_value_medium">Alguns meses desatualizado</string>
     <string name="trust_feature_security_patches_value_old">desatualizado</string>
-    <string name="trust_feature_security_patches_explain">As atualizações de segurança são lançadas mensalmente pela Google em cooperação com os fabricantes de SoC para corrigir falhas que possam ser exploradas por aplicativos maliciosos que visam burlar as restrições de segurança e causar danos permanentes em seu dispositivo. As atualizações disponibilizadas pela Google são aplicadas mensalmente em todos os dispositivos suportados, mas as atualizações para o código proprietário só podem ser aplicadas pelo fabricante do seu dispositivo. Para manter o seu dispositivo seguro, certifique-se de que a sua versão do LineageOS esteja sempre atualizada e, se aplicável, assegure-se de que a imagem do seu fornecedor esteja atualizada para a versão recomendada pelo LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">As atualizações de segurança são lançadas mensalmente pela Google em cooperação com os fabricantes de SoC para corrigir falhas que possam ser exploradas por apps maliciosos que visam burlar as restrições de segurança e causar danos permanentes em seu dispositivo. As atualizações disponibilizadas pela Google são aplicadas mensalmente em todos os dispositivos suportados, mas as atualizações para o código proprietário só podem ser aplicadas pelo fabricante do seu dispositivo. Para manter o seu dispositivo seguro, certifique-se de que a sua versão do LineageOS esteja sempre atualizada e, se aplicável, assegure-se de que a imagem do seu fornecedor esteja atualizada para a versão recomendada pelo LineageOS.</string>
     <string name="trust_feature_encryption">Criptografia</string>
     <string name="trust_feature_encryption_value_enabled">Ligada</string>
     <string name="trust_feature_encryption_value_nolock">Requer uma tela de bloqueio segura</string>
@@ -534,7 +534,7 @@
     <string name="trust_restrict_usb_disabled">Sempre permitir conexões USB</string>
     <string name="trust_summary">Mantenha o seu dispositivo seguro e proteja a sua privacidade</string>
     <string name="sms_security_check_limit_title">Limite de mensagens SMS</string>
-    <string name="sms_security_check_limit_summary">Os aplicativos podem enviar %s mensagens durante 1 minuto antes de exigirem confirmação</string>
-    <string name="sms_security_check_limit_summary_none">Os aplicativos não podem enviar qualquer mensagem sem confirmação</string>
+    <string name="sms_security_check_limit_summary">Os apps podem enviar %s mensagens durante 1 minuto antes de exigirem confirmação</string>
+    <string name="sms_security_check_limit_summary_none">Os apps não podem enviar qualquer mensagem sem confirmação</string>
     <string name="sms_security_check_limit_always_confirm">Confirmar sempre</string>
 </resources>
