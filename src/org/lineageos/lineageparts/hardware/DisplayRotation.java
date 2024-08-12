@@ -19,6 +19,9 @@ import androidx.preference.PreferenceScreen;
 import com.android.internal.view.RotationPolicy;
 import com.android.settingslib.widget.MainSwitchPreference;
 
+import lineageos.preference.LineageSystemSettingSwitchPreference;
+import lineageos.providers.LineageSettings;
+
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
@@ -27,6 +30,7 @@ public class DisplayRotation extends SettingsPreferenceFragment
     private static final String TAG = "DisplayRotation";
 
     public static final String KEY_ACCELEROMETER = "accelerometer";
+    private static final String LOCKSCREEN_ROTATION_PREF = "lockscreen_rotation";
     private static final String ROTATION_0_PREF = "display_rotation_0";
     private static final String ROTATION_90_PREF = "display_rotation_90";
     private static final String ROTATION_180_PREF = "display_rotation_180";
@@ -37,6 +41,7 @@ public class DisplayRotation extends SettingsPreferenceFragment
     private CheckBoxPreference mRotation90Pref;
     private CheckBoxPreference mRotation180Pref;
     private CheckBoxPreference mRotation270Pref;
+    private LineageSystemSettingSwitchPreference mLockScreenRotationPref;
 
     public static final int ROTATION_0_MODE = 1;
     public static final int ROTATION_90_MODE = 2;
@@ -49,11 +54,23 @@ public class DisplayRotation extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.display_rotation);
 
+        final Resources res = getResources();
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mAccelerometer = findPreference(KEY_ACCELEROMETER);
         mAccelerometer.addOnSwitchChangeListener(this);
         mAccelerometer.setPersistent(false);
+
+        mLockScreenRotationPref = prefSet.findPreference(LOCKSCREEN_ROTATION_PREF);
+        if (!res.getBoolean(com.android.internal.R.bool.config_enableLockScreenRotation)) {
+            prefSet.removePreference(mLockScreenRotationPref);
+            boolean enabled = LineageSettings.System.getInt(getContentResolver(),
+                    LineageSettings.System.LOCKSCREEN_ROTATION, 1) == 1;
+            if (enabled) {
+                LineageSettings.System.putInt(getContentResolver(),
+                        LineageSettings.System.LOCKSCREEN_ROTATION, 0);
+            }
+        }
 
         mRotation0Pref = prefSet.findPreference(ROTATION_0_PREF);
         mRotation90Pref = prefSet.findPreference(ROTATION_90_PREF);
