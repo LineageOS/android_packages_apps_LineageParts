@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2019,2021,2023 The LineageOS project
+ * SPDX-FileCopyrightText: 2017-2019,2021,2023,2024 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -16,6 +16,7 @@ import android.util.Log;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
+import org.lineageos.lineageparts.disabler.DependentDisabler;
 import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
 import org.lineageos.lineageparts.input.ButtonSettings;
 
@@ -42,6 +43,9 @@ public class BootReceiver extends BroadcastReceiver {
 
         // Extract the contributors database
         ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
+
+        // Disable dependent apps
+        DependentDisabler.enableOrDisableDependent(ctx);
     }
 
     private boolean hasRestoredTunable(Context context) {
