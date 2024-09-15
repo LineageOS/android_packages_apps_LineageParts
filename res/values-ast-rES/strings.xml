@@ -184,7 +184,7 @@
     <string name="status_bar_brightness_slider_auto_summary">Amuesa l\'alternador del brillu adautable cierca l\'eslizador</string>
     <string name="status_bar_brightness_slider_show_never">Nun amosar enxamás</string>
     <string name="status_bar_brightness_slider_show_expanded">Amosar al espander</string>
-    <string name="status_bar_brightness_slider_show_always">Amosar siempres</string>
+    <string name="status_bar_brightness_slider_show_always">Amosar siempre</string>
     <string name="network_traffic_settings_title">Supervisor del tránsitu de rede</string>
     <string name="network_traffic_settings_summary">Amuesa\'l nivel del tránsitu de rede na barra d\'estáu</string>
     <string name="network_traffic_mode_title">Mou de visualización</string>
@@ -245,7 +245,7 @@
     <string name="trust_feature_security_patches_value_new">Anovaos</string>
     <string name="trust_feature_security_patches_value_medium">Ensin anovar hai unos meses</string>
     <string name="trust_feature_security_patches_value_old">Ensin anovar</string>
-    <string name="trust_feature_security_patches_explain">Google, n\'andecha colos fabricantes de SoC, espubliza mensualmente parches de seguranza pa iguar fallos que podríen esplotar aplicaciones malicioses pa saltar les llendes de seguranza y causar un dañu permanente nel preséu. Los parches forníos por Google aplíquense cada mes en tolos preseos compatibles, mas los parches pa códigu privativu namás pue aplicalos el fabricante del preséu. Pa caltener el preséu seguru, asegúrate de que la versión de LineageOS ta anovada siempres, y (si ye posible) asegúrate tamién de que la imaxe del fabricante ta anovada a la última versión qu\'aconseya LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">Google, n\'andecha colos fabricantes de SoC, espubliza mensualmente parches de seguranza pa iguar fallos que podríen esplotar aplicaciones malicioses pa saltar les llendes de seguranza y causar un dañu permanente nel preséu. Los parches forníos por Google aplíquense cada mes en tolos preseos compatibles, mas los parches pa códigu privativu namás pue aplicalos el fabricante del preséu. Pa caltener el preséu seguru, asegúrate de que la versión de LineageOS ta anovada siempre, y (si ye posible) asegúrate tamién de que la imaxe del fabricante ta anovada a la última versión qu\'aconseya LineageOS.</string>
     <string name="trust_feature_encryption">Cifráu</string>
     <string name="trust_feature_encryption_value_enabled">Activóse</string>
     <string name="trust_feature_encryption_value_nolock">Precisa una pantalla de bloquéu segura</string>
@@ -264,10 +264,10 @@
     <string name="trust_restrict_usb_summary">Controla la compatibilidá de les conexones USB como los auriculares, la entrada (mures, teclaos, mandos), l\'ADB y los preseos d\'almacenamientu</string>
     <string name="trust_restrict_usb_always">Negar les conexones USB</string>
     <string name="trust_restrict_usb_keyguard">Permitir les conexones USB al desbloquiar</string>
-    <string name="trust_restrict_usb_disabled">Permitir siempres les conexones USB</string>
+    <string name="trust_restrict_usb_disabled">Permitir siempre les conexones USB</string>
     <string name="trust_summary">Caltién el preséu seguru ya protexe la to privacidá</string>
     <string name="sms_security_check_limit_title">Llende de mensaxes SMS</string>
     <string name="sms_security_check_limit_summary">Les aplicaciones puen unviar %s mensaxes nun minutu enantes de riquir la confirmación</string>
     <string name="sms_security_check_limit_summary_none">Les aplicaciones nun tienen permisu pa unviar nengún mensaxe ensin la confirmación</string>
-    <string name="sms_security_check_limit_always_confirm">Confirmar siempres</string>
+    <string name="sms_security_check_limit_always_confirm">Confirmar siempre</string>
 </resources>
