@@ -23,6 +23,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
@@ -81,6 +84,21 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
+        ViewCompat.setOnApplyWindowInsetsListener(getActivity().findViewById(android.R.id.content),
+        (v, windowInsets) -> {
+            Insets insets = windowInsets.getInsets(
+                    WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.ime()
+                            | WindowInsetsCompat.Type.displayCutout());
+            int statusBarHeight = getActivity().getWindow().getDecorView().getRootWindowInsets()
+                    .getInsets(WindowInsetsCompat.Type.statusBars()).top;
+            // Apply the insets paddings to the view.
+            v.setPadding(insets.left, statusBarHeight, insets.right, insets.bottom);
+
+            // Return CONSUMED if you don't want the window insets to keep being
+            // passed down to descendant views.
+            return WindowInsetsCompat.CONSUMED;
+        });
 
         if (icicle != null) {
             mPreferenceHighlighted = icicle.getBoolean(SAVE_HIGHLIGHTED_KEY);
