@@ -19,8 +19,20 @@
     <string name="charging_control_target_time_title">Sprioc-am go muirear iomlán</string>
     <string name="charging_control_target_time_summary">Beidh an ceallraí luchtaithe go hiomlán faoi %s</string>
     <string name="charging_control_limit_title">Teorainn</string>
+    <string name="live_display_color_temperature_summary">Lá: <xliff:g id="day_temperature">%1$d</xliff:g>K Oíche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="navigation_bar_edge_long_swipe_title">Gníomh sciobtha fada imeallach</string>
     <string name="network_traffic_position_title">Seasamh</string>
     <string name="network_traffic_units_auto">Uathoibríoch (kB/s nó MB/s)</string>
     <string name="network_traffic_show_units_compact">Dlúth</string>
+    <string name="touchscreen_gesture_two_finger_down_swipe_title">Svaidhpeáil síos le dhá mhéar</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_title">Svaidhpeáil suas le méar amháin</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Sciob suas ón gcnaipe baile</string>
+    <string name="touchscreen_gesture_one_finger_down_swipe_title">Svaidhpeáil síos le méar amháin</string>
+    <string name="touchscreen_gesture_one_finger_left_swipe_title">Svaidhpeáil ar chlé le méar amháin</string>
+    <string name="touchscreen_gesture_one_finger_right_swipe_title">Svaidhpeáil ar dheis le méar amháin</string>
+    <string name="touchscreen_gesture_swipe_up_stylus_title">Svaidhpeáil suas leis an stylus</string>
+    <string name="touchscreen_gesture_swipe_down_stylus_title">Svaidhpeáil síos leis an stylus</string>
+    <string name="touchscreen_gesture_swipe_left_stylus_title">Svaidhpeáil ar chlé leis an stylus</string>
+    <string name="touchscreen_gesture_swipe_right_stylus_title">Svaidhpeáil ar dheis leis an stylus</string>
     <string name="trust_summary">Coinnigh do ghléas slán agus déan do phríobháideachas a chosaint</string>
 </resources>
