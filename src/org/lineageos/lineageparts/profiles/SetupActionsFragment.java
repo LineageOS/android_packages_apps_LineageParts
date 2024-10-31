@@ -301,7 +301,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mRecyclerView = view.findViewById(android.R.id.list);
+        mRecyclerView = getListView();
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecyclerView.setAdapter(mAdapter);
 
@@ -855,7 +855,7 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_setup_actions, container, false);
+        View view = super.onCreateView(inflater, container, savedInstanceState);
 
         if (mNewProfileMode) {
             showButtonBar(true);
