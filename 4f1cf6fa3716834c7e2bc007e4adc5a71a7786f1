@@ -22,6 +22,30 @@
       },
       "revId": "4f1cf6fa3716834c7e2bc007e4adc5a71a7786f1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90eabf33_a5d34819",
+        "filename": "src/org/lineageos/lineageparts/SettingsPreferenceFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-31T11:18:33Z",
+      "side": 1,
+      "message": "still seems to work with consumed.",
+      "parentUuid": "1fe65452_2dcb5020",
+      "range": {
+        "startLine": 111,
+        "startChar": 19,
+        "endLine": 111,
+        "endChar": 31
+      },
+      "revId": "4f1cf6fa3716834c7e2bc007e4adc5a71a7786f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
