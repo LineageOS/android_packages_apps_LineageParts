@@ -21,7 +21,9 @@ android_app {
     privapp_allowlist: "org.lineageos.lineageparts.xml",
 
     optimize: {
+        optimize: true,
         proguard_flags_files: ["proguard.flags"],
+        shrink_resources: true,
     },
 
     static_libs: [
