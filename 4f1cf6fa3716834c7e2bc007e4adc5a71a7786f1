@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fe65452_2dcb5020",
+        "filename": "src/org/lineageos/lineageparts/SettingsPreferenceFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-10-31T11:10:31Z",
+      "side": 1,
+      "message": "NB: You may want WindowInsetsCompat.CONSUMED to ensure children won\u0027t have the same insets\n\nIf that works as is good",
+      "range": {
+        "startLine": 111,
+        "startChar": 19,
+        "endLine": 111,
+        "endChar": 31
+      },
+      "revId": "4f1cf6fa3716834c7e2bc007e4adc5a71a7786f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
