@@ -416,7 +416,7 @@
     <string name="contributors_cloud_loading_message">正在讀取貢獻者名單\u2026</string>
     <string name="contributors_cloud_failed_message">無法載入貢獻者資料</string>
     <string name="contributor_info_menu">貢獻者名單</string>
-    <string name="contributor_info_msg"><![CDATA[<b>名稱：</b><xliff:g id="name">%1$s</xliff:g>                 <b>暱稱：</b><xliff:g id="nick">%2$s</xliff:g>                 <b>提交：</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg"><b>名稱：</b><xliff:g id="name">%1$s</xliff:g>                 <b>暱稱：</b><xliff:g id="nick">%2$s</xliff:g>                 <b>提交：</b><xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">貢獻者名單</string>
     <string name="contributions_info_msg"><![CDATA[<b>總貢獻者：</b><xliff:g id="total_contributors"><xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>                 <b>總提交：</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>                 <b>最近更新：</b><xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS 統計</string>

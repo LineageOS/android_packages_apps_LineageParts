@@ -392,13 +392,13 @@
     <string name="contributors_cloud_loading_message">Cargando datos dos colaboradores\u2026</string>
     <string name="contributors_cloud_failed_message">Non se poden cargar os datos dos colaboradores</string>
     <string name="contributor_info_menu">Información do colaborador</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Alcume:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Contribucións:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Contribucións:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Información das contribucións</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Colaboradores totais:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Colaboradores totais:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total de contribucións:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Última actualización:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Última actualización:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">LineageOS estadisticas</string>
     <string name="anonymous_statistics_summary">Axude a mellorar LineageOS enviando informes de estatísiticas anónimas</string>
     <string name="anonymous_statistics_warning_title">Sobre</string>

@@ -391,13 +391,13 @@
     <string name="contributors_cloud_loading_message">Зареждане на данните за разработчици\u2026</string>
     <string name="contributors_cloud_failed_message">Неуспех при изтеглянето на информация за разработчиците</string>
     <string name="contributor_info_menu">Потребителска информация</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Име:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Псевдоним:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Промени:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Промени:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Обща информация</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Брой сътрудници:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Брой сътрудници:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Общо промени:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Последна актуализация:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Последна актуализация:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">Статистики</string>
     <string name="anonymous_statistics_summary">Помогнете да направим LineageOS по-добър, като разрешите да събира анонимни статистически данни</string>
     <string name="anonymous_statistics_warning_title">За проложението</string>

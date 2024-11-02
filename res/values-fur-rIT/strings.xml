@@ -416,13 +416,13 @@
     <string name="contributors_cloud_loading_message">Daûr a cjariâ i dâts dai colaboradôrs\u2026</string>
     <string name="contributors_cloud_failed_message">Impussibil cjariâ i dâts dai colaboradôrs</string>
     <string name="contributor_info_menu">Informazions colaboradôr</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Non:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Non:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Sorenon:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Contribûts:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Contribûts:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Informazions contribûts</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Totâl colaboradôrs:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Totâl colaboradôrs:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Totâl contribûts:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Ultin inzornament:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Ultin inzornament:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">Statistichis di LineageOS</string>
     <string name="anonymous_statistics_summary">Jude a miorâ LineageOS permetint l\'inviament di statistichis anonimis</string>
     <string name="anonymous_statistics_warning_title">Informazions</string>

@@ -412,13 +412,13 @@
     <string name="contributors_cloud_loading_message">Yn llwytho data cyfranwyr\u2026</string>
     <string name="contributors_cloud_failed_message">Methu â llwytho data cyfranwyr</string>
     <string name="contributor_info_menu">Manylion cyfrannwr</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Enw:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Enw:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Llysenw:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Cyfraniadau:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Cyfraniadau:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Manylion cyfranwyr</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Nifer cyfranwyr:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Nifer cyfranwyr:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Nifer o gyfraniadau (commits):</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Diweddariad diwethaf:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Diweddariad diwethaf:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">Ystadegau LineageOS</string>
     <string name="anonymous_statistics_summary">Helpu i wella LineageOS gan ganiatáu casglu adroddiadau ystadegau anhysbys</string>
     <string name="anonymous_statistics_warning_title">Ynghylch</string>

@@ -387,7 +387,7 @@
     <string name="contributors_cloud_loading_message">يتم تحميل بيانات المُساهمين</string>
     <string name="contributors_cloud_failed_message">تعذّر تحميل بيانات المُساهمين</string>
     <string name="contributor_info_menu">معلومات المُساهم</string>
-    <string name="contributor_info_msg"><![CDATA[<b>الاسم:</b><xliff:g id="name">%1$s</xliff:g><br/><br/>                 <b>اللقب:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>                 <b>الالتزامات:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributor_info_msg"><b>الاسم:</b><xliff:g id="name">%1$s</xliff:g><br/><br/>                 <b>اللقب:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>                 <b>الالتزامات:</b><xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">معلومات المساهمين</string>
     <string name="contributions_info_msg"><![CDATA[<b>إجمالي المساهمين:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  إجمالي الالتزامات:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>

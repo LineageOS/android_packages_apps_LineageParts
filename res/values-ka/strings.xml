@@ -416,13 +416,13 @@
     <string name="contributors_cloud_loading_message">წვლილის შემტანთა მონაცემები იტვირთება\u2026</string>
     <string name="contributors_cloud_failed_message">წვლილის შემტანთა მონაცემების ჩატვირთვა ვერ მოხერხდა</string>
     <string name="contributor_info_menu">მოხალისის შესახებ</string>
-    <string name="contributor_info_msg"><![CDATA[<b>სახელი:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>სახელი:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>მეტსახელი:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>შეტანილი წვლილი:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>შეტანილი წვლილი:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">მოხალისეთა შესახებ</string>
-    <string name="contributions_info_msg"><![CDATA[<b>მონაწილე ჯამში:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>მონაწილე ჯამში:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>შეტანილი წვლილი ჯამში:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>ბოლო განახლება:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>ბოლო განახლება:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">LineageOS-ის სტატისტიკა</string>
     <string name="anonymous_statistics_summary">დაგვეხმარეთ, რომ გავაუმჯობესოთ LineageOS, ვინაობის გაუმხელი მონაცემების აღრიცხვაში ჩართვით</string>
     <string name="anonymous_statistics_warning_title">შესახებ</string>

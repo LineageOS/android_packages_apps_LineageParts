@@ -416,13 +416,13 @@
     <string name="contributors_cloud_loading_message">Încărcare date contribuitori\u2026</string>
     <string name="contributors_cloud_failed_message">Nu s-au putut încărca datele contribuitorilor</string>
     <string name="contributor_info_menu">Informații contribuitori</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Nume:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Nume:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Poreclă:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Commit-uri:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Commit-uri:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Informații contribuții</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Total contribuitori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Total contribuitori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total commit-uri:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Ultima actualizare:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Ultima actualizare:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">Statistici LineageOS</string>
     <string name="anonymous_statistics_summary">Ajutați la îmbunătățirea lui LineageOS prin optarea pentru raportarea anonimă de statistici</string>
     <string name="anonymous_statistics_warning_title">Despre</string>

@@ -416,13 +416,13 @@
     <string name="contributors_cloud_loading_message">Nalaganje podatkov o sodelavcih \u2026</string>
     <string name="contributors_cloud_failed_message">Podatkov o sodelavcih ni mogoče naložiti</string>
     <string name="contributor_info_menu">Podatki o sodelavcih</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Ime:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Ime:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Vzdevek:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Prispevki:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Prispevki:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Podatki o sodelavcih</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Skupaj sodelavcev:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Skupaj sodelavcev:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Skupaj prispevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Zadnja posodobitev:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Zadnja posodobitev:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">Statistika LineageOS</string>
     <string name="anonymous_statistics_summary">Pomagajte izboljšati LineageOS tako, da izberete pošiljanje anonimne statistike</string>
     <string name="anonymous_statistics_warning_title">O aplikaciji</string>

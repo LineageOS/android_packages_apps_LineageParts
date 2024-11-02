@@ -391,13 +391,13 @@
     <string name="contributors_cloud_loading_message">A’ luchdadh dàta an luchd-cuideachaidh\u2026</string>
     <string name="contributors_cloud_failed_message">Cha b’ urrainn dhuinn dàta an luchd-cuideachaidh a luchdadh</string>
     <string name="contributor_info_menu">Fiosrachadh an neach-cuideachaidh</string>
-    <string name="contributor_info_msg"><![CDATA[        <b>Ainm:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg">        <b>Ainm:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Far-ainm:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Fiosrachadh nan tabhartasan</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Com-pàirtichean iomlan:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Com-pàirtichean iomlan:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Commits iomlan:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>An t-ùrachadh mu dheireadh:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>An t-ùrachadh mu dheireadh:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">Stadastaireachd air LineageOS</string>
     <string name="anonymous_statistics_summary">Cuidich leinn a thoirt piseach air LineageOS is tu a’ cur aithrisean stadastaireachd gun urra an comas</string>
     <string name="anonymous_statistics_warning_title">Mu dhèidhinn</string>

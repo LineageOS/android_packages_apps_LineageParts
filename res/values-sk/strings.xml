@@ -386,13 +386,13 @@
     <string name="contributors_cloud_loading_message">Načítavanie údajov o prispievateľoch\u2026</string>
     <string name="contributors_cloud_failed_message">Nie je možné načítať údaje o prispievateľoch</string>
     <string name="contributor_info_menu">Informácie o prispievateľovi</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Meno:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Meno:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Prezívka:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Potvrdenie:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Potvrdenie:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Informácie o príspevkoch</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Celkom prispievateľov:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Celkom prispievateľov:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Celkom príspevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Posledná aktualizácia:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Posledná aktualizácia:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">Štatistiky LineageOS</string>
     <string name="anonymous_statistics_summary">Pomôžte zlepšiť LineageOS povolením anonymných štatistických hlásení</string>
     <string name="anonymous_statistics_warning_title">O</string>

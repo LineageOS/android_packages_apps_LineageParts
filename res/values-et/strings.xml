@@ -385,13 +385,13 @@
     <string name="contributors_cloud_loading_message">Laadin toetajate infot\u2026</string>
     <string name="contributors_cloud_failed_message">Toetajate andmete laadimine ebaõnnestus</string>
     <string name="contributor_info_menu">Toetajate info</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Nimi:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Nimi:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Hüüdnimi:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Commitid:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Commitid:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Toetuste info</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Panustajaid kokku:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Panustajaid kokku:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Commite kokku:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Viimane uuendus:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Viimane uuendus:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">LineageOS\'i statistika</string>
     <string name="anonymous_statistics_summary">Aita LineageOS\'i paremaks teha, lülitades sisse anonüümse statistika raporteerimise</string>
     <string name="anonymous_statistics_warning_title">Teave</string>

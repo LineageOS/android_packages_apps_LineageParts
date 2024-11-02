@@ -19,6 +19,7 @@
     <string name="charging_control_target_time_title">Sprioc-am go muirear iomlán</string>
     <string name="charging_control_target_time_summary">Beidh an ceallraí luchtaithe go hiomlán faoi %s</string>
     <string name="charging_control_limit_title">Teorainn</string>
+    <string name="live_display_color_temperature_summary">Lá: <xliff:g id="day_temperature">%1$d</xliff:g>K Oíche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="navigation_bar_edge_long_swipe_title">Gníomh sciobtha fada imeallach</string>
     <string name="network_traffic_position_title">Seasamh</string>
     <string name="network_traffic_units_auto">Uathoibríoch (kB/s nó MB/s)</string>

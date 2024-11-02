@@ -416,13 +416,13 @@
     <string name="contributors_cloud_loading_message">Töhfə verənlər datası yüklənir\u2026</string>
     <string name="contributors_cloud_failed_message">Töhfə verənlər datası yüklənə bilmədi</string>
     <string name="contributor_info_menu">Töhfə verənlər məlumatı</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Ad:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><b>Ad:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Ləqəb:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Daxil edilənlər:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>Daxil edilənlər:</b> <xliff:g id="commits">%3$s</xliff:g></string>
     <string name="contributions_info_menu">Töhfələr barədə məlumat</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Cəmi töhfə verənlər:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><b>Cəmi töhfə verənlər:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Cəmi daxil edilənlər:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Son güncəlləmə:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Son güncəlləmə:</b> <xliff:g id="date">%3$s</xliff:g></string>
     <string name="anonymous_statistics_title">LineageOS statistikaları</string>
     <string name="anonymous_statistics_summary">Anonim statistika göndərməni tərcih edərək, LineageOS-u təkmilləşdirməyimizə kömək edin</string>
     <string name="anonymous_statistics_warning_title">Haqqında</string>
