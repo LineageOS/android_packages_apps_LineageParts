@@ -186,7 +186,6 @@
     <string name="extras_title">Extras</string>
     <string name="additional_buttons_title">Botones adicionales</string>
     <string name="click_partial_screenshot_title">Pulsa para una captura de pantalla parcial</string>
-    <string name="click_partial_screenshot_summary">Pulsa brevemente Bajar Volumen y Encender para tomar una captura de pantalla parcial</string>
     <string name="button_backlight_title">Contraluz</string>
     <string name="button_backlight_enabled">Iluminar botones</string>
     <string name="button_backlight_only_when_pressed_title">Iluminar los botones únicamente cuando se presionan</string>
@@ -416,13 +415,13 @@
     <string name="contributors_cloud_loading_message">Cargando datos de colaboradores\u2026</string>
     <string name="contributors_cloud_failed_message">No se pueden cargar los datos de colaboradores</string>
     <string name="contributor_info_menu">Información del colaborador</string>
-    <string name="contributor_info_msg"><b>Nombre:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><![CDATA[<b>Nombre:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Apodo:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Contribuciones:</b> <xliff:g id="commits">%3$s</xliff:g></string>
+                 <b>Contribuciones:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Información de las contribuciones</string>
-    <string name="contributions_info_msg"><b>Contribuyentes totales:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><![CDATA[<b>Contribuyentes totales:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Contribuciones totales:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Última actualización:</b> <xliff:g id="date">%3$s</xliff:g>&gt;</string>
+                 <b>Última actualización:</b> <xliff:g id="date">%3$s</xliff:g>>]]></string>
     <string name="anonymous_statistics_title">Estadísticas LineageOS</string>
     <string name="anonymous_statistics_summary">Ayuda a mejorar LineageOS mediante el envío anónimo de estadísticas</string>
     <string name="anonymous_statistics_warning_title">Acerca de</string>

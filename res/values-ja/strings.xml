@@ -416,13 +416,13 @@
     <string name="contributors_cloud_loading_message">貢献者のデータを読み込み中...</string>
     <string name="contributors_cloud_failed_message">貢献者の情報を読み込めません</string>
     <string name="contributor_info_menu">貢献者の情報</string>
-    <string name="contributor_info_msg"><b>名前:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><![CDATA[<b>名前:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>ニックネーム:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>コミット:</b> <xliff:g id="commits">%3$s</xliff:g></string>
+                 <b>コミット:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">貢献者の情報</string>
-    <string name="contributions_info_msg"><b>協力者の合計:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><![CDATA[<b>協力者の合計:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>コミットの合計:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>最終更新:</b> <xliff:g id="date">%3$s</xliff:g></string>
+                 <b>最終更新:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS の統計</string>
     <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してLineageOSの改善に協力する</string>
     <string name="anonymous_statistics_warning_title">情報</string>

@@ -399,13 +399,13 @@
     <string name="contributors_cloud_loading_message">Memuat data kontributor\u2026</string>
     <string name="contributors_cloud_failed_message">Tidak dapat memuat data kontributor</string>
     <string name="contributor_info_menu">Info kontributor</string>
-    <string name="contributor_info_msg"><b>Nama:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><![CDATA[<b>Nama:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Julukan:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g></string>
+                 <b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informasi kontributor</string>
-    <string name="contributions_info_msg"><b>Total kontributor:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><![CDATA[<b>Total kontributor:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total commit:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Diperbarui:</b> <xliff:g id="date">%3$s</xliff:g></string>
+                 <b>Diperbarui:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Statistik LineageOS</string>
     <string name="anonymous_statistics_summary">Bantu LineageOS untuk menjadi lebih baik dengan memilih ikut dalam pelaporan statistik anonim</string>
     <string name="anonymous_statistics_warning_title">Tentang</string>

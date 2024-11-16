@@ -416,13 +416,13 @@
     <string name="contributors_cloud_loading_message">Đang tải dữ liệu của người đóng góp\u2026</string>
     <string name="contributors_cloud_failed_message">Không thể tải dữ liệu của người đóng góp</string>
     <string name="contributor_info_menu">Thông tin người đóng góp</string>
-    <string name="contributor_info_msg"><b>Tên:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><![CDATA[<b>Tên:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Biệt danh:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Đóng góp:</b> <xliff:g id="commits">%3$s</xliff:g></string>
+                 <b>Đóng góp:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Thông tin đóng góp</string>
-    <string name="contributions_info_msg"><b>Tổng những người đóng góp:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><![CDATA[<b>Tổng những người đóng góp:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Tổng đóng góp:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Cập nhật mới nhất:</b> <xliff:g id="date">%3$s</xliff:g></string>
+                 <b>Cập nhật mới nhất:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Thống kê LineageOS</string>
     <string name="anonymous_statistics_summary">Giúp cho LineageOS tốt hơn bằng cách chọn vào báo cáo số liệu thống kê ẩn danh</string>
     <string name="anonymous_statistics_warning_title">Về</string>

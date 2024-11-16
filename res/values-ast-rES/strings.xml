@@ -205,12 +205,12 @@
     <string name="network_traffic_disabled_clock">El supervisor del tránsitu de rede ta desactiváu pola mor de la posición del reló</string>
     <string name="protected_apps_manager_title">Aplicaciones protexíes</string>
     <string name="contributors_cloud_fragment_title">Collaboradores</string>
-    <string name="contributor_info_msg"><b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>Nomatu:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>Unvios:</b> <xliff:g id="commits">%3$s</xliff:g></string>
-    <string name="contributions_info_msg"><b>Collaboradores totales:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Unvios:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributions_info_msg"><![CDATA[<b>Collaboradores totales:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Unvios totales:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Últimu anovamientu:</b> <xliff:g id="date">%3$s</xliff:g></string>
+                 <b>Últimu anovamientu:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">Estadístiques de LineageOS</string>
     <string name="preview_data_title">Previsualizar los datos</string>
     <string name="anonymous_learn_more">Saber más</string>
