@@ -186,6 +186,7 @@
     <string name="extras_title">Extras</string>
     <string name="additional_buttons_title">Botones adicionales</string>
     <string name="click_partial_screenshot_title">Pulsa para una captura de pantalla parcial</string>
+    <string name="click_partial_screenshot_summary">Pulsar brevemente Bajar Volumen y Encender para tomar una captura parcial de pantalla</string>
     <string name="button_backlight_title">Contraluz</string>
     <string name="button_backlight_enabled">Iluminar botones</string>
     <string name="button_backlight_only_when_pressed_title">Iluminar los botones únicamente cuando se presionan</string>

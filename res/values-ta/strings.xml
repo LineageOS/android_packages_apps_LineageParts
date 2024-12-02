@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="privacy_settings_title">தனியுரிமை</string>
+    <string name="torch_long_press_power_timeout_1min">1 நுணுத்தம்</string>
+    <string name="torch_long_press_power_timeout_2min">2 நுணுத்தம்</string>
+    <string name="torch_long_press_power_timeout_5min">5 நுணுத்தம்</string>
+    <string name="torch_long_press_power_timeout_10min">10 நுணுத்தம்</string>
+    <string name="profile_menu_delete_title">நீக்குக</string>
+    <string name="profile_entries_on">இயக்குக</string>
+    <string name="profile_entries_off">அணைக்க</string>
+    <string name="profile_networkmode_2g">2ஜி</string>
+    <string name="profile_networkmode_3g">3ஜி</string>
+    <string name="profile_networkmode_4g">LTE</string>
+    <string name="profile_networkmode_2g3g">2ஜி/3ஜி</string>
+    <string name="profile_networkmode_2g3g4g">2ஜி/3ஜி/LTE</string>
+    <string name="profile_brightness_title">திரை ஒளிர்வு</string>
+    <string name="toggleBluetooth">ஊடலை</string>
+    <string name="toggleLocation">இருப்பிடம்</string>
+    <string name="alarm_volume_title">அலறி</string>
+    <string name="status_bar_title">நிலைப்பட்டி</string>
+    <string name="status_bar_quick_qs_pulldown_title">விரைந்து இழுத்தல்</string>
+    <string name="status_bar_quick_qs_pulldown_summary">நிலைப்பட்டியின் %1$s விளிம்பு விரைவு அமைப்புகளை இழுக்கும்</string>
+    <string name="status_bar_clock_title">மணினி</string>
+</resources>

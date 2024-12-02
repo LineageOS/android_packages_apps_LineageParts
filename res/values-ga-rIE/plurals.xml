@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2013-2014 The CyanogenMod Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="backlight_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> soicind</item>
+        <item quantity="two"><xliff:g id="seconds">%d</xliff:g> soicind</item>
+        <item quantity="few"><xliff:g id="seconds">%d</xliff:g> soicind</item>
+        <item quantity="many"><xliff:g id="seconds">%d</xliff:g> soicind</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> soicind</item>
+    </plurals>
+    <plurals name="app_ops_count">
+        <item quantity="one">uair amháin</item>
+        <item quantity="two">%d uaireanta</item>
+        <item quantity="few">%d uaireanta</item>
+        <item quantity="many">%d uaireanta</item>
+        <item quantity="other">%d uaireanta</item>
+    </plurals>
+</resources>
