@@ -33,8 +33,6 @@ import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.settingslib.core.lifecycle.ObservablePreferenceFragment;
-
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.widget.DialogCreatable;
 import org.lineageos.lineageparts.widget.HighlightablePreferenceGroupAdapter;

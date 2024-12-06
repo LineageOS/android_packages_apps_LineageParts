@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2019-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2019-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -30,6 +30,7 @@ android_app {
         "androidx.recyclerview_recyclerview",
         "jsr305",
         "org.lineageos.platform.internal",
+        "SettingsLibPreference",
         "SystemUISharedLib",
         "LineagePreferenceLib",
     ],
