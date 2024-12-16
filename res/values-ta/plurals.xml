@@ -8,4 +8,8 @@
         <item quantity="one"><xliff:g id="seconds">%d</xliff:g> நொடி</item>
         <item quantity="other"><xliff:g id="seconds">%d</xliff:g> நொடி</item>
     </plurals>
+    <plurals name="app_ops_count">
+        <item quantity="one">ஒருமுறை</item>
+        <item quantity="other">%d முறை</item>
+    </plurals>
 </resources>

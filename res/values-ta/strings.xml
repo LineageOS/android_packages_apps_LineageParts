@@ -5,14 +5,31 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lineageparts_title">LineageOS அமைப்புகள்</string>
+    <string name="loading">ஏற்றுகின்றது\u2026</string>
+    <string name="dlg_ok">சரி</string>
+    <string name="cancel">விலக்குக</string>
+    <string name="add">சேர்க்க</string>
+    <string name="choose_app">செயலியைத் தேர்க</string>
+    <string name="reset">மீளமைக்க</string>
     <string name="privacy_settings_title">தனியுரிமை</string>
+    <string name="dialog_delete_message">தேர்ந்தெடுத்த உருப்படியை அகற்றவா?</string>
+    <string name="brightness">ஒளிர்வு நிலை</string>
+    <string name="light_brightness_title">ஒளிர்வு நிலை</string>
+    <string name="battery_light_title">மின்கலவொளி</string>
+    <string name="battery_light_enable_title">மின்கலவொளியை இயக்குக</string>
+    <string name="notification_light_enable_title">அறிவிப்பொளியை இயக்குக</string>
     <string name="torch_long_press_power_timeout_1min">1 நுணுத்தம்</string>
     <string name="torch_long_press_power_timeout_2min">2 நுணுத்தம்</string>
     <string name="torch_long_press_power_timeout_5min">5 நுணுத்தம்</string>
     <string name="torch_long_press_power_timeout_10min">10 நுணுத்தம்</string>
     <string name="profile_menu_delete_title">நீக்குக</string>
+    <string name="profiles_settings_title">தனியமைப்பு முறைமை</string>
+    <string name="profile_settings_title">தனியமைப்பு</string>
     <string name="profile_entries_on">இயக்குக</string>
     <string name="profile_entries_off">அணைக்க</string>
+    <string name="rename_dialog_title">மறுபெயரிடுக</string>
+    <string name="rename_dialog_message">ஒரு புதுப்பெயரை உள்ளிடுக</string>
     <string name="profile_networkmode_2g">2ஜி</string>
     <string name="profile_networkmode_3g">3ஜி</string>
     <string name="profile_networkmode_4g">LTE</string>
@@ -26,4 +43,8 @@
     <string name="status_bar_quick_qs_pulldown_title">விரைந்து இழுத்தல்</string>
     <string name="status_bar_quick_qs_pulldown_summary">நிலைப்பட்டியின் %1$s விளிம்பு விரைவு அமைப்புகளை இழுக்கும்</string>
     <string name="status_bar_clock_title">மணினி</string>
+    <string name="status_bar_toggle_brightness">ஒளிர்வுக் கட்டுப்பாடு</string>
+    <string name="status_bar_toggle_brightness_summary">நிலைப்பட்டியின் குறுக்கே சறுக்குவதன் மூலம் ஒளிர்வை ஒழுங்குபடுத்துக</string>
+    <string name="touchscreen_gesture_action_dialer">சுழற்றியைத் திறக்க</string>
+    <string name="sms_security_check_limit_always_confirm">எப்பொழுதும் உறுதி செய்க</string>
 </resources>

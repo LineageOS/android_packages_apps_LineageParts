@@ -131,8 +131,8 @@
     <string name="color_calibration_title">Hiệu chỉnh màu sắc</string>
     <string name="color_calibration_summary">Hiệu chỉnh màu sắc trên màn hình</string>
     <string name="color_red_title">Đỏ</string>
-    <string name="color_green_title">Lục</string>
-    <string name="color_blue_title">Lam</string>
+    <string name="color_green_title">Xanh lá</string>
+    <string name="color_blue_title">Xanh dương</string>
     <string name="picture_adjustment_title">Hiệu chỉnh hình ảnh</string>
     <string name="picture_adjustment_summary">Hiệu chỉnh tông màu, bão hòa, cường độ và độ tương phản</string>
     <string name="adj_hue_title">Tông màu</string>
