@@ -21,9 +21,9 @@
     <string name="status_bar_clock_auto_hide_summary">লনচার দেখা গেলে ঘড়িটিকে লুকিয়ে রাখো</string>
     <string name="status_bar_brightness_slider_show_never">কখনো দেখাবেন না</string>
     <string name="status_bar_brightness_slider_show_always">সবসময় দেখান</string>
-    <string name="contributor_info_msg"><b>নাম:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+    <string name="contributor_info_msg"><![CDATA[<b>নাম:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>ডাকনাম:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>কমিট:</b> <xliff:g id="commits">%3$s</xliff:g></string>
+                 <b>কমিট:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="long_screen_settings_no_apps">কোনো অ্যাপ নেই</string>
     <string name="charging_sounds_enable_title">চার্জিং সাউন্ড চালু করো</string>
     <string name="touchscreen_gesture_single_tap_title">একবার টিপ</string>
