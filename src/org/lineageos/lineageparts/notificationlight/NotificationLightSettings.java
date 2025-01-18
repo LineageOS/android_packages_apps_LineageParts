@@ -124,8 +124,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         // liblights supports brightness control
         final boolean halAdjustableBrightness = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS);
-        mLedCanPulse = LightsCapabilities.supports(
-                context, LightsCapabilities.LIGHTS_PULSATING_LED);
+        mLedCanPulse = LightsCapabilities.blinks(context);
         mMultiColorLed = LightsCapabilities.supports(
                 context, LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED);
 
@@ -580,7 +579,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 result.add(KEY_NOTIFICATION_LIGHTS);
                 result.add(NOTIFICATION_LIGHT_PULSE);
             }
-            if (!LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED) &&
+            if (!LightsCapabilities.blinks(context) &&
                     !LightsCapabilities.supports(context,
                             LightsCapabilities.LIGHTS_RGB_NOTIFICATION_LED)) {
                 result.add(GENERAL_SECTION);
