@@ -26,6 +26,16 @@
     </string-array>
 
     <!-- Values for the notification light pulse spinners -->
+    <string-array name="notification_breath_length_entries" translatable="false">
+        <item>@string/pulse_length_always_on</item>
+        <item>@string/pulse_length_blink</item>
+    </string-array>
+
+    <string-array name="notification_breath_length_values" translatable="false">
+        <item>1</item>
+        <item>1000</item>
+    </string-array>
+
     <string-array name="notification_pulse_length_entries" translatable="false">
         <item>@string/pulse_length_always_on</item>
         <item>@string/pulse_length_very_short</item>

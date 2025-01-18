@@ -22,6 +22,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceViewHolder;
 
 import org.lineageos.internal.notification.LightsCapabilities;
+import org.lineageos.lineageparts.notificationlight.LightSettingsDialog.OnOffType;
 import org.lineageos.lineageparts.widget.CustomDialogPreference;
 import org.lineageos.lineageparts.R;
 
@@ -39,7 +40,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     private int mColorValue;
     private int mOnValue;
     private int mOffValue;
-    private boolean mOnOffChangeable;
+    private OnOffType mOnOffType;
 
     private boolean mHasDefaults;
     private int mDefaultColorValue;
@@ -62,18 +63,17 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
 
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue) {
-        this(context, attrs, color, onValue, offValue,
-                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED));
+        this(context, attrs, color, onValue, offValue, getOnOffType(context));
     }
 
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue,
-                                      boolean onOffChangeable) {
+                                      OnOffType onOffType) {
         super(context, attrs);
         mColorValue = color;
         mOnValue = onValue;
         mOffValue = offValue;
-        mOnOffChangeable = onOffChangeable;
+        mOnOffType = onOffType;
         mHasDefaults = false;
         mLedBrightness = 0; // use system brightness
 
@@ -128,6 +128,18 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         }
     }
 
+    private static OnOffType getOnOffType(Context context) {
+        if (LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED)) {
+            return OnOffType.PULSE;
+        }
+
+        if (LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_BREATHING_LED)) {
+            return OnOffType.BREATH;
+        }
+
+        return OnOffType.TOGGLE;
+    }
+
     private void updatePreferenceViews() {
         final int size = (int) getContext().getResources().getDimension(
                 R.dimen.oval_notification_size);
@@ -144,7 +156,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
             mOnValueView.setText(mapLengthValue(mOnValue));
         }
         if (mOffValueView != null) {
-            if (mOnValue == 1 || !mOnOffChangeable) {
+            if (mOnValue == 1 || mOnOffType != OnOffType.PULSE) {
                 mOffValueView.setVisibility(View.GONE);
             } else {
                 mOffValueView.setVisibility(View.VISIBLE);
@@ -158,7 +170,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         if (which == DialogInterface.BUTTON_NEUTRAL) {
             // Reset to previously supplied defaults
             mDialog.setColor(mDefaultColorValue);
-            if (mOnOffChangeable) {
+            if (mOnOffType != OnOffType.TOGGLE) {
                 mDialog.setPulseSpeedOn(mDefaultOnValue);
                 mDialog.setPulseSpeedOff(mDefaultOffValue);
             }
@@ -182,7 +194,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         mDialog = new LightSettingsDialog(getContext(), 0xFF000000 | mColorValue,
-                mOnValue, mOffValue, mOnOffChangeable, mLedBrightness);
+                mOnValue, mOffValue, mOnOffType, mLedBrightness);
         mDialog.setAlphaSliderVisible(false);
 
         // Initialize the buttons with null handlers, as they will get remapped by
@@ -230,11 +242,11 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
         updatePreferenceViews();
     }
 
-    public void setAllValues(int color, int onValue, int offValue, boolean onOffChangeable) {
+    public void setAllValues(int color, int onValue, int offValue, OnOffType onOffType) {
         mColorValue = color;
         mOnValue = onValue;
         mOffValue = offValue;
-        mOnOffChangeable = onOffChangeable;
+        mOnOffType = onOffType;
         updatePreferenceViews();
     }
 
@@ -261,11 +273,13 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     }
 
     private String mapLengthValue(Integer time) {
-        if (!mOnOffChangeable) {
+        if (mOnOffType == OnOffType.TOGGLE) {
             return getContext().getResources().getString(R.string.pulse_length_always_on);
         }
         if (time == DEFAULT_TIME) {
-            return getContext().getResources().getString(R.string.default_time);
+            return mOnOffType == OnOffType.BREATH
+                    ? getContext().getResources().getString(R.string.pulse_length_blink)
+                    : getContext().getResources().getString(R.string.default_time);
         }
 
         String[] timeNames = getContext().getResources().getStringArray(
