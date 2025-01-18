@@ -40,6 +40,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     private int mOnValue;
     private int mOffValue;
     private boolean mOnOffChangeable;
+    private boolean mOnOffCustomizable;
 
     private boolean mHasDefaults;
     private int mDefaultColorValue;
@@ -63,17 +64,20 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue) {
         this(context, attrs, color, onValue, offValue,
-                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED));
+                LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_PULSATING_LED),
+                !LightsCapabilities.supports(context, LightsCapabilities.LIGHTS_BREATHING_LED));
     }
 
     public ApplicationLightPreference(Context context, AttributeSet attrs,
                                       int color, int onValue, int offValue,
-                                      boolean onOffChangeable) {
+                                      boolean onOffChangeable,
+                                      boolean onOffCustomizable) {
         super(context, attrs);
         mColorValue = color;
         mOnValue = onValue;
         mOffValue = offValue;
         mOnOffChangeable = onOffChangeable;
+        mOnOffCustomizable = onOffCustomizable;
         mHasDefaults = false;
         mLedBrightness = 0; // use system brightness
 
@@ -182,7 +186,7 @@ public class ApplicationLightPreference extends CustomDialogPreference<LightSett
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         mDialog = new LightSettingsDialog(getContext(), 0xFF000000 | mColorValue,
-                mOnValue, mOffValue, mOnOffChangeable, mLedBrightness);
+                mOnValue, mOffValue, mOnOffChangeable, mOnOffCustomizable, mLedBrightness);
         mDialog.setAlphaSliderVisible(false);
 
         // Initialize the buttons with null handlers, as they will get remapped by

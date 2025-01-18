@@ -77,18 +77,20 @@ public class LightSettingsDialog extends AlertDialog implements
             int initialSpeedOff) {
         super(context);
 
-        init(context, initialColor, initialSpeedOn, initialSpeedOff, true, 0);
+        init(context, initialColor, initialSpeedOn, initialSpeedOff, true, true, 0);
     }
 
     protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
-            int initialSpeedOff, boolean onOffChangeable, int brightness) {
+            int initialSpeedOff, boolean onOffChangeable, boolean onOffCustomizable,
+            int brightness) {
         super(context);
 
-        init(context, initialColor, initialSpeedOn, initialSpeedOff, onOffChangeable, brightness);
+        init(context, initialColor, initialSpeedOn, initialSpeedOff, onOffChangeable,
+                onOffCustomizable, brightness);
     }
 
     private void init(Context context, int color, int speedOn, int speedOff,
-            boolean onOffChangeable, int brightness) {
+            boolean onOffChangeable, boolean onOffCustomizable, int brightness) {
         mContext = context;
         mNotificationManager = mContext.getSystemService(NotificationManager.class);
 
@@ -97,7 +99,7 @@ public class LightSettingsDialog extends AlertDialog implements
 
         // To fight color banding.
         getWindow().setFormat(PixelFormat.RGBA_8888);
-        setUp(color, speedOn, speedOff, onOffChangeable, brightness);
+        setUp(color, speedOn, speedOff, onOffChangeable, onOffCustomizable, brightness);
     }
 
     /**
@@ -109,7 +111,7 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param speedOff - the flash length in ms
      */
     private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable,
-               int brightness) {
+            boolean onOffCustomizable, int brightness) {
         mInflater = mContext.getSystemService(LayoutInflater.class);
         View layout = mInflater.inflate(R.layout.dialog_light_settings, null);
 
@@ -124,10 +126,19 @@ public class LightSettingsDialog extends AlertDialog implements
         mHexColorInput.setOnFocusChangeListener(this);
 
         if (onOffChangeable) {
-            mPulseSpeedAdapterOn = new PulseSpeedAdapter(
+            if (onOffCustomizable) {
+                mPulseSpeedAdapterOn = new PulseSpeedAdapter(
                     R.array.notification_pulse_length_entries,
                     R.array.notification_pulse_length_values,
                     speedOn);
+            } else {
+                mPulseSpeedAdapterOn = new PulseSpeedAdapter(
+                    R.array.notification_breath_length_entries,
+                    R.array.notification_breath_length_values,
+                    speedOn);
+                mPulseSpeedOff.setVisibility(View.GONE);
+            }
+
             mPulseSpeedOn.setAdapter(mPulseSpeedAdapterOn);
             mPulseSpeedOn.setSelection(mPulseSpeedAdapterOn.getTimePosition(speedOn));
             mPulseSpeedOn.setOnItemSelectedListener(mPulseSelectionListener);
