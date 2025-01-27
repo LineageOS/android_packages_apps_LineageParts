@@ -24,7 +24,7 @@
         <TextView android:id="@+id/adj_hue_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:paddingTop="10dip" />
         <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_hue_seekbar"
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_hue_seekbar"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:paddingTop="10dip" />
         <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_saturation_seekbar"
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_saturation_seekbar"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:paddingTop="10dip" />
         <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_intensity_seekbar"
@@ -93,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/adj_intensity_seekbar"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:paddingTop="10dip" />
         <org.lineageos.lineageparts.widget.IntervalSeekBar
             android:id="@+id/adj_contrast_seekbar"

@@ -23,7 +23,7 @@
         <TextView android:id="@+id/day_temperature_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:paddingTop="10dip" />
         <SeekBar android:id="@+id/day_temperature_seekbar"
                 android:layout_width="match_parent"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/day_temperature_seekbar"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:paddingTop="10dip" />
         <SeekBar android:id="@+id/night_temperature_seekbar"
                 android:layout_width="match_parent"
