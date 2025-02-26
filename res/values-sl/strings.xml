@@ -458,7 +458,7 @@
     <string name="display_rotation_180_title">180 stopinj</string>
     <string name="display_rotation_270_title">270 stopinj</string>
     <string name="long_screen_settings_title">Celozaslonske aplikacije</string>
-    <string name="long_screen_settings_summary">Vsili zapuščinskim aplikacijam uporabo celozaslonskega razmerja slike</string>
+    <string name="long_screen_settings_summary">Vsili starim aplikacijam uporabo celozaslonskega razmerja slike</string>
     <string name="long_screen_settings_no_apps">Ni aplikacij</string>
     <string name="charging_sounds_settings_title">Zvoki ob polnjenju</string>
     <string name="charging_sounds_enable_title">Omogoči zvoke ob polnjenju</string>
