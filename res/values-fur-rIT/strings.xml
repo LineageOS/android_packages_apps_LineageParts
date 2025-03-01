@@ -35,6 +35,7 @@
     <string name="dialog_delete_message">Gjavâ l\'element selezionât?</string>
     <string name="brightness">Nivel di luminositât</string>
     <string name="pulse_length_always_on">Simpri impiât</string>
+    <string name="pulse_length_blink">Bati di ceis</string>
     <string name="pulse_length_very_short">Une vore curt</string>
     <string name="pulse_length_short">Curt</string>
     <string name="pulse_length_normal">Normâl</string>

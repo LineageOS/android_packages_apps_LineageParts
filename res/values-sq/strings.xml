@@ -512,11 +512,11 @@
     <string name="trust_feature_security_patches_value_medium">Disa muaj e pa përditësuar</string>
     <string name="trust_feature_security_patches_value_old">E vjetërsuar</string>
     <string name="trust_feature_security_patches_explain">korrigjimet e sigurisë nxiren çdo muaj nga Google në bashkëpunim me prodhuesit e SoC për të trajtuar gabimet nga të cilat mund të shfrytëzohen nga programet keqadashëse për të shmangur kufizimet e sigurisë dhe shkaktojnë probleme të përhershme në paisjen tuaj. korrigjimet e nxjera nga Google zbatohen çdo muaj në të gjitha paisjet. Por korrigjimet tek kodet e patentuara mund të kryehen vetëm nga prodhuesi i telefonit tuaj. Për të qëndruar i sigurtë, sigurohuni që sistemi juaj LineageOS është gjithmonë i përditësuar, dhe (nesë është e vlefshme) sigurohu që dhe imazhet e prodhuesit janë gjithmonë më të fundit dhe të sygjeruara nga LineageOS.</string>
-    <string name="trust_feature_encryption">Shifrimi</string>
+    <string name="trust_feature_encryption">Enkriptimi</string>
     <string name="trust_feature_encryption_value_enabled">E aktivizuar</string>
     <string name="trust_feature_encryption_value_nolock">Nevojitet një mbyllje e sigurtë e ekranit</string>
     <string name="trust_feature_encryption_value_disabled">E çaktivizuar</string>
-    <string name="trust_feature_encryption_explain">Kriptimi i paisjes shmang hyrjen tek tëdhënat e tua kur telefoni nuk ndizet në sistemin e Android. Kjo është veçanërisht e rëndësishme nëse të vidhet telefoni, pasi ndalon të tjerët të të lexojnë mesazhet, kontaktet dhe informacione të tjera private pa fjalëkalimin.\nPër të patur një kriptim më efektiv ju duhet të vendosni një fjalëkalim për mbyllje të sigurtë të ekranit.</string>
+    <string name="trust_feature_encryption_explain">Kriptimi i paisjes shmang hyrjen tek të dhënat e tua kur telefoni nuk ndizet në sistemin e Android. Kjo është veçanërisht e rëndësishme nëse të vidhet telefoni, pasi ndalon të tjerët të të lexojnë mesazhet, kontaktet dhe informacione të tjera private pa fjalëkalimin.\n\nPër të patur një kriptim më efektiv ju duhet të vendosni një fjalëkalim për kyçje të sigurtë të ekranit.</string>
     <string name="trust_category_tools">Privatësia</string>
     <string name="trust_notification_alerts_title">Njoftime mbi sigurinë</string>
     <string name="trust_warnings_alerts_intro">Ju mund të zgjidhni se për cilat probleme sigurie të njoftoheni. Për sigurinë tuaj, sygjerohet të aktivizohen të gjitha</string>
