@@ -118,7 +118,6 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
 
         if (mMultiColorLed) {
-            generalPrefs.removePreference(mLightFullChargeDisabledPref);
             setHasOptionsMenu(true);
 
             // Low, Medium and full color preferences
@@ -300,10 +299,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                 result.add(LOW_COLOR_PREF);
                 result.add(MEDIUM_COLOR_PREF);
                 result.add(FULL_COLOR_PREF);
-            } else if (LightsCapabilities.supports(context,
+            } else if (!LightsCapabilities.supports(context,
                     LightsCapabilities.LIGHTS_RGB_BATTERY_LED)) {
-                result.add(LIGHT_FULL_CHARGE_DISABLED_PREF);
-            } else {
                 result.add(COLORS_SECTION);
                 result.add(LOW_COLOR_PREF);
                 result.add(MEDIUM_COLOR_PREF);
