@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9694a80b_e05657d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34879
+      },
+      "writtenOn": "2025-03-11T17:08:43Z",
+      "side": 1,
+      "message": "I know that change I5076776747c1006671e421242f75f61cc6a7cdb2 says that devices with colored battery LEDs do not get the \"Turn off when fully charged\" option, since \"those can set the color to black\".\n\nBut the \"fully charged\" color they can set to black already kicks in at 90 percent. In contrast, with \"Turn off when fully charged\" they could keep the green light on from 90 to just before 100 percent and only then turn the LED off.\n\nDue to https://gitlab.com/LineageOS/issues/android/-/issues/8486 I had the chance to take a look at the \"turn off\" feature despite my RGB LED and found it quite useful. I\u0027d appreciate if it could be made available also to devices with colored battery LEDs. Hence this proposed change.\n\nIf this gets merged, it might make sense to review the use of the term \"fully charged\" in both the switch \"Turn off when fully charged\" (meaning: 100 percent) and the color \"Fully charged\" (meaning: \u003e\u003d90 percent). Maybe the former could become something like \"Turn off when charging is completed\" or \"... finished\" and/or the color could become \"Almost fully charged\" or so.",
+      "revId": "9731bc5ade132d649bfc151d29478b3daaa4ba0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
