@@ -684,10 +684,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private void toggleTaskBarDependencies(boolean enabled) {
         enablePreference(mNavigationArrowKeys, !enabled);
         enablePreference(mNavBarInverse, !enabled);
-        enablePreference(mNavigationBackLongPressAction, !enabled);
-        enablePreference(mNavigationHomeLongPressAction, !enabled);
         enablePreference(mNavigationHomeDoubleTapAction, !enabled);
-        enablePreference(mNavigationAppSwitchLongPressAction, !enabled);
     }
 
     private void enablePreference(Preference pref, boolean enabled) {
