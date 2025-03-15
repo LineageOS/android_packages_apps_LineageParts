@@ -39,6 +39,7 @@
     <string name="battery_light_full_charge_disabled_title">Apagar al completar la carga</string>
     <string name="battery_light_list_title">Colores</string>
     <string name="battery_light_full_color_title">Carga completada</string>
+    <string name="notification_light_title">Lluz d\'avisu</string>
     <string name="notification_light_enable_title">Activar la lluz d\'avisu</string>
     <string name="notification_light_general_title">Xeneral</string>
     <string name="notification_light_applist_title">Aplicaciones</string>
