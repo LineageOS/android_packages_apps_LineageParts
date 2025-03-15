@@ -53,6 +53,7 @@
     <string name="charging_control_mode_title">Mode pengisian daya</string>
     <string name="charging_control_mode_auto_title">Jadwal otomatis</string>
     <string name="charging_control_start_time_title">Waktu mulai</string>
+    <string name="charging_control_limit_title">Batas</string>
     <string name="battery_light_title">Lampu baterai</string>
     <string name="battery_light_enable_title">Aktifkan lampu baterai</string>
     <string name="battery_low_pulse_title">Berkedip saat baterai lemah</string>
