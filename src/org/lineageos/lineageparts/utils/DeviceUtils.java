@@ -270,14 +270,6 @@ public class DeviceUtils {
         return telephonyManager.createForSubscriptionId(subId).isDataEnabled();
     }
 
-    public static boolean isSwipeUpEnabled(Context context) {
-        if (isEdgeToEdgeEnabled(context)) {
-            return false;
-        }
-        return NAV_BAR_MODE_2BUTTON == context.getResources().getInteger(
-                com.android.internal.R.integer.config_navBarInteractionMode);
-    }
-
     public static boolean isEdgeToEdgeEnabled(Context context) {
         return NAV_BAR_MODE_GESTURAL == context.getResources().getInteger(
                 com.android.internal.R.integer.config_navBarInteractionMode);
