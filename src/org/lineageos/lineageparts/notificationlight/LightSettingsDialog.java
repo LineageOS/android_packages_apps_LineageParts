@@ -21,6 +21,7 @@ import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.util.Pair;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
@@ -434,6 +435,10 @@ public class LightSettingsDialog extends AlertDialog implements
 
             Pair<String, Integer> entry = getItem(position);
             ((TextView) view.findViewById(R.id.textViewName)).setText(entry.first);
+            TypedValue typedValue = new TypedValue();
+            mContext.getTheme().resolveAttribute(android.R.attr.textColorSecondary, typedValue, true);
+            int color = mContext.getResources().getColor(typedValue.resourceId, mContext.getTheme());
+            ((TextView) view.findViewById(R.id.textViewName)).setTextColor(color);
 
             return view;
         }
