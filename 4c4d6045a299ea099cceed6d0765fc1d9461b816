@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e10114a4_605a510a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34879
+      },
+      "writtenOn": "2025-03-23T15:30:28Z",
+      "side": 1,
+      "message": "I have slightly updated the commit message to align it with https://review.lineageos.org/c/LineageOS/android_packages_apps_LineageParts/+/424287 .",
+      "revId": "4c4d6045a299ea099cceed6d0765fc1d9461b816",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
