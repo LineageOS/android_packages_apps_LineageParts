@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c6ade1c_359adbcf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34879
+      },
+      "writtenOn": "2025-03-23T15:29:17Z",
+      "side": 1,
+      "message": "As suggested in https://review.lineageos.org/c/LineageOS/android_lineage-sdk/+/422139 this change removes def_battery_light_full_charge_disabled and hardcodes \u0027true\u0027 in LineageParts. In addition it hardcodes the two other boolean defaults in the area.\n\nWith the new hardcoded default \u0027true\u0027 we should show the switch \"Turn off when fully charged\" also for devices with an RGB LED; cf. change https://review.lineageos.org/c/LineageOS/android_packages_apps_LineageParts/+/422359 .",
+      "revId": "9a1d1a8fa3a67ff92cfaac8f0659e20057d9ec8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
