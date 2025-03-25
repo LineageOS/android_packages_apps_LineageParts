@@ -37,6 +37,7 @@ public class BootReceiver extends BroadcastReceiver {
             setRestoredTunable(ctx);
         }
 
+        ButtonSettings.restoreKeyDisabler(ctx);
         ButtonSettings.restoreKeySwapper(ctx);
         TouchscreenGestureSettings.restoreTouchscreenGestureStates(ctx);
 
