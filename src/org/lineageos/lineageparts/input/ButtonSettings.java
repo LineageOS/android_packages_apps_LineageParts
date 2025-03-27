@@ -80,7 +80,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_VOLUME_WAKE_SCREEN = "volume_wake_screen";
     private static final String KEY_VOLUME_ANSWER_CALL = "volume_answer_call";
     private static final String KEY_DISABLE_NAV_KEYS = "disable_nav_keys";
+    /*
     private static final String KEY_NAVIGATION_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
+    */
     private static final String KEY_NAVIGATION_BACK_LONG_PRESS = "navigation_back_long_press";
     private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
@@ -126,7 +128,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreferenceCompat mSwapVolumeButtons;
     private SwitchPreferenceCompat mVolumePanelOnLeft;
     private SwitchPreferenceCompat mDisableNavigationKeys;
+    /*
     private SwitchPreferenceCompat mNavigationArrowKeys;
+    */
     private ListPreference mNavigationBackLongPressAction;
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
@@ -230,7 +234,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 Action.NOTHING);
 
         // Navigation bar arrow keys while typing
+        /*
         mNavigationArrowKeys = findPreference(KEY_NAVIGATION_ARROW_KEYS);
+        */
 
         // Navigation bar back long press
         mNavigationBackLongPressAction = initList(KEY_NAVIGATION_BACK_LONG_PRESS,
@@ -717,7 +723,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 if (DeviceUtils.isEdgeToEdgeEnabled(requireContext())) {
                     mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
 
+                    /*
                     mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
+                    */
                     mNavigationPreferencesCat.removePreference(mNavigationBackLongPressAction);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
@@ -965,7 +973,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
             if (hasNavigationBar()) {
                 if (DeviceUtils.isEdgeToEdgeEnabled(context)) {
+                    /*
                     result.add(KEY_NAVIGATION_ARROW_KEYS);
+                    */
                     result.add(KEY_NAVIGATION_HOME_LONG_PRESS);
                     result.add(KEY_NAVIGATION_HOME_DOUBLE_TAP);
                     result.add(KEY_NAVIGATION_APP_SWITCH_LONG_PRESS);
