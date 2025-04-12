@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac9c6f3d_32d032b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-12T17:27:13Z",
+      "side": 1,
+      "message": "any reason why you didn\u0027t just edit the dialog xml?",
+      "revId": "1150e9c2a4416da4a0a2965aedc1d26a0f11c5c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
