@@ -16,6 +16,24 @@
       "message": "any reason why you didn\u0027t just edit the dialog xml?",
       "revId": "1150e9c2a4416da4a0a2965aedc1d26a0f11c5c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c49bb94_c31a5625",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2025-04-12T17:36:24Z",
+      "side": 1,
+      "message": "I guess I could not find the correct xml to edit, so I ended up doing it programmatically :) Thanks!",
+      "parentUuid": "ac9c6f3d_32d032b5",
+      "revId": "1150e9c2a4416da4a0a2965aedc1d26a0f11c5c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
