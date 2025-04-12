@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9168bb40_7b34e7d6",
+        "filename": "src/org/lineageos/lineageparts/notificationlight/LightSettingsDialog.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-12T17:36:55Z",
+      "side": 1,
+      "message": "it was here btw.",
+      "revId": "0fa6cd45efb9fad77652305257c545932e04d9cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
