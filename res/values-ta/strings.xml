@@ -113,6 +113,13 @@
     <string name="network_traffic_show_units_on">இயக்குக</string>
     <string name="contributors_cloud_fragment_title">பங்களிப்பாளர்</string>
     <string name="contributors_cloud_loading_message">பங்களிப்பாளர் தரவு ஏற்றுகின்றது\u2026</string>
+    <string name="anonymous_statistics_title">LineageOS புள்ளிவிவரங்கள்</string>
+    <string name="preview_country_title">நாடு</string>
+    <string name="touchscreen_gesture_settings_title">தொடுதிரை மெய்ப்பாடுகள்</string>
+    <string name="touchscreen_gesture_settings_summary">விரைவான செயல்களுக்காகப் பல்வேறு தொடுதிரை மெய்ப்பாடுகளை இயற்றுக</string>
+    <string name="touchscreen_gestures_haptic_feedback_title">தொடுதல் பின்னூட்டம்</string>
+    <string name="touchscreen_gestures_haptic_feedback_summary">தொடுதிரை மெய்ப்பாடு கண்டறியப்படும்போது, அதிர்வுறு</string>
+    <string name="touchscreen_gesture_swipe_up_stylus_title">எழுத்தாணி பயன்படுத்தி மேல்நோக்கித் தேய்க்கவும்</string>
     <string name="touchscreen_gesture_action_dialer">சுழற்றியைத் திறக்க</string>
     <string name="trust_feature_selinux">SEலினக்சு</string>
     <string name="sms_security_check_limit_always_confirm">எப்பொழுதும் உறுதி செய்க</string>

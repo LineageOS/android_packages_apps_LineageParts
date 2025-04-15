@@ -48,6 +48,20 @@
     <string name="light_brightness_title">Нива на яркост</string>
     <string name="light_brightness_normal">Нормално</string>
     <string name="light_brightness_zen">Не безпокойте</string>
+    <string name="charging_control_title">Контрол на зареждането</string>
+    <string name="charging_control_enable_title">Активирай контрол на зареждането</string>
+    <string name="charging_control_mode_title">Режим на зареждане</string>
+    <string name="charging_control_mode_auto_title">Автоматично планиране</string>
+    <string name="charging_control_mode_auto_summary">Автоматичен старт на зареждането според зададените аларми</string>
+    <string name="charging_control_mode_custom_title">Личен график</string>
+    <string name="charging_control_mode_custom_summary">Определи време за пълно зареждане</string>
+    <string name="charging_control_mode_limit_title">Ограничаване на </string>
+    <string name="charging_control_mode_limit_summary">Зареждане до определен процент</string>
+    <string name="charging_control_start_time_title">Начален час</string>
+    <string name="charging_control_start_time_summary">Контролът на зареждането се активира при започване на зареждане след %s</string>
+    <string name="charging_control_target_time_title">Зададено време до пълно зареждане</string>
+    <string name="charging_control_target_time_summary">Батерията ще бъде напълно заредена до %s</string>
+    <string name="charging_control_limit_title">Ограничение</string>
     <string name="battery_light_title">Индикации на батерия</string>
     <string name="battery_light_enable_title">Активирай индикатора на батерията</string>
     <string name="battery_low_pulse_title">Индикация при изтощена батерия</string>
@@ -212,6 +226,7 @@
     <string name="power_menu_emergency_title">Извънредна ситуация</string>
     <string name="power_menu_devicecontrols_title">Контроли за устройството</string>
     <string name="power_menu_advanced_restart_title">Rазширено рестартиране</string>
+    <string name="power_menu_advanced_restart_summary">При отключен телефон, включете в опциите на менюто за захранване, възможност да рестартирате в режим на възстановяване или буутлоудър</string>
     <string name="power_menu_emergency_affordance_enabled">Включена е спешна достъпност</string>
     <string name="camera_double_tap_power_gesture_title">Натиснете двукратно бутона за захранване за камера</string>
     <string name="camera_double_tap_power_gesture_desc">Бързо стартиране на камера без отключване на екрана</string>
@@ -378,6 +393,7 @@
     <string name="network_traffic_mode_up">Качи само</string>
     <string name="network_traffic_mode_down">Само изтегляне</string>
     <string name="network_traffic_mode_all">Сваляне и качване</string>
+    <string name="network_traffic_position_title">Позиция</string>
     <string name="network_traffic_autohide">Автоматично скриване</string>
     <string name="network_traffic_autohide_summary">Скриване на трафик индикатора, когато няма дейност</string>
     <string name="network_traffic_units_title">Трафик мерни единици</string>
@@ -385,9 +401,11 @@
     <string name="network_traffic_units_megabits">Мегабита в секунда (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Килобайта в секунда (Кб/с)</string>
     <string name="network_traffic_units_megabytes">Мегабайта в секунда (MB/s)</string>
+    <string name="network_traffic_units_auto">Автоматично (кБ/с или МБ/с)</string>
     <string name="network_traffic_show_units">Покажи единици</string>
     <string name="network_traffic_show_units_off">Изключване</string>
     <string name="network_traffic_show_units_on">Включване</string>
+    <string name="network_traffic_show_units_compact">Компактно</string>
     <string name="network_traffic_show_units_summary">Дали да се показват мерните единици за измерване на трафика в лентата на състоянието</string>
     <string name="network_traffic_disabled_clock">Мрежовия трафик е изключен поради позицията на часовника</string>
     <string name="protected_apps_manager_title">Защитени приложения</string>
@@ -512,6 +530,7 @@
     <string name="trust_restrict_usb_always">Отказ на USB свързване</string>
     <string name="trust_restrict_usb_keyguard">Позволи USB свързване когато е отключен</string>
     <string name="trust_restrict_usb_disabled">Винаги позволявай USB свързване</string>
+    <string name="trust_summary">Подсигурете устройството си и защитете данните си</string>
     <string name="sms_security_check_limit_title">Лимит на SMS съобщения</string>
     <string name="sms_security_check_limit_summary">Приложенията могат да изпращат до %s съобщения за 1 минута преди да поискат потвърждение</string>
     <string name="sms_security_check_limit_summary_none">Приложенията не могат да изпращат съобщения, без потвърждение</string>
