@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d05c90a7_ac948330",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-27T18:36:59Z",
+      "side": 1,
+      "message": "old behavior was caused by me being being lazy and forcing RTL layout.",
+      "revId": "d8edd86a0c98b57651971414d754c8489dcd5a3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
