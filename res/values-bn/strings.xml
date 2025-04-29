@@ -11,7 +11,6 @@
     <string name="volume_panel_on_left_title">বামে প্যানেল দেখান</string>
     <string name="volume_panel_on_left_summary">ভলিউম প্যানেল স্ক্রিনের বাম দিকে দেখাও</string>
     <string name="swap_capacitive_keys_title">ক্যাপাসিটিভ বোতামগুলো বিনিময় করো</string>
-    <string name="navigation_bar_invert_layout_summary">নেভিগেশন বার এবং অন্যান্য আইটেম যেমন আইএমই সুইচারের লেআউট উল্টায়</string>
     <string name="power_menu_items_title">পাওয়ার মেনুর অপশনসমূহ</string>
     <string name="power_menu_advanced_restart_title">অ্যাডভান্সড রিস্টার্ট</string>
     <string name="power_menu_advanced_restart_summary">ডিভাইস আনলক করা থাকলে, রিকভারি অথবা বুটলোডারে যাওয়ার অপশন দেখাও</string>

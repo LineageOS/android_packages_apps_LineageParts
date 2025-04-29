@@ -189,7 +189,6 @@
     <string name="swap_capacitive_keys_summary">Cuir am putan “O chionn goirid” ’s am putan “Air ais” an àite càch a chèile</string>
     <string name="navigation_bar_category">Bàr na seòladaireachd</string>
     <string name="navigation_bar_invert_layout_title">Tionndaidh air ais an co-dhealbhachd</string>
-    <string name="navigation_bar_invert_layout_summary">Nì seo ais-thionndadh air co-dhealbhachd bàr na seòladaireachd agus nithean eile mar suidsear nan IME</string>
     <string name="navigation_bar_left_summary">Cuir bàr na seòladaireachd ri taobh clì na sgrìn sa mhodh dreach-tìre</string>
     <string name="navigation_bar_back_long_press_title">Gnìomh a’ bhrùthaidh fhaide</string>
     <string name="navigation_bar_home_long_press_title">Gnìomh brùthaidh fhaide air “Dachaigh”</string>
