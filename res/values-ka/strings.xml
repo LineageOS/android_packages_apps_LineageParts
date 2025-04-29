@@ -205,7 +205,6 @@
     <string name="navigation_bar_category">სამოძრაო ზოლი</string>
     <string name="navigation_bar_enable_taskbar_title">დავალებების ზოლი</string>
     <string name="navigation_bar_invert_layout_title">განლაგების შებრუნება</string>
-    <string name="navigation_bar_invert_layout_summary">შეაბრუნებს განლაგებას სამოძრაო და სხვა ღილაკების, მათ შორის კლავიატურის გადამრთველის</string>
     <string name="navigation_bar_left_summary">სამოძრაო ღილაკების მარცხნივ განთავსება თარაზული რეჟიმისას</string>
     <string name="navigation_bar_back_long_press_title">მოქმედება უკუსვლაზე დიდხანს დაჭერისას</string>
     <string name="navigation_bar_home_long_press_title">მოქმედება მთავარზე დიდხანს დაჭერისას</string>
