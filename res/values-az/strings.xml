@@ -206,7 +206,6 @@
     <string name="navigation_bar_category">Naviqasiya çubuğu</string>
     <string name="navigation_bar_enable_taskbar_title">Tapşırıq çubuğunu fəallaşdır</string>
     <string name="navigation_bar_invert_layout_title">Tərsinə düz</string>
-    <string name="navigation_bar_invert_layout_summary">Naviqasiya çubuğunun və IME dəyişdirici kimi digər elementlərin düzümünü tərsinə çevirir</string>
     <string name="navigation_bar_left_summary">Üfüqi rejimdə ekranın sol tərəfinə naviqasiya çubuğu yerləşdirir</string>
     <string name="navigation_bar_back_long_press_title">Geri düyməsinə uzun basma</string>
     <string name="navigation_bar_home_long_press_title">Əsas ekran düyməsinə uzun basma</string>
