@@ -206,7 +206,7 @@
     <string name="navigation_bar_category">Pasek nawigacji</string>
     <string name="navigation_bar_enable_taskbar_title">Włącz pasek zadań</string>
     <string name="navigation_bar_invert_layout_title">Odwróć układ</string>
-    <string name="navigation_bar_invert_layout_summary">Odwraca układ paska nawigacji i innych elementów, takich jak przełącznik metod wprowadzania</string>
+    <string name="navigation_bar_invert_layout_summary">Odwraca układ paska nawigacji</string>
     <string name="navigation_bar_left_summary">W trybie poziomym pokazuj pasek nawigacji po lewej stronie ekranu</string>
     <string name="navigation_bar_back_long_press_title">Przytrzymanie przycisku \"wstecz\"</string>
     <string name="navigation_bar_home_long_press_title">Przytrzymanie przycisku \"ekran główny\"</string>

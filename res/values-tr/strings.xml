@@ -35,6 +35,7 @@
     <string name="dialog_delete_message">Seçili öge silinsin mi?</string>
     <string name="brightness">Parlaklık seviyesi</string>
     <string name="pulse_length_always_on">Her zaman açık</string>
+    <string name="pulse_length_blink">Yanıp sönme</string>
     <string name="pulse_length_very_short">Çok kısa</string>
     <string name="pulse_length_short">Kısa</string>
     <string name="pulse_length_normal">Normal</string>
@@ -205,7 +206,6 @@
     <string name="navigation_bar_category">Gezinme çubuğu</string>
     <string name="navigation_bar_enable_taskbar_title">Görev çubuğunu etkinleştir</string>
     <string name="navigation_bar_invert_layout_title">Düzeni tersine çevir</string>
-    <string name="navigation_bar_invert_layout_summary">Gezinme çubuğunun ve klavye değiştirici gibi diğer ögelerin düzenini tersine çevirir</string>
     <string name="navigation_bar_left_summary">Yatay modda ekranın sol tarafına gezinme çubuğunu yerleştirir</string>
     <string name="navigation_bar_back_long_press_title">Geri tuşuna uzun basma eylemi</string>
     <string name="navigation_bar_home_long_press_title">Ana ekran tuşuna uzun basma eylemi</string>
