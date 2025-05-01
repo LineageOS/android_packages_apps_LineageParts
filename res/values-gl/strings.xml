@@ -189,7 +189,6 @@
     <string name="swap_capacitive_keys_summary">Cambiar a orde dos botóns Recente e Atrás</string>
     <string name="navigation_bar_category">Barra de navegación</string>
     <string name="navigation_bar_invert_layout_title">Inverter disposición</string>
-    <string name="navigation_bar_invert_layout_summary">Inverter a disposición da barra de navegación e outro elementos, como o selector IME</string>
     <string name="navigation_bar_left_summary">Colocar a barra de navegación no lado esquerdo da pantalla cando estea en modo horizontal</string>
     <string name="navigation_bar_back_long_press_title">Prema prolongandamente no botón Atrás</string>
     <string name="navigation_bar_home_long_press_title">Acción de pulsación larga do inicio</string>

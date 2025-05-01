@@ -186,7 +186,6 @@
     <string name="swap_capacitive_keys_summary">Vymeniť poradie tlačidiel Nedávne a Späť</string>
     <string name="navigation_bar_category">Navigačný panel</string>
     <string name="navigation_bar_invert_layout_title">Invertovať rozloženie</string>
-    <string name="navigation_bar_invert_layout_summary">Otočí rozloženie navigačného panelu a iných položiek, ako napr. prepínač metódy vstupu (IME)</string>
     <string name="navigation_bar_left_summary">V režime na šírku umiestniť navigačný panel na ľavú stranu obrazovky</string>
     <string name="navigation_bar_back_long_press_title">Akcia späť dlhým stlačením</string>
     <string name="navigation_bar_home_long_press_title">Akcia dlhého stlačenia tlačidla Domov</string>
