@@ -186,7 +186,6 @@
     <string name="swap_capacitive_keys_summary">Vaihda Takaisin- ja Viimeisimmät-näppäinten paikkaa</string>
     <string name="navigation_bar_category">Navigointipalkki</string>
     <string name="navigation_bar_invert_layout_title">Käännä asettelu</string>
-    <string name="navigation_bar_invert_layout_summary">Kääntää navigointipalkin ja muiden, kuten syöttötavan painikkeen asettelun</string>
     <string name="navigation_bar_left_summary">Siirtää navigointipalkin näytön vasempaan reunaan vaaka-asennossa</string>
     <string name="navigation_bar_back_long_press_title">Takaisin-näppäimen pitkän painalluksen tehtävä</string>
     <string name="navigation_bar_home_long_press_title">Kotinäppäimen pitkän painalluksen tehtävä</string>

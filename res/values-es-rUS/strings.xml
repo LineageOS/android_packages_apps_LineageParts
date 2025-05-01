@@ -180,7 +180,6 @@
     <string name="disable_navkeys_summary">Activar la barra de navegación en pantalla y desactivar los botones físicos</string>
     <string name="navigation_bar_category">Barra de navegación</string>
     <string name="navigation_bar_invert_layout_title">Invertir diseño</string>
-    <string name="navigation_bar_invert_layout_summary">Invierte el diseño de la barra de navegación y otros elementos, como el interruptor IME</string>
     <string name="navigation_bar_left_summary">Colocar la barra de navegación a la izquierda de la pantalla en modo horizontal</string>
     <string name="navigation_bar_home_long_press_title">Acción de pulsación larga en Inicio</string>
     <string name="navigation_bar_home_double_tap_title">Acción de doble pulsación en Inicio</string>

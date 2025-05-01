@@ -206,7 +206,7 @@
     <string name="navigation_bar_category">Barra loingseoireachta</string>
     <string name="navigation_bar_enable_taskbar_title">Cumasaigh tascbharra</string>
     <string name="navigation_bar_invert_layout_title">Inbhéartaigh leagan amach</string>
-    <string name="navigation_bar_invert_layout_summary">Inverts leagan amach an bharra nascleanúna agus míreanna eile, mar shampla an lascadóir GS</string>
+    <string name="navigation_bar_invert_layout_summary">Inbhéartaíonn leagan amach an bharra nascleanúna</string>
     <string name="navigation_bar_left_summary">Cuir an barra nascleanúna ar thaobh clé an scáileáin i mód tírdhreacha</string>
     <string name="navigation_bar_back_long_press_title">Ar ais gníomh preas fada</string>
     <string name="navigation_bar_home_long_press_title">Gníomh preas fada baile</string>

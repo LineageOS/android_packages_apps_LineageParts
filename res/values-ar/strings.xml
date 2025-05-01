@@ -187,7 +187,6 @@
     <string name="swap_capacitive_keys_summary">قم بتبديل ترتيب زري التطبيقات الحديثة والرجوع</string>
     <string name="navigation_bar_category">شريط التنقل</string>
     <string name="navigation_bar_invert_layout_title">عكس التخطيط</string>
-    <string name="navigation_bar_invert_layout_summary">عكس تصميم شريط التنقل والعناصر الأخرى، كمبدل لوحات المفاتيح</string>
     <string name="navigation_bar_left_summary">وضع شريط التنقل على الجانب الأيسر من الشاشة عندما تكون في وضعها الأفقي</string>
     <string name="navigation_bar_back_long_press_title">إجراء الضغط المطول على زر الرجوع</string>
     <string name="navigation_bar_home_long_press_title">إجراء الضغط الطويل على زر الرئيسية</string>
