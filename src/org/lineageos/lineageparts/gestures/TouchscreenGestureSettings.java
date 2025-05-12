@@ -56,7 +56,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
         final int[] actions = getDefaultGestureActions(requireContext(), mTouchscreenGestures);
         for (final TouchscreenGesture gesture : mTouchscreenGestures) {
             getPreferenceScreen().addPreference(new TouchscreenGesturePreference(
-                    getContext(), gesture, actions[gesture.id]));
+                    getContext(), gesture, actions[gesture.type]));
         }
     }
 
@@ -79,8 +79,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
 
             setSummary("%s");
             setDialogTitle(R.string.touchscreen_gesture_action_dialog_title);
-            setTitle(ResourceUtils.getLocalizedString(
-                    context.getResources(), gesture.name, TOUCHSCREEN_GESTURE_TITLE));
+            setTitle(getTitleForGesture(gesture.type));
         }
 
         @Override
@@ -135,6 +134,16 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
                     return R.drawable.ic_gesture_action_none;
             }
         }
+
+        //TODO: Use GestureType instead 
+        private int getTitleForGesture(final int gesture) {
+            switch (gesture) {
+                case 0:
+                    return R.string.touchscreen_gesture_one_finger_up_swipe_title;
+                default:
+                    return R.string.touchscreen_gesture_two_finger_down_swipe_title;
+            }
+        }
     }
 
     public static void restoreTouchscreenGestureStates(final Context context) {
@@ -146,7 +155,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
         final TouchscreenGesture[] gestures = manager.getTouchscreenGestures();
         final int[] actionList = buildActionList(context, gestures);
         for (final TouchscreenGesture gesture : gestures) {
-            manager.setTouchscreenGestureEnabled(gesture, actionList[gesture.id] > 0);
+            manager.setTouchscreenGestureEnabled(gesture, actionList[gesture.type] > 0);
         }
 
         sendUpdateBroadcast(context, gestures);
@@ -177,14 +186,14 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         for (final TouchscreenGesture gesture : gestures) {
             final String key = buildPreferenceKey(gesture);
-            final String defaultValue = String.valueOf(defaultActions[gesture.id]);
-            result[gesture.id] = Integer.parseInt(prefs.getString(key, defaultValue));
+            final String defaultValue = String.valueOf(defaultActions[gesture.type]);
+            result[gesture.type] = Integer.parseInt(prefs.getString(key, defaultValue));
         }
         return result;
     }
 
     private static String buildPreferenceKey(final TouchscreenGesture gesture) {
-        return "touchscreen_gesture_" + gesture.id;
+        return "touchscreen_gesture_" + gesture.type;
     }
 
     private static void sendUpdateBroadcast(final Context context,
@@ -193,7 +202,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
         final int[] keycodes = new int[gestures.length];
         final int[] actions = buildActionList(context, gestures);
         for (final TouchscreenGesture gesture : gestures) {
-            keycodes[gesture.id] = gesture.keycode;
+            keycodes[gesture.type] = gesture.keycode;
         }
         intent.putExtra(TouchscreenGestureConstants.UPDATE_EXTRA_KEYCODE_MAPPING, keycodes);
         intent.putExtra(TouchscreenGestureConstants.UPDATE_EXTRA_ACTION_MAPPING, actions);
