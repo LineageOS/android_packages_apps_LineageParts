@@ -31,7 +31,7 @@
     <string name="pulse_speed_title">Duração e velocidade do ritmo</string>
     <string name="default_time">Normal</string>
     <string name="custom_time">Personalizado</string>
-    <string name="dialog_delete_title">Excluir</string>
+    <string name="dialog_delete_title">Apagar</string>
     <string name="dialog_delete_message">Remover o item selecionado?</string>
     <string name="brightness">Nível de brilho</string>
     <string name="pulse_length_always_on">Sempre ligado</string>
@@ -238,7 +238,7 @@
     <string name="torch_long_press_power_timeout_2min">2 minutos</string>
     <string name="torch_long_press_power_timeout_5min">5 minutos</string>
     <string name="torch_long_press_power_timeout_10min">10 minutos</string>
-    <string name="profile_menu_delete_title">Excluir</string>
+    <string name="profile_menu_delete_title">Apagar</string>
     <string name="profile_action_none">Não modificar</string>
     <string name="profile_action_system">Padrão do sistema</string>
     <string name="profile_action_disable">Desativar</string>
@@ -278,7 +278,7 @@
     <string name="profile_remove_dialog_message">Remover perfil %1$s?</string>
     <string name="profile_populate_profile_from_state">Configurar o perfil usando as configurações atuais do dispositivo?</string>
     <string name="profile_menu_fill_from_state">Importar configurações atuais do dispositivo</string>
-    <string name="profile_remove_current_profile">Não é possível excluir o perfil ativo!</string>
+    <string name="profile_remove_current_profile">Não é possível apagar o perfil ativo!</string>
     <string name="profile_app_group_category_title">Opções de notificação</string>
     <string name="profile_app_group_item_instructions">Adicionar ou remover grupos</string>
     <string name="profile_app_group_item_instructions_summary">Adicionar ou remover grupos de apps de modificação de notificação a este perfil</string>
@@ -291,7 +291,7 @@
     <string name="rename_dialog_message">Digite um novo nome</string>
     <string name="rename_dialog_hint">Digite o nome do perfil</string>
     <string name="profile_reset_title">Redefinir</string>
-    <string name="profile_reset_message">Excluir todos os perfis e grupos de apps criados e restaurá-los para o padrão?</string>
+    <string name="profile_reset_message">Apagar todos os perfis e grupos de apps criados e restaurá-los para o padrão?</string>
     <string name="profile_app_delete_confirm">Remover este app?</string>
     <string name="profile_networkmode_2g">2G</string>
     <string name="profile_networkmode_3g">3G</string>

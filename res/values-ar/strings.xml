@@ -76,8 +76,6 @@
     <string name="live_display_color_temperature_title">درجة حرارة اللون</string>
     <string name="live_display_color_temperature_summary">النهار: <xliff:g id="day_temperature">%1$d</xliff:g>K  الليل: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day"/>
-    <string name="live_display_night"/>
     <string name="live_display_outdoor_mode_title">وضع في الخارج التلقائي</string>
     <string name="live_display_outdoor_mode_summary">زيادة الإضاءة والإشباع تلقائياً تحت أشعة الشمس</string>
     <string name="live_display_anti_flicker_title">مضاد الوميض</string>

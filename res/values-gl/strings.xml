@@ -279,7 +279,7 @@
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
     <string name="profile_volumeoverrides_title">Modificacións do volume</string>
     <string name="connection_state_enabled">Activar</string>
-    <string name="volume_override_summary">Estabelecer como %1$s%2$s</string>
+    <string name="volume_override_summary">Estabelecer como %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Modificar o volume</string>
     <string name="profile_profiles_manage">Perfís</string>
     <string name="profile_profile_manage">Xestionar o perfil</string>
