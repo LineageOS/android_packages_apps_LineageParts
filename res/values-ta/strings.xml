@@ -59,6 +59,7 @@
     <string name="charging_control_mode_limit_summary">மின்னேற்றத்தை ஒரு குறிப்பிட்ட சதவீதத்திற்கு வரம்பிடுக</string>
     <string name="charging_control_start_time_title">தொடக்க நேரம்</string>
     <string name="charging_control_target_time_title">முழுமையாக மின்னேற இலக்கு நேரம்</string>
+    <string name="charging_control_target_time_summary">%s மணிக்குள் மின்கலம் முழுமையாக மின்னூட்டப்படும்</string>
     <string name="battery_light_title">மின்கலவொளி</string>
     <string name="battery_light_enable_title">மின்கலவொளியை இயக்குக</string>
     <string name="battery_light_full_charge_disabled_title">முழுமையாக மின்னேறியதும் அணைக்க</string>
@@ -76,8 +77,10 @@
     <string name="notification_light_missed_call_title">தவறிய அழைப்பு</string>
     <string name="notification_light_voicemail_title">குரலஞ்சல்</string>
     <string name="led_notification_title">ஒளி அமைப்புகள்</string>
+    <string name="live_display_summary">படிக்குந் தன்மையை மேம்படுத்தவும், கண் சோர்வைக் குறைக்கவும், நாளின் நேரத்திற்கும் சுற்றுப்புற நிலைமைகளுக்கும் ஏற்ப உமது திரையை மேம்படுத்துக</string>
     <string name="live_display_mode">காட்சி முறை</string>
     <string name="live_display_color_temperature_title">வண்ண வெப்பநிலை</string>
+    <string name="live_display_day">பகல்</string>
     <string name="live_display_enhance_color_title">நிறங்களை மேம்படுத்துக</string>
     <string name="live_display_color_profile_natural_title">இயற்கை</string>
     <string name="live_display_color_profile_natural_summary">மெய்யான நிறங்களும், தொலி நிறத்தொனிகளும்</string>
@@ -88,6 +91,7 @@
     <string name="live_display_color_profile_basic_title">அடிப்படை</string>
     <string name="live_display_color_profile_basic_summary">காட்சியை அளவிடாமல் பயன்படுத்துக</string>
     <string name="live_display_color_profile_adaptive_title">தகவமைப்பு</string>
+    <string name="live_display_reading_mode_title">படித்தல் பயன்முறை</string>
     <string name="color_red_title">சிவப்பு</string>
     <string name="color_green_title">பச்சை</string>
     <string name="color_blue_title">நீலம்</string>
@@ -142,6 +146,9 @@
     <string name="click_partial_screenshot_title">பகுதித் திரைப்பிடிப்புக்குச் சொடுக்குக</string>
     <string name="click_partial_screenshot_summary">பகுதித் திரைப்பிடிப்பு எடுக்க ஒலியளவு குறை, ஆற்றல் பொத்தான்களைக் குறுஞ்சொடுக்குக</string>
     <string name="button_backlight_title">பின்னொளி</string>
+    <string name="backlight_timeout_unlimited">அணைக்க வேண்டாம்</string>
+    <string name="backlight_summary_disabled">முடக்கப்பட்டது</string>
+    <string name="backlight_summary_enabled">இயக்கப்பட்டது</string>
     <string name="navigation_bar_category">வழிசெல்லுதல் பட்டி</string>
     <string name="navigation_bar_edge_long_swipe_title">விளிம்பு நீண்ட தேய்த்தல் செயல்</string>
     <string name="power_menu_title">ஆற்றல் பட்டியல்</string>
@@ -219,6 +226,17 @@
     <string name="status_bar_battery_style_text">உரை</string>
     <string name="status_bar_battery_percentage_title">மின்கல விழுக்காடு</string>
     <string name="status_bar_battery_percentage_default">மறைக்க</string>
+    <string name="status_bar_brightness_category">ஒளிர்வு</string>
+    <string name="status_bar_brightness_slider_title">ஒளிர்வு நகர்வுகோல்</string>
+    <string name="status_bar_brightness_slider_summary">விரைவு அமைப்புகளிலிருந்து ஒளிர்வை ஒழுங்குபடுத்துக</string>
+    <string name="status_bar_brightness_slider_auto_title">தன்னியக்க ஒளிர்வு</string>
+    <string name="status_bar_brightness_slider_show_never">ஒருபோதும் காட்டாதே</string>
+    <string name="status_bar_brightness_slider_show_expanded">விரிவாக்கும்போது காட்டுக</string>
+    <string name="status_bar_brightness_slider_show_always">எப்பொழுதும் காட்டுக</string>
+    <string name="network_traffic_settings_title">பிணையப் போக்குவரத்துக் கண்காணிப்பு</string>
+    <string name="network_traffic_settings_summary">தற்போதைய பிணையப் போக்குவரத்து நிலைகளை நிலைப்பட்டியில் காட்டுக</string>
+    <string name="network_traffic_mode_title">காட்சியமைவு முறை</string>
+    <string name="network_traffic_mode_disable">முடக்கப்பட்டது</string>
     <string name="network_traffic_mode_up">பதிவேற்றம் மட்டும்</string>
     <string name="network_traffic_mode_down">பதிவிறக்கம் மட்டும்</string>
     <string name="network_traffic_mode_all">பதிவேற்றமும், பதிவிறக்கமும்</string>
@@ -243,6 +261,7 @@
     <string name="display_rotation_90_title">90 பாகைகள்</string>
     <string name="display_rotation_180_title">180 பாகைகள்</string>
     <string name="display_rotation_270_title">270 பாகைகள்</string>
+    <string name="long_screen_settings_no_apps">செயலிகள் இல்லை</string>
     <string name="charging_sounds_settings_title">மின்னேற்ற ஒலிகள்</string>
     <string name="charging_sounds_enable_title">மின்னேற்ற ஒலிகளை இயக்குக</string>
     <string name="charging_sounds_summary">மின் மூலத்தை இணைக்கும்போதோ, துண்டிக்கும்போதோ ஒலியை இயக்குக</string>
