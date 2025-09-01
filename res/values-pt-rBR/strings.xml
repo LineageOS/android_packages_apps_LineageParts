@@ -501,7 +501,7 @@
     <string name="touchscreen_gesture_action_ambient_display">Exibir a tela ambiente</string>
     <string name="trust_category_features">Estado</string>
     <string name="trust_feature_selinux">SELinux</string>
-    <string name="trust_feature_selinux_value_enforcing">Restrito</string>
+    <string name="trust_feature_selinux_value_enforcing">Aplicado</string>
     <string name="trust_feature_selinux_value_disabled">Desativado</string>
     <string name="trust_feature_selinux_explain">O SELinux determina quais processos têm acesso a determinados arquivos/pastas no seu dispositivo.\nIsto impede que apps e serviços tenham acesso a arquivos com os quais não devem lidar. Dessa forma, um potencial processo malicioso terá acesso limitado e sua segurança está preservada.</string>
     <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
