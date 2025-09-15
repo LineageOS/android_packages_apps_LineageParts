@@ -10,7 +10,7 @@
     <string name="dlg_ok">אישור</string>
     <string name="cancel">ביטול</string>
     <string name="add">הוסף</string>
-    <string name="choose_app">בחר יישום</string>
+    <string name="choose_app">בחירת יישום</string>
     <string name="reset">איפוס</string>
     <string name="advanced">מתקדם</string>
     <string name="settings">הגדרות</string>
@@ -59,7 +59,7 @@
     <string name="charging_control_mode_limit_title">הגבלת טעינה</string>
     <string name="charging_control_mode_limit_summary">הגבלת טעינה לאחוז מסויים</string>
     <string name="charging_control_start_time_title">זמן התחלה</string>
-    <string name="charging_control_start_time_summary">בקרת טעינה תופעל לאחר s% שניות מתחילת טעינה</string>
+    <string name="charging_control_start_time_summary">בקרת טעינה תופעל כאשר התחלת הטעינה היא לאחר %s</string>
     <string name="charging_control_target_time_title">זמן יעד לטעינה מלאה</string>
     <string name="charging_control_target_time_summary">סוללה תטען במלואה ב-%s</string>
     <string name="charging_control_limit_title">מגבלה</string>
@@ -179,7 +179,7 @@
     <string name="swap_volume_buttons_summary">הפוך בין מקשי השמע כאשר המסך הפוך</string>
     <string name="volume_panel_on_left_title">הצגת חלונית משמאל</string>
     <string name="volume_panel_on_left_summary">הצגת לוח עוצמת קול בצדו השמאלי של המסך</string>
-    <string name="button_wake_title">יעירו את ההתקן</string>
+    <string name="button_wake_title">התעוררות ההתקן</string>
     <string name="volume_answer_call_title">קבלת שיחה</string>
     <string name="volume_answer_call_summary">קבלת שיחות נכנסות על ידי לחיצה על מקשי עוצמת השמע</string>
     <string name="home_answer_call_title">קבלת שיחה</string>
@@ -230,8 +230,8 @@
     <string name="camera_double_tap_power_gesture_title">לחיצה כפולה על מקש ההפעלה לפתיחת המצלמה</string>
     <string name="camera_double_tap_power_gesture_desc">פתח את המצלמה במהירות בלי לבטל את נעילת המכשיר</string>
     <string name="torch_long_press_power_gesture_title">לחיצה ארוכה לפנס</string>
-    <string name="torch_long_press_power_gesture_desc">הפעל את הפנס על ידי לחיצה ארוכה על מקש ההפעלה כשהמסך כבוי</string>
-    <string name="torch_long_press_power_timeout_title">כבה את הפנס אוטומטית</string>
+    <string name="torch_long_press_power_gesture_desc">הפעלת הפנס על ידי לחיצה ארוכה על מקש ההפעלה כשהמסך כבוי</string>
+    <string name="torch_long_press_power_timeout_title">כיבוי הפנס אוטומטית</string>
     <string name="torch_long_press_power_timeout_never">לעולם לא</string>
     <string name="torch_long_press_power_timeout_1min">דקה אחת</string>
     <string name="torch_long_press_power_timeout_2min">2 דקות</string>
@@ -270,10 +270,10 @@
     <string name="profile_write_success">התג נכתב בהצלחה</string>
     <string name="profile_write_failed">כתיבת התג נכשלה!</string>
     <string name="profile_selected">הפרופיל שנבחר: %1$s</string>
-    <string name="profile_nfc_text">כתיבת פרופיל לתג NFC תאפשר את הפעלת הפרופיל על ידי הצמדת התג למכשיר. הצמדה חוזרת תבחר את הפרופיל הקודם.</string>
+    <string name="profile_nfc_text">כתיבת פרופיל לתג NFC מאפשרת לבחור את הפרופיל על ידי הצמדה לתג. הצמדה נוספת תבחר את הפרופיל הקודם.</string>
     <string name="profile_unknown_nfc_tag">פרופיל לא ידוע</string>
     <string name="profile_add_nfc_text">תג NFC זה מקושר לפרופיל לא ידוע. הצמדת התג זה לפרופיל קיים תאפשר את בחירת הפרופיל בעתיד.</string>
-    <string name="profile_select">בחר פרופיל</string>
+    <string name="profile_select">בחירת פרופיל</string>
     <string name="profile_remove_dialog_message">להסיר את הפרופיל %1$s?</string>
     <string name="profile_populate_profile_from_state">להגדיר פרופיל לפי הגדרות המכשיר הנוכחיות?</string>
     <string name="profile_menu_fill_from_state">ייבא את הגדרות המכשיר הנוכחיות</string>
@@ -311,8 +311,8 @@
     <string name="ringer_mode">מצב צלצול</string>
     <string name="lights_mode">מצב נורית התראות</string>
     <string name="vibrate_mode">מצב רטט</string>
-    <string name="choose_soundtone">בחר צליל התראה</string>
-    <string name="choose_ringtone">בחר צלצול</string>
+    <string name="choose_soundtone">בחירת צליל התראה</string>
+    <string name="choose_ringtone">בחירת רינגטון</string>
     <string name="ringtone_title">צלצול שיחה</string>
     <string name="soundtone_title">צליל התראה</string>
     <string name="profile_system_settings_title">הגדרות מערכת</string>
@@ -353,7 +353,7 @@
     <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב כדי לכבות את המסך</string>
     <string name="status_bar_icons_title">סמלי שורת המצב</string>
     <string name="status_bar_system_icons_title">סמלי מערכת</string>
-    <string name="status_bar_system_icons_summary">בחר אילו סמלים יוצגו בשורת המצב</string>
+    <string name="status_bar_system_icons_summary">שליטה אילו סמלים יוצגו בשורת המצב</string>
     <string name="status_bar_clock_title">שעון</string>
     <string name="status_bar_clock_show_seconds_title">הצגת שניות</string>
     <string name="status_bar_clock_show_seconds_summary">הצגת שעות, דקות ושניות</string>
@@ -381,12 +381,12 @@
     <string name="status_bar_brightness_slider_title">מחוון בהירות</string>
     <string name="status_bar_brightness_slider_summary">כוונון בהירות דרך ההגדרות המהירות</string>
     <string name="status_bar_brightness_slider_auto_title">בהירות אוטומוטית</string>
-    <string name="status_bar_brightness_slider_auto_summary">הראה כפתור להפעלת בהירות אוטומטית ליד המחוון</string>
+    <string name="status_bar_brightness_slider_auto_summary">הצגת לחצן עבור בהירות אדפטיבית ליד המחוון</string>
     <string name="status_bar_brightness_slider_show_never">אל תציג אף פעם</string>
     <string name="status_bar_brightness_slider_show_expanded">הצג כאשר מורחב</string>
     <string name="status_bar_brightness_slider_show_always">הצג תמיד</string>
     <string name="network_traffic_settings_title">ניטור תעבורת רשת</string>
-    <string name="network_traffic_settings_summary">הצג את מהירות תעבורת הרשת בזמן אמת בשורת המצב</string>
+    <string name="network_traffic_settings_summary">הצגת רמות תעבורת הרשת העכשוויות בשורת המצב</string>
     <string name="network_traffic_mode_title">מצב תצוגה</string>
     <string name="network_traffic_mode_disable">כבוי</string>
     <string name="network_traffic_mode_up">העלאה בלבד</string>
@@ -425,8 +425,8 @@
     <string name="anonymous_statistics_warning_title">אודות</string>
     <string name="anonymous_statistics_warning">הצטרפות לסטטיסטיקות LineageOS תאפשר שליחת מידע לא אישי למפתחי LineageOS על מנת לאתר את מספר ההתקנות לכל סוג מכשיר. המידע הנשלח כולל מזהה ייחודי, אשר אינו פוגע בפרטיותך או במידע שלך. המידע נשלח עם כל אתחול.\n\nכדי לצפות בדוגמה של מידע שנשלח, הקש על הצג דוגמה.</string>
     <string name="enable_reporting_title">אפשר דיווח</string>
-    <string name="preview_data_title">הצג דוגמה</string>
-    <string name="view_stats_title">הצג סטטיסטיקה</string>
+    <string name="preview_data_title">תצוגה מקדימה של נתונים</string>
+    <string name="view_stats_title">הצגת סטטיסטיקה</string>
     <string name="anonymous_learn_more">מידע נוסף</string>
     <string name="preview_id_title">מזהה ייחודי</string>
     <string name="preview_device_title">מכשיר</string>
