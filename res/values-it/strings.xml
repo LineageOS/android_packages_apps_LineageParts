@@ -396,10 +396,10 @@
     <string name="network_traffic_autohide">Nascondi automaticamente</string>
     <string name="network_traffic_autohide_summary">Nascondi l\'indicatore di traffico quando non c\'è nessuna attività</string>
     <string name="network_traffic_units_title">Unità di misura del traffico</string>
-    <string name="network_traffic_units_kilobits">Kilobit al secondo (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabit al secondo (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobyte al secondo (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabyte al secondo (MB/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobits al secondo (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits al secondo (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes al secondo (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes al secondo (MB/s)</string>
     <string name="network_traffic_units_auto">Automatico (kB/s o MB/s)</string>
     <string name="network_traffic_show_units">Mostra unità di misura</string>
     <string name="network_traffic_show_units_off">Off</string>
