@@ -25,7 +25,7 @@
     <string name="search">Axtar</string>
     <string name="disabled">Sıradan çıxarıldı</string>
     <string name="enabled">Fəallaşdırıldı</string>
-    <string name="privacy_settings_title">Gizlilik</string>
+    <string name="privacy_settings_title">Məxfilik</string>
     <string name="channel_light_settings_name">İşıq ayarlarını önizlə</string>
     <string name="edit_light_settings">İşıq ayarlarına düzəliş et</string>
     <string name="pulse_speed_title">Yanıb sönmə uzunluğu və sürəti</string>
@@ -200,7 +200,7 @@
     <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g> üçün fəaldır</string>
     <string name="backlight_summary_enabled">Fəallaşdırıldı</string>
     <string name="disable_navkeys_title">Ekranda naviqasiya çubuğunu fəallaşdır</string>
-    <string name="disable_navkeys_summary">Ekranda naviqasiya çubuğunu fəallaşdır və avadanlıq təminatı düymələrini sıradan çıxart</string>
+    <string name="disable_navkeys_summary">Ekranda naviqasiya çubuğunu fəallaşdır və donanım düymələrini sıradan çıxart</string>
     <string name="swap_capacitive_keys_title">Toxunaqlı düymələri dəyişdirin</string>
     <string name="swap_capacitive_keys_summary">Ən son tətbiqlər və geri düymələrinin yerini dəyişdir</string>
     <string name="navigation_bar_category">Naviqasiya çubuğu</string>
@@ -424,7 +424,7 @@
     <string name="anonymous_statistics_summary">Anonim statistika göndərməni tərcih edərək, LineageOS-u təkmilləşdirməyimizə kömək edin</string>
     <string name="anonymous_statistics_warning_title">Haqqında</string>
     <string name="anonymous_statistics_warning">LineageOS Statistikalarına daxil olmaqla, cihazlar arasındakı unikal quraşdırmaların
-        izlənilməsi üçün LineageOS-un gəlişdiricilərinə şəxsi olmayan verilərin göndərilməsinə icazə veriləcək. Göndərilən məlumatlar, gizliliyiniz və ya şəxsi veriləriniz
+        izlənilməsi üçün LineageOS-un gəlişdiricilərinə fərdi olmayan verilərin göndərilməsinə icazə veriləcək. Göndərilən məlumatlar, məxfiliyiniz və ya fərdi veriləriniz
         üçün təhlükəli olmayan unikal bir identifikator ehtiva edir. Verilər, hər açlış zamanı göndərilir.\n\nGöndərilən verilərə nümunə olaraq \"Veriləri önizlə\"yə toxunun.</string>
     <string name="enable_reporting_title">Hesabat göndərməni fəallaşdır</string>
     <string name="preview_data_title">Veriləri önizlə</string>
@@ -516,14 +516,14 @@
     <string name="trust_feature_encryption_value_enabled">Fəaldır</string>
     <string name="trust_feature_encryption_value_nolock">Təhlükəsiz bir kilid ekranı lazımdır</string>
     <string name="trust_feature_encryption_value_disabled">Sıradan çıxarıldı</string>
-    <string name="trust_feature_encryption_explain">Cihazınızın şifrələnməsi, telefonunuz Android-də başladılmadıqda verilərinizə erişməyinizi əngəlləyir. Bu xüsusilə telefonunuz oğurlandığı vaxt önəmlidir, beləcə mesajlarınızın, kontaktlarınızın və digər şəxsi məlumatlarınızın başqaları tərəfindən şifrəniz olmadan oxunmasının qarşısını alar.\nŞifrələməni daha effektiv etmək üçün təhlükəsiz bir kilid ekranı parolu ayarlamalısınız.</string>
-    <string name="trust_category_tools">Gizlilik</string>
+    <string name="trust_feature_encryption_explain">Cihazınızın şifrələnməsi, telefonunuz Android-də başladılmadıqda verilərinizə erişməyinizi əngəlləyir. Bu xüsusilə telefonunuz oğurlandığı vaxt önəmlidir, beləcə mesajlarınızın, kontaktlarınızın və digər özəl məlumatlarınızın başqaları tərəfindən şifrəniz olmadan oxunmasının qarşısını alar.\nŞifrələməni daha effektiv etmək üçün təhlükəsiz bir kilid ekranı parolu ayarlamalısınız.</string>
+    <string name="trust_category_tools">Məxfilik</string>
     <string name="trust_notification_alerts_title">Güvənlik xəbərdarlıqları</string>
     <string name="trust_warnings_alerts_intro">Xəbərdarlıq almaq istədiyiniz güvənlik məsələlərini seçə bilərsiniz. Güvənlik üçün bütün xəbərdarlıqları fəallaşdırmağınız məsləhətdir</string>
     <string name="trust_warnings_selinux">SELinux statusu</string>
     <string name="trust_warnings_keys">Quruluş imzası</string>
     <string name="trust_onboarding_title">Trust-a salam de</string>
-    <string name="trust_onboarding_description">Trust, cihazınızı güvəndə saxlamağa və gizliliyinizi qorumağa kömək edir.\n Trust ikonu, yalnız səhifənin məzmunu doğrulananda göstərilir.</string>
+    <string name="trust_onboarding_description">Trust, cihazınızı güvəndə saxlamağa və məxfiliyinizi qorumağa kömək edir.\n Trust ikonu, yalnız səhifənin məzmunu doğrulandığı zaman göstərilir.</string>
     <string name="trust_onboarding_learn_more">Ətraflı öyrən</string>
     <string name="trust_onboarding_done">Anladım</string>
     <string name="trust_restrict_usb_title">USB-ni məhdudlaşdır</string>
@@ -531,7 +531,7 @@
     <string name="trust_restrict_usb_always">USB bağlantılarını rədd et</string>
     <string name="trust_restrict_usb_keyguard">USB bağlantılarına ekran kilidi açıq olanda icazə ver</string>
     <string name="trust_restrict_usb_disabled">USB bağlantılarına həmişə icazə ver</string>
-    <string name="trust_summary">Cihazınızı güvəndə saxlayın və gizliliyinizi qoruyun</string>
+    <string name="trust_summary">Cihazınızı güvəndə saxlayın və məxfiliyinizi qoruyun</string>
     <string name="sms_security_check_limit_title">SMS mesaj limiti</string>
     <string name="sms_security_check_limit_summary">Tətbiqlər, təsdiq tələb etməzdən əvvəl 1 dəqiqə ərzində %s mesaj göndərə bilər</string>
     <string name="sms_security_check_limit_summary_none">Tətbiqlərin təsdiq olmadan mesaj göndərməsinə icazə verilmir</string>
