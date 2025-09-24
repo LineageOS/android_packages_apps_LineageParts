@@ -208,11 +208,11 @@
     <string name="navigation_bar_invert_layout_title">Inverter botões</string>
     <string name="navigation_bar_invert_layout_summary">Inverte a ordem dos botões da barra de navegação</string>
     <string name="navigation_bar_left_summary">Posicionar a barra de navegação no lado esquerdo da tela em modo paisagem</string>
-    <string name="navigation_bar_back_long_press_title">Ação de um toque longo no botão Voltar</string>
+    <string name="navigation_bar_back_long_press_title">Ação de um toque longo no botão de voltar</string>
     <string name="navigation_bar_home_long_press_title">Ação de toque longo no botão de início</string>
     <string name="navigation_bar_home_double_tap_title">Ação de toque duplo no botão de início</string>
     <string name="navigation_bar_app_switch_long_press_title">Ação de toque longo no botão de recentes</string>
-    <string name="navigation_bar_edge_long_swipe_title">Ação ao desligar ao longo da borda</string>
+    <string name="navigation_bar_edge_long_swipe_title">Ação ao deslize longo na borda</string>
     <string name="power_menu_title">Menu liga/desliga</string>
     <string name="power_menu_items_title">Itens do menu de energia</string>
     <string name="power_menu_screenshot_title">Captura de tela</string>
@@ -248,9 +248,9 @@
     <string name="profile_tabs_bluetooth">Bluetooth</string>
     <string name="profile_tabs_nfc">NFC</string>
     <string name="profile_triggers_header">Gatilhos que ativarão este perfil</string>
-    <string name="profile_setup_setup_triggers_title">Etapa 1: Adicionar gatilhos</string>
+    <string name="profile_setup_setup_triggers_title">1ª etapa: Adicionar gatilhos</string>
     <string name="profile_setup_setup_triggers_title_config">Modificar gatilhos: <xliff:g id="profile_name">%1$s</xliff:g></string>
-    <string name="profile_setup_actions_title">Etapa 2: Configurar ações</string>
+    <string name="profile_setup_actions_title">2ª etapa: Configurar ações</string>
     <string name="profile_setup_actions_title_config">Reconfigurar ações</string>
     <string name="wireless_networks_settings_title">Redes sem fio e outras</string>
     <string name="no_bluetooth_triggers">Não há dispositivos Bluetooth pareados.\nToque para parear um dispositivo Bluetooth antes de configurar gatilhos.</string>
@@ -501,7 +501,7 @@
     <string name="touchscreen_gesture_action_ambient_display">Exibir a tela ambiente</string>
     <string name="trust_category_features">Estado</string>
     <string name="trust_feature_selinux">SELinux</string>
-    <string name="trust_feature_selinux_value_enforcing">Restrito</string>
+    <string name="trust_feature_selinux_value_enforcing">Aplicado</string>
     <string name="trust_feature_selinux_value_disabled">Desativado</string>
     <string name="trust_feature_selinux_explain">O SELinux determina quais processos têm acesso a determinados arquivos/pastas no seu dispositivo.\nIsto impede que apps e serviços tenham acesso a arquivos com os quais não devem lidar. Dessa forma, um potencial processo malicioso terá acesso limitado e sua segurança está preservada.</string>
     <string name="trust_feature_security_patches">Atualizações de segurança do Android</string>
