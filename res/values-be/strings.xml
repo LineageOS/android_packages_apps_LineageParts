@@ -16,6 +16,7 @@
     <string name="finish">Завяршыць</string>
     <string name="next">Далей</string>
     <string name="on">Укл</string>
+    <string name="off">Выключана</string>
     <string name="yes">Так</string>
     <string name="no">Не</string>
     <string name="search">Пошук</string>
@@ -181,6 +182,7 @@
     <string name="profile_menu_fill_from_state">Імпартаваць бягучыя налады прылады</string>
     <string name="profile_remove_current_profile">Не атрымалася выдаліць бягучы профіль!</string>
     <string name="profile_entries_on">Уключана</string>
+    <string name="profile_entries_off">Выключана</string>
     <string name="profile_name_title">Назва</string>
     <string name="new_profile_name">&lt;новы профіль&gt;</string>
     <string name="rename_dialog_hint">Увядзіце назву профілю</string>
@@ -269,6 +271,7 @@
     <string name="network_traffic_units_megabytes">Мегабайт у секунду (МБ/с)</string>
     <string name="network_traffic_units_auto">Аўтаматычна (кБ/с або МБ/с)</string>
     <string name="network_traffic_show_units">Паказваць адзінкі</string>
+    <string name="network_traffic_show_units_off">Выключана</string>
     <string name="network_traffic_show_units_on">Укл</string>
     <string name="network_traffic_show_units_compact">Кампактна</string>
     <string name="network_traffic_show_units_summary">Паказваць хуткасць перадачы даных у панэлі стану</string>
