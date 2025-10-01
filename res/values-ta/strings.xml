@@ -91,6 +91,7 @@
     <string name="live_display_mode">காட்சி முறை</string>
     <string name="live_display_color_temperature_title">வண்ண வெப்பநிலை</string>
     <string name="live_display_day">பகல்</string>
+    <string name="live_display_night">இரவு</string>
     <string name="live_display_enhance_color_title">நிறங்களை மேம்படுத்துக</string>
     <string name="live_display_color_profile_natural_title">இயற்கை</string>
     <string name="live_display_color_profile_natural_summary">மெய்யான நிறங்களும், தொலி நிறத்தொனிகளும்</string>
@@ -170,6 +171,7 @@
     <string name="power_menu_items_title">ஆற்றல் பட்டி உருப்படிகள்</string>
     <string name="power_menu_screenshot_title">திரைப்பிடிப்பு</string>
     <string name="power_menu_airplane_title">வானூர்திப் பயன்முறை</string>
+    <string name="power_menu_users_title">பயனர் மாற்றி</string>
     <string name="power_menu_bug_report_title">பிழை அறிக்கை</string>
     <string name="power_menu_bug_report_devoptions_unavailable">வளரச்சி அமைவுகள் இயக்கப்படாததால் பிழை அறிக்கையிடல் முடக்கப்பட்டுள்ளது</string>
     <string name="power_menu_bug_report_unavailable_for_user">முதன்மை அல்லாத பயனர்களுக்குப் பிழை அறிக்கையிடல் முடக்கப்பட்டுள்ளது</string>
@@ -182,6 +184,9 @@
     <string name="torch_long_press_power_timeout_5min">5 நிமிடம்</string>
     <string name="torch_long_press_power_timeout_10min">10 நிமிடம்</string>
     <string name="profile_menu_delete_title">நீக்குக</string>
+    <string name="profile_action_system">முறைமை இயல்புநிலை</string>
+    <string name="profile_action_disable">அணைக்க</string>
+    <string name="profile_action_enable">இயக்குக</string>
     <string name="profile_tabs_bluetooth">ஊடலை</string>
     <string name="profile_tabs_nfc">NFC</string>
     <string name="profiles_settings_title">தனியமைப்பு முறைமை</string>
@@ -209,6 +214,8 @@
     <string name="profile_profiles_manage">தனியமைப்புகள்</string>
     <string name="profile_profile_manage">தனியமைப்பை மேலாள்க</string>
     <string name="profile_settings">தனியமைப்பு அமைப்புகள்</string>
+    <string name="choose_ringtone">அழைப்பொலியைத் தேர்க</string>
+    <string name="ringtone_title">செல்பேசி அழைப்பொலி</string>
     <string name="soundtone_title">அறிவிப்பொலி</string>
     <string name="profile_system_settings_title">முறைமை அமைப்புகள்</string>
     <string name="profile_lockmode_title">பூட்டுத்திரை முறை</string>

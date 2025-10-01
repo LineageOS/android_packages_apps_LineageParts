@@ -61,7 +61,7 @@
     <string name="charging_control_start_time_title">זמן התחלה</string>
     <string name="charging_control_start_time_summary">בקרת טעינה תופעל כאשר התחלת הטעינה היא לאחר %s</string>
     <string name="charging_control_target_time_title">זמן יעד לטעינה מלאה</string>
-    <string name="charging_control_target_time_summary">סוללה תטען במלואה ב-%s</string>
+    <string name="charging_control_target_time_summary">הסוללה תטען במלואה בשעה %s</string>
     <string name="charging_control_limit_title">מגבלה</string>
     <string name="battery_light_title">נורית הסוללה</string>
     <string name="battery_light_enable_title">הפעלת נורית הסוללה</string>
