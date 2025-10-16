@@ -186,7 +186,7 @@
     <string name="home_answer_call_summary">Отвечать на входящие вызовы нажатием кнопки \'Домой\'</string>
     <string name="extras_title">Дополнительно</string>
     <string name="additional_buttons_title">Дополнительные кнопки</string>
-    <string name="click_partial_screenshot_title">Скриншот части экрана</string>
+    <string name="click_partial_screenshot_title">Снимок части экрана</string>
     <string name="click_partial_screenshot_summary">Кратковременно нажмите кнопки уменьшения громкости и питания, чтобы сделать скриншот части экрана</string>
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Подсветка кнопок</string>
