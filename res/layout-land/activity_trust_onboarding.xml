@@ -56,7 +56,7 @@
 
             <Button
                 android:id="@+id/trust_onboarding_learn_more"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/ButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -66,7 +66,7 @@
 
     <Button
         android:id="@+id/trust_onboarding_done"
-        style="@style/Base.Widget.AppCompat.Button.Colored"
+        style="@style/PrimaryButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
