@@ -92,6 +92,7 @@
     <string name="live_display_color_temperature_title">வண்ண வெப்பநிலை</string>
     <string name="live_display_day">பகல்</string>
     <string name="live_display_night">இரவு</string>
+    <string name="live_display_low_power_title">மின் பயன்பாட்டைக் குறைக்க</string>
     <string name="live_display_enhance_color_title">நிறங்களை மேம்படுத்துக</string>
     <string name="live_display_color_profile_natural_title">இயற்கை</string>
     <string name="live_display_color_profile_natural_summary">மெய்யான நிறங்களும், தொலி நிறத்தொனிகளும்</string>
