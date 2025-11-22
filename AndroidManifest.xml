@@ -258,6 +258,9 @@
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.my_device_info" />
             <meta-data
+                android:name="com.android.settings.group_key"
+                android:value="legal_category" />
+            <meta-data
                 android:name="com.android.settings.order"
                 android:value="2" />
             <meta-data
