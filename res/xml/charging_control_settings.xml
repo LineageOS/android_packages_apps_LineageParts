@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,7 +11,7 @@
         android:key="charging_control_enabled"
         android:title="@string/charging_control_enable_title" />
 
-    <lineageos.preference.LineageSystemSettingDropDownPreference
+    <lineageos.preference.LineageSystemSettingListPreference
         android:key="charging_control_mode"
         android:title="@string/charging_control_mode_title"
         android:entries="@array/charging_control_mode_entries"
