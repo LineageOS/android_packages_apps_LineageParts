@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -21,7 +21,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
 import lineageos.health.HealthInterface;
-import lineageos.preference.LineageSystemSettingDropDownPreference;
+import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.preference.LineageSystemSettingMainSwitchPreference;
 import lineageos.providers.LineageSettings;
 
@@ -47,7 +47,7 @@ public class ChargingControlSettings extends SettingsPreferenceFragment implemen
     private static final String CHARGING_CONTROL_LIMIT_PREF = "charging_control_charging_limit";
 
     private LineageSystemSettingMainSwitchPreference mChargingControlEnabledPref;
-    private LineageSystemSettingDropDownPreference mChargingControlModePref;
+    private LineageSystemSettingListPreference mChargingControlModePref;
     private StartTimePreference mChargingControlStartTimePref;
     private TargetTimePreference mChargingControlTargetTimePref;
     private ChargingLimitPreference mChargingControlLimitPref;
