@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -13,12 +13,14 @@ import android.widget.TextView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
+import com.android.settingslib.widget.GroupSectionDividerMixin;
+
 import lineageos.health.HealthInterface;
 
 import org.lineageos.lineageparts.R;
 
 public class ChargingLimitPreference extends Preference
-        implements SeekBar.OnSeekBarChangeListener {
+        implements GroupSectionDividerMixin, SeekBar.OnSeekBarChangeListener {
     private static final String TAG = ChargingLimitPreference.class.getSimpleName();
 
     private TextView mChargingLimitValue;
