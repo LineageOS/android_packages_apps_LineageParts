@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -7,29 +7,32 @@ package org.lineageos.lineageparts.health;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.SeekBar;
+import android.view.View;
 import android.widget.TextView;
 
-import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
+
+import com.android.settingslib.widget.SliderPreference;
+
+import com.google.android.material.slider.LabelFormatter;
+import com.google.android.material.slider.Slider;
 
 import lineageos.health.HealthInterface;
 
 import org.lineageos.lineageparts.R;
 
-public class ChargingLimitPreference extends Preference
-        implements SeekBar.OnSeekBarChangeListener {
+public class ChargingLimitPreference extends SliderPreference
+        implements Slider.OnChangeListener, Slider.OnSliderTouchListener {
     private static final String TAG = ChargingLimitPreference.class.getSimpleName();
 
+    private Slider mSlider;
+
     private TextView mChargingLimitValue;
-    private SeekBar mChargingLimitBar;
 
     private final HealthInterface mHealthInterface;
 
     public ChargingLimitPreference(final Context context, final AttributeSet attrs) {
         super(context, attrs);
-
-        setLayoutResource(R.layout.preference_charging_limit);
 
         mHealthInterface = HealthInterface.getInstance(context);
     }
@@ -38,34 +41,40 @@ public class ChargingLimitPreference extends Preference
     public void onBindViewHolder(final PreferenceViewHolder holder) {
         super.onBindViewHolder(holder);
 
-        mChargingLimitValue = (TextView) holder.findViewById(R.id.value);
+        mChargingLimitValue = (TextView) holder.findViewById(android.R.id.summary);
+        mChargingLimitValue.setVisibility(View.VISIBLE);
 
-        mChargingLimitBar = (SeekBar) holder.findViewById(R.id.seekbar_widget);
-        mChargingLimitBar.setOnSeekBarChangeListener(this);
+        mSlider = (Slider) holder.findViewById(R.id.slider);
+        mSlider.addOnChangeListener(this);
+        mSlider.addOnSliderTouchListener(this);
+        mSlider.setLabelBehavior(LabelFormatter.LABEL_FLOATING);
+        mSlider.setStepSize(1);
+        mSlider.setTickVisible(false);
+        mSlider.setValueFrom(70);
+        mSlider.setValueTo(100);
 
         int currLimit = getSetting();
-        mChargingLimitBar.setProgress(currLimit);
+        mSlider.setValue(currLimit);
         updateValue(currLimit);
     }
 
     @Override
-    public void onStartTrackingTouch(final SeekBar seekBar) {
+    public void onStartTrackingTouch(final Slider slider) {
     }
 
     @Override
-    public void onStopTrackingTouch(final SeekBar seekBar) {
-        setSetting(seekBar.getProgress());
+    public void onStopTrackingTouch(final Slider slider) {
+        setSetting((int) slider.getValue());
+        updateValue((int) slider.getValue());
     }
 
     @Override
-    public void onProgressChanged(final SeekBar seekBar, final int progress,
-            final boolean fromUser) {
-        updateValue(progress);
+    public void onValueChange(final Slider slider, final float value, final boolean fromUser) {
     }
 
     public void setValue(final int value) {
-        if (mChargingLimitBar != null) {
-            mChargingLimitBar.setProgress(value);
+        if (mSlider != null) {
+            mSlider.setValue(value);
         }
         updateValue(value);
     }
@@ -79,8 +88,9 @@ public class ChargingLimitPreference extends Preference
     }
 
     private void updateValue(final int value) {
-        if (mChargingLimitValue != null) {
-            mChargingLimitValue.setText(String.format("%d%%", value));
+        if (value > 0 && mChargingLimitValue != null) {
+            mChargingLimitValue.setText(
+                    getContext().getString(R.string.charging_control_limit_summary, value));
         }
     }
 }
