@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2015 The Android Open Source Project
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -17,9 +18,11 @@ import android.widget.FrameLayout;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
+import com.android.settingslib.widget.GroupSectionDividerMixin;
+
 import org.lineageos.lineageparts.R;
 
-public class LayoutPreference extends Preference {
+public class LayoutPreference extends Preference implements GroupSectionDividerMixin {
 
     private View mRootView;
 
