@@ -30,7 +30,9 @@
 
         <com.android.settingslib.widget.MainSwitchBar
             android:id="@+id/main_switch_bar"
+            android:background="@null"
             android:visibility="gone"
+            android:layout_marginHorizontal="16dp"
             android:layout_height="wrap_content"
             android:layout_width="match_parent" />
 
