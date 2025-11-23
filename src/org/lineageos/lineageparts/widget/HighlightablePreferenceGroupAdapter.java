@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2018 The Android Open Source Project
- * SPDX-FileCopyrightText: 2020-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2020-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -20,13 +20,14 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceGroup;
-import androidx.preference.PreferenceGroupAdapter;
 import androidx.preference.PreferenceViewHolder;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.settingslib.widget.SettingsPreferenceGroupAdapter;
+
 import org.lineageos.lineageparts.R;
 
-public class HighlightablePreferenceGroupAdapter extends PreferenceGroupAdapter {
+public class HighlightablePreferenceGroupAdapter extends SettingsPreferenceGroupAdapter {
 
     private static final String TAG = "HighlightableAdapter";
     @VisibleForTesting
