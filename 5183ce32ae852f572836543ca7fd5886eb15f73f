@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35ae6b38_6e832219",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-25T22:40:58Z",
+      "side": 1,
+      "message": "Works fine on 23.0. Strictly necessary for 23.1 because with M3E the switch updates itself and was causing visual glitches.",
+      "revId": "5183ce32ae852f572836543ca7fd5886eb15f73f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
