@@ -33,6 +33,24 @@
       "message": "next time, three dot menu in top right, then move change and select the new branch.",
       "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6ebd0cd_6362dcdc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-25T02:21:49Z",
+      "side": 1,
+      "message": "This also applies to 23.0, tho?",
+      "parentUuid": "9a9a71be_23d942b0",
+      "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
