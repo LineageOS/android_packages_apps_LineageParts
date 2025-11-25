@@ -51,6 +51,24 @@
       "parentUuid": "9a9a71be_23d942b0",
       "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e9a673a_35ec373c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34693
+      },
+      "writtenOn": "2025-11-25T03:26:52Z",
+      "side": 1,
+      "message": "I guess just reopen 23.1 and 23.0 probably",
+      "parentUuid": "c6ebd0cd_6362dcdc",
+      "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
