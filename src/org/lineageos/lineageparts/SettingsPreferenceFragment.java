@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2010 The Android Open Source Project
- * SPDX-FileCopyrightText: 2020-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2020-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -13,6 +13,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.ArraySet;
@@ -23,6 +24,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -147,6 +149,20 @@ public abstract class SettingsPreferenceFragment extends ObservablePreferenceFra
     @Override
     public void onSettingsChanged(Uri contentUri) {
         PartsUpdater.notifyChanged(getActivity(), getPreferenceScreen().getKey());
+    }
+
+    @Override
+    public void setDivider(@Nullable final Drawable divider) {
+        RecyclerView list = getListView();
+        if (list == null) {
+            View root = getView();
+            if (root != null) {
+                root.post(() -> setDivider(divider));
+            }
+            return;
+        }
+
+        super.setDivider(divider);
     }
 
     public void registerObserverIfNeeded() {
