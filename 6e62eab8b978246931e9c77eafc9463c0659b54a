@@ -16,6 +16,23 @@
       "message": "move to 23.1 pls",
       "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c14fb19_d5ae3014",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-11-25T01:53:19Z",
+      "side": 1,
+      "message": "next time, three dot menu in top right, then move change and select the new branch.",
+      "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
