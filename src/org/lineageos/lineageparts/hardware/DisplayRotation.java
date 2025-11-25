@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -10,7 +10,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
-import android.widget.CompoundButton;
 
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
@@ -23,7 +22,7 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 
 public class DisplayRotation extends SettingsPreferenceFragment
-        implements CompoundButton.OnCheckedChangeListener {
+        implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "DisplayRotation";
 
     public static final String KEY_ACCELEROMETER = "accelerometer";
@@ -52,7 +51,7 @@ public class DisplayRotation extends SettingsPreferenceFragment
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mAccelerometer = findPreference(KEY_ACCELEROMETER);
-        mAccelerometer.addOnSwitchChangeListener(this);
+        mAccelerometer.setOnPreferenceChangeListener(this);
         mAccelerometer.setPersistent(false);
 
         mRotation0Pref = prefSet.findPreference(ROTATION_0_PREF);
@@ -106,6 +105,16 @@ public class DisplayRotation extends SettingsPreferenceFragment
     }
 
     @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mAccelerometer) {
+            RotationPolicy.setRotationLockForAccessibility(requireActivity(),
+                    !(Boolean) newValue, /* caller= */ "DisplayRotation");
+        }
+
+        return true;
+    }
+
+    @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mRotation0Pref ||
                 preference == mRotation90Pref ||
@@ -122,12 +131,6 @@ public class DisplayRotation extends SettingsPreferenceFragment
         }
 
         return super.onPreferenceTreeClick(preference);
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        RotationPolicy.setRotationLockForAccessibility(requireActivity(),
-                !mAccelerometer.isChecked(), /* caller= */ "DisplayRotation");
     }
 
     public static final SummaryProvider SUMMARY_PROVIDER = (context, key) -> {
