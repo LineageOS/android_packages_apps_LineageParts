@@ -69,6 +69,24 @@
       "parentUuid": "c6ebd0cd_6362dcdc",
       "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50513893_c8d84c4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-25T07:38:48Z",
+      "side": 1,
+      "message": "No, should be fast-forwarded.",
+      "parentUuid": "9e9a673a_35ec373c",
+      "revId": "6e62eab8b978246931e9c77eafc9463c0659b54a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
