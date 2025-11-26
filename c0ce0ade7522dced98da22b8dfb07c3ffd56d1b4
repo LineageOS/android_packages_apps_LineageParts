@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e6f864c_5e618f3b",
+        "filename": "src/org/lineageos/lineageparts/health/ChargingLimitPreference.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-26T08:25:07Z",
+      "side": 1,
+      "message": "TODO: remove steps.",
+      "range": {
+        "startLine": 55,
+        "startChar": 8,
+        "endLine": 55,
+        "endChar": 31
+      },
+      "revId": "c0ce0ade7522dced98da22b8dfb07c3ffd56d1b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
