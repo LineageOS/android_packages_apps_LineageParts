@@ -1,17 +1,27 @@
 <!--
      SPDX-FileCopyrightText: 2018 The Android Open Source Project
+     SPDX-FileCopyrightText: 2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/color_mode_preview_height"
-        android:scaleType="centerCrop"
-        android:cropToPadding="true"
-        android:src="@drawable/color_mode_preview"
-        android:contentDescription="@null" />
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/color_mode_preview_height"
+            android:scaleType="centerCrop"
+            android:cropToPadding="true"
+            android:src="@drawable/color_mode_preview"
+            android:contentDescription="@null" />
+
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>
