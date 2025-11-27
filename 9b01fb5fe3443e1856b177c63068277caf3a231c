@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e716593f_6fe0e538",
+        "filename": "res/layout/color_mode_preview.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-11-27T18:15:31Z",
+      "side": 1,
+      "message": "The future is here",
+      "range": {
+        "startLine": 3,
+        "startChar": 29,
+        "endLine": 3,
+        "endChar": 34
+      },
+      "revId": "9b01fb5fe3443e1856b177c63068277caf3a231c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
