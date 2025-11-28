@@ -51,6 +51,24 @@
       "parentUuid": "78897076_bd250c5f",
       "revId": "7fa6c91c5b8aef24c51647bb96099655ae191ea0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f18e20c_6d1555de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-28T07:07:31Z",
+      "side": 1,
+      "message": "I get that, but the same goes for AOSP colors and they didn\u0027t touch it.",
+      "parentUuid": "130a110d_acea1cae",
+      "revId": "7fa6c91c5b8aef24c51647bb96099655ae191ea0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
