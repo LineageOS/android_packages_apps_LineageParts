@@ -33,6 +33,24 @@
       "message": "Not sure about the corner radius. The preview images in AOSP colors preferenceScreen doesn\u0027t have rounded corners.",
       "revId": "7fa6c91c5b8aef24c51647bb96099655ae191ea0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "130a110d_acea1cae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34205
+      },
+      "writtenOn": "2025-11-28T06:32:28Z",
+      "side": 1,
+      "message": "I made it rounded as the square image it used to be doesn\u0027t really fit will with the new M3E UI, all the toggles are rounded and a square image really doesn\u0027t combine well with that.",
+      "parentUuid": "78897076_bd250c5f",
+      "revId": "7fa6c91c5b8aef24c51647bb96099655ae191ea0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
