@@ -13,12 +13,6 @@
         android:layout="@layout/color_mode_preview"
         android:selectable="false" />
 
-    <!-- Color profile -->
-    <ListPreference
-            android:key="live_display_color_profile"
-            android:title="@string/live_display_color_profile_title"
-            android:persistent="false" />
-
     <ListPreference
             android:key="live_display"
             android:title="@string/live_display_mode"
