@@ -9,7 +9,6 @@ import static lineageos.hardware.LiveDisplayManager.FEATURE_ANTI_FLICKER;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_CABC;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
-import static lineageos.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
 import static lineageos.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
 import static lineageos.hardware.LiveDisplayManager.MODE_AUTO;
@@ -35,7 +34,6 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.util.ArrayUtils;
 
-import lineageos.hardware.DisplayMode;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.hardware.LiveDisplayConfig;
 import lineageos.hardware.LiveDisplayManager;
@@ -77,14 +75,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
     private static final String KEY_DISPLAY_COLOR = "color_calibration";
     private static final String KEY_PICTURE_ADJUSTMENT = "picture_adjustment";
 
-    private static final String KEY_LIVE_DISPLAY_COLOR_PROFILE = "live_display_color_profile";
-
-    private static final String COLOR_PROFILE_TITLE =
-            KEY_LIVE_DISPLAY_COLOR_PROFILE + "_%s_title";
-
-    private static final String COLOR_PROFILE_SUMMARY =
-            KEY_LIVE_DISPLAY_COLOR_PROFILE + "_%s_summary";
-
     private final Uri DISPLAY_TEMPERATURE_DAY_URI =
             LineageSettings.System.getUriFor(LineageSettings.System.DISPLAY_TEMPERATURE_DAY);
     private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
@@ -99,13 +89,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
 
     private DisplayTemperature mDisplayTemperature;
 
-    private ListPreference mColorProfile;
-    private String[] mColorProfileSummaries;
-
     private String[] mModeValues;
     private String[] mModeSummaries;
-
-    private boolean mHasDisplayModes = false;
 
     private LiveDisplayManager mLiveDisplayManager;
 
@@ -189,15 +174,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
             liveDisplayPrefs.removePreference(mDisplayTemperature);
         }
 
-        mColorProfile = findPreference(KEY_LIVE_DISPLAY_COLOR_PROFILE);
-        if (liveDisplayPrefs != null && mColorProfile != null
-                && (!config.hasFeature(FEATURE_DISPLAY_MODES) || !updateDisplayModes())) {
-            liveDisplayPrefs.removePreference(mColorProfile);
-        } else {
-            mHasDisplayModes = true;
-            mColorProfile.setOnPreferenceChangeListener(this);
-        }
-
         mOutdoorMode = findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
         if (liveDisplayPrefs != null && mOutdoorMode != null
                 // MODE_AUTO implies automatic outdoor mode on HWC2
@@ -251,7 +227,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
         super.onResume();
         updateModeSummary();
         updateTemperatureSummary();
-        updateColorProfileSummary(null);
         updateReadingModeStatus();
         SettingsHelper.get(getActivity()).startWatching(this, DISPLAY_TEMPERATURE_DAY_URI,
                 DISPLAY_TEMPERATURE_MODE_URI, DISPLAY_TEMPERATURE_NIGHT_URI);
@@ -261,68 +236,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
     public void onPause() {
         super.onPause();
         SettingsHelper.get(getActivity()).stopWatching(this);
-    }
-
-    private boolean updateDisplayModes() {
-        final DisplayMode[] modes = mHardware.getDisplayModes();
-        if (modes == null || modes.length == 0) {
-            return false;
-        }
-
-        final DisplayMode cur = mHardware.getCurrentDisplayMode() != null
-                ? mHardware.getCurrentDisplayMode() : mHardware.getDefaultDisplayMode();
-        int curId = -1;
-        String[] entries = new String[modes.length];
-        String[] values = new String[modes.length];
-        mColorProfileSummaries = new String[modes.length];
-        for (int i = 0; i < modes.length; i++) {
-            values[i] = String.valueOf(modes[i].id);
-            entries[i] = ResourceUtils.getLocalizedString(
-                    getResources(), modes[i].name, COLOR_PROFILE_TITLE);
-
-            // Populate summary
-            String summary = ResourceUtils.getLocalizedString(
-                    getResources(), modes[i].name, COLOR_PROFILE_SUMMARY);
-            if (summary != null) {
-                summary = String.format("%s - %s", entries[i], summary);
-            }
-            mColorProfileSummaries[i] = summary;
-
-            if (cur != null && modes[i].id == cur.id) {
-                curId = cur.id;
-            }
-        }
-        mColorProfile.setEntries(entries);
-        mColorProfile.setEntryValues(values);
-        if (curId >= 0) {
-            mColorProfile.setValue(String.valueOf(curId));
-        }
-
-        return true;
-    }
-
-    private void updateColorProfileSummary(String value) {
-        if (!mHasDisplayModes) {
-            return;
-        }
-
-        if (value == null) {
-            DisplayMode cur = mHardware.getCurrentDisplayMode() != null
-                    ? mHardware.getCurrentDisplayMode() : mHardware.getDefaultDisplayMode();
-            if (cur != null && cur.id >= 0) {
-                value = String.valueOf(cur.id);
-            }
-        }
-
-        int idx = mColorProfile.findIndexOfValue(value);
-        if (idx < 0) {
-            Log.e(TAG, "No summary resource found for profile " + value);
-            mColorProfile.setSummary(null);
-            return;
-        }
-
-        mColorProfile.setValue(value);
-        mColorProfile.setSummary(mColorProfileSummaries[idx]);
     }
 
     private void updateModeSummary() {
@@ -365,16 +278,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mLiveDisplay) {
             mLiveDisplayManager.setMode(Integer.parseInt((String)objValue));
-        } else if (preference == mColorProfile) {
-            int id = Integer.parseInt((String)objValue);
-            Log.i("LiveDisplay", "Setting mode: " + id);
-            for (DisplayMode mode : mHardware.getDisplayModes()) {
-                if (mode.id == id) {
-                    mHardware.setDisplayMode(mode, true);
-                    updateColorProfileSummary((String)objValue);
-                    break;
-                }
-            }
         } else if (preference == mReadingMode) {
             mHardware.set(LineageHardwareManager.FEATURE_READING_ENHANCEMENT, (Boolean) objValue);
         }
@@ -403,9 +306,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
             final LiveDisplayConfig config = LiveDisplayManager.getInstance(context).getConfig();
             final Set<String> result = new ArraySet<>();
 
-            if (!config.hasFeature(FEATURE_DISPLAY_MODES)) {
-                result.add(KEY_LIVE_DISPLAY_COLOR_PROFILE);
-            }
             if (!config.hasFeature(MODE_OUTDOOR)) {
                 result.add(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
             }
@@ -440,29 +340,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment
             }
 
             return result;
-        }
-
-        @Override
-        public List<SearchIndexableRaw> getRawDataToIndex(Context context) {
-            final LiveDisplayConfig config = LiveDisplayManager.getInstance(context).getConfig();
-            final Set<String> result = new ArraySet<>();
-
-            // Add keywords for supported color profiles
-            if (config.hasFeature(FEATURE_DISPLAY_MODES)) {
-                DisplayMode[] modes = LineageHardwareManager.getInstance(context).getDisplayModes();
-                if (modes != null && modes.length > 0) {
-                    for (DisplayMode mode : modes) {
-                        result.add(ResourceUtils.getLocalizedString(
-                                context.getResources(), mode.name, COLOR_PROFILE_TITLE));
-                    }
-                }
-            }
-            final SearchIndexableRaw raw = new SearchIndexableRaw(context);
-            raw.entries = TextUtils.join(" ", result);
-            raw.key = KEY_LIVE_DISPLAY_COLOR_PROFILE;
-            raw.title = context.getString(R.string.live_display_color_profile_title);
-            raw.rank = 2;
-            return Collections.singletonList(raw);
         }
     };
 }
