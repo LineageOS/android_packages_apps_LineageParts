@@ -95,4 +95,9 @@
           android:title="@string/trust_title"
           android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"
           lineage:xmlRes="@xml/trust_preferences" />
+
+    <part android:key="live_display_color_profile"
+          android:title="@string/live_display_color_profile_title"
+          android:fragment="org.lineageos.lineageparts.livedisplay.ColorProfileFragment"
+          lineage:xmlRes="@xml/color_profile_settings" />
 </parts-catalog>
