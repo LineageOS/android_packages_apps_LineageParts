@@ -19,12 +19,12 @@
     <string name="finish">முடிக்கவும்</string>
     <string name="next">அடுத்தது</string>
     <string name="on">இயக்குக</string>
-    <string name="off">அணைக்க</string>
+    <string name="off">முடக்குக</string>
     <string name="yes">ஆம்</string>
     <string name="no">இல்லை</string>
     <string name="search">தேடுக</string>
     <string name="disabled">முடக்கப்பட்டது</string>
-    <string name="enabled">இயல்விக்கப்பட்டது</string>
+    <string name="enabled">இயக்கப்பட்டது</string>
     <string name="privacy_settings_title">தனியுரிமை</string>
     <string name="channel_light_settings_name">ஒளி அமைப்புகள் முன்னோட்டம்</string>
     <string name="edit_light_settings">ஒளி அமைப்புகளைத் திருத்துக</string>
@@ -55,7 +55,7 @@
     <string name="charging_control_mode_auto_title">தன்னியக்க திட்டமிடல்</string>
     <string name="charging_control_mode_auto_summary">அலரிகள் அமைக்கப்பட்டதன் அடிப்படையில் எப்போது மின்னேற்றம் தொடங்க வேண்டும் என்பதைத் தானாகவே தீர்மானிக்க</string>
     <string name="charging_control_mode_custom_title">தனிப்பயன் திட்டமிடல்</string>
-    <string name="charging_control_mode_custom_summary">முழுமையாக மின்னேற்ற இலக்கு நேரத்தை அமைக்க</string>
+    <string name="charging_control_mode_custom_summary">முழுமையாக மின்னேற இலக்கு நேரத்தை அமைக்க</string>
     <string name="charging_control_mode_limit_title">மின்னேற்றத்தை வரம்பிடுக</string>
     <string name="charging_control_mode_limit_summary">மின்னேற்றத்தை ஒரு குறிப்பிட்ட சதவீதத்திற்கு வரம்பிடுக</string>
     <string name="charging_control_start_time_title">தொடக்க நேரம்</string>
@@ -87,13 +87,22 @@
     <string name="notification_light_automagic">தானாக வண்ணங்களைத் தேர்ந்தெடுக்க</string>
     <string name="notification_light_automagic_summary">நானாக வண்ணங்களைத் தேர்ந்தெடுக்கிறது</string>
     <string name="led_notification_title">ஒளி அமைப்புகள்</string>
+    <string name="led_notification_text">அமைப்புகளால் LED ஒளி இயக்கப்பட்டது</string>
     <string name="live_display_summary">படிக்குந் தன்மையை மேம்படுத்தவும், கண் சோர்வைக் குறைக்கவும், நாளின் நேரத்திற்கும் சுற்றுப்புற நிலைமைகளுக்கும் ஏற்ப உமது திரையை மேம்படுத்துக</string>
     <string name="live_display_mode">காட்சி முறை</string>
     <string name="live_display_color_temperature_title">வண்ண வெப்பநிலை</string>
+    <string name="live_display_color_temperature_summary">பகல்: <xliff:g id="day_temperature">%1$d</xliff:g>K  இரவு: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>கெ</string>
     <string name="live_display_day">பகல்</string>
     <string name="live_display_night">இரவு</string>
+    <string name="live_display_outdoor_mode_title">தானியங்கி வெளிப்புறச் சூழல் பயன்முறை</string>
+    <string name="live_display_outdoor_mode_summary">வெளிச்சமான சூரியவொளியின் கீழ் ஒளிர்வையும், செறிவையும் தானாக மிகுதியாக்கும்</string>
+    <string name="live_display_anti_flicker_title">திரைச்சிமிட்டல் தடுப்பு</string>
+    <string name="live_display_anti_flicker_summary">குறைந்த ஒளி நிலையில் மகுதியான சிமிட்டலைத் தடுத்து, கண் அழுத்தத்தைக் குறைக்கும். இது வண்ணத் துல்லியத்தைக் குறைக்கலாம், மேலுஞ்சில பொருள்கள் காண்பிக்கப்படும் விதத்தைப் பாதிக்கலாம்.</string>
     <string name="live_display_low_power_title">மின் பயன்பாட்டைக் குறைக்க</string>
+    <string name="live_display_low_power_summary">தரம் குறையாமல் குறைந்த மின் நுகர்வுக்காகத் திரையைச் சீரமைக்க</string>
     <string name="live_display_enhance_color_title">நிறங்களை மேம்படுத்துக</string>
+    <string name="live_display_enhance_color_summary">தோல் நிறங்கள், காட்சிகள், பிற படங்கள் ஆகியவற்றின் வண்ண அதிர்வை மேம்படுத்துக</string>
     <string name="live_display_color_profile_natural_title">இயற்கை</string>
     <string name="live_display_color_profile_natural_summary">மெய்யான நிறங்களும், தொலி நிறத்தொனிகளும்</string>
     <string name="live_display_color_profile_cinema_title">திரையுலகம்</string>

@@ -35,6 +35,7 @@
     <string name="dialog_delete_message">გსურთ არჩეულის წაშლა?</string>
     <string name="brightness">სიკაშკაშის დონე</string>
     <string name="pulse_length_always_on">მუდმივი</string>
+    <string name="pulse_length_blink">ციმციმი</string>
     <string name="pulse_length_very_short">ძალიან მოკლე</string>
     <string name="pulse_length_short">მოკლე</string>
     <string name="pulse_length_normal">საშუალო</string>
@@ -205,6 +206,7 @@
     <string name="navigation_bar_category">სამოძრაო ზოლი</string>
     <string name="navigation_bar_enable_taskbar_title">დავალებების ზოლი</string>
     <string name="navigation_bar_invert_layout_title">განლაგების შებრუნება</string>
+    <string name="navigation_bar_invert_layout_summary">შეაბრუნებს განლაგებას სამოძრაო ზოლზე</string>
     <string name="navigation_bar_left_summary">სამოძრაო ღილაკების მარცხნივ განთავსება თარაზული რეჟიმისას</string>
     <string name="navigation_bar_back_long_press_title">მოქმედება უკუსვლაზე დიდხანს დაჭერისას</string>
     <string name="navigation_bar_home_long_press_title">მოქმედება მთავარზე დიდხანს დაჭერისას</string>

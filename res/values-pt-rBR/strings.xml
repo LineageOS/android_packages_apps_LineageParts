@@ -11,7 +11,7 @@
     <string name="cancel">Cancelar</string>
     <string name="add">Adicionar</string>
     <string name="choose_app">Selecionar app</string>
-    <string name="reset">Redefinir</string>
+    <string name="reset">Reconfigurar</string>
     <string name="advanced">Avançado</string>
     <string name="settings">Configurações</string>
     <string name="name">Nome</string>
@@ -53,9 +53,9 @@
     <string name="charging_control_enable_title">Ativar o controle de carregamento</string>
     <string name="charging_control_mode_title">Modo de carregamento</string>
     <string name="charging_control_mode_auto_title">Cronograma automático</string>
-    <string name="charging_control_mode_auto_summary">Determinar automaticamente quando iniciar o carregamento com base nos alarmes definidos</string>
+    <string name="charging_control_mode_auto_summary">Determinar automaticamente quando iniciar o carregamento com base nos alarmes configurados</string>
     <string name="charging_control_mode_custom_title">Cronograma personalizado</string>
-    <string name="charging_control_mode_custom_summary">Definir um horário para atingir a carga completa</string>
+    <string name="charging_control_mode_custom_summary">Configure um horário para atingir a carga completa</string>
     <string name="charging_control_mode_limit_title">Limitar o carregamento</string>
     <string name="charging_control_mode_limit_summary">Interromper o carregamento ao atingir uma determinada porcentagem</string>
     <string name="charging_control_start_time_title">Horário inicial</string>
@@ -289,7 +289,7 @@
     <string name="rename_dialog_title">Renomear</string>
     <string name="rename_dialog_message">Digite um novo nome</string>
     <string name="rename_dialog_hint">Digite o nome do perfil</string>
-    <string name="profile_reset_title">Redefinir</string>
+    <string name="profile_reset_title">Reconfigurar</string>
     <string name="profile_reset_message">Apagar todos os perfis e grupos de apps criados e restaurá-los para o padrão?</string>
     <string name="profile_app_delete_confirm">Remover este app?</string>
     <string name="profile_networkmode_2g">2G</string>
@@ -299,7 +299,7 @@
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
     <string name="profile_volumeoverrides_title">Opções de volume</string>
     <string name="connection_state_enabled">Ativar</string>
-    <string name="volume_override_summary">Definir para %1$s/%2$s</string>
+    <string name="volume_override_summary">Configurar para %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Modificar volume</string>
     <string name="profile_profiles_manage">Perfis</string>
     <string name="profile_profile_manage">Gerenciar perfil</string>
@@ -322,7 +322,7 @@
     <string name="profile_lockmode_disabled_summary">Desativar a tela de bloqueio</string>
     <string name="profile_airplanemode_title">Modo avião</string>
     <string name="profile_brightness_title">Brilho da tela</string>
-    <string name="profile_brightness_override_summary">Definir para %1$d%%</string>
+    <string name="profile_brightness_override_summary">Configurar para %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Modificar brilho</string>
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Ponto de acesso Wi\u2011Fi</string>
@@ -514,7 +514,7 @@
     <string name="trust_feature_encryption_value_enabled">Ativada</string>
     <string name="trust_feature_encryption_value_nolock">Requer uma tela de bloqueio segura</string>
     <string name="trust_feature_encryption_value_disabled">Desativada</string>
-    <string name="trust_feature_encryption_explain">Criptografar o seu dispositivo impede o acesso aos seus dados quando o telefone não está inicializado no Android. Isto é importante caso o seu telefone seja roubado e evita que outros consigam ler suas mensagens, contatos e outras informações particulares sem o seu código de acesso.\nPara tornar a criptografia mais eficaz, é necessário definir um código de acesso seguro da tela de bloqueio.</string>
+    <string name="trust_feature_encryption_explain">Criptografar o seu dispositivo impede o acesso aos seus dados quando o telefone não está inicializado no Android. Isto é importante caso o seu telefone seja roubado e evita que outros consigam ler suas mensagens, contatos e outras informações privadas sem a sua senha.\nPara tornar a criptografia mais eficaz, é necessário configurar uma senha segura para tela de bloqueio.</string>
     <string name="trust_category_tools">Privacidade</string>
     <string name="trust_notification_alerts_title">Alertas de segurança</string>
     <string name="trust_warnings_alerts_intro">Você pode selecionar quais os alertas de segurança que deseja receber. Para a sua segurança, recomendamos que ative todos os alertas.</string>
