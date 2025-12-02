@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1e029e2_e2f2a881",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-02T21:56:19Z",
+      "side": 1,
+      "message": "I have removed the rounded corners so that it matches AOSP colors settings.",
+      "revId": "ab5a00c02e874abd06df3d803ba79fc55bce541a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
