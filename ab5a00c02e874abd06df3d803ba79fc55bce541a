@@ -33,6 +33,24 @@
       "message": "In my opinion they should stay, it looks abysmal and doesn\u0027t match the UI at all as a square image.",
       "revId": "ab5a00c02e874abd06df3d803ba79fc55bce541a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89a54dc5_70c34abf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-02T22:00:50Z",
+      "side": 1,
+      "message": "Have you seen AOSP colors settings yet? We are not going to difer from that screen.",
+      "parentUuid": "552b6cb8_71ea2e40",
+      "revId": "ab5a00c02e874abd06df3d803ba79fc55bce541a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
