@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -498,6 +498,9 @@
     <string name="status_bar_brightness_slider_show_never">Never show</string>
     <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
     <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_position_title">Brightness slider position</string>
+    <string name="status_bar_brightness_slider_position_top">Top</string>
+    <string name="status_bar_brightness_slider_position_bottom">Bottom</string>
 
     <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Network traffic monitor</string>
