@@ -107,6 +107,34 @@
             </intent-filter>
         </activity-alias>
 
+        <!-- LiveDisplay settings (Display category) -->
+        <activity-alias
+            android:name=".livedisplay.LiveDisplaySettings"
+            android:exported="true"
+            android:label="@*lineageos.platform:string/live_display_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.LIVEDISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.group_key"
+                android:value="category_key_color" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-10" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/live_display_summary" />
+        </activity-alias>
+
         <!-- Button settings (System category) -->
         <activity-alias
             android:name=".input.ButtonSettings"
