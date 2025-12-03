@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2019,2021,2023 The LineageOS project
+ * SPDX-FileCopyrightText: 2017-2025 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -18,6 +18,7 @@ import androidx.preference.PreferenceManager;
 import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
 import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
 import org.lineageos.lineageparts.input.ButtonSettings;
+import org.lineageos.lineageparts.livedisplay.LiveDisplaySettings;
 
 public class BootReceiver extends BroadcastReceiver {
 
@@ -39,6 +40,7 @@ public class BootReceiver extends BroadcastReceiver {
 
         ButtonSettings.restoreKeyDisabler(ctx);
         ButtonSettings.restoreKeySwapper(ctx);
+        LiveDisplaySettings.restoreLiveDisplay(ctx);
         TouchscreenGestureSettings.restoreTouchscreenGestureStates(ctx);
 
         // Extract the contributors database
