@@ -110,6 +110,14 @@
             android:dependency="qs_show_brightness_slider"
             lineage:requiresConfig="@*android:bool/config_automatic_brightness_available"
             android:defaultValue="true" />
+
+        <lineageos.preference.LineageSecureSettingListPreference
+            android:key="qs_brightness_slider_position"
+            android:title="@string/status_bar_brightness_slider_position_title"
+            android:dependency="qs_show_brightness_slider"
+            android:entries="@array/status_bar_brightness_slider_position_entries"
+            android:entryValues="@array/status_bar_brightness_slider_position_values"
+            android:defaultValue="0" />
     </PreferenceCategory>
 
 </PreferenceScreen>
