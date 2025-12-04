@@ -103,6 +103,23 @@
       "message": "There\u0027s no value-add here, if it wasn\u0027t for the rounded corners. AOSP layout also uses ImageView.",
       "revId": "ab5a00c02e874abd06df3d803ba79fc55bce541a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb5341bd_6c8eaec0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-04T16:08:49Z",
+      "side": 1,
+      "message": "Actually, this is handy because for M3E one can easily add a bottom margin. I was already doing that here: https://review.lineageos.org/c/LineageOS/android_packages_apps_LineageParts/+/461028/21/res/layout/color_mode_preview.xml",
+      "revId": "ab5a00c02e874abd06df3d803ba79fc55bce541a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
