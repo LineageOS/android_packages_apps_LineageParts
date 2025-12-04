@@ -16,6 +16,23 @@
       "message": "Tested on guacamole, dre, and avatrn.",
       "revId": "e068cf8dda9105d56da085bb1b84af73d49d5070",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "44e34ea9_46097837",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2025-12-04T08:55:05Z",
+      "side": 1,
+      "message": "Needs retesting after moving LD to IA settings injection",
+      "revId": "e068cf8dda9105d56da085bb1b84af73d49d5070",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
