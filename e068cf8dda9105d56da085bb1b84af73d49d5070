@@ -33,6 +33,46 @@
       "message": "Needs retesting after moving LD to IA settings injection",
       "revId": "e068cf8dda9105d56da085bb1b84af73d49d5070",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "299053fc_5fe1e6be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-04T09:24:39Z",
+      "side": 1,
+      "message": "NPE when there are no LD color profiles set. Just putting it here for us to follow-up.",
+      "revId": "e068cf8dda9105d56da085bb1b84af73d49d5070",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99a453ef_7904d928",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/ColorProfileFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-04T09:24:39Z",
+      "side": 1,
+      "message": "12-04 09:08:40.703  3735  3735 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field \u0027java.lang.String lineageos.hardware.DisplayMode.name\u0027 on a null object reference in method \u0027java.lang.String org.lineageos.lineageparts.livedisplay.ColorProfileFragment$3.getSummary(android.content.Context, java.lang.String)\u0027\n12-04 09:08:40.703  3735  3735 E AndroidRuntime: \tat org.lineageos.lineageparts.livedisplay.ColorProfileFragment$3.getSummary(ColorProfileFragment.java:363)",
+      "range": {
+        "startLine": 362,
+        "startChar": 0,
+        "endLine": 363,
+        "endChar": 83
+      },
+      "revId": "e068cf8dda9105d56da085bb1b84af73d49d5070",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
