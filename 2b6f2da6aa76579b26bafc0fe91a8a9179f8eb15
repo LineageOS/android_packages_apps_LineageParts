@@ -39,6 +39,30 @@
       },
       "revId": "2b6f2da6aa76579b26bafc0fe91a8a9179f8eb15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34dcb6a4_edfe1600",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-04T14:55:18Z",
+      "side": 1,
+      "message": "Moving on, maybe one day they\u0027ll accept the change.",
+      "parentUuid": "0ff2d9e6_0575ceb3",
+      "range": {
+        "startLine": 126,
+        "startChar": 31,
+        "endLine": 126,
+        "endChar": 49
+      },
+      "revId": "2b6f2da6aa76579b26bafc0fe91a8a9179f8eb15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
