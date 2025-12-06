@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40994c55_98fbb184",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/ColorProfileFragment.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 376,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2025-12-06T17:07:59Z",
+      "side": 1,
+      "message": "Would you prefer this to return null or return context.getString(R.string.empty_summary)",
+      "revId": "aa31d46735ee3c800cd9402760dff66444440427",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
