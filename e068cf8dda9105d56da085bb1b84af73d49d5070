@@ -73,6 +73,30 @@
       },
       "revId": "e068cf8dda9105d56da085bb1b84af73d49d5070",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3179f5b_fa6e0054",
+        "filename": "src/org/lineageos/lineageparts/livedisplay/ColorProfileFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2025-12-06T17:06:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "99a453ef_7904d928",
+      "range": {
+        "startLine": 362,
+        "startChar": 0,
+        "endLine": 363,
+        "endChar": 83
+      },
+      "revId": "e068cf8dda9105d56da085bb1b84af73d49d5070",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
