@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "166d5f03_0339594b",
+        "filename": "res/xml/button_settings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 316,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-08T12:55:20Z",
+      "side": 1,
+      "message": "Need to account for devices defaulting to show panel on the left.",
+      "revId": "8cdba034b5c1c5bf4f12ba914555098564c0ac91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
