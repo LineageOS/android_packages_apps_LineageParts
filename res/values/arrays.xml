@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2012-2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -112,6 +112,17 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- Volume panel position -->
+    <string-array name="volume_panel_position_entries" translatable="false">
+        <item>@string/volume_panel_position_left</item>
+        <item>@string/volume_panel_position_right</item>
+    </string-array>
+
+    <string-array name="volume_panel_position_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
     </string-array>
 
     <string-array name="profile_action_generic_connection_entries" translatable="false">
