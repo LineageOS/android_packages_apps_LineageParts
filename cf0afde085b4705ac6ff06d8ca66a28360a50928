@@ -16,6 +16,29 @@
       "message": "More happy with it now.",
       "revId": "cf0afde085b4705ac6ff06d8ca66a28360a50928",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3443b51a_7ec860ed",
+        "filename": "src/org/lineageos/lineageparts/health/ChargingLimitPreference.java",
+        "patchSetId": 26
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-15T01:35:13Z",
+      "side": 1,
+      "message": "I realized that I could even get rid of this.",
+      "range": {
+        "startLine": 74,
+        "startChar": 4,
+        "endLine": 74,
+        "endChar": 93
+      },
+      "revId": "cf0afde085b4705ac6ff06d8ca66a28360a50928",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
