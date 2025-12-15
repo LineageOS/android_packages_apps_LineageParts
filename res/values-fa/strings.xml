@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,9 @@
     <string name="power_end_call_summary">پایان تماس جاری با فشردن دکمهٔ روشن</string>
     <string name="swap_volume_buttons_title">تغییر جهت</string>
     <string name="swap_volume_buttons_summary">جابه‌جایی دکمه‌های صدا هنگام چرخش صفحه</string>
-    <string name="volume_panel_on_left_title">نمایش پنل در سمت چپ</string>
-    <string name="volume_panel_on_left_summary">نمایش پنل صدا در گوشه سمت چپ نمایشگر</string>
+    <string name="volume_panel_position_title">موقعیت پنل تنظیم صدا</string>
+    <string name="volume_panel_position_left">چپ</string>
+    <string name="volume_panel_position_right">راست</string>
     <string name="button_wake_title">بیدار کردن دستگاه</string>
     <string name="volume_answer_call_title">پاسخ به تماس</string>
     <string name="volume_answer_call_summary">پاسخ دادن به تماس‌های ورودی با فشردن دکمه‌های صدا</string>
@@ -372,6 +373,7 @@
     <string name="status_bar_battery_style_title">سبک وضعیت باتری</string>
     <string name="status_bar_battery_style_icon_portrait">آیکون عمودی</string>
     <string name="status_bar_battery_style_circle">گرد</string>
+    <string name="status_bar_battery_style_dotted_circle">دایره نقطه چین</string>
     <string name="status_bar_battery_style_text">متن</string>
     <string name="status_bar_battery_percentage_title">درصد باتری</string>
     <string name="status_bar_battery_percentage_default">پنهان</string>

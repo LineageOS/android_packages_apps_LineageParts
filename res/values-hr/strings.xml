@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -156,6 +156,8 @@
     <string name="power_end_call_summary">Prekid trenutnog poziva pritiskom na gumb za uključivanje</string>
     <string name="swap_volume_buttons_title">Preorijentacija</string>
     <string name="swap_volume_buttons_summary">Zamijeni tipke za glasnoću kada je zaslon rotiran</string>
+    <string name="volume_panel_position_left">Lijevo</string>
+    <string name="volume_panel_position_right">Desno</string>
     <string name="button_wake_title">Buđenje uređaja</string>
     <string name="volume_answer_call_title">Odgovori na poziv</string>
     <string name="volume_answer_call_summary">Odgovori na dolazne pozive pritiskom na tipke za podešavanje glasnoće</string>

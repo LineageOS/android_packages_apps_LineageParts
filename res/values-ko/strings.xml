@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,8 @@
     <string name="power_end_call_summary">전원 버튼을 눌러 현재 진행 중인 통화 종료</string>
     <string name="swap_volume_buttons_title">버튼 재정렬</string>
     <string name="swap_volume_buttons_summary">화면이 회전되어 있을 때 볼륨 위/아래 버튼 전환</string>
-    <string name="volume_panel_on_left_title">패널을 좌측에 표시</string>
-    <string name="volume_panel_on_left_summary">화면 좌측에 볼륨 패널 표시</string>
+    <string name="volume_panel_position_left">왼쪽</string>
+    <string name="volume_panel_position_right">오른쪽</string>
     <string name="button_wake_title">기기 깨우기</string>
     <string name="volume_answer_call_title">전화 수신</string>
     <string name="volume_answer_call_summary">볼륨 버튼을 눌러 걸려온 전화를 받기</string>

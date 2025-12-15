@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -154,8 +154,8 @@
     <string name="power_end_call_summary">Aktuele oprop beëinigje troch op de oan/út-knop te drukken</string>
     <string name="swap_volume_buttons_title">Oriïntaasje</string>
     <string name="swap_volume_buttons_summary">Folumeknoppen omdraaie as it skerm draaid is</string>
-    <string name="volume_panel_on_left_title">Toan paniel oan de linkerkant</string>
-    <string name="volume_panel_on_left_summary">Jou it folumepaniel wer oan de linkerkant fan it skerm</string>
+    <string name="volume_panel_position_left">Linkerkant</string>
+    <string name="volume_panel_position_right">Rjochterkant</string>
     <string name="button_wake_title">Apparaat wekker meitsje</string>
     <string name="volume_answer_call_title">Oprop beäntwurdzje</string>
     <string name="volume_answer_call_summary">Ynkommende oproppen beäntwurdzje troch op de folumeknoppen te drukken</string>

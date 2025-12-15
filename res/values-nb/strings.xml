@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -148,6 +148,8 @@
     <string name="power_end_call_summary">Avslutt anropet ved å trykke på strømknappen</string>
     <string name="swap_volume_buttons_title">Reorientere</string>
     <string name="swap_volume_buttons_summary">Tilpass volumknappene ettersom skjermen er rotert</string>
+    <string name="volume_panel_position_left">Venstre</string>
+    <string name="volume_panel_position_right">Høyre</string>
     <string name="button_wake_title">Vekke enhet</string>
     <string name="volume_answer_call_title">Besvar anrop</string>
     <string name="volume_answer_call_summary">Besvar innkommende anrop ved å trykke på volumknappene</string>

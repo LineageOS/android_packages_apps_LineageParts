@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,9 @@
     <string name="power_end_call_summary">Termina a chamada atual, pressionando o botão ligar/desligar</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Inverter os botões de volume quando o ecrã é rodado</string>
-    <string name="volume_panel_on_left_title">Mostrar o painel à esquerda</string>
-    <string name="volume_panel_on_left_summary">Mostrar o painel de volume no lado esquerdo do ecrã</string>
+    <string name="volume_panel_position_title">Posição do painel de volume</string>
+    <string name="volume_panel_position_left">canto esquerdo</string>
+    <string name="volume_panel_position_right">canto direito</string>
     <string name="button_wake_title">Acordar o dispositivo</string>
     <string name="volume_answer_call_title">Atender chamada</string>
     <string name="volume_answer_call_summary">Atender chamadas pressionando os botões de volume</string>

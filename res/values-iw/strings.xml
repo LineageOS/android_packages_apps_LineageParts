@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,8 @@
     <string name="power_end_call_summary">סיום שיחה על ידי לחיצה על מקש הדלקת המכשיר</string>
     <string name="swap_volume_buttons_title">הפוך מקשי שמע</string>
     <string name="swap_volume_buttons_summary">הפוך בין מקשי השמע כאשר המסך הפוך</string>
-    <string name="volume_panel_on_left_title">הצגת חלונית משמאל</string>
-    <string name="volume_panel_on_left_summary">הצגת לוח עוצמת קול בצדו השמאלי של המסך</string>
+    <string name="volume_panel_position_left">שמאל</string>
+    <string name="volume_panel_position_right">ימין</string>
     <string name="button_wake_title">התעוררות ההתקן</string>
     <string name="volume_answer_call_title">קבלת שיחה</string>
     <string name="volume_answer_call_summary">קבלת שיחות נכנסות על ידי לחיצה על מקשי עוצמת השמע</string>

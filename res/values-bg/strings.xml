@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,8 @@
     <string name="power_end_call_summary">Прекратяване на текущото повикване чрез натискане на бутона за захранване</string>
     <string name="swap_volume_buttons_title">Преориентиране</string>
     <string name="swap_volume_buttons_summary">Разменя бутоните за сила на звука, когато екрана се завъртян</string>
-    <string name="volume_panel_on_left_title">Покажи от ляво</string>
-    <string name="volume_panel_on_left_summary">Покажи панела за звук от лявата страна на екрана</string>
+    <string name="volume_panel_position_left">Вляво</string>
+    <string name="volume_panel_position_right">Вдясно</string>
     <string name="button_wake_title">Събуди устройството</string>
     <string name="volume_answer_call_title">Отговори на обаждане</string>
     <string name="volume_answer_call_summary">Отговаряне на входящите повиквания чрез натискане на бутоните за звук</string>

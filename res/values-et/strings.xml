@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -158,8 +158,8 @@
     <string name="power_end_call_summary">Lõpeta käesolev kõne toitenupu vajutusega</string>
     <string name="swap_volume_buttons_title">Orienteeri ümber</string>
     <string name="swap_volume_buttons_summary">Vaheta helitugevusklahvid ekraani pööramisel</string>
-    <string name="volume_panel_on_left_title">Kuva paneel vasakul</string>
-    <string name="volume_panel_on_left_summary">Kuvage helitugevuse paneel ekraani vasakul küljel</string>
+    <string name="volume_panel_position_left">Vasak</string>
+    <string name="volume_panel_position_right">Parem</string>
     <string name="button_wake_title">Ärata seade</string>
     <string name="volume_answer_call_title">Vasta kõnele</string>
     <string name="volume_answer_call_summary">Vasta sissetulevatele kõnedele helitugevuse nuppude vajutusega</string>

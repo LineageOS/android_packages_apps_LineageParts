@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,9 @@
     <string name="power_end_call_summary">Končaj trenutni klic s pritiskom na gumb za vklop</string>
     <string name="swap_volume_buttons_title">Preusmeri</string>
     <string name="swap_volume_buttons_summary">Zamenjaj gumba za glasnost, kadar je zaslon zasukan</string>
-    <string name="volume_panel_on_left_title">Prikaži ploščo na levi</string>
-    <string name="volume_panel_on_left_summary">Prikaži ploščo za glasnost na levi strani zaslona</string>
+    <string name="volume_panel_position_title">Položaj plošče za glasnost</string>
+    <string name="volume_panel_position_left">Levi</string>
+    <string name="volume_panel_position_right">Desni</string>
     <string name="button_wake_title">Zbudi napravo</string>
     <string name="volume_answer_call_title">Odgovori na klic</string>
     <string name="volume_answer_call_summary">Odgovori na dohodne klice s pritiskom na gumb za glasnost</string>

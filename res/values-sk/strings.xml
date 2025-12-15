@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -158,8 +158,8 @@
     <string name="power_end_call_summary">Stlačením tlačidla Napájanie sa ukončí aktuálny hovor</string>
     <string name="swap_volume_buttons_title">Preorientovať</string>
     <string name="swap_volume_buttons_summary">Po otočení obrazovky prevrátiť aj zmysel tlačidiel hlasitosti</string>
-    <string name="volume_panel_on_left_title">Zobraziť panel vľavo</string>
-    <string name="volume_panel_on_left_summary">Zobraziť panel hlasitosti na ľavej strane obrazovky</string>
+    <string name="volume_panel_position_left">Vľavo</string>
+    <string name="volume_panel_position_right">Vpravo</string>
     <string name="button_wake_title">Prebudiť zariadenie</string>
     <string name="volume_answer_call_title">Prijať hovor</string>
     <string name="volume_answer_call_summary">Prijať prichádzajúci hovor stlačením niektorého z tlačidiel hlasitosti</string>

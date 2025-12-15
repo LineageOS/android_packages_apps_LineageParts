@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,8 @@
     <string name="power_end_call_summary">Τερματίστε την τρέχουσα κλήση πατώντας το πλήκτρο απενεργοποίησης</string>
     <string name="swap_volume_buttons_title">Επαναπροσανατολισμός</string>
     <string name="swap_volume_buttons_summary">Εναλλαγή των πλήκτρων έντασης κατά την περιστροφή της οθόνης</string>
-    <string name="volume_panel_on_left_title">Εμφάνιση πίνακα στα αριστερά</string>
-    <string name="volume_panel_on_left_summary">Εμφάνιση του πίνακα έντασης στην αριστερή πλευρά της οθόνης</string>
+    <string name="volume_panel_position_left">Αριστερά</string>
+    <string name="volume_panel_position_right">Δεξιά</string>
     <string name="button_wake_title">Αφύπνιση συσκευής</string>
     <string name="volume_answer_call_title">Απάντηση κλήσης</string>
     <string name="volume_answer_call_summary">Απάντηση σε εισερχόμενες κλήσεις πατώντας τα πλήκτρα έντασης</string>

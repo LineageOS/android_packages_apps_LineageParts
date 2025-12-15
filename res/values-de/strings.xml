@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,8 @@
     <string name="power_end_call_summary">Aktuellen Anruf durch Drücken der Ein-/Aus-Taste beenden</string>
     <string name="swap_volume_buttons_title">Umkehren</string>
     <string name="swap_volume_buttons_summary">Belegung der Lautstärketasten umkehren, wenn das Gerät gedreht wird</string>
-    <string name="volume_panel_on_left_title">Regler auf der linken Seite anzeigen</string>
-    <string name="volume_panel_on_left_summary">Lautstärkeregler auf der linken Seite des Bildschirms anzeigen</string>
+    <string name="volume_panel_position_left">linken</string>
+    <string name="volume_panel_position_right">rechten</string>
     <string name="button_wake_title">Gerät aufwecken</string>
     <string name="volume_answer_call_title">Anruf annehmen</string>
     <string name="volume_answer_call_summary">Eingehende Anrufe durch Drücken der Lautstärketaste annehmen</string>

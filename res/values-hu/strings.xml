@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,8 @@
     <string name="power_end_call_summary">A bekapcsoló gomb megnyomása befejezi az aktuális hívást</string>
     <string name="swap_volume_buttons_title">Hangerőgombok felcserélése</string>
     <string name="swap_volume_buttons_summary">Hangerőgombok felcserélése, ha a képernyő el van forgatva</string>
-    <string name="volume_panel_on_left_title">Panelmegjelenítés a bal oldalon</string>
-    <string name="volume_panel_on_left_summary">A hangerőpanelt a képernyő bal oldalán jeleníti meg</string>
+    <string name="volume_panel_position_left">Bal</string>
+    <string name="volume_panel_position_right">Jobb</string>
     <string name="button_wake_title">Eszköz felébresztése</string>
     <string name="volume_answer_call_title">Hívás fogadása</string>
     <string name="volume_answer_call_summary">Bejövő hívások fogadása a hangerő gombok megnyomásával</string>

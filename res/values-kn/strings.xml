@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -152,6 +152,8 @@
     <string name="power_end_call_summary">ಶಕ್ತಿ ಗುಂಡಿಯನ್ನು ಒತ್ತಿ ಪ್ರಸ್ತುತ ಕರೆಯನ್ನು ಅಂತ್ಯಗೊಳಿಸು</string>
     <string name="swap_volume_buttons_title">ದೃಷ್ಟಿಕೋನ ಬದಲಿಸು</string>
     <string name="swap_volume_buttons_summary">ಪರದೆಯನ್ನು ತಿರುಗಿಸಿದಾಗ ಶಬ್ದ ಗುಂಡಿಗಳನ್ನು ಮಾರ‍್ಪುಮಾಡು</string>
+    <string name="volume_panel_position_left">ಎಡ</string>
+    <string name="volume_panel_position_right">ಬಲ</string>
     <string name="button_wake_title">ಸಾಧನವನ್ನು ಎಬ್ಬಿಸು</string>
     <string name="volume_answer_call_title">ಕರೆ ಉತ್ತರಿಸು</string>
     <string name="volume_answer_call_summary">ಶಬ್ದ ಗುಂಡಿಗಳನ್ನು ಒತ್ತಿ ಆಗಮಿತ ಕರೆಗಳನ್ನು ಉತ್ತರಿಸು</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -175,8 +175,8 @@
     <string name="power_end_call_summary">Avsluta det aktuella samtalet genom att trycka på strömknappen</string>
     <string name="swap_volume_buttons_title">Byt plats på volymknapparna</string>
     <string name="swap_volume_buttons_summary">Byt plats på volymknapparna när skärmen är roterad</string>
-    <string name="volume_panel_on_left_title">Visa panelen till vänster</string>
-    <string name="volume_panel_on_left_summary">Visa volympanelen på vänster sida av skärmen</string>
+    <string name="volume_panel_position_left">Vänster</string>
+    <string name="volume_panel_position_right">Höger</string>
     <string name="button_wake_title">Väck enheten</string>
     <string name="volume_answer_call_title">Besvara samtal</string>
     <string name="volume_answer_call_summary">Besvara inkommande samtal genom att trycka på volymknapparna</string>

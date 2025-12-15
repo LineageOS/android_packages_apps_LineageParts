@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,9 @@
     <string name="power_end_call_summary">მიმდინარე ზარის დასრულება ჩართვის ღილაკზე დაჭერით</string>
     <string name="swap_volume_buttons_title">თვითშებრუნება</string>
     <string name="swap_volume_buttons_summary">ხმის ღილაკების შენაცვლება ეკრანის შებრუნებისას</string>
-    <string name="volume_panel_on_left_title">ზოლის მარცხნივ ჩვენება</string>
-    <string name="volume_panel_on_left_summary">ხმის ზოლის გამოჩენა ეკრანის მარცხნივ</string>
+    <string name="volume_panel_position_title">ხმის სამართავის მდებარეობა</string>
+    <string name="volume_panel_position_left">მარცხენა</string>
+    <string name="volume_panel_position_right">მარჯვენა</string>
     <string name="button_wake_title">მოწყობილობის გაღვიძება</string>
     <string name="volume_answer_call_title">ზარზე პასუხი</string>
     <string name="volume_answer_call_summary">შემომავალ ზარებზე პასუხის გაცემა ხმის ღილაკებზე დაჭერით</string>
@@ -372,6 +373,7 @@
     <string name="status_bar_battery_style_title">ბატარეის მაჩვენებლის იერსახე</string>
     <string name="status_bar_battery_style_icon_portrait">შვეული ხატულა</string>
     <string name="status_bar_battery_style_circle">წრიული</string>
+    <string name="status_bar_battery_style_dotted_circle">წყვეტილი წრე</string>
     <string name="status_bar_battery_style_text">წარწერა</string>
     <string name="status_bar_battery_percentage_title">ბატარეის პროცენტი</string>
     <string name="status_bar_battery_percentage_default">დამალული</string>

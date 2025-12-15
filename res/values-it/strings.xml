@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,9 @@
     <string name="power_end_call_summary">Termina la chiamata in corso premendo il tasto di accensione</string>
     <string name="swap_volume_buttons_title">Riorienta</string>
     <string name="swap_volume_buttons_summary">Inverti i tasti del volume quando lo schermo è ruotato</string>
-    <string name="volume_panel_on_left_title">Mostra il pannello a sinistra</string>
-    <string name="volume_panel_on_left_summary">Visualizza il pannello volume sul lato sinistro dello schermo</string>
+    <string name="volume_panel_position_title">Posizione del pannello del volume</string>
+    <string name="volume_panel_position_left">Sinistra</string>
+    <string name="volume_panel_position_right">Destra</string>
     <string name="button_wake_title">Risveglia dispositivo</string>
     <string name="volume_answer_call_title">Rispondi alla chiamata</string>
     <string name="volume_answer_call_summary">Rispondi alla chiamata in arrivo premendo i pulsanti del volume</string>
@@ -372,6 +373,7 @@
     <string name="status_bar_battery_style_title">Stile indicatore batteria</string>
     <string name="status_bar_battery_style_icon_portrait">Icona verticale</string>
     <string name="status_bar_battery_style_circle">Cerchio</string>
+    <string name="status_bar_battery_style_dotted_circle">Cerchio puntinato</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_percentage_title">Percentuale batteria</string>
     <string name="status_bar_battery_percentage_default">Nascosta</string>

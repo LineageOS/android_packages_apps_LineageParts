@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -177,8 +177,9 @@
     <string name="power_end_call_summary">توك مەنبە توپچىسى بېسىلسا نۆۋەتتىكى چاقىرىشنى ئاخىرلاشتۇرىدۇ</string>
     <string name="swap_volume_buttons_title">قايتا تەڭشە</string>
     <string name="swap_volume_buttons_summary">ئېكراننى ئايلاندۇرغاندا ئاۋاز كۇنۇپكىسىنى ئالماشتۇرىدۇ</string>
-    <string name="volume_panel_on_left_title">تاختىنى سولدا كۆرسەت</string>
-    <string name="volume_panel_on_left_summary">ئاۋاز تاختىسىنى ئېكرانىڭ سول تەرىپىدە كۆرسىتىدۇ</string>
+    <string name="volume_panel_position_title">ئاۋاز كۆزنەكچە ئورنى</string>
+    <string name="volume_panel_position_left">سول</string>
+    <string name="volume_panel_position_right">ئوڭ</string>
     <string name="button_wake_title">ئۈسكۈنىنى ئويغات</string>
     <string name="volume_answer_call_title">چاقىرىشقا جاۋاب</string>
     <string name="volume_answer_call_summary">ئاۋاز توپچىسىنى بېسىپ كەلگەن تېلېفونغا جاۋاب قايتۇرىدۇ</string>

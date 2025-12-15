@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -176,8 +176,8 @@
     <string name="power_end_call_summary">按電源鍵結束目前通話</string>
     <string name="swap_volume_buttons_title">調整方向</string>
     <string name="swap_volume_buttons_summary">旋轉螢幕時交換上/下音量鍵</string>
-    <string name="volume_panel_on_left_title">在左側顯示面板</string>
-    <string name="volume_panel_on_left_summary">顯示畫面左側的音量面板</string>
+    <string name="volume_panel_position_left">左</string>
+    <string name="volume_panel_position_right">右</string>
     <string name="button_wake_title">喚醒裝置</string>
     <string name="volume_answer_call_title">接聽電話</string>
     <string name="volume_answer_call_summary">按音量鍵接聽來電</string>
