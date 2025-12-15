@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6f2b528_630faf25",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 24
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-15T00:39:09Z",
+      "side": 1,
+      "message": "Hold on, want to make a slight change in ChargingLimitPreference.",
+      "revId": "ff1e836f2127f190cd3f2bff1eb4af9c561112aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
