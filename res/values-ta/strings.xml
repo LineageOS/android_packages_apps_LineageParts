@@ -103,6 +103,9 @@
     <string name="live_display_low_power_summary">தரம் குறையாமல் குறைந்த மின் நுகர்வுக்காகத் திரையைச் சீரமைக்க</string>
     <string name="live_display_enhance_color_title">நிறங்களை மேம்படுத்துக</string>
     <string name="live_display_enhance_color_summary">தோல் நிறங்கள், காட்சிகள், பிற படங்கள் ஆகியவற்றின் வண்ண அதிர்வை மேம்படுத்துக</string>
+    <string name="live_display_color_profile_title">நிறத் தனியமைப்பு</string>
+    <string name="live_display_color_profile_standard_title">இயல்பு</string>
+    <string name="live_display_color_profile_standard_summary">துல்லியமான நிறங்களும் ஒளிமிக்க வெண்மையும்</string>
     <string name="live_display_color_profile_natural_title">இயற்கை</string>
     <string name="live_display_color_profile_natural_summary">மெய்யான நிறங்களும், தொலி நிறத்தொனிகளும்</string>
     <string name="live_display_color_profile_cinema_title">திரையுலகம்</string>
