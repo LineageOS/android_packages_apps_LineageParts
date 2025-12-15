@@ -244,6 +244,32 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
+        <!-- Touchscreen gesture settings (Gestures category) -->
+        <activity-alias
+            android:name=".gestures.TouchscreenGestureSettings"
+            android:exported="true"
+            android:label="@string/touchscreen_gesture_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.TOUCHSCREEN_GESTURE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.gestures" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-256" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/touchscreen_gesture_settings_summary" />
+        </activity-alias>
+
         <!-- Trust interface (Privacy category) -->
         <activity-alias
             android:name=".trust.TrustPreferences"
