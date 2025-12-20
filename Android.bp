@@ -30,6 +30,7 @@ android_app {
         "androidx.palette_palette",
         "androidx.recyclerview_recyclerview",
         "jsr305",
+        "org.lineageos.lineageparts.flags-aconfig-java",
         "org.lineageos.platform.internal",
         "SettingsLibPreference",
         "SystemUISharedLib",

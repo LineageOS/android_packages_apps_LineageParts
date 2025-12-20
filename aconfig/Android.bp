@@ -1,0 +1,17 @@
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+aconfig_declarations {
+    name: "org.lineageos.lineageparts.flags-aconfig",
+    exportable: true,
+    package: "org.lineageos.lineageparts",
+    container: "system_ext",
+    srcs: ["flags.aconfig"],
+}
+
+java_aconfig_library {
+    name: "org.lineageos.lineageparts.flags-aconfig-java",
+    aconfig_declarations: "org.lineageos.lineageparts.flags-aconfig",
+}

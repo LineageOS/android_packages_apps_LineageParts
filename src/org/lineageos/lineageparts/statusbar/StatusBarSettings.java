@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2014-2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.statusbar;
@@ -21,6 +21,7 @@ import com.android.settingslib.fuelgauge.BatteryUtils;
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 
+import org.lineageos.lineageparts.Flags;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
@@ -98,7 +99,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             getPreferenceScreen().addPreference(mStatusBarClockCategory);
         }
 
-        if (!mBatteryPresent ||
+        if (!mBatteryPresent || !Flags.enableBatteryCustomization() ||
                 TextUtils.delimitedStringContains(curIconBlacklist, ',', "battery")) {
             getPreferenceScreen().removePreference(mStatusBarBatteryCategory);
         } else {

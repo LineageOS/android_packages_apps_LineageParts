@@ -1,0 +1,9 @@
+package: "org.lineageos.lineageparts"
+container: "system_ext"
+
+flag {
+  name: "enable_battery_customization"
+  namespace: "statusbar_settings"
+  description: "Feature flag for enabling battery customization settings."
+  bug: "<none>"
+}
