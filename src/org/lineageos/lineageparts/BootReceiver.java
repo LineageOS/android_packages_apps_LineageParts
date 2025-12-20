@@ -20,10 +20,17 @@ import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
 import org.lineageos.lineageparts.input.ButtonSettings;
 import org.lineageos.lineageparts.livedisplay.LiveDisplaySettings;
 
+import java.util.List;
+
 public class BootReceiver extends BroadcastReceiver {
 
     private static final String TAG = "PartsBootReceiver";
     private static final String ONE_TIME_TUNABLE_RESTORE = "hardware_tunable_restored";
+
+    private static final List<BootRestorable> RESTORABLE_SETTINGS = List.of(
+        new LiveDisplaySettings(),
+        new TouchscreenGestureSettings()
+    );
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
@@ -31,8 +38,9 @@ public class BootReceiver extends BroadcastReceiver {
         ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
 
         // Toggle visibility of some settings regardless of user type
-        LiveDisplaySettings.restoreLiveDisplay(ctx);
-        TouchscreenGestureSettings.restoreTouchscreenGestures(ctx);
+        for (BootRestorable part : RESTORABLE_SETTINGS) {
+            part.restoreAtBoot(ctx);
+        }
 
         if (!ctx.getSystemService(UserManager.class).isPrimaryUser()) {
             Log.d(TAG, "Not running as the primary user, skipping tunable restoration.");
