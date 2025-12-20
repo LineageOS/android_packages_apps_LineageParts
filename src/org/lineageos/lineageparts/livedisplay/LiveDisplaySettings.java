@@ -42,6 +42,7 @@ import lineageos.hardware.LiveDisplayManager;
 import lineageos.preference.SettingsHelper;
 import lineageos.providers.LineageSettings;
 
+import org.lineageos.lineageparts.BootRestorable;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
@@ -54,7 +55,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-public class LiveDisplaySettings extends SettingsPreferenceFragment implements Searchable,
+public class LiveDisplaySettings extends SettingsPreferenceFragment
+        implements BootRestorable, Searchable,
         Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
 
     private static final String TAG = "LiveDisplay";
@@ -386,7 +388,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         updateReadingModeStatus();
     }
 
-    public static void restoreLiveDisplay(Context context) {
+    @Override
+    public void restoreAtBoot(Context context) {
         GenericUtils.setComponentEnabled(context, LiveDisplaySettings.class.getName(),
                 context.getResources().getBoolean(
                         org.lineageos.platform.internal.R.bool.config_enableLiveDisplay));
