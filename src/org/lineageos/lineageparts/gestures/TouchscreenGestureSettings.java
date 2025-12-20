@@ -19,6 +19,7 @@ import androidx.preference.PreferenceManager;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.hardware.TouchscreenGesture;
 
+import org.lineageos.lineageparts.BootRestorable;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
@@ -29,7 +30,7 @@ import org.lineageos.lineageparts.utils.ResourceUtils;
 import java.util.Set;
 
 public class TouchscreenGestureSettings extends SettingsPreferenceFragment
-        implements Searchable {
+        implements BootRestorable, Searchable {
 
     private static final String KEY_TOUCHSCREEN_GESTURE = "touchscreen_gesture";
     private static final String KEY_TOUCHSCREEN_GESTURE_SETTINGS =
@@ -138,7 +139,8 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
         }
     }
 
-    public static void restoreTouchscreenGestures(final Context context) {
+    @Override
+    public void restoreAtBoot(Context context) {
         GenericUtils.setComponentEnabled(context, TouchscreenGestureSettings.class.getName(),
                 isTouchscreenGesturesSupported(context));
     }

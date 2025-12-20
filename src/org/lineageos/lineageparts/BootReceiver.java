@@ -18,7 +18,6 @@ import androidx.preference.PreferenceManager;
 import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
 import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
 import org.lineageos.lineageparts.input.ButtonSettings;
-import org.lineageos.lineageparts.livedisplay.LiveDisplaySettings;
 
 public class BootReceiver extends BroadcastReceiver {
 
@@ -31,8 +30,7 @@ public class BootReceiver extends BroadcastReceiver {
         ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
 
         // Toggle visibility of some settings regardless of user type
-        LiveDisplaySettings.restoreLiveDisplay(ctx);
-        TouchscreenGestureSettings.restoreTouchscreenGestures(ctx);
+        BootRestoreRegistry.restoreAll(ctx);
 
         if (!ctx.getSystemService(UserManager.class).isPrimaryUser()) {
             Log.d(TAG, "Not running as the primary user, skipping tunable restoration.");
