@@ -177,6 +177,7 @@
     <string name="power_end_call_summary">סיום שיחה על ידי לחיצה על מקש הדלקת המכשיר</string>
     <string name="swap_volume_buttons_title">הפוך מקשי שמע</string>
     <string name="swap_volume_buttons_summary">הפוך בין מקשי השמע כאשר המסך הפוך</string>
+    <string name="volume_panel_position_title">מיקום פאנל עוצמת שמע</string>
     <string name="volume_panel_position_left">שמאל</string>
     <string name="volume_panel_position_right">ימין</string>
     <string name="button_wake_title">התעוררות ההתקן</string>
