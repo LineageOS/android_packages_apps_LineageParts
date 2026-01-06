@@ -267,26 +267,18 @@ public class ContributorsCloudFragment extends Fragment implements SearchView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.contributors_search:
-                mSearchView.setQuery("", false);
-                mSelectedContributor = -1;
+        final int itemId = item.getItemId();
+        if (itemId == R.id.contributors_search) {
+            mSearchView.setQuery("", false);
+            mSelectedContributor = -1;
 
-                // Load the data from the database and fill the image
-                ContributorCloudLoaderTask task = new ContributorCloudLoaderTask(false, false);
-                task.execute();
-                break;
-
-            case R.id.contributor_info:
-                showUserInfo(getActivity());
-                break;
-
-            case R.id.contributions_info:
-                showContributorsInfo(getActivity());
-                break;
-
-            default:
-                break;
+            // Load the data from the database and fill the image
+            ContributorCloudLoaderTask task = new ContributorCloudLoaderTask(false, false);
+            task.execute();
+        } else if (itemId == R.id.contributor_info) {
+            showUserInfo(getActivity());
+        } else if (itemId == R.id.contributions_info) {
+            showContributorsInfo(getActivity());
         }
         return super.onContextItemSelected(item);
     }
