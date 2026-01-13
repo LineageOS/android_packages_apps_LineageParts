@@ -3,23 +3,25 @@
      SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ListPreference
         android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
         android:key="network_traffic_mode"
         android:persistent="false"
-        android:summary="%s"
-        android:title="@string/network_traffic_mode_title" />
+        android:title="@string/network_traffic_mode_title"
+        app:useSimpleSummaryProvider="true" />
 
     <ListPreference
         android:entries="@array/network_traffic_position_entries"
         android:entryValues="@array/network_traffic_position_values"
         android:key="network_traffic_position"
         android:persistent="false"
-        android:summary="%s"
-        android:title="@string/network_traffic_position_title" />
+        android:title="@string/network_traffic_position_title"
+        app:useSimpleSummaryProvider="true" />
 
     <lineageos.preference.LineageSecureSettingSwitchPreference
         android:defaultValue="false"
@@ -38,15 +40,15 @@
         android:entryValues="@array/network_traffic_units_values"
         android:key="network_traffic_units"
         android:persistent="false"
-        android:summary="%s"
-        android:title="@string/network_traffic_units_title" />
+        android:title="@string/network_traffic_units_title"
+        app:useSimpleSummaryProvider="true" />
 
     <ListPreference
         android:entries="@array/network_traffic_show_units_entries"
         android:entryValues="@array/network_traffic_show_units_values"
         android:key="network_traffic_show_units"
         android:persistent="false"
-        android:summary="%s"
-        android:title="@string/network_traffic_show_units" />
+        android:title="@string/network_traffic_show_units"
+        app:useSimpleSummaryProvider="true" />
 
 </PreferenceScreen>
