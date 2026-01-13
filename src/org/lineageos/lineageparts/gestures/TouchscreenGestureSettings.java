@@ -78,7 +78,7 @@ public class TouchscreenGestureSettings extends SettingsPreferenceFragment
             setDefaultValue(String.valueOf(defaultAction));
             setIcon(getIconDrawableResourceForAction(defaultAction));
 
-            setSummary("%s");
+            setSummaryProvider(ListPreference.SimpleSummaryProvider.getInstance());
             setDialogTitle(R.string.touchscreen_gesture_action_dialog_title);
             setTitle(ResourceUtils.getLocalizedString(
                     context.getResources(), gesture.name, TOUCHSCREEN_GESTURE_TITLE));

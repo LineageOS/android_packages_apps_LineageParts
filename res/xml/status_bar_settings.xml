@@ -6,6 +6,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:key="status_bar_settings"
     android:title="@string/status_bar_title">
@@ -42,11 +43,11 @@
         <lineageos.preference.LineageSystemSettingListPreference
             android:key="status_bar_clock"
             android:title="@string/status_bar_clock_position_title"
-            android:summary="%s"
             android:dialogTitle="@string/status_bar_clock_position_title"
             android:entries="@array/status_bar_clock_position_entries"
             android:entryValues="@array/status_bar_clock_position_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true" />
 
         <lineageos.preference.SecureSettingSwitchPreference
             android:key="clock_seconds"
@@ -77,20 +78,20 @@
         <lineageos.preference.LineageSystemSettingListPreference
             android:key="status_bar_battery_style"
             android:title="@string/status_bar_battery_style_title"
-            android:summary="%s"
             android:dialogTitle="@string/status_bar_battery_style_title"
             android:entries="@array/status_bar_battery_style_entries"
             android:entryValues="@array/status_bar_battery_style_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true" />
 
         <lineageos.preference.LineageSystemSettingListPreference
             android:key="status_bar_show_battery_percent"
             android:title="@string/status_bar_battery_percentage_title"
-            android:summary="%s"
             android:dialogTitle="@string/status_bar_battery_percentage_title"
             android:entries="@array/status_bar_battery_percentage_entries"
             android:entryValues="@array/status_bar_battery_percentage_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
 
@@ -106,11 +107,11 @@
         <lineageos.preference.LineageSecureSettingListPreference
             android:key="qs_brightness_slider_position"
             android:title="@string/status_bar_brightness_slider_position_title"
-            android:summary="%s"
             android:dependency="qs_show_brightness_slider"
             android:entries="@array/status_bar_brightness_slider_position_entries"
             android:entryValues="@array/status_bar_brightness_slider_position_values"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true" />
 
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
