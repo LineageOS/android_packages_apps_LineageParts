@@ -277,6 +277,7 @@
     <string name="status_bar_battery_title">மின்கலங்காட்டி</string>
     <string name="status_bar_battery_style_title">மின்கல நிலைப்பாணி</string>
     <string name="status_bar_battery_style_circle">வட்டம்</string>
+    <string name="status_bar_battery_style_dotted_circle">புள்ளி வட்டம்</string>
     <string name="status_bar_battery_style_text">உரை</string>
     <string name="status_bar_battery_percentage_title">மின்கல விழுக்காடு</string>
     <string name="status_bar_battery_percentage_default">மறைக்க</string>

@@ -177,6 +177,7 @@
     <string name="power_end_call_summary">Finalizar la llamada en curso pulsando el botón de encendido</string>
     <string name="swap_volume_buttons_title">Reorientar botones</string>
     <string name="swap_volume_buttons_summary">Intercambiar los botones de control de volumen al girar la pantalla</string>
+    <string name="volume_panel_position_title">Posición del panel de volumen</string>
     <string name="volume_panel_position_left">Izquierda</string>
     <string name="volume_panel_position_right">Derecha</string>
     <string name="button_wake_title">Despertar dispositivo</string>
