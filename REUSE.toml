@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
 version = 1
@@ -9,11 +9,11 @@ SPDX-PackageDownloadLocation = "https://github.com/LineageOS/android_packages_ap
 [[annotations]]
 path = "assets/contributors.db"
 precedence = "aggregate"
-SPDX-FileCopyrightText = ["2016 The CyanogenMod Project", "2017-2023 The LineageOS Project"]
+SPDX-FileCopyrightText = ["2016 The CyanogenMod Project", "The LineageOS Project"]
 SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
 path = "res/drawable-nodpi/color_mode_preview.jpg"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2020 The LineageOS Project"
+SPDX-FileCopyrightText = "The LineageOS Project"
 SPDX-License-Identifier = "Apache-2.0"

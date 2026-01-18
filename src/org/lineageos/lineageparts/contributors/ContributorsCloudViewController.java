@@ -1,7 +1,7 @@
 /*
  * SPDX-FileCopyrightText: 2011, 2012 Chris Banes.
  * SPDX-FileCopyrightText: 2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2022-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 

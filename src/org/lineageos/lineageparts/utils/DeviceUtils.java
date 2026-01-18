@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod project
- * SPDX-FileCopyrightText: 2017-2025 The LineageOS project
+ * SPDX-FileCopyrightText: The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.utils;

@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2025 The LineageOS project
+ * SPDX-FileCopyrightText: The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
