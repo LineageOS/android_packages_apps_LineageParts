@@ -177,6 +177,7 @@
     <string name="power_end_call_summary">Τερματίστε την τρέχουσα κλήση πατώντας το πλήκτρο απενεργοποίησης</string>
     <string name="swap_volume_buttons_title">Επαναπροσανατολισμός</string>
     <string name="swap_volume_buttons_summary">Εναλλαγή των πλήκτρων έντασης κατά την περιστροφή της οθόνης</string>
+    <string name="volume_panel_position_title">Θέση πλαισίου έντασης ήχου</string>
     <string name="volume_panel_position_left">Αριστερά</string>
     <string name="volume_panel_position_right">Δεξιά</string>
     <string name="button_wake_title">Αφύπνιση συσκευής</string>
@@ -372,6 +373,7 @@
     <string name="status_bar_battery_style_title">Στυλ επιπέδου μπαταρίας</string>
     <string name="status_bar_battery_style_icon_portrait">Κάθετο εικονίδιο</string>
     <string name="status_bar_battery_style_circle">Κύκλος</string>
+    <string name="status_bar_battery_style_dotted_circle">Διακεκομμένος κύκλος</string>
     <string name="status_bar_battery_style_text">Κείμενο</string>
     <string name="status_bar_battery_percentage_title">Ποσοστό μπαταρίας</string>
     <string name="status_bar_battery_percentage_default">Κρυφό</string>

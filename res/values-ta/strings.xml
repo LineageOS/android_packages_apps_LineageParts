@@ -160,6 +160,7 @@
     <string name="power_end_call_summary">ஆற்றல் பொத்தானை அழுத்தி நடப்பு அழைப்பை முடிக்க</string>
     <string name="swap_volume_buttons_title">மறுசீரமைக்க</string>
     <string name="swap_volume_buttons_summary">திரை சுழற்றப்படும்போது, ஒளியளவுப் பொத்தான்களை இடமாற்றுக</string>
+    <string name="volume_panel_position_title">ஒலியளவுப் பலக நிலை</string>
     <string name="volume_panel_position_left">இடது</string>
     <string name="volume_panel_position_right">வலது</string>
     <string name="button_wake_title">கருவியை எழுப்புக</string>

@@ -177,6 +177,7 @@
     <string name="power_end_call_summary">Mettre fin à l’appel en cours en appuyant sur le bouton marche/arrêt</string>
     <string name="swap_volume_buttons_title">Réorienter</string>
     <string name="swap_volume_buttons_summary">Inverser les boutons de volume lorsque l\'écran pivote</string>
+    <string name="volume_panel_position_title">Position du panneau de volume</string>
     <string name="volume_panel_position_left">Gauche</string>
     <string name="volume_panel_position_right">Droite</string>
     <string name="button_wake_title">Réveiller l\'appareil</string>
@@ -372,6 +373,7 @@
     <string name="status_bar_battery_style_title">Style du niveau de batterie</string>
     <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_dotted_circle">Cercle en pointillés</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_percentage_title">Pourcentage de la batterie</string>
     <string name="status_bar_battery_percentage_default">Masqué</string>

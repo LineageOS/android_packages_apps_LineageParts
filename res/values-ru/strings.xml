@@ -373,6 +373,7 @@
     <string name="status_bar_battery_style_title">Индикатор батареи</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальный значок</string>
     <string name="status_bar_battery_style_circle">Круг</string>
+    <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
     <string name="status_bar_battery_percentage_default">Не показывать</string>

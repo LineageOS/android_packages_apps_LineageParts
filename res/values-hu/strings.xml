@@ -177,6 +177,7 @@
     <string name="power_end_call_summary">A bekapcsoló gomb megnyomása befejezi az aktuális hívást</string>
     <string name="swap_volume_buttons_title">Hangerőgombok felcserélése</string>
     <string name="swap_volume_buttons_summary">Hangerőgombok felcserélése, ha a képernyő el van forgatva</string>
+    <string name="volume_panel_position_title">A hangerőszabályozó pozíciója</string>
     <string name="volume_panel_position_left">Bal</string>
     <string name="volume_panel_position_right">Jobb</string>
     <string name="button_wake_title">Eszköz felébresztése</string>
