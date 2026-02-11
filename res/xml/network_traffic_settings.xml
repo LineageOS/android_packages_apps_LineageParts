@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
@@ -26,6 +26,12 @@
         android:key="network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
         android:title="@string/network_traffic_autohide" />
+
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:defaultValue="false"
+        android:key="network_traffic_hide_arrows"
+        android:summary="@string/network_traffic_hide_arrows_summary"
+        android:title="@string/network_traffic_hide_arrows" />
 
     <ListPreference
         android:entries="@array/network_traffic_units_entries"
