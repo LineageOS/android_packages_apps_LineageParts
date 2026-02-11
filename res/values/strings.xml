@@ -513,6 +513,8 @@
     <string name="network_traffic_position_title">Position</string>
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_hide_arrows">Hide arrows</string>
+    <string name="network_traffic_hide_arrows_summary">Hide upload and download direction arrows</string>
     <string name="network_traffic_units_title">Traffic measurement units</string>
     <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>

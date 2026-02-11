@@ -27,6 +27,12 @@
         android:summary="@string/network_traffic_autohide_summary"
         android:title="@string/network_traffic_autohide" />
 
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:defaultValue="false"
+        android:key="network_traffic_hide_arrows"
+        android:summary="@string/network_traffic_hide_arrows_summary"
+        android:title="@string/network_traffic_hide_arrows" />
+
     <ListPreference
         android:entries="@array/network_traffic_units_entries"
         android:entryValues="@array/network_traffic_units_values"
