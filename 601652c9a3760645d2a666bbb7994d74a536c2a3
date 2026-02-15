@@ -22,6 +22,30 @@
       },
       "revId": "601652c9a3760645d2a666bbb7994d74a536c2a3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b62aa215_8a68080a",
+        "filename": "res/xml/status_bar_settings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 34612
+      },
+      "writtenOn": "2026-02-15T08:05:47Z",
+      "side": 1,
+      "message": "Should this be converted to a custom SummaryProvider?\n\nhttps://developer.android.com/develop/ui/views/components/settings/customize-your-settings#custom-simplesummaryprovider",
+      "parentUuid": "441a073b_35566e38",
+      "range": {
+        "startLine": 67,
+        "startChar": 12,
+        "endLine": 67,
+        "endChar": 32
+      },
+      "revId": "601652c9a3760645d2a666bbb7994d74a536c2a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
