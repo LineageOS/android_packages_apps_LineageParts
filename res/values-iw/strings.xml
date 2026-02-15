@@ -9,7 +9,7 @@
     <string name="loading">טוען\u2026</string>
     <string name="dlg_ok">אישור</string>
     <string name="cancel">ביטול</string>
-    <string name="add">הוסף</string>
+    <string name="add">הוספה</string>
     <string name="choose_app">בחירת יישום</string>
     <string name="reset">איפוס</string>
     <string name="advanced">מתקדם</string>
@@ -248,7 +248,7 @@
     <string name="profile_tabs_bluetooth">Bluetooth</string>
     <string name="profile_tabs_nfc">NFC</string>
     <string name="profile_triggers_header">גורמים שיפעילו את הפרופיל הזה</string>
-    <string name="profile_setup_setup_triggers_title">שלב 1: הוסף גורמים מפעילים</string>
+    <string name="profile_setup_setup_triggers_title">שלב 1: הוספת גורמים מפעילים</string>
     <string name="profile_setup_setup_triggers_title_config">שנה גורמים מפעילים: <xliff:g id="profile_name">%1$s </xliff:g></string>
     <string name="profile_setup_actions_title">שלב 2: הגדר פעולות</string>
     <string name="profile_setup_actions_title_config">הגדר מחדש פעולות</string>
@@ -279,8 +279,8 @@
     <string name="profile_menu_fill_from_state">ייבא את הגדרות המכשיר הנוכחיות</string>
     <string name="profile_remove_current_profile">אין אפשרות למחוק את הפרופיל הנוכחי!</string>
     <string name="profile_app_group_category_title">עקוף התראות</string>
-    <string name="profile_app_group_item_instructions">הוסף או הסר קבוצות</string>
-    <string name="profile_app_group_item_instructions_summary">הוסף או הסר קבוצות יישומים לעקיפת התראות בפרופיל זה</string>
+    <string name="profile_app_group_item_instructions">הוספת או הסרת קבוצות</string>
+    <string name="profile_app_group_item_instructions_summary">הוספת או הסרת קבוצות יישומים לעקיפת התראות בפרופיל זה</string>
     <string name="profile_entries_on">מופעל</string>
     <string name="profile_entries_off">כבוי</string>
     <string name="profile_entries_no_override">ללא עקיפה</string>
