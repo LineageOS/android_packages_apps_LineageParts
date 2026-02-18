@@ -364,12 +364,12 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mCameraSleepOnRelease = findPreference(KEY_CAMERA_SLEEP_ON_RELEASE);
 
             if (!showCameraWake) {
-                prefScreen.removePreference(mCameraWakeScreen);
+                cameraCategory.removePreference(mCameraWakeScreen);
             }
             // Only show 'Camera sleep on release' if the device has a focus key
             if (res.getBoolean(
                     org.lineageos.platform.internal.R.bool.config_singleStageCameraKey)) {
-                prefScreen.removePreference(mCameraSleepOnRelease);
+                cameraCategory.removePreference(mCameraSleepOnRelease);
             }
         }
         if (!hasCameraKey || cameraCategory.getPreferenceCount() == 0) {
