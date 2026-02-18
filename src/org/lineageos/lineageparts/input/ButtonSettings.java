@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod project
- * SPDX-FileCopyrightText: 2017-2025 The LineageOS project
+ * SPDX-FileCopyrightText: 2017-2026 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -364,12 +364,12 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mCameraSleepOnRelease = findPreference(KEY_CAMERA_SLEEP_ON_RELEASE);
 
             if (!showCameraWake) {
-                prefScreen.removePreference(mCameraWakeScreen);
+                cameraCategory.removePreference(mCameraWakeScreen);
             }
             // Only show 'Camera sleep on release' if the device has a focus key
             if (res.getBoolean(
                     org.lineageos.platform.internal.R.bool.config_singleStageCameraKey)) {
-                prefScreen.removePreference(mCameraSleepOnRelease);
+                cameraCategory.removePreference(mCameraSleepOnRelease);
             }
         }
         if (!hasCameraKey || cameraCategory.getPreferenceCount() == 0) {
