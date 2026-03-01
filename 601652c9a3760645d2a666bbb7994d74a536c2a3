@@ -46,6 +46,30 @@
       },
       "revId": "601652c9a3760645d2a666bbb7994d74a536c2a3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9997b263_dac18741",
+        "filename": "res/xml/status_bar_settings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-03-01T15:06:46Z",
+      "side": 1,
+      "message": "Probably, but in a follow-up change.",
+      "parentUuid": "b62aa215_8a68080a",
+      "range": {
+        "startLine": 67,
+        "startChar": 12,
+        "endLine": 67,
+        "endChar": 32
+      },
+      "revId": "601652c9a3760645d2a666bbb7994d74a536c2a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
