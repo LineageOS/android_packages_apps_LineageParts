@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2012 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -42,7 +42,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import java.util.UUID;
 
 public class ProfilesSettings extends SettingsPreferenceFragment
-        implements CompoundButton.OnCheckedChangeListener, Preference.OnPreferenceChangeListener {
+        implements CompoundButton.OnCheckedChangeListener {
     private static final String TAG = "ProfilesSettings";
 
     public static final String EXTRA_PROFILE = "Profile";
@@ -217,7 +217,13 @@ public class ProfilesSettings extends SettingsPreferenceFragment
             ppref.setKey(profile.getUuid().toString());
             ppref.setTitle(profile.getName());
             ppref.setPersistent(false);
-            ppref.setOnPreferenceChangeListener(this);
+            ppref.setOnPreferenceChangeListener((pref, newValue) -> {
+                if (newValue instanceof String) {
+                    setSelectedProfile((String) newValue);
+                    refreshList();
+                }
+                return true;
+            });
             ppref.setSelectable(true);
             ppref.setEnabled(true);
 
@@ -240,14 +246,6 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         });
 
         plist.addPreference(preference);
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (newValue instanceof String) {
-            setSelectedProfile((String) newValue);
-            refreshList();
-        }
-        return true;
     }
 
     private void setSelectedProfile(String key) {
