@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2025 The LineageOS project
+ * SPDX-FileCopyrightText: 2025-2026 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -9,7 +9,35 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.PackageManager;
 
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.TwoStatePreference;
+
+import java.util.function.IntPredicate;
+
 public class GenericUtils {
+
+    public static void bindPreferenceEnabledState(Preference parent, IntPredicate condition,
+            Preference... dependents) {
+        if (parent == null || condition == null || dependents.length == 0) {
+            return;
+        }
+
+        parent.setOnPreferenceChangeListener((preference, newValue) -> {
+            int value = extractValue(newValue);
+            setDependentsEnabled(condition.test(value), dependents);
+            return true;
+        });
+
+        int currentValue = extractCurrentValue(parent);
+        setDependentsEnabled(condition.test(currentValue), dependents);
+    }
+
+    public static void enablePreference(Preference preference, boolean enabled) {
+        if (preference != null) {
+            preference.setEnabled(enabled);
+        }
+    }
 
     public static void setComponentEnabled(Context context, String component, boolean enabled) {
         ComponentName cn = new ComponentName(context, component);
@@ -20,6 +48,30 @@ public class GenericUtils {
 
         if (pm.getComponentEnabledSetting(cn) != newState) {
             pm.setComponentEnabledSetting(cn, newState, PackageManager.DONT_KILL_APP);
+        }
+    }
+
+    private static int extractValue(Object newValue) {
+        if (newValue instanceof String) {
+            return Integer.parseInt((String) newValue);
+        } else if (newValue instanceof Boolean) {
+            return (Boolean) newValue ? 1 : 0;
+        }
+        return 0;
+    }
+
+    private static int extractCurrentValue(Preference parent) {
+        if (parent instanceof ListPreference) {
+            return Integer.parseInt(((ListPreference) parent).getValue());
+        } else if (parent instanceof TwoStatePreference) {
+            return ((TwoStatePreference) parent).isChecked() ? 1 : 0;
+        }
+        return 0;
+    }
+
+    private static void setDependentsEnabled(boolean enabled, Preference... dependents) {
+        for (Preference preference : dependents) {
+            enablePreference(preference, enabled);
         }
     }
 }

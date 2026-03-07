@@ -8,10 +8,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ListPreference
+        android:defaultValue="0"
         android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
         android:key="network_traffic_mode"
-        android:persistent="false"
         android:title="@string/network_traffic_mode_title"
         app:useSimpleSummaryProvider="true" />
 
