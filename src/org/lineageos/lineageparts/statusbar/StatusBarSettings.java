@@ -107,7 +107,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         if (DateFormat.is24HourFormat(getActivity())) {
             mStatusBarAmPm.setEnabled(false);
-            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
+            mStatusBarAmPm.setSummaryProvider(preference -> preference.getContext()
+                    .getString(R.string.status_bar_am_pm_info));
         }
 
         final boolean disallowCenteredClock = DeviceUtils.hasCenteredCutout(getActivity())
