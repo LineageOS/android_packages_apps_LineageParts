@@ -19,14 +19,13 @@ import androidx.preference.PreferenceCategory;
 
 import com.android.settingslib.fuelgauge.BatteryUtils;
 
-import lineageos.preference.LineageSecureSettingListPreference;
-import lineageos.preference.LineageSecureSettingSwitchPreference;
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
+import org.lineageos.lineageparts.utils.GenericUtils;
 
 public class StatusBarSettings extends SettingsPreferenceFragment {
 
@@ -55,12 +54,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
 
     private static final String NETWORK_TRAFFIC_SETTINGS = "network_traffic_settings";
 
-    private LineageSecureSettingListPreference mQsBrightnessSliderPosition;
-    private LineageSecureSettingSwitchPreference mQsShowAutoBrightness;
     private LineageSystemSettingListPreference mQuickPulldown;
     private LineageSystemSettingListPreference mStatusBarClock;
     private LineageSystemSettingListPreference mStatusBarAmPm;
-    private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
 
     private PreferenceCategory mStatusBarBatteryCategory;
     private PreferenceCategory mStatusBarClockCategory;
@@ -77,14 +73,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
 
         mStatusBarClockCategory = getPreferenceScreen().findPreference(CATEGORY_CLOCK);
 
-        mStatusBarBatteryShowPercent = findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
-        LineageSystemSettingListPreference statusBarBattery =
-                findPreference(STATUS_BAR_BATTERY_STYLE);
-        statusBarBattery.setOnPreferenceChangeListener((preference, newValue) -> {
-            enableStatusBarBatteryDependents(Integer.parseInt((String) newValue));
-            return true;
-        });
-        enableStatusBarBatteryDependents(statusBarBattery.getIntValue(2));
+        GenericUtils.bindPreferenceEnabledState(findPreference(STATUS_BAR_BATTERY_STYLE),
+                value -> value != STATUS_BAR_BATTERY_STYLE_TEXT,
+                findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT));
 
         Intent intent = BatteryUtils.getBatteryIntent(getContext());
         if (intent != null) {
@@ -92,15 +83,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
         }
         mStatusBarBatteryCategory = getPreferenceScreen().findPreference(CATEGORY_BATTERY);
 
-        mQsShowAutoBrightness = findPreference(QS_SHOW_AUTO_BRIGHTNESS);
-        mQsBrightnessSliderPosition = findPreference(QS_BRIGHTNESS_SLIDER_POSITION);
-        LineageSecureSettingListPreference qsShowBrightnessSlider =
-                findPreference(QS_SHOW_BRIGHTNESS_SLIDER);
-        qsShowBrightnessSlider.setOnPreferenceChangeListener((preference, newValue) -> {
-            enableQuickSettingsBrightnessSliderDependents(Integer.parseInt((String) newValue));
-            return true;
-        });
-        enableQuickSettingsBrightnessSliderDependents(qsShowBrightnessSlider.getIntValue(1));
+        GenericUtils.bindPreferenceEnabledState(findPreference(QS_SHOW_BRIGHTNESS_SLIDER),
+                value -> value != QS_BRIGHTNESS_SLIDER_HIDDEN,
+                findPreference(QS_BRIGHTNESS_SLIDER_POSITION),
+                findPreference(QS_SHOW_AUTO_BRIGHTNESS));
 
         mQuickPulldown = findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setSummaryProvider(preference -> {
@@ -173,17 +159,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries);
         }
-    }
-
-    private void enableQuickSettingsBrightnessSliderDependents(int showBrightnessSlider) {
-        boolean enabled = showBrightnessSlider != QS_BRIGHTNESS_SLIDER_HIDDEN;
-
-        mQsBrightnessSliderPosition.setEnabled(enabled);
-        mQsShowAutoBrightness.setEnabled(enabled);
-    }
-
-    private void enableStatusBarBatteryDependents(int batteryIconStyle) {
-        mStatusBarBatteryShowPercent.setEnabled(batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
     }
 
     private int getNetworkTrafficStatus() {
