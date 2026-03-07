@@ -5,6 +5,8 @@
  */
 package org.lineageos.lineageparts.statusbar;
 
+import static org.lineageos.lineageparts.utils.ResourceUtils.isRtlMode;
+
 import android.content.Intent;
 import android.os.BatteryManager;
 import android.os.Bundle;
@@ -115,7 +117,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     || getNetworkTrafficStatus() != 0;
 
         // Adjust status bar preferences for RTL
-        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+        if (isRtlMode(getResources())) {
             if (disallowCenteredClock) {
                 mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
@@ -170,9 +172,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 summary = getResources().getString(
                     R.string.status_bar_quick_qs_pulldown_summary,
                     getResources().getString(
-                        (value == PULLDOWN_DIR_LEFT) ^
-                        (getResources().getConfiguration().getLayoutDirection()
-                            == View.LAYOUT_DIRECTION_RTL)
+                        ((value == PULLDOWN_DIR_LEFT) ^ isRtlMode(getResources()))
                         ? R.string.status_bar_quick_qs_pulldown_summary_left
                         : R.string.status_bar_quick_qs_pulldown_summary_right));
                 break;
