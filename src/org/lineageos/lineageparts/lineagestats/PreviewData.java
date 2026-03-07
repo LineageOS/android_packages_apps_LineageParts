@@ -27,13 +27,12 @@ public class PreviewData extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.preview_data);
 
-        final PreferenceScreen prefSet = getPreferenceScreen();
         final Context context = requireActivity();
 
-        prefSet.findPreference(UNIQUE_ID).setSummary(Utilities.getUniqueID(context));
-        prefSet.findPreference(DEVICE).setSummary(Utilities.getDevice());
-        prefSet.findPreference(VERSION).setSummary(Utilities.getModVersion());
-        prefSet.findPreference(COUNTRY).setSummary(Utilities.getCountryCode(context));
-        prefSet.findPreference(CARRIER).setSummary(Utilities.getCarrier(context));
+        findPreference(UNIQUE_ID).setSummaryProvider(preference -> Utilities.getUniqueID(context));
+        findPreference(DEVICE).setSummaryProvider(preference -> Utilities.getDevice());
+        findPreference(VERSION).setSummaryProvider(preference -> Utilities.getModVersion());
+        findPreference(COUNTRY).setSummaryProvider(preference -> Utilities.getCountryCode(context));
+        findPreference(CARRIER).setSummaryProvider(preference -> Utilities.getCarrier(context));
     }
 }

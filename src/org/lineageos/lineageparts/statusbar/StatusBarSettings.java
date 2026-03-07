@@ -8,6 +8,7 @@ package org.lineageos.lineageparts.statusbar;
 import static org.lineageos.lineageparts.utils.ResourceUtils.isRtlMode;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.BatteryManager;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -81,8 +82,25 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryCategory = getPreferenceScreen().findPreference(CATEGORY_BATTERY);
 
         mQuickPulldown = findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
-        mQuickPulldown.setOnPreferenceChangeListener(this);
-        updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+        mQuickPulldown.setSummaryProvider(preference -> {
+            int value = Integer.parseInt(
+                    ((LineageSystemSettingListPreference) preference).getValue());
+            Resources res = preference.getContext().getResources();
+
+            switch (value) {
+                case PULLDOWN_DIR_NONE:
+                    return res.getString(R.string.status_bar_quick_qs_pulldown_off);
+                case PULLDOWN_DIR_LEFT:
+                case PULLDOWN_DIR_RIGHT:
+                    int side = (value == PULLDOWN_DIR_LEFT) ^ isRtlMode(res)
+                            ? R.string.status_bar_quick_qs_pulldown_summary_left
+                            : R.string.status_bar_quick_qs_pulldown_summary_right;
+
+                    return res.getString(R.string.status_bar_quick_qs_pulldown_summary,
+                            res.getString(side));
+            }
+            return "";
+        });
     }
 
     @Override
@@ -139,41 +157,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         int value = Integer.parseInt((String) newValue);
-        String key = preference.getKey();
-        switch (key) {
-            case STATUS_BAR_QUICK_QS_PULLDOWN:
-                updateQuickPulldownSummary(value);
-                break;
-            case STATUS_BAR_BATTERY_STYLE:
-                enableStatusBarBatteryDependents(value);
-                break;
+        if (STATUS_BAR_BATTERY_STYLE.equals(preference.getKey())) {
+            enableStatusBarBatteryDependents(value);
         }
         return true;
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
         mStatusBarBatteryShowPercent.setEnabled(batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
-    }
-
-    private void updateQuickPulldownSummary(int value) {
-        String summary="";
-        switch (value) {
-            case PULLDOWN_DIR_NONE:
-                summary = getResources().getString(
-                    R.string.status_bar_quick_qs_pulldown_off);
-                break;
-
-            case PULLDOWN_DIR_LEFT:
-            case PULLDOWN_DIR_RIGHT:
-                summary = getResources().getString(
-                    R.string.status_bar_quick_qs_pulldown_summary,
-                    getResources().getString(
-                        (value == PULLDOWN_DIR_LEFT) ^ isRtlMode(getResources())
-                        ? R.string.status_bar_quick_qs_pulldown_summary_left
-                        : R.string.status_bar_quick_qs_pulldown_summary_right));
-                break;
-        }
-        mQuickPulldown.setSummary(summary);
     }
 
     private int getNetworkTrafficStatus() {
