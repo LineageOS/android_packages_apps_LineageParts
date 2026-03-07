@@ -15,7 +15,6 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 
-import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
 import com.android.settingslib.fuelgauge.BatteryUtils;
@@ -27,8 +26,7 @@ import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
 
-public class StatusBarSettings extends SettingsPreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+public class StatusBarSettings extends SettingsPreferenceFragment {
 
     private static final String CATEGORY_BATTERY = "status_bar_battery_key";
     private static final String CATEGORY_CLOCK = "status_bar_clock_key";
@@ -72,7 +70,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryShowPercent = findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
         LineageSystemSettingListPreference statusBarBattery =
                 findPreference(STATUS_BAR_BATTERY_STYLE);
-        statusBarBattery.setOnPreferenceChangeListener(this);
+        statusBarBattery.setOnPreferenceChangeListener((preference, newValue) -> {
+            enableStatusBarBatteryDependents(Integer.parseInt((String) newValue));
+            return true;
+        });
         enableStatusBarBatteryDependents(statusBarBattery.getIntValue(2));
 
         Intent intent = BatteryUtils.getBatteryIntent(getContext());
@@ -152,15 +153,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries);
         }
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        int value = Integer.parseInt((String) newValue);
-        if (STATUS_BAR_BATTERY_STYLE.equals(preference.getKey())) {
-            enableStatusBarBatteryDependents(value);
-        }
-        return true;
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
