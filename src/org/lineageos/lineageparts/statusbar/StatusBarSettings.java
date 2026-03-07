@@ -65,7 +65,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         mStatusBarAmPm = findPreference(STATUS_BAR_AM_PM);
         mStatusBarClock = findPreference(STATUS_BAR_CLOCK_STYLE);
-        mStatusBarClock.setOnPreferenceChangeListener(this);
 
         mStatusBarClockCategory = getPreferenceScreen().findPreference(CATEGORY_CLOCK);
 
@@ -144,8 +143,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         switch (key) {
             case STATUS_BAR_QUICK_QS_PULLDOWN:
                 updateQuickPulldownSummary(value);
-                break;
-            case STATUS_BAR_CLOCK_STYLE:
                 break;
             case STATUS_BAR_BATTERY_STYLE:
                 enableStatusBarBatteryDependents(value);
