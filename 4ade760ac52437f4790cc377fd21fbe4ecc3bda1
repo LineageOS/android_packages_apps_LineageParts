@@ -16,6 +16,24 @@
       "message": "Could you please check if this applies here as well?",
       "revId": "4ade760ac52437f4790cc377fd21fbe4ecc3bda1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f16ce03f_15531425",
+        "filename": "src/org/lineageos/lineageparts/statusbar/StatusBarSettings.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-03-07T15:30:43Z",
+      "side": 0,
+      "message": "Yes, I will check.",
+      "parentUuid": "d291d188_93fc2399",
+      "revId": "4ade760ac52437f4790cc377fd21fbe4ecc3bda1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
