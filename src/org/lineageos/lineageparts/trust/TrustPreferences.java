@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2018-2026 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -65,6 +65,14 @@ public class TrustPreferences extends SettingsPreferenceFragment {
                 showInfo(R.string.trust_feature_encryption_explain));
         mSmsLimitPref.setOnPreferenceChangeListener((p, v) ->
                 onSmsLimitChanged(Integer.parseInt((String) v)));
+        mSmsLimitPref.setSummaryProvider(preference -> {
+            int value = Integer.parseInt(((ListPreference) preference).getValue());
+            return value > 0
+                    ? preference.getContext().getString(
+                            R.string.sms_security_check_limit_summary, String.valueOf(value))
+                    : preference.getContext().getString(
+                            R.string.sms_security_check_limit_summary_none);
+        });
 
         mWarnSELinuxPref.setOnPreferenceChangeListener((p, v) ->
                 onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_SELINUX));
@@ -196,18 +204,9 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         return true;
     }
 
-    private void updateSmsSecuritySummary(int selection) {
-        String value = String.valueOf(selection);
-        String message = selection > 0
-                ? requireContext().getString(R.string.sms_security_check_limit_summary, value)
-                : requireContext().getString(R.string.sms_security_check_limit_summary_none);
-        mSmsLimitPref.setSummary(message);
-    }
-
     private boolean onSmsLimitChanged(Integer value) {
         Settings.Global.putInt(requireContext().getContentResolver(),
                 Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, value);
-        updateSmsSecuritySummary(value);
         return true;
     }
 
@@ -223,7 +222,6 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         }
         return success;
     }
-
 
     private boolean isTelephony() {
         PackageManager pm = getContext().getPackageManager();
