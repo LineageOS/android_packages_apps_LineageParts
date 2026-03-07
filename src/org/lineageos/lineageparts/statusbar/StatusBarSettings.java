@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2014-2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.statusbar;
@@ -107,7 +107,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         if (DateFormat.is24HourFormat(getActivity())) {
             mStatusBarAmPm.setEnabled(false);
-            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
+            mStatusBarAmPm.setSummaryProvider(preference -> preference.getContext()
+                    .getString(R.string.status_bar_am_pm_info));
         }
 
         final boolean disallowCenteredClock = DeviceUtils.hasCenteredCutout(getActivity())
