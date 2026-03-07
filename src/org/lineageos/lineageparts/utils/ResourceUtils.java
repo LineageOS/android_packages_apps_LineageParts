@@ -1,11 +1,13 @@
 /*
  * SPDX-FileCopyrightText: 2016 The CyanogenMod project
+ * SPDX-FileCopyrightText: 2026 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.utils;
 
 import android.content.res.Resources;
 import android.util.Log;
+import android.view.View;
 
 public class ResourceUtils {
 
@@ -29,5 +31,9 @@ public class ResourceUtils {
         } else {
             return res.getString(resId);
         }
+    }
+
+    public static boolean isRtlMode(final Resources res) {
+        return res.getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;
     }
 }
