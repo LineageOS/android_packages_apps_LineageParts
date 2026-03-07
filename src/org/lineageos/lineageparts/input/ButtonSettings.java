@@ -45,6 +45,7 @@ import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.search.BaseSearchIndexProvider;
 import org.lineageos.lineageparts.search.Searchable;
 import org.lineageos.lineageparts.utils.DeviceUtils;
+import org.lineageos.lineageparts.utils.GenericUtils;
 import org.lineageos.lineageparts.utils.TelephonyUtils;
 
 import java.util.ArrayList;
@@ -522,6 +523,14 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
         mEdgeLongSwipeAction.setEntries(actionEntries);
         mEdgeLongSwipeAction.setEntryValues(actionValues);
+
+        GenericUtils.bindPreferenceEnabledState(mDisableNavigationKeys,
+                value -> value == 0,
+                mBackLongPressAction,
+                mHomeAnswerCall, mHomeLongPressAction, mHomeDoubleTapAction,
+                mMenuPressAction, mMenuLongPressAction,
+                mAssistPressAction, mAssistLongPressAction,
+                mAppSwitchPressAction, mAppSwitchLongPressAction);
     }
 
     @Override
@@ -651,12 +660,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
         }
     }
 
-    private void enablePreference(Preference pref, boolean enabled) {
-        if (pref != null) {
-            pref.setEnabled(enabled);
-        }
-    }
-
     private void writeDisableNavkeysOption(boolean enabled) {
         LineageSettings.System.putIntForUser(requireActivity().getContentResolver(),
                 LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
@@ -674,22 +677,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private void updateDisableNavkeysCategories(boolean navbarEnabled, boolean force) {
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
-        /* Disable hw-key options if they're disabled */
-        final PreferenceCategory homeCategory =
-                prefScreen.findPreference(CATEGORY_HOME);
-        final PreferenceCategory backCategory =
-                prefScreen.findPreference(CATEGORY_BACK);
-        final PreferenceCategory menuCategory =
-                prefScreen.findPreference(CATEGORY_MENU);
-        final PreferenceCategory assistCategory =
-                prefScreen.findPreference(CATEGORY_ASSIST);
-        final PreferenceCategory appSwitchCategory =
-                prefScreen.findPreference(CATEGORY_APPSWITCH);
-        final ButtonBacklightBrightness backlight =
-                (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
-
         /* Toggle backlight control depending on navbar state, force it to
            off if enabling */
+        final ButtonBacklightBrightness backlight =
+                (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
         if (backlight != null) {
             backlight.setEnabled(!navbarEnabled);
             backlight.updateSummary();
@@ -714,26 +705,6 @@ public class ButtonSettings extends SettingsPreferenceFragment
                     mNavigationPreferencesCat.removePreference(mEdgeLongSwipeAction);
                 }
             }
-        }
-        if (backCategory != null) {
-            enablePreference(mBackLongPressAction, !navbarEnabled);
-        }
-        if (homeCategory != null) {
-            enablePreference(mHomeAnswerCall, !navbarEnabled);
-            enablePreference(mHomeLongPressAction, !navbarEnabled);
-            enablePreference(mHomeDoubleTapAction, !navbarEnabled);
-        }
-        if (menuCategory != null) {
-            enablePreference(mMenuPressAction, !navbarEnabled);
-            enablePreference(mMenuLongPressAction, !navbarEnabled);
-        }
-        if (assistCategory != null) {
-            enablePreference(mAssistPressAction, !navbarEnabled);
-            enablePreference(mAssistLongPressAction, !navbarEnabled);
-        }
-        if (appSwitchCategory != null) {
-            enablePreference(mAppSwitchPressAction, !navbarEnabled);
-            enablePreference(mAppSwitchLongPressAction, !navbarEnabled);
         }
     }
 
