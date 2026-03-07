@@ -13,18 +13,20 @@ import android.os.Bundle;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 
-import lineageos.preference.LineageSecureSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
+import org.lineageos.lineageparts.utils.GenericUtils;
 
 public class NetworkTrafficSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener  {
 
     private static final String TAG = "NetworkTrafficSettings";
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
+
+    private static final int NETWORK_TRAFFIC_MODE_DISABLED = 0;
 
     private static final int POSITION_START = 0;
     private static final int POSITION_CENTER = 1;
@@ -42,8 +44,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
     private ListPreference mNetTrafficMode;
     private ListPreference mNetTrafficPosition;
-    private LineageSecureSettingSwitchPreference mNetTrafficAutohide;
-    private LineageSecureSettingSwitchPreference mNetTrafficHideArrows;
     private ListPreference mNetTrafficUnits;
     private ListPreference mNetTrafficShowUnits;
 
@@ -56,10 +56,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mNetTrafficMode = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_MODE);
-        mNetTrafficMode.setOnPreferenceChangeListener(this);
-        int mode = LineageSettings.Secure.getInt(resolver,
-                LineageSettings.Secure.NETWORK_TRAFFIC_MODE, 0);
-        mNetTrafficMode.setValue(String.valueOf(mode));
 
         final boolean hasCenteredCutout = DeviceUtils.hasCenteredCutout(getActivity());
         final boolean disallowCenteredTraffic = hasCenteredCutout || getClockPosition() == 1;
@@ -96,12 +92,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         }
         mNetTrafficPosition.setValue(String.valueOf(position));
 
-        mNetTrafficAutohide = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
-        mNetTrafficAutohide.setOnPreferenceChangeListener(this);
-
-        mNetTrafficHideArrows = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_HIDE_ARROWS);
-        mNetTrafficHideArrows.setOnPreferenceChangeListener(this);
-
         mNetTrafficUnits = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_UNITS);
         mNetTrafficUnits.setOnPreferenceChangeListener(this);
         int units = LineageSettings.Secure.getInt(resolver,
@@ -112,7 +102,13 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
         adjustShowUnitsState(units, resolver);
 
-        updateEnabledStates(mode);
+        GenericUtils.bindPreferenceEnabledState(mNetTrafficMode,
+                value -> value != NETWORK_TRAFFIC_MODE_DISABLED,
+                mNetTrafficPosition,
+                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE),
+                findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_HIDE_ARROWS),
+                mNetTrafficUnits,
+                mNetTrafficShowUnits);
     }
 
     @Override
@@ -121,7 +117,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             int mode = Integer.parseInt((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
                     LineageSettings.Secure.NETWORK_TRAFFIC_MODE, mode);
-            updateEnabledStates(mode);
         } else if (preference == mNetTrafficPosition) {
             int position = Integer.parseInt((String) newValue);
             LineageSettings.Secure.putInt(getActivity().getContentResolver(),
@@ -170,15 +165,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
                         LineageSettings.Secure.NETWORK_TRAFFIC_SHOW_UNITS, showUnits);
         }
         mNetTrafficShowUnits.setValue(String.valueOf(showUnits));
-    }
-
-    private void updateEnabledStates(int mode) {
-        final boolean enabled = mode != 0;
-        mNetTrafficPosition.setEnabled(enabled);
-        mNetTrafficAutohide.setEnabled(enabled);
-        mNetTrafficHideArrows.setEnabled(enabled);
-        mNetTrafficUnits.setEnabled(enabled);
-        mNetTrafficShowUnits.setEnabled(enabled);
     }
 
     private int getClockPosition() {
