@@ -179,9 +179,9 @@
     <string name="volume_panel_on_left_title">Vis volumfeltet til venstre</string>
     <string name="volume_panel_on_left_summary">Vis volumfeltet på venstre side av skjermen</string>
     <string name="button_wake_title">Vekkja eining</string>
-    <string name="volume_answer_call_title">Svara på samtale</string>
+    <string name="volume_answer_call_title">Svar på samtale</string>
     <string name="volume_answer_call_summary">Svara på innkomande samtalar ved å trykkja på volumknappane</string>
-    <string name="home_answer_call_title">Svara på samtale</string>
+    <string name="home_answer_call_title">Svar på samtale</string>
     <string name="home_answer_call_summary">Svara på innkomande samtalar ved å trykkja på heimknappen</string>
     <string name="extras_title">Tillegg</string>
     <string name="additional_buttons_title">Ekstra knappar</string>
