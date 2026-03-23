@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a831398_327ffdb2",
+        "filename": "src/org/lineageos/lineageparts/trust/TrustPreferences.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 15346
+      },
+      "writtenOn": "2026-03-23T02:42:53Z",
+      "side": 1,
+      "message": "Remove spdx license year like what mike has been doing?",
+      "range": {
+        "startLine": 2,
+        "startChar": 32,
+        "endLine": 2,
+        "endChar": 36
+      },
+      "revId": "0f8dc65766c9878031798843b54872c924996134",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
