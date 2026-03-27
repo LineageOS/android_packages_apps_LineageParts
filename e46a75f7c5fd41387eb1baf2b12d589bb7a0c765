@@ -16,6 +16,24 @@
       "message": "```suggestion\nLineageParts: Add an option to take screenshot using hw keys\n```",
       "revId": "e46a75f7c5fd41387eb1baf2b12d589bb7a0c765",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8fb3efd1_5ecfd7f1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 35436
+      },
+      "writtenOn": "2026-03-27T11:31:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f24df881_f416a7f8",
+      "revId": "e46a75f7c5fd41387eb1baf2b12d589bb7a0c765",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
