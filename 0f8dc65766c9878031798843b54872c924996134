@@ -22,6 +22,30 @@
       },
       "revId": "0f8dc65766c9878031798843b54872c924996134",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85a942d6_9679a8af",
+        "filename": "src/org/lineageos/lineageparts/trust/TrustPreferences.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-04-04T13:23:13Z",
+      "side": 1,
+      "message": "We haven\u0027t done that here, yet.",
+      "parentUuid": "4a831398_327ffdb2",
+      "range": {
+        "startLine": 2,
+        "startChar": 32,
+        "endLine": 2,
+        "endChar": 36
+      },
+      "revId": "0f8dc65766c9878031798843b54872c924996134",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
