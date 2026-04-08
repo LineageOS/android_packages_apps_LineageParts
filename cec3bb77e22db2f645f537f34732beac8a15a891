@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3c81f2a_3919561a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-04-08T21:03:08Z",
+      "side": 1,
+      "message": "This solves hiding deps of brightness slider pref (in status bar settings).",
+      "revId": "cec3bb77e22db2f645f537f34732beac8a15a891",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
