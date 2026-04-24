@@ -1,5 +1,5 @@
 # SPDX-FileCopyrightText: 2016 The CyanogenMod Project
-# SPDX-FileCopyrightText: 2017-2020 The LineageOS Project
+# SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
 # Keep all Fragments in this package, which are used by reflection.
@@ -29,6 +29,11 @@
   *** onClick*(...);
 }
 
+# Keep remote preference updater
+-keep public class * extends lineageos.preference.RemotePreferenceUpdater {
+    *** fillResultExtras(...);
+}
+
 -keep public class * extends androidx.preference.* {
     public <init>(android.content.Context, android.util.AttributeSet);
 }
@@ -36,4 +41,5 @@
 # Keep specific fields used via reflection.
 -keepclassmembers class * {
     public static ** SEARCH_INDEX_DATA_PROVIDER;
+    public static ** SUMMARY_PROVIDER;
 }
