@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d50365b0_1036d242",
+        "filename": "proguard.flags",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-04-24T19:41:12Z",
+      "side": 1,
+      "message": "PartsUpdater.Refreshable",
+      "parentUuid": "dd96a96c_fc5be05c",
+      "revId": "236d80a172b75761683609c146d005234b195f76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d3de01e9_53cf7712",
         "filename": "proguard.flags",
         "patchSetId": 3
@@ -31,6 +49,24 @@
       "writtenOn": "2026-04-24T19:37:41Z",
       "side": 1,
       "message": "move under line 38? pretty similar imo.",
+      "revId": "236d80a172b75761683609c146d005234b195f76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "826db375_38c969bb",
+        "filename": "proguard.flags",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-04-24T19:41:12Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "d3de01e9_53cf7712",
       "revId": "236d80a172b75761683609c146d005234b195f76",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
