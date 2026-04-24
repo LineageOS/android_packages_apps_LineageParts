@@ -37,3 +37,9 @@
 -keepclassmembers class * {
     public static ** SEARCH_INDEX_DATA_PROVIDER;
 }
+
+# Keep specific fields used via reflection.
+-keep class org.lineageos.lineageparts.PartsUpdater
+-keepclassmembers class * {
+    public static ** SUMMARY_PROVIDER;
+}
