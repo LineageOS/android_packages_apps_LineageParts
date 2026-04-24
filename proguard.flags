@@ -36,4 +36,8 @@
 # Keep specific fields used via reflection.
 -keepclassmembers class * {
     public static ** SEARCH_INDEX_DATA_PROVIDER;
+    public static ** SUMMARY_PROVIDER;
 }
+
+# Keep Refreshable interface
+-keep class org.lineageos.lineageparts.PartsUpdater.Refreshable
