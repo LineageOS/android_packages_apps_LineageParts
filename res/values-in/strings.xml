@@ -52,7 +52,10 @@
     <string name="charging_control_enable_title">Aktifkan kontrol pengisian daya</string>
     <string name="charging_control_mode_title">Mode pengisian daya</string>
     <string name="charging_control_mode_auto_title">Jadwal otomatis</string>
+    <string name="charging_control_mode_custom_summary">Tetapkan target waktu untuk mengisi penuh</string>
     <string name="charging_control_start_time_title">Waktu mulai</string>
+    <string name="charging_control_target_time_title">Targetkan waktu hingga terisi penuh</string>
+    <string name="charging_control_target_time_summary">Baterai akan terisi penuh pada %s</string>
     <string name="charging_control_limit_title">Batas</string>
     <string name="battery_light_title">Lampu baterai</string>
     <string name="battery_light_enable_title">Aktifkan lampu baterai</string>
@@ -176,6 +179,7 @@
     <string name="home_answer_call_summary">Menjawab panggilan dengan menekan tombol beranda</string>
     <string name="extras_title">Tambahan</string>
     <string name="additional_buttons_title">Tombol tambahan</string>
+    <string name="click_partial_screenshot_title">Klik untuk tangkapan layar sebagian</string>
     <string name="button_backlight_title">Lampu latar</string>
     <string name="button_backlight_enabled">Cahaya tombol</string>
     <string name="button_backlight_only_when_pressed_title">Nyalakan tombol hanya jika ditekan</string>
