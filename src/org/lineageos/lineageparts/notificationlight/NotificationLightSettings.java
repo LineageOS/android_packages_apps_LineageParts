@@ -139,7 +139,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mScreenOnLightsPref = findPreference(NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = findPreference(NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
-        if (!mMultiColorLed && !halAdjustableBrightness) {
+        if ((!mMultiColorLed && !halAdjustableBrightness)
+                || LightsCapabilities.hasNoBrightnessControl(context)) {
             removePreference(BRIGHTNESS_SECTION);
         }
         if (!mLedCanBlink && !mMultiColorLed) {

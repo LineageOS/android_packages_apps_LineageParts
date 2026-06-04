@@ -149,7 +149,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
 
         // Remove battery LED brightness controls if we can't support them.
-        if (!mMultiColorLed && !halAdjustableBrightness) {
+        if ((!mMultiColorLed && !halAdjustableBrightness)
+                || LightsCapabilities.hasNoBrightnessControl(context)) {
             prefSet.removePreference(prefSet.findPreference(BRIGHTNESS_SECTION));
         }
 
