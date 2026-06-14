@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f5a8973_5bddae77",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 24
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-14T22:47:53Z",
+      "side": 1,
+      "message": "I fix that this evening",
+      "revId": "7eb36e5be51a86984a285f2e0b11038b3d45b094",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "827a1101_1f1927e1",
@@ -14,6 +31,24 @@
       "writtenOn": "2026-06-14T22:17:45Z",
       "side": 1,
       "message": "You should either keep this string not a reference or mark it untranslatable",
+      "revId": "7eb36e5be51a86984a285f2e0b11038b3d45b094",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ebd8ca8b_f2f673d2",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 24
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-14T22:47:53Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "827a1101_1f1927e1",
       "revId": "7eb36e5be51a86984a285f2e0b11038b3d45b094",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
