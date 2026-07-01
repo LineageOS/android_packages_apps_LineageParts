@@ -219,9 +219,9 @@
     <string name="power_menu_screenshot_summary">Pridržite za delno zaslonsko sliko</string>
     <string name="power_menu_airplane_title">Način za letalo</string>
     <string name="power_menu_users_title">Preklopnik uporabnikov</string>
-    <string name="power_menu_bug_report_title">Poročilo o hrošču</string>
-    <string name="power_menu_bug_report_devoptions_unavailable">Poročanje o hrošču je onemogočeno, ker nastavitve za razvijalce niso omogočene</string>
-    <string name="power_menu_bug_report_unavailable_for_user">Poročanje o hrošču je onemogočeno za neprimarne uporabnike</string>
+    <string name="power_menu_bug_report_title">Prijava napake</string>
+    <string name="power_menu_bug_report_devoptions_unavailable">Prijavljanje napake je onemogočeno, ker nastavitve za razvijalce niso omogočene</string>
+    <string name="power_menu_bug_report_unavailable_for_user">Prijavljanje napake je onemogočeno za neprimarne uporabnike</string>
     <string name="power_menu_emergency_title">V sili</string>
     <string name="power_menu_devicecontrols_title">Kontrolniki naprave</string>
     <string name="power_menu_advanced_restart_title">Napredni vnovičen zagon</string>
