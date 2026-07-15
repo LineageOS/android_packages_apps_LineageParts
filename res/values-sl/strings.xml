@@ -268,7 +268,7 @@
     <string name="profile_write_nfc_tag">Zapiši v oznako NFC</string>
     <string name="profile_write_touch_tag">Za zapis se dotaknite oznake</string>
     <string name="profile_write_success">Oznaka uspešno zapisana</string>
-    <string name="profile_write_failed">Zapis oznake spodletel!</string>
+    <string name="profile_write_failed">Zapis oznake ni uspel!</string>
     <string name="profile_selected">Izbrani profil: %1$s</string>
     <string name="profile_nfc_text">Zapis profila v oznako NFC dovoli tapanje oznak, da izberete profil. Ponovno tapanje bo izbralo prejšnji izbrani profil.</string>
     <string name="profile_unknown_nfc_tag">Neznan profil</string>

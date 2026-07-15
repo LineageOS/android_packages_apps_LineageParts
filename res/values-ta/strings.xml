@@ -144,7 +144,8 @@
     <string name="hardware_keys_action_launch_camera">படமியைத் தொடங்குதல்</string>
     <string name="hardware_keys_action_sleep">திரையை அணைத்தல்</string>
     <string name="hardware_keys_action_last_app">இறுதிச் செயலி</string>
-    <string name="hardware_keys_action_split_screen">பிரிதிரை</string>
+    <string name="hardware_keys_action_split_screen">
+பிரிதிரை</string>
     <string name="hardware_keys_action_kill_app">முன்புற செயலியை அழித்தல்</string>
     <string name="camera_sleep_on_release_title">திரைப் பார்வை</string>
     <string name="camera_sleep_on_release_summary">பொத்தானை அழுத்திப் பிடித்திருக்கும்போது மட்டும் பாதி அழுத்தினால் திரை இயக்கத்தில் இருக்கும்</string>

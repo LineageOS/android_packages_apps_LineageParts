@@ -52,7 +52,8 @@
     <string name="charging_control_title">Kontrollált töltés</string>
     <string name="charging_control_enable_title">Itt engedélyezheti az ellenőrzött töltést</string>
     <string name="charging_control_mode_title">A töltés módja</string>
-    <string name="charging_control_mode_auto_title">Automatikus ütemezés</string>
+    <string name="charging_control_mode_auto_title">Automatikus ütemezés
+</string>
     <string name="charging_control_mode_auto_summary">A beállított ébresztések alapján automatikusan határozza meg, hogy mikor kezdődjön a töltés</string>
     <string name="charging_control_mode_custom_title">Egyéni ütemezés</string>
     <string name="charging_control_mode_custom_summary">Ön állíthat be célidőt a teljes feltöltéshez</string>

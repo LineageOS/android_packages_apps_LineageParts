@@ -500,7 +500,7 @@
     <string name="trust_notification_alerts_title">Öryggisaðvaranir</string>
     <string name="trust_warnings_alerts_intro">Þú getur valið hvaða öryggisvandamál þú vilt fá aðvaranir um. Öryggis þíns vegna er mælt með að þú virkir allar aðvaranirnar</string>
     <string name="trust_warnings_selinux">Staða SELinux</string>
-    <string name="trust_warnings_keys">Undirritun kerfisbyggingar</string>
+    <string name="trust_warnings_keys">Undirritun samsetningar</string>
     <string name="trust_onboarding_title">Heilsaðu upp á Traust</string>
     <string name="trust_onboarding_description">Traust hjálpar þér við að halda tækinu þínu öruggu og við að vernda persónulegar upplýsingar þínar.\nTáknmynd Trausts birtist einungis þegar efni síðunnar hefur verið sannreynt.</string>
     <string name="trust_onboarding_learn_more">Kanna nánar</string>

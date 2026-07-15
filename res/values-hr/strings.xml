@@ -366,11 +366,13 @@
     <string name="contributors_cloud_loading_message">Učitavanje podataka suradnika\u2026</string>
     <string name="contributors_cloud_failed_message">Nije moguće učitati podatke suradnika</string>
     <string name="contributor_info_menu">Informacije suradnika</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Ime:</b><xliff:g id="name">%1$s</xliff:g>
+    <string name="contributor_info_msg"><![CDATA[
+<b>Ime:</b><xliff:g id="name">%1$s</xliff:g>
                  <b>Nadimak:</b><xliff:g id="nick">%2$s</xliff:g><br/>
                  <b>Obvezuje:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informacije suradnika</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Svi suradnici:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><![CDATA[
+<b>Svi suradnici:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Ukupno obveza</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Zadnje ažuriranje</b><xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">LineageOS statistika</string>
