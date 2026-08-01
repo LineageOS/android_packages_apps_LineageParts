@@ -416,7 +416,8 @@
     <string name="contributor_info_menu">اطّلاعات مشارکت کننده</string>
     <string name="contributor_info_msg"><![CDATA[<b>اسم:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>لقب:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>متعهد:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+                 <b>متعهد:</b> <xliff:g id="commits">%3$s</xliff:g>
+]]></string>
     <string name="contributions_info_menu">اطّلاعات مشارکت کنندگان</string>
     <string name="contributions_info_msg"><![CDATA[<b>کل مشارکت کنندگان:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>کل تعهدات:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
@@ -497,7 +498,9 @@
     <string name="touchscreen_gesture_action_email">مشاهده ایمیل‌ها</string>
     <string name="touchscreen_gesture_action_messages">دیدن پیام‌هایتان</string>
     <string name="touchscreen_gesture_action_play_pause_music">پخش/توقف موسیقی</string>
-    <string name="touchscreen_gesture_action_previous_track">انتقال به آهنگ قبلی.</string>
+    <string name="touchscreen_gesture_action_previous_track">انتقال به آهنگ قبلی.
+
+</string>
     <string name="touchscreen_gesture_action_next_track">پرش به آهنگ بعدی</string>
     <string name="touchscreen_gesture_action_volume_down">کاهش صدای رسانه</string>
     <string name="touchscreen_gesture_action_volume_up">افزایش صدای رسانه</string>
