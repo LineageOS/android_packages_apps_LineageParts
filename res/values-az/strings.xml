@@ -528,7 +528,7 @@
     <string name="trust_onboarding_learn_more">Ətraflı öyrən</string>
     <string name="trust_onboarding_done">Anladım</string>
     <string name="trust_restrict_usb_title">USB-ni məhdudlaşdır</string>
-    <string name="trust_restrict_usb_summary">Qulaqlıq, anbar, giriş cihazları (maus, klaviatura, joystiklər) və ADB kimi USB bağlantıları üçün kontrol dəstəyi</string>
+    <string name="trust_restrict_usb_summary">Qulaqlıq, depolama cihazları, giriş cihazları (maus, klaviatura, joystiklər) və ADB kimi USB bağlantıları üçün kontrol dəstəyi</string>
     <string name="trust_restrict_usb_always">USB bağlantılarını rədd et</string>
     <string name="trust_restrict_usb_keyguard">USB bağlantılarına ekran kilidi açıq olanda icazə ver</string>
     <string name="trust_restrict_usb_disabled">USB bağlantılarına həmişə icazə ver</string>
