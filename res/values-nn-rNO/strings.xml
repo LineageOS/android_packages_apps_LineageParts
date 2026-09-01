@@ -287,7 +287,7 @@
     <string name="profile_name_title">Namn</string>
     <string name="new_profile_name">&lt;ny profil&gt;</string>
     <string name="rename_dialog_title">Gjev nytt namn</string>
-    <string name="rename_dialog_message">Skriv inn eit nytt namn</string>
+    <string name="rename_dialog_message">Skriv eit nytt namn</string>
     <string name="rename_dialog_hint">Skriv inn profilnamn</string>
     <string name="profile_reset_title">Nullstill</string>
     <string name="profile_reset_message">Vil du sletta alle brukaroppretta profilar og appgrupper, og gå tilbake til standard?</string>
