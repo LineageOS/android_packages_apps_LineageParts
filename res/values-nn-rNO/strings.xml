@@ -105,6 +105,7 @@
     <string name="live_display_low_power_summary">Tilpass skjermen for lågast mogleg straumbruk utan at biletet vert dårlegare</string>
     <string name="live_display_enhance_color_title">Forbetra fargar</string>
     <string name="live_display_enhance_color_summary">Gjer hudtonar, natur og andre bilete meir levande</string>
+    <string name="live_display_color_profile_preview">Førehandsvising av farge</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
     <string name="live_display_color_profile_standard_summary">Nøyaktige fargar og klår kvitfarge</string>
     <string name="live_display_color_profile_natural_title">Naturleg</string>
@@ -286,7 +287,7 @@
     <string name="profile_name_title">Namn</string>
     <string name="new_profile_name">&lt;ny profil&gt;</string>
     <string name="rename_dialog_title">Gjev nytt namn</string>
-    <string name="rename_dialog_message">Skriv inn eit nytt namn</string>
+    <string name="rename_dialog_message">Skriv eit nytt namn</string>
     <string name="rename_dialog_hint">Skriv inn profilnamn</string>
     <string name="profile_reset_title">Nullstill</string>
     <string name="profile_reset_message">Vil du sletta alle brukaroppretta profilar og appgrupper, og gå tilbake til standard?</string>
@@ -398,6 +399,8 @@
     <string name="network_traffic_position_title">Plassering</string>
     <string name="network_traffic_autohide">Gøym automatisk</string>
     <string name="network_traffic_autohide_summary">Gøym trafikkmålaren når det ikkje er noko aktivitet</string>
+    <string name="network_traffic_hide_arrows">Gøym piler</string>
+    <string name="network_traffic_hide_arrows_summary">Gøym retningspiler for opp- og nedlasting</string>
     <string name="network_traffic_units_title">Måleeiningar for trafikk</string>
     <string name="network_traffic_units_kilobits">Kilobit per sekund (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabit per sekund (Mb/s)</string>

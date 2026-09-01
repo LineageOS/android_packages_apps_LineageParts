@@ -223,7 +223,8 @@
     <string name="power_menu_devicecontrols_title">Контроли за устройството</string>
     <string name="power_menu_advanced_restart_title">Rазширено рестартиране</string>
     <string name="power_menu_advanced_restart_summary">При отключен телефон, включете в опциите на менюто за захранване, възможност да рестартирате в режим на възстановяване или буутлоудър</string>
-    <string name="power_menu_emergency_affordance_enabled">Включена е спешна достъпност</string>
+    <string name="power_menu_emergency_affordance_enabled">Включена е спешна достъпност
+</string>
     <string name="camera_double_tap_power_gesture_title">Натиснете двукратно бутона за захранване за камера</string>
     <string name="camera_double_tap_power_gesture_desc">Бързо стартиране на камера без отключване на екрана</string>
     <string name="torch_long_press_power_gesture_title">Активиране на фенерчето</string>
@@ -451,7 +452,8 @@
     <string name="power_notifications_vibrate_title">Вибрация</string>
     <string name="charging_sounds_ringtone_silent">Без звук</string>
     <string name="charging_sounds_notification_category_title">Звуци на известията</string>
-    <string name="wired_charging_sounds_title">Зареждане през кабел</string>
+    <string name="wired_charging_sounds_title">
+Зареждане през кабел</string>
     <string name="wireless_charging_sounds_title">Безжично зареждане</string>
     <string name="touchscreen_gesture_settings_title">Тъчскрийн жестове</string>
     <string name="touchscreen_gesture_settings_summary">Изпълнява различни бързи действия чрез жестове върху сензорния екран</string>
