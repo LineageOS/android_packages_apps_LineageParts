@@ -63,6 +63,11 @@ public class KeyHandler implements DeviceKeyHandler {
         // First try to look the name up as a package
         Intent launchIntent = pm.getLaunchIntentForPackage(targetName);
 
+        // TV-only apps may expose a leanback launcher activity without a regular one.
+        if (launchIntent == null) {
+            launchIntent = pm.getLeanbackLaunchIntentForPackage(targetName);
+        }
+
         // If it isn't an installed package, try as an intent
         if (launchIntent == null) {
             launchIntent = new Intent(targetName);
