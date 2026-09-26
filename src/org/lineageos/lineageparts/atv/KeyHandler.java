@@ -5,6 +5,7 @@
 
 package org.lineageos.lineageparts.atv;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -60,10 +61,26 @@ public class KeyHandler implements DeviceKeyHandler {
     private void launchTarget(String targetName) {
         PackageManager pm = mContext.getPackageManager();
 
-        // First try to look the name up as a package
-        Intent launchIntent = pm.getLaunchIntentForPackage(targetName);
+        ComponentName component = ComponentName.unflattenFromString(targetName);
+        Intent launchIntent = null;
 
-        // If it isn't an installed package, try as an intent
+        // Explicit components avoid package visibility and unusual intent-filter issues
+        if (component != null) {
+            launchIntent = new Intent(Intent.ACTION_MAIN)
+                    .addCategory(Intent.CATEGORY_LEANBACK_LAUNCHER)
+                    .setComponent(component)
+                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        } else {
+            // First try to look the name up as a package
+            launchIntent = pm.getLaunchIntentForPackage(targetName);
+
+            // TV-only apps may expose a leanback launcher activity without a regular one
+            if (launchIntent == null) {
+                launchIntent = pm.getLeanbackLaunchIntentForPackage(targetName);
+            }
+        }
+
+        // If it isn't an installed package or component, try as an intent
         if (launchIntent == null) {
             launchIntent = new Intent(targetName);
             launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
