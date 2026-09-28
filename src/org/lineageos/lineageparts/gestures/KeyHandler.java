@@ -143,11 +143,12 @@ public class KeyHandler implements DeviceKeyHandler {
 
     public KeyEvent handleKeyEvent(final KeyEvent event) {
         final int action = mActionMapping.get(event.getScanCode(), -1);
-        if (action < 0 || event.getAction() != KeyEvent.ACTION_UP || !hasSetupCompleted()) {
+        if (action < 0 || !hasSetupCompleted()) {
             return event;
         }
 
-        if (action != 0 && !mEventHandler.hasMessages(GESTURE_REQUEST)) {
+        if (action != 0 && event.getAction() == KeyEvent.ACTION_UP &&
+                !mEventHandler.hasMessages(GESTURE_REQUEST)) {
             final Message msg = getMessageForAction(action);
             final boolean proxWakeEnabled = LineageSettings.System.getInt(
                     mContext.getContentResolver(),
