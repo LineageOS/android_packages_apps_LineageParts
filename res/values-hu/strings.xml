@@ -106,6 +106,7 @@
     <string name="live_display_low_power_summary">Kijelző beállítása a legkisebb energiafogyasztásra, minőségromlás nélkül</string>
     <string name="live_display_enhance_color_title">Színek élénkítése</string>
     <string name="live_display_enhance_color_summary">Bőrszín tónusainak, tájképek, és egyéb képek színdinamikájának javítása</string>
+    <string name="live_display_color_profile_preview">Szín-előnézet</string>
     <string name="live_display_color_profile_standard_title">Általános</string>
     <string name="live_display_color_profile_standard_summary">Pontos színek és fényes fehér</string>
     <string name="live_display_color_profile_natural_title">Természetes</string>

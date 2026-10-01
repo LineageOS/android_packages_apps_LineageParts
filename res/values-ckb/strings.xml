@@ -93,7 +93,8 @@
     <string name="live_display_summary">باشترکردنی ڕوونمای ئامێرەکەت لەسەر بنەمای کات و ژینگەی دەوروبەر بۆ خوێندنەوەیەکی ئاسانتر و کەمکردنەوەی ماندوێتی چاو</string>
     <string name="live_display_mode">دۆخی پیشاندان</string>
     <string name="live_display_color_temperature_title">پلەی گەرمی ڕەنگ</string>
-    <string name="live_display_color_temperature_summary">        ڕۆژ: <xliff:g id="day_temperature">%1$d</xliff:g>K
+    <string name="live_display_color_temperature_summary">
+        ڕۆژ: <xliff:g id="day_temperature">%1$d</xliff:g>K
         شەو: <xliff:g id="night_temperature">%2$d</xliff:g>K
     </string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
@@ -250,8 +251,10 @@
     <string name="profile_tabs_nfc">NFC</string>
     <string name="profile_triggers_header">هۆکارەکانی چالاککردنی پڕۆفایل</string>
     <string name="profile_setup_setup_triggers_title">هەنگاوی 1: زیادکردنی داگیرسێنەرەکان</string>
-    <string name="profile_setup_setup_triggers_title_config">گۆڕینی داگیرسێنەرەکان:
-<xliff:g id="profile_name">%1$s</xliff:g></string>
+    <string name="profile_setup_setup_triggers_title_config">
+گۆڕینی داگیرسێنەرەکان:
+<xliff:g id="profile_name">%1$s</xliff:g>
+</string>
     <string name="profile_setup_actions_title">هەنگاوی 2: ڕێکخستنی چالاکییەکان</string>
     <string name="profile_setup_actions_title_config">سازدانەوەی چالاکییەکان</string>
     <string name="wireless_networks_settings_title">بێتەل و تۆڕەکان</string>
