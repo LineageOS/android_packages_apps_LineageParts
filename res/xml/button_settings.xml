@@ -323,6 +323,15 @@
                 android:action="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
         </lineageos.preference.RemotePreference>
 
+        <lineageos.preference.RemotePreference
+            android:key="slider"
+            android:title="@string/slider_title"
+            android:summary="@string/slider_summary"
+            lineage:requiresAction="org.lineageos.slider.SETTINGS">
+            <intent
+                android:action="org.lineageos.slider.SETTINGS" />
+        </lineageos.preference.RemotePreference>
+
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="click_partial_screenshot"
             android:title="@string/click_partial_screenshot_title"
