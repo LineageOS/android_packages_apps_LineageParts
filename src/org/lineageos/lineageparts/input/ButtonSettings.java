@@ -87,6 +87,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             "navigation_app_switch_long_press";
     private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
     private static final String KEY_POWER_END_CALL = "power_end_call";
+    private static final String KEY_SLIDER = "slider";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
     private static final String KEY_TORCH_LONG_PRESS_POWER_GESTURE =
@@ -951,6 +952,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
                     result.add(KEY_EDGE_LONG_SWIPE);
                 }
             }
+            // The slider app indexes its own settings screen, which this
+            // entry only opens.
+            result.add(KEY_SLIDER);
+
             return result;
         }
     };
