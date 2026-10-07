@@ -414,7 +414,8 @@
     <string name="contributions_info_menu">Informatie over bijdragers</string>
     <string name="contributions_info_msg"><![CDATA[<b>Totaal aantal bijdragers:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Totaal aantal commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
-                 <b>Laatste update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+                 <b>Laatste update:</b> <xliff:g id="date">%3$s</xliff:g>
+]]></string>
     <string name="anonymous_statistics_title">LineageOS-statistieken</string>
     <string name="anonymous_statistics_summary">Help LineageOS te verbeteren door anonieme statistieken te verzenden</string>
     <string name="anonymous_statistics_warning_title">Over</string>

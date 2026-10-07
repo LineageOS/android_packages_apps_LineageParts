@@ -78,7 +78,7 @@
     <string name="notification_light_advanced_title">Avançadas</string>
     <string name="notification_light_applist_title">Aplicações</string>
     <string name="notification_light_phonelist_title">Telefone</string>
-    <string name="notification_light_use_custom">Utilizar valores personalizados</string>
+    <string name="notification_light_use_custom">Usar valores personalizados</string>
     <string name="notification_light_default_value">Padrão</string>
     <string name="notification_light_missed_call_title">Chamada perdida</string>
     <string name="notification_light_voicemail_title">Correio de voz</string>

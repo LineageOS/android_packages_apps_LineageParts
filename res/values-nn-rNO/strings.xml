@@ -168,7 +168,7 @@
     <string name="camera_sleep_on_release_summary">Om du trykkjer knappen halvvegs ned, vil skjermen berre vera på så lenge du held han inne</string>
     <string name="camera_launch_title">Start kameraet</string>
     <string name="camera_launch_summary">Start kameraet ved å halda inne knappen og så sleppa han</string>
-    <string name="volbtn_music_controls_title">Control playback</string>
+    <string name="volbtn_music_controls_title">Styr avspelinga</string>
     <string name="volbtn_music_controls_summary">Skift musikkspor ved å halda inne volumknappane når skjermen er av</string>
     <string name="volbtn_cursor_control_title">Markørstyring med tastaturet</string>
     <string name="volbtn_cursor_control_off">Av</string>

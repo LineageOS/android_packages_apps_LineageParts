@@ -225,7 +225,7 @@
     <string name="power_menu_emergency_title">Fövqəladə hal</string>
     <string name="power_menu_devicecontrols_title">Cihaz kontrolları</string>
     <string name="power_menu_advanced_restart_title">Qabaqcıl yenidən başlatma</string>
-    <string name="power_menu_advanced_restart_summary">Kilid açılanda, geri qaytarma və ya bootloader rejimində yenidən başlatmaq üçün güc düyməsinə seçimlər əlavə edir</string>
+    <string name="power_menu_advanced_restart_summary">Kilid açılanda, geri qaytarma və ya bootloader rejimində yenidən başlatmaq üçün güc düyməsinə seçənəklər əlavə edir</string>
     <string name="power_menu_emergency_affordance_enabled">Fövqəladə hal təminatı fəaldır</string>
     <string name="camera_double_tap_power_gesture_title">Kameraya keçmək üçün güc düyməsinə iki dəfə bas</string>
     <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan kameranı tez açmaq</string>
@@ -274,7 +274,7 @@
     <string name="profile_unknown_nfc_tag">Bilinməyən profil</string>
     <string name="profile_add_nfc_text">Bu NFC etiketi bilinməyən profilə yönəldilir. Bu NFC etiketini mövcud profilə qoşmaq, gələcəkdə həmin profilin seçilməsini təmin edə bilər.</string>
     <string name="profile_select">Profil seçin</string>
-    <string name="profile_remove_dialog_message">%1$s profili çıxarılsın?</string>
+    <string name="profile_remove_dialog_message">%1$s profili kənarlaşdırılsın?</string>
     <string name="profile_populate_profile_from_state">Hazırkı cihaz ayarları istifadə edilərək profil konfiqurasiya edilsin?</string>
     <string name="profile_menu_fill_from_state">Hazırkı cihaz ayarlarını daxilə köçür</string>
     <string name="profile_remove_current_profile">Hazırkı profil silinə bilməz!</string>
@@ -317,7 +317,7 @@
     <string name="soundtone_title">Bildiriş səsi</string>
     <string name="profile_system_settings_title">Sistem ayarları</string>
     <string name="profile_lockmode_title">Kilid ekranı rejimi</string>
-    <string name="profile_lockmode_policy_disabled_summary">Bu profil, bir cihaz inzibatçı siyasəti tərəfindən sıradan çıxarıldı</string>
+    <string name="profile_lockmode_policy_disabled_summary">Bu profil seçənəyi, bir cihaz inzibatçı siyasəti tərəfindən sıradan çıxarıldı</string>
     <string name="profile_lockmode_insecure_summary">PIN və ya parol soruşma</string>
     <string name="profile_lockmode_disabled_summary">Kilid ekranını sıradan çıxart</string>
     <string name="profile_airplanemode_title">Təyyarə rejimi</string>
