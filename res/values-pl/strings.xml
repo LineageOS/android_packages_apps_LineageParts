@@ -340,7 +340,7 @@
     <string name="notification_volume_title">Powiadomienie</string>
     <string name="media_volume_title">Multimedia</string>
     <string name="alarm_volume_title">Alarm</string>
-    <string name="doze_title">Ekran Ambient</string>
+    <string name="doze_title">Ekran aktywny</string>
     <string name="status_bar_title">Pasek stanu</string>
     <string name="status_bar_quick_qs_pulldown_title">Szybkie rozwijanie</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija Szybkie Ustawienia</string>
@@ -506,7 +506,7 @@
     <string name="touchscreen_gesture_action_next_track">Przejdź do następnego utworu muzycznego</string>
     <string name="touchscreen_gesture_action_volume_down">Mniejsza głośność multimediów</string>
     <string name="touchscreen_gesture_action_volume_up">Większa głośność multimediów</string>
-    <string name="touchscreen_gesture_action_ambient_display">Pokazuj Ekran Ambient</string>
+    <string name="touchscreen_gesture_action_ambient_display">Pokazuj Ekran aktywny</string>
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Restrykcyjny</string>

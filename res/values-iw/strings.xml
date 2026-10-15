@@ -189,7 +189,7 @@
     <string name="extras_title">תוספות</string>
     <string name="additional_buttons_title">מקשים נוספים</string>
     <string name="click_partial_screenshot_title">לחיצה לצילום מסך חלקי</string>
-    <string name="click_partial_screenshot_summary">לחיצה קצרה על כפתור ההדלקה והנמכת הקול יחדיו לצילום מסך חלקי</string>
+    <string name="click_partial_screenshot_summary">לחיצה קצרה על לחצן ההפעלה והנמכת הקול יחדיו לצילום מסך חלקי</string>
     <string name="button_backlight_title">תאורה אחורית</string>
     <string name="button_backlight_enabled">האר מקשים</string>
     <string name="button_backlight_only_when_pressed_title">האר את המקשים רק כאשר נוגעים בהם</string>
