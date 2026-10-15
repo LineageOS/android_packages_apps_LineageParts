@@ -105,6 +105,7 @@
     <string name="live_display_low_power_summary">Προσαρμογή της οθόνης για χαμηλότερη κατανάλωση ισχύος χωρίς υποβάθμιση των χρωμάτων</string>
     <string name="live_display_enhance_color_title">Βελτίωση χρωμάτων</string>
     <string name="live_display_enhance_color_summary">Βελτίωση έντασης χρωμάτων επιδερμίδας, τοπίων, καθώς και άλλων εικόνων</string>
+    <string name="live_display_color_profile_preview">Προεπισκόπηση χρώματος</string>
     <string name="live_display_color_profile_standard_title">Κανονικό</string>
     <string name="live_display_color_profile_standard_summary">Ακριβή χρώματα και φωτεινά λευκά</string>
     <string name="live_display_color_profile_natural_title">Φυσικό</string>
@@ -398,6 +399,8 @@
     <string name="network_traffic_position_title">Θέση</string>
     <string name="network_traffic_autohide">Αυτόματη απόκρυψη</string>
     <string name="network_traffic_autohide_summary">Απόκρυψη κίνησης δικτύου όταν δεν υπάρχει δραστηριότητα</string>
+    <string name="network_traffic_hide_arrows">Απόκρυψη βελών</string>
+    <string name="network_traffic_hide_arrows_summary">Απόκρυψη βελών ένδειξης αποστολής και λήψης δεδομένων</string>
     <string name="network_traffic_units_title">Μονάδες μέτρησης κίνησης</string>
     <string name="network_traffic_units_kilobits">Kilobit ανά δευτερόλεπτο (kb/δ)</string>
     <string name="network_traffic_units_megabits">Megabit ανά δευτερόλεπτο (Mb/δ)</string>

@@ -102,12 +102,13 @@
     <string name="live_display_night">شەو</string>
     <string name="live_display_outdoor_mode_title">دۆخی دەرەوەی خۆکار</string>
     <string name="live_display_outdoor_mode_summary">زیادکردنی ڕووناکی و تێریی ڕەنگ بە شێوەیەکی خۆکار لە ژێر تیشکی خۆردا</string>
-    <string name="live_display_anti_flicker_title">دژە لەرینەوە (Anti-flicker)</string>
+    <string name="live_display_anti_flicker_title">دژە لەرینەوە</string>
     <string name="live_display_anti_flicker_summary">ڕێگری دەکات لە لەرینەوەی زۆری ڕوونما و ماندوێتی چاو کەمدەکاتەوە لە کاتی کەمبوونی ڕووناکیدا. لەوانەیە کار بکاتە سەر وردیی ڕەنگەکان.</string>
     <string name="live_display_low_power_title">کەمکردنەوەی بەکاربردنی وزە</string>
     <string name="live_display_low_power_summary">ڕێکخستنی ڕوونما بۆ کەمترین بەکاربردنی وزە بەبێ تێکچوونی کوالێتی</string>
     <string name="live_display_enhance_color_title">باشترکردنی ڕەنگەکان</string>
     <string name="live_display_enhance_color_summary">باشترکردنی تێریی ڕەنگی پێست، دیمەنەکان و وێنەکانی تر</string>
+    <string name="live_display_color_profile_preview">پێشبینینی ڕەنگ</string>
     <string name="live_display_color_profile_standard_title">ستاندارد</string>
     <string name="live_display_color_profile_standard_summary">ڕەنگی ورد و سپییەکی گەش</string>
     <string name="live_display_color_profile_natural_title">سروشتی</string>
@@ -217,7 +218,7 @@
     <string name="navigation_bar_edge_long_swipe_title">کرداری ڕاکێشانی درێژی لێواری ڕوونما</string>
     <string name="power_menu_title">پێڕستی پێکردن</string>
     <string name="power_menu_items_title">بڕگەکانی پێڕستی پێکردن</string>
-    <string name="power_menu_screenshot_title">گرتنی وێنه‌ی ڕوونما</string>
+    <string name="power_menu_screenshot_title">گرتنی وێنەی ڕوونما</string>
     <string name="power_menu_screenshot_summary">پەنجە ڕاگرتنی درێژ بۆ وێنەگرتنی بەشێکی ڕوونما</string>
     <string name="power_menu_airplane_title">دۆخی فڕۆکە</string>
     <string name="power_menu_users_title">گۆڕینی بەکارهێنەر</string>
@@ -315,7 +316,7 @@
     <string name="sound_mode">دۆخی ئاگادارکردنەوە</string>
     <string name="ringer_mode">دۆخی زەنگ</string>
     <string name="lights_mode">دۆخی ڕووناکی</string>
-    <string name="vibrate_mode">دۆخی لەرزین</string>
+    <string name="vibrate_mode">دۆخی لەرینەوە</string>
     <string name="choose_soundtone">ئاوازی ئاگادارکردنەوە هەڵبژێره</string>
     <string name="choose_ringtone">ئاوازی زەنگ هەڵبژێره</string>
     <string name="ringtone_title">ئاوازی زەنگی مۆبایل</string>
@@ -323,7 +324,7 @@
     <string name="profile_system_settings_title">ڕێکخستنەکانی سیستم</string>
     <string name="profile_lockmode_title">دۆخی قوفڵی ڕوونما</string>
     <string name="profile_lockmode_policy_disabled_summary">ئەم بژاردەی پڕۆفایلە لەلایەن سیاسەتی سەرپەرشتیاری ئامێرەکەوە ناچالاک کراوە</string>
-    <string name="profile_lockmode_insecure_summary">داوای PIN یان وشەی تێپەڕ مەکە</string>
+    <string name="profile_lockmode_insecure_summary">داوای PIN یان تێپەڕەوشە مەکە</string>
     <string name="profile_lockmode_disabled_summary">ناچالاککردنی قوفڵی ڕوونما</string>
     <string name="profile_airplanemode_title">دۆخی فڕۆکە</string>
     <string name="profile_brightness_title">ڕووناکی ڕوونما</string>
@@ -498,7 +499,7 @@
     <string name="touchscreen_gesture_action_camera">کردنەوەی کامێرا</string>
     <string name="touchscreen_gesture_action_browser">کردنەوەی وێبگەڕ</string>
     <string name="touchscreen_gesture_action_dialer">کردنەوەی پەیوەندی</string>
-    <string name="touchscreen_gesture_action_email">بینینی ئیمەیڵەکان</string>
+    <string name="touchscreen_gesture_action_email">بینینی پۆستە ئەلیکترۆنییەکان</string>
     <string name="touchscreen_gesture_action_messages">بینینی نامەکان</string>
     <string name="touchscreen_gesture_action_play_pause_music">لێدان/ڕاگرتنی مۆسیقا</string>
     <string name="touchscreen_gesture_action_previous_track">مۆسیقای پێشوو</string>
@@ -521,7 +522,7 @@
     <string name="trust_feature_encryption_value_enabled">چالاکە</string>
     <string name="trust_feature_encryption_value_nolock">پێویستی بە قوفڵێکی پارێزراوی ڕوونما هەیە</string>
     <string name="trust_feature_encryption_value_disabled">ناچالاکە</string>
-    <string name="trust_feature_encryption_explain">کۆدکردنی ئامێرەکەت ڕێگری دەکات لە دەستگەیشتن بە زانیارییەکانت کاتێک مۆبایلەکەت لە دۆخی ئەندرۆیدا نییە. ئەمە زۆر گرنگە ئەگەر مۆبایلەکەت بدزرێت، چونکە ڕێگری دەکات لە کەسانی تر کە نامەکان، ناوەکان و زانیارییە تایبەتەکانی ترت بخوێننەوە بەبێ وشەی تێپەڕ.\nبۆ ئەوەی کۆدکردنەکە کاریگەرتر بێت، پێویستە وشەی تێپەڕی قوفڵی ڕوونما دابنێیت.</string>
+    <string name="trust_feature_encryption_explain">کۆدکردنی ئامێرەکەت ڕێگری دەکات لە دەستگەیشتن بە زانیارییەکانت کاتێک مۆبایلەکەت لە دۆخی ئەندرۆیدا نییە. ئەمە زۆر گرنگە ئەگەر مۆبایلەکەت بدزرێت، چونکە ڕێگری دەکات لە کەسانی تر کە نامەکان، ناوەکان و زانیارییە تایبەتەکانی ترت بخوێننەوە بەبێ تێپەڕەوشە.\nبۆ ئەوەی کۆدکردنەکە کاریگەرتر بێت، پێویستە تێپەڕەوشەی قوفڵی ڕوونما دابنێیت.</string>
     <string name="trust_category_tools">تایبەتمەندی</string>
     <string name="trust_notification_alerts_title">ئاگادارکردنەوەی پاراستن</string>
     <string name="trust_warnings_alerts_intro">دەتوانیت ئەو کێشە ئەمنییانە هەڵبژێریت کە دەتەوێت ئاگادارییان بیت. بۆ سەلامەتیت، پێشنیار دەکرێت هەموو ئاگادارکردنەوەکان چالاک بکەیت</string>

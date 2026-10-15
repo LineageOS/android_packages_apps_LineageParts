@@ -5,5 +5,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="add">新增</string>
     <string name="live_display_color_profile_preview">顏色預覽</string>
+    <string name="profile_app_group_item_instructions">新增或移除群組</string>
+    <string name="profile_name_title">名稱</string>
 </resources>
