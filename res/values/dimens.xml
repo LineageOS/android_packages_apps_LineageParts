@@ -27,8 +27,8 @@
     <!-- Trust onBoarding -->
     <dimen name="trust_logo_vertical_margin">48dp</dimen>
     <dimen name="trust_logo_horizontal_margin">40dp</dimen>
-    <dimen name="trust_logo_height">-2px</dimen>
-    <dimen name="trust_logo_width">-1px</dimen>
+    <dimen name="trust_logo_height">256dp</dimen>
+    <dimen name="trust_logo_width">256dp</dimen>
 
     <dimen name="package_list_padding_top">16dp</dimen>
 
