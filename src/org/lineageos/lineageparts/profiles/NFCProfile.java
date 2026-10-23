@@ -14,6 +14,8 @@ import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.os.Process;
+import android.util.Log;
 import android.widget.Toast;
 
 import lineageos.app.Profile;
@@ -32,6 +34,8 @@ import java.util.UUID;
  */
 public class NFCProfile extends Activity {
 
+    private static final String TAG = "NFCProfile";
+
     private static final String PREFS_NAME = "NFCProfile";
 
     private static final String PREFS_PREVIOUS_PROFILE = "previous-profile";
@@ -49,6 +53,13 @@ public class NFCProfile extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+
+        // Only accept tag dispatches from the NFC stack
+        if (getLaunchedFromUid() != Process.NFC_UID) {
+            Log.w(TAG, "Ignoring profile switch request from uid " + getLaunchedFromUid());
+            finish();
+            return;
+        }
 
         Intent intent = getIntent();
         String action = intent.getAction();
