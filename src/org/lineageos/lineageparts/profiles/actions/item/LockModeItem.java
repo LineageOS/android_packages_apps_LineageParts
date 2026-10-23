@@ -5,6 +5,7 @@
  */
 package org.lineageos.lineageparts.profiles.actions.item;
 
+import android.app.KeyguardManager;
 import android.content.Context;
 
 import lineageos.app.Profile;
@@ -25,6 +26,10 @@ public class LockModeItem extends Item {
 
     @Override
     public String getSummary(Context context) {
+        if (mProfile.getScreenLockMode().getValue() == Profile.LockMode.DISABLE
+                && context.getSystemService(KeyguardManager.class).isDeviceSecure()) {
+            return context.getString(R.string.profile_lockmode_disabled_secure_summary);
+        }
         return context.getString(getSummaryString(mProfile));
     }
 

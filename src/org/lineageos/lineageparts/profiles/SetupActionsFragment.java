@@ -16,6 +16,7 @@ import static lineageos.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.app.KeyguardManager;
 import android.app.admin.DevicePolicyManager;
 import android.bluetooth.BluetoothManager;
 import android.content.ContentResolver;
@@ -79,6 +80,7 @@ import org.lineageos.lineageparts.profiles.actions.item.VolumeStreamItem;
 import org.lineageos.lineageparts.utils.DeviceUtils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -522,11 +524,14 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
 
     private AlertDialog requestLockscreenModeDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        final String[] lockEntries =
+        String[] lockEntries =
                 getResources().getStringArray(R.array.profile_lockmode_entries);
+        if (getActivity().getSystemService(KeyguardManager.class).isDeviceSecure()) {
+            lockEntries = Arrays.copyOf(lockEntries, lockEntries.length - 1);
+        }
 
         int defaultIndex = 0; // no action
-        for (int i = 0; i < LOCKMODE_MAPPING.length; i++) {
+        for (int i = 0; i < lockEntries.length; i++) {
             if (LOCKMODE_MAPPING[i] == mProfile.getScreenLockMode().getValue()) {
                 defaultIndex = i;
                 break;
