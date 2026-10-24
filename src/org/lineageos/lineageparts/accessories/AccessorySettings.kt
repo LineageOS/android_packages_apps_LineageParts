@@ -5,6 +5,9 @@
 
 package org.lineageos.lineageparts.accessories
 
+import android.bluetooth.BluetoothAdapter
+import android.bluetooth.BluetoothManager
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.CompoundButton
@@ -21,6 +24,7 @@ import lineageos.accessories.AccessoryInfo
 import lineageos.accessories.AccessoryStatus
 import lineageos.accessories.AccessoryType
 import lineageos.accessories.BatteryInfo
+import lineageos.accessories.DataLinkType
 import lineageos.accessories.IAccessoriesCallback
 import lineageos.accessories.IAccessory
 import lineageos.accessories.IAccessoryCallback
@@ -172,8 +176,26 @@ class AccessorySettings : SettingsPreferenceFragment() {
                 ).show()
 
                 enabledMainSwitchPreference.isEnabled = true
+                return@OnCheckedChangeListener
+            }
+
+            if (isChecked && usesBluetooth()) {
+                requestBluetoothEnable()
             }
         }
+
+    // A pen only reports its address once attached, so don't rely on the data link alone
+    private fun usesBluetooth() = accessoryInfo.dataLink?.type == DataLinkType.BLUETOOTH ||
+            accessoryInfo.type == AccessoryType.ACTIVE_PEN
+
+    private fun requestBluetoothEnable() {
+        val adapter = requireContext().getSystemService(BluetoothManager::class.java)?.adapter
+        if (adapter == null || adapter.isEnabled) {
+            return
+        }
+
+        startActivity(Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE))
+    }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         super.onCreatePreferences(savedInstanceState, rootKey)
