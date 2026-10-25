@@ -108,6 +108,37 @@
             </intent-filter>
         </activity-alias>
 
+        <!-- Accessories quick settings tiles, enabled on boot if the device has the accessory -->
+        <service
+            android:name=".accessories.KeyboardTileService"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_keyboard"
+            android:label="@string/accessories_tile_keyboard"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
+        <service
+            android:name=".accessories.StylusTileService"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_ink_pen"
+            android:label="@string/accessories_tile_stylus"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
         <!-- Charging control settings (Battery category) -->
         <activity-alias
             android:name=".health.ChargingControlSettings"
