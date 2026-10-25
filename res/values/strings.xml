@@ -79,6 +79,10 @@
     <string name="accessories_accessory_id_title">Accessory identifier: %s</string>
     <string name="accessories_accessory_set_enabled_error">Failed to toggle the accessory</string>
 
+    <!-- Accessories - quick settings tiles -->
+    <string name="accessories_tile_keyboard">Keyboard</string>
+    <string name="accessories_tile_stylus">Stylus</string>
+
     <!-- Accessories - accessory type -->
     <string name="accessories_accessory_type_unknown">Unknown</string>
     <string name="accessories_accessory_type_keyboard">Keyboard</string>
