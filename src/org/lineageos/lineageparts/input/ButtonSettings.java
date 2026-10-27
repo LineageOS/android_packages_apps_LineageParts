@@ -208,6 +208,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 org.lineageos.platform.internal.R.integer.config_doubleTapOnHomeBehavior));
         Action defaultAppSwitchLongPressAction = Action.fromIntSafe(res.getInteger(
                 org.lineageos.platform.internal.R.integer.config_longPressOnAppSwitchBehavior));
+        Action defaultAssistLongPressAction = Action.fromIntSafe(res.getInteger(
+                org.lineageos.platform.internal.R.integer.config_longPressOnAssistBehavior));
         Action backLongPressAction = Action.fromSettings(resolver,
                 LineageSettings.System.KEY_BACK_LONG_PRESS_ACTION,
                 defaultBackLongPressAction);
@@ -334,7 +336,8 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mAssistPressAction = initList(KEY_ASSIST_PRESS, pressAction);
 
             Action longPressAction = Action.fromSettings(resolver,
-                    LineageSettings.System.KEY_ASSIST_LONG_PRESS_ACTION, Action.VOICE_SEARCH);
+                    LineageSettings.System.KEY_ASSIST_LONG_PRESS_ACTION,
+                    defaultAssistLongPressAction);
             mAssistLongPressAction = initList(KEY_ASSIST_LONG_PRESS, longPressAction);
 
         }
