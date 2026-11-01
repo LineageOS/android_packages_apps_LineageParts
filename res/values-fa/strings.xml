@@ -164,6 +164,8 @@
     <string name="hardware_keys_action_last_app">آخرین کاره</string>
     <string name="hardware_keys_action_split_screen">تقسیم صفحه</string>
     <string name="hardware_keys_action_kill_app">بستن برنامه پیش‌زمینه</string>
+    <string name="hardware_keys_action_partial_screenshot">عکس بخشی از صفحه</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">تغییر حالت زنگ</string>
     <string name="camera_sleep_on_release_title">نگاه کردن به صفحه</string>
     <string name="camera_sleep_on_release_summary">تا زمانی که دکمه نگه داشته شده، نگاه کردن به صفحه را روشن نگه میدارد</string>
     <string name="camera_launch_title">اجرای دوربین</string>

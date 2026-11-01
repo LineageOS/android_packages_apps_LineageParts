@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">ئاخىرقى ئەپ</string>
     <string name="hardware_keys_action_split_screen">ئېكراننى بۆل</string>
     <string name="hardware_keys_action_kill_app">ئالدى سۇپىدىكى ئەپنى ئاخىرلاشتۇر</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">دەۋرىي قوڭغۇراق ھالىتى</string>
     <string name="camera_sleep_on_release_title">ئېكران كۆرۈنۈشى</string>
     <string name="camera_sleep_on_release_summary">پەقەت توپچە بېسىلغاندىلا يېرىم بېسىلسا ئېكران يورۇق تۇرىدۇ</string>
     <string name="camera_launch_title">كامېرانى قوزغات</string>

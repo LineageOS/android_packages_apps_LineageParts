@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">מעבר ליישום אחרון</string>
     <string name="hardware_keys_action_split_screen">פיצול מסך</string>
     <string name="hardware_keys_action_kill_app">סגירת יישום נוכחי</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">מעבר בין מצבי צלצול</string>
     <string name="camera_sleep_on_release_title">הצצה למסך (התראות ידליקו את המסך)</string>
     <string name="camera_sleep_on_release_summary">לחיצה חלקית תשאיר את המסך פעיל כל עוד המקש לחוץ</string>
     <string name="camera_launch_title">הפעל מצלמה</string>

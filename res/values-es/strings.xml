@@ -385,6 +385,7 @@
     <string name="status_bar_brightness_slider_show_never">No mostrar nunca</string>
     <string name="status_bar_brightness_slider_show_expanded">Mostrar al expandir</string>
     <string name="status_bar_brightness_slider_show_always">Mostrar siempre</string>
+    <string name="status_bar_brightness_slider_position_title">Posición de la barra del brillo</string>
     <string name="status_bar_brightness_slider_position_top">Arriba</string>
     <string name="status_bar_brightness_slider_position_bottom">Abajo</string>
     <string name="network_traffic_settings_title">Monitor de tráfico de red</string>

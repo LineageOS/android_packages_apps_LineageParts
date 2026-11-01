@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">Zadnja aplikacija</string>
     <string name="hardware_keys_action_split_screen">Razdeli zaslon</string>
     <string name="hardware_keys_action_kill_app">Uniči aplikacijo v ospredju</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">Preklopi način zvonjenja</string>
     <string name="camera_sleep_on_release_title">Predogled zaslona</string>
     <string name="camera_sleep_on_release_summary">Polpritisk bo ohranil zaslon vklopljen samo, ko je gumb pridržan</string>
     <string name="camera_launch_title">Zaženi fotoaparat</string>

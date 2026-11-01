@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">Darrera aplicació</string>
     <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
     <string name="hardware_keys_action_kill_app">Finalitza l\'aplicació en primer pla</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">Canvia el mode del to de trucada</string>
     <string name="camera_sleep_on_release_title">Cop d\'ull a la pantalla</string>
     <string name="camera_sleep_on_release_summary">Una mitja pressió mantindrà la pantalla encesa només mentre el botó es mantingui apretat</string>
     <string name="camera_launch_title">Obre la càmera</string>

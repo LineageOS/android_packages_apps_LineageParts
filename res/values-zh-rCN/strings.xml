@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">上次运行应用</string>
     <string name="hardware_keys_action_split_screen">拆分屏幕</string>
     <string name="hardware_keys_action_kill_app">终止前台应用</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">循环铃声模式</string>
     <string name="camera_sleep_on_release_title">屏幕速览</string>
     <string name="camera_sleep_on_release_summary">仅当按钮被按下时，半按将会保持屏幕点亮</string>
     <string name="camera_launch_title">启动相机</string>
