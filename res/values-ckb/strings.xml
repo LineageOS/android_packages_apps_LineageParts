@@ -79,7 +79,7 @@
     <string name="notification_light_phonelist_title">تەلەفۆن</string>
     <string name="notification_light_use_custom">بەکارهێنانی بەهای دەستکرد</string>
     <string name="notification_light_default_value">بنەڕەتی</string>
-    <string name="notification_light_missed_call_title">پەیوەندی وەڵام نەدراو</string>
+    <string name="notification_light_missed_call_title">پەیوەندیی وەڵام نەدراو</string>
     <string name="notification_light_voicemail_title">دەنگەنامە</string>
     <string name="notification_light_screen_on">گڵۆپی ئاگادارکردنەوە لەگەڵ داگیرسانی ڕوونما</string>
     <string name="notification_light_zen_mode">گڵۆپەکان لە دۆخی بێزار مەکەدا</string>
