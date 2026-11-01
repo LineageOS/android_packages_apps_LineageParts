@@ -80,7 +80,7 @@
     <string name="notification_light_phonelist_title">تەلەفۆن</string>
     <string name="notification_light_use_custom">بەکارهێنانی بەهای دەستکرد</string>
     <string name="notification_light_default_value">بنەڕەتی</string>
-    <string name="notification_light_missed_call_title">پەیوەندی وەڵام نەدراو</string>
+    <string name="notification_light_missed_call_title">پەیوەندیی وەڵام نەدراو</string>
     <string name="notification_light_voicemail_title">دەنگەنامە</string>
     <string name="notification_light_screen_on">گڵۆپی ئاگادارکردنەوە لەگەڵ داگیرسانی ڕوونما</string>
     <string name="notification_light_zen_mode">گڵۆپەکان لە دۆخی بێزار مەکەدا</string>
@@ -167,6 +167,7 @@
     <string name="hardware_keys_action_last_app">کۆتا بەرنامە</string>
     <string name="hardware_keys_action_split_screen">دووبەشکردنی ڕوونما</string>
     <string name="hardware_keys_action_kill_app">داخستنی زۆرەملێی بەرنامەی پێشەوە (Kill)</string>
+    <string name="hardware_keys_action_partial_screenshot">Partial screenshot</string>
     <string name="camera_sleep_on_release_title">هەڵبژاردنی ڕوونما</string>
     <string name="camera_sleep_on_release_summary">نیوە داگرتنێک هەمیشە وادەکات ڕوونماکە بە هەڵکراوی بمێنێتەوە</string>
     <string name="camera_launch_title">کردنەوەی کامێرا</string>
