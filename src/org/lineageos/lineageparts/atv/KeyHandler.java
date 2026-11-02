@@ -38,19 +38,22 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     public KeyEvent handleKeyEvent(KeyEvent event) {
-        if (event.getAction() != KeyEvent.ACTION_UP || !hasSetupCompleted()) {
+        String targetName = KEYMAP.get(event.getKeyCode());
+        if (targetName == null || !hasSetupCompleted()) {
             return event;
         }
 
-        int keyCode = event.getKeyCode();
-        String targetName = KEYMAP.get(keyCode);
-
-        if (targetName != null) {
-            launchTarget(targetName);
-            return null;
+        // Nothing to launch: leave the key alone so apps receive both DOWN and UP
+        Intent launchIntent = resolveTarget(targetName);
+        if (launchIntent == null) {
+            return event;
         }
 
-        return event;
+        // Consume DOWN as well as UP, so apps never see a DOWN without its UP
+        if (event.getAction() == KeyEvent.ACTION_UP) {
+            mContext.startActivity(launchIntent);
+        }
+        return null;
     }
 
     private boolean hasSetupCompleted() {
@@ -58,7 +61,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 Settings.Secure.TV_USER_SETUP_COMPLETE, 0) != 0;
     }
 
-    private void launchTarget(String targetName) {
+    private Intent resolveTarget(String targetName) {
         PackageManager pm = mContext.getPackageManager();
 
         ComponentName component = ComponentName.unflattenFromString(targetName);
@@ -91,11 +94,9 @@ public class KeyHandler implements DeviceKeyHandler {
             }
         }
 
-        // If something resolved, run it; otherwise log a warning
-        if (launchIntent != null) {
-            mContext.startActivity(launchIntent);
-        } else {
-            Log.w(TAG, "Cannot launch " + targetName + ": package/intent not found.");
+        if (launchIntent == null) {
+            Log.d(TAG, "Not handling " + targetName + ": package/intent not found.");
         }
+        return launchIntent;
     }
 }
