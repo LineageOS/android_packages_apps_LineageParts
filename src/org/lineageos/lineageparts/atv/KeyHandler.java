@@ -38,19 +38,21 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     public KeyEvent handleKeyEvent(KeyEvent event) {
-        if (event.getAction() != KeyEvent.ACTION_UP || !hasSetupCompleted()) {
+        String targetName = KEYMAP.get(event.getKeyCode());
+        if (targetName == null || !hasSetupCompleted()) {
             return event;
         }
 
-        int keyCode = event.getKeyCode();
-        String targetName = KEYMAP.get(keyCode);
-
-        if (targetName != null) {
-            launchTarget(targetName);
-            return null;
+        // Consume DOWN as well as UP, so apps never see a DOWN without its UP.
+        // Keys without a target are consumed too: some (e.g. BUTTON_3/4/5)
+        // have a DPAD_CENTER fallback and would otherwise act as OK.
+        if (event.getAction() == KeyEvent.ACTION_UP) {
+            Intent launchIntent = resolveTarget(targetName);
+            if (launchIntent != null) {
+                mContext.startActivity(launchIntent);
+            }
         }
-
-        return event;
+        return null;
     }
 
     private boolean hasSetupCompleted() {
@@ -58,7 +60,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 Settings.Secure.TV_USER_SETUP_COMPLETE, 0) != 0;
     }
 
-    private void launchTarget(String targetName) {
+    private Intent resolveTarget(String targetName) {
         PackageManager pm = mContext.getPackageManager();
 
         ComponentName component = ComponentName.unflattenFromString(targetName);
@@ -66,17 +68,26 @@ public class KeyHandler implements DeviceKeyHandler {
 
         // Explicit components avoid package visibility and unusual intent-filter issues
         if (component != null) {
-            launchIntent = new Intent(Intent.ACTION_MAIN)
+            Intent componentIntent = new Intent(Intent.ACTION_MAIN)
                     .addCategory(Intent.CATEGORY_LEANBACK_LAUNCHER)
                     .setComponent(component)
                     .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        } else {
-            // First try to look the name up as a package
-            launchIntent = pm.getLaunchIntentForPackage(targetName);
+
+            // Intent#resolveActivity returns explicit components as is, so ask
+            // PackageManager whether the activity actually exists
+            if (pm.resolveActivity(componentIntent, 0) != null) {
+                launchIntent = componentIntent;
+            }
+        }
+
+        if (launchIntent == null) {
+            // Fall back to the component's package, or look the name up as one
+            String packageName = component != null ? component.getPackageName() : targetName;
+            launchIntent = pm.getLaunchIntentForPackage(packageName);
 
             // TV-only apps may expose a leanback launcher activity without a regular one
             if (launchIntent == null) {
-                launchIntent = pm.getLeanbackLaunchIntentForPackage(targetName);
+                launchIntent = pm.getLeanbackLaunchIntentForPackage(packageName);
             }
         }
 
@@ -91,11 +102,9 @@ public class KeyHandler implements DeviceKeyHandler {
             }
         }
 
-        // If something resolved, run it; otherwise log a warning
-        if (launchIntent != null) {
-            mContext.startActivity(launchIntent);
-        } else {
+        if (launchIntent == null) {
             Log.w(TAG, "Cannot launch " + targetName + ": package/intent not found.");
         }
+        return launchIntent;
     }
 }
