@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.DEVICE_POWER" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission android:name="android.permission.BIND_NFC_SERVICE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -347,18 +348,22 @@
             android:name=".lineagestats.StatsUploadJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <activity
-            android:name=".profiles.NFCProfile"
-            android:exported="true">
+        <service
+            android:name=".profiles.NFCProfileService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".profiles.NFCProfileInitReceiver"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
             <intent-filter>
-                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="lineage/profile" />
+                <action android:name="android.nfc.action.OEM_EXTENSION_INIT" />
             </intent-filter>
-        </activity>
+        </receiver>
 
         <activity
             android:name=".profiles.NFCProfileSelect"
+            android:exported="false"
             android:excludeFromRecents="true"
             android:label="@string/profile_select" />
 
