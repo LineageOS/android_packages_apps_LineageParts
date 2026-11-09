@@ -347,18 +347,13 @@
             android:name=".lineagestats.StatsUploadJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <activity
-            android:name=".profiles.NFCProfile"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="lineage/profile" />
-            </intent-filter>
-        </activity>
+        <service
+            android:name=".profiles.NFCProfileService"
+            android:exported="false" />
 
         <activity
             android:name=".profiles.NFCProfileSelect"
+            android:exported="false"
             android:excludeFromRecents="true"
             android:label="@string/profile_select" />
 

@@ -6,14 +6,9 @@
 
 package org.lineageos.lineageparts.profiles;
 
-import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.nfc.NdefMessage;
-import android.nfc.NdefRecord;
-import android.nfc.NfcAdapter;
-import android.os.Bundle;
-import android.os.Parcelable;
 import android.widget.Toast;
 
 import lineageos.app.Profile;
@@ -25,12 +20,12 @@ import org.lineageos.lineageparts.R;
 import java.util.UUID;
 
 /**
- * This activity handles NDEF_DISCOVERED intents with the "lineage/profile" mime type.
+ * Handles profile UUIDs received through the private NFC OEM callback.
  * Tags should be encoded with the 16-byte UUID of the profile to be activated.
  * Tapping a tag while that profile is already active will select the previously
  * active profile.
  */
-public class NFCProfile extends Activity {
+final class NFCProfile {
 
     private static final String PREFS_NAME = "NFCProfile";
 
@@ -38,44 +33,18 @@ public class NFCProfile extends Activity {
 
     static final String PROFILE_MIME_TYPE = "lineage/profile";
 
-    private ProfileManager mProfileManager;
+    private final Context mContext;
+    private final ProfileManager mProfileManager;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mProfileManager = ProfileManager.getInstance(this);
+    NFCProfile(Context context) {
+        mContext = context;
+        mProfileManager = ProfileManager.getInstance(context);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        Intent intent = getIntent();
-        String action = intent.getAction();
-        if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) {
-            Parcelable[] rawMsgs = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES,
-                    Parcelable.class);
-            if (rawMsgs != null) {
-                NdefMessage[] msgs = new NdefMessage[rawMsgs.length];
-                for (int i = 0; i < rawMsgs.length; i++) {
-                    msgs[i] = (NdefMessage) rawMsgs[i];
-                    for (NdefRecord record : msgs[i].getRecords()) {
-                        String type = new String(record.getType());
-                        byte[] payload = record.getPayload();
-                        if (PROFILE_MIME_TYPE.equals(type) && payload.length == 16) {
-                            handleProfileMimeType(payload);
-                        }
-                    }
-                }
-            }
-        }
-        finish();
-    }
-
-    private void handleProfileMimeType(byte[] payload) {
+    void handleProfileMimeType(byte[] payload) {
         UUID profileUuid = NFCProfileUtils.toUUID(payload);
 
-        boolean enabled = LineageSettings.System.getInt(getContentResolver(),
+        boolean enabled = LineageSettings.System.getInt(mContext.getContentResolver(),
                 LineageSettings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
 
         if (enabled) {
@@ -85,10 +54,10 @@ public class NFCProfile extends Activity {
 
             if (targetProfile == null) {
                 // show profile selection for unknown tag
-                Intent i = new Intent(this, NFCProfileSelect.class);
+                Intent i = new Intent(mContext, NFCProfileSelect.class);
                 i.putExtra(NFCProfileSelect.EXTRA_PROFILE_UUID, profileUuid.toString());
-                i.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                this.startActivity(i);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                mContext.startActivity(i);
             } else {
                 // switch to profile
                 if (currentProfile == null || !currentProfile.getUuid().equals(profileUuid)) {
@@ -111,16 +80,16 @@ public class NFCProfile extends Activity {
             mProfileManager.setActiveProfile(uuid);
 
             Toast.makeText(
-                    this,
-                    getString(R.string.profile_selected, p.getName()),
+                    mContext,
+                    mContext.getString(R.string.profile_selected, p.getName()),
                     Toast.LENGTH_LONG).show();
-            NFCProfileUtils.vibrate(this);
+            NFCProfileUtils.vibrate(mContext);
         }
     }
 
     private Profile getPreviouslySelectedProfile() {
         Profile previous = null;
-        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, 0);
+        SharedPreferences prefs = mContext.getSharedPreferences(PREFS_NAME, 0);
         String uuid = prefs.getString(PREFS_PREVIOUS_PROFILE, null);
         if (uuid != null) {
             previous = mProfileManager.getProfile(UUID.fromString(uuid));
@@ -129,7 +98,7 @@ public class NFCProfile extends Activity {
     }
 
     private void clearPreviouslySelectedProfile() {
-        SharedPreferences.Editor editor = getSharedPreferences(PREFS_NAME, 0).edit();
+        SharedPreferences.Editor editor = mContext.getSharedPreferences(PREFS_NAME, 0).edit();
         editor.remove(PREFS_PREVIOUS_PROFILE);
         editor.commit();
     }
@@ -137,7 +106,7 @@ public class NFCProfile extends Activity {
     private void saveCurrentProfile() {
         Profile currentProfile = mProfileManager.getActiveProfile();
         if (currentProfile != null) {
-            SharedPreferences.Editor editor = getSharedPreferences(PREFS_NAME, 0).edit();
+            SharedPreferences.Editor editor = mContext.getSharedPreferences(PREFS_NAME, 0).edit();
             editor.putString(PREFS_PREVIOUS_PROFILE, currentProfile.getUuid().toString());
             editor.commit();
         }

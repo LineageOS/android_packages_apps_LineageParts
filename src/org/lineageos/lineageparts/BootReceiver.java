@@ -19,6 +19,7 @@ import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
 import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
 import org.lineageos.lineageparts.input.ButtonSettings;
 import org.lineageos.lineageparts.livedisplay.LiveDisplaySettings;
+import org.lineageos.lineageparts.profiles.NFCProfileService;
 
 public class BootReceiver extends BroadcastReceiver {
 
@@ -48,6 +49,7 @@ public class BootReceiver extends BroadcastReceiver {
         ButtonSettings.restoreKeyDisabler(ctx);
         ButtonSettings.restoreKeySwapper(ctx);
         TouchscreenGestureSettings.restoreTouchscreenGestureStates(ctx);
+        NFCProfileService.installHook(ctx);
     }
 
     private boolean hasRestoredTunable(Context context) {
