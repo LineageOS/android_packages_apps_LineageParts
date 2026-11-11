@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edac4bef_1e172642",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-11T21:17:52Z",
+      "side": 1,
+      "message": "@J Barret Coats - do you want this on 22 as well? Given your device still ships there, pick it if so.",
+      "revId": "2ce948052f7f7675075c2ec9d68129c99b6e4ee7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
