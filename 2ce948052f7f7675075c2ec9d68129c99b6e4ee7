@@ -16,6 +16,24 @@
       "message": "@J Barret Coats - do you want this on 22 as well? Given your device still ships there, pick it if so.",
       "revId": "2ce948052f7f7675075c2ec9d68129c99b6e4ee7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46c3d94a_62840648",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38528
+      },
+      "writtenOn": "2026-11-11T21:31:33Z",
+      "side": 1,
+      "message": "Thanks for the offer, Nolen, I appreciate it! I\u0027ll leave 22 as is, though. My own setup there still relies on the Netflix key\u0027s DOWN reaching apps, and 22.2 doesn\u0027t have the component targets, so it would need a separate backport anyway. Thanks again to you, Bruno and Adel for the reviews.",
+      "parentUuid": "edac4bef_1e172642",
+      "revId": "2ce948052f7f7675075c2ec9d68129c99b6e4ee7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
