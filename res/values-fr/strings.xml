@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">Application précédente</string>
     <string name="hardware_keys_action_split_screen">Écran partagé</string>
     <string name="hardware_keys_action_kill_app">Arrêter l\'application en cours</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">Changer de mode de sonnerie</string>
     <string name="camera_sleep_on_release_title">Aperçu de l\'écran</string>
     <string name="camera_sleep_on_release_summary">Appuyer à moitié pour garder l\'écran allumé tant que le bouton est maintenu enfoncé</string>
     <string name="camera_launch_title">Démarrer l\'appareil photo</string>

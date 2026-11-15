@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">Ứng dụng cuối</string>
     <string name="hardware_keys_action_split_screen">Chia màn hình</string>
     <string name="hardware_keys_action_kill_app">Dừng ứng dụng đang chạy</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">Chế độ đổ chuông theo chu kỳ</string>
     <string name="camera_sleep_on_release_title">Liếc màn hình</string>
     <string name="camera_sleep_on_release_summary">Nhấn nửa chừng sẽ giữ màn hình bật trong khi còn giữ nút</string>
     <string name="camera_launch_title">Mở máy ảnh</string>

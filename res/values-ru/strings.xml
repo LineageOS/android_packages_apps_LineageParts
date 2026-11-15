@@ -164,6 +164,7 @@
     <string name="hardware_keys_action_last_app">Предыдущее приложение</string>
     <string name="hardware_keys_action_split_screen">Разделение экрана</string>
     <string name="hardware_keys_action_kill_app">Закрыть активное приложение</string>
+    <string name="hardware_keys_action_cycle_ringer_mode">Режим циклического звонка</string>
     <string name="camera_sleep_on_release_title">Быстрый просмотр</string>
     <string name="camera_sleep_on_release_summary">Легкое нажатие и удержание кнопки будет пробуждать дисплей</string>
     <string name="camera_launch_title">Включить камеру</string>
