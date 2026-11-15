@@ -321,6 +321,7 @@
     <string name="choose_soundtone">ئاوازی ئاگادارکردنەوە هەڵبژێره</string>
     <string name="choose_ringtone">ئاوازی زەنگ هەڵبژێره</string>
     <string name="ringtone_title">ئاوازی زەنگی مۆبایل</string>
+    <string name="ringtone_summary">""</string>
     <string name="soundtone_title">ئاوازی ئاگادارکردنەوە</string>
     <string name="profile_system_settings_title">ڕێکخستنەکانی سیستم</string>
     <string name="profile_lockmode_title">دۆخی قوفڵی ڕوونما</string>
