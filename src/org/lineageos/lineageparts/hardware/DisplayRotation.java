@@ -13,6 +13,7 @@ import android.provider.Settings;
 
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
 import com.android.internal.view.RotationPolicy;
@@ -25,6 +26,7 @@ public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String TAG = "DisplayRotation";
 
     public static final String KEY_ACCELEROMETER = "accelerometer";
+    private static final String KEY_CATEGORY_DISPLAY_ROTATION = "display_rotation_category";
     private static final String ROTATION_0_PREF = "display_rotation_0";
     private static final String ROTATION_90_PREF = "display_rotation_90";
     private static final String ROTATION_180_PREF = "display_rotation_180";
@@ -70,6 +72,12 @@ public class DisplayRotation extends SettingsPreferenceFragment {
         mRotation90Pref.setChecked((mode & ROTATION_90_MODE) != 0);
         mRotation180Pref.setChecked((mode & ROTATION_180_MODE) != 0);
         mRotation270Pref.setChecked((mode & ROTATION_270_MODE) != 0);
+
+        boolean allowAllRotations = getResources().getBoolean(
+                com.android.internal.R.bool.config_allowAllRotations);
+        PreferenceCategory displayRotationCategory = prefSet.findPreference(
+                KEY_CATEGORY_DISPLAY_ROTATION);
+        displayRotationCategory.setVisible(!allowAllRotations);
 
         watch(Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION));
     }
