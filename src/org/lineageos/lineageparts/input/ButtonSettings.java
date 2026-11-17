@@ -97,6 +97,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             "click_partial_screenshot";
     private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
     private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
+    private static final String KEY_PIN_IME_TO_DISPLAY = "pin_ime_to_display";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -406,6 +407,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
         }
         if (!hasVolumeKeys || volumeCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(volumeCategory);
+        }
+
+        if (!hasImePinnedDisplay(getActivity())) {
+            extrasCategory.removePreference(findPreference(KEY_PIN_IME_TO_DISPLAY));
         }
 
         // Only show the navigation bar category on devices that have a navigation bar
@@ -763,6 +768,11 @@ public class ButtonSettings extends SettingsPreferenceFragment
         return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_SWAP);
     }
 
+    private static boolean hasImePinnedDisplay(Context context) {
+        return !context.getResources().getString(org.lineageos.platform.internal.R.string
+                .config_imePinnedDisplayUniqueId).isEmpty();
+    }
+
     public static void restoreKeyDisabler(Context context) {
         if (!isKeyDisablerSupported(context)) {
             return;
@@ -945,6 +955,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
             if (!isLargeScreen(context) || !hasNavigationBar()) {
                 result.add(KEY_ENABLE_TASKBAR);
+            }
+
+            if (!hasImePinnedDisplay(context)) {
+                result.add(KEY_PIN_IME_TO_DISPLAY);
             }
 
             if (hasNavigationBar()) {

@@ -329,6 +329,12 @@
             android:summary="@string/click_partial_screenshot_summary"
             android:defaultValue="false" />
 
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="pin_ime_to_display"
+            android:title="@string/pin_ime_to_display_title"
+            android:summary="@string/pin_ime_to_display_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
