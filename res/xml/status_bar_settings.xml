@@ -18,6 +18,12 @@
         android:entryValues="@array/status_bar_quick_qs_pulldown_values"
         android:defaultValue="0" />
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="pulse_swipe_down_gesture"
+        android:title="@string/status_bar_pulse_swipe_down_title"
+        android:summary="@string/status_bar_pulse_swipe_down_summary"
+        android:defaultValue="true" />
+
     <Preference
         android:fragment="org.lineageos.lineageparts.statusbar.NetworkTrafficSettings"
         android:key="network_traffic_settings"

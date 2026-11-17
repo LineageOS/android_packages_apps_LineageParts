@@ -22,6 +22,7 @@ import com.android.settingslib.fuelgauge.BatteryUtils;
 import lineageos.preference.LineageSecureSettingListPreference;
 import lineageos.preference.LineageSecureSettingSwitchPreference;
 import lineageos.preference.LineageSystemSettingListPreference;
+import lineageos.preference.LineageSystemSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
 import org.lineageos.lineageparts.R;
@@ -44,6 +45,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+    private static final String PULSE_SWIPE_DOWN_GESTURE =
+            LineageSettings.System.PULSE_SWIPE_DOWN_GESTURE;
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
 
@@ -61,6 +64,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
     private LineageSystemSettingListPreference mStatusBarClock;
     private LineageSystemSettingListPreference mStatusBarAmPm;
     private LineageSystemSettingListPreference mStatusBarBatteryShowPercent;
+    private LineageSystemSettingSwitchPreference mPulseSwipeDownGesture;
 
     private PreferenceCategory mStatusBarBatteryCategory;
     private PreferenceCategory mStatusBarClockCategory;
@@ -122,6 +126,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
             }
             return "";
         });
+
+        mPulseSwipeDownGesture = findPreference(PULSE_SWIPE_DOWN_GESTURE);
+        if (!DeviceUtils.isDozeAvailable(getContext())) {
+            getPreferenceScreen().removePreference(mPulseSwipeDownGesture);
+            mPulseSwipeDownGesture = null;
+        }
     }
 
     @Override
@@ -142,6 +152,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
             getPreferenceScreen().removePreference(mStatusBarBatteryCategory);
         } else {
             getPreferenceScreen().addPreference(mStatusBarBatteryCategory);
+        }
+
+        // Swipe down on ambient display only makes sense if ambient display is enabled
+        if (mPulseSwipeDownGesture != null) {
+            mPulseSwipeDownGesture.setEnabled(Settings.Secure.getInt(
+                    getContext().getContentResolver(), Settings.Secure.DOZE_ENABLED, 1) != 0);
         }
 
         if (DateFormat.is24HourFormat(getActivity())) {

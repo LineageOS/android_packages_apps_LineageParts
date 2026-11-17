@@ -451,6 +451,10 @@
     <string name="status_bar_quick_qs_pulldown_off">Off</string>
     <string name="status_bar_quick_qs_pulldown_left">Left</string>
     <string name="status_bar_quick_qs_pulldown_right">Right</string>
+
+    <!-- Status bar - Swipe down on ambient display -->
+    <string name="status_bar_pulse_swipe_down_title">Swipe down on ambient display</string>
+    <string name="status_bar_pulse_swipe_down_summary">Swipe down on a notification shown on the ambient display to wake up the device and open the notification shade</string>
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
 
