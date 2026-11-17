@@ -17,6 +17,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.om.IOverlayManager;
 import android.content.res.Resources;
+import android.hardware.display.DisplayManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -97,6 +98,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             "click_partial_screenshot";
     private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
     private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
+    private static final String KEY_IME_PINNED_DISPLAY = "ime_pinned_display";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -406,6 +408,13 @@ public class ButtonSettings extends SettingsPreferenceFragment
         }
         if (!hasVolumeKeys || volumeCategory.getPreferenceCount() == 0) {
             prefScreen.removePreference(volumeCategory);
+        }
+
+        final List<Display> internalDisplays = getInternalDisplays(getActivity());
+        if (internalDisplays.size() >= 2) {
+            initImePinnedDisplay(internalDisplays);
+        } else {
+            extrasCategory.removePreference(findPreference(KEY_IME_PINNED_DISPLAY));
         }
 
         // Only show the navigation bar category on devices that have a navigation bar
@@ -763,6 +772,40 @@ public class ButtonSettings extends SettingsPreferenceFragment
         return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_SWAP);
     }
 
+    private static List<Display> getInternalDisplays(Context context) {
+        final List<Display> internalDisplays = new ArrayList<>();
+        for (Display display : context.getSystemService(DisplayManager.class).getDisplays()) {
+            if (display.getType() == Display.TYPE_INTERNAL) {
+                internalDisplays.add(display);
+            }
+        }
+        return internalDisplays;
+    }
+
+    private void initImePinnedDisplay(List<Display> internalDisplays) {
+        final ListPreference imePinnedDisplay = findPreference(KEY_IME_PINNED_DISPLAY);
+        final List<String> entries = new ArrayList<>();
+        final List<String> values = new ArrayList<>();
+
+        entries.add(getString(R.string.ime_pinned_display_focused));
+        values.add("");
+
+        int screen = 1;
+        for (Display display : internalDisplays) {
+            if (display.getDisplayId() == Display.DEFAULT_DISPLAY) {
+                entries.add(getString(R.string.ime_pinned_display_primary));
+            } else {
+                screen++;
+                entries.add(screen == 2 ? getString(R.string.ime_pinned_display_secondary)
+                        : getString(R.string.ime_pinned_display_numbered, screen));
+            }
+            values.add(display.getUniqueId());
+        }
+
+        imePinnedDisplay.setEntries(entries.toArray(new String[0]));
+        imePinnedDisplay.setEntryValues(values.toArray(new String[0]));
+    }
+
     public static void restoreKeyDisabler(Context context) {
         if (!isKeyDisablerSupported(context)) {
             return;
@@ -945,6 +988,10 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
             if (!isLargeScreen(context) || !hasNavigationBar()) {
                 result.add(KEY_ENABLE_TASKBAR);
+            }
+
+            if (getInternalDisplays(context).size() < 2) {
+                result.add(KEY_IME_PINNED_DISPLAY);
             }
 
             if (hasNavigationBar()) {
