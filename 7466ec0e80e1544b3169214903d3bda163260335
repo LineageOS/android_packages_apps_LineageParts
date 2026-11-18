@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "be9ff69e_c6f4eaca",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-11-18T18:49:08Z",
+      "side": 1,
+      "message": "```suggestion\nAssisted-by: LLM\n```",
+      "revId": "7466ec0e80e1544b3169214903d3bda163260335",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "34fdf7f4_845a9912",
