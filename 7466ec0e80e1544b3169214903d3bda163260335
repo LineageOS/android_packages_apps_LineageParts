@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34fdf7f4_845a9912",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-11-18T18:48:22Z",
+      "side": 1,
+      "message": "This might be a better fit in in Settings under the keyboard section",
+      "revId": "7466ec0e80e1544b3169214903d3bda163260335",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
