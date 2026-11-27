@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f13fbc58_d2a0098f",
+        "filename": "src/org/lineageos/lineageparts/accessories/AccessorySettings.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-11-27T17:57:03Z",
+      "side": 1,
+      "message": ".",
+      "revId": "bedc9c42413863fafba24efc76b9f50c8cf67899",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5499a24_15194a91",
+        "filename": "src/org/lineageos/lineageparts/accessories/BatteryUtils.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-11-27T17:57:03Z",
+      "side": 1,
+      "message": "I\u0027d use a plain switch, no need to be fancy...",
+      "revId": "bedc9c42413863fafba24efc76b9f50c8cf67899",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
