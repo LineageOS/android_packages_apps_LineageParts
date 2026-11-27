@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "505608be_2ac3088a",
+        "filename": "src/org/lineageos/lineageparts/accessories/AccessoryTileService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-11-27T18:01:34Z",
+      "side": 1,
+      "message": "this is fine, but I\u0027d make 2 real kt files even if mostly empty",
+      "range": {
+        "startLine": 216,
+        "startChar": 0,
+        "endLine": 218,
+        "endChar": 72
+      },
+      "revId": "8eacd86110083a476da52684bd3ff6cf859ed174",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
