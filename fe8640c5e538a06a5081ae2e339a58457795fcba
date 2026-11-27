@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eec2ec6d_f8e2121d",
+        "filename": "src/org/lineageos/lineageparts/accessories/AccessorySettings.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-11-27T18:00:18Z",
+      "side": 1,
+      "message": "maybe startAcitivityForResult?\nI\u0027d want to inform the user if in a better way that bt is required\n\nIdeally if usesBt open a dialog of sort that informs the user about that, and on !SUCCESS another dialog informing that no action has been taken",
+      "revId": "fe8640c5e538a06a5081ae2e339a58457795fcba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
